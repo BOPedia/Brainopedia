@@ -1,0 +1,232 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="800" fill="#f8f9fa"/>
+  
+  <!-- Central Brain -->
+  <g id="brain">
+    <!-- Brain outline -->
+    <path d="M 400 250 Q 350 240 320 260 Q 300 280 310 310 Q 300 330 310 350 Q 300 370 315 390 Q 310 410 330 425 Q 340 440 360 445 Q 370 460 390 465 Q 410 470 430 465 Q 440 470 450 465 Q 470 470 490 465 Q 510 460 520 445 Q 540 440 550 425 Q 570 410 565 390 Q 580 370 570 350 Q 580 330 570 310 Q 580 280 560 260 Q 530 240 480 250 Q 440 240 400 250 Z" 
+          fill="#0c264d" opacity="0.9"/>
+    
+    <!-- Brain folds/texture -->
+    <path d="M 360 280 Q 370 290 360 300" stroke="#2abcd4" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M 380 270 Q 390 280 385 295" stroke="#2abcd4" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M 410 265 Q 415 275 420 285" stroke="#ffd166" stroke-width="3" fill="none" opacity="0.7"/>
+    <path d="M 440 270 Q 445 280 440 295" stroke="#2abcd4" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M 470 280 Q 480 290 475 305" stroke="#ffd166" stroke-width="3" fill="none" opacity="0.7"/>
+    <path d="M 340 320 Q 350 330 345 345" stroke="#2abcd4" stroke-width="2.5" fill="none" opacity="0.6"/>
+    <path d="M 360 340 Q 370 350 365 365" stroke="#ffd166" stroke-width="2.5" fill="none" opacity="0.7"/>
+    <path d="M 420 330 Q 430 340 425 355" stroke="#2abcd4" stroke-width="2.5" fill="none" opacity="0.6"/>
+    <path d="M 460 340 Q 470 350 465 365" stroke="#ffd166" stroke-width="2.5" fill="none" opacity="0.7"/>
+    <path d="M 490 320 Q 500 330 495 345" stroke="#2abcd4" stroke-width="2.5" fill="none" opacity="0.6"/>
+    
+    <!-- Neural pathways (central) -->
+    <circle cx="400" cy="340" r="8" fill="#ffd166" opacity="0.8"/>
+    <circle cx="370" cy="360" r="6" fill="#2abcd4" opacity="0.8"/>
+    <circle cx="430" cy="360" r="6" fill="#2abcd4" opacity="0.8"/>
+    <circle cx="385" cy="390" r="5" fill="#ffd166" opacity="0.8"/>
+    <circle cx="415" cy="390" r="5" fill="#ffd166" opacity="0.8"/>
+  </g>
+  
+  <!-- Vision/Eye (Top Left) -->
+  <g id="vision">
+    <circle cx="200" cy="150" r="50" fill="none" stroke="#2abcd4" stroke-width="3"/>
+    <ellipse cx="200" cy="150" rx="30" ry="40" fill="#0c264d" opacity="0.7"/>
+    <circle cx="200" cy="150" r="15" fill="#ffd166"/>
+    <circle cx="205" cy="145" r="6" fill="#f8f9fa"/>
+    
+    <!-- Different visual processing patterns -->
+    <circle cx="180" cy="130" r="3" fill="#ffd166" opacity="0.5"/>
+    <circle cx="220" cy="130" r="3" fill="#ffd166" opacity="0.5"/>
+    <circle cx="180" cy="170" r="3" fill="#2abcd4" opacity="0.5"/>
+    <circle cx="220" cy="170" r="3" fill="#2abcd4" opacity="0.5"/>
+    
+    <!-- Neural pathway to brain -->
+    <path d="M 230 180 Q 280 220 320 280" stroke="#2abcd4" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+    <circle cx="250" cy="200" r="3" fill="#2abcd4"/>
+    <circle cx="280" cy="240" r="3" fill="#ffd166"/>
+  </g>
+  
+  <!-- Hearing/Ear (Top Right) -->
+  <g id="hearing">
+    <path d="M 600 120 Q 620 130 620 150 Q 620 170 600 180 Q 590 175 590 150 Q 590 125 600 120 Z" 
+          fill="#0c264d" opacity="0.7"/>
+    <ellipse cx="575" cy="150" rx="15" ry="25" fill="#2abcd4" opacity="0.6"/>
+    
+    <!-- Sound waves -->
+    <path d="M 550 140 Q 540 150 550 160" stroke="#ffd166" stroke-width="2" fill="none"/>
+    <path d="M 535 130 Q 520 150 535 170" stroke="#ffd166" stroke-width="2" fill="none" opacity="0.7"/>
+    <path d="M 520 120 Q 500 150 520 180" stroke="#2abcd4" stroke-width="2" fill="none" opacity="0.5"/>
+    
+    <!-- Different auditory processing -->
+    <circle cx="565" cy="135" r="4" fill="#ffd166"/>
+    <circle cx="565" cy="165" r="4" fill="#2abcd4"/>
+    <rect x="555" y="148" width="3" height="4" fill="#0c264d"/>
+    
+    <!-- Neural pathway to brain -->
+    <path d="M 570 180 Q 530 220 500 270" stroke="#ffd166" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+    <circle cx="550" cy="200" r="3" fill="#ffd166"/>
+    <circle cx="520" cy="240" r="3" fill="#2abcd4"/>
+  </g>
+  
+  <!-- Touch/Hand (Left) -->
+  <g id="touch">
+    <path d="M 100 350 L 110 320 L 125 310 L 130 335 L 140 305 L 145 340 L 155 310 L 160 345 L 168 320 L 170 355 L 155 370 L 145 375 L 130 375 L 115 370 Z" 
+          fill="#2abcd4" opacity="0.7"/>
+    
+    <!-- Tactile patterns -->
+    <circle cx="140" cy="350" r="5" fill="#ffd166" opacity="0.8"/>
+    <circle cx="125" cy="340" r="4" fill="#0c264d" opacity="0.6"/>
+    <circle cx="150" cy="340" r="4" fill="#0c264d" opacity="0.6"/>
+    
+    <!-- Sensory lines -->
+    <line x1="120" y1="330" x2="120" y2="345" stroke="#ffd166" stroke-width="2"/>
+    <line x1="145" y1="325" x2="145" y2="340" stroke="#ffd166" stroke-width="2"/>
+    <line x1="162" y1="330" x2="162" y2="345" stroke="#2abcd4" stroke-width="2"/>
+    
+    <!-- Neural pathway to brain -->
+    <path d="M 170 350 Q 240 340 310 340" stroke="#2abcd4" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+    <circle cx="220" cy="345" r="3" fill="#2abcd4"/>
+    <circle cx="270" cy="342" r="3" fill="#ffd166"/>
+  </g>
+  
+  <!-- Proprioception/Movement (Right) -->
+  <g id="movement">
+    <ellipse cx="680" cy="360" rx="35" ry="55" fill="#0c264d" opacity="0.7"/>
+    <rect x="660" y="340" width="40" height="15" rx="7" fill="#2abcd4" opacity="0.6"/>
+    <rect x="660" y="370" width="40" height="15" rx="7" fill="#ffd166" opacity="0.6"/>
+    
+    <!-- Movement indicators -->
+    <path d="M 640 330 L 650 340 L 640 350" stroke="#ffd166" stroke-width="2.5" fill="none"/>
+    <path d="M 640 370 L 650 380 L 640 390" stroke="#2abcd4" stroke-width="2.5" fill="none"/>
+    <path d="M 720 330 L 710 340 L 720 350" stroke="#ffd166" stroke-width="2.5" fill="none"/>
+    <path d="M 720 370 L 710 380 L 720 390" stroke="#2abcd4" stroke-width="2.5" fill="none"/>
+    
+    <!-- Neural pathway to brain -->
+    <path d="M 645 360 Q 580 350 520 360" stroke="#ffd166" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+    <circle cx="600" cy="355" r="3" fill="#ffd166"/>
+    <circle cx="560" cy="358" r="3" fill="#2abcd4"/>
+  </g>
+  
+  <!-- Smell/Nose (Bottom Left) -->
+  <g id="smell">
+    <path d="M 220 540 Q 230 520 240 540 L 240 560 Q 230 570 220 560 Z" 
+          fill="#0c264d" opacity="0.7"/>
+    <ellipse cx="230" cy="540" rx="8" ry="12" fill="#2abcd4" opacity="0.5"/>
+    
+    <!-- Scent particles -->
+    <circle cx="210" cy="500" r="4" fill="#ffd166" opacity="0.6"/>
+    <circle cx="225" cy="495" r="3" fill="#ffd166" opacity="0.7"/>
+    <circle cx="240" cy="505" r="5" fill="#2abcd4" opacity="0.6"/>
+    <circle cx="250" cy="495" r="3" fill="#2abcd4" opacity="0.7"/>
+    <circle cx="200" cy="510" r="3" fill="#ffd166" opacity="0.5"/>
+    
+    <!-- Olfactory patterns -->
+    <path d="M 215 515 Q 220 505 225 515" stroke="#ffd166" stroke-width="1.5" fill="none"/>
+    <path d="M 235 515 Q 240 505 245 515" stroke="#2abcd4" stroke-width="1.5" fill="none"/>
+    
+    <!-- Neural pathway to brain -->
+    <path d="M 240 530 Q 290 490 340 450" stroke="#2abcd4" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+    <circle cx="270" cy="505" r="3" fill="#2abcd4"/>
+    <circle cx="310" cy="470" r="3" fill="#ffd166"/>
+  </g>
+  
+  <!-- Taste/Mouth (Bottom Right) -->
+  <g id="taste">
+    <ellipse cx="570" cy="540" rx="40" ry="25" fill="#2abcd4" opacity="0.7"/>
+    <path d="M 540 540 Q 570 550 600 540" stroke="#0c264d" stroke-width="3" fill="none"/>
+    
+    <!-- Taste receptors -->
+    <circle cx="550" cy="535" r="4" fill="#ffd166" opacity="0.8"/>
+    <circle cx="565" cy="532" r="4" fill="#0c264d" opacity="0.6"/>
+    <circle cx="580" cy="535" r="4" fill="#ffd166" opacity="0.8"/>
+    <circle cx="595" cy="532" r="4" fill="#2abcd4" opacity="0.8"/>
+    
+    <!-- Tongue texture -->
+    <circle cx="555" cy="545" r="2" fill="#0c264d" opacity="0.4"/>
+    <circle cx="570" cy="547" r="2" fill="#0c264d" opacity="0.4"/>
+    <circle cx="585" cy="545" r="2" fill="#0c264d" opacity="0.4"/>
+    
+    <!-- Neural pathway to brain -->
+    <path d="M 550 525 Q 500 480 460 440" stroke="#ffd166" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+    <circle cx="520" cy="495" r="3" fill="#ffd166"/>
+    <circle cx="480" cy="460" r="3" fill="#2abcd4"/>
+  </g>
+  
+  <!-- Interoception (Bottom Center) -->
+  <g id="interoception">
+    <path d="M 400 580 Q 385 590 390 605 Q 395 615 410 615 Q 415 605 410 590 Z" 
+          fill="#0c264d" opacity="0.7"/>
+    
+    <!-- Internal sensation indicators -->
+    <circle cx="400" cy="600" r="8" fill="none" stroke="#2abcd4" stroke-width="2"/>
+    <circle cx="400" cy="600" r="4" fill="#ffd166" opacity="0.8"/>
+    
+    <!-- Heartbeat/rhythm lines -->
+    <path d="M 380 600 L 385 600 L 388 595 L 391 605 L 394 600 L 400 600" 
+          stroke="#2abcd4" stroke-width="2" fill="none"/>
+    <path d="M 400 600 L 406 600 L 409 595 L 412 605 L 415 600 L 420 600" 
+          stroke="#ffd166" stroke-width="2" fill="none"/>
+    
+    <!-- Neural pathway to brain -->
+    <path d="M 400 580 Q 400 520 400 470" stroke="#2abcd4" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+    <circle cx="400" cy="540" r="3" fill="#2abcd4"/>
+    <circle cx="400" cy="500" r="3" fill="#ffd166"/>
+  </g>
+  
+  <!-- Processing differences symbols around brain -->
+  <g id="processing-patterns">
+    <!-- Hyperfocus -->
+    <g transform="translate(340, 300)">
+      <circle cx="0" cy="0" r="6" fill="none" stroke="#ffd166" stroke-width="2"/>
+      <circle cx="0" cy="0" r="3" fill="#ffd166"/>
+    </g>
+    
+    <!-- Scattered attention -->
+    <g transform="translate(460, 300)">
+      <circle cx="-4" cy="-4" r="2" fill="#2abcd4"/>
+      <circle cx="4" cy="-4" r="2" fill="#2abcd4"/>
+      <circle cx="0" cy="4" r="2" fill="#2abcd4"/>
+    </g>
+    
+    <!-- Pattern recognition -->
+    <g transform="translate(340, 380)">
+      <rect x="-3" y="-3" width="6" height="6" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="2" fill="#ffd166"/>
+    </g>
+    
+    <!-- Sensory sensitivity -->
+    <g transform="translate(460, 380)">
+      <path d="M -5 0 L 0 -5 L 5 0 L 0 5 Z" fill="none" stroke="#2abcd4" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="2" fill="#2abcd4"/>
+    </g>
+    
+    <!-- Time perception -->
+    <g transform="translate(400, 410)">
+      <circle cx="0" cy="0" r="6" fill="none" stroke="#0c264d" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="0" y2="-4" stroke="#0c264d" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="3" y2="0" stroke="#ffd166" stroke-width="1.5"/>
+    </g>
+  </g>
+  
+  <!-- Network connections (showing interconnected processing) -->
+  <g id="network" opacity="0.3">
+    <line x1="200" y1="150" x2="600" y2="150" stroke="#2abcd4" stroke-width="1"/>
+    <line x1="100" y1="350" x2="680" y2="360" stroke="#ffd166" stroke-width="1"/>
+    <line x1="220" y1="540" x2="570" y2="540" stroke="#2abcd4" stroke-width="1"/>
+    <line x1="230" y1="180" x2="170" y2="350" stroke="#ffd166" stroke-width="1"/>
+    <line x1="570" y1="180" x2="645" y2="360" stroke="#2abcd4" stroke-width="1"/>
+    <line x1="200" y1="200" x2="400" y2="580" stroke="#ffd166" stroke-width="1"/>
+    <line x1="600" y1="200" x2="400" y2="580" stroke="#2abcd4" stroke-width="1"/>
+  </g>
+  
+  <!-- Additional neural nodes showing diversity of processing -->
+  <g id="neural-diversity">
+    <circle cx="300" cy="250" r="4" fill="#ffd166" opacity="0.6"/>
+    <circle cx="500" cy="250" r="4" fill="#2abcd4" opacity="0.6"/>
+    <circle cx="280" cy="380" r="4" fill="#2abcd4" opacity="0.6"/>
+    <circle cx="520" cy="380" r="4" fill="#ffd166" opacity="0.6"/>
+    <circle cx="350" cy="480" r="4" fill="#ffd166" opacity="0.6"/>
+    <circle cx="450" cy="480" r="4" fill="#2abcd4" opacity="0.6"/>
+  </g>
+</svg>
