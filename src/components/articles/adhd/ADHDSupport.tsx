@@ -1,13 +1,13 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDMedicationComparison } from '../../infographics/ADHDMedicationComparison';
 import { ADHDTreatmentApproach } from '../../infographics/ADHDTreatmentApproach';
-import therapyImage from 'figma:asset/f12f709849b6839a0a4499109872ea789d41c6d2.png';
-import ostImage from 'figma:asset/e24b9f991a0bf5650d709e95ee3b8e5421658d13.png';
-import workplaceImage from 'figma:asset/8757312e62b17511de2b42f6ac8bd5c7095f5106.png';
-import orgToolsImage from 'figma:asset/38f491699e594ed9745871f0bc1b6440f70fe696.png';
-import treatmentGraphic from 'figma:asset/45f06deba4dd26e24763f9bcc1125851896145cb.png';
-import medicationImage from 'figma:asset/fee0a977149f8155f68f161947834f9e92da2ac1.png';
-import supportImage from 'figma:asset/8c75ea2eb513606021783d9a6512df3d945d85fe.png';
+import therapyImage from '/images/f12f709849b6839a0a4499109872ea789d41c6d2.png';
+import ostImage from '/images/e24b9f991a0bf5650d709e95ee3b8e5421658d13.png';
+import workplaceImage from '/images/8757312e62b17511de2b42f6ac8bd5c7095f5106.png';
+import orgToolsImage from '/images/38f491699e594ed9745871f0bc1b6440f70fe696.png';
+import treatmentGraphic from '/images/45f06deba4dd26e24763f9bcc1125851896145cb.png';
+import medicationImage from '/images/fee0a977149f8155f68f161947834f9e92da2ac1.png';
+import supportImage from '/images/8c75ea2eb513606021783d9a6512df3d945d85fe.png';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { Pill, BrainCircuit, GraduationCap, Heart, Users, Settings } from 'lucide-react';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import visualProcessingImage from 'figma:asset/6c5bab24912ad292b713cd525f70101a0518a4e6.png';
-import overviewImage from 'figma:asset/85794259a5e5ca315bdb90ca43bdd8397ee9f875.png';
-import symptomsImage from 'figma:asset/63148739feaae3527c2170ff7328ae8ab7450355.png';
+import visualProcessingImage from '/images/6c5bab24912ad292b713cd525f70101a0518a4e6.png';
+import overviewImage from '/images/85794259a5e5ca315bdb90ca43bdd8397ee9f875.png';
+import symptomsImage from '/images/63148739feaae3527c2170ff7328ae8ab7450355.png';
 
 interface ArticleVisualProcessingProps {
   setCurrentArticle?: (article: string) => void;

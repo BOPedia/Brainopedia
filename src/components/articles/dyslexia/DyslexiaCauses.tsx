@@ -1,6 +1,6 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useState } from 'react';
-import geneticImage from 'figma:asset/a9a120e724df13759561aa3fe546e9617c1cc308.png';
+import geneticImage from '/images/a9a120e724df13759561aa3fe546e9617c1cc308.png';
 
 interface DyslexiaCausesProps {
   setCurrentArticle?: (article: string) => void;

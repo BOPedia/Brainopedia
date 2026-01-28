@@ -1,8 +1,8 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import hyperlexiaImage from 'figma:asset/5e485d0d75b4424a78e560ce127a6ca677639268.png';
-import hyperlexiaChildReading from 'figma:asset/5dfdaec15563b739c9f40a6512f9682ca5b9afbb.png';
+import hyperlexiaImage from '/images/5e485d0d75b4424a78e560ce127a6ca677639268.png';
+import hyperlexiaChildReading from '/images/5dfdaec15563b739c9f40a6512f9682ca5b9afbb.png';
 
 interface ArticleHyperlexiaProps {
   setCurrentArticle?: (article: string) => void;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import dldImage from 'figma:asset/e5aa1c91d15b554bfc036f61f0debc04257fec12.png';
+import dldImage from '/images/e5aa1c91d15b554bfc036f61f0debc04257fec12.png';
 
 interface ArticleDLDProps {
   setCurrentArticle?: (article: string) => void;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, DollarSign, Users, Target, Award } from 'lucide-react';
-import qrCode from 'figma:asset/b6434e53f2d58302aa45ca773e1fa0e3d713ea89.png';
+import qrCode from '/images/b6434e53f2d58302aa45ca773e1fa0e3d713ea89.png';
 
 export function ArticleDonate() {
   return (

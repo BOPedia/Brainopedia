@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import fasdImage from 'figma:asset/1d011b9fd9dff9b516b08c900c02c60d632f93fb.png';
+import fasdImage from '/images/1d011b9fd9dff9b516b08c900c02c60d632f93fb.png';
 
 interface ArticleFASDProps {
   setCurrentArticle?: (article: string) => void;

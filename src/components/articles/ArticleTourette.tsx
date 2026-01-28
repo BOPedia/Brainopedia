@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import touretteImage from 'figma:asset/eaf40b5716e1f46f61c2a0e17e23cb223d4d926e.png';
+import touretteImage from '/images/eaf40b5716e1f46f61c2a0e17e23cb223d4d926e.png';
 
 interface ArticleTouretteProps {
   setCurrentArticle?: (article: string) => void;

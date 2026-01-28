@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
-import repetitivePatternsImage from 'figma:asset/3bca43817fdb2da05071d4bc978f7b8bd4e69125.png';
-import socialEmotionalImage from 'figma:asset/185aa0ec788472cc7774c13d8f9f3f216bec0f0a.png';
-import brainImage from 'figma:asset/92af5c730b9fe6d62cf019735a854cb57a63b4eb.png';
-import colorWheelImage from 'figma:asset/9dcf69c82b94bc4abbfc5c89c8fded9e1bc136ee.png';
-import symptomChartImage from 'figma:asset/d5f369fc926c1b138bf96686f8c5268bab2f7d2a.png';
-import strengthsMandalaImage from 'figma:asset/6f8b245ffa120ddb41e21b105df21c7d4cb0fc7f.png';
-import definingAutismImage from 'figma:asset/c73e8f686fa50da01184b879d0b23514ef5d1f04.png';
+import repetitivePatternsImage from '/images/3bca43817fdb2da05071d4bc978f7b8bd4e69125.png';
+import socialEmotionalImage from '/images/185aa0ec788472cc7774c13d8f9f3f216bec0f0a.png';
+import brainImage from '/images/92af5c730b9fe6d62cf019735a854cb57a63b4eb.png';
+import colorWheelImage from '/images/9dcf69c82b94bc4abbfc5c89c8fded9e1bc136ee.png';
+import symptomChartImage from '/images/d5f369fc926c1b138bf96686f8c5268bab2f7d2a.png';
+import strengthsMandalaImage from '/images/6f8b245ffa120ddb41e21b105df21c7d4cb0fc7f.png';
+import definingAutismImage from '/images/c73e8f686fa50da01184b879d0b23514ef5d1f04.png';
 import { ASDReferences } from './ASDReferences';
 
 interface ASDSymptomsProps {

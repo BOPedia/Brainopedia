@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import twiceExceptionalImage from 'figma:asset/7be30e505bf2e27b0ae64fd97f23c3de91aac852.png';
+import twiceExceptionalImage from '/images/7be30e505bf2e27b0ae64fd97f23c3de91aac852.png';
 
 interface ArticleTwiceExceptionalProps {
   setCurrentArticle?: (article: string) => void;

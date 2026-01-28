@@ -1,14 +1,14 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import pathwayImage from 'figma:asset/cba952307644a4a9bd8d9b2eb6191c518d7a0e4c.png';
-import strengthsImage from 'figma:asset/d67e24ad3f183f11afd38a933510078397a01d14.png';
-import routinesImage from 'figma:asset/b09a49330910091cb5a0a50aff4d48797c7bc3a8.png';
-import financesImage from 'figma:asset/2946cc704a25712c32e89261453a96c7db5f7ba9.png';
-import relationshipsImage from 'figma:asset/2f957e2699bece3752b185ea354b169ad1228c30.png';
-import parentingImage from 'figma:asset/5c6a2defa5e53ea28a186aa9359d014e66fc77c8.png';
-import careerImage from 'figma:asset/3336ef26bc892d04e850470c281eb6c62289941c.png';
-import stigmaImage from 'figma:asset/b8c40dc6c8181a1a9175e7200116e6b2bef0df9b.png';
-import mentalHealthImage from 'figma:asset/42d00826297a04faa4db300e2733d94610075929.png';
-import futureImage from 'figma:asset/bd686e388eaa386207fb5315bb8a7b65b06e7ee7.png';
+import pathwayImage from '/images/cba952307644a4a9bd8d9b2eb6191c518d7a0e4c.png';
+import strengthsImage from '/images/d67e24ad3f183f11afd38a933510078397a01d14.png';
+import routinesImage from '/images/b09a49330910091cb5a0a50aff4d48797c7bc3a8.png';
+import financesImage from '/images/2946cc704a25712c32e89261453a96c7db5f7ba9.png';
+import relationshipsImage from '/images/2f957e2699bece3752b185ea354b169ad1228c30.png';
+import parentingImage from '/images/5c6a2defa5e53ea28a186aa9359d014e66fc77c8.png';
+import careerImage from '/images/3336ef26bc892d04e850470c281eb6c62289941c.png';
+import stigmaImage from '/images/b8c40dc6c8181a1a9175e7200116e6b2bef0df9b.png';
+import mentalHealthImage from '/images/42d00826297a04faa4db300e2733d94610075929.png';
+import futureImage from '/images/bd686e388eaa386207fb5315bb8a7b65b06e7ee7.png';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
 interface ADHDLivingProps {

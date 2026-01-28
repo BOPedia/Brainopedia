@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom';
 import { ADHDReferences } from '../references/ADHDReferences';
 import { TableOfContents } from '../TableOfContents';
 import { InfoBox } from '../InfoBox';
-import adhdImage from 'figma:asset/3889685cb85fd9bee48476494393ef2940339750.png';
-import adhdOverviewImage from 'figma:asset/4aa45e29b8c81acbb9ba32c0768c0e28315c784d.png';
-import definingAdhdVennDiagram from 'figma:asset/b0a8b69d81477e83e690927b011d023ac26469e1.png';
-import adhdCausesImage from 'figma:asset/befd8bb389589cdbd93b875375b4d570e6d6de51.png';
-import adhdDiagnosisImage from 'figma:asset/598cadf9949b46a43fff469bb561e7411de1670b.png';
-import adhdSupportImage from 'figma:asset/2855adbd5e061b5355748205fef35aa41a3735de.png';
-import adhdLivingImage from 'figma:asset/b7297824ac69ce73cda5a2e0157cb2f315a586f9.png';
+import adhdImage from '/images/3889685cb85fd9bee48476494393ef2940339750.png';
+import adhdOverviewImage from '/images/4aa45e29b8c81acbb9ba32c0768c0e28315c784d.png';
+import definingAdhdVennDiagram from '/images/b0a8b69d81477e83e690927b011d023ac26469e1.png';
+import adhdCausesImage from '/images/befd8bb389589cdbd93b875375b4d570e6d6de51.png';
+import adhdDiagnosisImage from '/images/598cadf9949b46a43fff469bb561e7411de1670b.png';
+import adhdSupportImage from '/images/2855adbd5e061b5355748205fef35aa41a3735de.png';
+import adhdLivingImage from '/images/b7297824ac69ce73cda5a2e0157cb2f315a586f9.png';
 
 interface ArticleADHDProps {
   setCurrentArticle?: (article: string) => void;

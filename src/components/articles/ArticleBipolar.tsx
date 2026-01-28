@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import bipolarImage from 'figma:asset/ff6f96615cae1f5b7b18d37ad8f679b488cf95c1.png';
+import bipolarImage from '/images/ff6f96615cae1f5b7b18d37ad8f679b488cf95c1.png';
 
 interface ArticleBipolarProps {
   setCurrentArticle?: (article: string) => void;

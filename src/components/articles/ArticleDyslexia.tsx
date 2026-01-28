@@ -1,13 +1,13 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import dyslexiaImage from 'figma:asset/3f8006057c26a391e992e5fbdc632ba4be698c66.png';
-import overviewImage from 'figma:asset/ed8a381cba01d6e949ed5b7a3c7bf7d95c9daed7.png';
-import symptomsImage from 'figma:asset/771a2adadaff739f49df6566cfa78bb3f80ef344.png';
-import causesImage from 'figma:asset/827e9e3b7c902e1ef2fdfe894ed7517cc0beac1a.png';
-import diagnosisImage from 'figma:asset/c8f8e0856d8a7fe18fe636ec42a7eb3ad40edeed.png';
-import supportImage from 'figma:asset/8f6108f5dd5606462bdb268c59e1a180dfcb892c.png';
-import livingImage from 'figma:asset/92827e171e7689ac7d60b4b58b1e995ef865afda.png';
+import dyslexiaImage from '/images/3f8006057c26a391e992e5fbdc632ba4be698c66.png';
+import overviewImage from '/images/ed8a381cba01d6e949ed5b7a3c7bf7d95c9daed7.png';
+import symptomsImage from '/images/771a2adadaff739f49df6566cfa78bb3f80ef344.png';
+import causesImage from '/images/827e9e3b7c902e1ef2fdfe894ed7517cc0beac1a.png';
+import diagnosisImage from '/images/c8f8e0856d8a7fe18fe636ec42a7eb3ad40edeed.png';
+import supportImage from '/images/8f6108f5dd5606462bdb268c59e1a180dfcb892c.png';
+import livingImage from '/images/92827e171e7689ac7d60b4b58b1e995ef865afda.png';
 
 interface ArticleDyslexiaProps {
   setCurrentArticle?: (article: string) => void;

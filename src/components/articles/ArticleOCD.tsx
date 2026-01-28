@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import ocdImage from 'figma:asset/67721401b11f0afd2ac69acc2ef4b677ea16b64f.png';
+import ocdImage from '/images/67721401b11f0afd2ac69acc2ef4b677ea16b64f.png';
 
 interface ArticleOCDProps {
   setCurrentArticle?: (article: string) => void;

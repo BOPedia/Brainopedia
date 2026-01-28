@@ -1,7 +1,7 @@
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import giftednessImage from 'figma:asset/ecca5f9e31d913d7a3c4925f7d502fd0994f7d2a.png';
-import giftednessLivingImage from 'figma:asset/819980b817af84f4f708c7ded0e22c8be4ae8328.png';
+import giftednessImage from '/images/ecca5f9e31d913d7a3c4925f7d502fd0994f7d2a.png';
+import giftednessLivingImage from '/images/819980b817af84f4f708c7ded0e22c8be4ae8328.png';
 
 interface ArticleGiftednessProps {
   setCurrentArticle?: (article: string) => void;

@@ -1,5 +1,5 @@
 import React from 'react';
-import brainLogo from 'figma:asset/ce1a0a7ac18baefc58bab97613f60d741aaa593d.png';
+import brainLogo from '/images/ce1a0a7ac18baefc58bab97613f60d741aaa593d.png';
 
 export function ADHDTreatmentApproach() {
   return (

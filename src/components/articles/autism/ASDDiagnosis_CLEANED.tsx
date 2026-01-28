@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import definingAutismImage from 'figma:asset/9767a731c47146a94d04e907767143b26c5c976a.png';
-import audhDiagramImage from 'figma:asset/33ec4ce1f032f45020d6681c6d2e7e162d97967c.png';
-import audhdInfinityImage from 'figma:asset/c508b95480ef80885422135128a7d5f7a9968343.png';
-import audhdEnergyInfinityImage from 'figma:asset/9c29924961f4fb97c11ad6ba6f3dc99fcbbbea44.png';
-import audhdLightningInfinityImage from 'figma:asset/d5eeece90936198ad7fbad451348d968c5c1a2e0.png';
-import audhdSplitFaceImage from 'figma:asset/780399a7b16de39744e0dfc36e0beff5119d96b9.png';
-import audhdRainbowBrainImage from 'figma:asset/fa7e8c8312160f1735084c1ed35ee2c14c605c62.png';
+import definingAutismImage from '/images/9767a731c47146a94d04e907767143b26c5c976a.png';
+import audhDiagramImage from '/images/33ec4ce1f032f45020d6681c6d2e7e162d97967c.png';
+import audhdInfinityImage from '/images/c508b95480ef80885422135128a7d5f7a9968343.png';
+import audhdEnergyInfinityImage from '/images/9c29924961f4fb97c11ad6ba6f3dc99fcbbbea44.png';
+import audhdLightningInfinityImage from '/images/d5eeece90936198ad7fbad451348d968c5c1a2e0.png';
+import audhdSplitFaceImage from '/images/780399a7b16de39744e0dfc36e0beff5119d96b9.png';
+import audhdRainbowBrainImage from '/images/fa7e8c8312160f1735084c1ed35ee2c14c605c62.png';
 import { ASDReferences, AuDHDReferences } from './ASDReferences';
 
 interface ASDDiagnosisProps {

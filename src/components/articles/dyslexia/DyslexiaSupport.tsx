@@ -1,6 +1,6 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useState } from 'react';
-import technologyImage from 'figma:asset/3b8cbe93ad3ea9f7b9fd78d6ca36be67f97a9e99.png';
+import technologyImage from '/images/3b8cbe93ad3ea9f7b9fd78d6ca36be67f97a9e99.png';
 
 interface DyslexiaSupportProps {
   setCurrentArticle?: (article: string) => void;

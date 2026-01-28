@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import epilepsyImage from 'figma:asset/80d4eec68c37a9bfafe97b2169d498260562471d.png';
+import epilepsyImage from '/images/80d4eec68c37a9bfafe97b2169d498260562471d.png';
 
 interface ArticleEpilepsyProps {
   setCurrentArticle?: (article: string) => void;

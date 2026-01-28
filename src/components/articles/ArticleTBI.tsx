@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import tbiImage from 'figma:asset/151be65d989df3a370a653de48251f7afb21b7c5.png';
+import tbiImage from '/images/151be65d989df3a370a653de48251f7afb21b7c5.png';
 
 interface ArticleTBIProps {
   setCurrentArticle?: (article: string) => void;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import downSyndromeImage from 'figma:asset/e961b82ec21aae97ce6fcbb122eb3844a5a84680.png';
+import downSyndromeImage from '/images/e961b82ec21aae97ce6fcbb122eb3844a5a84680.png';
 
 interface ArticleDownSyndromeProps {
   setCurrentArticle?: (article: string) => void;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import apdImage from 'figma:asset/9b7842b6141d782eff95329b5e7bd138c29c83ca.png';
+import apdImage from '/images/9b7842b6141d782eff95329b5e7bd138c29c83ca.png';
 
 interface ArticleAPDProps {
   setCurrentArticle?: (article: string) => void;

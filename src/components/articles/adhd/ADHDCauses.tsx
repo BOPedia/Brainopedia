@@ -1,13 +1,13 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import dnaImage from 'figma:asset/35401594f5271eb6ffe593fab4f689790f2a9ddc.png';
-import geneticsTreeImage from 'figma:asset/9759f811da820d0e2d21cb9d46720ea250db4c2f.png';
-import brainAnatomyImage from 'figma:asset/c894cde8a6ff6f93903ce6650915656cb01c1eb9.png';
-import neuronImage from 'figma:asset/62ed4e49bf1dbdb65df8f172e4e46c32afb854ed.png';
-import environmentalImage from 'figma:asset/7edb982eb3be38c799f395add2636e312a645603.png';
-import geneEnvironmentImage from 'figma:asset/6093266e331941ccb3b9ff07e9b1dd297377a26c.png';
-import prenatalFactorsImage from 'figma:asset/2fcd4922eeee2f593cfdeaea44ef60d932bcd315.png';
-import earlyLifeImage from 'figma:asset/aa5157bd9c05a7eb46fea9a301b2ba4ae172ea8b.png';
-import riskCausationImage from 'figma:asset/d398e61c21ca18805498513c61274ab2ccdc81f2.png';
+import dnaImage from '/images/35401594f5271eb6ffe593fab4f689790f2a9ddc.png';
+import geneticsTreeImage from '/images/9759f811da820d0e2d21cb9d46720ea250db4c2f.png';
+import brainAnatomyImage from '/images/c894cde8a6ff6f93903ce6650915656cb01c1eb9.png';
+import neuronImage from '/images/62ed4e49bf1dbdb65df8f172e4e46c32afb854ed.png';
+import environmentalImage from '/images/7edb982eb3be38c799f395add2636e312a645603.png';
+import geneEnvironmentImage from '/images/6093266e331941ccb3b9ff07e9b1dd297377a26c.png';
+import prenatalFactorsImage from '/images/2fcd4922eeee2f593cfdeaea44ef60d932bcd315.png';
+import earlyLifeImage from '/images/aa5157bd9c05a7eb46fea9a301b2ba4ae172ea8b.png';
+import riskCausationImage from '/images/d398e61c21ca18805498513c61274ab2ccdc81f2.png';
 import { ADHDMyths } from '../../infographics/ADHDMyths';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
