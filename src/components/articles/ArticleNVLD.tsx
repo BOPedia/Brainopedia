@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import nvldImage from '/images/24fa4bd6be32eb6b5926655ff7a54b635e91d2da.png';
 
 interface ArticleNVLDProps {
   setCurrentArticle?: (article: string) => void;

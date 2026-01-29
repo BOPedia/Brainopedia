@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import schizophreniaImage from '/images/9f3673c5fa85a929463d88f30ff351806ce7f957.png';
 
 interface ArticleSchizophreniaProps {
   setCurrentArticle?: (article: string) => void;

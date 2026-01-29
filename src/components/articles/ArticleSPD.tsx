@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import spdImage from '/images/175d298412141150c51aa6cd0b611d60096a97f5.png';
 
 interface ArticleSPDProps {
   setCurrentArticle?: (article: string) => void;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Search, Menu } from 'lucide-react';
-import logo from '/images/3f23ec97e0ba53373363beef57afa46eaf27e348.png';
 
 interface HeaderProps {
   searchQuery: string;

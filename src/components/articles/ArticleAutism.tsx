@@ -1,15 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import autismImage from '/images/3a7dcb09116104195e5e8a37e185103749d6b928.png';
-import headTreeImage from '/images/5f11e56c270c5efb90c51c5ae58341793f69b892.png';
-import infinityImage from '/images/126d67e86c70ea337968a740b9a3620f270ac828.png';
-import definingAutismImage from '/images/c8896b2045cb9a0216439e3db10a90868b353bf6.png';
-import causesImage from '/images/488067e40418115ac50daf188a385765d6d4ec8e.png';
-import diagnosticImage from '/images/13a8ccef05828b80bb5455b56f7d9831b3528cfe.png';
-import supportImage from '/images/e351c385946b6f97d01ee18365cbc391b2ab1fbf.png';
-import livingImage from '/images/47b3302e9f3e75c1e604c8b94c69f362fa414bb0.png';
-import overviewImage from '/images/5cbfd882ed6ad64741b6f6a5ec57f173f973ac2d.png';
 import { ASDReferences } from './autism/ASDReferences';
 
 interface ArticleAutismProps {

@@ -1,15 +1,4 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import diagnosticImage from '/images/1633ca9bea59b4a3b3e6b7087c479ee2360f3c66.png';
-import medicalHistoryImage from '/images/13509ca3eb0e859780ec761411a2f35349774273.png';
-import diagnosticChallengesImage from '/images/dc8813866664b088af6ab645df5ef5d3699cf358.png';
-import treatmentRoadmapImage from '/images/6d14691114fd0d1363978e24997dce57afb96618.png';
-import adultDiagnosisImage from '/images/81570279914c41152278b5a853728e4705e84424.png';
-import audhDiagramImage from '/images/33ec4ce1f032f45020d6681c6d2e7e162d97967c.png';
-import audhdInfinityImage from '/images/9522bb5b80697a394d3085c97b3a065b760f50d9.png';
-import audhdLightningInfinityImage from '/images/67726bc2825ca35cab087855bb90d3dff1a7574a.png';
-import audhdSplitFaceImage from '/images/780399a7b16de39744e0dfc36e0beff5119d96b9.png';
-import audhdRainbowBrainImage from '/images/fa7e8c8312160f1735084c1ed35ee2c14c605c62.png';
-import audhdAbstractArtImage from '/images/8a38b0193430013fb5adb9caa4f9c9e4981c6637.png';
 import { ADHDComorbidities } from '../../infographics/ADHDComorbidities';
 import { ADHDDiagnosticProfessionals } from '../../infographics/ADHDDiagnosticProfessionals';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';

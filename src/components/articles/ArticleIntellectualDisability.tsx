@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import intellectualDisabilityImage from '/images/2c7d0c6170f6732288fee085a62b767ed61760c2.png';
 
 interface ArticleIntellectualDisabilityProps {
   setCurrentArticle?: (article: string) => void;

@@ -1,17 +1,5 @@
 import React from 'react';
 import { BookOpen, List, Users, Target, Lightbulb, FileText } from 'lucide-react';
-import encyclopediaBanner from '/images/7357358d72fe1fb7f53c3130d76c02d547efffb6.png';
-import brainImage from '/images/239b4c37a5826a7f2a0f9787051f19aaac142e02.png';
-import brainGears from '/images/8b8668672575c8c3d6d984305fdad6d507e1e179.png';
-import neuralApple from '/images/2e6ce66b550d5b59ddd23656eb6ce0a0c613162f.png';
-import brainMagnifier from '/images/bbc6cfb66d8d22293db2c0c29c993f771c179459.png';
-import brainMathArt from '/images/7575e1d72da022b1128e78b8d839ddb2c7fc475c.png';
-import brainGearsArt from '/images/20785ad646b1cc6f8d6146a4acd5ec5f826e6dc0.png';
-import brainSensoryArt from '/images/7575e1d72da022b1128e78b8d839ddb2c7fc475c.png';
-import motorArt from '/images/d3079405a57090829b43301833a93e581e35ab95.png';
-import mentalHealthArt from '/images/6f7a1349d59a50ab297a83942c71150c5bfb3f87.png';
-import geneticsArt from '/images/a36126fc9b7bad2cd58a870d8c8bb85f6eb95773.png';
-import acquiredArt from '/images/fd4f664a5ec9eaa4897a4fd2df07292e56817a5e.png';
 
 interface ArticleAboutProps {
   setCurrentArticle?: (article: string) => void;

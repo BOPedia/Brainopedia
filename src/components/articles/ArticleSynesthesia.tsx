@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import synesthesiaImage from '/images/59d3bd7002f80f358afa037971a047cb59fba71c.png';
 
 interface ArticleSynesthesiaProps {
   setCurrentArticle?: (article: string) => void;

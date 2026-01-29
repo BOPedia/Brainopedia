@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import misophoniaImage from '/images/6be2449498fa3241d6f119f049cff4ee9c9825c3.png';
 
 interface ArticleMisophoniaProps {
   setCurrentArticle?: (article: string) => void;

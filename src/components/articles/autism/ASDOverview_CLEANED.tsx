@@ -1,10 +1,4 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import headTreeImage from '/images/5f11e56c270c5efb90c51c5ae58341793f69b892.png';
-import infinityImage from '/images/126d67e86c70ea337968a740b9a3620f270ac828.png';
-import definingAutismImage from '/images/c8896b2045cb9a0216439e3db10a90868b353bf6.png';
-import neurodivergentLabelsImage from '/images/224cc229fa47d1db015cf78ef29cc023eb50283e.png';
-import geneticsAutismImage from '/images/127d0e147a05b84fa543a291ecdf395f2bd1585f.png';
-import spectrumInfinityImage from '/images/80f980a91e409ad3ab174de92f34d3587fa20024.png';
 import { ASDReferences } from './ASDReferences';
 
 interface ASDOverviewProps {

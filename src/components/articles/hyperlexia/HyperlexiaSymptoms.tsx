@@ -1,8 +1,4 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import hyperlexiaChildReading from '/images/5dfdaec15563b739c9f40a6512f9682ca5b9afbb.png';
-import wordsBlocks from '/images/ff61b1e81bf750d71decc70202750f66faf84dc9.png';
-import comprehensionDeficits from '/images/c5136c35f7191ad4bcc0f1c013d7ebe9c7357017.png';
-import echolaliaGraphic from '/images/546a047f35ad2055df9665e27532662bb48773d0.png';
 
 interface HyperlexiaSymptomsProps {
   setCurrentArticle?: (article: string) => void;

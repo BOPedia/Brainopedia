@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import pandasImage from '/images/236842d8bf3cf7367fd3efe2f1c4ee71f099fc48.png';
 
 interface ArticlePANDASProps {
   setCurrentArticle?: (article: string) => void;

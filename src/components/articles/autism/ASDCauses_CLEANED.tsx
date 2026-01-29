@@ -1,9 +1,4 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import causesImage from '/images/a9cce7bea47f1c966a48c985063d51df462aaa01.png';
-import environmentalImage from '/images/0b8a9c3179a24b3b9110d098d020ad61a17bdca3.png';
-import geneticsImage from '/images/dfd3015389950f3e4bb30963aca62d911f751587.png';
-import brainConnectivityImage from '/images/09b10677f14615c2501e28ae993bcae2a92ed2c2.png';
-import vaccineImage from '/images/bbec65a6e17d2bacfeec4eac5f31f573ca2accd7.png';
 import { useState } from 'react';
 import { ASDReferences } from './ASDReferences';
 

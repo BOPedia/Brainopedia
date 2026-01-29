@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import cteImage from '/images/5b4a6c3d61ef0b9eb995d5a17570cb34e2a01c90.png';
 
 interface ArticleCTEProps {
   setCurrentArticle?: (article: string) => void;

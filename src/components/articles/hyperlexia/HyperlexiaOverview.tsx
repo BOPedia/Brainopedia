@@ -1,6 +1,5 @@
 import React from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import autismHyperlexiaConnectionImage from '/images/cd5bd6c1c83963ee8e3e230fd47bd8aea047dc6c.png';
 
 interface HyperlexiaOverviewProps {
   setCurrentArticle?: (article: string) => void;

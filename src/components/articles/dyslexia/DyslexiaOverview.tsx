@@ -1,7 +1,5 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useState } from 'react';
-import dyslexiaHeroImage from '/images/20d85079837e56566282ae526b7653d98192ce1a.png';
-import brainImage from '/images/f95b130fc411c648852280a75f4b4f82892469be.png';
 
 interface DyslexiaOverviewProps {
   setCurrentArticle?: (article: string) => void;

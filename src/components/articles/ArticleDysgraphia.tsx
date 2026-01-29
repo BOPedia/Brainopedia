@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import dysgraphiaImage from '/images/4c6408e083e5f03e1b7a9f221cfce0c6c8d5cf97.png';
 
 interface ArticleDysgraphiaProps {
   setCurrentArticle?: (article: string) => void;
