@@ -1,5 +1,16 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
+import pathwayImage from '/images/adhd-pathway.png';
+import strengthsImage from '/images/adhd-strengths.png';
+import routinesImage from '/images/adhd-routines.png';
+import financesImage from '/images/adhd-finances.png';
+import relationshipsImage from '/images/adhd-relationships.png';
+import parentingImage from '/images/adhd-parenting.png';
+import careerImage from '/images/adhd-career.png';
+import stigmaImage from '/images/adhd-stigma.png';
+import mentalHealthImage from '/images/adhd-mental-health.png';
+import futureImage from '/images/adhd-future.png';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
 interface ADHDLivingProps {
   setCurrentArticle?: (article: string) => void;

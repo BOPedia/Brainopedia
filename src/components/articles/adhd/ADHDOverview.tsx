@@ -1,5 +1,9 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDOverviewReferences } from '../../references/ADHDOverviewReferences';
+import adhdOverviewImage from '/images/adhd-overview.png';
+import definingAdhdDiagram from '/images/adhd-venn.png';
+import executiveFunctionImage from '/images/adhd-executive-function.png';
+import { ADHDOverviewReferences } from '../../references/ADHDOverviewReferences';
 
 interface ADHDOverviewProps {
   setCurrentArticle?: (article: string) => void;

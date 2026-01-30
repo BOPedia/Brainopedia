@@ -3,6 +3,25 @@ import { ADHDSymptomsCoreReferences } from '../../references/ADHDSymptomsCoreRef
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
 import { Hand, ArrowUpFromLine, Mountain, VolumeX, Zap, MessageSquare, Baby, GraduationCap, Briefcase, MessageCircle, Users, ShoppingCart, AlertTriangle, TrendingUp, Clock, EarOff, FileX, FolderOpen, Brain, Search, Wind, CalendarX } from 'lucide-react';
+import coreSymptomsImage from '/images/adhd-core-symptoms.png';
+import inattentionImage from '/images/adhd-inattention.png';
+import inattentionAgesImage from '/images/adhd-inattention-ages.png';
+import hyperactivityImage from '/images/adhd-hyperactivity.png';
+import hyperactivityLifespanImage from '/images/adhd-hyperactivity-lifespan.png';
+import impulsivityImage from '/images/adhd-impulsivity.png';
+import impulsivityExamplesImage from '/images/adhd-impulsivity-examples.png';
+import symptomWheelImage from '/images/adhd-symptom-wheel.png';
+import rsdSocialRejectionImage from '/images/adhd-rsd-social-rejection.png';
+import rsdHeartImage from '/images/adhd-rsd-heart.png';
+import rejectedTypewriterImage from '/images/adhd-rejected-typewriter.png';
+import emotionalExplosionImage from '/images/adhd-emotional-explosion.png';
+import positiveSelfTalkImage from '/images/adhd-positive-self-talk.png';
+import diversityImage from '/images/adhd-diversity.png';
+import girlStudyingImage from '/images/adhd-girl-studying.png';
+import { ADHDSymptomsCoreReferences } from '../../references/ADHDSymptomsCoreReferences';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
+import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
+import { Hand, ArrowUpFromLine, Mountain, VolumeX, Zap, MessageSquare, Baby, GraduationCap, Briefcase, MessageCircle, Users, ShoppingCart, AlertTriangle, TrendingUp, Clock, EarOff, FileX, FolderOpen, Brain, Search, Wind, CalendarX } from 'lucide-react';
 
 interface ADHDSymptomsProps {
   setCurrentArticle?: (article: string) => void;

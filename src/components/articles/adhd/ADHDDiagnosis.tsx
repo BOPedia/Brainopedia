@@ -2,6 +2,17 @@ import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDComorbidities } from '../../infographics/ADHDComorbidities';
 import { ADHDDiagnosticProfessionals } from '../../infographics/ADHDDiagnosticProfessionals';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
+import diagnosticImage from '/images/adhd-diagnostic.png';
+import adultDiagnosisImage from '/images/adhd-adult-diagnosis.png';
+import diagnosticChallengesImage from '/images/adhd-diagnostic-challenges.png';
+import treatmentRoadmapImage from '/images/adhd-treatment-roadmap.png';
+import audhdAbstractArtImage from '/images/audh-abstract-art.png';
+import audhdLightningInfinityImage from '/images/audh-lightning-infinity.png';
+import audhdSplitFaceImage from '/images/audh-split-face.png';
+import audhdRainbowBrainImage from '/images/audh-rainbow-brain.png';
+import { ADHDComorbidities } from '../../infographics/ADHDComorbidities';
+import { ADHDDiagnosticProfessionals } from '../../infographics/ADHDDiagnosticProfessionals';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
 interface ADHDDiagnosisProps {
   setCurrentArticle?: (article: string) => void;

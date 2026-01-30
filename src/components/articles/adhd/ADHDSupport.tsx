@@ -3,6 +3,16 @@ import { ADHDMedicationComparison } from '../../infographics/ADHDMedicationCompa
 import { ADHDTreatmentApproach } from '../../infographics/ADHDTreatmentApproach';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { Pill, BrainCircuit, GraduationCap, Heart, Users, Settings } from 'lucide-react';
+import supportImage from '/images/adhd-support-main.png';
+import medicationImage from '/images/adhd-medication.png';
+import therapyImage from '/images/adhd-therapy.png';
+import ostImage from '/images/adhd-organizational-skills-training.png';
+import workplaceImage from '/images/adhd-workplace.png';
+import orgToolsImage from '/images/adhd-organizational-tools.png';
+import { ADHDMedicationComparison } from '../../infographics/ADHDMedicationComparison';
+import { ADHDTreatmentApproach } from '../../infographics/ADHDTreatmentApproach';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
+import { Pill, BrainCircuit, GraduationCap, Heart, Users, Settings } from 'lucide-react';
 
 interface ADHDSupportProps {
   setCurrentArticle?: (article: string) => void;

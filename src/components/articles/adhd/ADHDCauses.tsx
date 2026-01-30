@@ -1,6 +1,17 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDMyths } from '../../infographics/ADHDMyths';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
+import dnaImage from '/images/adhd-dna.png';
+import geneEnvironmentImage from '/images/adhd-gene-environment.png';
+import geneticsTreeImage from '/images/adhd-genetics-tree.png';
+import brainAnatomyImage from '/images/adhd-brain-anatomy.png';
+import neuronImage from '/images/adhd-neuron.png';
+import environmentalImage from '/images/adhd-environmental.png';
+import prenatalFactorsImage from '/images/adhd-prenatal-factors.png';
+import earlyLifeImage from '/images/adhd-early-life.png';
+import riskCausationImage from '/images/adhd-risk-causation.png';
+import { ADHDMyths } from '../../infographics/ADHDMyths';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
 interface ADHDCausesProps {
   setCurrentArticle?: (article: string) => void;

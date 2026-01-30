@@ -1,10 +1,14 @@
 #!/bin/bash
+# Fix all versioned imports in components/ui folder
 
-# Navigate to the repo
-cd /Users/stephanietharp/Downloads/brainopedia-clean
+for file in src/components/ui/*.tsx src/components/ui/*.ts; do
+  if [ -f "$file" ]; then
+    # Remove version suffixes from all imports
+    sed -i '' 's/@radix-ui\/react-\([a-z-]*\)@[0-9.]*/@radix-ui\/react-\1/g' "$file"
+    sed -i '' 's/lucide-react@[0-9.]*/lucide-react/g' "$file"
+    sed -i '' 's/class-variance-authority@[0-9.]*/class-variance-authority/g' "$file"
+    echo "Fixed: $file"
+  fi
+done
 
-# Find all .tsx files and remove the broken import lines
-find src/ -name "*.tsx" -type f -exec sed -i '' "/import.*from '\/images\//d" {} +
-
-echo "✅ All broken image imports removed!"
-echo "Now run: git add . && git commit -m 'Remove broken image imports' && git push origin main"
+echo "All imports fixed!"
