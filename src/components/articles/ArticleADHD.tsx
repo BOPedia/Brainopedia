@@ -90,7 +90,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           {/* Image: adhd-main.png - add to public/images/ to restore */}
           <InfoBox
             title="ADHD"
-            image="/images/ADHD-infobox-icon.png"
+            image="/images/adhd-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Attention deficit disorder (ADD), Hyperkinetic disorder' },
               { label: 'Specialty', value: 'Psychiatry, Pediatrics' },
