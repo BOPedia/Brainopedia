@@ -1,23 +1,3 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { ADHDSymptomsCoreReferences } from '../../references/ADHDSymptomsCoreReferences';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
-import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
-import { Hand, ArrowUpFromLine, Mountain, VolumeX, Zap, MessageSquare, Baby, GraduationCap, Briefcase, MessageCircle, Users, ShoppingCart, AlertTriangle, TrendingUp, Clock, EarOff, FileX, FolderOpen, Brain, Search, Wind, CalendarX } from 'lucide-react';
-import coreSymptomsImage from '/images/adhd-core-symptoms.png';
-import inattentionImage from '/images/adhd-inattention.png';
-import inattentionAgesImage from '/images/adhd-inattention-ages.png';
-import hyperactivityImage from '/images/adhd-hyperactivity.png';
-import hyperactivityLifespanImage from '/images/adhd-hyperactivity-lifespan.png';
-import impulsivityImage from '/images/adhd-impulsivity.png';
-import impulsivityExamplesImage from '/images/adhd-impulsivity-examples.png';
-import symptomWheelImage from '/images/adhd-symptom-wheel.png';
-import rsdSocialRejectionImage from '/images/adhd-rsd-social-rejection.png';
-import rsdHeartImage from '/images/adhd-rsd-heart.png';
-import rejectedTypewriterImage from '/images/adhd-rejected-typewriter.png';
-import emotionalExplosionImage from '/images/adhd-emotional-explosion.png';
-import positiveSelfTalkImage from '/images/adhd-positive-self-talk.png';
-import diversityImage from '/images/adhd-diversity.png';
-import girlStudyingImage from '/images/adhd-girl-studying.png';
 import { ADHDSymptomsCoreReferences } from '../../references/ADHDSymptomsCoreReferences';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
@@ -113,13 +93,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
               <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Symptoms of ADHD</h2>
               
-              <div className="flex justify-center mb-6">
-                <img 
-                  src={coreSymptomsImage} 
-                  alt="Neural network visualization representing the core symptoms of ADHD"
-                  className="w-64 h-auto rounded-md border border-gray-300"
-                />
-              </div>
+
               
               <p className="mb-4">
                 ADHD is characterized by a persistent pattern of inattention, hyperactivity, and impulsivity that 
@@ -146,13 +120,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
             <div className="bg-[#f0f9ff] p-6 rounded-lg">
               <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Defining ADHD: DSM-5-TR Diagnostic Criteria</h2>
               
-              <div className="flex justify-center mb-6">
-                <img 
-                  src={definingAdhdCriteria} 
-                  alt="Defining ADHD - DSM-5-TR criteria showing inattention and impulsivity/hyperactivity symptoms for ADHD combined type diagnosis"
-                  className="w-full h-auto rounded-md border border-gray-300"
-                />
-              </div>
+
               
               <p className="mb-4">
                 The diagram above illustrates the complete DSM-5-TR diagnostic criteria<sup>[1]</sup> for ADHD, showing the specific 
@@ -382,13 +350,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Inattention Symptoms</h2>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={inattentionImage} 
-                alt="Inattention symptoms infographic"
-                className="w-64 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
             
             <p className="mb-6">
               The inattentive presentation is characterized by difficulty sustaining attention and organizational 
@@ -494,13 +456,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Inattention Manifests Across Ages</h3>
               
-              <div className="flex justify-center mb-6">
-                <img 
-                  src={inattentionAgesImage} 
-                  alt="Concentration and focus challenges across different ages"
-                  className="w-64 h-auto rounded-md border border-gray-300"
-                />
-              </div>
+
               
               {/* Timeline */}
               <div className="relative">
@@ -656,13 +612,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Hyperactivity Symptoms</h2>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={hyperactivityImage} 
-                alt="Children running with backpacks illustrating hyperactivity symptoms in ADHD"
-                className="w-64 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
             
             <p className="mb-6">
               Hyperactivity involves excessive motor activity and restlessness. While often associated with children, 
@@ -737,13 +687,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hyperactivity Across the Lifespan</h3>
               
-              <div className="flex justify-center mb-6">
-                <img 
-                  src={hyperactivityLifespanImage} 
-                  alt="People of different ages running, illustrating hyperactivity across the lifespan in ADHD"
-                  className="w-64 h-auto rounded-md border border-gray-300"
-                />
-              </div>
+
               
               {/* Timeline */}
               <div className="relative">
@@ -913,13 +857,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Impulsivity Symptoms</h2>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={impulsivityImage} 
-                alt="Impulsive decision-making illustration"
-                className="w-64 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
             
             <p className="mb-6">
               Impulsivity involves acting without forethought or consideration of consequences. It reflects difficulty 
@@ -1003,13 +941,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Impulsivity Across the Lifespan</h3>
               
-              <div className="flex justify-center mb-6">
-                <img 
-                  src={impulsivityExamplesImage} 
-                  alt="Impulsivity across different life stages"
-                  className="w-64 h-auto rounded-md border border-gray-300"
-                />
-              </div>
+
               
               {/* Timeline */}
               <div className="relative">
@@ -1255,13 +1187,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
             
             <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Examining Additional Unofficial Symptoms of ADHD</h3>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={symptomWheelImage}
-                alt="Symptom wheel showing the full spectrum of ADHD symptoms rated from 0 (zero symptoms) to 10 (maximum symptoms)"
-                className="w-full h-auto rounded-md"
-              />
-            </div>
+
             
             <p className="mb-4">
               While the DSM-5-TR focuses on the three core symptoms of inattention, hyperactivity, and impulsivity (covered 
@@ -1864,13 +1790,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
         {/* RSD Tab */}
         <TabsContent value="rsd" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <div className="flex justify-center mb-6">
-              <img 
-                src={rsdSocialRejectionImage} 
-                alt="Hand drawing red X over sad stick figure among happy stick figures on cyan background representing social rejection"
-                className="w-64 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
             
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
             
@@ -1929,13 +1849,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
               </div>
             </div>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={rsdHeartImage} 
-                alt="Heart with a face illustration representing rejection sensitive dysphoria in ADHD"
-                className="w-64 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What RSD Looks Like</h3>
@@ -1972,13 +1886,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
               </div>
             </div>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={rejectedTypewriterImage} 
-                alt="Typewriter with the word 'Rejected' typed on yellow-bordered paper"
-                className="w-64 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Why RSD Happens with ADHD</h3>
@@ -2005,13 +1913,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
               </div>
             </div>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={emotionalExplosionImage} 
-                alt="Artistic representation of emotional explosion with person silhouette and vibrant colors symbolizing intense RSD emotions"
-                className="w-64 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common RSD Triggers</h3>
@@ -2028,13 +1930,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
               </ul>
             </div>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={positiveSelfTalkImage} 
-                alt="Positive self-talk colorful graphic with flowers and hearts on yellow background"
-                className="w-64 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Coping Strategies for RSD</h3>
@@ -2142,13 +2038,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
                 may also resonate with individuals across the gender spectrum.
               </p>
               
-              <div className="flex justify-center mt-4">
-                <img 
-                  src={diversityImage} 
-                  alt="Artistic representation of diverse people across the gender spectrum"
-                  className="w-64 h-auto rounded-md border border-gray-300"
-                />
-              </div>
+
             </div>
             
             <p className="mb-6">
@@ -2228,13 +2118,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
                 </div>
               </div>
               
-              <div className="flex justify-center my-4">
-                <img 
-                  src={girlStudyingImage} 
-                  alt="Girl studying and taking notes at desk with laptop"
-                  className="w-64 h-auto rounded-md border border-gray-300"
-                />
-              </div>
+
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Social and Emotional Aspects:</div>
@@ -2301,13 +2185,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
                 </div>
               </div>
               
-              <div className="flex justify-center my-4">
-                <img 
-                  src={businessWomanImage} 
-                  alt="Professional woman working at desk with laptop and phone"
-                  className="w-64 h-auto rounded-md border border-gray-300"
-                />
-              </div>
+
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Mental Health Considerations:</div>
@@ -2399,11 +2277,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
               </p>
             </div>
 
-            <img 
-              src={notActuallyADHDImage} 
-              alt="Social media engagement - representing ADHD misinformation online"
-              className="w-64 mx-auto rounded-md border border-gray-300 mb-6"
-            />
+
 
             {/* NOT Actually ADHD */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -2464,13 +2338,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
             </div>
 
             {/* Needs More Research */}
-            <div className="flex justify-center my-4">
-              <img 
-                src={researchDeskImage} 
-                alt="Person studying with laptop and books on desk"
-                className="w-64 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
 
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Needs MUCH More Research / Overstated</h3>
@@ -2486,11 +2354,6 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
                 </div>
 
                 <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <img 
-                    src={daydreamImage} 
-                    alt="Person daydreaming"
-                    className="w-64 h-auto rounded mb-2"
-                  />
                   <div className="font-bold text-[#0c264d] mb-1">Maladaptive Daydreaming</div>
                   <div className="text-sm">
                     This is being studied as a separate condition, not specifically an ADHD symptom. While people with 
@@ -2548,8 +2411,8 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
                 </div>
 
                 <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <img 
-                    src={justiceImage} 
+                  <ImageWithFallback 
+                    src="/images/adhd-justice.png"
                     alt="Lady Justice statue"
                     className="w-64 h-auto rounded mb-2"
                   />

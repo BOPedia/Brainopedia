@@ -1,15 +1,3 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { ADHDMyths } from '../../infographics/ADHDMyths';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
-import dnaImage from '/images/adhd-dna.png';
-import geneEnvironmentImage from '/images/adhd-gene-environment.png';
-import geneticsTreeImage from '/images/adhd-genetics-tree.png';
-import brainAnatomyImage from '/images/adhd-brain-anatomy.png';
-import neuronImage from '/images/adhd-neuron.png';
-import environmentalImage from '/images/adhd-environmental.png';
-import prenatalFactorsImage from '/images/adhd-prenatal-factors.png';
-import earlyLifeImage from '/images/adhd-early-life.png';
-import riskCausationImage from '/images/adhd-risk-causation.png';
 import { ADHDMyths } from '../../infographics/ADHDMyths';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
@@ -23,12 +11,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding the Causes of ADHD</h2>
-          
-          <img 
-            src={dnaImage} 
-            alt="Glowing DNA double helix representing the genetic basis of ADHD"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             The exact cause of ADHD remains under investigation, but research suggests a combination of genetic, 
@@ -46,12 +28,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
 
         <div className="clear-both pt-6">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Gene-Environment Interactions</h2>
-          
-          <ImageWithFallback 
-            src={geneEnvironmentImage} 
-            alt="Nature environment representing gene-environment interactions"
-            className="w-80 h-auto rounded-md border border-gray-300 md:float-none lg:float-right md:mx-auto lg:ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Modern research increasingly recognizes that genes and environment interact in complex ways<sup style={{color: '#10b981'}}>[3]</sup>. Someone 
@@ -106,12 +82,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetics and Heredity</h2>
-        
-        <img 
-          src={geneticsTreeImage} 
-          alt="Glowing family tree with illuminated nodes representing genetic inheritance patterns of ADHD"
-          className="w-96 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-        />
         
         <p className="mb-4">
           ADHD has a strong genetic component. Family studies consistently show that ADHD runs in families, 
@@ -234,12 +204,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Brain Structure and Function</h2>
         
-        <ImageWithFallback 
-          src={brainAnatomyImage} 
-          alt="Brain neuroscience showing structural and functional differences in ADHD"
-          className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
-        
         <p className="mb-4">
           Brain imaging studies have revealed several differences in brain structure and activity in individuals 
           with ADHD. These differences help explain why people with ADHD experience challenges with attention, 
@@ -355,12 +319,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Neurotransmitter Imbalances</h2>
-        
-        <img 
-          src={neuronImage} 
-          alt="Artistic representation of a neuron and neural connections showing neurotransmitter pathways"
-          className="w-96 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-        />
         
         <p className="mb-4">
           ADHD involves dysfunction in neurotransmitter systems—the chemical messengers that allow brain cells 
@@ -551,12 +509,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Environmental and Prenatal Factors</h2>
         
-        <img 
-          src={environmentalImage} 
-          alt="Industrial environment representing environmental risk factors like pollution and lead exposure"
-          className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
-        
         <p className="mb-4">
           While genetics account for approximately 70-80% of ADHD risk, environmental factors also play important 
           roles. These environmental influences primarily affect ADHD risk during critical developmental periods—
@@ -571,12 +523,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Prenatal and Perinatal Factors</h3>
-        
-        <img 
-          src={prenatalFactorsImage} 
-          alt="Pregnant women practicing prenatal yoga representing prenatal health and wellness"
-          className="w-full max-w-md rounded-md border border-gray-300 mb-6"
-        />
         
         <p className="mb-4">
           <strong>Maternal smoking during pregnancy:</strong> Numerous studies have established a strong association 
@@ -663,12 +609,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early Life Adversity and Psychosocial Factors</h3>
         
-        <img 
-          src={earlyLifeImage} 
-          alt="Mother holding baby in golden sunlight representing early life and perinatal factors"
-          className="w-full max-w-md rounded-md border border-gray-300 mb-6"
-        />
-        
         <p className="mb-4">
           <strong>Severe early deprivation:</strong> Children who experienced severe institutional deprivation in 
           early childhood (such as in orphanages) show dramatically elevated rates of ADHD symptoms. Studies of 
@@ -739,12 +679,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
           remains genetic and neurobiological, with environmental factors playing a modifying rather than primary role 
           in most cases.
         </p>
-        
-        <img 
-          src={riskCausationImage} 
-          alt="Mother holding child representing environmental and developmental factors in ADHD"
-          className="w-full max-w-md rounded-md border border-gray-300 mt-6"
-        />
 
         {/* Bottom button - right aligned above References */}
         <div className="flex justify-end my-8">

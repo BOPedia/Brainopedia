@@ -1,8 +1,3 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { ADHDOverviewReferences } from '../../references/ADHDOverviewReferences';
-import adhdOverviewImage from '/images/adhd-overview.png';
-import definingAdhdDiagram from '/images/adhd-venn.png';
-import executiveFunctionImage from '/images/adhd-executive-function.png';
 import { ADHDOverviewReferences } from '../../references/ADHDOverviewReferences';
 
 interface ADHDOverviewProps {
@@ -31,12 +26,6 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is ADHD?</h2>
           
-          <ImageWithFallback 
-            src={adhdOverviewImage} 
-            alt="Person concentrating, representing focus challenges in ADHD"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized 
             by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 
@@ -50,12 +39,6 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         {/* Three Presentations Section */}
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Three Presentations of ADHD</h2>
-          
-          <img 
-            src={definingAdhdDiagram} 
-            alt="Venn diagram showing the three presentations of ADHD: inattention, hyperactivity/impulsivity, and combined type"
-            className="w-full max-w-sm md:max-w-md h-auto rounded-md border border-gray-300 md:float-left md:mr-6 mb-4"
-          />
           
           <p className="mb-4">
             According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-[#10b981]">[3]</sup>
@@ -88,12 +71,6 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         {/* Executive Function Section */}
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Executive Function Challenges</h2>
-          
-          <img 
-            src={executiveFunctionImage} 
-            alt="Executive function and cognitive processes affected by ADHD"
-            className="w-full max-w-xs md:max-w-sm md:float-left md:mr-6 mb-4 rounded-md border border-gray-300"
-          />
           
           <p className="mb-4">
             At its core, ADHD is fundamentally a disorder of executive function—the cognitive processes that 

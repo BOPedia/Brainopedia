@@ -1,14 +1,3 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { ADHDMedicationComparison } from '../../infographics/ADHDMedicationComparison';
-import { ADHDTreatmentApproach } from '../../infographics/ADHDTreatmentApproach';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
-import { Pill, BrainCircuit, GraduationCap, Heart, Users, Settings } from 'lucide-react';
-import supportImage from '/images/adhd-support-main.png';
-import medicationImage from '/images/adhd-medication.png';
-import therapyImage from '/images/adhd-therapy.png';
-import ostImage from '/images/adhd-organizational-skills-training.png';
-import workplaceImage from '/images/adhd-workplace.png';
-import orgToolsImage from '/images/adhd-organizational-tools.png';
 import { ADHDMedicationComparison } from '../../infographics/ADHDMedicationComparison';
 import { ADHDTreatmentApproach } from '../../infographics/ADHDTreatmentApproach';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
@@ -24,9 +13,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         {/* Treatment Approaches Section */}
         <div>
-          <div className="flex justify-center mb-6">
-            <img src={supportImage} alt="Mental health support illustration" className="w-64 h-64 object-contain" />
-          </div>
+
           
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Comprehensive Treatment Approaches</h2>
           
@@ -55,9 +42,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
             medication and behavioral interventions from the outset.
           </p>
           
-          <div className="flex justify-center my-6">
-            <img src={medicationImage} alt="ADHD medication options" className="w-64 h-64 object-contain" />
-          </div>
+
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Access to Evidence-Based Treatment</h3>
           <p className="mb-4">
@@ -238,12 +223,6 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
         <div>
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Non-Stimulant Medications</h3>
           
-          <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjeSUyMG1lZGljaW5lfGVufDF8fHx8MTc2NjcwNzYxNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Pharmacy medication representing treatment options"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             Alternative options for those who don't respond to or can't tolerate stimulants:
           </p>
@@ -282,12 +261,6 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
         {/* Behavioral Interventions Section */}
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Behavioral Interventions and Therapy</h2>
-          
-          <img 
-            src={therapyImage} 
-            alt="Family therapy session with diverse participants in a warm, welcoming environment"
-            className="w-96 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-          />
           
           <p className="mb-4">
             Evidence-based psychosocial interventions play a critical role in ADHD treatment, particularly for children 
@@ -399,12 +372,6 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Organizational Skills Training (OST)</h2>
           
-          <img 
-            src={ostImage} 
-            alt="Student organizing materials with planner, checklist, and study supplies on desk"
-            className="w-96 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-          />
-          
           <p className="mb-4">
             Children and adolescents with ADHD have impaired organization, time management, and planning skills that 
             undermine their academic abilities and potential. Homework management and organizational skills predict 
@@ -442,12 +409,6 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Workplace Accommodations</h2>
           
-          <img 
-            src={workplaceImage} 
-            alt="Workplace productivity and organization with digital tools and collaborative work environment"
-            className="w-96 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-          />
-          
           <p className="mb-4">
             Under the Americans with Disabilities Act (ADA), adults with ADHD may request reasonable accommodations:
           </p>
@@ -481,12 +442,6 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
             interventions can meaningfully improve ADHD symptoms, executive function, and quality of life when combined 
             with other evidence-based treatments.<sup>[173]</sup>
           </p>
-          
-          <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleGVyY2lzZSUyMGZpdG5lc3N8ZW58MXx8fHwxNzY2NzA3NjE1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Exercise and fitness for ADHD management"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Exercise</h3>
           <p className="mb-4">
@@ -678,13 +633,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">📦 Organization Systems</h2>
           
-          <div className="flex justify-center mb-6">
-            <img 
-              src={orgToolsImage} 
-              alt="Digital organization and productivity tools on laptop and smartphone"
-              className="w-full max-w-2xl h-auto rounded-md border border-gray-300"
-            />
-          </div>
+
           
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
             <div className="space-y-3">

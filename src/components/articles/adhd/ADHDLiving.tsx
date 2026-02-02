@@ -1,15 +1,3 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
-import pathwayImage from '/images/adhd-pathway.png';
-import strengthsImage from '/images/adhd-strengths.png';
-import routinesImage from '/images/adhd-routines.png';
-import financesImage from '/images/adhd-finances.png';
-import relationshipsImage from '/images/adhd-relationships.png';
-import parentingImage from '/images/adhd-parenting.png';
-import careerImage from '/images/adhd-career.png';
-import stigmaImage from '/images/adhd-stigma.png';
-import mentalHealthImage from '/images/adhd-mental-health.png';
-import futureImage from '/images/adhd-future.png';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
 interface ADHDLivingProps {
@@ -22,12 +10,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Thriving with ADHD</h2>
-          
-          <img 
-            src={pathwayImage} 
-            alt="A winding stone pathway through green hills leading toward a bright sunrise, symbolizing the journey of living with ADHD"
-            className="w-96 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Individuals with ADHD lead full and successful lives across all areas of society. While ADHD 
@@ -45,12 +27,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
 
         <div className="clear-both pt-6">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Recognizing Strengths in ADHD</h2>
-          
-          <ImageWithFallback 
-            src={strengthsImage} 
-            alt="Creative thinking and innovation representing ADHD strengths"
-            className="w-80 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-          />
           
           <p className="mb-4">
             While discussions of ADHD often focus on challenges, many individuals with ADHD describe genuine 
@@ -100,12 +76,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life and Practical Considerations</h2>
         
-        <ImageWithFallback 
-          src={routinesImage} 
-          alt="Daily routines checklist placeholder"
-          className="w-96 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
-        
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Morning and Evening Routines</h3>
         <p className="mb-4">
           Establishing consistent routines can significantly reduce daily stress and improve functioning for individuals with ADHD. Strategies that help:
@@ -127,12 +97,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
           <li className="mb-2">Create designated homes for frequently lost items</li>
           <li className="mb-2">Use automatic bill pay to avoid late fees</li>
         </ul>
-
-        <img 
-          src={financesImage} 
-          alt="Financial planning with charts, calculator, and budget documents"
-          className="w-80 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-        />
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Managing Finances</h3>
         <p className="mb-4">
@@ -156,12 +120,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left">Relationships and Social Life</h2>
-        
-        <img 
-          src={relationshipsImage} 
-          alt="Geometric heart representing connections and relationships"
-          className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
         
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Romantic Relationships</h3>
         <p className="mb-4">
@@ -192,12 +150,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
           <li className="mb-2">Be patient with yourself when social mistakes happen</li>
         </ul>
 
-        <img 
-          src={parentingImage} 
-          alt="Parent reading to children, depicting warm family connection and parenting with ADHD"
-          className="w-80 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-        />
-
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Parenting with ADHD</h3>
         <p className="mb-4">
           Parents with ADHD face unique challenges and bring unique strengths to parenting. 
@@ -226,12 +178,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left">Education and Career</h2>
-        
-        <img 
-          src={careerImage} 
-          alt="Person standing at crossroads of multiple career pathways represented by glowing light beams"
-          className="w-96 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
         
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Choosing Career Paths</h3>
         <p className="mb-4">
@@ -271,12 +217,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Managing Stigma and Misconceptions</h2>
         
-        <ImageWithFallback 
-          src={stigmaImage} 
-          alt="Self-advocacy infographic placeholder"
-          className="w-96 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-        />
-        
         <p className="mb-4">
           Stigma surrounding ADHD remains a significant barrier to diagnosis, treatment, and self-acceptance. 
           Public misconceptions about ADHD are common and can lead to internalized shame and reluctance to seek help.
@@ -305,12 +245,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
 
         <div className="clear-both pt-6">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Mental Health and Self-Care</h2>
-          
-          <ImageWithFallback 
-            src={mentalHealthImage} 
-            alt="Mental wellness strategies placeholder"
-            className="w-96 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Co-occurring Mental Health Conditions</h3>
           <p className="mb-4">
@@ -353,12 +287,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Finding Community and Support</h2>
         
-        <ImageWithFallback 
-          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXBwb3J0JTIwZ3JvdXAlMjBjb21tdW5pdHl8ZW58MXx8fHwxNzY2NzA3NjE2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-          alt="Community support group connections"
-          className="w-80 h-auto rounded-md border border-gray-300 md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4"
-        />
-        
         <p className="mb-4">
           Connecting with others who understand ADHD can be invaluable for reducing isolation, gaining practical strategies, 
           and building self-acceptance. Social support is associated with better outcomes and quality of life 
@@ -382,12 +310,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
 
         <div className="clear-both pt-6">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Looking Forward</h2>
-          
-          <img 
-            src={futureImage} 
-            alt="Happy child celebrating success with schoolwork"
-            className="w-96 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Living with ADHD is a journey of self-discovery, learning, and growth. As understanding of your 

@@ -1,15 +1,3 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { ADHDComorbidities } from '../../infographics/ADHDComorbidities';
-import { ADHDDiagnosticProfessionals } from '../../infographics/ADHDDiagnosticProfessionals';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
-import diagnosticImage from '/images/adhd-diagnostic.png';
-import adultDiagnosisImage from '/images/adhd-adult-diagnosis.png';
-import diagnosticChallengesImage from '/images/adhd-diagnostic-challenges.png';
-import treatmentRoadmapImage from '/images/adhd-treatment-roadmap.png';
-import audhdAbstractArtImage from '/images/audh-abstract-art.png';
-import audhdLightningInfinityImage from '/images/audh-lightning-infinity.png';
-import audhdSplitFaceImage from '/images/audh-split-face.png';
-import audhdRainbowBrainImage from '/images/audh-rainbow-brain.png';
 import { ADHDComorbidities } from '../../infographics/ADHDComorbidities';
 import { ADHDDiagnosticProfessionals } from '../../infographics/ADHDDiagnosticProfessionals';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
@@ -84,13 +72,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
               </p>
             </div>
 
-            <div className="flex justify-center mb-6">
-              <img 
-                src={diagnosticImage} 
-                alt="Medical consultation representing the diagnostic process"
-                className="max-w-xs h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
 
             <p className="mb-4">
               ADHD diagnosis requires a comprehensive evaluation by a qualified healthcare professional—typically a 
@@ -629,13 +611,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnosing ADHD in Adults</h2>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={adultDiagnosisImage} 
-                alt="Adult professional representing adult ADHD diagnosis"
-                className="w-80 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
 
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
@@ -840,13 +816,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnostic Challenges & Comorbidities</h2>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={diagnosticChallengesImage} 
-                alt="Diagnostic challenges illustration"
-                className="w-80 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
 
             {/* Challenges Section */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -1047,13 +1017,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">After Receiving a Diagnosis</h2>
             
-            <div className="flex justify-center mb-6">
-              <img 
-                src={treatmentRoadmapImage} 
-                alt="Treatment planning roadmap"
-                className="w-80 h-auto rounded-md border border-gray-300"
-              />
-            </div>
+
 
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
@@ -1455,9 +1419,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is AuDHD?</h2>
             
             {/* Abstract Art Image */}
-            <div className="flex justify-center mb-6">
-              <img src={audhdAbstractArtImage} alt="Abstract art representing AuDHD" className="w-48 h-auto rounded-lg shadow-md" />
-            </div>
+
 
             <p className="mb-6">
               "AuDHD" is a community-created term used primarily within neurodivergent communities to describe individuals 
@@ -1533,9 +1495,10 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
             {/* AuDHD Diagram - Live Component */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               {/* Lightning Infinity Image */}
-              <div className="flex justify-center mb-6">
+              {/* Image removed - audhdLightningInfinityImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
                 <img src={audhdLightningInfinityImage} alt="Gold infinity symbol with lightning representing AuDHD" className="w-full max-w-sm h-auto rounded-lg shadow-md" />
-              </div>
+              </div> */}
 
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Shared and Sole Symptoms</h3>
               
@@ -1694,9 +1657,10 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
             {/* Why Dual Diagnosis Matters */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               {/* Split Face Image */}
-              <div className="flex justify-center mb-6">
+              {/* Image removed - audhdSplitFaceImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
                 <img src={audhdSplitFaceImage} alt="Artistic split-face painting representing dual perspectives of AuDHD" className="w-64 h-auto rounded-lg shadow-md" />
-              </div>
+              </div> */}
 
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Why Recognizing Both Conditions Matters</h3>
               
@@ -1755,9 +1719,10 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
             {/* Community Recognition */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               {/* Rainbow Brain Image */}
-              <div className="flex justify-center mb-6">
+              {/* Image removed - audhdRainbowBrainImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
                 <img src={audhdRainbowBrainImage} alt="Colorful infinity symbol wrapped around brain representing neurodivergent community" className="w-64 h-auto rounded-lg shadow-md" />
-              </div>
+              </div> */}
 
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">AuDHD in the Neurodivergent Community</h3>
               
