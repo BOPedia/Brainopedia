@@ -31,6 +31,9 @@ export function ArticleBlog({ setCurrentArticle }: ArticleBlogProps) {
   const [copiedLink, setCopiedLink] = useState(false);
 
   const handleShare = (platform: string, post: BlogPost) => {
+    // Check if we're in the browser before using browser APIs
+    if (typeof window === 'undefined') return;
+    
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent(post.title);
     
@@ -53,6 +56,9 @@ export function ArticleBlog({ setCurrentArticle }: ArticleBlogProps) {
   };
 
   const handleCopyLink = () => {
+    // Check if we're in the browser before using browser APIs
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') return;
+    
     navigator.clipboard.writeText(window.location.href);
     setCopiedLink(true);
     setTimeout(() => setCopiedLink(false), 2000);
