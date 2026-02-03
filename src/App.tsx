@@ -1,20 +1,32 @@
 import React, { useState, useEffect } from 'react';
-import { Sidebar } from './components/Sidebar';
-import { ArticleContent } from './components/ArticleContent';
-import { Header } from './components/Header';
-import { DonationBanner } from './components/DonationBanner';
-import { Footer } from './components/Footer';
+import { BrowserRouter as Router, Routes, Route, useParams, useNavigate } from 'react-router-dom';
+import { Sidebar } from '../components/Sidebar';
+import { ArticleContent } from '../components/ArticleContent';
+import { Header } from '../components/Header';
+import { DonationBanner } from '../components/DonationBanner';
+import { Footer } from '../components/Footer';
+import { Search, Menu, X } from 'lucide-react';
 
-export default function App() {
-  const [currentArticle, setCurrentArticle] = useState('about');
+function AppContent() {
+  const { articleId } = useParams();
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  const currentArticle = articleId || 'about';
+
+  const setCurrentArticle = (article: string) => {
+    navigate(`/${article}`);
+  };
+
+  // Scroll to top when article changes
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [currentArticle]);
+  }, [articleId]);
 
+  // Set favicon and page title
   useEffect(() => {
+    // Update page title
     document.title = 'Brainopedia - Encyclopedia of Neurodivergent Conditions';
   }, []);
 
@@ -43,5 +55,16 @@ export default function App() {
       
       <Footer setCurrentArticle={setCurrentArticle} />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<AppContent />} />
+        <Route path="/:articleId" element={<AppContent />} />
+      </Routes>
+    </Router>
   );
 }
