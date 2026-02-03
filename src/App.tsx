@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams, useNavigate } from 'react-router-dom';
-import { Sidebar } from '../components/Sidebar';
-import { ArticleContent } from '../components/ArticleContent';
-import { Header } from '../components/Header';
-import { DonationBanner } from '../components/DonationBanner';
-import { Footer } from '../components/Footer';
+import { Sidebar } from './components/Sidebar';
+import { ArticleContent } from './components/ArticleContent';
+import { Header } from './components/Header';
+import { DonationBanner } from './components/DonationBanner';
+import { Footer } from './components/Footer';
 import { Search, Menu, X } from 'lucide-react';
 
 function AppContent() {
