@@ -16,7 +16,7 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
         {/* Banner Image */}
         <div className="mb-6">
           <img 
-            src={encyclopediaBanner} 
+            src="/images/brainopedia-banner.png" 
             alt="Brainopedia - Your encyclopedic platform about neurodivergent minds"
             className="w-full h-auto rounded-lg shadow-lg"
           />
@@ -83,11 +83,11 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
           <h2 className="text-[#0c264d] font-bold mb-3 text-xl" style={{ fontFamily: 'Poppins, sans-serif' }}>Our Approach</h2>
           
           <div className="mb-6">
-            <img 
-              src={brainMagnifier} 
+            {/* <img 
+              src="/images/bbc6cfb66d8d22293db2c0c29c993f771c179459.png" 
               alt="Brain with magnifying glass and book illustration representing detailed neurodivergence research"
               className="float-right ml-6 mb-4 w-64 h-64 rounded-lg shadow-lg object-cover"
-            />
+            /> */}
             
             <p className="mb-4 leading-relaxed text-base">
               Brainopedia provides accessible, encyclopedia-style, well-structured information with easy navigation. 
@@ -121,11 +121,11 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 Core Neurodevelopmental
               </h3>
               
-              <img 
-                src={neuralApple} 
+              {/* <img 
+                src="/images/2e6ce66b550d5b59ddd23656eb6ce0a0c613162f.png" 
                 alt="Neural network apple illustration"
                 className="w-40 h-auto rounded-lg shadow-md float-left mr-5 mb-4"
-              />
+              /> */}
               
               <p className="mb-4 text-sm leading-relaxed">
                 These are fundamental neurodevelopmental conditions that affect how the brain develops and functions from early childhood. 
@@ -155,11 +155,11 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 Learning Differences & Profiles
               </h3>
               
-              <img 
-                src={brainGearsArt} 
+              {/* <img 
+                src="/images/20785ad646b1cc6f8d6146a4acd5ec5f826e6dc0.png" 
                 alt="Brain with gears and cognitive processing illustration"
                 className="w-36 h-auto rounded-lg shadow-md float-left mr-4 mb-4"
-              />
+              /> */}
               
               <p className="mb-4 text-sm leading-relaxed">
                 These conditions affect how individuals process, retain, and express information across different domains 
@@ -226,11 +226,11 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 Processing & Sensory
               </h3>
               
-              <img 
-                src={brainSensoryArt} 
+              {/* <img 
+                src="/images/7575e1d72da022b1128e78b8d839ddb2c7fc475c.png" 
                 alt="Brain split between logical mathematics and colorful artistic sensory processing"
                 className="w-36 h-auto rounded-lg shadow-md float-left mr-4 mb-4"
-              />
+              /> */}
               
               <p className="mb-4 text-sm leading-relaxed">
                 These conditions involve atypical ways of receiving, interpreting, and responding to sensory information 
@@ -279,11 +279,11 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 Movement & Motor
               </h3>
               
-              <img 
-                src={motorArt} 
+              {/* <img 
+                src="/images/d3079405a57090829b43301833a93e581e35ab95.png" 
                 alt="Mechanical motor with blue and gold gears representing movement and motor coordination"
                 className="w-36 h-auto rounded-lg shadow-md float-left mr-4 mb-4"
-              />
+              /> */}
               
               <p className="mb-4 text-sm leading-relaxed">
                 These conditions affect the brain's ability to plan, coordinate, and execute physical movements. 
@@ -314,11 +314,11 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 Mental Health Crossovers
               </h3>
               
-              <img 
-                src={mentalHealthArt} 
+              {/* <img 
+                src="/images/6f7a1349d59a50ab297a83942c71150c5bfb3f87.png" 
                 alt="Digital brain with colorful neural activity representing mental health and neurodivergence"
                 className="w-36 h-auto rounded-lg shadow-md float-left mr-4 mb-4"
-              />
+              /> */}
               
               <p className="mb-4 text-sm leading-relaxed">
                 These conditions occupy an important intersection between neurodivergence and mental health. 
@@ -356,11 +356,11 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 Genetic or Environmental
               </h3>
               
-              <img 
-                src={geneticsArt} 
+              {/* <img 
+                src="/images/a36126fc9b7bad2cd58a870d8c8bb85f6eb95773.png" 
                 alt="DNA helix with neural networks representing genetic and environmental neurodivergence"
                 className="w-36 h-auto rounded-lg shadow-md float-left mr-4 mb-4"
-              />
+              /> */}
               
               <p className="mb-4 text-sm leading-relaxed">
                 These conditions arise from genetic variations or environmental factors during prenatal development 
@@ -404,11 +404,11 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 Acquired Neurodivergence
               </h3>
               
-              <img 
-                src={acquiredArt} 
+              {/* <img 
+                src="/images/fd4f664a5ec9eaa4897a4fd2df07292e56817a5e.png" 
                 alt="Brain scan showing injury or trauma areas representing acquired neurodivergence"
                 className="w-36 h-auto rounded-lg shadow-md float-left mr-4 mb-4"
-              />
+              /> */}
               
               <p className="mb-4 text-sm leading-relaxed">
                 These are neurodivergent conditions that develop after birth due to injury, illness, or environmental 
