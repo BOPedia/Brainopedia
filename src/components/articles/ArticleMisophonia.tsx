@@ -64,7 +64,6 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
         <div className="w-full">
           <InfoBox
             title="Misophonia"
-            image={misophoniaImage}
             data={[
               { label: 'Other names', value: 'Selective Sound Sensitivity Syndrome (4S)' },
               { label: 'Specialty', value: 'Audiology, Psychology, Psychiatry' },

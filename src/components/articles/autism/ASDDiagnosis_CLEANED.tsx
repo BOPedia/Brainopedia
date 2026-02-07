@@ -69,13 +69,14 @@ export function ASDDiagnosis({ setCurrentArticle }: ASDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">DSM-5 Diagnostic Criteria</h2>
             
-            <div className="flex justify-center mb-6">
+            {/* Image removed - definingAutismImage variable not defined */}
+            {/* <div className="flex justify-center mb-6">
               <img 
                 src={definingAutismImage} 
                 alt="Defining Autism - Diagnostic criteria infographic"
                 className="w-full max-w-2xl h-auto rounded-md border border-gray-300"
               />
-            </div>
+            </div> */}
 
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
@@ -1292,10 +1293,10 @@ export function ASDDiagnosis({ setCurrentArticle }: ASDDiagnosisProps) {
               and support needs.
             </p>
 
-            {/* AuDHD Infinity Symbol Image */}
-            <div className="flex justify-center mb-6">
+            {/* AuDHD Infinity Symbol Image - audhdInfinityImage variable not defined */}
+            {/* <div className="flex justify-center mb-6">
               <img src={audhdInfinityImage} alt="Infinity symbol with lightning representing AuDHD" className="w-80 h-auto rounded-lg shadow-md" />
-            </div>
+            </div> */}
 
             {/* Prevalence and Co-occurrence */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -1363,10 +1364,10 @@ export function ASDDiagnosis({ setCurrentArticle }: ASDDiagnosisProps) {
 
             {/* AuDHD Diagram */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              {/* Lightning Infinity Image */}
-              <div className="flex justify-center mb-6">
+              {/* Lightning Infinity Image - audhdLightningInfinityImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
                 <img src={audhdLightningInfinityImage} alt="Gold infinity symbol with lightning representing AuDHD" className="w-64 h-auto rounded-lg shadow-md" />
-              </div>
+              </div> */}
 
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Shared and Sole Symptoms</h3>
               
@@ -1524,10 +1525,10 @@ export function ASDDiagnosis({ setCurrentArticle }: ASDDiagnosisProps) {
 
             {/* Why Dual Diagnosis Matters */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              {/* Split Face Image */}
-              <div className="flex justify-center mb-6">
+              {/* Split Face Image - audhdSplitFaceImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
                 <img src={audhdSplitFaceImage} alt="Artistic split-face painting representing dual perspectives of AuDHD" className="w-64 h-auto rounded-lg shadow-md" />
-              </div>
+              </div> */}
 
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Why Recognizing Both Conditions Matters</h3>
               
@@ -1585,10 +1586,10 @@ export function ASDDiagnosis({ setCurrentArticle }: ASDDiagnosisProps) {
 
             {/* Community Recognition */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              {/* Rainbow Brain Image */}
-              <div className="flex justify-center mb-6">
+              {/* Rainbow Brain Image - audhdRainbowBrainImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
                 <img src={audhdRainbowBrainImage} alt="Colorful infinity symbol wrapped around brain representing neurodivergent community" className="w-64 h-auto rounded-lg shadow-md" />
-              </div>
+              </div> */}
 
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">AuDHD in the Neurodivergent Community</h3>
               

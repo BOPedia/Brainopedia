@@ -41,8 +41,8 @@ export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProp
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Evidence-Based Interventions</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1754304342295-6094fe41e60c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRoJTIwZWR1Y2F0aW9uJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc2NzQ1MjMwN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Math education classroom"
+            src="/images/dyscalculia-support-interventions.png"
+            alt="Teacher using multi-sensory math instruction with manipulatives and visual aids for dyscalculia support"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
           
@@ -160,8 +160,8 @@ export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProp
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Assistive Technology</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1632571401005-458e9d244591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxjdWxhdG9yJTIwbWF0aGVtYXRpY3MlMjBzdHVkZW50fGVufDF8fHx8MTc2NzQ1MjMwNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Calculator mathematics"
+            src="/images/dyscalculia-support-technology.png"
+            alt="Digital calculator, educational apps, and assistive technology tools for math support"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />
           

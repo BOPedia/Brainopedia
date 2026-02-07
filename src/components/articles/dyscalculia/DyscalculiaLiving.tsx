@@ -42,8 +42,8 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life with Dyscalculia</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1664843917218-71f7b6bb3afc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25maWRlbnQlMjBzdHVkZW50JTIwc3VjY2Vzc3xlbnwxfHx8fDE3Njc0NTIzMDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Confident student success"
+            src="/images/dyscalculia-living-daily-life.png"
+            alt="Confident individual managing daily tasks like shopping, cooking, and time management with dyscalculia"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
           
@@ -156,8 +156,8 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Career and Employment</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1754304342484-3256d59778e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRoJTIwbnVtYmVycyUyMGxlYXJuaW5nfGVufDF8fHx8MTc2NzQ1MjMwNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Math learning"
+            src="/images/dyscalculia-living-career.png"
+            alt="Successful professional working in fulfilling career with dyscalculia accommodations and support"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />
           

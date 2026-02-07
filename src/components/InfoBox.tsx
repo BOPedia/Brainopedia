@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface InfoBoxProps {
   title: string;
@@ -14,9 +15,9 @@ export function InfoBox({ title, image, data }: InfoBoxProps) {
       </div>
       
       {image && (
-        <img 
+        <ImageWithFallback 
           src={image} 
-          alt={title}
+          alt={`${title} illustration`}
           className="w-full h-auto object-contain"
         />
       )}

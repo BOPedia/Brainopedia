@@ -64,7 +64,6 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         <div className="w-full">
           <InfoBox
             title="Tourette Syndrome"
-            image={touretteImage}
             data={[
               { label: 'Other names', value: 'Tourette disorder, TS, Gilles de la Tourette syndrome' },
               { label: 'Specialty', value: 'Neurology, Psychiatry' },

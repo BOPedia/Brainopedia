@@ -1,6 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
+// import { ImageWithFallback } from '../figma/ImageWithFallback';
 
 interface ArticleDyscalculiaProps {
   setCurrentArticle?: (article: string) => void;
@@ -88,7 +89,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         <div className="w-full">
           <InfoBox
             title="Dyscalculia"
-            image={dyscalculiaImage}
+            image="/images/dyscalculia-infobox-icon.png"
             data={[
               { label: 'Other names', value: 'Math learning disability, number blindness' },
               { label: 'Specialty', value: 'Educational psychology, Neurology' },
@@ -104,12 +105,6 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
       <div className="space-y-8 mt-20 clear-both">
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1754304342447-82dabf632a8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRoZW1hdGljcyUyMG51bWJlcnMlMjBlZHVjYXRpb258ZW58MXx8fHwxNzY3MzI3MjEwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Mathematics and numbers - understanding dyscalculia"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Dyscalculia affects approximately 3-7% of the population and is thought to have a neurological basis.<sup>[3]</sup> 
@@ -129,12 +124,6 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
-          <img 
-            src="https://images.unsplash.com/photo-1764700754052-afc4e11c5c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxjdWxhdG9yJTIwY291bnRpbmclMjBtYXRofGVufDF8fHx8MTc2NzMyNzIxMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Calculator and counting - mathematical challenges in dyscalculia"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             Dyscalculia is characterized by difficulties with understanding quantities and the concept of "more" or "less," 
             recognizing numbers and number symbols, counting accurately, performing mental math calculations, memorizing math 
@@ -147,12 +136,6 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
 
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1709651669999-57741c9bf085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFpbiUyMG1hdGhlbWF0aWNzJTIwbmV1cm9zY2llbmNlfGVufDF8fHx8MTc2NzMyNzIxMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Brain and mathematics - neurological basis of dyscalculia"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Research suggests that dyscalculia involves differences in brain areas responsible for numerical processing, 
@@ -168,12 +151,6 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
-          <img 
-            src="https://images.unsplash.com/photo-1560785496-3c9d27877182?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwbWF0aCUyMHRlc3R8ZW58MXx8fHwxNzY3MzI3MjExfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Educational testing - assessment for dyscalculia"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             Dyscalculia is diagnosed through comprehensive evaluation by qualified professionals such as educational 
             psychologists or neuropsychologists.<sup>[12]</sup> The assessment process includes standardized tests of mathematical ability, 
@@ -188,12 +165,6 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
-          <img 
-            src="https://images.unsplash.com/photo-1581089778245-3ce67677f718?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFjaGluZyUyMG1hdGhlbWF0aWNzJTIwc3VwcG9ydHxlbnwxfHx8fDE3NjczMjcyMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Teaching mathematics - instructional support for dyscalculia"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             Support for dyscalculia includes multi-sensory instruction using concrete manipulatives, visual representations of 
             mathematical concepts, breaking down complex problems into smaller steps, explicit teaching of mathematical language 
@@ -207,12 +178,6 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
 
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyscalculia</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1758518727592-706e80ebc354?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25maWRlbnQlMjBwcm9mZXNzaW9uYWwlMjBzdWNjZXNzfGVufDF8fHx8MTc2NzMyNzIxMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Professional success - living successfully with dyscalculia"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Individuals with dyscalculia lead successful and fulfilling lives across all areas of society. With appropriate 

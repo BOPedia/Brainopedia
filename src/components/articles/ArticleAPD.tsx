@@ -1,4 +1,3 @@
-import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
 
@@ -88,7 +87,6 @@ export function ArticleAPD({ setCurrentArticle }: ArticleAPDProps) {
         <div className="w-full">
           <InfoBox
             title="Auditory Processing Disorder"
-            image={apdImage}
             data={[
               { label: 'Other names', value: 'APD, CAPD, Central Auditory Processing Disorder' },
               { label: 'Specialty', value: 'Audiology, Speech-Language Pathology' },

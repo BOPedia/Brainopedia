@@ -88,7 +88,6 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
         <div className="w-full">
           <InfoBox
             title="Hyperlexia"
-            image={hyperlexiaImage}
             data={[
               { label: 'Other names', value: 'Precocious Reading Syndrome' },
               { label: 'Specialty', value: 'Developmental Pediatrics, Speech-Language Pathology' },
@@ -132,7 +131,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
           <img 
-            src={hyperlexiaChildReading}
+            src="https://images.unsplash.com/photo-1758612898788-38a249839c1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMHJlYWRpbmclMjBib29rcyUyMGVhcmx5fGVufDF8fHx8MTc2NzQwMzc4NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
             alt="Child with hyperlexia reading with letters and books floating around"
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />

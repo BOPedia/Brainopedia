@@ -1,3 +1,4 @@
+import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
 
@@ -88,7 +89,6 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         <div className="w-full">
           <InfoBox
             title="Giftedness"
-            image={giftednessImage}
             data={[
               { label: 'Other names', value: 'Intellectually gifted, high ability' },
               { label: 'Specialty', value: 'Gifted Education, Psychology' },
@@ -245,7 +245,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Giftedness</h2>
           
           <img 
-            src={giftednessLivingImage}
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXZpbmclMjB3aXRoJTIwZ2lmdGVkbmVzcyUyMHRocml2aW5nJTIwZnVsZmlsbG1lbnR8ZW58MXx8fHwxNzY3NDA5NTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
             alt="Living with giftedness - thriving with advanced cognitive abilities"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />

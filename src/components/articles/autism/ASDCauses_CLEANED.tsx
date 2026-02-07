@@ -1,6 +1,5 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useState } from 'react';
-import { ASDReferences } from './ASDReferences';
 
 interface ASDCausesProps {
   setCurrentArticle?: (article: string) => void;
@@ -45,14 +44,6 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
           Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup>[78]</sup> 
           However, autism genetics are complex and involve many genes rather than a single "autism gene."
         </p>
-
-        <div className="flex justify-center mb-6">
-          <img 
-            src={geneticsImage} 
-            alt="DNA helix representing genetic factors in autism"
-            className="w-full max-w-3xl h-auto rounded-md"
-          />
-        </div>
 
         {/* Heritability Evidence */}
         <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -332,11 +323,12 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Environmental Factors</h2>
         
-        <img 
-          src={environmentalImage} 
+        {/* Image: autism-environmental.png - add to public/images/ to restore */}
+        {/* <img 
+          src="/images/autism-environmental.png" 
           alt="Environmental factors in autism development"
           className="w-80 h-auto rounded-md float-left mr-6 mb-4"
-        />
+        /> */}
         
         <p className="mb-4">
           While genetics are crucial, environmental factors—particularly during pregnancy and early development—also 
@@ -394,11 +386,12 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Structural Brain Differences</h3>
         
-        <img 
-          src={brainConnectivityImage} 
+        {/* Image: autism-brain-connectivity.png - add to public/images/ to restore */}
+        {/* <img 
+          src="/images/autism-brain-connectivity.png" 
           alt="Brain connectivity and neural networks in autism"
           className="w-80 h-auto rounded-md float-right ml-6 mb-4"
-        />
+        /> */}
         
         <ul className="list-disc ml-6 mb-4">
           <li className="mb-2"><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in frontal cortex<sup>[45]</sup></li>
@@ -444,11 +437,12 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
           </div>
         </div>
 
-        <img 
-          src={vaccineImage} 
+        {/* Image: autism-vaccine-myth.png - add to public/images/ to restore */}
+        {/* <img 
+          src="/images/autism-vaccine-myth.png" 
           alt="Vaccine being administered - vaccines do not cause autism"
           className="w-full max-w-sm h-auto rounded-md mx-auto mb-6"
-        />
+        /> */}
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Vaccine-Autism Myth</h3>
         <p className="mb-4">

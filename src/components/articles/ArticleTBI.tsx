@@ -65,7 +65,6 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
         <div className="w-full">
           <InfoBox
             title="Traumatic Brain Injury"
-            image={tbiImage}
             data={[
               { label: 'Other names', value: 'TBI, acquired brain injury' },
               { label: 'Specialty', value: 'Neurology, Rehabilitation Medicine' },

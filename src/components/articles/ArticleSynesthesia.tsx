@@ -63,7 +63,6 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
         <div className="w-full">
           <InfoBox
             title="Synesthesia"
-            image={synesthesiaImage}
             data={[
               { label: 'Other names', value: 'Synaesthesia' },
               { label: 'Specialty', value: 'Neurology, Psychology' },

@@ -88,7 +88,6 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
         <div className="w-full">
           <InfoBox
             title="Dysgraphia"
-            image={dysgraphiaImage}
             data={[
               { label: 'Other names', value: 'Writing Learning Disorder, Disorder of Written Expression' },
               { label: 'Specialty', value: 'Educational psychology, Occupational therapy' },

@@ -88,7 +88,6 @@ export function ArticleTwiceExceptional({ setCurrentArticle }: ArticleTwiceExcep
         <div className="w-full">
           <InfoBox
             title="Twice Exceptional (2e)"
-            image={twiceExceptionalImage}
             data={[
               { label: 'Other names', value: 'Gifted with Learning Disabilities, Gifted/LD, 2e' },
               { label: 'Specialty', value: 'Gifted Education, Educational Psychology' },

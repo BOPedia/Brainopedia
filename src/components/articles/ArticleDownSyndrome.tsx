@@ -65,7 +65,6 @@ export function ArticleDownSyndrome({ setCurrentArticle }: ArticleDownSyndromePr
         <div className="w-full">
           <InfoBox
             title="Down Syndrome"
-            image={downSyndromeImage}
             data={[
               { label: 'Other names', value: 'Trisomy 21' },
               { label: 'Specialty', value: 'Medical Genetics, Developmental Medicine' },

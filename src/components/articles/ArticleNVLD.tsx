@@ -89,7 +89,6 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
         <div className="w-full">
           <InfoBox
             title="Non-Verbal Learning Disability"
-            image={nvldImage}
             data={[
               { label: 'Other names', value: 'NVLD, NLD' },
               { label: 'Specialty', value: 'Neuropsychology, Educational Psychology' },

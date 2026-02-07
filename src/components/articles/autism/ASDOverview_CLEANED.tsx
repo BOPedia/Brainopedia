@@ -35,11 +35,12 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">∞ What is Autism Spectrum Disorder?</h2>
           
-          <img 
+          {/* Image removed - headTreeImage variable not defined */}
+          {/* <img 
             src={headTreeImage} 
             alt="Head with tree representing neurodiversity and autism"
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
+          /> */}
           
           <p className="mb-4">
             Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by differences in social communication and interaction, alongside restricted or repetitive patterns of behavior, interests, or activities. Autism is called a "spectrum" disorder because there is wide variation in the type and severity of symptoms people experience.
@@ -79,11 +80,12 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding "The Spectrum"</h2>
           
-          <img 
+          {/* Image removed - spectrumInfinityImage variable not defined */}
+          {/* <img 
             src={spectrumInfinityImage} 
             alt="Infinity symbol representing autism spectrum diversity"
             className="w-80 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-          />
+          /> */}
           
           <p className="mb-6">
             The autism spectrum is not a linear scale from "mild" to "severe." Instead, it represents the diverse 
@@ -228,11 +230,12 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Features of Autism</h2>
           
-          <img 
+          {/* Image removed - definingAutismImage variable not defined */}
+          {/* <img 
             src={definingAutismImage} 
             alt="Defining characteristics of autism spectrum disorder"
             className="w-96 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-          />
+          /> */}
           
           <p className="mb-4">
             According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
@@ -446,11 +449,12 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Causes Autism?</h2>
           
-          <img 
+          {/* Image removed - geneticsAutismImage variable not defined */}
+          {/* <img 
             src={geneticsAutismImage} 
             alt="Genetics in Autism - chromosomes illustration"
             className="w-80 h-auto rounded-md float-right ml-6 mb-4"
-          />
+          /> */}
           
           <p className="mb-6">
             Autism is a complex neurodevelopmental condition with multiple contributing factors. Current evidence 
@@ -578,11 +582,12 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Language and Terminology</h2>
           
-          <img 
+          {/* Image removed - neurodivergentLabelsImage variable not defined */}
+          {/* <img 
             src={neurodivergentLabelsImage} 
             alt="Neurodivergent Labels tag graphic"
             className="w-80 h-auto rounded-md float-right ml-6 mb-4"
-          />
+          /> */}
           
           <p className="mb-6">
             How we talk about autism matters. Language preferences vary within the autistic community:

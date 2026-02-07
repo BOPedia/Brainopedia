@@ -77,16 +77,6 @@ export function ArticleDonate() {
             <p className="text-sm text-gray-600 mt-3">
               Opens in a new window - 100% of your donation supports our mission
             </p>
-            
-            {/* QR Code */}
-            <div className="mt-8 pt-6 border-t-2 border-gray-300">
-              <p className="text-sm text-gray-600 mb-3">Or scan to donate:</p>
-              <img 
-                src={qrCode} 
-                alt="Donate via QR Code" 
-                className="w-48 h-48 mx-auto bg-white p-3 rounded-lg border-2 border-[#2abcd4] shadow-md"
-              />
-            </div>
           </div>
         </div>
 

@@ -42,8 +42,8 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetic Factors</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1758685848478-b57d7aff2a9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFpbiUyMG1hdGhlbWF0aWNzJTIwc2NpZW5jZXxlbnwxfHx8fDE3Njc0NTIzMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Brain mathematics science"
+            src="/images/dyscalculia-causes-genetics.png"
+            alt="DNA helix and brain imagery showing genetic basis of dyscalculia and hereditary factors"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
           
@@ -144,8 +144,8 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Developmental Factors</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1654917475197-e5b701b1dee8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMGNvdW50aW5nJTIwbnVtYmVyc3xlbnwxfHx8fDE3Njc0NTIzMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Child counting numbers"
+            src="/images/dyscalculia-causes-development.png"
+            alt="Young child developing early number sense and counting skills showing developmental progression"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />
           

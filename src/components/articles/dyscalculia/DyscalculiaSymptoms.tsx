@@ -41,8 +41,8 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Mathematical Symptoms</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1632571401005-458e9d244591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxjdWxhdG9yJTIwbWF0aGVtYXRpY3MlMjBzdHVkZW50fGVufDF8fHx8MTc2NzQ1MjMwNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Calculator and mathematics"
+            src="/images/dyscalculia-symptoms-core-math.png"
+            alt="Student struggling with calculator and mathematical calculations showing core dyscalculia symptoms"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
           
@@ -168,8 +168,8 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life Symptoms</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1754304342295-6094fe41e60c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRoJTIwZWR1Y2F0aW9uJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc2NzQ1MjMwN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Math education in classroom"
+            src="/images/dyscalculia-symptoms-daily-life.png"
+            alt="Everyday situations showing time management and money handling challenges in dyscalculia"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />
           

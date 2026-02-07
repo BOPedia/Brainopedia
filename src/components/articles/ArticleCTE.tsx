@@ -65,7 +65,6 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
         <div className="w-full">
           <InfoBox
             title="Chronic Traumatic Encephalopathy"
-            image={cteImage}
             data={[
               { label: 'Other names', value: 'CTE, formerly "punch drunk syndrome"' },
               { label: 'Specialty', value: 'Neurology, Neuropathology' },

@@ -88,7 +88,6 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
         <div className="w-full">
           <InfoBox
             title="Visual Processing Disorder"
-            image={visualProcessingImage}
             data={[
               { label: 'Other names', value: 'Visual perceptual disorder' },
               { label: 'Specialty', value: 'Developmental Optometry, Occupational Therapy' },
@@ -106,9 +105,9 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
           <img 
-            src={overviewImage}
-            alt="Visual processing - interpreting and making sense of visual information"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            src="https://images.unsplash.com/photo-1549925245-f20a1bac6454?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXN1YWwlMjBwZXJjZXB0aW9uJTIwYnJhaW58ZW58MXx8fHwxNjc0MDYyMTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            alt="Visual perception and the brain - neurological basis"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
           
           <p className="mb-4">
@@ -132,8 +131,8 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
           <img 
-            src={symptomsImage}
-            alt="Reading letters close up - visual discrimination challenges"
+            src="https://images.unsplash.com/photo-1517948430535-1e2469d314fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXNpb24lMjB0aGVyYXB5JTIwZXhlcmNpc2VzfGVufDF8fHx8MTY3NDA2MjE0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            alt="Vision therapy and assessment - diagnosing visual processing disorder"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
           

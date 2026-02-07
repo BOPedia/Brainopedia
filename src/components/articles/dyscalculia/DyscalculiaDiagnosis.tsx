@@ -41,8 +41,8 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">When to Seek Evaluation</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1754304342295-6094fe41e60c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRoJTIwZWR1Y2F0aW9uJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc2NzQ1MjMwN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Math education"
+            src="/images/dyscalculia-diagnosis-evaluation.png"
+            alt="Educational psychologist conducting math assessment with student to identify dyscalculia"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
           
@@ -215,8 +215,8 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Assessment Report</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1754304342484-3256d59778e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRoJTIwbnVtYmVycyUyMGxlYXJuaW5nfGVufDF8fHx8MTc2NzQ1MjMwNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Math numbers learning"
+            src="/images/dyscalculia-diagnosis-report.png"
+            alt="Comprehensive assessment report showing numerical testing results and diagnostic findings"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />
           

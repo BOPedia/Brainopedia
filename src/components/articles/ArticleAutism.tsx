@@ -89,7 +89,6 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
         <div className="w-full">
           <InfoBox
             title="Autism Spectrum Disorder"
-            image={autismImage}
             data={[
               { label: 'Other names', value: 'Autism, ASD' },
               { label: 'Specialty', value: 'Psychiatry, Pediatrics, Neurology' },
@@ -105,12 +104,6 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
       <div className="space-y-8 mt-20 clear-both">
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
-          <img 
-            src={overviewImage} 
-            alt="Abstract artistic representation of diverse minds and perspectives in autism"
-            className="w-80 h-auto rounded-md float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Autism is a lifelong neurodevelopmental condition that affects how people perceive the world and interact 
@@ -137,12 +130,6 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
 
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
-          
-          <img 
-            src={definingAutismImage} 
-            alt="Defining Autism - Diagnostic criteria showing social communication and repetitive behaviors requirements"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Autism is characterized by differences in social communication and interaction, alongside restricted or 
@@ -172,12 +159,6 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
-          <img 
-            src={causesImage} 
-            alt="Causes of Autism - Genetic and environmental factors contributing to autism development"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             The exact causes of autism are not fully understood, but research indicates that both genetic and environmental factors contribute to its development.<sup style={{color: '#10b981'}}>[2]</sup> Autism is best understood as arising from differences in brain development that occur before birth. Studies have identified hundreds of genes associated with autism, though no single gene causes autism in most cases.<sup style={{color: '#10b981'}}>[3]</sup>
           </p>
@@ -199,12 +180,6 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
-          <img 
-            src={diagnosticImage} 
-            alt="Healthcare provider conducting autism diagnostic assessment with child"
-            className="w-80 h-auto rounded-md float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             Autism is typically diagnosed through comprehensive developmental and behavioral evaluation by qualified professionals such as developmental pediatricians, child psychologists, or neurologists. There is no medical test (like a blood test or brain scan) for autism; diagnosis is based on observation of behavior and developmental history using standardized diagnostic criteria from the DSM-5-TR.<sup style={{color: '#10b981'}}>[5]</sup>
           </p>
@@ -225,12 +200,6 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
 
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
-          
-          <img 
-            src={supportImage} 
-            alt="Support for autism - Individualized interventions and accommodations"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Support for autistic individuals should be individualized based on their unique needs, strengths, and 
@@ -259,12 +228,6 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
 
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Autism</h2>
-          
-          <img 
-            src={livingImage} 
-            alt="Living with autism - Celebrating neurodiversity and autistic identity"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Autistic individuals lead full and meaningful lives across all areas of society. While autism presents 

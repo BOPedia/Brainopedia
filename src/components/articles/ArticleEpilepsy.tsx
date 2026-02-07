@@ -64,7 +64,6 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
         <div className="w-full">
           <InfoBox
             title="Epilepsy"
-            image={epilepsyImage}
             data={[
               { label: 'Other names', value: 'Seizure disorder' },
               { label: 'Specialty', value: 'Neurology' },

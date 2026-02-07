@@ -89,7 +89,6 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
         <div className="w-full">
           <InfoBox
             title="Developmental Language Disorder"
-            image={dldImage}
             data={[
               { label: 'Other names', value: 'DLD, formerly Specific Language Impairment (SLI)' },
               { label: 'Specialty', value: 'Speech-Language Pathology' },

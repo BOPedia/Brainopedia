@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
+import React from 'react';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
 import { ASDReferences } from './ASDReferences';
 
@@ -8,7 +7,7 @@ interface ASDSymptomsProps {
 }
 
 export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
-  const [activeTab, setActiveTab] = useState('core');
+  const [activeTab, setActiveTab] = React.useState('core');
 
   const tabs = [
     { id: 'core', label: 'Core Symptoms', emoji: '' },
@@ -99,13 +98,14 @@ export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
             {/* DSM-5 Symptom Chart */}
             <div className="bg-[#f0f9ff] p-6 rounded-lg">
               <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">DSM-5 Diagnostic Categories</h2>
-              <div className="flex justify-center mb-6">
+              {/* Image removed - definingAutismImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
                 <img 
                   src={definingAutismImage} 
                   alt="Defining Autism - DSM-5 diagnostic criteria showing social communication and repetitive behaviors"
                   className="w-full max-w-3xl h-auto rounded-md border border-gray-300"
                 />
-              </div>
+              </div> */}
               <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Two Core Diagnostic Domains</h3>
                 <p className="text-sm mb-4">
@@ -167,13 +167,14 @@ export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
                 from early childhood and affect functioning across contexts.
               </p>
               
-              <div className="flex justify-center mb-6">
-                <ImageWithFallback 
+              {/* Image removed - socialEmotionalImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
+                <img 
                   src={socialEmotionalImage} 
                   alt="Social communication in autism"
                   className="w-80 h-auto rounded-md border border-gray-300"
                 />
-              </div>
+              </div> */}
 
               {/* Social-Emotional Reciprocity */}
               <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -286,13 +287,14 @@ export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
                 Autistic individuals display at least two of the following types of restricted, repetitive patterns:<sup>[1]</sup>
               </p>
               
-              <div className="flex justify-center mb-6">
-                <ImageWithFallback 
+              {/* Image removed - repetitivePatternsImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
+                <img 
                   src={repetitivePatternsImage} 
                   alt="Repetitive behaviors and patterns"
                   className="w-64 h-auto rounded-md border border-gray-300"
                 />
-              </div>
+              </div> */}
 
               {/* Stereotyped or Repetitive Movements, Speech, or Object Use */}
               <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -522,13 +524,14 @@ export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
                 While not part of the core diagnostic criteria, many autistic individuals share additional characteristics:
               </p>
               
-              <div className="flex justify-center mb-6">
+              {/* Image removed - colorWheelImage variable not defined */}
+              {/* <div className="flex justify-center mb-6">
                 <img 
                   src={colorWheelImage} 
                   alt="Diverse spectrum of characteristics in autism"
                   className="w-64 h-auto rounded-md border border-gray-300"
                 />
-              </div>
+              </div> */}
 
               {/* Executive Function Differences */}
               <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -754,13 +757,14 @@ export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
                   characteristic categories.
                 </p>
                 
-                <div className="flex justify-center my-6">
+                {/* Image removed - symptomChartImage variable not defined */}
+                {/* <div className="flex justify-center my-6">
                   <img 
                     src={symptomChartImage} 
                     alt="Autism symptom severity chart showing various characteristic categories on a 0-10 scale"
                     className="w-full max-w-3xl h-auto rounded-md border border-gray-300"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -786,17 +790,17 @@ export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
                 <li className="mb-2"><strong>Loyalty and consistency:</strong> Deep commitment to people, values, and interests</li>
               </ul>
               <p className="mb-4">
-                Recognizing and cultivating strengths while providing support for challenges is essential for helping 
-                autistic individuals thrive.
+                Recognizing and cultivating strengths while providing support for challenges is essential for helping \n                autistic individuals thrive.
               </p>
 
-              <div className="flex justify-center my-6">
+              {/* Image removed - strengthsMandalaImage variable not defined */}
+              {/* <div className="flex justify-center my-6">
                 <img 
                   src={strengthsMandalaImage} 
                   alt="Mandala representing various strengths of autistic individuals"
                   className="w-96 h-auto rounded-md border border-gray-300"
                 />
-              </div>
+              </div> */}
 
               <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mt-6">
                 <p className="text-sm">

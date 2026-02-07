@@ -65,7 +65,6 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
         <div className="w-full">
           <InfoBox
             title="PANDAS"
-            image={pandasImage}
             data={[
               { label: 'Full name', value: 'Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptococcal Infections' },
               { label: 'Specialty', value: 'Pediatric Neurology, Immunology, Psychiatry' },

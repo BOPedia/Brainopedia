@@ -88,7 +88,6 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         <div className="w-full">
           <InfoBox
             title="Dyslexia"
-            image={dyslexiaImage}
             data={[
               { label: 'Other names', value: 'Reading disorder, specific learning disorder with impairment in reading' },
               { label: 'Specialty', value: 'Educational psychology, Neurology' },
@@ -104,12 +103,6 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
       <div className="space-y-8 mt-20 clear-both">
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
-          <img 
-            src={overviewImage}
-            alt="Reading and education - understanding dyslexia"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Dyslexia is one of the most common learning differences, affecting approximately 5-10% of the population.<sup>[1]</sup> 
@@ -139,12 +132,6 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
-          <img 
-            src={symptomsImage}
-            alt="Letter learning - phonological processing in dyslexia"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             Dyslexia is characterized by difficulties with reading accuracy and fluency, poor spelling, and challenges 
             with decoding words. Common signs include difficulty recognizing familiar words, slow and laborious reading, 
@@ -167,12 +154,6 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
 
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
-          
-          <img 
-            src={causesImage}
-            alt="Brain learning - neurological basis of dyslexia"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Dyslexia has a strong genetic component and tends to run in families. Research has identified several genes 
@@ -198,12 +179,6 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
-          <img 
-            src={diagnosisImage}
-            alt="Educational assessment - diagnosing dyslexia"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             Dyslexia is diagnosed through comprehensive evaluation by qualified professionals such as educational 
             psychologists, school psychologists, or neuropsychologists. The assessment typically includes standardized 
@@ -227,12 +202,6 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
-          <img 
-            src={supportImage}
-            alt="Educational support - interventions for dyslexia"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <p className="mb-4">
             Evidence-based reading interventions are essential for individuals with dyslexia. Effective approaches include 
             structured literacy programs (such as Orton-Gillingham and Wilson Reading System), explicit phonics instruction, 
@@ -255,12 +224,6 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
 
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyslexia</h2>
-          
-          <img 
-            src={livingImage}
-            alt="Creative success - living successfully with dyslexia"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <p className="mb-4">
             Individuals with dyslexia lead successful and fulfilling lives across all areas of society. Many successful 
