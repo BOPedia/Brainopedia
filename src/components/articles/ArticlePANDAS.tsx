@@ -8,47 +8,20 @@ interface ArticlePANDASProps {
 
 export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
   const sections = [
-    { 
-      id: 'overview', 
-      title: 'Overview'
-    },
-    { 
-      id: 'characteristics', 
-      title: 'Symptoms & Characteristics'
-    },
-    { 
-      id: 'causes', 
-      title: 'Causes & Origins'
-    },
-    { 
-      id: 'diagnosis', 
-      title: 'Testing & Diagnosing'
-    },
-    { 
-      id: 'support', 
-      title: 'Support & Management'
-    },
-    { 
-      id: 'living', 
-      title: 'Living with PANDAS/PANS'
-    },
+    { id: 'overview', title: 'Overview' },
+    { id: 'characteristics', title: 'Symptoms & Characteristics' },
+    { id: 'causes', title: 'Causes & Origins' },
+    { id: 'diagnosis', title: 'Testing & Diagnosing' },
+    { id: 'support', title: 'Support & Management' },
+    { id: 'living', title: 'Living with PANDAS/PANS' },
   ];
 
   return (
     <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
-        PANDAS
-      </h1>
+      <style>{`sup { color: #10b981; }`}</style>
+      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">PANDAS</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
           <p>
             <strong>PANDAS</strong> (Pediatric Autoimmune Neuropsychiatric Disorders Associated with 
@@ -57,223 +30,70 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
             This acquired brain condition represents a significant shift in how the child's brain processes 
             information and regulates behavior.<sup>[2]</sup>
           </p>
-          
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
-
-        {/* Right column - InfoBox */}
         <div className="w-full">
-          <InfoBox
-            title="PANDAS"
-            data={[
-              { label: 'Full name', value: 'Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptococcal Infections' },
-              { label: 'Specialty', value: 'Pediatric Neurology, Immunology, Psychiatry' },
-              { label: 'Cause', value: 'Autoimmune response to streptococcal infection' },
-              { label: 'Age of onset', value: 'Prepubertal (ages 3 to puberty)' },
-              { label: 'Duration', value: 'Variable (episodic, chronic, or resolves)' },
-              { label: 'Primary symptoms', value: 'Sudden onset OCD and/or tics' },
-            ]}
-          />
+          <InfoBox title="PANDAS" data={[
+            { label: 'Full name', value: 'Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptococcal Infections' },
+            { label: 'Specialty', value: 'Pediatric Neurology, Immunology, Psychiatry' },
+            { label: 'Cause', value: 'Autoimmune response to streptococcal infection' },
+            { label: 'Age of onset', value: 'Prepubertal (ages 3 to puberty)' },
+            { label: 'Duration', value: 'Variable (episodic, chronic, or resolves)' },
+            { label: 'Primary symptoms', value: 'Sudden onset OCD and/or tics' },
+          ]} />
         </div>
       </div>
 
       <div className="space-y-8 mt-20 clear-both">
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1707079918019-49caa51206c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbW11bmUlMjBzeXN0ZW0lMjBhdXRvaW1tdW5lJTIwYnJhaW4lMjBpbmZsYW1tYXRpb258ZW58MXx8fHwxNzY3NDEwODYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Immune system and autoimmune brain inflammation"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            PANDAS occurs when the immune system, after fighting a streptococcal infection (such as strep 
-            throat or scarlet fever), mistakenly attacks parts of the brain—particularly the basal ganglia, 
-            which plays a crucial role in movement control and behavior.<sup>[3]</sup> This autoimmune response causes 
-            inflammation in the brain, leading to sudden and dramatic changes in a child's neurological 
-            and psychiatric functioning.<sup>[4]</sup>
-          </p>
-          
-          <p className="mb-4">
-            The hallmark of PANDAS is the abrupt, dramatic onset of obsessive-compulsive 
-            disorder (OCD) symptoms and/or tics following a streptococcal infection.<sup>[5]</sup> Children may go from neurotypical 
-            functioning to severe impairment within days or weeks.<sup>[6]</sup> The onset is often described by parents as their 
-            child changing "overnight."<sup>[7]</sup> 
-          </p>
-          
-          <p className="mb-4">
-            While some children recover fully with treatment, others experience recurring 
-            episodes or ongoing symptoms, making PANDAS a form of acquired neurodivergence that may require long-term 
-            management and accommodation.<sup>[8]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1707079918019-49caa51206c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbW11bmUlMjBzeXN0ZW0lMjBhdXRvaW1tdW5lJTIwYnJhaW4lMjBpbmZsYW1tYXRpb258ZW58MXx8fHwxNzY3NDEwODYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Immune system and autoimmune brain inflammation" className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">PANDAS occurs when the immune system, after fighting a streptococcal infection (such as strep throat or scarlet fever), mistakenly attacks parts of the brain—particularly the basal ganglia, which plays a crucial role in movement control and behavior.<sup>[3]</sup> This autoimmune response causes inflammation in the brain, leading to sudden and dramatic changes in a child's neurological and psychiatric functioning.<sup>[4]</sup></p>
+          <p className="mb-4">The hallmark of PANDAS is the abrupt, dramatic onset of obsessive-compulsive disorder (OCD) symptoms and/or tics following a streptococcal infection.<sup>[5]</sup> Children may go from neurotypical functioning to severe impairment within days or weeks.<sup>[6]</sup> The onset is often described by parents as their child changing "overnight."<sup>[7]</sup></p>
+          <p className="mb-4">While some children recover fully with treatment, others experience recurring episodes or ongoing symptoms, making PANDAS a form of acquired neurodivergence that may require long-term management and accommodation.<sup>[8]</sup></p>
         </section>
 
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1656367829211-c7c0f277c518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMGFueGlldHklMjBPQ0QlMjBiZWhhdmlvciUyMHN1ZGRlbiUyMG9uc2V0fGVufDF8fHx8MTc2NzQxMDg2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Child anxiety and behavioral changes in PANDAS"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            PANDAS symptoms typically appear suddenly and dramatically within days to weeks of a streptococcal infection.<sup>[9]</sup>
-            Primary symptoms include obsessive-compulsive disorder (OCD) with intrusive thoughts, compulsive behaviors, 
-            fears of contamination, and repetitive checking or counting, as well as tics including motor tics (eye blinking, 
-            facial grimacing, shoulder shrugging) or vocal tics (throat clearing, grunting, repetitive words).<sup>[10][11]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Behavioral 
-            and emotional changes include severe anxiety and panic attacks, depression and emotional lability, irritability, 
-            aggression or oppositional behavior, separation anxiety especially in younger children, personality changes 
-            (becoming withdrawn, clingy, or defiant), and age-inappropriate regression (baby talk, tantrums).<sup>[12]</sup> Cognitive and 
-            sensory changes include difficulty concentrating and focusing, academic decline or school refusal, memory problems, 
-            sensory sensitivities (light, sound, textures), and executive function difficulties.<sup>[13]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Physical symptoms include 
-            sleep disturbances (difficulty falling asleep, nightmares, night terrors), urinary frequency or new onset bedwetting, 
-            changes in handwriting (deterioration in fine motor skills), joint pain or muscle aches, and hyperactivity or 
-            restlessness.<sup>[14]</sup> The sudden dramatic onset within days to weeks of infection is the key distinguishing feature.<sup>[15]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1656367829211-c7c0f277c518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMGFueGlldHklMjBPQ0QlMjBiZWhhdmlvciUyMHN1ZGRlbiUyMG9uc2V0fGVufDF8fHx8MTc2NzQxMDg2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Child anxiety and behavioral changes in PANDAS" className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">PANDAS symptoms typically appear suddenly and dramatically within days to weeks of a streptococcal infection.<sup>[9]</sup> Primary symptoms include obsessive-compulsive disorder (OCD) with intrusive thoughts, compulsive behaviors, fears of contamination, and repetitive checking or counting, as well as tics including motor tics (eye blinking, facial grimacing, shoulder shrugging) or vocal tics (throat clearing, grunting, repetitive words).<sup>[10][11]</sup></p>
+          <p className="mb-4">Behavioral and emotional changes include severe anxiety and panic attacks, depression and emotional lability, irritability, aggression or oppositional behavior, separation anxiety especially in younger children, personality changes (becoming withdrawn, clingy, or defiant), and age-inappropriate regression (baby talk, tantrums).<sup>[12]</sup> Cognitive and sensory changes include difficulty concentrating and focusing, academic decline or school refusal, memory problems, sensory sensitivities (light, sound, textures), and executive function difficulties.<sup>[13]</sup></p>
+          <p className="mb-4">Physical symptoms include sleep disturbances (difficulty falling asleep, nightmares, night terrors), urinary frequency or new onset bedwetting, changes in handwriting (deterioration in fine motor skills), joint pain or muscle aches, and hyperactivity or restlessness.<sup>[14]</sup> The sudden dramatic onset within days to weeks of infection is the key distinguishing feature.<sup>[15]</sup></p>
         </section>
 
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1625402534000-ba20597c3684?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJlcCUyMHRocm9hdCUyMGluZmVjdGlvbiUyMGJhY3RlcmlhJTIwaWxsbmVzc3xlbnwxfHx8fDE3Njc0MTA4NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Streptococcal infection triggering PANDAS"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            PANDAS is caused by an autoimmune response to streptococcal infection.<sup>[16]</sup> When the immune system fights a 
-            streptococcal infection (such as strep throat or scarlet fever), it produces antibodies to attack the bacteria.<sup>[17]</sup>
-            In PANDAS, these antibodies mistakenly cross-react with and attack parts of the brain, particularly the basal 
-            ganglia—a brain region crucial for movement control, behavior regulation, and habit formation.<sup>[18]</sup>
-          </p>
-          
-          <p className="mb-4">
-            This autoimmune 
-            attack causes inflammation in the brain (neuroinflammation), leading to sudden and dramatic changes in neurological 
-            and psychiatric functioning.<sup>[19]</sup> The exact mechanisms of why this occurs in some children and not others are still being 
-            researched, but likely involve genetic susceptibility, immune system factors, and the specific characteristics of 
-            the streptococcal infection.<sup>[20][21]</sup>
-          </p>
-          
-          <p className="mb-4">
-            PANDAS represents an acquired form of brain difference where an environmental trigger 
-            (infection) causes an immune-mediated change in brain function.<sup>[22]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1625402534000-ba20597c3684?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJlcCUyMHRocm9hdCUyMGluZmVjdGlvbiUyMGJhY3RlcmlhJTIwaWxsbmVzc3xlbnwxfHx8fDE3Njc0MTA4NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Streptococcal infection triggering PANDAS" className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">PANDAS is caused by an autoimmune response to streptococcal infection.<sup>[16]</sup> When the immune system fights a streptococcal infection (such as strep throat or scarlet fever), it produces antibodies to attack the bacteria.<sup>[17]</sup> In PANDAS, these antibodies mistakenly cross-react with and attack parts of the brain, particularly the basal ganglia—a brain region crucial for movement control, behavior regulation, and habit formation.<sup>[18]</sup></p>
+          <p className="mb-4">This autoimmune attack causes inflammation in the brain (neuroinflammation), leading to sudden and dramatic changes in neurological and psychiatric functioning.<sup>[19]</sup> The exact mechanisms of why this occurs in some children and not others are still being researched, but likely involve genetic susceptibility, immune system factors, and the specific characteristics of the streptococcal infection.<sup>[20][21]</sup></p>
+          <p className="mb-4">PANDAS represents an acquired form of brain difference where an environmental trigger (infection) causes an immune-mediated change in brain function.<sup>[22]</sup></p>
         </section>
 
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1576765608622-067973a79f53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwdGVzdCUyMGRpYWdub3NpcyUyMGNoaWxkJTIwaGVhbHRoY2FyZXxlbnwxfHx8fDE3Njc0MTA4NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Medical testing and diagnosis for PANDAS"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            Diagnosing PANDAS can be challenging as there is no single definitive test.<sup>[23]</sup> Diagnosis is based on clinical 
-            presentation and meeting specific criteria including presence of OCD and/or tics, prepubertal onset (symptoms 
-            begin between ages 3 and puberty), sudden dramatic onset or episodic course (symptoms appear abruptly or worsen 
-            suddenly), temporal association with streptococcal infection (symptoms appear during or shortly after infection), 
-            and associated neurological abnormalities during symptom exacerbation (motor hyperactivity, choreiform movements, 
-            handwriting deterioration).<sup>[24][25]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Testing and evaluation includes throat culture or rapid strep test to identify current 
-            streptococcal infection, anti-streptococcal antibody titers (ASO, anti-DNase B) blood tests showing recent strep 
-            exposure, clinical evaluation with detailed history of symptom onset and infection timeline, neuropsychiatric 
-            assessment evaluating OCD, tics, anxiety and other symptoms, and exclusion of other conditions (Lyme disease, 
-            autoimmune encephalitis).<sup>[26][27]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Diagnostic challenges include that PANDAS remains controversial in medical communities, 
-            not all doctors recognize or diagnose PANDAS, symptoms can overlap with other psychiatric conditions, and strep 
-            infections are common in childhood making causality difficult to prove.<sup>[28][29]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1576765608622-067973a79f53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwdGVzdCUyMGRpYWdub3NpcyUyMGNoaWxkJTIwaGVhbHRoY2FyZXxlbnwxfHx8fDE3Njc0MTA4NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Medical testing and diagnosis for PANDAS" className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">Diagnosing PANDAS can be challenging as there is no single definitive test.<sup>[23]</sup> Diagnosis is based on clinical presentation and meeting specific criteria including presence of OCD and/or tics, prepubertal onset (symptoms begin between ages 3 and puberty), sudden dramatic onset or episodic course (symptoms appear abruptly or worsen suddenly), temporal association with streptococcal infection (symptoms appear during or shortly after infection), and associated neurological abnormalities during symptom exacerbation (motor hyperactivity, choreiform movements, handwriting deterioration).<sup>[24][25]</sup></p>
+          <p className="mb-4">Testing and evaluation includes throat culture or rapid strep test to identify current streptococcal infection, anti-streptococcal antibody titers (ASO, anti-DNase B) blood tests showing recent strep exposure, clinical evaluation with detailed history of symptom onset and infection timeline, neuropsychiatric assessment evaluating OCD, tics, anxiety and other symptoms, and exclusion of other conditions (Lyme disease, autoimmune encephalitis).<sup>[26][27]</sup></p>
+          <p className="mb-4">Diagnostic challenges include that PANDAS remains controversial in medical communities, not all doctors recognize or diagnose PANDAS, symptoms can overlap with other psychiatric conditions, and strep infections are common in childhood making causality difficult to prove.<sup>[28][29]</sup></p>
         </section>
 
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1676313027775-a5a3dca6f98b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMHRoZXJhcHklMjB0cmVhdG1lbnQlMjBhbnRpYmlvdGljcyUyMG1lZGljaW5lfGVufDF8fHx8MTc2NzQxMDg2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Treatment and therapy for children with PANDAS"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            Treatment for PANDAS is multifaceted addressing both the underlying infection and the neuropsychiatric symptoms.<sup>[30]</sup>
-            Treating the infection includes antibiotics to treat active streptococcal infection, prophylactic antibiotics 
-            (long-term low-dose antibiotics to prevent recurrent infections, though controversial), and infection prevention 
-            through good hygiene and avoiding exposure to strep when possible.<sup>[31][32]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Immunomodulatory treatments include NSAIDs 
-            (ibuprofen) as anti-inflammatory medication to reduce brain inflammation, corticosteroids for more severe cases to 
-            suppress immune response, IVIG (Intravenous Immunoglobulin) for severe treatment-resistant cases, and plasmapheresis 
-            (filtering antibodies from blood) in severe cases though rarely used.<sup>[33][34]</sup> Symptom management includes Cognitive-Behavioral 
-            Therapy (CBT) particularly exposure and response prevention (ERP) for OCD, psychiatric medications (SSRIs for OCD/anxiety, 
-            medications for tics if needed), supportive therapy (individual or family therapy to cope with symptoms and changes), 
-            and school accommodations (504 plans or IEPs for academic support).<sup>[35][36]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Supportive care includes parent education and 
-            support groups, stress reduction and coping strategies, maintaining routines and structure, and addressing sleep, 
-            nutrition, and overall health.<sup>[37]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1676313027775-a5a3dca6f98b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMHRoZXJhcHklMjB0cmVhdG1lbnQlMjBhbnRpYmlvdGljcyUyMG1lZGljaW5lfGVufDF8fHx8MTc2NzQxMDg2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Treatment and therapy for children with PANDAS" className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">Treatment for PANDAS is multifaceted addressing both the underlying infection and the neuropsychiatric symptoms.<sup>[30]</sup> Treating the infection includes antibiotics to treat active streptococcal infection, prophylactic antibiotics (long-term low-dose antibiotics to prevent recurrent infections, though controversial), and infection prevention through good hygiene and avoiding exposure to strep when possible.<sup>[31][32]</sup></p>
+          <p className="mb-4">Immunomodulatory treatments include NSAIDs (ibuprofen) as anti-inflammatory medication to reduce brain inflammation, corticosteroids for more severe cases to suppress immune response, IVIG (Intravenous Immunoglobulin) for severe treatment-resistant cases, and plasmapheresis (filtering antibodies from blood) in severe cases though rarely used.<sup>[33][34]</sup> Symptom management includes Cognitive-Behavioral Therapy (CBT) particularly exposure and response prevention (ERP) for OCD, psychiatric medications (SSRIs for OCD/anxiety, medications for tics if needed), supportive therapy (individual or family therapy to cope with symptoms and changes), and school accommodations (504 plans or IEPs for academic support).<sup>[35][36]</sup></p>
+          <p className="mb-4">Supportive care includes parent education and support groups, stress reduction and coping strategies, maintaining routines and structure, and addressing sleep, nutrition, and overall health.<sup>[37]</sup></p>
         </section>
 
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with PANDAS/PANS</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1758206523860-0583e7b51a5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjBzdXBwb3J0JTIwY2hpbGQlMjByZWNvdmVyeSUyMHdlbGxuZXNzfGVufDF8fHx8MTc2NzQxMDg2NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Family support and child recovery from PANDAS"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            The course of PANDAS varies significantly among children.<sup>[38]</sup> Some experience full recovery with complete resolution 
-            of symptoms with treatment, others have an episodic course where symptoms flare with each new strep infection then 
-            improve, some have chronic symptoms requiring ongoing management, and others experience gradual improvement with 
-            symptoms lessening over time.<sup>[39][40]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Understanding PANDAS as an acquired brain condition emphasizes that these children's 
-            brains have been fundamentally affected by an autoimmune process.<sup>[41]</sup> With appropriate treatment, support, and accommodation, 
-            many children can return to typical functioning or learn to manage ongoing symptoms effectively.<sup>[42]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Living well with PANDAS 
-            involves early diagnosis and treatment which generally lead to better outcomes, ongoing monitoring for strep infections, 
-            accessing appropriate medical and therapeutic interventions, educational accommodations and support, and family education 
-            about recognizing symptom flares.<sup>[43]</sup> Topics related to living with PANDAS include managing OCD and tic symptoms, navigating 
-            the episodic nature of symptom flares, preventing and treating strep infections promptly, accessing appropriate medical 
-            care including specialists familiar with PANDAS, managing school and social impacts, supporting mental health long-term, 
-            connecting with PANDAS support communities, and understanding that some children may develop chronic OCD or tic disorder 
-            even after infection resolves.<sup>[44][45]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1758206523860-0583e7b51a5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjBzdXBwb3J0JTIwY2hpbGQlMjByZWNvdmVyeSUyMHdlbGxuZXNzfGVufDF8fHx8MTc2NzQxMDg2NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Family support and child recovery from PANDAS" className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">The course of PANDAS varies significantly among children.<sup>[38]</sup> Some experience full recovery with complete resolution of symptoms with treatment, others have an episodic course where symptoms flare with each new strep infection then improve, some have chronic symptoms requiring ongoing management, and others experience gradual improvement with symptoms lessening over time.<sup>[39][40]</sup></p>
+          <p className="mb-4">Understanding PANDAS as an acquired brain condition emphasizes that these children's brains have been fundamentally affected by an autoimmune process.<sup>[41]</sup> With appropriate treatment, support, and accommodation, many children can return to typical functioning or learn to manage ongoing symptoms effectively.<sup>[42]</sup></p>
+          <p className="mb-4">Living well with PANDAS involves early diagnosis and treatment which generally lead to better outcomes, ongoing monitoring for strep infections, accessing appropriate medical and therapeutic interventions, educational accommodations and support, and family education about recognizing symptom flares.<sup>[43]</sup> Topics related to living with PANDAS include managing OCD and tic symptoms, navigating the episodic nature of symptom flares, preventing and treating strep infections promptly, accessing appropriate medical care including specialists familiar with PANDAS, managing school and social impacts, supporting mental health long-term, connecting with PANDAS support communities, and understanding that some children may develop chronic OCD or tic disorder even after infection resolves.<sup>[44][45]</sup></p>
         </section>
       </div>
 
-      {/* References Section */}
       <section className="mt-12 pt-6 border-t-2 border-gray-300">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
         <div className="text-sm space-y-2">

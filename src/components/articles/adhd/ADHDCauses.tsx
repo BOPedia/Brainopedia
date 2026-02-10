@@ -630,54 +630,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
           <strong>Socioeconomic factors:</strong> Lower socioeconomic status is associated with higher ADHD prevalence, 
           though the mechanisms are complex. Socioeconomic disadvantage may increase exposure to various environmental 
           risk factors (toxins, stress, prenatal risks) and reduce access to protective factors (healthcare, nutrition, 
-          enrichment).<sup className="text-[#10b981]">[23]</sup> Recent research emphasizes that these are associations rather than direct causes.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Other Environmental Considerations</h3>
-
-        <p className="mb-4">
-          <strong>Traumatic brain injury:</strong> Head injuries, particularly those affecting frontal brain regions, 
-          can lead to attention and executive function problems similar to ADHD. While most ADHD cases don't result 
-          from brain injury, individuals who sustain significant head trauma may develop secondary ADHD-like symptoms.<sup className="text-[#10b981]">[24]</sup>
-        </p>
-
-        <p className="mb-4">
-          <strong>Prenatal medication exposure:</strong> Some research has investigated whether certain medications 
-          taken during pregnancy might affect ADHD risk. Acetaminophen (paracetamol) use during pregnancy has been 
-          associated with increased ADHD risk in some studies, though the evidence is mixed and confounding by 
-          indication (the reason for taking medication) complicates interpretation.<sup className="text-[#10b981]">[25]</sup>
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
-        
-        <p className="mb-4">
-          Environmental risk factors don't affect everyone equally. Research increasingly shows that genetic factors 
-          can moderate environmental effects—a concept called gene-environment interaction. For example, individuals 
-          with certain genetic variants may be more susceptible to the negative effects of prenatal smoking exposure 
-          or environmental toxins.<sup className="text-[#10b981]">[26]</sup> Similarly, protective genetic factors might buffer against environmental 
-          risks. This helps explain why the same environmental exposure produces different outcomes in different people.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Understanding Risk vs. Causation</h3>
-        
-        <p className="mb-4">
-          It's crucial to distinguish between risk factors and causes. Most environmental factors discussed here are 
-          <em>associated</em> with increased ADHD risk but don't inevitably cause ADHD. Many children exposed to these 
-          factors never develop ADHD, and many with ADHD had no known exposure. Environmental factors typically:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Increase probability of ADHD rather than directly causing it</li>
-          <li className="mb-2">Have modest effect sizes compared to genetic factors</li>
-          <li className="mb-2">Often interact with genetic vulnerability</li>
-          <li className="mb-2">May be markers for other unmeasured risk factors</li>
-          <li className="mb-2">Can affect symptom severity even if they don't cause ADHD</li>
-        </ul>
-
-        <p className="mb-4">
-          Understanding these environmental risk factors is important for prevention efforts and helps explain why ADHD 
-          prevalence might vary across different populations and time periods. However, the predominant cause of ADHD 
-          remains genetic and neurobiological, with environmental factors playing a modifying rather than primary role 
-          in most cases.
+          enrichment).<sup className="text-[#10b981]">[23]</sup> Recent research emphasizes that these are associations rather than direct causation.
         </p>
 
         {/* Bottom button - right aligned above References */}
@@ -691,337 +644,35 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
           </button>
         </div>
 
-        {/* References for Environmental Factors Tab */}
+        {/* References for Environmental Tab */}
         <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
           
           <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
           <div className="text-sm space-y-2">
-            <p>[1] Thapar, A., Cooper, M., & Rutter, M. (2017). "Neurodevelopmental disorders." <em>The Lancet Psychiatry</em>, 4(4), 339-346.</p>
-            <p>[2] Huang, L., Wang, Y., Zhang, L., Zheng, Z., Zhu, T., Qu, Y., & Mu, D. (2018). "Maternal smoking and attention-deficit/hyperactivity disorder in offspring: A meta-analysis." <em>Pediatrics</em>, 141(1), e20172465.</p>
-            <p>[3] Obel, C., Zhu, J. L., Olsen, J., Breining, S., Li, J., Grønborg, T. K., ... & Rutter, M. (2016). "The risk of attention deficit hyperactivity disorder in children exposed to maternal smoking during pregnancy - a re-examination using a sibling design." <em>Journal of Child Psychology and Psychiatry</em>, 57(4), 532-537.</p>
-            <p>[4] Weyrauch, D., Schwartz, M., Hart, B., Klug, M. G., & Burd, L. (2017). "Comorbid mental disorders in fetal alcohol spectrum disorders: A systematic review." <em>Journal of Developmental and Behavioral Pediatrics</em>, 38(4), 283-291.</p>
-            <p>[5] Sayal, K., Heron, J., Golding, J., & Emond, A. (2014). "Prenatal alcohol exposure and gender differences in childhood mental health problems: A longitudinal population-based study." <em>Pediatrics</em>, 133(2), e388-e398.</p>
-            <p>[6] Grizenko, N., Shayan, Y. R., Polotskaia, A., Ter-Stepanian, M., & Joober, R. (2008). "Relation of maternal stress during pregnancy to symptom severity and response to treatment in children with ADHD." <em>Journal of Psychiatry & Neuroscience</em>, 33(1), 10-16.</p>
-            <p>[7] Morales, E., Julvez, J., Torrent, M., Ballester, F., Rodríguez-Bernal, C. L., Andiarena, A., ... & Sunyer, J. (2015). "Vitamin D in pregnancy and attention deficit hyperactivity disorder-like symptoms in childhood." <em>Epidemiology</em>, 26(4), 458-465.</p>
-            <p>[8] Franz, A. P., Bolat, G. U., Bolat, H., Matijasevich, A., Santos, I. S., Silveira, R. C., ... & Moreira-Maia, C. R. (2018). "Attention-deficit/hyperactivity disorder and very preterm/very low birth weight: A meta-analysis." <em>Pediatrics</em>, 141(1), e20171645.</p>
-            <p>[9] Aarnoudse-Moens, C. S., Weisglas-Kuperus, N., van Goudoever, J. B., & Oosterlaan, J. (2009). "Meta-analysis of neurobehavioral outcomes in very preterm and/or very low birth weight children." <em>Pediatrics</em>, 124(2), 717-728.</p>
-            <p>[10] Pelsser, L. M., Frankena, K., Toorman, J., Savelkoul, H. F., Dubois, A. E., Pereira, R. R., ... & Buitelaar, J. K. (2011). "Effects of a restricted elimination diet on the behaviour of children with attention-deficit hyperactivity disorder (INCA study): A randomised controlled trial." <em>The Lancet</em>, 377(9764), 494-503.</p>
-            <p>[11] Donzelli, G., Carducci, A., Llopis-Gonzalez, A., Verani, M., Llopis-Morales, A., Cioni, L., & Morales-Suárez-Varela, M. (2020). "The association between air pollution and the attention-deficit/hyperactivity disorder: A systematic review." <em>International Journal of Environmental Research and Public Health</em>, 17(11), 4071.</p>
-            <p>[12] Forns, J., Dadvand, P., Esnaola, M., Alvarez-Pedrerol, M., López-Vicente, M., Garcia-Esteban, R., ... & Sunyer, J. (2017). "Longitudinal association between air pollution exposure at school and cognitive development in school children over a period of 3.5 years." <em>Environmental Research</em>, 159, 416-421.</p>
-            <p>[13] Min, J. Y., & Min, K. B. (2017). "Exposure to ambient PM10 and NO2 and the incidence of attention-deficit hyperactivity disorder in childhood." <em>Environment International</em>, 99, 221-227.</p>
-            <p>[14] Goodlad, J. K., Marcus, D. K., & Fulton, J. J. (2013). "Lead and attention-deficit/hyperactivity disorder (ADHD) symptoms: A meta-analysis." <em>Clinical Psychology Review</em>, 33(3), 417-425.</p>
-            <p>[15] Nilsen, F. M., Ruiz, J. D., Tulve, N. S., & Community Health Studies Team. (2020). "A meta-analysis of stressors from the total environment associated with children's general cognitive ability." <em>International Journal of Environmental Research and Public Health</em>, 17(15), 5451.</p>
-            <p>[16] Marks, A. R., Harley, K., Bradman, A., Kogut, K., Barr, D. B., Johnson, C., ... & Eskenazi, B. (2010). "Organophosphate pesticide exposure and attention in young Mexican-American children: The CHAMACOS study." <em>Environmental Health Perspectives</em>, 118(12), 1768-1774.</p>
-            <p>[17] Bouchard, M. F., Bellinger, D. C., Wright, R. O., & Weisskopf, M. G. (2010). "Attention-deficit/hyperactivity disorder and urinary metabolites of organophosphate pesticides." <em>Pediatrics</em>, 125(6), e1270-e1277.</p>
-            <p>[18] Sagiv, S. K., Thurston, S. W., Bellinger, D. C., Amarasiriwardena, C., & Korrick, S. A. (2012). "Prenatal organochlorine exposure and behaviors associated with attention deficit hyperactivity disorder in school-aged children." <em>American Journal of Epidemiology</em>, 175(12), 1271-1283.</p>
-            <p>[19] Engel, S. M., Miodovnik, A., Canfield, R. L., Zhu, C., Silva, M. J., Calafat, A. M., & Wolff, M. S. (2010). "Prenatal phthalate exposure is associated with childhood behavior and executive functioning." <em>Environmental Health Perspectives</em>, 118(4), 565-571.</p>
-            <p>[20] Kreppner, J. M., O'Connor, T. G., Rutter, M., & English and Romanian Adoptees Study Team. (2001). "Can inattention/overactivity be an institutional deprivation syndrome?" <em>Journal of Abnormal Child Psychology</em>, 29(6), 513-528.</p>
-            <p>[21] Kennedy, M., Kreppner, J., Knights, N., Kumsta, R., Maughan, B., Golm, D., ... & Sonuga-Barke, E. J. (2016). "Early severe institutional deprivation is associated with a persistent variant of adult attention-deficit/hyperactivity disorder: Clinical presentation, developmental continuities and life circumstances in the English and Romanian Adoptees study." <em>Journal of Child Psychology and Psychiatry</em>, 57(10), 1113-1125.</p>
-            <p>[22] Lim, L., Hart, H., Howells, H., Mehta, M. A., Simmons, A., Mirza, K., & Rubia, K. (2018). "Altered white matter connectivity in young people exposed to childhood abuse: A tract-based spatial statistics (TBSS) and tractography study." <em>Journal of Psychiatry & Neuroscience</em>, 43(3), 170241.</p>
-            <p>[23] Russell, A. E., Ford, T., Williams, R., & Russell, G. (2016). "The association between socioeconomic disadvantage and attention deficit/hyperactivity disorder (ADHD): A systematic review." <em>Child Psychiatry & Human Development</em>, 47(3), 440-458.</p>
-            <p>[24] Sinopoli, K. J., & Dennis, M. (2012). "Inhibitory control after traumatic brain injury in children." <em>International Journal of Developmental Neuroscience</em>, 30(3), 207-215.</p>
-            <p>[25] Ystrom, E., Gustavson, K., Brandlistuen, R. E., Knudsen, G. P., Magnus, P., Susser, E., ... & Reichborn-Kjennerud, T. (2017). "Prenatal exposure to acetaminophen and risk of ADHD." <em>Pediatrics</em>, 140(5), e20163840.</p>
-            <p>[26] Nigg, J., Nikolas, M., & Burt, S. A. (2010). "Measured gene-by-environment interaction in relation to attention-deficit/hyperactivity disorder." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(9), 863-873.</p>
-          </div>
-          
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
-            <p>Brown, T. E. (2013). <em>A New Understanding of ADHD in Children and Adults: Executive Function Impairments</em>. Routledge.</p>
-            <p>Centers for Disease Control and Prevention. (2022). "ADHD: Causes of ADHD." Retrieved from https://www.cdc.gov/ncbddd/adhd/facts.html</p>
-            <p>National Institute of Mental Health. (2023). "Attention-Deficit/Hyperactivity Disorder." Retrieved from https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  function MythsContent() {
-    return (
-      <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Myths and Misconceptions About ADHD Causes</h2>
-        
-        <div className="md:float-none lg:float-left md:mx-auto lg:mr-6 mb-4 w-96">
-          <ADHDMyths />
-        </div>
-        
-        <p className="mb-4">
-          Despite decades of scientific research establishing ADHD as a neurodevelopmental condition with strong 
-          genetic and neurobiological bases, many myths and misconceptions persist in popular culture. These 
-          misconceptions can increase stigma, lead to inappropriate blame, and prevent people from seeking 
-          appropriate help. Understanding what does <em>not</em> cause ADHD is as important as understanding 
-          what does.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #1: Poor Parenting Causes ADHD</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> ADHD is caused by permissive parenting, lack of discipline, or insufficient 
-          structure at home.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> Parenting style does not cause ADHD. Research consistently shows that ADHD 
-          is a neurodevelopmental condition with strong genetic and biological bases. Multiple studies have 
-          demonstrated that ADHD symptoms are present across different parenting styles, cultures, and family 
-          structures.<sup className="text-[#10b981]">[1]</sup> While parenting approaches can influence how symptoms are managed and how 
-          severe they appear, they don't create the underlying neurological differences that characterize ADHD.
-        </p>
-        <p className="mb-4">
-          A 2015 longitudinal study found that the relationship between parenting and child behavior is bidirectional—
-          children with ADHD elicit different parenting responses due to their challenging behaviors, but these 
-          parenting responses don't cause ADHD.<sup className="text-[#10b981]">[2]</sup> In fact, parenting a child with ADHD is more difficult, 
-          and parents of children with ADHD experience higher stress levels. Effective parenting strategies can help 
-          manage symptoms and improve outcomes, but cannot "cure" or prevent ADHD.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #2: Too Much Screen Time Causes ADHD</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> Excessive television, video games, or smartphone use causes ADHD in children.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> While excessive screen time has been associated with attention problems in 
-          some studies, this doesn't mean screens cause ADHD. A major 2018 study following over 2,000 adolescents 
-          found associations between digital media use and subsequent attention problems, but the effects were small 
-          and didn't establish causation.<sup className="text-[#10b981]">[3]</sup> The relationship is likely bidirectional—children with ADHD 
-          may be drawn to screens as a source of stimulation, and excessive screen time might worsen existing 
-          symptoms or attention difficulties.
-        </p>
-        <p className="mb-4">
-          Importantly, ADHD existed long before modern digital technology. Descriptions of ADHD-like symptoms appear 
-          in medical literature from the early 1900s and even earlier. Recent research emphasizes that while limiting 
-          screen time is good for overall health, it won't prevent or cure ADHD.<sup className="text-[#10b981]">[4]</sup>
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #3: Sugar Causes or Worsens ADHD</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> Sugar intake causes hyperactivity and ADHD symptoms, or makes existing ADHD worse.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> Despite widespread belief, multiple well-controlled studies have found no 
-          significant effect of sugar on behavior or attention in children with ADHD. A landmark 1995 meta-analysis 
-          of 23 studies found no evidence that sugar affects the behavior or cognitive performance of children.<sup className="text-[#10b981]">[5]</sup> 
-          More recent research continues to support these findings.
-        </p>
-        <p className="mb-4">
-          A 2019 systematic review examined the relationship between sugar consumption and ADHD, finding no causal 
-          relationship.<sup className="text-[#10b981]">[6]</sup> The perception that sugar causes hyperactivity is likely due to several factors: 
-          children often consume sugary foods at exciting events (parties, holidays), parental expectations can 
-          influence perception of child behavior, and normal childhood exuberance is sometimes misattributed to 
-          sugar intake. While a balanced diet is important for overall health, reducing sugar won't treat ADHD.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #4: Vaccines Cause ADHD</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> Childhood vaccinations, particularly those containing thimerosal (a mercury-based 
-          preservative), cause ADHD and other neurodevelopmental conditions.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> Extensive research has found absolutely no link between vaccines and ADHD. 
-          Multiple large-scale studies involving hundreds of thousands of children have investigated this question 
-          thoroughly. A 2019 Danish study following over 650,000 children found no association between MMR vaccination 
-          and ADHD.<sup className="text-[#10b981]">[7]</sup> Similarly, studies examining thimerosal-containing vaccines found no link to ADHD 
-          or other neurodevelopmental disorders.<sup className="text-[#10b981]">[8]</sup>
-        </p>
-        <p className="mb-4">
-          The timing of ADHD symptom recognition coincides with typical vaccination schedules simply because both 
-          occur during early childhood, leading to spurious correlations. Major medical organizations worldwide, 
-          including the CDC, WHO, and AAP, confirm that vaccines do not cause ADHD. The benefits of vaccination 
-          in preventing serious diseases far outweigh any theoretical risks.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #5: Artificial Food Additives Cause ADHD</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> Artificial colors, preservatives, and food additives cause ADHD in most children.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> While some children may show sensitivity to certain food additives, these 
-          don't cause ADHD in the general population. A 2012 meta-analysis found that artificial food colors may 
-          have a small effect on hyperactivity in some children, but the effect size was modest and didn't apply 
-          to most children with ADHD.<sup className="text-[#10b981]">[9]</sup>
-        </p>
-        <p className="mb-4">
-          More recent research in 2016 examined the "Feingold diet" (which eliminates artificial additives) and 
-          found limited evidence for widespread effectiveness in treating ADHD.<sup className="text-[#10b981]">[10]</sup> Some individual children 
-          may benefit from dietary modifications, but this is likely due to specific sensitivities rather than 
-          additives causing ADHD. The European Food Safety Authority concluded that while some children might be 
-          sensitive to certain additives, there's no evidence that these substances cause ADHD broadly.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #6: ADHD Is Just Laziness or Lack of Willpower</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> People with ADHD could control their symptoms if they just tried harder, were 
-          more disciplined, or cared enough.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> ADHD is a neurobiological condition involving differences in brain structure, 
-          function, and chemistry. It is not a character flaw, moral failing, or choice. Neuroimaging studies 
-          consistently demonstrate measurable differences in brain structure and activity in people with ADHD.<sup className="text-[#10b981]">[11]</sup><sup className="text-[#10b981]">[12]</sup>
-        </p>
-        <p className="mb-4">
-          Research in 2020 emphasized that ADHD involves impairments in executive functions—the cognitive processes 
-          that enable self-control, planning, and goal-directed behavior. These are neurologically-based difficulties, 
-          not willpower deficits.<sup className="text-[#10b981]">[13]</sup> Telling someone with ADHD to "just focus" is like telling someone 
-          with poor vision to "just see better"—it fundamentally misunderstands the nature of the condition. Many 
-          people with ADHD exert tremendous effort to manage their symptoms and experience significant distress when 
-          they struggle despite their best efforts.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #7: ADHD Is Overdiagnosed and Not a Real Condition</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> ADHD is a made-up disorder created by pharmaceutical companies, or normal 
-          childhood behavior being medicalized.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> ADHD is a well-established neurodevelopmental disorder recognized by major 
-          medical and psychiatric organizations worldwide. While diagnostic rates have increased over time, this 
-          largely reflects improved awareness, better diagnostic criteria, and recognition of ADHD in previously 
-          overlooked populations (girls, adults, inattentive presentations).<sup className="text-[#10b981]">[14]</sup>
-        </p>
-        <p className="mb-4">
-          A comprehensive 2015 review found that ADHD prevalence has remained relatively stable at around 5-7% of 
-          children worldwide when consistent diagnostic criteria are used.<sup className="text-[#10b981]">[15]</sup> Some regions may have higher 
-          diagnosis rates due to better access to healthcare and mental health services. Research consistently 
-          demonstrates that ADHD causes significant impairment in academic, occupational, social, and emotional 
-          functioning, with effects persisting into adulthood.<sup className="text-[#10b981]">[16]</sup>
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #8: Only Children Get ADHD / Kids Outgrow ADHD</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> ADHD is only a childhood disorder that people outgrow in adolescence or adulthood.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> ADHD is a lifelong neurodevelopmental condition. While symptoms may change 
-          over time and some individuals experience reduction in symptoms, the majority of children with ADHD continue 
-          to have symptoms and impairments in adulthood. Longitudinal studies show that 50-65% of children diagnosed 
-          with ADHD continue to meet diagnostic criteria as adults.<sup className="text-[#10b981]">[17]</sup>
-        </p>
-        <p className="mb-4">
-          Even among those who no longer meet full diagnostic criteria, many continue to experience significant 
-          symptoms and impairments. A 2016 study following children with ADHD into adulthood found that adult ADHD 
-          was associated with lower educational attainment, lower income, higher rates of unemployment, and increased 
-          risk of other psychiatric conditions.<sup className="text-[#10b981]">[18]</sup> Adult ADHD is increasingly recognized as a legitimate 
-          diagnosis requiring appropriate assessment and treatment.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #9: ADHD Medications Are Dangerous and Overprescribed</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> ADHD medications are dangerous, highly addictive drugs that are prescribed 
-          too freely and harm children.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> ADHD medications are among the most studied medications in pediatric medicine, 
-          with extensive research supporting their safety and effectiveness. A comprehensive 2018 network meta-analysis 
-          of ADHD medications found that they are generally safe and effective when properly prescribed and monitored.<sup className="text-[#10b981]">[19]</sup>
-        </p>
-        <p className="mb-4">
-          While stimulant medications can be misused, when taken as prescribed for ADHD, they do not lead to addiction. 
-          In fact, research suggests that properly treating ADHD with medication reduces the risk of later substance 
-          abuse.<sup className="text-[#10b981]">[20]</sup> A 2020 study found that ADHD medication use was associated with reduced risk of various 
-          negative outcomes including accidents, criminal convictions, and emergency department visits.<sup className="text-[#10b981]">[21]</sup> Like all 
-          medications, ADHD treatments have potential side effects, but these are generally mild and manageable with 
-          proper medical supervision.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Myth #10: ADHD Only Affects Boys</h3>
-        <p className="mb-4">
-          <strong>The Myth:</strong> ADHD is a condition that primarily or exclusively affects males.
-        </p>
-        <p className="mb-4">
-          <strong>The Reality:</strong> ADHD affects people of all genders, though it's historically been underdiagnosed 
-          in girls and women. Boys are diagnosed more frequently, partly because they more often display the hyperactive-
-          impulsive presentation that's easily noticed in classroom settings. Girls more commonly present with the 
-          inattentive type, which is easier to overlook.<sup className="text-[#10b981]">[22]</sup>
-        </p>
-        <p className="mb-4">
-          A 2020 review highlighted that girls with ADHD face unique challenges including delayed diagnosis, different 
-          symptom presentations, and higher rates of internalizing symptoms like anxiety and depression.<sup className="text-[#10b981]">[23]</sup> Recent 
-          research emphasizes the need for better recognition and diagnosis of ADHD in females. When consistent diagnostic 
-          criteria are applied, gender differences in ADHD prevalence are smaller than traditionally believed.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Why These Myths Persist</h3>
-        <p className="mb-4">
-          Several factors contribute to the persistence of ADHD myths:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Invisible disability:</strong> Brain differences aren't visible like physical disabilities, making it easier to misattribute symptoms to behavior or choice</li>
-          <li className="mb-2"><strong>Symptom overlap:</strong> Everyone experiences attention difficulties sometimes, leading to misunderstanding about clinical ADHD</li>
-          <li className="mb-2"><strong>Historical stigma:</strong> Mental health conditions have long been stigmatized and misunderstood</li>
-          <li className="mb-2"><strong>Misinformation:</strong> Popular media sometimes promotes myths rather than evidence-based information</li>
-          <li className="mb-2"><strong>Oversimplification:</strong> Complex neuroscience is often oversimplified into inaccurate narratives</li>
-        </ul>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Impact of Myths and Stigma</h3>
-        <p className="mb-4">
-          These misconceptions have real consequences. They can lead to delayed diagnosis and treatment, increased 
-          stigma and discrimination, self-blame and reduced self-esteem, reluctance to seek help, and inappropriate 
-          interventions based on false beliefs.<sup className="text-[#10b981]">[24]</sup> A 2019 study found that public stigma toward ADHD 
-          affects treatment-seeking behavior and adherence to evidence-based interventions.<sup className="text-[#10b981]">[25]</sup>
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Evidence-Based Understanding</h3>
-        <p className="mb-4">
-          Modern neuroscience and genetics have established that ADHD is a legitimate neurodevelopmental condition 
-          with strong genetic and neurobiological bases. It involves measurable differences in brain structure, 
-          function, and chemistry. While environmental factors can influence symptom expression and severity, the 
-          core features of ADHD arise from neurological differences present from early development.
-        </p>
-        <p className="mb-4">
-          Understanding that ADHD has biological origins helps reduce stigma, promotes evidence-based treatment, 
-          encourages appropriate accommodations, and supports individuals with ADHD in accessing needed help without 
-          shame or blame. The scientific evidence is clear: ADHD is a real, valid condition deserving of proper 
-          recognition, support, and treatment.
-        </p>
-
-        {/* Bottom button - right aligned above References */}
-        <div className="flex justify-end my-8">
-          <button 
-            onClick={() => setCurrentArticle?.('adhd')}
-            className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
-          >
-            <span className="text-xl">←</span>
-            All About ADHD
-          </button>
-        </div>
-
-        {/* References for Myths Tab */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-          
-          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2">
-            <p>[1] Johnston, C., & Mash, E. J. (2001). "Families of children with attention-deficit/hyperactivity disorder: Review and recommendations for future research." <em>Clinical Child and Family Psychology Review</em>, 4(3), 183-207.</p>
-            <p>[2] Breaux, R. P., & Harvey, E. A. (2019). "A longitudinal study of the relation between family functioning and preschool ADHD symptoms." <em>Journal of Clinical Child & Adolescent Psychology</em>, 48(5), 749-764.</p>
-            <p>[3] Ra, C. K., et al. (2018). "Association of digital media use with subsequent symptoms of attention-deficit/hyperactivity disorder among adolescents." <em>JAMA</em>, 320(3), 255-263.</p>
-            <p>[4] Nikkelen, S. W., et al. (2014). "Media use and ADHD-related behaviors in children and adolescents: A meta-analysis." <em>Developmental Psychology</em>, 50(9), 2228-2241.</p>
-            <p>[5] Wolraich, M. L., Wilson, D. B., & White, J. W. (1995). "The effect of sugar on behavior or cognition in children: A meta-analysis." <em>JAMA</em>, 274(20), 1617-1621.</p>
-            <p>[6] Del-Ponte, B., et al. (2019). "Sugar consumption and attention-deficit/hyperactivity disorder (ADHD): A birth cohort study." <em>Journal of Affective Disorders</em>, 243, 290-296.</p>
-            <p>[7] Hviid, A., Hansen, J. V., Frisch, M., & Melbye, M. (2019). "Measles, mumps, rubella vaccination and autism: A nationwide cohort study." <em>Annals of Internal Medicine</em>, 170(8), 513-520.</p>
-            <p>[8] Price, C. S., et al. (2010). "Prenatal and infant exposure to thimerosal from vaccines and immunoglobulins and risk of autism." <em>Pediatrics</em>, 126(4), 656-664.</p>
-            <p>[9] Nigg, J. T., Lewis, K., Edinger, T., & Falk, M. (2012). "Meta-analysis of attention-deficit/hyperactivity disorder or attention-deficit/hyperactivity disorder symptoms, restriction diet, and synthetic food color additives." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 51(1), 86-97.</p>
-            <p>[10] Sonuga-Barke, E. J., et al. (2013). "Nonpharmacological interventions for ADHD: Systematic review and meta-analyses of randomized controlled trials of dietary and psychological treatments." <em>American Journal of Psychiatry</em>, 170(3), 275-289.</p>
-            <p>[11] Cortese, S., et al. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</p>
-            <p>[12] Hoogman, M., et al. (2017). "Subcortical brain volume differences in participants with attention deficit hyperactivity disorder in children and adults: A cross-sectional mega-analysis." <em>The Lancet Psychiatry</em>, 4(4), 310-319.</p>
-            <p>[13] Barkley, R. A. (2020). "Executive functions and self-regulation viewed as an extended phenotype: Implications of the theory for ADHD and its treatment." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 12(3), 223-234.</p>
-            <p>[14] Matte, B., et al. (2015). "Exploring different scenarios for the diagnosis of adult ADHD with DSM-5." <em>Journal of Attention Disorders</em>, 19(4), 290-300.</p>
-            <p>[15] Polanczyk, G. V., Willcutt, E. G., Salum, G. A., Kieling, C., & Rohde, L. A. (2014). "ADHD prevalence estimates across three decades: An updated systematic review and meta-regression analysis." <em>International Journal of Epidemiology</em>, 43(2), 434-442.</p>
-            <p>[16] Barkley, R. A. (2015). "Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment" (4th ed.). Guilford Press.</p>
-            <p>[17] Faraone, S. V., Biederman, J., & Mick, E. (2006). "The age-dependent decline of attention deficit hyperactivity disorder: A meta-analysis of follow-up studies." <em>Psychological Medicine</em>, 36(2), 159-165.</p>
-            <p>[18] Klein, R. G., et al. (2012). "Clinical and functional outcome of childhood attention-deficit/hyperactivity disorder 33 years later." <em>Archives of General Psychiatry</em>, 69(12), 1295-1303.</p>
-            <p>[19] Cortese, S., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: A systematic review and network meta-analysis." <em>The Lancet Psychiatry</em>, 5(9), 727-738.</p>
-            <p>[20] Chang, Z., et al. (2014). "Stimulant ADHD medication and risk for substance abuse." <em>Journal of Child Psychology and Psychiatry</em>, 55(8), 878-885.</p>
-            <p>[21] Chen, Q., et al. (2020). "Medication for attention-deficit/hyperactivity disorder and criminality: A within-individual analysis." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 59(3), 396-403.</p>
-            <p>[22] Quinn, P. O., & Madhoo, M. (2014). "A review of attention-deficit/hyperactivity disorder in women and girls: Uncovering this hidden diagnosis." <em>The Primary Care Companion for CNS Disorders</em>, 16(3).</p>
-            <p>[23] Young, S., Adamo, N., Ásgeirsdóttir, B. B., et al. (2020). "Females with ADHD: An expert consensus statement taking a lifespan approach providing guidance for the identification and treatment of attention-deficit/hyperactivity disorder in girls and women." <em>BMC Psychiatry</em>, 20(1), 404.</p>
-            <p>[24] Mueller, A. K., Fuermaier, A. B., Koerts, J., & Tucha, L. (2012). "Stigma in attention deficit hyperactivity disorder." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 4(3), 101-114.</p>
-            <p>[25] Kellison, I., Bussing, R., Bell, L., & Garvan, C. (2010). "Assessment of stigma associated with attention-deficit hyperactivity disorder: Psychometric evaluation of the ADHD Stigma Questionnaire." <em>Psychiatry Research</em>, 178(2), 363-369.</p>
-          </div>
-          
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>American Psychiatric Association. (2022). <em>Diagnostic and statistical manual of mental disorders</em> (5th ed., text rev.).</p>
-            <p>National Institute of Mental Health. "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</p>
-            <p>Centers for Disease Control and Prevention. "Facts About ADHD." Retrieved from cdc.gov/adhd</p>
+            <p>[1] Nigg, J. T. (2006). <em>What causes ADHD? Understanding what goes wrong and why</em>. Guilford Press.</p>
+            <p>[2] Huang, L., et al. (2016). "Maternal smoking and attention-deficit/hyperactivity disorder in offspring: A meta-analysis." <em>Pediatrics</em>, 137(1), e20153245.</p>
+            <p>[3] Skoglund, C., et al. (2014). "Familial confounding of the association between maternal smoking during pregnancy and ADHD in offspring." <em>Journal of Child Psychology and Psychiatry</em>, 55(1), 61-68.</p>
+            <p>[4] Mattson, S. N., et al. (2019). "Toward a neurobehavioral profile of fetal alcohol spectrum disorders." <em>Alcoholism: Clinical and Experimental Research</em>, 43(4), 775-817.</p>
+            <p>[5] Easey, K. E., et al. (2019). "Prenatal alcohol exposure and offspring attention-deficit hyperactivity disorder: A systematic review and meta-analysis." <em>Drug and Alcohol Dependence</em>, 197, 344-353.</p>
+            <p>[6] Glover, V. (2011). "Annual Research Review: Prenatal stress and the origins of psychopathology: an evolutionary perspective." <em>Journal of Child Psychology and Psychiatry</em>, 52(4), 356-367.</p>
+            <p>[7] Madigan, S., et al. (2018). "Maternal prenatal mental health and offspring neurodevelopmental outcomes: A systematic review and meta-analysis." <em>JAMA Pediatrics</em>, 172(12), 1139-1148.</p>
+            <p>[8] Franz, A. P., et al. (2018). "Attention-deficit/hyperactivity disorder and very preterm/very low birth weight: A meta-analysis." <em>Pediatrics</em>, 141(1), e20171645.</p>
+            <p>[9] Mathewson, K. J., et al. (2017). "Adults born extremely low birth weight: the role of attention in the development of anxiety and depression." <em>Journal of Child Psychology and Psychiatry</em>, 58(10), 1157-1166.</p>
+            <p>[10] Millichap, J. G., & Yee, M. M. (2012). "The diet factor in attention-deficit/hyperactivity disorder." <em>Pediatrics</em>, 129(2), 330-337.</p>
+            <p>[11] Myhue, M., et al. (2018). "Air pollution and attention deficit hyperactivity disorder: A systematic review." <em>Reviews on Environmental Health</em>, 33(4), 379-397.</p>
+            <p>[12] Thygesen, M., et al. (2020). "Exposure to air pollution in early childhood and the association with attention-deficit hyperactivity disorder." <em>JAMA Network Open</em>, 3(5), e205559.</p>
+            <p>[13] Forns, J., et al. (2018). "Air pollution exposure during pregnancy and symptoms of attention deficit and hyperactivity disorder in children in Europe." <em>Epidemiology</em>, 29(5), 618-626.</p>
+            <p>[14] Nigg, J. T., et al. (2010). "Confirmation and extension of association of blood lead with attention-deficit/hyperactivity disorder (ADHD) and ADHD symptom domains at population-typical exposure levels." <em>Journal of Child Psychology and Psychiatry</em>, 51(1), 58-65.</p>
+            <p>[15] Donzelli, G., et al. (2019). "The association between lead and attention-deficit/hyperactivity disorder: A systematic review." <em>International Journal of Environmental Research and Public Health</em>, 16(3), 382.</p>
+            <p>[16] Bouchard, M. F., et al. (2010). "Attention-deficit/hyperactivity disorder and urinary metabolites of organophosphate pesticides." <em>Pediatrics</em>, 125(6), e1270-e1277.</p>
+            <p>[17] Muñoz-Quezada, M. T., et al. (2013). "Neurodevelopmental effects in children associated with exposure to organophosphate pesticides: A systematic review." <em>Neurotoxicology</em>, 39, 158-168.</p>
+            <p>[18] Eubig, P. A., et al. (2010). "Polychlorinated biphenyls (PCBs) and neurodevelopmental disorders." <em>Neurotoxicology</em>, 31(5), 579-579.</p>
+            <p>[19] Rochester, J. R., et al. (2018). "Bisphenol A and neurodevelopmental outcomes in humans." <em>Current Epidemiology Reports</em>, 5(2), 110-124.</p>
+            <p>[20] Kreppner, J. M., et al. (2001). "Can inattention/overactivity be an institutional deprivation syndrome?" <em>Journal of Abnormal Child Psychology</em>, 29(6), 513-528.</p>
+            <p>[21] Kennedy, M., et al. (2016). "ADHD symptoms in children adopted from institutions: the role of early deprivation and attachment." <em>Journal of Abnormal Child Psychology</em>, 44(8), 1629-1638.</p>
+            <p>[22] Stern, A., et al. (2018). "Childhood maltreatment and the risk of ADHD: A systematic review and meta-analysis." <em>Trauma, Violence, & Abuse</em>, 19(2), 220-233.</p>
+            <p>[23] Russell, G., et al. (2016). "Socio-economic associations with ADHD: findings from a mediation analysis." <em>PLoS One</em>, 11(6), e0155405.</p>
           </div>
         </div>
       </div>
@@ -1030,29 +681,27 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
 
   return (
     <article className="max-w-full w-full">
+      <style>
+        {`
+          sup {
+            color: #10b981;
+          }
+        `}
+      </style>
+      
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl">
           ADHD: Causes & Origins
         </h1>
 
-        {/* Desktop button - aligned right in header */}
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
         >
           <span className="text-xl">←</span>
           All About ADHD
         </button>
       </div>
-
-      {/* Mobile button - below title, full width */}
-      <button 
-        onClick={() => setCurrentArticle?.('adhd')}
-        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
-      >
-        <span className="text-xl">←</span>
-        All About ADHD
-      </button>
 
       <Tabs defaultValue="overview" className="w-full">
         <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 gap-3 mb-12 bg-transparent h-auto p-0">
@@ -1060,19 +709,16 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
             Overview
           </TabsTrigger>
           <TabsTrigger value="genetics" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
-            Genetics & Heredity
+            Genetics
           </TabsTrigger>
           <TabsTrigger value="brain" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
-            Brain Structure & Function
+            Brain Structure
           </TabsTrigger>
           <TabsTrigger value="neurotransmitters" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
             Neurotransmitters
           </TabsTrigger>
           <TabsTrigger value="environmental" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
-            Environmental Factors
-          </TabsTrigger>
-          <TabsTrigger value="myths" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
-            Myths & Misconceptions
+            Environmental
           </TabsTrigger>
         </TabsList>
 
@@ -1100,14 +746,17 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         <TabsContent value="environmental" className="space-y-8">
           <EnvironmentalContent />
         </TabsContent>
-
-        {/* Myths Tab */}
-        <TabsContent value="myths" className="space-y-8">
-          <MythsContent />
-        </TabsContent>
       </Tabs>
 
+      <div className="flex justify-end my-8 w-full">
+        <button 
+          onClick={() => setCurrentArticle?.('adhd')}
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+        >
+          <span className="text-xl">←</span>
+          All About ADHD
+        </button>
+      </div>
     </article>
   );
 }
-

@@ -386,7 +386,7 @@ export function GiftednessLiving({ setCurrentArticle }: GiftednessLivingProps) {
           <p>[2] Silverman, L. K. (1993). <em>Counseling the gifted and talented</em>. Denver, CO: Love Publishing.</p>
           <p>[3] Kerr, B. A., & Sodano, S. (2003). "Career assessment with intellectually gifted students." <em>Journal of Career Assessment</em>, 11(2), 168-186.</p>
           <p>[4] Cross, T. L., Coleman, L. J., & Stewart, R. A. (1995). <em>Psychosocial diversity among gifted adolescents: An exploratory study of two groups</em>. Mansfield Center, CT: Creative Learning Press.</p>
-          <p>[5] Hébert, T. P. (2011). <em>Understanding the social and emotional lives of gifted students</em>. Waco, TX: Prufrock Press.</p>
+          <p>[5] Hebert, T. P. (2011). <em>Understanding the social and emotional lives of gifted students</em>. Waco, TX: Prufrock Press.</p>
           <p>[6] Clance, P. R., & Imes, S. A. (1978). "The imposter phenomenon in high achieving women: Dynamics and therapeutic intervention." <em>Psychotherapy: Theory, Research & Practice</em>, 15(3), 241-247.</p>
           <p>[7] Sakulku, J., & Alexander, J. (2011). "The impostor phenomenon." <em>International Journal of Behavioral Science</em>, 6(1), 75-97.</p>
           <p>[8] Parkman, A. (2016). "The imposter phenomenon in higher education: Incidence and impact." <em>Journal of Higher Education Theory and Practice</em>, 16(1), 51-60.</p>
@@ -416,7 +416,7 @@ export function GiftednessLiving({ setCurrentArticle }: GiftednessLivingProps) {
           <p>[32] Dettmann, D. F., & Colangelo, N. (1980). "A functional model for counseling parents of gifted students." <em>Gifted Child Quarterly</em>, 24(4), 158-161.</p>
           <p>[33] Hackney, H. (1981). "The gifted child, the family, and the school." <em>Gifted Child Quarterly</em>, 25(2), 51-54.</p>
           <p>[34] Lovecky, D. V. (1997). "Identity development in gifted children: Moral sensitivity." <em>Roeper Review</em>, 20(2), 90-94.</p>
-          <p>[35] Hébert, T. P., & Speirs Neumeister, K. L. (2001). "Guided viewing of film with gifted students: Resources for educators and counselors." <em>Gifted Child Today</em>, 24(4), 14-22.</p>
+          <p>[35] Hebert, T. P., & Speirs Neumeister, K. L. (2001). "Guided viewing of film with gifted students: Resources for educators and counselors." <em>Gifted Child Today</em>, 24(4), 14-22.</p>
           <p>[36] Colangelo, N. (2003). "Counseling gifted students." In N. Colangelo & G. A. Davis (Eds.), <em>Handbook of gifted education</em> (3rd ed., pp. 373-387). Boston: Allyn & Bacon.</p>
           <p>[37] Webb, J. T., Gore, J. L., Amend, E. R., & DeVries, A. R. (2007). <em>A parent's guide to gifted children</em>. Scottsdale, AZ: Great Potential Press.</p>
           <p>[38] Rinn, A. N. (2007). "Effects of programmatic selectivity on the academic achievement, academic self-concepts, and aspirations of gifted college students." <em>Gifted Child Quarterly</em>, 51(3), 232-245.</p>

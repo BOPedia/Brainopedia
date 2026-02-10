@@ -72,7 +72,6 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
       </h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
           <p>
             <strong>Sensory Processing Disorder (SPD)</strong> is a neurodevelopmental condition where the 
@@ -84,7 +83,6 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Sensory Processing Disorder"
@@ -131,7 +129,7 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
           <img 
-            src="https://images.unsplash.com/photo-1618382521478-a0bfaf1a7604?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZW5zb3J5JTIwb3ZlcmxvYWQlMjBjb3ZlcmluZyUyMGVhcnN8ZW58MXx8fHwxNzY3NDA2NDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src="https://images.unsplash.com/photo-1618382521478-a0bfab1a7604?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZW5zb3J5JTIwb3ZlcmxvYWQlMjBjb3ZlcmluZyUyMGVhcnN8ZW58MXx8fHwxNzY3NDA2NDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
             alt="Sensory overload - covering ears in response to overwhelming stimuli"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />

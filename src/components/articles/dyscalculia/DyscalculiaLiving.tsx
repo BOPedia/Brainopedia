@@ -391,7 +391,7 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
           <p>[36] Parsons, S., & Bynner, J. (2005). "Does numeracy matter more?" <em>National Research and Development Centre for Adult Literacy and Numeracy</em>.</p>
           <p>[37] Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). "Identifying alterable patterns in employment success for highly successful adults with learning disabilities." <em>Journal of Learning Disabilities</em>, 25(8), 475-487.</p>
           <p>[38] Gerber, P. J. (2012). "The impact of learning disabilities on adulthood: A review of the evidenced-based literature for research and practice in adult education." <em>Journal of Learning Disabilities</em>, 45(1), 31-46.</p>
-          <p>[39] Madaus, J. W. (2008). "Employment self‐disclosure rates and rationales of university graduates with learning disabilities." <em>Journal of Learning Disabilities</em>, 41(4), 291-299.</p>
+          <p>[39] Madaus, J. W. (2008). "Employment self-disclosure rates and rationales of university graduates with learning disabilities." <em>Journal of Learning Disabilities</em>, 41(4), 291-299.</p>
           <p>[40] Americans with Disabilities Act of 1990, 42 U.S.C. § 12101 et seq. (1990).</p>
           <p>[41] Price, L. A., Gerber, P. J., & Mulligan, R. (2007). "Adults with learning disabilities and the underutilization of the Americans with Disabilities Act." <em>Remedial and Special Education</em>, 28(6), 340-344.</p>
           <p>[42] Bouck, E. C., & Flanagan, S. (2009). "Assistive technology and mathematics." <em>Journal of Special Education Technology</em>, 24(2), 55-60.</p>
@@ -411,7 +411,7 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
           <p>[56] Maloney, E. A., Ramirez, G., Gunderson, E. A., Levine, S. C., & Beilock, S. L. (2015). "Intergenerational effects of parents' math anxiety on children's math achievement and anxiety." <em>Psychological Science</em>, 26(9), 1480-1488.</p>
           <p>[57] Individuals with Disabilities Education Act, 20 U.S.C. § 1400 (2004).</p>
           <p>[58] Americans with Disabilities Act of 1990, 42 U.S.C. § 12101 et seq. (1990).</p>
-          <p>[59] Madaus, J. W., Foley, T. E., McGuire, J. M., & Ruban, L. M. (2002). "Employment self‐disclosure of postsecondary graduates with learning disabilities." <em>Journal of Learning Disabilities</em>, 35(4), 364-369.</p>
+          <p>[59] Madaus, J. W., Foley, T. E., McGuire, J. M., & Ruban, L. M. (2002). "Employment self-disclosure of postsecondary graduates with learning disabilities." <em>Journal of Learning Disabilities</em>, 35(4), 364-369.</p>
           <p>[60] Palmer, C., & Wehmeyer, M. L. (2003). "Promoting self-determination in early elementary school: Teaching self-regulated problem-solving and goal-setting skills." <em>Remedial and Special Education</em>, 24(2), 115-126.</p>
           <p>[61] Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). "Identifying alterable patterns in employment success for highly successful adults with learning disabilities." <em>Journal of Learning Disabilities</em>, 25(8), 475-487.</p>
           <p>[62] Kaufmann, L., & von Aster, M. (2012). "The diagnosis and management of dyscalculia." <em>Deutsches Ärzteblatt International</em>, 109(45), 767-778.</p>

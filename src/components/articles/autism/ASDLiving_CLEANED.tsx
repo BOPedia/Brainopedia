@@ -59,12 +59,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Autism Across the Lifespan</h2>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early Childhood</h3>
-          {/* Image removed - earlyChildhoodImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={earlyChildhoodImage} 
-            alt="Early Childhood"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
           <p className="mb-4">
             The early years focus on development, learning, and accessing early intervention:
           </p>
@@ -77,12 +71,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">School Years</h3>
-          {/* Image removed - schoolYearsImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={schoolYearsImage} 
-            alt="School Years"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
           <p className="mb-4">
             School presents both opportunities and challenges:
           </p>
@@ -98,12 +86,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
           <p className="mb-4">
             Teenage years bring additional complexity:
           </p>
-          {/* Image removed - adolescenceImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={adolescenceImage} 
-            alt="Adolescence"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Identity formation:</strong> Figuring out who you are, including your autistic identity</li>
             <li className="mb-2"><strong>Increased social complexity:</strong> Navigating teenage social dynamics, dating, peer pressure</li>
@@ -114,12 +96,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Adulthood</h3>
-          {/* Image removed - adulthoodImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={adulthoodImage} 
-            alt="Adulthood"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
           <p className="mb-4">
             Autistic adults face unique challenges and opportunities:
           </p>
@@ -155,12 +131,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life and Practical Considerations</h2>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Communication in Daily Life</h3>
-          {/* Image removed - communicationImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={communicationImage} 
-            alt="Communication"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
           <p className="mb-4">
             Autistic people communicate in diverse ways:
           </p>
@@ -174,12 +144,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Sensory Experiences</h3>
-          {/* Image removed - sensoryImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={sensoryImage} 
-            alt="Sensory Environment"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
           <p className="mb-4">
             Sensory differences profoundly affect daily life:
           </p>
@@ -195,12 +159,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
           <p className="mb-4">
             Executive function challenges affect many daily activities:
           </p>
-          {/* Image removed - executiveFunctionImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={executiveFunctionImage} 
-            alt="Executive Function"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Routines and structure:</strong> Using consistent routines to reduce cognitive load</li>
             <li className="mb-2"><strong>Visual supports:</strong> Calendars, checklists, reminders, timers</li>
@@ -210,12 +168,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Energy Management and Burnout</h3>
-          {/* Image removed - burnoutImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={burnoutImage} 
-            alt="Burnout"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
           <p className="mb-4">
             Autistic burnout is a significant concern:
           </p>
@@ -276,23 +228,10 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Relationships and Social Life</h2>
 
-        {/* Image removed - relationshipsImage variable not defined */}
-        {/* <ImageWithFallback 
-          src={relationshipsImage} 
-          alt="Social connection and friendship"
-          className="w-80 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-        /> */}
-
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Friendships</h3>
         <p className="mb-4">
           Autistic people form meaningful friendships, though patterns may differ:
         </p>
-        {/* Image removed - friendshipsImage variable not defined */}
-        {/* <ImageWithFallback 
-          src={friendshipsImage} 
-          alt="Friendships"
-          className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        /> */}
         <ul className="list-disc ml-6 mb-4">
           <li className="mb-2">Quality over quantity—may prefer one or two close friends</li>
           <li className="mb-2">Friendships based on shared interests rather than social proximity</li>
@@ -403,13 +342,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
         <div className="border-2 border-[#2abcd4] rounded-md p-4 mb-4 bg-white">
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Factors Affecting Wellbeing</h3>
           
-          {/* Image removed - wellbeingImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={wellbeingImage} 
-            alt="Factors affecting wellbeing"
-            className="w-60 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
-          
           <p className="mb-4">
             Quality of life for autistic people is influenced by:
           </p>
@@ -427,13 +359,6 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
 
         <div className="border-2 border-[#2abcd4] rounded-md p-4 mb-4 bg-white">
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Building Resilience and Wellbeing</h3>
-          
-          {/* Image removed - resilienceImage variable not defined */}
-          {/* <ImageWithFallback 
-            src={resilienceImage} 
-            alt="Building resilience and wellbeing"
-            className="w-60 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
           
           <ul className="list-disc ml-6">
             <li className="mb-2">Engaging with special interests for joy and regulation</li>

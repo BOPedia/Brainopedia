@@ -347,7 +347,7 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Talent Development Models</h3>
           <p className="mb-4">
-            Gagné's Differentiated Model of Giftedness and Talent (DMGT) provides a comprehensive framework 
+            Gagne's Differentiated Model of Giftedness and Talent (DMGT) provides a comprehensive framework 
             distinguishing natural abilities (gifts) from systematically developed competencies (talents).<sup>[70]</sup> 
             The model identifies intrapersonal catalysts (motivation, volition, personality) and environmental 
             catalysts (milieu, persons, provisions, events) that transform gifts into talents through 
@@ -396,14 +396,14 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
           <p>[22] Bloom, B. S. (Ed.). (1985). <em>Developing talent in young people</em>. New York: Ballantine Books.</p>
           <p>[23] Hart, B., & Risley, T. R. (1995). <em>Meaningful differences in the everyday experience of young American children</em>. Baltimore: Paul H. Brookes.</p>
           <p>[24] Plucker, J. A., & Peters, S. J. (2016). <em>Excellence gaps in education: Expanding opportunities for talented students</em>. Cambridge, MA: Harvard Education Press.</p>
-          <p>[25] Tucker-Drob, E. M., & Bates, T. C. (2016). "Large cross-national differences in gene × socioeconomic status interaction on intelligence." <em>Psychological Science</em>, 27(2), 138-149.</p>
+          <p>[25] Tucker-Drob, E. M., & Bates, T. C. (2016). "Large cross-national differences in gene x socioeconomic status interaction on intelligence." <em>Psychological Science</em>, 27(2), 138-149.</p>
           <p>[26] Ceci, S. J. (1991). "How much does schooling influence general intelligence and its cognitive components? A reassessment of the evidence." <em>Developmental Psychology</em>, 27(5), 703-722.</p>
           <p>[27] Reis, S. M., & McCoach, D. B. (2000). "The underachievement of gifted students: What do we know and where do we go?" <em>Gifted Child Quarterly</em>, 44(3), 152-170.</p>
           <p>[28] Sternberg, R. J. (2007). "Culture, instruction, and assessment." <em>Comparative Education</em>, 43(1), 5-22.</p>
           <p>[29] Nisbett, R. E., Aronson, J., Blair, C., Dickens, W., Flynn, J., Halpern, D. F., & Turkheimer, E. (2012). "Intelligence: New findings and theoretical developments." <em>American Psychologist</em>, 67(2), 130-159.</p>
           <p>[30] Plomin, R., & Daniels, D. (1987). "Why are children in the same family so different from one another?" <em>Behavioral and Brain Sciences</em>, 10(1), 1-16.</p>
           <p>[31] Sulloway, F. J. (1996). <em>Born to rebel: Birth order, family dynamics, and creative lives</em>. New York: Pantheon Books.</p>
-          <p>[32] Morgane, P. J., Austin-LaFrance, R., Bronzino, J., Tonkiss, J., Díaz-Cintra, S., Cintra, L., ... & Galler, J. R. (1993). "Prenatal malnutrition and development of the brain." <em>Neuroscience & Biobehavioral Reviews</em>, 17(1), 91-128.</p>
+          <p>[32] Morgane, P. J., Austin-LaFrance, R., Bronzino, J., Tonkiss, J., Diaz-Cintra, S., Cintra, L., ... & Galler, J. R. (1993). "Prenatal malnutrition and development of the brain." <em>Neuroscience & Biobehavioral Reviews</em>, 17(1), 91-128.</p>
           <p>[33] Shenkin, S. D., Starr, J. M., & Deary, I. J. (2004). "Birth weight and cognitive ability in childhood: A systematic review." <em>Psychological Bulletin</em>, 130(6), 989-1013.</p>
           <p>[34] Shonkoff, J. P., & Phillips, D. A. (Eds.). (2000). <em>From neurons to neighborhoods: The science of early childhood development</em>. Washington, DC: National Academy Press.</p>
           <p>[35] Gottfried, A. W., Gottfried, A. E., Bathurst, K., & Guerin, D. W. (1994). <em>Gifted IQ: Early developmental aspects—The Fullerton Longitudinal Study</em>. New York: Plenum Press.</p>
@@ -414,10 +414,10 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
           <p>[40] Lubinski, D., & Benbow, C. P. (2006). "Study of Mathematically Precocious Youth after 35 years: Uncovering antecedents for the development of math-science expertise." <em>Perspectives on Psychological Science</em>, 1(4), 316-345.</p>
           <p>[41] Geary, D. C., Hoard, M. K., Nugent, L., & Byrd-Craven, J. (2008). "Development of number line representations in children with mathematical learning disability." <em>Developmental Neuropsychology</em>, 33(3), 277-299.</p>
           <p>[42] National Mathematics Advisory Panel. (2008). <em>Foundations for success: The final report of the National Mathematics Advisory Panel</em>. Washington, DC: U.S. Department of Education.</p>
-          <p>[43] Winner, E., & Martino, G. (1993). "Giftedness in the visual arts and music." In K. A. Heller, F. J. Mönks, & A. H. Passow (Eds.), <em>International handbook of research and development of giftedness and talent</em> (pp. 253-281). Oxford: Pergamon Press.</p>
+          <p>[43] Winner, E., & Martino, G. (1993). "Giftedness in the visual arts and music." In K. A. Heller, F. J. Monks, & A. H. Passow (Eds.), <em>International handbook of research and development of giftedness and talent</em> (pp. 253-281). Oxford: Pergamon Press.</p>
           <p>[44] Milbrath, C. (1998). <em>Patterns of artistic development in children: Comparative studies of talent</em>. Cambridge: Cambridge University Press.</p>
           <p>[45] Baker, J., Cobley, S., & Fraser-Thomas, J. (2009). "What do we know about early sport specialization? Not much!" <em>High Ability Studies</em>, 20(1), 77-89.</p>
-          <p>[46] Côté, J., Baker, J., & Abernethy, B. (2007). "Practice and play in the development of sport expertise." In G. Tenenbaum & R. C. Eklund (Eds.), <em>Handbook of sport psychology</em> (3rd ed., pp. 184-202). Hoboken, NJ: Wiley.</p>
+          <p>[46] Cote, J., Baker, J., & Abernethy, B. (2007). "Practice and play in the development of sport expertise." In G. Tenenbaum & R. C. Eklund (Eds.), <em>Handbook of sport psychology</em> (3rd ed., pp. 184-202). Hoboken, NJ: Wiley.</p>
           <p>[47] Renzulli, J. S. (1978). "What makes giftedness? Reexamining a definition." <em>Phi Delta Kappan</em>, 60(3), 180-184.</p>
           <p>[48] Duckworth, A. L., Peterson, C., Matthews, M. D., & Kelly, D. R. (2007). "Grit: Perseverance and passion for long-term goals." <em>Journal of Personality and Social Psychology</em>, 92(6), 1087-1101.</p>
           <p>[49] Dweck, C. S. (2006). <em>Mindset: The new psychology of success</em>. New York: Random House.</p>
@@ -427,12 +427,12 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
           <p>[53] Poropat, A. E. (2009). "A meta-analysis of the five-factor model of personality and academic performance." <em>Psychological Bulletin</em>, 135(2), 322-338.</p>
           <p>[54] McCrae, R. R., & Sutin, A. R. (2009). "Openness to experience." In M. R. Leary & R. H. Hoyle (Eds.), <em>Handbook of individual differences in social behavior</em> (pp. 257-273). New York: Guilford Press.</p>
           <p>[55] Ericsson, K. A. (Ed.). (1996). <em>The road to excellence: The acquisition of expert performance in the arts and sciences, sports, and games</em>. Mahwah, NJ: Erlbaum.</p>
-          <p>[56] Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). "The role of deliberate practice in the acquisition of expert performance." <em>Psychological Review</em>, 100(3), 363-406.</p>
+          <p>[56] Ericsson, K. A., Krampe, R. T., & Tesch-Romer, C. (1993). "The role of deliberate practice in the acquisition of expert performance." <em>Psychological Review</em>, 100(3), 363-406.</p>
           <p>[57] Gladwell, M. (2008). <em>Outliers: The story of success</em>. New York: Little, Brown.</p>
           <p>[58] Hambrick, D. Z., Oswald, F. L., Altmann, E. M., Meinz, E. J., Gobet, F., & Campitelli, G. (2014). "Deliberate practice: Is that all it takes to become an expert?" <em>Intelligence</em>, 45, 34-45.</p>
           <p>[59] Macnamara, B. N., Hambrick, D. Z., & Oswald, F. L. (2014). "Deliberate practice and performance in music, games, sports, education, and professions: A meta-analysis." <em>Psychological Science</em>, 25(8), 1608-1618.</p>
           <p>[60] Macnamara, B. N., Moreau, D., & Hambrick, D. Z. (2016). "The relationship between deliberate practice and performance in sports: A meta-analysis." <em>Perspectives on Psychological Science</em>, 11(3), 333-350.</p>
-          <p>[61] Ullén, F., Hambrick, D. Z., & Mosing, M. A. (2016). "Rethinking expertise: A multifactorial gene-environment interaction model of expert performance." <em>Psychological Bulletin</em>, 142(4), 427-446.</p>
+          <p>[61] Ullen, F., Hambrick, D. Z., & Mosing, M. A. (2016). "Rethinking expertise: A multifactorial gene-environment interaction model of expert performance." <em>Psychological Bulletin</em>, 142(4), 427-446.</p>
           <p>[62] Simonton, D. K. (2003). "Expertise, competence, and creative ability: The perplexing complexities." In R. J. Sternberg & E. L. Grigorenko (Eds.), <em>The psychology of abilities, competencies, and expertise</em> (pp. 213-239). Cambridge: Cambridge University Press.</p>
           <p>[63] Musch, J., & Grondin, S. (2001). "Unequal competition as an impediment to personal development: A review of the relative age effect in sport." <em>Developmental Review</em>, 21(2), 147-167.</p>
           <p>[64] Olszewski-Kubilius, P., & Clarenbach, J. (2012). "Unlocking emergent talent: Supporting high achievement of low-income, high-ability students." <em>National Association for Gifted Children</em>.</p>
@@ -441,8 +441,8 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
           <p>[67] Stanovich, K. E. (1986). "Matthew effects in reading: Some consequences of individual differences in the acquisition of literacy." <em>Reading Research Quarterly</em>, 21(4), 360-407.</p>
           <p>[68] Dai, D. Y. (2010). <em>The nature and nurture of giftedness: A new framework for understanding gifted education</em>. New York: Teachers College Press.</p>
           <p>[69] Horowitz, F. D., Subotnik, R. F., & Matthews, D. J. (Eds.). (2009). <em>The development of giftedness and talent across the life span</em>. Washington, DC: American Psychological Association.</p>
-          <p>[70] Gagné, F. (2004). "Transforming gifts into talents: The DMGT as a developmental theory." <em>High Ability Studies</em>, 15(2), 119-147.</p>
-          <p>[71] Gagné, F. (2009). "Building gifts into talents: Detailed overview of the DMGT 2.0." In B. MacFarlane & T. Stambaugh (Eds.), <em>Leading change in gifted education: The festschrift of Dr. Joyce VanTassel-Baska</em> (pp. 61-80). Waco, TX: Prufrock Press.</p>
+          <p>[70] Gagne, F. (2004). "Transforming gifts into talents: The DMGT as a developmental theory." <em>High Ability Studies</em>, 15(2), 119-147.</p>
+          <p>[71] Gagne, F. (2009). "Building gifts into talents: Detailed overview of the DMGT 2.0." In B. MacFarlane & T. Stambaugh (Eds.), <em>Leading change in gifted education: The festschrift of Dr. Joyce VanTassel-Baska</em> (pp. 61-80). Waco, TX: Prufrock Press.</p>
           <p>[72] Ceci, S. J., & Williams, W. M. (Eds.). (1999). <em>The nature-nurture debate: The essential readings</em>. Oxford: Blackwell.</p>
           <p>[73] Subotnik, R. F., Olszewski-Kubilius, P., & Worrell, F. C. (2012). "A proposed direction forward for gifted education based on psychological science." <em>Gifted Child Quarterly</em>, 56(4), 176-188.</p>
         </div>

@@ -41,7 +41,7 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Reading Characteristics</h2>
           
           <ImageWithFallback 
-            src={hyperlexiaChildReading} 
+            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMHJlYWRpbmd8ZW58MXx8fHwxNjc0NTM1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
             alt="Child reading"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
@@ -74,12 +74,6 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Comprehension Difficulties</h2>
           
-          <ImageWithFallback 
-            src={comprehensionDeficits}
-            alt="Reading comprehension deficits with hyperlexia"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Comprehension Deficits</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Decoding-comprehension gap:</strong> Can read words but not understand meaning<sup>[8]</sup></li>
@@ -99,12 +93,6 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Language Development</h2>
           
-          <ImageWithFallback 
-            src={echolaliaGraphic}
-            alt="Echolalia is about the repeating of words and sentences"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Delayed or Disordered Speech</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Late talking:</strong> Delayed speech development despite early reading<sup>[11]</sup></li>
@@ -121,12 +109,6 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Vocabulary Patterns</h3>
-          
-          <ImageWithFallback 
-            src={wordsBlocks}
-            alt="WORDS spelled in blocks"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
           
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">May use advanced written vocabulary they've read</li>

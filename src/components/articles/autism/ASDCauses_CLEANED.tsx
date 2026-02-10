@@ -1,5 +1,6 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useState } from 'react';
+import { ASDReferences } from './ASDReferences';
 
 interface ASDCausesProps {
   setCurrentArticle?: (article: string) => void;

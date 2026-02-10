@@ -393,7 +393,7 @@ export function TwiceExceptionalSymptoms({ setCurrentArticle }: TwiceExceptional
           <p>[37] Foley Nicpon, M., Rickels, H., Assouline, S. G., & Richards, A. (2012). "Self-esteem and self-concept examination among gifted students with ADHD." <em>Journal for the Education of the Gifted</em>, 35(3), 220-240.</p>
           <p>[38] McCoach, D. B., & Siegle, D. (2003). "Factors that differentiate underachieving gifted students from high-achieving gifted students." <em>Gifted Child Quarterly</em>, 47(2), 144-154.</p>
           <p>[39] Neihart, M. (2002). "Gifted children and depression." In M. Neihart, S. M. Reis, N. M. Robinson, & S. M. Moon (Eds.), <em>The social and emotional development of gifted children</em> (pp. 93-101). Waco, TX: Prufrock Press.</p>
-          <p>[40] Guignard, J. H., & Zenasni, F. (2004). "Les caractéristiques émotionnelles des enfants à haut potentiel." <em>Psychologie Française</em>, 49(3), 305-319.</p>
+          <p>[40] Guignard, J. H., & Zenasni, F. (2004). "Les caracteristiques emotionnelles des enfants a haut potentiel." <em>Psychologie Francaise</em>, 49(3), 305-319.</p>
           <p>[41] Neumeister, K. S., Yssel, N., & Burney, V. H. (2013). "The influence of primary caregivers in fostering success in twice-exceptional children." <em>Gifted Child Quarterly</em>, 57(4), 263-274.</p>
           <p>[42] Trail, B. A. (2011). <em>Twice-exceptional gifted children: Understanding, teaching, and counseling gifted students</em>. Waco, TX: Prufrock Press.</p>
           <p>[43] Neihart, M. (2008). "Identifying and providing services to twice exceptional children." In S. I. Pfeiffer (Ed.), <em>Handbook of giftedness in children</em> (pp. 115-137). New York: Springer.</p>
@@ -408,7 +408,7 @@ export function TwiceExceptionalSymptoms({ setCurrentArticle }: TwiceExceptional
           <p>[52] Peterson, J. S. (2009). "Myth 17: Gifted and talented individuals do not have unique social and emotional needs." <em>Gifted Child Quarterly</em>, 53(4), 280-282.</p>
           <p>[53] Webb, J. T., Meckstroth, E. A., & Tolan, S. S. (1982). <em>Guiding the gifted child: A practical source for parents and teachers</em>. Scottsdale, AZ: Gifted Psychology Press.</p>
           <p>[54] Shaywitz, S. E., Shaywitz, B. A., Pugh, K. R., Fulbright, R. K., Constable, R. T., Mencl, W. E., ... & Gore, J. C. (1998). "Functional disruption in the organization of the brain for reading in dyslexia." <em>Proceedings of the National Academy of Sciences</em>, 95(5), 2636-2641.</p>
-          <p>[55] von Károlyi, C., Winner, E., Gray, W., & Sherman, G. F. (2003). "Dyslexia linked to talent: Global visual-spatial ability." <em>Brain and Language</em>, 85(3), 427-431.</p>
+          <p>[55] von Karolyi, C., Winner, E., Gray, W., & Sherman, G. F. (2003). "Dyslexia linked to talent: Global visual-spatial ability." <em>Brain and Language</em>, 85(3), 427-431.</p>
           <p>[56] West, T. G. (1991). <em>In the mind's eye: Visual thinkers, gifted people with learning difficulties, computer images, and the ironies of creativity</em>. Buffalo, NY: Prometheus Books.</p>
           <p>[57] Berninger, V. W., Nielsen, K. H., Abbott, R. D., Wijsman, E., & Raskind, W. (2008). "Writing problems in developmental dyslexia: Under-recognized and under-treated." <em>Journal of School Psychology</em>, 46(1), 1-21.</p>
           <p>[58] Graham, S., & Weintraub, N. (1996). "A review of handwriting research: Progress and prospects from 1980 to 1994." <em>Educational Psychology Review</em>, 8(1), 7-87.</p>

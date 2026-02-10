@@ -23,7 +23,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* COLOR PALETTE */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            🎨 COLOR PALETTE
+            COLOR PALETTE
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Primary Colors</h3>
@@ -74,7 +74,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* TYPOGRAPHY */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            📝 TYPOGRAPHY
+            TYPOGRAPHY
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Font Family</h3>
@@ -103,7 +103,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* CITATION SYSTEM */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            🔢 CITATION SYSTEM
+            CITATION SYSTEM
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Strict Citation Criteria</h3>
@@ -159,7 +159,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
           <h4 className="text-[#0c264d] font-semibold mb-2">References for Sections and Tabs:</h4>
           <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-4 mb-4">
-            <p className="font-semibold mb-2">🔑 KEY PRINCIPLE: Every Section AND Every Tab Has Its Own Reference List</p>
+            <p className="font-semibold mb-2">KEY PRINCIPLE: Every Section AND Every Tab Has Its Own Reference List</p>
             <ul className="list-disc ml-6 space-y-2">
               <li><strong>Every section</strong> of the 6 core categories (Overview, Symptoms, Causes, Diagnosis, Treatment/Support, Living/Research) has its own independent reference list</li>
               <li><strong>Every tab</strong> within a section also has its own independent reference list</li>
@@ -179,7 +179,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
           <h4 className="text-[#0c264d] font-semibold mb-2">CRITICAL: Preserve Graphics When Formatting:</h4>
           <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
-            <p className="font-semibold mb-2">⚠️ When updating citations or making any formatting changes to a page:</p>
+            <p className="font-semibold mb-2">When updating citations or making any formatting changes to a page:</p>
             <ul className="list-disc ml-6 space-y-1">
               <li><strong>ALWAYS preserve all imported graphics and images</strong></li>
               <li>Do NOT remove or modify image imports (figma:asset imports, local file imports, etc.)</li>
@@ -199,9 +199,9 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             <p>Centers for Disease Control. (2024). "Understanding ADHD." Retrieved from cdc.gov</p>
           </div>
 
-          <h4 className="text-[#0c264d] font-semibold mb-2 mt-6">🚨 MANDATORY FORMAT - REFERENCES SECTION CODE TEMPLATE:</h4>
+          <h4 className="text-[#0c264d] font-semibold mb-2 mt-6">MANDATORY FORMAT - REFERENCES SECTION CODE TEMPLATE:</h4>
           <div className="bg-red-100 border-4 border-red-600 p-6 mb-4">
-            <p className="font-bold text-red-900 mb-4 text-lg">⚠️ ASSISTANT: READ THIS BEFORE CREATING ANY REFERENCE SECTION ⚠️</p>
+            <p className="font-bold text-red-900 mb-4 text-lg">ASSISTANT: READ THIS BEFORE CREATING ANY REFERENCE SECTION</p>
             
             <div className="bg-white p-4 rounded mb-4">
               <p className="font-semibold mb-2 text-red-900">CORRECT FORMAT (copy this exactly!):</p>
@@ -244,12 +244,12 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             <div className="bg-yellow-50 border-2 border-yellow-600 p-3 rounded">
               <p className="font-bold text-yellow-900">KEY RULES:</p>
               <ul className="list-disc ml-6 text-sm space-y-1 text-yellow-900">
-                <li>✅ Background Sources = NO BULLET POINTS, NO NUMBERS, NO INDENTATION</li>
-                <li>✅ Cited Studies = NUMBERS [1], [2], [3] with ml-4 indentation</li>
-                <li>✅ Always have TWO headings (even if one section is empty)</li>
-                <li>❌ NEVER number background sources</li>
-                <li>❌ NEVER use [1], [2] for background sources</li>
-                <li>❌ NEVER indent background sources (no ml-4)</li>
+                <li>Background Sources = NO BULLET POINTS, NO NUMBERS, NO INDENTATION</li>
+                <li>Cited Studies = NUMBERS [1], [2], [3] with ml-4 indentation</li>
+                <li>Always have TWO headings (even if one section is empty)</li>
+                <li>NEVER number background sources</li>
+                <li>NEVER use [1], [2] for background sources</li>
+                <li>NEVER indent background sources (no ml-4)</li>
               </ul>
             </div>
           </div>
@@ -258,11 +258,11 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* TAB COMPONENTS */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            🎯 TAB COMPONENTS
+            TAB COMPONENTS
           </h2>
           
           <div className="bg-[#ffd166] bg-opacity-30 border-l-4 border-[#ffd166] p-4 mb-6">
-            <p className="font-bold text-[#0c264d] mb-2">🔑 OFFICIAL STANDARD - ALL TABS MUST USE THIS FORMAT:</p>
+            <p className="font-bold text-[#0c264d] mb-2">OFFICIAL STANDARD - ALL TABS MUST USE THIS FORMAT:</p>
             <p className="font-semibold mb-2">Pattern 2: UI Tabs Component (MANDATORY FOR ALL SUBPAGES)</p>
             <ul className="list-disc ml-6 space-y-1 text-sm">
               <li>All tabs across the entire site must use the UI Tabs Component from <code className="bg-white px-1 rounded">../../ui/tabs</code></li>
@@ -276,14 +276,14 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="bg-gray-50 p-4 rounded border border-gray-300 mb-4">
             <p className="font-semibold mb-2">Required Standards:</p>
             <ul className="list-disc ml-6 space-y-1 text-sm">
-              <li>Import: <code className="bg-gray-100 px-1 rounded">import {'{ Tabs, TabsContent, TabsList, TabsTrigger }'} from '../../ui/tabs';</code></li>
+              <li>Import: <code className="bg-gray-100 px-1 rounded">{"import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';"}</code></li>
               <li>Always include <code className="bg-gray-100 px-1 rounded">text-sm</code> class on TabsTrigger</li>
               <li>Active state via data attribute: <code className="bg-gray-100 px-1 rounded">data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white</code></li>
               <li>Inactive state: <code className="bg-gray-100 px-1 rounded">bg-[#ffd166]</code></li>
               <li>Tab layout grid: <code className="bg-gray-100 px-1 rounded">grid-cols-1 md:grid-cols-2</code> (1 column on mobile, 2 columns on iPad/tablet/desktop)</li>
               <li>Tab padding: <code className="bg-gray-100 px-1 rounded">py-3 md:py-2</code> (taller on mobile, shorter on iPad and larger)</li>
               <li>TabsList classes: <code className="bg-gray-100 px-1 rounded">grid w-full grid-cols-1 md:grid-cols-2 gap-3 mb-12 bg-transparent h-auto p-0</code></li>
-              <li>TabsTrigger classes: <code className="bg-gray-100 px-1 rounded">bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto</code></li>
+              <li>TabsTrigger classes: <code className="bg-gray-100 px-1 rounded">{"bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto"}</code></li>
             </ul>
           </div>
 
@@ -313,7 +313,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* BUTTON COMPONENTS */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            🔘 BUTTON COMPONENTS
+            BUTTON COMPONENTS
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Primary Navigation Button (Back to Main Page)</h3>
@@ -343,14 +343,14 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             <li>Text color: Dark Navy Blue (<code className="bg-gray-100 px-1 rounded">#0c264d</code>)</li>
             <li>Hover: Background becomes Dark Navy Blue, text becomes white</li>
             <li>Include transition for smooth color change</li>
-            <li>Standard format: <code className="bg-gray-100 px-1 rounded">className="px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"</code></li>
+            <li>Standard format: <code className="bg-gray-100 px-1 rounded">{"className=\"px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold\""}</code></li>
           </ul>
         </section>
 
         {/* CARD SECTIONS */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            📦 CARD SECTIONS (Main Condition Pages)
+            CARD SECTIONS (Main Condition Pages)
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Standard Category Card</h3>
@@ -366,7 +366,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* EMOJI POLICY */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            😊 EMOJI POLICY
+            EMOJI POLICY
           </h2>
           
           <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
@@ -383,12 +383,12 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* IMAGE STANDARDS */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            🖼️ IMAGE STANDARDS
+            IMAGE STANDARDS
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Autism Symbol</h3>
           <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-4 mb-4">
-            <p><strong>ALWAYS use:</strong> Gold infinity symbol (∞)</p>
+            <p><strong>ALWAYS use:</strong> Gold infinity symbol (&#8734;)</p>
             <p><strong>NEVER use:</strong> Puzzle piece (controversial in autistic community)</p>
           </div>
         </section>
@@ -396,7 +396,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* CONTENT STRUCTURE */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            📋 CONTENT STRUCTURE
+            CONTENT STRUCTURE
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Standard 6 Categories for All Conditions</h3>
@@ -414,7 +414,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* NAVIGATION & ROUTING */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            🔗 NAVIGATION & ROUTING
+            NAVIGATION & ROUTING
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Article Slug Naming Convention</h3>
@@ -428,7 +428,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* RESPONSIVE DESIGN */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            📱 RESPONSIVE DESIGN
+            RESPONSIVE DESIGN
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Breakpoints</h3>
@@ -442,32 +442,32 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* CRITICAL RULES */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            ⚠️ CRITICAL RULES
+            CRITICAL RULES
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-red-50 border-l-4 border-red-500 p-4">
               <h3 className="text-[#0c264d] font-semibold mb-3">Never Do:</h3>
               <ol className="list-decimal ml-6 space-y-2 text-sm">
-                <li>❌ Use old cyan <code className="bg-gray-100 px-1 rounded">#2abcd4</code> for active tab states (use <code className="bg-gray-100 px-1 rounded">#0A9DC4</code>)</li>
-                <li>❌ Forget <code className="bg-gray-100 px-1 rounded">text-sm</code> on tabs</li>
-                <li>❌ Over-cite content (only research mentions & statistics)</li>
-                <li>❌ Use puzzle piece for Autism (use ∞ gold infinity symbol)</li>
-                <li>❌ Add emojis in article content (maintain professional tone)</li>
-                <li>❌ Add font size/weight classes without user request</li>
-                <li>❌ Create files without checking this standard first</li>
+                <li>Use old cyan <code className="bg-gray-100 px-1 rounded">#2abcd4</code> for active tab states (use <code className="bg-gray-100 px-1 rounded">#0A9DC4</code>)</li>
+                <li>Forget <code className="bg-gray-100 px-1 rounded">text-sm</code> on tabs</li>
+                <li>Over-cite content (only research mentions & statistics)</li>
+                <li>Use puzzle piece for Autism (use gold infinity symbol)</li>
+                <li>Add emojis in article content (maintain professional tone)</li>
+                <li>Add font size/weight classes without user request</li>
+                <li>Create files without checking this standard first</li>
               </ol>
             </div>
 
             <div className="bg-green-50 border-l-4 border-green-500 p-4">
               <h3 className="text-[#0c264d] font-semibold mb-3">Always Do:</h3>
               <ol className="list-decimal ml-6 space-y-2 text-sm">
-                <li>✅ Check this document before creating new components</li>
-                <li>✅ Use exact color hex codes (no variations)</li>
-                <li>✅ Include citation styling in articles</li>
-                <li>✅ Follow strict citation criteria</li>
-                <li>✅ Use responsive patterns for mobile/desktop</li>
-                <li>✅ Match existing tab patterns exactly</li>
+                <li>Check this document before creating new components</li>
+                <li>Use exact color hex codes (no variations)</li>
+                <li>Include citation styling in articles</li>
+                <li>Follow strict citation criteria</li>
+                <li>Use responsive patterns for mobile/desktop</li>
+                <li>Match existing tab patterns exactly</li>
               </ol>
             </div>
           </div>
@@ -476,20 +476,20 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* COMPLETED WORK LOG */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            📊 COMPLETED WORK LOG
+            COMPLETED WORK LOG
           </h2>
           
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Major Standardizations Completed:</h3>
           <ul className="space-y-2 ml-4">
-            <li>✅ All 27 neurodivergent condition pages updated with 6 core categories</li>
-            <li>✅ Strict citation criteria implemented across all pages</li>
-            <li>✅ Tabs implemented on all 6 Dyslexia subpages</li>
-            <li>✅ Tabs implemented on all 6 ADHD subpages (converted to beautiful Tabs component)</li>
-            <li>✅ Tabs implemented on all 6 Autism subpages</li>
-            <li>✅ "Read more →" buttons added to ADHD, Dyslexia, and Autism main pages</li>
-            <li>✅ Responsive layout implemented for ADHD, Dyslexia, and Autism subpages</li>
-            <li>✅ Updated all ADHD pages to use darker professional cyan (#0A9DC4)</li>
-            <li>✅ Standardized ALL tabs to use <code className="bg-gray-100 px-2 py-1 rounded">text-sm</code> (14px) across ADHD, Dyslexia, and Autism (Jan 15, 2026)</li>
+            <li>All 27 neurodivergent condition pages updated with 6 core categories</li>
+            <li>Strict citation criteria implemented across all pages</li>
+            <li>Tabs implemented on all 6 Dyslexia subpages</li>
+            <li>Tabs implemented on all 6 ADHD subpages (converted to beautiful Tabs component)</li>
+            <li>Tabs implemented on all 6 Autism subpages</li>
+            <li>"Read more →" buttons added to ADHD, Dyslexia, and Autism main pages</li>
+            <li>Responsive layout implemented for ADHD, Dyslexia, and Autism subpages</li>
+            <li>Updated all ADHD pages to use darker professional cyan (#0A9DC4)</li>
+            <li>Standardized ALL tabs to use <code className="bg-gray-100 px-2 py-1 rounded">text-sm</code> (14px) across ADHD, Dyslexia, and Autism (Jan 15, 2026)</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-semibold text-lg mb-3 mt-6">Current Status:</h3>
@@ -505,7 +505,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* WORKFLOW */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            🔄 WORKFLOW FOR NEW FEATURES
+            WORKFLOW FOR NEW FEATURES
           </h2>
           
           <p className="mb-3">When adding new components or pages:</p>
@@ -523,7 +523,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         {/* QUICK REFERENCE */}
         <section className="mb-10">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
-            📞 QUICK REFERENCE
+            QUICK REFERENCE
           </h2>
           
           <div className="grid md:grid-cols-2 gap-4">

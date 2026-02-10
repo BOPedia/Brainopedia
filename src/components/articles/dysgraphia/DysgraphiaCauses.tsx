@@ -394,7 +394,7 @@ export function DysgraphiaCauses({ setCurrentArticle }: DysgraphiaCausesProps) {
           <p>[32] Ehri, L. C. (2000). "Learning to read and learning to spell: Two sides of a coin." <em>Topics in Language Disorders</em>, 20(3), 19-36.</p>
           <p>[33] Badian, N. A. (2005). "Does a visual-orthographic deficit contribute to reading disability?" <em>Annals of Dyslexia</em>, 55(1), 28-52.</p>
           <p>[34] Berninger, V. W., Abbott, R. D., Nagy, W., & Carlisle, J. (2010). "Growth in phonological, orthographic, and morphological awareness in grades 1 to 6." <em>Journal of Psycholinguistic Research</em>, 39(2), 141-163.</p>
-          <p>[35] Apel, K., Masterson, J. J., & Niessen, N. L. (2004). "Spelling assessment frameworks." In C. A. Stone et al. (Eds.), <em>Handbook of language and literacy</em> (pp. 644-660). Guilford Press.</p>
+          <p>[35] Apel, K., Masterson, J. J., & Hart, P. (2004). "Integration of language components in spelling." In E. R. Silliman & L. C. Wilkinson (Eds.), <em>Language and literacy learning in schools</em> (pp. 292-315). Guilford Press.</p>
           <p>[36] Moats, L. C. (1995). <em>Spelling: Development, disability, and instruction</em>. York Press.</p>
           <p>[37] Treiman, R. (1993). <em>Beginning to spell: A study of first-grade children</em>. Oxford University Press.</p>
           <p>[38] Berninger, V. W., Nielsen, K. H., Abbott, R. D., Wijsman, E., & Raskind, W. (2008). "Writing problems in developmental dyslexia." <em>Journal of School Psychology</em>, 46(1), 1-21.</p>

@@ -334,7 +334,7 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Professional Guidelines and Best Practices</h2>
           
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">NAGC Pre-K–Grade 12 Gifted Programming Standards</h3>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">NAGC Pre-K-Grade 12 Gifted Programming Standards</h3>
           <p className="mb-4">
             The National Association for Gifted Children provides standards for identification, recommending 
             multiple, valid, and reliable measures; procedures that ensure access for all students; and 
@@ -382,7 +382,7 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
         <div className="text-sm space-y-2">
           <p>[1] Pfeiffer, S. I. (2015). <em>Essentials of gifted assessment</em>. Hoboken, NJ: John Wiley & Sons.</p>
           <p>[2] Lohman, D. F. (2005). "The role of nonverbal ability tests in identifying academically gifted students: An aptitude perspective." <em>Gifted Child Quarterly</em>, 49(2), 111-138.</p>
-          <p>[3] Wechsler, D. (2014). <em>Wechsler Intelligence Scale for Children–Fifth Edition</em>. Bloomington, MN: Pearson.</p>
+          <p>[3] Wechsler, D. (2014). <em>Wechsler Intelligence Scale for Children-Fifth Edition</em>. Bloomington, MN: Pearson.</p>
           <p>[4] Flanagan, D. P., & Kaufman, A. S. (2009). <em>Essentials of WISC-IV assessment</em> (2nd ed.). Hoboken, NJ: Wiley.</p>
           <p>[5] Silverman, L. K. (2009). "The measurement of giftedness." In L. V. Shavinina (Ed.), <em>International handbook on giftedness</em> (pp. 947-970). Springer Science + Business Media.</p>
           <p>[6] Roid, G. H. (2003). <em>Stanford-Binet Intelligence Scales, Fifth Edition</em>. Itasca, IL: Riverside Publishing.</p>
@@ -391,7 +391,7 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
           <p>[9] Naglieri, J. A., & Ford, D. Y. (2005). "Increasing minority children's participation in gifted classes using the NNAT: A response to Lohman." <em>Gifted Child Quarterly</em>, 49(1), 29-36.</p>
           <p>[10] Lohman, D. F., & Hagen, E. P. (2001). <em>Cognitive Abilities Test (Form 6)</em>. Itasca, IL: Riverside Publishing.</p>
           <p>[11] Lohman, D. F., Korb, K. A., & Lakin, J. M. (2008). "Identifying academically gifted English-language learners using nonverbal tests: A comparison of the Raven, NNAT, and CogAT." <em>Gifted Child Quarterly</em>, 52(4), 275-296.</p>
-          <p>[12] Naglieri, J. A. (2003). <em>Naglieri Nonverbal Ability Test–Individual Administration</em>. San Antonio, TX: Harcourt Assessment.</p>
+          <p>[12] Naglieri, J. A. (2003). <em>Naglieri Nonverbal Ability Test-Individual Administration</em>. San Antonio, TX: Harcourt Assessment.</p>
           <p>[13] Naglieri, J. A., & Ford, D. Y. (2003). "Addressing underrepresentation of gifted minority children using the Naglieri Nonverbal Ability Test (NNAT)." <em>Gifted Child Quarterly</em>, 47(2), 155-160.</p>
           <p>[14] Johnsen, S. K. (2004). <em>Identifying gifted students: A practical guide</em>. Waco, TX: Prufrock Press.</p>
           <p>[15] Schrank, F. A., McGrew, K. S., & Mather, N. (2014). <em>Woodcock-Johnson IV Tests of Achievement</em>. Rolling Meadows, IL: Riverside.</p>
@@ -419,14 +419,14 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
           <p>[37] Shaklee, B. D., Barbour, N. E., Ambrose, R., & Hansford, S. J. (1997). <em>Designing and using portfolios</em>. Boston: Allyn & Bacon.</p>
           <p>[38] Callahan, C. M., Tomlinson, C. A., & Pizzat, P. M. (Eds.). (1993). <em>Contexts for promise: Noteworthy practices and innovations in the identification of gifted students</em>. Storrs: University of Connecticut, National Research Center on the Gifted and Talented.</p>
           <p>[39] VanTassel-Baska, J. (1998). <em>Excellence in educating gifted and talented learners</em> (3rd ed.). Denver, CO: Love Publishing.</p>
-          <p>[40] Winner, E., & Martino, G. (2000). "Giftedness in non-academic domains: The case of the visual arts and music." In K. A. Heller, F. J. Mönks, R. J. Sternberg, & R. F. Subotnik (Eds.), <em>International handbook of giftedness and talent</em> (2nd ed., pp. 95-110). Amsterdam: Elsevier.</p>
+          <p>[40] Winner, E., & Martino, G. (2000). "Giftedness in non-academic domains: The case of the visual arts and music." In K. A. Heller, F. J. Monks, R. J. Sternberg, & R. F. Subotnik (Eds.), <em>International handbook of giftedness and talent</em> (2nd ed., pp. 95-110). Amsterdam: Elsevier.</p>
           <p>[41] Clark, G., & Zimmerman, E. (2004). <em>Teaching talented art students: Principles and practices</em>. New York: Teachers College Press.</p>
           <p>[42] Sternberg, R. J., & Zhang, L. (1995). "What do we mean by giftedness? A pentagonal implicit theory." <em>Gifted Child Quarterly</em>, 39(2), 88-94.</p>
           <p>[43] Lohman, D. F. (2009). "Identifying academically talented students: Some general principles, two specific procedures." In L. V. Shavinina (Ed.), <em>International handbook on giftedness</em> (pp. 971-997). Springer.</p>
-          <p>[44] National Association for Gifted Children. (2010). <em>NAGC Pre-K–Grade 12 Gifted Programming Standards</em>. Washington, DC: Author.</p>
+          <p>[44] National Association for Gifted Children. (2010). <em>NAGC Pre-K-Grade 12 Gifted Programming Standards</em>. Washington, DC: Author.</p>
           <p>[45] Card, D., & Giuliano, L. (2016). "Universal screening increases the representation of low-income and minority students in gifted education." <em>Proceedings of the National Academy of Sciences</em>, 113(48), 13678-13683.</p>
           <p>[46] McBee, M. T., Peters, S. J., & Miller, E. M. (2016). "The impact of the nomination stage on gifted program identification: A comprehensive psychometric analysis." <em>Gifted Child Quarterly</em>, 60(4), 258-278.</p>
-          <p>[47] Frasier, M. M., García, J. H., & Passow, A. H. (1995). <em>A review of assessment issues in gifted education and their implications for identifying gifted minority students</em>. Storrs: University of Connecticut, National Research Center on the Gifted and Talented.</p>
+          <p>[47] Frasier, M. M., Garcia, J. H., & Passow, A. H. (1995). <em>A review of assessment issues in gifted education and their implications for identifying gifted minority students</em>. Storrs: University of Connecticut, National Research Center on the Gifted and Talented.</p>
           <p>[48] Peters, S. J., & Engerrand, K. G. (2016). "Equity and excellence: Proactive efforts in the identification of underrepresented students for gifted and talented services." <em>Gifted Child Quarterly</em>, 60(3), 159-171.</p>
           <p>[49] Coleman, M. R., & Hughes, C. E. (2009). "Meeting the needs of gifted students within an RtI framework." <em>Gifted Child Today</em>, 32(3), 14-17.</p>
           <p>[50] Hughes, C. E., & Rollins, K. (2009). "RtI for nurturing giftedness: Implications for the RtI school-based team." <em>Gifted Child Today</em>, 32(3), 31-39.</p>
@@ -454,10 +454,10 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
           <p>[72] Hetland, L., Winner, E., Veenema, S., & Sheridan, K. M. (2013). <em>Studio thinking 2: The real benefits of visual arts education</em> (2nd ed.). New York: Teachers College Press.</p>
           <p>[73] Karnes, F. A., & Bean, S. M. (Eds.). (2009). <em>Methods and materials for teaching the gifted</em> (3rd ed.). Waco, TX: Prufrock Press.</p>
           <p>[74] Matthews, D. J., & Foster, J. F. (2006). "Mystery to mastery: Shifting paradigms in gifted education." <em>Roeper Review</em>, 28(2), 64-69.</p>
-          <p>[75] National Association for Gifted Children. (2019). <em>2019 Pre-K–Grade 12 Gifted Programming Standards</em>. Washington, DC: Author.</p>
+          <p>[75] National Association for Gifted Children. (2019). <em>2019 Pre-K-Grade 12 Gifted Programming Standards</em>. Washington, DC: Author.</p>
           <p>[76] Pfeiffer, S. I., & Blei, S. (2008). "Gifted identification beyond the IQ test: Rating scales and other assessment procedures." In S. I. Pfeiffer (Ed.), <em>Handbook of giftedness in children</em> (pp. 177-198). New York: Springer.</p>
           <p>[77] American Psychological Association. (2017). <em>Ethical principles of psychologists and code of conduct</em>. Washington, DC: Author.</p>
-          <p>[78] Johnsen, S. K. (2011). "A comparison of the Texas State Plan for the Education of Gifted/Talented Students and the 2010 NAGC Pre-K–Grade 12 Gifted Programming Standards." <em>Texas Association for the Gifted and Talented Tempo</em>, 32(1), 10-20.</p>
+          <p>[78] Johnsen, S. K. (2011). "A comparison of the Texas State Plan for the Education of Gifted/Talented Students and the 2010 NAGC Pre-K-Grade 12 Gifted Programming Standards." <em>Texas Association for the Gifted and Talented Tempo</em>, 32(1), 10-20.</p>
           <p>[79] Sternberg, R. J., Jarvin, L., & Grigorenko, E. L. (2011). <em>Explorations in giftedness</em>. New York: Cambridge University Press.</p>
           <p>[80] Subotnik, R. F., Olszewski-Kubilius, P., & Worrell, F. C. (2011). "Rethinking giftedness and gifted education: A proposed direction forward based on psychological science." <em>Psychological Science in the Public Interest</em>, 12(1), 3-54.</p>
         </div>

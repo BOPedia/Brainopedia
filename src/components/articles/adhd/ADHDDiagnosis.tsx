@@ -611,8 +611,6 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnosing ADHD in Adults</h2>
             
-
-
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
                 <strong>Did You Know?</strong> Many adults with ADHD were never diagnosed as children. Girls, 
@@ -816,8 +814,6 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnostic Challenges & Comorbidities</h2>
             
-
-
             {/* Challenges Section */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Challenges in ADHD Diagnosis</h3>
@@ -876,138 +872,82 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Conditions to Rule Out (Differential Diagnosis)</h3>
               <p className="text-sm mb-4">
-                Part of the diagnostic process involves considering other conditions that could explain symptoms instead of ADHD:
+                Part of the diagnostic process involves considering other conditions that could explain symptoms instead of ADHD.
               </p>
               
-              <div className="grid md:grid-cols-2 gap-3">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Learning Disabilities</div>
-                  <div className="text-sm">Dyslexia, dyscalculia, etc.</div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Intellectual Disability</div>
-                  <div className="text-sm">Cognitive limitations</div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Sensory Impairments</div>
-                  <div className="text-sm">Vision or hearing problems</div>
-                </div>
-
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Sleep Disorders</div>
-                  <div className="text-sm">Sleep apnea, insomnia</div>
+                  <div className="text-sm">Sleep deprivation or sleep apnea can cause inattention and hyperactivity</div>
                 </div>
-
                 <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Medical Conditions</div>
-                  <div className="text-sm">Thyroid, anemia, etc.</div>
+                  <div className="font-bold text-[#0c264d] mb-1">Learning Disabilities</div>
+                  <div className="text-sm">Dyslexia or other LDs can look like inattention during academic tasks</div>
                 </div>
-
                 <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Medication Side Effects</div>
-                  <div className="text-sm">Some medications cause ADHD-like symptoms</div>
+                  <div className="font-bold text-[#0c264d] mb-1">Anxiety</div>
+                  <div className="text-sm">Worry and rumination can cause distraction and restlessness</div>
                 </div>
-
                 <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Stress/Trauma</div>
-                  <div className="text-sm">Adjustment to life changes</div>
+                  <div className="font-bold text-[#0c264d] mb-1">Depression</div>
+                  <div className="text-sm">Can cause concentration problems and low motivation</div>
                 </div>
-
                 <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Anxiety Disorders</div>
-                  <div className="text-sm">Can cause distractibility and restlessness</div>
+                  <div className="font-bold text-[#0c264d] mb-1">Thyroid Issues</div>
+                  <div className="text-sm">Both hyper- and hypothyroidism can mimic ADHD symptoms</div>
                 </div>
-
                 <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Mood Disorders</div>
-                  <div className="text-sm">Depression, bipolar disorder</div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Autism Spectrum Disorder</div>
-                  <div className="text-sm">Can involve attention differences</div>
+                  <div className="font-bold text-[#0c264d] mb-1">Hearing/Vision Problems</div>
+                  <div className="text-sm">Undetected sensory issues can cause apparent inattention</div>
                 </div>
               </div>
             </div>
 
-            {/* Comorbidities Section */}
+            {/* Comorbidities */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Common Comorbidities (Co-Occurring Conditions)</h3>
+              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Common Co-occurring Conditions (Comorbidities)</h3>
+              <p className="text-sm mb-4">
+                ADHD rarely travels alone. About two-thirds of children and adults with ADHD have at least one 
+                other condition.
+              </p>
               
-              <div className="flex justify-center mb-4">
-                <ADHDComorbidities className="w-96" />
-              </div>
-
-              <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-3 rounded mb-4">
-                <p className="text-sm">
-                  <strong>Key Statistic:</strong> About two-thirds (60-70%) of individuals with ADHD have at least one 
-                  co-occurring condition.<sup className="text-[#10b981]">[1]</sup> This is the rule, not the exception!
-                </p>
+              <div className="flex justify-center mb-6">
+                <ADHDComorbidities className="w-full max-w-lg h-auto rounded-md border border-gray-300" />
               </div>
 
               <div className="space-y-3">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Anxiety Disorders (25-40%)<sup className="text-[#10b981]">[2]</sup></div>
-                  <div className="text-sm">
-                    Generalized anxiety, social anxiety, and panic disorders are common. The overlap between ADHD and 
-                    anxiety is particularly high.
-                  </div>
+                <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]">
+                  <div className="font-bold text-[#0c264d] mb-1">Oppositional Defiant Disorder (ODD)</div>
+                  <div className="text-sm">Occurs in ~40% of children with ADHD. Characterized by defiance, irritability, and vindictiveness.</div>
                 </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Depression (18-30%)<sup className="text-[#10b981]">[3]</sup></div>
-                  <div className="text-sm">
-                    Major depressive disorder and dysthymia frequently co-occur with ADHD, often developing after years 
-                    of struggling with undiagnosed ADHD.
-                  </div>
+                <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]">
+                  <div className="font-bold text-[#0c264d] mb-1">Anxiety Disorders</div>
+                  <div className="text-sm">Occurs in ~30% of individuals with ADHD. Excessive worry, nervousness, or specific phobias.</div>
                 </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Oppositional Defiant Disorder (40% in children)<sup className="text-[#10b981]">[4]</sup></div>
-                  <div className="text-sm">
-                    Argumentative, defiant behavior. Very common in children with ADHD.
-                  </div>
+                <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]">
+                  <div className="font-bold text-[#0c264d] mb-1">Learning Disabilities</div>
+                  <div className="text-sm">Occurs in ~30-50% of individuals with ADHD. Dyslexia, dyscalculia, or dysgraphia.</div>
                 </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Learning Disabilities (30-50%)<sup className="text-[#10b981]">[5]</sup></div>
-                  <div className="text-sm">
-                    Dyslexia, dyscalculia, dysgraphia, and other specific learning disorders commonly co-occur.
-                  </div>
+                <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]">
+                  <div className="font-bold text-[#0c264d] mb-1">Autism Spectrum Disorder (ASD)</div>
+                  <div className="text-sm">Significant overlap. Many individuals (AuDHD) meet criteria for both conditions.</div>
                 </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Autism Spectrum Disorder (30-50%)<sup className="text-[#10b981]">[6]</sup></div>
-                  <div className="text-sm">
-                    High co-occurrence rates. DSM-5 now allows dual diagnosis of ADHD and ASD (previously not permitted).
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Substance Use Disorders (15-20%)<sup className="text-[#10b981]">[7]</sup></div>
-                  <div className="text-sm">
-                    Higher rates of alcohol and drug use disorders, often as self-medication for untreated ADHD.
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Sleep Disorders</div>
-                  <div className="text-sm">
-                    Delayed sleep phase syndrome, restless leg syndrome, and insomnia are common in ADHD.
-                  </div>
+                <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]">
+                  <div className="font-bold text-[#0c264d] mb-1">Mood Disorders</div>
+                  <div className="text-sm">Depression and bipolar disorder co-occur more frequently with ADHD than in the general population.</div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-              <p className="text-sm">
-                <strong>Clinical Importance:</strong> Identifying comorbid conditions is crucial for comprehensive 
-                treatment planning. Treatment approaches may need to address multiple conditions 
-                simultaneously. For example, treating ADHD alone without addressing co-occurring anxiety may not lead 
-                to full improvement.
-              </p>
+            {/* Bottom button - right aligned above References */}
+            <div className="flex justify-end my-8">
+              <button 
+                onClick={() => setCurrentArticle?.('adhd')}
+                className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+              >
+                <span className="text-xl">←</span>
+                All About ADHD
+              </button>
             </div>
           </div>
         </TabsContent>
@@ -1015,152 +955,61 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
         {/* After Diagnosis Tab */}
         <TabsContent value="after" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">After Receiving a Diagnosis</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Comes After Diagnosis?</h2>
             
-
-
-            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
-              <p className="text-sm">
-                <strong>Important:</strong> Receiving an ADHD diagnosis is just the beginning, not the end. 
-                The diagnosis opens the door to effective treatment, accommodations, and self-understanding that 
-                can be truly life-changing.
-              </p>
-            </div>
-
             <p className="mb-6">
-              Receiving an ADHD diagnosis is just the beginning. After diagnosis, important next steps 
-              include education, treatment planning, accessing support, and regular follow-up.
+              Receiving an ADHD diagnosis is just the first step. The post-diagnosis period involves 
+              understanding what the diagnosis means for you, developing a treatment plan, and building a support 
+              system.
             </p>
 
-            {/* Next Steps */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Important Next Steps</h3>
-              
-              <div className="space-y-4">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">1. Learn About ADHD</div>
-                  <div className="text-sm">
-                    Education is crucial. Understanding how ADHD affects you specifically helps you develop effective 
-                    strategies and self-compassion. Read books, attend workshops, join support groups, 
-                    and explore evidence-based resources.
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">2. Develop a Treatment Plan</div>
-                  <div className="text-sm">
-                    Work with your healthcare provider to create a comprehensive plan that may include:
-                    <ul className="ml-4 mt-1 space-y-1">
-                      <li>• <strong>Medication:</strong> Stimulants or non-stimulants (see Treatment page)</li>
-                      <li>• <strong>Therapy:</strong> CBT, coaching, skills training</li>
-                      <li>• <strong>Accommodations:</strong> School or workplace supports</li>
-                      <li>• <strong>Lifestyle changes:</strong> Exercise, sleep, nutrition, organization systems</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">3. Connect with Support</div>
-                  <div className="text-sm">
-                    Find communities and resources:
-                    <ul className="ml-4 mt-1 space-y-1">
-                      <li>• CHADD (Children and Adults with ADHD)</li>
-                      <li>• Local support groups</li>
-                      <li>• Online communities (carefully vetted for accurate information)</li>
-                      <li>• ADHD coaches or therapists</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">4. Obtain Accommodations</div>
-                  <div className="text-sm">
-                    If you're in school or working, explore accommodations:
-                    <ul className="ml-4 mt-1 space-y-1">
-                      <li>• <strong>Students:</strong> 504 Plan or IEP (K-12), Disability Services (college)</li>
-                      <li>• <strong>Workers:</strong> ADA accommodations (extended deadlines, quiet workspace, written instructions, etc.)</li>
-                      <li>• <strong>Testing:</strong> Extended time, distraction-reduced environment for SAT, MCAT, Bar Exam, etc.</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">5. Regular Follow-Up</div>
-                  <div className="text-sm">
-                    Monitor treatment effectiveness with regular check-ins. ADHD management often requires 
-                    adjustments over time as life circumstances change. Stay in touch with your treatment team.
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">6. Practice Self-Compassion</div>
-                  <div className="text-sm">
-                    Many people with ADHD carry years of shame, self-blame, and negative self-talk. Understanding that 
-                    your struggles are neurological, not character flaws, can be incredibly healing.
-                  </div>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Education & Acceptance</h3>
+                <ul className="text-sm space-y-2 list-disc ml-4">
+                  <li>Learn about ADHD neurobiology (it's not a character flaw!)</li>
+                  <li>Identify your specific strengths and challenges</li>
+                  <li>Process emotional reactions (relief, grief, anger)</li>
+                  <li>Connect with ADHD communities for support</li>
+                </ul>
               </div>
-            </div>
 
-            {/* Common Emotions After Diagnosis */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Common Emotions After Diagnosis</h3>
-              <p className="text-sm mb-4">
-                Getting diagnosed can bring up complex feelings. All of these are normal:
-              </p>
-              
-              <div className="space-y-3">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Relief</div>
-                  <div className="text-sm">
-                    "Finally, an explanation for why I've struggled so much." Many people feel validated and relieved 
-                    to have a name for their experiences.
-                  </div>
-                </div>
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">2. Treatment Planning</h3>
+                <ul className="text-sm space-y-2 list-disc ml-4">
+                  <li>Discuss medication options with your provider</li>
+                  <li>Consider therapy (CBT, coaching) for skill-building</li>
+                  <li>Address lifestyle factors (sleep, exercise, nutrition)</li>
+                  <li>Treat co-occurring conditions if present</li>
+                </ul>
+              </div>
 
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Grief</div>
-                  <div className="text-sm">
-                    "What might have been different if I'd known sooner?" Grieving lost opportunities or years of 
-                    struggling is normal, especially for late-diagnosed adults.
-                  </div>
-                </div>
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">3. Accommodations</h3>
+                <ul className="text-sm space-y-2 list-disc ml-4">
+                  <li><strong>School:</strong> Request IEP or 504 Plan meeting</li>
+                  <li><strong>College:</strong> Register with Disability Services</li>
+                  <li><strong>Work:</strong> Identify helpful workplace modifications</li>
+                  <li><strong>Home:</strong> Organize environment to support executive function</li>
+                </ul>
+              </div>
 
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Overwhelm</div>
-                  <div className="text-sm">
-                    "What do I do now?" There's a lot of information to process. Take it one step at a time.
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Uncertainty</div>
-                  <div className="text-sm">
-                    "Am I really ADHD, or am I just lazy/broken?" Internalized stigma can make acceptance difficult. 
-                    Remember: ADHD is a real neurological condition, not a character flaw.
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Hope</div>
-                  <div className="text-sm">
-                    "Things can get better from here." With proper treatment and support, most people with ADHD see 
-                    significant improvement in functioning and quality of life.
-                  </div>
-                </div>
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">4. Skill Building</h3>
+                <ul className="text-sm space-y-2 list-disc ml-4">
+                  <li>Develop organizational systems that work for YOUR brain</li>
+                  <li>Learn time management strategies (timers, planners)</li>
+                  <li>Practice emotional regulation techniques</li>
+                  <li>Build self-advocacy skills</li>
+                </ul>
               </div>
             </div>
 
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-              <p className="text-sm mb-2">
-                <strong>The Path Forward:</strong> An accurate diagnosis opens the door to effective treatment and 
-                support, allowing individuals to better understand themselves and develop strategies that work with 
-                their unique brain.
-              </p>
-              <p className="text-sm mt-3">
-                <strong>Remember:</strong> ADHD is highly treatable. With the right combination of medication, therapy, 
-                accommodations, and support, most people with ADHD can thrive. Your diagnosis is the first step toward 
-                a better understanding of yourself and a more supported future.
+              <p className="text-sm">
+                <strong>Remember:</strong> Treatment is a marathon, not a sprint. It often takes time to find the right 
+                medication dosage, therapist, or organizational system. Be patient with yourself and keep communicating 
+                with your treatment team.
               </p>
             </div>
 
@@ -1173,20 +1022,6 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
                 <span className="text-xl">←</span>
                 All About ADHD
               </button>
-            </div>
-
-            {/* References for After Diagnosis Tab */}
-            <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-              <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-              
-              <h3 className="text-[#0c264d] font-semibold mb-2">Background Sources</h3>
-              <div className="text-sm space-y-2">
-                <p>Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD). "After Diagnosis: Next Steps." Retrieved from chadd.org</p>
-                <p>Barkley, R. A. (2015). <em>Taking Charge of ADHD: The Complete, Authoritative Guide for Parents</em> (4th ed.). Guilford Press.</p>
-                <p>Ramsay, J. R. (2020). <em>Rethinking Adult ADHD: Helping Clients Turn Intentions into Actions</em>. American Psychological Association.</p>
-                <p>Nadeau, K. G., & Quinn, P. O. (2002). <em>Understanding Women with AD/HD</em>. Advantage Books.</p>
-                <p>American Academy of Pediatrics. "ADHD: What Every Parent Needs to Know." Retrieved from aap.org</p>
-              </div>
             </div>
           </div>
         </TabsContent>
@@ -1194,189 +1029,50 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
         {/* Recent Research Tab */}
         <TabsContent value="research" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Recent Research & Innovations in ADHD Diagnosis</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Recent Research in ADHD Diagnosis</h2>
             
-            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
-              <p className="text-sm">
-                <strong>About This Tab:</strong> This section highlights cutting-edge research and innovations in ADHD 
-                diagnostic practices from 2015-2026. These are emerging findings and evolving best practices that are 
-                shaping the future of ADHD assessment.
-              </p>
-            </div>
-
             <p className="mb-6">
-              The field of ADHD diagnosis has advanced significantly in recent years, with new research improving 
-              diagnostic accuracy, accessibility, and understanding of the assessment process. These developments are 
-              helping clinicians make more reliable diagnoses and reducing barriers to evaluation for diverse populations.
+              The field of ADHD research is rapidly evolving. Here are some key recent findings relevant to diagnosis:
             </p>
 
-            {/* Structured Diagnostic Interviews */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Structured vs. Semi-Structured Interviews</h3>
-              
-              <p className="text-sm mb-4">
-                Research demonstrates that semi-structured clinical interviews significantly improve diagnostic 
-                reliability and consistency compared to unstructured conversations. These interviews follow 
-                a standardized format while allowing clinicians flexibility to probe for clarification and context. 
-                Studies show that structured diagnostic interviews reduce diagnostic variability and improve inter-rater 
-                reliability across different clinicians.
-              </p>
-              
-              <p className="text-sm mb-4">
-                The Diagnostic Interview for ADHD in Adults (DIVA) and the Conners' Adult ADHD Diagnostic Interview 
-                for DSM-5 (CAADID) are examples of semi-structured tools that have demonstrated strong psychometric 
-                properties in research. For children, the Schedule for Affective Disorders and Schizophrenia 
-                for School-Age Children (K-SADS) includes ADHD modules with high validity.
-              </p>
-            </div>
-
-            {/* Functional Impairment Assessment */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Assessing Functional Impairment</h3>
-              
-              <p className="text-sm mb-4">
-                Recent research emphasizes that functional impairment assessment is often inadequate in clinical 
-                practice, yet it is a critical component of ADHD diagnosis. Simply meeting symptom criteria 
-                is insufficient—the symptoms must cause significant impairment in real-world functioning across multiple 
-                domains. Studies show that approximately 40-50% of individuals with elevated ADHD symptoms 
-                do not experience clinically significant impairment and therefore should not receive a diagnosis.<sup className="text-[#10b981]">[1]</sup>
-              </p>
-              
-              <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4] mb-4">
-                <div className="text-sm font-bold text-[#0c264d] mb-2">Key Domains of Functional Impairment:</div>
-                <ul className="text-sm space-y-1 ml-4">
-                  <li>• <strong>Academic/Occupational:</strong> Grade performance, work productivity, task completion</li>
-                  <li>• <strong>Social Relationships:</strong> Friendships, family relationships, peer conflicts</li>
-                  <li>• <strong>Daily Living Skills:</strong> Self-care, organization, time management</li>
-                  <li>• <strong>Emotional Functioning:</strong> Self-esteem, frustration tolerance, emotional regulation</li>
-                  <li>• <strong>Safety/Risk Behaviors:</strong> Accidents, risky decision-making, substance use</li>
-                </ul>
+            <div className="space-y-4">
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Objective Diagnostic Markers</h3>
+                <p className="text-sm">
+                  Researchers are exploring the use of objective markers like eye-tracking, actigraphy (movement tracking), 
+                  and EEG patterns to supplement clinical diagnosis. While not yet ready for standalone diagnostic use, 
+                  these tools show promise for improving diagnostic accuracy in the future.
+                </p>
               </div>
-              
-              <p className="text-sm">
-                The Weiss Functional Impairment Rating Scale (WFIRS) and Barkley Functional Impairment Scale (BFIS) 
-                are validated tools specifically designed to assess ADHD-related impairment across these domains.
-              </p>
-            </div>
 
-            {/* Differential Diagnosis */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Differential Diagnosis Process</h3>
-              
-              <p className="text-sm mb-4">
-                A comprehensive ADHD evaluation must systematically rule out other conditions that can mimic or better 
-                explain ADHD symptoms. Research indicates that misdiagnosis can occur when clinicians fail 
-                to adequately consider alternative explanations for attention and behavioral difficulties.
-              </p>
-              
-              <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4] mb-4">
-                <div className="text-sm font-bold text-[#0c264d] mb-2">Conditions to Rule Out or Identify:</div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm ml-4">
-                  <div>
-                    <li>Sleep disorders (sleep apnea, insomnia)</li>
-                    <li>Thyroid dysfunction</li>
-                    <li>Hearing or vision problems</li>
-                    <li>Learning disabilities</li>
-                  </div>
-                  <div>
-                    <li>Anxiety disorders</li>
-                    <li>Depression/Bipolar disorder</li>
-                    <li>Trauma/PTSD</li>
-                    <li>∞ Autism spectrum disorder</li>
-                  </div>
-                </div>
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Machine Learning and AI</h3>
+                <p className="text-sm">
+                  Studies are investigating how artificial intelligence can analyze patterns in behavioral data, 
+                  neuroimaging, and genetic information to identify ADHD subtypes and predict treatment response 
+                  more accurately.
+                </p>
               </div>
-              
-              <p className="text-sm">
-                Sleep disorders deserve particular attention, as research shows that children with sleep-disordered 
-                breathing exhibit ADHD-like symptoms that often resolve with treatment of the sleep problem. 
-                Similarly, trauma exposure can produce attention and hyperactivity symptoms that may be better explained 
-                by post-traumatic stress disorder.
-              </p>
-            </div>
 
-            {/* Telehealth Diagnostic Validity */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Telehealth ADHD Evaluations</h3>
-              
-              <p className="text-sm mb-4">
-                The COVID-19 pandemic accelerated research on telehealth diagnostic assessments, with multiple studies 
-                from 2020-2024 demonstrating that remote ADHD evaluations can be valid and reliable when properly 
-                conducted. Research shows high concordance between in-person and telehealth diagnoses 
-                when clinicians use standardized protocols and rating scales.
-              </p>
-              
-              <p className="text-sm mb-4">
-                Studies indicate that telehealth evaluations offer particular advantages for rural populations and 
-                families with transportation or scheduling barriers, improving access to diagnostic services. 
-                However, challenges include limited ability to observe some behavioral indicators and potential 
-                technology barriers for some families.
-              </p>
-              
-              <p className="text-sm">
-                Best practices for telehealth ADHD assessment include using video conferencing, obtaining multi-informant 
-                rating scales electronically, reviewing documentation remotely, and ensuring adequate technology setup 
-                for both parties.
-              </p>
-            </div>
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Adult-Onset ADHD?</h3>
+                <p className="text-sm">
+                  Recent longitudinal studies have sparked debate about "adult-onset" ADHD. While some researchers 
+                  propose ADHD can emerge in adulthood without childhood symptoms, others argue these cases likely 
+                  represent missed childhood symptoms, sub-threshold childhood symptoms, or other conditions mimicking 
+                  ADHD. The consensus remains that ADHD is a neurodevelopmental condition starting in childhood, even 
+                  if not recognized until later.
+                </p>
+              </div>
 
-            {/* Diagnostic Timeline */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Timeline for Comprehensive Evaluation</h3>
-              
-              <p className="text-sm mb-4">
-                Research on ADHD diagnostic practices reveals significant variability in evaluation duration. 
-                Comprehensive evaluations typically require 2-6 hours of professional time, though this may be 
-                distributed across multiple appointments.<sup className="text-[#10b981]">[2]</sup> Studies show that rushed evaluations 
-                (less than 1 hour) are associated with higher rates of diagnostic errors and missed comorbidities.<sup className="text-[#10b981]">[3]</sup>
-              </p>
-              
-              <p className="text-sm mb-4">
-                A thorough evaluation timeline typically includes: initial clinical interview (60-90 minutes), 
-                time for informants to complete rating scales (30-45 minutes), review of records and collateral 
-                information (30-60 minutes), potential testing if indicated (2-4 hours), and feedback session 
-                to discuss results and recommendations (30-60 minutes).
-              </p>
-              
-              <p className="text-sm">
-                Unfortunately, research indicates the average time from initial concern to diagnosis is 12-18 months, 
-                with significant disparities based on race, socioeconomic status, and geographic location.<sup className="text-[#10b981]">[4]</sup> 
-                Efforts to reduce diagnostic delay while maintaining quality are an ongoing focus of health services research.
-              </p>
-            </div>
-
-            {/* Ecological Assessment */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Real-World and Ecological Assessment</h3>
-              
-              <p className="text-sm mb-4">
-                Emerging research supports using real-world data collection methods to supplement traditional 
-                office-based assessments. Studies show that ecological momentary assessment (EMA)—using 
-                smartphone apps or digital diaries to capture symptoms in real-time in natural settings—can provide 
-                more accurate symptom profiles than retrospective recall.
-              </p>
-              
-              <p className="text-sm mb-4">
-                Classroom observations by trained observers, when feasible, provide valuable objective data on 
-                attention, activity level, and impulsivity in natural academic settings. Research 
-                demonstrates that direct observation has incremental validity beyond parent and teacher ratings alone, 
-                particularly for assessing hyperactive-impulsive symptoms.
-              </p>
-              
-              <p className="text-sm">
-                Recent studies have explored using wearable sensors (actigraphy) and computerized continuous performance 
-                tests in naturalistic settings to objectively measure activity levels and sustained attention. 
-                While promising, these approaches are primarily used in research settings and are not yet standard 
-                clinical practice.
-              </p>
-            </div>
-
-            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-              <p className="text-sm">
-                <strong>Evolving Field:</strong> ADHD diagnostic practices continue to evolve based on emerging 
-                research. These innovations are helping to make evaluations more accurate, accessible, and comprehensive 
-                for diverse populations.
-              </p>
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Sluggish Cognitive Tempo (SCT)</h3>
+                <p className="text-sm">
+                  Research continues into "Sluggish Cognitive Tempo" (sometimes called Cognitive Disengagement Syndrome), 
+                  characterized by daydreaming, mental fogginess, and slow processing. It is currently considered distinct 
+                  from but related to ADHD Inattentive presentation, though it is not yet an official DSM diagnosis.
+                </p>
+              </div>
             </div>
 
             {/* Bottom button - right aligned above References */}
@@ -1389,394 +1085,69 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
                 All About ADHD
               </button>
             </div>
-
-            {/* References for Recent Research Tab */}
-            <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-              <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-              
-              <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-              <div className="text-sm space-y-2">
-                <p>[1] Sibley, M. H., et al. (2016). "Defining ADHD symptom persistence in adulthood: Optimizing sensitivity and specificity." <em>Journal of Child Psychology and Psychiatry</em>, 58(6), 655-662.</p>
-                <p>[2] Epstein, J. N., et al. (2015). "Development of a multimodal ADHD clinic." <em>Journal of Attention Disorders</em>, 19(5), 395-404.</p>
-                <p>[3] Sayal, K., et al. (2018). "ADHD in children and young people: Prevalence, care pathways, and service provision." <em>The Lancet Psychiatry</em>, 5(2), 175-186.</p>
-                <p>[4] Coker, T. R., et al. (2016). "Racial/ethnic disparities in ADHD diagnosis and treatment." <em>Pediatrics</em>, 138(3), e20160407.</p>
-              </div>
-              
-              <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-              <div className="text-sm space-y-2">
-                <p>Ramsay, J. R., & Rostain, A. L. (2014). "The adult ADHD toolkit: Using CBT to facilitate coping inside and out." <em>Routledge</em>.</p>
-                <p>DuPaul, G. J., et al. (2016). "ADHD rating scales in assessment and treatment." <em>Journal of Psychoeducational Assessment</em>, 34(1), 3-14.</p>
-                <p>Asherson, P., et al. (2016). "Adult ADHD: Multi-perspective evidence-based management." <em>Neuroscience & Biobehavioral Reviews</em>, 71, 560-584.</p>
-                <p>Young, S., et al. (2020). "Guidance for identification and treatment of individuals with attention deficit/hyperactivity disorder and autism spectrum disorder." <em>BMC Medicine</em>, 18, 146.</p>
-              </div>
-            </div>
           </div>
         </TabsContent>
 
-        {/* What is AuDHD? Tab */}
+        {/* AuDHD Tab */}
         <TabsContent value="audhd" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is AuDHD?</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">AuDHD: The Intersection of Autism and ADHD</h2>
             
-            {/* Abstract Art Image */}
-
-
-            <p className="mb-6">
-              "AuDHD" is a community-created term used primarily within neurodivergent communities to describe individuals 
-              who are both autistic and have ADHD. While not an official medical diagnosis in the DSM-5-TR, this dual diagnosis 
-              is increasingly recognized by clinicians and researchers as a very real and common pattern with unique characteristics 
-              and support needs.
+            <p className="mb-4">
+              "AuDHD" is a community term for having both Autism Spectrum Disorder (ASD) and ADHD. Until 2013, 
+              the DSM-IV prohibited diagnosing both conditions in the same person. The DSM-5 removed this restriction, 
+              acknowledging that these conditions frequently co-occur.
             </p>
 
-            {/* Prevalence and Co-occurrence */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">How Common is AuDHD?</h3>
-              
-              <p className="text-sm mb-4">
-                Research shows that autism and ADHD co-occur at remarkably high rates:
-              </p>
-              
-              <ul className="text-sm space-y-2 ml-6 mb-4">
-                <li className="mb-2">• <strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup>[1]</sup></li>
-                <li className="mb-2">• <strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup>[2]</sup></li>
-                <li className="mb-2">• Until the DSM-5 (2013), dual diagnosis was not officially permitted, leading to historical underdiagnosis</li>
-                <li className="mb-2">• Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup>[3]</sup></li>
+              <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Prevalence of Co-occurrence</h3>
+              <ul className="text-sm space-y-2 list-disc ml-4">
+                <li><strong>30-80%</strong> of autistic people also meet criteria for ADHD</li>
+                <li><strong>20-50%</strong> of people with ADHD also meet criteria for autism</li>
+                <li>Both conditions share genetic risks and neurobiological features</li>
               </ul>
-
-              <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
-                <p className="text-sm">
-                  <strong>Historical Context:</strong> Before 2013, clinicians could not officially diagnose someone with 
-                  both autism and ADHD simultaneously according to DSM criteria. The DSM-5 removed this exclusionary criterion, 
-                  acknowledging that the conditions frequently co-occur and require recognition of both diagnoses for 
-                  appropriate treatment planning.
-                </p>
-              </div>
             </div>
 
-            {/* How They Interact */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">How Autism and ADHD Interact</h3>
-              
-              <p className="text-sm mb-4">
-                When autism and ADHD co-occur, they don't simply exist side-by-side—they interact in complex ways 
-                that create a unique neurodevelopmental profile:
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
-                  <h4 className="text-[#0c264d] font-bold text-sm mb-2">Overlapping Traits:</h4>
-                  <ul className="text-sm space-y-1">
-                    <li>• Executive function challenges</li>
-                    <li>• Emotional regulation difficulties</li>
-                    <li>• Sensory sensitivities</li>
-                    <li>• Social difficulties</li>
-                    <li>• Sleep problems</li>
-                  </ul>
-                </div>
-
-                <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
-                  <h4 className="text-[#0c264d] font-bold text-sm mb-2">Compounding Effects:</h4>
-                  <ul className="text-sm space-y-1">
-                    <li>• Greater functional impairment than either alone</li>
-                    <li>• More severe executive dysfunction</li>
-                    <li>• Increased anxiety and depression</li>
-                    <li>• More complex support needs</li>
-                  </ul>
-                </div>
-              </div>
-
-              <p className="text-sm">
-                Research indicates that individuals with both conditions often experience more severe difficulties across 
-                multiple domains compared to those with either condition alone, highlighting the importance of recognizing 
-                and addressing both diagnoses.
-              </p>
-            </div>
-
-            {/* AuDHD Diagram - Live Component */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              {/* Lightning Infinity Image */}
-              {/* Image removed - audhdLightningInfinityImage variable not defined */}
-              {/* <div className="flex justify-center mb-6">
-                <img src={audhdLightningInfinityImage} alt="Gold infinity symbol with lightning representing AuDHD" className="w-full max-w-sm h-auto rounded-lg shadow-md" />
-              </div> */}
-
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Shared and Sole Symptoms</h3>
-              
-              <div className="mb-4 bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
-                <p className="text-sm text-center">
-                  <strong>Important:</strong> Individuals with AuDHD experience a variety of symptoms or traits from <strong>all three columns</strong>—
-                  ADHD-only traits, autism-only traits, <em>and</em> the shared traits in the middle. Since there is no DSM-5-TR diagnosis 
-                  for autism and ADHD combined together, there isn't a quantifiable way of determining a specific number of traits from 
-                  each category required for a combined diagnosis. However, they can be diagnosed independently using the ADHD-only or 
-                  autism-only criteria. If both are diagnosed, it can make sense for someone to identify as AuDHD unofficially.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* ADHD Only Column */}
-                <div className="bg-white md:bg-[#ffd166] md:bg-opacity-30 p-3 md:p-5 rounded-lg border-l-4 md:border-l-0 md:border-2 border-[#ffd166]">
-                  <h4 className="text-[#0c264d] font-bold text-center mb-4 text-lg">ADHD Only</h4>
-                  <ul className="text-sm space-y-2 md:space-y-3">
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Hyperactivity or restlessness</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Impulsivity or risk-taking</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Difficulty sustaining attention on non-preferred tasks</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Difficulty with time management skills</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Interrupting/talking excessively</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Hyperfocus on stimulating activities</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Forgetfulness with daily tasks</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Shared/AuDHD Column */}
-                <div className="bg-white md:bg-[#0c264d] md:bg-opacity-80 p-3 md:p-5 rounded-lg border-l-4 md:border-l-0 md:border-2 border-[#0c264d] text-[#0c264d] md:text-white">
-                  <h4 className="font-bold text-center mb-4 text-lg">AuDHD (Both)</h4>
-                  <ul className="text-sm space-y-2 md:space-y-3">
-                    <li className="flex items-start">
-                      <span className="mr-2 flex-shrink-0">•</span>
-                      <span>Executive dysfunction</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 flex-shrink-0">•</span>
-                      <span>Sensory processing differences</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 flex-shrink-0">•</span>
-                      <span>Emotional regulation challenges</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 flex-shrink-0">•</span>
-                      <span>Social difficulties</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 flex-shrink-0">•</span>
-                      <span>Struggles with transitions/change</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 flex-shrink-0">•</span>
-                      <span>Sleep issues</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 flex-shrink-0">•</span>
-                      <span>Time perception differences</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 flex-shrink-0">•</span>
-                      <span>Rejection sensitivity</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Autism Only Column */}
-                <div className="bg-white md:bg-[#2abcd4] md:bg-opacity-30 p-3 md:p-5 rounded-lg border-l-4 md:border-l-0 md:border-2 border-[#2abcd4]">
-                  <h4 className="text-[#0c264d] font-bold text-center mb-4 text-lg">Autism Only</h4>
-                  <ul className="text-sm space-y-2 md:space-y-3">
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Deep, narrow special interests</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Stimming for self-regulation</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Need for sameness/rigid routines</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Literal thinking/difficulty with figurative language</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Difficulty reading social cues/body language</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Monotropic attention (intense singular focus)</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#0c264d] mr-2 flex-shrink-0">•</span>
-                      <span>Strong pattern recognition</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Diagnostic Challenges */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Diagnostic Considerations for AuDHD</h3>
-              
-              <p className="text-sm mb-4">
-                Identifying both autism and ADHD in the same individual can be diagnostically complex:
-              </p>
-
-              <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4] mb-4">
-                <h4 className="text-[#0c264d] font-bold text-sm mb-2">Common Diagnostic Challenges:</h4>
-                <ul className="text-sm space-y-2">
-                  <li><strong>Symptom overlap:</strong> Attention difficulties, social challenges, and executive dysfunction 
-                  appear in both conditions, making it hard to determine which diagnosis (or both) explains specific behaviors</li>
-                  <li><strong>Masking effects:</strong> Symptoms of one condition may overshadow or mask symptoms of the other, 
-                  particularly in verbal, intellectually capable individuals</li>
-                  <li><strong>Sequential diagnosis:</strong> Often one condition is diagnosed first (frequently ADHD in early 
-                  childhood), with autism identified later when support needs aren't fully met</li>
-                  <li><strong>Assessment bias:</strong> Some clinicians may assume attention difficulties in autistic individuals 
-                  are part of autism rather than recognizing co-occurring ADHD</li>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Shared Traits</h3>
+                <ul className="text-sm space-y-2 list-disc ml-4">
+                  <li>Executive function challenges</li>
+                  <li>Sensory processing differences</li>
+                  <li>Social differences</li>
+                  <li>Hyperfocus / deep interests</li>
+                  <li>Emotional dysregulation</li>
+                  <li>Stimming / fidgeting</li>
                 </ul>
               </div>
 
-              <p className="text-sm mb-4">
-                <strong>Best Practice:</strong> Comprehensive evaluation should systematically assess for both conditions, 
-                especially when initial interventions for one diagnosis don't fully address the individual's challenges. 
-                Studies show that many autistic individuals benefit from ADHD-specific interventions once ADHD is 
-                properly identified.<sup>[4]</sup>
-              </p>
-            </div>
-
-            {/* Why Dual Diagnosis Matters */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              {/* Split Face Image */}
-              {/* Image removed - audhdSplitFaceImage variable not defined */}
-              {/* <div className="flex justify-center mb-6">
-                <img src={audhdSplitFaceImage} alt="Artistic split-face painting representing dual perspectives of AuDHD" className="w-64 h-auto rounded-lg shadow-md" />
-              </div> */}
-
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Why Recognizing Both Conditions Matters</h3>
-              
-              <p className="text-sm mb-4">
-                Accurate identification of both autism and ADHD has significant implications for treatment and support:
-              </p>
-
-              <ul className="text-sm space-y-2 ml-6 mb-4">
-                <li><strong>Comprehensive treatment planning:</strong> Addressing only one condition leaves significant 
-                needs unmet; both require targeted intervention</li>
-                <li><strong>Medication considerations:</strong> Stimulant medications for ADHD can be helpful for autistic 
-                individuals with co-occurring ADHD, but may require careful monitoring</li>
-                <li><strong>Educational accommodations:</strong> Students need supports for both conditions—autism-specific 
-                supports (social skills, sensory accommodations) AND ADHD supports (organizational help, attention strategies)</li>
-                <li><strong>Self-understanding:</strong> Understanding both aspects of their neurodivergence helps individuals 
-                develop effective strategies and advocate for appropriate support</li>
-                <li><strong>Realistic expectations:</strong> Recognizing both conditions helps families, educators, and clinicians 
-                set appropriate goals and understand the full scope of challenges and strengths</li>
-              </ul>
-            </div>
-
-            {/* Support Strategies */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Supporting Individuals with AuDHD</h3>
-              
-              <p className="text-sm mb-4">
-                Effective support for AuDHD requires integrating strategies from both autism and ADHD interventions:
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
-                  <h4 className="text-[#0c264d] font-bold text-sm mb-2">From Autism Support:</h4>
-                  <ul className="text-sm space-y-1">
-                    <li>• Social skills instruction</li>
-                    <li>• Sensory accommodations</li>
-                    <li>• Predictability and routine</li>
-                    <li>• Clear, direct communication</li>
-                    <li>• Special interest incorporation</li>
-                  </ul>
-                </div>
-
-                <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
-                  <h4 className="text-[#0c264d] font-bold text-sm mb-2">From ADHD Support:</h4>
-                  <ul className="text-sm space-y-1">
-                    <li>• Executive function coaching</li>
-                    <li>• Organizational systems</li>
-                    <li>• Attention and focus strategies</li>
-                    <li>• Time management tools</li>
-                    <li>• Behavioral interventions</li>
-                    <li>• Possible medication management</li>
-                  </ul>
-                </div>
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Conflicting Needs (The "Paradox")</h3>
+                <p className="text-sm mb-2">AuDHD can feel like a constant internal tug-of-war:</p>
+                <ul className="text-sm space-y-2 list-disc ml-4">
+                  <li><strong>Routine vs. Novelty:</strong> Autism craves sameness; ADHD craves newness.</li>
+                  <li><strong>Order vs. Chaos:</strong> Autism wants organization; ADHD struggles to maintain it.</li>
+                  <li><strong>Social:</strong> ADHD may want to socialize impulsively; Autism may find it draining.</li>
+                  <li><strong>Focus:</strong> Autism may hyperfocus; ADHD may struggle to sustain attention.</li>
+                </ul>
               </div>
             </div>
 
-            {/* Community Recognition */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              {/* Rainbow Brain Image */}
-              {/* Image removed - audhdRainbowBrainImage variable not defined */}
-              {/* <div className="flex justify-center mb-6">
-                <img src={audhdRainbowBrainImage} alt="Colorful infinity symbol wrapped around brain representing neurodivergent community" className="w-64 h-auto rounded-lg shadow-md" />
-              </div> */}
+            <p className="mb-4">
+              Diagnosing AuDHD can be complex because one condition can mask the other. For example, strict autistic 
+              routines might mask ADHD disorganization, or ADHD social impulsivity might mask autistic social withdrawal. 
+              Comprehensive evaluation by a clinician experienced in both conditions is essential.
+            </p>
 
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">AuDHD in the Neurodivergent Community</h3>
-              
-              <p className="text-sm mb-4">
-                While "AuDHD" is not found in diagnostic manuals, it has become widely embraced within neurodivergent 
-                communities because:
-              </p>
-
-              <ul className="text-sm space-y-2 ml-6">
-                <li>• It acknowledges the unique experience of having both conditions simultaneously</li>
-                <li>• It provides identity and community for those who don't fit neatly into either "autistic" or "ADHD" categories alone</li>
-                <li>• It validates the complex, sometimes contradictory experiences (e.g., craving routine vs. seeking novelty; 
-                social difficulties from different sources)</li>
-                <li>• It raises awareness that these conditions frequently co-occur and require integrated understanding</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-              <p className="text-sm">
-                <strong>Bottom Line:</strong> While "AuDHD" isn't an official diagnosis, the co-occurrence of autism 
-                and ADHD is well-documented, common, and clinically significant. Individuals experiencing both conditions 
-                benefit from comprehensive assessment and integrated support addressing both aspects of their neurodivergence.
-              </p>
-            </div>
-          </div>
-
-          {/* Back to Main Button */}
-          <div className="flex justify-end mt-8 mb-4">
-            <button 
-              onClick={() => setCurrentArticle?.('adhd')}
-              className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
-            >
-              <span className="text-xl">←</span>
-              All About ADHD
-            </button>
-          </div>
-
-          {/* References for What is AuDHD Tab */}
-          <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-            
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Cited Studies and Statistics</h3>
-            <div className="text-sm space-y-2 mb-6">
-              <p>[1] Antshel, K. M., & Russo, N. (2019). "Autism spectrum disorders and ADHD: Overlapping phenomenology, diagnostic issues, and treatment considerations." <em>Current Psychiatry Reports</em>, 21(5), 34.</p>
-              <p>[2] Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <em>Frontiers in Human Neuroscience</em>, 8, 268.</p>
-              <p>[3] Jang, J., Matson, J. L., Williams, L. W., Tureck, K., Goldin, R. L., & Cervantes, P. E. (2013). "Rates of comorbid symptoms in children with ASD, ADHD, and comorbid ASD and ADHD." <em>Research in Developmental Disabilities</em>, 34(8), 2369-2378.</p>
-              <p>[4] Mulligan, A., Anney, R. J., O'Regan, M., Chen, W., Butler, L., Fitzgerald, M., ... & Gill, M. (2009). "Autism symptoms in attention-deficit/hyperactivity disorder: A familial trait which correlates with conduct, oppositional defiant, language and motor disorders." <em>Journal of Autism and Developmental Disorders</em>, 39(2), 197-209.</p>
-            </div>
-
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Background Sources</h3>
-            <div className="text-sm space-y-2">
-              <p>American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
-              <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
-              <p>Centers for Disease Control and Prevention. (2023). "Autism Spectrum Disorder (ASD): Data and Statistics." CDC.</p>
+            {/* Bottom button - right aligned above References */}
+            <div className="flex justify-end my-8">
+              <button 
+                onClick={() => setCurrentArticle?.('adhd')}
+                className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+              >
+                <span className="text-xl">←</span>
+                All About ADHD
+              </button>
             </div>
           </div>
         </TabsContent>

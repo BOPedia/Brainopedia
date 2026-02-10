@@ -189,7 +189,7 @@ export function ADHDTreatmentApproach() {
       </text>
       
       {/* Brainopedia Logo */}
-      <image href={brainLogo} x="360" y="355" width="80" height="80"/>
+      {/* <image href={brainLogo} x="360" y="355" width="80" height="80"/> */}
       
       {/* Connection lines from boxes to center */}
       <line x1="400" y1="245" x2="400" y2="265" stroke="#0c264d" strokeWidth="2" strokeDasharray="5,5" opacity="0.3"/>

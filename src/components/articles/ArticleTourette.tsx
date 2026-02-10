@@ -8,47 +8,20 @@ interface ArticleTouretteProps {
 
 export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
   const sections = [
-    { 
-      id: 'overview', 
-      title: 'Overview'
-    },
-    { 
-      id: 'characteristics', 
-      title: 'Symptoms & Characteristics'
-    },
-    { 
-      id: 'causes', 
-      title: 'Causes & Origins'
-    },
-    { 
-      id: 'diagnosis', 
-      title: 'Testing & Diagnosing'
-    },
-    { 
-      id: 'support', 
-      title: 'Support & Management'
-    },
-    { 
-      id: 'living', 
-      title: 'Living with Tourette Syndrome'
-    },
+    { id: 'overview', title: 'Overview' },
+    { id: 'characteristics', title: 'Symptoms & Characteristics' },
+    { id: 'causes', title: 'Causes & Origins' },
+    { id: 'diagnosis', title: 'Testing & Diagnosing' },
+    { id: 'support', title: 'Support & Management' },
+    { id: 'living', title: 'Living with Tourette Syndrome' },
   ];
 
   return (
     <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
-        Tourette Syndrome
-      </h1>
+      <style>{`sup { color: #10b981; }`}</style>
+      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">Tourette Syndrome</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
           <p>
             <strong>Tourette syndrome (TS)</strong> is a neurodevelopmental disorder characterized by repetitive, 
@@ -56,191 +29,64 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
             la Tourette who first described the condition in 1885, Tourette syndrome typically begins in childhood 
             and varies in severity from person to person.<sup>[2]</sup>
           </p>
-          
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
-
-        {/* Right column - InfoBox */}
         <div className="w-full">
-          <InfoBox
-            title="Tourette Syndrome"
-            data={[
-              { label: 'Other names', value: 'Tourette disorder, TS, Gilles de la Tourette syndrome' },
-              { label: 'Specialty', value: 'Neurology, Psychiatry' },
-              { label: 'Symptoms', value: 'Motor and vocal tics' },
-              { label: 'Usual onset', value: 'Ages 5-10' },
-              { label: 'Duration', value: 'Often lifelong, may improve in adulthood' },
-              { label: 'Frequency', value: '1 in 160 children' },
-            ]}
-          />
+          <InfoBox title="Tourette Syndrome" data={[
+            { label: 'Other names', value: 'Tourette disorder, TS, Gilles de la Tourette syndrome' },
+            { label: 'Specialty', value: 'Neurology, Psychiatry' },
+            { label: 'Symptoms', value: 'Motor and vocal tics' },
+            { label: 'Usual onset', value: 'Ages 5-10' },
+            { label: 'Duration', value: 'Often lifelong, may improve in adulthood' },
+            { label: 'Frequency', value: '1 in 160 children' },
+          ]} />
         </div>
       </div>
 
       <div className="space-y-8 mt-20 clear-both">
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1604159342320-f7f24c260691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMG5ldXJvbG9naWNhbCUyMG1vdmVtZW50JTIwdGljc3xlbnwxfHx8fDE3Njc0MDc0MDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Child with neurological condition - understanding Tourette syndrome"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            Tourette syndrome affects approximately 1 in 160 children, with males being diagnosed about 3-4 times 
-            more frequently than females.<sup>[3]</sup> The condition is part of a spectrum of tic disorders and typically begins 
-            between ages 5 and 10, with tics often peaking in severity during early adolescence.<sup>[4]</sup> Tics are sudden, 
-            rapid, recurrent movements or vocalizations.<sup>[5]</sup>
-          </p>
-          
-          <p className="mb-4">
-            While individuals with TS have some degree of control over 
-            their tics, suppressing them requires effort and can cause discomfort or a feeling of tension that is 
-            only relieved when the tic is performed.<sup>[6]</sup> Many people describe a premonitory urge—an uncomfortable 
-            sensation that precedes the tic.<sup>[7]</sup> It's important to note that the common media portrayal of TS focusing 
-            on coprolalia (involuntary swearing) is misleading—only about 10-15% of people with TS experience this 
-            symptom.<sup>[8]</sup> Most individuals with TS have much more subtle tics that may go unnoticed by others.<sup>[9]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1604159342320-f7f24c260691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMG5ldXJvbG9naWNhbCUyMG1vdmVtZW50JTIwdGljc3xlbnwxfHx8fDE3Njc0MDc0MDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Child with neurological condition - understanding Tourette syndrome" className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">Tourette syndrome affects approximately 1 in 160 children, with males being diagnosed about 3-4 times more frequently than females.<sup>[3]</sup> The condition is part of a spectrum of tic disorders and typically begins between ages 5 and 10, with tics often peaking in severity during early adolescence.<sup>[4]</sup> Tics are sudden, rapid, recurrent movements or vocalizations.<sup>[5]</sup></p>
+          <p className="mb-4">While individuals with TS have some degree of control over their tics, suppressing them requires effort and can cause discomfort or a feeling of tension that is only relieved when the tic is performed.<sup>[6]</sup> Many people describe a premonitory urge—an uncomfortable sensation that precedes the tic.<sup>[7]</sup> It's important to note that the common media portrayal of TS focusing on coprolalia (involuntary swearing) is misleading—only about 10-15% of people with TS experience this symptom.<sup>[8]</sup> Most individuals with TS have much more subtle tics that may go unnoticed by others.<sup>[9]</sup></p>
         </section>
 
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1727386245205-2112b722af99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYWNpYWwlMjBleHByZXNzaW9uJTIwaW52b2x1bnRhcnklMjBtb3ZlbWVudHxlbnwxfHx8fDE3Njc0MDc0MDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Facial expressions and movements - characteristics of tics"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            Tourette syndrome is characterized by both motor and vocal tics.<sup>[10]</sup> Motor tics can be simple (eye blinking, 
-            head jerking, shoulder shrugging, facial grimacing, nose twitching, jaw movements) or complex (touching 
-            objects or people, jumping, hopping, twirling, spinning, making gestures, bending or gyrating).<sup>[11]</sup> Vocal 
-            (phonic) tics can also be simple (throat clearing, coughing, grunting, sniffing, barking, yelping, 
-            clicking sounds) or complex (repeating words or phrases echolalia, repeating one's own words palilalia, 
-            using socially inappropriate words coprolalia which affects only 10-15%, making animal sounds).<sup>[12][13]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Tics wax 
-            and wane in frequency and severity, can change type and location over time, may worsen with stress, 
-            excitement, or fatigue, often decrease during focused activities, can typically be temporarily suppressed 
-            with effort, and typically decrease during sleep.<sup>[14]</sup> Many individuals with TS also have co-occurring conditions 
-            such as ADHD (50-60%), OCD (30-40%), anxiety disorders, or learning differences, which often cause more 
-            functional impairment than the tics themselves.<sup>[15][16]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1727386245205-2112b722af99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYWNpYWwlMjBleHByZXNzaW9uJTIwaW52b2x1bnRhcnklMjBtb3ZlbWVudHxlbnwxfHx8fDE3Njc0MDc0MDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Facial expressions and movements - characteristics of tics" className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">Tourette syndrome is characterized by both motor and vocal tics.<sup>[10]</sup> Motor tics can be simple (eye blinking, head jerking, shoulder shrugging, facial grimacing, nose twitching, jaw movements) or complex (touching objects or people, jumping, hopping, twirling, spinning, making gestures, bending or gyrating).<sup>[11]</sup> Vocal (phonic) tics can also be simple (throat clearing, coughing, grunting, sniffing, barking, yelping, clicking sounds) or complex (repeating words or phrases echolalia, repeating one's own words palilalia, using socially inappropriate words coprolalia which affects only 10-15%, making animal sounds).<sup>[12][13]</sup></p>
+          <p className="mb-4">Tics wax and wane in frequency and severity, can change type and location over time, may worsen with stress, excitement, or fatigue, often decrease during focused activities, can typically be temporarily suppressed with effort, and typically decrease during sleep.<sup>[14]</sup> Many individuals with TS also have co-occurring conditions such as ADHD (50-60%), OCD (30-40%), anxiety disorders, or learning differences, which often cause more functional impairment than the tics themselves.<sup>[15][16]</sup></p>
         </section>
 
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1714939722610-9169e8883bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFpbiUyMGJhc2FsJTIwZ2FuZ2xpYSUyMG1vdG9yJTIwY29udHJvbHxlbnwxfHx8fDE3Njc0MDc0MDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Brain basal ganglia - neurological basis of Tourette syndrome"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            Tourette syndrome has a strong genetic component, with studies showing increased risk in family members of 
-            individuals with TS.<sup>[17][18]</sup> However, the genetics are complex, likely involving multiple genes interacting with 
-            environmental factors.<sup>[19]</sup> Neurologically, TS involves differences in brain circuits connecting the basal ganglia, 
-            thalamus, and frontal cortex—areas involved in movement control and habit formation.<sup>[20]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Research suggests 
-            differences in neurotransmitter systems, particularly dopamine, serotonin, and GABA.<sup>[21][22]</sup> Brain imaging studies 
-            have revealed structural and functional differences in people with TS, particularly in the circuits that regulate 
-            voluntary movements and inhibit unwanted actions.<sup>[23]</sup> These neurological differences help explain why individuals 
-            with TS experience difficulty suppressing tics and experience premonitory urges.<sup>[24]</sup> Environmental factors such 
-            as prenatal complications and autoimmune responses may also contribute to tic expression.<sup>[25]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1714939722610-9169e8883bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFpbiUyMGJhc2FsJTIwZ2FuZ2xpYSUyMG1vdG9yJTIwY29udHJvbHxlbnwxfHx8fDE3Njc0MDc0MDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Brain basal ganglia - neurological basis of Tourette syndrome" className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">Tourette syndrome has a strong genetic component, with studies showing increased risk in family members of individuals with TS.<sup>[17][18]</sup> However, the genetics are complex, likely involving multiple genes interacting with environmental factors.<sup>[19]</sup> Neurologically, TS involves differences in brain circuits connecting the basal ganglia, thalamus, and frontal cortex—areas involved in movement control and habit formation.<sup>[20]</sup></p>
+          <p className="mb-4">Research suggests differences in neurotransmitter systems, particularly dopamine, serotonin, and GABA.<sup>[21][22]</sup> Brain imaging studies have revealed structural and functional differences in people with TS, particularly in the circuits that regulate voluntary movements and inhibit unwanted actions.<sup>[23]</sup> These neurological differences help explain why individuals with TS experience difficulty suppressing tics and experience premonitory urges.<sup>[24]</sup> Environmental factors such as prenatal complications and autoimmune responses may also contribute to tic expression.<sup>[25]</sup></p>
         </section>
 
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1659353886114-9aa119aef5aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyb2xvZ2lzdCUyMGRvY3RvciUyMGV4YW1pbmF0aW9uJTIwYXNzZXNzbWVudHxlbnwxfHx8fDE3Njc0MDc0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Neurologist examination - diagnosing Tourette syndrome"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            Tourette syndrome is diagnosed clinically based on the presence of both motor and vocal tics lasting more than 
-            one year.<sup>[26]</sup> There is no blood test or imaging study that can diagnose TS.<sup>[27]</sup> The diagnostic criteria include both 
-            multiple motor tics and one or more vocal tics present at some point, tics occurring many times a day nearly 
-            every day or intermittently for more than one year, onset before age 18, and symptoms not caused by substance 
-            use or another medical condition.<sup>[28]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Diagnosis is typically made by a neurologist, psychiatrist, or developmental 
-            pediatrician.<sup>[29]</sup> The evaluation includes detailed history, neurological examination, and assessment for co-occurring 
-            conditions such as ADHD, OCD, anxiety, or learning differences.<sup>[30]</sup> Medical tests may be ordered to rule out other 
-            causes of tic-like movements.<sup>[31]</sup> The Yale Global Tic Severity Scale (YGTSS) is commonly used to assess tic 
-            severity and impact on functioning.<sup>[32]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1659353886114-9aa119aef5aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyb2xvZ2lzdCUyMGRvY3RvciUyMGV4YW1pbmF0aW9uJTIwYXNzZXNzbWVudHxlbnwxfHx8fDE3Njc0MDc0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Neurologist examination - diagnosing Tourette syndrome" className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">Tourette syndrome is diagnosed clinically based on the presence of both motor and vocal tics lasting more than one year.<sup>[26]</sup> There is no blood test or imaging study that can diagnose TS.<sup>[27]</sup> The diagnostic criteria include both multiple motor tics and one or more vocal tics present at some point, tics occurring many times a day nearly every day or intermittently for more than one year, onset before age 18, and symptoms not caused by substance use or another medical condition.<sup>[28]</sup></p>
+          <p className="mb-4">Diagnosis is typically made by a neurologist, psychiatrist, or developmental pediatrician.<sup>[29]</sup> The evaluation includes detailed history, neurological examination, and assessment for co-occurring conditions such as ADHD, OCD, anxiety, or learning differences.<sup>[30]</sup> Medical tests may be ordered to rule out other causes of tic-like movements.<sup>[31]</sup> The Yale Global Tic Severity Scale (YGTSS) is commonly used to assess tic severity and impact on functioning.<sup>[32]</sup></p>
         </section>
 
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1620924701256-1c6f1103ebdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aGVyYXB5JTIwYmVoYXZpb3JhbCUyMGludGVydmVudGlvbiUyMHN1cHBvcnR8ZW58MXx8fHwxNzY3NDA3NDA2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Behavioral therapy and support - managing Tourette syndrome"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            Many individuals with mild TS do not require treatment.<sup>[33]</sup> When intervention is needed, treatment decisions should 
-            be based on how much the tics interfere with daily functioning, not just their presence or severity.<sup>[34]</sup> Behavioral 
-            therapies include Comprehensive Behavioral Intervention for Tics (CBIT), Habit Reversal Training (HRT), Exposure 
-            and Response Prevention (ERP), psychoeducation about tics, and relaxation and stress management techniques.<sup>[35][36]</sup>
-          </p>
-          
-          <p className="mb-4">
-            When 
-            behavioral approaches are insufficient, medication may be considered to help reduce tic severity, though all have 
-            potential side effects and treatment should be individualized and carefully monitored.<sup>[37]</sup> Supporting co-occurring 
-            conditions is crucial and includes treatment for ADHD if present, management of OCD symptoms, therapy for anxiety 
-            or mood disorders, and educational support and accommodations.<sup>[38]</sup> Environmental and social support involves education 
-            for family, teachers, and peers about TS, reducing stigma and misconceptions, school accommodations (extended time, 
-            quiet space for tic release), support groups and community connection, and advocacy and self-advocacy skills.<sup>[39]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1620924701256-1c6f1103ebdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aGVyYXB5JTIwYmVoYXZpb3JhbCUyMGludGVydmVudGlvbiUyMHN1cHBvcnR8ZW58MXx8fHwxNzY3NDA3NDA2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Behavioral therapy and support - managing Tourette syndrome" className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">Many individuals with mild TS do not require treatment.<sup>[33]</sup> When intervention is needed, treatment decisions should be based on how much the tics interfere with daily functioning, not just their presence or severity.<sup>[34]</sup> Behavioral therapies include Comprehensive Behavioral Intervention for Tics (CBIT), Habit Reversal Training (HRT), Exposure and Response Prevention (ERP), psychoeducation about tics, and relaxation and stress management techniques.<sup>[35][36]</sup></p>
+          <p className="mb-4">When behavioral approaches are insufficient, medication may be considered to help reduce tic severity, though all have potential side effects and treatment should be individualized and carefully monitored.<sup>[37]</sup> Supporting co-occurring conditions is crucial and includes treatment for ADHD if present, management of OCD symptoms, therapy for anxiety or mood disorders, and educational support and accommodations.<sup>[38]</sup> Environmental and social support involves education for family, teachers, and peers about TS, reducing stigma and misconceptions, school accommodations (extended time, quiet space for tic release), support groups and community connection, and advocacy and self-advocacy skills.<sup>[39]</sup></p>
         </section>
 
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Tourette Syndrome</h2>
-          
-          <img 
-            src="https://images.unsplash.com/photo-1604159342320-f7f24c260691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMG5ldXJvbG9naWNhbCUyMG1vdmVtZW50JTIwdGljc3xlbnwxfHx8fDE3Njc0MDc0MDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Living with Tourette syndrome - successful navigation"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <p className="mb-4">
-            Individuals with Tourette syndrome lead successful and fulfilling lives across all areas of society.<sup>[40]</sup> For many 
-            individuals, tics improve significantly in late adolescence or early adulthood, though some continue to experience 
-            tics throughout life.<sup>[41]</sup> Living with TS involves navigating tics, premonitory urges, and often co-occurring conditions, 
-            while combating misconceptions and stigma.<sup>[42]</sup> With appropriate support and understanding, people with TS develop effective 
-            strategies for managing tics and thrive in education, careers, and relationships.<sup>[43]</sup>
-          </p>
-          
-          <p className="mb-4">
-            Living well with Tourette syndrome 
-            involves understanding one's tic patterns and triggers, developing strategies for managing tics and premonitory urges, 
-            accessing appropriate accommodations in education and employment, addressing co-occurring conditions, and building 
-            self-advocacy skills.<sup>[44]</sup> Topics related to living with Tourette syndrome include managing tics in different environments, 
-            addressing stigma and misconceptions (particularly around coprolalia which only affects 10-15%), navigating school and 
-            workplace accommodations, managing co-occurring conditions like ADHD and OCD, building self-esteem and confidence, 
-            connecting with the Tourette community, educating others about the reality of TS beyond media portrayals, and 
-            understanding that tics often improve in adulthood.<sup>[45]</sup>
-          </p>
+          <img src="https://images.unsplash.com/photo-1604159342320-f7f24c260691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMG5ldXJvbG9naWNhbCUyMG1vdmVtZW50JTIwdGljc3xlbnwxfHx8fDE3Njc0MDc0MDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Living with Tourette syndrome - successful navigation" className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
+          <p className="mb-4">Individuals with Tourette syndrome lead successful and fulfilling lives across all areas of society.<sup>[40]</sup> For many individuals, tics improve significantly in late adolescence or early adulthood, though some continue to experience tics throughout life.<sup>[41]</sup> Living with TS involves navigating tics, premonitory urges, and often co-occurring conditions, while combating misconceptions and stigma.<sup>[42]</sup> With appropriate support and understanding, people with TS develop effective strategies for managing tics and thrive in education, careers, and relationships.<sup>[43]</sup></p>
+          <p className="mb-4">Living well with Tourette syndrome involves understanding one's tic patterns and triggers, developing strategies for managing tics and premonitory urges, accessing appropriate accommodations in education and employment, addressing co-occurring conditions, and building self-advocacy skills.<sup>[44]</sup> Topics related to living with Tourette syndrome include managing tics in different environments, addressing stigma and misconceptions (particularly around coprolalia which only affects 10-15%), navigating school and workplace accommodations, managing co-occurring conditions like ADHD and OCD, building self-esteem and confidence, connecting with the Tourette community, educating others about the reality of TS beyond media portrayals, and understanding that tics often improve in adulthood.<sup>[45]</sup></p>
         </section>
       </div>
 
-      {/* References Section */}
       <section className="mt-12 pt-6 border-t-2 border-gray-300">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
         <div className="text-sm space-y-2">

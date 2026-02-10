@@ -72,7 +72,6 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
       </h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
           <p>
             <strong>Visual Processing Disorder</strong> is a neurological condition where the brain has 
@@ -84,7 +83,6 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Visual Processing Disorder"

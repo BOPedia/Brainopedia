@@ -120,7 +120,7 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Relationship to Autism</h2>
           
           <ImageWithFallback 
-            src={autismHyperlexiaConnectionImage} 
+            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMHJlYWRpbmd8ZW58MXx8fHwxNjc0NTM1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
             alt="Books letters"
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />

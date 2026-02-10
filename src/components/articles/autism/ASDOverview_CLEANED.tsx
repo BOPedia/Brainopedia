@@ -204,9 +204,9 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
           {/* Callout box */}
           <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
             <p className="text-sm">
-              <strong>Important Note:</strong> The neurodiversity paradigm doesn't deny that autism comes with genuine challenges \
-              or that many autistic people need significant support. Rather, it advocates for supporting autistic \
-              people in ways that respect their neurological differences rather than trying to make them \"normal.\"
+              <strong>Important Note:</strong> The neurodiversity paradigm doesn't deny that autism comes with genuine challenges
+              or that many autistic people need significant support. Rather, it advocates for supporting autistic
+              people in ways that respect their neurological differences rather than trying to make them "normal."
             </p>
           </div>
         </div>

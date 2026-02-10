@@ -384,7 +384,7 @@ export function GiftednessSymptoms({ setCurrentArticle }: GiftednessSymptomsProp
           <p>[73] Webb, J. T., Amend, E. R., Webb, N. E., Goerss, J., Beljan, P., & Olenchak, F. R. (2005). <em>Misdiagnosis and dual diagnoses of gifted children and adults</em>. Scottsdale, AZ: Great Potential Press.</p>
           <p>[74] Fugate, C. M., Zentall, S. S., & Gentry, M. (2013). "Creativity and working memory in gifted students with and without characteristics of attention deficit hyperactive disorder." <em>Gifted Child Quarterly</em>, 57(4), 234-246.</p>
           <p>[75] Moon, S. M. (2009). "Myth 15: High-ability students don't face problems and challenges." <em>Gifted Child Quarterly</em>, 53(4), 274-276.</p>
-          <p>[76] Hébert, T. P., & Furner, J. M. (1997). "Helping high ability students overcome math anxiety through bibliotherapy." <em>Journal of Secondary Gifted Education</em>, 8(4), 164-178.</p>
+          <p>[76] Hebert, T. P., & Furner, J. M. (1997). "Helping high ability students overcome math anxiety through bibliotherapy." <em>Journal of Secondary Gifted Education</em>, 8(4), 164-178.</p>
           <p>[77] Torrance, E. P. (1987). "Teaching for creativity." In S. G. Isaksen (Ed.), <em>Frontiers of creativity research: Beyond the basics</em> (pp. 189-215). Buffalo, NY: Bearly Limited.</p>
           <p>[78] Delisle, J. R. (1992). <em>Guiding the social and emotional development of gifted youth: A practical guide for educators and counselors</em>. New York: Longman.</p>
           <p>[79] Deci, E. L., & Ryan, R. M. (1985). <em>Intrinsic motivation and self-determination in human behavior</em>. New York: Plenum.</p>
@@ -401,14 +401,14 @@ export function GiftednessSymptoms({ setCurrentArticle }: GiftednessSymptomsProp
           <p>[90] Lawson, A. E. (2010). "Basic inferences of scientific reasoning, argumentation, and discovery." <em>Science Education</em>, 94(2), 336-364.</p>
           <p>[91] Chinn, C. A., & Malhotra, B. A. (2002). "Children's responses to anomalous scientific data: How is conceptual change impeded?" <em>Journal of Educational Psychology</em>, 94(2), 327-343.</p>
           <p>[92] Hmelo-Silver, C. E., & Pfeffer, M. G. (2004). "Comparing expert and novice understanding of a complex system from the perspective of structures, behaviors, and functions." <em>Cognitive Science</em>, 28(1), 127-138.</p>
-          <p>[93] Winner, E., & Martino, G. (1993). "Giftedness in the visual arts and music." In K. A. Heller, F. J. Mönks, & A. H. Passow (Eds.), <em>International handbook of research and development of giftedness and talent</em> (pp. 253-281). Oxford: Pergamon Press.</p>
+          <p>[93] Winner, E., & Martino, G. (1993). "Giftedness in the visual arts and music." In K. A. Heller, F. J. Monks, & A. H. Passow (Eds.), <em>International handbook of research and development of giftedness and talent</em> (pp. 253-281). Oxford: Pergamon Press.</p>
           <p>[94] Rostan, S. M. (2010). "Studio learning: Motivation, competence, and the development of young art students' talent and creativity." <em>Creativity Research Journal</em>, 22(3), 261-271.</p>
           <p>[95] Willats, J. (2005). <em>Making sense of children's drawings</em>. Mahwah, NJ: Lawrence Erlbaum.</p>
           <p>[96] Milbrath, C. (1998). <em>Patterns of artistic development in children: Comparative studies of talent</em>. Cambridge: Cambridge University Press.</p>
           <p>[97] Neihart, M. (1999). "The impact of giftedness on psychological well-being: What does the empirical literature say?" <em>Roeper Review</em>, 22(1), 10-17.</p>
           <p>[98] Rimm, S. (1997). "Underachievement syndrome: A national epidemic." In N. Colangelo & G. A. Davis (Eds.), <em>Handbook of gifted education</em> (2nd ed., pp. 416-434). Boston: Allyn & Bacon.</p>
           <p>[99] Mendaglio, S., & Tillier, W. (2006). "Dabrowski's theory of positive disintegration and giftedness: Overexcitability research findings." <em>Journal for the Education of the Gifted</em>, 30(1), 68-87.</p>
-          <p>[100] Guignard, J. H., & Zenasni, F. (2004). "Les caractéristiques émotionnelles des enfants à haut potentiel." <em>Psychologie Française</em>, 49(3), 305-319.</p>
+          <p>[100] Guignard, J. H., & Zenasni, F. (2004). "Les caracteristiques emotionnelles des enfants a haut potentiel." <em>Psychologie Francaise</em>, 49(3), 305-319.</p>
           <p>[101] Reis, S. M., & McCoach, D. B. (2000). "The underachievement of gifted students: What do we know and where do we go?" <em>Gifted Child Quarterly</em>, 44(3), 152-170.</p>
           <p>[102] Whitmore, J. R. (1980). <em>Giftedness, conflict, and underachievement</em>. Boston: Allyn & Bacon.</p>
           <p>[103] Siegle, D., & McCoach, D. B. (2005). "Making a difference: Motivating gifted students who are not achieving." <em>Teaching Exceptional Children</em>, 38(1), 22-27.</p>

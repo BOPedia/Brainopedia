@@ -48,7 +48,6 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
       </h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
           <p>
             <strong>Synesthesia</strong> is a neurological phenomenon in which stimulation of one sensory or cognitive 
@@ -59,7 +58,6 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Synesthesia"

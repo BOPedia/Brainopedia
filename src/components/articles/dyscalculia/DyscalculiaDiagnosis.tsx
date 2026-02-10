@@ -268,7 +268,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
             <h3 className="text-[#0c264d] font-bold mb-3">Remember:</h3>
             <div className="text-sm">
               <p>
-                Diagnosis is not a label to limit potential—it's a tool for understanding, accessing support, and 
+                Diagnosis is not a label to limit potential--it's a tool for understanding, accessing support, and 
                 developing effective strategies. With appropriate intervention and accommodations, individuals with 
                 dyscalculia can succeed in mathematics and pursue any career path.<sup>[57]</sup>
               </p>
@@ -299,14 +299,14 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
           <p>[17] Jordan, N. C., Kaplan, D., Ramineni, C., & Locuniak, M. N. (2009). "Early math matters: Kindergarten number competence and later mathematics outcomes." <em>Developmental Psychology</em>, 45(3), 850-867.</p>
           <p>[18] Shalev, R. S., Manor, O., Kerem, B., Ayali, M., Badichi, N., Friedlander, Y., & Gross-Tsur, V. (2001). "Developmental dyscalculia is a familial learning disability." <em>Journal of Learning Disabilities</em>, 34(1), 59-65.</p>
           <p>[19] Rubinsten, O., & Tannock, R. (2010). "Mathematics anxiety in children with developmental dyscalculia." <em>Behavioral and Brain Functions</em>, 6(1), 46.</p>
-          <p>[20] Wechsler, D. (2014). <em>Wechsler Intelligence Scale for Children–Fifth Edition</em>. Pearson.</p>
+          <p>[20] Wechsler, D. (2014). <em>Wechsler Intelligence Scale for Children--Fifth Edition</em>. Pearson.</p>
           <p>[21] Wechsler, D. (2014). <em>WISC-V technical and interpretive manual</em>. Pearson.</p>
           <p>[22] Roid, G. H. (2003). <em>Stanford-Binet Intelligence Scales, Fifth Edition</em>. Riverside Publishing.</p>
           <p>[23] Gersten, R., Clarke, B., Jordan, N. C., Newman-Gonchar, R., Haymond, K., & Wilkins, C. (2012). "Universal screening in mathematics for the primary grades." <em>Exceptional Children</em>, 78(4), 423-445.</p>
-          <p>[24] Wechsler, D. (2009). <em>Wechsler Individual Achievement Test–Third Edition</em>. Pearson.</p>
+          <p>[24] Wechsler, D. (2009). <em>Wechsler Individual Achievement Test--Third Edition</em>. Pearson.</p>
           <p>[25] Connolly, A. J. (2007). <em>KeyMath-3 Diagnostic Assessment</em>. Pearson.</p>
           <p>[26] Schrank, F. A., Mather, N., & McGrew, K. S. (2014). <em>Woodcock-Johnson IV Tests of Achievement</em>. Riverside.</p>
-          <p>[27] De Smedt, B., Verschaffel, L., & Ghesquière, P. (2009). "The predictive value of numerical magnitude comparison for individual differences in mathematics achievement." <em>Journal of Experimental Child Psychology</em>, 103(4), 469-479.</p>
+          <p>[27] De Smedt, B., Verschaffel, L., & Ghesquiere, P. (2009). "The predictive value of numerical magnitude comparison for individual differences in mathematics achievement." <em>Journal of Experimental Child Psychology</em>, 103(4), 469-479.</p>
           <p>[28] Siegler, R. S., & Booth, J. L. (2004). "Development of numerical estimation in young children." <em>Child Development</em>, 75(2), 428-444.</p>
           <p>[29] Piazza, M., Facoetti, A., Trussardi, A. N., Berteletti, I., Conte, S., Lucangeli, D., ... & Zorzi, M. (2010). "Developmental trajectory of number acuity reveals a severe impairment in developmental dyscalculia." <em>Cognition</em>, 116(1), 33-41.</p>
           <p>[30] von Aster, M. G., & Shalev, R. S. (2007). "Number development and developmental dyscalculia." <em>Developmental Medicine & Child Neurology</em>, 49(11), 868-873.</p>
@@ -317,7 +317,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
           <p>[35] Bull, R., & Johnston, R. S. (1997). "Children's arithmetical difficulties: Contributions from processing speed, item identification, and short-term memory." <em>Journal of Experimental Child Psychology</em>, 65(1), 1-24.</p>
           <p>[36] Geary, D. C., & Brown, S. C. (1991). "Cognitive addition: Strategy choice and speed-of-processing differences in gifted, normal, and mathematically disabled children." <em>Developmental Psychology</em>, 27(3), 398-406.</p>
           <p>[37] Bull, R., & Scerif, G. (2001). "Executive functioning as a predictor of children's mathematics ability." <em>Developmental Neuropsychology</em>, 19(3), 273-293.</p>
-          <p>[38] Szűcs, D., Devine, A., Soltesz, F., Nobes, A., & Gabriel, F. (2013). "Developmental dyscalculia is related to visuo-spatial memory and inhibition impairment." <em>Cortex</em>, 49(10), 2674-2688.</p>
+          <p>[38] Szucs, D., Devine, A., Soltesz, F., Nobes, A., & Gabriel, F. (2013). "Developmental dyscalculia is related to visuo-spatial memory and inhibition impairment." <em>Cortex</em>, 49(10), 2674-2688.</p>
           <p>[39] Siegler, R. S. (1996). <em>Emerging minds: The process of change in children's thinking</em>. Oxford University Press.</p>
           <p>[40] Lucangeli, D., & Cabrele, S. (2006). "The relationship of metacognitive knowledge, skills and beliefs in children with and without mathematics learning disabilities." In A. Desoete & M. Veenman (Eds.), <em>Metacognition in mathematics education</em> (pp. 103-133).</p>
           <p>[41] Dowker, A., Sarkar, A., & Looi, C. Y. (2016). "Mathematics anxiety: What have we learned in 60 years?" <em>Frontiers in Psychology</em>, 7, 508.</p>
