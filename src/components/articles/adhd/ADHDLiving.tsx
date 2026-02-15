@@ -296,6 +296,7 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Finding Community and Support</h2>
+        <ImageWithFallback src="/images/adhd/placeholder-unsplash-community.png" alt="Placeholder for community image — replace when ready" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
         <p className="mb-4">
           Connecting with others who understand ADHD can be invaluable for reducing isolation, gaining practical strategies, 

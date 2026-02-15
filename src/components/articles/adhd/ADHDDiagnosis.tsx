@@ -1097,7 +1097,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
         <TabsContent value="audhd" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">AuDHD: The Intersection of Autism and ADHD</h2>
-            <ImageWithFallback src="/images/adhd/adhd-audhd-bolt-gold-infinity.png" alt="Gold infinity symbol with lightning bolt representing AuDHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+            <ImageWithFallback src="/images/adhd/adhd-audhd-sun-swirl.png" alt="Sun swirl pattern representing the AuDHD intersection" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
             <p className="mb-4">
               "AuDHD" is a community term for having both Autism Spectrum Disorder (ASD) and ADHD. Until 2013, 
@@ -1107,7 +1107,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
 
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Prevalence of Co-occurrence</h3>
-              <ImageWithFallback src="/images/adhd/adhd-audhd-infinity-on-brain.png" alt="Infinity symbol on brain representing autism-ADHD co-occurrence" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+              <ImageWithFallback src="/images/adhd/adhd-audhd-bolt-gold-infinity.png" alt="Gold infinity symbol with lightning bolt representing AuDHD prevalence" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               <ul className="text-sm space-y-2 list-disc ml-4">
                 <li><strong>30-80%</strong> of autistic people also meet criteria for ADHD</li>
                 <li><strong>20-50%</strong> of people with ADHD also meet criteria for autism</li>
@@ -1131,7 +1131,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
 
               <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Conflicting Needs (The "Paradox")</h3>
-                <ImageWithFallback src="/images/adhd/adhd-audhd-sun-swirl.png" alt="Sun swirl pattern representing conflicting needs in AuDHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+                <ImageWithFallback src="/images/adhd/adhd-audhd-infinity-on-brain.png" alt="Infinity symbol on brain representing conflicting needs in AuDHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
                 <p className="text-sm mb-2">AuDHD can feel like a constant internal tug-of-war:</p>
                 <ul className="text-sm space-y-2 list-disc ml-4">
                   <li><strong>Routine vs. Novelty:</strong> Autism craves sameness; ADHD craves newness.</li>

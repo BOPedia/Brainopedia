@@ -17,7 +17,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
 
           
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Comprehensive Treatment Approaches</h2>
-          <ImageWithFallback src="/images/adhd/adhd-support-overview-charts-running.png" alt="Charts and running figure representing comprehensive ADHD treatment" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+          <ImageWithFallback src="/images/adhd/adhd-support-overview-gray-happy-sad-brain.png" alt="Brain illustration showing emotional states in ADHD treatment" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             ADHD is now understood as a chronic, life-course persistent disorder requiring ongoing, integrated treatment 
@@ -32,6 +32,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
           </p>
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Treatment Sequencing</h3>
+          <ImageWithFallback src="/images/adhd/adhd-support-overview-charts-running.png" alt="Charts and running figure representing ADHD treatment planning" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           <p className="mb-4">
             Recent research on treatment sequencing suggests that starting with behavioral interventions first may be 
             more effective and cost less than medication-first approaches, particularly for reducing classroom discipline 
@@ -43,6 +44,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
 
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Access to Evidence-Based Treatment</h3>
+          <ImageWithFallback src="/images/adhd/adhd-support-overview-pills-scattered.png" alt="Scattered pills representing access to ADHD treatment options" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           <p className="mb-4">
             Despite strong evidence supporting psychosocial interventions, there is a significant gap between research 
             and practice. Recent data indicates that only 31% of families of children with ADHD receive behavioral parent 
@@ -188,7 +190,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Medication</h2>
-          <ImageWithFallback src="/images/adhd/adhd-support-overview-pills-scattered.png" alt="Scattered pills representing ADHD medication options" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+          <ImageWithFallback src="/images/adhd/adhd-medical-pills-packaged.png" alt="Packaged medication representing ADHD medication options" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <div className="bg-[#0c264d] border-l-4 border-gray-700 p-4 rounded mb-6">
             <p className="text-white text-sm">
@@ -231,7 +233,6 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Medication Considerations</h3>
-          <ImageWithFallback src="/images/adhd/adhd-medical-pills-packaged.png" alt="Packaged medication representing medication considerations" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Finding the right medication and dosage may take time and adjustment</li>
             <li className="mb-2">Side effects are usually mild and often diminish over time</li>
@@ -258,7 +259,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Behavioral Interventions and Therapy</h2>
-          <ImageWithFallback src="/images/adhd/adhd-support-overview-gray-happy-sad-brain.png" alt="Brain illustration showing emotional states in behavioral therapy" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+          <ImageWithFallback src="/images/adhd/adhd-behavioral-family-therapy.png" alt="Family in therapy representing behavioral interventions for ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             Evidence-based psychosocial interventions play a critical role in ADHD treatment, particularly for children 
@@ -282,7 +283,6 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Behavioral Parent Training</h3>
-          <ImageWithFallback src="/images/adhd/adhd-behavioral-family-therapy.png" alt="Family in therapy representing behavioral parent training" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           <p className="mb-4">
             Behavioral Parent Training (BPT) is the most well-studied psychosocial intervention for ADHD and serves as 
             a first-line intervention for younger children with ADHD. BPT is based on operant conditioning and social 
@@ -431,6 +431,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Lifestyle Modifications</h2>
+          <ImageWithFallback src="/images/adhd/placeholder-unsplash-lifestyle.png" alt="Placeholder for lifestyle image — replace when ready" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             While lifestyle modifications alone are not sufficient to treat ADHD, they play a crucial supporting role 

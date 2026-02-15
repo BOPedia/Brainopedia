@@ -19,8 +19,10 @@ export function ADHDSymptomsTabMyths() {
 
 
             {/* NOT Actually ADHD */}
+            <ImageWithFallback src="/images/adhd/adhd-myths-man-working.png" alt="Man working at desk representing misattributed ADHD traits" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">NOT Actually ADHD (or Not Diagnostic Criteria)</h3>
+              <ImageWithFallback src="/images/adhd/adhd-myths-man-working.png" alt="Man working at desk representing misattributed ADHD traits" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
               <div className="space-y-4">
                 <div className="border-l-2 border-[#2abcd4] pl-3">
@@ -123,7 +125,6 @@ export function ADHDSymptomsTabMyths() {
             {/* Misattributed or Over-Romanticized */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Misattributed or Over-Romanticized</h3>
-              <ImageWithFallback src="/images/adhd/adhd-myths-man-working.png" alt="Man working at desk representing romanticized ADHD productivity myths" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
               <div className="space-y-4">
                 <div className="border-l-2 border-[#2abcd4] pl-3">

@@ -12,6 +12,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding the Causes of ADHD</h2>
+          <ImageWithFallback src="/images/adhd/adhd-overview-dna.png" alt="DNA double helix representing ADHD genetic factors" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             The exact cause of ADHD remains under investigation, but research suggests a combination of genetic, 
@@ -29,6 +30,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
 
         <div className="clear-both pt-6">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Gene-Environment Interactions</h2>
+          <ImageWithFallback src="/images/adhd/adhd-overview-dna-treetrunk.png" alt="DNA structure and tree trunk representing genetic roots of ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             Modern research increasingly recognizes that genes and environment interact in complex ways<sup style={{color: '#10b981'}}>[3]</sup>. Someone 
@@ -83,7 +85,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetics and Heredity</h2>
-        <ImageWithFallback src="/images/adhd/adhd-overview-dna.png" alt="DNA double helix representing ADHD genetic factors" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+        <ImageWithFallback src="/images/adhd/adhd-heredity-tree.png" alt="Family heredity tree illustrating ADHD inheritance patterns" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
         <p className="mb-4">
           ADHD has a strong genetic component. Family studies consistently show that ADHD runs in families, 
@@ -92,7 +94,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Heritability Rates</h3>
-        <ImageWithFallback src="/images/adhd/adhd-heredity-tree.png" alt="Family heredity tree illustrating ADHD inheritance patterns" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         <p className="mb-4">
           Twin studies reveal that ADHD is highly heritable, with heritability estimates around 70-80%.<sup className="text-[#10b981]">[1]</sup> This 
           means that genetic factors account for a substantial portion of individual differences in ADHD symptoms. 
@@ -102,7 +103,6 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genome-Wide Association Studies (GWAS)</h3>
-        <ImageWithFallback src="/images/adhd/adhd-overview-dna-treetrunk.png" alt="DNA structure and tree trunk representing genetic roots of ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         <p className="mb-4">
           Major advances in genetic research have come from genome-wide association studies. The largest and most 
           recent GWAS meta-analysis, published in 2023, identified 27 genetic risk loci associated with ADHD by 
