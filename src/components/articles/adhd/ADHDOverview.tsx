@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDOverviewReferences } from '../../references/ADHDOverviewReferences';
 
 interface ADHDOverviewProps {
@@ -25,6 +26,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         {/* Introduction Section */}
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is ADHD?</h2>
+          <ImageWithFallback src="/images/adhd/adhd-overview-colors-bolt.png" alt="Colorful ADHD lightning bolt illustration" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized 
@@ -39,6 +41,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         {/* Three Presentations Section */}
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Three Presentations of ADHD</h2>
+          <ImageWithFallback src="/images/adhd/adhd-overview-venn.png" alt="Venn diagram showing three ADHD presentations" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-[#10b981]">[3]</sup>
@@ -71,6 +74,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         {/* Executive Function Section */}
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Executive Function Challenges</h2>
+          <ImageWithFallback src="/images/adhd/adhd-overview-executive-function.png" alt="Executive function challenges in ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             At its core, ADHD is fundamentally a disorder of executive function—the cognitive processes that 

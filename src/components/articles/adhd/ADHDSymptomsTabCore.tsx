@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDSymptomsCoreReferences } from '../../references/ADHDSymptomsCoreReferences';
 
 interface TabCoreProps {
@@ -9,6 +10,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
               <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Symptoms of ADHD</h2>
+              <ImageWithFallback src="/images/adhd/adhd-core-symptoms-apple.png" alt="ADHD core symptoms illustration" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
 
               
@@ -36,6 +38,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
             {/* Defining ADHD Diagnostic Criteria Section */}
             <div className="bg-[#f0f9ff] p-6 rounded-lg">
               <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Defining ADHD: DSM-5-TR Diagnostic Criteria</h2>
+              <ImageWithFallback src="/images/adhd/adhd-core-symptoms-venn.png" alt="DSM-5-TR ADHD diagnostic criteria Venn diagram" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
 
               

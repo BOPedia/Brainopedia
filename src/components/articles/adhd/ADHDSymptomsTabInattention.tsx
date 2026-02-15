@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { AlertTriangle, Clock, EarOff, FileX, FolderOpen, Brain, Search, Wind, CalendarX, Baby, GraduationCap, Briefcase } from 'lucide-react';
 
 export function ADHDSymptomsTabInattention() {
@@ -5,6 +6,7 @@ export function ADHDSymptomsTabInattention() {
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Inattention Symptoms</h2>
+            <ImageWithFallback src="/images/adhd/adhd-inattention-girl-on-phone.png" alt="Girl distracted on phone illustrating inattention" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
 
             
@@ -111,6 +113,7 @@ export function ADHDSymptomsTabInattention() {
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Inattention Manifests Across Ages</h3>
+              <ImageWithFallback src="/images/adhd/adhd-inattention-three-kids-stages.png" alt="Three children showing inattention at different developmental stages" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
 
               
