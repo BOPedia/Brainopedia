@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
 
 const adhdSymptomData = [
@@ -118,6 +119,7 @@ export function ADHDSymptomsTabMoreA() {
             {/* Interactive Symptom Profile Chart */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Interactive Symptom Profile Chart</h3>
+              <ImageWithFallback src="/images/adhd/adhd-more-symptoms-wheel.png" alt="ADHD symptom profile wheel showing severity ratings for traits like inattention, hyperactivity, and mood swings" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               <p className="mb-4 text-sm">
                 Below is an interactive visual example of one individual's symptom profile. Each person's chart will 
                 look different, reflecting their unique combination of characteristics and support needs.
