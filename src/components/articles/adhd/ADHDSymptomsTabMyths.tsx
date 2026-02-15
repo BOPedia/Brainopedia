@@ -150,7 +150,7 @@ export function ADHDSymptomsTabMyths() {
 
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <ImageWithFallback 
-                    src="/images/adhd-justice.png"
+                    src="/images/adhd/adhd-justice.png"
                     alt="Lady Justice statue"
                     className="w-64 h-auto rounded mb-2"
                   />
