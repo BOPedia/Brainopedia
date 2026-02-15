@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDMedicationComparison } from '../../infographics/ADHDMedicationComparison';
 import { ADHDTreatmentApproach } from '../../infographics/ADHDTreatmentApproach';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
@@ -16,6 +17,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
 
           
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Comprehensive Treatment Approaches</h2>
+          <ImageWithFallback src="/images/adhd/adhd-support-overview-charts-running.png" alt="Charts and running figure representing comprehensive ADHD treatment" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             ADHD is now understood as a chronic, life-course persistent disorder requiring ongoing, integrated treatment 
@@ -186,6 +188,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Medication</h2>
+          <ImageWithFallback src="/images/adhd/adhd-support-overview-pills-scattered.png" alt="Scattered pills representing ADHD medication options" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <div className="bg-[#0c264d] border-l-4 border-gray-700 p-4 rounded mb-6">
             <p className="text-white text-sm">
@@ -228,6 +231,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Medication Considerations</h3>
+          <ImageWithFallback src="/images/adhd/adhd-medical-pills-packaged.png" alt="Packaged medication representing medication considerations" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Finding the right medication and dosage may take time and adjustment</li>
             <li className="mb-2">Side effects are usually mild and often diminish over time</li>
@@ -254,6 +258,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Behavioral Interventions and Therapy</h2>
+          <ImageWithFallback src="/images/adhd/adhd-support-overview-gray-happy-sad-brain.png" alt="Brain illustration showing emotional states in behavioral therapy" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             Evidence-based psychosocial interventions play a critical role in ADHD treatment, particularly for children 
@@ -277,6 +282,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Behavioral Parent Training</h3>
+          <ImageWithFallback src="/images/adhd/adhd-behavioral-family-therapy.png" alt="Family in therapy representing behavioral parent training" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           <p className="mb-4">
             Behavioral Parent Training (BPT) is the most well-studied psychosocial intervention for ADHD and serves as 
             a first-line intervention for younger children with ADHD. BPT is based on operant conditioning and social 
@@ -398,6 +404,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
 
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Workplace Accommodations</h2>
+          <ImageWithFallback src="/images/adhd/adhd-work-overhead-organized.png" alt="Overhead view of organized workspace for workplace accommodations" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             Under the Americans with Disabilities Act (ADA), adults with ADHD may request reasonable accommodations:
@@ -546,6 +553,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Self-Management Strategies and Tools</h2>
+          <ImageWithFallback src="/images/adhd/adhd-tools-organizing-at-work.png" alt="Organizing tools at work representing self-management strategies" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-6">
             Individuals with ADHD benefit from developing personalized systems and tools to compensate for executive function 

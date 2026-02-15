@@ -1,8 +1,10 @@
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 export function ADHDSymptomsTabFemales() {
   return (
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">ADHD in Females</h2>
+            <ImageWithFallback src="/images/adhd/adhd-females-diversity-faces.png" alt="Diverse female faces representing ADHD in females" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <p className="text-sm mb-3">
@@ -73,6 +75,7 @@ export function ADHDSymptomsTabFemales() {
             {/* Girls Section */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">ADHD in Girls</h3>
+              <ImageWithFallback src="/images/adhd/adhd-females-girl-studying.png" alt="Girl studying representing ADHD presentation in girls" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Presentation Differences:</div>
@@ -125,6 +128,7 @@ export function ADHDSymptomsTabFemales() {
             {/* Women Section */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">ADHD in Women</h3>
+              <ImageWithFallback src="/images/adhd/adhd-females-woman-working.png" alt="Woman working representing ADHD presentation in adult women" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Adult Presentation:</div>

@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDComorbidities } from '../../infographics/ADHDComorbidities';
 import { ADHDDiagnosticProfessionals } from '../../infographics/ADHDDiagnosticProfessionals';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
@@ -64,6 +65,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
         <TabsContent value="process" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The ADHD Diagnostic Process</h2>
+            <ImageWithFallback src="/images/adhd/adhd-diag-proc-ball-over-head-boy.png" alt="Boy balancing ball representing the ADHD diagnostic process" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
@@ -610,6 +612,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
         <TabsContent value="adults" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnosing ADHD in Adults</h2>
+            <ImageWithFallback src="/images/adhd/adhd-adult-dx-adult-male.png" alt="Adult male representing adult ADHD diagnosis" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
@@ -813,6 +816,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
         <TabsContent value="challenges" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnostic Challenges & Comorbidities</h2>
+            <ImageWithFallback src="/images/adhd/adhd-challenges-question-mark-maze.png" alt="Question mark in a maze representing diagnostic challenges" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
             {/* Challenges Section */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -956,6 +960,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
         <TabsContent value="after" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Comes After Diagnosis?</h2>
+            <ImageWithFallback src="/images/adhd/adhd-after-dx-treatment-roadmap.png" alt="Treatment roadmap showing steps after ADHD diagnosis" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
             <p className="mb-6">
               Receiving an ADHD diagnosis is just the first step. The post-diagnosis period involves 
@@ -1092,6 +1097,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
         <TabsContent value="audhd" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">AuDHD: The Intersection of Autism and ADHD</h2>
+            <ImageWithFallback src="/images/adhd/adhd-audhd-bolt-gold-infinity.png" alt="Gold infinity symbol with lightning bolt representing AuDHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
             <p className="mb-4">
               "AuDHD" is a community term for having both Autism Spectrum Disorder (ASD) and ADHD. Until 2013, 
@@ -1101,6 +1107,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
 
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Prevalence of Co-occurrence</h3>
+              <ImageWithFallback src="/images/adhd/adhd-audhd-infinity-on-brain.png" alt="Infinity symbol on brain representing autism-ADHD co-occurrence" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               <ul className="text-sm space-y-2 list-disc ml-4">
                 <li><strong>30-80%</strong> of autistic people also meet criteria for ADHD</li>
                 <li><strong>20-50%</strong> of people with ADHD also meet criteria for autism</li>
@@ -1111,6 +1118,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Shared Traits</h3>
+                <ImageWithFallback src="/images/adhd/adhd-audhd-split-face.png" alt="Split face illustration representing shared autism and ADHD traits" className="w-full max-w-md mx-auto rounded-lg mb-4" />
                 <ul className="text-sm space-y-2 list-disc ml-4">
                   <li>Executive function challenges</li>
                   <li>Sensory processing differences</li>
@@ -1123,6 +1131,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
 
               <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Conflicting Needs (The "Paradox")</h3>
+                <ImageWithFallback src="/images/adhd/adhd-audhd-sun-swirl.png" alt="Sun swirl pattern representing conflicting needs in AuDHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
                 <p className="text-sm mb-2">AuDHD can feel like a constant internal tug-of-war:</p>
                 <ul className="text-sm space-y-2 list-disc ml-4">
                   <li><strong>Routine vs. Novelty:</strong> Autism craves sameness; ADHD craves newness.</li>

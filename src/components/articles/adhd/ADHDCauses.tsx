@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDMyths } from '../../infographics/ADHDMyths';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
@@ -82,6 +83,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetics and Heredity</h2>
+        <ImageWithFallback src="/images/adhd/adhd-overview-dna.png" alt="DNA double helix representing ADHD genetic factors" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
         <p className="mb-4">
           ADHD has a strong genetic component. Family studies consistently show that ADHD runs in families, 
@@ -90,6 +92,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Heritability Rates</h3>
+        <ImageWithFallback src="/images/adhd/adhd-heredity-tree.png" alt="Family heredity tree illustrating ADHD inheritance patterns" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         <p className="mb-4">
           Twin studies reveal that ADHD is highly heritable, with heritability estimates around 70-80%.<sup className="text-[#10b981]">[1]</sup> This 
           means that genetic factors account for a substantial portion of individual differences in ADHD symptoms. 
@@ -99,6 +102,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genome-Wide Association Studies (GWAS)</h3>
+        <ImageWithFallback src="/images/adhd/adhd-overview-dna-treetrunk.png" alt="DNA structure and tree trunk representing genetic roots of ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         <p className="mb-4">
           Major advances in genetic research have come from genome-wide association studies. The largest and most 
           recent GWAS meta-analysis, published in 2023, identified 27 genetic risk loci associated with ADHD by 
@@ -203,6 +207,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Brain Structure and Function</h2>
+        <ImageWithFallback src="/images/adhd/adhd-structure-brain-anatomy.png" alt="Brain anatomy illustration showing structural differences in ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
         <p className="mb-4">
           Brain imaging studies have revealed several differences in brain structure and activity in individuals 
@@ -319,6 +324,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Neurotransmitter Imbalances</h2>
+        <ImageWithFallback src="/images/adhd/adhd-neurotransm-neural.png" alt="Neural pathways illustrating neurotransmitter activity in ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
         <p className="mb-4">
           ADHD involves dysfunction in neurotransmitter systems—the chemical messengers that allow brain cells 
@@ -508,6 +514,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Environmental and Prenatal Factors</h2>
+        <ImageWithFallback src="/images/adhd/adhd-enviro-prenatal-yoga.png" alt="Pregnant woman doing yoga representing prenatal environmental factors" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
         <p className="mb-4">
           While genetics account for approximately 70-80% of ADHD risk, environmental factors also play important 
@@ -523,6 +530,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Prenatal and Perinatal Factors</h3>
+        <ImageWithFallback src="/images/adhd/adhd-enviro-perinatal-mom-baby.png" alt="Mother and baby representing perinatal risk factors for ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
         <p className="mb-4">
           <strong>Maternal smoking during pregnancy:</strong> Numerous studies have established a strong association 
@@ -567,6 +575,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Environmental Toxins and Pollutants</h3>
+        <ImageWithFallback src="/images/adhd/adhd-enviro-smokestacks.png" alt="Industrial smokestacks representing environmental toxin exposure" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
         <p className="mb-4">
           <strong>Air pollution:</strong> A growing body of research links exposure to air pollution—both prenatal 
@@ -608,6 +617,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early Life Adversity and Psychosocial Factors</h3>
+        <ImageWithFallback src="/images/adhd/adhd-enviro-baby-cuddle.png" alt="Baby being cuddled representing early life adversity factors" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
         <p className="mb-4">
           <strong>Severe early deprivation:</strong> Children who experienced severe institutional deprivation in 

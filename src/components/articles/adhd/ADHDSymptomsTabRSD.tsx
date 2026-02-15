@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 export function ADHDSymptomsTabRSD() {
   return (
     <>
@@ -5,6 +6,7 @@ export function ADHDSymptomsTabRSD() {
 
             
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
+            <ImageWithFallback src="/images/adhd/adhd-rsd-rejected-typewriter.png" alt="Typewriter with rejected text representing rejection sensitive dysphoria" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
@@ -65,6 +67,7 @@ export function ADHDSymptomsTabRSD() {
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What RSD Looks Like</h3>
+              <ImageWithFallback src="/images/adhd/adhd-rsd-artistic-explosion.png" alt="Artistic explosion representing intense emotional reactions in RSD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               <div className="space-y-3">
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Extreme Emotional Pain</div>
@@ -102,6 +105,7 @@ export function ADHDSymptomsTabRSD() {
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Why RSD Happens with ADHD</h3>
+              <ImageWithFallback src="/images/adhd/adhd-rsd-heart.png" alt="Heart illustration representing emotional sensitivity in ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               <div className="space-y-4">
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">Neurological Factors:</div>
@@ -129,6 +133,7 @@ export function ADHDSymptomsTabRSD() {
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common RSD Triggers</h3>
+              <ImageWithFallback src="/images/adhd/adhd-rsd-red-crossout.png" alt="Red crossout symbol representing common RSD triggers" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               <ul className="list-disc ml-6 space-y-2 text-sm">
                 <li>Being criticized at work or in relationships</li>
                 <li>Not receiving a response to a text message or email</li>
@@ -146,6 +151,7 @@ export function ADHDSymptomsTabRSD() {
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Coping Strategies for RSD</h3>
+              <ImageWithFallback src="/images/adhd/adhd-rsd-positive-talk.png" alt="Positive self-talk illustration representing RSD coping strategies" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               <div className="space-y-4">
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">In-the-Moment Strategies:</div>
