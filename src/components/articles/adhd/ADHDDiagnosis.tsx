@@ -66,6 +66,12 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The ADHD Diagnostic Process</h2>
             
+            <ImageWithFallback 
+              src="/images/adhd/adhd-diag-proc-ball-over-head-boy.png"
+              alt="The ADHD diagnostic process - clinical evaluation"
+              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            />
+
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
                 <strong>Important:</strong> There is no single test for ADHD. Diagnosis requires a comprehensive 
@@ -612,6 +618,12 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnosing ADHD in Adults</h2>
             
+            <ImageWithFallback 
+              src="/images/adhd/adhd-adult-dx-adult-male.png"
+              alt="Adult ADHD diagnosis - recognizing symptoms in adulthood"
+              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            />
+
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
                 <strong>Did You Know?</strong> Many adults with ADHD were never diagnosed as children. Girls, 
@@ -815,6 +827,12 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnostic Challenges & Comorbidities</h2>
             
+            <ImageWithFallback 
+              src="/images/adhd/adhd-challenges-question-mark-maze.png"
+              alt="Diagnostic challenges and comorbidities in ADHD"
+              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            />
+
             {/* Challenges Section */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Challenges in ADHD Diagnosis</h3>
@@ -958,6 +976,12 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Comes After Diagnosis?</h2>
             
+            <ImageWithFallback 
+              src="/images/adhd/adhd-after-dx-treatment-roadmap.png"
+              alt="After ADHD diagnosis - next steps and planning"
+              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            />
+
             <p className="mb-6">
               Receiving an ADHD diagnosis is just the first step. The post-diagnosis period involves 
               understanding what the diagnosis means for you, developing a treatment plan, and building a support 
@@ -1095,7 +1119,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">AuDHD: The Intersection of Autism and ADHD</h2>
             
             <ImageWithFallback 
-              src="/images/adhd-audhd-sun-swirl.png" 
+              src="/images/adhd/adhd-audhd-sun-swirl.png" 
               alt="Warm sun swirl illustration representing the convergence of autism and ADHD" 
               className="w-full max-w-md mx-auto rounded-lg mb-6" 
             />
@@ -1134,7 +1158,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">How Autism and ADHD Interact</h3>
               
               <ImageWithFallback 
-                src="/images/adhd-audhd-bolt-gold-infinity.png" 
+                src="/images/adhd/adhd-audhd-bolt-gold-infinity.png" 
                 alt="Gold lightning bolt infinity symbol representing the dynamic interplay of autism and ADHD traits" 
                 className="w-full max-w-sm mx-auto rounded-lg mb-4" 
               />
@@ -1305,7 +1329,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Conflicting Needs: The AuDHD "Paradox"</h3>
               
               <ImageWithFallback 
-                src="/images/adhd-audhd-split-face.png" 
+                src="/images/adhd/adhd-audhd-split-face.png" 
                 alt="Split face illustration representing the internal tug-of-war of AuDHD" 
                 className="w-full max-w-sm mx-auto rounded-lg mb-4" 
               />
@@ -1371,7 +1395,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Why Recognizing Both Conditions Matters</h3>
               
               <ImageWithFallback 
-                src="/images/adhd-audhd-infinity-on-brain.png" 
+                src="/images/adhd/adhd-audhd-infinity-on-brain.png" 
                 alt="Infinity symbol on brain illustration representing the interplay of autism and ADHD" 
                 className="w-full max-w-sm mx-auto rounded-lg mb-4" 
               />

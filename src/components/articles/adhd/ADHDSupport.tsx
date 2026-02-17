@@ -1,8 +1,8 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDMedicationComparison } from '../../infographics/ADHDMedicationComparison';
 import { ADHDTreatmentApproach } from '../../infographics/ADHDTreatmentApproach';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { Pill, BrainCircuit, GraduationCap, Heart, Users, Settings } from 'lucide-react';
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 interface ADHDSupportProps {
   setCurrentArticle?: (article: string) => void;
@@ -15,9 +15,13 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
         {/* Treatment Approaches Section */}
         <div>
 
+          <ImageWithFallback 
+            src="/images/adhd/adhd-support-overview-gray-happy-sad-brain.png"
+            alt="ADHD treatment and support overview"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
           
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Comprehensive Treatment Approaches</h2>
-          <ImageWithFallback src="/images/adhd/adhd-support-overview-gray-happy-sad-brain.png" alt="Brain illustration showing emotional states in ADHD treatment" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             ADHD is now understood as a chronic, life-course persistent disorder requiring ongoing, integrated treatment 
@@ -31,8 +35,13 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
             combination treatments are more effective than any single intervention alone. The landmark MTA study demonstrated that combined medication and behavioral treatment produced the best outcomes for children with ADHD.<sup className="text-[#10b981]">[1][2]</sup>
           </p>
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-support-overview-charts-running.png"
+            alt="Treatment approach charts and outcomes"
+            className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
+          />
+
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Treatment Sequencing</h3>
-          <ImageWithFallback src="/images/adhd/adhd-support-overview-charts-running.png" alt="Charts and running figure representing ADHD treatment planning" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           <p className="mb-4">
             Recent research on treatment sequencing suggests that starting with behavioral interventions first may be 
             more effective and cost less than medication-first approaches, particularly for reducing classroom discipline 
@@ -43,8 +52,13 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
           
 
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-support-overview-pills-scattered.png"
+            alt="Overview of medication and treatment options"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Access to Evidence-Based Treatment</h3>
-          <ImageWithFallback src="/images/adhd/adhd-support-overview-pills-scattered.png" alt="Scattered pills representing access to ADHD treatment options" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           <p className="mb-4">
             Despite strong evidence supporting psychosocial interventions, there is a significant gap between research 
             and practice. Recent data indicates that only 31% of families of children with ADHD receive behavioral parent 
@@ -190,8 +204,13 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Medication</h2>
-          <ImageWithFallback src="/images/adhd/adhd-medical-pills-packaged.png" alt="Packaged medication representing ADHD medication options" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-medical-pills-packaged.png"
+            alt="ADHD medication - packaged pills"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <div className="bg-[#0c264d] border-l-4 border-gray-700 p-4 rounded mb-6">
             <p className="text-white text-sm">
               <strong>Important:</strong> All prescription and over-the-counter medications should only be used under the guidance and recommendations of a qualified medical professional. This information is for educational purposes only and does not replace professional medical advice.
@@ -259,8 +278,13 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Behavioral Interventions and Therapy</h2>
-          <ImageWithFallback src="/images/adhd/adhd-behavioral-family-therapy.png" alt="Family in therapy representing behavioral interventions for ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-behavioral-family-therapy.png"
+            alt="Behavioral therapy and interventions for ADHD"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <p className="mb-4">
             Evidence-based psychosocial interventions play a critical role in ADHD treatment, particularly for children 
             and adolescents. Recent research continues to refine these approaches to improve their efficacy and 
@@ -349,6 +373,12 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Educational Accommodations and Support</h2>
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-work-overhead-organized.png"
+            alt="Educational and workplace accommodations for ADHD"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <p className="mb-4">
             Students with ADHD are entitled to accommodations under Section 504 of the Rehabilitation Act or through an Individualized Education Program (IEP) under the Individuals with Disabilities Education Act (IDEA).
           </p>
@@ -404,7 +434,6 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
 
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Workplace Accommodations</h2>
-          <ImageWithFallback src="/images/adhd/adhd-work-overhead-organized.png" alt="Overhead view of organized workspace for workplace accommodations" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
           <p className="mb-4">
             Under the Americans with Disabilities Act (ADA), adults with ADHD may request reasonable accommodations:
@@ -431,8 +460,13 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Lifestyle Modifications</h2>
-          <ImageWithFallback src="/images/adhd/placeholder-unsplash-lifestyle.png" alt="Placeholder for lifestyle image — replace when ready" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-support-lifestyle-kids-yoga.png"
+            alt="Kids doing yoga - lifestyle modifications for ADHD"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <p className="mb-4">
             While lifestyle modifications alone are not sufficient to treat ADHD, they play a crucial supporting role 
             in symptom management and overall well-being. Research increasingly demonstrates that certain lifestyle 
@@ -554,8 +588,13 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
       <>
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Self-Management Strategies and Tools</h2>
-          <ImageWithFallback src="/images/adhd/adhd-tools-organizing-at-work.png" alt="Organizing tools at work representing self-management strategies" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-tools-organizing-at-work.png"
+            alt="Self-management tools and apps for ADHD"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <p className="mb-6">
             Individuals with ADHD benefit from developing personalized systems and tools to compensate for executive function 
             challenges. Effective self-management involves creating external supports to reduce cognitive load and 

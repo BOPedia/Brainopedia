@@ -1,5 +1,5 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 interface ADHDLivingProps {
   setCurrentArticle?: (article: string) => void;
@@ -11,8 +11,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
       <>
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Thriving with ADHD</h2>
-          <ImageWithFallback src="/images/adhd/adhd-living-overview-pathway.png" alt="Winding pathway representing the journey of thriving with ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-living-overview-pathway.png"
+            alt="Thriving with ADHD - living a full life"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <p className="mb-4">
             Individuals with ADHD lead full and successful lives across all areas of society. While ADHD 
             presents challenges, many people with ADHD also describe unique strengths and appreciate aspects 
@@ -29,8 +34,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
 
         <div className="clear-both pt-6">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Recognizing Strengths in ADHD</h2>
-          <ImageWithFallback src="/images/adhd/adhd-living-overview-strong-arms.png" alt="Person with strong arms representing ADHD strengths" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-living-overview-strong-arms.png"
+            alt="ADHD strengths - resilience and determination"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <p className="mb-4">
             While discussions of ADHD often focus on challenges, many individuals with ADHD describe genuine 
             strengths associated with their neurodivergence:
@@ -78,8 +88,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life and Practical Considerations</h2>
-        <ImageWithFallback src="/images/adhd/adhd-living-routines-checkmark.png" alt="Checkmark symbol representing daily routines and habits" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
+        <ImageWithFallback 
+          src="/images/adhd/adhd-living-routines-checkmark.png"
+          alt="Daily routines and practical strategies for ADHD"
+          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+        />
+
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Morning and Evening Routines</h3>
         <p className="mb-4">
           Establishing consistent routines can significantly reduce daily stress and improve functioning for individuals with ADHD. Strategies that help:
@@ -103,7 +118,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
         </ul>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Managing Finances</h3>
-        <ImageWithFallback src="/images/adhd/adhd-living-table-calculator-finances.png" alt="Calculator on table representing financial management with ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+
+        <ImageWithFallback 
+          src="/images/adhd/adhd-living-table-calculator-finances.png"
+          alt="Financial management tools and strategies"
+          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+        />
+
         <p className="mb-4">
           Impulsivity and difficulty with planning can significantly affect financial management. Adults with ADHD 
           are more likely to experience financial difficulties, including impulsive spending, difficulty saving, and 
@@ -125,8 +146,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left">Relationships and Social Life</h2>
-        <ImageWithFallback src="/images/adhd/adhd-living-relationships-heart-connections.png" alt="Heart with connections representing ADHD relationships" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
+        <ImageWithFallback 
+          src="/images/adhd/adhd-living-relationships-heart-connections.png"
+          alt="Relationships and social life with ADHD"
+          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+        />
+
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Romantic Relationships</h3>
         <p className="mb-4">
           Navigating romantic relationships with ADHD can present unique challenges. ADHD symptoms can 
@@ -157,7 +183,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
         </ul>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Parenting with ADHD</h3>
-        <ImageWithFallback src="/images/adhd/adhd-living-relationships-read-kids-books.png" alt="Parent reading with kids representing parenting with ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+
+        <ImageWithFallback 
+          src="/images/adhd/adhd-living-relationships-read-kids-books.png"
+          alt="Parent reading to children - parenting with ADHD"
+          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+        />
+
         <p className="mb-4">
           Parents with ADHD face unique challenges and bring unique strengths to parenting. 
           Research shows that parental ADHD symptoms are associated with differences in parenting 
@@ -185,8 +217,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left">Education and Career</h2>
-        <ImageWithFallback src="/images/adhd/adhd-living-educ-career-paths.png" alt="Career paths illustration for education and employment with ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
+        <ImageWithFallback 
+          src="/images/adhd/adhd-living-educ-career-paths.png"
+          alt="Education and career paths with ADHD"
+          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+        />
+
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Choosing Career Paths</h3>
         <p className="mb-4">
           ADHD can significantly impact occupational functioning and career success. However, choosing 
@@ -224,8 +261,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Managing Stigma and Misconceptions</h2>
-        <ImageWithFallback src="/images/adhd/adhd-living-stigma-four-faces.png" alt="Four faces representing stigma and misconceptions about ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
+        <ImageWithFallback 
+          src="/images/adhd/adhd-living-stigma-four-faces.png"
+          alt="Managing stigma and advocating for ADHD awareness"
+          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+        />
+
         <p className="mb-4">
           Stigma surrounding ADHD remains a significant barrier to diagnosis, treatment, and self-acceptance. 
           Public misconceptions about ADHD are common and can lead to internalized shame and reluctance to seek help.
@@ -273,7 +315,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Building Self-Esteem</h3>
-          <ImageWithFallback src="/images/adhd/adhd-living-stigma-self-esteem.png" alt="Self-esteem illustration for building confidence with ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+
+          <ImageWithFallback 
+            src="/images/adhd/adhd-living-stigma-self-esteem.png"
+            alt="Building self-esteem with ADHD"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <p className="mb-4">
             Growing up with ADHD often involves repeated experiences of failure, criticism, and negative feedback, which 
             can significantly impact self-esteem. Adults with ADHD frequently report lower self-esteem and higher 
@@ -296,8 +344,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
     return (
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Finding Community and Support</h2>
-        <ImageWithFallback src="/images/adhd/placeholder-unsplash-community.png" alt="Placeholder for community image — replace when ready" className="w-full max-w-md mx-auto rounded-lg mb-4" />
         
+        <ImageWithFallback 
+          src="/images/adhd/adhd-living-community-hands.png"
+          alt="Community support and connection - hands together"
+          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+        />
+
         <p className="mb-4">
           Connecting with others who understand ADHD can be invaluable for reducing isolation, gaining practical strategies, 
           and building self-acceptance. Social support is associated with better outcomes and quality of life 
@@ -321,8 +374,13 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
 
         <div className="clear-both pt-6">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Looking Forward</h2>
-          <ImageWithFallback src="/images/adhd/adhd-living-future-girl-cheers.png" alt="Girl cheering representing a positive future with ADHD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
           
+          <ImageWithFallback 
+            src="/images/adhd/adhd-living-future-girl-cheers.png"
+            alt="Looking forward with optimism - celebrating ADHD journey"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
           <p className="mb-4">
             Living with ADHD is a journey of self-discovery, learning, and growth. As understanding of your 
             own ADHD deepens and you develop systems that work for you, life often becomes more manageable 
