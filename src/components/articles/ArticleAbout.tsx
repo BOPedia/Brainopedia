@@ -133,7 +133,7 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 how individuals experience and interact with the world.
               </p>
               
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 clear-left">
                 <button 
                   onClick={() => setCurrentArticle?.('adhd')}
                   className="px-4 py-2 bg-white border-2 border-[#2abcd4] rounded-full text-sm hover:bg-[#2abcd4] hover:text-white transition-all font-medium"
@@ -292,7 +292,7 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 occur due to neurological variations.
               </p>
               
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 clear-left">
                 <button 
                   onClick={() => setCurrentArticle?.('dyspraxia')}
                   className="px-4 py-2 bg-white border-2 border-[#ffd700] rounded-full text-sm hover:bg-[#ffd700] hover:text-[#0c264d] transition-all font-medium"
@@ -328,7 +328,7 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 identify with the neurodivergent community.
               </p>
               
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 clear-left">
                 <button 
                   onClick={() => setCurrentArticle?.('ocd')}
                   className="px-4 py-2 bg-white border-2 border-[#0a9dc4] rounded-full text-sm hover:bg-[#0a9dc4] hover:text-white transition-all font-medium"
@@ -370,7 +370,7 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 development in significant and lasting ways.
               </p>
               
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 clear-left">
                 <button 
                   onClick={() => setCurrentArticle?.('down-syndrome')}
                   className="px-4 py-2 bg-white border-2 border-[#8b5cf6] rounded-full text-sm hover:bg-[#8b5cf6] hover:text-white transition-all font-medium"
@@ -418,7 +418,7 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
                 in ways that create lasting neurological differences.
               </p>
               
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 clear-left">
                 <button 
                   onClick={() => setCurrentArticle?.('tbi')}
                   className="px-4 py-2 bg-white border-2 border-[#ffcc00] rounded-full text-sm hover:bg-[#ffcc00] hover:text-[#0c264d] transition-all font-medium"
