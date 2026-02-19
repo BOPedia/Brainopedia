@@ -111,7 +111,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           <ImageWithFallback 
             src="/images/adhd/adhd-main-overview.png"
             alt="ADHD Overview"
-            className="w-48 h-auto mx-auto mb-4 rounded"
+            className="w-48 h-auto float-right ml-4 mb-4 rounded"
           />
           
           <p className="mb-4">
@@ -138,7 +138,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           <ImageWithFallback 
             src="/images/adhd/adhd-main-symptoms.png"
             alt="ADHD Symptoms"
-            className="w-48 h-auto mx-auto mb-4 rounded"
+            className="w-48 h-auto float-right ml-4 mb-4 rounded"
           />
           
           <p className="mb-4">
@@ -161,7 +161,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           <ImageWithFallback 
             src="/images/adhd/adhd-main-causes.png"
             alt="ADHD Causes"
-            className="w-48 h-auto mx-auto mb-4 rounded"
+            className="w-48 h-auto float-right ml-4 mb-4 rounded"
           />
           
           <p className="mb-4">
@@ -184,7 +184,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           <ImageWithFallback 
             src="/images/adhd/adhd-main-diagnosis.png"
             alt="ADHD Diagnosis"
-            className="w-48 h-auto mx-auto mb-4 rounded"
+            className="w-48 h-auto float-right ml-4 mb-4 rounded"
           />
           
           <p className="mb-4">
@@ -207,7 +207,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           <ImageWithFallback 
             src="/images/adhd/adhd-main-support.png"
             alt="ADHD Support"
-            className="w-48 h-auto mx-auto mb-4 rounded"
+            className="w-48 h-auto float-right ml-4 mb-4 rounded"
           />
           
           <p className="mb-4">
@@ -230,7 +230,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           <ImageWithFallback 
             src="/images/adhd/adhd-main-living.png"
             alt="Living with ADHD"
-            className="w-48 h-auto mx-auto mb-4 rounded"
+            className="w-48 h-auto float-right ml-4 mb-4 rounded"
           />
           
           <p className="mb-4">
