@@ -1,5 +1,6 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ADHDSymptomsCoreReferences } from '../../references/ADHDSymptomsCoreReferences';
+import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
+import { AlertTriangle, Eye, EarOff, ListX, FolderOpen, BrainCog, Search, Sparkles, CalendarX, Hand, ArrowUpFromLine, Mountain, VolumeX, Zap, MessageSquare, MessageCircle, Hourglass, UserMinus } from 'lucide-react';
 
 interface TabCoreProps {
   setCurrentArticle?: (article: string) => void;
@@ -10,9 +11,12 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
               <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Symptoms of ADHD</h2>
-              <ImageWithFallback src="/images/adhd/adhd-core-symptoms-apple.png" alt="ADHD core symptoms illustration" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
-
+              <ImageWithFallback 
+                src="/images/adhd/adhd-core-symptoms-apple.png"
+                alt="ADHD Core Symptoms"
+                className="w-52 h-auto float-right ml-4 mb-4 rounded"
+              />
               
               <p className="mb-4">
                 ADHD is characterized by a persistent pattern of inattention, hyperactivity, and impulsivity that 
@@ -38,9 +42,12 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
             {/* Defining ADHD Diagnostic Criteria Section */}
             <div className="bg-[#f0f9ff] p-6 rounded-lg">
               <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Defining ADHD: DSM-5-TR Diagnostic Criteria</h2>
-              <ImageWithFallback src="/images/adhd/adhd-core-symptoms-venn.png" alt="DSM-5-TR ADHD diagnostic criteria Venn diagram" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
-
+              <ImageWithFallback 
+                src="/images/adhd/adhd-core-symptoms-venn.png"
+                alt="ADHD Diagnostic Criteria Venn Diagram"
+                className="w-full max-w-lg mx-auto mb-4 rounded"
+              />
               
               <p className="mb-4">
                 The diagram above illustrates the complete DSM-5-TR diagnostic criteria<sup>[1]</sup> for ADHD, showing the specific 
@@ -84,63 +91,63 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
                 
                 <div className="space-y-3">
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">1. Careless Mistakes</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><AlertTriangle className="w-4 h-4 text-[#2abcd4] shrink-0" />1. Careless Mistakes</div>
                     <div className="text-sm">
                       Often fails to give close attention to details or makes careless mistakes in schoolwork, work, or other activities
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">2. Difficulty Sustaining Attention</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><Eye className="w-4 h-4 text-[#2abcd4] shrink-0" />2. Difficulty Sustaining Attention</div>
                     <div className="text-sm">
                       Often has difficulty sustaining attention in tasks or play activities
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">3. Doesn't Seem to Listen</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><EarOff className="w-4 h-4 text-[#2abcd4] shrink-0" />3. Doesn't Seem to Listen</div>
                     <div className="text-sm">
                       Often does not seem to listen when spoken to directly
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">4. Doesn't Follow Through</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><ListX className="w-4 h-4 text-[#2abcd4] shrink-0" />4. Doesn't Follow Through</div>
                     <div className="text-sm">
                       Often does not follow through on instructions and fails to finish schoolwork, chores, or duties in the workplace (not due to oppositional behavior or failure to understand)
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">5. Difficulty Organizing</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><FolderOpen className="w-4 h-4 text-[#2abcd4] shrink-0" />5. Difficulty Organizing</div>
                     <div className="text-sm">
                       Often has difficulty organizing tasks and activities
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">6. Avoids Sustained Mental Effort</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><BrainCog className="w-4 h-4 text-[#2abcd4] shrink-0" />6. Avoids Sustained Mental Effort</div>
                     <div className="text-sm">
                       Often avoids, dislikes, or is reluctant to engage in tasks that require sustained mental effort (such as schoolwork or homework)
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">7. Loses Things</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><Search className="w-4 h-4 text-[#2abcd4] shrink-0" />7. Loses Things</div>
                     <div className="text-sm">
                       Often loses things necessary for tasks or activities (e.g., school materials, pencils, books, tools, wallets, keys, paperwork, eyeglasses, mobile phones)
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">8. Easily Distracted</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><Sparkles className="w-4 h-4 text-[#2abcd4] shrink-0" />8. Easily Distracted</div>
                     <div className="text-sm">
                       Is often easily distracted by extraneous stimuli (for older adolescents and adults, may include unrelated thoughts)
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">9. Forgetful</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><CalendarX className="w-4 h-4 text-[#2abcd4] shrink-0" />9. Forgetful</div>
                     <div className="text-sm">
                       Is often forgetful in daily activities
                     </div>
@@ -155,42 +162,42 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
                 <div className="mb-4 text-sm font-semibold text-[#0c264d]">Hyperactivity (6 symptoms):</div>
                 <div className="space-y-3 mb-5">
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">10. Fidgets or Squirms</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><Hand className="w-4 h-4 text-[#2abcd4] shrink-0" />10. Fidgets or Squirms</div>
                     <div className="text-sm">
                       Often fidgets with or taps hands or feet or squirms in seat
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">11. Leaves Seat</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><ArrowUpFromLine className="w-4 h-4 text-[#2abcd4] shrink-0" />11. Leaves Seat</div>
                     <div className="text-sm">
                       Often leaves seat in situations when remaining seated is expected (e.g., classroom, office, workplace)
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">12. Runs About or Climbs</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><Mountain className="w-4 h-4 text-[#2abcd4] shrink-0" />12. Runs About or Climbs</div>
                     <div className="text-sm">
                       Often runs about or climbs in situations where it is inappropriate (in adolescents or adults, may be limited to feeling restless)
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">13. Unable to Play Quietly</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><VolumeX className="w-4 h-4 text-[#2abcd4] shrink-0" />13. Unable to Play Quietly</div>
                     <div className="text-sm">
                       Often unable to play or engage in leisure activities quietly
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">14. "On the Go"</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><Zap className="w-4 h-4 text-[#2abcd4] shrink-0" />14. "On the Go"</div>
                     <div className="text-sm">
                       Is often "on the go," acting as if "driven by a motor"
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">15. Talks Excessively</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><MessageSquare className="w-4 h-4 text-[#2abcd4] shrink-0" />15. Talks Excessively</div>
                     <div className="text-sm">
                       Often talks excessively
                     </div>
@@ -200,21 +207,21 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
                 <div className="mb-4 text-sm font-semibold text-[#0c264d]">Impulsivity (3 symptoms):</div>
                 <div className="space-y-3">
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">16. Blurts Out Answers</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><MessageCircle className="w-4 h-4 text-[#2abcd4] shrink-0" />16. Blurts Out Answers</div>
                     <div className="text-sm">
                       Often blurts out an answer before a question has been completed (e.g., completes people's sentences, cannot wait for turn in conversation)
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">17. Difficulty Waiting Turn</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><Hourglass className="w-4 h-4 text-[#2abcd4] shrink-0" />17. Difficulty Waiting Turn</div>
                     <div className="text-sm">
                       Often has difficulty waiting their turn (e.g., while waiting in line)
                     </div>
                   </div>
 
                   <div className="border-l-2 border-[#2abcd4] pl-3">
-                    <div className="font-bold text-[#0c264d] mb-1">18. Interrupts or Intrudes</div>
+                    <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2"><UserMinus className="w-4 h-4 text-[#2abcd4] shrink-0" />18. Interrupts or Intrudes</div>
                     <div className="text-sm">
                       Often interrupts or intrudes on others (e.g., butts into conversations, games, or activities; may start using other people's things without asking or receiving permission)
                     </div>
