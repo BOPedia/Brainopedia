@@ -20,7 +20,7 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar }: HeaderPro
         </button>
         
         <div className="flex items-center gap-3">
-          <img src="/images/brainopedia-logo.png" alt="Brainopedia Logo" className="w-24 h-24 object-contain" />
+          <img src="/images/brainopedia-logo.png" alt="Brainopedia Logo" className="w-18 h-18 object-contain" />
           <div>
             <h1 className="text-[#f4f4f4] text-2xl font-bold" style={{ fontFamily: 'Avenir, Nunito, sans-serif', fontWeight: 800 }}>Brainopedia</h1>
             <p className="text-sm text-[#ffd166] opacity-90">Your encyclopedic platform about neurodivergent minds.</p>
