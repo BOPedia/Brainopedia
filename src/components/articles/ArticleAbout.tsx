@@ -84,8 +84,8 @@ export function ArticleAbout({ setCurrentArticle }: ArticleAboutProps) {
           
           <div className="mb-6">
             <img 
-              src="/images/home-magnify-glass-brain.png" 
-              alt="Brain with magnifying glass and book illustration representing detailed neurodivergence research"
+              src="/images/home-brain-on-book.png" 
+              alt="Brainopedia.org logo featuring a colorful brain resting on an open book, representing accessible neurodivergence education"
               className="float-right ml-6 mb-4 w-64 h-64 rounded-lg shadow-lg object-cover"
             />
             
