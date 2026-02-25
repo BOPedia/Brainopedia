@@ -1,13 +1,17 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { Hand, ArrowUpFromLine, Mountain, VolumeX, Zap, MessageSquare, Baby, GraduationCap, Briefcase } from 'lucide-react';
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 export function ADHDSymptomsTabHyperactivity() {
   return (
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Hyperactivity Symptoms</h2>
-            <ImageWithFallback src="/images/adhd/adhd-hyperactivity-street-view.png" alt="Busy street view illustrating hyperactivity and constant movement" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
+            <ImageWithFallback 
+              src="/images/adhd/adhd-hyperactivity-street-view.png"
+              alt="Hyperactivity in everyday life - street view"
+              className="w-32 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            />
 
             
             <p className="mb-6">
@@ -82,10 +86,13 @@ export function ADHDSymptomsTabHyperactivity() {
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hyperactivity Across the Lifespan</h3>
-              <ImageWithFallback src="/images/adhd/adhd-hyperactivity-lifespan.png" alt="Hyperactivity symptoms across the lifespan" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
+              <ImageWithFallback 
+                src="/images/adhd/adhd-hyperactivity-lifespan.png"
+                alt="Hyperactivity changes across the lifespan"
+                className="w-full max-w-xs mx-auto mb-4 rounded"
+              />
 
-              
               {/* Timeline */}
               <div className="relative">
                 {/* Horizontal line connecting all stages - hidden on mobile */}

@@ -1,13 +1,17 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { MessageCircle, Clock, Users, TrendingUp, ShoppingCart, AlertTriangle, Baby, GraduationCap, Briefcase } from 'lucide-react';
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 export function ADHDSymptomsTabImpulsivity() {
   return (
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Impulsivity Symptoms</h2>
-            <ImageWithFallback src="/images/adhd/adhd-impulsivity-purple-wires.png" alt="Tangled purple wires representing impulsive neural pathways" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
+            <ImageWithFallback 
+              src="/images/adhd/adhd-impulsivity-purple-wires.png"
+              alt="Impulsivity and neural connections"
+              className="w-32 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            />
 
             
             <p className="mb-6">
@@ -91,10 +95,13 @@ export function ADHDSymptomsTabImpulsivity() {
             {/* Lifespan Development Section */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Impulsivity Across the Lifespan</h3>
-              <ImageWithFallback src="/images/adhd/adhd-impulsivity-shopping.png" alt="Shopping bags representing impulse purchasing behavior" className="w-full max-w-md mx-auto rounded-lg mb-4" />
               
+              <ImageWithFallback 
+                src="/images/adhd/adhd-impulsivity-shopping.png"
+                alt="Impulse shopping - impulsivity in daily life"
+                className="w-full max-w-xs mx-auto mb-4 rounded"
+              />
 
-              
               {/* Timeline */}
               <div className="relative">
                 {/* Horizontal line connecting all stages - hidden on mobile */}
