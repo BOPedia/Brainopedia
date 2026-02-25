@@ -10,7 +10,7 @@ interface HeaderProps {
 export function Header({ searchQuery, setSearchQuery, toggleSidebar }: HeaderProps) {
   return (
     <header className="bg-[#0c264d] text-white sticky top-0 z-50 shadow-md w-full">
-      <div className="flex items-center gap-4 px-4 md:px-6 py-4 w-full max-w-full">
+      <div className="flex items-center gap-4 px-4 md:px-6 py-2 w-full max-w-full">
         <button
           onClick={toggleSidebar}
           className="xl:hidden p-2 hover:bg-white/10 rounded-md transition-colors"
