@@ -1,0 +1,33 @@
+name: Deploy to DreamHost via SFTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy via SFTP
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # Works for Vite; adjust if your local setup uses a different version (e.g., '18')
+
+      - name: Install dependencies and build
+        run: npm install && npm run build  # This runs 'vite build' based on your package.json
+
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          port: 22
+          local_path: './dist/*'  # Vite outputs to 'dist' folder by default
+          remote_path: '/home/bopedia/brainopedia.org/'
+          sftpArgs: '-o StrictHostKeyChecking=no'
