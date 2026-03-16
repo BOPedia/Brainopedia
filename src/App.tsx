@@ -26,6 +26,16 @@ function AppContent() {
 
   // Set favicon and page title
   useEffect(() => {
+    // Update favicon
+    let link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    link.type = 'image/png';
+    link.href = '/images/favicon.png';
+
     // Update page title
     document.title = 'Brainopedia - Encyclopedia of Neurodivergent Conditions';
   }, []);
