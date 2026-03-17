@@ -1,39 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Search, Menu, X } from 'lucide-react';
-
-// Searchable index of all articles
-const searchableArticles = [
-  { id: 'about', label: 'Home & About', keywords: 'brainopedia home about neurodivergent welcome introduction' },
-  { id: 'adhd', label: 'ADHD', keywords: 'attention deficit hyperactivity disorder adhd add inattention impulsivity executive function focus concentration' },
-  { id: 'autism', label: 'Autism (ASD)', keywords: 'autism spectrum disorder asd asperger social communication sensory repetitive behaviors neurodevelopmental' },
-  { id: 'dyslexia', label: 'Dyslexia', keywords: 'dyslexia reading learning disability phonological decoding literacy letters words' },
-  { id: 'dyscalculia', label: 'Dyscalculia', keywords: 'dyscalculia math mathematics number sense arithmetic learning disability calculation' },
-  { id: 'dysgraphia', label: 'Dysgraphia', keywords: 'dysgraphia writing handwriting motor learning disability spelling fine motor' },
-  { id: 'nvld', label: 'Non-Verbal Learning Disability (NVLD)', keywords: 'nvld nonverbal non-verbal learning disability spatial visual social skills' },
-  { id: 'dld', label: 'Developmental Language Disorder (DLD)', keywords: 'dld developmental language disorder speech communication grammar vocabulary' },
-  { id: 'hyperlexia', label: 'Hyperlexia', keywords: 'hyperlexia early reading advanced decoding comprehension precocious' },
-  { id: 'giftedness', label: 'Giftedness', keywords: 'giftedness gifted talented high ability intelligence iq advanced intellectual' },
-  { id: 'twice-exceptional', label: 'Twice Exceptional (2E)', keywords: 'twice exceptional 2e gifted disability dual exceptionality' },
-  { id: 'apd', label: 'Auditory Processing Disorder (APD)', keywords: 'auditory processing disorder apd hearing listening sound discrimination central' },
-  { id: 'visual-processing', label: 'Visual Processing Disorder', keywords: 'visual processing disorder vpd vision perception spatial tracking' },
-  { id: 'spd', label: 'Sensory Processing Disorder (SPD)', keywords: 'sensory processing disorder spd sensitivities overresponsive underresponsive integration' },
-  { id: 'misophonia', label: 'Misophonia', keywords: 'misophonia sound sensitivity trigger sounds chewing anger rage selective sound' },
-  { id: 'synesthesia', label: 'Synesthesia', keywords: 'synesthesia senses colors sounds cross-modal perception' },
-  { id: 'dyspraxia', label: 'Dyspraxia (DCD)', keywords: 'dyspraxia dcd developmental coordination disorder motor planning clumsy movement' },
-  { id: 'tourette', label: 'Tourette Syndrome', keywords: 'tourette tics motor vocal involuntary movements sounds' },
-  { id: 'ocd', label: 'OCD', keywords: 'ocd obsessive compulsive disorder intrusive thoughts rituals anxiety' },
-  { id: 'bipolar', label: 'Bipolar Disorder', keywords: 'bipolar disorder mania depression mood swings manic episodes cycling' },
-  { id: 'schizophrenia', label: 'Schizophrenia', keywords: 'schizophrenia psychosis hallucinations delusions thought disorder' },
-  { id: 'down-syndrome', label: 'Down Syndrome', keywords: 'down syndrome trisomy 21 chromosome intellectual developmental genetic' },
-  { id: 'intellectual-disability', label: 'Intellectual Disability', keywords: 'intellectual disability cognitive developmental adaptive functioning iq' },
-  { id: 'fasd', label: 'Fetal Alcohol Spectrum Disorder (FASD)', keywords: 'fasd fetal alcohol spectrum disorder prenatal exposure developmental' },
-  { id: 'epilepsy', label: 'Epilepsy', keywords: 'epilepsy seizures neurological convulsions brain electrical activity' },
-  { id: 'tbi', label: 'TBI (Traumatic Brain Injury)', keywords: 'tbi traumatic brain injury concussion head trauma acquired' },
-  { id: 'cte', label: 'CTE (Chronic Traumatic Encephalopathy)', keywords: 'cte chronic traumatic encephalopathy concussion sports head injury degenerative' },
-  { id: 'pandas', label: 'PANDAS', keywords: 'pandas autoimmune streptococcal neuropsychiatric pediatric ocd tics infection brain inflammation' },
-  { id: 'blog', label: 'Blog & Updates', keywords: 'blog news updates articles posts' },
-  { id: 'donate', label: 'Donate', keywords: 'donate support contribute funding help' },
-];
+import { searchableArticles } from './searchIndex';
 
 interface HeaderProps {
   searchQuery: string;
@@ -47,11 +14,14 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar, onSearchSel
   const searchRef = useRef<HTMLDivElement>(null);
 
   const filteredResults = searchQuery.trim().length > 0
-    ? searchableArticles.filter(article => {
-        const query = searchQuery.toLowerCase();
-        return article.label.toLowerCase().includes(query) ||
-               article.keywords.toLowerCase().includes(query);
-      })
+    ? (() => {
+        const queryWords = searchQuery.toLowerCase().split(/\s+/).filter(word => word.length >= 3);
+        if (queryWords.length === 0) return [];
+        return searchableArticles.filter(article => {
+          const searchText = (article.label + ' ' + article.keywords).toLowerCase();
+          return queryWords.some(word => searchText.includes(word));
+        });
+      })()
     : [];
 
   // Close dropdown when clicking outside
@@ -134,7 +104,15 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar, onSearchSel
                       onClick={() => handleSelect(article.id)}
                       className="w-full text-left px-4 py-3 text-gray-800 hover:bg-[#2abcd4]/10 border-b border-gray-100 last:border-b-0 transition-colors"
                     >
-                      <span className="font-medium">{article.label}</span>
+                      {article.label.includes('\u2192') ? (
+                        <span>
+                          <span className="text-[#2abcd4] font-medium">{article.label.split('\u2192')[0].trim()}</span>
+                          <span className="text-gray-400 mx-1">\u2192</span>
+                          <span className="text-gray-700">{article.label.split('\u2192')[1].trim()}</span>
+                        </span>
+                      ) : (
+                        <span className="font-medium">{article.label}</span>
+                      )}
                     </button>
                   ))
                 ) : (
