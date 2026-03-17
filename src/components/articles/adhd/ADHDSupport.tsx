@@ -179,7 +179,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
           
           <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2 ml-4">
+          <div className="text-sm space-y-2">
             <p>[1] MTA Cooperative Group. (1999). "A 14-month randomized clinical trial of treatment strategies for attention-deficit/hyperactivity disorder." <em>Archives of General Psychiatry</em>, 56(12), 1073-1086.</p>
             <p>[2] Cortese, S., Adamo, N., Del Giovane, C., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis." <em>The Lancet Psychiatry</em>, 5(9), 727-738.</p>
             <p>[3] Pelham, W. E., Jr., et al. (2016). "Sequential, adaptive, behavioral and pharmacological treatment for childhood ADHD." <em>Journal of Clinical Child & Adolescent Psychology</em>, 45(4), 396-415.</p>
@@ -906,66 +906,6 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
           All About ADHD
         </button>
       </div>
-
-      <section className="mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <p>[1] MTA Cooperative Group. (1999). "A 14-month randomized clinical trial of treatment strategies for attention-deficit/hyperactivity disorder." <em>Archives of General Psychiatry</em>, 56(12), 1073-1086.</p>
-          <p>[2] Cortese, S., Adamo, N., Del Giovane, C., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis." <em>The Lancet Psychiatry</em>, 5(9), 727-738.</p>
-          <p>[3] Chacko, A., Merrill, B. M., Kofler, M. J., & Jensen, P. S. (2024). "Improving the efficacy and effectiveness of evidence-based psychosocial interventions for attention-deficit/hyperactivity disorder (ADHD) in children and adolescents: Embracing the complexity and living up to our potential." <em>Translational Psychiatry</em>, 14, 244.</p>
-          <p>[4] Faraone, S. V., Biederman, J., & Mick, E. (2006). "The age-dependent decline of attention deficit hyperactivity disorder: A meta-analysis of follow-up studies." <em>Psychological Medicine</em>, 36(2), 159-165.</p>
-          <p>[5] Biederman, J., Petty, C. R., Evans, M., Small, J., & Faraone, S. V. (2010). "How persistent is ADHD? A controlled 10-year follow-up study of boys with ADHD." <em>Psychiatry Research</em>, 177(3), 299-304.</p>
-          <p>[8] Pelham, W. E., Jr., & Fabiano, G. A. (2008). "Evidence-based psychosocial treatments for attention-deficit/hyperactivity disorder." <em>Journal of Clinical Child & Adolescent Psychology</em>, 37(1), 184-214.</p>
-          <p>[9] Evans, S. W., Owens, J. S., Wymbs, B. T., & Ray, A. R. (2018). "Evidence-based psychosocial treatments for children and adolescents with attention deficit/hyperactivity disorder." <em>Journal of Clinical Child & Adolescent Psychology</em>, 47(2), 157-198.</p>
-          <p>[26] Fabiano, G. A., et al. (2015). "A systematic review of meta-analyses of psychosocial treatment for attention-deficit/hyperactivity disorder." <em>Clinical Child and Family Psychology Review</em>, 18(1), 77-97.</p>
-          <p>[33] Faraone, S. V., & Buitelaar, J. (2010). "Comparing the efficacy of stimulants for ADHD in children and adolescents using meta-analysis." <em>European Child & Adolescent Psychiatry</em>, 19(4), 353-364.</p>
-          <p>[34] Spencer, T., Biederman, J., Wilens, T., et al. (1996). "Pharmacotherapy of attention-deficit hyperactivity disorder across the life cycle." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 35(4), 409-432.</p>
-          <p>[37] Faraone, S. V., & Glatt, S. J. (2010). "A comparison of the efficacy of medications for adult attention-deficit/hyperactivity disorder using meta-analysis of effect sizes." <em>The Journal of Clinical Psychiatry</em>, 71(6), 754-763.</p>
-          <p>[44] Pelham, W. E., et al. (2001). "Once-a-day Concerta methylphenidate versus three-times-daily methylphenidate in laboratory and natural settings." <em>Pediatrics</em>, 107(6), E105.</p>
-          <p>[45] Biederman, J., et al. (2003). "A comparison of once-daily and divided doses of modafinil in children with attention-deficit/hyperactivity disorder." <em>Journal of Clinical Psychiatry</em>, 64(9), 1092-1096.</p>
-          <p>[80] Fabiano, G. A., et al. (2009). "A meta-analysis of behavioral treatments for attention-deficit/hyperactivity disorder." <em>Clinical Psychology Review</em>, 29(2), 129-140.</p>
-          <p>[84] Safren, S. A., et al. (2005). "Cognitive-behavioral therapy for ADHD in medication-treated adults with continued symptoms." <em>Behaviour Research and Therapy</em>, 43(7), 831-842.</p>
-          <p>[85] Ramsay, J. R., & Rostain, A. L. (2008). <em>Cognitive-Behavioral Therapy for Adult ADHD: An Integrative Psychosocial and Medical Approach</em>. Routledge.</p>
-          <p>[86] Solanto, M. V., Marks, D. J., Wasserstein, J., et al. (2010). "Efficacy of meta-cognitive therapy for adult ADHD." <em>American Journal of Psychiatry</em>, 167(8), 958-968.</p>
-          <p>[88] Virta, M., et al. (2010). "Adults with ADHD benefit from cognitive-behaviorally oriented group rehabilitation." <em>Journal of Attention Disorders</em>, 12(3), 218-226.</p>
-          <p>[90] Bramham, J., et al. (2009). "Evaluation of group cognitive behavioral therapy for adults with ADHD." <em>Journal of Attention Disorders</em>, 12(5), 434-441.</p>
-          <p>[100] Epstein, J. N., et al. (2015). "The role of children's ethnicity in the relationship between teacher ratings of ADHD and observed classroom behavior." <em>Journal of Consulting and Clinical Psychology</em>, 83(5), 960-964.</p>
-          <p>[102] Matos, M., Bauermeister, J. J., & Bernal, G. (2009). "Parent-child interaction therapy for Puerto Rican preschool children with ADHD and behavior problems." <em>Family Process</em>, 48(2), 232-252.</p>
-          <p>[110] Jones, D. J., et al. (2013). "Technology-enhanced program for child disruptive behavior disorders." <em>Journal of Clinical Child & Adolescent Psychology</em>, 43(1), 88-101.</p>
-          <p>[111] Xie, Y., et al. (2013). "Effectiveness of videoconferencing on teaching parent training skills to parents of children with ADHD." <em>Telemedicine and e-Health</em>, 19(3), 192-199.</p>
-          <p>[112] Franke, N., et al. (2018). "Technology-assisted parenting interventions for families of children with ADHD." <em>Journal of Child and Family Studies</em>, 27(9), 2699-2713.</p>
-          <p>[135] Langberg, J. M., et al. (2011). "Patterns and predictors of adolescent academic achievement and performance in a sample of children with ADHD." <em>Journal of Clinical Child & Adolescent Psychology</em>, 40(4), 519-531.</p>
-          <p>[146] Gureasko-Moore, S., DuPaul, G. J., & White, G. P. (2006). "The effects of self-management in general education classrooms on the organizational skills of adolescents with ADHD." <em>Behavior Modification</em>, 30(2), 159-183.</p>
-          <p>[148] Vidal, R., et al. (2013). "Organizational skills training for children with ADHD: A randomized controlled trial." <em>Journal of Clinical Child & Adolescent Psychology</em>, 42(1), 41-52.</p>
-          <p>[153] Evans, S. W., Langberg, J. M., Schultz, B. K., et al. (2016). "Evaluation of a school-based treatment program for young adolescents with ADHD." <em>Journal of Consulting and Clinical Psychology</em>, 84(1), 15-30.</p>
-          <p>[163] Safren, S. A. (2006). "Cognitive-behavioral approaches to ADHD treatment in adulthood." <em>The Journal of Clinical Psychiatry</em>, 67(Suppl 8), 46-50.</p>
-          <p>[164] Ramsay, J. R. (2010). <em>Nonmedication Treatments for Adult ADHD</em>. American Psychological Association.</p>
-          <p>[173] Faraone, S. V., et al. (2015). "Attention-deficit/hyperactivity disorder." <em>Nature Reviews Disease Primers</em>, 1, 15020.</p>
-          <p>[176] Cerrillo-Urbina, A. J., et al. (2015). "The effects of physical exercise in children with ADHD: A systematic review and meta-analysis." <em>Child: Care, Health and Development</em>, 41(6), 779-788.</p>
-          <p>[180] Medina, J. A., et al. (2010). "Exercise impact on sustained attention of ADHD children, methylphenidate effects." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 2(1), 49-58.</p>
-          <p>[182] Wigal, S. B., et al. (2013). "Exercise: Applications to childhood ADHD." <em>Journal of Attention Disorders</em>, 17(4), 279-290.</p>
-          <p>[184] Neeper, S. A., et al. (1995). "Exercise and brain neurotrophins." <em>Nature</em>, 373(6510), 109.</p>
-          <p>[186] Hillman, C. H., Erickson, K. I., & Kramer, A. F. (2008). "Be smart, exercise your heart: Exercise effects on brain and cognition." <em>Nature Reviews Neuroscience</em>, 9(1), 58-65.</p>
-          <p>[187] Ratey, J. J., & Loehr, J. E. (2011). "The positive impact of physical activity on cognition during adulthood." <em>Reviews in the Neurosciences</em>, 22(2), 171-185.</p>
-          <p>[189] Chang, Y. K., et al. (2012). "Effect of acute exercise on executive function in children with ADHD." <em>Archives of Clinical Neuropsychology</em>, 27(2), 225-237.</p>
-          <p>[191] Fedewa, A. L., & Ahn, S. (2011). "The effects of physical activity and physical fitness on children's achievement and cognitive outcomes." <em>Research Quarterly for Exercise and Sport</em>, 82(3), 521-535.</p>
-          <p>[195] Mahar, M. T., et al. (2006). "Effects of a classroom-based program on physical activity and on-task behavior." <em>Medicine & Science in Sports & Exercise</em>, 38(12), 2086-2094.</p>
-          <p>[198] Cortese, S., et al. (2009). "Sleep in children with ADHD: Meta-analysis of subjective and objective studies." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 48(9), 894-908.</p>
-          <p>[199] Sobanski, E., et al. (2008). "Sleep in adults with ADHD before and during treatment with methylphenidate." <em>Sleep</em>, 31(3), 375-381.</p>
-          <p>[203] Gruber, R., et al. (2011). "Impact of sleep extension and restriction on children's emotional lability and impulsivity." <em>Pediatrics</em>, 130(5), e1155-e1161.</p>
-          <p>[205] Fallone, G., et al. (2005). "Experimental restriction of sleep opportunity in children: Effects on teacher ratings." <em>Sleep</em>, 28(12), 1561-1567.</p>
-          <p>[207] Corkum, P., Tannock, R., & Moldofsky, H. (1998). "Sleep disturbances in children with ADHD." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 37(6), 637-646.</p>
-          <p>[209] Chervin, R. D., et al. (1997). "Symptoms of sleep disorders, inattention, and hyperactivity in children." <em>Sleep</em>, 20(12), 1185-1192.</p>
-          <p>[213] Cajochen, C., et al. (2011). "Evening exposure to LED-backlit computer screen affects circadian physiology and cognitive performance." <em>Journal of Applied Physiology</em>, 110(5), 1432-1438.</p>
-          <p>[223] Bloch, M. H., & Qawasmi, A. (2011). "Omega-3 fatty acid supplementation for the treatment of children with ADHD symptomatology." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 50(10), 991-1000.</p>
-          <p>[230] Nigg, J. T., et al. (2012). "Meta-analysis of ADHD symptoms, restriction diet, and synthetic food color additives." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 51(1), 86-97.</p>
-          <p>[240] Zylowska, L., et al. (2008). "Mindfulness meditation training in adults and adolescents with ADHD." <em>Journal of Attention Disorders</em>, 11(6), 737-746.</p>
-          <p>[241] Cairncross, M., & Miller, C. J. (2016). "The effectiveness of mindfulness-based therapies for ADHD." <em>Journal of Attention Disorders</em>, 24(5), 627-643.</p>
-          <p>[242] Mitchell, J. T., et al. (2017). "A pilot trial of mindfulness meditation training for ADHD in adulthood." <em>Journal of Attention Disorders</em>, 21(13), 1105-1120.</p>
-          <p>[245] van de Weijer-Bergsma, E., et al. (2012). "The effectiveness of mindfulness training on behavioral problems and attentional functioning in adolescents with ADHD." <em>Journal of Child and Family Studies</em>, 21(5), 775-787.</p>
-          <p>[279] Shaw, P., Stringaris, A., Nigg, J., & Leibenluft, E. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</p>
-        </div>
-      </section>
 
       <div className="mt-8">
         <a 
