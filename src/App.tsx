@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams, useNavigate } from 'react-router-dom';
-import { Sidebar } from './src/components/Sidebar';
-import { ArticleContent } from './src/components/ArticleContent';
-import { Header } from './src/components/Header';
-import { DonationBanner } from './src/components/DonationBanner';
-import { Footer } from './src/components/Footer';
+import { Sidebar } from './components/Sidebar';
+import { ArticleContent } from './components/ArticleContent';
+import { Header } from './components/Header';
+import { DonationBanner } from './components/DonationBanner';
+import { Footer } from './components/Footer';
 import { Search, Menu, X } from 'lucide-react';
 
 function AppContent() {
@@ -26,6 +26,16 @@ function AppContent() {
 
   // Set favicon and page title
   useEffect(() => {
+    // Update favicon
+    let link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    link.type = 'image/png';
+    link.href = '/images/favicon.png';
+
     // Update page title
     document.title = 'Brainopedia - Encyclopedia of Neurodivergent Conditions';
   }, []);
@@ -36,6 +46,7 @@ function AppContent() {
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+        onSearchSelect={(articleId) => setCurrentArticle(articleId)}
       />
       
       <DonationBanner onNavigateToDonate={() => setCurrentArticle('donate')} />
