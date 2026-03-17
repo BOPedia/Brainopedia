@@ -50,9 +50,9 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
           <p className="mb-4">
             Many people with ADHD excel at creative thinking, making unexpected connections, and approaching 
             problems from novel angles. Research demonstrates that individuals with ADHD show enhanced 
-            divergent thinking and generate more original ideas in creative tasks. This can be a significant 
+            divergent thinking and generate more original ideas in creative tasks.<sup>[1]</sup> This can be a significant 
             asset in creative fields and entrepreneurship. Studies suggest that the disinhibition and cognitive 
-            flexibility associated with ADHD may contribute to creative achievement.
+            flexibility associated with ADHD may contribute to creative achievement.<sup>[2]</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hyperfocus</h3>
@@ -79,6 +79,25 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
             unexpectedly. This adaptability and problem-solving under pressure can be invaluable in fast-paced 
             or unpredictable environments.
           </p>
+        </div>
+
+        {/* Overview & Strengths Tab References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+
+          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+          <div className="text-sm space-y-2">
+            <p>[1] White, H. A., & Shah, P. (2006). "Uninhibited imaginations: Creativity in adults with attention-deficit/hyperactivity disorder." <em>Personality and Individual Differences</em>, 40(6), 1121-1131.</p>
+            <p>[2] White, H. A., & Shah, P. (2011). "Creative style and achievement in adults with attention-deficit/hyperactivity disorder." <em>Personality and Individual Differences</em>, 50(5), 673-677.</p>
+          </div>
+
+          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Sedgwick, J. A., Merwood, A., & Asherson, P. (2019). "The positive aspects of attention deficit hyperactivity disorder: A qualitative investigation of successful adults with ADHD." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 11(3), 241-253.</p>
+            <p>Antshel, K. M. (2018). "Attention-deficit/hyperactivity disorder (ADHD) and entrepreneurship." <em>Academy of Management Perspectives</em>, 32(2), 243-265.</p>
+            <p>Archer, D. (2014). <em>The ADHD Advantage: What You Thought Was a Diagnosis May Be Your Greatest Strength</em>. Avery.</p>
+            <p>Brown, T. E. (2013). <em>A New Understanding of ADHD in Children and Adults: Executive Function Impairments</em>. Routledge.</p>
+          </div>
         </div>
       </>
     );
@@ -138,6 +157,20 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
           <li className="mb-2">Work with a financial advisor or accountability partner</li>
           <li className="mb-2">Delete shopping apps to add friction to impulse purchases</li>
         </ul>
+
+        {/* Daily Life & Routines Tab References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+
+          <h3 className="text-[#0c264d] font-semibold mb-2">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Dawson, P., & Guare, R. (2009). <em>Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential</em>. Guilford Press.</p>
+            <p>Ratey, N. (2008). <em>The Disorganized Mind: Coaching Your ADHD Brain to Take Control of Your Time, Tasks, and Talents</em>. St. Martin's Press.</p>
+            <p>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</p>
+            <p>Barkley, R. A., & Murphy, K. R. (2006). <em>Attention-Deficit Hyperactivity Disorder: A Clinical Workbook</em> (3rd ed.). Guilford Press.</p>
+            <p>Biederman, J., et al. (2012). "Adult outcome of attention-deficit/hyperactivity disorder: A controlled 16-year follow-up study." <em>Journal of Clinical Psychiatry</em>, 73(7), 941-950.</p>
+          </div>
+        </div>
       </div>
     );
   }
@@ -172,7 +205,7 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
         <p className="mb-4">
           Social relationships can be challenging for individuals with ADHD due to difficulties with social cues, 
           impulsivity, and maintaining contact. Research shows that children and adults with ADHD often 
-          experience social rejection and have fewer close friendships. Strategies for maintaining friendships include:
+          experience social rejection and have fewer close friendships.<sup>[1]</sup> Strategies for maintaining friendships include:
         </p>
         <ul className="list-disc ml-6 mb-4">
           <li className="mb-2">Set reminders to reach out to friends regularly</li>
@@ -193,7 +226,7 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
         <p className="mb-4">
           Parents with ADHD face unique challenges and bring unique strengths to parenting. 
           Research shows that parental ADHD symptoms are associated with differences in parenting 
-          behaviors, including more harsh and lax parenting and slightly less positive parenting. However, 
+          behaviors, including more harsh and lax parenting and slightly less positive parenting.<sup>[2]</sup> However, 
           these associations are relatively small, and many parents with ADHD successfully raise healthy, 
           well-adjusted children with the right strategies and support.
         </p>
@@ -209,6 +242,25 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
           <li className="mb-2">Bring creativity, playfulness, and energy to parenting</li>
           <li className="mb-2">Seek treatment for your own ADHD to be at your best</li>
         </ul>
+
+        {/* Relationships Tab References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+
+          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+          <div className="text-sm space-y-2">
+            <p>[1] Hoza, B. (2007). "Peer functioning in children with ADHD." <em>Journal of Pediatric Psychology</em>, 32(6), 655-663.</p>
+            <p>[2] Johnston, C., Mash, E. J., Miller, N., & Ninowski, J. E. (2012). "Parenting in adults with attention-deficit/hyperactivity disorder (ADHD)." <em>Clinical Psychology Review</em>, 32(4), 215-228.</p>
+          </div>
+
+          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
+            <p>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</p>
+            <p>Orlov, M. (2010). <em>The ADHD Effect on Marriage: Understand and Rebuild Your Relationship in Six Steps</em>. Specialty Press.</p>
+            <p>Chronis-Tuscano, A., et al. (2011). "Very early predictors of adolescent depression and suicide attempts in children with attention-deficit/hyperactivity disorder." <em>Archives of General Psychiatry</em>, 68(12), 1267-1275.</p>
+          </div>
+        </div>
       </div>
     );
   }
@@ -253,6 +305,20 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
           <li className="mb-2">Play to your strengths and delegate or outsource weaker areas</li>
           <li className="mb-2">Consider disclosing ADHD to access formal supports</li>
         </ul>
+
+        {/* Education & Career Tab References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+
+          <h3 className="text-[#0c264d] font-semibold mb-2">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
+            <p>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</p>
+            <p>Nadeau, K. G. (2005). "Career choices and workplace challenges for individuals with ADHD." <em>Journal of Clinical Psychology</em>, 61(5), 549-563.</p>
+            <p>DuPaul, G. J., & Stoner, G. (2014). <em>ADHD in the Schools: Assessment and Intervention Strategies</em> (3rd ed.). Guilford Press.</p>
+            <p>Biederman, J., et al. (2005). "Functional impairments in adults with self-reports of diagnosed ADHD: A controlled study of 1001 adults in the community." <em>The Journal of Clinical Psychiatry</em>, 67(4), 524-540.</p>
+          </div>
+        </div>
       </div>
     );
   }
@@ -300,7 +366,7 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Co-occurring Mental Health Conditions</h3>
           <p className="mb-4">
             ADHD frequently co-occurs with other mental health conditions, with research showing that approximately 
-            two-thirds of individuals with ADHD have at least one comorbid psychiatric disorder:
+            two-thirds of individuals with ADHD have at least one comorbid psychiatric disorder:<sup>[1]</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Anxiety disorders (25-40% of individuals with ADHD)</li>
@@ -335,6 +401,24 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
             <li className="mb-2">Practice self-compassion and acknowledge the effort you put in</li>
             <li className="mb-2">Seek therapy to address trauma from past negative experiences</li>
           </ul>
+        </div>
+
+        {/* Mental Health & Stigma Tab References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+
+          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+          <div className="text-sm space-y-2">
+            <p>[1] Kessler, R. C., Adler, L., Barkley, R., et al. (2006). "The prevalence and correlates of adult ADHD in the United States: Results from the National Comorbidity Survey Replication." <em>American Journal of Psychiatry</em>, 163(4), 716-723.</p>
+          </div>
+
+          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
+            <p>Hinshaw, S. P. (2018). "Attention deficit hyperactivity disorder (ADHD): Controversy, developmental mechanisms, and multiple levels of analysis." <em>Annual Review of Clinical Psychology</em>, 14, 291-316.</p>
+            <p>Safren, S. A., et al. (2005). "Cognitive-behavioral therapy for ADHD in medication-treated adults with continued symptoms." <em>Behaviour Research and Therapy</em>, 43(7), 831-842.</p>
+            <p>Ramsay, J. R., & Rostain, A. L. (2008). <em>Cognitive-Behavioral Therapy for Adult ADHD: An Integrative Psychosocial and Medical Approach</em>. Routledge.</p>
+          </div>
         </div>
       </div>
     );
@@ -400,6 +484,19 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
             yourself as you discover what works for you, and don't hesitate to seek support from healthcare 
             providers, coaches, therapists, and community when you need it.
           </p>
+        </div>
+
+        {/* Community & Future Tab References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+
+          <h3 className="text-[#0c264d] font-semibold mb-2">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Hallowell, E. M., & Ratey, J. J. (2011). <em>Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder</em> (Rev. ed.). Anchor Books.</p>
+            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
+            <p>CHADD (Children and Adults with Attention-Deficit/Hyperactivity Disorder). <em>National Resource Center on ADHD</em>. https://chadd.org</p>
+            <p>Armstrong, T. (2010). <em>Neurodiversity: Discovering the Extraordinary Gifts of Autism, ADHD, Dyslexia, and Other Brain Differences</em>. Da Capo Lifelong Books.</p>
+          </div>
         </div>
       </div>
     );
@@ -491,32 +588,6 @@ export function ADHDLiving({ setCurrentArticle }: ADHDLivingProps) {
           All About ADHD
         </button>
       </div>
-
-      <section className="mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <p>[1] Park, J. L., Hudec, K. L., & Johnston, C. (2017). "Parental ADHD symptoms and parenting behaviors: A meta-analytic review." <em>Clinical Psychology Review</em>, 55, 25-39.</p>
-          <p>[2] Biederman, J., et al. (2012). "Adult outcome of attention-deficit/hyperactivity disorder: A controlled 16-year follow-up study." <em>Journal of Clinical Psychiatry</em>, 73(7), 941-950.</p>
-          <p>[3] Klein, R. G., et al. (2012). "Clinical and functional outcome of childhood attention-deficit/hyperactivity disorder 33 years later." <em>Archives of General Psychiatry</em>, 69(12), 1295-1303.</p>
-          <p>[4] Sedgwick, J. A., Merwood, A., & Asherson, P. (2019). "The positive aspects of attention deficit hyperactivity disorder: A qualitative investigation of successful adults with ADHD." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 11(3), 241-253.</p>
-          <p>[5] Young, S., Bramham, J., Gray, K., & Rose, E. (2008). "The experience of receiving a diagnosis and treatment of ADHD in adulthood: A qualitative study of clinically referred patients using interpretative phenomenological analysis." <em>Journal of Attention Disorders</em>, 11(4), 493-503.</p>
-          <p>[6] Matheson, L., Asherson, P., Wong, I. C., et al. (2013). "Adult ADHD patient experiences of impairment, service provision and clinical management in England: A qualitative study." <em>BMC Health Services Research</em>, 13, 184.</p>
-          <p>[7] Barkley, R. A., & Murphy, K. R. (2006). <em>Attention-Deficit Hyperactivity Disorder: A Clinical Workbook</em> (3rd ed.). Guilford Press.</p>
-          <p>[8] Brown, T. E. (2013). <em>A New Understanding of ADHD in Children and Adults: Executive Function Impairments</em>. Routledge.</p>
-          <p>[9] Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</p>
-          <p>[10] Safren, S. A., Sprich, S., Perlman, C., & Otto, M. W. (2005). <em>Mastering Your Adult ADHD: A Cognitive-Behavioral Treatment Program, Therapist Guide</em>. Oxford University Press.</p>
-          <p>[11] Harrison, A. G., Armstrong, I. T., Harrison, L. E., Lange, R. T., & Iverson, G. L. (2014). "Comparing psychoeducational assessment screening procedures for university students requesting accommodations." <em>Canadian Journal of School Psychology</em>, 29(1), 5-21.</p>
-          <p>[12] DuPaul, G. J., & Stoner, G. (2014). <em>ADHD in the Schools: Assessment and Intervention Strategies</em> (3rd ed.). Guilford Press.</p>
-          <p>[13] CHADD. (2023). <em>About ADHD</em>. Children and Adults with Attention-Deficit/Hyperactivity Disorder. Retrieved from www.chadd.org</p>
-          <p>[14] Attention Deficit Disorder Association. (2023). <em>Adult ADHD Toolkit</em>. Retrieved from add.org</p>
-          <p>[15] Hinshaw, S. P. (2018). "Attention deficit hyperactivity disorder (ADHD): Controversy, developmental mechanisms, and multiple levels of analysis." <em>Annual Review of Clinical Psychology</em>, 14, 291-316.</p>
-          <p>[16] Faraone, S. V., et al. (2015). "Attention-deficit/hyperactivity disorder." <em>Nature Reviews Disease Primers</em>, 1, 15020.</p>
-          <p>[17] Dawson, P., & Guare, R. (2009). <em>Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential</em>. Guilford Press.</p>
-          <p>[18] Ratey, N. (2008). <em>The Disorganized Mind: Coaching Your ADHD Brain to Take Control of Your Time, Tasks, and Talents</em>. St. Martin's Press.</p>
-          <p>[19] Antshel, K. M. (2018). "Attention-deficit/hyperactivity disorder (ADHD) and entrepreneurship." <em>Academy of Management Perspectives</em>, 32(2), 243-265.</p>
-          <p>[20] Archer, D. (2014). <em>The ADHD Advantage: What You Thought Was a Diagnosis May Be Your Greatest Strength</em>. Avery.</p>
-        </div>
-      </section>
     </article>
   );
 }
