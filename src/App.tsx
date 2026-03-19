@@ -41,7 +41,7 @@ function AppContent() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#2abcd4]">
+    <div className="min-h-screen bg-[#0A9DC4]">
       <Header 
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
