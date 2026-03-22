@@ -1,3 +1,5 @@
+import { Clock, Eye, Target, Star, MessageSquare, Dna, Microscope, Zap, Ear, Droplets } from 'lucide-react';
+
 export function DiagnosticProcess() {
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
@@ -28,7 +30,7 @@ export function DiagnosticProcess() {
                 <p>• M-CHAT-R/F and parent questionnaires<sup>[7]</sup></p>
               </div>
               <div className="mt-3 bg-[#0A9DC4]/10 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
-                🕐 Brief (10-20 min)
+                <Clock className="inline w-3 h-3 mr-1" /> Brief (10-20 min)
               </div>
             </div>
             {/* Arrow for desktop */}
@@ -51,7 +53,7 @@ export function DiagnosticProcess() {
                 <p>• Medical evaluation for co-occurring conditions<sup>[10]</sup></p>
               </div>
               <div className="mt-3 bg-[#ffd166]/20 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
-                🕐 Several hours across visits
+                <Clock className="inline w-3 h-3 mr-1" /> Several hours across visits
               </div>
             </div>
             {/* Arrow for desktop */}
@@ -74,7 +76,7 @@ export function DiagnosticProcess() {
                 <p>• Longitudinal data over time<sup>[12]</sup></p>
               </div>
               <div className="mt-3 bg-[#10b981]/10 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
-                🕐 Multi-session, weeks to months
+                <Clock className="inline w-3 h-3 mr-1" /> Multi-session, weeks to months
               </div>
             </div>
           </div>
@@ -97,19 +99,19 @@ export function DiagnosticProcess() {
             </div>
             <div className="p-4 text-sm space-y-3">
               <div className="flex items-start gap-2">
-                <span className="text-[#0A9DC4] mt-0.5">👁️</span>
+                <Eye className="w-4 h-4 text-[#0A9DC4] mt-0.5 shrink-0" />
                 <div><strong>Type:</strong> Direct observation</div>
               </div>
               <div className="flex items-start gap-2">
-                <span className="text-[#0A9DC4] mt-0.5">🎯</span>
+                <Target className="w-4 h-4 text-[#0A9DC4] mt-0.5 shrink-0" />
                 <div><strong>Method:</strong> Semi-structured play and interaction tasks</div>
               </div>
               <div className="flex items-start gap-2">
-                <span className="text-[#0A9DC4] mt-0.5">🕐</span>
+                <Clock className="w-4 h-4 text-[#0A9DC4] mt-0.5 shrink-0" />
                 <div><strong>Duration:</strong> 40-60 minutes</div>
               </div>
               <div className="flex items-start gap-2">
-                <span className="text-[#0A9DC4] mt-0.5">⭐</span>
+                <Star className="w-4 h-4 text-[#0A9DC4] mt-0.5 shrink-0" />
                 <div><strong>Note:</strong> Most widely used observational assessment<sup>[14]</sup></div>
               </div>
             </div>
@@ -123,19 +125,19 @@ export function DiagnosticProcess() {
             </div>
             <div className="p-4 text-sm space-y-3">
               <div className="flex items-start gap-2">
-                <span className="text-[#ffd166] mt-0.5">💬</span>
+                <MessageSquare className="w-4 h-4 text-[#ffd166] mt-0.5 shrink-0" />
                 <div><strong>Type:</strong> Parent or caregiver interview</div>
               </div>
               <div className="flex items-start gap-2">
-                <span className="text-[#ffd166] mt-0.5">🎯</span>
+                <Target className="w-4 h-4 text-[#ffd166] mt-0.5 shrink-0" />
                 <div><strong>Method:</strong> In-depth questions about social, communication, and repetitive behaviors</div>
               </div>
               <div className="flex items-start gap-2">
-                <span className="text-[#ffd166] mt-0.5">🕐</span>
+                <Clock className="w-4 h-4 text-[#ffd166] mt-0.5 shrink-0" />
                 <div><strong>Duration:</strong> 1.5-3 hours</div>
               </div>
               <div className="flex items-start gap-2">
-                <span className="text-[#ffd166] mt-0.5">⭐</span>
+                <Star className="w-4 h-4 text-[#ffd166] mt-0.5 shrink-0" />
                 <div><strong>Note:</strong> Comprehensive developmental history<sup>[15]</sup></div>
               </div>
             </div>
@@ -211,7 +213,7 @@ export function DiagnosticProcess() {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           <div className="bg-gradient-to-br from-[#e0f2fe] to-white rounded-lg p-4 border border-[#0A9DC4]/20">
-            <div className="text-2xl mb-2">🧬</div>
+            <Dna className="w-6 h-6 text-[#0A9DC4] mb-2" />
             <div className="font-bold text-[#0c264d] mb-1">Genetic Testing</div>
             <div className="text-sm">
               Chromosomal microarray to identify genetic causes. Recommended for all with ASD diagnosis. 
@@ -220,7 +222,7 @@ export function DiagnosticProcess() {
           </div>
 
           <div className="bg-gradient-to-br from-[#fef3c7] to-white rounded-lg p-4 border border-[#ffd166]/30">
-            <div className="text-2xl mb-2">🔬</div>
+            <Microscope className="w-6 h-6 text-[#d97706] mb-2" />
             <div className="font-bold text-[#0c264d] mb-1">Metabolic Screening</div>
             <div className="text-sm">
               If specific clinical features suggest metabolic disorder (regression, seizures, dysmorphic features).
@@ -228,7 +230,7 @@ export function DiagnosticProcess() {
           </div>
 
           <div className="bg-gradient-to-br from-[#d1fae5] to-white rounded-lg p-4 border border-[#10b981]/20">
-            <div className="text-2xl mb-2">⚡</div>
+            <Zap className="w-6 h-6 text-[#10b981] mb-2" />
             <div className="font-bold text-[#0c264d] mb-1">EEG</div>
             <div className="text-sm">
               Electroencephalogram if seizures suspected or developmental regression occurred.<sup>[21]</sup>
@@ -236,7 +238,7 @@ export function DiagnosticProcess() {
           </div>
 
           <div className="bg-gradient-to-br from-[#fce7f3] to-white rounded-lg p-4 border border-[#f472b6]/20">
-            <div className="text-2xl mb-2">👂</div>
+            <Ear className="w-6 h-6 text-[#f472b6] mb-2" />
             <div className="font-bold text-[#0c264d] mb-1">Hearing Test</div>
             <div className="text-sm">
               Essential to rule out hearing loss as cause of language delay or reduced response to name.
@@ -244,7 +246,7 @@ export function DiagnosticProcess() {
           </div>
 
           <div className="bg-gradient-to-br from-[#ede9fe] to-white rounded-lg p-4 border border-[#8b5cf6]/20">
-            <div className="text-2xl mb-2">🩸</div>
+            <Droplets className="w-6 h-6 text-[#8b5cf6] mb-2" />
             <div className="font-bold text-[#0c264d] mb-1">Lead Screening</div>
             <div className="text-sm">
               If pica (eating non-food items) or environmental lead exposure is present.
