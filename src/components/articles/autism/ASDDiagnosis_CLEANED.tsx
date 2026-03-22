@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ASDReferences, AuDHDReferences } from './ASDReferences';
 import { DSM5Criteria } from './asd-diagnosis/DSM5Criteria';
 import { DiagnosticProcess } from './asd-diagnosis/DiagnosticProcess';
 import { WhoCanDiagnose } from './asd-diagnosis/WhoCanDiagnose';
@@ -89,13 +88,6 @@ export function ASDDiagnosis({ setCurrentArticle }: ASDDiagnosisProps) {
           All About Autism
         </button>
       </div>
-
-      <section className="mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          {activeTab === 'audhd' ? <AuDHDReferences /> : <ASDReferences />}
-        </div>
-      </section>
 
     </article>
   );

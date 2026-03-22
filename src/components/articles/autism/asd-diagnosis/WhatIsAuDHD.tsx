@@ -304,12 +304,23 @@ export function WhatIsAuDHD() {
         </ul>
       </div>
 
-      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-        <p className="text-sm">
-          <strong>Bottom Line:</strong> While "AuDHD" isn't an official diagnosis, the co-occurrence of autism 
-          and ADHD is well-documented, common, and clinically significant. Individuals experiencing both conditions 
-          benefit from comprehensive assessment and integrated support addressing both aspects of their neurodivergence.
-        </p>
+      {/* References */}
+      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+        <div className="text-sm space-y-2">
+          <p>[1] Antshel, K. M., & Russo, N. (2019). "Autism spectrum disorders and ADHD: Overlapping phenomenology, diagnostic issues, and treatment considerations." <em>Current Psychiatry Reports</em>, 21(5), 34.</p>
+          <p>[2] Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <em>Frontiers in Human Neuroscience</em>, 8, 268.</p>
+          <p>[3] Jang, J., Matson, J. L., Williams, L. W., et al. (2013). "Rates of comorbid symptoms in children with ASD, ADHD, and comorbid ASD and ADHD." <em>Research in Developmental Disabilities</em>, 34(8), 2369-2378.</p>
+          <p>[4] Mulligan, A., Anney, R. J., O'Regan, M., et al. (2009). "Autism symptoms in attention-deficit/hyperactivity disorder: A familial trait which correlates with conduct, oppositional defiant, language and motor disorders." <em>Journal of Autism and Developmental Disorders</em>, 39(2), 197-209.</p>
+        </div>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+        <div className="text-sm space-y-2">
+          <p>American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
+          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+        </div>
       </div>
     </div>
   );

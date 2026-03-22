@@ -69,7 +69,7 @@ export function WhoCanDiagnose() {
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Multidisciplinary Team Approach</h3>
         <p className="text-sm mb-4">
-          The best autism evaluations often involve a team of professionals:<sup>[4][11]</sup>
+          The best autism evaluations often involve a team of professionals:
         </p>
         
         <div className="space-y-3">
@@ -184,6 +184,19 @@ export function WhoCanDiagnose() {
           <strong>Cost:</strong> Evaluations can cost $1,500-$5,000 if not covered by insurance. Check your insurance 
           benefits. School-based evaluations are free but may not be as comprehensive as clinical evaluations.
         </p>
+      </div>
+
+      {/* References */}
+      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        
+        <p className="text-sm mb-2"><em>No inline citations for this tab.</em></p>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+        <div className="text-sm space-y-2">
+          <p>American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
+          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+        </div>
       </div>
     </div>
   );

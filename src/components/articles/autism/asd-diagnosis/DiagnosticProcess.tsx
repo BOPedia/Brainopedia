@@ -25,9 +25,9 @@ export function DiagnosticProcess() {
                 <div className="font-bold text-[#0c264d]">Initial Screening</div>
               </div>
               <div className="text-sm space-y-1">
-                <p>• General screening at 9, 18, 24 or 30 months<sup>[5][6]</sup></p>
+                <p>• General screening at 9, 18, 24 or 30 months<sup>[2]</sup></p>
                 <p>• Autism-specific screening at 18 and 24 months</p>
-                <p>• M-CHAT-R/F and parent questionnaires<sup>[7]</sup></p>
+                <p>• M-CHAT-R/F and parent questionnaires</p>
               </div>
               <div className="mt-3 bg-[#0A9DC4]/10 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
                 <Clock className="inline w-3 h-3 mr-1" /> Brief (10-20 min)
@@ -47,10 +47,10 @@ export function DiagnosticProcess() {
                 <div className="font-bold text-[#0c264d]">Developmental-Behavioral Evaluation</div>
               </div>
               <div className="text-sm space-y-1">
-                <p>• Detailed parent interview about milestones<sup>[8][9]</sup></p>
+                <p>• Detailed parent interview about milestones</p>
                 <p>• Direct observation in various settings</p>
                 <p>• Standardized assessment tools</p>
-                <p>• Medical evaluation for co-occurring conditions<sup>[10]</sup></p>
+                <p>• Medical evaluation for co-occurring conditions</p>
               </div>
               <div className="mt-3 bg-[#ffd166]/20 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
                 <Clock className="inline w-3 h-3 mr-1" /> Several hours across visits
@@ -70,10 +70,10 @@ export function DiagnosticProcess() {
                 <div className="font-bold text-[#0c264d]">Comprehensive Diagnostic Evaluation</div>
               </div>
               <div className="text-sm space-y-1">
-                <p>• Multidisciplinary team approach<sup>[11]</sup></p>
+                <p>• Multidisciplinary team approach</p>
                 <p>• Multiple settings (clinic, school, home)</p>
                 <p>• Collateral info from parents, teachers</p>
-                <p>• Longitudinal data over time<sup>[12]</sup></p>
+                <p>• Longitudinal data over time</p>
               </div>
               <div className="mt-3 bg-[#10b981]/10 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
                 <Clock className="inline w-3 h-3 mr-1" /> Multi-session, weeks to months
@@ -87,7 +87,7 @@ export function DiagnosticProcess() {
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Gold Standard Diagnostic Instruments</h3>
         <p className="text-sm mb-4">
-          These tools are considered the "gold standard" for autism diagnosis:<sup>[13]</sup>
+          These tools are considered the "gold standard" for autism diagnosis:<sup>[3]</sup>
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -112,7 +112,7 @@ export function DiagnosticProcess() {
               </div>
               <div className="flex items-start gap-2">
                 <Star className="w-4 h-4 text-[#0A9DC4] mt-0.5 shrink-0" />
-                <div><strong>Note:</strong> Most widely used observational assessment<sup>[14]</sup></div>
+                <div><strong>Note:</strong> Most widely used observational assessment<sup>[3]</sup></div>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export function DiagnosticProcess() {
               </div>
               <div className="flex items-start gap-2">
                 <Star className="w-4 h-4 text-[#ffd166] mt-0.5 shrink-0" />
-                <div><strong>Note:</strong> Comprehensive developmental history<sup>[15]</sup></div>
+                <div><strong>Note:</strong> Comprehensive developmental history</div>
               </div>
             </div>
           </div>
@@ -162,7 +162,7 @@ export function DiagnosticProcess() {
             <div className="text-xs text-[#0A9DC4] mb-2">Childhood Autism Rating Scale</div>
             <div className="text-sm">
               Brief rating scale based on observation. Rates 15 areas including relating to people, imitation, 
-              emotional response, body or object use, and more.<sup>[16]</sup>
+              emotional response, body or object use, and more.
             </div>
           </div>
 
@@ -174,7 +174,7 @@ export function DiagnosticProcess() {
             <div className="text-xs text-[#0A9DC4] mb-2">Social Communication Questionnaire</div>
             <div className="text-sm">
               Parent questionnaire screening tool. 40 yes or no questions covering social interaction, communication, 
-              and repetitive behaviors.<sup>[17]</sup>
+              and repetitive behaviors.
             </div>
           </div>
 
@@ -186,7 +186,7 @@ export function DiagnosticProcess() {
             <div className="text-xs text-[#0A9DC4] mb-2">Modified Checklist for Autism in Toddlers</div>
             <div className="text-sm">
               Free screening tool for toddlers (16-30 months). Parent questionnaire with follow-up interview. 
-              Widely used in pediatric practices.<sup>[7]</sup>
+              Widely used in pediatric practices.
             </div>
           </div>
 
@@ -208,7 +208,7 @@ export function DiagnosticProcess() {
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Medical and Genetic Testing</h3>
         <p className="text-sm mb-4">
-          While not required for diagnosis, testing may be recommended:<sup>[18]</sup>
+          While not required for diagnosis, testing may be recommended:
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -217,7 +217,7 @@ export function DiagnosticProcess() {
             <div className="font-bold text-[#0c264d] mb-1">Genetic Testing</div>
             <div className="text-sm">
               Chromosomal microarray to identify genetic causes. Recommended for all with ASD diagnosis. 
-              Identifies variants in ~10-20% of cases.<sup>[19][20]</sup>
+              Identifies variants in ~10-20% of cases.
             </div>
           </div>
 
@@ -233,7 +233,7 @@ export function DiagnosticProcess() {
             <Zap className="w-6 h-6 text-[#10b981] mb-2" />
             <div className="font-bold text-[#0c264d] mb-1">EEG</div>
             <div className="text-sm">
-              Electroencephalogram if seizures suspected or developmental regression occurred.<sup>[21]</sup>
+              Electroencephalogram if seizures suspected or developmental regression occurred.
             </div>
           </div>
 
@@ -261,6 +261,24 @@ export function DiagnosticProcess() {
           history, not blood tests or brain scans. The gold standard is ADOS-2 + ADI-R + clinical judgment by 
           experienced professionals. Medical testing helps rule out other conditions and identify co-occurring issues.
         </p>
+      </div>
+
+      {/* References */}
+      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+        <div className="text-sm space-y-2">
+          <p>[1] American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
+          <p>[2] Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <em>Pediatrics</em>, 136(Supplement 1), S1-S9.</p>
+          <p>[3] Lord, C., Rutter, M., DiLavore, P. C., Risi, S., Gotham, K., & Bishop, S. (2012). <em>Autism Diagnostic Observation Schedule, Second Edition (ADOS-2)</em>. Western Psychological Services.</p>
+        </div>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+        <div className="text-sm space-y-2">
+          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+          <p>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <em>The Lancet</em>, 383(9920), 896-910.</p>
+        </div>
       </div>
     </div>
   );

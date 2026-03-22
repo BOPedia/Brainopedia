@@ -7,7 +7,7 @@ export function AcrossLifespan() {
       
       <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
         <p className="text-sm">
-          <strong>Key Fact:</strong> Current autism prevalence is approximately 1 in 36 children.<sup>[26]</sup> 
+          <strong>Key Fact:</strong> Current autism prevalence is approximately 1 in 36 children. 
           Autism can be reliably diagnosed by age 2, but many individuals—especially girls, women, and those without 
           intellectual disability—are not diagnosed until adolescence or adulthood.
         </p>
@@ -18,7 +18,7 @@ export function AcrossLifespan() {
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Early Childhood (Under 3 Years)</h3>
         
         <p className="text-sm mb-3">
-          Autism can be reliably diagnosed by age 2, sometimes earlier:<sup>[22][23]</sup>
+          Autism can be reliably diagnosed by age 2, sometimes earlier:
         </p>
 
         <div className="space-y-3">
@@ -49,7 +49,7 @@ export function AcrossLifespan() {
             <div className="font-bold text-[#0c264d] mb-1">Why Early Diagnosis Matters</div>
             <div className="text-sm">
               Earlier diagnosis enables earlier intervention, which research shows can significantly improve outcomes. 
-              Early Intervention services (birth-3) provide support during critical developmental period.<sup>[1]</sup>
+              Early Intervention services (birth-3) provide support during critical developmental period.
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ export function AcrossLifespan() {
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">School Age (3-18 Years)</h3>
         
         <p className="text-sm mb-3">
-          Most autism diagnoses occur during this period:<sup>[24]</sup>
+          Most autism diagnoses occur during this period:
         </p>
 
         <div className="space-y-3">
@@ -81,7 +81,7 @@ export function AcrossLifespan() {
             <div className="font-bold text-[#0c264d] mb-1">Important Considerations</div>
             <div className="text-sm">
               Some children, particularly girls, may have developed coping strategies or "masking" that hide autistic 
-              traits.<sup>[25]</sup> This can delay diagnosis despite genuine struggles. Burnout from masking often 
+              traits.<sup>[1]</sup> This can delay diagnosis despite genuine struggles. Burnout from masking often 
               becomes apparent in middle school or high school.
             </div>
           </div>
@@ -109,7 +109,7 @@ export function AcrossLifespan() {
         </div>
 
         <p className="text-sm mb-3">
-          Increasing numbers of adults seek autism diagnosis:<sup>[27]</sup>
+          Increasing numbers of adults seek autism diagnosis:
         </p>
 
         <div className="space-y-3">
@@ -117,7 +117,7 @@ export function AcrossLifespan() {
             <div className="font-bold text-[#0c264d] mb-1">Barriers to Adult Diagnosis</div>
             <div className="text-sm">
               <ul className="ml-4 space-y-1">
-                <li>• Fewer specialists trained in adult autism assessment<sup>[28]</sup></li>
+                <li>• Fewer specialists trained in adult autism assessment</li>
                 <li>• Lack of adult-specific diagnostic tools</li>
                 <li>• Insurance coverage issues (some insurers don't cover adult autism evaluation)</li>
                 <li>• Misconception that autism only affects children</li>
@@ -131,7 +131,7 @@ export function AcrossLifespan() {
             <div className="text-sm">
               <ul className="ml-4 space-y-1">
                 <li>• Retrospective developmental history (parents may not be available or remember details)</li>
-                <li>• Learned compensation strategies mask traits<sup>[29]</sup></li>
+                <li>• Learned compensation strategies mask traits<sup>[1]</sup></li>
                 <li>• Co-occurring conditions (anxiety, depression) developed over years of struggling</li>
                 <li>• Adult life demands differ from childhood contexts</li>
               </ul>
@@ -142,7 +142,7 @@ export function AcrossLifespan() {
             <div className="font-bold text-[#0c264d] mb-1">Adapted Tools for Adults</div>
             <div className="text-sm">
               Some tools have been modified for adult populations. Clinical judgment by experienced professionals 
-              is crucial.<sup>[30]</sup> ADOS-2 includes a module for adults. Self-report measures like the AQ 
+              is crucial. ADOS-2 includes a module for adults. Self-report measures like the AQ 
               (Autism Quotient) can supplement assessment but don't replace comprehensive evaluation.
             </div>
           </div>
@@ -165,7 +165,7 @@ export function AcrossLifespan() {
             <div className="text-sm">
               Can provide profound clarity and relief, validation of lifelong struggles, access to accommodations 
               and services, connection to autistic community and identity, reframing of past experiences in neurodiversity-
-              affirming way.<sup>[31]</sup>
+              affirming way.
             </div>
           </div>
         </div>
@@ -178,6 +178,23 @@ export function AcrossLifespan() {
           community, and practice self-compassion. If you suspect you might be autistic, seeking evaluation is valid 
           at any age.
         </p>
+      </div>
+
+      {/* References */}
+      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+        <div className="text-sm space-y-2">
+          <p>[1] Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <em>Journal of Autism and Developmental Disorders</em>, 47(8), 2519-2534.</p>
+        </div>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+        <div className="text-sm space-y-2">
+          <p>Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <em>Pediatrics</em>, 136(Supplement 1), S1-S9.</p>
+          <p>Howlin, P., Goode, S., Hutton, J., & Rutter, M. (2004). "Adult outcome for children with autism." <em>Journal of Child Psychology and Psychiatry</em>, 45(2), 212-229.</p>
+          <p>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <em>The Lancet</em>, 383(9920), 896-910.</p>
+        </div>
       </div>
     </div>
   );

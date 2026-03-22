@@ -14,7 +14,7 @@ export function ChallengesDisparities() {
         
         <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-3 rounded mb-4">
           <p className="text-sm">
-            <strong>The Ratio:</strong> Approximately 3-4 males are diagnosed for every 1 female.<sup>[80]</sup> 
+            <strong>The Ratio:</strong> Approximately 3-4 males are diagnosed for every 1 female.<sup>[1]</sup> 
             However, this likely reflects diagnostic bias rather than true prevalence differences.
           </p>
         </div>
@@ -27,7 +27,7 @@ export function ChallengesDisparities() {
             </div>
             <div className="text-sm">
               Girls and women often mask or camouflage autistic traits more effectively than boys, leading to missed 
-              or delayed diagnosis.<sup>[34][35]</sup> This masking is exhausting and can lead to burnout, anxiety, 
+              or delayed diagnosis.<sup>[2]</sup> This masking is exhausting and can lead to burnout, anxiety, 
               and depression.
             </div>
           </div>
@@ -38,7 +38,7 @@ export function ChallengesDisparities() {
               Different Presentation
             </div>
             <div className="text-sm">
-              Autistic girls may show:<sup>[36][37]</sup>
+              Autistic girls may show:
               <ul className="ml-4 mt-1 space-y-1">
                 <li>• More subtle social difficulties (may have friends but relationships feel exhausting or confusing)</li>
                 <li>• Better superficial social skills (learned through observation and mimicry)</li>
@@ -70,7 +70,7 @@ export function ChallengesDisparities() {
         </h3>
         
         <p className="text-sm mb-4">
-          Significant disparities exist in autism diagnosis:<sup>[38][39]</sup>
+          Significant disparities exist in autism diagnosis:
         </p>
 
         <div className="space-y-3">
@@ -80,7 +80,7 @@ export function ChallengesDisparities() {
               Later Diagnosis for Minority Children
             </div>
             <div className="text-sm">
-              Black and Hispanic children are diagnosed on average 1-3 years later than white children.<sup>[39]</sup> 
+              Black and Hispanic children are diagnosed on average 1-3 years later than white children. 
               This delay means missed opportunities for early intervention during critical developmental periods.
             </div>
           </div>
@@ -92,7 +92,7 @@ export function ChallengesDisparities() {
             </div>
             <div className="text-sm">
               Minority children are more likely to be misdiagnosed with conduct disorder, ODD, or ADHD when autism 
-              is the actual diagnosis.<sup>[40][41]</sup> They're also more likely to go undiagnosed entirely.
+              is the actual diagnosis. They're also more likely to go undiagnosed entirely.
             </div>
           </div>
 
@@ -120,7 +120,7 @@ export function ChallengesDisparities() {
             <div className="text-sm">
               Cultural norms around eye contact, social interaction, emotional expression, and child-rearing practices 
               differ. Clinicians must be culturally competent to avoid misinterpreting culturally normative behaviors 
-              as autism (or vice versa).<sup>[42]</sup>
+              as autism (or vice versa).
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@ export function ChallengesDisparities() {
               Access to Diagnostic Services
             </div>
             <div className="text-sm">
-              Lower-income families have less access to specialist diagnostic services.<sup>[38]</sup> Private 
+              Lower-income families have less access to specialist diagnostic services. Private 
               evaluations are expensive ($2,000-$5,000+), and public options have long wait lists.
             </div>
           </div>
@@ -247,7 +247,7 @@ export function ChallengesDisparities() {
           Differential Diagnosis: Conditions to Rule Out
         </h3>
         <p className="text-sm mb-4">
-          Several conditions share features with autism and must be considered:<sup>[32]</sup>
+          Several conditions share features with autism and must be considered:
         </p>
         
         <div className="grid md:grid-cols-2 gap-3">
@@ -290,7 +290,7 @@ export function ChallengesDisparities() {
           Common Co-occurring Conditions
         </h3>
         <p className="text-sm mb-4">
-          Many autistic individuals have additional diagnoses:<sup>[22][43][44]</sup>
+          Many autistic individuals have additional diagnoses:
         </p>
         
         <div className="grid md:grid-cols-2 gap-3">
@@ -367,6 +367,23 @@ export function ChallengesDisparities() {
           late. This delays access to support, accommodations, and community. We need better clinician training, 
           culturally responsive tools, and awareness that autism looks different across different people.
         </p>
+      </div>
+
+      {/* References */}
+      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+        <div className="text-sm space-y-2">
+          <p>[1] Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 56(6), 466-474.</p>
+          <p>[2] Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <em>Journal of Autism and Developmental Disorders</em>, 47(8), 2519-2534.</p>
+        </div>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+        <div className="text-sm space-y-2">
+          <p>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <em>The Lancet</em>, 383(9920), 896-910.</p>
+          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+        </div>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ export function AfterDiagnosis() {
       
       <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
         <p className="text-sm">
-          <strong>Important:</strong> A diagnosis is a beginning, not an ending.<sup>[41]</sup> It's a doorway 
+          <strong>Important:</strong> A diagnosis is a beginning, not an ending. It's a doorway 
           to understanding, support, community, and self-advocacy.
         </p>
       </div>
@@ -23,7 +23,7 @@ export function AfterDiagnosis() {
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">Understanding and Clarity</div>
             <div className="text-sm">
-              Diagnosis provides an explanation for differences and challenges. "Now I understand why..."<sup>[42][46]</sup>
+              Diagnosis provides an explanation for differences and challenges. "Now I understand why..."
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export function AfterDiagnosis() {
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">Community Connection</div>
             <div className="text-sm">
-              Access to autistic community and identity. You're not alone—there's a whole community of people like you!<sup>[43][45]</sup>
+              Access to autistic community and identity. You're not alone—there's a whole community of people like you!
             </div>
           </div>
 
@@ -89,7 +89,7 @@ export function AfterDiagnosis() {
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">3. Evaluate Support Needs</div>
             <div className="text-sm">
-              What services or accommodations would help?<sup>[44]</sup> Not everyone needs the same supports. 
+              What services or accommodations would help? Not everyone needs the same supports. 
               Think about: speech therapy, occupational therapy, social skills support (if desired), mental health 
               support, sensory accommodations, etc.
             </div>
@@ -129,7 +129,7 @@ export function AfterDiagnosis() {
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Educational Planning (for Children)</h3>
         <p className="text-sm mb-4">
-          For children, diagnosis often triggers educational planning:<sup>[45][48]</sup>
+          For children, diagnosis often triggers educational planning:
         </p>
         
         <div className="space-y-2">
@@ -161,7 +161,7 @@ export function AfterDiagnosis() {
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Ongoing Diagnostic Research</h3>
         <p className="text-sm mb-4">
-          Research continues to improve diagnostic methods:<sup>[47][50][51]</sup>
+          Research continues to improve diagnostic methods:
         </p>
         
         <div className="space-y-2">
@@ -177,7 +177,7 @@ export function AfterDiagnosis() {
           </div>
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="text-sm">
-              <strong>• Subtyping:</strong> Identifying autism subgroups based on biology, not just behavior<sup>[48]</sup>
+              <strong>• Subtyping:</strong> Identifying autism subgroups based on biology, not just behavior
             </div>
           </div>
           <div className="border-l-2 border-[#2abcd4] pl-3">
@@ -199,22 +199,22 @@ export function AfterDiagnosis() {
 
         <p className="text-sm mt-4">
           Future diagnostic approaches should incorporate autistic perspectives and focus on supporting flourishing, 
-          not just identifying deficits.<sup>[49]</sup>
+          not just identifying deficits.
         </p>
       </div>
 
-      <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6">
-        <h3 className="text-[#0c264d] font-bold mb-3">Important Neurodiversity-Affirming Perspective</h3>
-        <p className="text-sm text-gray-700 mb-3">
-          Autism is a natural neurological variation, not a disease.<sup>[45][46]</sup> Diagnosis should lead to 
-          support and accommodation, not attempts to make autistic people "indistinguishable from their peers" or 
-          to eliminate autistic traits.
-        </p>
-        <p className="text-sm text-gray-700">
-          <strong>The goal is to help autistic individuals thrive as themselves</strong>—developing their strengths, 
-          accessing accommodations for challenges, and living authentic lives as autistic people. You don't need to 
-          be "fixed." You need to be understood, supported, and valued for who you are.
-        </p>
+      {/* References */}
+      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        
+        <p className="text-sm mb-2"><em>No inline citations for this tab.</em></p>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+        <div className="text-sm space-y-2">
+          <p>Kapp, S. K. (Ed.). (2020). <em>Autistic community and the neurodiversity movement: Stories from the frontline</em>. Palgrave Macmillan.</p>
+          <p>Pellicano, E., & den Houting, J. (2022). "Annual research review: Shifting from 'normal science' to neurodiversity in autism science." <em>Journal of Child Psychology and Psychiatry</em>, 63(4), 381-396.</p>
+          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+        </div>
       </div>
     </div>
   );

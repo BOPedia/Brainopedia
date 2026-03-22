@@ -6,13 +6,13 @@ export function DSM5Criteria() {
       <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
         <p className="text-sm">
           <strong>Important:</strong> There is no medical test for autism. Diagnosis is based on observation 
-          and assessment of characteristics and behaviors using the DSM-5 criteria.<sup>[2][3]</sup>
+          and assessment of characteristics and behaviors using the DSM-5 criteria.<sup>[1]</sup>
         </p>
       </div>
 
       <p className="mb-6">
         The DSM-5 (Diagnostic and Statistical Manual of Mental Disorders, 5th edition) provides the standard 
-        diagnostic criteria for autism spectrum disorder used by clinicians.<sup>[3]</sup> Autism is diagnosed 
+        diagnostic criteria for autism spectrum disorder used by clinicians.<sup>[1]</sup> Autism is diagnosed 
         when all criteria are met across two main domains: social communication and restricted/repetitive behaviors.
       </p>
 
@@ -21,7 +21,7 @@ export function DSM5Criteria() {
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Criterion A: Social Communication and Interaction</h3>
         <p className="text-sm mb-4">
           Persistent deficits in social communication and social interaction across multiple contexts, as manifested 
-          by <strong>ALL of the following</strong>:<sup>[3]</sup>
+          by <strong>ALL of the following</strong>:<sup>[1]</sup>
         </p>
         
         <div className="space-y-3">
@@ -56,7 +56,7 @@ export function DSM5Criteria() {
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Criterion B: Restricted, Repetitive Behaviors</h3>
         <p className="text-sm mb-4">
           Restricted, repetitive patterns of behavior, interests, or activities, as manifested by <strong>AT LEAST 
-          TWO of the following</strong>:<sup>[3]</sup>
+          TWO of the following</strong>:<sup>[1]</sup>
         </p>
         
         <div className="space-y-3">
@@ -130,6 +130,22 @@ export function DSM5Criteria() {
           in diverse ways with different levels of support needs. The diagnosis focuses on patterns, not checklists. 
           Two autistic people can present very differently while both meeting diagnostic criteria.
         </p>
+      </div>
+
+      {/* References */}
+      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+        <div className="text-sm space-y-2">
+          <p>[1] American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
+        </div>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+        <div className="text-sm space-y-2">
+          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+          <p>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <em>The Lancet</em>, 383(9920), 896-910.</p>
+        </div>
       </div>
     </div>
   );

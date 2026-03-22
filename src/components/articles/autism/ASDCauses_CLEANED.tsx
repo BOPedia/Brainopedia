@@ -1,6 +1,5 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useState } from 'react';
-import { ASDReferences } from './ASDReferences';
 
 interface ASDCausesProps {
   setCurrentArticle?: (article: string) => void;
@@ -42,7 +41,7 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetic Factors</h2>
         
         <p className="mb-6">
-          Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup>[78]</sup> 
+          Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup>[1]</sup> 
           However, autism genetics are complex and involve many genes rather than a single "autism gene."
         </p>
 
@@ -57,11 +56,11 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="border-l-2 border-[#2abcd4] pl-3">
                 <div className="font-bold text-[#0c264d] mb-1">Twin Studies</div>
-                <div className="text-sm">Identical twins have 60-90% concordance for autism, compared to 0-30% for fraternal twins<sup>[79]</sup></div>
+                <div className="text-sm">Identical twins have 60-90% concordance for autism, compared to 0-30% for fraternal twins<sup>[2]</sup></div>
               </div>
               <div className="border-l-2 border-[#2abcd4] pl-3">
                 <div className="font-bold text-[#0c264d] mb-1">Recurrence Risk</div>
-                <div className="text-sm">Families with one autistic child have approximately a 20% chance of having another autistic child<sup>[84]</sup></div>
+                <div className="text-sm">Families with one autistic child have approximately a 20% chance of having another autistic child<sup>[3]</sup></div>
               </div>
             </div>
             
@@ -84,7 +83,7 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
           <div className="space-y-3">
             <div className="border-l-2 border-[#2abcd4] pl-3">
               <div className="font-bold text-[#0c264d] mb-1">Complex Genetic Architecture</div>
-              <div className="text-sm">A comprehensive whole-genome sequencing study of multiplex families identified 152 genes associated with autism risk when combined with other studies<sup>[85]</sup></div>
+              <div className="text-sm">A comprehensive whole-genome sequencing study of multiplex families identified 152 genes associated with autism risk when combined with other studies<sup>[4]</sup></div>
             </div>
             <div className="border-l-2 border-[#2abcd4] pl-3">
               <div className="font-bold text-[#0c264d] mb-1">Common Variants</div>
@@ -107,14 +106,14 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
           <p className="mb-4 text-sm">
             <strong>De novo mutations</strong> are genetic changes that appear for the first time in a child and are not inherited 
             from either parent. These spontaneous mutations occur during the formation of reproductive cells or early embryonic development. 
-            Research shows that de novo mutations play a significant role in autism, particularly in families with no previous history of autism.<sup>[81]</sup>
+            Research shows that de novo mutations play a significant role in autism, particularly in families with no previous history of autism.<sup>[5]</sup>
           </p>
 
           <div className="bg-[#f0f9ff] p-4 rounded-md mb-4">
             <h4 className="font-bold text-[#0c264d] mb-2 text-base">Key Findings from Whole Genome Sequencing Research</h4>
             <p className="text-sm mb-3">
               A comprehensive study using whole genome sequencing (WGS) examined both simplex families (only one child with autism) 
-              and multiplex families (multiple children with autism) to understand how often de novo mutations contribute to autism:<sup>[81]</sup>
+              and multiplex families (multiple children with autism) to understand how often de novo mutations contribute to autism:<sup>[5]</sup>
             </p>
             
             <div className="space-y-3">
@@ -149,7 +148,7 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
             <div className="border-l-2 border-[#2abcd4] pl-3">
               <div className="font-bold text-[#0c264d] mb-1 text-sm">Intronic Mutations</div>
               <div className="text-sm">Recent research shows excess de novo events targeting introns (non-coding gene regions), 
-              not just coding regions, expanding our understanding beyond traditional gene studies<sup>[81]</sup></div>
+              not just coding regions, expanding our understanding beyond traditional gene studies<sup>[5]</sup></div>
             </div>
           </div>
 
@@ -218,7 +217,7 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
               <div className="font-bold text-[#0c264d] mb-2 text-base">Fragile X Syndrome (FXS)</div>
               <p className="text-sm mb-3">
                 <strong>Fragile X Syndrome is the leading inherited cause of intellectual disability</strong> and shows 
-                exceptionally high overlap with autism.<sup>[82]</sup> FXS is caused by a CGG trinucleotide expansion in the 
+                exceptionally high overlap with autism.<sup>[6]</sup> FXS is caused by a CGG trinucleotide expansion in the 
                 FMR1 gene on the X chromosome.
               </p>
               
@@ -226,10 +225,10 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
                 <div className="font-bold text-[#0c264d] mb-1 text-sm">Co-Occurring Autism Rates:</div>
                 <p className="text-sm mb-2">
                   Research indicates that <strong>approximately 90% of males with FXS demonstrate characteristics of autism spectrum disorder</strong>, 
-                  such as hand flapping, poor eye contact, repetitive behaviors, and restricted interests.<sup>[82]</sup>
+                  such as hand flapping, poor eye contact, repetitive behaviors, and restricted interests.<sup>[6]</sup>
                 </p>
                 <p className="text-sm mb-2">
-                  However, formal co-diagnosis rates vary significantly (20-75%) depending on the assessment tool used:<sup>[82]</sup>
+                  However, formal co-diagnosis rates vary significantly (20-75%) depending on the assessment tool used:<sup>[6]</sup>
                 </p>
                 <ul className="text-sm ml-4 space-y-1">
                   <li>• <strong>ADOS (Autism Diagnostic Observation Schedule):</strong> ~97% meet criteria</li>
@@ -248,13 +247,13 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
                 </p>
                 <p className="mb-0">
                   <strong>Language connection:</strong> Research shows that expressive language abilities, particularly expressive vocabulary, 
-                  are strongly associated with autism symptom severity in boys with FXS.<sup>[82]</sup>
+                  are strongly associated with autism symptom severity in boys with FXS.<sup>[6]</sup>
                 </p>
               </div>
             </div>
 
             <div className="border-l-2 border-[#2abcd4] pl-3">
-              <div className="text-sm"><strong>Tuberous Sclerosis:</strong> 25-61% have autism<sup>[83]</sup></div>
+              <div className="text-sm"><strong>Tuberous Sclerosis:</strong> 25-61% have autism<sup>[7]</sup></div>
             </div>
             <div className="border-l-2 border-[#2abcd4] pl-3">
               <div className="text-sm"><strong>Rett Syndrome:</strong> Previously considered part of autism spectrum</div>
@@ -270,7 +269,7 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">♀️ ♂️ Sex Differences in Genetics</h3>
           <p className="mb-3 text-sm">
             Autism is diagnosed more frequently in males than females, with research indicating a ratio of approximately 
-            <strong> 3-4:1</strong>.<sup>[80]</sup> This sex difference may have genetic underpinnings:
+            <strong> 3-4:1</strong>.<sup>[8]</sup> This sex difference may have genetic underpinnings:
           </p>
           
           {/* Visual Gender Ratio Chart */}
@@ -313,6 +312,29 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
             <div className="border-l-2 border-[#2abcd4] pl-3">
               <div className="text-sm"><strong>Diagnostic Bias:</strong> However, this ratio likely also reflects diagnostic bias—females may be underdiagnosed because they often present differently or "camouflage" symptoms more effectively</div>
             </div>
+          </div>
+        </div>
+
+        {/* References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+          
+          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+          <div className="text-sm space-y-2">
+            <p>[1] Genovese, A., & Butler, M. G. (2023). "The Autism Spectrum: Behavioral, Psychiatric and Genetic Associations." <em>Genes</em>, 14(3), 637.</p>
+            <p>[2] Tick, B., Bolton, P., Happé, F., Rutter, M., & Rijsdijk, F. (2016). "Heritability of autism spectrum disorders: A meta-analysis of twin studies." <em>Journal of Child Psychology and Psychiatry</em>, 57(5), 585-595.</p>
+            <p>[3] Ozonoff, S., Young, G. S., Bradshaw, J., et al. (2024). "Familial recurrence of autism: Updates from the Baby Siblings Research Consortium." <em>Pediatrics</em>, 154(2), e2023065297.</p>
+            <p>[4] Cirnigliaro, M., Chang, T. S., Arteaga, S. A., et al. (2023). "The contributions of rare inherited and polygenic risk to ASD in multiplex families." <em>Proceedings of the National Academy of Sciences</em>, 120(31), e2215632120.</p>
+            <p>[5] Yoon, S., Munoz, A., Yamrom, B., et al. (2021). "Rates of contributory de novo mutation in high and low-risk autism families." <em>Communications Biology</em>, 4(1), 1026.</p>
+            <p>[6] Haebig, E., Sterling, A., Barton-Hulsey, A., & Friedman, L. (2020). "Rates and predictors of co-occurring autism spectrum disorder in boys with fragile X syndrome." <em>Research in Developmental Disabilities</em>, 107, 103783.</p>
+            <p>[7] Vignoli, A., La Briola, F., Peron, A., et al. (2015). "Autism spectrum disorder in tuberous sclerosis complex: searching for risk markers." <em>Orphanet Journal of Rare Diseases</em>, 10, 154.</p>
+            <p>[8] Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 56(6), 466-474.</p>
+          </div>
+          
+          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Geschwind, D. H., & State, M. W. (2015). "Gene hunting in autism spectrum disorder: On the path to precision medicine." <em>The Lancet Neurology</em>, 14(11), 1109-1120.</p>
+            <p>Sandin, S., Lichtenstein, P., Kuja-Halkola, R., et al. (2014). "The familial risk of autism." <em>JAMA</em>, 311(17), 1770-1777.</p>
           </div>
         </div>
       </div>
@@ -371,6 +393,20 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
           <li className="mb-2">Environmental factors may trigger genetic risk in susceptible individuals</li>
           <li className="mb-2">Epigenetic changes (changes in gene expression without DNA sequence changes) may mediate these interactions</li>
         </ul>
+
+        {/* References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+          
+          <p className="text-sm mb-2"><em>No inline citations for this tab.</em></p>
+          
+          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Modabbernia, A., Velthorst, E., & Reichenberg, A. (2017). "Environmental risk factors for autism: An evidence-based review of systematic reviews and meta-analyses." <em>Molecular Autism</em>, 8(1), 13.</p>
+            <p>Lyall, K., Croen, L., Daniels, J., et al. (2017). "The changing epidemiology of autism spectrum disorders." <em>Annual Review of Public Health</em>, 38, 81-102.</p>
+            <p>Bai, D., Yip, B. H., Windham, G. C., et al. (2019). "Association of genetic and environmental factors with autism in a 5-country cohort." <em>JAMA Psychiatry</em>, 76(10), 1035-1043.</p>
+          </div>
+        </div>
       </div>
     );
   }
@@ -382,7 +418,7 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
         
         <p className="mb-4">
           Genetic and environmental factors ultimately affect brain development, leading to the neurological 
-          differences characteristic of autism.<sup>[44]</sup>
+          differences characteristic of autism.
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Structural Brain Differences</h3>
@@ -395,28 +431,45 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
         /> */}
         
         <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in frontal cortex<sup>[45]</sup></li>
-          <li className="mb-2"><strong>Altered connectivity:</strong> Differences in how brain regions connect and communicate<sup>[46]</sup></li>
-          <li className="mb-2"><strong>Regional differences:</strong> Variations in size and structure of specific brain areas including amygdala, cerebellum, and corpus callosum<sup>[47]</sup></li>
-          <li className="mb-2"><strong>White matter differences:</strong> Atypical development of myelin and white matter tracts<sup>[48]</sup></li>
+          <li className="mb-2"><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in frontal cortex<sup>[1]</sup></li>
+          <li className="mb-2"><strong>Altered connectivity:</strong> Differences in how brain regions connect and communicate</li>
+          <li className="mb-2"><strong>Regional differences:</strong> Variations in size and structure of specific brain areas including amygdala, cerebellum, and corpus callosum</li>
+          <li className="mb-2"><strong>White matter differences:</strong> Atypical development of myelin and white matter tracts</li>
         </ul>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Functional Brain Differences</h3>
         <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions<sup>[49]</sup></li>
-          <li className="mb-2"><strong>Social brain networks:</strong> Differences in activation of brain regions involved in social cognition<sup>[50]</sup></li>
-          <li className="mb-2"><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli<sup>[51]</sup></li>
-          <li className="mb-2"><strong>Default mode network:</strong> Differences in brain network active during rest and self-referential thinking<sup>[52]</sup></li>
+          <li className="mb-2"><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions</li>
+          <li className="mb-2"><strong>Social brain networks:</strong> Differences in activation of brain regions involved in social cognition</li>
+          <li className="mb-2"><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli</li>
+          <li className="mb-2"><strong>Default mode network:</strong> Differences in brain network active during rest and self-referential thinking</li>
         </ul>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Cellular and Molecular Level</h3>
         <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Synaptic differences:</strong> Altered number, structure, or function of synapses<sup>[53]</sup></li>
-          <li className="mb-2"><strong>Neuronal migration:</strong> Some evidence of atypical neuronal positioning during development<sup>[54]</sup></li>
-          <li className="mb-2"><strong>Excitatory/inhibitory balance:</strong> Imbalance between excitatory and inhibitory neurotransmission<sup>[55]</sup></li>
-          <li className="mb-2"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains<sup>[56]</sup></li>
-          <li className="mb-2"><strong>Mitochondrial function:</strong> Some individuals show mitochondrial dysfunction<sup>[57]</sup></li>
+          <li className="mb-2"><strong>Synaptic differences:</strong> Altered number, structure, or function of synapses</li>
+          <li className="mb-2"><strong>Neuronal migration:</strong> Some evidence of atypical neuronal positioning during development</li>
+          <li className="mb-2"><strong>Excitatory/inhibitory balance:</strong> Imbalance between excitatory and inhibitory neurotransmission</li>
+          <li className="mb-2"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains</li>
+          <li className="mb-2"><strong>Mitochondrial function:</strong> Some individuals show mitochondrial dysfunction</li>
         </ul>
+
+        {/* References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+          
+          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+          <div className="text-sm space-y-2">
+            <p>[1] Courchesne, E., Campbell, K., & Solso, S. (2011). "Brain growth across the life span in autism: Age-specific changes in anatomical pathology." <em>Brain Research</em>, 1380, 138-145.</p>
+          </div>
+          
+          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <em>The Lancet</em>, 383(9920), 896-910.</p>
+            <p>Marco, E. J., Hinkley, L. B., Hill, S. S., & Nagarajan, S. S. (2011). "Sensory processing in autism: A review of neurophysiologic findings." <em>Pediatric Research</em>, 69(5 Pt 2), 48R-54R.</p>
+            <p>Happé, F., Ronald, A., & Plomin, R. (2006). "Time to give up on a single explanation for autism." <em>Nature Neuroscience</em>, 9(10), 1218-1220.</p>
+          </div>
+        </div>
       </div>
     );
   }
@@ -429,11 +482,11 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
         <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-4">
           <h3 className="text-center text-[#0c264d] font-bold mb-4">Debunked Myths About Autism Causes</h3>
           <div className="space-y-3 text-sm">
-            <p><strong>✗ Vaccines:</strong> Extensive research has conclusively shown vaccines do not cause autism<sup>[2][58]</sup></p>
-            <p><strong>✗ MMR vaccine specifically:</strong> The fraudulent study claiming this link has been retracted; no credible evidence supports it<sup>[59]</sup></p>
-            <p><strong>✗ Thimerosal:</strong> This preservative was removed from childhood vaccines over 20 years ago; autism rates continued to rise<sup>[60]</sup></p>
-            <p><strong>✗ Parenting style:</strong> "Refrigerator mother" theory has been thoroughly discredited; parenting does not cause autism<sup>[61]</sup></p>
-            <p><strong>✗ Too much screen time:</strong> No evidence that technology use causes autism<sup>[62]</sup></p>
+            <p><strong>✗ Vaccines:</strong> Extensive research has conclusively shown vaccines do not cause autism<sup>[1]</sup></p>
+            <p><strong>✗ MMR vaccine specifically:</strong> The fraudulent study claiming this link has been retracted; no credible evidence supports it</p>
+            <p><strong>✗ Thimerosal:</strong> This preservative was removed from childhood vaccines over 20 years ago; autism rates continued to rise</p>
+            <p><strong>✗ Parenting style:</strong> "Refrigerator mother" theory has been thoroughly discredited; parenting does not cause autism</p>
+            <p><strong>✗ Too much screen time:</strong> No evidence that technology use causes autism</p>
             <p><strong>✗ Poor nutrition alone:</strong> While nutrition affects health, diet alone does not cause autism</p>
           </div>
         </div>
@@ -448,15 +501,31 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Vaccine-Autism Myth</h3>
         <p className="mb-4">
           The claim that vaccines cause autism originated from a fraudulent 1998 study by Andrew Wakefield that has 
-          been retracted.<sup>[63]</sup> Since then:
+          been retracted. Since then:
         </p>
         <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Dozens of large-scale studies involving millions of children have found no link between vaccines and autism<sup>[64]</sup></li>
-          <li className="mb-2">The original author was found to have financial conflicts of interest and ethical violations<sup>[65]</sup></li>
-          <li className="mb-2">Autism signs often emerge around the same age children receive vaccines, but correlation does not equal causation<sup>[66]</sup></li>
-          <li className="mb-2">Autism rates have not decreased in areas where vaccination rates dropped<sup>[67]</sup></li>
-          <li className="mb-2">Scientific consensus across all major medical organizations affirms vaccines are safe and do not cause autism<sup>[68]</sup></li>
+          <li className="mb-2">Dozens of large-scale studies involving millions of children have found no link between vaccines and autism<sup>[1]</sup></li>
+          <li className="mb-2">The original author was found to have financial conflicts of interest and ethical violations</li>
+          <li className="mb-2">Autism signs often emerge around the same age children receive vaccines, but correlation does not equal causation</li>
+          <li className="mb-2">Autism rates have not decreased in areas where vaccination rates dropped</li>
+          <li className="mb-2">Scientific consensus across all major medical organizations affirms vaccines are safe and do not cause autism</li>
         </ul>
+
+        {/* References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+          
+          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+          <div className="text-sm space-y-2">
+            <p>[1] Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies." <em>Vaccine</em>, 32(29), 3623-3629.</p>
+          </div>
+          
+          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Bettelheim, B. (1967). <em>The Empty Fortress: Infantile Autism and the Birth of the Self</em>. Free Press. [NOTE: The "refrigerator mother" theory has been thoroughly discredited.]</p>
+            <p>Modabbernia, A., Velthorst, E., & Reichenberg, A. (2017). "Environmental risk factors for autism: An evidence-based review of systematic reviews and meta-analyses." <em>Molecular Autism</em>, 8(1), 13.</p>
+          </div>
+        </div>
       </div>
     );
   }
@@ -467,7 +536,7 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Current Understanding and Future Research</h2>
         
         <p className="mb-4">
-          Our understanding of autism's causes continues to evolve:<sup>[69]</sup>
+          Our understanding of autism's causes continues to evolve:<sup>[1]</sup>
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What We Know</h3>
@@ -509,6 +578,22 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
             a neurological difference requiring acceptance, accommodation, and support. Research should 
             focus on improving autistic people's quality of life rather than preventing or eliminating autism.
           </p>
+        </div>
+
+        {/* References */}
+        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+          
+          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
+          <div className="text-sm space-y-2">
+            <p>[1] Lyall, K., Croen, L., Daniels, J., et al. (2017). "The changing epidemiology of autism spectrum disorders." <em>Annual Review of Public Health</em>, 38, 81-102.</p>
+          </div>
+          
+          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+          <div className="text-sm space-y-2">
+            <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+            <p>Pellicano, E., & den Houting, J. (2022). "Annual research review: Shifting from 'normal science' to neurodiversity in autism science." <em>Journal of Child Psychology and Psychiatry</em>, 63(4), 381-396.</p>
+          </div>
         </div>
       </div>
     );
@@ -571,12 +656,6 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
         </button>
       </div>
 
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <ASDReferences />
-        </div>
-      </section>
     </article>
   );
 }
