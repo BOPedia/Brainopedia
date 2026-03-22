@@ -1,3 +1,5 @@
+import { Users, UserX, Clock, ShieldAlert, Globe, DollarSign, CreditCard, GraduationCap, Shuffle, EyeOff, Brain, Layers, UserMinus, Fingerprint, BrainCircuit, AlertTriangle, MessageCircleOff, Zap, Moon, Apple, UtensilsCrossed, Heart } from 'lucide-react';
+
 export function ChallengesDisparities() {
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
@@ -5,7 +7,10 @@ export function ChallengesDisparities() {
       
       {/* Gender Differences */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Gender Differences and Bias</h3>
+        <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
+          <Users className="w-5 h-5 text-[#0A9DC4]" />
+          Gender Differences and Bias
+        </h3>
         
         <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-3 rounded mb-4">
           <p className="text-sm">
@@ -16,7 +21,10 @@ export function ChallengesDisparities() {
 
         <div className="space-y-3">
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Camouflaging in Girls and Women</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <EyeOff className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Camouflaging in Girls and Women
+            </div>
             <div className="text-sm">
               Girls and women often mask or camouflage autistic traits more effectively than boys, leading to missed 
               or delayed diagnosis.<sup>[34][35]</sup> This masking is exhausting and can lead to burnout, anxiety, 
@@ -25,7 +33,10 @@ export function ChallengesDisparities() {
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Different Presentation</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <Fingerprint className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Different Presentation
+            </div>
             <div className="text-sm">
               Autistic girls may show:<sup>[36][37]</sup>
               <ul className="ml-4 mt-1 space-y-1">
@@ -39,7 +50,10 @@ export function ChallengesDisparities() {
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Later Diagnosis in Females</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <Clock className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Later Diagnosis in Females
+            </div>
             <div className="text-sm">
               Women are often diagnosed later than men, sometimes not until adulthood. Many are misdiagnosed with 
               anxiety, depression, eating disorders, or personality disorders before autism is recognized.
@@ -50,7 +64,10 @@ export function ChallengesDisparities() {
 
       {/* Racial and Ethnic Disparities */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Racial and Ethnic Disparities</h3>
+        <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
+          <Globe className="w-5 h-5 text-[#0A9DC4]" />
+          Racial and Ethnic Disparities
+        </h3>
         
         <p className="text-sm mb-4">
           Significant disparities exist in autism diagnosis:<sup>[38][39]</sup>
@@ -58,7 +75,10 @@ export function ChallengesDisparities() {
 
         <div className="space-y-3">
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Later Diagnosis for Minority Children</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <Clock className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Later Diagnosis for Minority Children
+            </div>
             <div className="text-sm">
               Black and Hispanic children are diagnosed on average 1-3 years later than white children.<sup>[39]</sup> 
               This delay means missed opportunities for early intervention during critical developmental periods.
@@ -66,7 +86,10 @@ export function ChallengesDisparities() {
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Underdiagnosis and Misdiagnosis</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <Shuffle className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Underdiagnosis and Misdiagnosis
+            </div>
             <div className="text-sm">
               Minority children are more likely to be misdiagnosed with conduct disorder, ODD, or ADHD when autism 
               is the actual diagnosis.<sup>[40][41]</sup> They're also more likely to go undiagnosed entirely.
@@ -74,7 +97,10 @@ export function ChallengesDisparities() {
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Access Barriers</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <ShieldAlert className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Access Barriers
+            </div>
             <div className="text-sm">
               <ul className="ml-4 space-y-1">
                 <li>• Limited access to specialists (fewer providers in minority communities)</li>
@@ -87,7 +113,10 @@ export function ChallengesDisparities() {
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Cultural Differences in Behavior Interpretation</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <Globe className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Cultural Differences in Behavior Interpretation
+            </div>
             <div className="text-sm">
               Cultural norms around eye contact, social interaction, emotional expression, and child-rearing practices 
               differ. Clinicians must be culturally competent to avoid misinterpreting culturally normative behaviors 
@@ -99,11 +128,17 @@ export function ChallengesDisparities() {
 
       {/* Socioeconomic Factors */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Socioeconomic Factors</h3>
+        <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
+          <DollarSign className="w-5 h-5 text-[#0A9DC4]" />
+          Socioeconomic Factors
+        </h3>
         
         <div className="space-y-3">
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Access to Diagnostic Services</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <UserMinus className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Access to Diagnostic Services
+            </div>
             <div className="text-sm">
               Lower-income families have less access to specialist diagnostic services.<sup>[38]</sup> Private 
               evaluations are expensive ($2,000-$5,000+), and public options have long wait lists.
@@ -111,7 +146,10 @@ export function ChallengesDisparities() {
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Insurance Barriers</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <CreditCard className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Insurance Barriers
+            </div>
             <div className="text-sm">
               Not all insurance plans cover autism evaluation. Medicaid coverage varies by state. Families may need 
               to travel long distances to find providers who accept their insurance.
@@ -119,7 +157,10 @@ export function ChallengesDisparities() {
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Educational Advocacy</div>
+            <div className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <GraduationCap className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Educational Advocacy
+            </div>
             <div className="text-sm">
               Resource-limited schools may be less likely to identify autism or refer for evaluation. Families with 
               less knowledge of special education rights may not advocate effectively.
@@ -130,7 +171,10 @@ export function ChallengesDisparities() {
 
       {/* Misdiagnosis and Missed Diagnosis */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Misdiagnosis and Missed Diagnosis</h3>
+        <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
+          <AlertTriangle className="w-5 h-5 text-[#0A9DC4]" />
+          Misdiagnosis and Missed Diagnosis
+        </h3>
         
         <div className="space-y-4">
           <div>
@@ -198,7 +242,10 @@ export function ChallengesDisparities() {
 
       {/* Differential Diagnosis */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Differential Diagnosis: Conditions to Rule Out</h3>
+        <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
+          <Shuffle className="w-5 h-5 text-[#0A9DC4]" />
+          Differential Diagnosis: Conditions to Rule Out
+        </h3>
         <p className="text-sm mb-4">
           Several conditions share features with autism and must be considered:<sup>[32]</sup>
         </p>
@@ -238,49 +285,76 @@ export function ChallengesDisparities() {
 
       {/* Co-occurring Conditions */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Common Co-occurring Conditions</h3>
+        <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
+          <Layers className="w-5 h-5 text-[#0A9DC4]" />
+          Common Co-occurring Conditions
+        </h3>
         <p className="text-sm mb-4">
           Many autistic individuals have additional diagnoses:<sup>[22][43][44]</sup>
         </p>
         
         <div className="grid md:grid-cols-2 gap-3">
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d]">ADHD</div>
+            <div className="font-bold text-[#0c264d] flex items-center gap-2">
+              <BrainCircuit className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              ADHD
+            </div>
             <div className="text-sm">30-60% co-occurrence</div>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d]">Anxiety Disorders</div>
+            <div className="font-bold text-[#0c264d] flex items-center gap-2">
+              <AlertTriangle className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Anxiety Disorders
+            </div>
             <div className="text-sm">Up to 40%</div>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d]">Depression</div>
+            <div className="font-bold text-[#0c264d] flex items-center gap-2">
+              <Heart className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Depression
+            </div>
             <div className="text-sm">Common in adolescents/adults</div>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d]">Intellectual Disability</div>
+            <div className="font-bold text-[#0c264d] flex items-center gap-2">
+              <Brain className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Intellectual Disability
+            </div>
             <div className="text-sm">~30%</div>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d]">Epilepsy</div>
+            <div className="font-bold text-[#0c264d] flex items-center gap-2">
+              <Zap className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Epilepsy
+            </div>
             <div className="text-sm">20-30%</div>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d]">Sleep Disorders</div>
+            <div className="font-bold text-[#0c264d] flex items-center gap-2">
+              <Moon className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Sleep Disorders
+            </div>
             <div className="text-sm">50-80%</div>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d]">GI Issues</div>
+            <div className="font-bold text-[#0c264d] flex items-center gap-2">
+              <Apple className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              GI Issues
+            </div>
             <div className="text-sm">Common (constipation, reflux)</div>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d]">Eating Disorders</div>
+            <div className="font-bold text-[#0c264d] flex items-center gap-2">
+              <UtensilsCrossed className="w-4 h-4 text-[#0A9DC4] shrink-0" />
+              Eating Disorders
+            </div>
             <div className="text-sm">Higher in autistic females</div>
           </div>
         </div>
