@@ -6,19 +6,19 @@ export function ADHDSymptomsTabInattention() {
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Inattention Symptoms</h2>
-            
-            <ImageWithFallback 
-              src="/images/adhd/adhd-inattention-boy-on-phone.png"
-              alt="ADHD Inattention"
-              className="w-52 h-auto float-right ml-4 mb-4 rounded"
-            />
-            
+          
             <p className="mb-4">
               The inattentive presentation is characterized by difficulty sustaining attention and organizational 
               challenges. This is sometimes referred to as "ADD" though that term is no longer used diagnostically. 
               People with this presentation may seem forgetful, disorganized, or "spacey."
             </p>
-            
+              
+            <ImageWithFallback 
+              src="/images/adhd/adhd-inattention-boy-on-phone.png"
+              alt="ADHD Inattention"
+              className="w-52 h-auto float-right ml-4 mb-4 rounded"
+            />
+
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Inattention Symptoms:</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
