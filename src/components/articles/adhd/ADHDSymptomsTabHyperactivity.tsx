@@ -10,11 +10,11 @@ export function ADHDSymptomsTabHyperactivity() {
             <ImageWithFallback 
               src="/images/adhd/adhd-hyperactivity-street-view.png"
               alt="Hyperactivity in everyday life - street view"
-              className="w-32 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+              className="w-52 h-auto float-right ml-4 mb-4 rounded"
             />
 
             
-            <p className="mb-6">
+            <p className="mb-4">
               Hyperactivity involves excessive motor activity and restlessness. While often associated with children, 
               hyperactivity persists into adulthood, though it typically manifests differently.
             </p>
