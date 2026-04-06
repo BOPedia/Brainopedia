@@ -16,7 +16,7 @@ export function ADHDSymptomsTabInattention() {
               challenges. This is sometimes referred to as "ADD" though that term is no longer used diagnostically. 
               People with this presentation may seem forgetful, disorganized, or "spacey."
             </p>
-              
+            
             
 
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
