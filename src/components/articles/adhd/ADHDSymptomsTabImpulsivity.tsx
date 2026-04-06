@@ -18,10 +18,10 @@ export function ADHDSymptomsTabImpulsivity() {
               Impulsivity involves acting without forethought or consideration of consequences. It reflects difficulty 
               with inhibition—the ability to stop oneself from acting on immediate impulses.
             </p>
-            
+            <div className="clear-both mt-8 bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+             
             {/* Icon-based symptom cards */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Common Impulsivity Symptoms:</h3>
+            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Common Impulsivity Symptoms:</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {/* Blurting Out */}
