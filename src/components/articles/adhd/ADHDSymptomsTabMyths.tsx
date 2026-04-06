@@ -5,13 +5,16 @@ export function ADHDSymptomsTabMyths() {
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Myths & Misconceptions About ADHD</h2>
-            
+            	<br>
             <ImageWithFallback 
               src="/images/adhd/adhd-myths-social-media.png"
               alt="Social media and ADHD misinformation"
               className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+    		
             />
+		</br>
 
+		
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
                 <strong>Important:</strong> Social media has created a lot of confusion about what is and isn't ADHD. 
@@ -80,6 +83,14 @@ export function ADHDSymptomsTabMyths() {
                 </div>
               </div>
             </div>
+   	<br>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-myths-man-working.png"
+              alt="Social media and ADHD misinformation"
+              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+    		
+            />
+	</br>
 
             {/* Needs More Research */}
 
@@ -103,7 +114,13 @@ export function ADHDSymptomsTabMyths() {
                     ADHD can daydream, maladaptive daydreaming is its own phenomenon.
                   </div>
                 </div>
-
+		<br>
+			<ImageWithFallback 
+             		 src="/images/adhd/adhd-myths-daydreaming.png"
+             		 alt="Daydreaming - misattributed ADHD myths"
+             		className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+		</br>
+            />
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Sensory Processing Issues</div>
                   <div className="text-sm">
@@ -124,11 +141,7 @@ export function ADHDSymptomsTabMyths() {
             </div>
 
             {/* Misattributed or Over-Romanticized */}
-            <ImageWithFallback 
-              src="/images/adhd/adhd-myths-daydreaming.png"
-              alt="Daydreaming - misattributed ADHD myths"
-              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-            />
+            
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Misattributed or Over-Romanticized</h3>
               
