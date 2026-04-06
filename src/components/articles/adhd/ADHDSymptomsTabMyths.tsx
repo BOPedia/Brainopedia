@@ -4,18 +4,15 @@ export function ADHDSymptomsTabMyths() {
   return (
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Myths & Misconceptions About ADHD</h2>
-            	<br>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Myths & Misconceptions About ADHD</h2><br>
+			
             <ImageWithFallback 
               src="/images/adhd/adhd-myths-social-media.png"
               alt="Social media and ADHD misinformation"
               className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-    		
-            />
-		</br>
+    		/><br>
 
-		
-            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
+		<div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
                 <strong>Important:</strong> Social media has created a lot of confusion about what is and isn't ADHD. 
                 While awareness is wonderful, misinformation can lead to self-misdiagnosis, trivializing real struggles, 
@@ -23,8 +20,6 @@ export function ADHDSymptomsTabMyths() {
                 that are either not actually ADHD, need much more research, or are misunderstood.
               </p>
             </div>
-
-
 
             {/* NOT Actually ADHD */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -82,15 +77,14 @@ export function ADHDSymptomsTabMyths() {
                   </div>
                 </div>
               </div>
-            </div>
-   	<br>
-            <ImageWithFallback 
+            </div><br>
+	            <ImageWithFallback 
               src="/images/adhd/adhd-myths-man-working.png"
               alt="Social media and ADHD misinformation"
-              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"<br>
     		
             />
-	</br>
+
 
             {/* Needs More Research */}
 
@@ -113,13 +107,11 @@ export function ADHDSymptomsTabMyths() {
                     This is being studied as a separate condition, not specifically an ADHD symptom. While people with 
                     ADHD can daydream, maladaptive daydreaming is its own phenomenon.
                   </div>
-                </div>
-		<br>
+                </div><br>
 			<ImageWithFallback 
              		 src="/images/adhd/adhd-myths-daydreaming.png"
              		 alt="Daydreaming - misattributed ADHD myths"
-             		className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-		</br>
+             		className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"<br>
             />
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Sensory Processing Issues</div>
@@ -171,11 +163,11 @@ export function ADHDSymptomsTabMyths() {
                   </div>
                 </div>
 
-                <div className="border-l-2 border-[#2abcd4] pl-3">
+                <div className="border-l-2 border-[#2abcd4] pl-3"><br>
                   <ImageWithFallback 
                     src="/images/adhd/adhd-myths-justice.png"
                     alt="Lady Justice statue"
-                    className="w-64 h-auto rounded mb-2"
+                    className="w-64 h-auto rounded mb-2"<br>
                   />
                   <div className="font-bold text-[#0c264d] mb-1">"Strong Sense of Justice"</div>
                   <div className="text-sm">
