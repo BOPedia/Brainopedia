@@ -4,7 +4,7 @@ import { ImageWithFallback } from '../../figma/ImageWithFallback';
 export function ADHDSymptomsTabHyperactivity() {
   return (
     <>
-          <div className="bg-[#f0f9ff] p-6 rounded-lg">
+         <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Hyperactivity Symptoms</h2>
             
             <ImageWithFallback 
@@ -19,6 +19,8 @@ export function ADHDSymptomsTabHyperactivity() {
               hyperactivity persists into adulthood, though it typically manifests differently.
             </p>
             
+	<div className="clear-both mt-8 bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+              <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Inattention Symptoms:</h3>
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Hyperactivity Symptoms:</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
