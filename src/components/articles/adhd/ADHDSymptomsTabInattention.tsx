@@ -10,10 +10,10 @@ export function ADHDSymptomsTabInattention() {
             <ImageWithFallback 
               src="/images/adhd/adhd-inattention-boy-on-phone.png"
               alt="ADHD Inattention"
-              className="w-full max-w-[14rem] mx-auto mb-4 rounded"
+              className="w-52 h-auto float-right ml-4 mb-4 rounded"
             />
             
-            <p className="mb-6">
+            <p className="mb-4">
               The inattentive presentation is characterized by difficulty sustaining attention and organizational 
               challenges. This is sometimes referred to as "ADD" though that term is no longer used diagnostically. 
               People with this presentation may seem forgetful, disorganized, or "spacey."
