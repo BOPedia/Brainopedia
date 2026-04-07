@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { ADHDSymptomsTabCore } from './ADHDSymptomsTabCore';
 import { ADHDSymptomsTabInattention } from './ADHDSymptomsTabInattention';
@@ -11,9 +12,17 @@ import { ADHDSymptomsTabMyths } from './ADHDSymptomsTabMyths';
 
 interface ADHDSymptomsProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
+export function ADHDSymptoms({ setCurrentArticle, initialTab }: ADHDSymptomsProps) {
+  const navigate = useNavigate();
+  const defaultTab = initialTab || 'core';
+
+  const handleTabChange = (value: string) => {
+    navigate(`/adhd-symptoms/${value}`);
+  };
+
   return (
     <article className="max-w-full w-full">
       <style>
@@ -47,7 +56,7 @@ export function ADHDSymptoms({ setCurrentArticle }: ADHDSymptomsProps) {
         All About ADHD
       </button>
 
-      <Tabs defaultValue="core" className="w-full">
+      <Tabs defaultValue={defaultTab} value={initialTab || 'core'} onValueChange={handleTabChange} className="w-full">
         <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger value="core" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
             Core Symptoms

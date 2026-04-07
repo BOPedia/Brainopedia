@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useParams, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useParams, useNavigate, useLocation } from 'react-router';
 import { Sidebar } from './components/Sidebar';
 import { ArticleContent } from './components/ArticleContent';
 import { Header } from './components/Header';
@@ -8,8 +8,9 @@ import { Footer } from './components/Footer';
 import { Search, Menu, X } from 'lucide-react';
 
 function AppContent() {
-  const { articleId } = useParams();
+  const { articleId, tabId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const [searchQuery, setSearchQuery] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -19,10 +20,19 @@ function AppContent() {
     navigate(`/${article}`);
   };
 
-  // Scroll to top when article changes
+  // Scroll to top when article changes, but NOT when only tab changes
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [articleId]);
+    // Check if only the tab changed by looking at the pathname excluding the tab part
+    const pathParts = location.pathname.split('/').filter(Boolean);
+    const prevPathParts = (window as any).__prevPath?.split('/').filter(Boolean) || [];
+    
+    // If the base article changed, scroll to top
+    if (pathParts[0] !== prevPathParts[0]) {
+      window.scrollTo(0, 0);
+    }
+    
+    (window as any).__prevPath = location.pathname;
+  }, [articleId, location.pathname]);
 
   // Set favicon and page title
   useEffect(() => {
@@ -60,7 +70,7 @@ function AppContent() {
         />
         
         <main className="flex-1 p-2 md:p-8 lg:p-12 max-w-5xl mx-auto w-full">
-          <ArticleContent articleId={currentArticle} setCurrentArticle={setCurrentArticle} />
+          <ArticleContent articleId={currentArticle} setCurrentArticle={setCurrentArticle} tabId={tabId} />
         </main>
       </div>
       
@@ -75,6 +85,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<AppContent />} />
         <Route path="/:articleId" element={<AppContent />} />
+        <Route path="/:articleId/:tabId" element={<AppContent />} />
       </Routes>
     </Router>
   );

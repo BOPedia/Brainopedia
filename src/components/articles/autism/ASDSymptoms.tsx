@@ -1,5 +1,5 @@
 import React from 'react';
-import { ASDReferences } from './ASDReferences';
+import { useNavigate } from 'react-router';
 import { CoreSymptoms } from './asd-symptoms/CoreSymptoms';
 import { SocialCommunication } from './asd-symptoms/SocialCommunication';
 import { RepetitiveBehaviors } from './asd-symptoms/RepetitiveBehaviors';
@@ -8,10 +8,16 @@ import { StrengthsAbilities } from './asd-symptoms/StrengthsAbilities';
 
 interface ASDSymptomsProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
-  const [activeTab, setActiveTab] = React.useState('core');
+export function ASDSymptoms({ setCurrentArticle, initialTab }: ASDSymptomsProps) {
+  const navigate = useNavigate();
+  const activeTab = initialTab || 'core';
+
+  const handleTabChange = (tabId: string) => {
+    navigate(`/autism-symptoms/${tabId}`);
+  };
 
   const tabs = [
     { id: 'core', label: 'Core Symptoms', emoji: '' },
@@ -49,7 +55,7 @@ export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => handleTabChange(tab.id)}
             className={`px-6 py-3 rounded-md text-sm transition-colors ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'
@@ -81,12 +87,6 @@ export function ASDSymptoms({ setCurrentArticle }: ASDSymptomsProps) {
         </button>
       </div>
 
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <ASDReferences />
-        </div>
-      </section>
     </article>
   );
 }

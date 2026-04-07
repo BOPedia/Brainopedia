@@ -118,22 +118,23 @@ import ProjectStandards from './articles/ProjectStandards';
 interface ArticleContentProps {
   articleId: string;
   setCurrentArticle?: (article: string) => void;
+  tabId?: string;
 }
 
-export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentProps) {
+export function ArticleContent({ articleId, setCurrentArticle, tabId }: ArticleContentProps) {
   const articles: Record<string, React.ReactNode> = {
     'symptom-wheel-demo': <SymptomWheelDemo />,
     'project-standards': <ProjectStandards setCurrentArticle={setCurrentArticle} />,
     adhd: <ArticleADHD setCurrentArticle={setCurrentArticle} />,
     'adhd-overview': <ADHDOverview setCurrentArticle={setCurrentArticle} />,
-    'adhd-symptoms': <ADHDSymptoms setCurrentArticle={setCurrentArticle} />,
+    'adhd-symptoms': <ADHDSymptoms setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
     'adhd-causes': <ADHDCauses setCurrentArticle={setCurrentArticle} />,
     'adhd-diagnosis': <ADHDDiagnosis setCurrentArticle={setCurrentArticle} />,
     'adhd-support': <ADHDSupport setCurrentArticle={setCurrentArticle} />,
     'adhd-living': <ADHDLiving setCurrentArticle={setCurrentArticle} />,
     autism: <ArticleAutism setCurrentArticle={setCurrentArticle} />,
     'autism-overview': <ASDOverview setCurrentArticle={setCurrentArticle} />,
-    'autism-symptoms': <ASDSymptoms setCurrentArticle={setCurrentArticle} />,
+    'autism-symptoms': <ASDSymptoms setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
     'autism-causes': <ASDCauses setCurrentArticle={setCurrentArticle} />,
     'autism-diagnosis': <ASDDiagnosis setCurrentArticle={setCurrentArticle} />,
     'autism-support': <ASDSupport setCurrentArticle={setCurrentArticle} />,
