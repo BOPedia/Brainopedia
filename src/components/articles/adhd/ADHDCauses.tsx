@@ -1,12 +1,15 @@
 import { ADHDMyths } from '../../infographics/ADHDMyths';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
+import { useNavigate } from 'react-router-dom';
 
 interface ADHDCausesProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
+export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
+  const navigate = useNavigate();
   function OverviewContent() {
     return (
       <>
@@ -758,7 +761,7 @@ export function ADHDCauses({ setCurrentArticle }: ADHDCausesProps) {
         </button>
       </div>
 
-      <Tabs defaultValue="overview" className="w-full">
+      <Tabs value={initialTab || 'overview'} onValueChange={(v) => navigate(`/adhd-causes/${v}`)} className="w-full">
         <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger value="overview" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
             Overview

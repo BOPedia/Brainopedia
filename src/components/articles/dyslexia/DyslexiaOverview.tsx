@@ -1,12 +1,14 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface DyslexiaOverviewProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
-  const [activeTab, setActiveTab] = useState('what');
+export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOverviewProps) {
+  const navigate = useNavigate();
+  const activeTab = initialTab || 'what';
 
   return (
     <article className="max-w-6xl">
@@ -66,7 +68,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
       {/* Tab Navigation */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6">
         <button
-          onClick={() => setActiveTab('what')}
+          onClick={() => navigate('/dyslexia-overview/what')}
           className={`px-6 py-3 rounded-md transition-colors ${
             activeTab === 'what'
               ? 'bg-[#0A9DC4] text-white'
@@ -76,7 +78,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           What is Dyslexia?
         </button>
         <button
-          onClick={() => setActiveTab('types')}
+          onClick={() => navigate('/dyslexia-overview/types')}
           className={`px-6 py-3 rounded-md transition-colors ${
             activeTab === 'types'
               ? 'bg-[#0A9DC4] text-white'
@@ -86,7 +88,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           Types & Presentations
         </button>
         <button
-          onClick={() => setActiveTab('facts')}
+          onClick={() => navigate('/dyslexia-overview/facts')}
           className={`px-6 py-3 rounded-md transition-colors ${
             activeTab === 'facts'
               ? 'bg-[#0A9DC4] text-white'

@@ -1,12 +1,14 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface DyslexiaDiagnosisProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function DyslexiaDiagnosis({ setCurrentArticle }: DyslexiaDiagnosisProps) {
-  const [activeTab, setActiveTab] = useState('screening');
+export function DyslexiaDiagnosis({ setCurrentArticle, initialTab }: DyslexiaDiagnosisProps) {
+  const navigate = useNavigate();
+  const activeTab = initialTab || 'screening';
 
   return (
     <article className="max-w-6xl">
@@ -54,7 +56,7 @@ export function DyslexiaDiagnosis({ setCurrentArticle }: DyslexiaDiagnosisProps)
       {/* Tab Navigation */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6">
         <button
-          onClick={() => setActiveTab('screening')}
+          onClick={() => navigate('/dyslexia-diagnosis/screening')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'screening'
               ? 'bg-[#0A9DC4] text-white'
@@ -64,7 +66,7 @@ export function DyslexiaDiagnosis({ setCurrentArticle }: DyslexiaDiagnosisProps)
           Screening
         </button>
         <button
-          onClick={() => setActiveTab('evaluation')}
+          onClick={() => navigate('/dyslexia-diagnosis/evaluation')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'evaluation'
               ? 'bg-[#0A9DC4] text-white'
@@ -74,7 +76,7 @@ export function DyslexiaDiagnosis({ setCurrentArticle }: DyslexiaDiagnosisProps)
           Comprehensive Evaluation
         </button>
         <button
-          onClick={() => setActiveTab('professionals')}
+          onClick={() => navigate('/dyslexia-diagnosis/professionals')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'professionals'
               ? 'bg-[#0A9DC4] text-white'

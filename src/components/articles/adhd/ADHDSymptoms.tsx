@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { ADHDSymptomsTabCore } from './ADHDSymptomsTabCore';
 import { ADHDSymptomsTabInattention } from './ADHDSymptomsTabInattention';

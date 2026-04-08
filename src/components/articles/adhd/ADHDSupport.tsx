@@ -3,12 +3,15 @@ import { ADHDTreatmentApproach } from '../../infographics/ADHDTreatmentApproach'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { Pill, BrainCircuit, GraduationCap, Heart, Users, Settings } from 'lucide-react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
+import { useNavigate } from 'react-router-dom';
 
 interface ADHDSupportProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
+export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps) {
+  const navigate = useNavigate();
   function OverviewContent() {
     return (
       <>
@@ -979,7 +982,7 @@ export function ADHDSupport({ setCurrentArticle }: ADHDSupportProps) {
         </button>
       </div>
 
-      <Tabs defaultValue="overview" className="w-full">
+      <Tabs value={initialTab || 'overview'} onValueChange={(v) => navigate(`/adhd-support/${v}`)} className="w-full">
         <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger value="overview" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
             Overview & Approach

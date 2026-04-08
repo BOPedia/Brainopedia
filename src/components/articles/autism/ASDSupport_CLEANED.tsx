@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ASDReferences } from './ASDReferences';
 import { OverviewContent } from './asd-support/OverviewContent';
 import { EarlyInterventionContent } from './asd-support/EarlyInterventionContent';
@@ -16,7 +16,8 @@ interface ASDSupportProps {
 type TabType = 'overview' | 'early-intervention' | 'therapies' | 'educational' | 'medical' | 'environmental' | 'family';
 
 export function ASDSupport({ setCurrentArticle, initialTab = 'overview' }: ASDSupportProps) {
-  const [activeTab, setActiveTab] = useState<TabType>(initialTab);
+  const navigate = useNavigate();
+  const activeTab = (initialTab as TabType) || 'overview';
 
   const tabs = [
     { id: 'overview' as TabType, label: 'Overview & Philosophy' },
@@ -78,7 +79,7 @@ export function ASDSupport({ setCurrentArticle, initialTab = 'overview' }: ASDSu
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => navigate(`/autism-support/${tab.id}`)}
             className={`px-6 py-3 rounded-md text-sm transition-colors ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'

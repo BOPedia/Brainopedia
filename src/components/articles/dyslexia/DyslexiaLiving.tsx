@@ -1,12 +1,14 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface DyslexiaLivingProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function DyslexiaLiving({ setCurrentArticle }: DyslexiaLivingProps) {
-  const [activeTab, setActiveTab] = useState('daily');
+export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLivingProps) {
+  const navigate = useNavigate();
+  const activeTab = initialTab || 'daily';
 
   return (
     <article className="max-w-6xl">
@@ -54,7 +56,7 @@ export function DyslexiaLiving({ setCurrentArticle }: DyslexiaLivingProps) {
       {/* Tab Navigation */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
         <button
-          onClick={() => setActiveTab('daily')}
+          onClick={() => navigate('/dyslexia-living/daily')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'daily'
               ? 'bg-[#0A9DC4] text-white'
@@ -64,7 +66,7 @@ export function DyslexiaLiving({ setCurrentArticle }: DyslexiaLivingProps) {
           Daily Strategies
         </button>
         <button
-          onClick={() => setActiveTab('school')}
+          onClick={() => navigate('/dyslexia-living/school')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'school'
               ? 'bg-[#0A9DC4] text-white'
@@ -74,7 +76,7 @@ export function DyslexiaLiving({ setCurrentArticle }: DyslexiaLivingProps) {
           School Success
         </button>
         <button
-          onClick={() => setActiveTab('work')}
+          onClick={() => navigate('/dyslexia-living/work')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'work'
               ? 'bg-[#0A9DC4] text-white'
@@ -84,7 +86,7 @@ export function DyslexiaLiving({ setCurrentArticle }: DyslexiaLivingProps) {
           Workplace Strategies
         </button>
         <button
-          onClick={() => setActiveTab('strengths')}
+          onClick={() => navigate('/dyslexia-living/strengths')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'strengths'
               ? 'bg-[#0A9DC4] text-white'

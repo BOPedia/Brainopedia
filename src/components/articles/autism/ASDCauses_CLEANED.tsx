@@ -1,14 +1,16 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface ASDCausesProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
 type TabType = 'genetics' | 'environmental' | 'brain' | 'myths' | 'research';
 
-export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
-  const [activeTab, setActiveTab] = useState<TabType>('environmental');
+export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
+  const navigate = useNavigate();
+  const activeTab = (initialTab as TabType) || 'environmental';
 
   const tabs = [
     { id: 'environmental' as TabType, label: 'Environmental Factors' },
@@ -628,7 +630,7 @@ export function ASDCauses({ setCurrentArticle }: ASDCausesProps) {
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => navigate(`/autism-causes/${tab.id}`)}
             className={`px-6 py-3 rounded-md text-sm transition-colors ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'

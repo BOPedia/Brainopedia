@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { DSM5Criteria } from './asd-diagnosis/DSM5Criteria';
 import { DiagnosticProcess } from './asd-diagnosis/DiagnosticProcess';
 import { WhoCanDiagnose } from './asd-diagnosis/WhoCanDiagnose';
@@ -9,12 +9,14 @@ import { WhatIsAuDHD } from './asd-diagnosis/WhatIsAuDHD';
 
 interface ASDDiagnosisProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
 type TabType = 'criteria' | 'process' | 'professionals' | 'lifespan' | 'challenges' | 'after' | 'audhd';
 
-export function ASDDiagnosis({ setCurrentArticle }: ASDDiagnosisProps) {
-  const [activeTab, setActiveTab] = useState<TabType>('criteria');
+export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProps) {
+  const navigate = useNavigate();
+  const activeTab = (initialTab as TabType) || 'criteria';
 
   const tabs = [
     { id: 'criteria' as TabType, label: 'DSM-5 Criteria', emoji: '' },
@@ -55,7 +57,7 @@ export function ASDDiagnosis({ setCurrentArticle }: ASDDiagnosisProps) {
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => navigate(`/autism-diagnosis/${tab.id}`)}
             className={`px-6 !py-3 md:!py-2 rounded-md text-sm transition-colors ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'

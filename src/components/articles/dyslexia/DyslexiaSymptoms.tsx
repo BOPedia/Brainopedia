@@ -1,12 +1,14 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface DyslexiaSymptomsProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function DyslexiaSymptoms({ setCurrentArticle }: DyslexiaSymptomsProps) {
-  const [activeTab, setActiveTab] = useState('core');
+export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymptomsProps) {
+  const navigate = useNavigate();
+  const activeTab = initialTab || 'core';
 
   return (
     <article className="max-w-6xl">
@@ -54,7 +56,7 @@ export function DyslexiaSymptoms({ setCurrentArticle }: DyslexiaSymptomsProps) {
       {/* Tab Navigation */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
         <button
-          onClick={() => setActiveTab('core')}
+          onClick={() => navigate('/dyslexia-symptoms/core')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'core'
               ? 'bg-[#0A9DC4] text-white'
@@ -64,7 +66,7 @@ export function DyslexiaSymptoms({ setCurrentArticle }: DyslexiaSymptomsProps) {
           Core Symptoms
         </button>
         <button
-          onClick={() => setActiveTab('reading')}
+          onClick={() => navigate('/dyslexia-symptoms/reading')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'reading'
               ? 'bg-[#0A9DC4] text-white'
@@ -74,7 +76,7 @@ export function DyslexiaSymptoms({ setCurrentArticle }: DyslexiaSymptomsProps) {
           Reading Challenges
         </button>
         <button
-          onClick={() => setActiveTab('writing')}
+          onClick={() => navigate('/dyslexia-symptoms/writing')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'writing'
               ? 'bg-[#0A9DC4] text-white'
@@ -84,7 +86,7 @@ export function DyslexiaSymptoms({ setCurrentArticle }: DyslexiaSymptomsProps) {
           Writing & Spelling
         </button>
         <button
-          onClick={() => setActiveTab('age')}
+          onClick={() => navigate('/dyslexia-symptoms/age')}
           className={`px-6 py-3 rounded-md text-sm transition-colors ${
             activeTab === 'age'
               ? 'bg-[#0A9DC4] text-white'

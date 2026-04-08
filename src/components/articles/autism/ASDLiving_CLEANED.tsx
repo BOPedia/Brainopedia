@@ -1,16 +1,18 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { ASDReferences } from './ASDReferences';
-import { useState } from 'react';
 import { ASDComorbidities } from '../../infographics/ASDComorbidities';
+import { useNavigate } from 'react-router-dom';
 
 interface ASDLivingProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
 type TabType = 'lifespan' | 'daily-life' | 'relationships' | 'education-employment' | 'mental-health' | 'identity-community';
 
-export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
-  const [activeTab, setActiveTab] = useState<TabType>('lifespan');
+export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
+  const navigate = useNavigate();
+  const activeTab = (initialTab as TabType) || 'lifespan';
 
   const tabs = [
     { id: 'lifespan' as TabType, label: 'Across the Lifespan' },
@@ -509,7 +511,7 @@ export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => navigate(`/autism-living/${tab.id}`)}
             className={`px-6 py-3 rounded-md text-sm transition-colors ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { CoreSymptoms } from './asd-symptoms/CoreSymptoms';
 import { SocialCommunication } from './asd-symptoms/SocialCommunication';
 import { RepetitiveBehaviors } from './asd-symptoms/RepetitiveBehaviors';

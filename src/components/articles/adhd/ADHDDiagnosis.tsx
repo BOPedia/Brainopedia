@@ -2,12 +2,15 @@ import { ADHDComorbidities } from '../../infographics/ADHDComorbidities';
 import { ADHDDiagnosticProfessionals } from '../../infographics/ADHDDiagnosticProfessionals';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
+import { useNavigate } from 'react-router-dom';
 
 interface ADHDDiagnosisProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
+export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisProps) {
+  const navigate = useNavigate();
 
   return (
     <article className="max-w-full w-full">
@@ -33,7 +36,7 @@ export function ADHDDiagnosis({ setCurrentArticle }: ADHDDiagnosisProps) {
         </button>
       </div>
 
-      <Tabs defaultValue="process" className="w-full">
+      <Tabs value={initialTab || 'process'} onValueChange={(v) => navigate(`/adhd-diagnosis/${v}`)} className="w-full">
         <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger value="process" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
             Diagnostic Process

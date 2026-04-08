@@ -1,12 +1,14 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface DyscalculiaOverviewProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function DyscalculiaOverview({ setCurrentArticle }: DyscalculiaOverviewProps) {
-  const [activeTab, setActiveTab] = useState('what');
+export function DyscalculiaOverview({ setCurrentArticle, initialTab }: DyscalculiaOverviewProps) {
+  const navigate = useNavigate();
+  const activeTab = initialTab || 'what';
 
   return (
     <article className="max-w-6xl">
@@ -65,7 +67,7 @@ export function DyscalculiaOverview({ setCurrentArticle }: DyscalculiaOverviewPr
       {/* Tab Navigation */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6">
         <button
-          onClick={() => setActiveTab('what')}
+          onClick={() => navigate('/dyscalculia-overview/what')}
           className={`px-6 py-3 rounded-md transition-colors ${
             activeTab === 'what'
               ? 'bg-[#0A9DC4] text-white'
@@ -75,7 +77,7 @@ export function DyscalculiaOverview({ setCurrentArticle }: DyscalculiaOverviewPr
           What is Dyscalculia?
         </button>
         <button
-          onClick={() => setActiveTab('types')}
+          onClick={() => navigate('/dyscalculia-overview/types')}
           className={`px-6 py-3 rounded-md transition-colors ${
             activeTab === 'types'
               ? 'bg-[#0A9DC4] text-white'
@@ -85,7 +87,7 @@ export function DyscalculiaOverview({ setCurrentArticle }: DyscalculiaOverviewPr
           Types & Presentations
         </button>
         <button
-          onClick={() => setActiveTab('facts')}
+          onClick={() => navigate('/dyscalculia-overview/facts')}
           className={`px-6 py-3 rounded-md transition-colors ${
             activeTab === 'facts'
               ? 'bg-[#0A9DC4] text-white'

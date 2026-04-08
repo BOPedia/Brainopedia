@@ -23,3 +23,5 @@ npm-debug.log*
 # Testing
 coverage/
 EOF
+Brainopedia-backup.zip
+*.zip
