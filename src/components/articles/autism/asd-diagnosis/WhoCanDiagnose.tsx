@@ -1,150 +1,213 @@
+import { ASDDiagnosticProfessionals } from '../../../infographics/ASDDiagnosticProfessionals';
+import { Stethoscope, MessageSquare, Hand, BookOpen, XCircle } from 'lucide-react';
+
+const professionals = [
+  {
+    credential: 'MD',
+    title: 'Developmental Pediatricians',
+    color: 'bg-[#0c264d]',
+    textColor: 'text-white',
+    badgeBg: 'bg-[#2abcd4]',
+    titleColor: 'text-[#ffd166]',
+    description:
+      'Pediatricians with specialized training in developmental and behavioral disorders. Often lead autism diagnostic teams. Can prescribe medication and coordinate care.',
+    bullets: ['Most commonly first stop for children', 'Can diagnose and manage ongoing care'],
+  },
+  {
+    credential: 'PhD',
+    title: 'Child Psychologists',
+    color: 'bg-[#2abcd4]',
+    textColor: 'text-[#0c264d]',
+    badgeBg: 'bg-[#0c264d]',
+    titleColor: 'text-[#0c264d]',
+    description:
+      'Doctoral-level professionals (Ph.D. or Psy.D.) trained in psychological assessment and child development. Can administer ADOS-2 and ADI-R.',
+    bullets: ['Comprehensive testing and evaluation', 'Cannot prescribe medication (most states)'],
+  },
+  {
+    credential: 'MD',
+    title: 'Child Psychiatrists',
+    color: 'bg-[#0c264d]',
+    textColor: 'text-white',
+    badgeBg: 'bg-[#2abcd4]',
+    titleColor: 'text-[#ffd166]',
+    description:
+      'Medical doctors (M.D. or D.O.) specializing in child and adolescent mental health. Can diagnose autism, prescribe medication, and treat co-occurring conditions.',
+    bullets: ['Can prescribe and manage medications', 'Treat co-occurring anxiety, ADHD, etc.'],
+  },
+  {
+    credential: 'MD',
+    title: 'Child Neurologists',
+    color: 'bg-[#2abcd4]',
+    textColor: 'text-[#0c264d]',
+    badgeBg: 'bg-[#0c264d]',
+    titleColor: 'text-[#0c264d]',
+    description:
+      'Medical doctors specializing in nervous system disorders in children. Often diagnose autism, particularly when seizures, regression, or neurological issues are present.',
+    bullets: ['Key when neurological concerns exist', 'Can rule out other neurological conditions'],
+  },
+  {
+    credential: 'PhD',
+    title: 'Neuropsychologists',
+    color: 'bg-[#0c264d]',
+    textColor: 'text-white',
+    badgeBg: 'bg-[#2abcd4]',
+    titleColor: 'text-[#ffd166]',
+    description:
+      'Psychologists specializing in brain-behavior relationships. Conduct comprehensive testing of cognitive, language, social, and adaptive functions.',
+    bullets: ['Best for complex diagnostic cases', 'Detailed cognitive profile and report'],
+  },
+  {
+    credential: 'MD',
+    title: 'Pediatricians (with training)',
+    color: 'bg-[#2abcd4]',
+    textColor: 'text-[#0c264d]',
+    badgeBg: 'bg-[#0c264d]',
+    titleColor: 'text-[#0c264d]',
+    description:
+      'General pediatricians CAN diagnose autism if they have appropriate training and experience. May refer to specialists for complex cases or comprehensive testing.',
+    bullets: ['Often first point of contact for families', 'May refer to specialists for full eval'],
+  },
+];
+
+const teamMembers = [
+  {
+    role: 'Developmental Pediatrician or Psychologist',
+    duty: 'Leads the evaluation, conducts ADOS-2/ADI-R assessments, makes the diagnosis',
+    icon: Stethoscope,
+  },
+  {
+    role: 'Speech-Language Pathologist',
+    duty: 'Evaluates communication skills, language development, pragmatic (social) language',
+    icon: MessageSquare,
+  },
+  {
+    role: 'Occupational Therapist',
+    duty: 'Assesses sensory processing, fine motor skills, adaptive daily living skills',
+    icon: Hand,
+  },
+  {
+    role: 'Educational Psychologist or Special Educator',
+    duty: 'Evaluates learning profile, academic skills, educational needs',
+    icon: BookOpen,
+  },
+];
+
+const cannotDiagnose = [
+  { label: 'Teachers or School Counselors', note: 'Can recommend evaluation but cannot diagnose' },
+  {
+    label: 'Speech-Language Pathologists or OTs alone',
+    note: 'Important team members but cannot make the diagnosis independently (varies by state)',
+  },
+  {
+    label: 'Licensed Clinical Social Workers (LCSWs) or LPCs',
+    note: 'Can provide therapy but typically cannot diagnose autism (varies by state)',
+  },
+  { label: 'Online "Autism Tests"', note: 'Cannot replace a professional evaluation' },
+];
+
 export function WhoCanDiagnose() {
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Professionals Qualified to Diagnose Autism</h2>
-      
+
+      {/* SVG Infographic */}
+      <div className="flex justify-center mb-6">
+        <ASDDiagnosticProfessionals />
+      </div>
+
       <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
         <p className="text-sm">
-          <strong>Key Point:</strong> Autism diagnosis should be made by professionals with specific training and 
+          <strong>Key Point:</strong> Autism diagnosis should be made by professionals with specific training and
           experience in autism assessment. Not all medical or mental health professionals have this expertise.
         </p>
       </div>
 
+      {/* Professionals Card Grid */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Licensed Professionals Who Can Diagnose Autism</h3>
-        
-        <div className="space-y-4">
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Developmental Pediatricians</div>
-            <div className="text-sm">
-              Pediatricians with specialized training in developmental and behavioral disorders. Often lead autism 
-              diagnostic teams. Can prescribe medication and coordinate care.
-            </div>
-          </div>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Child Psychologists</div>
-            <div className="text-sm">
-              Doctoral-level professionals (Ph.D. or Psy.D.) trained in psychological assessment and child development. 
-              Can administer comprehensive testing including ADOS-2 and ADI-R. Cannot prescribe medication (except in 
-              a few states).
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {professionals.map((pro) => (
+            <div key={pro.title} className={`${pro.color} rounded-lg p-4 flex gap-3`}>
+              {/* Credential Badge */}
+              <div className={`${pro.badgeBg} rounded-full w-12 h-12 flex items-center justify-center shrink-0 mt-1`}>
+                <span className="text-white text-xs font-bold">{pro.credential}</span>
+              </div>
+              {/* Content */}
+              <div>
+                <div className={`font-bold text-sm mb-1 ${pro.titleColor}`}>{pro.title}</div>
+                <div className={`text-xs mb-2 ${pro.textColor} opacity-90`}>{pro.description}</div>
+                <ul className={`text-xs space-y-0.5 ${pro.textColor}`}>
+                  {pro.bullets.map((b) => (
+                    <li key={b}>• {b}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Child Psychiatrists</div>
-            <div className="text-sm">
-              Medical doctors (M.D. or D.O.) specializing in child and adolescent mental health. Can diagnose autism, 
-              prescribe medication, and treat co-occurring conditions.
-            </div>
-          </div>
-
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Child Neurologists</div>
-            <div className="text-sm">
-              Medical doctors specializing in nervous system disorders in children. Often diagnose autism, particularly 
-              when neurological issues (seizures, regression) are present.
-            </div>
-          </div>
-
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Neuropsychologists</div>
-            <div className="text-sm">
-              Psychologists specializing in brain-behavior relationships. Conduct comprehensive testing of cognitive, 
-              language, social, and adaptive functions. Particularly helpful for complex diagnostic cases.
-            </div>
-          </div>
-
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Pediatricians (with training)</div>
-            <div className="text-sm">
-              General pediatricians CAN diagnose autism if they have appropriate training and experience. May refer 
-              to specialists for complex cases or comprehensive testing.
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      {/* Diagnostic Team Approach */}
+      {/* Multidisciplinary Team — card row */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Multidisciplinary Team Approach</h3>
+        <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Multidisciplinary Team Approach</h3>
         <p className="text-sm mb-4">
-          The best autism evaluations often involve a team of professionals:
+          The best autism evaluations often involve a team of professionals working together:
         </p>
-        
-        <div className="space-y-3">
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Developmental Pediatrician or Psychologist</div>
-            <div className="text-sm">
-              Leads the evaluation, conducts diagnostic assessments (ADOS-2, ADI-R), makes the diagnosis
-            </div>
-          </div>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Speech-Language Pathologist</div>
-            <div className="text-sm">
-              Evaluates communication skills, language development, pragmatic (social) language
-            </div>
-          </div>
-
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Occupational Therapist</div>
-            <div className="text-sm">
-              Assesses sensory processing, fine motor skills, adaptive daily living skills
-            </div>
-          </div>
-
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Educational Psychologist or Special Educator</div>
-            <div className="text-sm">
-              Evaluates learning profile, academic skills, educational needs
-            </div>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {teamMembers.map((m) => {
+            const Icon = m.icon;
+            return (
+              <div key={m.role} className="flex gap-3 bg-[#f0f9ff] rounded-md p-3 border border-[#2abcd4]/30">
+                <Icon className="text-[#0A9DC4] shrink-0 mt-0.5" size={22} />
+                <div>
+                  <div className="font-bold text-[#0c264d] text-sm mb-1">{m.role}</div>
+                  <div className="text-xs text-gray-700">{m.duty}</div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 
-      {/* Who CANNOT Diagnose */}
+      {/* Who CANNOT Diagnose — table style */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">❌ Who CANNOT Diagnose Autism</h3>
-        
-        <div className="space-y-3">
-          <div className="border-l-2 border-red-500 pl-3">
-            <div className="text-sm">
-              <strong>• Teachers or School Counselors:</strong> Can recommend evaluation but cannot diagnose
-            </div>
-          </div>
+        <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
+          <XCircle className="text-red-500" size={20} />
+          Who CANNOT Diagnose Autism
+        </h3>
 
-          <div className="border-l-2 border-red-500 pl-3">
-            <div className="text-sm">
-              <strong>• Speech-Language Pathologists or Occupational Therapists alone:</strong> Important team members 
-              but cannot make autism diagnosis independently (varies by state)
-            </div>
-          </div>
-
-          <div className="border-l-2 border-red-500 pl-3">
-            <div className="text-sm">
-              <strong>• Licensed Clinical Social Workers (LCSWs) or Licensed Professional Counselors (LPCs):</strong> Can 
-              provide therapy but typically cannot diagnose autism (varies by state)
-            </div>
-          </div>
-
-          <div className="border-l-2 border-red-500 pl-3">
-            <div className="text-sm">
-              <strong>• Online "Autism Tests":</strong> Cannot replace professional evaluation
-            </div>
-          </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[#0c264d] text-white">
+                <th className="text-left p-3 rounded-tl-md w-2/5">Professional</th>
+                <th className="text-left p-3 rounded-tr-md">Why Not?</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cannotDiagnose.map((row, i) => (
+                <tr key={row.label} className={i % 2 === 0 ? 'bg-red-50' : 'bg-white'}>
+                  <td className="p-3 font-semibold text-red-700 border-b border-red-100 align-top">{row.label}</td>
+                  <td className="p-3 text-gray-700 border-b border-red-100">{row.note}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
 
       {/* Finding a Provider */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">How to Find a Qualified Professional</h3>
-        
+
         <div className="space-y-3">
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">Ask About Autism Experience</div>
             <div className="text-sm">
-              Look for providers who regularly diagnose autism. Ask: "How many autism evaluations do you conduct per 
+              Look for providers who regularly diagnose autism. Ask: "How many autism evaluations do you conduct per
               year?" and "Are you trained in ADOS-2 and ADI-R?"
             </div>
           </div>
@@ -152,7 +215,7 @@ export function WhoCanDiagnose() {
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">Get Referrals</div>
             <div className="text-sm">
-              Ask your pediatrician for referrals to autism specialists. Connect with local autism support organizations 
+              Ask your pediatrician for referrals to autism specialists. Connect with local autism support organizations
               for recommendations.
             </div>
           </div>
@@ -160,15 +223,16 @@ export function WhoCanDiagnose() {
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">Check University Centers</div>
             <div className="text-sm">
-              Many universities have autism centers or developmental clinics that provide evaluations (may have wait lists).
+              Many universities have autism centers or developmental clinics that provide evaluations (may have wait
+              lists).
             </div>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">Contact Early Intervention or School Districts</div>
             <div className="text-sm">
-              For children under 3, contact Early Intervention services. For children 3+, contact your school district's 
-              special education department—evaluations through schools are free.
+              For children under 3, contact Early Intervention services. For children 3+, contact your school
+              district's special education department — evaluations through schools are free.
             </div>
           </div>
         </div>
@@ -176,12 +240,12 @@ export function WhoCanDiagnose() {
 
       <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
         <p className="text-sm mb-2">
-          <strong>Important:</strong> Wait times for autism evaluations can be 6-18 months in many areas. Don't 
-          wait to seek evaluation if you have concerns. You can also access Early Intervention services or school 
-          supports while waiting for a formal diagnosis.
+          <strong>Important:</strong> Wait times for autism evaluations can be 6–18 months in many areas. Don't wait
+          to seek evaluation if you have concerns. You can also access Early Intervention services or school supports
+          while waiting for a formal diagnosis.
         </p>
         <p className="text-sm">
-          <strong>Cost:</strong> Evaluations can cost $1,500-$5,000 if not covered by insurance. Check your insurance 
+          <strong>Cost:</strong> Evaluations can cost $1,500–$5,000 if not covered by insurance. Check your insurance
           benefits. School-based evaluations are free but may not be as comprehensive as clinical evaluations.
         </p>
       </div>
@@ -189,13 +253,21 @@ export function WhoCanDiagnose() {
       {/* References */}
       <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        
-        <p className="text-sm mb-2"><em>No inline citations for this tab.</em></p>
-        
+
+        <p className="text-sm mb-2">
+          <em>No inline citations for this tab.</em>
+        </p>
+
         <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
         <div className="text-sm space-y-2">
-          <p>American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
-          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+          <p>
+            American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em>{' '}
+            (5th ed.). American Psychiatric Publishing.
+          </p>
+          <p>
+            Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder."{' '}
+            <em>The Lancet</em>, 392(10146), 508–520.
+          </p>
         </div>
       </div>
     </div>
