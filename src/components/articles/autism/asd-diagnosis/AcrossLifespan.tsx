@@ -1,199 +1,277 @@
-import { ImageWithFallback } from '../../../figma/ImageWithFallback';
+import {
+  Baby,
+  BookOpen,
+  User,
+  ArrowDown,
+  AlertCircle,
+  HelpCircle,
+  Lightbulb,
+  Users,
+  EyeOff,
+  School,
+  ShieldAlert,
+  ClipboardList,
+  GitBranch,
+  Sparkles,
+} from 'lucide-react';
+
+/* ─── Sub-card inside each stage ─── */
+function SubCard({
+  icon: Icon,
+  title,
+  accentColor,
+  bgColor,
+  children,
+}: {
+  icon: React.ElementType;
+  title: string;
+  accentColor: string;
+  bgColor: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div
+      className="rounded-lg p-4 flex gap-3"
+      style={{ backgroundColor: bgColor, borderLeft: `4px solid ${accentColor}` }}
+    >
+      <Icon size={20} color={accentColor} className="shrink-0 mt-0.5" />
+      <div>
+        <div className="font-bold text-[#0c264d] mb-1" style={{ fontSize: '0.92rem' }}>
+          {title}
+        </div>
+        <div className="text-sm text-gray-700">{children}</div>
+      </div>
+    </div>
+  );
+}
+
+/* ─── Stage header bar ─── */
+function StageHeader({
+  icon: Icon,
+  label,
+  ages,
+  bgColor,
+  textColor = '#ffffff',
+}: {
+  icon: React.ElementType;
+  label: string;
+  ages: string;
+  bgColor: string;
+  textColor?: string;
+}) {
+  return (
+    <div
+      className="flex items-center gap-4 rounded-t-xl px-6 py-4"
+      style={{ backgroundColor: bgColor }}
+    >
+      <div
+        className="rounded-full p-2 flex items-center justify-center"
+        style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}
+      >
+        <Icon size={28} color={textColor} />
+      </div>
+      <div>
+        <div className="font-bold" style={{ color: textColor, fontSize: '1.1rem' }}>
+          {label}
+        </div>
+        <div className="text-sm" style={{ color: textColor, opacity: 0.85 }}>
+          {ages}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ─── Flow connector between stages ─── */
+function FlowConnector({ label }: { label: string }) {
+  return (
+    <div className="flex flex-col items-center my-2">
+      <div className="w-px h-4 bg-[#2abcd4]" />
+      <div className="flex items-center gap-2 bg-[#2abcd4] text-white rounded-full px-4 py-1 text-xs font-bold">
+        <ArrowDown size={13} />
+        {label}
+      </div>
+      <div className="w-px h-4 bg-[#2abcd4]" />
+    </div>
+  );
+}
 
 export function AcrossLifespan() {
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnosis Across the Lifespan</h2>
-      
-      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
+
+      {/* Key Fact */}
+      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-8">
         <p className="text-sm">
-          <strong>Key Fact:</strong> Current autism prevalence is approximately 1 in 36 children. 
-          Autism can be reliably diagnosed by age 2, but many individuals—especially girls, women, and those without 
-          intellectual disability—are not diagnosed until adolescence or adulthood.
+          <strong>Key Fact:</strong> Current autism prevalence is approximately 1 in 36 children.
+          Autism can be reliably diagnosed by age 2, but many individuals — especially girls, women,
+          and those without intellectual disability — are not diagnosed until adolescence or adulthood.
         </p>
       </div>
 
-      {/* Early Childhood */}
-      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Early Childhood (Under 3 Years)</h3>
-        
-        <p className="text-sm mb-3">
-          Autism can be reliably diagnosed by age 2, sometimes earlier:
-        </p>
+      {/* ── STAGE 1: Early Childhood ── */}
+      <div className="rounded-xl shadow-md overflow-hidden mb-2">
+        <StageHeader
+          icon={Baby}
+          label="Early Childhood"
+          ages="Under 3 Years"
+          bgColor="#0c264d"
+        />
+        <div className="bg-white p-5 rounded-b-xl space-y-3">
+          <p className="text-sm text-gray-700 mb-1">
+            Autism can be reliably diagnosed by age 2, sometimes earlier:
+          </p>
 
-        <div className="space-y-3">
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Early Signs to Watch For</div>
-            <div className="text-sm">
-              <ul className="ml-4 space-y-1">
-                <li>• Lack of pointing by 12 months</li>
-                <li>• Reduced or unusual eye contact</li>
-                <li>• Lack of response to name by 12 months</li>
-                <li>• Loss of previously acquired skills (regression)</li>
-                <li>• Lack of babbling or gesturing by 12 months</li>
-                <li>• Limited social smiling or social engagement</li>
-                <li>• Repetitive behaviors (hand flapping, spinning, lining up toys)</li>
-              </ul>
-            </div>
-          </div>
+          <SubCard icon={AlertCircle} title="Early Signs to Watch For" accentColor="#0A9DC4" bgColor="#f0f9ff">
+            <ul className="space-y-0.5 mt-1">
+              <li>• Lack of pointing by 12 months</li>
+              <li>• Reduced or unusual eye contact</li>
+              <li>• Lack of response to name by 12 months</li>
+              <li>• Loss of previously acquired skills (regression)</li>
+              <li>• Lack of babbling or gesturing by 12 months</li>
+              <li>• Limited social smiling or social engagement</li>
+              <li>• Repetitive behaviors (hand flapping, spinning, lining up toys)</li>
+            </ul>
+          </SubCard>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Challenges in Early Diagnosis</div>
-            <div className="text-sm">
-              Developmental variability in toddlers, overlap with other developmental delays, some traits emerge later 
-              as social demands increase
-            </div>
-          </div>
+          <SubCard icon={HelpCircle} title="Challenges in Early Diagnosis" accentColor="#ffd166" bgColor="#fffdf0">
+            Developmental variability in toddlers, overlap with other developmental delays, and
+            some traits that emerge only later as social demands increase.
+          </SubCard>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Why Early Diagnosis Matters</div>
-            <div className="text-sm">
-              Earlier diagnosis enables earlier intervention, which research shows can significantly improve outcomes. 
-              Early Intervention services (birth-3) provide support during critical developmental period.
-            </div>
-          </div>
+          <SubCard icon={Lightbulb} title="Why Early Diagnosis Matters" accentColor="#10b981" bgColor="#f0fdf4">
+            Earlier diagnosis enables earlier intervention, which research shows can significantly
+            improve outcomes. Early Intervention services (birth–3) provide support during critical
+            developmental windows.
+          </SubCard>
         </div>
       </div>
 
-      {/* School Age */}
-      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">School Age (3-18 Years)</h3>
-        
-        <p className="text-sm mb-3">
-          Most autism diagnoses occur during this period:
-        </p>
+      <FlowConnector label="Growing Up" />
 
-        <div className="space-y-3">
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Common Triggers for Evaluation</div>
-            <div className="text-sm">
-              <ul className="ml-4 space-y-1">
-                <li>• Social difficulties at school (trouble making/keeping friends, playground struggles)</li>
-                <li>• Academic challenges despite apparent intelligence</li>
-                <li>• Behavioral concerns (meltdowns, rigidity, difficulty with transitions)</li>
-                <li>• Teacher observations of "different" social interaction or play</li>
-                <li>• Sensory sensitivities affecting school participation</li>
-              </ul>
-            </div>
-          </div>
+      {/* ── STAGE 2: School Age ── */}
+      <div className="rounded-xl shadow-md overflow-hidden mb-2">
+        <StageHeader
+          icon={School}
+          label="School Age"
+          ages="3 – 18 Years"
+          bgColor="#2abcd4"
+          textColor="#0c264d"
+        />
+        <div className="bg-white p-5 rounded-b-xl space-y-3">
+          <p className="text-sm text-gray-700 mb-1">
+            Most autism diagnoses occur during this period:
+          </p>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Important Considerations</div>
-            <div className="text-sm">
-              Some children, particularly girls, may have developed coping strategies or "masking" that hide autistic 
-              traits.<sup>[1]</sup> This can delay diagnosis despite genuine struggles. Burnout from masking often 
-              becomes apparent in middle school or high school.
-            </div>
-          </div>
+          <SubCard icon={AlertCircle} title="Common Triggers for Evaluation" accentColor="#0A9DC4" bgColor="#f0f9ff">
+            <ul className="space-y-0.5 mt-1">
+              <li>• Social difficulties at school (trouble making/keeping friends, playground struggles)</li>
+              <li>• Academic challenges despite apparent intelligence</li>
+              <li>• Behavioral concerns (meltdowns, rigidity, difficulty with transitions)</li>
+              <li>• Teacher observations of "different" social interaction or play</li>
+              <li>• Sensory sensitivities affecting school participation</li>
+            </ul>
+          </SubCard>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">School-Based vs. Clinical Diagnosis</div>
-            <div className="text-sm">
-              Schools can identify students as "eligible for services under autism," but this is an educational 
-              classification, not a medical diagnosis. Clinical diagnosis by qualified professional is recommended.
-            </div>
-          </div>
+          <SubCard icon={EyeOff} title="Important Considerations" accentColor="#f59e0b" bgColor="#fffbeb">
+            Some children, particularly girls, may have developed coping strategies or "masking"
+            that hide autistic traits.<sup style={{ color: '#10b981' }}>[1]</sup> This can delay
+            diagnosis despite genuine struggles. Burnout from masking often becomes apparent in
+            middle school or high school.
+          </SubCard>
+
+          <SubCard icon={Users} title="School-Based vs. Clinical Diagnosis" accentColor="#8b5cf6" bgColor="#f5f3ff">
+            Schools can identify students as "eligible for services under autism," but this is an
+            educational classification, not a medical diagnosis. Clinical diagnosis by a qualified
+            professional is recommended.
+          </SubCard>
         </div>
       </div>
 
-      {/* Adulthood */}
-      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Adulthood</h3>
-        
-        <div className="flex justify-center mb-4">
-          <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZHVsdCUyMGFzc2Vzc21lbnQlMjBldmFsdWF0aW9uJTIwdGVzdGluZ3xlbnwxfHx8fDE3Njc0MTI5MjV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Adult assessment and evaluation"
-            className="w-full max-w-md h-auto rounded-md border border-gray-300"
-          />
-        </div>
+      <FlowConnector label="Into Adulthood" />
 
-        <p className="text-sm mb-3">
-          Increasing numbers of adults seek autism diagnosis:
-        </p>
+      {/* ── STAGE 3: Adulthood ── */}
+      <div className="rounded-xl shadow-md overflow-hidden mb-6">
+        <StageHeader
+          icon={User}
+          label="Adulthood"
+          ages="18 + Years"
+          bgColor="#0A9DC4"
+        />
+        <div className="bg-white p-5 rounded-b-xl space-y-3">
+          <p className="text-sm text-gray-700 mb-1">
+            Increasing numbers of adults seek autism diagnosis:
+          </p>
 
-        <div className="space-y-3">
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Barriers to Adult Diagnosis</div>
-            <div className="text-sm">
-              <ul className="ml-4 space-y-1">
-                <li>• Fewer specialists trained in adult autism assessment</li>
-                <li>• Lack of adult-specific diagnostic tools</li>
-                <li>• Insurance coverage issues (some insurers don't cover adult autism evaluation)</li>
-                <li>• Misconception that autism only affects children</li>
-                <li>• Long wait lists (6-24+ months)</li>
-              </ul>
-            </div>
-          </div>
+          <SubCard icon={ShieldAlert} title="Barriers to Adult Diagnosis" accentColor="#ef4444" bgColor="#fef2f2">
+            <ul className="space-y-0.5 mt-1">
+              <li>• Fewer specialists trained in adult autism assessment</li>
+              <li>• Lack of adult-specific diagnostic tools</li>
+              <li>• Insurance coverage issues (some insurers don't cover adult evaluation)</li>
+              <li>• Misconception that autism only affects children</li>
+              <li>• Long wait lists (6–24+ months)</li>
+            </ul>
+          </SubCard>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Challenges in Adult Assessment</div>
-            <div className="text-sm">
-              <ul className="ml-4 space-y-1">
-                <li>• Retrospective developmental history (parents may not be available or remember details)</li>
-                <li>• Learned compensation strategies mask traits<sup>[1]</sup></li>
-                <li>• Co-occurring conditions (anxiety, depression) developed over years of struggling</li>
-                <li>• Adult life demands differ from childhood contexts</li>
-              </ul>
-            </div>
-          </div>
+          <SubCard icon={EyeOff} title="Challenges in Adult Assessment" accentColor="#f59e0b" bgColor="#fffbeb">
+            <ul className="space-y-0.5 mt-1">
+              <li>• Retrospective developmental history (parents may not be available or remember details)</li>
+              <li>• Learned compensation strategies mask traits<sup style={{ color: '#10b981' }}>[1]</sup></li>
+              <li>• Co-occurring conditions (anxiety, depression) developed over years of struggling</li>
+              <li>• Adult life demands differ from childhood contexts</li>
+            </ul>
+          </SubCard>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Adapted Tools for Adults</div>
-            <div className="text-sm">
-              Some tools have been modified for adult populations. Clinical judgment by experienced professionals 
-              is crucial. ADOS-2 includes a module for adults. Self-report measures like the AQ 
-              (Autism Quotient) can supplement assessment but don't replace comprehensive evaluation.
-            </div>
-          </div>
+          <SubCard icon={ClipboardList} title="Adapted Tools for Adults" accentColor="#0A9DC4" bgColor="#f0f9ff">
+            Some tools have been modified for adult populations. Clinical judgment by experienced
+            professionals is crucial. ADOS-2 includes a module for adults. Self-report measures
+            like the AQ (Autism Quotient) can supplement assessment but do not replace comprehensive
+            evaluation.
+          </SubCard>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Common Pathways to Adult Diagnosis</div>
-            <div className="text-sm">
-              <ul className="ml-4 space-y-1">
-                <li>• Parent diagnosed after child receives autism diagnosis</li>
-                <li>• Burnout from years of masking</li>
-                <li>• Mental health treatment for anxiety/depression reveals underlying autism</li>
-                <li>• Learning about autism and recognizing oneself</li>
-                <li>• Seeking explanation for lifelong feelings of being "different"</li>
-              </ul>
-            </div>
-          </div>
+          <SubCard icon={GitBranch} title="Common Pathways to Adult Diagnosis" accentColor="#8b5cf6" bgColor="#f5f3ff">
+            <ul className="space-y-0.5 mt-1">
+              <li>• Parent diagnosed after child receives autism diagnosis</li>
+              <li>• Burnout from years of masking</li>
+              <li>• Mental health treatment for anxiety/depression reveals underlying autism</li>
+              <li>• Learning about autism and recognizing oneself</li>
+              <li>• Seeking explanation for lifelong feelings of being "different"</li>
+            </ul>
+          </SubCard>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Impact of Late Diagnosis</div>
-            <div className="text-sm">
-              Can provide profound clarity and relief, validation of lifelong struggles, access to accommodations 
-              and services, connection to autistic community and identity, reframing of past experiences in neurodiversity-
-              affirming way.
-            </div>
-          </div>
+          <SubCard icon={Sparkles} title="Impact of Late Diagnosis" accentColor="#10b981" bgColor="#f0fdf4">
+            Can provide profound clarity and relief, validation of lifelong struggles, access to
+            accommodations and services, connection to the autistic community and identity, and
+            reframing of past experiences in a neurodiversity-affirming way.
+          </SubCard>
         </div>
       </div>
 
+      {/* Bottom callout */}
       <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
         <p className="text-sm">
-          <strong>It's Never Too Late:</strong> Many autistic adults describe diagnosis as life-changing, even 
-          in their 30s, 40s, 50s, or beyond. Understanding your neurology helps you advocate for your needs, find 
-          community, and practice self-compassion. If you suspect you might be autistic, seeking evaluation is valid 
-          at any age.
+          <strong>It's Never Too Late:</strong> Many autistic adults describe diagnosis as
+          life-changing, even in their 30s, 40s, 50s, or beyond. Understanding your neurology
+          helps you advocate for your needs, find community, and practice self-compassion. If you
+          suspect you might be autistic, seeking evaluation is valid at any age.
         </p>
       </div>
 
       {/* References */}
       <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        
+
         <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-        <div className="text-sm space-y-2">
-          <p>[1] Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <em>Journal of Autism and Developmental Disorders</em>, 47(8), 2519-2534.</p>
+        <div className="text-sm space-y-2 ml-4">
+          <p>[1] Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <em>Journal of Autism and Developmental Disorders</em>, 47(8), 2519–2534.</p>
         </div>
-        
+
         <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
         <div className="text-sm space-y-2">
-          <p>Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <em>Pediatrics</em>, 136(Supplement 1), S1-S9.</p>
-          <p>Howlin, P., Goode, S., Hutton, J., & Rutter, M. (2004). "Adult outcome for children with autism." <em>Journal of Child Psychology and Psychiatry</em>, 45(2), 212-229.</p>
-          <p>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <em>The Lancet</em>, 383(9920), 896-910.</p>
+          <p>Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <em>Pediatrics</em>, 136(Supplement 1), S1–S9.</p>
+          <p>Howlin, P., Goode, S., Hutton, J., & Rutter, M. (2004). "Adult outcome for children with autism." <em>Journal of Child Psychology and Psychiatry</em>, 45(2), 212–229.</p>
+          <p>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <em>The Lancet</em>, 383(9920), 896–910.</p>
         </div>
       </div>
     </div>
