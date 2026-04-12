@@ -35,18 +35,21 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">∞ What is Autism Spectrum Disorder?</h2>
           
-          <ImageWithFallback 
-            src="/images/autism/autism-overview-treeshead.png" 
-            alt="Autism trees and head neurodiversity illustration"
-            className="w-52 h-auto float-right ml-4 mb-4 rounded"
-          />
-          
-          <p className="mb-4">
-            Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by differences in social communication and interaction, alongside restricted or repetitive patterns of behavior, interests, or activities. Autism is called a "spectrum" disorder because there is wide variation in the type and severity of symptoms people experience.
-          </p>
-          <p className="mb-4">
-            ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup>[1]</sup> representing a significant increase in diagnosis rates over the past two decades. This increase is largely attributed to improved awareness, expanded diagnostic criteria, and better identification rather than a true increase in prevalence.
-          </p>
+          <div className="flex gap-4 items-start mb-4">
+            <div className="flex-1">
+              <p className="mb-4">
+                Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by differences in social communication and interaction, alongside restricted or repetitive patterns of behavior, interests, or activities. Autism is called a "spectrum" disorder because there is wide variation in the type and severity of symptoms people experience.
+              </p>
+              <p className="mb-4">
+                ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup>[1]</sup> representing a significant increase in diagnosis rates over the past two decades. This increase is largely attributed to improved awareness, expanded diagnostic criteria, and better identification rather than a true increase in prevalence.
+              </p>
+            </div>
+            <ImageWithFallback
+              src="/images/autism/autism-overview-treeshead.png"
+              alt="Autism trees and head neurodiversity illustration"
+              className="w-52 h-auto flex-shrink-0 rounded"
+            />
+          </div>
           
           {/* Nested: Key Facts */}
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -79,17 +82,18 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding "The Spectrum"</h2>
           
-          <ImageWithFallback 
-            src="/images/autism/autism-overview-rainbowgoldinfinity.png" 
-            alt="Rainbow and gold infinity symbol representing autism spectrum diversity"
-            className="w-52 h-auto float-left mr-4 mb-4 rounded"
-          />
-          
-          <p className="mb-6">
-            The autism spectrum is not a linear scale from "mild" to "severe." Instead, it represents the diverse 
-            ways autism can manifest across multiple dimensions. Each autistic person has a unique profile 
-            of strengths and challenges across various domains.
-          </p>
+          <div className="flex gap-4 items-start mb-6">
+            <ImageWithFallback
+              src="/images/autism/autism-overview-rainbowgoldinfinity.png"
+              alt="Rainbow and gold infinity symbol representing autism spectrum diversity"
+              className="w-52 h-auto flex-shrink-0 rounded"
+            />
+            <p className="flex-1">
+              The autism spectrum is not a linear scale from "mild" to "severe." Instead, it represents the diverse 
+              ways autism can manifest across multiple dimensions. Each autistic person has a unique profile 
+              of strengths and challenges across various domains.
+            </p>
+          </div>
 
           {/* Nested: Spectrum Dimensions */}
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -149,15 +153,18 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Neurodiversity Paradigm</h2>
           
-          <ImageWithFallback 
-            src="/images/autism/autism-overview-NDparadigm.png" 
-            alt="Neurodiversity paradigm concept"
-            className="w-52 h-auto float-right ml-4 mb-4 rounded"
-          />
-          
-          <p className="mb-6">
-            Many autistic individuals and advocates embrace the neurodiversity paradigm, which views autism as a natural variation in human neurology rather than a disorder or deficit that needs to be "cured." This perspective, pioneered by autistic sociologist Judy Singer in the 1990s, has fundamentally changed how many people understand autism.
-          </p>
+          <div className="flex gap-4 items-start mb-6">
+            <div className="flex-1">
+              <p>
+                Many autistic individuals and advocates embrace the neurodiversity paradigm, which views autism as a natural variation in human neurology rather than a disorder or deficit that needs to be "cured." This perspective, pioneered by autistic sociologist Judy Singer in the 1990s, has fundamentally changed how many people understand autism.
+              </p>
+            </div>
+            <ImageWithFallback
+              src="/images/autism/autism-overview-NDparadigm.png"
+              alt="Neurodiversity paradigm concept"
+              className="w-52 h-auto flex-shrink-0 rounded"
+            />
+          </div>
           
           {/* Nested: Neurodiversity Principles */}
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -228,15 +235,16 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Features of Autism</h2>
           
-          <ImageWithFallback 
-            src="/images/autism/autism-overview-venn.png" 
-            alt="Autism core features Venn diagram"
-            className="w-52 h-auto float-left mr-4 mb-4 rounded"
-          />
-          
-          <p className="mb-4">
-            According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
-          </p>
+          <div className="flex gap-4 items-start mb-4">
+            <ImageWithFallback
+              src="/images/autism/autism-overview-venn.png"
+              alt="Autism core features Venn diagram"
+              className="w-52 h-auto flex-shrink-0 rounded"
+            />
+            <p className="flex-1">
+              According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
+            </p>
+          </div>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Persistent Differences in Social Communication and Social Interaction</h3>
           <p className="mb-4">
@@ -446,16 +454,19 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Causes Autism?</h2>
           
-          <ImageWithFallback 
-            src="/images/autism/autism-overview-genetics.png" 
-            alt="Genetics and autism chromosomes illustration"
-            className="w-52 h-auto float-right ml-4 mb-4 rounded"
-          />
-          
-          <p className="mb-6">
-            Autism is a complex neurodevelopmental condition with multiple contributing factors. Current evidence 
-            indicates genetics plays a major role, with environmental factors also contributing.
-          </p>
+          <div className="flex gap-4 items-start mb-6">
+            <div className="flex-1">
+              <p>
+                Autism is a complex neurodevelopmental condition with multiple contributing factors. Current evidence 
+                indicates genetics plays a major role, with environmental factors also contributing.
+              </p>
+            </div>
+            <ImageWithFallback
+              src="/images/autism/autism-overview-genetics.png"
+              alt="Genetics and autism chromosomes illustration"
+              className="w-52 h-auto flex-shrink-0 rounded"
+            />
+          </div>
 
           {/* What We Know */}
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -578,15 +589,18 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Language and Terminology</h2>
           
-          <ImageWithFallback 
-            src="/images/autism/autism-overview-NDlabels.png" 
-            alt="Neurodivergent Labels tag graphic"
-            className="w-52 h-auto float-right ml-4 mb-4 rounded"
-          />
-          
-          <p className="mb-6">
-            How we talk about autism matters. Language preferences vary within the autistic community:
-          </p>
+          <div className="flex gap-4 items-start mb-6">
+            <div className="flex-1">
+              <p>
+                How we talk about autism matters. Language preferences vary within the autistic community:
+              </p>
+            </div>
+            <ImageWithFallback
+              src="/images/autism/autism-overview-NDlabels.png"
+              alt="Neurodivergent Labels tag graphic"
+              className="w-52 h-auto flex-shrink-0 rounded"
+            />
+          </div>
 
           {/* Identity-First vs Person-First */}
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
