@@ -1,9 +1,7 @@
- cat > .gitignore << 'EOF'
 # Dependencies
 node_modules/
 
 # Build output
-dist/
 build/
 
 # Environment variables
@@ -22,6 +20,5 @@ npm-debug.log*
 
 # Testing
 coverage/
-EOF
 Brainopedia-backup.zip
 *.zip
