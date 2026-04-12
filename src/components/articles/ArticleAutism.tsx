@@ -77,11 +77,6 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
         {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
           <p>
-            <ImageWithFallback
-              src="/images/autism/autism-main-infobox.png"
-              alt="Autism Spectrum Disorder"
-              className="w-48 h-auto float-right ml-4 mb-4 rounded"
-            />
             <strong>Autism spectrum disorder (ASD)</strong> is a neurodevelopmental condition characterized 
             by differences in social communication and interaction, alongside restricted or repetitive patterns of 
             behavior, interests, or activities. The term "spectrum" reflects the wide variation in challenges and 
@@ -95,6 +90,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
         <div className="w-full">
           <InfoBox
             title="Autism Spectrum Disorder"
+            image="/images/autism/autism-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Autism, ASD' },
               { label: 'Specialty', value: 'Psychiatry, Pediatrics, Neurology' },
