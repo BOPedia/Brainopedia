@@ -1,5 +1,5 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { ASDReferences } from './ASDReferences';
+import { ASDOverviewReferences } from '../../references/ASDOverviewReferences';
 
 interface ASDOverviewProps {
   setCurrentArticle?: (article: string) => void;
@@ -35,18 +35,17 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">∞ What is Autism Spectrum Disorder?</h2>
           
-          {/* Image removed - headTreeImage variable not defined */}
-          {/* <img 
-            src={headTreeImage} 
-            alt="Head with tree representing neurodiversity and autism"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          /> */}
+          <ImageWithFallback 
+            src="/images/autism/autism-overview-treeshead.png" 
+            alt="Autism trees and head neurodiversity illustration"
+            className="w-52 h-auto float-right ml-4 mb-4 rounded"
+          />
           
           <p className="mb-4">
             Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by differences in social communication and interaction, alongside restricted or repetitive patterns of behavior, interests, or activities. Autism is called a "spectrum" disorder because there is wide variation in the type and severity of symptoms people experience.
           </p>
           <p className="mb-4">
-            ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup>[3]</sup> representing a significant increase in diagnosis rates over the past two decades. This increase is largely attributed to improved awareness, expanded diagnostic criteria, and better identification rather than a true increase in prevalence.
+            ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup>[1]</sup> representing a significant increase in diagnosis rates over the past two decades. This increase is largely attributed to improved awareness, expanded diagnostic criteria, and better identification rather than a true increase in prevalence.
           </p>
           
           {/* Nested: Key Facts */}
@@ -80,12 +79,11 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding "The Spectrum"</h2>
           
-          {/* Image removed - spectrumInfinityImage variable not defined */}
-          {/* <img 
-            src={spectrumInfinityImage} 
-            alt="Infinity symbol representing autism spectrum diversity"
-            className="w-80 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-          /> */}
+          <ImageWithFallback 
+            src="/images/autism/autism-overview-rainbowgoldinfinity.png" 
+            alt="Rainbow and gold infinity symbol representing autism spectrum diversity"
+            className="w-52 h-auto float-left mr-4 mb-4 rounded"
+          />
           
           <p className="mb-6">
             The autism spectrum is not a linear scale from "mild" to "severe." Instead, it represents the diverse 
@@ -152,9 +150,9 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Neurodiversity Paradigm</h2>
           
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1672952419591-3c0bc803175d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyb2RpdmVyc2l0eSUyMGJyYWluJTIwZGl2ZXJzaXR5JTIwc3BlY3RydW18ZW58MXx8fHwxNzY3NDExODc2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Brain diversity and neurodiversity concept"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            src="/images/autism/autism-overview-NDparadigm.png" 
+            alt="Neurodiversity paradigm concept"
+            className="w-52 h-auto float-right ml-4 mb-4 rounded"
           />
           
           <p className="mb-6">
@@ -230,12 +228,11 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Features of Autism</h2>
           
-          {/* Image removed - definingAutismImage variable not defined */}
-          {/* <img 
-            src={definingAutismImage} 
-            alt="Defining characteristics of autism spectrum disorder"
-            className="w-96 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-          /> */}
+          <ImageWithFallback 
+            src="/images/autism/autism-overview-venn.png" 
+            alt="Autism core features Venn diagram"
+            className="w-52 h-auto float-left mr-4 mb-4 rounded"
+          />
           
           <p className="mb-4">
             According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
@@ -393,7 +390,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Current Prevalence</h3>
             
             <p className="mb-3">
-              As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the United States.<sup>[3]</sup> This represents a substantial increase from 1 in 150 in 2000.
+              As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the United States.<sup>[1]</sup> This represents a substantial increase from 1 in 150 in 2000.
             </p>
             
             <div className="bg-[#ffd166] p-3 rounded-md mt-3">
@@ -408,7 +405,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
           <div className="bg-white p-5 rounded-md border-2 border-[#0c264d] mb-6">
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Differences</h3>
             <p className="mb-3">
-              Autism is diagnosed more frequently in males than females, with ratios typically reported around <strong>3-4:1</strong>.<sup>[80]</sup> 
+              Autism is diagnosed more frequently in males than females, with ratios typically reported around <strong>3-4:1</strong>.<sup>[2]</sup> 
               However, research suggests this reflects diagnostic bias—females may be underdiagnosed because they often 
               present differently, "camouflage" symptoms more effectively, and don't match stereotypical autism presentations.
             </p>
@@ -449,12 +446,11 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Causes Autism?</h2>
           
-          {/* Image removed - geneticsAutismImage variable not defined */}
-          {/* <img 
-            src={geneticsAutismImage} 
-            alt="Genetics in Autism - chromosomes illustration"
-            className="w-80 h-auto rounded-md float-right ml-6 mb-4"
-          /> */}
+          <ImageWithFallback 
+            src="/images/autism/autism-overview-genetics.png" 
+            alt="Genetics and autism chromosomes illustration"
+            className="w-52 h-auto float-right ml-4 mb-4 rounded"
+          />
           
           <p className="mb-6">
             Autism is a complex neurodevelopmental condition with multiple contributing factors. Current evidence 
@@ -496,7 +492,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <p className="font-bold mb-3 text-red-600">Important: These DO NOT cause autism:</p>
             <div className="space-y-2">
               <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ Vaccines</strong> — This has been thoroughly debunked by extensive research<sup>[72]</sup></div>
+                <div className="text-sm"><strong>✗ Vaccines</strong> — This has been thoroughly debunked by extensive research<sup>[3]</sup></div>
               </div>
               <div className="border-l-2 border-red-500 pl-3">
                 <div className="text-sm"><strong>✗ Parenting Style</strong> — The "refrigerator mother" theory has been completely discredited</div>
@@ -534,17 +530,17 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <div className="space-y-4">
               <div className="border-l-2 border-[#2abcd4] pl-4">
                 <div className="font-bold text-[#0c264d]">1943</div>
-                <div className="text-sm">Leo Kanner published the first description of "early infantile autism"<sup>[23]</sup></div>
+                <div className="text-sm">Leo Kanner published the first description of "early infantile autism"<sup>[4]</sup></div>
               </div>
               
               <div className="border-l-2 border-[#2abcd4] pl-4">
                 <div className="font-bold text-[#0c264d]">1944</div>
-                <div className="text-sm">Hans Asperger described "autistic psychopathy" in children (now known as Asperger syndrome)<sup>[24]</sup></div>
+                <div className="text-sm">Hans Asperger described "autistic psychopathy" in children (now known as Asperger syndrome)<sup>[5]</sup></div>
               </div>
               
               <div className="border-l-2 border-red-500 pl-4">
                 <div className="font-bold text-[#0c264d]">1960s-1980s</div>
-                <div className="text-sm">Harmful "refrigerator mother" theory blamed parents<sup>[25]</sup></div>
+                <div className="text-sm">Harmful "refrigerator mother" theory blamed parents<sup>[6]</sup></div>
               </div>
               
               <div className="border-l-2 border-[#2abcd4] pl-4">
@@ -582,12 +578,11 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Language and Terminology</h2>
           
-          {/* Image removed - neurodivergentLabelsImage variable not defined */}
-          {/* <img 
-            src={neurodivergentLabelsImage} 
+          <ImageWithFallback 
+            src="/images/autism/autism-overview-NDlabels.png" 
             alt="Neurodivergent Labels tag graphic"
-            className="w-80 h-auto rounded-md float-right ml-6 mb-4"
-          /> */}
+            className="w-52 h-auto float-right ml-4 mb-4 rounded"
+          />
           
           <p className="mb-6">
             How we talk about autism matters. Language preferences vary within the autistic community:
@@ -687,12 +682,10 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         </button>
       </div>
 
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
+      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <ASDReferences />
-        </div>
-      </section>
+        <ASDOverviewReferences />
+      </div>
 
     </article>
   );
