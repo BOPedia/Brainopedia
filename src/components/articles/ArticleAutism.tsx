@@ -2,6 +2,7 @@ import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
 import { ASDReferences } from './autism/ASDReferences';
+import { ImageWithFallback } from '../figma/ImageWithFallback';
 
 interface ArticleAutismProps {
   setCurrentArticle?: (article: string) => void;
@@ -76,6 +77,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
         {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
           <p>
+            <ImageWithFallback
+              src="/images/autism/autism-main-infobox.png"
+              alt="Autism Spectrum Disorder"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             <strong>Autism spectrum disorder (ASD)</strong> is a neurodevelopmental condition characterized 
             by differences in social communication and interaction, alongside restricted or repetitive patterns of 
             behavior, interests, or activities. The term "spectrum" reflects the wide variation in challenges and 
@@ -106,6 +112,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/autism/autism-main-overview.png"
+              alt="Autism Overview"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Autism is a lifelong neurodevelopmental condition that affects how people perceive the world and interact 
             with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup style={{color: '#10b981'}}>[1]</sup> with 
             increasing recognition and diagnosis rates in recent years. It's important to recognize that autism is 
@@ -132,6 +143,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/autism/autism-main-symptoms.png"
+              alt="Autism Symptoms and Characteristics"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Autism is characterized by differences in social communication and interaction, alongside restricted or 
             repetitive behaviors and interests. The way these characteristics present varies significantly from person 
             to person, which is why autism is described as a spectrum. Common areas of difference include difficulty 
@@ -160,6 +176,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/autism/autism-main-causes.png"
+              alt="Autism Causes and Origins"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             The exact causes of autism are not fully understood, but research indicates that both genetic and environmental factors contribute to its development.<sup style={{color: '#10b981'}}>[2]</sup> Autism is best understood as arising from differences in brain development that occur before birth. Studies have identified hundreds of genes associated with autism, though no single gene causes autism in most cases.<sup style={{color: '#10b981'}}>[3]</sup>
           </p>
           
@@ -181,6 +202,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/autism/autism-main-diagnosis.png"
+              alt="Autism Testing and Diagnosis"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Autism is typically diagnosed through comprehensive developmental and behavioral evaluation by qualified professionals such as developmental pediatricians, child psychologists, or neurologists. There is no medical test (like a blood test or brain scan) for autism; diagnosis is based on observation of behavior and developmental history using standardized diagnostic criteria from the DSM-5-TR.<sup style={{color: '#10b981'}}>[5]</sup>
           </p>
           
@@ -202,6 +228,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/autism/autism-main-support.png"
+              alt="Autism Support and Management"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Support for autistic individuals should be individualized based on their unique needs, strengths, and 
             preferences. The goal is to provide accommodations and support that help autistic people thrive while 
             respecting their neurological differences. Support may include educational accommodations such as 
@@ -230,6 +261,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Autism</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/autism/autism-main-living.png"
+              alt="Living with Autism"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Autistic individuals lead full and meaningful lives across all areas of society. While autism presents 
             challenges, many autistic people also describe unique strengths and perspectives that enrich their lives 
             and communities. These may include exceptional attention to detail, deep knowledge in areas of interest, 
