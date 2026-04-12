@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MemoryRouter, Routes, Route, useParams, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useParams, useNavigate, useLocation } from 'react-router-dom';
 import { Sidebar } from './components/Sidebar';
 import { ArticleContent } from './components/ArticleContent';
 import { Header } from './components/Header';
@@ -84,12 +84,12 @@ function AppContent() {
 
 export default function App() {
   return (
-    <MemoryRouter initialEntries={getInitialEntries()} initialIndex={0}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<AppContent />} />
         <Route path="/:articleId" element={<AppContent />} />
         <Route path="/:articleId/:tabId" element={<AppContent />} />
       </Routes>
-    </MemoryRouter>
+    </BrowserRouter>
   );
 }
