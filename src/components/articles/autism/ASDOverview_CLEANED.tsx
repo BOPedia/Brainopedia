@@ -45,9 +45,9 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
               </p>
             </div>
             <ImageWithFallback
-              src="/images/autism/autism-overview-treeshead.png"
+              src="/images/autism/autism-overview-pattern-brain.png"
               alt="Autism trees and head neurodiversity illustration"
-              className="w-52 h-auto flex-shrink-0 rounded"
+              className="w-120 h-auto flex-shrink-0 rounded"
             />
           </div>
           
@@ -86,7 +86,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <ImageWithFallback
               src="/images/autism/autism-overview-rainbowgoldinfinity.png"
               alt="Rainbow and gold infinity symbol representing autism spectrum diversity"
-              className="w-52 h-auto flex-shrink-0 rounded"
+              className="w-120 h-auto flex-shrink-0 rounded"
             />
             <p className="flex-1">
               The autism spectrum is not a linear scale from "mild" to "severe." Instead, it represents the diverse 
@@ -162,7 +162,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <ImageWithFallback
               src="/images/autism/autism-overview-NDparadigm.png"
               alt="Neurodiversity paradigm concept"
-              className="w-52 h-auto flex-shrink-0 rounded"
+              className="w-120 h-auto flex-shrink-0 rounded"
             />
           </div>
           
@@ -239,7 +239,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <ImageWithFallback
               src="/images/autism/autism-overview-venn.png"
               alt="Autism core features Venn diagram"
-              className="w-52 h-auto flex-shrink-0 rounded"
+              className="w-120 h-auto flex-shrink-0 rounded"
             />
             <p className="flex-1">
               According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
@@ -464,7 +464,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <ImageWithFallback
               src="/images/autism/autism-overview-genetics.png"
               alt="Genetics and autism chromosomes illustration"
-              className="w-52 h-auto flex-shrink-0 rounded"
+              className="w-120 h-auto flex-shrink-0 rounded"
             />
           </div>
 
@@ -598,7 +598,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <ImageWithFallback
               src="/images/autism/autism-overview-NDlabels.png"
               alt="Neurodivergent Labels tag graphic"
-              className="w-52 h-auto flex-shrink-0 rounded"
+              className="w-120 h-auto flex-shrink-0 rounded"
             />
           </div>
 
