@@ -153,17 +153,16 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Neurodiversity Paradigm</h2>
           
-          <div className="flex gap-4 items-start mb-6">
-            <div className="flex-1">
-              <p>
-                Many autistic individuals and advocates embrace the neurodiversity paradigm, which views autism as a natural variation in human neurology rather than a disorder or deficit that needs to be "cured." This perspective, pioneered by autistic sociologist Judy Singer in the 1990s, has fundamentally changed how many people understand autism.
-              </p>
-            </div>
+          <div className="mb-6">
             <ImageWithFallback
               src="/images/autism/autism-overview-NDparadigm.png"
               alt="Neurodiversity paradigm concept"
-              className="w-32 h-auto flex-shrink-0 rounded"
+              className="w-54 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
             />
+            <p>
+              Many autistic individuals and advocates embrace the neurodiversity paradigm, which views autism as a natural variation in human neurology rather than a disorder or deficit that needs to be "cured." This perspective, pioneered by autistic sociologist Judy Singer in the 1990s, has fundamentally changed how many people understand autism.
+            </p>
+            <div className="clear-both"></div>
           </div>
           
           {/* Nested: Neurodiversity Principles */}
@@ -235,16 +234,15 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Features of Autism</h2>
           
-          <div className="flex gap-4 items-start mb-4">
-            <ImageWithFallback
-              src="/images/autism/autism-overview-venn.png"
-              alt="Autism core features Venn diagram"
-              className="w-32 h-auto flex-shrink-0 rounded"
-            />
-            <p className="flex-1">
-              According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
-            </p>
-          </div>
+          <ImageWithFallback
+            src="/images/autism/autism-overview-venn.png"
+            alt="Autism core features Venn diagram"
+            className="w-96 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
+          />
+          <p className="mb-4">
+            According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
+          </p>
+          <div className="clear-both"></div>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Persistent Differences in Social Communication and Social Interaction</h3>
           <p className="mb-4">
@@ -454,18 +452,17 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Causes Autism?</h2>
           
-          <div className="flex gap-4 items-start mb-6">
-            <div className="flex-1">
-              <p>
-                Autism is a complex neurodevelopmental condition with multiple contributing factors. Current evidence 
-                indicates genetics plays a major role, with environmental factors also contributing.
-              </p>
-            </div>
+          <div className="mb-6">
             <ImageWithFallback
               src="/images/autism/autism-overview-genetics.png"
               alt="Genetics and autism chromosomes illustration"
-              className="w-32 h-auto flex-shrink-0 rounded"
+              className="w-40 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
             />
+            <p>
+              Autism is a complex neurodevelopmental condition with multiple contributing factors. Current evidence 
+              indicates genetics plays a major role, with environmental factors also contributing.
+            </p>
+            <div className="clear-both"></div>
           </div>
 
           {/* What We Know */}
@@ -589,17 +586,16 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Language and Terminology</h2>
           
-          <div className="flex gap-4 items-start mb-6">
-            <div className="flex-1">
-              <p>
-                How we talk about autism matters. Language preferences vary within the autistic community:
-              </p>
-            </div>
+          <div className="mb-6">
             <ImageWithFallback
               src="/images/autism/autism-overview-NDlabels.png"
               alt="Neurodivergent Labels tag graphic"
-              className="w-32 h-auto flex-shrink-0 rounded"
+              className="w-54 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
             />
+            <p>
+              How we talk about autism matters. Language preferences vary within the autistic community:
+            </p>
+            <div className="clear-both"></div>
           </div>
 
           {/* Identity-First vs Person-First */}
