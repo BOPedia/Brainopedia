@@ -233,44 +233,47 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         {/* Core Features Section */}
         <div>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Features of Autism</h2>
-          
-          <ImageWithFallback
-            src="/images/autism/autism-overview-venn.png"
-            alt="Autism core features Venn diagram"
-            className="w-96 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-          />
+
           <p className="mb-4">
             According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
           </p>
-          <div className="clear-both"></div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Persistent Differences in Social Communication and Social Interaction</h3>
-          <p className="mb-4">
-            This includes challenges across multiple contexts in:
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Social-emotional reciprocity:</strong> Back-and-forth conversation, sharing interests and emotions, responding to social interactions</li>
-            <li className="mb-2"><strong>Nonverbal communication:</strong> Eye contact, body language, facial expressions, gestures</li>
-            <li className="mb-2"><strong>Developing and maintaining relationships:</strong> Making friends, understanding social expectations, adjusting behavior to different contexts</li>
-          </ul>
+          <div className="flex gap-6 items-start">
+            <ImageWithFallback
+              src="/images/autism/autism-overview-venn.png"
+              alt="Autism core features Venn diagram"
+              className="w-96 h-auto flex-shrink-0 rounded-md border border-gray-300"
+            />
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">2. Restricted, Repetitive Patterns of Behavior, Interests, or Activities</h3>
-          <p className="mb-4">
-            Including at least two of the following:
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Repetitive movements, speech, or use of objects:</strong> Hand flapping, echolalia, lining up toys</li>
-            <li className="mb-2"><strong>Insistence on sameness and routines:</strong> Distress at changes, rigid thinking patterns, ritualized behaviors</li>
-            <li className="mb-2"><strong>Highly restricted, fixated interests:</strong> Intense focus on specific topics or objects</li>
-            <li className="mb-2"><strong>Sensory sensitivities:</strong> Hyper- or hypo-reactivity to sensory input, unusual sensory interests</li>
-          </ul>
+            <div className="flex-1">
+              <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Persistent Differences in Social Communication and Social Interaction</h3>
+              <p className="mb-4">
+                This includes challenges across multiple contexts in:
+              </p>
+              <ul className="list-disc ml-6 mb-4">
+                <li className="mb-2"><strong>Social-emotional reciprocity:</strong> Back-and-forth conversation, sharing interests and emotions, responding to social interactions</li>
+                <li className="mb-2"><strong>Nonverbal communication:</strong> Eye contact, body language, facial expressions, gestures</li>
+                <li className="mb-2"><strong>Developing and maintaining relationships:</strong> Making friends, understanding social expectations, adjusting behavior to different contexts</li>
+              </ul>
 
-          <p className="mb-4">
-            These features must cause clinically significant impairment in social, occupational, or other important 
-            areas of functioning, and are not better explained by intellectual disability or global developmental 
-            delay.
-          </p>
-          <div className="clear-both"></div>
+              <h3 className="text-[#0c264d] font-bold mb-3 text-lg">2. Restricted, Repetitive Patterns of Behavior, Interests, or Activities</h3>
+              <p className="mb-4">
+                Including at least two of the following:
+              </p>
+              <ul className="list-disc ml-6 mb-4">
+                <li className="mb-2"><strong>Repetitive movements, speech, or use of objects:</strong> Hand flapping, echolalia, lining up toys</li>
+                <li className="mb-2"><strong>Insistence on sameness and routines:</strong> Distress at changes, rigid thinking patterns, ritualized behaviors</li>
+                <li className="mb-2"><strong>Highly restricted, fixated interests:</strong> Intense focus on specific topics or objects</li>
+                <li className="mb-2"><strong>Sensory sensitivities:</strong> Hyper- or hypo-reactivity to sensory input, unusual sensory interests</li>
+              </ul>
+
+              <p className="mb-4">
+                These features must cause clinically significant impairment in social, occupational, or other important
+                areas of functioning, and are not better explained by intellectual disability or global developmental
+                delay.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Support Levels Section */}
