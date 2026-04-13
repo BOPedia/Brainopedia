@@ -3,7 +3,7 @@ import { ADHDTreatmentApproach } from '../../infographics/ADHDTreatmentApproach'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { Pill, BrainCircuit, GraduationCap, Heart, Users, Settings } from 'lucide-react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 interface ADHDSupportProps {
   setCurrentArticle?: (article: string) => void;
@@ -11,7 +11,7 @@ interface ADHDSupportProps {
 }
 
 export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps) {
-  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState(initialTab || 'overview');
   function OverviewContent() {
     return (
       <>
@@ -975,15 +975,24 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
 
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
         >
           <span className="text-xl">←</span>
           All About ADHD
         </button>
       </div>
 
-      <Tabs value={initialTab || 'overview'} onValueChange={(v) => navigate(`/adhd-support/${v}`)} className="w-full">
-        <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 gap-3 mb-12 bg-transparent h-auto p-0">
+      {/* Mobile button - shows only on small screens below title */}
+      <button 
+        onClick={() => setCurrentArticle?.('adhd')}
+        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
+      >
+        <span className="text-xl">←</span>
+        All About ADHD
+      </button>
+
+      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab} className="w-full">
+        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger value="overview" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
             Overview & Approach
           </TabsTrigger>
