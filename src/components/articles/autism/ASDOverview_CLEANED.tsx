@@ -157,7 +157,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <ImageWithFallback
               src="/images/autism/autism-overview-NDparadigm.png"
               alt="Neurodiversity paradigm concept"
-              className="w-54 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
+              className="w-32 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
             />
             <p>
               Many autistic individuals and advocates embrace the neurodiversity paradigm, which views autism as a natural variation in human neurology rather than a disorder or deficit that needs to be "cured." This perspective, pioneered by autistic sociologist Judy Singer in the 1990s, has fundamentally changed how many people understand autism.
@@ -270,6 +270,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             areas of functioning, and are not better explained by intellectual disability or global developmental 
             delay.
           </p>
+          <div className="clear-both"></div>
         </div>
 
         {/* Support Levels Section */}
