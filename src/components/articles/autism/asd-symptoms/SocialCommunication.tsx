@@ -1,14 +1,23 @@
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
+
 export function SocialCommunication() {
   return (
     <div className="space-y-6">
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Social Communication and Interaction Differences</h2>
-        
+
+        <ImageWithFallback
+          src="/images/autism/autism-symptoms-SCtab-2facingfaces.png"
+          alt="Two faces facing each other representing social communication"
+          className="w-48 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
+        />
+
         <p className="mb-6">
           Autistic individuals experience persistent differences across social-emotional reciprocity, nonverbal 
           communication, and developing and maintaining relationships. These differences are present 
           from early childhood and affect functioning across contexts.
         </p>
+        <div className="clear-both"></div>
 
         {/* Social-Emotional Reciprocity */}
         <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -106,6 +115,21 @@ export function SocialCommunication() {
               <div className="text-sm"><strong>Adjusting Behavior:</strong> Difficulty adapting behavior to different social contexts (school vs. home, formal vs. casual)</div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* References */}
+      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        
+        <p className="text-sm mb-2"><em>No inline citations for this tab.</em></p>
+        
+        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
+        <div className="text-sm space-y-2">
+          <p>American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
+          <p>Chevallier, C., Kohls, G., Troiani, V., Brodkin, E. S., & Schultz, R. T. (2012). "The social motivation theory of autism." <em>Trends in Cognitive Sciences</em>, 16(4), 231-239.</p>
+          <p>Milton, D. E. M. (2012). "On the ontological status of autism: The 'double empathy problem.'" <em>Disability & Society</em>, 27(6), 883-887.</p>
+          <p>Scheeren, A. M., Koot, H. M., & Begeer, S. (2012). "Social interaction style of children and adolescents with high-functioning autism spectrum disorder." <em>Journal of Autism and Developmental Disorders</em>, 42(10), 2092-2107.</p>
         </div>
       </div>
     </div>
