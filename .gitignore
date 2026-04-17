@@ -22,3 +22,5 @@ npm-debug.log*
 coverage/
 Brainopedia-backup.zip
 *.zip
+*.backup
+dist/
