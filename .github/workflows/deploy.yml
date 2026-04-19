@@ -26,6 +26,6 @@ jobs:
 
       - name: Deploy via lftp mirror
         run: |
-          lftp -u "${{ secrets.SFTP_USERNAME }},${{ secrets.SFTP_PASSWORD }}" \
+          lftp -u '${{ secrets.SFTP_USERNAME }},${{ secrets.SFTP_PASSWORD }}' \
             -e "set sftp:auto-confirm yes; mirror --reverse --delete --verbose ./dist/ /home/bopedia/brainopedia.org/; quit" \
             sftp://${{ secrets.SFTP_HOST }}
