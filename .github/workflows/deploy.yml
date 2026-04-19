@@ -1,4 +1,12 @@
-name: Deploy to DreamHost via SFTP
+      - name: Debug secrets
+        run: |
+          echo "Username length: ${#SFTP_USERNAME}"
+          echo "Password length: ${#SFTP_PASSWORD}"
+          echo "Host length: ${#SFTP_HOST}"
+        env:
+          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}name: Deploy to DreamHost via SFTP
 
 on:
   push:
