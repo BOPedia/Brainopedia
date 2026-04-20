@@ -24,22 +24,16 @@ jobs:
       - name: Install lftp
         run: sudo apt-get install -y lftp
 
-      - name: Debug secrets
-        env:
-          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
-          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-        run: |
-          echo "Username length: ${#SFTP_USERNAME}"
-          echo "Password length: ${#SFTP_PASSWORD}"
-          echo "Host length: ${#SFTP_HOST}"
-
       - name: Deploy via lftp mirror
         env:
           SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
-          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          SFTP_KEY: ${{ secrets.SFTP_KEY }}
           SFTP_HOST: ${{ secrets.SFTP_HOST }}
         run: |
-          lftp -u "$SFTP_USERNAME,$SFTP_PASSWORD" \
-            -e "set sftp:auto-confirm yes; mirror --reverse --delete --verbose ./dist/ /home/bopedia/brainopedia.org/; quit" \
+          mkdir -p ~/.ssh
+          echo "$SFTP_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan $SFTP_HOST >> ~/.ssh/known_hosts
+          lftp -u "$SFTP_USERNAME," \
+            -e "set sftp:auto-confirm yes; set sftp:connect-program 'ssh -i ~/.ssh/id_rsa'; mirror --reverse --delete --verbose ./dist/ /home/bopedia/brainopedia.org/; quit" \
             sftp://$SFTP_HOST:22
