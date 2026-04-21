@@ -1,4 +1,4 @@
-name: Deploy to DreamHost via SFTP
+name: Deploy to Server
 
 on:
   push:
@@ -7,33 +7,18 @@ on:
 
 jobs:
   deploy:
-    name: Deploy via SFTP
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v0.1.10
         with:
-          node-version: '20'
-
-      - name: Install dependencies and build
-        run: npm install && npm run build
-
-      - name: Install lftp
-        run: sudo apt-get install -y lftp
-
-      - name: Deploy via lftp mirror
-        env:
-          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
-          SFTP_KEY: ${{ secrets.SFTP_KEY }}
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SFTP_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan $SFTP_HOST >> ~/.ssh/known_hosts
-          lftp -u "$SFTP_USERNAME," \
-            -e "set sftp:auto-confirm yes; set sftp:connect-program 'ssh -i ~/.ssh/id_rsa'; mirror --reverse --delete --verbose ./dist/ /home/bopedia/brainopedia.org/; quit" \
-            sftp://$SFTP_HOST:22
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /users/stephwalshtharp/brainopedia-clean
+            git pull origin main
