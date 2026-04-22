@@ -15,7 +15,7 @@ jobs:
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@7.0.1
         with:
-          switches: -avzr --delete
+          switches: -avzr
           path: ./
           remote_path: /home/bopedia
           remote_host: ${{ secrets.SSH_HOST }}
