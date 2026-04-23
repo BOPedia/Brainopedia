@@ -52,7 +52,7 @@ export function CoreSymptoms() {
           <ImageWithFallback 
             src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
             alt="AUTISM Diagnostic Criteria Venn Diagram"
-            className="w-full max-w-3xl rounded"
+            className="w-full max-w-2xl rounded"
           />
         </div>
       </div>
