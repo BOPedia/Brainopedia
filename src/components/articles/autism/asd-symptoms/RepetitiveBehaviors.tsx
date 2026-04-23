@@ -1,4 +1,9 @@
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
+
 export function RepetitiveBehaviors() {
+  return (
+    <div className="space-y-6">
+      {/* ... the rest of your code ... */}export function RepetitiveBehaviors() {
   return (
     <div className="space-y-6">
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
