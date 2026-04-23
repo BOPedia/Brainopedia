@@ -12,16 +12,15 @@ export function RepetitiveBehaviors() {
 		<div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
   		<h3 className="text-[#0c264d] font-bold mb-4 text-lg">Stereotyped or Repetitive Movements, Speech, or Object Use</h3>
 
-  			<ImageWithFallback 
-    				src="/images/autism/autism-symptoms-Reptab-pattern.png"
-    				alt="a square graphic showing colorful, symmetrical, repetitive patterns"
-    				className="w-full max-w-md mx-auto mb-4 rounded"
-  			/>
+  		<ImageWithFallback 
+    			src="/images/autism/autism-symptoms-Reptab-pattern.png"
+    			alt="a square graphic showing colorful, symmetrical, repetitive patterns"
+    			className="w-full max-w-md mx-auto mb-4 rounded"
+  		/>
 
-  			<p className="mb-4 text-sm">
-    			These behaviors, often called "stimming" (self-stimulatory behaviors), serve various functions including 
-    			self-regulation, expressing emotions, or responding to sensory input.
-  			</p>
+  		<p className="mb-4 text-sm">
+    		These behaviors, often called "stimming" (self-stimulatory behaviors), serve various functions includingself-regulation, expressing emotions, or responding to sensory input.
+  		</p>
           
           <div className="space-y-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
