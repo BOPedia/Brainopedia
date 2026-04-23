@@ -1,6 +1,5 @@
-
 import { ASDSymptomsCoreReferences } from '../../references/ASDSymptomsCoreReferences';
-import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 import { 
   AlertTriangle, Eye, EarOff, ListX, FolderOpen, 
   BrainCog, Search, Sparkles, CalendarX, Hand, 
@@ -47,12 +46,16 @@ export function CoreSymptoms() {
             </div>
           </div>
         </div>
+
+        {/* Venn Diagram Image - moved INSIDE a wrapper div */}
+        <div className="flex justify-center mt-6">
+          <ImageWithFallback 
+            src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
+            alt="AUTISM Diagnostic Criteria Venn Diagram"
+            className="w-full max-w-3xl rounded"
+          />
+        </div>
       </div>
- 	<ImageWithFallback 
-             src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
-             alt="AUTISM Diagnostic Criteria Venn Diagram"
-             className="w-full max-w-3xl mx-auto mb-4 rounded"
-      />
               
       {/* Variation Across the Spectrum */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
