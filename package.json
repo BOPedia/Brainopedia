@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && rsync -avz dist/ bopedia@sin1-shared-01.dreamhost.com:~/brainopedia.com/"
-  },
+     "deploy": "npm run build && rsync -avz dist/ bopedia@sin1-shared-01.dreamhost.com:/home/bopedia/brainopedia.org/"
+},
+ 
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-alert-dialog": "^1.1.4",

@@ -46,7 +46,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
               <ImageWithFallback 
                 src="/images/adhd/adhd-core-symptoms-venn.png"
                 alt="ADHD Diagnostic Criteria Venn Diagram"
-                className="w-full max-w-3xl mx-auto mb-4 rounded"
+                className="w-full max-w-xl mx-auto mb-4 rounded"
               />
               
               <p className="mb-4">
