@@ -1,3 +1,13 @@
+
+import { ASDSymptomsCoreReferences } from '../../references/ASDSymptomsCoreReferences';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
+import { 
+  AlertTriangle, Eye, EarOff, ListX, FolderOpen, 
+  BrainCog, Search, Sparkles, CalendarX, Hand, 
+  ArrowUpFromLine, Mountain, VolumeX, Zap, 
+  MessageSquare, MessageCircle, Hourglass, UserMinus 
+} from 'lucide-react';
+
 export function CoreSymptoms() {
   return (
     <div className="space-y-6">
