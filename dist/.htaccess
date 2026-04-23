@@ -1,3 +1,6 @@
+AddType application/javascript .js
+AddType text/css .css
+
 Options -MultiViews
 RewriteEngine On
 RewriteBase /
@@ -8,3 +11,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Otherwise, rewrite all requests to index.html for SPA routing
 RewriteRule ^ index.html [QSA,L]
+
