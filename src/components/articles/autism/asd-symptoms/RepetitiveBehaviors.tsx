@@ -3,9 +3,6 @@ import { ImageWithFallback } from '../../../../components/figma/ImageWithFallbac
 export function RepetitiveBehaviors() {
   return (
     <div className="space-y-6">
-      {/* ... the rest of your code ... */}export function RepetitiveBehaviors() {
-  return (
-    <div className="space-y-6">
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Restricted, Repetitive Patterns of Behavior, Interests, or Activities</h2>
         
