@@ -38,7 +38,12 @@ export function CoreSymptoms() {
           </div>
         </div>
       </div>
-
+ 	<ImageWithFallback 
+             src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
+             alt="AUTISM Diagnostic Criteria Venn Diagram"
+             className="w-full max-w-3xl mx-auto mb-4 rounded"
+      />
+              
       {/* Variation Across the Spectrum */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Variation Across the Spectrum</h2>
