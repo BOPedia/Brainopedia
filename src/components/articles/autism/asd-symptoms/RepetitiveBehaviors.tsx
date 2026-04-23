@@ -1,3 +1,6 @@
+import React from 'react';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
+
 export function RepetitiveBehaviors() {
   return (
     <div className="space-y-6">
