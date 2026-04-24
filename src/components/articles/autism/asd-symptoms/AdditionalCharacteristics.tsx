@@ -1,4 +1,6 @@
+import React from 'react';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
+import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
 
 const symptomData = [
   { category: 'Social Issues', value: 7, fullMark: 10 },
@@ -24,6 +26,13 @@ export function AdditionalCharacteristics() {
         <p className="mb-6">
           While not part of the core diagnostic criteria, many autistic individuals share additional characteristics:
         </p>
+
+        {/* Rainbow Circle Image Placement */}
+        <ImageWithFallback 
+          src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png" 
+          alt="Rainbow circle graphic showing additional autistic characteristics"
+          className="w-full max-w-md mx-auto mb-8 rounded shadow-sm"
+        />
 
         {/* Executive Function Differences */}
         <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -248,6 +257,13 @@ export function AdditionalCharacteristics() {
             Here is another visual example of how an individual's symptom profile might look across different 
             characteristic categories.
           </p>
+
+          {/* Numbers Wheel Image Placement */}
+          <ImageWithFallback 
+            src="/images/autism/autism-symptoms-AddChartab-numberswheel.png" 
+            alt="Symptom profile wheel showing various trait scores"
+            className="w-full max-w-md mx-auto mt-4 rounded shadow-sm"
+          />
         </div>
       </div>
     </div>
