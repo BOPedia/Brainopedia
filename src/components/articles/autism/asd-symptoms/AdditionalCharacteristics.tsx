@@ -1,6 +1,6 @@
 import React from 'react';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
-import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
 const symptomData = [
   { category: 'Social Issues', value: 7, fullMark: 10 },
