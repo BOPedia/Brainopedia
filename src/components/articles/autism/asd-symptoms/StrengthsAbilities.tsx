@@ -1,3 +1,6 @@
+import React from 'react';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
+
 export function StrengthsAbilities() {
   return (
     <div className="space-y-6">
@@ -17,6 +20,14 @@ export function StrengthsAbilities() {
           <li className="mb-2"><strong>Creative thinking:</strong> Unique perspectives and innovative problem-solving approaches</li>
           <li className="mb-2"><strong>Loyalty and consistency:</strong> Deep commitment to people, values, and interests</li>
         </ul>
+
+        {/* Strengths Gears Image Placement */}
+        <ImageWithFallback 
+          src="/images/autism/autism-symptoms-Strengthstab-gears.png" 
+          alt="Gears illustrating the interconnected nature of autistic strengths"
+          className="w-full max-w-md mx-auto my-6 rounded shadow-sm"
+        />
+
         <p className="mb-4">
           Recognizing and cultivating strengths while providing support for challenges is essential for helping autistic individuals thrive.
         </p>
