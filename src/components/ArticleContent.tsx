@@ -2,12 +2,12 @@ import React from 'react';
 // ... other imports ...
 
 // --- REVISED AUTISM IMPORTS ---
-import { ASDOverview } from './articles/autism/ASDOverview'; 
-import { ASDSymptoms } from './articles/autism/ASDSymptoms';
+import { ASDOverview } from './articles/autism/asd-symptoms/ASDOverview'; // Path updated to asd-symptoms
+import { ASDSymptoms } from './articles/autism/asd-symptoms/ASDSymptoms';
 import { ASDCauses } from './articles/autism/asd-causes/ASDCauses'; 
-import { ASDDiagnosis } from './articles/autism/ASDDiagnosis'; 
-import { ASDSupport } from './articles/autism/asd-support/ASDSupport'; // Path Updated
-import { ASDLiving } from './articles/autism/ASDLiving'; 
+import { ASDDiagnosis } from './articles/autism/asd-diagnosis/ASDDiagnosis'; // Path updated to asd-diagnosis
+import { ASDSupport } from './articles/autism/asd-support/ASDSupport'; 
+import { ASDLiving } from './articles/autism/asd-living/ASDLiving'; // Path updated to asd-living
 
 // Updated names and paths for the new modular files in asd-support
 import { SpeechTherapy } from './articles/autism/asd-support/SpeechTherapy';
@@ -15,7 +15,6 @@ import { OccupationalTherapy } from './articles/autism/asd-support/OccupationalT
 import { ABATherapy } from './articles/autism/asd-support/ABATherapy';
 import { SocialSkills } from './articles/autism/asd-support/SocialSkills';
 import { MentalHealth } from './articles/autism/asd-support/MentalHealth';
-// ... rest of your imports (ADHD, Dyslexia, etc.) ...
 
 interface ArticleContentProps {
   articleId: string;
