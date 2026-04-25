@@ -2,19 +2,19 @@ import React from 'react';
 // ... other imports ...
 
 // --- REVISED AUTISM IMPORTS ---
-// We removed the "_CLEANED" suffixes and updated the path for ASDCauses
-import { ASDOverview } from './articles/autism/ASDOverview'; // Removed _CLEANED
+import { ASDOverview } from './articles/autism/ASDOverview'; 
 import { ASDSymptoms } from './articles/autism/ASDSymptoms';
-import { ASDCauses } from './articles/autism/asd-causes/ASDCauses'; // Updated Path
-import { ASDDiagnosis } from './articles/autism/ASDDiagnosis'; // Removed _CLEANED
-import { ASDSupport } from './articles/autism/ASDSupport'; // Removed _CLEANED
-import { ASDLiving } from './articles/autism/ASDLiving'; // Removed _CLEANED
-import { ASDSpeechTherapy } from './articles/autism/ASDSpeechTherapy';
-import { ASDOccupationalTherapy } from './articles/autism/ASDOccupationalTherapy';
-import { ASDABATherapy } from './articles/autism/ASDABATherapy';
-import { ASDSocialSkills } from './articles/autism/ASDSocialSkills';
-import { ASDMentalHealth } from './articles/autism/ASDMentalHealth';
+import { ASDCauses } from './articles/autism/asd-causes/ASDCauses'; 
+import { ASDDiagnosis } from './articles/autism/ASDDiagnosis'; 
+import { ASDSupport } from './articles/autism/asd-support/ASDSupport'; // Path Updated
+import { ASDLiving } from './articles/autism/ASDLiving'; 
 
+// Updated names and paths for the new modular files in asd-support
+import { SpeechTherapy } from './articles/autism/asd-support/SpeechTherapy';
+import { OccupationalTherapy } from './articles/autism/asd-support/OccupationalTherapy';
+import { ABATherapy } from './articles/autism/asd-support/ABATherapy';
+import { SocialSkills } from './articles/autism/asd-support/SocialSkills';
+import { MentalHealth } from './articles/autism/asd-support/MentalHealth';
 // ... rest of your imports (ADHD, Dyslexia, etc.) ...
 
 interface ArticleContentProps {
@@ -27,20 +27,13 @@ export function ArticleContent({ articleId, setCurrentArticle, tabId }: ArticleC
   const articles: Record<string, React.ReactNode> = {
     // ... other mappings ...
     
-    // --- AUTISM MAPPING ---
-    autism: <ArticleAutism setCurrentArticle={setCurrentArticle} />,
-    'autism-overview': <ASDOverview setCurrentArticle={setCurrentArticle} />,
-    'autism-symptoms': <ASDSymptoms setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
-    'autism-causes': <ASDCauses setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
-    'autism-diagnosis': <ASDDiagnosis setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
-    'autism-support': <ASDSupport setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
-    'autism-support-therapies': <ASDSupport setCurrentArticle={setCurrentArticle} initialTab="therapies" />,
-    'autism-living': <ASDLiving setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
-    'autism-speech-therapy': <ASDSpeechTherapy setCurrentArticle={setCurrentArticle} />,
-    'autism-occupational-therapy': <ASDOccupationalTherapy setCurrentArticle={setCurrentArticle} />,
-    'autism-aba-therapy': <ASDABATherapy setCurrentArticle={setCurrentArticle} />,
-    'autism-social-skills': <ASDSocialSkills setCurrentArticle={setCurrentArticle} />,
-    'autism-mental-health': <ASDMentalHealth setCurrentArticle={setCurrentArticle} />,
+// --- AUTISM MAPPING ---
+// Change these lines to remove the "ASD" prefix from the components
+'autism-speech-therapy': <SpeechTherapy setCurrentArticle={setCurrentArticle} />,
+'autism-occupational-therapy': <OccupationalTherapy setCurrentArticle={setCurrentArticle} />,
+'autism-aba-therapy': <ABATherapy setCurrentArticle={setCurrentArticle} />,
+'autism-social-skills': <SocialSkills setCurrentArticle={setCurrentArticle} />,
+'autism-mental-health': <MentalHealth setCurrentArticle={setCurrentArticle} />,
 
     // ... rest of the mapping ...
   };
