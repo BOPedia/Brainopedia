@@ -1,5 +1,5 @@
 import React from 'react';
-import { ASDComorbidities } from '../../infographics/ASDComorbidities';
+import { ASDComorbidities } from '../../../infographics/ASDComorbidities';
 
 export function MentalHealth() {
   return (
