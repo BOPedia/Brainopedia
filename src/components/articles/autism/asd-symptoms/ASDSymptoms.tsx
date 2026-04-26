@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CoreSymptoms } from './asd-symptoms/CoreSymptoms';
-import { SocialCommunication } from './asd-symptoms/SocialCommunication';
-import { RepetitiveBehaviors } from './asd-symptoms/RepetitiveBehaviors';
-import { AdditionalCharacteristics } from './asd-symptoms/AdditionalCharacteristics';
-import { StrengthsAbilities } from './asd-symptoms/StrengthsAbilities';
-
+// This tells the computer: "Look in the same folder I am already in"
+import { CoreSymptoms } from './CoreSymptoms';
+import { SocialCommunication } from './SocialCommunication';
+import { RepetitiveBehaviors } from './RepetitiveBehaviors';
+import { AdditionalCharacteristics } from './AdditionalCharacteristics';
+import { StrengthsAbilities } from './StrengthsAbilities';
 interface ASDSymptomsProps {
   setCurrentArticle?: (article: string) => void;
   initialTab?: string;

@@ -1,43 +1,41 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { DSM5Criteria } from './asd-diagnosis/DSM5Criteria';
-import { DiagnosticProcess } from './asd-diagnosis/DiagnosticProcess';
-import { WhoCanDiagnose } from './asd-diagnosis/WhoCanDiagnose';
-import { AcrossLifespan } from './asd-diagnosis/AcrossLifespan';
-import { ChallengesDisparities } from './asd-diagnosis/ChallengesDisparities';
-import { AfterDiagnosis } from './asd-diagnosis/AfterDiagnosis';
-import { WhatIsAuDHD } from './asd-diagnosis/WhatIsAuDHD';
+import { DSM5Criteria } from './DSM5Criteria';
+import { DiagnosticProcess } from './DiagnosticProcess';
+import { WhoCanDiagnose } from './WhoCanDiagnose';
+import { AcrossLifespan } from './AcrossLifespan';
+import { ChallengesDisparities } from './ChallengesDisparities';
+import { AfterDiagnosis } from './AfterDiagnosis';
+import { WhatIsAuDHD } from './WhatIsAuDHD';
 
 interface ASDDiagnosisProps {
   setCurrentArticle?: (article: string) => void;
   initialTab?: string;
 }
 
-type TabType = 'criteria' | 'process' | 'professionals' | 'lifespan' | 'challenges' | 'after' | 'audhd';
-
 export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProps) {
   const navigate = useNavigate();
-  const activeTab = (initialTab as TabType) || 'criteria';
+  const activeTab = initialTab || 'criteria';
+
+  const handleTabChange = (tabId: string) => {
+    navigate(`/autism-diagnosis/${tabId}`);
+  };
 
   const tabs = [
-    { id: 'criteria' as TabType, label: 'DSM-5 Criteria', emoji: '' },
-    { id: 'process' as TabType, label: 'Diagnostic Process & Tools', emoji: '' },
-    { id: 'professionals' as TabType, label: 'Who Can Diagnose', emoji: '' },
-    { id: 'lifespan' as TabType, label: 'Across the Lifespan', emoji: '' },
-    { id: 'challenges' as TabType, label: 'Challenges & Disparities', emoji: '' },
-    { id: 'after' as TabType, label: 'After Diagnosis', emoji: '' },
-    { id: 'audhd' as TabType, label: 'What is AuDHD?', emoji: '' },
+    { id: 'criteria', label: 'DSM-5 Criteria' },
+    { id: 'process', label: 'Diagnostic Process' },
+    { id: 'professionals', label: 'Who Can Diagnose' },
+    { id: 'lifespan', label: 'Across the Lifespan' },
+    { id: 'challenges', label: 'Challenges & Disparities' },
+    { id: 'after', label: 'After Diagnosis' },
+    { id: 'audhd', label: 'What is AuDHD?' }
   ];
 
   return (
     <article className="max-w-6xl">
       <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
+        {`sup { color: #10b981; }`}
       </style>
-      
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex items-center justify-between">
         <h1 className="text-3xl">
           Autism: Testing & Diagnosing
@@ -52,13 +50,12 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
         </button>
       </div>
 
-      {/* Tab Navigation */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6">
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => navigate(`/autism-diagnosis/${tab.id}`)}
-            className={`px-6 !py-3 md:!py-2 rounded-md text-sm transition-colors ${
+            onClick={() => handleTabChange(tab.id)}
+            className={`px-6 py-3 rounded-md text-sm transition-colors ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'
                 : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffd166]/80'
@@ -69,7 +66,6 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
         ))}
       </div>
 
-      {/* Tab Content */}
       <div className="space-y-8">
         {activeTab === 'criteria' && <DSM5Criteria />}
         {activeTab === 'process' && <DiagnosticProcess />}
@@ -80,7 +76,6 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
         {activeTab === 'audhd' && <WhatIsAuDHD />}
       </div>
 
-      {/* Bottom back button */}
       <div className="flex justify-end mt-8 mb-6">
         <button 
           onClick={() => setCurrentArticle?.('autism')}
@@ -90,7 +85,6 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
           All About Autism
         </button>
       </div>
-
     </article>
   );
 }

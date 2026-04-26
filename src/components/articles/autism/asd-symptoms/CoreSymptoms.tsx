@@ -1,4 +1,4 @@
-import { ASDSymptomsCoreReferences } from '../../references/ASDSymptomsCoreReferences';
+import { ASDSymptomsCoreSymptoms } from '../../../references/ASDSymptomsCoreSymptoms';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 import { 
   AlertTriangle, Eye, EarOff, ListX, FolderOpen, 
