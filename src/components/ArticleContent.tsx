@@ -47,6 +47,7 @@ import { ASDCauses } from './articles/autism/asd-causes/ASDCauses';
 import { ASDDiagnosis } from './articles/autism/asd-diagnosis/ASDDiagnosis'; 
 import { ASDSupport } from './articles/autism/asd-support/ASDSupport'; 
 import { ASDLiving } from './articles/autism/asd-living/ASDLiving'; 
+import { TherapiesContent } from './TherapiesContent';
 import { SpeechTherapy } from './articles/autism/asd-support/SpeechTherapy';
 import { OccupationalTherapy } from './articles/autism/asd-support/OccupationalTherapy';
 import { ABATherapy } from './articles/autism/asd-support/ABATherapy';
@@ -153,6 +154,7 @@ export function ArticleContent({ articleId, setCurrentArticle, tabId }: ArticleC
     'autism-support': <ASDSupport setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
     'autism-support-therapies': <ASDSupport setCurrentArticle={setCurrentArticle} initialTab="therapies" />,
     'autism-living': <ASDLiving setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
+    'autism-support': <TherapiesContent setCurrentArticle={setCurrentArticle} />,
     'autism-speech-therapy': <SpeechTherapy setCurrentArticle={setCurrentArticle} />,
     'autism-occupational-therapy': <OccupationalTherapy setCurrentArticle={setCurrentArticle} />,
     'autism-aba-therapy': <ABATherapy setCurrentArticle={setCurrentArticle} />,
