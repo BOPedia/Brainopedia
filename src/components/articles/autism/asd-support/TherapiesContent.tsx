@@ -64,6 +64,16 @@ export function TherapiesContent({ setCurrentArticle }: TherapiesContentProps) {
           </button>
         </div>
 
+        <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Therapy</h3>
+          <p className="mb-4">
+          Physical therapy (PT) can be a valuable support for autistic individuals across all ages. Many autistic people experience differences in gross motor skills, muscle tone, balance, and gait — areas where a physical therapist specializes. Sessions are tailored to the individual's needs, with therapists mindful of sensory sensitivities during hands-on work. While PT is often most impactful when started early in childhood, it can be beneficial at any age.<sup>[18]</sup>
+          </p>
+          <button onClick={() => setCurrentArticle?.('autism-physical-therapy')} className="text-[#10b981] hover:underline font-semibold">
+            Read more about Physical Therapy →
+          </button>
+        </div>
+
         {/* Choosing the Right Approach */}
         <div className="mt-8 mb-8">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Choosing the Right Approach</h2>
