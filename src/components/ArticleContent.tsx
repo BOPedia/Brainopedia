@@ -47,8 +47,7 @@ import { ASDCauses } from './articles/autism/asd-causes/ASDCauses';
 import { ASDDiagnosis } from './articles/autism/asd-diagnosis/ASDDiagnosis'; 
 import { ASDSupport } from './articles/autism/asd-support/ASDSupport'; 
 import { ASDLiving } from './articles/autism/asd-living/ASDLiving'; 
-import { TherapiesContent } from './articles/autism/asd-support/TherapiesContent';
-import { SpeechTherapy } from './articles/autism/asd-support/SpeechTherapy';
+
 import { OccupationalTherapy } from './articles/autism/asd-support/OccupationalTherapy';
 import { ABATherapy } from './articles/autism/asd-support/ABATherapy';
 import { SocialSkills } from './articles/autism/asd-support/SocialSkills';
@@ -132,6 +131,7 @@ interface ArticleContentProps {
 }
 
 export function ArticleContent({ articleId, setCurrentArticle, tabId }: ArticleContentProps) {
+  const defaultSetCurrentArticle = setCurrentArticle || (() => {});
   const articles: Record<string, React.ReactNode> = {
     'symptom-wheel-demo': <SymptomWheelDemo />,
     'project-standards': <ProjectStandards setCurrentArticle={setCurrentArticle} />,
@@ -148,26 +148,25 @@ export function ArticleContent({ articleId, setCurrentArticle, tabId }: ArticleC
     // MODULAR AUTISM MAPPING
     autism: <ArticleAutism setCurrentArticle={setCurrentArticle} />,
     'autism-overview': <ASDOverview setCurrentArticle={setCurrentArticle} />,
-    'autism-symptoms': <ASDSymptoms setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
-    'autism-causes': <ASDCauses setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
-    'autism-diagnosis': <ASDDiagnosis setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
+    'autism-symptoms': <ASDSymptoms />,
+    'autism-causes': <ASDCauses />,
+    'autism-diagnosis': <ASDDiagnosis />,
     'autism-support': <ASDSupport setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
     'autism-support-therapies': <ASDSupport setCurrentArticle={setCurrentArticle} initialTab="therapies" />,
-    'autism-living': <ASDLiving setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
-    'autism-support': <TherapiesContent setCurrentArticle={setCurrentArticle} />,
-    'autism-occupational-therapy': <OccupationalTherapy setCurrentArticle={setCurrentArticle} />,
-    'autism-aba-therapy': <ABATherapy setCurrentArticle={setCurrentArticle} />,
-    'autism-social-skills': <SocialSkills setCurrentArticle={setCurrentArticle} />,
-    'autism-mental-health': <MentalHealth setCurrentArticle={setCurrentArticle} />,
-    'autism-physical-therapy': <PhysicalTherapy setCurrentArticle={setCurrentArticle} />,
+    'autism-living': <ASDLiving setCurrentArticle={setCurrentArticle} />,
+    'autism-occupational-therapy': <OccupationalTherapy />,
+    'autism-aba-therapy': <ABATherapy />,
+    'autism-social-skills': <SocialSkills />,
+    'autism-mental-health': <MentalHealth />,
+    'autism-physical-therapy': <PhysicalTherapy />,
 
     // RESTORED ORIGINAL MAPPINGS
     dyslexia: <ArticleDyslexia setCurrentArticle={setCurrentArticle} />,
     'dyslexia-overview': <DyslexiaOverview setCurrentArticle={setCurrentArticle} />,
     'dyslexia-symptoms': <DyslexiaSymptoms setCurrentArticle={setCurrentArticle} />,
-    'dyslexia-causes': <DyslexiaCauses setCurrentArticle={setCurrentArticle} />,
+    'dyslexia-causes': <DyslexiaCauses setCurrentArticle={defaultSetCurrentArticle} />,
     'dyslexia-diagnosis': <DyslexiaDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'dyslexia-support': <DyslexiaSupport setCurrentArticle={setCurrentArticle} />,
+    'dyslexia-support': <DyslexiaSupport setCurrentArticle={defaultSetCurrentArticle} />,
     'dyslexia-living': <DyslexiaLiving setCurrentArticle={setCurrentArticle} />,
     dyscalculia: <ArticleDyscalculia setCurrentArticle={setCurrentArticle} />,
     'dyscalculia-overview': <DyscalculiaOverview setCurrentArticle={setCurrentArticle} />,

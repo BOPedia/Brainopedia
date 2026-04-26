@@ -1,21 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useParams, useNavigate, useLocation } from 'react-router-dom';
 import { Sidebar } from './components/Sidebar';
 import { ArticleContent } from './components/ArticleContent';
 import { Header } from './components/Header';
 import { DonationBanner } from './components/DonationBanner';
 import { Footer } from './components/Footer';
-import { Search, Menu, X } from 'lucide-react';
 
-// Parse the real browser URL so deep links work in preview
-function getInitialEntries(): string[] {
-  try {
-    const path = window.location.pathname;
-    return path && path !== '/' ? [path] : ['/'];
-  } catch {
-    return ['/'];
-  }
-}
+
+
 
 function AppContent() {
   const { articleId, tabId } = useParams();
