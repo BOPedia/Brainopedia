@@ -155,7 +155,6 @@ export function ArticleContent({ articleId, setCurrentArticle, tabId }: ArticleC
     'autism-support-therapies': <ASDSupport setCurrentArticle={setCurrentArticle} initialTab="therapies" />,
     'autism-living': <ASDLiving setCurrentArticle={setCurrentArticle} initialTab={tabId} />,
     'autism-support': <TherapiesContent setCurrentArticle={setCurrentArticle} />,
-    'autism-speech-therapy': <SpeechTherapy setCurrentArticle={setCurrentArticle} />,
     'autism-occupational-therapy': <OccupationalTherapy setCurrentArticle={setCurrentArticle} />,
     'autism-aba-therapy': <ABATherapy setCurrentArticle={setCurrentArticle} />,
     'autism-social-skills': <SocialSkills setCurrentArticle={setCurrentArticle} />,
