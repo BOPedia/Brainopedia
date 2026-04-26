@@ -47,7 +47,7 @@ import { ASDCauses } from './articles/autism/asd-causes/ASDCauses';
 import { ASDDiagnosis } from './articles/autism/asd-diagnosis/ASDDiagnosis'; 
 import { ASDSupport } from './articles/autism/asd-support/ASDSupport'; 
 import { ASDLiving } from './articles/autism/asd-living/ASDLiving'; 
-import { TherapiesContent } from './TherapiesContent';
+import { TherapiesContent } from './articles/autism/asd-support/TherapiesContent';
 import { SpeechTherapy } from './articles/autism/asd-support/SpeechTherapy';
 import { OccupationalTherapy } from './articles/autism/asd-support/OccupationalTherapy';
 import { ABATherapy } from './articles/autism/asd-support/ABATherapy';
