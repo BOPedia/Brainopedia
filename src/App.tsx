@@ -9,8 +9,8 @@ import { Footer } from './components/Footer';
 
 
 
-function AppContent() {
-  const { articleId, tabId } = useParams();
+function AppContent(): import("react/jsx-runtime").JSX.Element {
+  const { articleId } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
   const [searchQuery, setSearchQuery] = useState('');
@@ -65,7 +65,7 @@ function AppContent() {
         />
 
         <main className="flex-1 p-2 md:p-8 lg:p-12 max-w-5xl mx-auto w-full">
-          <ArticleContent articleId={currentArticle} setCurrentArticle={setCurrentArticle} tabId={tabId} />
+          <ArticleContent articleId={currentArticle} setCurrentArticle={setCurrentArticle} />
         </main>
       </div>
 
@@ -74,7 +74,7 @@ function AppContent() {
   );
 }
 
-export default function App() {
+export default function App(): import("react/jsx-runtime").JSX.Element {
   return (
     <BrowserRouter>
       <Routes>

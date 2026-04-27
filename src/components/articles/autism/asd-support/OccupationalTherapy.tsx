@@ -1,6 +1,4 @@
-import React from 'react';
-
-export function OccupationalTherapy({ setCurrentArticle }: { setCurrentArticle?: (article: string) => void }) {
+export function OccupationalTherapy() {
   return (
     <div className="animate-fadeIn">
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6">

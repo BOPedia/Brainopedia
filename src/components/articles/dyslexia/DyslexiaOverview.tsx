@@ -2,8 +2,12 @@ import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useNavigate } from 'react-router-dom';
 
 interface DyslexiaOverviewProps {
-  setCurrentArticle?: (article: string) => void; // add the ?
+  setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
+
+const dyslexiaHeroImage = '/images/dyslexia/dyslexia-hero.png';
+const brainImage = '/images/dyslexia/brain.png';
 
 export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOverviewProps) {
   const navigate = useNavigate();

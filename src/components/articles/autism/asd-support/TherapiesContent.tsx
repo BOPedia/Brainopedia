@@ -1,5 +1,3 @@
-import React from 'react';
-  
 export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (article: string) => void }) {
   return (
 
