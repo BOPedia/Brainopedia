@@ -1,4 +1,4 @@
-import React from 'react';
+import { JSX } from 'react';
 
 // --- ORIGINAL CONDITION IMPORTS ---
 import { ArticleADHD } from './articles/ArticleADHD';
@@ -122,6 +122,7 @@ import { SPDSupport } from './articles/spd/SPDSupport';
 import { SPDLiving } from './articles/spd/SPDLiving';
 import { SymptomWheelDemo } from './SymptomWheelDemo';
 import ProjectStandards from './articles/ProjectStandards';
+// import ProjectStandards from './articles/ProjectStandards';
 
 interface ArticleContentProps {
   articleId: string;
