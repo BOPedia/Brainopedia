@@ -2,8 +2,7 @@ import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useNavigate } from 'react-router-dom';
 
 interface DyslexiaDiagnosisProps {
-  setCurrentArticle?: (article: string) => void;
-  initialTab?: string;
+  setCurrentArticle?: (article: string) => void; // add the ?
 }
 
 export function DyslexiaDiagnosis({ setCurrentArticle, initialTab }: DyslexiaDiagnosisProps) {

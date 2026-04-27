@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function ABATherapy() {
+export function ABATherapy({ setCurrentArticle }: { setCurrentArticle?: (article: string) => void }) {
   return (
     <div className="animate-fadeIn">
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6">

@@ -43,11 +43,9 @@ import { ADHDLiving } from './articles/adhd/ADHDLiving';
 // --- NEW MODULAR AUTISM IMPORTS ---
 import { ASDOverview } from './articles/autism/ASDOverview';
 import { ASDSymptoms } from './articles/autism/asd-symptoms/ASDSymptoms';
-import { ASDCauses } from './articles/autism/asd-causes/ASDCauses'; 
-import { ASDDiagnosis } from './articles/autism/asd-diagnosis/ASDDiagnosis'; 
-import { ASDSupport } from './articles/autism/asd-support/ASDSupport'; 
-import { ASDLiving } from './articles/autism/asd-living/ASDLiving'; 
-
+import { ASDCauses } from './articles/autism/asd-causes/ASDCauses';
+import { ASDDiagnosis } from './articles/autism/asd-diagnosis/ASDDiagnosis';
+import { ASDLiving } from './articles/autism/asd-living/ASDLiving';
 import { OccupationalTherapy } from './articles/autism/asd-support/OccupationalTherapy';
 import { ABATherapy } from './articles/autism/asd-support/ABATherapy';
 import { SocialSkills } from './articles/autism/asd-support/SocialSkills';
@@ -134,7 +132,7 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
   const articles: Record<string, React.ReactNode> = {
     'symptom-wheel-demo': <SymptomWheelDemo />,
     'project-standards': <ProjectStandards setCurrentArticle={setCurrentArticle} />,
-    
+
     // ADHD MAPPING
     adhd: <ArticleADHD setCurrentArticle={setCurrentArticle} />,
     'adhd-overview': <ADHDOverview setCurrentArticle={setCurrentArticle} />,
@@ -147,9 +145,9 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     // MODULAR AUTISM MAPPING
     autism: <ArticleAutism setCurrentArticle={setCurrentArticle} />,
     'autism-overview': <ASDOverview setCurrentArticle={setCurrentArticle} />,
-    'autism-symptoms': <ASDSymptoms />,
-    'autism-causes': <ASDCauses />,
-    'autism-diagnosis': <ASDDiagnosis />,
+    'autism-symptoms': <ASDSymptoms setCurrentArticle={setCurrentArticle} />,
+    'autism-causes': <ASDCauses setCurrentArticle={setCurrentArticle} />,
+    'autism-diagnosis': <ASDDiagnosis setCurrentArticle={setCurrentArticle} />,
     'autism-support': <TherapiesContent setCurrentArticle={setCurrentArticle} />,
     'autism-living': <ASDLiving setCurrentArticle={setCurrentArticle} />,
     'autism-occupational-therapy': <OccupationalTherapy setCurrentArticle={setCurrentArticle} />,
@@ -158,7 +156,7 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'autism-mental-health': <MentalHealth setCurrentArticle={setCurrentArticle} />,
     'autism-physical-therapy': <PhysicalTherapy setCurrentArticle={setCurrentArticle} />,
 
-    // ORIGINAL MAPPINGS
+    // DYSLEXIA MAPPING
     dyslexia: <ArticleDyslexia setCurrentArticle={setCurrentArticle} />,
     'dyslexia-overview': <DyslexiaOverview setCurrentArticle={setCurrentArticle} />,
     'dyslexia-symptoms': <DyslexiaSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -166,7 +164,8 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'dyslexia-diagnosis': <DyslexiaDiagnosis setCurrentArticle={setCurrentArticle} />,
     'dyslexia-support': <DyslexiaSupport setCurrentArticle={setCurrentArticle} />,
     'dyslexia-living': <DyslexiaLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // DYSCALCULIA MAPPING
     dyscalculia: <ArticleDyscalculia setCurrentArticle={setCurrentArticle} />,
     'dyscalculia-overview': <DyscalculiaOverview setCurrentArticle={setCurrentArticle} />,
     'dyscalculia-symptoms': <DyscalculiaSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -174,7 +173,8 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'dyscalculia-diagnosis': <DyscalculiaDiagnosis setCurrentArticle={setCurrentArticle} />,
     'dyscalculia-support': <DyscalculiaSupport setCurrentArticle={setCurrentArticle} />,
     'dyscalculia-living': <DyscalculiaLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+        // DYSGRAPHIA MAPPING
     dysgraphia: <ArticleDysgraphia setCurrentArticle={setCurrentArticle} />,
     'dysgraphia-overview': <DysgraphiaOverview setCurrentArticle={setCurrentArticle} />,
     'dysgraphia-symptoms': <DysgraphiaSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -182,7 +182,8 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'dysgraphia-diagnosis': <DysgraphiaDiagnosis setCurrentArticle={setCurrentArticle} />,
     'dysgraphia-support': <DysgraphiaSupport setCurrentArticle={setCurrentArticle} />,
     'dysgraphia-living': <DysgraphiaLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // NVLD MAPPING
     nvld: <ArticleNVLD setCurrentArticle={setCurrentArticle} />,
     'nvld-overview': <NVLDOverview setCurrentArticle={setCurrentArticle} />,
     'nvld-symptoms': <NVLDSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -190,7 +191,8 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'nvld-diagnosis': <NVLDDiagnosis setCurrentArticle={setCurrentArticle} />,
     'nvld-support': <NVLDSupport setCurrentArticle={setCurrentArticle} />,
     'nvld-living': <NVLDLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // DLD MAPPING
     dld: <ArticleDLD setCurrentArticle={setCurrentArticle} />,
     'dld-overview': <DLDOverview setCurrentArticle={setCurrentArticle} />,
     'dld-symptoms': <DLDSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -198,7 +200,8 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'dld-diagnosis': <DLDDiagnosis setCurrentArticle={setCurrentArticle} />,
     'dld-support': <DLDSupport setCurrentArticle={setCurrentArticle} />,
     'dld-living': <DLDLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // HYPERLEXIA MAPPING
     hyperlexia: <ArticleHyperlexia setCurrentArticle={setCurrentArticle} />,
     'hyperlexia-overview': <HyperlexiaOverview setCurrentArticle={setCurrentArticle} />,
     'hyperlexia-symptoms': <HyperlexiaSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -206,12 +209,14 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'hyperlexia-diagnosis': <HyperlexiaDiagnosis setCurrentArticle={setCurrentArticle} />,
     'hyperlexia-support': <HyperlexiaSupport setCurrentArticle={setCurrentArticle} />,
     'hyperlexia-living': <HyperlexiaLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // STANDALONE ARTICLES
     dyspraxia: <ArticleDyspraxia />,
     tourette: <ArticleTourette />,
     synesthesia: <ArticleSynesthesia />,
     misophonia: <ArticleMisophonia />,
-    
+
+    // TWICE EXCEPTIONAL MAPPING
     'twice-exceptional': <ArticleTwiceExceptional setCurrentArticle={setCurrentArticle} />,
     'twice-exceptional-overview': <TwiceExceptionalOverview setCurrentArticle={setCurrentArticle} />,
     'twice-exceptional-symptoms': <TwiceExceptionalSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -219,12 +224,14 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'twice-exceptional-diagnosis': <TwiceExceptionalDiagnosis setCurrentArticle={setCurrentArticle} />,
     'twice-exceptional-support': <TwiceExceptionalSupport setCurrentArticle={setCurrentArticle} />,
     'twice-exceptional-living': <TwiceExceptionalLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // STANDALONE ARTICLES
     ocd: <ArticleOCD />,
     bipolar: <ArticleBipolar />,
     schizophrenia: <ArticleSchizophrenia />,
     epilepsy: <ArticleEpilepsy />,
-    
+
+    // SPD MAPPING
     spd: <ArticleSPD setCurrentArticle={setCurrentArticle} />,
     'spd-overview': <SPDOverview setCurrentArticle={setCurrentArticle} />,
     'spd-symptoms': <SPDSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -232,7 +239,8 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'spd-diagnosis': <SPDDiagnosis setCurrentArticle={setCurrentArticle} />,
     'spd-support': <SPDSupport setCurrentArticle={setCurrentArticle} />,
     'spd-living': <SPDLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // APD MAPPING
     apd: <ArticleAPD setCurrentArticle={setCurrentArticle} />,
     'apd-overview': <APDOverview setCurrentArticle={setCurrentArticle} />,
     'apd-symptoms': <APDSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -240,7 +248,8 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'apd-diagnosis': <APDDiagnosis setCurrentArticle={setCurrentArticle} />,
     'apd-support': <APDSupport setCurrentArticle={setCurrentArticle} />,
     'apd-living': <APDLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // VISUAL PROCESSING MAPPING
     'visual-processing': <ArticleVisualProcessing setCurrentArticle={setCurrentArticle} />,
     'visual-processing-overview': <VPDOverview setCurrentArticle={setCurrentArticle} />,
     'visual-processing-symptoms': <VPDSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -248,7 +257,8 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'visual-processing-diagnosis': <VPDDiagnosis setCurrentArticle={setCurrentArticle} />,
     'visual-processing-support': <VPDSupport setCurrentArticle={setCurrentArticle} />,
     'visual-processing-living': <VPDLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // GIFTEDNESS MAPPING
     giftedness: <ArticleGiftedness setCurrentArticle={setCurrentArticle} />,
     'giftedness-overview': <GiftednessOverview setCurrentArticle={setCurrentArticle} />,
     'giftedness-symptoms': <GiftednessSymptoms setCurrentArticle={setCurrentArticle} />,
@@ -256,13 +266,16 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
     'giftedness-diagnosis': <GiftednessDiagnosis setCurrentArticle={setCurrentArticle} />,
     'giftedness-support': <GiftednessSupport setCurrentArticle={setCurrentArticle} />,
     'giftedness-living': <GiftednessLiving setCurrentArticle={setCurrentArticle} />,
-    
+
+    // STANDALONE ARTICLES
     'intellectual-disability': <ArticleIntellectualDisability />,
     'down-syndrome': <ArticleDownSyndrome />,
     fasd: <ArticleFASD />,
     tbi: <ArticleTBI />,
     cte: <ArticleCTE />,
     pandas: <ArticlePANDAS />,
+
+    // MISC
     about: <ArticleAbout setCurrentArticle={setCurrentArticle} />,
     donate: <ArticleDonate />,
     blog: <ArticleBlog setCurrentArticle={setCurrentArticle} />,

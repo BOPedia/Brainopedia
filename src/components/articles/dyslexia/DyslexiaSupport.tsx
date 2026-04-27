@@ -2,7 +2,7 @@ import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useState } from 'react';
 
 interface DyslexiaSupportProps {
-  setCurrentArticle: (articleId: string) => void;
+  setCurrentArticle?: (article: string) => void; // add the ?
 }
 
 export function DyslexiaSupport({ setCurrentArticle }: DyslexiaSupportProps) {

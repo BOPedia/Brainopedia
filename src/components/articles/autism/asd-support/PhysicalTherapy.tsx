@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function PhysicalTherapy() {
+export function PhysicalTherapy({ setCurrentArticle }: { setCurrentArticle?: (article: string) => void }) {
   return (
     <div className="animate-fadeIn">
       {/* Header Section */}

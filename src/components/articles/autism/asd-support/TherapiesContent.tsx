@@ -1,7 +1,7 @@
 import React from 'react';
 
-interface TherapiesContentProps {
-  setCurrentArticle?: (article: string) => void;
+export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (article: string) => void }) {
+  // ... rest of component
 }
 
 export function TherapiesContent({ setCurrentArticle }: TherapiesContentProps) {
