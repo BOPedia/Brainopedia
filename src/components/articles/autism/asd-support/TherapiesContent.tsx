@@ -1,11 +1,8 @@
 import React from 'react';
-
+  
 export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (article: string) => void }) {
-  // ... rest of component
-}
-
-export function TherapiesContent({ setCurrentArticle }: TherapiesContentProps) {
   return (
+
     
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Therapeutic Interventions</h2>
@@ -218,4 +215,4 @@ export function TherapiesContent({ setCurrentArticle }: TherapiesContentProps) {
         </div>
       </div>
     );
-}
+  }
