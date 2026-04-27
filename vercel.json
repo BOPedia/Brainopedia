@@ -5,17 +5,25 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "^/brainopedia-clean/(?!assets|images|favicon|_next)(.*)$",
+      "source": "/brainopedia-clean/assets/(.*)",
+      "destination": "/brainopedia-clean/assets/$1"
+    },
+    {
+      "source": "/brainopedia-clean/(.*\\.\\w+)$",
+      "destination": "/brainopedia-clean/$1"
+    },
+    {
+      "source": "/brainopedia-clean/.*",
       "destination": "/brainopedia-clean/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/brainopedia-clean/assets/(.*)",
+      "source": "/brainopedia-clean/assets/(.*\\.js)",
       "headers": [
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "key": "Content-Type",
+          "value": "application/javascript"
         }
       ]
     }
