@@ -25,3 +25,4 @@ Brainopedia-backup.zip
 *.zip
 *.backup
 
+dist/
