@@ -1,26 +1,20 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/brainopedia-clean/assets/(.*)",
-      "destination": "/brainopedia-clean/assets/$1"
-    },
-    {
-      "source": "/brainopedia-clean/(.*\\.\\w+)$",
-      "destination": "/brainopedia-clean/$1"
-    },
-    {
-      "source": "/brainopedia-clean/.*",
+      "source": "/brainopedia-clean/(?!assets|images).*",
       "destination": "/brainopedia-clean/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/brainopedia-clean/assets/(.*)",
+      "source": "/brainopedia-clean/assets/(.*\\.(js|mjs)$)",
       "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript; charset=utf-8"
+        },
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
@@ -28,29 +22,15 @@
       ]
     },
     {
-      "source": "/brainopedia-clean/assets/(.*\\.(js|mjs))",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/javascript; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/brainopedia-clean/assets/(.*\\.css)",
+      "source": "/brainopedia-clean/assets/(.*\\.css$)",
       "headers": [
         {
           "key": "Content-Type",
           "value": "text/css; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/brainopedia-clean/(.*\\.wasm)",
-      "headers": [
+        },
         {
-          "key": "Content-Type",
-          "value": "application/wasm"
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
         }
       ]
     }
