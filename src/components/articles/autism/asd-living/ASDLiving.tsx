@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { LifespanContent } from './LifespanContent';
 import { DailyLifeContent } from './DailyLifeContent';
@@ -13,13 +13,8 @@ interface ASDLivingProps {
 }
 
 export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
-  // 1. Use state so the component can re-render itself
-  const [activeTab, setActiveTab] = useState(initialTab || 'lifespan');
-
-  // 2. Just change the state instead of navigating
-  const handleTabChange = (tabId: string) => {
-    setActiveTab(tabId);
-  };
+  const location = useLocation();
+  const navigate = useNavigate();
 
   // URL-based tabbing
   const queryParams = new URLSearchParams(location.search);

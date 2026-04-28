@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 // This tells the computer: "Look in the same folder I am already in"
 import { CoreSymptoms } from './CoreSymptoms';
 import { SocialCommunication } from './SocialCommunication';
