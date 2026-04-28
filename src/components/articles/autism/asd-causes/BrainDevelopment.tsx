@@ -47,20 +47,20 @@ export function BrainDevelopment() {
         <div className="grid md:grid-cols-3 gap-4 text-center">
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">Synapses</div>
-            <p className="text-xs">Altered number, structure, or function of synaptic connections.</p>
+            <p className="text-md">Altered number, structure, or function of synaptic connections.</p>
           </div>
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">Neuronal Migration</div>
-            <p className="text-xs">Atypical positioning of neurons during fetal development.</p>
+            <p className="text-md">Atypical positioning of neurons during fetal development.</p>
           </div>
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">E/I Balance</div>
-            <p className="text-xs">Imbalance between excitatory and inhibitory neurotransmission.</p>
+            <p className="text-md">Imbalance between excitatory and inhibitory neurotransmission.</p>
           </div>
         </div>
         <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap justify-center gap-6">
-           <div className="text-xs"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
-           <div className="text-xs"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
+           <div className="text-md"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
+           <div className="text-md"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
         </div>
       </div>
 
