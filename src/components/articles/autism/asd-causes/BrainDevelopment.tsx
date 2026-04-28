@@ -8,7 +8,7 @@ export function BrainDevelopment() {
       
       <p className="mb-6 leading-relaxed">
         Genetic and environmental factors ultimately affect brain development, leading to the neurological 
-        differences characteristic of autism.<sup className="text-green-600 font-bold ml-0.5">[1]</sup>
+        differences characteristic of autism.
       </p>
 
       <ImageWithFallback 
@@ -22,10 +22,10 @@ export function BrainDevelopment() {
         <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
           <h3 className="font-bold mb-3 text-lg font-spartan">Structural Brain Differences</h3>
           <ul className="list-disc ml-5 space-y-2 text-sm">
-            <li><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in the frontal cortex.<sup className="text-green-600 font-bold ml-0.5">[2]</sup></li>
-            <li><strong>Altered connectivity:</strong> Differences in how brain regions connect and communicate.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Regional differences:</strong> Variations in size and structure of specific brain areas including the amygdala, cerebellum, and corpus callosum.<sup className="text-green-600 font-bold ml-0.5">[4]</sup></li>
-            <li><strong>White matter differences:</strong> Atypical development of myelin and white matter tracts.<sup className="text-green-600 font-bold ml-0.5">[5]</sup></li>
+            <li><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in the frontal cortex. </li>
+            <li><strong>Altered connectivity:</strong> Differences in how brain regions connect and communicate.</li>
+            <li><strong>Regional differences:</strong> Variations in size and structure of specific brain areas including the amygdala, cerebellum, and corpus callosum. </li>
+            <li><strong>White matter differences:</strong> Atypical development of myelin and white matter tracts.   </li>
           </ul>
         </div>
 
@@ -33,10 +33,10 @@ export function BrainDevelopment() {
         <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
           <h3 className="font-bold mb-3 text-lg font-spartan">Functional Brain Differences</h3>
           <ul className="list-disc ml-5 space-y-2 text-sm">
-            <li><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions.<sup className="text-green-600 font-bold ml-0.5">[6]</sup></li>
-            <li><strong>Social brain networks:</strong> Differences in activation of brain regions involved in social cognition.<sup className="text-green-600 font-bold ml-0.5">[7]</sup></li>
-            <li><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli.<sup className="text-green-600 font-bold ml-0.5">[8]</sup></li>
-            <li><strong>Default mode network:</strong> Differences in brain networks active during rest and self-referential thinking.<sup className="text-green-600 font-bold ml-0.5">[9]</sup></li>
+            <li><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions.</li>
+            <li><strong>Social brain networks:</strong> Differences in activation of brain regions involved in social cognition.</li>
+            <li><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli.</li>
+            <li><strong>Default mode network:</strong> Differences in brain networks active during rest and self-referential thinking.</li>
           </ul>
         </div>
       </div>
@@ -47,20 +47,20 @@ export function BrainDevelopment() {
         <div className="grid md:grid-cols-3 gap-4 text-center">
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">Synapses</div>
-            <p className="text-xs">Altered number, structure, or function of synaptic connections.<sup className="text-green-600 font-bold ml-0.5">[10]</sup></p>
+            <p className="text-xs">Altered number, structure, or function of synaptic connections.</p>
           </div>
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">Neuronal Migration</div>
-            <p className="text-xs">Atypical positioning of neurons during fetal development.<sup className="text-green-600 font-bold ml-0.5">[11]</sup></p>
+            <p className="text-xs">Atypical positioning of neurons during fetal development.</p>
           </div>
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">E/I Balance</div>
-            <p className="text-xs">Imbalance between excitatory and inhibitory neurotransmission.<sup className="text-green-600 font-bold ml-0.5">[12]</sup></p>
+            <p className="text-xs">Imbalance between excitatory and inhibitory neurotransmission.</p>
           </div>
         </div>
         <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap justify-center gap-6">
-           <div className="text-xs"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.<sup className="text-green-600 font-bold ml-0.5">[13]</sup></div>
-           <div className="text-xs"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.<sup className="text-green-600 font-bold ml-0.5">[14]</sup></div>
+           <div className="text-xs"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
+           <div className="text-xs"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
         </div>
       </div>
 
@@ -73,6 +73,13 @@ export function BrainDevelopment() {
         <div className="mb-6">
           <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
           <ol className="list-decimal ml-5 text-xs space-y-2 text-gray-700">
+            <li> None. </li>
+          </ol>
+        </div>
+
+        <div>
+          <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
+          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
             <li>Courchesne, E., et al. (2011). "Brain growth across the life span in autism." Brain Research.</li>
             <li>Hazlett, H. C., et al. (2017). "Early brain development in infants at high risk for autism spectrum disorder." Nature.</li>
             <li>Vasa, R. A., et al. (2016). "Atypical Brain Connectivity in Autism." Journal of the American Academy of Child & Adolescent Psychiatry.</li>
@@ -87,15 +94,6 @@ export function BrainDevelopment() {
             <li>Rubenstein, J. L., & Merzenich, M. M. (2003). "Model of autism: increased ratio of excitation/inhibition in key neural systems." Genes, Brain and Behavior.</li>
             <li>Vargas, D. L., et al. (2005). "Neuroinflammation in Autism." Annals of Neurology.</li>
             <li>Rossignol, D. A., & Frye, R. E. (2012). "Mitochondrial dysfunction in autism spectrum disorders: a systematic review and meta-analysis." Molecular Psychiatry.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
-            <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet.</li>
-            <li>Amaral, D. G., et al. (2008). "Neuroanatomy of autism." Trends in Neurosciences.</li>
-            <li>Kapp, S. K. (2020). Autistic community and the neurodiversity movement.</li>
           </ul>
         </div>
       </div>
