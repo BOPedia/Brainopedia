@@ -17,7 +17,7 @@ export function MythsMisconceptions() {
             <ImageWithFallback 
               src="/images/autism/autism-causes-Mythstab-vax.png" 
               alt="Scientific debunking of vaccine myths"
-              className="w-full rounded-lg shadow-sm border-4 border-white"
+              className="w-full rounded-sm shadow-sm border-4 border-white"
             />
           </div>
           <div className="w-full md:w-2/3">

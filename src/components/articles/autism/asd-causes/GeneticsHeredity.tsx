@@ -82,7 +82,7 @@ export function GeneticsHeredity() {
       {/* Biological Pathways */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Affected Biological Pathways</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-md">
           <div className="font-semibold p-2 bg-gray-50 rounded">Synaptic Function</div>
           <div className="font-semibold p-2 bg-gray-50 rounded">Chromatin Remodeling</div>
           <div className="font-semibold p-2 bg-gray-50 rounded">Transcriptional Regulation</div>
@@ -98,7 +98,7 @@ export function GeneticsHeredity() {
           <div className="bg-red-50 p-4 rounded">
             <strong>Fragile X Syndrome (FXS):</strong> Leading inherited cause of intellectual disability. ~90% of males show autistic characteristics.<sup className="text-green-600 font-bold ml-0.5">[5]</sup>
           </div>
-          <div className="flex flex-wrap gap-4 text-xs font-bold">
+          <div className="flex flex-wrap gap-4 text-md font-bold">
             <span className="px-3 py-1 bg-white border border-gray-200 rounded">Tuberous Sclerosis (25-61%)</span>
             <span className="px-3 py-1 bg-white border border-gray-200 rounded">Rett Syndrome</span>
             <span className="px-3 py-1 bg-white border border-gray-200 rounded">PTEN Mutations</span>
@@ -117,7 +117,7 @@ export function GeneticsHeredity() {
           <span className="font-bold text-xl px-2">:</span>
           <div className="w-5 h-5 bg-[#ffd166] rounded-sm"></div>
         </div>
-        <div className="text-left text-xs space-y-1 text-gray-600">
+        <div className="text-left text-md space-y-1 text-gray-800">
           <p>• <strong>Female Protective Effect:</strong> Females may require higher genetic "load."</p>
           <p>• <strong>X-Linked Genes:</strong> Males only have one X chromosome.</p>
           <p>• <strong>Diagnostic Bias:</strong> Camouflaging or different presentations in females.</p>
@@ -132,7 +132,7 @@ export function GeneticsHeredity() {
         
         <div className="mb-6">
           <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ol className="list-decimal ml-5 text-xs space-y-2 text-gray-700">
+          <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-800">
             <li>Genovese, A., & Butler, M. G. (2023). "The Autism Spectrum: Behavioral, Psychiatric and Genetic Associations." Genes, 14(3), 637. PMCID: PMC10048473.</li>
             <li>Tick, B., Bolton, P., Happé, F., Rutter, M., & Rijsdijk, F. (2016). "Heritability of autism spectrum disorders: A meta-analysis of twin studies." Journal of Child Psychology and Psychiatry, 57(5), 585-595. PMCID: PMC4996332.</li>
             <li>Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." Journal of the American Academy of Child & Adolescent Psychiatry, 56(6), 466-474.</li>
@@ -145,8 +145,8 @@ export function GeneticsHeredity() {
         </div>
 
               <div>
-                <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
-                <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
+                <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
+                <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800">
                   <li>National Institute of Mental Health (NIMH) - Autism Genetics Overview</li>
                   <li>CDC - Autism Spectrum Disorder (ASD) Data and Statistics</li>
                   <li>Baby Siblings Research Consortium Database</li>
