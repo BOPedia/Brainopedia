@@ -42,13 +42,13 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <ImageWithFallback
               src="/images/autism/autism-overview-pattern-brain.png"
               alt="Autism trees and head neurodiversity illustration"
-              className="w-96 h-auto float-right mr-6 mb-4 rounded-md border border-gray-300"
+              className="w-48 h-auto float-right mr-6 mb-4 rounded-md border border-gray-300"
              
             />
              <p className="mb-4">
                 Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by differences in social communication and interaction, alongside restricted or repetitive patterns of behavior, interests, or activities. Autism is called a "spectrum" disorder because there is wide variation in the type and severity of symptoms people experience.
               </p>
-              <p className="mb-4">
+              <p>
                 ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup>[1]</sup> representing a significant increase in diagnosis rates over the past two decades. This increase is largely attributed to improved awareness, expanded diagnostic criteria, and better identification rather than a true increase in prevalence.
               </p>
           </div>
