@@ -124,11 +124,35 @@ export function GeneticsHeredity() {
         </div>
       </div>
 
-      {/* --- REFERENCES --- */}
+{/* --- REFERENCES SECTION --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
-      <div className="text-[14px] text-gray-500 space-y-1">
-        <p>[78] Genovese & Butler (2023). [79] Tick et al. (2016). [80] Loomes et al. (2017). [81] Yoon et al. (2021). [82] Haebig et al. (2020). [83] Vignoli et al. (2015). [84] Ozonoff et al. (2024). [85] Cirnigliaro et al. (2023).</p>
-      </div>
-    </div>
-  );
-}
+      
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg">
+        <h3 className="font-bold mb-4 text-xl font-spartan">References</h3>
+        
+        <div className="mb-6">
+          <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
+          <ol className="list-decimal ml-5 text-xs space-y-2 text-gray-700">
+            <li>Genovese, A., & Butler, M. G. (2023). "The Autism Spectrum: Behavioral, Psychiatric and Genetic Associations." Genes, 14(3), 637. PMCID: PMC10048473.</li>
+            <li>Tick, B., Bolton, P., Happé, F., Rutter, M., & Rijsdijk, F. (2016). "Heritability of autism spectrum disorders: A meta-analysis of twin studies." Journal of Child Psychology and Psychiatry, 57(5), 585-595. PMCID: PMC4996332.</li>
+            <li>Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." Journal of the American Academy of Child & Adolescent Psychiatry, 56(6), 466-474.</li>
+            <li>Yoon, S., et al. (2021). "Rates of contributory de novo mutation in high and low-risk autism families." Communications Biology, 4(1), 1026. PMCID: PMC8410909.</li>
+            <li>Haebig, E., et al. (2020). "Rates and predictors of co-occurring autism spectrum disorder in boys with fragile X syndrome." Research in Developmental Disabilities, 107, 103783. PMCID: PMC9281610.</li>
+            <li>Vignoli, A., et al. (2015). "Autism spectrum disorder in tuberous sclerosis complex: searching for risk markers." Orphanet Journal of Rare Diseases, 10, 154. PMCID: PMC4668631.</li>
+            <li>Ozonoff, S., et al. (2024). "Familial recurrence of autism: Updates from the Baby Siblings Research Consortium." Pediatrics, 154(2), e2023065297. PMCID: PMC11291960.</li>
+            <li>Cirnigliaro, M., et al. (2023). "The contributions of rare inherited and polygenic risk to ASD in multiplex families." Proceedings of the National Academy of Sciences, 120(31), e2215632120. PMCID: PMC10400943.</li>
+          </ol>
+        </div>
+
+              <div>
+                <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
+                <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
+                  <li>National Institute of Mental Health (NIMH) - Autism Genetics Overview</li>
+                  <li>CDC - Autism Spectrum Disorder (ASD) Data and Statistics</li>
+                  <li>Baby Siblings Research Consortium Database</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        );
+      }
