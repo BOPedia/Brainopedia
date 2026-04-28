@@ -72,9 +72,9 @@ export function BrainDevelopment() {
         
         <div className="mb-6">
           <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ol className="list-decimal ml-5 text-xs space-y-2 text-gray-700">
-            <li> None. </li>
-          </ol>
+          <ul className="list-decimal ml-5 text-xs space-y-2 text-gray-700">
+            <li> None specifically mentioned. </li>
+          </ul>
         </div>
 
         <div>
