@@ -72,7 +72,7 @@ export function CurrentResearch() {
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg">
         <h3 className="font-bold mb-4 text-xl">References</h3>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="mb-6">
           <div>
             <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">CITED STATISTICS & STUDIES</h4>
             <ol className="list-decimal ml-5 text-[14px] space-y-2 text-gray-700">
