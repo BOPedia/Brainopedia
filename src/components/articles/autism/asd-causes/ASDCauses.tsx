@@ -34,7 +34,7 @@ export function ASDCauses() {
   }
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-8">
+    <div className="max-w-5xl mx-auto px-4 py-8">
       {/* Back Button */}
       <div className="flex justify-end mb-6">
         <button 

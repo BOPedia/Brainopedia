@@ -9,7 +9,7 @@ export function EnvironmentalFactors() {
       <ImageWithFallback 
         src="/images/autism/autism-causes-Envirotab-toddler-in-nature.png" 
         alt="Toddler in nature representing environmental factors"
-        className="w-full max-w-md mx-auto mb-6 rounded-lg shadow-sm"
+        className="w-full max-w-xs mx-auto mb-6 rounded-lg shadow-sm"
       />
       
       <p className="mb-6 leading-relaxed">
