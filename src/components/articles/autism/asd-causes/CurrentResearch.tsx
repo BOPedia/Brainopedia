@@ -74,8 +74,8 @@ export function CurrentResearch() {
         <h3 className="font-bold mb-4 text-xl">References</h3>
         <div className="grid md:grid-cols-2 gap-8">
           <div>
-            <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Research</h4>
-            <ol className="list-decimal ml-5 text-[10px] space-y-2 text-gray-700">
+            <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">CITED STATISTICS & STUDIES</h4>
+            <ol className="list-decimal ml-5 text-[14px] space-y-2 text-gray-700">
               <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet.</li>
               <li>Pellicano, E., & den Houting, J. (2022). "Shifting from 'normal science' to neurodiversity."</li>
               <li>Lyall, K., et al. (2017). "The changing epidemiology of autism spectrum disorders."</li>
