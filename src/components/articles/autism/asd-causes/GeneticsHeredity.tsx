@@ -7,7 +7,7 @@ export function GeneticsHeredity() {
       <h2 className="font-bold mb-4 text-2xl">Genetic Factors</h2>
       
       <p className="mb-6 leading-relaxed">
-        Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup className="text-green-600 font-bold ml-0.5">[78]</sup> However, autism genetics are complex and involve many genes rather than a single "autism gene."
+        Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup className="text-green-600 font-bold ml-0.5">[1]</sup> However, autism genetics are complex and involve many genes rather than a single "autism gene."
       </p>
 
       <ImageWithFallback 
@@ -23,11 +23,11 @@ export function GeneticsHeredity() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">Twin Studies</div>
-            <div className="text-sm">Identical twins have 60-90% concordance for autism, compared to 0-30% for fraternal twins.<sup className="text-green-600 font-bold ml-0.5">[79]</sup></div>
+            <div className="text-sm">Identical twins have 60-90% concordance for autism, compared to 0-30% for fraternal twins.<sup className="text-green-600 font-bold ml-0.5">[2]</sup></div>
           </div>
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">Recurrence Risk</div>
-            <div className="text-sm">Families with one autistic child have approximately a 20% chance of having another autistic child.<sup className="text-green-600 font-bold ml-0.5">[84]</sup></div>
+            <div className="text-sm">Families with one autistic child have approximately a 20% chance of having another autistic child.<sup className="text-green-600 font-bold ml-0.5">[7]</sup></div>
           </div>
           <div className="border-l-2 border-[#2abcd4] pl-3 md:col-span-2">
             <div className="font-bold text-[#0c264d] mb-1">Broader Autism Phenotype</div>
@@ -41,7 +41,7 @@ export function GeneticsHeredity() {
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Multiple Genes Involved</h3>
         <p className="text-sm mb-4">Autism is genetically heterogeneous, meaning different genetic variations can lead to similar outcomes:</p>
         <div className="space-y-4">
-          <div className="text-sm"><strong>Complex Genetic Architecture:</strong> A study of multiplex families identified 152 associated genes.<sup className="text-green-600 font-bold ml-0.5">[85]</sup></div>
+          <div className="text-sm"><strong>Complex Genetic Architecture:</strong> A study of multiplex families identified 152 associated genes.<sup className="text-green-600 font-bold ml-0.5">[8]</sup></div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-[#f0f9ff] p-3 rounded text-xs"><strong>Common Variants:</strong> Many small-effect variations common in the population.</div>
             <div className="bg-[#f0f9ff] p-3 rounded text-xs"><strong>Rare Variants:</strong> Rare mutations or CNVs with larger effects.</div>
@@ -54,7 +54,7 @@ export function GeneticsHeredity() {
       <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#2abcd4] mb-6">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">De Novo Mutations in Autism</h3>
         <p className="text-sm leading-relaxed mb-6">
-          <strong>De novo mutations</strong> are genetic changes that appear for the first time in a child. These spontaneous mutations occur during the formation of reproductive cells or early embryonic development.<sup className="text-green-600 font-bold ml-0.5">[81]</sup>
+          <strong>De novo mutations</strong> are genetic changes that appear for the first time in a child. These spontaneous mutations occur during the formation of reproductive cells or early embryonic development.<sup className="text-green-600 font-bold ml-0.5">[4]</sup>
         </p>
 
         <ImageWithFallback 
@@ -68,14 +68,14 @@ export function GeneticsHeredity() {
           <ul className="text-xs space-y-2">
             <li>• <strong>Simplex Families:</strong> De novo mutations contribute to 52-67% of cases.</li>
             <li>• <strong>Multiplex Families:</strong> Play a significantly smaller role than inherited factors.</li>
-            <li>• <strong>Overall:</strong> Contribute to approximately 30-39% of all cases.<sup className="text-green-600 font-bold ml-0.5">[81]</sup></li>
+            <li>• <strong>Overall:</strong> Contribute to approximately 30-39% of all cases.<sup className="text-green-600 font-bold ml-0.5">[4]</sup></li>
           </ul>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-[10px]">
           <div className="p-2 border border-gray-100 rounded"><strong>Point Mutations:</strong> Single letter code changes.</div>
           <div className="p-2 border border-gray-100 rounded"><strong>CNVs:</strong> Large segment deletions/duplications.</div>
-          <div className="p-2 border border-gray-100 rounded"><strong>Intronic:</strong> Targeting non-coding regions.<sup className="text-green-600 font-bold ml-0.5">[81]</sup></div>
+          <div className="p-2 border border-gray-100 rounded"><strong>Intronic:</strong> Targeting non-coding regions.<sup className="text-green-600 font-bold ml-0.5">[4]</sup></div>
         </div>
       </div>
 
@@ -96,7 +96,7 @@ export function GeneticsHeredity() {
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Associated Genetic Syndromes</h3>
         <div className="space-y-4 text-sm">
           <div className="bg-red-50 p-4 rounded">
-            <strong>Fragile X Syndrome (FXS):</strong> Leading inherited cause of intellectual disability. ~90% of males show autistic characteristics.<sup className="text-green-600 font-bold ml-0.5">[82]</sup>
+            <strong>Fragile X Syndrome (FXS):</strong> Leading inherited cause of intellectual disability. ~90% of males show autistic characteristics.<sup className="text-green-600 font-bold ml-0.5">[5]</sup>
           </div>
           <div className="flex flex-wrap gap-4 text-xs font-bold">
             <span className="px-3 py-1 bg-white border border-gray-200 rounded">Tuberous Sclerosis (25-61%)</span>
@@ -109,7 +109,7 @@ export function GeneticsHeredity() {
       {/* Sex Differences Section */}
       <div className="bg-white p-5 rounded-md border-2 border-[#0c264d] mb-10 text-center">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">♀️ ♂️ Sex Differences in Genetics</h3>
-        <p className="text-sm mb-4">Ratio: approximately 3-4:1 (Males : Females)<sup className="text-green-600 font-bold ml-0.5">[80]</sup></p>
+        <p className="text-sm mb-4">Ratio: approximately 3-4:1 (Males : Females)<sup className="text-green-600 font-bold ml-0.5">[3]</sup></p>
         <div className="flex items-center justify-center gap-2 mb-4">
           <div className="w-5 h-5 bg-[#2abcd4] rounded-sm"></div>
           <div className="w-5 h-5 bg-[#2abcd4] rounded-sm"></div>
