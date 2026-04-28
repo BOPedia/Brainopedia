@@ -1,4 +1,3 @@
-import { ASDSymptomsCoreSymptoms } from '../../../references/ASDSymptomsCoreSymptoms';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 import { 
   AlertTriangle, Eye, EarOff, ListX, FolderOpen, 
@@ -15,7 +14,7 @@ export function CoreSymptoms() {
         <p className="mb-4">
           The characteristics of autism spectrum disorder are highly variable, but they fall into two main 
           categories as defined by the DSM-5: persistent differences in social communication and interaction, 
-          and restricted, repetitive patterns of behavior, interests, or activities.<sup>[1]</sup> Understanding 
+          and restricted, repetitive patterns of behavior, interests, or activities. Understanding 
           these characteristics is essential for recognition, diagnosis, and appropriate support.
         </p>
         
@@ -33,7 +32,7 @@ export function CoreSymptoms() {
         <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Two Core Diagnostic Domains</h3>
           <p className="text-sm mb-4">
-            According to the DSM-5, autism spectrum disorder is characterized by persistent deficits in two main areas:<sup>[1]</sup>
+            According to the DSM-5, autism spectrum disorder is characterized by persistent deficits in two main areas:
           </p>
           <div className="space-y-3">
             <div className="border-l-2 border-[#2abcd4] pl-3">
