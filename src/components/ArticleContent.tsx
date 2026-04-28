@@ -1,128 +1,64 @@
-import { JSX } from 'react';
+import React, { lazy, Suspense } from 'react';
 
-// --- ORIGINAL CONDITION IMPORTS ---
-import { ArticleADHD } from './articles/ArticleADHD';
-import { ArticleAutism } from './articles/ArticleAutism';
-import { ArticleDyslexia } from './articles/ArticleDyslexia';
-import { ArticleDyscalculia } from './articles/ArticleDyscalculia';
-import { ArticleDyspraxia } from './articles/ArticleDyspraxia';
-import { ArticleTourette } from './articles/ArticleTourette';
-import { ArticleSynesthesia } from './articles/ArticleSynesthesia';
-import { ArticleDysgraphia } from './articles/ArticleDysgraphia';
-import { ArticleHyperlexia } from './articles/ArticleHyperlexia';
-import { ArticleMisophonia } from './articles/ArticleMisophonia';
-import { ArticleTwiceExceptional } from './articles/ArticleTwiceExceptional';
-import { ArticleAbout } from './articles/ArticleAbout';
-import { ArticleDonate } from './articles/ArticleDonate';
-import { ArticleBlog } from './articles/ArticleBlog';
-import { ArticleOCD } from './articles/ArticleOCD';
-import { ArticleBipolar } from './articles/ArticleBipolar';
-import { ArticleSchizophrenia } from './articles/ArticleSchizophrenia';
-import { ArticleEpilepsy } from './articles/ArticleEpilepsy';
-import { ArticleSPD } from './articles/ArticleSPD';
-import { ArticleAPD } from './articles/ArticleAPD';
-import { ArticleVisualProcessing } from './articles/ArticleVisualProcessing';
-import { ArticleNVLD } from './articles/ArticleNVLD';
-import { ArticleDLD } from './articles/ArticleDLD';
-import { ArticleGiftedness } from './articles/ArticleGiftedness';
-import { ArticleIntellectualDisability } from './articles/ArticleIntellectualDisability';
-import { ArticleDownSyndrome } from './articles/ArticleDownSyndrome';
-import { ArticleFASD } from './articles/ArticleFASD';
-import { ArticleTBI } from './articles/ArticleTBI';
-import { ArticleCTE } from './articles/ArticleCTE';
-import { ArticlePANDAS } from './articles/ArticlePANDAS';
+// This helper type tells TypeScript that articles MIGHT take setCurrentArticle
+type ArticleProps = {
+  setCurrentArticle?: (article: string) => void;
+};
 
-// --- ADHD SECTION ---
-import { ADHDOverview } from './articles/adhd/ADHDOverview';
-import { ADHDSymptoms } from './articles/adhd/ADHDSymptoms';
-import { ADHDCauses } from './articles/adhd/ADHDCauses';
-import { ADHDDiagnosis } from './articles/adhd/ADHDDiagnosis';
-import { ADHDSupport } from './articles/adhd/ADHDSupport';
-import { ADHDLiving } from './articles/adhd/ADHDLiving';
+const articleMap: Record<string, React.ComponentType<ArticleProps>> = {
+  'symptom-wheel-demo': lazy(() => import('./SymptomWheelDemo').then(m => ({ default: m.SymptomWheelDemo }))),
+  'project-standards': lazy(() => import('./articles/ProjectStandards')),
 
-// --- NEW MODULAR AUTISM IMPORTS ---
-import { ASDOverview } from './articles/autism/ASDOverview';
-import { ASDSymptoms } from './articles/autism/asd-symptoms/ASDSymptoms';
-import { ASDCauses } from './articles/autism/asd-causes/ASDCauses';
-import { ASDDiagnosis } from './articles/autism/asd-diagnosis/ASDDiagnosis';
-import { ASDLiving } from './articles/autism/asd-living/ASDLiving';
-import { OccupationalTherapy } from './articles/autism/asd-support/OccupationalTherapy';
-import { ABATherapy } from './articles/autism/asd-support/ABATherapy';
-import { SocialSkills } from './articles/autism/asd-support/SocialSkills';
-import { MentalHealth } from './articles/autism/asd-support/MentalHealth';
-import { PhysicalTherapy } from './articles/autism/asd-support/PhysicalTherapy';
-import { TherapiesContent } from './articles/autism/asd-support/TherapiesContent';
+  // MAIN CONDITIONS
+  'adhd': lazy(() => import('./articles/ArticleADHD').then(m => ({ default: m.ArticleADHD }))),
+  'autism': lazy(() => import('./articles/ArticleAutism').then(m => ({ default: m.ArticleAutism }))),
+  'dyslexia': lazy(() => import('./articles/ArticleDyslexia').then(m => ({ default: m.ArticleDyslexia }))),
+  'dyscalculia': lazy(() => import('./articles/ArticleDyscalculia').then(m => ({ default: m.ArticleDyscalculia }))),
+  'dyspraxia': lazy(() => import('./articles/ArticleDyspraxia').then(m => ({ default: m.ArticleDyspraxia }))),
+  'tourette': lazy(() => import('./articles/ArticleTourette').then(m => ({ default: m.ArticleTourette }))),
+  'synesthesia': lazy(() => import('./articles/ArticleSynesthesia').then(m => ({ default: m.ArticleSynesthesia }))),
+  'dysgraphia': lazy(() => import('./articles/ArticleDysgraphia').then(m => ({ default: m.ArticleDysgraphia }))),
+  'hyperlexia': lazy(() => import('./articles/ArticleHyperlexia').then(m => ({ default: m.ArticleHyperlexia }))),
+  'misophonia': lazy(() => import('./articles/ArticleMisophonia').then(m => ({ default: m.ArticleMisophonia }))),
+  'twice-exceptional': lazy(() => import('./articles/ArticleTwiceExceptional').then(m => ({ default: m.ArticleTwiceExceptional }))),
+  'ocd': lazy(() => import('./articles/ArticleOCD').then(m => ({ default: m.ArticleOCD }))),
+  'bipolar': lazy(() => import('./articles/ArticleBipolar').then(m => ({ default: m.ArticleBipolar }))),
+  'schizophrenia': lazy(() => import('./articles/ArticleSchizophrenia').then(m => ({ default: m.ArticleSchizophrenia }))),
+  'epilepsy': lazy(() => import('./articles/ArticleEpilepsy').then(m => ({ default: m.ArticleEpilepsy }))),
+  'spd': lazy(() => import('./articles/ArticleSPD').then(m => ({ default: m.ArticleSPD }))),
+  'apd': lazy(() => import('./articles/ArticleAPD').then(m => ({ default: m.ArticleAPD }))),
+  'visual-processing': lazy(() => import('./articles/ArticleVisualProcessing').then(m => ({ default: m.ArticleVisualProcessing }))),
+  'nvld': lazy(() => import('./articles/ArticleNVLD').then(m => ({ default: m.ArticleNVLD }))),
+  'dld': lazy(() => import('./articles/ArticleDLD').then(m => ({ default: m.ArticleDLD }))),
+  'giftedness': lazy(() => import('./articles/ArticleGiftedness').then(m => ({ default: m.ArticleGiftedness }))),
+  'intellectual-disability': lazy(() => import('./articles/ArticleIntellectualDisability').then(m => ({ default: m.ArticleIntellectualDisability }))),
+  'down-syndrome': lazy(() => import('./articles/ArticleDownSyndrome').then(m => ({ default: m.ArticleDownSyndrome }))),
+  'fasd': lazy(() => import('./articles/ArticleFASD').then(m => ({ default: m.ArticleFASD }))),
+  'tbi': lazy(() => import('./articles/ArticleTBI').then(m => ({ default: m.ArticleTBI }))),
+  'cte': lazy(() => import('./articles/ArticleCTE').then(m => ({ default: m.ArticleCTE }))),
+  'pandas': lazy(() => import('./articles/ArticlePANDAS').then(m => ({ default: m.ArticlePANDAS }))),
 
-// --- OTHER CONDITION DETAILS ---
-import { DyslexiaOverview } from './articles/dyslexia/DyslexiaOverview';
-import { DyslexiaSymptoms } from './articles/dyslexia/DyslexiaSymptoms';
-import { DyslexiaCauses } from './articles/dyslexia/DyslexiaCauses';
-import { DyslexiaDiagnosis } from './articles/dyslexia/DyslexiaDiagnosis';
-import { DyslexiaSupport } from './articles/dyslexia/DyslexiaSupport';
-import { DyslexiaLiving } from './articles/dyslexia/DyslexiaLiving';
-import { DyscalculiaOverview } from './articles/dyscalculia/DyscalculiaOverview';
-import { DyscalculiaSymptoms } from './articles/dyscalculia/DyscalculiaSymptoms';
-import { DyscalculiaCauses } from './articles/dyscalculia/DyscalculiaCauses';
-import { DyscalculiaDiagnosis } from './articles/dyscalculia/DyscalculiaDiagnosis';
-import { DyscalculiaSupport } from './articles/dyscalculia/DyscalculiaSupport';
-import { DyscalculiaLiving } from './articles/dyscalculia/DyscalculiaLiving';
-import { DysgraphiaOverview } from './articles/dysgraphia/DysgraphiaOverview';
-import { DysgraphiaSymptoms } from './articles/dysgraphia/DysgraphiaSymptoms';
-import { DysgraphiaCauses } from './articles/dysgraphia/DysgraphiaCauses';
-import { DysgraphiaDiagnosis } from './articles/dysgraphia/DysgraphiaDiagnosis';
-import { DysgraphiaSupport } from './articles/dysgraphia/DysgraphiaSupport';
-import { DysgraphiaLiving } from './articles/dysgraphia/DysgraphiaLiving';
-import { NVLDOverview } from './articles/nvld/NVLDOverview';
-import { NVLDSymptoms } from './articles/nvld/NVLDSymptoms';
-import { NVLDCauses } from './articles/nvld/NVLDCauses';
-import { NVLDDiagnosis } from './articles/nvld/NVLDDiagnosis';
-import { NVLDSupport } from './articles/nvld/NVLDSupport';
-import { NVLDLiving } from './articles/nvld/NVLDLiving';
-import { DLDOverview } from './articles/dld/DLDOverview';
-import { DLDSymptoms } from './articles/dld/DLDSymptoms';
-import { DLDCauses } from './articles/dld/DLDCauses';
-import { DLDDiagnosis } from './articles/dld/DLDDiagnosis';
-import { DLDSupport } from './articles/dld/DLDSupport';
-import { DLDLiving } from './articles/dld/DLDLiving';
-import { HyperlexiaOverview } from './articles/hyperlexia/HyperlexiaOverview';
-import { HyperlexiaSymptoms } from './articles/hyperlexia/HyperlexiaSymptoms';
-import { HyperlexiaCauses } from './articles/hyperlexia/HyperlexiaCauses';
-import { HyperlexiaDiagnosis } from './articles/hyperlexia/HyperlexiaDiagnosis';
-import { HyperlexiaSupport } from './articles/hyperlexia/HyperlexiaSupport';
-import { HyperlexiaLiving } from './articles/hyperlexia/HyperlexiaLiving';
-import { GiftednessOverview } from './articles/giftedness/GiftednessOverview';
-import { GiftednessSymptoms } from './articles/giftedness/GiftednessSymptoms';
-import { GiftednessCauses } from './articles/giftedness/GiftednessCauses';
-import { GiftednessDiagnosis } from './articles/giftedness/GiftednessDiagnosis';
-import { GiftednessSupport } from './articles/giftedness/GiftednessSupport';
-import { GiftednessLiving } from './articles/giftedness/GiftednessLiving';
-import { TwiceExceptionalOverview } from './articles/twice-exceptional/TwiceExceptionalOverview';
-import { TwiceExceptionalSymptoms } from './articles/twice-exceptional/TwiceExceptionalSymptoms';
-import { TwiceExceptionalCauses } from './articles/twice-exceptional/TwiceExceptionalCauses';
-import { TwiceExceptionalDiagnosis } from './articles/twice-exceptional/TwiceExceptionalDiagnosis';
-import { TwiceExceptionalSupport } from './articles/twice-exceptional/TwiceExceptionalSupport';
-import { TwiceExceptionalLiving } from './articles/twice-exceptional/TwiceExceptionalLiving';
-import { APDOverview } from './articles/apd/APDOverview';
-import { APDSymptoms } from './articles/apd/APDSymptoms';
-import { APDCauses } from './articles/apd/APDCauses';
-import { APDDiagnosis } from './articles/apd/APDDiagnosis';
-import { APDSupport } from './articles/apd/APDSupport';
-import { APDLiving } from './articles/apd/APDLiving';
-import { VPDOverview } from './articles/visual-processing/VPDOverview';
-import { VPDSymptoms } from './articles/visual-processing/VPDSymptoms';
-import { VPDCauses } from './articles/visual-processing/VPDCauses';
-import { VPDDiagnosis } from './articles/visual-processing/VPDDiagnosis';
-import { VPDSupport } from './articles/visual-processing/VPDSupport';
-import { VPDLiving } from './articles/visual-processing/VPDLiving';
-import { SPDOverview } from './articles/spd/SPDOverview';
-import { SPDSymptoms } from './articles/spd/SPDSymptoms';
-import { SPDCauses } from './articles/spd/SPDCauses';
-import { SPDDiagnosis } from './articles/spd/SPDDiagnosis';
-import { SPDSupport } from './articles/spd/SPDSupport';
-import { SPDLiving } from './articles/spd/SPDLiving';
-import { SymptomWheelDemo } from './SymptomWheelDemo';
-import ProjectStandards from './articles/ProjectStandards';
-// import ProjectStandards from './articles/ProjectStandards';
+  // ADHD SUB-PAGES
+  'adhd-overview': lazy(() => import('./articles/adhd/ADHDOverview').then(m => ({ default: m.ADHDOverview }))),
+  'adhd-symptoms': lazy(() => import('./articles/adhd/ADHDSymptoms').then(m => ({ default: m.ADHDSymptoms }))),
+  'adhd-causes': lazy(() => import('./articles/adhd/ADHDCauses').then(m => ({ default: m.ADHDCauses }))),
+  'adhd-diagnosis': lazy(() => import('./articles/adhd/ADHDDiagnosis').then(m => ({ default: m.ADHDDiagnosis }))),
+  'adhd-support': lazy(() => import('./articles/adhd/ADHDSupport').then(m => ({ default: m.ADHDSupport }))),
+  'adhd-living': lazy(() => import('./articles/adhd/ADHDLiving').then(m => ({ default: m.ADHDLiving }))),
+
+  // AUTISM SUB-PAGES
+  'autism-overview': lazy(() => import('./articles/autism/ASDOverview').then(m => ({ default: m.ASDOverview }))),
+  'autism-symptoms': lazy(() => import('./articles/autism/asd-symptoms/ASDSymptoms').then(m => ({ default: m.ASDSymptoms }))),
+  'autism-causes': lazy(() => import('./articles/autism/asd-causes/ASDCauses').then(m => ({ default: m.ASDCauses }))),
+  'autism-diagnosis': lazy(() => import('./articles/autism/asd-diagnosis/ASDDiagnosis').then(m => ({ default: m.ASDDiagnosis }))),
+  'autism-living': lazy(() => import('./articles/autism/asd-living/ASDLiving').then(m => ({ default: m.ASDLiving }))),
+  'autism-support': lazy(() => import('./articles/autism/asd-support/TherapiesContent').then(m => ({ default: m.TherapiesContent }))),
+
+  // MISC
+  'about': lazy(() => import('./articles/ArticleAbout').then(m => ({ default: m.ArticleAbout }))),
+  'donate': lazy(() => import('./articles/ArticleDonate').then(m => ({ default: m.ArticleDonate }))),
+  'blog': lazy(() => import('./articles/ArticleBlog').then(m => ({ default: m.ArticleBlog }))),
+};
 
 interface ArticleContentProps {
   articleId: string;
@@ -130,161 +66,18 @@ interface ArticleContentProps {
 }
 
 export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentProps) {
-  const articles: Record<string, React.ReactNode> = {
-    'symptom-wheel-demo': <SymptomWheelDemo />,
-    'project-standards': <ProjectStandards setCurrentArticle={setCurrentArticle} />,
-
-    // ADHD MAPPING
-    adhd: <ArticleADHD setCurrentArticle={setCurrentArticle} />,
-    'adhd-overview': <ADHDOverview setCurrentArticle={setCurrentArticle} />,
-    'adhd-symptoms': <ADHDSymptoms setCurrentArticle={setCurrentArticle} />,
-    'adhd-causes': <ADHDCauses setCurrentArticle={setCurrentArticle} />,
-    'adhd-diagnosis': <ADHDDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'adhd-support': <ADHDSupport setCurrentArticle={setCurrentArticle} />,
-    'adhd-living': <ADHDLiving setCurrentArticle={setCurrentArticle} />,
-
-    // MODULAR AUTISM MAPPING
-    autism: <ArticleAutism setCurrentArticle={setCurrentArticle} />,
-    'autism-overview': <ASDOverview setCurrentArticle={setCurrentArticle} />,
-    'autism-symptoms': <ASDSymptoms setCurrentArticle={setCurrentArticle} />,
-    'autism-causes': <ASDCauses />,
-    'autism-diagnosis': <ASDDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'autism-support': <TherapiesContent setCurrentArticle={setCurrentArticle} />,
-    'autism-living': <ASDLiving setCurrentArticle={setCurrentArticle} />,
-    'autism-occupational-therapy': <OccupationalTherapy />,
-    'autism-aba-therapy': <ABATherapy />,
-    'autism-social-skills': <SocialSkills />,
-    'autism-mental-health': <MentalHealth />,
-    'autism-physical-therapy': <PhysicalTherapy />,
-
-    // DYSLEXIA MAPPING
-    dyslexia: <ArticleDyslexia setCurrentArticle={setCurrentArticle} />,
-    'dyslexia-overview': <DyslexiaOverview setCurrentArticle={setCurrentArticle} />,
-    'dyslexia-symptoms': <DyslexiaSymptoms setCurrentArticle={setCurrentArticle} />,
-    'dyslexia-causes': <DyslexiaCauses setCurrentArticle={setCurrentArticle} />,
-    'dyslexia-diagnosis': <DyslexiaDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'dyslexia-support': <DyslexiaSupport setCurrentArticle={setCurrentArticle} />,
-    'dyslexia-living': <DyslexiaLiving setCurrentArticle={setCurrentArticle} />,
-
-    // DYSCALCULIA MAPPING
-    dyscalculia: <ArticleDyscalculia setCurrentArticle={setCurrentArticle} />,
-    'dyscalculia-overview': <DyscalculiaOverview setCurrentArticle={setCurrentArticle} />,
-    'dyscalculia-symptoms': <DyscalculiaSymptoms setCurrentArticle={setCurrentArticle} />,
-    'dyscalculia-causes': <DyscalculiaCauses setCurrentArticle={setCurrentArticle} />,
-    'dyscalculia-diagnosis': <DyscalculiaDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'dyscalculia-support': <DyscalculiaSupport setCurrentArticle={setCurrentArticle} />,
-    'dyscalculia-living': <DyscalculiaLiving setCurrentArticle={setCurrentArticle} />,
-
-        // DYSGRAPHIA MAPPING
-    dysgraphia: <ArticleDysgraphia setCurrentArticle={setCurrentArticle} />,
-    'dysgraphia-overview': <DysgraphiaOverview setCurrentArticle={setCurrentArticle} />,
-    'dysgraphia-symptoms': <DysgraphiaSymptoms setCurrentArticle={setCurrentArticle} />,
-    'dysgraphia-causes': <DysgraphiaCauses setCurrentArticle={setCurrentArticle} />,
-    'dysgraphia-diagnosis': <DysgraphiaDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'dysgraphia-support': <DysgraphiaSupport setCurrentArticle={setCurrentArticle} />,
-    'dysgraphia-living': <DysgraphiaLiving setCurrentArticle={setCurrentArticle} />,
-
-    // NVLD MAPPING
-    nvld: <ArticleNVLD setCurrentArticle={setCurrentArticle} />,
-    'nvld-overview': <NVLDOverview setCurrentArticle={setCurrentArticle} />,
-    'nvld-symptoms': <NVLDSymptoms setCurrentArticle={setCurrentArticle} />,
-    'nvld-causes': <NVLDCauses setCurrentArticle={setCurrentArticle} />,
-    'nvld-diagnosis': <NVLDDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'nvld-support': <NVLDSupport setCurrentArticle={setCurrentArticle} />,
-    'nvld-living': <NVLDLiving setCurrentArticle={setCurrentArticle} />,
-
-    // DLD MAPPING
-    dld: <ArticleDLD setCurrentArticle={setCurrentArticle} />,
-    'dld-overview': <DLDOverview setCurrentArticle={setCurrentArticle} />,
-    'dld-symptoms': <DLDSymptoms setCurrentArticle={setCurrentArticle} />,
-    'dld-causes': <DLDCauses setCurrentArticle={setCurrentArticle} />,
-    'dld-diagnosis': <DLDDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'dld-support': <DLDSupport setCurrentArticle={setCurrentArticle} />,
-    'dld-living': <DLDLiving setCurrentArticle={setCurrentArticle} />,
-
-    // HYPERLEXIA MAPPING
-    hyperlexia: <ArticleHyperlexia setCurrentArticle={setCurrentArticle} />,
-    'hyperlexia-overview': <HyperlexiaOverview setCurrentArticle={setCurrentArticle} />,
-    'hyperlexia-symptoms': <HyperlexiaSymptoms setCurrentArticle={setCurrentArticle} />,
-    'hyperlexia-causes': <HyperlexiaCauses setCurrentArticle={setCurrentArticle} />,
-    'hyperlexia-diagnosis': <HyperlexiaDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'hyperlexia-support': <HyperlexiaSupport setCurrentArticle={setCurrentArticle} />,
-    'hyperlexia-living': <HyperlexiaLiving setCurrentArticle={setCurrentArticle} />,
-
-    // STANDALONE ARTICLES
-    dyspraxia: <ArticleDyspraxia />,
-    tourette: <ArticleTourette />,
-    synesthesia: <ArticleSynesthesia />,
-    misophonia: <ArticleMisophonia />,
-
-    // TWICE EXCEPTIONAL MAPPING
-    'twice-exceptional': <ArticleTwiceExceptional setCurrentArticle={setCurrentArticle} />,
-    'twice-exceptional-overview': <TwiceExceptionalOverview setCurrentArticle={setCurrentArticle} />,
-    'twice-exceptional-symptoms': <TwiceExceptionalSymptoms setCurrentArticle={setCurrentArticle} />,
-    'twice-exceptional-causes': <TwiceExceptionalCauses setCurrentArticle={setCurrentArticle} />,
-    'twice-exceptional-diagnosis': <TwiceExceptionalDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'twice-exceptional-support': <TwiceExceptionalSupport setCurrentArticle={setCurrentArticle} />,
-    'twice-exceptional-living': <TwiceExceptionalLiving setCurrentArticle={setCurrentArticle} />,
-
-    // STANDALONE ARTICLES
-    ocd: <ArticleOCD />,
-    bipolar: <ArticleBipolar />,
-    schizophrenia: <ArticleSchizophrenia />,
-    epilepsy: <ArticleEpilepsy />,
-
-    // SPD MAPPING
-    spd: <ArticleSPD setCurrentArticle={setCurrentArticle} />,
-    'spd-overview': <SPDOverview setCurrentArticle={setCurrentArticle} />,
-    'spd-symptoms': <SPDSymptoms setCurrentArticle={setCurrentArticle} />,
-    'spd-causes': <SPDCauses setCurrentArticle={setCurrentArticle} />,
-    'spd-diagnosis': <SPDDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'spd-support': <SPDSupport setCurrentArticle={setCurrentArticle} />,
-    'spd-living': <SPDLiving setCurrentArticle={setCurrentArticle} />,
-
-    // APD MAPPING
-    apd: <ArticleAPD setCurrentArticle={setCurrentArticle} />,
-    'apd-overview': <APDOverview setCurrentArticle={setCurrentArticle} />,
-    'apd-symptoms': <APDSymptoms setCurrentArticle={setCurrentArticle} />,
-    'apd-causes': <APDCauses setCurrentArticle={setCurrentArticle} />,
-    'apd-diagnosis': <APDDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'apd-support': <APDSupport setCurrentArticle={setCurrentArticle} />,
-    'apd-living': <APDLiving setCurrentArticle={setCurrentArticle} />,
-
-    // VISUAL PROCESSING MAPPING
-    'visual-processing': <ArticleVisualProcessing setCurrentArticle={setCurrentArticle} />,
-    'visual-processing-overview': <VPDOverview setCurrentArticle={setCurrentArticle} />,
-    'visual-processing-symptoms': <VPDSymptoms setCurrentArticle={setCurrentArticle} />,
-    'visual-processing-causes': <VPDCauses setCurrentArticle={setCurrentArticle} />,
-    'visual-processing-diagnosis': <VPDDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'visual-processing-support': <VPDSupport setCurrentArticle={setCurrentArticle} />,
-    'visual-processing-living': <VPDLiving setCurrentArticle={setCurrentArticle} />,
-
-    // GIFTEDNESS MAPPING
-    giftedness: <ArticleGiftedness setCurrentArticle={setCurrentArticle} />,
-    'giftedness-overview': <GiftednessOverview setCurrentArticle={setCurrentArticle} />,
-    'giftedness-symptoms': <GiftednessSymptoms setCurrentArticle={setCurrentArticle} />,
-    'giftedness-causes': <GiftednessCauses setCurrentArticle={setCurrentArticle} />,
-    'giftedness-diagnosis': <GiftednessDiagnosis setCurrentArticle={setCurrentArticle} />,
-    'giftedness-support': <GiftednessSupport setCurrentArticle={setCurrentArticle} />,
-    'giftedness-living': <GiftednessLiving setCurrentArticle={setCurrentArticle} />,
-
-    // STANDALONE ARTICLES
-    'intellectual-disability': <ArticleIntellectualDisability />,
-    'down-syndrome': <ArticleDownSyndrome />,
-    fasd: <ArticleFASD />,
-    tbi: <ArticleTBI />,
-    cte: <ArticleCTE />,
-    pandas: <ArticlePANDAS />,
-
-    // MISC
-    about: <ArticleAbout setCurrentArticle={setCurrentArticle} />,
-    donate: <ArticleDonate />,
-    blog: <ArticleBlog setCurrentArticle={setCurrentArticle} />,
-  };
+  const SelectedComponent = articleMap[articleId] || articleMap['adhd'];
 
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
-      {articles[articleId] || articles.adhd}
+      <Suspense fallback={
+        <div className="flex flex-col items-center justify-center py-20">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-900"></div>
+          <p className="mt-4 text-blue-900 font-medium">Loading content...</p>
+        </div>
+      }>
+        <SelectedComponent setCurrentArticle={setCurrentArticle} />
+      </Suspense>
     </div>
   );
 }
