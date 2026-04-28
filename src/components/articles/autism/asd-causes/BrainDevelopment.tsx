@@ -63,20 +63,30 @@ export function BrainDevelopment() {
            <div className="text-xs"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.<sup className="text-green-600 font-bold ml-0.5">[14]</sup></div>
         </div>
       </div>
-      {/* --- REFERENCES SECTION --- */}
+
+{/* --- REFERENCES SECTION --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg">
-        <h3 className="font-bold mb-4 text-xl">References</h3>
+        <h3 className="font-bold mb-4 text-xl font-spartan">References</h3>
         
         <div className="mb-6">
           <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
           <ol className="list-decimal ml-5 text-xs space-y-2 text-gray-700">
-            <li>Centers for Disease Control and Prevention. (2023). "Data and Statistics."</li>
-            <li>Bai, D., et al. (2019). "Association of genetic and environmental factors."</li>
-            <li>Geschwind, D. H., & State, M. W. (2015). "Gene hunting in autism."</li>
             <li>Courchesne, E., et al. (2011). "Brain growth across the life span in autism." Brain Research.</li>
-            <li>American Psychiatric Association. (2022). DSM-5-TR.</li>
+            <li>Hazlett, H. C., et al. (2017). "Early brain development in infants at high risk for autism spectrum disorder." Nature.</li>
+            <li>Vasa, R. A., et al. (2016). "Atypical Brain Connectivity in Autism." Journal of the American Academy of Child & Adolescent Psychiatry.</li>
+            <li>Schumann, C. M., et al. (2010). "The Amygdala Is Enlarged in Children But Not Adolescents with Autism." Journal of Neuroscience.</li>
+            <li>Ecker, C., et al. (2015). "The Neuroanatomy of Autism Spectrum Disorder." Biological Psychiatry.</li>
+            <li>Belmonte, M. K., et al. (2004). "Autism and Abnormal Development of Brain Connectivity." Journal of Neuroscience.</li>
+            <li>Pelphrey, K. A., et al. (2011). "The Social Brain in Autism." Journal of Child Psychology and Psychiatry.</li>
+            <li>Robertson, C. E., & Baron-Cohen, S. (2017). "Sensory perception in autism." Nature Reviews Neuroscience.</li>
+            <li>Padmanabhan, A., et al. (2017). "Default Mode Network Connectivity in Children with Autism." Scientific Reports.</li>
+            <li>Zoghbi, H. Y., & Bear, M. F. (2012). "Synaptic Dysfunction in Neurodevelopmental Disorders." Cold Spring Harbor Perspectives in Biology.</li>
+            <li>Stoner, R., et al. (2014). "Patches of Disorganization in the Neocortex of Children with Autism." New England Journal of Medicine.</li>
+            <li>Rubenstein, J. L., & Merzenich, M. M. (2003). "Model of autism: increased ratio of excitation/inhibition in key neural systems." Genes, Brain and Behavior.</li>
+            <li>Vargas, D. L., et al. (2005). "Neuroinflammation in Autism." Annals of Neurology.</li>
+            <li>Rossignol, D. A., & Frye, R. E. (2012). "Mitochondrial dysfunction in autism spectrum disorders: a systematic review and meta-analysis." Molecular Psychiatry.</li>
           </ol>
         </div>
 
@@ -84,9 +94,8 @@ export function BrainDevelopment() {
           <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
           <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
             <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet.</li>
+            <li>Amaral, D. G., et al. (2008). "Neuroanatomy of autism." Trends in Neurosciences.</li>
             <li>Kapp, S. K. (2020). Autistic community and the neurodiversity movement.</li>
-            <li>Robertson, C. E., & Baron-Cohen, S. (2017). "Sensory perception in autism." Nature Reviews Neuroscience.</li>
-            <li>Zwaigenbaum, L., et al. (2015). "Early identification and interventions for autism."</li>
           </ul>
         </div>
       </div>
