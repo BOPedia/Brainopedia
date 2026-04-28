@@ -20,7 +20,7 @@ export function EnvironmentalFactors() {
         {/* Section 1: Prenatal */}
         <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
           <h3 className="font-bold mb-3 text-lg font-spartan">Prenatal Factors</h3>
-          <p className="text-sm mb-3 text-gray-600 italic">Factors during pregnancy associated with increased risk:</p>
+          <p className="text-sm mb-3 text-navy-800 italic">Factors during pregnancy associated with increased risk:</p>
           <ul className="list-disc ml-5 space-y-2 text-sm">
             <li><strong>Advanced parental age:</strong> Both maternal and paternal age over 35.<sup className="text-green-600 font-bold ml-0.5">[2]</sup></li>
             <li><strong>Maternal infections:</strong> Severe infections, particularly in the second trimester.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
@@ -60,7 +60,7 @@ export function EnvironmentalFactors() {
         
         <div className="mb-6">
           <h4 className="text-xs uppercase tracking-wider text-green-500 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-500 font-spartan">
+          <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-800 font-spartan">
             <li>Centers for Disease Control and Prevention. (2023). "Autism Spectrum Disorder (ASD): Data and Statistics." CDC.</li>
             <li>Bai, D., et al. (2019). "Association of genetic and environmental factors with autism in a 5-country cohort." JAMA Psychiatry, 76(10), 1035-1043.</li>
             <li>Modabbernia, A., et al. (2017). "Environmental risk factors for autism: An evidence-based review of systematic reviews." Molecular Autism, 8(1), 13.</li>
@@ -70,7 +70,7 @@ export function EnvironmentalFactors() {
 
         <div>
           <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-500 font-spartan">
+          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800 font-spartan">
             <li>American Psychiatric Association. (2013). Diagnostic and Statistical Manual of Mental Disorders (5th ed.).</li>
             <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet, 392(10146), 508-520.</li>
             <li>Taylor, L. E., et al. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis." Vaccine, 32(29).</li>

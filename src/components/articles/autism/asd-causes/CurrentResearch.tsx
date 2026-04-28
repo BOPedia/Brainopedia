@@ -76,15 +76,15 @@ export function CurrentResearch() {
         <div className="mb-6">
           <div>
             <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">CITED STATISTICS & STUDIES</h4>
-            <ol className="list-decimal ml-5 text-[14px] space-y-2 text-gray-700">
+            <ol className="list-decimal ml-5 text-[14px] space-y-2 text-navy-800">
               <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet.</li>
               <li>Pellicano, E., & den Houting, J. (2022). "Shifting from 'normal science' to neurodiversity."</li>
               <li>Lyall, K., et al. (2017). "The changing epidemiology of autism spectrum disorders."</li>
             </ol>
           </div>
           <div>
-            <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
-            <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
+            <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
+            <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800">
               <li>Kapp, S. K. (2020). Autistic community and the neurodiversity movement.</li>
               <li>Chapman, R., & Carel, H. (2022). "Neurodiversity and the good human life."</li>
               <li>American Psychiatric Association. (2022). DSM-5-TR.</li>

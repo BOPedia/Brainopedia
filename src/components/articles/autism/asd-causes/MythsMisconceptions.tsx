@@ -62,7 +62,7 @@ export function MythsMisconceptions() {
         
         <div className="mb-6">
           <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ol className="list-decimal ml-5 text-xs space-y-2 text-gray-700">
+          <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-800">
             <li>Centers for Disease Control and Prevention. (2023). "Vaccines Do Not Cause Autism."</li>
             <li>American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).</li>
             <li>Institute of Medicine. (2004). "Immunization Safety Review: Vaccines and Autism."</li>
@@ -70,8 +70,8 @@ export function MythsMisconceptions() {
         </div>
 
         <div>
-          <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
+          <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
+          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800">
             <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet.</li>
             <li>Hviid, A., et al. (2019). "Measles, Mumps, Rubella Vaccination and Autism." Annals of Internal Medicine.</li>
             <li>Kapp, S. K. (2020). Autistic community and the neurodiversity movement.</li>
