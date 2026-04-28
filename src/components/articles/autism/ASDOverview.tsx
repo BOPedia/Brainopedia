@@ -41,8 +41,8 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             </div>
             <ImageWithFallback
               src="/images/autism/autism-overview-pattern-brain.png"
-              alt="Autism trees and head neurodiversity illustration"
-              className="w-48 h-auto float-right mr-6 mb-4 rounded-md border border-gray-300"
+              alt="Colorful patterned brain illustration representing autism spectrum diversity"
+              className="w-48 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
              
             />
              <p className="mb-4">
