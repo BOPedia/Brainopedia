@@ -83,6 +83,7 @@ export function CurrentResearch() {
             </ol>
           </div>
           <div>
+            
             <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
             <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800">
               <li>Kapp, S. K. (2020). Autistic community and the neurodiversity movement.</li>
