@@ -69,17 +69,9 @@ export function BrainDevelopment() {
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg">
         <h3 className="font-bold mb-4 text-xl font-spartan">References</h3>
-        
-        <div className="mb-6">
-          <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ul className="list-decimal ml-5 text-xs space-y-2 text-gray-700">
-            <li> None specifically mentioned. </li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
+                <div>
+          <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
+          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-500">
             <li>Courchesne, E., et al. (2011). "Brain growth across the life span in autism." Brain Research.</li>
             <li>Hazlett, H. C., et al. (2017). "Early brain development in infants at high risk for autism spectrum disorder." Nature.</li>
             <li>Vasa, R. A., et al. (2016). "Atypical Brain Connectivity in Autism." Journal of the American Academy of Child & Adolescent Psychiatry.</li>
