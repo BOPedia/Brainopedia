@@ -35,23 +35,29 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">∞ What is Autism Spectrum Disorder?</h2>
           
-          <div className="flex gap-4 items-start mb-4">
-            <div className="flex-1">
-
-            </div>
-            <ImageWithFallback
-              src="/images/autism/autism-overview-pattern-brain.png"
-              alt="Colorful patterned brain illustration representing autism spectrum diversity"
-              className="w-48 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
-             
-            />
-             <p className="mb-4">
-                Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by differences in social communication and interaction, alongside restricted or repetitive patterns of behavior, interests, or activities. Autism is called a "spectrum" disorder because there is wide variation in the type and severity of symptoms people experience.
-            
-                ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup>[1]</sup> representing a significant increase in diagnosis rates over the past two decades. This increase is largely attributed to improved awareness, expanded diagnostic criteria, and better identification rather than a true increase in prevalence.
-              </p>
-          </div>
-          
+          <div className="mb-4 block"> {/* Changed from flex to block */}
+  <ImageWithFallback
+    src="/images/autism/autism-overview-pattern-brain.png"
+    alt="Colorful patterned brain illustration representing autism spectrum diversity"
+    className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300" 
+    /* Changed float-left to float-right and mr-6 to ml-6 */
+  />
+  
+  <p className="mb-4 leading-relaxed font-spartan text-[#0c264d]">
+    Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by 
+    differences in social communication and interaction, alongside restricted or repetitive 
+    patterns of behavior, interests, or activities. Autism is called a "spectrum" disorder 
+    because there is wide variation in the type and severity of symptoms people experience.
+  </p>
+  
+  <p className="mb-4 leading-relaxed font-spartan text-[#0c264d]">
+    ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,
+    <sup className="text-green-600 font-bold ml-0.5">[1]</sup> representing a significant 
+    increase in diagnosis rates over the past two decades. This increase is largely 
+    attributed to improved awareness, expanded diagnostic criteria, and better identification 
+    rather than a true increase in prevalence.
+  </p>
+</div>
           {/* Nested: Key Facts */}
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
             <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Key Facts About Autism</h3>
@@ -242,7 +248,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
           <ImageWithFallback
             src="/images/autism/autism-overview-venn.png"
             alt="Autism core features Venn diagram"
-            className="w-96 h-auto float-right mr-6 mb-4 rounded-md border border-gray-300"
+            className="w-80 h-auto float-right mr-6 mb-4 rounded-md border border-gray-300"
           />
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Persistent Differences in Social Communication and Social Interaction</h3>
