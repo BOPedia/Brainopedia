@@ -15,11 +15,12 @@ interface ASDSupportProps {
 }
 
 export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
-  const navigate = useNavigate();
-  const activeTab = initialTab || 'overview';
+  // 1. Use state so the component can re-render itself
+  const [activeTab, setActiveTab] = useState(initialTab || 'overview');
 
+  // 2. Just change the state instead of navigating
   const handleTabChange = (tabId: string) => {
-    navigate(`/autism-support/${tabId}`);
+    setActiveTab(tabId);
   };
 
   const tabs = [

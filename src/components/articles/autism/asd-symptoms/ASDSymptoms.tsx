@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // This tells the computer: "Look in the same folder I am already in"
 import { CoreSymptoms } from './CoreSymptoms';
@@ -12,11 +12,12 @@ interface ASDSymptomsProps {
 }
 
 export function ASDSymptoms({ setCurrentArticle, initialTab }: ASDSymptomsProps) {
-  const navigate = useNavigate();
-  const activeTab = initialTab || 'core';
+  // 1. Use state so the component can re-render itself
+  const [activeTab, setActiveTab] = useState(initialTab || 'overview');
 
+  // 2. Just change the state instead of navigating
   const handleTabChange = (tabId: string) => {
-    navigate(`/autism-symptoms/${tabId}`);
+    setActiveTab(tabId);
   };
 
   const tabs = [

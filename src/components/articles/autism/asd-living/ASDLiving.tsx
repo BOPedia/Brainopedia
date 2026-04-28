@@ -12,9 +12,14 @@ interface ASDLivingProps {
   setCurrentArticle?: (article: string) => void;
 }
 
-export function ASDLiving({ setCurrentArticle }: ASDLivingProps) {
-  const navigate = useNavigate();
-  const location = useLocation();
+export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
+  // 1. Use state so the component can re-render itself
+  const [activeTab, setActiveTab] = useState(initialTab || 'lifespan');
+
+  // 2. Just change the state instead of navigating
+  const handleTabChange = (tabId: string) => {
+    setActiveTab(tabId);
+  };
 
   // URL-based tabbing
   const queryParams = new URLSearchParams(location.search);

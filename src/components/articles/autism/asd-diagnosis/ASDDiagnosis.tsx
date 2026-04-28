@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { DSM5Criteria } from './DSM5Criteria';
 import { DiagnosticProcess } from './DiagnosticProcess';
@@ -14,11 +14,12 @@ interface ASDDiagnosisProps {
 }
 
 export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProps) {
-  const navigate = useNavigate();
-  const activeTab = initialTab || 'criteria';
+  // 1. Use state so the component can re-render itself
+  const [activeTab, setActiveTab] = useState(initialTab || 'criteria');
 
+  // 2. Just change the state instead of navigating
   const handleTabChange = (tabId: string) => {
-    navigate(`/autism-diagnosis/${tabId}`);
+    setActiveTab(tabId);
   };
 
   const tabs = [
