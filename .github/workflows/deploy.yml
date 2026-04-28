@@ -12,11 +12,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Ensures the environment matches your local setup
+
+      - name: Install dependencies and Build
+        run: |
+          npm install
+          npm run build 
+          # This creates the /dist folder with the fresh index.html
+
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@7.0.1
         with:
-          switches: -avzr
-          path: ./
+          switches: -avzr --delete 
+          # The --delete flag removes old files so they don't pile up
+          path: dist/ # <--- THIS IS THE FIX: Only send the finished files
           remote_path: /home/bopedia/brainopedia.org
           remote_host: ${{ secrets.SSH_HOST }}
           remote_user: ${{ secrets.SSH_USERNAME }}
