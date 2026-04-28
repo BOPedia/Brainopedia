@@ -9,7 +9,8 @@ import { IdentityCommunityContent } from './IdentityCommunityContent';
 import { ASDReferences } from '../ASDReferences'; // Adjusted path
 
 interface ASDLivingProps {
-  setCurrentArticle?: (article: string) => void;
+  setCurrentArticle?: (id: string) => void;
+  initialTab?: string; // This tells VS Code that initialTab is allowed to exist
 }
 
 export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
