@@ -464,7 +464,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <ImageWithFallback
               src="/images/autism/autism-overview-genetics.png"
               alt="Genetics and autism chromosomes illustration"
-              className="w-40 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
+              className="w-32 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
             />
             <p>
               Autism is a complex neurodevelopmental condition with multiple contributing factors. Current evidence 
@@ -598,7 +598,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <ImageWithFallback
               src="/images/autism/autism-overview-NDlabels.png"
               alt="Neurodivergent Labels tag graphic"
-              className="w-54 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
+              className="w-40 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
             />
             <p>
               How we talk about autism matters. Language preferences vary within the autistic community:
