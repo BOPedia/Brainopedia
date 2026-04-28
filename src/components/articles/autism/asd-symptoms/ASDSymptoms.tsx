@@ -38,7 +38,7 @@ export function ASDSymptoms({ setCurrentArticle, initialTab }: ASDSymptomsProps)
           onClick={() => setCurrentArticle?.('autism')}
           className="bg-[#ffd166] text-[#0c264d] px-5 py-2.5 rounded-lg font-bold text-sm shadow-sm hover:bg-[#0c264d] hover:text-white transition-all flex items-center gap-2 font-spartan"
         >
-          <span className="text-lg">←</span> <- All About Autism
+          <span className="text-lg">←</span> Back to All About Autism
         </button>
       </div>
 
@@ -77,7 +77,7 @@ export function ASDSymptoms({ setCurrentArticle, initialTab }: ASDSymptomsProps)
           onClick={() => setCurrentArticle?.('autism')}
           className="text-[#0c264d] font-bold hover:underline flex items-center gap-2 font-spartan"
         >
-          <span>←</span> <- All About Autism
+          <span>←</span> Back to All About Autism
         </button>
       </div>
     </article>
