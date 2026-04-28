@@ -72,7 +72,7 @@ export function GeneticsHeredity() {
           </ul>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-[10px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-[16px]">
           <div className="p-2 border border-gray-100 rounded"><strong>Point Mutations:</strong> Single letter code changes.</div>
           <div className="p-2 border border-gray-100 rounded"><strong>CNVs:</strong> Large segment deletions/duplications.</div>
           <div className="p-2 border border-gray-100 rounded"><strong>Intronic:</strong> Targeting non-coding regions.<sup className="text-green-600 font-bold ml-0.5">[4]</sup></div>
