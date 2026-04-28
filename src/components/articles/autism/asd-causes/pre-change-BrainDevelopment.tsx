@@ -4,65 +4,65 @@ import { ImageWithFallback } from '../../../../components/figma/ImageWithFallbac
 export function BrainDevelopment() {
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
-      <h2 className="font-bold mb-4 text-2xl font-spartan">Brain Development in Autism</h2>
+      <h2 className="font-bold mb-4 text-2xl">Brain Development in Autism</h2>
       
       <p className="mb-6 leading-relaxed">
-        Genetic and environmental factors ultimately affect brain development, leading to the neurological 
-        differences characteristic of autism.<sup className="text-green-600 font-bold ml-0.5">[1]</sup>
+        Genetic and environmental factors ultimately affect brain development, leading to the neurological differences characteristic of autism.<sup className="text-green-600 font-bold ml-0.5">[4]</sup>
       </p>
 
       <ImageWithFallback 
         src="/images/autism/autism-causes-Braintab-development.png" 
         alt="Brain connectivity and neural networks in autism"
-        className="w-full max-w-sm mx-auto mb-8 rounded-sm shadow-sm"
+        className="w-full max-w-lg mx-auto mb-8 rounded-lg shadow-sm"
       />
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
         {/* Structural Differences */}
         <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
-          <h3 className="font-bold mb-3 text-lg font-spartan">Structural Brain Differences</h3>
+          <h3 className="font-bold mb-3 text-lg">Structural Brain Differences</h3>
           <ul className="list-disc ml-5 space-y-2 text-sm">
-            <li><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in the frontal cortex.<sup className="text-green-600 font-bold ml-0.5">[2]</sup></li>
-            <li><strong>Altered connectivity:</strong> Differences in how brain regions connect and communicate.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Regional differences:</strong> Variations in size and structure of specific brain areas including the amygdala, cerebellum, and corpus callosum.<sup className="text-green-600 font-bold ml-0.5">[4]</sup></li>
-            <li><strong>White matter differences:</strong> Atypical development of myelin and white matter tracts.<sup className="text-green-600 font-bold ml-0.5">[5]</sup></li>
+            <li><strong>Brain overgrowth:</strong> Accelerated growth in early childhood, particularly in the frontal cortex.<sup className="text-green-600 font-bold ml-0.5">[4]</sup></li>
+            <li><strong>Altered connectivity:</strong> Differences in how brain regions connect and communicate.</li>
+            <li><strong>Regional differences:</strong> Variations in the amygdala, cerebellum, and corpus callosum.</li>
+            <li><strong>White matter:</strong> Atypical development of myelin and white matter tracts.</li>
           </ul>
         </div>
 
         {/* Functional Differences */}
         <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
-          <h3 className="font-bold mb-3 text-lg font-spartan">Functional Brain Differences</h3>
+          <h3 className="font-bold mb-3 text-lg">Functional Brain Differences</h3>
           <ul className="list-disc ml-5 space-y-2 text-sm">
-            <li><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions.<sup className="text-green-600 font-bold ml-0.5">[6]</sup></li>
-            <li><strong>Social brain networks:</strong> Differences in activation of brain regions involved in social cognition.<sup className="text-green-600 font-bold ml-0.5">[7]</sup></li>
-            <li><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli.<sup className="text-green-600 font-bold ml-0.5">[8]</sup></li>
-            <li><strong>Default mode network:</strong> Differences in brain networks active during rest and self-referential thinking.<sup className="text-green-600 font-bold ml-0.5">[9]</sup></li>
+            <li><strong>Connectivity patterns:</strong> Reduced long-range connectivity with increased local connectivity.</li>
+            <li><strong>Social brain networks:</strong> Differences in regions involved in social cognition.</li>
+            <li><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli.</li>
+            <li><strong>Default mode network:</strong> Differences in networks active during rest.</li>
           </ul>
         </div>
       </div>
 
       {/* Cellular Level Section */}
       <div className="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#2abcd4] mb-10">
-        <h3 className="font-bold mb-4 text-lg text-center font-spartan">Cellular and Molecular Level</h3>
+        <h3 className="font-bold mb-4 text-lg text-center">Cellular and Molecular Level</h3>
         <div className="grid md:grid-cols-3 gap-4 text-center">
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">Synapses</div>
-            <p className="text-xs">Altered number, structure, or function of synaptic connections.<sup className="text-green-600 font-bold ml-0.5">[10]</sup></p>
+            <p className="text-xs">Altered number, structure, or function of synaptic connections.</p>
           </div>
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">Neuronal Migration</div>
-            <p className="text-xs">Atypical positioning of neurons during fetal development.<sup className="text-green-600 font-bold ml-0.5">[11]</sup></p>
+            <p className="text-xs">Atypical positioning of neurons during fetal development.</p>
           </div>
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">E/I Balance</div>
-            <p className="text-xs">Imbalance between excitatory and inhibitory neurotransmission.<sup className="text-green-600 font-bold ml-0.5">[12]</sup></p>
+            <p className="text-xs">Imbalance between excitatory and inhibitory neurotransmission.</p>
           </div>
         </div>
         <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap justify-center gap-6">
-           <div className="text-xs"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.<sup className="text-green-600 font-bold ml-0.5">[13]</sup></div>
-           <div className="text-xs"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.<sup className="text-green-600 font-bold ml-0.5">[14]</sup></div>
+           <div className="text-xs"><strong>Neuroinflammation:</strong> Evidence of immune activation.</div>
+           <div className="text-xs"><strong>Mitochondria:</strong> Potential mitochondrial dysfunction.</div>
         </div>
       </div>
+
       {/* --- REFERENCES SECTION --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
       
