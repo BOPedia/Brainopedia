@@ -43,6 +43,7 @@ export function ASDCauses() {
           ← All About Autism
         </button>
       </div>
+{/* THE LINE: This is the horizontal divider you are looking for */} <hr className="border-t-2 border-[#0c264d] border-opacity-10 mb-8" />
 
       <h1 className="text-3xl font-bold text-[#0c264d] mb-8 font-spartan">Autism: Causes & Risk Factors</h1>
 
