@@ -1,5 +1,4 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import { ASDReferences } from '../ASDReferences';
 import { OverviewContent } from './OverviewContent';
 import { EarlyInterventionContent } from './EarlyInterventionContent';
@@ -13,7 +12,6 @@ interface ASDSupportProps {
   setCurrentArticle?: (article: string) => void;
   initialTab?: string;
 }
-
 export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
   // 1. Use state so the component can re-render itself
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
