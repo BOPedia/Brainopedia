@@ -82,7 +82,7 @@ export function BrainDevelopment() {
 
         <div>
           <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-disc ml-5 text-[10px] leading-relaxed space-y-1 text-gray-500">
+          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
             <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet.</li>
             <li>Kapp, S. K. (2020). Autistic community and the neurodiversity movement.</li>
             <li>Robertson, C. E., & Baron-Cohen, S. (2017). "Sensory perception in autism." Nature Reviews Neuroscience.</li>

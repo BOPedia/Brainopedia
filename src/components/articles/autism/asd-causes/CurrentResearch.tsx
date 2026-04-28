@@ -83,7 +83,7 @@ export function CurrentResearch() {
           </div>
           <div>
             <h4 className="text-xs uppercase tracking-wider text-gray-500 font-bold mb-3">Background Sources</h4>
-            <ul className="list-disc ml-5 text-[10px] leading-relaxed space-y-1 text-gray-500">
+            <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-gray-500">
               <li>Kapp, S. K. (2020). Autistic community and the neurodiversity movement.</li>
               <li>Chapman, R., & Carel, H. (2022). "Neurodiversity and the good human life."</li>
               <li>American Psychiatric Association. (2022). DSM-5-TR.</li>

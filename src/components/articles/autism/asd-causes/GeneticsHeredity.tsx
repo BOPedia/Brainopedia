@@ -126,7 +126,7 @@ export function GeneticsHeredity() {
 
       {/* --- REFERENCES --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
-      <div className="text-[10px] text-gray-500 space-y-1">
+      <div className="text-[14px] text-gray-500 space-y-1">
         <p>[78] Genovese & Butler (2023). [79] Tick et al. (2016). [80] Loomes et al. (2017). [81] Yoon et al. (2021). [82] Haebig et al. (2020). [83] Vignoli et al. (2015). [84] Ozonoff et al. (2024). [85] Cirnigliaro et al. (2023).</p>
       </div>
     </div>
