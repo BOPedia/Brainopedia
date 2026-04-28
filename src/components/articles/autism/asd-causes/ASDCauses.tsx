@@ -10,7 +10,6 @@ export function ASDCauses() {
   const navigate = useNavigate();
   const location = useLocation();
   
-  // Extracts the tab from the URL (?tab=...)
   const queryParams = new URLSearchParams(location.search);
   const activeTab = queryParams.get('tab') || 'environmental';
 
@@ -38,24 +37,24 @@ export function ASDCauses() {
       {/* Back Button */}
       <div className="flex justify-end mb-6">
         <button 
-          onClick={() => navigate('/autism')} // Adjust path if your main page is different
-          className="bg-[#ffd166] text-[#0c264d] px-5 py-2 rounded-lg font-bold text-sm shadow-sm hover:bg-[#ffc133] transition-colors"
+          onClick={() => navigate('/autism')}
+          className="bg-[#ffd166] text-[#0c264d] px-5 py-2 rounded-lg font-bold text-sm shadow-sm hover:bg-[#ffc133] transition-colors font-spartan"
         >
           ← All About Autism
         </button>
       </div>
 
-      <h1 className="text-3xl font-bold text-[#0c264d] mb-8">Autism: Causes & Risk Factors</h1>
+      <h1 className="text-3xl font-bold text-[#0c264d] mb-8 font-spartan">Autism: Causes & Risk Factors</h1>
 
-      {/* The True Tabs Style */}
-      <div className="flex flex-wrap gap-3 mb-8">
+      {/* Standardized Grid Layout (Matches ASDLiving) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => navigate(`?tab=${tab.id}`)}
-            className={`px-6 py-3 rounded-lg font-bold text-sm transition-all duration-200 shadow-sm ${
+            className={`px-4 py-3 rounded-lg font-bold text-sm transition-all duration-200 shadow-sm font-spartan ${
               activeTab === tab.id
-                ? 'bg-[#2abcd4] text-white shadow-md transform scale-105'
+                ? 'bg-[#2abcd4] text-white shadow-md'
                 : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffc133]'
             }`}
           >
