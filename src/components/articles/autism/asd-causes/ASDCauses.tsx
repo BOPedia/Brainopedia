@@ -36,7 +36,8 @@ export function ASDCauses() {
     <div className="max-w-5xl mx-auto px-4 py-8">
       {/* Back Button */}
       <div className="flex justify-end mb-6">
-        <button 
+   
+      <h1 className="text-3xl font-bold text-[#0c264d] mb-8 font-spartan">Autism: Causes & Risk Factors</h1>     <button 
           onClick={() => navigate('/autism')}
           className="bg-[#ffd166] text-[#0c264d] px-5 py-2 rounded-lg font-bold text-sm shadow-sm hover:bg-[#ffc133] transition-colors font-spartan"
         >
@@ -44,9 +45,6 @@ export function ASDCauses() {
         </button>
       </div>
 {/* THE LINE: This is the horizontal divider you are looking for */} <hr className="border-t-2 border-[#0c264d] border-opacity-10 mb-8" />
-
-      <h1 className="text-3xl font-bold text-[#0c264d] mb-8 font-spartan">Autism: Causes & Risk Factors</h1>
-
       {/* Standardized Grid Layout (Matches ASDLiving) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8">
         {tabs.map((tab) => (
