@@ -54,6 +54,12 @@ export function CoreSymptoms() {
               <div className="font-bold text-[#0c264d] mb-1">2. Restricted, Repetitive Patterns of Behavior, Interests, or Activities</div>
               <div className="text-sm">At least two of: stereotyped/repetitive movements or speech, insistence on sameness, highly restricted interests, or hyper/hypo-reactivity to sensory input</div>
             </div>
+            <div className="border-l-2 border-[#2abcd4] pl-3">
+              <div className="font-bold text-[#0c264d] mb-1">According to the DSM-5, the other criteria for Autism Spectrum Disorder are:</div>
+              <div className="text-sm">Criterion C — Early onset: Symptoms must be present in the early developmental period (though may not fully manifest until social demands exceed capacities).</div>
+              <div className="text-sm">Criterion D — Functional impairment: Symptoms cause clinically significant impairment in social, occupational, or other important areas of current functioning.</div>
+              <div className="text-sm">Criterion E — Not better explained by intellectual disability or global developmental delay.</div>
+            </div>
           </div>
         </div>
 
