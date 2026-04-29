@@ -35,7 +35,7 @@ export function CoreSymptoms() {
           <ImageWithFallback 
             src="/images/autism/autism-symptoms-Coretab-2core-venn.svg"
             alt="AUTISM Diagnostic Criteria Venn Diagram"
-            className="w-full max-w-xl mx-auto mb-4 rounded"
+            className="w-full max-w-2xl mx-auto mb-4 rounded"
           />
         </div>
         
