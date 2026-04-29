@@ -33,7 +33,7 @@ export function CoreSymptoms() {
                 {/* Venn Diagram Image - moved INSIDE a wrapper div */}
         <div className="flex justify-center mt-6">
           <ImageWithFallback 
-            src="/images/autism/autism-symptoms-Coretab-2core-venn.svg"
+            src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
             alt="AUTISM Diagnostic Criteria Venn Diagram"
             className="w-full max-w-2xl mx-auto mb-4 rounded"
           />
