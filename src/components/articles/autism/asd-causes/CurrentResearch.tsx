@@ -10,9 +10,9 @@ export function CurrentResearch() {
         Our understanding of autism's causes continues to evolve as technology allows for deeper genetic sequencing and more nuanced neurological studies.<sup className="text-green-600 font-bold ml-0.5">[1]</sup>
       </p>
 
-      <ImageWithFallback 
-        src="/images/autism-causes-CurrentRestab-female-researcher.png" 
-        alt="Female researching on her laptop - academic"
+      <ImageWithFallback
+        src="/images/autism/autism-causes-CurrentRestab-female-researcher.png"
+        alt="Female researching"
         className="w-full max-w-sm mx-auto mb-8 rounded-sm shadow-sm"
       />
 
