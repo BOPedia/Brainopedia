@@ -18,7 +18,7 @@ export function CoreSymptoms() {
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <div className="block">
           <ImageWithFallback 
-            src="/images/autism/autism-overview-pattern-brain.png" 
+            src="/images/autism/autism-symptoms-Coretab-manuals.png" 
             alt="Colorful patterned brain representing autism diversity"
             className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
           />
