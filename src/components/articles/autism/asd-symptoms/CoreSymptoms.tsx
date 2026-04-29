@@ -46,7 +46,7 @@ export function CoreSymptoms() {
 
         <div className="flex justify-center mb-8">
           <ImageWithFallback 
-            src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
+            src="/images/autism/autism-symptoms-Coretab-2core-venn.svg"
             alt="AUTISM Diagnostic Criteria Venn Diagram"
             className="w-full max-w-2xl rounded shadow-md"
           />
@@ -77,19 +77,19 @@ export function CoreSymptoms() {
             {/* Criteria C, D, E with Icon Anchors */}
             <div className="pt-4 grid md:grid-cols-3 gap-4">
               <div className="flex flex-col gap-1">
-                <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-cyan-600">
+                <div className="flex items-center gap-2 font-bold text-sm uppercase tracking-wider text-cyan-600">
                   <Clock size={14} /> Criterion C
                 </div>
                 <div className="text-[11px] leading-snug"><strong>Early Onset:</strong> Symptoms present in early development.</div>
               </div>
               <div className="flex flex-col gap-1">
-                <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-cyan-600">
+                <div className="flex items-center gap-2 font-bold text-sm uppercase tracking-wider text-cyan-600">
                   <ShieldCheck size={14} /> Criterion D
                 </div>
                 <div className="text-[11px] leading-snug"><strong>Impairment:</strong> Causes clinically significant functional challenges.</div>
               </div>
               <div className="flex flex-col gap-1">
-                <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-cyan-600">
+                <div className="flex items-center gap-2 font-bold text-sm uppercase tracking-wider text-cyan-600">
                   <Users size={14} /> Criterion E
                 </div>
                 <div className="text-[11px] leading-snug"><strong>Differential:</strong> Not better explained by ID or GDD.</div>
