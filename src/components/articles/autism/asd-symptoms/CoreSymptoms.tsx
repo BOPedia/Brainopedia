@@ -29,6 +29,17 @@ export function CoreSymptoms() {
       {/* DSM-5 Symptom Chart */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">DSM-5 Diagnostic Categories</h2>
+
+                {/* Venn Diagram Image - moved INSIDE a wrapper div */}
+        <div className="flex justify-center mt-6">
+          <ImageWithFallback 
+            src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
+            alt="AUTISM Diagnostic Criteria Venn Diagram"
+            className="w-full max-w-lg mx-auto mb-4 rounded"
+          />
+        </div>
+        
+        
         <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Two Core Diagnostic Domains</h3>
           <p className="text-sm mb-4">
@@ -46,14 +57,7 @@ export function CoreSymptoms() {
           </div>
         </div>
 
-        {/* Venn Diagram Image - moved INSIDE a wrapper div */}
-        <div className="flex justify-center mt-6">
-          <ImageWithFallback 
-            src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
-            alt="AUTISM Diagnostic Criteria Venn Diagram"
-            className="w-full max-w-2xl rounded"
-          />
-        </div>
+
       </div>
               
       {/* Variation Across the Spectrum */}
