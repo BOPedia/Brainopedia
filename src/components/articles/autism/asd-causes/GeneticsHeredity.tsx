@@ -72,7 +72,7 @@ export function GeneticsHeredity() {
           </ul>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-[16px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-[14px]">
           <div className="p-2 border border-gray-100 rounded"><strong>Point Mutations:</strong> Single letter code changes.</div>
           <div className="p-2 border border-gray-100 rounded"><strong>CNVs:</strong> Large segment deletions/duplications.</div>
           <div className="p-2 border border-gray-100 rounded"><strong>Intronic:</strong> Targeting non-coding regions.<sup className="text-green-600 font-bold ml-0.5">[4]</sup></div>
@@ -82,7 +82,7 @@ export function GeneticsHeredity() {
       {/* Biological Pathways */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Affected Biological Pathways</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-md">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
           <div className="font-semibold p-2 bg-gray-50 rounded">Synaptic Function</div>
           <div className="font-semibold p-2 bg-gray-50 rounded">Chromatin Remodeling</div>
           <div className="font-semibold p-2 bg-gray-50 rounded">Transcriptional Regulation</div>
@@ -98,7 +98,7 @@ export function GeneticsHeredity() {
           <div className="bg-red-50 p-4 rounded">
             <strong>Fragile X Syndrome (FXS):</strong> Leading inherited cause of intellectual disability. ~90% of males show autistic characteristics.<sup className="text-green-600 font-bold ml-0.5">[5]</sup>
           </div>
-          <div className="flex flex-wrap gap-4 text-md font-bold">
+          <div className="flex flex-wrap gap-4 text-sm font-bold">
             <span className="px-3 py-1 bg-white border border-gray-200 rounded">Tuberous Sclerosis (25-61%)</span>
             <span className="px-3 py-1 bg-white border border-gray-200 rounded">Rett Syndrome</span>
             <span className="px-3 py-1 bg-white border border-gray-200 rounded">PTEN Mutations</span>
@@ -117,7 +117,7 @@ export function GeneticsHeredity() {
           <span className="font-bold text-xl px-2">:</span>
           <div className="w-5 h-5 bg-[#ffd166] rounded-sm"></div>
         </div>
-        <div className="text-left text-md space-y-1 text-gray-800">
+        <div className="text-left text-sm space-y-1 text-gray-800">
           <p>• <strong>Female Protective Effect:</strong> Females may require higher genetic "load."</p>
           <p>• <strong>X-Linked Genes:</strong> Males only have one X chromosome.</p>
           <p>• <strong>Diagnostic Bias:</strong> Camouflaging or different presentations in females.</p>
