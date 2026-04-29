@@ -1,10 +1,5 @@
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
-import { 
-  AlertTriangle, Eye, EarOff, ListX, FolderOpen, 
-  BrainCog, Search, Sparkles, CalendarX, Hand, 
-  ArrowUpFromLine, Mountain, VolumeX, Zap, 
-  MessageSquare, MessageCircle, Hourglass, UserMinus 
-} from 'lucide-react';
+
 
 export function CoreSymptoms() {
   return (
