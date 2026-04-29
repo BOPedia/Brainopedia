@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
 export function CurrentResearch() {
   return (
@@ -8,6 +9,12 @@ export function CurrentResearch() {
       <p className="mb-8 leading-relaxed">
         Our understanding of autism's causes continues to evolve as technology allows for deeper genetic sequencing and more nuanced neurological studies.<sup className="text-green-600 font-bold ml-0.5">[1]</sup>
       </p>
+
+      <ImageWithFallback 
+        src="/images/autism-causes-CurrentRestab-female-researcher.png" 
+        alt="Female researching on her laptop - academic"
+        className="w-full max-w-sm mx-auto mb-8 rounded-sm shadow-sm"
+      />
 
       {/* Knowledge Comparison Grid */}
       <div className="grid md:grid-cols-2 gap-8 mb-10">
