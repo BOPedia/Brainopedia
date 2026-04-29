@@ -1,21 +1,40 @@
+import React from 'react';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
-
+import { 
+  Users, 
+  RefreshCw, 
+  Clock, 
+  AlertCircle, 
+  ShieldCheck, 
+  Search,
+  MessageSquare,
+  Repeat
+} from 'lucide-react';
 
 export function CoreSymptoms() {
   return (
-    <div className="space-y-6">
-      {/* Introduction */}
+    <div className="space-y-6 text-[#0c264d] font-spartan">
+      {/* Introduction with Image Wrap */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
-        <p className="mb-4">
-          The characteristics of autism spectrum disorder are highly variable, but they fall into two main 
-          categories as defined by the DSM-5: persistent differences in social communication and interaction, 
-          and restricted, repetitive patterns of behavior, interests, or activities. Understanding 
-          these characteristics is essential for recognition, diagnosis, and appropriate support.
-        </p>
+        <div className="block">
+          <ImageWithFallback 
+            src="/images/autism/autism-overview-pattern-brain.png" 
+            alt="Colorful patterned brain representing autism diversity"
+            className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
+          />
+          
+          <h2 className="font-bold mb-4 text-2xl">Understanding Core Characteristics</h2>
+          <p className="mb-4 leading-relaxed">
+            The characteristics of autism spectrum disorder are highly variable, but they fall into two main 
+            categories as defined by the DSM-5: persistent differences in social communication and interaction, 
+            and restricted, repetitive patterns of behavior, interests, or activities.
+          </p>
+        </div>
         
-        <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
+        <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded flex items-start gap-3">
+          <AlertCircle className="w-5 h-5 mt-0.5 shrink-0" />
           <p className="text-sm">
-            <strong>∞ Remember:</strong> These characteristics exist on a spectrum with tremendous variation between individuals. 
+            <strong>Remember:</strong> These characteristics exist on a spectrum with tremendous variation between individuals. 
             No two autistic people present exactly the same way.
           </p>
         </div>
@@ -23,71 +42,85 @@ export function CoreSymptoms() {
 
       {/* DSM-5 Symptom Chart */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
-        <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">DSM-5 Diagnostic Categories</h2>
+        <h2 className="font-bold mb-6 text-2xl text-center">DSM-5 Diagnostic Categories</h2>
 
-                {/* Venn Diagram Image - moved INSIDE a wrapper div */}
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center mb-8">
           <ImageWithFallback 
             src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
             alt="AUTISM Diagnostic Criteria Venn Diagram"
-            className="w-full max-w-2xl mx-auto mb-4 rounded"
+            className="w-full max-w-2xl rounded shadow-md"
           />
         </div>
         
-        
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Two Core Diagnostic Domains</h3>
-          <p className="text-sm mb-4">
-            According to the DSM-5, autism spectrum disorder is characterized by persistent deficits in two main areas:
-          </p>
-          <div className="space-y-3">
-            <div className="border-l-2 border-[#2abcd4] pl-3">
-              <div className="font-bold text-[#0c264d] mb-1">1. Social Communication and Social Interaction</div>
-              <div className="text-sm">Persistent differences across multiple contexts in social-emotional reciprocity, nonverbal communication, and developing/maintaining relationships</div>
+        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
+          <h3 className="font-bold mb-4 text-lg flex items-center gap-2">
+            <Search className="text-[#2abcd4]" /> Two Core Diagnostic Domains
+          </h3>
+          
+          <div className="space-y-4">
+            <div className="bg-[#f0f9ff] bg-opacity-50 p-4 rounded-md border-l-2 border-[#2abcd4]">
+              <div className="font-bold mb-1 flex items-center gap-2">
+                <MessageSquare size={18} className="text-[#2abcd4]" />
+                1. Social Communication & Interaction
+              </div>
+              <div className="text-sm leading-relaxed">Persistent differences in social-emotional reciprocity, nonverbal communication, and developing/maintaining relationships.</div>
             </div>
-            <div className="border-l-2 border-[#2abcd4] pl-3">
-              <div className="font-bold text-[#0c264d] mb-1">2. Restricted, Repetitive Patterns of Behavior, Interests, or Activities</div>
-              <div className="text-sm">At least two of: stereotyped/repetitive movements or speech, insistence on sameness, highly restricted interests, or hyper/hypo-reactivity to sensory input</div>
+
+            <div className="bg-[#f0f9ff] bg-opacity-50 p-4 rounded-md border-l-2 border-[#2abcd4]">
+              <div className="font-bold mb-1 flex items-center gap-2">
+                <Repeat size={18} className="text-[#2abcd4]" />
+                2. Restricted & Repetitive Patterns
+              </div>
+              <div className="text-sm leading-relaxed">Including stereotyped movements, insistence on sameness, highly restricted interests, or sensory sensitivities.</div>
             </div>
-            <div className="border-l-2 border-[#2abcd4] pl-3">
-              <div className="font-bold text-[#0c264d] mb-1">According to the DSM-5, the other criteria for Autism Spectrum Disorder are:</div>
-              <div className="text-sm">Criterion C — Early onset: Symptoms must be present in the early developmental period (though may not fully manifest until social demands exceed capacities).</div>
-              <div className="text-sm">Criterion D — Functional impairment: Symptoms cause clinically significant impairment in social, occupational, or other important areas of current functioning.</div>
-              <div className="text-sm">Criterion E — Not better explained by intellectual disability or global developmental delay.</div>
+
+            {/* Criteria C, D, E with Icon Anchors */}
+            <div className="pt-4 grid md:grid-cols-3 gap-4">
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-cyan-600">
+                  <Clock size={14} /> Criterion C
+                </div>
+                <div className="text-[11px] leading-snug"><strong>Early Onset:</strong> Symptoms present in early development.</div>
+              </div>
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-cyan-600">
+                  <ShieldCheck size={14} /> Criterion D
+                </div>
+                <div className="text-[11px] leading-snug"><strong>Impairment:</strong> Causes clinically significant functional challenges.</div>
+              </div>
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-cyan-600">
+                  <Users size={14} /> Criterion E
+                </div>
+                <div className="text-[11px] leading-snug"><strong>Differential:</strong> Not better explained by ID or GDD.</div>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
               
-      {/* Variation Across the Spectrum */}
+      {/* Variation Section */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Variation Across the Spectrum</h2>
+        <h2 className="font-bold mb-4 text-2xl">Variation Across the Spectrum</h2>
         
-        <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6 mb-4">
-          <h3 className="text-center text-[#0c264d] font-bold mb-4">Remember: No Two Autistic People Are Alike</h3>
-          <div className="text-sm text-gray-700 space-y-2">
-            <p>• Some autistic people are nonspeaking; others are highly verbal</p>
-            <p>• Some have intellectual disabilities; others have average or above-average intelligence</p>
-            <p>• Some require 24/7 support; others live independently</p>
-            <p>• Some have obvious, visible characteristics; others appear "neurotypical"</p>
-            <p>• Characteristics can change over time and vary by context</p>
-            <p className="italic mt-4">"If you've met one person with autism, you've met one person with autism." — Dr. Stephen Shore</p>
-          </div>
+        <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6 mb-6 text-center">
+          <p className="italic text-lg">"If you've met one person with autism, you've met one person with autism."</p>
+          <p className="text-sm font-bold mt-1">— Dr. Stephen Shore</p>
         </div>
 
-        <p className="mb-4">
-          The autism spectrum encompasses tremendous diversity. Characteristics vary in:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Presence:</strong> Not all autistic people have all characteristics</li>
-          <li className="mb-2"><strong>Severity:</strong> Characteristics can be mild, moderate, or severe</li>
-          <li className="mb-2"><strong>Context:</strong> Challenges may be more apparent in some situations than others</li>
-          <li className="mb-2"><strong>Age:</strong> Presentation changes across development</li>
-          <li className="mb-2"><strong>Support:</strong> Appropriate accommodations can dramatically reduce functional impact</li>
-          <li className="mb-2"><strong>Masking:</strong> Some autistic people, especially women, mask or camouflage traits, which can hide difficulties</li>
-        </ul>
+        <div className="grid md:grid-cols-2 gap-4">
+          {[
+            { title: "Presence", desc: "Not all individuals have all characteristics." },
+            { title: "Severity", desc: "Ranges from mild to requiring very substantial support." },
+            { title: "Context", desc: "Challenges fluctuate based on environment and stress." },
+            { title: "Masking", desc: "Camouflaging traits to fit into neurotypical settings." }
+          ].map((item, idx) => (
+            <div key={idx} className="bg-white p-4 rounded-md shadow-sm border-l-4 border-orange-400">
+              <h4 className="font-bold text-sm mb-1">{item.title}</h4>
+              <p className="text-xs">{item.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
