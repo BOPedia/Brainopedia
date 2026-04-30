@@ -18,7 +18,7 @@ export function RepetitiveBehaviors() {
           <ImageWithFallback 
             src="/images/autism/autism-symptoms-Reptab-pattern.png"
             alt="a square graphic showing colorful, symmetrical, repetitive patterns"
-            className="w-50 h-auto rounded-md border border-gray-300 float-left ml-6 mb-4"
+            className="w-32 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
           />
 
           <p className="mb-4 text-sm">
