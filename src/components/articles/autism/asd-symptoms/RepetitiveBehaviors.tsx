@@ -20,10 +20,10 @@ export function RepetitiveBehaviors() {
             alt="a square graphic showing colorful, symmetrical, repetitive patterns"
             className="w-32 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
           />
-
-          <p className="mb-4 text-sm">
+        <p className="mb-6">
             These behaviors, often called "stimming" (self-stimulatory behaviors), serve various functions including self-regulation, expressing emotions, or responding to sensory input.
-          </p>
+        </p>
+        <div className="clear-both"></div>
           
           <div className="space-y-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
