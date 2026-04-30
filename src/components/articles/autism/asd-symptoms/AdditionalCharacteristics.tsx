@@ -31,7 +31,7 @@ export function AdditionalCharacteristics() {
         <ImageWithFallback 
           src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png" 
           alt="Rainbow circle graphic showing additional autistic characteristics"
-          className="w-full max-w-md mx-auto mb-8 rounded shadow-sm"
+          className="w-20 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"     
         />
 
         {/* Executive Function Differences */}
