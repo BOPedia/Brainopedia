@@ -27,8 +27,8 @@ export function AdditionalCharacteristics() {
         <ImageWithFallback 
           src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png" 
           alt="Rainbow circle graphic showing additional autistic characteristics"
-          className="w-20 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"     
-        />
+          className="w-32 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
+          />
         <p className="mb-6">
           While not part of the core diagnostic criteria, many autistic individuals share additional characteristics:
         </p>
