@@ -9,7 +9,7 @@ export function RepetitiveBehaviors() {
          <ImageWithFallback 
             src="/images/autism/autism-symptoms-Reptab-pattern.png"
             alt="a square graphic showing colorful, symmetrical, repetitive patterns"
-            className="w-32 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
+            className="w-20 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
           />
         <p className="mb-6">
           Autistic individuals display at least two of the following types of restricted, repetitive patterns:<sup>[1]</sup>
