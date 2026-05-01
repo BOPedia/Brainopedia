@@ -6,20 +6,20 @@ export function RepetitiveBehaviors() {
     <div className="space-y-6">
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Restricted, Repetitive Patterns of Behavior, Interests, or Activities</h2>
-        
-        <p className="mb-6">
-          Autistic individuals display at least two of the following types of restricted, repetitive patterns:<sup>[1]</sup>
-        </p>
-
-        {/* Stereotyped or Repetitive Movements, Speech, or Object Use */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Stereotyped or Repetitive Movements, Speech, or Object Use</h3>
-
-          <ImageWithFallback 
+         <ImageWithFallback 
             src="/images/autism/autism-symptoms-Reptab-pattern.png"
             alt="a square graphic showing colorful, symmetrical, repetitive patterns"
             className="w-32 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
           />
+        <p className="mb-6">
+          Autistic individuals display at least two of the following types of restricted, repetitive patterns:<sup>[1]</sup>
+        </p>
+      <div className="clear-both"></div>
+
+        {/* Stereotyped or Repetitive Movements, Speech, or Object Use */}
+        <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Stereotyped or Repetitive Movements, Speech, or Object Use</h3>
+         
         <p className="mb-6">
             These behaviors, often called "stimming" (self-stimulatory behaviors), serve various functions including self-regulation, expressing emotions, or responding to sensory input.
         </p>
