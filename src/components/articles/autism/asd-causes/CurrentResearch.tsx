@@ -13,8 +13,9 @@ export function CurrentResearch() {
       <ImageWithFallback
         src="/images/autism/autism-causes-CurrentRestab-female-researcher.png"
         alt="Female researching"
-        className="w-full max-w-sm mx-auto mb-8 rounded-sm shadow-sm"
+        className="w-32 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
       />
+      <div className="clear-both"></div>
 
       {/* Knowledge Comparison Grid */}
       <div className="grid md:grid-cols-2 gap-8 mb-10">
@@ -91,7 +92,7 @@ export function CurrentResearch() {
           </div>
           <div>
             
-            
+
             <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
             <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800">
               <li>Kapp, S. K. (2020). Autistic community and the neurodiversity movement.</li>

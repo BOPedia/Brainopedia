@@ -82,7 +82,7 @@ export function ArticleFASD({ setCurrentArticle }: ArticleFASDProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
           <img 
-            src="https://images.unsplash.com/photo-1753197273814-d90d4a4cc98c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVnbmFuY3klMjBwcmVuYXRhbCUyMGhlYWx0aCUyMGZldGFsJTIwZGV2ZWxvcG1lbnR8ZW58MXx8fHwxNzY3NDA5MTY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src=""
             alt="Prenatal health and fetal development - understanding FASD"
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
