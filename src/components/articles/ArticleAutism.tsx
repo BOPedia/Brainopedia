@@ -52,7 +52,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
     },
     { 
       id: 'living', 
-      title: 'Living with Autism',
+      title: 'Daily Living',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
         setCurrentArticle?.('autism-living');
