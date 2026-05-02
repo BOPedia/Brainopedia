@@ -52,16 +52,14 @@ export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
   return (
     <article className="max-w-6xl">
       {/* Top Header */}
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex items-center justify-between">
-        <h1 className="text-3xl font-bold text-[#0c264d] font-spartan">
-          Autism: Living with Autism
+{/* --- PAGE HEADER SECTION --- */}
+      {/* Replicating the exact Support & Services header pattern */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl">
+          Autism: Daily Living
         </h1>
-        <button 
-          onClick={() => setCurrentArticle?.('autism')}
-          className="bg-[#ffd166] text-[#0c264d] px-6 py-3 rounded-lg font-bold hover:bg-[#0c264d] hover:text-white transition-all flex items-center gap-2"
-        >
-          <span>←</span> All About Autism
-        </button>
+
+        <BackButton />
       </div>
 
       {/* Modern Grid Tabs (Matches Screenshot) */}
