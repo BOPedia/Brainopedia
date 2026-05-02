@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ASDReferences } from '../ASDReferences';
 
 // --- ACTUAL IMPORTS ---
-// Matching the file names exactly as they appear in your asd-causes folder
+// Matching your file system: Screenshot 2026-05-01 at 10.18.03 PM.jpg
 import { EnvironmentalFactors } from './EnvironmentalFactors';
 import { BrainDevelopment } from './BrainDevelopment';
 import { MythsMisconceptions } from './MythsMisconceptions';
@@ -15,7 +15,6 @@ interface ASDCausesProps {
 }
 
 export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
-  // Matches the active tab state in your screenshot
   const [activeTab, setActiveTab] = useState(initialTab || 'environmental');
 
   const handleTabChange = (tabId: string) => {
@@ -33,7 +32,7 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
   const BackButton = () => (
     <button 
       onClick={() => setCurrentArticle?.('autism')}
-      className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+      className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
     >
       <span className="text-xl">←</span>
       All About Autism
@@ -46,25 +45,24 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
         {`sup { color: #10b981; }`}
       </style>
 
-      {/* --- PAGE HEADER SECTION --- */}
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <h1 className="text-3xl font-bold text-[#0c264d]">
+      {/* --- STANDARD PROJECT HEADER --- */}
+      {/* Replicating the exact layout from Screenshot 2026-05-01 at 10.26.01 PM.jpg */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+        <h1 className="text-4xl text-[#0c264d]">
           Autism: Causes & Risk Factors
         </h1>
-
-        <div className="hidden md:block">
+        
+        <div className="mt-4 md:mt-0">
           <BackButton />
         </div>
       </div>
-
-      {/* Mobile Back Button */}
-      <div className="md:hidden mb-6">
-        <BackButton />
-      </div>
+      
+      {/* Full-width thin underline matching the project standard */}
+      <div className="border-b border-[#0c264d] mb-8 w-full"></div>
 
       {/* --- 5-TAB NAVIGATION GRID --- */}
-      {/* Replicating the grid layout from your screenshot */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6">
+      {/* Layout verified in Screenshot 2026-05-01 at 10.13.53 PM.jpg */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-10">
         {tabs.map((tab) => (
           <button
             key={tab.id}
@@ -89,16 +87,16 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
         {activeTab === 'current-research' && <CurrentResearch />}
         
         {/* --- REFERENCES SECTION --- */} 
-        {/* Using your project's reference block standards[cite: 1] */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+        {/* Wrapped in semi-transparent standard styling */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-12" />
         
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg">
-          <h3 className="font-bold mb-4 text-xl">References</h3>
+        <div className="bg-white bg-opacity-50 p-8 rounded-lg">
+          <h3 className="font-bold mb-6 text-xl text-[#0c264d]">References</h3>
           <ASDReferences />
         </div>
       </div>
 
-      <div className="flex justify-end mt-8 mb-6">
+      <div className="flex justify-end mt-12 mb-6">
         <BackButton />
       </div>
     </article>
