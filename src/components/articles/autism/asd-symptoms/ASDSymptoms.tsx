@@ -27,10 +27,14 @@ export function ASDSymptoms({ setCurrentArticle, initialTab }: ASDSymptomsProps)
   ];
 
   return (
-    <article className="max-w-5xl mx-auto px-4 py-8">
-      {/* Header Section: Matches the "Sleek" Living Standard */}
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold text-[#0c264d] font-spartan">
+    <article className="max-w-6xl">
+      <style>
+        {`sup { color: #10b981; }`}
+      </style>
+{/* --- PAGE HEADER SECTION --- */}
+      {/* Replicating the exact Support & Services header pattern */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl">
           Autism: Symptoms & Characteristics
         </h1>
 
