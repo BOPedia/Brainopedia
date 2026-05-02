@@ -13,7 +13,6 @@ interface ASDLivingProps {
 }
 
 export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
-  // 1. State management
   const [activeTab, setActiveTab] = useState(initialTab || 'lifespan');
 
   useEffect(() => {
@@ -26,7 +25,17 @@ export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
     setActiveTab(tabId);
   };
 
-  // 2. Tab names updated to match your screenshot exactly
+  // --- ADD THIS DEFINITION HERE ---
+  const BackButton = () => (
+    <button 
+      onClick={() => setCurrentArticle?.('autism')}
+      className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+    >
+      <span className="text-xl">←</span>
+      All About Autism
+    </button>
+  );
+
   const tabs = [
     { id: 'lifespan', label: 'Across the Lifespan' },
     { id: 'daily-life', label: 'Daily Life & Functioning' },
@@ -36,7 +45,6 @@ export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
     { id: 'identity-community', label: 'Identity & Community' }
   ];
 
-  // 3. Content rendering logic
   function renderTabContent() {
     switch (activeTab) {
       case 'lifespan': return <LifespanContent />;
@@ -51,26 +59,25 @@ export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
 
   return (
     <article className="max-w-6xl">
-      {/* Top Header */}
-{/* --- PAGE HEADER SECTION --- */}
-      {/* Replicating the exact Support & Services header pattern */}
+      {/* --- PAGE HEADER SECTION --- */}
+      {/* Updated the text to match "Living with ASD" standards */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl">
-          Autism: Daily Living
+          Living with ASD
         </h1>
 
         <BackButton />
       </div>
 
-      {/* Modern Grid Tabs (Matches Screenshot) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8">
+      {/* Tab Navigation Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-10">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => handleTabChange(tab.id)}
-            className={`px-4 py-3 rounded-lg font-bold text-sm transition-all shadow-sm ${
+            className={`px-4 py-4 rounded-lg text-sm transition-colors font-bold shadow-sm ${
               activeTab === tab.id
-                ? 'bg-[#0A9DC4] text-white shadow-md'
+                ? 'bg-[#0A9DC4] text-white'
                 : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffd166]/80'
             }`}
           >
@@ -80,27 +87,19 @@ export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
       </div>
 
       {/* Content Area */}
-      <div className="animate-fadeIn min-h-[400px]">
+      <div className="min-h-[400px]">
         {renderTabContent()}
       </div>
 
-      {/* References */}
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl font-spartan">References</h2>
-        <div className="text-base">
-          <ASDReferences />
-        </div>
-      </section>
+      {/* References Section */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-12" />
+      <div className="bg-white bg-opacity-50 p-8 rounded-lg">
+        <h3 className="font-bold mb-6 text-xl text-[#0c264d]">References</h3>
+        <ASDReferences />
+      </div>
 
-      {/* Bottom Back Button */}
-      <div className="flex justify-end mt-12 mb-6 border-t border-gray-100 pt-8">
-        <button 
-          onClick={() => setCurrentArticle?.('autism')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-sm"
-        >
-          <span className="text-xl">←</span>
-          All About Autism
-        </button>
+      <div className="flex justify-end mt-12 mb-6">
+        <BackButton />
       </div>
     </article>
   );
