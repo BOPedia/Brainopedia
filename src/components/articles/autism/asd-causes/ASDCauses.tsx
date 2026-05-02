@@ -44,21 +44,15 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
       <style>
         {`sup { color: #10b981; }`}
       </style>
-
-      {/* --- STANDARD PROJECT HEADER --- */}
-      {/* Replicating the exact layout from Screenshot 2026-05-01 at 10.26.01 PM.jpg */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-        <h1 className="text-4xl text-[#0c264d]">
+{/* --- PAGE HEADER SECTION --- */}
+      {/* Replicating the exact Support & Services header pattern */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl">
           Autism: Causes & Risk Factors
         </h1>
-        
-        <div className="mt-4 md:mt-0">
-          <BackButton />
-        </div>
+
+        <BackButton />
       </div>
-      
-      {/* Full-width thin underline matching the project standard */}
-      <div className="border-b border-[#0c264d] mb-8 w-full"></div>
 
       {/* --- 5-TAB NAVIGATION GRID --- */}
       {/* Layout verified in Screenshot 2026-05-01 at 10.13.53 PM.jpg */}

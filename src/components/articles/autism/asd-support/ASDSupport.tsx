@@ -51,7 +51,7 @@ export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
       {/* --- PAGE HEADER SECTION --- */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl">
-          ASD: Support & Services
+          Autism: Support & Services
         </h1>
 
         <div className="hidden md:block">
