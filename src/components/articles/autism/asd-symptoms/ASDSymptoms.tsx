@@ -46,9 +46,6 @@ export function ASDSymptoms({ setCurrentArticle, initialTab }: ASDSymptomsProps)
         </button>
       </div>
 
-      {/* THE LINE: Horizontal divider that anchors the header */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 mb-8" />
-
       {/* Tab Navigation: 3-Column Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8">
         {tabs.map((tab) => (
