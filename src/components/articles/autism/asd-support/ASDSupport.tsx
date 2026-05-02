@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+// Updated paths based on your articleMap directory structure
 import { ASDReferences } from '../ASDReferences';
 import { OverviewContent } from './OverviewContent';
 import { EarlyInterventionContent } from './EarlyInterventionContent';
@@ -12,11 +13,10 @@ interface ASDSupportProps {
   setCurrentArticle?: (article: string) => void;
   initialTab?: string;
 }
+
 export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
-  // 1. Use state so the component can re-render itself
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
 
-  // 2. Just change the state instead of navigating
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
   };
@@ -31,31 +31,45 @@ export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
     { id: 'family', label: 'Family & Principles' }
   ];
 
+  // Reusable button to ensure the key 'autism' is consistent
+  const BackButton = () => (
+    <button 
+      onClick={() => setCurrentArticle?.('autism')}
+      className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+    >
+      <span className="text-xl">←</span>
+      All About Autism
+    </button>
+  );
+
   return (
     <article className="max-w-6xl">
       <style>
         {`sup { color: #10b981; }`}
       </style>
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex items-center justify-between">
+
+      {/* --- PAGE HEADER SECTION --- */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl">
-          Autism: Support & Services
+          ASD: Support & Services
         </h1>
 
-        <button 
-          onClick={() => setCurrentArticle?.('autism')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
-        >
-          <span className="text-xl">←</span>
-          All About Autism
-        </button>
+        <div className="hidden md:block">
+          <BackButton />
+        </div>
       </div>
 
+      <div className="md:hidden mb-6">
+        <BackButton />
+      </div>
+
+      {/* --- TAB NAVIGATION --- */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => handleTabChange(tab.id)}
-            className={`px-6 py-3 rounded-md text-sm transition-colors ${
+            className={`px-6 py-3 rounded-md text-sm transition-colors font-medium ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'
                 : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffd166]/80'
@@ -66,6 +80,7 @@ export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
         ))}
       </div>
 
+      {/* --- CONTENT SECTION --- */}
       <div className="space-y-8">
         {activeTab === 'overview' && <OverviewContent />}
         {activeTab === 'early-intervention' && <EarlyInterventionContent />}
@@ -74,17 +89,18 @@ export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
         {activeTab === 'medical' && <MedicalContent />}
         {activeTab === 'environmental' && <EnvironmentalContent />}
         {activeTab === 'family' && <FamilyPrinciplesContent />}
-        <ASDReferences />
+        
+        {/* --- REFERENCES SECTION --- */} 
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg">
+          <h3 className="font-bold mb-4 text-xl">References</h3>
+          <ASDReferences />
+        </div>
       </div>
 
       <div className="flex justify-end mt-8 mb-6">
-        <button 
-          onClick={() => setCurrentArticle?.('autism')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
-        >
-          <span className="text-xl">←</span>
-          All About Autism
-        </button>
+        <BackButton />
       </div>
     </article>
   );
