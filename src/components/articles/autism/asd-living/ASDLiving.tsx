@@ -63,7 +63,7 @@ export function ASDLiving({ setCurrentArticle, initialTab }: ASDLivingProps) {
       {/* Updated the text to match "Living with ASD" standards */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl">
-          Living with ASD
+          Autism: Daily Living
         </h1>
 
         <BackButton />
