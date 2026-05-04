@@ -126,10 +126,10 @@ export function GeneticsHeredity() {
         </div>
       </div>
 
-<div className="mt-10 p-6 bg-white border-2 border-dashed border-[#2abcd4] rounded-xl flex items-center justify-between group hover:border-opacity-100 transition-all cursor-pointer shadow-sm"
+<div className="mt-10 p-6 bg-white border-2 border-dashed border-[#0c264d] rounded-xl flex items-center justify-between group hover:border-opacity-100 transition-all cursor-pointer shadow-sm"
      onClick={() => navigate('/encyclopedia/causes/epigenetics')}>
   <div className="flex gap-4 items-center">
-    <div className="bg-[#ffffff] bg-opacity-10 p-3 rounded-full text-[#ffffff]">
+    <div className="bg-[#2abcd4] bg-opacity-10 p-3 rounded-full text-[#2abcd4]">
       <Microscope size={28} />
     </div>
     <div>
