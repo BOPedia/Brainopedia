@@ -8,20 +8,19 @@ export function Epigenetics() {
          
     <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
       <div className="block">
-        <ImageWithFallback 
-          src="/images/autism/autism-causes-epigenetics.png" 
-          alt="Epigenetic mechanisms in autism"
-          className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
-        />
-        <div className="clear-both mt-6"></div>
-        <h2 className="font-bold mb-4 text-2xl font-spartan">The Epigenetic Interface</h2>
+        
+       <h2 className="font-bold mb-4 text-2xl font-spartan">The Epigenetic Interface</h2>
         
         <p className="mb-6 leading-relaxed font-spartan text-lg">
           Epigenetics serves as the molecular intersection where environmental stressors meet genetic susceptibility. Unlike permanent DNA mutations, these changes involve chemical tags—like <strong>DNA methylation</strong>—that dictate whether a gene is active or silenced during critical windows of brain development.
         </p>
       </div>
-
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <ImageWithFallback 
+          src="/images/autism/autism-causes-epigenetics.png" 
+          alt="Epigenetic mechanisms in autism"
+          className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
+        />
+      <div className="grid md:grid-cols-2 gap-6 mb-8 clear-both mt-6 " >
         {/* Key Risk Mechanism: VPA */}
         <div className="bg-white p-5 rounded-lg border-l-4 border-red-400 shadow-sm">
           <div className="flex items-center gap-2 mb-3 text-red-500">
