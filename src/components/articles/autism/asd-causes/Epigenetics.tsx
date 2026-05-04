@@ -1,6 +1,6 @@
 import React from 'react';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
-import { Microscope, Zap, Brain, ShieldAlert, BookOpen } from 'lucide-react';
+import { Microscope, Zap, Brain, ShieldAlert, BookOpen, Leaf, Beaker } from 'lucide-react';
 
 export function Epigenetics() {
   return (
@@ -9,8 +9,10 @@ export function Epigenetics() {
       <div className="bg-[#f0f9ff] p-8 rounded-xl text-[#0c264d] border border-[#0c264d]/5 mb-8 shadow-sm overflow-hidden">
         
         {/* The Graphic: Floated right on medium screens and up */}
-        <div className="md:float-right md:ml-8 mb-6 md:mb-2 w-full md:w-56 text-center">
-         
+        <div className="md:float-right md:ml-8 mb-6 md:mb-2 w-full md:w-72 text-center">
+          <p className="text-[#0c264d]/80 mb-3 italic font-medium text-xs">
+            The Molecular Bridge: Genetics & Environment
+          </p>
           <div className="mx-auto border border-[#0c264d]/10 rounded-lg shadow-sm bg-white p-1">
             <ImageWithFallback 
               src="/images/autism/autism-causes-epigenetics.png" 
@@ -20,68 +22,115 @@ export function Epigenetics() {
           </div>
         </div>
 
-        <h2 className="font-bold mb-4 text-2xl font-spartan">The Epigenetic Interface</h2>
+        <h2 className="font-bold mb-4 text-2xl font-spartan underline decoration-[#2abcd4] decoration-2 underline-offset-4">
+          Epigenetics and Autism Spectrum Disorder
+        </h2>
         <p className="leading-relaxed font-spartan text-lg">
-          Epigenetics serves as the molecular intersection where environmental stressors meet genetic susceptibility. Unlike permanent DNA mutations, these changes involve chemical tags—like <strong>DNA methylation</strong>—that dictate whether a gene is active or silenced during critical windows of brain development.
+          Epigenetics — the study of how gene expression is regulated without changes to the underlying DNA sequence — has emerged as a critical framework for understanding Autism Spectrum Disorder (ASD). Acting as a molecular bridge between genetic predisposition and environmental exposure, epigenetic mechanisms help explain how factors such as prenatal stress, nutrition, and toxin exposure can shape neurodevelopment and contribute to the wide variability seen across the autism spectrum.
         </p>
       </div>
 
-      {/* --- KEY RISK MECHANISMS GRID (Clears the float above) --- */}
-      <div className="grid md:grid-cols-2 gap-6 mb-8 clear-both mt-6">
-        {/* Key Risk Mechanism: VPA */}
-        <div className="bg-white p-5 rounded-lg border-l-4 border-red-400 shadow-sm">
-          <div className="flex items-center gap-2 mb-3 text-red-500">
-            <ShieldAlert size={22} />
-            <h3 className="font-bold font-spartan">Valproic Acid (VPA) Exposure</h3>
+      {/* --- KEY CONNECTIONS GRID (Clears the float above) --- */}
+      <div className="grid md:grid-cols-3 gap-6 mb-8 clear-both mt-6">
+        <div className="bg-white p-5 rounded-lg border-t-4 border-[#2abcd4] shadow-sm">
+          <div className="flex items-center gap-2 mb-3 text-[#2abcd4]">
+            <Zap size={20} />
+            <h3 className="font-bold font-spartan">Gene-Environment</h3>
           </div>
           <p className="text-sm font-spartan leading-relaxed">
-            New research identifies VPA as a primary epigenetic disruptor. Prenatal exposure can induce autism-like behaviors by rapidly altering the fetal brain transcriptome and disrupting protein-coding genes like <strong>ADAM10</strong>.
+            Mediates effects of genetic susceptibility and environmental factors like advanced parental age and maternal immune activation on fetal neurodevelopment.
           </p>
         </div>
 
-        {/* Key Risk Mechanism: Maternal Stress */}
-        <div className="bg-white p-5 rounded-lg border-l-4 border-orange-400 shadow-sm">
-          <div className="flex items-center gap-2 mb-3 text-orange-500">
-            <Zap size={22} />
-            <h3 className="font-bold font-spartan">Prenatal Stress & Convergence</h3>
+        <div className="bg-white p-5 rounded-lg border-t-4 border-green-400 shadow-sm">
+          <div className="flex items-center gap-2 mb-3 text-green-500">
+            <Leaf size={20} />
+            <h3 className="font-bold font-spartan">Reversibility</h3>
           </div>
           <p className="text-sm font-spartan leading-relaxed">
-            Early-life and maternal stress are now directly linked to ASD through DNA methylation. These stressors create a "convergence" where the environment silences genes necessary for healthy neural synapse function.
+            Unlike fixed DNA mutations, these modifications are potentially reversible, offering promise for novel, personalized treatment strategies.
+          </p>
+        </div>
+
+        <div className="bg-white p-5 rounded-lg border-t-4 border-purple-400 shadow-sm">
+          <div className="flex items-center gap-2 mb-3 text-purple-500">
+            <Brain size={20} />
+            <h3 className="font-bold font-spartan">Brain Development</h3>
+          </div>
+          <p className="text-sm font-spartan leading-relaxed">
+            Dynamic changes occur during critical windows in genes regulating synaptic function, making timing of exposure a key risk factor.
           </p>
         </div>
       </div>
 
-      <div className="bg-[#ffffff] bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-[#2abcd4] mb-10">
-        <h3 className="font-bold mb-2 text-lg font-spartan flex items-center gap-2">
-          <Microscope className="text-[#0c264d]" /> Future Horizons: Reversibility
+      {/* --- MECHANISMS & RISK FACTORS --- */}
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="bg-[#0c264d] bg-opacity-5 p-6 rounded-xl border border-[#0c264d]/10">
+          <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-[#0c264d]">
+            <Beaker size={20} /> Common Mechanisms
+          </h3>
+          <ul className="space-y-4 font-spartan text-sm">
+            <li>
+              <strong>DNA Methylation:</strong> Patterns affecting synaptic signaling and GABAergic systems are consistent enough to serve as promising candidate biomarkers.
+            </li>
+            <li>
+              <strong>Histone Modification:</strong> Changes in DNA packaging regulate gene accessibility; disruptions are consistently observed in ASD epigenomic profiles.
+            </li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl border-l-4 border-red-400 shadow-sm">
+          <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-red-500">
+            <ShieldAlert size={20} /> Critical Risk Factors
+          </h3>
+          <ul className="space-y-4 font-spartan text-sm">
+            <li>
+              <strong>Valproic Acid (VPA):</strong> In utero exposure significantly elevates ASD-like outcomes via altered DNA methylation and histone inhibition.
+            </li>
+            <li>
+              <strong>Maternal Stress:</strong> Induces DNA methylation changes that mediate increased risk, reinforcing the importance of the prenatal environment.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* --- FUTURE HORIZONS --- */}
+      <div className="bg-[#ffffff] bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-[#2abcd4] mb-10 shadow-sm">
+        <h3 className="font-bold mb-3 text-xl font-spartan flex items-center gap-2 text-[#0c264d]">
+          <Microscope className="text-[#2abcd4]" size={24} /> 
+          Diagnosis & Targeted Therapies
         </h3>
-        <p className="text-sm leading-relaxed font-spartan">
-          Because epigenetic marks are potentially reversible, researchers are investigating them as "therapeutic targets." Emerging clinical applications explore whether abnormal methylation signatures can serve as <strong>biomarkers</strong> for earlier, more objective diagnosis.
+        <p className="text-sm leading-relaxed font-spartan mb-4">
+          Researchers are identifying epigenetic signatures in peripheral blood that mirror brain tissue patterns, offering a pathway to non-invasive early diagnosis. Additionally, the development of <strong>"Epidrugs"</strong> — pharmacological agents designed to modify aberrant methylation patterns — represents a growing frontier in symptom-targeted treatment.
         </p>
       </div>
 
-      {/* --- REFERENCES SECTION (Standardized to Project Style) --- */}
+      {/* --- REFERENCES SECTION --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
       
-      <div className="bg-white bg-opacity-50 p-6 rounded-lg">
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-4 text-xl font-spartan text-[#0c264d]">References</h3>
         
         <div className="mb-6">
           <h4 className="text-xs uppercase tracking-wider text-green-500 font-bold mb-3">Cited Studies & Statistics</h4>
           <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-800 font-spartan">
-            <li>Sariyer, E., et al. (2025). "DNA methylation mediates the association between prenatal maternal stress and ASD." International Journal of Molecular Sciences.</li>
             <li>Alfano, R., et al. (2025). "The convergence of early-life stress and autism spectrum disorder." PubMed Central.</li>
-            <li>Chen, Y., et al. (2025). "New insights into mechanisms of valproic acid-induced ASD." Food and Chemical Toxicology.</li>
             <li>Bhatt, D., et al. (2024). "DNA methylation in ASD: Biomarker or therapeutic target?" PubMed Central.</li>
+            <li>Sariyer, E., et al. (2025). "DNA methylation mediates the association between prenatal maternal stress and ASD." International Journal of Molecular Sciences.</li>
+            <li>Servadio, M., et al. (2024). "Rapid effects of valproic acid on the fetal brain transcriptome." Translational Psychiatry.</li>
+            <li>PMC. (2025). "Prenatal exposure to valproic acid induces autism-like behaviors via ADAM10." PubMed Central.</li>
           </ol>
         </div>
 
         <div>
           <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800 font-spartan">
+          <ul className="list-disc ml-5 text-[11px] leading-relaxed space-y-2 text-navy-800 font-spartan">
             <li>Arca, G., et al. (2024). "Intercontinental insights into ASD: A synthesis of DNA methylation and environment." Environment Epigenetics.</li>
+            <li>Grazioli, S., et al. (2025). "Epigenetic changes and their potential reversibility in mental health." PubMed Central.</li>
+            <li>Kubota, N., & Mochizuki, K. (2024). "Targeting epigenetic dysregulation in autism spectrum disorders." Trends in Genetics.</li>
             <li>Park, J., et al. (2024). "Epigenetic insights into ASD: DNA methylation in promoter regions and blood samples." Clinical Psychopharmacology and Neuroscience.</li>
-            <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet, 392(10146), 508-520.</li>
+            <li>Chen, Y., et al. (2025). "New insights into mechanisms of valproic acid-induced ASD." Food and Chemical Toxicology.</li>
+            <li>ACS Pharmacology & Translational Science. (2025). "The future of epigenetics: Emerging technologies and clinical applications."</li>
           </ul>
         </div>
       </div>
