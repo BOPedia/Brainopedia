@@ -18,7 +18,7 @@ export function Epigenetics() {
         <ImageWithFallback 
           src="/images/autism/autism-causes-epigenetics.png" 
           alt="Epigenetic mechanisms in autism"
-          className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
+          className="w-48 h-auto float-center ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
         />
       <div className="grid md:grid-cols-2 gap-6 mb-8 clear-both mt-6 " >
         {/* Key Risk Mechanism: VPA */}
