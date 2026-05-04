@@ -78,6 +78,7 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
         {activeTab === 'brain' && <BrainDevelopment />}
         {activeTab === 'myths' && <MythsMisconceptions />}
         {activeTab === 'genetics' && <GeneticsHeredity />}
+         <GeneticsHeredity setCurrentArticle={setCurrentArticle} />
         {activeTab === 'current-research' && <CurrentResearch />}
         
         {/* --- REFERENCES SECTION --- */} 

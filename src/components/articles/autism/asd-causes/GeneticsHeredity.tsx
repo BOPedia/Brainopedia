@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (id: string) => void }) {
   return (
+
     <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
       <h2 className="font-bold mb-4 text-2xl">Genetic Factors</h2>
       
@@ -130,6 +131,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
 <div 
   className="mt-10 p-6 bg-white border-2 border-dashed border-[#0c264d] rounded-xl flex items-center justify-between group hover:border-opacity-100 transition-all cursor-pointer shadow-sm"
   onClick={() => setCurrentArticle?.('autism-epigenetics')}
+  
 >
   <div className="flex gap-4 items-center">
     {/* Circle Background: light blue */}
