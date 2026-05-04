@@ -51,6 +51,8 @@ const articleMap: Record<string, React.ComponentType<ArticleProps>> = {
   'autism-symptoms': lazy(() => import('./articles/autism/asd-symptoms/ASDSymptoms').then(m => ({ default: m.ASDSymptoms }))),
   // --- THE MANAGER (Brings your tabs back!) ---
   'autism-support': lazy(() => import('./articles/autism/asd-support/ASDSupport').then(m => ({ default: m.ASDSupport }))),
+  'autism-causes': lazy(() => import('./articles/autism/asd-causes/ASDCauses').then(m => ({ default: m.ASDCauses }))),
+  'autism-epigenetics': lazy(() => import('./articles/autism/asd-causes/Epigenetics').then(m => ({ default: m.Epigenetics }))),
 
   // --- THE CHILDREN (Files inside the support tabs) ---
   'autism-early-intervention': lazy(() => import('./articles/autism/asd-support/EarlyInterventionContent').then(m => ({ default: m.EarlyInterventionContent }))),

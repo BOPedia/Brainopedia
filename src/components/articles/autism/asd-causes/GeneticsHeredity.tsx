@@ -3,7 +3,7 @@ import { ImageWithFallback } from '../../../../components/figma/ImageWithFallbac
 import { Microscope, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-export function GeneticsHeredity() {
+export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (id: string) => void }) {
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
       <h2 className="font-bold mb-4 text-2xl">Genetic Factors</h2>
@@ -126,21 +126,24 @@ export function GeneticsHeredity() {
         </div>
       </div>
 
-<div className="mt-10 p-6 bg-white border-2 border-dashed border-[#0c264d] rounded-xl flex items-center justify-between group hover:border-opacity-100 transition-all cursor-pointer shadow-sm"
-     onClick={() => navigate('/encyclopedia/causes/epigenetics')}>
-  <div className="flex gap-4 items-center">
-    <div className="bg-[#2abcd4] bg-opacity-10 p-3 rounded-full text-[#2abcd4]">
-      <Microscope size={28} />
+<div 
+      className="mt-10 p-6 bg-white border-2 border-dashed border-[#0c264d] rounded-xl flex items-center justify-between group hover:border-opacity-100 transition-all cursor-pointer shadow-sm"
+      {/* Use the exact ID you put in the articleMap */}
+      onClick={() => setCurrentArticle?.('autism-epigenetics')}
+    >
+      <div className="flex gap-4 items-center">
+        <div className="bg-[#2abcd4] bg-opacity-10 p-3 rounded-full text-[#0c264d]">
+          <Microscope size={28} />
+        </div>
+        <div>
+          <h4 className="font-bold font-spartan text-[#0c264d]">Deep Dive: The Epigenetic Interface</h4>
+          <p className="text-xs font-spartan font-normal text-gray-500">Explore how the environment switches these genetic markers on or off.</p>
+        </div>
+      </div>
+      <div className="bg-[#0c264d] text-white p-2 rounded-full group-hover:bg-[#2abcd4] transition-colors">
+        <ArrowRight size={20} />
+      </div>
     </div>
-    <div>
-      <h4 className="font-bold font-spartan text-[#0c264d]">Deep Dive: The Epigenetic Interface</h4>
-      <p className="text-xs font-spartan text-gray-500">Explore how the environment switches these genetic markers on or off.</p>
-    </div>
-  </div>
-  <div className="bg-[#0c264d] text-white p-2 rounded-full group-hover:bg-[#2abcd4] transition-colors">
-    <ArrowRight size={20} />
-  </div>
-</div>
 
 {/* --- REFERENCES SECTION --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
