@@ -49,11 +49,11 @@ const articleMap: Record<string, React.ComponentType<ArticleProps>> = {
   // AUTISM SUB-PAGES
   'autism-overview': lazy(() => import('./articles/autism/ASDOverview').then(m => ({ default: m.ASDOverview }))),
   'autism-symptoms': lazy(() => import('./articles/autism/asd-symptoms/ASDSymptoms').then(m => ({ default: m.ASDSymptoms }))),
-  // --- THE MANAGER (Brings your tabs back!) ---
-  'autism-support': lazy(() => import('./articles/autism/asd-support/ASDSupport').then(m => ({ default: m.ASDSupport }))),
-  'autism-causes': lazy(() => import('./articles/autism/asd-causes/ASDCauses').then(m => ({ default: m.ASDCauses }))),
-  'autism-epigenetics': lazy(() => import('./articles/autism/asd-causes/Epigenetics').then(m => ({ default: m.Epigenetics }))),
-
+  'autism-causes':   lazy(() => import('./articles/autism/asd-causes/ASDCauses').then(m => ({ default: m.ASDCauses }))),
+  'autism-diagnosis': lazy(() => import('./articles/autism/asd-diagnosis/ASDDiagnosis').then(m => ({ default: m.ASDDiagnosis }))),
+  'autism-living':    lazy(() => import('./articles/autism/asd-living/ASDLiving').then(m => ({ default: m.ASDLiving }))),
+  'autism-support':   lazy(() => import('./articles/autism/asd-support/ASDSupport').then(m => ({ default: m.ASDSupport }))),
+ 
   // --- THE CHILDREN (Files inside the support tabs) ---
   'autism-early-intervention': lazy(() => import('./articles/autism/asd-support/EarlyInterventionContent').then(m => ({ default: m.EarlyInterventionContent }))),
   'autism-therapies': lazy(() => import('./articles/autism/asd-support/TherapiesContent').then(m => ({ default: m.TherapiesContent }))),
@@ -64,13 +64,13 @@ const articleMap: Record<string, React.ComponentType<ArticleProps>> = {
 
   // --- THE DEEP DIVES (The individual therapy pages) ---
   'autism-occupational-therapy': lazy(() => import('./articles/autism/asd-support/OccupationalTherapy').then(m => ({ default: m.OccupationalTherapy }))),
+  'autism-speech-therapy': lazy(() => import('./articles/autism/asd-support/SpeechTherapy').then(m => ({ default: m.SpeechTherapy }))),
   'autism-aba-therapy': lazy(() => import('./articles/autism/asd-support/ABATherapy').then(m => ({ default: m.ABATherapy }))),
   'autism-social-skills': lazy(() => import('./articles/autism/asd-support/SocialSkills').then(m => ({ default: m.SocialSkills }))),
   'autism-mental-health': lazy(() => import('./articles/autism/asd-support/MentalHealth').then(m => ({ default: m.MentalHealth }))),
   'autism-physical-therapy': lazy(() => import('./articles/autism/asd-support/PhysicalTherapy').then(m => ({ default: m.PhysicalTherapy }))),
-  'autism-causes': lazy(() => import('./articles/autism/asd-causes/ASDCauses').then(m => ({ default: m.ASDCauses }))),
-  'autism-diagnosis': lazy(() => import('./articles/autism/asd-diagnosis/ASDDiagnosis').then(m => ({ default: m.ASDDiagnosis }))),
-  'autism-living': lazy(() => import('./articles/autism/asd-living/ASDLiving').then(m => ({ default: m.ASDLiving }))),
+  'autism-epigenetics': lazy(() => import('./articles/autism/asd-causes/Epigenetics').then(m => ({ default: m.Epigenetics }))),
+
   
   // MISC
   'about': lazy(() => import('./articles/ArticleAbout').then(m => ({ default: m.ArticleAbout }))),
