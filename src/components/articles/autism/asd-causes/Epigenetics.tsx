@@ -7,7 +7,7 @@ export function Epigenetics() {
     <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
       <div className="block">
         <ImageWithFallback 
-          src="/images/autism/autism-epigenetics-dna-mechanisms.png" 
+          src="/images/autism/autism-causes-epigenetics.png" 
           alt="Visual representation of DNA methylation and histone modification"
           className="w-64 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
         />
