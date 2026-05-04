@@ -1,58 +1,82 @@
 import React from 'react';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
+import { Microscope, Zap, Brain, ShieldAlert, BookOpen } from 'lucide-react';
 
-export function EnvironmentalFactors() {
+interface EpigeneticsProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+export function Epigenetics({ setCurrentArticle }: EpigeneticsProps) {
   return (
-    <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
-      <h2 className="font-bold mb-4 text-2xl font-spartan">Environmental Factors</h2>
-      
-      <ImageWithFallback 
-        src="/images/autism/autism-causes-Envirotab-toddler-in-nature.png" 
-        alt="Toddler in nature representing environmental factors"
-        className="w-full max-w-sm mx-auto mb-8 rounded-sm shadow-sm"
-      />
-      
-      <p className="mb-6 leading-relaxed">
-        While genetics are crucial, environmental factors—particularly during pregnancy and early development—also contribute to autism risk.<sup className="text-green-600 font-bold ml-0.5">[2]</sup> "Environmental" refers to non-genetic factors, not just pollution or toxins.
-      </p>
-
-      <div className="grid md:grid-cols-2 gap-8 mb-8">
-        {/* Section 1: Prenatal */}
-        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
-          <h3 className="font-bold mb-3 text-lg font-spartan">Prenatal Factors</h3>
-          <p className="text-sm mb-3 text-navy-800 italic">Factors during pregnancy associated with increased risk:</p>
-          <ul className="list-disc ml-5 space-y-2 text-sm">
-            <li><strong>Advanced parental age:</strong> Both maternal and paternal age over 35.<sup className="text-green-600 font-bold ml-0.5">[2]</sup></li>
-            <li><strong>Maternal infections:</strong> Severe infections, particularly in the second trimester.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Maternal immune activation:</strong> Immune responses affecting fetal brain development.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Certain medications:</strong> Valproic acid exposure during pregnancy.<sup className="text-green-600 font-bold ml-0.5">[4]</sup></li>
-            <li><strong>Prenatal nutrition:</strong> Deficiencies in nutrients like folic acid.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Gestational diabetes:</strong> Metabolic conditions affecting development.<sup className="text-green-600 font-bold ml-0.5">[1]</sup></li>
-            <li><strong>Air pollution:</strong> Exposure during pregnancy and early life.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-          </ul>
-        </div>
-
-        {/* Section 2: Neonatal */}
-        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
-          <h3 className="font-bold mb-3 text-lg font-spartan">Perinatal and Neonatal Factors</h3>
-          <p className="text-sm mb-3 text-gray-600 italic">Complications around birth associated with modest risk increases:</p>
-          <ul className="list-disc ml-5 space-y-2 text-sm">
-            <li><strong>Preterm birth:</strong> Birth before 37 weeks, especially very preterm birth.<sup className="text-green-600 font-bold ml-0.5">[1]</sup></li>
-            <li><strong>Low birth weight:</strong> Particularly very low birth weight infants.<sup className="text-green-600 font-bold ml-0.5">[1]</sup></li>
-            <li><strong>Birth complications:</strong> Significant oxygen deprivation (hypoxia).<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Multiple births:</strong> Twins/multiples have a slightly elevated risk.<sup className="text-green-600 font-bold ml-0.5">[1]</sup></li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="bg-[#2abcd4] bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-[#2abcd4] mb-10">
-        <h3 className="font-bold mb-2 text-lg font-spartan">Gene-Environment Interactions</h3>
-        <p className="text-sm leading-relaxed">
-          Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup className="text-green-600 font-bold ml-0.5">[2]</sup>
+    <div className="max-w-6xl mx-auto p-4">
+      {/* --- INTRO BOX --- */}
+      <div className="bg-[#f0f9ff] p-8 rounded-xl text-[#0c264d] border border-[#0c264d]/5 mb-8 shadow-sm">
+        <h2 className="font-bold mb-4 text-3xl font-spartan">The Epigenetic Interface</h2>
+        <p className="leading-relaxed font-spartan text-lg">
+          Epigenetics serves as the molecular intersection where environmental stressors meet genetic susceptibility. Unlike permanent DNA mutations, these changes involve chemical tags—like <strong>DNA methylation</strong>—that dictate whether a gene is active or silenced during critical windows of brain development.
         </p>
       </div>
 
-      {/* --- REFERENCES SECTION --- */}
+      {/* --- CENTERED GRAPHIC SECTION --- */} 
+      <div className="flex flex-col items-center justify-center w-full mb-12 clear-both"> 
+        <p className="text-[#0c264d]/80 mb-4 italic font-medium"> 
+          Visualizing the molecular "switches" of gene expression 
+        </p> 
+
+        <div className="w-full max-w-xs md:max-w-md"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-causes-epigenetics.png" 
+            alt="Epigenetic mechanisms in autism"
+            className="w-full h-auto rounded-xl shadow-md border border-[#0c264d]/10"
+          /> 
+        </div> 
+      </div>
+
+      {/* --- KEY RISK MECHANISMS GRID --- */}
+      <div className="grid md:grid-cols-2 gap-6 mb-10">
+        <div className="bg-white p-6 rounded-xl border-l-4 border-red-400 shadow-sm">
+          <div className="flex items-center gap-2 mb-3 text-red-500">
+            <ShieldAlert size={22} />
+            <h3 className="font-bold font-spartan text-lg">Valproic Acid (VPA) Exposure</h3>
+          </div>
+          <p className="text-sm font-spartan leading-relaxed text-gray-700">
+            New research identifies VPA as a primary epigenetic disruptor. Prenatal exposure can induce autism-like behaviors by rapidly altering the fetal brain transcriptome and disrupting protein-coding genes like <strong>ADAM10</strong>.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl border-l-4 border-orange-400 shadow-sm">
+          <div className="flex items-center gap-2 mb-3 text-orange-500">
+            <Zap size={22} />
+            <h3 className="font-bold font-spartan text-lg">Prenatal Stress & Convergence</h3>
+          </div>
+          <p className="text-sm font-spartan leading-relaxed text-gray-700">
+            Early-life and maternal stress are now directly linked to ASD through DNA methylation. These stressors create a "convergence" where the environment silences genes necessary for healthy neural synapse function.
+          </p>
+        </div>
+      </div>
+
+      {/* --- REVERSIBILITY SECTION --- */}
+      <div className="bg-white p-8 rounded-xl border-2 border-dashed border-[#2abcd4] mb-12 shadow-sm">
+        <h3 className="font-bold mb-4 text-xl font-spartan flex items-center gap-3 text-[#0c264d]">
+          <Microscope className="text-[#2abcd4]" size={28} /> 
+          Future Horizons: Reversibility
+        </h3>
+        <p className="text-md leading-relaxed font-spartan text-gray-700">
+          Because epigenetic marks are potentially reversible, researchers are investigating them as "therapeutic targets." Emerging clinical applications explore whether abnormal methylation signatures can serve as <strong>biomarkers</strong> for earlier, more objective diagnosis.
+        </p>
+      </div>
+
+      {/* --- NAVIGATION BUTTON --- */}
+      <div className="mb-12">
+        <button 
+          onClick={() => setCurrentArticle?.('autism-causes')}
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-medium py-3 px-8 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm"
+        >
+          <span className="text-xl">←</span> Return to Causes & Risk Factors
+        </button>
+      </div>
+
+      {/* --- REFERENCES SECTION (MATCHED TO YOUR CODE) --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg">
@@ -61,19 +85,19 @@ export function EnvironmentalFactors() {
         <div className="mb-6">
           <h4 className="text-xs uppercase tracking-wider text-green-500 font-bold mb-3">Cited Studies & Statistics</h4>
           <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-800 font-spartan">
-            <li>Centers for Disease Control and Prevention. (2023). "Autism Spectrum Disorder (ASD): Data and Statistics." CDC.</li>
-            <li>Bai, D., et al. (2019). "Association of genetic and environmental factors with autism in a 5-country cohort." JAMA Psychiatry, 76(10), 1035-1043.</li>
-            <li>Modabbernia, A., et al. (2017). "Environmental risk factors for autism: An evidence-based review of systematic reviews." Molecular Autism, 8(1), 13.</li>
-            <li>Lyall, K., et al. (2017). "The changing epidemiology of autism spectrum disorders." Annual Review of Public Health, 38, 81-102.</li>
+            <li>Sariyer, E., et al. (2025). "DNA methylation mediates the association between prenatal maternal stress and ASD." International Journal of Molecular Sciences.</li>
+            <li>Alfano, R., et al. (2025). "The convergence of early-life stress and autism spectrum disorder." PubMed Central.</li>
+            <li>Chen, Y., et al. (2025). "New insights into mechanisms of valproic acid-induced ASD." Food and Chemical Toxicology.</li>
+            <li>Bhatt, D., et al. (2024). "DNA methylation in ASD: Biomarker or therapeutic target?" PubMed Central.</li>
           </ol>
         </div>
 
         <div>
           <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800 font-spartan">
-            <li>American Psychiatric Association. (2013). Diagnostic and Statistical Manual of Mental Disorders (5th ed.).</li>
+          <ul className="list-disc ml-5 text-[14px] font-spartan leading-relaxed space-y-1 text-navy-800">
+            <li>Arca, G., et al. (2024). "Intercontinental insights into ASD: A synthesis of DNA methylation and environment." Environment Epigenetics.</li>
+            <li>Park, J., et al. (2024). "Epigenetic insights into ASD: DNA methylation in promoter regions and blood samples." Clinical Psychopharmacology and Neuroscience.</li>
             <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet, 392(10146), 508-520.</li>
-            <li>Taylor, L. E., et al. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis." Vaccine, 32(29).</li>
           </ul>
         </div>
       </div>
