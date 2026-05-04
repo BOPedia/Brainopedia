@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ASDReferences } from '../ASDReferences';
 
 // --- ACTUAL IMPORTS ---
-// Matching your file system: Screenshot 2026-05-01 at 10.18.03 PM.jpg
+// Matching your file system
 import { EnvironmentalFactors } from './EnvironmentalFactors';
 import { BrainDevelopment } from './BrainDevelopment';
 import { MythsMisconceptions } from './MythsMisconceptions';
@@ -15,6 +15,7 @@ interface ASDCausesProps {
 }
 
 export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
+  // Initialized with 5 tabs as per project requirements
   const [activeTab, setActiveTab] = useState(initialTab || 'environmental');
 
   const handleTabChange = (tabId: string) => {
@@ -44,8 +45,8 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
       <style>
         {`sup { color: #10b981; }`}
       </style>
-{/* --- PAGE HEADER SECTION --- */}
-      {/* Replicating the exact Support & Services header pattern */}
+      
+      {/* --- PAGE HEADER SECTION --- */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl">
           Autism: Causes & Risk Factors
@@ -55,7 +56,6 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
       </div>
 
       {/* --- 5-TAB NAVIGATION GRID --- */}
-      {/* Layout verified in Screenshot 2026-05-01 at 10.13.53 PM.jpg */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-10">
         {tabs.map((tab) => (
           <button
@@ -77,19 +77,14 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
         {activeTab === 'environmental' && <EnvironmentalFactors />}
         {activeTab === 'brain' && <BrainDevelopment />}
         {activeTab === 'myths' && <MythsMisconceptions />}
-        {activeTab === 'genetics' && <GeneticsHeredity />}
-         <GeneticsHeredity setCurrentArticle={setCurrentArticle} />
+        
+        {/* FIXED: Merged the two lines so the prop is passed only when active */}
+        {activeTab === 'genetics' && (
+          <GeneticsHeredity setCurrentArticle={setCurrentArticle} />
+        )}
+        
         {activeTab === 'current-research' && <CurrentResearch />}
         
-        {/* --- REFERENCES SECTION --- */} 
-        {/* Wrapped in semi-transparent standard styling */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-12" />
-        
-
-      </div>
-
-      <div className="flex justify-end mt-12 mb-6">
-        <BackButton />
       </div>
     </article>
   );
