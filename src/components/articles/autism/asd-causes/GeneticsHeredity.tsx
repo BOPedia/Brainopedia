@@ -126,24 +126,28 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
         </div>
       </div>
 
+{/* EPIGENETICS DEEP DIVE CARD */}
 <div 
-      className="mt-10 p-6 bg-white border-2 border-dashed border-[#0c264d] rounded-xl flex items-center justify-between group hover:border-opacity-100 transition-all cursor-pointer shadow-sm"
-      {/* Use the exact ID you put in the articleMap */}
-      onClick={() => setCurrentArticle?.('autism-epigenetics')}
-    >
-      <div className="flex gap-4 items-center">
-        <div className="bg-[#2abcd4] bg-opacity-10 p-3 rounded-full text-[#0c264d]">
-          <Microscope size={28} />
-        </div>
-        <div>
-          <h4 className="font-bold font-spartan text-[#0c264d]">Deep Dive: The Epigenetic Interface</h4>
-          <p className="text-xs font-spartan font-normal text-gray-500">Explore how the environment switches these genetic markers on or off.</p>
-        </div>
-      </div>
-      <div className="bg-[#0c264d] text-white p-2 rounded-full group-hover:bg-[#2abcd4] transition-colors">
-        <ArrowRight size={20} />
-      </div>
+  className="mt-10 p-6 bg-white border-2 border-dashed border-[#0c264d] rounded-xl flex items-center justify-between group hover:border-opacity-100 transition-all cursor-pointer shadow-sm"
+  onClick={() => setCurrentArticle?.('autism-epigenetics')}
+>
+  <div className="flex gap-4 items-center">
+    {/* Circle Background: light blue */}
+    <div className="bg-[#2abcd4] bg-opacity-20 p-3 rounded-full">
+      {/* Icon: Dark Navy and explicit size so it's definitely visible */}
+      <Microscope size={28} className="text-[#0c264d]" /> 
     </div>
+    <div>
+      <h4 className="font-bold font-spartan text-[#0c264d]">Deep Dive: The Epigenetic Interface</h4>
+      <p className="text-xs font-spartan font-normal text-gray-500">
+        Explore how the environment switches these genetic markers on or off.
+      </p>
+    </div>
+  </div>
+  <div className="bg-[#0c264d] text-white p-2 rounded-full group-hover:bg-[#2abcd4] transition-colors">
+    <ArrowRight size={20} />
+  </div>
+</div>
 
 {/* --- REFERENCES SECTION --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
