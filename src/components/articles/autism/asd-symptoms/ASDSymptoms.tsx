@@ -52,7 +52,7 @@ export function ASDSymptoms({ setCurrentArticle, initialTab }: ASDSymptomsProps)
           <button
             key={tab.id}
             onClick={() => handleTabChange(tab.id)}
-            className={`px-4 py-3 rounded-lg font-bold text-sm transition-all duration-200 shadow-sm font-spartan ${
+            className={`px-4 py-3 rounded-lg font-normal text-sm transition-all duration-200 shadow-sm font-spartan ${
               activeTab === tab.id
                 ? 'bg-[#2abcd4] text-white shadow-md' // Using your teal/cyan active color
                 : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'

@@ -61,7 +61,7 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
           <button
             key={tab.id}
             onClick={() => handleTabChange(tab.id)}
-            className={`px-4 py-4 rounded-lg text-sm transition-colors font-bold shadow-sm ${
+            className={`px-4 py-4 rounded-lg text-sm transition-colors font-normal shadow-sm ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'
                 : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffd166]/80'

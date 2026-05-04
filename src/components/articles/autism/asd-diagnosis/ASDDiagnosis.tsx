@@ -79,7 +79,7 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
       <div className="flex justify-end mt-8 mb-6">
         <button 
           onClick={() => setCurrentArticle?.('autism')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
         >
           <span className="text-xl">←</span>
           All About Autism
