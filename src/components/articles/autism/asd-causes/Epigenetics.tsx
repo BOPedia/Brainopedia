@@ -1,6 +1,6 @@
 import React from 'react';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
-import { Microscope, Zap, Brain, ShieldAlert, BookOpen, Leaf, Beaker } from 'lucide-react';
+import { Microscope, Zap, Brain, ShieldAlert, Beaker, Leaf } from 'lucide-react';
 
 export function Epigenetics() {
   return (
@@ -8,7 +8,7 @@ export function Epigenetics() {
       {/* --- INTRO SECTION WITH FLOATING GRAPHIC --- */}
       <div className="bg-[#f0f9ff] p-8 rounded-xl text-[#0c264d] border border-[#0c264d]/5 mb-8 shadow-sm overflow-hidden">
         
-        {/* The Graphic: Floated right on medium screens and up */}
+        {/* The Graphic: Floated right */}
         <div className="md:float-right md:ml-8 mb-6 md:mb-2 w-full md:w-72 text-center">
           <p className="text-[#0c264d]/80 mb-3 italic font-medium text-xs">
             The Molecular Bridge: Genetics & Environment
@@ -30,7 +30,7 @@ export function Epigenetics() {
         </p>
       </div>
 
-      {/* --- KEY CONNECTIONS GRID (Clears the float above) --- */}
+      {/* --- KEY CONNECTIONS GRID --- */}
       <div className="grid md:grid-cols-3 gap-6 mb-8 clear-both mt-6">
         <div className="bg-white p-5 rounded-lg border-t-4 border-[#2abcd4] shadow-sm">
           <div className="flex items-center gap-2 mb-3 text-[#2abcd4]">
@@ -63,64 +63,33 @@ export function Epigenetics() {
         </div>
       </div>
 
-      {/* --- MECHANISMS & RISK FACTORS --- */}
+      {/* --- MECHANISMS & RISK FACTORS (FIXED THE NAVY BOX) --- */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
-  {/* FIXED: Changed bg-opacity to a lighter tint and ensured text colors are visible */}
-  <div className="bg-[#0c264d]/5 p-6 rounded-xl border border-[#0c264d]/10">
-    <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-[#0c264d]">
-      <Beaker size={20} /> Common Mechanisms
-    </h3>
-    <ul className="space-y-4 font-spartan text-sm text-[#0c264d]">
-      <li>
-        <strong className="font-bold text-[#0c264d]">DNA Methylation:</strong> Patterns affecting synaptic signaling and GABAergic systems are consistent enough to serve as promising candidate biomarkers.
-      </li>
-      <li>
-        <strong className="font-bold text-[#0c264d]">Histone Modification:</strong> Changes in DNA packaging regulate gene accessibility; disruptions are consistently observed in ASD epigenomic profiles.
-      </li>
-    </ul>
-  </div>
-
-  <div className="bg-white p-6 rounded-xl border-l-4 border-red-400 shadow-sm">
-    <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-red-500">
-      <ShieldAlert size={20} /> Critical Risk Factors
-    </h3>
-    <ul className="space-y-4 font-spartan text-sm text-gray-700">
-      <li>
-        <strong className="font-bold text-gray-900">Valproic Acid (VPA):</strong> In utero exposure significantly elevates ASD-like outcomes via altered DNA methylation and histone inhibition.
-      </li>
-      <li>
-        <strong className="font-bold text-gray-900">Maternal Stress:</strong> Induces DNA methylation changes that mediate increased risk, reinforcing the importance of the prenatal environment.
-      </li>
-    </ul>
-  </div>
-</div>
-  <div className="grid md:grid-cols-2 gap-6 mb-8">
-        <div className="bg-[#0c264d] bg-opacity-5 p-6 rounded-xl border border-[#0c264d]/10">
+        {/* FIXED: Now a white card with a navy left-border to match the site's design language */}
+        <div className="bg-white p-6 rounded-xl border-l-4 border-[#0c264d] shadow-sm">
           <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-[#0c264d]">
             <Beaker size={20} /> Common Mechanisms
           </h3>
-          <ul className="space-y-4 font-spartan text-sm">
+          <ul className="space-y-4 font-spartan text-sm text-gray-700">
             <li>
-              <strong>DNA Methylation:</strong> Patterns affecting synaptic signaling and GABAergic systems are consistent enough to serve as promising candidate biomarkers.
+              <strong className="font-bold text-[#0c264d]">DNA Methylation:</strong> Patterns affecting synaptic signaling and GABAergic systems are consistent enough to serve as promising candidate biomarkers.
             </li>
             <li>
-              <strong>Histone Modification:</strong> Changes in DNA packaging regulate gene accessibility; disruptions are consistently observed in ASD epigenomic profiles.
+              <strong className="font-bold text-[#0c264d]">Histone Modification:</strong> Changes in DNA packaging regulate gene accessibility; disruptions are consistently observed in ASD epigenomic profiles.
             </li>
           </ul>
         </div>
-
-
 
         <div className="bg-white p-6 rounded-xl border-l-4 border-red-400 shadow-sm">
           <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-red-500">
             <ShieldAlert size={20} /> Critical Risk Factors
           </h3>
-          <ul className="space-y-4 font-spartan text-sm">
+          <ul className="space-y-4 font-spartan text-sm text-gray-700">
             <li>
-              <strong>Valproic Acid (VPA):</strong> In utero exposure significantly elevates ASD-like outcomes via altered DNA methylation and histone inhibition.
+              <strong className="font-bold text-red-600">Valproic Acid (VPA):</strong> In utero exposure significantly elevates ASD-like outcomes via altered DNA methylation and histone inhibition.
             </li>
             <li>
-              <strong>Maternal Stress:</strong> Induces DNA methylation changes that mediate increased risk, reinforcing the importance of the prenatal environment.
+              <strong className="font-bold text-red-600">Maternal Stress:</strong> Induces DNA methylation changes that mediate increased risk, reinforcing the importance of the prenatal environment.
             </li>
           </ul>
         </div>
@@ -145,7 +114,7 @@ export function Epigenetics() {
         
         <div className="mb-6">
           <h4 className="text-xs uppercase tracking-wider text-green-500 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-800 font-spartan">
+          <ol className="list-decimal ml-5 text-[11px] space-y-2 text-navy-800 font-spartan">
             <li>Alfano, R., et al. (2025). "The convergence of early-life stress and autism spectrum disorder." PubMed Central.</li>
             <li>Bhatt, D., et al. (2024). "DNA methylation in ASD: Biomarker or therapeutic target?" PubMed Central.</li>
             <li>Sariyer, E., et al. (2025). "DNA methylation mediates the association between prenatal maternal stress and ASD." International Journal of Molecular Sciences.</li>
@@ -162,7 +131,7 @@ export function Epigenetics() {
             <li>Kubota, N., & Mochizuki, K. (2024). "Targeting epigenetic dysregulation in autism spectrum disorders." Trends in Genetics.</li>
             <li>Park, J., et al. (2024). "Epigenetic insights into ASD: DNA methylation in promoter regions and blood samples." Clinical Psychopharmacology and Neuroscience.</li>
             <li>Chen, Y., et al. (2025). "New insights into mechanisms of valproic acid-induced ASD." Food and Chemical Toxicology.</li>
-            <li>ACS Pharmacology & Translational Science. (2025). "The future of epigenetics: Emerging technologies and clinical applications."</li>
+            <li>ACS Pharmacology & Translational Science. (2025). "The future of epigenetics: Emerging technologies and clinical applications".</li>
           </ul>
         </div>
       </div>
