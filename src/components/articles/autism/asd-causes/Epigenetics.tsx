@@ -9,7 +9,7 @@ export function Epigenetics() {
       <div className="bg-[#f0f9ff] p-8 rounded-xl text-[#0c264d] border border-[#0c264d]/5 mb-8 shadow-sm overflow-hidden">
         
         {/* The Graphic: Floated right on medium screens and up */}
-        <div className="md:float-right md:ml-8 mb-6 md:mb-2 w-full md:w-64 text-center">
+        <div className="md:float-right md:ml-8 mb-6 md:mb-2 w-full md:w-56 text-center">
          
           <div className="mx-auto border border-[#0c264d]/10 rounded-lg shadow-sm bg-white p-1">
             <ImageWithFallback 
