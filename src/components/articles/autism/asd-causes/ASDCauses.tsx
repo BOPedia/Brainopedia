@@ -84,10 +84,7 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
         {/* Wrapped in semi-transparent standard styling */}
         <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-12" />
         
-        <div className="bg-white bg-opacity-50 p-8 rounded-lg">
-          <h3 className="font-bold mb-6 text-xl text-[#0c264d]">References</h3>
-          <ASDReferences />
-        </div>
+
       </div>
 
       <div className="flex justify-end mt-12 mb-6">

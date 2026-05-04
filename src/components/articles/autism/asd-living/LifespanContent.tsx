@@ -95,7 +95,7 @@ export function LifespanContent() {
 
       {/* --- TAB-SPECIFIC REFERENCES --- */}
       <section className="mt-12 pt-6 border-t-2 border-gray-200">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Section References</h3>
+        <h3 className="text-[#0c264d] font-bold mb-4 text-xl">References</h3>
         <ol className="list-decimal ml-5 space-y-3 text-sm text-gray-600">
           {/* Future brain: Paste your Lifespan-specific citations here! */}
           <li>Howlin, P. (2021). Outcomes in Adult Life for Autistic People.</li>
