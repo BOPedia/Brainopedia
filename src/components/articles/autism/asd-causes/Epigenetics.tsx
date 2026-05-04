@@ -65,6 +65,36 @@ export function Epigenetics() {
 
       {/* --- MECHANISMS & RISK FACTORS --- */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
+  {/* FIXED: Changed bg-opacity to a lighter tint and ensured text colors are visible */}
+  <div className="bg-[#0c264d]/5 p-6 rounded-xl border border-[#0c264d]/10">
+    <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-[#0c264d]">
+      <Beaker size={20} /> Common Mechanisms
+    </h3>
+    <ul className="space-y-4 font-spartan text-sm text-[#0c264d]">
+      <li>
+        <strong className="font-bold text-[#0c264d]">DNA Methylation:</strong> Patterns affecting synaptic signaling and GABAergic systems are consistent enough to serve as promising candidate biomarkers.
+      </li>
+      <li>
+        <strong className="font-bold text-[#0c264d]">Histone Modification:</strong> Changes in DNA packaging regulate gene accessibility; disruptions are consistently observed in ASD epigenomic profiles.
+      </li>
+    </ul>
+  </div>
+
+  <div className="bg-white p-6 rounded-xl border-l-4 border-red-400 shadow-sm">
+    <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-red-500">
+      <ShieldAlert size={20} /> Critical Risk Factors
+    </h3>
+    <ul className="space-y-4 font-spartan text-sm text-gray-700">
+      <li>
+        <strong className="font-bold text-gray-900">Valproic Acid (VPA):</strong> In utero exposure significantly elevates ASD-like outcomes via altered DNA methylation and histone inhibition.
+      </li>
+      <li>
+        <strong className="font-bold text-gray-900">Maternal Stress:</strong> Induces DNA methylation changes that mediate increased risk, reinforcing the importance of the prenatal environment.
+      </li>
+    </ul>
+  </div>
+</div>
+  <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-[#0c264d] bg-opacity-5 p-6 rounded-xl border border-[#0c264d]/10">
           <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-[#0c264d]">
             <Beaker size={20} /> Common Mechanisms
@@ -78,6 +108,8 @@ export function Epigenetics() {
             </li>
           </ul>
         </div>
+
+
 
         <div className="bg-white p-6 rounded-xl border-l-4 border-red-400 shadow-sm">
           <h3 className="font-bold mb-4 text-lg font-spartan flex items-center gap-2 text-red-500">
