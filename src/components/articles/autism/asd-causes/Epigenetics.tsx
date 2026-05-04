@@ -4,14 +4,16 @@ import { Microscope, Zap, Brain, ShieldAlert, BookOpen } from 'lucide-react';
 
 export function Epigenetics() {
   return (
+    
+         
     <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
       <div className="block">
         <ImageWithFallback 
           src="/images/autism/autism-causes-epigenetics.png" 
           alt="Epigenetic mechanisms in autism"
-          className="w-64 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
+          className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
         />
-        
+        <div className="clear-both mt-6"></div>
         <h2 className="font-bold mb-4 text-2xl font-spartan">The Epigenetic Interface</h2>
         
         <p className="mb-6 leading-relaxed font-spartan text-lg">
