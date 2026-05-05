@@ -10,7 +10,30 @@ export function DiagnosticProcess() {
         current functioning.<sup>[1]</sup> Early diagnosis enables earlier access to support and services, which 
         can significantly impact outcomes.
       </p>
+{/* ===== DIAGNOSTIC FRAMEWORKS ===== */}
+      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Diagnostic Frameworks (The "Rulebooks")</h3>
+        <p className="text-sm mb-4 text-gray-700 leading-relaxed">
+          Before administering specific tests, clinicians use standardized diagnostic manuals to determine what constitutes autism. These are not "tests" you take, but rather the criteria that the test results are compared against.
+        </p>
+        
+        <div className="space-y-4">
+          <div className="border-l-2 border-[#2abcd4] pl-4">
+            <div className="font-bold text-[#0c264d] mb-1">DSM-5-TR</div>
+            <p className="text-sm text-gray-700">
+              The primary manual used in the United States. To meet criteria, an individual must show persistent deficits in <strong>social communication</strong> and exhibit <strong>restricted/repetitive behaviors</strong> that began in early development and cause clinically significant impairment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="American Psychiatric Association (2022)">[1]</sup>.
+            </p>
+          </div>
 
+          <div className="border-l-2 border-[#2abcd4] pl-4">
+            <div className="font-bold text-[#0c264d] mb-1">ICD-11</div>
+            <p className="text-sm text-gray-700">
+              The World Health Organization's manual, used globally. It closely aligns with the DSM-5 but places a slightly higher emphasis on the impact of co-occurring intellectual development disorders and language impairment.
+            </p>
+          </div>
+        </div>
+      </div>
+      
       {/* ===== 3-STAGE PROCESS INFOGRAPHIC ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-6 text-lg">The Three-Stage Diagnostic Process</h3>
