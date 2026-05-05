@@ -106,15 +106,18 @@ export function Epigenetics() {
         </p>
       </div>
 
-/{/* --- REFERENCES SECTION --- */}
+{/* --- REFERENCES SECTION --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
-      
-      <div className="bg-white bg-opacity-50 p-6 rounded-lg">
-        <h3 className="font-bold mb-4 text-xl font-spartan">References</h3>
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-800">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-2 text-slate-600 leading-relaxed">
             <li>Alfano, R., et al. (2025). "The convergence of early-life stress and autism spectrum disorder." PubMed Central.</li>
             <li>Bhatt, D., et al. (2024). "DNA methylation in ASD: Biomarker or therapeutic target?" PubMed Central.</li>
             <li>Sariyer, E., et al. (2025). "DNA methylation mediates the association between prenatal maternal stress and ASD." International Journal of Molecular Sciences.</li>
@@ -122,10 +125,13 @@ export function Epigenetics() {
             <li>PMC. (2025). "Prenatal exposure to valproic acid induces autism-like behaviors via ADAM10." PubMed Central.</li>
           </ol>
         </div>
-      
+
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-none text-xs leading-relaxed space-y-2 text-navy-800">
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-2 text-slate-600 leading-relaxed">
             <li>Arca, G., et al. (2024). "Intercontinental insights into ASD: A synthesis of DNA methylation and environment." Environment Epigenetics.</li>
             <li>Grazioli, S., et al. (2025). "Epigenetic changes and their potential reversibility in mental health." PubMed Central.</li>
             <li>Kubota, N., & Mochizuki, K. (2024). "Targeting epigenetic dysregulation in autism spectrum disorders." Trends in Genetics.</li>
