@@ -94,7 +94,26 @@ export function Epigenetics() {
           </ul>
         </div>
       </div>
-
+      {/* --- EPIGENETICS VIDEO EMBED --- */}
+      <div className="my-8">
+        <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4 font-spartan">
+          Featured Resource: Epigenetics in Action
+        </h4>
+        
+        <div className="relative w-full overflow-hidden pt-[56.25%] rounded-lg shadow-inner border border-[#0c264d] border-opacity-10 bg-slate-50">
+          <iframe 
+            className="absolute top-0 left-0 w-full h-full rounded-lg"
+            src="https://www.youtube.com/embed/fp-XHU3_V5w?rel=0" 
+            title="What Makes Identical Twins Different?"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen
+          ></iframe>
+        </div>
+        
+        <p className="mt-3 text-xs text-slate-600 leading-relaxed ml-1">
+          <strong>Video:</strong> Explores how environmental factors influence gene expression, demonstrating the core principles of DNA methylation referenced in the clinical studies above.
+        </p>
+      </div>
       {/* --- FUTURE HORIZONS --- */}
       <div className="bg-[#ffffff] bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-[#2abcd4] mb-10 shadow-sm">
         <h3 className="font-bold mb-3 text-xl font-spartan flex items-center gap-2 text-[#0c264d]">
