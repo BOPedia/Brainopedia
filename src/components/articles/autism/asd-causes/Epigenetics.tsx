@@ -113,8 +113,8 @@ export function Epigenetics() {
         <h3 className="font-bold mb-4 text-xl font-spartan text-[#0c264d]">References</h3>
         
         <div className="mb-6">
-          <h4 className="text-xs uppercase tracking-wider text-green-500 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ol className="list-decimal ml-5 text-[11px] space-y-2 text-navy-800 font-spartan">
+          <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
+          <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-800">
             <li>Alfano, R., et al. (2025). "The convergence of early-life stress and autism spectrum disorder." PubMed Central.</li>
             <li>Bhatt, D., et al. (2024). "DNA methylation in ASD: Biomarker or therapeutic target?" PubMed Central.</li>
             <li>Sariyer, E., et al. (2025). "DNA methylation mediates the association between prenatal maternal stress and ASD." International Journal of Molecular Sciences.</li>
