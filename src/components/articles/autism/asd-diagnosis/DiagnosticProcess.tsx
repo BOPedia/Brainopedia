@@ -7,10 +7,11 @@ export function DiagnosticProcess() {
       
       <p className="mb-6">
         Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, and 
-        current functioning.<sup>[1]</sup> Early diagnosis enables earlier access to support and services, which 
+        current functioning.<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="American Psychiatric Association (2022)">[1]</sup> Early diagnosis enables earlier access to support and services, which 
         can significantly impact outcomes.
       </p>
-{/* ===== DIAGNOSTIC FRAMEWORKS ===== */}
+
+      {/* ===== DIAGNOSTIC FRAMEWORKS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Diagnostic Frameworks (The "Rulebooks")</h3>
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
@@ -33,7 +34,7 @@ export function DiagnosticProcess() {
           </div>
         </div>
       </div>
-      
+
       {/* ===== 3-STAGE PROCESS INFOGRAPHIC ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-6 text-lg">The Three-Stage Diagnostic Process</h3>
@@ -48,18 +49,18 @@ export function DiagnosticProcess() {
                 <div className="font-bold text-[#0c264d]">Initial Screening</div>
               </div>
               <div className="text-sm space-y-1">
-                <p>• General screening at 9, 18, 24 or 30 months<sup>[2]</sup></p>
-                <p>• Autism-specific screening at 18 and 24 months</p>
-                <p>• M-CHAT-R/F and parent questionnaires</p>
+                <p>&bull; General screening at 9, 18, 24 or 30 months<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Zwaigenbaum et al. (2015)">[2]</sup></p>
+                <p>&bull; Autism-specific screening at 18 and 24 months</p>
+                <p>&bull; M-CHAT-R/F and parent questionnaires</p>
               </div>
               <div className="mt-3 bg-[#0A9DC4]/10 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
                 <Clock className="inline w-3 h-3 mr-1" /> Brief (10-20 min)
               </div>
             </div>
             {/* Arrow for desktop */}
-            <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 text-[#0A9DC4] text-2xl font-bold">→</div>
+            <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 text-[#0A9DC4] text-2xl font-bold">&rarr;</div>
             {/* Arrow for mobile */}
-            <div className="md:hidden flex justify-center text-[#0A9DC4] text-2xl font-bold py-1">↓</div>
+            <div className="md:hidden flex justify-center text-[#0A9DC4] text-2xl font-bold py-1">&darr;</div>
           </div>
 
           {/* Stage 2 */}
@@ -70,19 +71,19 @@ export function DiagnosticProcess() {
                 <div className="font-bold text-[#0c264d]">Developmental-Behavioral Evaluation</div>
               </div>
               <div className="text-sm space-y-1">
-                <p>• Detailed parent interview about milestones</p>
-                <p>• Direct observation in various settings</p>
-                <p>• Standardized assessment tools</p>
-                <p>• Medical evaluation for co-occurring conditions</p>
+                <p>&bull; Detailed parent interview about milestones</p>
+                <p>&bull; Direct observation in various settings</p>
+                <p>&bull; Standardized assessment tools</p>
+                <p>&bull; Medical evaluation for co-occurring conditions</p>
               </div>
               <div className="mt-3 bg-[#ffd166]/20 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
                 <Clock className="inline w-3 h-3 mr-1" /> Several hours across visits
               </div>
             </div>
             {/* Arrow for desktop */}
-            <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 text-[#0A9DC4] text-2xl font-bold">→</div>
+            <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 text-[#0A9DC4] text-2xl font-bold">&rarr;</div>
             {/* Arrow for mobile */}
-            <div className="md:hidden flex justify-center text-[#0A9DC4] text-2xl font-bold py-1">↓</div>
+            <div className="md:hidden flex justify-center text-[#0A9DC4] text-2xl font-bold py-1">&darr;</div>
           </div>
 
           {/* Stage 3 */}
@@ -93,10 +94,10 @@ export function DiagnosticProcess() {
                 <div className="font-bold text-[#0c264d]">Comprehensive Diagnostic Evaluation</div>
               </div>
               <div className="text-sm space-y-1">
-                <p>• Multidisciplinary team approach</p>
-                <p>• Multiple settings (clinic, school, home)</p>
-                <p>• Collateral info from parents, teachers</p>
-                <p>• Longitudinal data over time</p>
+                <p>&bull; Multidisciplinary team approach</p>
+                <p>&bull; Multiple settings (clinic, school, home)</p>
+                <p>&bull; Collateral info from parents, teachers</p>
+                <p>&bull; Longitudinal data over time</p>
               </div>
               <div className="mt-3 bg-[#10b981]/10 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
                 <Clock className="inline w-3 h-3 mr-1" /> Multi-session, weeks to months
@@ -110,7 +111,7 @@ export function DiagnosticProcess() {
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Gold Standard Diagnostic Instruments</h3>
         <p className="text-sm mb-4">
-          These tools are considered the "gold standard" for autism diagnosis:<sup>[3]</sup>
+          These tools are considered the "gold standard" for autism diagnosis:<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">[3]</sup>
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -135,7 +136,7 @@ export function DiagnosticProcess() {
               </div>
               <div className="flex items-start gap-2">
                 <Star className="w-4 h-4 text-[#0A9DC4] mt-0.5 shrink-0" />
-                <div><strong>Note:</strong> Most widely used observational assessment<sup>[3]</sup></div>
+                <div><strong>Note:</strong> Most widely used observational assessment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">[3]</sup></div>
               </div>
             </div>
           </div>
@@ -279,28 +280,41 @@ export function DiagnosticProcess() {
       </div>
 
       <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-        <p className="text-sm">
+        <p className="text-sm text-[#0c264d]">
           <strong>Bottom Line:</strong> Autism diagnosis is based on behavioral observation and developmental 
           history, not blood tests or brain scans. The gold standard is ADOS-2 + ADI-R + clinical judgment by 
           experienced professionals. Medical testing helps rule out other conditions and identify co-occurring issues.
         </p>
       </div>
 
-      {/* References */}
-      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-        <div className="text-sm space-y-2">
-          <p>[1] American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
-          <p>[2] Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <em>Pediatrics</em>, 136(Supplement 1), S1-S9.</p>
-          <p>[3] Lord, C., Rutter, M., DiLavore, P. C., Risi, S., Gotham, K., & Bishop, S. (2012). <em>Autism Diagnostic Observation Schedule, Second Edition (ADOS-2)</em>. Western Psychological Services.</p>
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</li>
+            <li>Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). Early identification and interventions for autism spectrum disorder: Executive summary. <i>Pediatrics</i>, 136(Supplement 1), S1-S9.</li>
+            <li>Lord, C., Rutter, M., DiLavore, P. C., Risi, S., Gotham, K., & Bishop, S. (2012). <i>Autism diagnostic observation schedule, second edition (ADOS-2)</i>. Western Psychological Services.</li>
+          </ol>
         </div>
         
-        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-        <div className="text-sm space-y-2">
-          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
-          <p>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <em>The Lancet</em>, 383(9920), 896-910.</p>
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>World Health Organization. (2019). <i>International statistical classification of diseases and related health problems</i> (11th ed.). https://icd.who.int/</li>
+            <li>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). Autism spectrum disorder. <i>The Lancet</i>, 392(10146), 508-520.</li>
+            <li>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). Autism. <i>The Lancet</i>, 383(9920), 896-910.</li>
+          </ul>
         </div>
       </div>
     </div>
