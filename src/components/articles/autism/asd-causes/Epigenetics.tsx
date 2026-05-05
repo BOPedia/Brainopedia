@@ -123,9 +123,9 @@ export function Epigenetics() {
           </ol>
         </div>
       
-              <div>
-                <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
-                <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800">
+        <div>
+          <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
+          <ul className="list-none text-[14px] leading-relaxed space-y-1 text-navy-800">
             <li>Arca, G., et al. (2024). "Intercontinental insights into ASD: A synthesis of DNA methylation and environment." Environment Epigenetics.</li>
             <li>Grazioli, S., et al. (2025). "Epigenetic changes and their potential reversibility in mental health." PubMed Central.</li>
             <li>Kubota, N., & Mochizuki, K. (2024). "Targeting epigenetic dysregulation in autism spectrum disorders." Trends in Genetics.</li>
