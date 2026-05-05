@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { DiagnosticProcess } from './DiagnosticProcess';
-import { AssessmentsOrTests } from './AssessmentsOrTests';
 import { WhoCanDiagnose } from './WhoCanDiagnose';
 import { AcrossLifespan } from './AcrossLifespan';
 import { ChallengesDisparities } from './ChallengesDisparities';
@@ -23,7 +22,6 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
 
   const tabs = [
     { id: 'process', label: 'Diagnostic Process' },
-    { id: 'assessments', label: 'Assessments or Tests' },
     { id: 'professionals', label: 'Who Can Diagnose' },
     { id: 'lifespan', label: 'Across the Lifespan' },
     { id: 'challenges', label: 'Challenges & Disparities' },
@@ -68,7 +66,6 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
 
       <div className="space-y-8">
         {activeTab === 'process' && <DiagnosticProcess />}
-        {activeTab === 'assessments' && <AssessmentsOrTests />}
         {activeTab === 'professionals' && <WhoCanDiagnose />}
         {activeTab === 'lifespan' && <AcrossLifespan />}
         {activeTab === 'challenges' && <ChallengesDisparities />}
