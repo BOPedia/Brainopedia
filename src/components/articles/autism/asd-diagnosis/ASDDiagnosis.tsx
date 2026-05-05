@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { DSM5Criteria } from './DSM5Criteria';
 import { DiagnosticProcess } from './DiagnosticProcess';
+import { AssessmentsOrTests } from './AssessmentsOrTests';
 import { WhoCanDiagnose } from './WhoCanDiagnose';
 import { AcrossLifespan } from './AcrossLifespan';
 import { ChallengesDisparities } from './ChallengesDisparities';
@@ -13,8 +13,8 @@ interface ASDDiagnosisProps {
 }
 
 export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProps) {
-  // 1. Use state so the component can re-render itself
-  const [activeTab, setActiveTab] = useState(initialTab || 'criteria');
+  // 1. Use state so the component can re-render itself. Defaulting to 'process' now.
+  const [activeTab, setActiveTab] = useState(initialTab || 'process');
 
   // 2. Just change the state instead of navigating
   const handleTabChange = (tabId: string) => {
@@ -22,8 +22,8 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
   };
 
   const tabs = [
-    { id: 'criteria', label: 'DSM-5 Criteria' },
     { id: 'process', label: 'Diagnostic Process' },
+    { id: 'assessments', label: 'Assessments or Tests' },
     { id: 'professionals', label: 'Who Can Diagnose' },
     { id: 'lifespan', label: 'Across the Lifespan' },
     { id: 'challenges', label: 'Challenges & Disparities' },
@@ -67,8 +67,8 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
       </div>
 
       <div className="space-y-8">
-        {activeTab === 'criteria' && <DSM5Criteria />}
         {activeTab === 'process' && <DiagnosticProcess />}
+        {activeTab === 'assessments' && <AssessmentsOrTests />}
         {activeTab === 'professionals' && <WhoCanDiagnose />}
         {activeTab === 'lifespan' && <AcrossLifespan />}
         {activeTab === 'challenges' && <ChallengesDisparities />}
