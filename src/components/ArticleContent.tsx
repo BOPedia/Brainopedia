@@ -1,53 +1,25 @@
 import React, { lazy, Suspense } from 'react';
 
-// --- IMPORT YOUR SUBGROUPS HERE ---
-// (We only import RouteMap once using the correct articles path)
+// 1. Import from the articles/routes folder
 import { RouteMap } from './articles/routes/routeTypes';
 import { coreNeurodevelopmentalRoutes } from './articles/routes/coreNeurodevelopmentalRoutes';
+import { learningDifferencesRoutes } from './articles/routes/learningDifferencesRoutes';
+import { processingSensoryRoutes } from './articles/routes/processingSensoryRoutes';
+import { movementMotorRoutes } from './articles/routes/movementMotorRoutes';
+import { mentalHealthRoutes } from './articles/routes/mentalHealthRoutes';
+import { geneticEnvironmentalRoutes } from './articles/routes/geneticEnvironmentalRoutes';
+import { acquiredNeurodivergenceRoutes } from './articles/routes/acquiredNeurodivergenceRoutes';
 
-// --- THE MASTER MAP ---
+// 2. The Master Map
 const articleMap: RouteMap = {
-  // 1. Pour all the Core Neurodevelopmental routes in here instantly!
+  // All 7 Volumes seamlessly combined!
   ...coreNeurodevelopmentalRoutes,
-
-  // 2. We will keep these here temporarily until you build the other group files.
-  // We have commented out the ones you haven't built yet to prevent Vite crashes!
-  
-  // --- Learning Differences & Profiles ---
-  'dyscalculia': lazy(() => import('./articles/ArticleDyscalculia').then(m => ({ default: m.ArticleDyscalculia }))),
-  'dyscalculia-support': lazy(() => import('./articles/dyscalculia/DyscalculiaSupport').then(m => ({ default: m.DyscalculiaSupport }))),
-  'dyslexia': lazy(() => import('./articles/ArticleDyslexia').then(m => ({ default: m.ArticleDyslexia }))),
-  'dysgraphia': lazy(() => import('./articles/ArticleDysgraphia').then(m => ({ default: m.ArticleDysgraphia }))),
-  'nvld': lazy(() => import('./articles/ArticleNVLD').then(m => ({ default: m.ArticleNVLD }))),
-  'dld': lazy(() => import('./articles/ArticleDLD').then(m => ({ default: m.ArticleDLD }))),
-  'hyperlexia': lazy(() => import('./articles/ArticleHyperlexia').then(m => ({ default: m.ArticleHyperlexia }))),
-  'giftedness': lazy(() => import('./articles/ArticleGiftedness').then(m => ({ default: m.ArticleGiftedness }))),
-  'twice-exceptional': lazy(() => import('./articles/ArticleTwiceExceptional').then(m => ({ default: m.ArticleTwiceExceptional }))),
-
-  // --- Processing & Sensory ---
-  'apd': lazy(() => import('./articles/ArticleAPD').then(m => ({ default: m.ArticleAPD }))),
-  'visual-processing': lazy(() => import('./articles/ArticleVisualProcessing').then(m => ({ default: m.ArticleVisualProcessing }))),
-  'spd': lazy(() => import('./articles/ArticleSPD').then(m => ({ default: m.ArticleSPD }))),
-  'misophonia': lazy(() => import('./articles/ArticleMisophonia').then(m => ({ default: m.ArticleMisophonia }))),
-  'synesthesia': lazy(() => import('./articles/ArticleSynesthesia').then(m => ({ default: m.ArticleSynesthesia }))),
-
-  // --- Movement & Motor ---
-  'dyspraxia': lazy(() => import('./articles/ArticleDyspraxia').then(m => ({ default: m.ArticleDyspraxia }))),
-  'tourette': lazy(() => import('./articles/ArticleTourette').then(m => ({ default: m.ArticleTourette }))),
-
-  // --- Mental Health Crossovers ---
-  'ocd': lazy(() => import('./articles/ArticleOCD').then(m => ({ default: m.ArticleOCD }))),
-  'bipolar': lazy(() => import('./articles/ArticleBipolar').then(m => ({ default: m.ArticleBipolar }))),
-  'schizophrenia': lazy(() => import('./articles/ArticleSchizophrenia').then(m => ({ default: m.ArticleSchizophrenia }))),
-
-  // --- Genetic or Environmental ---
-  'down-syndrome': lazy(() => import('./articles/ArticleDownSyndrome').then(m => ({ default: m.ArticleDownSyndrome }))),
-  'intellectual-disability': lazy(() => import('./articles/ArticleIntellectualDisability').then(m => ({ default: m.ArticleIntellectualDisability }))),
-  'fasd': lazy(() => import('./articles/ArticleFASD').then(m => ({ default: m.ArticleFASD }))),
-  'epilepsy': lazy(() => import('./articles/ArticleEpilepsy').then(m => ({ default: m.ArticleEpilepsy }))),
-  'tbi': lazy(() => import('./articles/ArticleTBI').then(m => ({ default: m.ArticleTBI }))),
-  'cte': lazy(() => import('./articles/ArticleCTE').then(m => ({ default: m.ArticleCTE }))),
-  'pandas': lazy(() => import('./articles/ArticlePANDAS').then(m => ({ default: m.ArticlePANDAS }))),
+  ...learningDifferencesRoutes,
+  ...processingSensoryRoutes,
+  ...movementMotorRoutes,
+  ...mentalHealthRoutes,
+  ...geneticEnvironmentalRoutes,
+  ...acquiredNeurodivergenceRoutes,
 
   // --- Misc & Site Pages ---
   'symptom-wheel-demo': lazy(() => import('./SymptomWheelDemo').then(m => ({ default: m.SymptomWheelDemo }))),
@@ -74,7 +46,7 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
           A button just tried to load the article ID: <strong className="bg-white px-2 py-1 rounded text-red-600 border border-red-200">"{articleId}"</strong>
         </p>
         <p className="text-slate-700 mb-6">
-          However, that exact ID does not exist in your <code>articleMap</code>. Check your subgroup routing files (like coreNeurodevelopmentalRoutes.ts) to make sure it was added!
+          However, that exact ID does not exist in your <code>articleMap</code>. Check your subgroup routing files to make sure it was added!
         </p>
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
