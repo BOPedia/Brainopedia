@@ -84,8 +84,32 @@ interface ArticleContentProps {
 }
 
 export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentProps) {
-  const SelectedComponent = articleMap[articleId] || articleMap['adhd'];
+  // Try to find the component
+  const SelectedComponent = articleMap[articleId];
 
+  // IF THE LINK IS BROKEN OR MISSING: Show a helpful error instead of ADHD
+  if (!SelectedComponent) {
+    return (
+      <div className="bg-red-50 rounded-lg shadow-sm border border-red-200 p-8 text-center">
+        <h2 className="text-red-700 font-bold text-2xl mb-4">Link Error (Developer Debug)</h2>
+        <p className="text-slate-700 mb-2">
+          A button just tried to load the article ID: <strong className="bg-white px-2 py-1 rounded text-red-600 border border-red-200">"{articleId}"</strong>
+        </p>
+        <p className="text-slate-700 mb-6">
+          However, that exact ID does not exist in your <code>articleMap</code> in <strong>ArticleContent.tsx</strong>. 
+          Check the button you just clicked and make sure it matches the keys in your map exactly!
+        </p>
+        <button 
+          onClick={() => setCurrentArticle?.('adhd')}
+          className="bg-red-100 hover:bg-red-200 text-red-800 font-semibold py-2 px-6 rounded-lg transition-colors"
+        >
+          Reset to Home/ADHD
+        </button>
+      </div>
+    );
+  }
+
+  // IF THE LINK IS GOOD: Load the component normally
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
       <Suspense fallback={
