@@ -14,7 +14,7 @@ export function DiagnosticProcess() {
       <ImageWithFallback 
         src="/images/autism/autism-diagnosis-DiagProctab-checkmark-gold.png" 
         alt="Diagnostic Process Graphic with gold infinity and clipboard and"
-        className="w-full max-w-sm mx-auto mb-8 rounded-sm shadow-sm"
+        className="w-48 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
       />
       {/* ===== DIAGNOSTIC FRAMEWORKS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
