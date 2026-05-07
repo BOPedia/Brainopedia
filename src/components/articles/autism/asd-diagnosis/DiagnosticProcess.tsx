@@ -10,7 +10,7 @@ export function DiagnosticProcess() {
       <ImageWithFallback 
         src="/images/autism/autism-diagnosis-DiagProctab-checkmark-gold.png" 
         alt="Diagnostic Process Graphic with gold infinity and clipboard and"
-        className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
+        className="w-36 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
           />
           
       <h2 className="font-bold mb-4 text-2xl">Diagnostic Process & Tools</h2>
@@ -22,9 +22,7 @@ export function DiagnosticProcess() {
        
    </div>
    
-   
-   <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded flex items-start gap-3"></div>
-      {/* ===== DIAGNOSTIC FRAMEWORKS ===== */}
+         {/* ===== DIAGNOSTIC FRAMEWORKS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Diagnostic Frameworks (The "Rulebooks")</h3>
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
