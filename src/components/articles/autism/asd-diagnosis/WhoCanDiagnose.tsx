@@ -1,6 +1,6 @@
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 import { Stethoscope, MessageSquare, Hand, BookOpen, XCircle } from 'lucide-react';
-import React from 'react';
+
 
 export function WhoCanDiagnose() {
   // 1. ALL DATA LIVES HERE (Before the return statement)
@@ -275,7 +275,7 @@ export function WhoCanDiagnose() {
           </p>
         </div>
       </div>
-
     </div>
+  </div>
   );
 }
