@@ -72,7 +72,7 @@ export function AfterDiagnosis() {
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
-            src="/images/autism/autism-diagnosis-AfterDxtab-GoldInfinity-LightBulb" 
+            src="/images/autism/autism-diagnosis-AfterDxtab-GoldInfinity-LightBulb.png" 
             alt="lightbulb with gold infinity in it symbolizing autism"
           /> 
         </div> 
