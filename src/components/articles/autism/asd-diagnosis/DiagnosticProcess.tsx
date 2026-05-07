@@ -1,4 +1,5 @@
 import { Clock, Eye, Target, Star, MessageSquare, Dna, Microscope, Zap, Ear, Droplets } from 'lucide-react';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
 export function DiagnosticProcess() {
   return (
@@ -10,7 +11,11 @@ export function DiagnosticProcess() {
         current functioning.<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="American Psychiatric Association (2022)">[1]</sup> Early diagnosis enables earlier access to support and services, which 
         can significantly impact outcomes.
       </p>
-
+      <ImageWithFallback 
+        src="/images/autism/autism-diagnosis-DiagProctab-checkmark-gold.png" 
+        alt="Diagnostic Process Graphic with gold infinity and clipboard and"
+        className="w-full max-w-sm mx-auto mb-8 rounded-sm shadow-sm"
+      />
       {/* ===== DIAGNOSTIC FRAMEWORKS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Diagnostic Frameworks (The "Rulebooks")</h3>
