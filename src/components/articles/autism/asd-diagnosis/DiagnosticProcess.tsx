@@ -3,19 +3,26 @@ import { ImageWithFallback } from '../../../../components/figma/ImageWithFallbac
 
 export function DiagnosticProcess() {
   return (
-    <div className="bg-[#f0f9ff] p-6 rounded-lg">
-      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnostic Process & Tools</h2>
-      
-      <p className="mb-6">
-        Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, and 
-        current functioning.<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="American Psychiatric Association (2022)">[1]</sup> Early diagnosis enables earlier access to support and services, which 
-        can significantly impact outcomes.
-      </p>
+   <div className="space-y-6 text-[#0c264d] font-spartan">
+      {/* Introduction with Image Wrap */}
+      <div className="bg-[#f0f9ff] p-6 rounded-lg">
+        <div className="block">
       <ImageWithFallback 
         src="/images/autism/autism-diagnosis-DiagProctab-checkmark-gold.png" 
         alt="Diagnostic Process Graphic with gold infinity and clipboard and"
-        className="w-48 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-      />
+          />
+          
+      <h2 className="font-bold mb-4 text-2xl">Diagnostic Process & Tools</h2>
+         <p className="mb-6">
+          Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, and 
+          current functioning.<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="American Psychiatric Association (2022)">[1]</sup> Early diagnosis enables earlier access to support and services, which 
+          can significantly impact outcomes.
+          </p>
+        </div>   
+   </div>
+   
+   
+        <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded flex items-start gap-3"></div>
       {/* ===== DIAGNOSTIC FRAMEWORKS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Diagnostic Frameworks (The "Rulebooks")</h3>
