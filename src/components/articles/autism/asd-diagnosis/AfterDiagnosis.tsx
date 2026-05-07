@@ -11,7 +11,7 @@ export function AfterDiagnosis() {
           to understanding, support, community, and self-advocacy.
         </p>
       </div>
-
+      
       <p className="mb-6">
         Receiving an autism diagnosis can bring a mix of emotions—relief, grief, confusion, hope, or all of the above. 
         Whatever you're feeling is valid. Here's what typically comes next:
@@ -65,23 +65,21 @@ export function AfterDiagnosis() {
           </div>
         </div>
       </div>
-      {/* --- CENTERED GRAPHIC SECTION --- */} 
-        <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"> 
-        </p> 
 
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
-        <ImageWithFallback src="/images/autism/autism-diagnosis-AfterDxtab-GoldInfinity-LightBulb" alt="lightbulb with gold infinity in it symbolizing autism”
-        /> 
+          <ImageWithFallback 
+            src="/images/autism/autism-diagnosis-AfterDxtab-GoldInfinity-LightBulb" 
+            alt="lightbulb with gold infinity in it symbolizing autism"
+          /> 
         </div> 
-        </div>
+      </div>
        
-
       {/* Next Steps */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Next Steps After Diagnosis</h3>
-        
         <div className="space-y-4">
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">1. Learn About Autism</div>
@@ -91,7 +89,7 @@ export function AfterDiagnosis() {
               is a different way of being, not a disease.
             </div>
           </div>
-
+          
           <div className="border-l-2 border-[#2abcd4] pl-3">
             <div className="font-bold text-[#0c264d] mb-1">2. Connect with Community</div>
             <div className="text-sm">
@@ -138,19 +136,19 @@ export function AfterDiagnosis() {
           </div>
         </div>
       </div>
-       {/* --- CENTERED GRAPHIC SECTION --- */} 
-        <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"> 
-        </p> 
 
+      {/* --- CENTERED GRAPHIC SECTION 2 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
-        <ImageWithFallback src="/images/autism/autism-diagnosis-AfterDxtab-EducPlan.png" alt="kid frustrated by schoolwork" 
-        /> 
+          <ImageWithFallback 
+            src="/images/autism/autism-diagnosis-AfterDxtab-EducPlan.png" 
+            alt="kid frustrated by schoolwork" 
+          /> 
         </div> 
-        </div>
+      </div>
        
-
       {/* Educational Planning for Children */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Educational Planning (for Children)</h3>
@@ -229,17 +227,38 @@ export function AfterDiagnosis() {
         </p>
       </div>
 
-      {/* References */}
-      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        <p className="text-sm mb-2"><em>No inline citations for this tab.</em></p>
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <p className="text-xs text-slate-600 italic pl-2">
+            No inline citations for this tab.
+          </p>
+        </div>
         
-        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-        <div className="text-sm space-y-2">
-          <p>Kapp, S. K. (Ed.). (2020). <em>Autistic community and the neurodiversity movement: Stories from the frontline</em>. Palgrave Macmillan.</p>
-          <p>Pellicano, E., & den Houting, J. (2022). "Annual research review: Shifting from 'normal science' to neurodiversity in autism science." <em>Journal of Child Psychology and Psychiatry</em>, 63(4), 381-396.</p>
-          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              Kapp, S. K. (Ed.). (2020). <i>Autistic community and the neurodiversity movement: Stories from the frontline</i>. Palgrave Macmillan.
+            </li>
+            <li>
+              Pellicano, E., & den Houting, J. (2022). "Annual research review: Shifting from 'normal science' to neurodiversity in autism science." <i>Journal of Child Psychology and Psychiatry</i>, 63(4), 381-396.
+            </li>
+            <li>
+              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
