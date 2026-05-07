@@ -22,6 +22,18 @@ export function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElemen
       </div>
     </div>
   ) : (
-    <img src={src} alt={alt} className={className} style={style} {...rest} onError={handleError} />
+    <img 
+      src={src} 
+      alt={alt} 
+      className={className} 
+      style={style} 
+      {...rest} 
+      onError={handleError} 
+      
+      /* --- ANTI-THEFT FRICTION --- */
+      onContextMenu={(e) => e.preventDefault()} // Disables Right-Click "Save As"
+      onDragStart={(e) => e.preventDefault()}   // Disables Click-and-Drag to desktop
+      draggable="false"                         // Backup drag protection for older browsers
+    />
   )
 }
