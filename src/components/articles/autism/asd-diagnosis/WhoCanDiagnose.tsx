@@ -1,6 +1,33 @@
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 import { ASDDiagnosticProfessionals } from '../../../infographics/ASDDiagnosticProfessionals';
 import { Stethoscope, MessageSquare, Hand, BookOpen, XCircle } from 'lucide-react';
 
+export function WhoCanDiagnose() {
+  return (
+
+      <><div className="flex justify-center mb-6">
+
+
+      <ImageWithFallback
+        src="/images/autism/autism-diagnosis-WhoCantab-doctor-plays.png"
+        alt="Doctor playing with child during assessment"
+        className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm" />
+
+      <h2 className="font-bold mb-4 text-2xl">Professionals Qualified to Diagnose Autism</></h2><p className="mb-6">
+        Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, and
+        current functioning.
+      </p></>
+       
+
+      {/* SVG Infographic */}
+
+
+      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
+        <p className="text-sm">
+          <strong>Key Point:</strong> Autism diagnosis should be made by professionals with specific training and
+          experience in autism assessment. Not all medical or mental health professionals have this expertise.
+        </p>
+      </div>
 const professionals = [
   {
     credential: 'MD',
@@ -105,23 +132,8 @@ const cannotDiagnose = [
   },
   { label: 'Online "Autism Tests"', note: 'Cannot replace a professional evaluation' },
 ];
+    
 
-export function WhoCanDiagnose() {
-  return (
-    <div className="bg-[#f0f9ff] p-6 rounded-lg">
-      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Professionals Qualified to Diagnose Autism</h2>
-
-      {/* SVG Infographic */}
-      <div className="flex justify-center mb-6">
-        <ASDDiagnosticProfessionals />
-      </div>
-
-      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
-        <p className="text-sm">
-          <strong>Key Point:</strong> Autism diagnosis should be made by professionals with specific training and
-          experience in autism assessment. Not all medical or mental health professionals have this expertise.
-        </p>
-      </div>
 
       {/* Professionals Card Grid */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -200,55 +212,54 @@ export function WhoCanDiagnose() {
       </div>
 
       {/* Finding a Provider */}
-      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">How to Find a Qualified Professional</h3>
 
-        <div className="space-y-3">
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Ask About Autism Experience</div>
-            <div className="text-sm">
-              Look for providers who regularly diagnose autism. Ask: "How many autism evaluations do you conduct per
-              year?" and "Are you trained in ADOS-2 and ADI-R?"
-            </div>
-          </div>
+      <><div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+    <h3 className="text-[#0c264d] font-bold mb-4 text-lg">How to Find a Qualified Professional</h3>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Get Referrals</div>
-            <div className="text-sm">
-              Ask your pediatrician for referrals to autism specialists. Connect with local autism support organizations
-              for recommendations.
-            </div>
-          </div>
-
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Check University Centers</div>
-            <div className="text-sm">
-              Many universities have autism centers or developmental clinics that provide evaluations (may have wait
-              lists).
-            </div>
-          </div>
-
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Contact Early Intervention or School Districts</div>
-            <div className="text-sm">
-              For children under 3, contact Early Intervention services. For children 3+, contact your school
-              district's special education department — evaluations through schools are free.
-            </div>
-          </div>
+    <div className="space-y-3">
+      <div className="border-l-2 border-[#2abcd4] pl-3">
+        <div className="font-bold text-[#0c264d] mb-1">Ask About Autism Experience</div>
+        <div className="text-sm">
+          Look for providers who regularly diagnose autism. Ask: "How many autism evaluations do you conduct per
+          year?" and "Are you trained in ADOS-2 and ADI-R?"
         </div>
       </div>
 
-      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-        <p className="text-sm mb-2">
-          <strong>Important:</strong> Wait times for autism evaluations can be 6–18 months in many areas. Don't wait
-          to seek evaluation if you have concerns. You can also access Early Intervention services or school supports
-          while waiting for a formal diagnosis.
-        </p>
-        <p className="text-sm">
-          <strong>Cost:</strong> Evaluations can cost $1,500–$5,000 if not covered by insurance. Check your insurance
-          benefits. School-based evaluations are free but may not be as comprehensive as clinical evaluations.
-        </p>
+      <div className="border-l-2 border-[#2abcd4] pl-3">
+        <div className="font-bold text-[#0c264d] mb-1">Get Referrals</div>
+        <div className="text-sm">
+          Ask your pediatrician for referrals to autism specialists. Connect with local autism support organizations
+          for recommendations.
+        </div>
       </div>
+
+      <div className="border-l-2 border-[#2abcd4] pl-3">
+        <div className="font-bold text-[#0c264d] mb-1">Check University Centers</div>
+        <div className="text-sm">
+          Many universities have autism centers or developmental clinics that provide evaluations (may have wait
+          lists).
+        </div>
+      </div>
+
+      <div className="border-l-2 border-[#2abcd4] pl-3">
+        <div className="font-bold text-[#0c264d] mb-1">Contact Early Intervention or School Districts</div>
+        <div className="text-sm">
+          For children under 3, contact Early Intervention services. For children 3+, contact your school
+          district's special education department — evaluations through schools are free.
+        </div>
+      </div>
+    </div>
+  </div><div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
+      <p className="text-sm mb-2">
+        <strong>Important:</strong> Wait times for autism evaluations can be 6–18 months in many areas. Don't wait
+        to seek evaluation if you have concerns. You can also access Early Intervention services or school supports
+        while waiting for a formal diagnosis.
+      </p>
+      <p className="text-sm">
+        <strong>Cost:</strong> Evaluations can cost $1,500–$5,000 if not covered by insurance. Check your insurance
+        benefits. School-based evaluations are free but may not be as comprehensive as clinical evaluations.
+      </p>
+    </div></>
 
       {/* References */}
       <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
@@ -270,6 +281,6 @@ export function WhoCanDiagnose() {
           </p>
         </div>
       </div>
-    </div>
+    
   );
 }
