@@ -255,27 +255,38 @@ export function WhoCanDiagnose() {
         </p>
       </div>
 
-      {/* References */}
-      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+   {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
 
-        <p className="text-sm mb-2">
-          <em>No inline citations for this tab.</em>
-        </p>
-
-        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-        <div className="text-sm space-y-2">
-          <p>
-            American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em>{' '}
-            (5th ed.). American Psychiatric Publishing.
-          </p>
-          <p>
-            Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder."{' '}
-            <em>The Lancet</em>, 392(10146), 508–520.
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <p className="text-xs text-slate-600 italic pl-2">
+            No inline citations for this tab.
           </p>
         </div>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
+            </li>
+            <li>
+              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508–520.
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </div> 
   </div>
   );
 }
