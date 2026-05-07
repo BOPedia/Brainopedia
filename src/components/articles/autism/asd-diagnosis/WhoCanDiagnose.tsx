@@ -120,15 +120,12 @@ export function WhoCanDiagnose() {
           alt="Doctor playing with child during assessment"
           className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm" 
         />
-
-      {/* Key Point Box */}
-      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
-        <p className="text-sm">
-          <strong>Key Point:</strong> Autism diagnosis should be made by professionals with specific training and
-          experience in autism assessment. Not all medical or mental health professionals have this expertise.
-        </p>
-      </div>
-    </div>
+             <h2 className="font-bold mb-4 text-2xl">Professionals Who Can Diagnose Autism</h2>
+         <p className="mb-6">
+          Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, 
+          and current functioning. Autism diagnosis should be made by professionals with specific training and experience 
+          in autism assessment. Not all medical or mental health professionals have this expertise.
+          </p> 
 
       {/* Professionals Card Grid */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
