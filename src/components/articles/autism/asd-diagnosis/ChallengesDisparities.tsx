@@ -1,4 +1,5 @@
 import { Users, UserX, Clock, ShieldAlert, Globe, DollarSign, CreditCard, GraduationCap, Shuffle, EyeOff, Brain, Layers, UserMinus, Fingerprint, BrainCircuit, AlertTriangle, MessageCircleOff, Zap, Moon, Apple, UtensilsCrossed, Heart } from 'lucide-react';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 export function ChallengesDisparities() {
   return (
@@ -61,6 +62,18 @@ export function ChallengesDisparities() {
           </div>
         </div>
       </div>
+        {/* --- CENTERED GRAPHIC SECTION --- */} 
+        <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"> Visualizing repetitive patterns and sensory processing 
+        </p> 
+
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+        <ImageWithFallback src="/images/autism/autism-diagnosis-ChallDisptab-genderracial.png" alt="side views of variety of females" 
+        /> 
+        </div> 
+        </div>
+        
 
       {/* Racial and Ethnic Disparities */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -369,22 +382,43 @@ export function ChallengesDisparities() {
         </p>
       </div>
 
-      {/* References */}
-      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+{/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-        <div className="text-sm space-y-2">
-          <p>[1] Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 56(6), 466-474.</p>
-          <p>[2] Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <em>Journal of Autism and Developmental Disorders</em>, 47(8), 2519-2534.</p>
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.
+            </li>
+            <li>
+              Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <i>Journal of Autism and Developmental Disorders</i>, 47(8), 2519-2534.
+            </li>
+          </ol>
         </div>
         
-        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-        <div className="text-sm space-y-2">
-          <p>Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <em>The Lancet</em>, 383(9920), 896-910.</p>
-          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <i>The Lancet</i>, 383(9920), 896-910.
+            </li>
+            <li>
+              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  
   );
 }

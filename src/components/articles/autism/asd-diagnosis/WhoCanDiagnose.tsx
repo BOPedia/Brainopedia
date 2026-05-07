@@ -123,8 +123,8 @@ export function WhoCanDiagnose() {
              <h2 className="font-bold mb-4 text-2xl">Professionals Who Can Diagnose Autism</h2>
          <p className="mb-6">
           Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, 
-          and current functioning. Autism diagnosis should be made by professionals with specific training and experience 
-          in autism assessment. Not all medical or mental health professionals have this expertise.
+          and current functioning. An autism diagnosis should be made by professionals with specific training and experience 
+          in autism assessment. Not all medical  or mental health professionals have this expertise.
           </p> 
 
       {/* Professionals Card Grid */}
