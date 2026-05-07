@@ -64,7 +64,7 @@ export function ChallengesDisparities() {
       </div>
         {/* --- CENTERED GRAPHIC SECTION --- */} 
         <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"> Visualizing repetitive patterns and sensory processing 
+        <p className="text-[#0c264d] mb-4 italic"> 
         </p> 
 
         {/* The Wrapper: Centers the image and restricts its width */} 

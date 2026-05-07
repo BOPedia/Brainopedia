@@ -1,3 +1,5 @@
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
+
 export function AfterDiagnosis() {
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
@@ -63,6 +65,18 @@ export function AfterDiagnosis() {
           </div>
         </div>
       </div>
+      {/* --- CENTERED GRAPHIC SECTION --- */} 
+        <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"> 
+        </p> 
+
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+        <ImageWithFallback src="/images/autism/autism-diagnosis-AfterDxtab-GoldInfinity-LightBulb" alt="lightbulb with gold infinity in it symbolizing autism”
+        /> 
+        </div> 
+        </div>
+       
 
       {/* Next Steps */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -124,6 +138,18 @@ export function AfterDiagnosis() {
           </div>
         </div>
       </div>
+       {/* --- CENTERED GRAPHIC SECTION --- */} 
+        <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"> 
+        </p> 
+
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+        <ImageWithFallback src="/images/autism/autism-diagnosis-AfterDxtab-EducPlan.png" alt="kid frustrated by schoolwork" 
+        /> 
+        </div> 
+        </div>
+       
 
       {/* Educational Planning for Children */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
