@@ -114,7 +114,7 @@ export function WhoCanDiagnose() {
   return (
     <div className="space-y-6"> {/* Master wrapper for the whole page */}
       
-      {/* Intro Section */}
+     {/* Intro Section */}
       <div className="block mb-6">
         <ImageWithFallback
           src="/images/autism/autism-diagnosis-WhoCantab-doctor-plays.png"
@@ -126,6 +126,11 @@ export function WhoCanDiagnose() {
           Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, and
           current functioning.
         </p>
+      </div> 
+
+      {/* --- YOUR INFOGRAPHIC GOES RIGHT HERE --- */}
+      <div className="mb-8 flex justify-center">
+        <ASDDiagnosticProfessionals />
       </div> 
 
       {/* Key Point Box */}
