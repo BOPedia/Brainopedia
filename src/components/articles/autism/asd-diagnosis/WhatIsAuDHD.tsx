@@ -1,3 +1,5 @@
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
+
 export function WhatIsAuDHD() {
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
@@ -10,6 +12,18 @@ export function WhatIsAuDHD() {
         and support needs.
       </p>
 
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-diagnosis-WhatAuDHDtab-Lightning-Gold Infinity.png" 
+            alt="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
+          /> 
+        </div> 
+      </div>
+ 
       {/* Prevalence and Co-occurrence */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">How Common is AuDHD?</h3>
