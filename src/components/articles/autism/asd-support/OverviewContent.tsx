@@ -1,3 +1,5 @@
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
+
 export function OverviewContent() {
   return (
     <>
@@ -11,7 +13,19 @@ export function OverviewContent() {
           people thrive as themselves, not to make them "indistinguishable from their peers."<sup className="text-[#10b981]">[2]</sup> Effective 
           support respects neurodiversity while providing accommodations and skills to navigate a neurotypical world.
         </p>
-
+   
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-support-Overvtab-philosph.png" 
+            alt="abstract painting of philosophy and support"
+          /> 
+        </div> 
+      </div>
+      
         <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6 mb-4">
           <h3 className="text-[#0c264d] font-bold mb-3">Core Support Principles:</h3>
           <ul className="text-sm space-y-2">
@@ -28,7 +42,19 @@ export function OverviewContent() {
           </ul>
         </div>
       </div>
-
+   
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-support-Overvtab-harmful.png" 
+            alt="doctor explaining approaches photo"
+          /> 
+        </div> 
+      </div>
+      
       {/* Unsupported Treatments */}
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Unsupported and Harmful "Treatments" to Avoid</h2>
