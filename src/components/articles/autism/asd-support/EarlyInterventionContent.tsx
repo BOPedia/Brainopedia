@@ -103,14 +103,15 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
       <div className="text-center w-full mb-8"> 
         <p className="text-[#0c264d] mb-4 italic"></p> 
-        {/* The Wrapper: Centers the image and restricts its width */} 
-        <div className="mx-auto w-48 md:w-64"> 
+        {/* The Wrapper: Centers the image, makes it responsive, and sets a large maximum limit */} 
+        <div className="mx-auto w-full max-w-2xl px-4"> 
           <ImageWithFallback 
             src="/images/autism/autism-support-EarlyIntervtab-ResStartegies.png" 
             alt="Brainopedia roadmap showing path of EI"
           /> 
         </div> 
       </div>
+
 
         {/* Researching Strategies */}
         <div className="bg-[#e0f7fa] p-6 rounded-lg mb-8">
@@ -360,8 +361,9 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
       <div className="text-center w-full mb-8"> 
         <p className="text-[#0c264d] mb-4 italic"></p> 
-        {/* The Wrapper: Centers the image and restricts its width */} 
-        <div className="mx-auto w-48 md:w-64"> 
+        {/* The Wrapper: Centers the image, makes it responsive, and sets a large maximum limit */} 
+        <div className="mx-auto w-full max-w-xl px-4"> 
+
           <ImageWithFallback 
             src="/images/autism/autism-support-EarlyIntervtab-road-thru-the-years.png" 
             alt="road symbolizing autism journey"
