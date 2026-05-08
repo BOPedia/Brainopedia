@@ -42,18 +42,6 @@ export function OverviewContent() {
           </ul>
         </div>
       </div>
-   
-      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
-      <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"></p> 
-        {/* The Wrapper: Centers the image and restricts its width */} 
-        <div className="mx-auto w-48 md:w-64"> 
-          <ImageWithFallback 
-            src="/images/autism/autism-support-Overvtab-harmful.png" 
-            alt="doctor explaining approaches photo"
-          /> 
-        </div> 
-      </div>
       
       {/* Unsupported Treatments */}
       <div>
@@ -76,6 +64,20 @@ export function OverviewContent() {
           Always consult with qualified medical professionals and be skeptical of "miracle cures" or treatments 
           promising to eliminate autism.<sup>[56]</sup>
         </p>
+
+    
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-support-Overvtab-harmful.png" 
+            alt="doctor explaining approaches photo"
+          /> 
+        </div> 
+      </div>
+             
       </div>
     </>
   );

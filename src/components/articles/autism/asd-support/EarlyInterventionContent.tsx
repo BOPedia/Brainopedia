@@ -1,3 +1,5 @@
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
+
 interface EarlyInterventionContentProps {
   setCurrentArticle?: (article: string) => void;
 }
@@ -13,7 +15,18 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           A person-centered approach focuses on understanding symptoms, implementing effective strategies, and 
           connecting with appropriate services to improve individual lives.<sup>[3]</sup>
         </p>
-
+    
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-support-EarlyIntervtab-ages0to3.png" 
+            alt="arrows surrounding brain symbolizing early intervention"
+          /> 
+        </div> 
+      </div>
         {/* Early Intervention Services */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Early Intervention Services</h3>
@@ -86,6 +99,18 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             individual.<sup>[10]</sup>
           </p>
         </div>
+
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-support-EarlyIntervtab-ResStartegies.png" 
+            alt="Brainopedia roadmap showing path of EI"
+          /> 
+        </div> 
+      </div>
 
         {/* Researching Strategies */}
         <div className="bg-[#e0f7fa] p-6 rounded-lg mb-8">
@@ -332,7 +357,17 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             environments, and respect the child's neurodivergent development.<sup>[10]</sup>
           </p>
         </div>
-
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-support-EarlyIntervtab-road-thru-the-years.png" 
+            alt="road symbolizing autism journey"
+          /> 
+        </div> 
+      </div>
         {/* Key Principle Callout */}
         <div className="bg-[#ffd166] border-2 border-[#0c264d] p-5 rounded-lg shadow-md">
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg flex items-center gap-2">
