@@ -102,7 +102,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         <div className="mx-auto w-full max-w-xl px-4"> 
 
           <ImageWithFallback 
-            src="/images/autism-support-TTtab-decisions.png" 
+            src="/images/autism/autism-support-TTtab-decisions.png" 
             alt="decisions arrows pic - different directions"
           /> 
         </div> 
@@ -185,7 +185,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         <div className="mx-auto w-full max-w-xl px-4"> 
 
           <ImageWithFallback 
-            src="/images/autism-support-TTtab-redflags.png" 
+            src="/images/autism/autism-support-TTtab-redflags.png" 
             alt="red flags flying outside symbolizing the idea of be wary when needed"
           /> 
         </div> 
