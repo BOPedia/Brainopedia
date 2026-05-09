@@ -1,3 +1,5 @@
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
+
 export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (article: string) => void }) {
   return (
 
@@ -10,7 +12,18 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
           approach is highly individualized and should be based on the person's specific strengths, challenges, and 
           goals—not on trying to make someone appear less autistic.<sup>[11]</sup>
         </p>
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image, makes it responsive, and sets a large maximum limit */} 
+        <div className="mx-auto w-full max-w-xl px-4"> 
 
+          <ImageWithFallback 
+            src="/images/autism/autism-support-TTtab-acronyms.png" 
+            alt="4 examples of therapies with acronyms"
+          /> 
+        </div> 
+      </div>
         <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Speech and Language Therapy</h3>
           <p className="mb-4">
@@ -82,7 +95,18 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
             Not every autistic person needs every type of therapy. The right combination depends on individual needs, goals, 
             and priorities.<sup>[28]</sup>
           </p>
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image, makes it responsive, and sets a large maximum limit */} 
+        <div className="mx-auto w-full max-w-xl px-4"> 
 
+          <ImageWithFallback 
+            src="/images/autism-support-TTtab-decisions.png" 
+            alt="decisions arrows pic - different directions"
+          /> 
+        </div> 
+      </div>
           <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">
             <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Decision-Making Framework</h3>
             <p className="mb-6 text-sm">
@@ -154,7 +178,18 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
               </div>
             </div>
           </div>
+      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the image, makes it responsive, and sets a large maximum limit */} 
+        <div className="mx-auto w-full max-w-xl px-4"> 
 
+          <ImageWithFallback 
+            src="/images/autism-support-TTtab-redflags.png" 
+            alt="red flags flying outside symbolizing the idea of be wary when needed"
+          /> 
+        </div> 
+      </div>
           {/* Red Flags in Therapy */}
           <div className="bg-[#e0f7fa] p-6 rounded-lg mb-8">
             <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Red Flags to Watch For</h3>
