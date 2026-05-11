@@ -1,8 +1,14 @@
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 import { Stethoscope, MessageSquare, Hand, BookOpen, XCircle } from 'lucide-react';
+/* ─── THE GUEST LIST (Interface) ─── */
+interface WhoCanDiagnoseProps {
+  setCurrentArticle?: (article: string) => void;
+}
 
+/* ─── MAIN COMPONENT ─── */
+export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
+  return 
 
-export function WhoCanDiagnose() {
   // 1. ALL DATA LIVES HERE (Before the return statement)
   const professionals = [
     {

@@ -1,8 +1,15 @@
 import { Users, UserX, Clock, ShieldAlert, Globe, DollarSign, CreditCard, GraduationCap, Shuffle, EyeOff, Brain, Layers, UserMinus, Fingerprint, BrainCircuit, AlertTriangle, MessageCircleOff, Zap, Moon, Apple, UtensilsCrossed, Heart } from 'lucide-react';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
-export function ChallengesDisparities() {
+/* ─── THE GUEST LIST (Interface) ─── */
+interface ChallengesDisparitiesProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+/* ─── MAIN COMPONENT ─── */
+export function ChallengesDisparities({ setCurrentArticle }: ChallengesDisparitiesProps) {
   return (
+    
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnostic Challenges & Disparities</h2>
       

@@ -1,8 +1,15 @@
 import { Clock, Eye, Target, Star, MessageSquare, Dna, Microscope, Zap, Ear, Droplets } from 'lucide-react';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
-export function DiagnosticProcess() {
+/* ─── THE GUEST LIST (Interface) ─── */
+interface DiagnosticProcessProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+/* ─── MAIN COMPONENT ─── */
+export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps) {
   return (
+
    <div className="space-y-6 text-[#0c264d] font-spartan">
       {/* Introduction with Image Wrap */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg">

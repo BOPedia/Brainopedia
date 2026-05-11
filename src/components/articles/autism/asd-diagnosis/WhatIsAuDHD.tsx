@@ -1,7 +1,14 @@
 import { ImageWithFallback } from "../../../figma/ImageWithFallback";
 
-export function WhatIsAuDHD() {
+/* ─── THE GUEST LIST (Interface) ─── */
+interface WhatIsAuDHDProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+/* ─── MAIN COMPONENT ─── */
+export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
   return (
+
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is AuDHD?</h2>
       
