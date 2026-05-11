@@ -40,10 +40,10 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         </p>
         
         <ul className="text-sm space-y-2 ml-6 mb-4">
-          <li className="mb-2">• <strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup>[1]</sup></li>
-          <li className="mb-2">• <strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup>[2]</sup></li>
+          <li className="mb-2">• <strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup>1</sup></li>
+          <li className="mb-2">• <strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup>2</sup></li>
           <li className="mb-2">• Until the DSM-5 (2013), dual diagnosis was not officially permitted, leading to historical underdiagnosis</li>
-          <li className="mb-2">• Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup>[3]</sup></li>
+          <li className="mb-2">• Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup>3</sup></li>
         </ul>
 
         <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
@@ -247,7 +247,7 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
           <strong>Best Practice:</strong> Comprehensive evaluation should systematically assess for both conditions, 
           especially when initial interventions for one diagnosis don't fully address the individual's challenges. 
           Studies show that many autistic individuals benefit from ADHD-specific interventions once ADHD is 
-          properly identified.<sup>[4]</sup>
+          properly identified.<sup>4</sup>
         </p>
       </div>
 
@@ -325,22 +325,46 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         </ul>
       </div>
 
-      {/* References */}
-      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-        <div className="text-sm space-y-2">
-          <p>[1] Antshel, K. M., & Russo, N. (2019). "Autism spectrum disorders and ADHD: Overlapping phenomenology, diagnostic issues, and treatment considerations." <em>Current Psychiatry Reports</em>, 21(5), 34.</p>
-          <p>[2] Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <em>Frontiers in Human Neuroscience</em>, 8, 268.</p>
-          <p>[3] Jang, J., Matson, J. L., Williams, L. W., et al. (2013). "Rates of comorbid symptoms in children with ASD, ADHD, and comorbid ASD and ADHD." <em>Research in Developmental Disabilities</em>, 34(8), 2369-2378.</p>
-          <p>[4] Mulligan, A., Anney, R. J., O'Regan, M., et al. (2009). "Autism symptoms in attention-deficit/hyperactivity disorder: A familial trait which correlates with conduct, oppositional defiant, language and motor disorders." <em>Journal of Autism and Developmental Disorders</em>, 39(2), 197-209.</p>
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Antshel, K. M., & Russo, N. (2019). "Autism spectrum disorders and ADHD: Overlapping phenomenology, diagnostic issues, and treatment considerations." <i>Current Psychiatry Reports</i>, 21(5), 34.
+            </li>
+            <li>
+              Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <i>Frontiers in Human Neuroscience</i>, 8, 268.
+            </li>
+            <li>
+              Jang, J., Matson, J. L., Williams, L. W., et al. (2013). "Rates of comorbid symptoms in children with ASD, ADHD, and comorbid ASD and ADHD." <i>Research in Developmental Disabilities</i>, 34(8), 2369-2378.
+            </li>
+            <li>
+              Mulligan, A., Anney, R. J., O'Regan, M., et al. (2009). "Autism symptoms in attention-deficit/hyperactivity disorder: A familial trait which correlates with conduct, oppositional defiant, language and motor disorders." <i>Journal of Autism and Developmental Disorders</i>, 39(2), 197-209.
+            </li>
+          </ol>
         </div>
         
-        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-        <div className="text-sm space-y-2">
-          <p>American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
-          <p>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <em>The Lancet</em>, 392(10146), 508-520.</p>
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
+            </li>
+            <li>
+              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
