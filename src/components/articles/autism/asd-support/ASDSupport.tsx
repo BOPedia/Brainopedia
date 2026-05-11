@@ -82,13 +82,14 @@ export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
 
       {/* --- CONTENT SECTION --- */}
       <div className="space-y-8">
-        {activeTab === 'overview' && <OverviewContent />}
-        {activeTab === 'early-intervention' && <EarlyInterventionContent />}
-        {activeTab === 'therapies' && <TherapiesContent />}
-        {activeTab === 'educational' && <EducationalContent />}
-        {activeTab === 'medical' && <MedicalContent />}
-        {activeTab === 'environmental' && <EnvironmentalContent />}
-        {activeTab === 'family' && <FamilyPrinciplesContent />}
+        {/* WE PLUGGED THE CORD IN HERE! */}
+        {activeTab === 'overview' && <OverviewContent setCurrentArticle={setCurrentArticle} />}
+        {activeTab === 'early-intervention' && <EarlyInterventionContent setCurrentArticle={setCurrentArticle} />}
+        {activeTab === 'therapies' && <TherapiesContent setCurrentArticle={setCurrentArticle} />}
+        {activeTab === 'educational' && <EducationalContent setCurrentArticle={setCurrentArticle} />}
+        {activeTab === 'medical' && <MedicalContent setCurrentArticle={setCurrentArticle} />}
+        {activeTab === 'environmental' && <EnvironmentalContent setCurrentArticle={setCurrentArticle} />}
+        {activeTab === 'family' && <FamilyPrinciplesContent setCurrentArticle={setCurrentArticle} />}
         
         {/* --- REFERENCES SECTION --- */} 
         <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
