@@ -1,6 +1,12 @@
 import React from 'react';
 
-export function EducationEmploymentContent() {
+/* ─── THE GUEST LIST (Interface) ─── */
+interface EducationEmploymentContentProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+/* ─── MAIN COMPONENT ─── */
+export function EducationEmploymentContent({ setCurrentArticle }: EducationEmploymentContentProps) {
   return (
     <div className="animate-fadeIn">
       <section className="mb-10">
@@ -13,7 +19,7 @@ export function EducationEmploymentContent() {
           <div>
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Higher Education</h3>
             <p className="mb-4 text-gray-700 leading-relaxed">
-              Increasing numbers of autistic students are pursuing college degrees, bringing deep focus and original thinking to academia:
+              Increasing numbers of autistic students are pursuing college degrees, bringing deep focus and original thinking to academia:<sup>1</sup>
             </p>
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li><strong>Strengths:</strong> Intense dedication to subjects of interest and a high aptitude for detailed research.</li>
@@ -26,23 +32,24 @@ export function EducationEmploymentContent() {
           <div>
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Employment & The Workplace</h3>
             <p className="mb-4 text-gray-700 leading-relaxed">
-              While employment rates remain a challenge, neurodiversity hiring initiatives are beginning to recognize the immense value autistic employees bring to the workforce:
+              Autistic adults face disproportionately high rates of un- and underemployment, despite possessing valuable skills. Standard interview processes often screen out capable autistic candidates by prioritizing neurotypical social skills over job-related competencies.<sup>2</sup>
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-              <div className="bg-[#2abcd4]/10 p-4 rounded-lg border-l-4 border-[#2abcd4]">
-                <h4 className="font-bold text-[#0c264d] mb-2">Common Strengths</h4>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 mb-6">
+              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-400">
+                <h4 className="font-bold text-[#0c264d] mb-2">Common Barriers</h4>
                 <ul className="text-sm space-y-1 text-gray-700">
-                  <li>• Pattern recognition & logic</li>
-                  <li>• Unwavering honesty & integrity</li>
-                  <li>• Deep technical expertise</li>
-                  <li>• Sustained focus on complex tasks</li>
+                  <li>• Sensory-hostile open office plans</li>
+                  <li>• Unwritten social rules and office politics</li>
+                  <li>• Vague or ambiguous instructions</li>
+                  <li>• The social demands of networking</li>
                 </ul>
               </div>
-              <div className="bg-[#ffd166]/10 p-4 rounded-lg border-l-4 border-[#ffd166]">
+
+              <div className="bg-green-50 p-4 rounded-lg border-l-4 border-[#10b981]">
                 <h4 className="font-bold text-[#0c264d] mb-2">Effective Accommodations</h4>
                 <ul className="text-sm space-y-1 text-gray-700">
-                  <li>• Flexible or remote work options</li>
+                  <li>• Flexible or remote work options<sup>3</sup></li>
                   <li>• Written rather than verbal instructions</li>
                   <li>• Sensory-friendly workspaces</li>
                   <li>• Explicit, clear feedback loops</li>
@@ -57,15 +64,42 @@ export function EducationEmploymentContent() {
         </div>
       </section>
 
-      {/* --- TAB-SPECIFIC REFERENCES --- */}
-      <section className="mt-12 pt-6 border-t-2 border-gray-200">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Section References</h3>
-        <ol className="list-decimal ml-5 space-y-3 text-sm text-gray-600">
-          <li>Hurley-Hanson, A. E., et al. (2020). Extreme Loneliness: The Status of the Autistic Workforce.</li>
-          <li>Gurbuz, N., et al. (2019). Employment outcomes for autistic adults: Enablers and barriers to employment.</li>
-          <li>Van Hees, V., et al. (2015). Higher education for students with ASD: Challenges and support needs.</li>
-        </ol>
-      </section>
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Van Hees, V., Moyson, T., & Roeyers, H. (2015). "Higher education experiences of students with autism spectrum disorder: Challenges, benefits and support needs." <i>Journal of Autism and Developmental Disorders</i>, 45(6), 1673-1688.
+            </li>
+            <li>
+              Hurley-Hanson, A. E., Giannantonio, C. M., & Griffiths, A. J. (2020). "Extreme loneliness: The status of the autistic workforce." <i>Journal of Business and Management</i>, 26(1), 1-25.
+            </li>
+            <li>
+              Gurbuz, N., Hanley, M., & Riby, D. M. (2019). "Employment outcomes for autistic adults: Enablers and barriers to employment." <i>Autism</i>, 23(3), 617-631.
+            </li>
+          </ol>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
