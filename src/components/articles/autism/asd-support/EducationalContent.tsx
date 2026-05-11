@@ -4,7 +4,7 @@ interface EducationalContentProps {
   setCurrentArticle?: (article: string) => void;
 }
 
-export function EducationalContent() {
+export function EducationalContent({ setCurrentArticle }: EducationalContentProps) {
   return (
     <>
       <div>

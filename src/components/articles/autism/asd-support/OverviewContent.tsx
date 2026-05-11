@@ -1,6 +1,10 @@
 import { ImageWithFallback } from "../../../figma/ImageWithFallback";
 
-export function OverviewContent() {
+interface OverviewContentProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+export function OverviewContent({ setCurrentArticle }: OverviewContentProps) {
   return (
     <>
       {/* Introduction */}
