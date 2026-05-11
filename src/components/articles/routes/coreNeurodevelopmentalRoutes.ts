@@ -36,9 +36,11 @@ export const coreNeurodevelopmentalRoutes: RouteMap = {
   'autism-environmental': lazy(() => import('../autism/asd-support/EnvironmentalContent').then(m => ({ default: m.EnvironmentalContent }))),
   'autism-family': lazy(() => import('../autism/asd-support/FamilyPrinciplesContent').then(m => ({ default: m.FamilyPrinciplesContent }))),
   
-  // Autism Specific Therapy Deep Dives
-  'autism-occupational-therapy': lazy(() => import('../autism/asd-support/OccupationalTherapy').then(m => ({ default: m.OccupationalTherapy }))),
+  /// ==========================================
+  // AUTISM THERAPIES & SUPPORT
+  // ==========================================
   'autism-speech-therapy': lazy(() => import('../autism/asd-support/SpeechTherapy').then(m => ({ default: m.SpeechTherapy }))),
+  'autism-occupational-therapy': lazy(() => import('../autism/asd-support/OccupationalTherapy').then(m => ({ default: m.OccupationalTherapy }))),
   'autism-aba-therapy': lazy(() => import('../autism/asd-support/ABATherapy').then(m => ({ default: m.ABATherapy }))),
   'autism-social-skills': lazy(() => import('../autism/asd-support/SocialSkills').then(m => ({ default: m.SocialSkills }))),
   'autism-mental-health': lazy(() => import('../autism/asd-support/MentalHealth').then(m => ({ default: m.MentalHealth }))),
