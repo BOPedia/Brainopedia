@@ -1,5 +1,6 @@
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 import { Stethoscope, MessageSquare, Hand, BookOpen, XCircle } from 'lucide-react';
+
 /* ─── THE GUEST LIST (Interface) ─── */
 interface WhoCanDiagnoseProps {
   setCurrentArticle?: (article: string) => void;
