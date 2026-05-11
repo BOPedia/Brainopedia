@@ -1,7 +1,14 @@
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
-export function SocialCommunication() {
+/* ─── THE GUEST LIST (Interface) ─── */
+interface SocialCommunicationProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+/* ─── MAIN COMPONENT ─── */
+export function SocialCommunication({ setCurrentArticle }: SocialCommunicationProps) {
   return (
+    
     <div className="space-y-6">
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Social Communication and Interaction Differences</h2>
@@ -118,20 +125,44 @@ export function SocialCommunication() {
         </div>
       </div>
 
-      {/* References */}
-      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        <p className="text-sm mb-2"><em>No inline citations for this tab.</em></p>
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <p className="text-xs text-slate-600 italic pl-2">
+            No inline citations for this tab.
+          </p>
+        </div>
         
-        <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-        <div className="text-sm space-y-2">
-          <p>American Psychiatric Association. (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). American Psychiatric Publishing.</p>
-          <p>Chevallier, C., Kohls, G., Troiani, V., Brodkin, E. S., & Schultz, R. T. (2012). "The social motivation theory of autism." <em>Trends in Cognitive Sciences</em>, 16(4), 231-239.</p>
-          <p>Milton, D. E. M. (2012). "On the ontological status of autism: The 'double empathy problem.'" <em>Disability & Society</em>, 27(6), 883-887.</p>
-          <p>Scheeren, A. M., Koot, H. M., & Begeer, S. (2012). "Social interaction style of children and adolescents with high-functioning autism spectrum disorder." <em>Journal of Autism and Developmental Disorders</em>, 42(10), 2092-2107.</p>
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
+            </li>
+            <li>
+              Chevallier, C., Kohls, G., Troiani, V., Brodkin, E. S., & Schultz, R. T. (2012). "The social motivation theory of autism." <i>Trends in Cognitive Sciences</i>, 16(4), 231-239.
+            </li>
+            <li>
+              Milton, D. E. M. (2012). "On the ontological status of autism: The 'double empathy problem.'" <i>Disability & Society</i>, 27(6), 883-887.
+            </li>
+            <li>
+              Scheeren, A. M., Koot, H. M., & Begeer, S. (2012). "Social interaction style of children and adolescents with high-functioning autism spectrum disorder." <i>Journal of Autism and Developmental Disorders</i>, 42(10), 2092-2107.
+            </li>
+          </ul>
         </div>
       </div>
+      
     </div>
   );
 }
