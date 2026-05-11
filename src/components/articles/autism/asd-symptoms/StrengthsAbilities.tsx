@@ -1,7 +1,13 @@
 import React from 'react';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
-export function StrengthsAbilities() {
+/* ─── THE GUEST LIST (Interface) ─── */
+interface StrengthsAbilitiesProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+/* ─── MAIN COMPONENT ─── */
+export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProps) {
   return (
     <div className="space-y-6">
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
@@ -40,6 +46,39 @@ export function StrengthsAbilities() {
           </p>
         </div>
       </div>
+
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <p className="text-xs text-slate-600 italic pl-2">
+            No inline citations for this tab.
+          </p>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              Mottron, L. (2011). "Changing perceptions: The power of autism." <i>Nature</i>, 479(7371), 33-35.
+            </li>
+            <li>
+              Russell, G., Kapp, S. K., Elliott, D., Elphick, C., Gwernan-Jones, R., & Kelly, C. (2019). "Mapping the autistic advantage from the accounts of adults diagnosed with autism: A qualitative study." <i>Autism in Adulthood</i>, 1(2), 124-133.
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   );
 }
