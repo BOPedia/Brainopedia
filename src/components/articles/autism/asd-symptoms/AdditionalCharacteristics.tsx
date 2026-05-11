@@ -17,7 +17,13 @@ const symptomData = [
   { category: 'Posture Issues', value: 3, fullMark: 10 },
 ];
 
-export function AdditionalCharacteristics() {
+/* ─── THE GUEST LIST (Interface) ─── */
+interface AdditionalCharacteristicsProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+/* ─── MAIN COMPONENT ─── */
+export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalCharacteristicsProps) {
   return (
     
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
@@ -37,7 +43,7 @@ export function AdditionalCharacteristics() {
         <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Executive Function Differences</h3>
           <p className="mb-4 text-sm">
-            Challenges in planning, organization, cognitive flexibility, working memory, and initiation.
+            Challenges in planning, organization, cognitive flexibility, working memory, and initiation.<sup>1</sup>
           </p>
           
           <div className="space-y-3">
@@ -119,7 +125,7 @@ export function AdditionalCharacteristics() {
               </div>
               <div className="border-l-2 border-[#2abcd4] pl-3">
                 <div className="font-bold text-[#0c264d] mb-1">Alexithymia</div>
-                <div className="text-sm">Difficulty identifying and describing one's own emotions (common in ~50% of autistic people)<sup>[50]</sup></div>
+                <div className="text-sm">Difficulty identifying and describing one's own emotions (common in ~50% of autistic people)<sup>2</sup></div>
               </div>
             </div>
             
@@ -140,7 +146,7 @@ export function AdditionalCharacteristics() {
         <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Motor Skills and Coordination</h3>
           <p className="mb-4 text-sm">
-            Challenges in motor coordination, motor planning, and unusual gait or movements.
+            Challenges in motor coordination, motor planning, and unusual gait or movements.<sup>3</sup>
           </p>
           
           <div className="space-y-3">
@@ -265,6 +271,47 @@ export function AdditionalCharacteristics() {
           />
         </div>
       </div>
+      
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Demetriou, E. A., Lampit, A., Quintana, D. S., et al. (2018). "Autism spectrum disorder: An executive function meta-analysis." <i>Neuroscience & Biobehavioral Reviews</i>, 84, 213-221.
+            </li>
+            <li>
+              Kinnaird, E., Stewart, C., & Tchanturia, K. (2019). "Investigating alexithymia in autism: A systematic review and meta-analysis." <i>European Psychiatry</i>, 55, 80-89.
+            </li>
+            <li>
+              Fournier, K. A., Hass, C. J., Naik, S. K., et al. (2010). "Motor coordination in autism spectrum disorders: A synthesis and meta-analysis." <i>Journal of Autism and Developmental Disorders</i>, 40(10), 1227-1240.
+            </li>
+          </ol>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
+            </li>
+            <li>
+              Fletcher-Watson, S., & Happé, F. (2019). <i>Autism: A new introduction to psychological theory and current debate</i>. Routledge.
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </div>
   );
 }
