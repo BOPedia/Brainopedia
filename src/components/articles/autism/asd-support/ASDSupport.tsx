@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 // Updated paths based on your articleMap directory structure
-import { ASDReferences } from '../ASDReferences';
 import { OverviewContent } from './OverviewContent';
 import { EarlyInterventionContent } from './EarlyInterventionContent';
 import { TherapiesContent } from './TherapiesContent';
@@ -82,7 +81,6 @@ export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
 
       {/* --- CONTENT SECTION --- */}
       <div className="space-y-8">
-        {/* WE PLUGGED THE CORD IN HERE! */}
         {activeTab === 'overview' && <OverviewContent setCurrentArticle={setCurrentArticle} />}
         {activeTab === 'early-intervention' && <EarlyInterventionContent setCurrentArticle={setCurrentArticle} />}
         {activeTab === 'therapies' && <TherapiesContent setCurrentArticle={setCurrentArticle} />}
@@ -90,14 +88,6 @@ export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
         {activeTab === 'medical' && <MedicalContent setCurrentArticle={setCurrentArticle} />}
         {activeTab === 'environmental' && <EnvironmentalContent setCurrentArticle={setCurrentArticle} />}
         {activeTab === 'family' && <FamilyPrinciplesContent setCurrentArticle={setCurrentArticle} />}
-        
-        {/* --- REFERENCES SECTION --- */} 
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
-        
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg">
-          <h3 className="font-bold mb-4 text-xl">References</h3>
-          <ASDReferences />
-        </div>
       </div>
 
       <div className="flex justify-end mt-8 mb-6">
