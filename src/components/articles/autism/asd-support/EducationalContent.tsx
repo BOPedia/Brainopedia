@@ -1,3 +1,9 @@
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
+
+interface EducationalContentProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
 export function EducationalContent() {
   return (
     <>

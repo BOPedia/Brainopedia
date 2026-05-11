@@ -1,4 +1,10 @@
-export function FamilyPrinciplesContent() {
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
+
+interface FamilyPrinciplesContentProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+export function FamilyPrinciplesContent({ setCurrentArticle }: FamilyPrinciplesContentProps) {
   return (
     <>
       {/* Family Support Section */}

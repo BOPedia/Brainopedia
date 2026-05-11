@@ -1,6 +1,13 @@
-export function MedicalContent() {
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
+
+interface MedicalContentProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+export function MedicalContent({ setCurrentArticle }: MedicalContentProps) {
   return (
     <>
+    
       <div>
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Medical Management</h2>
 

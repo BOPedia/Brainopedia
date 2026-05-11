@@ -1,4 +1,10 @@
-export function EnvironmentalContent() {
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
+
+interface EnvironmentalContentProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContentProps) {
   return (
     <>
       <div>
