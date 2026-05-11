@@ -8,8 +8,7 @@ interface WhoCanDiagnoseProps {
 
 /* ─── MAIN COMPONENT ─── */
 export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
-  return 
-
+  
   // 1. ALL DATA LIVES HERE (Before the return statement)
   const professionals = [
     {
@@ -120,19 +119,20 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
   return (
     <div className="space-y-6"> {/* Master wrapper for the whole page */}
       
-     {/* Intro Section */}
+      {/* Intro Section */}
       <div className="block mb-6">
         <ImageWithFallback
           src="/images/autism/autism-diagnosis-WhoCantab-doctor-plays.png"
           alt="Doctor playing with child during assessment"
           className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm" 
         />
-             <h2 className="font-bold mb-4 text-2xl">Professionals Who Can Diagnose Autism</h2>
-         <p className="mb-6">
+        <h2 className="font-bold mb-4 text-2xl">Professionals Who Can Diagnose Autism</h2>
+        <p className="mb-6">
           Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, 
           and current functioning. An autism diagnosis should be made by professionals with specific training and experience 
-          in autism assessment. Not all medical  or mental health professionals have this expertise.
-          </p> 
+          in autism assessment. Not all medical or mental health professionals have this expertise.
+        </p> 
+      </div>
 
       {/* Professionals Card Grid */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -262,7 +262,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
         </p>
       </div>
 
-   {/* ===== REFERENCES SECTION ===== */}
+      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
@@ -294,6 +294,5 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
         </div>
       </div>
     </div> 
-  </div>
   );
 }
