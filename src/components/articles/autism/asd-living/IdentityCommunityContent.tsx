@@ -28,14 +28,15 @@ export function IdentityCommunityContent({ setCurrentArticle }: IdentityCommunit
               <li><strong>Disclosure:</strong> Navigating when and how to share one's autistic identity with employers, friends, or the public.</li>
             </ul>
           </div>
-     {/* --- CENTERED GRAPHIC SECTION --- */} 
+     {/* --- CENTERED GRAPHICgit  SECTION --- */} 
         <div className="text-center w-full mb-8"> 
         <p className="text-[#0c264d] mb-4 italic"> 
         </p> 
 
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
-        <ImageWithFallback src="/images/autism/autism-living-ICtab-pastel-brain-infinity.png" alt="Brain with infinity symbol representing all neurodiversity"
+        <ImageWithFallback src="/images/autism/autism-living-ICtab-pastel-brain-infinity.png" 
+          alt="Brain with infinity symbol representing all neurodiversity"
         /> 
         </div> 
         </div>
