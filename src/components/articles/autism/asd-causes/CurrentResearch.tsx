@@ -90,8 +90,9 @@ export function CurrentResearch() {
               <li>Lyall, K., et al. (2017). "The changing epidemiology of autism spectrum disorders."</li>
             </ol>
           </div>
-          <div>
+        <div>
             
+
 
             <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
             <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800">
