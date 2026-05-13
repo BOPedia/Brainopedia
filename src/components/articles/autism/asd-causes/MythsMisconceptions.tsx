@@ -1,80 +1,122 @@
 import React from 'react';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
-export function MythsMisconceptions() {
+/* ─── THE GUEST LIST (Interface) ─── */
+interface MythsContentProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+/* ─── MAIN COMPONENT ─── */
+export function MythsContent({ setCurrentArticle }: MythsContentProps) {
   return (
-    <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
-      <h2 className="font-bold mb-4 text-2xl">Myths & Misconceptions</h2>
+    <div className="bg-[#e0f7fa] p-6 rounded-lg text-[#0c264d]">
+      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Common Myths & Misconceptions</h2>
       
-      <p className="mb-8 leading-relaxed">
-        Despite extensive scientific research, several persistent myths about the causes of autism continue to circulate. Understanding what does <strong>not</strong> cause autism is as important as understanding what does.
+      <p className="mb-8 leading-relaxed text-[#0c264d]">
+        Because autism was historically misunderstood by both the medical community and the media, several persistent myths continue to cause confusion. Clearing up these misconceptions is vital for creating a world that truly understands and supports autistic individuals.
       </p>
 
-      {/* Main Myth Highlight */}
-      <div className="bg-white rounded-xl shadow-md border-2 border-red-100 p-6 mb-10">
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="w-full md:w-1/3">
-            <ImageWithFallback 
-              src="/images/autism/autism-causes-Mythstab-vax.png" 
-              alt="Scientific debunking of vaccine myths"
-              className="w-full rounded-sm shadow-sm border-4 border-white"
-            />
-          </div>
-          <div className="w-full md:w-2/3">
-            <h3 className="text-red-600 font-bold text-xl mb-2 flex items-center gap-2">
-              <span>✗</span> The Vaccine Myth
-            </h3>
-            <p className="text-sm leading-relaxed mb-4">
-              Extensive global studies involving millions of children have consistently shown <strong>no link</strong> between vaccines (including the MMR vaccine) and autism.<sup className="text-green-600 font-bold ml-0.5">[1]</sup>
-            </p>
-            <div className="bg-green-50 p-3 rounded-md border-l-4 border-green-500">
-              <p className="text-xs text-green-800">
-                <strong>The Fact:</strong> The original 1998 study that suggested a link was found to be fraudulent and was retracted. Modern science confirms vaccines are safe and do not cause ASD.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-6 mb-10">
-        {/* Other Myths */}
-        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
-          <h3 className="font-bold mb-3 text-lg italic text-gray-500">"Refrigerator Mothers"</h3>
-          <p className="text-sm">
-            In the 1950s, a harmful theory suggested "cold" parenting caused autism. 
-            <strong> Science has totally debunked this.</strong> Autism is a biological developmental difference, not a result of parenting style.
-          </p>
-        </div>
-
-        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
-          <h3 className="font-bold mb-3 text-lg italic text-gray-500">Dietary Choices</h3>
-          <p className="text-sm">
-            While nutrition is important for overall health, specific foods or diets (like gluten or casein) are <strong>not causes</strong> of autism, nor are they "cures."
-          </p>
-        </div>
-      </div>
-
-      {/* --- REFERENCES SECTION --- */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
-      
-      <div className="bg-white bg-opacity-50 p-6 rounded-lg">
-        <h3 className="font-bold mb-4 text-xl">References</h3>
+      <div className="space-y-6 mb-10">
         
+        {/* MYTH 1: DIETS & GUT */}
+        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-indigo-400">
+          <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
+            <span className="text-red-500 mr-2">Myth:</span> Specific diets (like GFCF) can "cure" autism.
+          </h3>
+          <h4 className="font-bold text-green-600 mb-3 text-sm">
+            <span className="mr-2">Fact:</span> Diets don't change neurology, but they can alleviate severe, hidden physical pain.
+          </h4>
+          <p className="text-sm text-gray-700 leading-relaxed mb-3">
+            There is no diet that "cures" autism, but many parents report dramatic behavioral improvements when putting their child on a Gluten-Free/Casein-Free (GFCF) diet. Why? The answer lies in the gut. Research shows that autistic children are up to <strong>4 times more likely</strong> to experience chronic gastrointestinal (GI) issues, with 40% to 80% suffering from chronic abdominal pain or GI distress.<sup className="text-[#0c264d] font-extrabold ml-0.5">1</sup> 
+          </p>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            Many also experience what is colloquially called "leaky gut" (increased intestinal permeability), where the gut lining is inflamed.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup> If a child with severe GI inflammation is non-speaking or struggles with interoception (feeling internal body signals), they cannot say, "My stomach cramps when I eat wheat." They express that pain through meltdowns, self-injury, or losing focus. When a specialized diet removes the inflammatory foods, the stomach stops hurting, and the distress behaviors vanish. The diet didn't cure the autism; it removed the physical pain.
+          </p>
+        </div>
+
+        {/* MYTH 2: EMPATHY */}
+        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
+          <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
+            <span className="text-red-500 mr-2">Myth:</span> Autistic people lack empathy or emotion.
+          </h3>
+          <h4 className="font-bold text-green-600 mb-3 text-sm">
+            <span className="mr-2">Fact:</span> Autistic people experience deep empathy, but express it differently.
+          </h4>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            This harmful myth stems from a misunderstanding of how autistic people communicate. Many autistic individuals actually experience <em>hyper-empathy</em>, feeling the emotions of others so intensely that it becomes overwhelming, causing them to shut down or withdraw. Researchers now recognize the <strong>"Double Empathy Problem."</strong><sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup> It isn't that autistic people lack empathy for neurotypical people; rather, both groups struggle to read each other's unique social cues. Autistic people show profound empathy and seamless communication when interacting with other autistic individuals.
+          </p>
+        </div>
+
+        {/* MYTH 3: BOYS ONLY */}
+        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
+          <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
+            <span className="text-red-500 mr-2">Myth:</span> Autism is almost entirely a "boy's condition."
+          </h3>
+          <h4 className="font-bold text-green-600 mb-3 text-sm">
+            <span className="mr-2">Fact:</span> Girls and women are vastly underdiagnosed due to "masking."
+          </h4>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            Historically, the diagnostic ratio was thought to be 4 boys for every 1 girl. However, modern research is proving that the diagnostic criteria were primarily based on how autism presents in young boys.<sup className="text-[#0c264d] font-extrabold ml-0.5">4</sup> Autistic girls often present differently—their special interests might be more socially acceptable (like literature or animals rather than trains), and societal pressure forces them to learn how to "mask" or mimic neurotypical social behaviors at a much earlier age. This leads to generations of women only receiving their autism diagnosis in their 20s or 30s after suffering severe autistic burnout.
+          </p>
+        </div>
+
+        {/* MYTH 4: SAVANT */}
+        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-emerald-400">
+          <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
+            <span className="text-red-500 mr-2">Myth:</span> All autistic people have a "Rain Man" savant skill.
+          </h3>
+          <h4 className="font-bold text-green-600 mb-3 text-sm">
+            <span className="mr-2">Fact:</span> Savant syndrome is incredibly rare.
+          </h4>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            Media representations often rely on the trope of the autistic genius who can instantly count dropped toothpicks or memorize phone books. In reality, "savant syndrome" is exceptionally rare, occurring in only about 10% of the autistic population.<sup className="text-[#0c264d] font-extrabold ml-0.5">5</sup> While many autistic individuals do possess "spiky profiles" with intense passions and deep, specialized knowledge, expecting every autistic child to have a superhuman academic skill places unfair expectations on them and invalidates the very real support needs they may have.
+          </p>
+        </div>
+
+      </div>
+
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-20 my-8" />
+      
+      <div className="bg-white bg-opacity-70 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-xs uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-800">
-            <li>Centers for Disease Control and Prevention. (2023). "Vaccines Do Not Cause Autism."</li>
-            <li>American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).</li>
-            <li>Institute of Medicine. (2004). "Immunization Safety Review: Vaccines and Autism."</li>
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-20 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed">
+            <li>
+              McElhanon, B. O., McCracken, C., Karpen, S., & Sharp, W. G. (2014). "Gastrointestinal symptoms in autism spectrum disorder: a meta-analysis." <i>Pediatrics</i>, 133(5), 872-883.
+            </li>
+            <li>
+              Fiorentino, M., Sapone, A., Senger, S., et al. (2016). "Blood-brain barrier and intestinal epithelial barrier alterations in autism spectrum disorders." <i>Molecular Autism</i>, 7(1), 59.
+            </li>
+            <li>
+              Milton, D. E. (2012). "On the ontological status of autism: the 'double empathy problem'." <i>Disability & Society</i>, 27(6), 883-887.
+            </li>
+            <li>
+              Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What is the male-to-female ratio in autism spectrum disorder? A systematic review and meta-analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.
+            </li>
+            <li>
+              Treffert, D. A. (2009). "The savant syndrome: an extraordinary condition. A synopsis: past, present, future." <i>Philosophical Transactions of the Royal Society B: Biological Sciences</i>, 364(1522), 1351-1357.
+            </li>
           </ol>
         </div>
 
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800">
-            <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet.</li>
-            <li>Hviid, A., et al. (2019). "Measles, Mumps, Rubella Vaccination and Autism." Annals of Internal Medicine.</li>
-            <li>Kapp, S. K. (2020). Autistic community and the neurodiversity movement.</li>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-600 font-bold mb-3 border-b border-cyan-600 border-opacity-20 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed pl-2">
+            <li>
+              Piwowarczyk, A., Horvath, A., Łukasik, J., Pisula, E., & Szajewska, H. (2018). "Gluten- and casein-free diet and autism spectrum disorders in children: a systematic review." <i>European Journal of Nutrition</i>, 57(2), 433-440.
+            </li>
+            <li>
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.).
+            </li>
           </ul>
         </div>
       </div>
