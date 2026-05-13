@@ -59,13 +59,19 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
 
       {/* The Antidepressant Nuance Box */}
       <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-indigo-400 mb-8">
-        <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">The Complexity of Antidepressants (SSRIs)</h3>
-        <p className="text-sm leading-relaxed text-gray-700">
-          Parents often ask about the safety of taking antidepressants during pregnancy. Studying this is notoriously difficult; researchers cannot ethically run randomized trials on pregnant women, so they must rely on observational data. While early studies suggested a slight link between SSRIs and autism, recent rigorous studies (analyzing hundreds of thousands of pregnancies) revealed that when researchers adjust for the mother's underlying depression and psychiatric history, the link to the medication itself largely disappears.<sup className="text-[#0c264d] font-extrabold ml-0.5">5</sup> Ultimately, doctors view SSRI use during pregnancy as a complex risk-benefit analysis. Untreated severe depression carries intense risks for fetal development and maternal safety. Medication is carefully utilized when the mother's wellbeing, and her subsequent ability to safely care for her baby, outweighs the statistical uncertainties of the medication.
+        <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">The Complexity of Antidepressants (SSRIs)</h3>
+        <p className="text-sm mb-4 leading-relaxed text-gray-700">
+          Parents often ask about the safety of taking antidepressants during pregnancy. Studying this is notoriously difficult; researchers cannot ethically run randomized trials on pregnant women, so they must rely on observational data. While early studies suggested a slight link between SSRIs and autism, massive, rigorous sibling-studies revealed that when researchers adjust for the mother's underlying depression and psychiatric genetics, the link to the medication itself largely disappears.<sup className="text-[#0c264d] font-extrabold ml-0.5">5</sup> 
         </p>
+        <div className="bg-indigo-50 p-4 rounded-md">
+          <h4 className="font-bold text-indigo-900 text-sm mb-1">The Third Trimester Debate</h4>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            Historically, some doctors advised tapering off SSRIs in the third trimester. This was primarily to prevent "neonatal adaptation syndrome" (mild, temporary withdrawal symptoms like jitteriness in the newborn), not because it caused autism. Today, major medical guidelines often advise against tapering if it risks severe postpartum depression. Untreated maternal depression carries intense risks for fetal development, and a healthy, bonded mother is the most critical environmental factor for a newborn's development.
+          </p>
+        </div>
       </div>
 
-      {/* Gene-Environment Interactions Box (Text Only Now) */}
+      {/* Gene-Environment Interactions Box */}
       <div className="bg-[#2abcd4] bg-opacity-20 p-5 rounded-lg border-2 border-dashed border-[#0c264d] border-opacity-30 mb-10">
         <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">Gene-Environment Interactions</h3>
         <p className="text-sm leading-relaxed text-[#0c264d]">
