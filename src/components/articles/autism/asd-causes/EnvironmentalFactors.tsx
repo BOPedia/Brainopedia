@@ -57,6 +57,14 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
         </div>
       </div>
 
+      {/* The Antidepressant Nuance Box */}
+      <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-indigo-400 mb-8">
+        <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">The Complexity of Antidepressants (SSRIs)</h3>
+        <p className="text-sm leading-relaxed text-gray-700">
+          Parents often ask about the safety of taking antidepressants during pregnancy. Studying this is notoriously difficult; researchers cannot ethically run randomized trials on pregnant women, so they must rely on observational data. While early studies suggested a slight link between SSRIs and autism, recent rigorous studies (analyzing hundreds of thousands of pregnancies) revealed that when researchers adjust for the mother's underlying depression and psychiatric history, the link to the medication itself largely disappears.<sup className="text-[#0c264d] font-extrabold ml-0.5">5</sup> Ultimately, doctors view SSRI use during pregnancy as a complex risk-benefit analysis. Untreated severe depression carries intense risks for fetal development and maternal safety. Medication is carefully utilized when the mother's wellbeing, and her subsequent ability to safely care for her baby, outweighs the statistical uncertainties of the medication.
+        </p>
+      </div>
+
       {/* Gene-Environment Interactions Box (Text Only Now) */}
       <div className="bg-[#2abcd4] bg-opacity-20 p-5 rounded-lg border-2 border-dashed border-[#0c264d] border-opacity-30 mb-10">
         <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">Gene-Environment Interactions</h3>
@@ -76,14 +84,14 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
         />
 
         <p className="mb-4 text-sm leading-relaxed text-gray-700">
-          It is a deeply understandable, protective instinct for parents to worry about the "immunological load" of the vaccine schedule on a tiny infant. Many wonder if spacing vaccines out might be safer, particularly for a genetically susceptible child. Extensive, global research has conclusively proven that vaccines do not cause autism. To address parents' specific concerns about the <em>schedule</em>, researchers have thoroughly studied these three critical areas:
+          It is a deeply understandable, protective instinct for parents to worry about the "immunological load" of the vaccine schedule on a tiny infant. Many wonder if spacing vaccines out might be safer, particularly for a genetically susceptible child. Extensive, global research has conclusively proven that vaccines do not cause autism. To address parents' specific concerns about the <em>schedule</em>, researchers have thoroughly studied these critical areas:
         </p>
 
         <div className="space-y-4">
           <div>
             <h4 className="font-bold text-[#0c264d] text-sm">1. The Antigen Load</h4>
             <p className="text-sm text-gray-700 leading-relaxed">
-              Because modern vaccines are highly purified, the total "antigen load" (the immune-stimulating proteins) a child receives today from the <em>entire</em> schedule is a fraction of what a child received decades ago from just one or two shots. Clinical studies measuring the exact antigen load in children with and without autism show absolutely no difference.<sup className="text-[#0c264d] font-extrabold ml-0.5">5</sup> 
+              Because modern vaccines are highly purified, the total "antigen load" (the immune-stimulating proteins) a child receives today from the <em>entire</em> schedule is a fraction of what a child received decades ago from just one or two shots. Clinical studies measuring the exact antigen load in children with and without autism show absolutely no difference.<sup className="text-[#0c264d] font-extrabold ml-0.5">6</sup> 
             </p>
           </div>
 
@@ -97,7 +105,14 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
           <div>
             <h4 className="font-bold text-[#0c264d] text-sm">3. The Window of Vulnerability</h4>
             <p className="text-sm text-gray-700 leading-relaxed">
-              The schedule is not designed for a doctor's convenience; it is meticulously timed to protect infants during their highest "window of vulnerability." Spacing out vaccines does not reduce autism risk; it artificially extends the amount of time an infant is unprotected from lethal diseases (like pertussis/whooping cough) during the exact months their airways are too small to handle them. Furthermore, spacing them out increases the number of trips to a pediatrician's waiting room, unnecessarily exposing the infant to everyday viruses like RSV.<sup className="text-[#0c264d] font-extrabold ml-0.5">6</sup>
+              The schedule is not designed for a doctor's convenience; it is meticulously timed to protect infants during their highest "window of vulnerability." Spacing out vaccines does not reduce autism risk; it artificially extends the amount of time an infant is unprotected from lethal diseases (like pertussis/whooping cough) during the exact months their airways are too small to handle them. Furthermore, spacing them out increases the number of trips to a pediatrician's waiting room, unnecessarily exposing the infant to everyday viruses like RSV.<sup className="text-[#0c264d] font-extrabold ml-0.5">7</sup>
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-[#0c264d] text-sm">4. What if the baby is already sick?</h4>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              For mild illnesses (like a runny nose or low-grade fever), an infant's immune system is more than capable of handling a vaccine safely. However, if a child has a moderate or severe illness (such as a high fever or an infection requiring hospitalization), pediatricians <em>will</em> recommend holding off on the vaccine. This is a clinical precaution to ensure that a normal, mild vaccine side-effect (like a temperature) isn't confused with the underlying illness getting dangerously worse. 
             </p>
           </div>
         </div>
@@ -129,6 +144,9 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
               Lyall, K., Croen, L., Daniels, J., et al. (2017). "The changing epidemiology of autism spectrum disorders." <i>Annual Review of Public Health</i>, 38, 81-102.
             </li>
             <li>
+              Brown, H. K., Ray, J. G., Wilton, A. S., et al. (2017). "Association Between Maternal Antidepressant Use During Pregnancy and Autism Spectrum Disorder: An Analysis of Sibling Subsets." <i>JAMA</i>, 317(15), 1544-1552.
+            </li>
+            <li>
               DeStefano, F., Price, C. S., & Weintraub, E. S. (2013). "Increasing exposure to antibody-stimulating proteins and polysaccharides in vaccines is not associated with risk of autism." <i>The Journal of Pediatrics</i>, 163(2), 561-567.
             </li>
             <li>
@@ -151,6 +169,9 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
             </li>
             <li>
               Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.
+            </li>
+            <li>
+              American Academy of Pediatrics (AAP). (2022). "Vaccine Safety: Get the Facts." HealthyChildren.org.
             </li>
           </ul>
         </div>
