@@ -1,80 +1,115 @@
 import React from 'react';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
-export function EnvironmentalFactors() {
+/* ─── THE GUEST LIST (Interface) ─── */
+interface EnvironmentalFactorsProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+/* ─── MAIN COMPONENT ─── */
+export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactorsProps) {
   return (
-    
-<div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
-      <h2 className="font-bold mb-4 text-l font-spartan">Environmental Factors</h2>
+    <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
+      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Environmental Factors</h2>
       
       <ImageWithFallback 
         src="/images/autism/autism-causes-Envirotab-toddler-in-nature.png" 
         alt="Toddler in nature representing environmental factors"
-        className="mx-auto w-48 md:w-64 mb-8 rounded-xl shadow-lg"
+        className="w-48 h-auto float-left mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
       />
     
-      <p className="mb-6 leading-relaxed">
-        While genetics are crucial, environmental factors—particularly during pregnancy and early development—also contribute to autism risk.<sup className="text-green-600 font-bold ml-0.5">2</sup> "Environmental" refers to non-genetic factors, not just pollution or toxins.
+      <p className="mb-4 leading-relaxed text-[#0c264d]">
+        When geneticists and researchers talk about the "environment" in relation to autism, they aren't just talking about trees, weather, or pollution. In developmental biology, "environmental factors" refer to any non-genetic biological influence that affects a child's development, particularly during the critical prenatal window.
       </p>
+
+      <p className="mb-4 leading-relaxed text-[#0c264d]">
+        Research indicates that while autism is highly heritable, these non-genetic factors—such as maternal immune responses, metabolic conditions, or exposure to certain medications in utero—can interact with a child's genetic blueprint to influence brain development.<sup>2</sup>
+      </p>
+
+      <p className="mb-8 leading-relaxed text-[#0c264d]">
+        <strong>What does NOT cause autism:</strong> It is equally important to highlight what has been scientifically ruled out. Extensive, global research has conclusively proven that vaccines do not cause autism. Additionally, outdated psychological theories blaming parenting styles or a lack of affection have been entirely debunked.
+      </p>
+
+      <div className="clear-both"></div>
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
         {/* Section 1: Prenatal */}
         <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
-          <h3 className="font-bold mb-3 text-lg font-spartan">Prenatal Factors</h3>
-          <p className="text-sm mb-3 text-navy-800 italic">Factors during pregnancy associated with increased risk:</p>
-          <ul className="list-disc ml-5 space-y-2 text-sm">
-            <li><strong>Advanced parental age:</strong> Both maternal and paternal age over 35.<sup className="text-green-600 font-bold ml-0.5">[2]</sup></li>
-            <li><strong>Maternal infections:</strong> Severe infections, particularly in the second trimester.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Maternal immune activation:</strong> Immune responses affecting fetal brain development.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Certain medications:</strong> Valproic acid exposure during pregnancy.<sup className="text-green-600 font-bold ml-0.5">[4]</sup></li>
-            <li><strong>Prenatal nutrition:</strong> Deficiencies in nutrients like folic acid.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Gestational diabetes:</strong> Metabolic conditions affecting development.<sup className="text-green-600 font-bold ml-0.5">[1]</sup></li>
-            <li><strong>Air pollution:</strong> Exposure during pregnancy and early life.<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
+          <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Prenatal Factors</h3>
+          <p className="text-sm mb-3 text-gray-700 italic">Factors during pregnancy associated with increased risk:</p>
+          <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
+            <li><strong>Advanced parental age:</strong> Both maternal and paternal age over 35.<sup>2</sup></li>
+            <li><strong>Maternal infections:</strong> Severe infections, particularly in the second trimester.<sup>3</sup></li>
+            <li><strong>Maternal immune activation:</strong> Immune responses affecting fetal brain development.<sup>3</sup></li>
+            <li><strong>Certain medications:</strong> Valproic acid exposure during pregnancy.<sup>4</sup></li>
+            <li><strong>Prenatal nutrition:</strong> Deficiencies in nutrients like folic acid.<sup>3</sup></li>
+            <li><strong>Gestational diabetes:</strong> Metabolic conditions affecting development.<sup>1</sup></li>
+            <li><strong>Air pollution:</strong> Exposure during pregnancy and early life.<sup>3</sup></li>
           </ul>
         </div>
 
         {/* Section 2: Neonatal */}
         <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
-          <h3 className="font-bold mb-3 text-lg font-spartan">Perinatal and Neonatal Factors</h3>
-          <p className="text-sm mb-3 text-gray-600 italic">Complications around birth associated with modest risk increases:</p>
-          <ul className="list-disc ml-5 space-y-2 text-sm">
-            <li><strong>Preterm birth:</strong> Birth before 37 weeks, especially very preterm birth.<sup className="text-green-600 font-bold ml-0.5">[1]</sup></li>
-            <li><strong>Low birth weight:</strong> Particularly very low birth weight infants.<sup className="text-green-600 font-bold ml-0.5">[1]</sup></li>
-            <li><strong>Birth complications:</strong> Significant oxygen deprivation (hypoxia).<sup className="text-green-600 font-bold ml-0.5">[3]</sup></li>
-            <li><strong>Multiple births:</strong> Twins/multiples have a slightly elevated risk.<sup className="text-green-600 font-bold ml-0.5">[1]</sup></li>
+          <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Perinatal & Neonatal Factors</h3>
+          <p className="text-sm mb-3 text-gray-700 italic">Complications around birth associated with modest risk increases:</p>
+          <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
+            <li><strong>Preterm birth:</strong> Birth before 37 weeks, especially very preterm birth.<sup>1</sup></li>
+            <li><strong>Low birth weight:</strong> Particularly very low birth weight infants.<sup>1</sup></li>
+            <li><strong>Birth complications:</strong> Significant oxygen deprivation (hypoxia).<sup>3</sup></li>
+            <li><strong>Multiple births:</strong> Twins/multiples have a slightly elevated risk.<sup>1</sup></li>
           </ul>
         </div>
       </div>
 
       <div className="bg-[#2abcd4] bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-[#2abcd4] mb-10">
-        <h3 className="font-bold mb-2 text-lg font-spartan">Gene-Environment Interactions</h3>
-        <p className="text-sm leading-relaxed">
-          Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup className="text-green-600 font-bold ml-0.5">[2]</sup>
+        <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">Gene-Environment Interactions</h3>
+        <p className="text-sm leading-relaxed text-gray-700">
+          Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup>2</sup>
         </p>
       </div>
 
-      {/* --- REFERENCES SECTION --- */}
+      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
       
-      <div className="bg-white bg-opacity-50 p-6 rounded-lg">
-        <h3 className="font-bold mb-4 text-xl font-spartan text-[#0c264d]">References</h3>
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-xs uppercase tracking-wider text-green-500 font-bold mb-3">Cited Studies & Statistics</h4>
-          <ol className="list-decimal ml-5 text-xs space-y-2 text-navy-500 font-spartan">
-            <li>Centers for Disease Control and Prevention. (2023). "Autism Spectrum Disorder (ASD): Data and Statistics." CDC.</li>
-            <li>Bai, D., et al. (2019). "Association of genetic and environmental factors with autism in a 5-country cohort." JAMA Psychiatry, 76(10), 1035-1043.</li>
-            <li>Modabbernia, A., et al. (2017). "Environmental risk factors for autism: An evidence-based review of systematic reviews." Molecular Autism, 8(1), 13.</li>
-            <li>Lyall, K., et al. (2017). "The changing epidemiology of autism spectrum disorders." Annual Review of Public Health, 38, 81-102.</li>
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Centers for Disease Control and Prevention. (2023). "Autism Spectrum Disorder (ASD): Data and Statistics." <i>CDC</i>.
+            </li>
+            <li>
+              Bai, D., Yip, B. H., Windham, G. C., et al. (2019). "Association of genetic and environmental factors with autism in a 5-country cohort." <i>JAMA Psychiatry</i>, 76(10), 1035-1043.
+            </li>
+            <li>
+              Modabbernia, A., Velthorst, E., & Reichenberg, A. (2017). "Environmental risk factors for autism: An evidence-based review of systematic reviews and meta-analyses." <i>Molecular Autism</i>, 8(1), 13.
+            </li>
+            <li>
+              Lyall, K., Croen, L., Daniels, J., et al. (2017). "The changing epidemiology of autism spectrum disorders." <i>Annual Review of Public Health</i>, 38, 81-102.
+            </li>
           </ol>
         </div>
 
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-xs uppercase tracking-wider text-cyan-500 font-bold mb-3">Background Sources</h4>
-          <ul className="list-disc ml-5 text-[14px] leading-relaxed space-y-1 text-navy-800 font-spartan">
-            <li>American Psychiatric Association. (2013). Diagnostic and Statistical Manual of Mental Disorders (5th ed.).</li>
-            <li>Lord, C., et al. (2018). "Autism spectrum disorder." The Lancet, 392(10146), 508-520.</li>
-            <li>Taylor, L. E., et al. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis." Vaccine, 32(29).</li>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.).
+            </li>
+            <li>
+              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.
+            </li>
+            <li>
+              Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.
+            </li>
           </ul>
         </div>
       </div>
