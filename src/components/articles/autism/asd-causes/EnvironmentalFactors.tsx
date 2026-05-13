@@ -4,12 +4,12 @@ import { ImageWithFallback } from '../../../../components/figma/ImageWithFallbac
 export function EnvironmentalFactors() {
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
-      <h2 className="font-bold mb-4 text-2xl font-spartan">Environmental Factors</h2>
+      <h2 className="font-bold mb-4 text-l font-spartan">Environmental Factors</h2>
       
       <ImageWithFallback 
         src="/images/autism/autism-causes-Envirotab-toddler-in-nature.png" 
         alt="Toddler in nature representing environmental factors"
-        className="w-full max-w-sm mx-auto mb-8 rounded-sm shadow-sm"
+        className="mx-auto w-48 md:w-64"
       />
       
       <p className="mb-6 leading-relaxed">
