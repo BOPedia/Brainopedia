@@ -3,17 +3,18 @@ import { ImageWithFallback } from '../../../../components/figma/ImageWithFallbac
 
 export function EnvironmentalFactors() {
   return (
-    <div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
+    
+<div className="bg-[#f0f9ff] p-6 rounded-lg text-[#0c264d]">
       <h2 className="font-bold mb-4 text-l font-spartan">Environmental Factors</h2>
       
       <ImageWithFallback 
         src="/images/autism/autism-causes-Envirotab-toddler-in-nature.png" 
         alt="Toddler in nature representing environmental factors"
-        className="mx-auto w-48 md:w-64"
+        className="mx-auto w-48 md:w-64 mb-8 rounded-xl shadow-lg"
       />
-      
+    
       <p className="mb-6 leading-relaxed">
-        While genetics are crucial, environmental factors—particularly during pregnancy and early development—also contribute to autism risk.<sup className="text-green-600 font-bold ml-0.5">[2]</sup> "Environmental" refers to non-genetic factors, not just pollution or toxins.
+        While genetics are crucial, environmental factors—particularly during pregnancy and early development—also contribute to autism risk.<sup className="text-green-600 font-bold ml-0.5">2</sup> "Environmental" refers to non-genetic factors, not just pollution or toxins.
       </p>
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
