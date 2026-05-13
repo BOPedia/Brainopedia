@@ -13,8 +13,8 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Environmental Factors</h2>
       
       <ImageWithFallback 
-        src="/images/autism/autism-causes-Envirotab-toddler-in-nature.png" 
-        alt="Toddler in nature representing environmental factors"
+        src="/images/autism/autism-causes-Envirotab-pregnant.png" 
+        alt="Pregnant woman representing environmental factors"
         className="w-48 h-auto float-left mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
       />
     
@@ -61,11 +61,19 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
         </div>
       </div>
 
-      <div className="bg-[#2abcd4] bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-[#2abcd4] mb-10">
-        <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">Gene-Environment Interactions</h3>
-        <p className="text-sm leading-relaxed text-gray-700">
-          Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup>2</sup>
-        </p>
+      {/* Gene-Environment Interactions Box with Toddler Image */}
+      <div className="bg-[#2abcd4] bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-[#2abcd4] mb-10 flex flex-col md:flex-row items-center gap-6">
+        <div className="flex-1">
+          <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">Gene-Environment Interactions</h3>
+          <p className="text-sm leading-relaxed text-gray-700">
+            Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup>2</sup>
+          </p>
+        </div>
+        <ImageWithFallback 
+          src="/images/autism/autism-causes-Envirotab-toddler-in-nature.png" 
+          alt="Toddler in nature representing environmental factors"
+          className="w-40 md:w-48 h-auto rounded-xl shadow-md border border-gray-200 flex-shrink-0"
+        />
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
@@ -80,39 +88,4 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
             Cited Studies & Statistics
           </h4>
           <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Centers for Disease Control and Prevention. (2023). "Autism Spectrum Disorder (ASD): Data and Statistics." <i>CDC</i>.
-            </li>
-            <li>
-              Bai, D., Yip, B. H., Windham, G. C., et al. (2019). "Association of genetic and environmental factors with autism in a 5-country cohort." <i>JAMA Psychiatry</i>, 76(10), 1035-1043.
-            </li>
-            <li>
-              Modabbernia, A., Velthorst, E., & Reichenberg, A. (2017). "Environmental risk factors for autism: An evidence-based review of systematic reviews and meta-analyses." <i>Molecular Autism</i>, 8(1), 13.
-            </li>
-            <li>
-              Lyall, K., Croen, L., Daniels, J., et al. (2017). "The changing epidemiology of autism spectrum disorders." <i>Annual Review of Public Health</i>, 38, 81-102.
-            </li>
-          </ol>
-        </div>
-
-        {/* BACKGROUND SOURCES: CYAN */}
-        <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
-            Background Sources
-          </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.).
-            </li>
-            <li>
-              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.
-            </li>
-            <li>
-              Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
+            <li></li>
