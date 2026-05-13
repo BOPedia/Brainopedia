@@ -22,12 +22,8 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
         When geneticists and researchers talk about the "environment" in relation to autism, they aren't just talking about trees, weather, or pollution. In developmental biology, "environmental factors" refer to any non-genetic biological influence that affects a child's development, particularly during the critical prenatal window.
       </p>
 
-      <p className="mb-4 leading-relaxed text-[#0c264d]">
-        Research indicates that while autism is highly heritable, these non-genetic factors—such as maternal immune responses, metabolic conditions, or exposure to certain medications in utero—can interact with a child's genetic blueprint to influence brain development.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup>
-      </p>
-
       <p className="mb-8 leading-relaxed text-[#0c264d]">
-        <strong>Vaccines & The Immune System:</strong> It is a deeply understandable instinct for parents to worry about the "immunological load" of the vaccine schedule on a tiny infant, wondering if spacing vaccines out might be safer for a susceptible child. Because this is such a common concern, the Institute of Medicine and pediatric researchers have studied the childhood schedule extensively. Research analyzing the total "antigen load" (the immune-stimulating proteins) shows no difference between autistic and non-autistic children.<sup className="text-[#0c264d] font-extrabold ml-0.5">5</sup> The current schedule is meticulously designed to close the "window of vulnerability" to severe, life-threatening infant diseases as safely and quickly as possible. Delaying or spacing out vaccines leaves infants unprotected during their most vulnerable months, without reducing the likelihood of autism.
+        Research indicates that while autism is highly heritable, these non-genetic factors—such as maternal immune responses, metabolic conditions, or exposure to certain medications in utero—can interact with a child's genetic blueprint to influence brain development.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup>
       </p>
 
       <div className="clear-both"></div>
@@ -61,19 +57,51 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
         </div>
       </div>
 
-      {/* Gene-Environment Interactions Box with Toddler Image */}
-      <div className="bg-[#2abcd4] bg-opacity-20 p-6 rounded-lg border-2 border-dashed border-[#0c264d] border-opacity-30 mb-10 flex flex-col md:flex-row items-center gap-6">
-        <div className="flex-1">
-          <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">Gene-Environment Interactions</h3>
-          <p className="text-sm leading-relaxed text-[#0c264d]">
-            Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup>
-          </p>
-        </div>
+      {/* Gene-Environment Interactions Box (Text Only Now) */}
+      <div className="bg-[#2abcd4] bg-opacity-20 p-5 rounded-lg border-2 border-dashed border-[#0c264d] border-opacity-30 mb-10">
+        <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">Gene-Environment Interactions</h3>
+        <p className="text-sm leading-relaxed text-[#0c264d]">
+          Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup>
+        </p>
+      </div>
+
+      {/* The Big Vaccine Feature Section */}
+      <div className="bg-white p-6 md:p-8 rounded-xl shadow-md border-l-4 border-[#0c264d] mb-10">
+        <h3 className="font-bold mb-4 text-xl font-spartan text-[#0c264d]">Vaccines, The Schedule & The Immune System</h3>
+        
         <ImageWithFallback 
           src="/images/autism/autism-causes-Envirotab-toddler-in-nature.png" 
-          alt="Toddler in nature representing environmental factors"
-          className="w-40 md:w-48 h-auto rounded-xl shadow-md border border-gray-200 flex-shrink-0"
+          alt="Toddler in nature"
+          className="w-40 md:w-56 h-auto float-right ml-6 mb-4 rounded-xl shadow-sm border border-gray-200"
         />
+
+        <p className="mb-4 text-sm leading-relaxed text-gray-700">
+          It is a deeply understandable, protective instinct for parents to worry about the "immunological load" of the vaccine schedule on a tiny infant. Many wonder if spacing vaccines out might be safer, particularly for a genetically susceptible child. Extensive, global research has conclusively proven that vaccines do not cause autism. To address parents' specific concerns about the <em>schedule</em>, researchers have thoroughly studied these three critical areas:
+        </p>
+
+        <div className="space-y-4">
+          <div>
+            <h4 className="font-bold text-[#0c264d] text-sm">1. The Antigen Load</h4>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Because modern vaccines are highly purified, the total "antigen load" (the immune-stimulating proteins) a child receives today from the <em>entire</em> schedule is a fraction of what a child received decades ago from just one or two shots. Clinical studies measuring the exact antigen load in children with and without autism show absolutely no difference.<sup className="text-[#0c264d] font-extrabold ml-0.5">5</sup> 
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-[#0c264d] text-sm">2. "Why so early?" (The Hepatitis B Example)</h4>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Parents often ask why a 2-hour-old newborn needs a Hepatitis B shot. Hep B can be entirely asymptomatic in adults, and tests can yield false negatives. If transmitted during the fluids of childbirth, an infant has a 90% chance of developing a chronic, lifelong infection that frequently leads to liver failure or cancer. The newborn vaccine acts as an immediate, life-saving safety net.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-[#0c264d] text-sm">3. The Window of Vulnerability</h4>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              The schedule is not designed for a doctor's convenience; it is meticulously timed to protect infants during their highest "window of vulnerability." Spacing out vaccines does not reduce autism risk; it artificially extends the amount of time an infant is unprotected from lethal diseases (like pertussis/whooping cough) during the exact months their airways are too small to handle them. Furthermore, spacing them out increases the number of trips to a pediatrician's waiting room, unnecessarily exposing the infant to everyday viruses like RSV.<sup className="text-[#0c264d] font-extrabold ml-0.5">6</sup>
+            </p>
+          </div>
+        </div>
+        <div className="clear-both"></div>
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
@@ -103,6 +131,9 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
             <li>
               DeStefano, F., Price, C. S., & Weintraub, E. S. (2013). "Increasing exposure to antibody-stimulating proteins and polysaccharides in vaccines is not associated with risk of autism." <i>The Journal of Pediatrics</i>, 163(2), 561-567.
             </li>
+            <li>
+              Institute of Medicine (US) Committee on the Assessment of Studies of Health Outcomes Related to the Recommended Childhood Immunization Schedule. (2013). <i>The Childhood Immunization Schedule and Safety: Stakeholder Concerns, Scientific Evidence, and Future Studies</i>. National Academies Press.
+            </li>
           </ol>
         </div>
 
@@ -113,13 +144,13 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
           </h4>
           <ul className="list-none text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed pl-2">
             <li>
-              Institute of Medicine (US) Committee on the Assessment of Studies of Health Outcomes Related to the Recommended Childhood Immunization Schedule. (2013). <i>The Childhood Immunization Schedule and Safety</i>. National Academies Press.
-            </li>
-            <li>
               American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.).
             </li>
             <li>
               Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.
+            </li>
+            <li>
+              Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.
             </li>
           </ul>
         </div>
