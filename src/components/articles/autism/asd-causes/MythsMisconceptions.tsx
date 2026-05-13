@@ -31,7 +31,7 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
               <span>✗</span> The Vaccine Myth
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
-              Extensive global studies involving millions of children have consistently shown <strong>no link</strong> between vaccines (including the MMR vaccine) and autism.<sup className="text-[#0c264d] font-extrabold ml-0.5">1</sup>
+              Extensive global studies involving millions of children have consistently shown <strong>no link</strong> between vaccines (including the MMR vaccine) and autism.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup>
             </p>
             <div className="bg-green-50 p-4 rounded-md border-l-4 border-green-500">
               <p className="text-sm text-green-900 leading-relaxed">
@@ -51,10 +51,10 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
           <span className="mr-2">✓</span> Fact: Diets don't change neurology, but they can alleviate severe, hidden physical pain.
         </h4>
         <p className="text-sm text-gray-700 leading-relaxed mb-3">
-          There is no diet that "cures" autism, but many parents report dramatic behavioral improvements when putting their child on a Gluten-Free/Casein-Free (GFCF) diet. Why? The answer lies in the gut. Research shows that autistic children are up to <strong>4 times more likely</strong> to experience chronic gastrointestinal (GI) issues, with 40% to 80% suffering from chronic abdominal pain or GI distress.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup> 
+          There is no diet that "cures" autism, but many parents report dramatic behavioral improvements when putting their child on a Gluten-Free/Casein-Free (GFCF) diet. Why? The answer lies in the gut. Research shows that autistic children are up to <strong>4 times more likely</strong> to experience chronic gastrointestinal (GI) issues, with 40% to 80% suffering from chronic abdominal pain or GI distress.<sup className="text-[#0c264d] font-extrabold ml-0.5">12</sup> 
         </p>
         <p className="text-sm text-gray-700 leading-relaxed">
-          Many also experience "leaky gut" (increased intestinal permeability), where the gut lining is inflamed.<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup> If a child with severe GI inflammation is non-speaking or struggles with interoception (feeling internal body signals), they cannot say, "My stomach cramps when I eat wheat." They express that pain through meltdowns, self-injury, or losing focus. When a specialized diet removes the inflammatory foods, the stomach stops hurting, and the distress behaviors vanish. The diet didn't cure the autism; it removed the physical pain.
+          Many also experience "leaky gut" (increased intestinal permeability), where the gut lining is inflamed.<sup className="text-[#0c264d] font-extrabold ml-0.5">13</sup> If a child with severe GI inflammation is non-speaking or struggles with interoception (feeling internal body signals), they cannot say, "My stomach cramps when I eat wheat." They express that pain through meltdowns, self-injury, or losing focus. When a specialized diet removes the inflammatory foods, the stomach stops hurting, and the distress behaviors vanish. The diet didn't cure the autism; it removed the physical pain.
         </p>
       </div>
 
@@ -77,7 +77,7 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
             <span className="text-red-500 mr-2">✗</span> Myth: Lack of Empathy
           </h3>
           <p className="text-sm text-gray-700 leading-relaxed">
-            Many autistic individuals actually experience <em>hyper-empathy</em>. Researchers now recognize the <strong>"Double Empathy Problem."</strong><sup className="text-[#0c264d] font-extrabold ml-0.5">4</sup> It isn't that autistic people lack empathy; rather, autistic and neurotypical people struggle to read <em>each other's</em> unique social cues. Autistic people show profound empathy when communicating with one another.
+            Many autistic individuals actually experience <em>hyper-empathy</em>. Researchers now recognize the <strong>"Double Empathy Problem."</strong><sup className="text-[#0c264d] font-extrabold ml-0.5">14</sup> It isn't that autistic people lack empathy; rather, autistic and neurotypical people struggle to read <em>each other's</em> unique social cues. Autistic people show profound empathy when communicating with one another.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
             <span className="text-red-500 mr-2">✗</span> Myth: The "Rain Man" Savant
           </h3>
           <p className="text-sm text-gray-700 leading-relaxed">
-            Media often relies on the trope of the autistic genius. In reality, "savant syndrome" is exceptionally rare, occurring in only about 10% of the autistic population.<sup className="text-[#0c264d] font-extrabold ml-0.5">6</sup> Expecting every autistic person to have a superhuman academic skill places unfair expectations on them and invalidates their real support needs.
+            Media often relies on the trope of the autistic genius. In reality, "savant syndrome" is exceptionally rare, occurring in only about 10% of the autistic population.<sup className="text-[#0c264d] font-extrabold ml-0.5">16</sup> Expecting every autistic person to have a superhuman academic skill places unfair expectations on them and invalidates their real support needs.
           </p>
         </div>
 

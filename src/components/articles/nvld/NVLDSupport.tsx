@@ -32,8 +32,8 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
         <div>
           <p className="mb-4">
             Effective support for NVLD involves addressing visual-spatial, motor, social, and academic challenges 
-            through targeted interventions, accommodations, and leveraging verbal strengths.<sup>[1]</sup> A multi-faceted 
-            approach yields the best outcomes.<sup>[2]</sup>
+            through targeted interventions, accommodations, and leveraging verbal strengths.<sup>10</sup> A multi-faceted 
+            approach yields the best outcomes.<sup>12</sup>
           </p>
         </div>
 
@@ -48,15 +48,15 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Teaching Strategies</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Verbal instruction:</strong> Explain concepts verbally, leveraging strengths<sup>[3]</sup></li>
+            <li className="mb-2"><strong>Verbal instruction:</strong> Explain concepts verbally, leveraging strengths<sup>13</sup></li>
             <li className="mb-2"><strong>Explicit teaching:</strong> Direct instruction rather than discovery learning</li>
-            <li className="mb-2"><strong>Step-by-step breakdown:</strong> Break complex tasks into smaller steps<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Step-by-step breakdown:</strong> Break complex tasks into smaller steps<sup>14</sup></li>
             <li className="mb-2"><strong>Verbal mediation:</strong> Teach self-talk strategies for problem-solving</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Mathematics Support</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Verbal explanations of mathematical concepts<sup>[5]</sup></li>
+            <li className="mb-2">Verbal explanations of mathematical concepts<sup>5</sup></li>
             <li className="mb-2">Graph paper for organizing calculations</li>
             <li className="mb-2">Calculator use for computation</li>
             <li className="mb-2">Extra time for visual-spatial math problems</li>
@@ -65,7 +65,7 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Comprehension</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Explicit teaching of inferencing skills<sup>[6]</sup></li>
+            <li className="mb-2">Explicit teaching of inferencing skills<sup>16</sup></li>
             <li className="mb-2">Graphic organizers to visualize text structure</li>
             <li className="mb-2">Pre-teaching vocabulary and concepts</li>
             <li className="mb-2">Questioning strategies to monitor comprehension</li>
@@ -77,7 +77,7 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Fine Motor Skills</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Handwriting interventions<sup>[7]</sup></li>
+            <li className="mb-2">Handwriting interventions<sup>7</sup></li>
             <li className="mb-2">Adaptive pencil grips</li>
             <li className="mb-2">Activities to build hand strength and coordination</li>
             <li className="mb-2">Keyboarding instruction as alternative</li>
@@ -85,7 +85,7 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Visual-Motor Integration</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Visual-motor integration activities<sup>[8]</sup></li>
+            <li className="mb-2">Visual-motor integration activities<sup>8</sup></li>
             <li className="mb-2">Spatial orientation exercises</li>
             <li className="mb-2">Practice with puzzles, construction tasks</li>
           </ul>
@@ -94,7 +94,7 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Balance and coordination activities</li>
             <li className="mb-2">Bilateral coordination exercises</li>
-            <li className="mb-2">Adaptive physical education when needed<sup>[9]</sup></li>
+            <li className="mb-2">Adaptive physical education when needed<sup>9</sup></li>
           </ul>
         </div>
 
@@ -103,15 +103,15 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Explicit Social Skills Instruction</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Teaching nonverbal cues:</strong> Explicit instruction in reading facial expressions<sup>[10]</sup></li>
+            <li className="mb-2"><strong>Teaching nonverbal cues:</strong> Explicit instruction in reading facial expressions<sup>10</sup></li>
             <li className="mb-2"><strong>Body language:</strong> Understanding personal space, posture, gestures</li>
-            <li className="mb-2"><strong>Social rules:</strong> Direct teaching of unwritten social rules<sup>[11]</sup></li>
+            <li className="mb-2"><strong>Social rules:</strong> Direct teaching of unwritten social rules<sup>11</sup></li>
             <li className="mb-2"><strong>Perspective-taking:</strong> Understanding others' points of view</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Skills Groups</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Structured groups with peers<sup>[12]</sup></li>
+            <li className="mb-2">Structured groups with peers<sup>12</sup></li>
             <li className="mb-2">Practice in safe, supportive environment</li>
             <li className="mb-2">Feedback and coaching</li>
             <li className="mb-2">Generalization to natural settings</li>
@@ -120,7 +120,7 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Pragmatic Language Therapy</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Speech-language therapy for social communication</li>
-            <li className="mb-2">Understanding figurative language, idioms, sarcasm<sup>[13]</sup></li>
+            <li className="mb-2">Understanding figurative language, idioms, sarcasm<sup>13</sup></li>
             <li className="mb-2">Conversational turn-taking</li>
             <li className="mb-2">Topic maintenance and shifts</li>
           </ul>
@@ -137,18 +137,18 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Academic Accommodations</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Extended time:</strong> For tests and assignments<sup>[14]</sup></li>
+            <li className="mb-2"><strong>Extended time:</strong> For tests and assignments<sup>14</sup></li>
             <li className="mb-2"><strong>Reduced copying:</strong> Provide handouts instead of board copying</li>
             <li className="mb-2"><strong>Verbal explanations:</strong> Explain visual materials verbally</li>
             <li className="mb-2"><strong>Calculator use:</strong> For computation in math</li>
             <li className="mb-2"><strong>Graph paper:</strong> For math organization</li>
-            <li className="mb-2"><strong>Preferential seating:</strong> Near teacher, away from distractions<sup>[15]</sup></li>
+            <li className="mb-2"><strong>Preferential seating:</strong> Near teacher, away from distractions<sup>15</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Organizational Support</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Color-coded folders and materials</li>
-            <li className="mb-2">Written schedules and checklists<sup>[16]</sup></li>
+            <li className="mb-2">Written schedules and checklists<sup>16</sup></li>
             <li className="mb-2">Assignment notebooks or digital planners</li>
             <li className="mb-2">Extra set of books at home</li>
           </ul>

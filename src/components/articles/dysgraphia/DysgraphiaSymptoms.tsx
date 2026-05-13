@@ -32,8 +32,8 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
         <div>
           <p className="mb-4">
             Dysgraphia manifests through a variety of symptoms related to the physical act of writing, spelling, 
-            and written expression.<sup>[1]</sup> These symptoms can range from mild to severe and often vary depending 
-            on the type of dysgraphia and individual circumstances.<sup>[2]</sup>
+            and written expression.<sup>10</sup> These symptoms can range from mild to severe and often vary depending 
+            on the type of dysgraphia and individual circumstances.<sup>12</sup>
           </p>
         </div>
 
@@ -48,16 +48,16 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Illegible Writing</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Letter formation:</strong> Inconsistent or poorly formed letters<sup>[3]</sup></li>
+            <li className="mb-2"><strong>Letter formation:</strong> Inconsistent or poorly formed letters<sup>13</sup></li>
             <li className="mb-2"><strong>Letter reversals:</strong> Confusion with letters like b/d, p/q</li>
             <li className="mb-2"><strong>Mixed case:</strong> Inconsistent use of uppercase and lowercase letters</li>
-            <li className="mb-2"><strong>Overall legibility:</strong> Handwriting difficult for others (or self) to read<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Overall legibility:</strong> Handwriting difficult for others (or self) to read<sup>14</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Inconsistent Spacing</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Irregular spaces between letters within words</li>
-            <li className="mb-2">Inconsistent spacing between words<sup>[5]</sup></li>
+            <li className="mb-2">Inconsistent spacing between words<sup>5</sup></li>
             <li className="mb-2">Words running together or excessively separated</li>
             <li className="mb-2">Difficulty maintaining consistent margins</li>
           </ul>
@@ -65,14 +65,14 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Letter Size and Alignment Issues</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Inconsistent letter sizing within and between words</li>
-            <li className="mb-2">Difficulty staying on the line<sup>[6]</sup></li>
+            <li className="mb-2">Difficulty staying on the line<sup>16</sup></li>
             <li className="mb-2">Letters floating above or dropping below the baseline</li>
             <li className="mb-2">Mixture of large and small letters</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Slow Writing Speed</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Takes significantly longer to write than peers<sup>[7]</sup></li>
+            <li className="mb-2">Takes significantly longer to write than peers<sup>7</sup></li>
             <li className="mb-2">Difficulty completing timed writing tasks</li>
             <li className="mb-2">Labored, effortful writing process</li>
             <li className="mb-2">Cannot keep up with note-taking demands</li>
@@ -84,7 +84,7 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Grip and Posture Difficulties</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Unusual pencil grip:</strong> Awkward or inefficient pencil hold<sup>[8]</sup></li>
+            <li className="mb-2"><strong>Unusual pencil grip:</strong> Awkward or inefficient pencil hold<sup>8</sup></li>
             <li className="mb-2"><strong>Excessive grip pressure:</strong> Gripping pencil too tightly or too loosely</li>
             <li className="mb-2"><strong>Hand position:</strong> Unusual hand or wrist positioning while writing</li>
             <li className="mb-2"><strong>Body posture:</strong> Awkward positioning of body, arm, or paper</li>
@@ -92,7 +92,7 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Discomfort</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Hand cramping or pain while writing<sup>[9]</sup></li>
+            <li className="mb-2">Hand cramping or pain while writing<sup>9</sup></li>
             <li className="mb-2">Muscle fatigue in hand, arm, or shoulder</li>
             <li className="mb-2">Complaints of hand hurting during writing tasks</li>
             <li className="mb-2">Frequent breaks needed to rest hand</li>
@@ -101,7 +101,7 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Fine Motor Challenges</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Difficulty with other fine motor tasks (buttons, zippers, tying shoes)</li>
-            <li className="mb-2">Poor coordination in finger movements<sup>[10]</sup></li>
+            <li className="mb-2">Poor coordination in finger movements<sup>10</sup></li>
             <li className="mb-2">Challenges with tasks requiring precision</li>
           </ul>
         </div>
@@ -111,14 +111,14 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Inconsistent Spelling</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Same word spelled differently within same document<sup>[11]</sup></li>
+            <li className="mb-2">Same word spelled differently within same document<sup>11</sup></li>
             <li className="mb-2">Able to spell word correctly orally but not in writing</li>
             <li className="mb-2">Spelling deteriorates as writing task lengthens</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Types of Spelling Errors</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Phonetic errors (writing words as they sound)<sup>[12]</sup></li>
+            <li className="mb-2">Phonetic errors (writing words as they sound)<sup>12</sup></li>
             <li className="mb-2">Omitting letters or syllables</li>
             <li className="mb-2">Letter reversals and transpositions</li>
             <li className="mb-2">Confusion with homophones (to/too/two, there/their/they're)</li>
@@ -136,14 +136,14 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Discrepancy Between Oral and Written Abilities</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Articulate verbally but struggle in writing:</strong> Can express ideas clearly when speaking<sup>[13]</sup></li>
+            <li className="mb-2"><strong>Articulate verbally but struggle in writing:</strong> Can express ideas clearly when speaking<sup>13</sup></li>
             <li className="mb-2"><strong>Rich oral vocabulary:</strong> Limited vocabulary in written work</li>
             <li className="mb-2"><strong>Complex verbal reasoning:</strong> Simple, basic written sentences</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Organization and Structure</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty organizing thoughts on paper<sup>[14]</sup></li>
+            <li className="mb-2">Difficulty organizing thoughts on paper<sup>14</sup></li>
             <li className="mb-2">Poor paragraph structure</li>
             <li className="mb-2">Lack of clear beginning, middle, and end</li>
             <li className="mb-2">Disjointed or illogical flow of ideas</li>
@@ -152,14 +152,14 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Grammar and Syntax</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Incomplete sentences or run-on sentences</li>
-            <li className="mb-2">Missing or incorrect punctuation<sup>[15]</sup></li>
+            <li className="mb-2">Missing or incorrect punctuation<sup>15</sup></li>
             <li className="mb-2">Grammatical errors inconsistent with oral language</li>
             <li className="mb-2">Omitting or misusing small words (a, the, is)</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Content and Length</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Written work much shorter than expected<sup>[16]</sup></li>
+            <li className="mb-2">Written work much shorter than expected<sup>16</sup></li>
             <li className="mb-2">Lack of detail or elaboration</li>
             <li className="mb-2">Difficulty expanding on ideas</li>
             <li className="mb-2">Repetitive language or ideas</li>

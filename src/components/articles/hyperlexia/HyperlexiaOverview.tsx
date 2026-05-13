@@ -34,8 +34,8 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
           <p className="mb-4">
             Hyperlexia is characterized by an advanced ability to read at an early age, well beyond what would be 
             expected based on the child's age, accompanied by significant difficulties with spoken language comprehension 
-            and social communication.<sup>[1]</sup> The term was first coined in 1967 to describe children who could 
-            read exceptionally well but struggled to understand what they read.<sup>[2]</sup>
+            and social communication.<sup>10</sup> The term was first coined in 1967 to describe children who could 
+            read exceptionally well but struggled to understand what they read.<sup>12</sup>
           </p>
         </div>
 
@@ -50,24 +50,24 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Core Characteristics</h3>
           <p className="mb-4">
-            Hyperlexia involves a unique pattern of abilities and difficulties:<sup>[3]</sup>
+            Hyperlexia involves a unique pattern of abilities and difficulties:<sup>13</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Precocious reading:</strong> Self-taught reading often before age 5</li>
-            <li className="mb-2"><strong>Word recognition:</strong> Exceptional ability to decode written words<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Word recognition:</strong> Exceptional ability to decode written words<sup>14</sup></li>
             <li className="mb-2"><strong>Comprehension difficulties:</strong> Trouble understanding spoken and written language</li>
             <li className="mb-2"><strong>Language challenges:</strong> Delayed or disordered language development</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Reading-Comprehension Split</h3>
           <p className="mb-4">
-            The hallmark of hyperlexia is the significant gap between decoding and comprehension:<sup>[5]</sup>
+            The hallmark of hyperlexia is the significant gap between decoding and comprehension:<sup>5</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Can read words far beyond age level</li>
             <li className="mb-2">May not understand what they've read</li>
             <li className="mb-2">Reading is often mechanical or rote</li>
-            <li className="mb-2">Fascination with letters, numbers, and symbols<sup>[6]</sup></li>
+            <li className="mb-2">Fascination with letters, numbers, and symbols<sup>16</sup></li>
           </ul>
         </div>
 
@@ -76,20 +76,20 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Three Types Framework</h3>
           <p className="mb-4">
-            Dr. Darold Treffert and colleagues proposed three types of hyperlexia:<sup>[7]</sup>
+            Dr. Darold Treffert and colleagues proposed three types of hyperlexia:<sup>7</sup>
           </p>
 
           <h4 className="font-bold mb-2">Type 1: Neurotypical Hyperlexia</h4>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Early precocious readers who are otherwise typically developing</li>
-            <li className="mb-2">No underlying developmental concerns<sup>[8]</sup></li>
+            <li className="mb-2">No underlying developmental concerns<sup>8</sup></li>
             <li className="mb-2">Reading comprehension catches up to decoding over time</li>
             <li className="mb-2">May be gifted or have high intellectual ability</li>
           </ul>
 
           <h4 className="font-bold mb-2">Type 2: Hyperlexia with Autism</h4>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Hyperlexic reading combined with autism spectrum disorder<sup>[9]</sup></li>
+            <li className="mb-2">Hyperlexic reading combined with autism spectrum disorder<sup>9</sup></li>
             <li className="mb-2">Most common type seen clinically</li>
             <li className="mb-2">Social communication difficulties persist</li>
             <li className="mb-2">Meets full criteria for autism diagnosis</li>
@@ -97,7 +97,7 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
 
           <h4 className="font-bold mb-2">Type 3: Hyperlexia as Transient Phenomenon</h4>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Early autism-like symptoms that diminish over time<sup>[10]</sup></li>
+            <li className="mb-2">Early autism-like symptoms that diminish over time<sup>10</sup></li>
             <li className="mb-2">Initially appear autistic but don't meet full autism criteria later</li>
             <li className="mb-2">Most controversial category</li>
             <li className="mb-2">Language and social skills improve significantly</li>
@@ -109,9 +109,9 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Common is Hyperlexia?</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Rare condition:</strong> Exact prevalence unknown<sup>[11]</sup></li>
+            <li className="mb-2"><strong>Rare condition:</strong> Exact prevalence unknown<sup>11</sup></li>
             <li className="mb-2"><strong>Autism connection:</strong> 6-14% of autistic children show hyperlexia</li>
-            <li className="mb-2"><strong>Underdiagnosed:</strong> May be overlooked due to reading ability<sup>[12]</sup></li>
+            <li className="mb-2"><strong>Underdiagnosed:</strong> May be overlooked due to reading ability<sup>12</sup></li>
             <li className="mb-2"><strong>Gender:</strong> More common in boys, similar to autism</li>
           </ul>
         </div>
@@ -127,17 +127,17 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Strong Association</h3>
           <p className="mb-4">
-            Hyperlexia is strongly associated with autism spectrum disorder:<sup>[13]</sup>
+            Hyperlexia is strongly associated with autism spectrum disorder:<sup>13</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Many children with hyperlexia also have autism</li>
-            <li className="mb-2">Shared features: restricted interests, language difficulties, social challenges<sup>[14]</sup></li>
+            <li className="mb-2">Shared features: restricted interests, language difficulties, social challenges<sup>14</sup></li>
             <li className="mb-2">Reading may serve as a special interest or perseveration</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Not All Hyperlexic Children Have Autism</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Hyperlexia can occur without autism (Type 1)<sup>[15]</sup></li>
+            <li className="mb-2">Hyperlexia can occur without autism (Type 1)<sup>15</sup></li>
             <li className="mb-2">Different trajectory and outcomes</li>
             <li className="mb-2">Comprehensive assessment needed to differentiate</li>
           </ul>
@@ -148,7 +148,7 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading-Related Signs</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Fascination with letters/numbers:</strong> Intense interest before age 2<sup>[16]</sup></li>
+            <li className="mb-2"><strong>Fascination with letters/numbers:</strong> Intense interest before age 2<sup>16</sup></li>
             <li className="mb-2"><strong>Self-taught reading:</strong> Learning without formal instruction</li>
             <li className="mb-2"><strong>Letter recognition:</strong> Identifying letters very early</li>
             <li className="mb-2"><strong>Word memorization:</strong> Memorizing written words<sup>[17]</sup></li>

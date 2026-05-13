@@ -25,7 +25,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
                 criteria.
               </p>
               <p className="mb-4">
-                The Diagnostic and Statistical Manual of Mental Disorders (DSM-5-TR)<sup>[1]</sup> identifies three presentations 
+                The Diagnostic and Statistical Manual of Mental Disorders (DSM-5-TR)<sup>10</sup> identifies three presentations 
                 of ADHD: predominantly inattentive, predominantly hyperactive-impulsive, and combined presentation. 
                 Each presentation has distinct symptom profiles, though individuals may experience symptoms from 
                 multiple categories.
@@ -34,7 +34,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
               <div className="bg-[#d6e9ff] border-l-4 border-[#0c264d] p-4 rounded">
                 <p className="text-sm">
                   <strong>Important:</strong> A diagnosis requires at least 6 symptoms from either category (or both) 
-                  for children, and 5 symptoms for adults age 17+<sup>[1]</sup>, persisting for at least 6 months.
+                  for children, and 5 symptoms for adults age 17+<sup>10</sup>, persisting for at least 6 months.
                 </p>
               </div>
             </div>
@@ -50,7 +50,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
               />
               
               <p className="mb-4">
-                The diagram above illustrates the complete DSM-5-TR diagnostic criteria<sup>[1]</sup> for ADHD, showing the specific 
+                The diagram above illustrates the complete DSM-5-TR diagnostic criteria<sup>10</sup> for ADHD, showing the specific 
                 symptoms that define each presentation. To receive a diagnosis of ADHD combined type, an individual 
                 must meet criteria from both the inattention category (left circle) and the impulsivity/hyperactivity 
                 category (right circle). These symptoms must be present for at least 6 months and be inappropriate 

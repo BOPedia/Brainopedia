@@ -32,8 +32,8 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
         <div>
           <p className="mb-4">
             Diagnosing Developmental Language Disorder requires comprehensive assessment by qualified professionals, 
-            typically speech-language pathologists.<sup>[1]</sup> The diagnostic process involves standardized testing, 
-            observations, and consideration of the child's language use in everyday contexts.<sup>[2]</sup>
+            typically speech-language pathologists.<sup>10</sup> The diagnostic process involves standardized testing, 
+            observations, and consideration of the child's language use in everyday contexts.<sup>12</sup>
           </p>
         </div>
 
@@ -42,10 +42,10 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Qualified Professionals</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Speech-Language Pathologists (SLPs):</strong> Primary professionals for DLD assessment<sup>[3]</sup></li>
+            <li className="mb-2"><strong>Speech-Language Pathologists (SLPs):</strong> Primary professionals for DLD assessment<sup>13</sup></li>
             <li className="mb-2"><strong>Educational psychologists:</strong> May identify language concerns</li>
             <li className="mb-2"><strong>Developmental pediatricians:</strong> Medical screening and referral</li>
-            <li className="mb-2"><strong>Neuropsychologists:</strong> Comprehensive cognitive-language assessment<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Neuropsychologists:</strong> Comprehensive cognitive-language assessment<sup>14</sup></li>
           </ul>
         </div>
 
@@ -60,18 +60,18 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">International Consensus Criteria</h3>
           <p className="mb-4">
-            The 2017 CATALISE consensus established diagnostic criteria:<sup>[5]</sup>
+            The 2017 CATALISE consensus established diagnostic criteria:<sup>5</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Language difficulties:</strong> Persistent problems with language learning and use</li>
-            <li className="mb-2"><strong>Functional impact:</strong> Language difficulties interfere with daily life<sup>[6]</sup></li>
+            <li className="mb-2"><strong>Functional impact:</strong> Language difficulties interfere with daily life<sup>16</sup></li>
             <li className="mb-2"><strong>Not explained by:</strong> Known biomedical condition, intellectual disability, hearing impairment, lack of opportunity</li>
             <li className="mb-2"><strong>Standardized tests:</strong> Typically perform below age expectations on language tests</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Flexibility in Criteria</h3>
           <p className="mb-4">
-            CATALISE moved away from strict cutoff scores:<sup>[7]</sup>
+            CATALISE moved away from strict cutoff scores:<sup>7</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Clinical judgment important alongside test scores</li>
@@ -85,16 +85,16 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Case History</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Developmental history:</strong> Language milestones, early development<sup>[8]</sup></li>
+            <li className="mb-2"><strong>Developmental history:</strong> Language milestones, early development<sup>8</sup></li>
             <li className="mb-2"><strong>Medical history:</strong> Hearing, health conditions, medications</li>
-            <li className="mb-2"><strong>Family history:</strong> Language or learning difficulties in relatives<sup>[9]</sup></li>
+            <li className="mb-2"><strong>Family history:</strong> Language or learning difficulties in relatives<sup>9</sup></li>
             <li className="mb-2"><strong>Educational history:</strong> School performance and concerns</li>
             <li className="mb-2"><strong>Current concerns:</strong> Specific difficulties parents and teachers notice</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hearing Screening</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Essential to rule out hearing loss as primary cause<sup>[10]</sup></li>
+            <li className="mb-2">Essential to rule out hearing loss as primary cause<sup>10</sup></li>
             <li className="mb-2">Full audiological evaluation if concerns exist</li>
             <li className="mb-2">History of ear infections documented</li>
           </ul>
@@ -105,12 +105,12 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Comprehensive Language Assessment</h3>
           <p className="mb-4">
-            Multiple domains should be assessed:<sup>[11]</sup>
+            Multiple domains should be assessed:<sup>11</sup>
           </p>
 
           <h4 className="font-bold mb-2">Receptive Language Tests</h4>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>CELF-5:</strong> Clinical Evaluation of Language Fundamentals<sup>[12]</sup></li>
+            <li className="mb-2"><strong>CELF-5:</strong> Clinical Evaluation of Language Fundamentals<sup>12</sup></li>
             <li className="mb-2"><strong>PPVT-5:</strong> Peabody Picture Vocabulary Test</li>
             <li className="mb-2"><strong>TROG-2:</strong> Test for Reception of Grammar</li>
             <li className="mb-2">Assesses understanding of words, sentences, and grammar</li>
@@ -118,7 +118,7 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
 
           <h4 className="font-bold mb-2">Expressive Language Tests</h4>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>CELF-5:</strong> Expressive subtests<sup>[13]</sup></li>
+            <li className="mb-2"><strong>CELF-5:</strong> Expressive subtests<sup>13</sup></li>
             <li className="mb-2"><strong>EVT-3:</strong> Expressive Vocabulary Test</li>
             <li className="mb-2"><strong>Sentence formulation tasks:</strong> Grammar and syntax</li>
             <li className="mb-2"><strong>Naming tasks:</strong> Word retrieval abilities</li>
@@ -126,7 +126,7 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
 
           <h4 className="font-bold mb-2">Comprehensive Batteries</h4>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>CELF-5:</strong> Ages 5-21<sup>[14]</sup></li>
+            <li className="mb-2"><strong>CELF-5:</strong> Ages 5-21<sup>14</sup></li>
             <li className="mb-2"><strong>CASL-2:</strong> Comprehensive Assessment of Spoken Language</li>
             <li className="mb-2"><strong>OWLS-II:</strong> Oral and Written Language Scales</li>
             <li className="mb-2">Assess multiple language domains comprehensively</li>
@@ -138,9 +138,9 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Naturalistic Language Assessment</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Spontaneous speech:</strong> Recording natural conversation or play<sup>[15]</sup></li>
+            <li className="mb-2"><strong>Spontaneous speech:</strong> Recording natural conversation or play<sup>15</sup></li>
             <li className="mb-2"><strong>Narrative samples:</strong> Telling stories or retelling events</li>
-            <li className="mb-2"><strong>Analysis of grammar:</strong> Types and frequency of errors<sup>[16]</sup></li>
+            <li className="mb-2"><strong>Analysis of grammar:</strong> Types and frequency of errors<sup>16</sup></li>
             <li className="mb-2"><strong>Vocabulary use:</strong> Diversity and sophistication</li>
             <li className="mb-2"><strong>Sentence complexity:</strong> Length and complexity of utterances</li>
           </ul>

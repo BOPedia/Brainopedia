@@ -43,11 +43,11 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
             Living with Sensory Processing Disorder involves developing self-awareness, creating supportive environments, building 
             effective coping strategies, and advocating for appropriate accommodations.<sup>[1][2]</sup> While SPD presents unique 
             challenges, many individuals with sensory processing differences lead fulfilling, successful lives across all domains—
-            education, careers, relationships, and personal pursuits.<sup>[3]</sup>
+            education, careers, relationships, and personal pursuits.<sup>13</sup>
           </p>
           <p className="mb-4">
             This section explores practical strategies for navigating daily life with SPD, from childhood through adulthood, 
-            focusing on self-understanding, environmental modifications, self-advocacy, and building a supportive network.<sup>[4]</sup>
+            focusing on self-understanding, environmental modifications, self-advocacy, and building a supportive network.<sup>14</sup>
           </p>
         </div>
 
@@ -56,32 +56,32 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding Your Sensory Profile</h2>
           
           <p className="mb-4">
-            Self-awareness is foundational to living well with SPD. Understanding your individual sensory profile involves:<sup>[4]</sup>
+            Self-awareness is foundational to living well with SPD. Understanding your individual sensory profile involves:<sup>14</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Identifying Sensory Triggers</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Which sensory inputs are challenging (sounds, lights, textures, smells, movements)?</li>
             <li className="mb-2">What specific qualities are problematic (loud vs. high-pitched sounds, bright vs. fluorescent lights)?</li>
-            <li className="mb-2">When and where do sensory difficulties typically occur?<sup>[6]</sup></li>
+            <li className="mb-2">When and where do sensory difficulties typically occur?<sup>16</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Recognizing Sensory Needs and Preferences</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">What sensory experiences are calming or organizing?</li>
             <li className="mb-2">What activities help with regulation and focus?</li>
-            <li className="mb-2">Which environments feel comfortable and supportive?<sup>[7]</sup></li>
+            <li className="mb-2">Which environments feel comfortable and supportive?<sup>7</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Noticing Warning Signs of Overload</h3>
           <p className="mb-4">
-            Learning to recognize early signs of sensory overload allows for proactive intervention:<sup>[8]</sup>
+            Learning to recognize early signs of sensory overload allows for proactive intervention:<sup>8</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Physical signs (tension, headaches, fatigue)</li>
             <li className="mb-2">Emotional changes (irritability, anxiety, withdrawal)</li>
             <li className="mb-2">Cognitive effects (difficulty concentrating, feeling overwhelmed)</li>
-            <li className="mb-2">Sensory changes (sounds seem louder, lights seem brighter)<sup>[8]</sup></li>
+            <li className="mb-2">Sensory changes (sounds seem louder, lights seem brighter)<sup>8</sup></li>
           </ul>
         </div>
 
@@ -91,25 +91,25 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Creating Sensory-Friendly Routines</h3>
           <p className="mb-4">
-            Establishing consistent routines reduces uncertainty and helps manage sensory demands:<sup>[9]</sup>
+            Establishing consistent routines reduces uncertainty and helps manage sensory demands:<sup>9</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Build in regular sensory breaks throughout the day</li>
             <li className="mb-2">Schedule demanding tasks during optimal times (when well-regulated)</li>
-            <li className="mb-2">Plan transitions between activities and environments<sup>[10]</sup></li>
+            <li className="mb-2">Plan transitions between activities and environments<sup>10</sup></li>
             <li className="mb-2">Incorporate calming or organizing sensory activities (morning routine, transitions from 
-            school, work to home)<sup>[11]</sup></li>
+            school, work to home)<sup>11</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Modifying Self-Care Activities</h3>
           <p className="mb-4">
-            Self-care activities that involve intense sensory experiences can be modified:<sup>[13]</sup>
+            Self-care activities that involve intense sensory experiences can be modified:<sup>13</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Bathing/Showering:</strong> Adjust water temperature and pressure, use preferred products, 
             modify lighting and sound</li>
             <li className="mb-2"><strong>Grooming:</strong> Find tolerable hair care products, use electric toothbrushes or manual ones 
-            that minimize sensory input<sup>[13]</sup></li>
+            that minimize sensory input<sup>13</sup></li>
             <li className="mb-2"><strong>Clothing:</strong> Choose comfortable fabrics, remove tags, select loose-fitting or 
             compression styles based on preferences</li>
           </ul>
@@ -122,7 +122,7 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
             <li className="mb-2">Respect food preferences while gradually expanding tolerated foods</li>
             <li className="mb-2">Consider textures, temperatures, and presentations that work</li>
             <li className="mb-2">Explore nutritional supplements if diet is very limited</li>
-            <li className="mb-2">Create calm eating environments with minimal sensory distractions<sup>[16]</sup></li>
+            <li className="mb-2">Create calm eating environments with minimal sensory distractions<sup>16</sup></li>
           </ul>
         </div>
 
@@ -147,7 +147,7 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Explaining SPD to Others</h3>
           <p className="mb-4">
-            Educating others about SPD supports understanding and accommodation:<sup>[11]</sup>
+            Educating others about SPD supports understanding and accommodation:<sup>11</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Use simple, clear language appropriate to the listener's age and understanding</li>
@@ -175,7 +175,7 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Formal Accommodations</h3>
           <p className="mb-4">
-            Formal accommodations through IEPs or 504 plans can include:<sup>[13]</sup>
+            Formal accommodations through IEPs or 504 plans can include:<sup>13</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Sensory breaks and movement opportunities</li>
@@ -235,14 +235,14 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Building Self-Advocacy Skills</h2>
           
           <p className="mb-4">
-            Self-advocacy—the ability to understand and communicate one's needs—is crucial for living well with SPD:<sup>[11]</sup>
+            Self-advocacy—the ability to understand and communicate one's needs—is crucial for living well with SPD:<sup>11</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Core Self-Advocacy Skills</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Self-awareness:</strong> Understanding your sensory profile, triggers, and needs</li>
             <li className="mb-2"><strong>Communication:</strong> Expressing needs clearly and respectfully<sup>[33]</sup></li>
-            <li className="mb-2"><strong>Problem-solving:</strong> Identify potential solutions and negotiate accommodations<sup>[11]</sup></li>
+            <li className="mb-2"><strong>Problem-solving:</strong> Identify potential solutions and negotiate accommodations<sup>11</sup></li>
             <li className="mb-2"><strong>Knowledge of rights:</strong> Understanding legal protections and available accommodations</li>
           </ul>
 
@@ -260,7 +260,7 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Mental Health and Emotional Wellbeing</h2>
           
           <p className="mb-4">
-            Living with sensory processing differences can impact mental health and emotional well-being:<sup>[8]</sup>
+            Living with sensory processing differences can impact mental health and emotional well-being:<sup>8</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Managing Stress and Anxiety</h3>
@@ -300,7 +300,7 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Help children understand their sensory profiles</li>
             <li className="mb-2">Teach self-regulation strategies appropriate to developmental level</li>
-            <li className="mb-2">Build your child's self-awareness and self-advocacy skills<sup>[11]</sup></li>
+            <li className="mb-2">Build your child's self-awareness and self-advocacy skills<sup>11</sup></li>
             <li className="mb-2">Connect with other families for support and shared experiences<sup>[32]</sup></li>
           </ul>
         </div>
@@ -314,7 +314,7 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Sensory needs change:</strong> Sensory profiles can evolve with development, life circumstances, 
-            and intervention<sup>[4]</sup></li>
+            and intervention<sup>14</sup></li>
             <li className="mb-2"><strong>Continuous learning:</strong> Understanding of SPD deepens over time with self-reflection 
             and support<sup>[21]</sup></li>
             <li className="mb-2"><strong>Building identity:</strong> SPD is one part of a multifaceted identity that includes strengths, 

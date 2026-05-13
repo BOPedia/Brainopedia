@@ -32,8 +32,8 @@ export function NVLDSymptoms({ setCurrentArticle }: NVLDSymptomsProps) {
         <div>
           <p className="mb-4">
             Nonverbal Learning Disability presents with a distinctive pattern of symptoms characterized by strong 
-            verbal abilities alongside significant deficits in visual-spatial, motor, and social domains.<sup>[1]</sup> 
-            The constellation of symptoms typically becomes more apparent as academic and social demands increase.<sup>[2]</sup>
+            verbal abilities alongside significant deficits in visual-spatial, motor, and social domains.<sup>10</sup> 
+            The constellation of symptoms typically becomes more apparent as academic and social demands increase.<sup>12</sup>
           </p>
         </div>
 
@@ -48,16 +48,16 @@ export function NVLDSymptoms({ setCurrentArticle }: NVLDSymptomsProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Spatial Perception Difficulties</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Poor spatial awareness:</strong> Difficulty judging distances and spatial relationships<sup>[3]</sup></li>
+            <li className="mb-2"><strong>Poor spatial awareness:</strong> Difficulty judging distances and spatial relationships<sup>13</sup></li>
             <li className="mb-2"><strong>Navigation problems:</strong> Getting lost easily, poor sense of direction</li>
             <li className="mb-2"><strong>Visual details:</strong> Missing visual details or patterns</li>
-            <li className="mb-2"><strong>Part-whole relationships:</strong> Difficulty seeing how parts fit into wholes<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Part-whole relationships:</strong> Difficulty seeing how parts fit into wholes<sup>14</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Visual-Motor Integration</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Difficulty copying shapes and designs</li>
-            <li className="mb-2">Poor performance on puzzles and building tasks<sup>[5]</sup></li>
+            <li className="mb-2">Poor performance on puzzles and building tasks<sup>5</sup></li>
             <li className="mb-2">Challenges with mazes and dot-to-dot activities</li>
             <li className="mb-2">Trouble with hands-on construction and assembly</li>
           </ul>
@@ -65,7 +65,7 @@ export function NVLDSymptoms({ setCurrentArticle }: NVLDSymptomsProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Visual Organization</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Difficulty organizing visual information on a page</li>
-            <li className="mb-2">Poor spatial organization of written work<sup>[6]</sup></li>
+            <li className="mb-2">Poor spatial organization of written work<sup>16</sup></li>
             <li className="mb-2">Trouble with visual scanning and tracking</li>
             <li className="mb-2">Challenges interpreting graphs, charts, and diagrams</li>
           </ul>
@@ -76,16 +76,16 @@ export function NVLDSymptoms({ setCurrentArticle }: NVLDSymptomsProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gross Motor Skills</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Clumsiness:</strong> Frequent tripping, bumping into things<sup>[7]</sup></li>
+            <li className="mb-2"><strong>Clumsiness:</strong> Frequent tripping, bumping into things<sup>7</sup></li>
             <li className="mb-2"><strong>Balance problems:</strong> Difficulty with activities requiring balance</li>
             <li className="mb-2"><strong>Bilateral coordination:</strong> Trouble coordinating both sides of body</li>
-            <li className="mb-2"><strong>Sports challenges:</strong> Difficulty with team sports and physical activities<sup>[8]</sup></li>
+            <li className="mb-2"><strong>Sports challenges:</strong> Difficulty with team sports and physical activities<sup>8</sup></li>
             <li className="mb-2"><strong>Motor milestones:</strong> Delayed walking, running, or bike riding</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Fine Motor Skills</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Poor handwriting despite adequate instruction<sup>[9]</sup></li>
+            <li className="mb-2">Poor handwriting despite adequate instruction<sup>9</sup></li>
             <li className="mb-2">Difficulty with buttoning, zipping, tying shoes</li>
             <li className="mb-2">Challenges with scissors, coloring within lines</li>
             <li className="mb-2">Trouble with manipulating small objects</li>
@@ -94,7 +94,7 @@ export function NVLDSymptoms({ setCurrentArticle }: NVLDSymptomsProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Graphomotor Difficulties</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Inconsistent letter formation and sizing</li>
-            <li className="mb-2">Poor spatial organization on paper<sup>[10]</sup></li>
+            <li className="mb-2">Poor spatial organization on paper<sup>10</sup></li>
             <li className="mb-2">Difficulty staying on lines</li>
             <li className="mb-2">Slow, labored handwriting</li>
           </ul>
@@ -105,28 +105,28 @@ export function NVLDSymptoms({ setCurrentArticle }: NVLDSymptomsProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Nonverbal Communication Deficits</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Reading facial expressions:</strong> Difficulty interpreting emotional expressions<sup>[11]</sup></li>
+            <li className="mb-2"><strong>Reading facial expressions:</strong> Difficulty interpreting emotional expressions<sup>11</sup></li>
             <li className="mb-2"><strong>Body language:</strong> Missing nonverbal social cues</li>
             <li className="mb-2"><strong>Personal space:</strong> Standing too close or too far from others</li>
-            <li className="mb-2"><strong>Eye contact:</strong> Inappropriate or inconsistent eye contact<sup>[12]</sup></li>
+            <li className="mb-2"><strong>Eye contact:</strong> Inappropriate or inconsistent eye contact<sup>12</sup></li>
             <li className="mb-2"><strong>Gestures:</strong> Limited use of or misunderstanding of gestures</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Interaction Challenges</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty making and keeping friends<sup>[13]</sup></li>
+            <li className="mb-2">Difficulty making and keeping friends<sup>13</sup></li>
             <li className="mb-2">Missing subtle social cues and context</li>
             <li className="mb-2">Literal interpretation of language (missing sarcasm, idioms)</li>
             <li className="mb-2">Talking "too much" or dominating conversations</li>
-            <li className="mb-2">Difficulty with social timing and turn-taking<sup>[14]</sup></li>
+            <li className="mb-2">Difficulty with social timing and turn-taking<sup>14</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Emotional Regulation</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Anxiety, especially in social or novel situations<sup>[15]</sup></li>
+            <li className="mb-2">Anxiety, especially in social or novel situations<sup>15</sup></li>
             <li className="mb-2">Difficulty coping with change or transitions</li>
             <li className="mb-2">Low frustration tolerance</li>
-            <li className="mb-2">Risk for depression, particularly in adolescence<sup>[16]</sup></li>
+            <li className="mb-2">Risk for depression, particularly in adolescence<sup>16</sup></li>
           </ul>
         </div>
 

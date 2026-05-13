@@ -32,8 +32,8 @@ export function NVLDCauses({ setCurrentArticle }: NVLDCausesProps) {
         <div>
           <p className="mb-4">
             The causes of Nonverbal Learning Disability are not fully understood, but research points to neurological 
-            differences, particularly involving the right hemisphere of the brain and white matter pathways.<sup>[1]</sup> 
-            Unlike some learning disabilities, NVLD appears to have strong neurobiological underpinnings.<sup>[2]</sup>
+            differences, particularly involving the right hemisphere of the brain and white matter pathways.<sup>10</sup> 
+            Unlike some learning disabilities, NVLD appears to have strong neurobiological underpinnings.<sup>12</sup>
           </p>
         </div>
 
@@ -48,28 +48,28 @@ export function NVLDCauses({ setCurrentArticle }: NVLDCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Right Hemisphere Dysfunction</h3>
           <p className="mb-4">
-            Rourke's model proposes that NVLD results from dysfunction in the right cerebral hemisphere:<sup>[3]</sup>
+            Rourke's model proposes that NVLD results from dysfunction in the right cerebral hemisphere:<sup>13</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Right hemisphere functions:</strong> Visual-spatial processing, nonverbal perception, social cues</li>
-            <li className="mb-2"><strong>Deficit pattern:</strong> Impairments align with right hemisphere specializations<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Deficit pattern:</strong> Impairments align with right hemisphere specializations<sup>14</sup></li>
             <li className="mb-2"><strong>Preserved left hemisphere:</strong> Verbal abilities typically intact or advanced</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">White Matter Hypothesis</h3>
           <p className="mb-4">
-            Rourke's white matter model suggests NVLD stems from dysfunction in cerebral white matter:<sup>[5]</sup>
+            Rourke's white matter model suggests NVLD stems from dysfunction in cerebral white matter:<sup>5</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>White matter:</strong> Neural pathways connecting different brain regions</li>
             <li className="mb-2"><strong>Right hemisphere white matter:</strong> Particularly vulnerable in NVLD</li>
-            <li className="mb-2"><strong>Long connections:</strong> Longer white matter pathways more affected<sup>[6]</sup></li>
+            <li className="mb-2"><strong>Long connections:</strong> Longer white matter pathways more affected<sup>16</sup></li>
             <li className="mb-2"><strong>Integration problems:</strong> Difficulty integrating information across brain regions</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brain Imaging Findings</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Neuroimaging studies show white matter abnormalities<sup>[7]</sup></li>
+            <li className="mb-2">Neuroimaging studies show white matter abnormalities<sup>7</sup></li>
             <li className="mb-2">Reduced white matter volume in some studies</li>
             <li className="mb-2">Differences in corpus callosum (connects brain hemispheres)</li>
           </ul>
@@ -80,7 +80,7 @@ export function NVLDCauses({ setCurrentArticle }: NVLDCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Familial Patterns</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">NVLD appears to run in families<sup>[8]</sup></li>
+            <li className="mb-2">NVLD appears to run in families<sup>8</sup></li>
             <li className="mb-2">Genetic research is limited compared to other conditions</li>
             <li className="mb-2">May share genetic factors with autism spectrum disorder</li>
           </ul>
@@ -91,15 +91,15 @@ export function NVLDCauses({ setCurrentArticle }: NVLDCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Congenital and Acquired Conditions</h3>
           <p className="mb-4">
-            NVLD-like symptoms can result from various medical conditions:<sup>[9]</sup>
+            NVLD-like symptoms can result from various medical conditions:<sup>9</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Hydrocephalus:</strong> Fluid accumulation affecting white matter</li>
-            <li className="mb-2"><strong>Agenesis of corpus callosum:</strong> Absence of structure connecting hemispheres<sup>[10]</sup></li>
+            <li className="mb-2"><strong>Agenesis of corpus callosum:</strong> Absence of structure connecting hemispheres<sup>10</sup></li>
             <li className="mb-2"><strong>Traumatic brain injury:</strong> Particularly right hemisphere damage</li>
             <li className="mb-2"><strong>Brain tumors:</strong> Affecting right hemisphere or white matter</li>
             <li className="mb-2"><strong>Multiple sclerosis:</strong> White matter disease</li>
-            <li className="mb-2"><strong>Congenital heart disease:</strong> Associated with white matter changes<sup>[11]</sup></li>
+            <li className="mb-2"><strong>Congenital heart disease:</strong> Associated with white matter changes<sup>11</sup></li>
           </ul>
         </div>
 
@@ -108,14 +108,14 @@ export function NVLDCauses({ setCurrentArticle }: NVLDCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Neurodevelopmental Origins</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">NVLD appears to be neurodevelopmental in origin<sup>[12]</sup></li>
+            <li className="mb-2">NVLD appears to be neurodevelopmental in origin<sup>12</sup></li>
             <li className="mb-2">Present from birth, though may not be apparent until later</li>
             <li className="mb-2">Symptoms become more evident as demands increase</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Developmental Trajectory</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Right hemisphere develops later than left hemisphere<sup>[13]</sup></li>
+            <li className="mb-2">Right hemisphere develops later than left hemisphere<sup>13</sup></li>
             <li className="mb-2">Early verbal strengths may mask other difficulties</li>
             <li className="mb-2">Academic and social demands reveal deficits over time</li>
           </ul>
@@ -127,7 +127,7 @@ export function NVLDCauses({ setCurrentArticle }: NVLDCausesProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Premature birth:</strong> Associated with white matter damage</li>
             <li className="mb-2"><strong>Low birth weight:</strong> Increased risk of neurodevelopmental differences</li>
-            <li className="mb-2"><strong>Perinatal complications:</strong> Issues during pregnancy or birth<sup>[14]</sup></li>
+            <li className="mb-2"><strong>Perinatal complications:</strong> Issues during pregnancy or birth<sup>14</sup></li>
             <li className="mb-2"><strong>Family history:</strong> Learning disabilities or related conditions in family</li>
           </ul>
         </div>
@@ -143,11 +143,11 @@ export function NVLDCauses({ setCurrentArticle }: NVLDCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Autism Spectrum Disorder</h3>
           <p className="mb-4">
-            Significant overlap exists between NVLD and ASD:<sup>[15]</sup>
+            Significant overlap exists between NVLD and ASD:<sup>15</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Shared social and nonverbal communication difficulties</li>
-            <li className="mb-2">May have common neurological underpinnings<sup>[16]</sup></li>
+            <li className="mb-2">May have common neurological underpinnings<sup>16</sup></li>
             <li className="mb-2">Some researchers view NVLD as related to autism spectrum</li>
             <li className="mb-2">Distinction based on restricted interests and repetitive behaviors</li>
           </ul>

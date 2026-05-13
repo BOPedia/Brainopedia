@@ -48,7 +48,7 @@ export function Epigenetics() {
             <h3 className="font-bold font-spartan">Reversibility</h3>
           </div>
           <p className="text-sm font-spartan leading-relaxed">
-            Unlike fixed DNA mutations, these modifications are potentially reversible, offering promise for novel, personalized treatment strategies<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Gholamalizadeh et al. (2024)">[2]</sup>.
+            Unlike fixed DNA mutations, these modifications are potentially reversible, offering promise for novel, personalized treatment strategies<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Gholamalizadeh et al. (2024)">12</sup>.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export function Epigenetics() {
           </h3>
           <ul className="space-y-4 font-spartan text-sm text-gray-700">
             <li>
-              <strong className="font-bold text-[#0c264d]">DNA Methylation:</strong> Patterns affecting synaptic signaling and GABAergic systems are consistent enough to serve as promising candidate biomarkers<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Gholamalizadeh et al. (2024)">[2]</sup>.
+              <strong className="font-bold text-[#0c264d]">DNA Methylation:</strong> Patterns affecting synaptic signaling and GABAergic systems are consistent enough to serve as promising candidate biomarkers<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Gholamalizadeh et al. (2024)">12</sup>.
             </li>
             <li>
               <strong className="font-bold text-[#0c264d]">Histone Modification:</strong> Changes in DNA packaging regulate gene accessibility; disruptions are consistently observed in ASD epigenomic profiles.
@@ -121,7 +121,7 @@ export function Epigenetics() {
           Diagnosis & Targeted Therapies
         </h3>
         <p className="text-sm leading-relaxed font-spartan mb-4">
-          Researchers are identifying epigenetic signatures in peripheral blood that mirror brain tissue patterns, offering a pathway to non-invasive early diagnosis. Additionally, the development of <strong>"Epidrugs"</strong> — pharmacological agents designed to modify aberrant methylation patterns — represents a growing frontier in symptom-targeted treatment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Gholamalizadeh et al. (2024)">[2]</sup>.
+          Researchers are identifying epigenetic signatures in peripheral blood that mirror brain tissue patterns, offering a pathway to non-invasive early diagnosis. Additionally, the development of <strong>"Epidrugs"</strong> — pharmacological agents designed to modify aberrant methylation patterns — represents a growing frontier in symptom-targeted treatment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Gholamalizadeh et al. (2024)">12</sup>.
         </p>
       </div>
 

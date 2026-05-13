@@ -114,7 +114,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
               className="w-48 h-auto float-right ml-4 mb-4 rounded"
             />
             Autism is a lifelong neurodevelopmental condition that affects how people perceive the world and interact 
-            with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup style={{color: '#10b981'}}>[1]</sup> with 
+            with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup style={{color: '#10b981'}}>10</sup> with 
             increasing recognition and diagnosis rates in recent years. It's important to recognize that autism is 
             not a disease or disorder that needs to be "cured."
           </p>
@@ -177,11 +177,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
               alt="Autism Causes and Origins"
               className="w-48 h-auto float-right ml-4 mb-4 rounded"
             />
-            The exact causes of autism are not fully understood, but research indicates that both genetic and environmental factors contribute to its development.<sup style={{color: '#10b981'}}>[2]</sup> Autism is best understood as arising from differences in brain development that occur before birth. Studies have identified hundreds of genes associated with autism, though no single gene causes autism in most cases.<sup style={{color: '#10b981'}}>[3]</sup>
+            The exact causes of autism are not fully understood, but research indicates that both genetic and environmental factors contribute to its development.<sup style={{color: '#10b981'}}>12</sup> Autism is best understood as arising from differences in brain development that occur before birth. Studies have identified hundreds of genes associated with autism, though no single gene causes autism in most cases.<sup style={{color: '#10b981'}}>13</sup>
           </p>
           
           <p className="mb-4">
-            Brain imaging studies have revealed differences in brain structure and connectivity in autistic individuals, particularly in areas related to social cognition, sensory processing, and executive function.<sup style={{color: '#10b981'}}>[4]</sup> These neurological differences help explain why autistic people may process information, perceive sensory input, and interact socially in ways that differ from neurotypical individuals.
+            Brain imaging studies have revealed differences in brain structure and connectivity in autistic individuals, particularly in areas related to social cognition, sensory processing, and executive function.<sup style={{color: '#10b981'}}>14</sup> These neurological differences help explain why autistic people may process information, perceive sensory input, and interact socially in ways that differ from neurotypical individuals.
           </p>
           <button
             onClick={(e) => {
@@ -203,11 +203,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
               alt="Autism Testing and Diagnosis"
               className="w-48 h-auto float-right ml-4 mb-4 rounded"
             />
-            Autism is typically diagnosed through comprehensive developmental and behavioral evaluation by qualified professionals such as developmental pediatricians, child psychologists, or neurologists. There is no medical test (like a blood test or brain scan) for autism; diagnosis is based on observation of behavior and developmental history using standardized diagnostic criteria from the DSM-5-TR.<sup style={{color: '#10b981'}}>[5]</sup>
+            Autism is typically diagnosed through comprehensive developmental and behavioral evaluation by qualified professionals such as developmental pediatricians, child psychologists, or neurologists. There is no medical test (like a blood test or brain scan) for autism; diagnosis is based on observation of behavior and developmental history using standardized diagnostic criteria from the DSM-5-TR.<sup style={{color: '#10b981'}}>5</sup>
           </p>
           
           <p className="mb-4">
-            While autism can often be reliably diagnosed by age 2, many children are not diagnosed until they are older, and some adults are diagnosed later in life after years of unrecognized struggles. The DSM-5-TR includes three levels of support needs (Level 1, 2, and 3)<sup style={{color: '#10b981'}}>[5]</sup> to help describe the amount of assistance an individual may require in daily functioning.
+            While autism can often be reliably diagnosed by age 2, many children are not diagnosed until they are older, and some adults are diagnosed later in life after years of unrecognized struggles. The DSM-5-TR includes three levels of support needs (Level 1, 2, and 3)<sup style={{color: '#10b981'}}>5</sup> to help describe the amount of assistance an individual may require in daily functioning.
           </p>
           <button
             onClick={(e) => {

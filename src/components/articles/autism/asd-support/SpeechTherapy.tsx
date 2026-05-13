@@ -49,12 +49,12 @@ export function SpeechTherapy() {
         
         <div className="space-y-3">
           <div className="flex items-center gap-4 bg-white p-3 rounded-lg border border-gray-100 shadow-sm">
-            <div className="bg-[#0c264d] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm">1</div>
+            <div className="bg-[#0c264d] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm">10</div>
             <span className="font-bold text-[#0c264d] w-24 text-sm">Low-Tech:</span>
             <span className="text-sm text-gray-600">Picture boards, gestures, and sign language.</span>
           </div>
           <div className="flex items-center gap-4 bg-white p-3 rounded-lg border border-gray-100 shadow-sm">
-            <div className="bg-[#0c264d] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm">2</div>
+            <div className="bg-[#0c264d] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm">12</div>
             <span className="font-bold text-[#0c264d] w-24 text-sm">High-Tech:</span>
             <span className="text-sm text-gray-600">Speech-generating devices (SGDs) and specialized tablet apps.</span>
           </div>

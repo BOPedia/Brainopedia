@@ -191,7 +191,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
           <h4 className="text-[#0c264d] font-semibold mb-2">Citation Format Example:</h4>
           <div className="bg-gray-50 p-4 rounded border border-gray-300 text-sm">
-            <p className="mb-2">Inline citation: Research shows that ADHD affects 11.3% of children ages 5-17<sup style={{color: '#10b981'}}>[1]</sup>.</p>
+            <p className="mb-2">Inline citation: Research shows that ADHD affects 11.3% of children ages 5-17<sup style={{color: '#10b981'}}>10</sup>.</p>
             <p className="mt-4 font-semibold">References Section:</p>
             <p className="font-semibold mt-2">Cited Studies or Statistics</p>
             <p className="ml-4">[1] Smith, J. et al. (2023). "ADHD Prevalence Study." <em>Journal of Child Psychology</em>, 45(2), 123-145.</p>
@@ -558,7 +558,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
             <div className="bg-gray-50 p-4 rounded border border-gray-300">
               <h3 className="font-semibold mb-2 text-[#0c264d]">Citation Superscript</h3>
-              <p>Example text with citation<sup style={{color: '#10b981'}}>[1]</sup></p>
+              <p>Example text with citation<sup style={{color: '#10b981'}}>10</sup></p>
             </div>
 
             <div className="bg-gray-50 p-4 rounded border border-gray-300">

@@ -12,7 +12,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
 
         <p className="mb-6">
           Creating supportive environments reduces barriers and allows autistic individuals to thrive by addressing 
-          sensory needs, providing clear communication, and establishing predictable structures.<sup>1</sup>
+          sensory needs, providing clear communication, and establishing predictable structures.<sup>10</sup>
         </p>
 
         {/* Sensory Accommodations */}
@@ -72,7 +72,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
           <p className="mt-6 text-sm bg-white p-4 rounded border-2 border-[#2abcd4]">
             <strong>Note:</strong> Sensory needs are highly individualized. What is calming to one autistic person 
             (e.g., deep pressure) might be overwhelming to another. A personalized sensory profile is essential because 
-            environmental modifications can significantly improve participation and well-being.<sup>2</sup>
+            environmental modifications can significantly improve participation and well-being.<sup>12</sup>
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
           
           <p className="mb-4 text-sm">
             Many autistic individuals experience less anxiety when the environment is predictable and expectations are clear. 
-            Visual supports and structured routines help individuals understand expectations, navigate transitions, and manage anxiety.<sup>3</sup>
+            Visual supports and structured routines help individuals understand expectations, navigate transitions, and manage anxiety.<sup>13</sup>
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">

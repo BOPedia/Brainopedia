@@ -46,9 +46,9 @@ export function DyslexiaDiagnosis({ setCurrentArticle, initialTab }: DyslexiaDia
       <div className="mb-8">
         <p className="mb-4">
           Diagnosing dyslexia requires comprehensive evaluation by qualified professionals using multiple assessment 
-          methods.<sup>[1]</sup> Early identification enables timely intervention, which significantly improves reading 
-          outcomes.<sup>[2]</sup> There is no single test for dyslexia—diagnosis involves gathering information from 
-          various sources to understand an individual's reading profile.<sup>[3]</sup>
+          methods.<sup>10</sup> Early identification enables timely intervention, which significantly improves reading 
+          outcomes.<sup>12</sup> There is no single test for dyslexia—diagnosis involves gathering information from 
+          various sources to understand an individual's reading profile.<sup>13</sup>
         </p>
       </div>
 
@@ -98,12 +98,12 @@ export function DyslexiaDiagnosis({ setCurrentArticle, initialTab }: DyslexiaDia
               className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
             />
             
-            <p className="mb-4">Several professionals are qualified to evaluate for dyslexia:<sup>[4]</sup></p>
+            <p className="mb-4">Several professionals are qualified to evaluate for dyslexia:<sup>14</sup></p>
             <ul className="list-disc ml-6 mb-4">
               <li className="mb-2"><strong>Educational psychologists:</strong> Specialize in learning and academic assessment</li>
-              <li className="mb-2"><strong>School psychologists:</strong> Conduct evaluations within school settings<sup>[5]</sup></li>
+              <li className="mb-2"><strong>School psychologists:</strong> Conduct evaluations within school settings<sup>5</sup></li>
               <li className="mb-2"><strong>Clinical psychologists:</strong> Licensed psychologists with expertise in learning disorders</li>
-              <li className="mb-2"><strong>Neuropsychologists:</strong> Assess brain-behavior relationships<sup>[6]</sup></li>
+              <li className="mb-2"><strong>Neuropsychologists:</strong> Assess brain-behavior relationships<sup>16</sup></li>
               <li className="mb-2"><strong>Learning specialists:</strong> Professionals trained in dyslexia assessment</li>
             </ul>
           </div>
@@ -156,35 +156,35 @@ export function DyslexiaDiagnosis({ setCurrentArticle, initialTab }: DyslexiaDia
             
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Developmental and Educational History</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2">Early language development milestones<sup>[7]</sup></li>
+              <li className="mb-2">Early language development milestones<sup>7</sup></li>
               <li className="mb-2">Family history of reading or learning difficulties</li>
-              <li className="mb-2">Previous educational experiences and interventions<sup>[8]</sup></li>
+              <li className="mb-2">Previous educational experiences and interventions<sup>8</sup></li>
               <li className="mb-2">Current reading challenges and their impact</li>
             </ul>
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Cognitive Assessment</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Intelligence testing:</strong> WISC-V, WAIS-IV, or Stanford-Binet to assess overall cognitive ability<sup>[9]</sup></li>
+              <li className="mb-2"><strong>Intelligence testing:</strong> WISC-V, WAIS-IV, or Stanford-Binet to assess overall cognitive ability<sup>9</sup></li>
               <li className="mb-2"><strong>Reasoning abilities:</strong> Verbal and nonverbal reasoning</li>
-              <li className="mb-2"><strong>Memory assessment:</strong> Working memory and long-term memory<sup>[10]</sup></li>
+              <li className="mb-2"><strong>Memory assessment:</strong> Working memory and long-term memory<sup>10</sup></li>
               <li className="mb-2"><strong>Processing speed:</strong> Rate of cognitive processing</li>
             </ul>
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading and Academic Achievement</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Word reading:</strong> Real word reading accuracy (WIAT-III, KTEA-3)<sup>[11]</sup></li>
-              <li className="mb-2"><strong>Pseudoword decoding:</strong> Nonsense word reading to assess phonetic decoding<sup>[12]</sup></li>
-              <li className="mb-2"><strong>Reading fluency:</strong> Speed and accuracy of reading connected text<sup>[13]</sup></li>
+              <li className="mb-2"><strong>Word reading:</strong> Real word reading accuracy (WIAT-III, KTEA-3)<sup>11</sup></li>
+              <li className="mb-2"><strong>Pseudoword decoding:</strong> Nonsense word reading to assess phonetic decoding<sup>12</sup></li>
+              <li className="mb-2"><strong>Reading fluency:</strong> Speed and accuracy of reading connected text<sup>13</sup></li>
               <li className="mb-2"><strong>Reading comprehension:</strong> Understanding written passages</li>
-              <li className="mb-2"><strong>Spelling:</strong> Written spelling of words<sup>[14]</sup></li>
+              <li className="mb-2"><strong>Spelling:</strong> Written spelling of words<sup>14</sup></li>
               <li className="mb-2"><strong>Written expression:</strong> Quality and fluency of writing</li>
             </ul>
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Phonological Processing</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Phonological awareness:</strong> CTOPP-2, PAT-2 to assess sound manipulation skills<sup>[15]</sup></li>
+              <li className="mb-2"><strong>Phonological awareness:</strong> CTOPP-2, PAT-2 to assess sound manipulation skills<sup>15</sup></li>
               <li className="mb-2"><strong>Phonological memory:</strong> Ability to hold sound information in memory</li>
-              <li className="mb-2"><strong>Rapid automatized naming (RAN):</strong> Speed of retrieving familiar verbal information<sup>[16]</sup></li>
+              <li className="mb-2"><strong>Rapid automatized naming (RAN):</strong> Speed of retrieving familiar verbal information<sup>16</sup></li>
             </ul>
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Oral Language</h3>

@@ -52,10 +52,10 @@ export function ArticleDownSyndrome({ setCurrentArticle }: ArticleDownSyndromePr
         <div className="space-y-6">
           <p>
             <strong>Down syndrome</strong> (also known as Trisomy 21) is a genetic condition caused by the 
-            presence of an extra copy of chromosome 21.<sup>[1]</sup> This chromosomal difference results in a distinct 
-            neurocognitive profile, characteristic physical features, and specific health considerations.<sup>[2]</sup> 
+            presence of an extra copy of chromosome 21.<sup>10</sup> This chromosomal difference results in a distinct 
+            neurocognitive profile, characteristic physical features, and specific health considerations.<sup>12</sup> 
             Down syndrome represents a natural variation in human genetics and is one of the most common 
-            chromosomal conditions, occurring across all racial, ethnic, and socioeconomic groups.<sup>[3]</sup>
+            chromosomal conditions, occurring across all racial, ethnic, and socioeconomic groups.<sup>13</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -89,19 +89,19 @@ export function ArticleDownSyndrome({ setCurrentArticle }: ArticleDownSyndromePr
           
           <p className="mb-4">
             Down syndrome affects approximately 1 in 700 babies born in the United States, making it the 
-            most common chromosomal condition.<sup>[4]</sup> The condition was first described by British physician 
+            most common chromosomal condition.<sup>14</sup> The condition was first described by British physician 
             John Langdon Down in 1866, though the genetic cause wasn't identified until 1959 by French 
-            geneticist Jérôme Lejeune.<sup>[5]</sup> Individuals with Down syndrome have a unique cognitive profile with 
-            both strengths and challenges.<sup>[6]</sup>
+            geneticist Jérôme Lejeune.<sup>5</sup> Individuals with Down syndrome have a unique cognitive profile with 
+            both strengths and challenges.<sup>16</sup>
           </p>
           
           <p className="mb-4">
             While intellectual disability is typical, the range of cognitive 
-            functioning varies widely—from mild to moderate, and occasionally borderline.<sup>[7]</sup> With appropriate 
+            functioning varies widely—from mild to moderate, and occasionally borderline.<sup>7</sup> With appropriate 
             support, education, and inclusion, people with Down syndrome attend school, work, form relationships, 
-            and participate fully in community life.<sup>[8]</sup> Life expectancy for individuals with Down syndrome has 
+            and participate fully in community life.<sup>8</sup> Life expectancy for individuals with Down syndrome has 
             increased dramatically—from 25 years in 1983 to 60+ years today—thanks to improved medical care, 
-            early intervention, and societal inclusion.<sup>[9]</sup>
+            early intervention, and societal inclusion.<sup>9</sup>
           </p>
         </section>
 
@@ -115,20 +115,20 @@ export function ArticleDownSyndrome({ setCurrentArticle }: ArticleDownSyndromePr
           />
           
           <p className="mb-4">
-            Down syndrome creates a distinct pattern of cognitive strengths and challenges.<sup>[10]</sup> Cognitive strengths 
+            Down syndrome creates a distinct pattern of cognitive strengths and challenges.<sup>10</sup> Cognitive strengths 
             include visual learning and visual-spatial processing, social awareness and emotional intelligence, 
             learning through observation and imitation, strong long-term memory especially for faces and places, 
             and visuospatial short-term memory.<sup>[11][12]</sup> Cognitive challenges include verbal short-term memory and working 
             memory, auditory processing and sequential processing, expressive language (typically more delayed than 
-            receptive language), abstract reasoning and generalization, and processing speed.<sup>[13]</sup>
+            receptive language), abstract reasoning and generalization, and processing speed.<sup>13</sup>
           </p>
           
           <p className="mb-4">
             Language development 
             is typically delayed with receptive language usually stronger than expressive language, and speech may 
-            be affected by low muscle tone and structural differences.<sup>[14]</sup> Common physical characteristics include 
+            be affected by low muscle tone and structural differences.<sup>14</sup> Common physical characteristics include 
             almond-shaped eyes with an upward slant, flattened facial profile, low muscle tone (hypotonia), short 
-            stature, and single crease across the palm.<sup>[15]</sup> Associated health conditions include congenital heart defects 
+            stature, and single crease across the palm.<sup>15</sup> Associated health conditions include congenital heart defects 
             (approximately 50% of babies), hearing and vision issues, thyroid problems, sleep apnea, gastrointestinal 
             issues, and increased susceptibility to infections.<sup>[16][17]</sup> Social and emotional characteristics include generally 
             being affectionate, social, and enjoying interpersonal connection, strong emotional awareness and empathy, 

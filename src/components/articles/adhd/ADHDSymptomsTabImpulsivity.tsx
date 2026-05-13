@@ -162,9 +162,9 @@ export function ADHDSymptomsTabImpulsivity() {
               
               <p className="mb-4">
                 Studies confirm that impulsivity is a core symptom of ADHD across the lifespan, characterized by deficits in motor, 
-                cognitive, and attentional control<sup style={{color: '#10b981'}}>[1]</sup>. Research indicates that children and adults 
+                cognitive, and attentional control<sup style={{color: '#10b981'}}>10</sup>. Research indicates that children and adults 
                 with ADHD show higher rates of impulsive decision-making, such as instant gratification seeking and difficulty waiting, which 
-                are linked to structural changes in the caudate nucleus and frontostriatal pathways<sup style={{color: '#10b981'}}>[2]</sup>.
+                are linked to structural changes in the caudate nucleus and frontostriatal pathways<sup style={{color: '#10b981'}}>12</sup>.
               </p>
 
               <div className="space-y-5">
@@ -172,7 +172,7 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Longitudinal Developmental Impact</h4>
                   <p className="text-sm mb-2">
                     A 2024 study highlighted that key impulsive behaviors—specifically difficulty waiting turn, blurting out, and 
-                    interrupting—are central to ADHD and disruptive behavior disorder (DBD) from childhood through adolescence<sup style={{color: '#10b981'}}>[3]</sup>. 
+                    interrupting—are central to ADHD and disruptive behavior disorder (DBD) from childhood through adolescence<sup style={{color: '#10b981'}}>13</sup>. 
                     This longitudinal research demonstrates how these core symptoms persist and evolve throughout developmental stages.
                   </p>
                 </div>
@@ -181,8 +181,8 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Decision-Making & Reward Delays</h4>
                   <p className="text-sm mb-2">
                     Research shows adults with ADHD often prioritize immediate, less valuable rewards over delayed, higher-value ones 
-                    (delay discounting)<sup style={{color: '#10b981'}}>[4]</sup>. A 2016 meta-analysis found this impulsive decision-making 
-                    was consistently present across ages<sup style={{color: '#10b981'}}>[5]</sup>, indicating that difficulty with delayed 
+                    (delay discounting)<sup style={{color: '#10b981'}}>14</sup>. A 2016 meta-analysis found this impulsive decision-making 
+                    was consistently present across ages<sup style={{color: '#10b981'}}>5</sup>, indicating that difficulty with delayed 
                     gratification is a stable feature of ADHD throughout the lifespan.
                   </p>
                 </div>
@@ -191,7 +191,7 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Dimensions of Impulsivity</h4>
                   <p className="text-sm mb-2">
                     Adults with ADHD exhibit higher impulsivity across three main dimensions: motor (acting without thinking), cognitive 
-                    (poor planning), and attentional (short attention span)<sup style={{color: '#10b981'}}>[6]</sup>. This multi-dimensional 
+                    (poor planning), and attentional (short attention span)<sup style={{color: '#10b981'}}>16</sup>. This multi-dimensional 
                     conceptualization helps explain why impulsivity manifests in diverse ways across different life situations and contexts.
                   </p>
                 </div>
@@ -200,7 +200,7 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Neurobiological Basis</h4>
                   <p className="text-sm mb-2">
                     Unlike other conditions, ADHD-related impulsivity is strongly associated with structural differences in the caudate 
-                    nucleus and frontostriatal pathways<sup style={{color: '#10b981'}}>[2]</sup>. These neurological findings provide 
+                    nucleus and frontostriatal pathways<sup style={{color: '#10b981'}}>12</sup>. These neurological findings provide 
                     evidence for the biological underpinnings of impulsive behavior in ADHD and distinguish it from impulsivity seen in 
                     other psychiatric conditions.
                   </p>
@@ -210,7 +210,7 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Behavioral Consequences</h4>
                   <p className="text-sm mb-2">
                     High levels of impulsivity in ADHD are associated with increased risk for poor interpersonal skills, substance abuse, 
-                    and dangerous behavior<sup style={{color: '#10b981'}}>[7]</sup>. These adverse outcomes underscore the importance of 
+                    and dangerous behavior<sup style={{color: '#10b981'}}>7</sup>. These adverse outcomes underscore the importance of 
                     addressing impulsivity through appropriate interventions and support systems.
                   </p>
                 </div>

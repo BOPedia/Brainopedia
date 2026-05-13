@@ -16,7 +16,7 @@ export function PhysicalTherapy() {
         <p className="mb-4 leading-relaxed">
           Research indicates that up to 87% of autistic children demonstrate some form of 
           motor impairment, ranging from low muscle tone to significant challenges with 
-          balance and gait<span className="text-[#10b981] font-bold"><sup>[1]</sup></span>.
+          balance and gait<span className="text-[#10b981] font-bold"><sup>10</sup></span>.
         </p>
       </div>
 
@@ -50,7 +50,7 @@ export function PhysicalTherapy() {
           Physical therapy often has a secondary "ripple effect" on social and emotional well-being. 
           Studies show that improving a child's physical competence increases their confidence 
           to join peer groups in the playground, directly impacting social inclusion 
-          and reducing anxiety related to physical education<span className="text-[#10b981] font-bold"><sup>[2]</sup></span>.
+          and reducing anxiety related to physical education<span className="text-[#10b981] font-bold"><sup>12</sup></span>.
         </p>
       </div>
 

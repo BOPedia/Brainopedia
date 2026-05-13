@@ -52,7 +52,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             
             <p className="mb-4 leading-relaxed font-spartan text-[#0c264d]">
               ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,
-              <sup className="text-green-600 font-bold ml-0.5">[1]</sup> representing a significant 
+              <sup className="text-green-600 font-bold ml-0.5">10</sup> representing a significant 
               increase in diagnosis rates over the past two decades. This increase is largely 
               attributed to improved awareness, expanded diagnostic criteria, and better identification 
               rather than a true increase in prevalence.
@@ -405,7 +405,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Current Prevalence</h3>
             
             <p className="mb-3">
-              As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the United States.<sup>[1]</sup> This represents a substantial increase from 1 in 150 in 2000.
+              As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the United States.<sup>10</sup> This represents a substantial increase from 1 in 150 in 2000.
             </p>
             
             <div className="bg-[#ffd166] p-3 rounded-md mt-3">
@@ -420,7 +420,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
           <div className="bg-white p-5 rounded-md border-2 border-[#0c264d] mb-6">
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Differences</h3>
             <p className="mb-3">
-              Autism is diagnosed more frequently in males than females, with ratios typically reported around <strong>3-4:1</strong>.<sup>[2]</sup> 
+              Autism is diagnosed more frequently in males than females, with ratios typically reported around <strong>3-4:1</strong>.<sup>12</sup> 
               However, research suggests this reflects diagnostic bias—females may be underdiagnosed because they often 
               present differently, "camouflage" symptoms more effectively, and don't match stereotypical autism presentations.
             </p>
@@ -509,7 +509,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <p className="font-bold mb-3 text-red-600">Important: These DO NOT cause autism:</p>
             <div className="space-y-2">
               <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ Vaccines</strong> — This has been thoroughly debunked by extensive research<sup>[3]</sup></div>
+                <div className="text-sm"><strong>✗ Vaccines</strong> — This has been thoroughly debunked by extensive research<sup>13</sup></div>
               </div>
               <div className="border-l-2 border-red-500 pl-3">
                 <div className="text-sm"><strong>✗ Parenting Style</strong> — The "refrigerator mother" theory has been completely discredited</div>
@@ -547,17 +547,17 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <div className="space-y-4">
               <div className="border-l-2 border-[#2abcd4] pl-4">
                 <div className="font-bold text-[#0c264d]">1943</div>
-                <div className="text-sm">Leo Kanner published the first description of "early infantile autism"<sup>[4]</sup></div>
+                <div className="text-sm">Leo Kanner published the first description of "early infantile autism"<sup>14</sup></div>
               </div>
               
               <div className="border-l-2 border-[#2abcd4] pl-4">
                 <div className="font-bold text-[#0c264d]">1944</div>
-                <div className="text-sm">Hans Asperger described "autistic psychopathy" in children (now known as Asperger syndrome)<sup>[5]</sup></div>
+                <div className="text-sm">Hans Asperger described "autistic psychopathy" in children (now known as Asperger syndrome)<sup>5</sup></div>
               </div>
               
               <div className="border-l-2 border-red-500 pl-4">
                 <div className="font-bold text-[#0c264d]">1960s-1980s</div>
-                <div className="text-sm">Harmful "refrigerator mother" theory blamed parents<sup>[6]</sup></div>
+                <div className="text-sm">Harmful "refrigerator mother" theory blamed parents<sup>16</sup></div>
               </div>
               
               <div className="border-l-2 border-[#2abcd4] pl-4">

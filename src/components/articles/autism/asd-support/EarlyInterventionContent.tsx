@@ -13,7 +13,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
         <p className="mb-6">
           Early intervention services can significantly impact developmental trajectories for autistic children. 
           A person-centered approach focuses on understanding symptoms, implementing effective strategies, and 
-          connecting with appropriate services to improve individual lives.<sup>[3]</sup>
+          connecting with appropriate services to improve individual lives.<sup>13</sup>
         </p>
     
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
@@ -38,7 +38,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 Part C of IDEA provides early intervention services for infants and toddlers with developmental 
-                delays, ages 0-3<sup>[4]</sup>
+                delays, ages 0-3<sup>14</sup>
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 A service coordinator helps families navigate services and develop an Individualized Family 
-                Service Plan (IFSP)<sup>[5]</sup>
+                Service Plan (IFSP)<sup>5</sup>
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 Services often delivered in the child's natural environment—home, daycare, or community 
-                settings<sup>[6]</sup>
+                settings<sup>16</sup>
               </p>
             </div>
 
@@ -68,7 +68,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 Teaching parents and caregivers strategies to support development throughout daily routines 
-                and activities<sup>[7]</sup>
+                and activities<sup>7</sup>
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           </div>
           <p className="text-[#0c264d] text-sm">
             Research shows that early, intensive intervention can improve outcomes, though every child's response is 
-            individual.<sup>[10]</sup>
+            individual.<sup>10</sup>
           </p>
         </div>
 
@@ -172,7 +172,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
 
           <div className="space-y-4">
             <div className="flex items-start gap-3">
-              <div className="bg-[#10b981] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">1</div>
+              <div className="bg-[#10b981] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">10</div>
               <div className="flex-1">
                 <div className="font-bold text-[#0c264d] mb-1">Early Intervention (Ages 0-3)</div>
                 <div className="text-sm">Diagnosis, Part C services, IFSP development, home-based supports, 
@@ -181,7 +181,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="bg-[#2abcd4] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">2</div>
+              <div className="bg-[#2abcd4] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">12</div>
               <div className="flex-1">
                 <div className="font-bold text-[#0c264d] mb-1">School Years (Ages 3-21)</div>
                 <div className="text-sm">IEP development, special education services, classroom accommodations, 
@@ -190,7 +190,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="bg-[#ffd166] text-[#0c264d] rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">3</div>
+              <div className="bg-[#ffd166] text-[#0c264d] rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">13</div>
               <div className="flex-1">
                 <div className="font-bold text-[#0c264d] mb-1">Transition Years (Ages 14-21)</div>
                 <div className="text-sm">Transition planning, vocational training, post-secondary education 
@@ -199,7 +199,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="bg-[#0c264d] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">4</div>
+              <div className="bg-[#0c264d] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">14</div>
               <div className="flex-1">
                 <div className="font-bold text-[#0c264d] mb-1">Young Adulthood (Ages 18-30)</div>
                 <div className="text-sm">Employment, higher education, relationships, housing, financial 
@@ -355,7 +355,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           <p className="text-sm">
             Research shows that early, intensive intervention can improve outcomes, though every child's 
             response is individual. The most effective programs are family-centered, delivered in natural 
-            environments, and respect the child's neurodivergent development.<sup>[10]</sup>
+            environments, and respect the child's neurodivergent development.<sup>10</sup>
           </p>
         </div>
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 

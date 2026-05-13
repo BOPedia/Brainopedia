@@ -32,8 +32,8 @@ export function DLDSymptoms({ setCurrentArticle }: DLDSymptomsProps) {
         <div>
           <p className="mb-4">
             Developmental Language Disorder manifests through difficulties across multiple domains of language, 
-            including grammar, vocabulary, understanding, and expression.<sup>[1]</sup> Symptoms vary significantly 
-            among individuals but typically persist across development.<sup>[2]</sup>
+            including grammar, vocabulary, understanding, and expression.<sup>10</sup> Symptoms vary significantly 
+            among individuals but typically persist across development.<sup>12</sup>
           </p>
         </div>
 
@@ -48,16 +48,16 @@ export function DLDSymptoms({ setCurrentArticle }: DLDSymptomsProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Delayed Language Milestones</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>First words:</strong> May appear late (after 18-24 months)<sup>[3]</sup></li>
+            <li className="mb-2"><strong>First words:</strong> May appear late (after 18-24 months)<sup>13</sup></li>
             <li className="mb-2"><strong>Word combinations:</strong> Delayed two-word phrases (after 2.5-3 years)</li>
-            <li className="mb-2"><strong>Vocabulary growth:</strong> Slower acquisition of new words<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Vocabulary growth:</strong> Slower acquisition of new words<sup>14</sup></li>
             <li className="mb-2"><strong>Pattern:</strong> Consistently behind peers in language development</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early Warning Signs (Ages 2-3)</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Limited vocabulary for age</li>
-            <li className="mb-2">Not combining words by age 2<sup>[5]</sup></li>
+            <li className="mb-2">Not combining words by age 2<sup>5</sup></li>
             <li className="mb-2">Difficulty understanding simple instructions</li>
             <li className="mb-2">Not using sentences by age 3</li>
             <li className="mb-2">Frequent communication frustration</li>
@@ -69,28 +69,28 @@ export function DLDSymptoms({ setCurrentArticle }: DLDSymptomsProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Grammatical Morphemes</h3>
           <p className="mb-4">
-            Children with DLD have particular difficulty with grammatical morphemes:<sup>[6]</sup>
+            Children with DLD have particular difficulty with grammatical morphemes:<sup>16</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Past tense -ed:</strong> "walk" instead of "walked"</li>
-            <li className="mb-2"><strong>Third person -s:</strong> "He walk" instead of "He walks"<sup>[7]</sup></li>
+            <li className="mb-2"><strong>Third person -s:</strong> "He walk" instead of "He walks"<sup>7</sup></li>
             <li className="mb-2"><strong>Plural -s:</strong> Omitting or incorrectly using plurals</li>
             <li className="mb-2"><strong>Possessive 's:</strong> "Dad car" instead of "Dad's car"</li>
-            <li className="mb-2"><strong>Auxiliary verbs:</strong> "He going" instead of "He is going"<sup>[8]</sup></li>
+            <li className="mb-2"><strong>Auxiliary verbs:</strong> "He going" instead of "He is going"<sup>8</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Sentence Structure</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Simple sentences:</strong> Using short, simple sentences when peers use complex ones<sup>[9]</sup></li>
+            <li className="mb-2"><strong>Simple sentences:</strong> Using short, simple sentences when peers use complex ones<sup>9</sup></li>
             <li className="mb-2"><strong>Sentence fragments:</strong> Incomplete sentences</li>
             <li className="mb-2"><strong>Word order errors:</strong> Incorrect arrangement of words</li>
-            <li className="mb-2"><strong>Limited complexity:</strong> Avoiding complex grammatical structures<sup>[10]</sup></li>
+            <li className="mb-2"><strong>Limited complexity:</strong> Avoiding complex grammatical structures<sup>10</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Question Formation</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Difficulty forming questions correctly</li>
-            <li className="mb-2">"What you doing?" instead of "What are you doing?"<sup>[11]</sup></li>
+            <li className="mb-2">"What you doing?" instead of "What are you doing?"<sup>11</sup></li>
             <li className="mb-2">Rising intonation as primary question marker</li>
           </ul>
         </div>
@@ -100,18 +100,18 @@ export function DLDSymptoms({ setCurrentArticle }: DLDSymptomsProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Limited Vocabulary</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Smaller vocabulary:</strong> Know fewer words than same-age peers<sup>[12]</sup></li>
+            <li className="mb-2"><strong>Smaller vocabulary:</strong> Know fewer words than same-age peers<sup>12</sup></li>
             <li className="mb-2"><strong>Slow word learning:</strong> Need more exposures to learn new words</li>
-            <li className="mb-2"><strong>Shallow knowledge:</strong> Less detailed understanding of word meanings<sup>[13]</sup></li>
+            <li className="mb-2"><strong>Shallow knowledge:</strong> Less detailed understanding of word meanings<sup>13</sup></li>
             <li className="mb-2"><strong>Concrete language:</strong> Difficulty with abstract or figurative language</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Word-Finding Problems</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Tip-of-the-tongue:</strong> Knowing a word but unable to retrieve it<sup>[14]</sup></li>
+            <li className="mb-2"><strong>Tip-of-the-tongue:</strong> Knowing a word but unable to retrieve it<sup>14</sup></li>
             <li className="mb-2"><strong>Circumlocution:</strong> Talking around a word ("that thing you eat with")</li>
             <li className="mb-2"><strong>Substitutions:</strong> Using general words like "thing" or "stuff"</li>
-            <li className="mb-2"><strong>Pauses and hesitations:</strong> Frequent pauses while searching for words<sup>[15]</sup></li>
+            <li className="mb-2"><strong>Pauses and hesitations:</strong> Frequent pauses while searching for words<sup>15</sup></li>
           </ul>
         </div>
 
@@ -126,7 +126,7 @@ export function DLDSymptoms({ setCurrentArticle }: DLDSymptomsProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Understanding Spoken Language</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Following directions:</strong> Difficulty with multi-step instructions<sup>[16]</sup></li>
+            <li className="mb-2"><strong>Following directions:</strong> Difficulty with multi-step instructions<sup>16</sup></li>
             <li className="mb-2"><strong>Complex sentences:</strong> Trouble understanding complex grammar</li>
             <li className="mb-2"><strong>Processing speed:</strong> Need more time to process spoken language<sup>[17]</sup></li>
             <li className="mb-2"><strong>Longer utterances:</strong> Difficulty with long, complex sentences</li>

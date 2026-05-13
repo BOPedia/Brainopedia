@@ -32,8 +32,8 @@ export function VPDSymptoms({ setCurrentArticle }: VPDSymptomsProps) {
         <div>
           <p className="mb-4">
             Visual Processing Disorder manifests through a wide range of symptoms affecting how individuals 
-            interpret, remember, and use visual information.<sup>[1]</sup> Symptoms vary significantly based 
-            on which visual processing skills are affected and to what degree.<sup>[2]</sup>
+            interpret, remember, and use visual information.<sup>10</sup> Symptoms vary significantly based 
+            on which visual processing skills are affected and to what degree.<sup>12</sup>
           </p>
         </div>
 
@@ -49,29 +49,29 @@ export function VPDSymptoms({ setCurrentArticle }: VPDSymptomsProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Letter and Number Confusion</h3>
           <p className="mb-4">
             Difficulty distinguishing between similar-looking letters (b/d, p/q, m/n) or numbers (6/9, 2/5) 
-            is a hallmark of visual discrimination deficits.<sup>[3]</sup> This persists beyond typical 
-            developmental reversals seen in young children.<sup>[4]</sup> Reading becomes slow and error-prone 
-            when letters appear similar.<sup>[5]</sup>
+            is a hallmark of visual discrimination deficits.<sup>13</sup> This persists beyond typical 
+            developmental reversals seen in young children.<sup>14</sup> Reading becomes slow and error-prone 
+            when letters appear similar.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Word Recognition Challenges</h3>
           <p className="mb-4">
-            Similar-looking words are confused—"saw" and "was," "through" and "thorough."<sup>[6]</sup> This 
+            Similar-looking words are confused—"saw" and "was," "through" and "thorough."<sup>16</sup> This 
             isn't a phonological issue but a visual one—the overall shape and appearance of words look too 
-            similar to distinguish reliably.<sup>[7]</sup>
+            similar to distinguish reliably.<sup>7</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Difficulty with Visual Details</h3>
           <p className="mb-4">
-            Noticing small differences in shapes, patterns, or pictures is challenging.<sup>[8]</sup> "Find 
-            the difference" activities are particularly difficult.<sup>[9]</sup> Missing visual details affects 
-            reading comprehension, math problem-solving, and following visual instructions.<sup>[10]</sup>
+            Noticing small differences in shapes, patterns, or pictures is challenging.<sup>8</sup> "Find 
+            the difference" activities are particularly difficult.<sup>9</sup> Missing visual details affects 
+            reading comprehension, math problem-solving, and following visual instructions.<sup>10</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Color and Shape Sorting</h3>
           <p className="mb-4">
-            Tasks requiring discrimination between similar colors or shapes may be slower or more error-prone.<sup>[11]</sup> 
-            Organizing items by visual characteristics is challenging.<sup>[12]</sup>
+            Tasks requiring discrimination between similar colors or shapes may be slower or more error-prone.<sup>11</sup> 
+            Organizing items by visual characteristics is challenging.<sup>12</sup>
           </p>
         </div>
 
@@ -81,14 +81,14 @@ export function VPDSymptoms({ setCurrentArticle }: VPDSymptomsProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Losing Place While Reading</h3>
           <p className="mb-4">
             Tracking lines of text is difficult—skipping lines, re-reading lines, or losing place frequently 
-            occurs.<sup>[13]</sup> The words on the page blend together, making it hard to focus on the 
-            correct line.<sup>[14]</sup> Finger or bookmark tracking becomes necessary.<sup>[15]</sup>
+            occurs.<sup>13</sup> The words on the page blend together, making it hard to focus on the 
+            correct line.<sup>14</sup> Finger or bookmark tracking becomes necessary.<sup>15</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Difficulty Finding Objects</h3>
           <p className="mb-4">
             Locating items in cluttered spaces (finding a toy in a messy room, finding an item in a full 
-            refrigerator, finding information on a busy worksheet) is extremely challenging.<sup>[16]</sup> 
+            refrigerator, finding information on a busy worksheet) is extremely challenging.<sup>16</sup> 
             Objects don't "pop out" from their backgrounds.<sup>[17]</sup>
           </p>
 

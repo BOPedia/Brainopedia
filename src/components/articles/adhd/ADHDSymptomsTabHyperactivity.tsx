@@ -163,8 +163,8 @@ export function ADHDSymptomsTabHyperactivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Objective Measurement of Hyperactive Movement</h4>
                   <p className="text-sm mb-2">
                     A National Institutes of Health (NIH) study used infrared motion analysis to objectively quantify hyperactive 
-                    behavior in children with ADHD<sup style={{color: '#10b981'}}>[1]</sup>. The research found that boys with ADHD 
-                    moved their heads 2.3 times more often and 3.4 times as far as typical children<sup style={{color: '#10b981'}}>[1]</sup>, 
+                    behavior in children with ADHD<sup style={{color: '#10b981'}}>10</sup>. The research found that boys with ADHD 
+                    moved their heads 2.3 times more often and 3.4 times as far as typical children<sup style={{color: '#10b981'}}>10</sup>, 
                     demonstrating that hyperactivity is a measurable neurobiological phenomenon rather than simply "excess energy."
                   </p>
                 </div>
@@ -172,9 +172,9 @@ export function ADHDSymptomsTabHyperactivity() {
                 <div>
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Persistence of Hyperactivity in Adults</h4>
                   <p className="text-sm mb-2">
-                    Research indicates that while hyperactivity may decrease with age, it still persists in many adults with ADHD<sup style={{color: '#10b981'}}>[2]</sup>. 
+                    Research indicates that while hyperactivity may decrease with age, it still persists in many adults with ADHD<sup style={{color: '#10b981'}}>12</sup>. 
                     Studies comparing head and lower extremity movements to control groups have documented that hyperactive symptoms 
-                    remain present and measurable in adulthood, though they often manifest differently than in childhood<sup style={{color: '#10b981'}}>[2]</sup>.
+                    remain present and measurable in adulthood, though they often manifest differently than in childhood<sup style={{color: '#10b981'}}>12</sup>.
                   </p>
                 </div>
 
@@ -182,7 +182,7 @@ export function ADHDSymptomsTabHyperactivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Behavioral and Cognitive Aspects</h4>
                   <p className="text-sm mb-2">
                     Studies indicate that hyperactive, rather than inattentive, symptoms are specifically linked to increased 
-                    variability in thought content<sup style={{color: '#10b981'}}>[3]</sup>. This finding suggests that the motor 
+                    variability in thought content<sup style={{color: '#10b981'}}>13</sup>. This finding suggests that the motor 
                     restlessness characteristic of hyperactivity may reflect underlying cognitive processes, including difficulty 
                     maintaining stable thought patterns.
                   </p>
@@ -192,7 +192,7 @@ export function ADHDSymptomsTabHyperactivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Impact on Social Functioning</h4>
                   <p className="text-sm mb-2">
                     Research highlights that hyperactivity/impulsivity is a strong predictor of social impairment, particularly in 
-                    early childhood<sup style={{color: '#10b981'}}>[4]</sup>. The excessive movement and difficulty with behavioral 
+                    early childhood<sup style={{color: '#10b981'}}>14</sup>. The excessive movement and difficulty with behavioral 
                     inhibition associated with hyperactivity can interfere with peer relationships and social development during 
                     critical developmental periods.
                   </p>
@@ -201,7 +201,7 @@ export function ADHDSymptomsTabHyperactivity() {
                 <div>
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Neurobiological Basis</h4>
                   <p className="text-sm mb-2">
-                    Findings indicate that levels of hyperactivity correlate with dopamine D₂ receptor density in the caudate<sup style={{color: '#10b981'}}>[5]</sup>, 
+                    Findings indicate that levels of hyperactivity correlate with dopamine D₂ receptor density in the caudate<sup style={{color: '#10b981'}}>5</sup>, 
                     providing evidence for the neurobiological underpinnings of hyperactive behavior. This research supports the 
                     understanding that hyperactivity is rooted in brain structure and neurochemistry, not simply behavioral choices.
                   </p>
@@ -211,9 +211,9 @@ export function ADHDSymptomsTabHyperactivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Prevalence and Treatment</h4>
                   <p className="text-sm mb-2">
                     Studies show that while the inattentive type is common, the hyperactive/impulsive and combined types account for a 
-                    significant portion of ADHD cases<sup style={{color: '#10b981'}}>[6]</sup>. Research has evaluated the impact of 
+                    significant portion of ADHD cases<sup style={{color: '#10b981'}}>16</sup>. Research has evaluated the impact of 
                     methylphenidate, which has been shown to reduce the three main symptoms: hyperactivity, impulsiveness, and 
-                    inattentiveness<sup style={{color: '#10b981'}}>[7]</sup>, demonstrating that targeted pharmacological treatment can 
+                    inattentiveness<sup style={{color: '#10b981'}}>7</sup>, demonstrating that targeted pharmacological treatment can 
                     effectively address hyperactive symptoms.
                   </p>
                 </div>

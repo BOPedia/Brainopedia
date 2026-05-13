@@ -32,8 +32,8 @@ export function TwiceExceptionalOverview({ setCurrentArticle }: TwiceExceptional
         <div>
           <p className="mb-4">
             Twice-exceptional (2e) individuals are those who demonstrate both exceptional abilities or talents 
-            and one or more disabilities.<sup>[1]</sup> This dual exceptionality creates unique educational, 
-            social, and emotional needs that require specialized understanding and support.<sup>[2]</sup>
+            and one or more disabilities.<sup>10</sup> This dual exceptionality creates unique educational, 
+            social, and emotional needs that require specialized understanding and support.<sup>12</sup>
           </p>
         </div>
 
@@ -49,25 +49,25 @@ export function TwiceExceptionalOverview({ setCurrentArticle }: TwiceExceptional
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Defining Twice-Exceptionality</h3>
           <p className="mb-4">
             The term "twice-exceptional" was coined to describe students who possess both high ability and 
-            disability.<sup>[3]</sup> The National Association for Gifted Children defines 2e students as 
+            disability.<sup>13</sup> The National Association for Gifted Children defines 2e students as 
             those who demonstrate exceptional capability in one or more domains while also exhibiting learning, 
-            developmental, physical, or emotional disabilities.<sup>[4]</sup>
+            developmental, physical, or emotional disabilities.<sup>14</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Historical Perspective</h3>
           <p className="mb-4">
             Recognition of twice-exceptionality emerged in the 1970s and 1980s as educators observed students 
-            with extraordinary talents who also struggled significantly in certain areas.<sup>[5]</sup> Early 
+            with extraordinary talents who also struggled significantly in certain areas.<sup>5</sup> Early 
             research by Whitmore documented gifted students with learning disabilities who were often 
-            underidentified for both their gifts and disabilities.<sup>[6]</sup>
+            underidentified for both their gifts and disabilities.<sup>16</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Prevalence</h3>
           <p className="mb-4">
             Exact prevalence is difficult to determine due to identification challenges, but research suggests 
-            that 2-5% of students may be twice-exceptional.<sup>[7]</sup> Some estimates indicate that 14-20% 
-            of gifted students may have a learning disability.<sup>[8]</sup> These students are significantly 
-            underrepresented in both gifted programs and special education services.<sup>[9]</sup>
+            that 2-5% of students may be twice-exceptional.<sup>7</sup> Some estimates indicate that 14-20% 
+            of gifted students may have a learning disability.<sup>8</sup> These students are significantly 
+            underrepresented in both gifted programs and special education services.<sup>9</sup>
           </p>
         </div>
 
@@ -77,24 +77,24 @@ export function TwiceExceptionalOverview({ setCurrentArticle }: TwiceExceptional
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Giftedness with Learning Disabilities</h3>
           <p className="mb-4">
             Many 2e students demonstrate high intellectual ability while experiencing specific learning 
-            disabilities in reading (dyslexia), mathematics (dyscalculia), or written expression (dysgraphia).<sup>[10]</sup> 
-            These students may excel in verbal reasoning while struggling with basic academic skills.<sup>[11]</sup>
+            disabilities in reading (dyslexia), mathematics (dyscalculia), or written expression (dysgraphia).<sup>10</sup> 
+            These students may excel in verbal reasoning while struggling with basic academic skills.<sup>11</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Giftedness with ADHD</h3>
           <p className="mb-4">
-            The combination of giftedness and ADHD is increasingly recognized.<sup>[12]</sup> These students 
+            The combination of giftedness and ADHD is increasingly recognized.<sup>12</sup> These students 
             may demonstrate exceptional abilities in areas of interest while exhibiting inattention, 
-            impulsivity, or hyperactivity that interferes with consistent performance.<sup>[13]</sup> The 
-            overlap in characteristics can complicate identification of both conditions.<sup>[14]</sup>
+            impulsivity, or hyperactivity that interferes with consistent performance.<sup>13</sup> The 
+            overlap in characteristics can complicate identification of both conditions.<sup>14</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Giftedness with Autism Spectrum Disorder</h3>
           <p className="mb-4">
             Gifted individuals with autism present a complex profile combining exceptional intellectual or 
-            creative abilities with social-communication challenges and restricted interests.<sup>[15]</sup> 
+            creative abilities with social-communication challenges and restricted interests.<sup>15</sup> 
             Some demonstrate remarkable talents in specific domains while experiencing significant difficulty 
-            with social interaction and adaptive functioning.<sup>[16]</sup>
+            with social interaction and adaptive functioning.<sup>16</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Giftedness with Emotional/Behavioral Disorders</h3>

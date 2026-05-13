@@ -32,9 +32,9 @@ export function TwiceExceptionalCauses({ setCurrentArticle }: TwiceExceptionalCa
         <div>
           <p className="mb-4">
             Understanding the causes of twice-exceptionality requires examining both the origins of giftedness 
-            and the causes of various disabilities, as well as how these conditions co-occur.<sup>[1]</sup> 
+            and the causes of various disabilities, as well as how these conditions co-occur.<sup>10</sup> 
             Research increasingly shows that the same neurological differences can contribute to both exceptional 
-            abilities and specific challenges.<sup>[2]</sup>
+            abilities and specific challenges.<sup>12</sup>
           </p>
         </div>
 
@@ -49,32 +49,32 @@ export function TwiceExceptionalCauses({ setCurrentArticle }: TwiceExceptionalCa
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Heritability of Both Traits</h3>
           <p className="mb-4">
-            Both giftedness and many disabilities have significant genetic components.<sup>[3]</sup> Intelligence 
-            is highly heritable, with estimates of 50-80% genetic contribution.<sup>[4]</sup> Similarly, conditions 
-            like dyslexia, ADHD, and autism show strong genetic influences.<sup>[5]</sup>
+            Both giftedness and many disabilities have significant genetic components.<sup>13</sup> Intelligence 
+            is highly heritable, with estimates of 50-80% genetic contribution.<sup>14</sup> Similarly, conditions 
+            like dyslexia, ADHD, and autism show strong genetic influences.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Shared Genetic Risk Factors</h3>
           <p className="mb-4">
-            Some genetic variants associated with high intelligence also increase risk for certain conditions.<sup>[6]</sup> 
+            Some genetic variants associated with high intelligence also increase risk for certain conditions.<sup>16</sup> 
             Research has identified genetic overlap between high cognitive ability and autism, ADHD, and other 
-            neurodevelopmental conditions.<sup>[7]</sup> The same genes that contribute to advanced cognitive 
-            abilities may increase vulnerability to certain disabilities.<sup>[8]</sup>
+            neurodevelopmental conditions.<sup>7</sup> The same genes that contribute to advanced cognitive 
+            abilities may increase vulnerability to certain disabilities.<sup>8</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Pleiotropy</h3>
           <p className="mb-4">
-            Pleiotropy—when one gene affects multiple traits—may explain some instances of twice-exceptionality.<sup>[9]</sup> 
+            Pleiotropy—when one gene affects multiple traits—may explain some instances of twice-exceptionality.<sup>9</sup> 
             Genetic variants that enhance one cognitive ability may simultaneously create challenges in another 
-            area.<sup>[10]</sup>
+            area.<sup>10</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Family Patterns</h3>
           <p className="mb-4">
-            Families often show clustering of both giftedness and disabilities.<sup>[11]</sup> It's common for 
+            Families often show clustering of both giftedness and disabilities.<sup>11</sup> It's common for 
             2e individuals to have family members who are gifted, have learning disabilities, or are themselves 
-            twice-exceptional.<sup>[12]</sup> Studies of gifted individuals with dyslexia show strong familial 
-            patterns for both traits.<sup>[13]</sup>
+            twice-exceptional.<sup>12</sup> Studies of gifted individuals with dyslexia show strong familial 
+            patterns for both traits.<sup>13</sup>
           </p>
         </div>
 
@@ -84,14 +84,14 @@ export function TwiceExceptionalCauses({ setCurrentArticle }: TwiceExceptionalCa
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brain Structure and Function</h3>
           <p className="mb-4">
             Neuroimaging studies reveal that twice-exceptional individuals often show both the brain 
-            characteristics associated with giftedness and those associated with their specific disability.<sup>[14]</sup> 
+            characteristics associated with giftedness and those associated with their specific disability.<sup>14</sup> 
             For example, gifted individuals with dyslexia may show enhanced right-hemisphere activation typical 
-            of giftedness alongside left-hemisphere differences characteristic of dyslexia.<sup>[15]</sup>
+            of giftedness alongside left-hemisphere differences characteristic of dyslexia.<sup>15</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Neural Connectivity Differences</h3>
           <p className="mb-4">
-            Research suggests that both giftedness and certain disabilities involve atypical neural connectivity.<sup>[16]</sup> 
+            Research suggests that both giftedness and certain disabilities involve atypical neural connectivity.<sup>16</sup> 
             Enhanced connectivity in some brain regions may support advanced abilities while reduced connectivity 
             in others contributes to specific deficits.<sup>[17]</sup>
           </p>

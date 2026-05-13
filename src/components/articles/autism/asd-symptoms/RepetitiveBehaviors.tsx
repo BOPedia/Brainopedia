@@ -20,7 +20,7 @@ export function RepetitiveBehaviors() {
       {/* 1. CENTERED INTRO & GRAPHIC */}
       <div className="text-center w-full mb-8">
         <p className="text-lg text-[#0c264d] mb-6">
-          Autistic individuals display at least two of the following types of restricted, repetitive patterns:<sup>[1]</sup>        
+          Autistic individuals display at least two of the following types of restricted, repetitive patterns:<sup>10</sup>        
         </p>
         
         <div className="mx-auto w-64 md:w-80 shadow-md rounded-xl overflow-hidden"> 

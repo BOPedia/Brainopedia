@@ -52,10 +52,10 @@ export function ArticleFASD({ setCurrentArticle }: ArticleFASDProps) {
         <div className="space-y-6">
           <p>
             <strong>Fetal Alcohol Spectrum Disorder (FASD)</strong> is a permanent brain-based physical 
-            disability caused by prenatal alcohol exposure.<sup>[1]</sup> FASD represents a spectrum of conditions with 
+            disability caused by prenatal alcohol exposure.<sup>10</sup> FASD represents a spectrum of conditions with 
             significant effects on cognition, behavior, emotional regulation, adaptive functioning, and 
-            physical health.<sup>[2]</sup> It is the leading preventable cause of developmental disability, yet also one 
-            of the most misunderstood and under-diagnosed conditions.<sup>[3]</sup>
+            physical health.<sup>12</sup> It is the leading preventable cause of developmental disability, yet also one 
+            of the most misunderstood and under-diagnosed conditions.<sup>13</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -89,20 +89,20 @@ export function ArticleFASD({ setCurrentArticle }: ArticleFASDProps) {
           
           <p className="mb-4">
             FASD affects an estimated 2-5% of the population in the United States and other Western 
-            countries, making it more common than autism.<sup>[4]</sup> The condition occurs when alcohol consumed during 
-            pregnancy passes through the placenta and disrupts the developing brain and other organs.<sup>[5]</sup> Because 
+            countries, making it more common than autism.<sup>14</sup> The condition occurs when alcohol consumed during 
+            pregnancy passes through the placenta and disrupts the developing brain and other organs.<sup>5</sup> Because 
             there is no known safe amount or timing of alcohol use during pregnancy, any alcohol exposure 
-            can potentially cause harm.<sup>[6]</sup>
+            can potentially cause harm.<sup>16</sup>
           </p>
           
           <p className="mb-4">
-            The effects of FASD are lifelong and can range from mild to severe.<sup>[7]</sup> 
+            The effects of FASD are lifelong and can range from mild to severe.<sup>7</sup> 
             While the brain damage is permanent, individuals with FASD can thrive with appropriate diagnosis, 
-            understanding, and support.<sup>[8]</sup> Early diagnosis, protective factors like stable home environments, and 
-            neurodiversity-affirming approaches significantly improve outcomes.<sup>[9]</sup> FASD is not a reflection of the 
+            understanding, and support.<sup>8</sup> Early diagnosis, protective factors like stable home environments, and 
+            neurodiversity-affirming approaches significantly improve outcomes.<sup>9</sup> FASD is not a reflection of the 
             individual's worth or potential—it is a medical condition requiring understanding, accommodation, and 
-            support.<sup>[10]</sup> The spectrum includes Fetal Alcohol Syndrome (FAS), Partial FAS (pFAS), Alcohol-Related 
-            Neurodevelopmental Disorder (ARND), and Alcohol-Related Birth Defects (ARBD).<sup>[11]</sup>
+            support.<sup>10</sup> The spectrum includes Fetal Alcohol Syndrome (FAS), Partial FAS (pFAS), Alcohol-Related 
+            Neurodevelopmental Disorder (ARND), and Alcohol-Related Birth Defects (ARBD).<sup>11</sup>
           </p>
         </section>
 
@@ -117,22 +117,22 @@ export function ArticleFASD({ setCurrentArticle }: ArticleFASDProps) {
           
           <p className="mb-4">
             Prenatal alcohol exposure causes structural and functional changes to the developing brain with common 
-            areas of impairment.<sup>[12]</sup> Executive functioning challenges include difficulty with planning and organization, 
+            areas of impairment.<sup>12</sup> Executive functioning challenges include difficulty with planning and organization, 
             poor impulse control, challenges with working memory, trouble shifting attention or being flexible, and 
-            difficulty learning from consequences.<sup>[13]</sup> Memory and learning difficulties include difficulty forming and 
+            difficulty learning from consequences.<sup>13</sup> Memory and learning difficulties include difficulty forming and 
             retrieving memories, challenges with learning and retaining new information, need for extensive repetition, 
-            and inconsistent performance.<sup>[14]</sup> Attention and processing challenges include attention difficulties (often 
+            and inconsistent performance.<sup>14</sup> Attention and processing challenges include attention difficulties (often 
             misdiagnosed as ADHD alone), slow processing speed, difficulty filtering irrelevant information, and overwhelm 
-            with multiple stimuli.<sup>[15]</sup>
+            with multiple stimuli.<sup>15</sup>
           </p>
           
           <p className="mb-4">
             Social cognition challenges include difficulty reading social cues, challenges understanding 
             consequences of actions, vulnerability to manipulation and exploitation, and overly trusting or inappropriate social 
-            boundaries.<sup>[16]</sup> Emotional regulation difficulties include difficulty managing emotions, mood dysregulation, heightened 
+            boundaries.<sup>16</sup> Emotional regulation difficulties include difficulty managing emotions, mood dysregulation, heightened 
             stress response, and co-occurring mental health conditions.<sup>[17]</sup> Sensory processing differences include sensory sensitivities 
             or seeking behaviors and over- or under-responsivity to sensory input.<sup>[18]</sup> Adaptive functioning challenges include difficulties 
-            with self-care, money management, time management, safety awareness, and maintaining employment.<sup>[9]</sup> Many individuals with FASD 
+            with self-care, money management, time management, safety awareness, and maintaining employment.<sup>9</sup> Many individuals with FASD 
             do not have visible physical features making diagnosis challenging and leading to it being called an "invisible disability."<sup>[19]</sup> 
             Individuals with FASD often have notable strengths including being friendly, outgoing and sociable, creative and artistic 
             abilities, verbal skills and storytelling, persistence and determination, empathy and emotional sensitivity, and specific 

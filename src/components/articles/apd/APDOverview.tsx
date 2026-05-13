@@ -32,9 +32,9 @@ export function APDOverview({ setCurrentArticle }: APDOverviewProps) {
         <div>
           <p className="mb-4">
             Auditory Processing Disorder (APD), also known as Central Auditory Processing Disorder (CAPD), 
-            is a neurological condition affecting how the brain processes auditory information.<sup>[1]</sup> 
+            is a neurological condition affecting how the brain processes auditory information.<sup>10</sup> 
             Individuals with APD have normal hearing sensitivity—their ears detect sound normally—but their 
-            brains struggle to interpret, organize, and make sense of what they hear.<sup>[2]</sup>
+            brains struggle to interpret, organize, and make sense of what they hear.<sup>12</sup>
           </p>
         </div>
 
@@ -50,26 +50,26 @@ export function APDOverview({ setCurrentArticle }: APDOverviewProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What APD Is</h3>
           <p className="mb-4">
             APD is a deficit in the neural processing of auditory information not due to higher-order language, 
-            cognitive, or related factors.<sup>[3]</sup> The American Speech-Language-Hearing Association (ASHA) 
+            cognitive, or related factors.<sup>13</sup> The American Speech-Language-Hearing Association (ASHA) 
             defines it as difficulties in one or more auditory processes including sound localization, auditory 
             discrimination, auditory pattern recognition, temporal aspects of audition, and auditory performance 
-            with competing or degraded signals.<sup>[4]</sup>
+            with competing or degraded signals.<sup>14</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What APD Is Not</h3>
           <p className="mb-4">
-            APD is not a hearing loss—hearing thresholds are typically normal.<sup>[5]</sup> It's not primarily 
-            a language disorder, though language difficulties may co-occur.<sup>[6]</sup> It's not an attention 
-            problem per se, though the two can coexist and share symptoms.<sup>[7]</sup> APD represents a specific 
-            deficit in auditory processing rather than general cognitive or linguistic impairment.<sup>[8]</sup>
+            APD is not a hearing loss—hearing thresholds are typically normal.<sup>5</sup> It's not primarily 
+            a language disorder, though language difficulties may co-occur.<sup>16</sup> It's not an attention 
+            problem per se, though the two can coexist and share symptoms.<sup>7</sup> APD represents a specific 
+            deficit in auditory processing rather than general cognitive or linguistic impairment.<sup>8</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Central Auditory Nervous System</h3>
           <p className="mb-4">
             The central auditory nervous system includes the auditory pathways from the brainstem through the 
-            auditory cortex.<sup>[9]</sup> These structures analyze, filter, organize, and integrate auditory 
-            information.<sup>[10]</sup> In APD, dysfunction occurs at these central levels despite normal 
-            peripheral hearing.<sup>[11]</sup>
+            auditory cortex.<sup>9</sup> These structures analyze, filter, organize, and integrate auditory 
+            information.<sup>10</sup> In APD, dysfunction occurs at these central levels despite normal 
+            peripheral hearing.<sup>11</sup>
           </p>
         </div>
 
@@ -79,15 +79,15 @@ export function APDOverview({ setCurrentArticle }: APDOverviewProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Common Is APD?</h3>
           <p className="mb-4">
             Estimates suggest approximately 2-5% of school-aged children have APD, though prevalence estimates 
-            vary widely depending on diagnostic criteria.<sup>[12]</sup> Some studies suggest higher rates, 
-            particularly when including milder presentations.<sup>[13]</sup> APD is likely underdiagnosed due 
-            to limited awareness and assessment availability.<sup>[14]</sup>
+            vary widely depending on diagnostic criteria.<sup>12</sup> Some studies suggest higher rates, 
+            particularly when including milder presentations.<sup>13</sup> APD is likely underdiagnosed due 
+            to limited awareness and assessment availability.<sup>14</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Age and Development</h3>
           <p className="mb-4">
             APD is typically diagnosed in children age 7 or older, when the auditory system has matured 
-            sufficiently for valid testing.<sup>[15]</sup> However, signs may be apparent earlier.<sup>[16]</sup> 
+            sufficiently for valid testing.<sup>15</sup> However, signs may be apparent earlier.<sup>16</sup> 
             APD persists into adolescence and adulthood, though individuals often develop compensatory 
             strategies.<sup>[17]</sup>
           </p>

@@ -32,8 +32,8 @@ export function DysgraphiaCauses({ setCurrentArticle }: DysgraphiaCausesProps) {
         <div>
           <p className="mb-4">
             Dysgraphia is a neurologically-based learning disability with multiple potential causes involving brain structure, 
-            genetics, and developmental factors.<sup>[1]</sup> Understanding these underlying causes helps inform effective 
-            interventions and support strategies.<sup>[2]</sup>
+            genetics, and developmental factors.<sup>10</sup> Understanding these underlying causes helps inform effective 
+            interventions and support strategies.<sup>12</sup>
           </p>
         </div>
 
@@ -48,33 +48,33 @@ export function DysgraphiaCauses({ setCurrentArticle }: DysgraphiaCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brain Regions Involved</h3>
           <p className="mb-4">
-            Writing is a complex cognitive task requiring coordination of multiple brain regions:<sup>[3]</sup>
+            Writing is a complex cognitive task requiring coordination of multiple brain regions:<sup>13</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Left hemisphere language areas:</strong> Broca's area (language production), Wernicke's area (language comprehension)<sup>[4]</sup></li>
-            <li className="mb-2"><strong>Motor cortex:</strong> Controls hand movements for writing<sup>[5]</sup></li>
+            <li className="mb-2"><strong>Left hemisphere language areas:</strong> Broca's area (language production), Wernicke's area (language comprehension)<sup>14</sup></li>
+            <li className="mb-2"><strong>Motor cortex:</strong> Controls hand movements for writing<sup>5</sup></li>
             <li className="mb-2"><strong>Cerebellum:</strong> Coordinates fine motor movements and motor learning</li>
-            <li className="mb-2"><strong>Parietal lobe:</strong> Processes spatial information and integrates sensory input<sup>[6]</sup></li>
-            <li className="mb-2"><strong>Frontal lobe:</strong> Executive functions including planning and organization<sup>[7]</sup></li>
+            <li className="mb-2"><strong>Parietal lobe:</strong> Processes spatial information and integrates sensory input<sup>16</sup></li>
+            <li className="mb-2"><strong>Frontal lobe:</strong> Executive functions including planning and organization<sup>7</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brain Imaging Findings</h3>
           <p className="mb-4">
-            Neuroimaging studies reveal differences in brain structure and function in individuals with dysgraphia:<sup>[8]</sup>
+            Neuroimaging studies reveal differences in brain structure and function in individuals with dysgraphia:<sup>8</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Reduced activation:</strong> Less activity in left hemisphere regions during writing tasks<sup>[9]</sup></li>
+            <li className="mb-2"><strong>Reduced activation:</strong> Less activity in left hemisphere regions during writing tasks<sup>9</sup></li>
             <li className="mb-2"><strong>Connectivity differences:</strong> Altered connections between language and motor areas</li>
-            <li className="mb-2"><strong>White matter variations:</strong> Differences in neural pathways connecting brain regions<sup>[10]</sup></li>
-            <li className="mb-2"><strong>Cortical thickness:</strong> Variations in specific brain regions related to motor control<sup>[11]</sup></li>
+            <li className="mb-2"><strong>White matter variations:</strong> Differences in neural pathways connecting brain regions<sup>10</sup></li>
+            <li className="mb-2"><strong>Cortical thickness:</strong> Variations in specific brain regions related to motor control<sup>11</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Neural Processing Differences</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty with motor planning and sequencing<sup>[12]</sup></li>
+            <li className="mb-2">Difficulty with motor planning and sequencing<sup>12</sup></li>
             <li className="mb-2">Challenges integrating visual and motor information</li>
-            <li className="mb-2">Problems with working memory during writing<sup>[13]</sup></li>
-            <li className="mb-2">Slower neural processing speed for orthographic coding<sup>[14]</sup></li>
+            <li className="mb-2">Problems with working memory during writing<sup>13</sup></li>
+            <li className="mb-2">Slower neural processing speed for orthographic coding<sup>14</sup></li>
           </ul>
         </div>
 
@@ -83,10 +83,10 @@ export function DysgraphiaCauses({ setCurrentArticle }: DysgraphiaCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Familial Patterns</h3>
           <p className="mb-4">
-            Research indicates dysgraphia has a genetic component:<sup>[15]</sup>
+            Research indicates dysgraphia has a genetic component:<sup>15</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Family clustering:</strong> Dysgraphia tends to run in families<sup>[16]</sup></li>
+            <li className="mb-2"><strong>Family clustering:</strong> Dysgraphia tends to run in families<sup>16</sup></li>
             <li className="mb-2"><strong>Heritability:</strong> Higher concordance in identical twins than fraternal twins</li>
             <li className="mb-2"><strong>Shared genetics:</strong> Often co-occurs with dyslexia and ADHD which have genetic bases<sup>[17]</sup></li>
             <li className="mb-2"><strong>Multiple genes:</strong> Likely polygenic (involving many genes) rather than single gene<sup>[18]</sup></li>

@@ -48,7 +48,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <p className="mb-4">
             Recent research on treatment sequencing suggests that starting with behavioral interventions first may be 
             more effective and cost less than medication-first approaches, particularly for reducing classroom discipline 
-            referrals and disruptive behaviors.<sup className="text-[#10b981]">[3]</sup> However, the optimal treatment sequence depends on individual 
+            referrals and disruptive behaviors.<sup className="text-[#10b981]">13</sup> However, the optimal treatment sequence depends on individual 
             circumstances, severity of symptoms, and treatment response. Many individuals benefit from combining both 
             medication and behavioral interventions from the outset.
           </p>
@@ -328,7 +328,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           </p>
           
           <p className="mb-4">
-            Recent developments in CBT delivery include digital therapeutics and smartphone-based interventions that provide real-time support and skill practice. These technology-enhanced approaches show promising results in improving treatment accessibility and engagement, particularly for young adults who may prefer app-based support over traditional therapy sessions.<sup className="text-[#10b981]">[8]</sup>
+            Recent developments in CBT delivery include digital therapeutics and smartphone-based interventions that provide real-time support and skill practice. These technology-enhanced approaches show promising results in improving treatment accessibility and engagement, particularly for young adults who may prefer app-based support over traditional therapy sessions.<sup className="text-[#10b981]">8</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Behavioral Parent Training</h3>
@@ -463,7 +463,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <p className="mb-4">
             Children and adolescents with ADHD have impaired organization, time management, and planning skills that 
             undermine their academic abilities and potential. Homework management and organizational skills predict 
-            concurrent GPA and later academic outcomes.<sup className="text-[#10b981]">[1]</sup> Organizational Skills Training (OST) utilizes behavioral 
+            concurrent GPA and later academic outcomes.<sup className="text-[#10b981]">10</sup> Organizational Skills Training (OST) utilizes behavioral 
             methods to directly teach these skills to students with ADHD.
           </p>
           
@@ -480,7 +480,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             OST has been primarily developed for middle school to early high school students (ages 10-14), though 
             recent work has adapted programs for high school students. Research demonstrates improvements in organizational 
             skills, planner use, homework performance, and reduced adolescent impairment.<sup className="text-[#10b981]">[2][3]</sup> Multicomponent 
-            OST packages lead to meaningful improvements across multiple domains of academic functioning.<sup className="text-[#10b981]">[3]</sup>
+            OST packages lead to meaningful improvements across multiple domains of academic functioning.<sup className="text-[#10b981]">13</sup>
           </p>
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">School-Based Implementation</h3>
@@ -488,7 +488,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             Embedding OST in schools is key to enhancing reach and sustainability. Current work trains school counselors 
             to implement OST with students with ADHD. Studies show that OST delivered by school staff leads to improvements 
             in organization, time management, and planning skills—even when school counselors receive only minimal 
-            training (about 2 hours) with no ongoing supervision.<sup className="text-[#10b981]">[4]</sup> Online tools are also being developed 
+            training (about 2 hours) with no ongoing supervision.<sup className="text-[#10b981]">14</sup> Online tools are also being developed 
             to assist school staff with low-cost OST implementation.
           </p>
         </div>
@@ -552,7 +552,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             While lifestyle modifications alone are not sufficient to treat ADHD, they play a crucial supporting role 
             in symptom management and overall well-being. Research increasingly demonstrates that certain lifestyle 
             interventions can meaningfully improve ADHD symptoms, executive function, and quality of life when combined 
-            with other evidence-based treatments.<sup className="text-[#10b981]">[1]</sup>
+            with other evidence-based treatments.<sup className="text-[#10b981]">10</sup>
           </p>
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Exercise</h3>
@@ -560,7 +560,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             Physical exercise has emerged as one of the most promising lifestyle interventions for ADHD management.{' '}
             A comprehensive meta-analysis of 14 studies found that acute and regular physical exercise significantly 
             improved attention, hyperactivity, impulsivity, anxiety, executive function, and social disorders in 
-            children with ADHD.<sup className="text-[#10b981]">[2]</sup> The benefits appear to be most pronounced with moderate-to-vigorous 
+            children with ADHD.<sup className="text-[#10b981]">12</sup> The benefits appear to be most pronounced with moderate-to-vigorous 
             intensity aerobic exercise.
           </p>
           
@@ -598,10 +598,10 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h4 className="text-[#0c264d] font-semibold mb-2">Sleep and ADHD Symptoms</h4>
           <p className="mb-4">
             Research demonstrates that sleep deprivation in typically developing children produces behaviors remarkably 
-            similar to ADHD symptoms—including inattention, hyperactivity, and impulsivity.<sup className="text-[#10b981]">[5]</sup> For individuals with ADHD, 
+            similar to ADHD symptoms—including inattention, hyperactivity, and impulsivity.<sup className="text-[#10b981]">5</sup> For individuals with ADHD, 
             sleep problems compound existing difficulties with attention, emotional regulation, and executive function.{' '}
             Some researchers have proposed that sleep problems may contribute to the development or maintenance of ADHD 
-            symptoms in certain individuals.<sup className="text-[#10b981]">[6]</sup>
+            symptoms in certain individuals.<sup className="text-[#10b981]">16</sup>
           </p>
           
           <h4 className="text-[#0c264d] font-semibold mb-2">Evidence-Based Sleep Strategies</h4>
@@ -630,14 +630,14 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h4 className="text-[#0c264d] font-semibold mb-2">Omega-3 Fatty Acids</h4>
           <p className="mb-4">
             Some research suggests that omega-3 fatty acid supplementation (particularly EPA and DHA) may produce modest 
-            improvements in ADHD symptoms, especially inattention.<sup className="text-[#10b981]">[7]</sup> While the effect sizes are generally small compared 
+            improvements in ADHD symptoms, especially inattention.<sup className="text-[#10b981]">7</sup> While the effect sizes are generally small compared 
             to medication, omega-3s are well-tolerated and may provide complementary benefits.
           </p>
           
           <h4 className="text-[#0c264d] font-semibold mb-2">Artificial Food Colorings and Additives</h4>
           <p className="mb-4">
             Research on artificial food colorings and preservatives shows mixed results. Some meta-analyses find small 
-            but statistically significant effects of eliminating artificial additives on hyperactivity in children.<sup className="text-[#10b981]">[8]</sup> While 
+            but statistically significant effects of eliminating artificial additives on hyperactivity in children.<sup className="text-[#10b981]">8</sup> While 
             not all children with ADHD are sensitive to these substances, a small subset may benefit from dietary 
             restriction.
           </p>
@@ -654,7 +654,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Mindfulness and Meditation</h3>
           <p className="mb-4">
             Mindfulness-based interventions show promise for individuals with ADHD, with research demonstrating improvements 
-            in attention, executive functioning, and emotional regulation.<sup className="text-[#10b981]">[9]</sup> Mindfulness meditation training helps 
+            in attention, executive functioning, and emotional regulation.<sup className="text-[#10b981]">9</sup> Mindfulness meditation training helps 
             individuals develop meta-awareness of their internal experiences and build skills for redirecting attention. 
             While mindfulness practice can be challenging for individuals with ADHD, adapted programs with shorter sessions 
             and more structure have shown positive results.

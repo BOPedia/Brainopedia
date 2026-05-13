@@ -46,9 +46,9 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
       <div className="mb-8">
         <p className="mb-4">
           Living with dyslexia presents unique challenges, but with appropriate support and self-understanding, 
-          individuals with dyslexia can thrive academically, professionally, and personally.<sup>[1]</sup> Many 
+          individuals with dyslexia can thrive academically, professionally, and personally.<sup>10</sup> Many 
           highly successful people have dyslexia, demonstrating that it doesn't limit potential—it simply means 
-          learning and working differently.<sup>[2]</sup>
+          learning and working differently.<sup>12</sup>
         </p>
       </div>
 
@@ -110,26 +110,26 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
             
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Challenges in Daily Activities</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Reading menus and signs:</strong> Can be slow and effortful in public settings<sup>[3]</sup></li>
+              <li className="mb-2"><strong>Reading menus and signs:</strong> Can be slow and effortful in public settings<sup>13</sup></li>
               <li className="mb-2"><strong>Following written directions:</strong> Instructions for assembling furniture, recipes, etc.</li>
-              <li className="mb-2"><strong>Forms and paperwork:</strong> Medical forms, job applications can be overwhelming<sup>[4]</sup></li>
+              <li className="mb-2"><strong>Forms and paperwork:</strong> Medical forms, job applications can be overwhelming<sup>14</sup></li>
               <li className="mb-2"><strong>Digital navigation:</strong> Reading websites, emails, text messages</li>
-              <li className="mb-2"><strong>Time pressure:</strong> Reading under time constraints particularly difficult<sup>[5]</sup></li>
+              <li className="mb-2"><strong>Time pressure:</strong> Reading under time constraints particularly difficult<sup>5</sup></li>
             </ul>
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Writing Challenges</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Spelling errors:</strong> Frequent misspellings even in common words<sup>[6]</sup></li>
+              <li className="mb-2"><strong>Spelling errors:</strong> Frequent misspellings even in common words<sup>16</sup></li>
               <li className="mb-2"><strong>Email and text communication:</strong> Anxiety about spelling and grammar mistakes</li>
-              <li className="mb-2"><strong>Note-taking:</strong> Difficulty capturing information quickly in writing<sup>[7]</sup></li>
+              <li className="mb-2"><strong>Note-taking:</strong> Difficulty capturing information quickly in writing<sup>7</sup></li>
               <li className="mb-2"><strong>Written expression:</strong> Gap between verbal abilities and written output</li>
             </ul>
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Memory and Organization</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Working memory challenges:</strong> Difficulty holding multiple pieces of information<sup>[8]</sup></li>
+              <li className="mb-2"><strong>Working memory challenges:</strong> Difficulty holding multiple pieces of information<sup>8</sup></li>
               <li className="mb-2"><strong>Following multi-step directions:</strong> May need directions repeated or written down</li>
-              <li className="mb-2"><strong>Name recall:</strong> Difficulty remembering people's names<sup>[9]</sup></li>
+              <li className="mb-2"><strong>Name recall:</strong> Difficulty remembering people's names<sup>9</sup></li>
               <li className="mb-2"><strong>Time management:</strong> Tasks often take longer than anticipated</li>
             </ul>
           </div>
@@ -436,7 +436,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
                 <p className="mb-3">
                   Dyslexia is part of who you are, but it doesn't define your potential or limit your future. With the right 
                   support, strategies, and self-advocacy, individuals with dyslexia can and do achieve their goals—academic, 
-                  professional, and personal.<sup>[1]</sup>
+                  professional, and personal.<sup>10</sup>
                 </p>
                 <p>
                   The journey may require extra effort and different approaches, but the resilience, creativity, and unique 

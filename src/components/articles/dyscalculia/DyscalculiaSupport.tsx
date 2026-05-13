@@ -32,8 +32,8 @@ export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProp
         <div>
           <p className="mb-4">
             Effective support for dyscalculia requires evidence-based interventions, appropriate accommodations, and 
-            comprehensive educational planning.<sup>[1]</sup> While dyscalculia is lifelong, with proper support individuals 
-            can develop functional mathematical skills and strategies to manage daily mathematical demands.<sup>[2]</sup>
+            comprehensive educational planning.<sup>10</sup> While dyscalculia is lifelong, with proper support individuals 
+            can develop functional mathematical skills and strategies to manage daily mathematical demands.<sup>12</sup>
           </p>
         </div>
 
@@ -48,42 +48,42 @@ export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Explicit, Systematic Instruction</h3>
           <p className="mb-4">
-            Research consistently supports explicit, systematic teaching approaches for dyscalculia:<sup>[3]</sup>
+            Research consistently supports explicit, systematic teaching approaches for dyscalculia:<sup>13</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Clear models:</strong> Teacher demonstrates thinking process explicitly<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Clear models:</strong> Teacher demonstrates thinking process explicitly<sup>14</sup></li>
             <li className="mb-2"><strong>Guided practice:</strong> Students practice with immediate feedback</li>
-            <li className="mb-2"><strong>Gradual release:</strong> Move from heavily supported to independent practice<sup>[5]</sup></li>
+            <li className="mb-2"><strong>Gradual release:</strong> Move from heavily supported to independent practice<sup>5</sup></li>
             <li className="mb-2"><strong>Cumulative review:</strong> Regular review of previously taught skills</li>
-            <li className="mb-2"><strong>Verbalization:</strong> Students explain their thinking aloud<sup>[6]</sup></li>
+            <li className="mb-2"><strong>Verbalization:</strong> Students explain their thinking aloud<sup>16</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Number Sense Instruction</h3>
           <p className="mb-4">
-            Building foundational number sense is critical for students with dyscalculia:<sup>[7]</sup>
+            Building foundational number sense is critical for students with dyscalculia:<sup>7</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Quantity recognition:</strong> Practice identifying and comparing quantities<sup>[8]</sup></li>
+            <li className="mb-2"><strong>Quantity recognition:</strong> Practice identifying and comparing quantities<sup>8</sup></li>
             <li className="mb-2"><strong>Number line activities:</strong> Placing numbers on number lines</li>
-            <li className="mb-2"><strong>Estimation tasks:</strong> Approximating quantities and calculations<sup>[9]</sup></li>
+            <li className="mb-2"><strong>Estimation tasks:</strong> Approximating quantities and calculations<sup>9</sup></li>
             <li className="mb-2"><strong>Part-whole relationships:</strong> Understanding how numbers combine</li>
-            <li className="mb-2"><strong>Number games:</strong> Board games and activities building number sense<sup>[10]</sup></li>
+            <li className="mb-2"><strong>Number games:</strong> Board games and activities building number sense<sup>10</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Concrete-Representational-Abstract (CRA) Approach</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Concrete:</strong> Use manipulatives (blocks, counters) to represent concepts<sup>[11]</sup></li>
+            <li className="mb-2"><strong>Concrete:</strong> Use manipulatives (blocks, counters) to represent concepts<sup>11</sup></li>
             <li className="mb-2"><strong>Representational:</strong> Draw pictures or diagrams of mathematical concepts</li>
-            <li className="mb-2"><strong>Abstract:</strong> Work with numbers and symbols alone<sup>[12]</sup></li>
+            <li className="mb-2"><strong>Abstract:</strong> Work with numbers and symbols alone<sup>12</sup></li>
             <li className="mb-2"><strong>Progression:</strong> Move through stages as understanding develops</li>
-            <li className="mb-2"><strong>Research support:</strong> Highly effective for students with math difficulties<sup>[13]</sup></li>
+            <li className="mb-2"><strong>Research support:</strong> Highly effective for students with math difficulties<sup>13</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Specific Intervention Programs</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Number Worlds:</strong> Curriculum targeting number sense development<sup>[14]</sup></li>
-            <li className="mb-2"><strong>Math Recovery:</strong> One-on-one intervention for early elementary<sup>[15]</sup></li>
-            <li className="mb-2"><strong>TouchMath:</strong> Multisensory approach using touch points on numbers<sup>[16]</sup></li>
+            <li className="mb-2"><strong>Number Worlds:</strong> Curriculum targeting number sense development<sup>14</sup></li>
+            <li className="mb-2"><strong>Math Recovery:</strong> One-on-one intervention for early elementary<sup>15</sup></li>
+            <li className="mb-2"><strong>TouchMath:</strong> Multisensory approach using touch points on numbers<sup>16</sup></li>
             <li className="mb-2"><strong>Schema-based instruction:</strong> Teaching problem-solving through recognizing problem types<sup>[17]</sup></li>
             <li className="mb-2"><strong>Peer-Assisted Learning Strategies (PALS):</strong> Structured peer tutoring<sup>[18]</sup></li>
           </ul>

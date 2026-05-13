@@ -23,7 +23,7 @@ export function IdentityCommunityContent({ setCurrentArticle }: IdentityCommunit
               Understanding oneself as autistic is often a lifelong process of reframing experiences through a neuro-affirming lens:
             </p>
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
-              <li><strong>Late Diagnosis:</strong> For many adults, a diagnosis provides a "missing piece," replacing years of self-criticism with self-understanding.<sup>1</sup></li>
+              <li><strong>Late Diagnosis:</strong> For many adults, a diagnosis provides a "missing piece," replacing years of self-criticism with self-understanding.<sup>10</sup></li>
               <li><strong>Moving Beyond Shame:</strong> Shifting from a "disorder" mindset to seeing autism as a natural neurological variation.</li>
               <li><strong>Disclosure:</strong> Navigating when and how to share one's autistic identity with employers, friends, or the public.</li>
             </ul>
@@ -64,7 +64,7 @@ export function IdentityCommunityContent({ setCurrentArticle }: IdentityCommunit
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#ffd166]">✓</span>
-                <span><strong>Nothing About Us Without Us:</strong> Centering autistic voices.<sup>2</sup></span>
+                <span><strong>Nothing About Us Without Us:</strong> Centering autistic voices.<sup>12</sup></span>
               </li>
             </ul>
           </div>
@@ -78,7 +78,7 @@ export function IdentityCommunityContent({ setCurrentArticle }: IdentityCommunit
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li><strong>Community Spaces:</strong> Online forums and local meetups where "autistic-to-autistic" communication flourishes.</li>
               <li><strong>Legal Rights:</strong> Leveraging the ADA (Americans with Disabilities Act) and other protections to ensure equal access.</li>
-              <li><strong>Self-Advocacy:</strong> Learning to speak up for specific sensory or cognitive needs in public and private spaces.<sup>3</sup></li>
+              <li><strong>Self-Advocacy:</strong> Learning to speak up for specific sensory or cognitive needs in public and private spaces.<sup>13</sup></li>
             </ul>
           </div>
         </div>

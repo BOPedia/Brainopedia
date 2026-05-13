@@ -34,9 +34,9 @@ export function ADHDSymptomsTabFemales() {
                 <div className="font-bold text-[#0c264d] mb-2">Symptom Presentation & Comorbidity:</div>
                 <div className="text-sm space-y-2 pl-4">
                   <p>Women with ADHD are more likely to have the combined type, experience greater emotional dysregulation, 
-                  and report higher levels of anxiety and depression compared to men.<sup className="text-[#10b981]">1</sup></p>
+                  and report higher levels of anxiety and depression compared to men.<sup className="text-[#10b981]">10</sup></p>
                   <p>Research indicates a significant association between adult female ADHD and higher rates of insomnia, 
-                  substance abuse, chronic pain, and histories of childhood abuse.<sup className="text-[#10b981]">2</sup></p>
+                  substance abuse, chronic pain, and histories of childhood abuse.<sup className="text-[#10b981]">12</sup></p>
                   <p>Women often exhibit inattentive symptoms, making them less likely to be diagnosed in childhood, often 
                   waiting until they recognize similar symptoms in their own children.</p>
                 </div>
@@ -46,7 +46,7 @@ export function ADHDSymptomsTabFemales() {
                 <div className="font-bold text-[#0c264d] mb-2">Persistence Into Adulthood:</div>
                 <div className="text-sm space-y-2 pl-4">
                   <p>Research suggests that while 60% of women have symptoms lasting into adulthood, they are less likely to 
-                  "outgrow" the condition than men (30%).<sup className="text-[#10b981]">3</sup></p>
+                  "outgrow" the condition than men (30%).<sup className="text-[#10b981]">13</sup></p>
                 </div>
               </div>
               
@@ -54,7 +54,7 @@ export function ADHDSymptomsTabFemales() {
                 <div className="font-bold text-[#0c264d] mb-2">Social & Personal Impact:</div>
                 <div className="text-sm space-y-2 pl-4">
                   <p>Women with ADHD face greater difficulties with peer relationships, social behavior, and sustaining stable 
-                  relationships compared to women without ADHD.<sup className="text-[#10b981]">4</sup></p>
+                  relationships compared to women without ADHD.<sup className="text-[#10b981]">14</sup></p>
                   <p>A qualitative study found that women with late-diagnosed ADHD experienced severe, long-term consequences, 
                   including low self-esteem, intense guilt, shame, and a sense of grieving over the life they could have led 
                   if diagnosed earlier.<sup className="text-[#10b981]">5</sup></p>
@@ -65,7 +65,7 @@ export function ADHDSymptomsTabFemales() {
                 <div className="font-bold text-[#0c264d] mb-2">Medical & Diagnostic Bias:</div>
                 <div className="text-sm space-y-2 pl-4">
                   <p>Studies demonstrate a "missed diagnosis" phenomenon where professionals mislabel ADHD in women as only 
-                  anxiety or depression.<sup className="text-[#10b981]">6</sup></p>
+                  anxiety or depression.<sup className="text-[#10b981]">16</sup></p>
                   <p>Female adolescents (over 13) may experience more frequent and different adverse events from stimulant 
                   medications compared to males.<sup className="text-[#10b981]">7</sup></p>
                 </div>

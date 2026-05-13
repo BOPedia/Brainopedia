@@ -32,8 +32,8 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
         <div>
           <p className="mb-4">
             Diagnosing hyperlexia involves comprehensive evaluation of reading abilities, language development, and 
-            cognitive-communicative functioning.<sup>[1]</sup> Because hyperlexia is not an official DSM-5 diagnosis, 
-            assessment focuses on identifying the characteristic pattern rather than applying specific diagnostic criteria.<sup>[2]</sup>
+            cognitive-communicative functioning.<sup>10</sup> Because hyperlexia is not an official DSM-5 diagnosis, 
+            assessment focuses on identifying the characteristic pattern rather than applying specific diagnostic criteria.<sup>12</sup>
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Not an Official Diagnosis</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">No DSM-5 or ICD-11 classification for hyperlexia<sup>[3]</sup></li>
+            <li className="mb-2">No DSM-5 or ICD-11 classification for hyperlexia<sup>13</sup></li>
             <li className="mb-2">Widely recognized by clinicians but no standardized criteria</li>
             <li className="mb-2">Described as a pattern or syndrome</li>
             <li className="mb-2">Often diagnosed alongside autism or language disorder</li>
@@ -50,7 +50,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Can Be Overlooked</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Reading ability may mask language difficulties<sup>[4]</sup></li>
+            <li className="mb-2">Reading ability may mask language difficulties<sup>14</sup></li>
             <li className="mb-2">May be seen as "gifted" rather than having difficulties</li>
             <li className="mb-2">Comprehension problems not always apparent early</li>
           </ul>
@@ -67,10 +67,10 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Qualified Professionals</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Speech-language pathologists:</strong> Language and reading assessment<sup>[5]</sup></li>
+            <li className="mb-2"><strong>Speech-language pathologists:</strong> Language and reading assessment<sup>5</sup></li>
             <li className="mb-2"><strong>Neuropsychologists:</strong> Comprehensive cognitive-language evaluation</li>
             <li className="mb-2"><strong>Developmental pediatricians:</strong> Medical evaluation and developmental assessment</li>
-            <li className="mb-2"><strong>Psychologists:</strong> Autism and cognitive assessment<sup>[6]</sup></li>
+            <li className="mb-2"><strong>Psychologists:</strong> Autism and cognitive assessment<sup>16</sup></li>
           </ul>
         </div>
 
@@ -79,7 +79,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Case History</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Developmental history:</strong> When did child start reading? How?<sup>[7]</sup></li>
+            <li className="mb-2"><strong>Developmental history:</strong> When did child start reading? How?<sup>7</sup></li>
             <li className="mb-2"><strong>Language development:</strong> Speech and language milestones</li>
             <li className="mb-2"><strong>Reading behaviors:</strong> Fascination with letters, self-teaching</li>
             <li className="mb-2"><strong>Social-communication:</strong> Social interaction patterns</li>
@@ -88,7 +88,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Observation</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Observing child's reading behaviors<sup>[8]</sup></li>
+            <li className="mb-2">Observing child's reading behaviors<sup>8</sup></li>
             <li className="mb-2">Social-communicative interactions</li>
             <li className="mb-2">Play and interests</li>
             <li className="mb-2">Response to language and questions</li>
@@ -100,7 +100,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Decoding Skills</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Word reading:</strong> Standardized word reading tests<sup>[9]</sup></li>
+            <li className="mb-2"><strong>Word reading:</strong> Standardized word reading tests<sup>9</sup></li>
             <li className="mb-2"><strong>Pseudoword decoding:</strong> Reading nonsense words</li>
             <li className="mb-2"><strong>Reading fluency:</strong> Speed and accuracy</li>
             <li className="mb-2"><strong>Age comparison:</strong> Reading typically years above age level</li>
@@ -108,7 +108,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Comprehension</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Comprehension tests:</strong> Understanding what was read<sup>[10]</sup></li>
+            <li className="mb-2"><strong>Comprehension tests:</strong> Understanding what was read<sup>10</sup></li>
             <li className="mb-2"><strong>Question answering:</strong> Literal vs. inferential questions</li>
             <li className="mb-2"><strong>Retelling:</strong> Ability to retell stories</li>
             <li className="mb-2"><strong>Discrepancy:</strong> Comprehension significantly lower than decoding</li>
@@ -117,7 +117,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Assessment Tools</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">WRMT-III (Woodcock Reading Mastery Tests)</li>
-            <li className="mb-2">GORT-5 (Gray Oral Reading Tests)<sup>[11]</sup></li>
+            <li className="mb-2">GORT-5 (Gray Oral Reading Tests)<sup>11</sup></li>
             <li className="mb-2">TOWRE-2 (Test of Word Reading Efficiency)</li>
           </ul>
         </div>
@@ -127,7 +127,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Receptive Language</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Listening comprehension:</strong> Understanding spoken language<sup>[12]</sup></li>
+            <li className="mb-2"><strong>Listening comprehension:</strong> Understanding spoken language<sup>12</sup></li>
             <li className="mb-2"><strong>Following directions:</strong> Multi-step instruction following</li>
             <li className="mb-2"><strong>Vocabulary comprehension:</strong> Understanding word meanings</li>
             <li className="mb-2"><strong>Typical findings:</strong> Often below expected levels</li>
@@ -136,14 +136,14 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Expressive Language</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Vocabulary production</li>
-            <li className="mb-2">Sentence formulation<sup>[13]</sup></li>
+            <li className="mb-2">Sentence formulation<sup>13</sup></li>
             <li className="mb-2">Narrative abilities</li>
             <li className="mb-2">Conversational skills</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Language Tests</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">CELF-5 (Clinical Evaluation of Language Fundamentals)<sup>[14]</sup></li>
+            <li className="mb-2">CELF-5 (Clinical Evaluation of Language Fundamentals)<sup>14</sup></li>
             <li className="mb-2">PPVT-5 (Peabody Picture Vocabulary Test)</li>
             <li className="mb-2">EVT-3 (Expressive Vocabulary Test)</li>
           </ul>
@@ -160,12 +160,12 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Autism Assessment</h3>
           <p className="mb-4">
-            Because hyperlexia frequently co-occurs with autism, autism evaluation is important:<sup>[15]</sup>
+            Because hyperlexia frequently co-occurs with autism, autism evaluation is important:<sup>15</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>ADOS-2:</strong> Autism Diagnostic Observation Schedule</li>
             <li className="mb-2"><strong>ADI-R:</strong> Autism Diagnostic Interview-Revised</li>
-            <li className="mb-2"><strong>Screening tools:</strong> M-CHAT, SCQ<sup>[16]</sup></li>
+            <li className="mb-2"><strong>Screening tools:</strong> M-CHAT, SCQ<sup>16</sup></li>
             <li className="mb-2"><strong>Social communication:</strong> Detailed assessment needed</li>
           </ul>
 

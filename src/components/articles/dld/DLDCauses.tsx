@@ -32,8 +32,8 @@ export function DLDCauses({ setCurrentArticle }: DLDCausesProps) {
         <div>
           <p className="mb-4">
             Developmental Language Disorder has complex, multifactorial origins involving genetic, neurobiological, 
-            and environmental factors.<sup>[1]</sup> While the exact causes are still being researched, significant 
-            progress has been made in understanding the biological basis of DLD.<sup>[2]</sup>
+            and environmental factors.<sup>10</sup> While the exact causes are still being researched, significant 
+            progress has been made in understanding the biological basis of DLD.<sup>12</sup>
           </p>
         </div>
 
@@ -48,30 +48,30 @@ export function DLDCauses({ setCurrentArticle }: DLDCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Strong Genetic Component</h3>
           <p className="mb-4">
-            Research strongly supports a genetic basis for DLD:<sup>[3]</sup>
+            Research strongly supports a genetic basis for DLD:<sup>13</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Family clustering:</strong> DLD runs in families</li>
-            <li className="mb-2"><strong>Twin studies:</strong> Higher concordance in identical twins than fraternal twins<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Twin studies:</strong> Higher concordance in identical twins than fraternal twins<sup>14</sup></li>
             <li className="mb-2"><strong>Heritability estimates:</strong> 50-70% of language abilities are heritable</li>
-            <li className="mb-2"><strong>Family history:</strong> Children with DLD often have relatives with language or learning difficulties<sup>[5]</sup></li>
+            <li className="mb-2"><strong>Family history:</strong> Children with DLD often have relatives with language or learning difficulties<sup>5</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Candidate Genes</h3>
           <p className="mb-4">
-            Several genes have been associated with language development:<sup>[6]</sup>
+            Several genes have been associated with language development:<sup>16</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>FOXP2:</strong> First identified "language gene" (though not specific to DLD)</li>
-            <li className="mb-2"><strong>CNTNAP2:</strong> Associated with language delays<sup>[7]</sup></li>
+            <li className="mb-2"><strong>CNTNAP2:</strong> Associated with language delays<sup>7</sup></li>
             <li className="mb-2"><strong>ATP2C2 and CMIP:</strong> Linked to language impairment</li>
-            <li className="mb-2"><strong>Polygenic:</strong> Likely involves many genes with small effects<sup>[8]</sup></li>
+            <li className="mb-2"><strong>Polygenic:</strong> Likely involves many genes with small effects<sup>8</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Complex Inheritance</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Not a simple single-gene disorder</li>
-            <li className="mb-2">Multiple genes interact with each other and environment<sup>[9]</sup></li>
+            <li className="mb-2">Multiple genes interact with each other and environment<sup>9</sup></li>
             <li className="mb-2">Gene-environment interactions important</li>
           </ul>
         </div>
@@ -81,29 +81,29 @@ export function DLDCauses({ setCurrentArticle }: DLDCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brain Structure Differences</h3>
           <p className="mb-4">
-            Neuroimaging studies show structural differences in children with DLD:<sup>[10]</sup>
+            Neuroimaging studies show structural differences in children with DLD:<sup>10</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Perisylvian regions:</strong> Differences in language-related brain areas</li>
-            <li className="mb-2"><strong>White matter:</strong> Altered connectivity in language pathways<sup>[11]</sup></li>
+            <li className="mb-2"><strong>White matter:</strong> Altered connectivity in language pathways<sup>11</sup></li>
             <li className="mb-2"><strong>Gray matter:</strong> Volume differences in frontal and temporal regions</li>
-            <li className="mb-2"><strong>Asymmetry:</strong> Reduced typical left-hemisphere language asymmetry<sup>[12]</sup></li>
+            <li className="mb-2"><strong>Asymmetry:</strong> Reduced typical left-hemisphere language asymmetry<sup>12</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brain Function Differences</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Neural activation:</strong> Different patterns during language tasks<sup>[13]</sup></li>
+            <li className="mb-2"><strong>Neural activation:</strong> Different patterns during language tasks<sup>13</sup></li>
             <li className="mb-2"><strong>Processing efficiency:</strong> Less efficient language processing</li>
-            <li className="mb-2"><strong>Network connectivity:</strong> Differences in how language networks communicate<sup>[14]</sup></li>
+            <li className="mb-2"><strong>Network connectivity:</strong> Differences in how language networks communicate<sup>14</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Procedural Learning System</h3>
           <p className="mb-4">
-            The Procedural Deficit Hypothesis suggests:<sup>[15]</sup>
+            The Procedural Deficit Hypothesis suggests:<sup>15</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Dysfunction in procedural memory system (implicit learning)</li>
-            <li className="mb-2">Affects learning of grammar and other rule-based aspects<sup>[16]</sup></li>
+            <li className="mb-2">Affects learning of grammar and other rule-based aspects<sup>16</sup></li>
             <li className="mb-2">Involves basal ganglia and frontal brain regions</li>
             <li className="mb-2">Compensatory reliance on declarative memory (explicit learning)</li>
           </ul>

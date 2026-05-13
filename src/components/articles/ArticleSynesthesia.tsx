@@ -51,8 +51,8 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
         <div className="space-y-6">
           <p>
             <strong>Synesthesia</strong> is a neurological phenomenon in which stimulation of one sensory or cognitive 
-            pathway leads to involuntary experiences in a second sensory or cognitive pathway.<sup>[1]</sup> For example, a person 
-            with synesthesia might see colors when hearing music, or taste flavors when reading words.<sup>[2]</sup>
+            pathway leads to involuntary experiences in a second sensory or cognitive pathway.<sup>10</sup> For example, a person 
+            with synesthesia might see colors when hearing music, or taste flavors when reading words.<sup>12</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -85,16 +85,16 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
           
           <p className="mb-4">
             The term "synesthesia" comes from the Greek words "syn" (together) and "aisthesis" (sensation), literally 
-            meaning "joined sensation."<sup>[3]</sup> Synesthesia is a lifelong condition that people are typically born with, 
-            though it may not be recognized until later in life.<sup>[4]</sup> It is estimated to occur in about 2-4% of the 
-            population, though this may be higher as many people don't realize their experiences are unusual.<sup>[5]</sup>
+            meaning "joined sensation."<sup>13</sup> Synesthesia is a lifelong condition that people are typically born with, 
+            though it may not be recognized until later in life.<sup>14</sup> It is estimated to occur in about 2-4% of the 
+            population, though this may be higher as many people don't realize their experiences are unusual.<sup>5</sup>
           </p>
           
           <p className="mb-4">
             Unlike 
-            sensory hallucinations, synesthetic perceptions are consistent, automatic, and involuntary.<sup>[6]</sup> The same 
+            sensory hallucinations, synesthetic perceptions are consistent, automatic, and involuntary.<sup>16</sup> The same 
             stimulus will always produce the same synesthetic experience. For instance, if the letter "A" appears 
-            red to a synesthete, it will always appear red, and this association remains stable throughout their life.<sup>[7]</sup> 
+            red to a synesthete, it will always appear red, and this association remains stable throughout their life.<sup>7</sup> 
             Synesthesia is not considered a disorder or disability. In fact, many synesthetes view it as a gift that 
             enriches their perception of the world, enhancing creativity and memory.<sup>[8][9]</sup>
           </p>
@@ -111,16 +111,16 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
           
           <p className="mb-4">
             There are many documented forms of synesthesia involving various combinations of senses and cognitive 
-            processes.<sup>[10]</sup> Grapheme-color synesthesia (the most common form) occurs when letters and numbers are perceived 
-            as inherently colored, with each synesthete having their own unique color associations.<sup>[11]</sup> Chromesthesia 
+            processes.<sup>10</sup> Grapheme-color synesthesia (the most common form) occurs when letters and numbers are perceived 
+            as inherently colored, with each synesthete having their own unique color associations.<sup>11</sup> Chromesthesia 
             (sound-to-color) involves perceiving colors when hearing sounds, music, or voices, with different pitches 
-            or timbres evoking different colors.<sup>[12]</sup> Lexical-gustatory synesthesia occurs when words or phonemes evoke 
-            specific taste sensations.<sup>[13]</sup>
+            or timbres evoking different colors.<sup>12</sup> Lexical-gustatory synesthesia occurs when words or phonemes evoke 
+            specific taste sensations.<sup>13</sup>
           </p>
           
           <p className="mb-4">
             Spatial sequence synesthesia involves perceiving number sequences, months, or 
-            days of the week as occupying specific locations in space.<sup>[14]</sup> Other forms include number-form (numbers visualized 
+            days of the week as occupying specific locations in space.<sup>14</sup> Other forms include number-form (numbers visualized 
             in specific spatial arrangements), personification (letters, numbers, or days have distinct personalities), 
             mirror-touch (observing touch on another person triggers tactile sensations on one's own body), and auditory-tactile 
             (sounds produce tactile sensations).<sup>[15][16]</sup> Many synesthetes have multiple forms of synesthesia.<sup>[17]</sup> The experiences are 

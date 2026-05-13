@@ -32,8 +32,8 @@ export function DysgraphiaLiving({ setCurrentArticle }: DysgraphiaLivingProps) {
         <div>
           <p className="mb-4">
             Living successfully with dysgraphia involves understanding one's strengths, developing effective strategies, 
-            advocating for needed accommodations, and recognizing that writing challenges don't define overall potential.<sup>[1]</sup> 
-            With appropriate support and tools, individuals with dysgraphia lead fulfilling lives and achieve success across all domains.<sup>[2]</sup>
+            advocating for needed accommodations, and recognizing that writing challenges don't define overall potential.<sup>10</sup> 
+            With appropriate support and tools, individuals with dysgraphia lead fulfilling lives and achieve success across all domains.<sup>12</sup>
           </p>
         </div>
 
@@ -48,20 +48,20 @@ export function DysgraphiaLiving({ setCurrentArticle }: DysgraphiaLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Challenges</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Filling out forms:</strong> Bank forms, medical paperwork, applications<sup>[3]</sup></li>
+            <li className="mb-2"><strong>Filling out forms:</strong> Bank forms, medical paperwork, applications<sup>13</sup></li>
             <li className="mb-2"><strong>Note-taking:</strong> At meetings, appointments, lectures</li>
-            <li className="mb-2"><strong>Lists and reminders:</strong> Shopping lists, to-do lists<sup>[4]</sup></li>
+            <li className="mb-2"><strong>Lists and reminders:</strong> Shopping lists, to-do lists<sup>14</sup></li>
             <li className="mb-2"><strong>Signatures:</strong> Signing documents, credit card receipts</li>
-            <li className="mb-2"><strong>Correspondence:</strong> Thank-you notes, birthday cards<sup>[5]</sup></li>
+            <li className="mb-2"><strong>Correspondence:</strong> Thank-you notes, birthday cards<sup>5</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Practical Solutions</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Digital alternatives:</strong> Electronic forms, digital calendars<sup>[6]</sup></li>
+            <li className="mb-2"><strong>Digital alternatives:</strong> Electronic forms, digital calendars<sup>16</sup></li>
             <li className="mb-2"><strong>Voice-to-text:</strong> Dictate notes, messages, and lists</li>
-            <li className="mb-2"><strong>Pre-printed options:</strong> Use checkboxes instead of writing<sup>[7]</sup></li>
+            <li className="mb-2"><strong>Pre-printed options:</strong> Use checkboxes instead of writing<sup>7</sup></li>
             <li className="mb-2"><strong>Smartphone apps:</strong> Digital note-taking, task management</li>
-            <li className="mb-2"><strong>Templates:</strong> Reusable formats for common tasks<sup>[8]</sup></li>
+            <li className="mb-2"><strong>Templates:</strong> Reusable formats for common tasks<sup>8</sup></li>
           </ul>
         </div>
 
@@ -70,28 +70,28 @@ export function DysgraphiaLiving({ setCurrentArticle }: DysgraphiaLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Elementary School</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Early intervention:</strong> Occupational therapy, handwriting instruction<sup>[9]</sup></li>
+            <li className="mb-2"><strong>Early intervention:</strong> Occupational therapy, handwriting instruction<sup>9</sup></li>
             <li className="mb-2"><strong>IEP or 504 plan:</strong> Formalize accommodations</li>
-            <li className="mb-2"><strong>Technology introduction:</strong> Begin keyboarding early<sup>[10]</sup></li>
+            <li className="mb-2"><strong>Technology introduction:</strong> Begin keyboarding early<sup>10</sup></li>
             <li className="mb-2"><strong>Homework modifications:</strong> Reduce copying, allow typing</li>
-            <li className="mb-2"><strong>Building confidence:</strong> Focus on strengths<sup>[11]</sup></li>
+            <li className="mb-2"><strong>Building confidence:</strong> Focus on strengths<sup>11</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Middle School</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Increased demands:</strong> More writing across subjects<sup>[12]</sup></li>
+            <li className="mb-2"><strong>Increased demands:</strong> More writing across subjects<sup>12</sup></li>
             <li className="mb-2"><strong>Note-taking support:</strong> Digital notes, teacher outlines</li>
-            <li className="mb-2"><strong>Organization skills:</strong> Systems for managing assignments<sup>[13]</sup></li>
+            <li className="mb-2"><strong>Organization skills:</strong> Systems for managing assignments<sup>13</sup></li>
             <li className="mb-2"><strong>Self-advocacy:</strong> Learning to request accommodations</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">High School</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>College preparation:</strong> SAT/ACT accommodations<sup>[14]</sup></li>
+            <li className="mb-2"><strong>College preparation:</strong> SAT/ACT accommodations<sup>14</sup></li>
             <li className="mb-2"><strong>Assistive technology proficiency:</strong> Master tools for independence</li>
-            <li className="mb-2"><strong>Time management:</strong> Plan for longer writing times<sup>[15]</sup></li>
+            <li className="mb-2"><strong>Time management:</strong> Plan for longer writing times<sup>15</sup></li>
             <li className="mb-2"><strong>Course selection:</strong> Balance workload appropriately</li>
-            <li className="mb-2"><strong>Transition planning:</strong> Preparing for college or career<sup>[16]</sup></li>
+            <li className="mb-2"><strong>Transition planning:</strong> Preparing for college or career<sup>16</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">College and University</h3>

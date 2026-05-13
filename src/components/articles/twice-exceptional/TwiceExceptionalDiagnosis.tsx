@@ -32,9 +32,9 @@ export function TwiceExceptionalDiagnosis({ setCurrentArticle }: TwiceExceptiona
         <div>
           <p className="mb-4">
             Identifying twice-exceptional students requires comprehensive assessment that captures both 
-            exceptional abilities and disabilities.<sup>[1]</sup> The assessment process must look beyond 
+            exceptional abilities and disabilities.<sup>10</sup> The assessment process must look beyond 
             average performance to recognize the masking effects that make 2e identification particularly 
-            challenging.<sup>[2]</sup>
+            challenging.<sup>12</sup>
           </p>
         </div>
 
@@ -49,32 +49,32 @@ export function TwiceExceptionalDiagnosis({ setCurrentArticle }: TwiceExceptiona
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Masking Effect</h3>
           <p className="mb-4">
-            The primary challenge in identifying 2e students is that strengths and weaknesses mask each other.<sup>[3]</sup> 
+            The primary challenge in identifying 2e students is that strengths and weaknesses mask each other.<sup>13</sup> 
             High ability compensates for disability, resulting in average or near-average performance that hides 
-            both exceptionalities.<sup>[4]</sup> Students may use superior reasoning to work around basic skill 
-            deficits, preventing either the gift or disability from being obvious.<sup>[5]</sup>
+            both exceptionalities.<sup>14</sup> Students may use superior reasoning to work around basic skill 
+            deficits, preventing either the gift or disability from being obvious.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Identification Bias</h3>
           <p className="mb-4">
-            Teacher and parent expectations often prevent recognition of twice-exceptionality.<sup>[6]</sup> 
+            Teacher and parent expectations often prevent recognition of twice-exceptionality.<sup>16</sup> 
             Gifted students are expected to excel consistently, so when they struggle, it's often attributed to 
-            lack of effort rather than disability.<sup>[7]</sup> Conversely, students identified with disabilities 
-            may not be considered for gifted services.<sup>[8]</sup>
+            lack of effort rather than disability.<sup>7</sup> Conversely, students identified with disabilities 
+            may not be considered for gifted services.<sup>8</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Single-Exception Identification</h3>
           <p className="mb-4">
-            Most identification systems are designed to identify either giftedness or disability, not both.<sup>[9]</sup> 
-            Once students are identified with one exceptionality, the other may be overlooked.<sup>[10]</sup> 
-            Students may receive services for their disability without gifted programming, or vice versa.<sup>[11]</sup>
+            Most identification systems are designed to identify either giftedness or disability, not both.<sup>9</sup> 
+            Once students are identified with one exceptionality, the other may be overlooked.<sup>10</sup> 
+            Students may receive services for their disability without gifted programming, or vice versa.<sup>11</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Inconsistent Performance</h3>
           <p className="mb-4">
-            The hallmark inconsistency of 2e students complicates identification.<sup>[12]</sup> Performance 
+            The hallmark inconsistency of 2e students complicates identification.<sup>12</sup> Performance 
             that varies dramatically across tasks, formats, or time periods may be misinterpreted as motivational 
-            issues rather than recognized as a pattern indicating twice-exceptionality.<sup>[13]</sup>
+            issues rather than recognized as a pattern indicating twice-exceptionality.<sup>13</sup>
           </p>
         </div>
 
@@ -83,11 +83,11 @@ export function TwiceExceptionalDiagnosis({ setCurrentArticle }: TwiceExceptiona
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Intelligence Testing</h3>
           <p className="mb-4">
-            Comprehensive IQ testing is essential for identifying twice-exceptionality.<sup>[14]</sup> The 
+            Comprehensive IQ testing is essential for identifying twice-exceptionality.<sup>14</sup> The 
             Wechsler scales (WISC-V, WAIS-IV) provide detailed profiles across multiple domains including 
-            Verbal Comprehension, Visual Spatial, Fluid Reasoning, Working Memory, and Processing Speed.<sup>[15]</sup> 
+            Verbal Comprehension, Visual Spatial, Fluid Reasoning, Working Memory, and Processing Speed.<sup>15</sup> 
             The Stanford-Binet Fifth Edition offers higher ceilings appropriate for identifying profound 
-            giftedness alongside disabilities.<sup>[16]</sup>
+            giftedness alongside disabilities.<sup>16</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Analyzing Subtest Scatter</h3>

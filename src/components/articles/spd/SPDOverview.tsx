@@ -43,13 +43,13 @@ export function SPDOverview({ setCurrentArticle }: SPDOverviewProps) {
             Sensory Processing Disorder (SPD), also known as Sensory Integration Dysfunction, is a neurodevelopmental condition 
             in which the brain has difficulty receiving, organizing, and responding to sensory information from the body and 
             environment.<sup>[1][2]</sup> This condition affects how individuals perceive and react to sensory stimuli, creating 
-            a fundamentally different lived experience of sensation compared to neurotypical individuals.<sup>[3]</sup>
+            a fundamentally different lived experience of sensation compared to neurotypical individuals.<sup>13</sup>
           </p>
           <p className="mb-4">
             The concept of sensory integration was first developed by occupational therapist A. Jean Ayres in the 1960s and 1970s.<sup>[4][5]</sup> 
             Ayres described how the brain must organize and interpret sensory information from multiple systems to produce appropriate 
-            adaptive responses.<sup>[6]</sup> When this integration process doesn't function optimally, individuals may experience 
-            difficulty with everyday tasks, social interactions, learning, and emotional regulation.<sup>[7]</sup>
+            adaptive responses.<sup>16</sup> When this integration process doesn't function optimally, individuals may experience 
+            difficulty with everyday tasks, social interactions, learning, and emotional regulation.<sup>7</sup>
           </p>
         </div>
 
@@ -66,22 +66,22 @@ export function SPDOverview({ setCurrentArticle }: SPDOverviewProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Visual:</strong> Processing information through sight, including light, color, contrast, and movement</li>
             <li className="mb-2"><strong>Auditory:</strong> Processing sounds, including pitch, volume, rhythm, and location</li>
-            <li className="mb-2"><strong>Tactile:</strong> Processing touch sensations, including texture, pressure, temperature, and pain<sup>[10]</sup></li>
+            <li className="mb-2"><strong>Tactile:</strong> Processing touch sensations, including texture, pressure, temperature, and pain<sup>10</sup></li>
             <li className="mb-2"><strong>Gustatory:</strong> Processing taste, including sweet, sour, salty, bitter, and umami</li>
             <li className="mb-2"><strong>Olfactory:</strong> Processing smells and odors from the environment</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Three "Hidden" Internal Senses</h3>
           <p className="mb-4">
-            These lesser-known sensory systems are crucial for body awareness, balance, and internal regulation:<sup>[11]</sup>
+            These lesser-known sensory systems are crucial for body awareness, balance, and internal regulation:<sup>11</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Vestibular:</strong> The sense of balance and spatial orientation, processed through the inner ear, 
-            detecting head position and movement<sup>[12]</sup></li>
+            detecting head position and movement<sup>12</sup></li>
             <li className="mb-2"><strong>Proprioceptive:</strong> The sense of body position and movement, processed through receptors in 
-            muscles, joints, and tendons, providing awareness of where body parts are in space<sup>[13]</sup></li>
+            muscles, joints, and tendons, providing awareness of where body parts are in space<sup>13</sup></li>
             <li className="mb-2"><strong>Interoceptive:</strong> The sense of internal body states, including hunger, thirst, temperature, 
-            heart rate, breathing, and need for bathroom use<sup>[14]</sup></li>
+            heart rate, breathing, and need for bathroom use<sup>14</sup></li>
           </ul>
         </div>
 
@@ -121,7 +121,7 @@ export function SPDOverview({ setCurrentArticle }: SPDOverviewProps) {
           
           <p className="mb-4">
             Lucy Jane Miller and colleagues proposed a comprehensive nosology for SPD that identifies three main subtypes of 
-            sensory processing difficulties:<sup>[1]</sup>
+            sensory processing difficulties:<sup>10</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Sensory Modulation Disorder (SMD)</h3>
@@ -196,7 +196,7 @@ export function SPDOverview({ setCurrentArticle }: SPDOverviewProps) {
           </p>
           <p className="mb-4">
             Social participation can be impacted as sensory processing differences may affect play preferences, comfort in 
-            social settings, and ability to participate in group activities.<sup>[3]</sup> Academic performance may be 
+            social settings, and ability to participate in group activities.<sup>13</sup> Academic performance may be 
             affected by difficulty with attention in sensory-rich classrooms, challenges with fine motor tasks like handwriting, 
             and behavioral responses to sensory overload.<sup>[34]</sup>
           </p>
@@ -256,7 +256,7 @@ export function SPDOverview({ setCurrentArticle }: SPDOverviewProps) {
           </p>
           <p className="mb-4">
             Intervention approaches focus on helping individuals develop better sensory processing skills and creating 
-            environments that support sensory needs.<sup>[7]</sup> Ayres Sensory Integration® intervention uses playful 
+            environments that support sensory needs.<sup>7</sup> Ayres Sensory Integration® intervention uses playful 
             activities to provide controlled sensory experiences that challenge the nervous system to organize sensory input 
             more effectively.<sup>[44][45]</sup> Environmental modifications, sensory diets (scheduled sensory activities), and 
             accommodations in home, school, and community settings are also important components of support.<sup>[46]</sup>

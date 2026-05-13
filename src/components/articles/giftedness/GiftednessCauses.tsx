@@ -32,9 +32,9 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
         <div>
           <p className="mb-4">
             The development of giftedness results from complex interactions between genetic predispositions, 
-            neurobiological factors, and environmental influences.<sup>[1]</sup> Understanding these origins 
+            neurobiological factors, and environmental influences.<sup>10</sup> Understanding these origins 
             helps inform identification practices and educational interventions while challenging simplistic 
-            nature versus nurture dichotomies.<sup>[2]</sup>
+            nature versus nurture dichotomies.<sup>12</sup>
           </p>
         </div>
 
@@ -51,16 +51,16 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
           <p className="mb-4">
             Twin and adoption studies consistently demonstrate substantial heritability of cognitive abilities. 
             Meta-analyses indicate that approximately 50-80% of variation in intelligence can be attributed to 
-            genetic factors.<sup>[3]</sup> Studies of identical twins reared apart show remarkable similarity 
-            in IQ scores, with correlations typically ranging from .70 to .86.<sup>[4]</sup>
+            genetic factors.<sup>13</sup> Studies of identical twins reared apart show remarkable similarity 
+            in IQ scores, with correlations typically ranging from .70 to .86.<sup>14</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Polygenic Nature</h3>
           <p className="mb-4">
             Intelligence and giftedness are polygenic traits, influenced by thousands of genetic variants, 
-            each with small effects.<sup>[5]</sup> Genome-wide association studies (GWAS) have identified 
+            each with small effects.<sup>5</sup> Genome-wide association studies (GWAS) have identified 
             numerous genetic loci associated with cognitive ability, though collectively they explain only 
-            a modest portion of heritability.<sup>[6]</sup>
+            a modest portion of heritability.<sup>16</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
@@ -68,17 +68,17 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
             Genetic propensities interact with environmental factors in complex ways. Research shows that 
             heritability of intelligence increases with age, from approximately 20% in infancy to 60-80% 
             in adulthood, suggesting that individuals increasingly select and create environments that 
-            match their genetic predispositions.<sup>[7]</sup> This gene-environment correlation demonstrates 
-            that genetics and environment are not independent influences.<sup>[8]</sup>
+            match their genetic predispositions.<sup>7</sup> This gene-environment correlation demonstrates 
+            that genetics and environment are not independent influences.<sup>8</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Familial Patterns</h3>
           <p className="mb-4">
             Giftedness tends to run in families, though this reflects both genetic and environmental 
-            transmission.<sup>[9]</sup> Siblings of gifted children have elevated rates of giftedness 
-            compared to the general population.<sup>[10]</sup> However, regression to the mean occurs—
+            transmission.<sup>9</sup> Siblings of gifted children have elevated rates of giftedness 
+            compared to the general population.<sup>10</sup> However, regression to the mean occurs—
             extremely gifted parents typically have gifted children who are somewhat less exceptional 
-            than themselves.<sup>[11]</sup>
+            than themselves.<sup>11</sup>
           </p>
         </div>
 
@@ -89,24 +89,24 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
           <p className="mb-4">
             Neuroimaging studies have identified structural differences in the brains of gifted individuals. 
             Research shows variations in cortical thickness, with some studies finding a curvilinear 
-            relationship between intelligence and cortical development.<sup>[12]</sup> The most intelligent 
+            relationship between intelligence and cortical development.<sup>12</sup> The most intelligent 
             children show an extended period of cortical thickening during childhood followed by more rapid 
-            cortical thinning in adolescence.<sup>[13]</sup>
+            cortical thinning in adolescence.<sup>13</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Neural Efficiency</h3>
           <p className="mb-4">
             The neural efficiency hypothesis suggests that gifted individuals' brains work more efficiently, 
-            requiring less activation to perform cognitive tasks.<sup>[14]</sup> Functional MRI studies show 
+            requiring less activation to perform cognitive tasks.<sup>14</sup> Functional MRI studies show 
             that higher-ability individuals often demonstrate lower levels of brain activation when solving 
-            problems of moderate difficulty, suggesting more efficient neural processing.<sup>[15]</sup>
+            problems of moderate difficulty, suggesting more efficient neural processing.<sup>15</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">White Matter and Connectivity</h3>
           <p className="mb-4">
             White matter integrity and neural connectivity patterns differ in gifted individuals. Diffusion 
             tensor imaging (DTI) studies reveal enhanced white matter organization in regions supporting 
-            cognitive functions.<sup>[16]</sup> The Parieto-Frontal Integration Theory (P-FIT) proposes 
+            cognitive functions.<sup>16</sup> The Parieto-Frontal Integration Theory (P-FIT) proposes 
             that intelligence depends on efficient communication between frontal and parietal regions involved 
             in working memory, attention, and integration of information.<sup>[17]</sup>
           </p>

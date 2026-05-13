@@ -119,7 +119,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           </p>
           
           <p className="mb-4">
-            It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup style={{color: '#10b981'}}>[1]</sup> Among adults, the prevalence is approximately 3.1%,<sup style={{color: '#10b981'}}>[2]</sup> often lifelong and needing ongoing support. ADHD impacts academics, work, and social relationships, with many individuals experiencing significant symptoms and functional impairment into adulthood. Viewing ADHD as neurodevelopmental helps reduce stigma and promotes evidence-based intervention.
+            It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup style={{color: '#10b981'}}>10</sup> Among adults, the prevalence is approximately 3.1%,<sup style={{color: '#10b981'}}>12</sup> often lifelong and needing ongoing support. ADHD impacts academics, work, and social relationships, with many individuals experiencing significant symptoms and functional impairment into adulthood. Viewing ADHD as neurodevelopmental helps reduce stigma and promotes evidence-based intervention.
           </p>
           <button
             onClick={(e) => {
@@ -165,7 +165,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           />
           
           <p className="mb-4">
-            ADHD likely results from a mix of genetic, neurological, and environmental factors. It has a strong hereditary component (heritability 70–80%).<sup style={{color: '#10b981'}}>[3]</sup> Brain imaging shows differences in regions for attention, impulse control, and executive function (notably prefrontal cortex) and in dopamine/norepinephrine systems; smaller overall brain volume and gray matter differences in the prefrontal cortex and basal ganglia have been observed. Environmental risks—premature birth, low birth weight, prenatal tobacco/alcohol exposure, and early adversity—contribute but explain less variance than genetics.
+            ADHD likely results from a mix of genetic, neurological, and environmental factors. It has a strong hereditary component (heritability 70–80%).<sup style={{color: '#10b981'}}>13</sup> Brain imaging shows differences in regions for attention, impulse control, and executive function (notably prefrontal cortex) and in dopamine/norepinephrine systems; smaller overall brain volume and gray matter differences in the prefrontal cortex and basal ganglia have been observed. Environmental risks—premature birth, low birth weight, prenatal tobacco/alcohol exposure, and early adversity—contribute but explain less variance than genetics.
           </p>
           <button
             onClick={(e) => {
@@ -211,7 +211,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           />
           
           <p className="mb-4">
-            ADHD is managed with a multimodal, individualized plan. Options include behavioral interventions (CBT, coaching, and skills training for organization, time management, and emotional regulation), educational accommodations, organizational skills training, and lifestyle factors (exercise, sleep, routines). Medications are often helpful: stimulant medications are highly effective in reducing core ADHD symptoms and improving quality of life in 70-80% of children and adults;<sup style={{color: '#10b981'}}>[4]</sup> non-stimulants (atomoxetine, guanfacine, clonidine) are moderately effective alternatives, with atomoxetine showing benefit in approximately 50-60% of individuals.<sup style={{color: '#10b981'}}>[5]</sup> The aim is to develop strategies that fit brain differences, build strengths, and reduce daily impairment.
+            ADHD is managed with a multimodal, individualized plan. Options include behavioral interventions (CBT, coaching, and skills training for organization, time management, and emotional regulation), educational accommodations, organizational skills training, and lifestyle factors (exercise, sleep, routines). Medications are often helpful: stimulant medications are highly effective in reducing core ADHD symptoms and improving quality of life in 70-80% of children and adults;<sup style={{color: '#10b981'}}>14</sup> non-stimulants (atomoxetine, guanfacine, clonidine) are moderately effective alternatives, with atomoxetine showing benefit in approximately 50-60% of individuals.<sup style={{color: '#10b981'}}>5</sup> The aim is to develop strategies that fit brain differences, build strengths, and reduce daily impairment.
           </p>
           <button
             onClick={(e) => {

@@ -43,13 +43,13 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
             Supporting individuals with Sensory Processing Disorder involves a multi-faceted approach that addresses both the 
             underlying neurological differences and the functional impacts on daily life.<sup>[1][2]</sup> Intervention typically 
             combines direct therapy to improve sensory processing, environmental modifications to support sensory needs, and 
-            strategies to help individuals understand and manage their sensory experiences.<sup>[3]</sup>
+            strategies to help individuals understand and manage their sensory experiences.<sup>13</sup>
           </p>
           <p className="mb-4">
             The goal of intervention is not to "cure" SPD but to help individuals develop better sensory processing skills, create 
             environments that support their sensory needs, and build strategies for self-regulation and participation in meaningful 
-            activities.<sup>[4]</sup> A comprehensive support plan is individualized to the person's unique sensory profile and 
-            functional goals.<sup>[5]</sup>
+            activities.<sup>14</sup> A comprehensive support plan is individualized to the person's unique sensory profile and 
+            functional goals.<sup>5</sup>
           </p>
         </div>
 
@@ -60,21 +60,21 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
           <p className="mb-4">
             Ayres Sensory Integration® (ASI) is a therapeutic approach developed by A. Jean Ayres specifically to address sensory 
             integration difficulties.<sup>[6][7]</sup> This intervention uses playful, child-directed activities to provide controlled 
-            sensory experiences that challenge the nervous system to organize sensory input more effectively.<sup>[8]</sup>
+            sensory experiences that challenge the nervous system to organize sensory input more effectively.<sup>8</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Core Principles of ASI</h3>
           <p className="mb-4">
-            ASI intervention is characterized by several key elements:<sup>[7]</sup>
+            ASI intervention is characterized by several key elements:<sup>7</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Activities provide enhanced sensation (vestibular, proprioceptive, tactile)</li>
             <li className="mb-2">Child actively participates in choosing and directing activities (self-direction)</li>
             <li className="mb-2">Activities are designed to elicit adaptive responses that challenge the child's current abilities</li>
             <li className="mb-2">Therapist creates a safe, supportive environment using specialized equipment like swings, 
-            climbing structures, crash mats, and various tactile materials.<sup>[9]</sup> The therapist guides the child through 
+            climbing structures, crash mats, and various tactile materials.<sup>9</sup> The therapist guides the child through 
             playful activities that are challenging yet achievable, promoting neuroplastic changes in how the brain processes 
-            sensory information.<sup>[10]</sup></li>
+            sensory information.<sup>10</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Evidence for ASI</h3>
@@ -108,13 +108,13 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Sensory Diets</h3>
           <p className="mb-4">
             A "sensory diet" is a personalized schedule of sensory activities designed to help individuals maintain optimal 
-            arousal and attention levels throughout the day.<sup>[4]</sup> Activities are chosen based on the individual's 
+            arousal and attention levels throughout the day.<sup>14</sup> Activities are chosen based on the individual's 
             sensory profile and may include:
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Alerting activities: crunchy snacks, bright lights, upbeat music, jumping</li>
             <li className="mb-2">Calming activities: dim lighting, soft music, slow rocking, deep breathing, heavy work (e.g., 
-            chewing gum, rhythmic movement, proprioceptive input)<sup>[2]</sup></li>
+            chewing gum, rhythmic movement, proprioceptive input)<sup>12</sup></li>
             <li className="mb-2">Organizing activities: proprioceptive input like pushing/pulling, rhythmic activities</li>
           </ul>
 
@@ -139,7 +139,7 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Tactile: playdough, sand, water play, different textures</li>
             <li className="mb-2">Vestibular: swinging, spinning, rolling, rocking</li>
-            <li className="mb-2">Heavy work: pushing, pulling, carrying weighted objects, wall pushes<sup>[2]</sup></li>
+            <li className="mb-2">Heavy work: pushing, pulling, carrying weighted objects, wall pushes<sup>12</sup></li>
             <li className="mb-2">Oral motor: chewing, blowing bubbles, drinking through straws</li>
             <li className="mb-2">Visual: calming visual input, reducing visual clutter</li>
             <li className="mb-2">Proprioceptive: yoga, animal walks, jumping on trampoline<sup>[18]</sup></li>
@@ -228,7 +228,7 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Auditory Support</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Noise-canceling or noise-reducing headphones<sup>[1]</sup></li>
+            <li className="mb-2">Noise-canceling or noise-reducing headphones<sup>10</sup></li>
             <li className="mb-2">White noise machines or apps</li>
             <li className="mb-2">Earplugs for overwhelming environments</li>
           </ul>
@@ -293,7 +293,7 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Individualized:</strong> Intervention must be tailored to the individual's unique sensory 
-            profile, needs, and goals<sup>[5]</sup></li>
+            profile, needs, and goals<sup>5</sup></li>
             <li className="mb-2"><strong>Family-Centered:</strong> Families are partners in the intervention process, with goals 
             reflecting family priorities<sup>[37]</sup></li>
             <li className="mb-2"><strong>Evidence-Informed:</strong> Interventions should be based on current research evidence and 

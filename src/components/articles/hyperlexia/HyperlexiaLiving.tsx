@@ -32,8 +32,8 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
         <div>
           <p className="mb-4">
             Living with hyperlexia involves navigating the unique combination of exceptional reading skills alongside 
-            language comprehension and social challenges.<sup>[1]</sup> Outcomes vary significantly depending on the 
-            type of hyperlexia and presence of autism or other conditions.<sup>[2]</sup>
+            language comprehension and social challenges.<sup>10</sup> Outcomes vary significantly depending on the 
+            type of hyperlexia and presence of autism or other conditions.<sup>12</sup>
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading as Central Interest</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Love of reading:</strong> Books and text remain important throughout life<sup>[3]</sup></li>
+            <li className="mb-2"><strong>Love of reading:</strong> Books and text remain important throughout life<sup>13</sup></li>
             <li className="mb-2"><strong>Comfort activity:</strong> Reading as calming or self-regulation</li>
             <li className="mb-2"><strong>Learning through reading:</strong> Prefer visual learning modality</li>
             <li className="mb-2"><strong>Career implications:</strong> May gravitate toward text-based work</li>
@@ -56,7 +56,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Communication Challenges</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Ongoing language comprehension difficulties<sup>[4]</sup></li>
+            <li className="mb-2">Ongoing language comprehension difficulties<sup>14</sup></li>
             <li className="mb-2">May prefer written to verbal communication</li>
             <li className="mb-2">Difficulty with complex spoken language</li>
             <li className="mb-2">Misunderstandings in conversations</li>
@@ -68,7 +68,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early School Years</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Reading standout:</strong> Obvious reading ability draws attention<sup>[5]</sup></li>
+            <li className="mb-2"><strong>Reading standout:</strong> Obvious reading ability draws attention<sup>5</sup></li>
             <li className="mb-2"><strong>Hidden struggles:</strong> Comprehension difficulties may not be recognized</li>
             <li className="mb-2"><strong>Social challenges:</strong> Difficulty connecting with peers</li>
             <li className="mb-2"><strong>Need support:</strong> Despite appearing advanced</li>
@@ -76,7 +76,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Upper Elementary and Beyond</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Comprehension gap becomes more problematic<sup>[6]</sup></li>
+            <li className="mb-2">Comprehension gap becomes more problematic<sup>16</sup></li>
             <li className="mb-2">Academic challenges increase with complexity</li>
             <li className="mb-2">Reading remains a strength to leverage</li>
             <li className="mb-2">Accommodations and support continue to be needed</li>
@@ -84,7 +84,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Higher Education</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Many individuals attend college<sup>[7]</sup></li>
+            <li className="mb-2">Many individuals attend college<sup>7</sup></li>
             <li className="mb-2">Disability services for comprehension support</li>
             <li className="mb-2">Choose majors emphasizing reading over oral communication</li>
             <li className="mb-2">Success with appropriate accommodations</li>
@@ -96,7 +96,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Friendships</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Social challenges persist:</strong> Difficulty with social communication<sup>[8]</sup></li>
+            <li className="mb-2"><strong>Social challenges persist:</strong> Difficulty with social communication<sup>8</sup></li>
             <li className="mb-2"><strong>Finding like-minded peers:</strong> Connect through shared reading interests</li>
             <li className="mb-2"><strong>Book clubs and reading groups:</strong> Natural social settings</li>
             <li className="mb-2"><strong>Online communities:</strong> Text-based interaction may be easier</li>
@@ -104,7 +104,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Family Dynamics</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Family understanding crucial<sup>[9]</sup></li>
+            <li className="mb-2">Family understanding crucial<sup>9</sup></li>
             <li className="mb-2">Using written communication at home helpful</li>
             <li className="mb-2">Appreciating reading strengths while supporting weaknesses</li>
           </ul>
@@ -121,7 +121,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Leveraging Reading Strength</h3>
           <p className="mb-4">
-            Career paths that utilize reading ability:<sup>[10]</sup>
+            Career paths that utilize reading ability:<sup>10</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Writing and editing:</strong> Working with text</li>
@@ -133,7 +133,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Workplace Considerations</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Jobs with written rather than extensive verbal communication<sup>[11]</sup></li>
+            <li className="mb-2">Jobs with written rather than extensive verbal communication<sup>11</sup></li>
             <li className="mb-2">Accommodations for comprehension if needed</li>
             <li className="mb-2">Email and written communication preferred</li>
             <li className="mb-2">Independent work vs. highly social roles</li>
@@ -145,7 +145,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Type 1: Neurotypical Hyperlexia</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Excellent prognosis:</strong> Comprehension typically catches up<sup>[12]</sup></li>
+            <li className="mb-2"><strong>Excellent prognosis:</strong> Comprehension typically catches up<sup>12</sup></li>
             <li className="mb-2"><strong>Reading remains strength:</strong> May pursue reading-related careers</li>
             <li className="mb-2"><strong>Social skills develop:</strong> No ongoing social difficulties</li>
             <li className="mb-2"><strong>Successful outcomes:</strong> Often excel academically and professionally</li>
@@ -153,7 +153,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Type 2: Hyperlexia with Autism</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Variable outcomes:</strong> Similar to autism spectrum outcomes<sup>[13]</sup></li>
+            <li className="mb-2"><strong>Variable outcomes:</strong> Similar to autism spectrum outcomes<sup>13</sup></li>
             <li className="mb-2"><strong>Ongoing support needs:</strong> Language and social support continue</li>
             <li className="mb-2"><strong>Reading as advantage:</strong> Can be leveraged for learning and career</li>
             <li className="mb-2"><strong>Individual variation:</strong> Wide range of functioning levels</li>
@@ -161,7 +161,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Type 3: Improving Over Time</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Significant improvement:</strong> Language and social skills develop<sup>[14]</sup></li>
+            <li className="mb-2"><strong>Significant improvement:</strong> Language and social skills develop<sup>14</sup></li>
             <li className="mb-2"><strong>May not meet autism criteria later:</strong> Early concerns diminish</li>
             <li className="mb-2"><strong>Better outcomes:</strong> Than Type 2</li>
             <li className="mb-2"><strong>Reading remains strength:</strong> Can be asset throughout life</li>
@@ -173,7 +173,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Understanding Your Profile</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Knowing strengths:</strong> Exceptional reading ability<sup>[15]</sup></li>
+            <li className="mb-2"><strong>Knowing strengths:</strong> Exceptional reading ability<sup>15</sup></li>
             <li className="mb-2"><strong>Recognizing challenges:</strong> Comprehension and communication difficulties</li>
             <li className="mb-2"><strong>Self-awareness:</strong> Understanding how hyperlexia affects you</li>
           </ul>
@@ -181,7 +181,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Advocating for Needs</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Requesting written information and instructions</li>
-            <li className="mb-2">Asking for clarification when needed<sup>[16]</sup></li>
+            <li className="mb-2">Asking for clarification when needed<sup>16</sup></li>
             <li className="mb-2">Communicating accommodation needs</li>
             <li className="mb-2">Using reading strength in learning and work</li>
           </ul>

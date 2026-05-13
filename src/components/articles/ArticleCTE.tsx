@@ -53,9 +53,9 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <p>
             <strong>Chronic Traumatic Encephalopathy (CTE)</strong> is a progressive neurodegenerative 
             disease found in people with a history of repetitive head impacts, including symptomatic 
-            concussions as well as asymptomatic subconcussive hits to the head.<sup>[1]</sup> CTE has been most commonly 
+            concussions as well as asymptomatic subconcussive hits to the head.<sup>10</sup> CTE has been most commonly 
             found in contact sport athletes (football, boxing, hockey), military veterans, and others with 
-            a history of repetitive brain trauma.<sup>[2]</sup>
+            a history of repetitive brain trauma.<sup>12</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -88,24 +88,24 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           />
           
           <p className="mb-4">
-            CTE is characterized by the buildup of an abnormal protein called tau in the brain.<sup>[3]</sup> This 
-            tau protein forms clumps that slowly spread throughout the brain, killing brain cells.<sup>[4]</sup> CTE 
+            CTE is characterized by the buildup of an abnormal protein called tau in the brain.<sup>13</sup> This 
+            tau protein forms clumps that slowly spread throughout the brain, killing brain cells.<sup>14</sup> CTE 
             is different from other brain injuries because it is caused by repeated trauma over months 
-            or years, rather than a single incident.<sup>[5]</sup> Currently, CTE can only be definitively diagnosed after 
-            death through brain tissue analysis.<sup>[6]</sup>
+            or years, rather than a single incident.<sup>5</sup> Currently, CTE can only be definitively diagnosed after 
+            death through brain tissue analysis.<sup>16</sup>
           </p>
           
           <p className="mb-4">
             However, researchers are working to develop methods for diagnosing 
-            CTE in living individuals.<sup>[7]</sup> The disease is progressive, meaning symptoms worsen over time, and there is 
-            currently no cure.<sup>[8]</sup> CTE was first described in the 1920s as "punch drunk syndrome" in boxers.<sup>[9]</sup> In 2002, 
+            CTE in living individuals.<sup>7</sup> The disease is progressive, meaning symptoms worsen over time, and there is 
+            currently no cure.<sup>8</sup> CTE was first described in the 1920s as "punch drunk syndrome" in boxers.<sup>9</sup> In 2002, 
             Dr. Bennet Omalu discovered CTE in former NFL player Mike Webster, bringing widespread attention to the 
-            condition in American football and other contact sports.<sup>[10]</sup>
+            condition in American football and other contact sports.<sup>10</sup>
           </p>
           
           <p className="mb-4">
             Having a history of head impacts does not mean 
-            someone will definitely develop CTE—the relationship between head trauma and CTE is still being researched.<sup>[11]</sup>
+            someone will definitely develop CTE—the relationship between head trauma and CTE is still being researched.<sup>11</sup>
           </p>
         </section>
 
@@ -119,7 +119,7 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           />
           
           <p className="mb-4">
-            CTE symptoms typically appear years or even decades after the last brain trauma.<sup>[12]</sup> In CTE, tau proteins 
+            CTE symptoms typically appear years or even decades after the last brain trauma.<sup>12</sup> In CTE, tau proteins 
             become abnormal and accumulate in the brain particularly around small blood vessels at the depths of sulci, 
             disrupting communication between brain cells which die over time with pathology spreading progressively and 
             brain tissue shrinking.<sup>[13][14]</sup>
@@ -128,9 +128,9 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <p className="mb-4">
             Early symptoms include short-term memory problems, difficulty with planning and 
             organization (executive dysfunction), impulsivity and poor judgment, depression and mood changes, anxiety 
-            and irritability, and suicidal thoughts.<sup>[15]</sup> Later stage symptoms include progressive memory loss, confusion and 
+            and irritability, and suicidal thoughts.<sup>15</sup> Later stage symptoms include progressive memory loss, confusion and 
             disorientation, difficulty thinking and cognitive impairment, dementia, movement problems similar to Parkinson's 
-            disease, speech and communication difficulties, and difficulty swallowing.<sup>[16]</sup>
+            disease, speech and communication difficulties, and difficulty swallowing.<sup>16</sup>
           </p>
           
           <p className="mb-4">

@@ -9,7 +9,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetic Factors</h2>
       
       <p className="mb-6 leading-relaxed text-[#0c264d]">
-        Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup className="text-green-600 font-bold ml-0.5">1</sup> However, autism genetics are extraordinarily complex and involve many different genes rather than a single "autism gene."
+        Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup className="text-green-600 font-bold ml-0.5">10</sup> However, autism genetics are extraordinarily complex and involve many different genes rather than a single "autism gene."
       </p>
 
       <ImageWithFallback 
@@ -25,7 +25,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="border-l-2 border-[#2abcd4] pl-4">
             <div className="font-bold text-[#0c264d] mb-1">Twin Studies</div>
-            <div className="text-sm text-gray-700">Identical twins have 60-90% concordance for autism, compared to 0-30% for fraternal twins.<sup className="text-green-600 font-bold ml-0.5">2</sup></div>
+            <div className="text-sm text-gray-700">Identical twins have 60-90% concordance for autism, compared to 0-30% for fraternal twins.<sup className="text-green-600 font-bold ml-0.5">12</sup></div>
           </div>
           <div className="border-l-2 border-[#2abcd4] pl-4">
             <div className="font-bold text-[#0c264d] mb-1">Recurrence Risk</div>
@@ -56,7 +56,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
       <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-[#2abcd4] mb-6">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg font-spartan">De Novo Mutations in Autism</h3>
         <p className="text-sm leading-relaxed mb-6 text-gray-700">
-          <strong>De novo mutations</strong> are genetic changes that appear for the very first time in a child. These spontaneous mutations occur during the formation of reproductive cells or early embryonic development.<sup className="text-green-600 font-bold ml-0.5">4</sup>
+          <strong>De novo mutations</strong> are genetic changes that appear for the very first time in a child. These spontaneous mutations occur during the formation of reproductive cells or early embryonic development.<sup className="text-green-600 font-bold ml-0.5">14</sup>
         </p>
 
         <ImageWithFallback 
@@ -70,14 +70,14 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
           <ul className="text-xs space-y-2 text-[#0c264d]">
             <li>• <strong>Simplex Families:</strong> De novo mutations contribute to 52-67% of cases.</li>
             <li>• <strong>Multiplex Families:</strong> Play a significantly smaller role than inherited factors.</li>
-            <li>• <strong>Overall:</strong> Contribute to approximately 30-39% of all cases.<sup className="text-green-600 font-bold ml-0.5">4</sup></li>
+            <li>• <strong>Overall:</strong> Contribute to approximately 30-39% of all cases.<sup className="text-green-600 font-bold ml-0.5">14</sup></li>
           </ul>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-[14px]">
           <div className="p-3 border border-gray-100 rounded-lg text-sm text-gray-700 shadow-sm"><strong>Point Mutations:</strong> Single letter code changes.</div>
           <div className="p-3 border border-gray-100 rounded-lg text-sm text-gray-700 shadow-sm"><strong>CNVs:</strong> Large segment deletions or duplications.</div>
-          <div className="p-3 border border-gray-100 rounded-lg text-sm text-gray-700 shadow-sm"><strong>Intronic:</strong> Targeting non-coding regions.<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
+          <div className="p-3 border border-gray-100 rounded-lg text-sm text-gray-700 shadow-sm"><strong>Intronic:</strong> Targeting non-coding regions.<sup className="text-green-600 font-bold ml-0.5">14</sup></div>
         </div>
       </div>
 
@@ -115,7 +115,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
       {/* Sex Differences Section */}
       <div className="bg-white p-6 rounded-xl border-2 border-[#0c264d] mb-10 text-center shadow-sm">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg font-spartan">♀️ ♂️ Sex Differences in Genetics</h3>
-        <p className="text-sm mb-4 text-gray-700">Ratio: approximately 3-4:1 (Males : Females)<sup className="text-green-600 font-bold ml-0.5">3</sup></p>
+        <p className="text-sm mb-4 text-gray-700">Ratio: approximately 3-4:1 (Males : Females)<sup className="text-green-600 font-bold ml-0.5">13</sup></p>
         <div className="flex items-center justify-center gap-2 mb-6">
           <div className="w-6 h-6 bg-[#2abcd4] rounded-sm shadow-sm"></div>
           <div className="w-6 h-6 bg-[#2abcd4] rounded-sm shadow-sm"></div>

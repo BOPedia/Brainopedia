@@ -46,9 +46,9 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
       {/* Introduction */}
       <div className="mb-8">
         <p className="mb-4">
-          Dyscalculia is a specific learning disorder that affects a person's ability to understand and work with numbers and mathematical concepts.<sup>[1]</sup> 
+          Dyscalculia is a specific learning disorder that affects a person's ability to understand and work with numbers and mathematical concepts.<sup>10</sup> 
           It is neurobiological in origin and characterized by difficulties with number sense, memorization of arithmetic facts, 
-          accurate or fluent calculation, and mathematical reasoning.<sup>[2]</sup>
+          accurate or fluent calculation, and mathematical reasoning.<sup>12</sup>
         </p>
         
         <ImageWithFallback 
@@ -60,7 +60,7 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
         <p className="mb-4">
           Importantly, dyscalculia is not a reflection of low intelligence or lack of effort. Many individuals with dyscalculia 
           have average or above-average intelligence and can be highly successful when provided with appropriate support 
-          and accommodations.<sup>[3]</sup>
+          and accommodations.<sup>13</sup>
         </p>
       </div>
 
@@ -107,7 +107,7 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
             
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Core Definition</h3>
             <p className="mb-4">
-              Dyscalculia is defined as:<sup>[4]</sup>
+              Dyscalculia is defined as:<sup>14</sup>
             </p>
             <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6 mb-4">
               <p className="italic text-sm">
@@ -120,12 +120,12 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Key Characteristics</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Number sense deficits:</strong> Difficulty understanding what numbers represent<sup>[5]</sup></li>
-              <li className="mb-2"><strong>Calculation problems:</strong> Struggles with basic arithmetic operations<sup>[6]</sup></li>
-              <li className="mb-2"><strong>Math fact retrieval:</strong> Difficulty memorizing math facts like multiplication tables<sup>[7]</sup></li>
-              <li className="mb-2"><strong>Procedural difficulties:</strong> Challenges with multi-step math procedures<sup>[8]</sup></li>
-              <li className="mb-2"><strong>Neurobiological basis:</strong> Differences in brain structure and function related to numerical processing<sup>[9]</sup></li>
-              <li className="mb-2"><strong>Unexpected difficulty:</strong> Math challenges not explained by overall intellectual ability<sup>[10]</sup></li>
+              <li className="mb-2"><strong>Number sense deficits:</strong> Difficulty understanding what numbers represent<sup>5</sup></li>
+              <li className="mb-2"><strong>Calculation problems:</strong> Struggles with basic arithmetic operations<sup>16</sup></li>
+              <li className="mb-2"><strong>Math fact retrieval:</strong> Difficulty memorizing math facts like multiplication tables<sup>7</sup></li>
+              <li className="mb-2"><strong>Procedural difficulties:</strong> Challenges with multi-step math procedures<sup>8</sup></li>
+              <li className="mb-2"><strong>Neurobiological basis:</strong> Differences in brain structure and function related to numerical processing<sup>9</sup></li>
+              <li className="mb-2"><strong>Unexpected difficulty:</strong> Math challenges not explained by overall intellectual ability<sup>10</sup></li>
             </ul>
           </div>
 
@@ -136,12 +136,12 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
             <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-4">
               <h3 className="text-center text-[#0c264d] font-bold mb-4">What Dyscalculia Is NOT:</h3>
               <div className="text-sm space-y-3">
-                <p><strong>✗ Math anxiety:</strong> While anxiety can co-occur, dyscalculia is a neurobiological condition, not just fear of math<sup>[11]</sup></p>
-                <p><strong>✗ Laziness or lack of effort:</strong> Difficulties are brain-based, not due to insufficient motivation<sup>[12]</sup></p>
-                <p><strong>✗ Low intelligence:</strong> Dyscalculia occurs across the IQ range; many individuals have average or above-average intelligence<sup>[13]</sup></p>
-                <p><strong>✗ Poor teaching:</strong> While quality instruction matters, dyscalculia persists despite good teaching<sup>[14]</sup></p>
-                <p><strong>✗ Something you outgrow:</strong> Dyscalculia is lifelong, though individuals can learn strategies to manage challenges<sup>[15]</sup></p>
-                <p><strong>✗ Being "bad at math":</strong> Dyscalculia is a specific neurological difference, not simply being weaker in math<sup>[16]</sup></p>
+                <p><strong>✗ Math anxiety:</strong> While anxiety can co-occur, dyscalculia is a neurobiological condition, not just fear of math<sup>11</sup></p>
+                <p><strong>✗ Laziness or lack of effort:</strong> Difficulties are brain-based, not due to insufficient motivation<sup>12</sup></p>
+                <p><strong>✗ Low intelligence:</strong> Dyscalculia occurs across the IQ range; many individuals have average or above-average intelligence<sup>13</sup></p>
+                <p><strong>✗ Poor teaching:</strong> While quality instruction matters, dyscalculia persists despite good teaching<sup>14</sup></p>
+                <p><strong>✗ Something you outgrow:</strong> Dyscalculia is lifelong, though individuals can learn strategies to manage challenges<sup>15</sup></p>
+                <p><strong>✗ Being "bad at math":</strong> Dyscalculia is a specific neurological difference, not simply being weaker in math<sup>16</sup></p>
               </div>
             </div>
           </div>

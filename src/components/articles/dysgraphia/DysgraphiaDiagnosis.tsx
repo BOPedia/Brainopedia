@@ -32,8 +32,8 @@ export function DysgraphiaDiagnosis({ setCurrentArticle }: DysgraphiaDiagnosisPr
         <div>
           <p className="mb-4">
             Diagnosing dysgraphia involves comprehensive evaluation by qualified professionals using standardized assessments, 
-            behavioral observations, and analysis of writing samples.<sup>[1]</sup> Early and accurate diagnosis is crucial for 
-            accessing appropriate interventions and accommodations.<sup>[2]</sup>
+            behavioral observations, and analysis of writing samples.<sup>10</sup> Early and accurate diagnosis is crucial for 
+            accessing appropriate interventions and accommodations.<sup>12</sup>
           </p>
         </div>
 
@@ -42,22 +42,22 @@ export function DysgraphiaDiagnosis({ setCurrentArticle }: DysgraphiaDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Qualified Professionals</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Educational psychologists:</strong> Specialists in learning disabilities and academic assessment<sup>[3]</sup></li>
+            <li className="mb-2"><strong>Educational psychologists:</strong> Specialists in learning disabilities and academic assessment<sup>13</sup></li>
             <li className="mb-2"><strong>Neuropsychologists:</strong> Experts in brain-behavior relationships</li>
-            <li className="mb-2"><strong>School psychologists:</strong> Conduct evaluations within educational settings<sup>[4]</sup></li>
-            <li className="mb-2"><strong>Occupational therapists:</strong> Assess fine motor and graphomotor skills<sup>[5]</sup></li>
+            <li className="mb-2"><strong>School psychologists:</strong> Conduct evaluations within educational settings<sup>14</sup></li>
+            <li className="mb-2"><strong>Occupational therapists:</strong> Assess fine motor and graphomotor skills<sup>5</sup></li>
             <li className="mb-2"><strong>Speech-language pathologists:</strong> When language components are involved</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multidisciplinary Approach</h3>
           <p className="mb-4">
-            Comprehensive evaluation often involves a team of professionals to assess different aspects:<sup>[6]</sup>
+            Comprehensive evaluation often involves a team of professionals to assess different aspects:<sup>16</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Psychologist or neuropsychologist for cognitive and academic testing</li>
-            <li className="mb-2">Occupational therapist for motor skills assessment<sup>[7]</sup></li>
+            <li className="mb-2">Occupational therapist for motor skills assessment<sup>7</sup></li>
             <li className="mb-2">Educational specialist for writing instruction analysis</li>
-            <li className="mb-2">Medical professional to rule out vision or neurological issues<sup>[8]</sup></li>
+            <li className="mb-2">Medical professional to rule out vision or neurological issues<sup>8</sup></li>
           </ul>
         </div>
 
@@ -72,19 +72,19 @@ export function DysgraphiaDiagnosis({ setCurrentArticle }: DysgraphiaDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Red Flags in Children</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Handwriting significantly worse than peers despite practice<sup>[9]</sup></li>
+            <li className="mb-2">Handwriting significantly worse than peers despite practice<sup>9</sup></li>
             <li className="mb-2">Writing causes physical pain or fatigue</li>
-            <li className="mb-2">Large discrepancy between oral and written expression<sup>[10]</sup></li>
+            <li className="mb-2">Large discrepancy between oral and written expression<sup>10</sup></li>
             <li className="mb-2">Extreme frustration or avoidance of writing tasks</li>
-            <li className="mb-2">Writing difficulties persist beyond grade 2-3<sup>[11]</sup></li>
+            <li className="mb-2">Writing difficulties persist beyond grade 2-3<sup>11</sup></li>
             <li className="mb-2">Academic performance suffering due to writing challenges</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Red Flags in Adolescents and Adults</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Continued illegible handwriting<sup>[12]</sup></li>
+            <li className="mb-2">Continued illegible handwriting<sup>12</sup></li>
             <li className="mb-2">Difficulty completing timed written tests</li>
-            <li className="mb-2">Avoidance of courses or jobs requiring writing<sup>[13]</sup></li>
+            <li className="mb-2">Avoidance of courses or jobs requiring writing<sup>13</sup></li>
             <li className="mb-2">Reliance on others to write for them</li>
           </ul>
         </div>
@@ -94,10 +94,10 @@ export function DysgraphiaDiagnosis({ setCurrentArticle }: DysgraphiaDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Step 1: Background Information</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Developmental history:</strong> Motor milestones, language development<sup>[14]</sup></li>
+            <li className="mb-2"><strong>Developmental history:</strong> Motor milestones, language development<sup>14</sup></li>
             <li className="mb-2"><strong>Educational history:</strong> Academic performance, previous interventions</li>
-            <li className="mb-2"><strong>Family history:</strong> Learning disabilities or writing difficulties in family<sup>[15]</sup></li>
-            <li className="mb-2"><strong>Medical history:</strong> Vision, hearing, neurological conditions<sup>[16]</sup></li>
+            <li className="mb-2"><strong>Family history:</strong> Learning disabilities or writing difficulties in family<sup>15</sup></li>
+            <li className="mb-2"><strong>Medical history:</strong> Vision, hearing, neurological conditions<sup>16</sup></li>
             <li className="mb-2"><strong>Current concerns:</strong> Specific writing challenges observed</li>
           </ul>
 
