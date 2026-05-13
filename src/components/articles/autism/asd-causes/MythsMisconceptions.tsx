@@ -2,74 +2,102 @@ import React from 'react';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
 /* ─── THE GUEST LIST (Interface) ─── */
-interface MythsContentProps {
+interface MythsMisconceptionsProps {
   setCurrentArticle?: (article: string) => void;
 }
 
 /* ─── MAIN COMPONENT ─── */
-export function MythsContent({ setCurrentArticle }: MythsContentProps) {
+export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsProps) {
   return (
     <div className="bg-[#e0f7fa] p-6 rounded-lg text-[#0c264d]">
-      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Common Myths & Misconceptions</h2>
+      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Myths & Misconceptions</h2>
       
       <p className="mb-8 leading-relaxed text-[#0c264d]">
-        Because autism was historically misunderstood by both the medical community and the media, several persistent myths continue to cause confusion. Clearing up these misconceptions is vital for creating a world that truly understands and supports autistic individuals.
+        Because autism was historically misunderstood by both the medical community and the media, several persistent myths continue to circulate. Understanding what does <strong>not</strong> cause autism, and clearing up these misconceptions, is vital for creating a world that truly supports autistic individuals.
       </p>
 
-      <div className="space-y-6 mb-10">
+      {/* Main Myth Highlight: Vaccines */}
+      <div className="bg-white rounded-xl shadow-md border-2 border-red-100 p-6 mb-10">
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="w-full md:w-1/3">
+            <ImageWithFallback 
+              src="/images/autism/autism-causes-Mythstab-vax.png" 
+              alt="Scientific debunking of vaccine myths"
+              className="w-full rounded-xl shadow-sm border-2 border-gray-100"
+            />
+          </div>
+          <div className="w-full md:w-2/3">
+            <h3 className="text-red-500 font-bold text-xl mb-2 flex items-center gap-2">
+              <span>✗</span> The Vaccine Myth
+            </h3>
+            <p className="text-sm text-gray-700 leading-relaxed mb-4">
+              Extensive global studies involving millions of children have consistently shown <strong>no link</strong> between vaccines (including the MMR vaccine) and autism.<sup className="text-[#0c264d] font-extrabold ml-0.5">1</sup>
+            </p>
+            <div className="bg-green-50 p-4 rounded-md border-l-4 border-green-500">
+              <p className="text-sm text-green-900 leading-relaxed">
+                <strong>The Fact:</strong> The original 1998 study that suggested a link was found to be highly fraudulent and was fully retracted. Modern science conclusively confirms vaccines are safe and do not cause ASD.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* The Gut / Diet Feature Box */}
+      <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-indigo-400 mb-8">
+        <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
+          <span className="text-red-500 mr-2">✗</span> Myth: Specific diets (like GFCF) can "cure" autism.
+        </h3>
+        <h4 className="font-bold text-green-600 mb-3 text-sm">
+          <span className="mr-2">✓</span> Fact: Diets don't change neurology, but they can alleviate severe, hidden physical pain.
+        </h4>
+        <p className="text-sm text-gray-700 leading-relaxed mb-3">
+          There is no diet that "cures" autism, but many parents report dramatic behavioral improvements when putting their child on a Gluten-Free/Casein-Free (GFCF) diet. Why? The answer lies in the gut. Research shows that autistic children are up to <strong>4 times more likely</strong> to experience chronic gastrointestinal (GI) issues, with 40% to 80% suffering from chronic abdominal pain or GI distress.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup> 
+        </p>
+        <p className="text-sm text-gray-700 leading-relaxed">
+          Many also experience "leaky gut" (increased intestinal permeability), where the gut lining is inflamed.<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup> If a child with severe GI inflammation is non-speaking or struggles with interoception (feeling internal body signals), they cannot say, "My stomach cramps when I eat wheat." They express that pain through meltdowns, self-injury, or losing focus. When a specialized diet removes the inflammatory foods, the stomach stops hurting, and the distress behaviors vanish. The diet didn't cure the autism; it removed the physical pain.
+        </p>
+      </div>
+
+      {/* Grid of Remaining Myths */}
+      <div className="grid md:grid-cols-2 gap-6 mb-10">
         
-        {/* MYTH 1: DIETS & GUT */}
-        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-indigo-400">
+        {/* Refrigerator Mothers */}
+        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-gray-400">
           <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
-            <span className="text-red-500 mr-2">Myth:</span> Specific diets (like GFCF) can "cure" autism.
+            <span className="text-red-500 mr-2">✗</span> Myth: "Refrigerator Mothers"
           </h3>
-          <h4 className="font-bold text-green-600 mb-3 text-sm">
-            <span className="mr-2">Fact:</span> Diets don't change neurology, but they can alleviate severe, hidden physical pain.
-          </h4>
-          <p className="text-sm text-gray-700 leading-relaxed mb-3">
-            There is no diet that "cures" autism, but many parents report dramatic behavioral improvements when putting their child on a Gluten-Free/Casein-Free (GFCF) diet. Why? The answer lies in the gut. Research shows that autistic children are up to <strong>4 times more likely</strong> to experience chronic gastrointestinal (GI) issues, with 40% to 80% suffering from chronic abdominal pain or GI distress.<sup className="text-[#0c264d] font-extrabold ml-0.5">1</sup> 
-          </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            Many also experience what is colloquially called "leaky gut" (increased intestinal permeability), where the gut lining is inflamed.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup> If a child with severe GI inflammation is non-speaking or struggles with interoception (feeling internal body signals), they cannot say, "My stomach cramps when I eat wheat." They express that pain through meltdowns, self-injury, or losing focus. When a specialized diet removes the inflammatory foods, the stomach stops hurting, and the distress behaviors vanish. The diet didn't cure the autism; it removed the physical pain.
+            In the 1950s, a devastatingly harmful theory suggested that "cold" or unaffectionate parenting caused autism. <strong>Science has entirely debunked this.</strong> Autism is a biological and neurological developmental difference, not the result of parenting style or a lack of love.
           </p>
         </div>
 
-        {/* MYTH 2: EMPATHY */}
-        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
+        {/* Empathy */}
+        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
           <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
-            <span className="text-red-500 mr-2">Myth:</span> Autistic people lack empathy or emotion.
+            <span className="text-red-500 mr-2">✗</span> Myth: Lack of Empathy
           </h3>
-          <h4 className="font-bold text-green-600 mb-3 text-sm">
-            <span className="mr-2">Fact:</span> Autistic people experience deep empathy, but express it differently.
-          </h4>
           <p className="text-sm text-gray-700 leading-relaxed">
-            This harmful myth stems from a misunderstanding of how autistic people communicate. Many autistic individuals actually experience <em>hyper-empathy</em>, feeling the emotions of others so intensely that it becomes overwhelming, causing them to shut down or withdraw. Researchers now recognize the <strong>"Double Empathy Problem."</strong><sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup> It isn't that autistic people lack empathy for neurotypical people; rather, both groups struggle to read each other's unique social cues. Autistic people show profound empathy and seamless communication when interacting with other autistic individuals.
+            Many autistic individuals actually experience <em>hyper-empathy</em>. Researchers now recognize the <strong>"Double Empathy Problem."</strong><sup className="text-[#0c264d] font-extrabold ml-0.5">4</sup> It isn't that autistic people lack empathy; rather, autistic and neurotypical people struggle to read <em>each other's</em> unique social cues. Autistic people show profound empathy when communicating with one another.
           </p>
         </div>
 
-        {/* MYTH 3: BOYS ONLY */}
-        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
+        {/* Boys Only */}
+        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
           <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
-            <span className="text-red-500 mr-2">Myth:</span> Autism is almost entirely a "boy's condition."
+            <span className="text-red-500 mr-2">✗</span> Myth: It's a "Boy's Condition"
           </h3>
-          <h4 className="font-bold text-green-600 mb-3 text-sm">
-            <span className="mr-2">Fact:</span> Girls and women are vastly underdiagnosed due to "masking."
-          </h4>
           <p className="text-sm text-gray-700 leading-relaxed">
-            Historically, the diagnostic ratio was thought to be 4 boys for every 1 girl. However, modern research is proving that the diagnostic criteria were primarily based on how autism presents in young boys.<sup className="text-[#0c264d] font-extrabold ml-0.5">4</sup> Autistic girls often present differently—their special interests might be more socially acceptable (like literature or animals rather than trains), and societal pressure forces them to learn how to "mask" or mimic neurotypical social behaviors at a much earlier age. This leads to generations of women only receiving their autism diagnosis in their 20s or 30s after suffering severe autistic burnout.
+            Historically, the diagnostic criteria were primarily based on how autism presents in young boys. Autistic girls often present differently, and intense societal pressure forces them to "mask" or mimic neurotypical behaviors much earlier.<sup className="text-[#0c264d] font-extrabold ml-0.5">5</sup> This leads to generations of women only being diagnosed in adulthood after severe autistic burnout.
           </p>
         </div>
 
-        {/* MYTH 4: SAVANT */}
-        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-emerald-400">
+        {/* Savant */}
+        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-emerald-400">
           <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
-            <span className="text-red-500 mr-2">Myth:</span> All autistic people have a "Rain Man" savant skill.
+            <span className="text-red-500 mr-2">✗</span> Myth: The "Rain Man" Savant
           </h3>
-          <h4 className="font-bold text-green-600 mb-3 text-sm">
-            <span className="mr-2">Fact:</span> Savant syndrome is incredibly rare.
-          </h4>
           <p className="text-sm text-gray-700 leading-relaxed">
-            Media representations often rely on the trope of the autistic genius who can instantly count dropped toothpicks or memorize phone books. In reality, "savant syndrome" is exceptionally rare, occurring in only about 10% of the autistic population.<sup className="text-[#0c264d] font-extrabold ml-0.5">5</sup> While many autistic individuals do possess "spiky profiles" with intense passions and deep, specialized knowledge, expecting every autistic child to have a superhuman academic skill places unfair expectations on them and invalidates the very real support needs they may have.
+            Media often relies on the trope of the autistic genius. In reality, "savant syndrome" is exceptionally rare, occurring in only about 10% of the autistic population.<sup className="text-[#0c264d] font-extrabold ml-0.5">6</sup> Expecting every autistic person to have a superhuman academic skill places unfair expectations on them and invalidates their real support needs.
           </p>
         </div>
 
@@ -87,6 +115,9 @@ export function MythsContent({ setCurrentArticle }: MythsContentProps) {
             Cited Studies & Statistics
           </h4>
           <ol className="list-decimal ml-5 text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed">
+            <li>
+              Hviid, A., Hansen, J. V., Frisch, M., & Melbye, M. (2019). "Measles, Mumps, Rubella Vaccination and Autism: A Nationwide Cohort Study." <i>Annals of Internal Medicine</i>, 170(8), 513-520.
+            </li>
             <li>
               McElhanon, B. O., McCracken, C., Karpen, S., & Sharp, W. G. (2014). "Gastrointestinal symptoms in autism spectrum disorder: a meta-analysis." <i>Pediatrics</i>, 133(5), 872-883.
             </li>
@@ -111,6 +142,9 @@ export function MythsContent({ setCurrentArticle }: MythsContentProps) {
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed pl-2">
+            <li>
+              Institute of Medicine (US) Immunization Safety Review Committee. (2004). <i>Immunization Safety Review: Vaccines and Autism</i>. National Academies Press.
+            </li>
             <li>
               Piwowarczyk, A., Horvath, A., Łukasik, J., Pisula, E., & Szajewska, H. (2018). "Gluten- and casein-free diet and autism spectrum disorders in children: a systematic review." <i>European Journal of Nutrition</i>, 57(2), 433-440.
             </li>
