@@ -20,13 +20,18 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         />
         
         <p className="mb-4 leading-relaxed text-[#0c264d]">
-          Genetic and environmental factors ultimately affect brain development, leading to the neurological differences characteristic of autism. Rather than being "broken" or "damaged," the autistic brain is simply wired differently. 
+          Genetic and environmental factors ultimately shape brain development, leading to the neurological differences characteristic of autism. It is crucial to understand that the autistic brain is not a "broken" or "damaged" neurotypical brain. Instead, it develops along a completely different, naturally occurring trajectory from day one—operating on a different neurological blueprint.
         </p>
-        <p className="mb-6 leading-relaxed text-[#0c264d]">
-          These neurological variations begin during early fetal development and continue to unfold throughout childhood. They shape how the brain processes sensory input, navigates social interactions, and regulates emotions. Understanding these structural and functional differences helps explain why autistic individuals experience the world in such a unique way.
+        
+        <p className="mb-4 leading-relaxed text-[#0c264d]">
+          While this neurology represents a valid human variation, the challenges that accompany it are profoundly real. Particularly for those with higher support needs, severe sensory differences or communication barriers are not just social inconveniences—they can cause intense physiological and psychological distress. 
         </p>
-        <div className="clear-both"></div>
 
+        <p className="mb-8 leading-relaxed text-[#0c264d]">
+          Therefore, understanding autistic brain development isn't about finding a way to "fix a broken machine." It is about learning how to soothe a nervous system that is often overwhelmed, bridging communication gaps, and providing the exact environmental supports needed to alleviate distress and improve quality of life.
+        </p>
+        
+        <div className="clear-both"></div>
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
         {/* Structural Differences */}
