@@ -38,7 +38,7 @@ export function ArticleAbout() {
           <img 
             src="/images/home-brain-on-book.png" 
             alt="Brainopedia Concept"
-            className="w-full max-w-lg rounded-2xl shadow-lg rotate-2 hover:rotate-0 transition-transform duration-500 cursor-pointer"
+            className="w-full max-w-lg rounded-lg shadow-lg rotate-2 hover:rotate-0 transition-transform duration-500 cursor-pointer"
           />
         </div>
       </div>
