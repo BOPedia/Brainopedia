@@ -132,19 +132,15 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
           <nav className="p-4 flex-1">
             {/* Top Navigation: Home & About */}
             <div className="mb-6 space-y-1">
-            <button
-              onClick={() => handleArticleClick(article.id)}
-              className={`
-                w-full flex items-center justify-start gap-3 px-3 py-2 rounded-md transition-colors text-left
-                ${currentArticle === article.id 
-                  ? 'bg-[#0A9DC4] text-white' 
-                  : 'text-gray-700 hover:bg-gray-100'
-                }
-              `}
-            >
-              <Icon className="w-5 h-5 shrink-0" />
-              <span className="flex-1 text-left">{article.label}</span>
-            </button>
+              <button
+                onClick={() => handleArticleClick('home')}
+                className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left ${
+                  currentArticle === 'home' ? 'bg-[#0A9DC4] text-white' : 'text-[#0c264d] hover:bg-white/50'
+                }`}
+              >
+                <Brain className="w-5 h-5" />
+                <span className="font-bold">Home</span>
+              </button>
               
               <button
                 onClick={() => handleArticleClick('about')}
@@ -191,12 +187,16 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
                                   <li key={art.id}>
                                     <button
                                       onClick={() => handleArticleClick(art.id)}
-                                      className={`w-full flex items-center gap-2 px-3 py-1.5 rounded-md text-xs transition-colors ${
-                                        currentArticle === art.id ? 'bg-[#0A9DC4] text-white' : 'text-gray-700 hover:bg-white'
-                                      }`}
+                                      className={`
+                                        w-full flex items-center justify-start gap-3 px-3 py-2 rounded-md transition-colors text-left
+                                        ${currentArticle === art.id 
+                                          ? 'bg-[#0A9DC4] text-white' 
+                                          : 'text-gray-700 hover:bg-gray-100'
+                                        }
+                                      `}
                                     >
-                                      <art.icon className="w-4 h-4" />
-                                      <span>{art.label}</span>
+                                      <art.icon className="w-5 h-5 shrink-0" />
+                                      <span className="flex-1 text-left text-sm">{art.label}</span>
                                     </button>
                                   </li>
                                 ))}
@@ -210,12 +210,16 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
                             <li key={art.id}>
                               <button
                                 onClick={() => handleArticleClick(art.id)}
-                                className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
-                                  currentArticle === art.id ? 'bg-[#0A9DC4] text-white' : 'text-gray-700 hover:bg-white'
-                                }`}
+                                className={`
+                                  w-full flex items-center justify-start gap-3 px-3 py-2 rounded-md transition-colors text-left
+                                  ${currentArticle === art.id 
+                                    ? 'bg-[#0A9DC4] text-white' 
+                                    : 'text-gray-700 hover:bg-gray-100'
+                                  }
+                                `}
                               >
-                                <art.icon className="w-4 h-4" />
-                                <span>{art.label}</span>
+                                <art.icon className="w-5 h-5 shrink-0" />
+                                <span className="flex-1 text-left text-sm">{art.label}</span>
                               </button>
                             </li>
                           ))}
