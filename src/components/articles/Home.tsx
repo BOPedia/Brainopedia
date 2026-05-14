@@ -28,17 +28,23 @@ export function Home({ setCurrentArticle }: HomeProps) {
             Explore our comprehensive volumes on neurodevelopmental, processing, and motor differences. 
             Select a category below to begin your journey through the encyclopedia of the mind.
           </p>
-        </section>
+   </section>
+        { /* Inside Home.tsx - Back to clean white for a library feel */}
+        <div className="bg-white p-4 sm:p-8">
+          <h2 className="text-[#0c264d] font-bold mb-8 text-2xl">
+            Encyclopedia Volumes
+          </h2>
+            {/* 1. Core Neurodevelopmental */}
+          <div className="bg-white p-6 rounded-xl border-2 border-[#2abcd4] shadow-sm">
 
+            {/* ... cards here ... */}
+        </div>  
         {/* Encyclopedia Coverage - ALL 7 CATEGORIES */}
-        <section className="space-y-6">
+        <className="space-y-6"/>
           <h2 className="text-[#0c264d] font-bold mb-6 text-2xl border-l-4 border-[#2abcd4] pl-4">
             Encyclopedia Volumes
           </h2>
-          
-          {/* 1. Core Neurodevelopmental */}
-          <div className="bg-white p-6 rounded-xl border-2 border-[#2abcd4] shadow-sm">
-            <div className="flex flex-col md:flex-row gap-6">
+                      <div className="flex flex-col md:flex-row gap-6">
               <img src="/images/home-apple-core-neurodev.png" alt="Neural apple" className="w-48 h-auto mx-auto md:mx-0 rounded-lg shadow-md self-start" />
               <div>
                 <h3 className="text-[#0c264d] text-xl font-bold mb-3">Core Neurodevelopmental</h3>
@@ -145,8 +151,6 @@ export function Home({ setCurrentArticle }: HomeProps) {
               </div>
             </div>
           </div>
-        </section>
-
 
       </div>
     </article>

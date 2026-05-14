@@ -30,7 +30,7 @@ export function ArticleAbout() {
           <img 
             src="/images/home-brain-on-book.png" 
             alt="Brainopedia Concept"
-            className="w-full max-w-sm rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500"
+            className="w-full max-w-sm rounded-lg shadow-lg rotate-2 hover:rotate-0 transition-transform duration-500"
           />
         </div>
       </div>
@@ -68,18 +68,6 @@ export function ArticleAbout() {
             Content presented with respect, emphasizing strengths alongside challenges using clear, accessible language.
           </p>
         </div>
-                {/* Mission Statement */}
-        <section className="bg-gradient-to-r from-[#2abcd4]/10 to-[#ffd166]/20 border-l-4 border-[#2abcd4] p-6 rounded-r-xl">
-          <div className="flex items-start gap-4">
-            <Target className="w-8 h-8 text-[#2abcd4] mt-1 shrink-0" />
-            <div>
-              <h2 className="text-[#0c264d] font-bold mb-2 text-xl">Our Mission</h2>
-              <p className="text-sm leading-relaxed text-[#0c264d]">
-                Brainopedia is an innovative online encyclopedia dedicated to providing comprehensive, accessible, and respectful information about neurodivergent experiences.
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
     </article>
   );
