@@ -77,7 +77,7 @@ export function ArticleAPD({ setCurrentArticle }: ArticleAPDProps) {
             <strong>Auditory Processing Disorder (APD)</strong>, also known as Central Auditory Processing 
             Disorder (CAPD), is a neurological condition where the brain has difficulty processing and 
             interpreting auditory information.<sup>10</sup> While hearing sensitivity is typically normal, the brain 
-            struggles to make sense of what the ears detect—creating a unique auditory neurotype.<sup<2/>sup>
+            struggles to make sense of what the ears detect—creating a unique auditory neurotype.<sup>2</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
