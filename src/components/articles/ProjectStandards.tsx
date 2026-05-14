@@ -1,5 +1,5 @@
 import React from 'react';
-import { Microscope, ArrowRight, Layout, Palette, FileText, CheckCircle, ImageIcon, Smartphone, AlertTriangle, Type } from 'lucide-react';
+import { Microscope, ArrowRight, Layout, Palette, FileText, CheckCircle, ImageIcon, Smartphone, AlertTriangle, Type, Move } from 'lucide-react';
 
 interface ProjectStandardsProps {
   setCurrentArticle?: (article: string) => void;
@@ -17,89 +17,71 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </h1>
           <p className="text-sm text-gray-500 font-bold uppercase tracking-widest">Last Updated: May 13, 2026</p>
           <p className="mt-4 text-[#0c264d]">
-            This document serves as the single source of truth for all design patterns, component styles, and editorial rules used throughout Brainopedia.
+            The definitive technical and editorial manual for the Brainopedia digital encyclopedia.
           </p>
         </div>
 
-        {/* 1. COLOR PALETTE */}
+        {/* 1. IMAGE PLACEMENT & CLEARING STANDARDS */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
-            <Palette className="text-[#2abcd4]" /> COLOR PALETTE
+            <Move className="text-[#2abcd4]" /> IMAGE PLACEMENT & POSITIONING
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded shadow-sm border" style={{backgroundColor: '#ffd166'}}></div>
-                <p className="text-sm"><strong>Yellow (#ffd166):</strong> Tabs, Buttons, Highlights</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded shadow-sm border" style={{backgroundColor: '#0A9DC4'}}></div>
-                <p className="text-sm"><strong>Dark Cyan (#0A9DC4):</strong> Active Tab States (Mandatory)</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded shadow-sm border" style={{backgroundColor: '#10b981'}}></div>
-                <p className="text-sm"><strong>Green (#10b981):</strong> ONLY for naked citation superscripts</p>
-              </div>
+          <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these three patterns for consistency:</p>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+              <h3 className="font-bold text-[#0c264d] text-sm mb-2">1. The Centered Hero</h3>
+              <p className="text-xs mb-3 text-gray-600">For large diagrams (DNA, Brains) between text blocks.</p>
+              <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+                className="w-full max-w-md mx-auto mb-8 rounded-xl shadow-md"
+              </code>
             </div>
-            <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500 text-xs">
-              <p className="font-bold text-red-800 mb-2 uppercase">Color Usage Rules:</p>
-              <ul className="list-disc ml-5 space-y-1 text-gray-800">
-                <li><strong>NEVER</strong> use the old cyan (#2abcd4) for active tabs.</li>
-                <li>Button hover: Yellow → Dark Navy (#0c264d).</li>
-                <li>Tab active: Dark Cyan (#0A9DC4) with white text.</li>
-              </ul>
+
+            <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+              <h3 className="font-bold text-[#0c264d] text-sm mb-2">2. The Inline Float</h3>
+              <p className="text-xs mb-3 text-gray-600">Small icons or supporting graphics inside info-boxes.</p>
+              <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+                className="w-full max-w-sm mx-auto mb-6 rounded-lg"
+              </code>
+            </div>
+
+            <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+              <h3 className="font-bold text-[#0c264d] text-sm mb-2">3. The Clearing Rule</h3>
+              <p className="text-xs mb-3 text-gray-600">Always use <code className="bg-white px-1">clear-both</code> or <code className="bg-white px-1">w-full</code> on buttons below images.</p>
+              <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+                className="flex justify-end my-8 w-full clear-both"
+              </code>
             </div>
           </div>
         </section>
 
-        {/* 2. TYPOGRAPHY */}
-        <section className="mb-12">
-          <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
-            <Type className="text-[#2abcd4]" /> TYPOGRAPHY
-          </h2>
-          <ul className="list-disc ml-8 space-y-2 text-sm text-gray-800">
-            <li><strong>Primary Font:</strong> League Spartan - Used for ALL body text throughout the site.</li>
-            <li><strong>Constraint:</strong> DO NOT use Tailwind font size/weight classes (text-xl, font-bold) unless specifically requested.</li>
-            <li><strong>Standard Size:</strong> <code className="bg-gray-100 px-1 rounded">text-sm</code> (14px) is the global standard for all tab content.</li>
-          </ul>
-        </section>
-
-        {/* 3. CITATION SYSTEM */}
+        {/* 2. CITATION SYSTEM */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
             <FileText className="text-[#2abcd4]" /> CITATION SYSTEM
           </h2>
-          <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-5 mb-6 text-sm">
-            <p className="font-bold mb-2 uppercase text-[#0c264d]">Strict Citation Criteria:</p>
-            <p>ONLY cite when research/studies are mentioned or numerical statistics are presented. Otherwise, use <strong>Background Sources</strong>.</p>
+          <div className="grid md:grid-cols-2 gap-4 mb-6">
+             <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-4 text-xs">
+              <p className="font-bold mb-1 uppercase">ONLY cite when:</p>
+              <ul className="list-disc ml-4 space-y-1">
+                <li>Text mentions research/studies directly.</li>
+                <li>Text presents statistics or numerical data.</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 border-l-4 border-red-500 p-4 text-xs">
+              <p className="font-bold mb-1 uppercase">NEVER cite:</p>
+              <p>General knowledge or descriptive symptom lists. (Use Background Sources instead).</p>
+            </div>
           </div>
           <div className="bg-gray-900 text-green-400 p-6 rounded-xl shadow-inner">
-            <h3 className="text-white font-bold mb-4">The "Naked" Superscript Standard</h3>
-            <code className="block bg-black p-3 rounded">
+            <h3 className="text-white font-bold mb-2 text-sm">The "Naked" Superscript Standard</h3>
+            <code className="block bg-black p-3 rounded text-xs">
               {`Statistics show 10%<sup className="text-green-600 font-bold ml-0.5">1</sup>`}
             </code>
           </div>
         </section>
 
-        {/* 4. UI TABS (THE "FULL-WIDTH" STANDARD) */}
-        <section className="mb-12">
-          <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
-            <Layout className="text-[#2abcd4]" /> TAB COMPONENTS
-          </h2>
-          <div className="bg-blue-50 border-l-4 border-[#0A9DC4] p-5 mb-4 text-sm">
-            <p className="font-bold text-[#0c264d] mb-2 uppercase">Official Layout Policy:</p>
-            <p>To avoid awkward spacing and visual gaps, <strong>all tab lists must be a single full-width column</strong> (stacked) rather than a multi-column grid.</p>
-          </div>
-          <pre className="bg-gray-900 text-green-400 p-5 rounded-xl text-xs overflow-x-auto shadow-inner">
-{`<TabsList className="flex flex-col w-full gap-3 mb-12 bg-transparent h-auto p-0">
-  <TabsTrigger value="tab1" className="w-full bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 text-sm !h-auto shadow-sm">
-    Full Width Tab Label
-  </TabsTrigger>
-</TabsList>`}
-          </pre>
-        </section>
-
-        {/* 5. REFERENCE SECTION MANDATORY CODE */}
+        {/* 3. REFERENCE SECTION MANDATORY CODE */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
             <CheckCircle className="text-[#2abcd4]" /> REFERENCE SECTION CODE
@@ -119,10 +101,25 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
         </section>
 
-        {/* 6. IMAGE & SYMBOL POLICIES */}
+        {/* 4. TAB COMPONENTS (THE "STACKED" STANDARD) */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
-            <ImageIcon className="text-[#2abcd4]" /> IMAGE STANDARDS
+            <Layout className="text-[#2abcd4]" /> UI TABS
+          </h2>
+          <p className="text-sm mb-4"><strong>Full-Width Stack:</strong> To avoid awkward spacing, all tab triggers must be 100% width.</p>
+          <pre className="bg-gray-900 text-green-400 p-5 rounded-xl text-xs overflow-x-auto">
+{`<TabsList className="flex flex-col w-full gap-3 mb-12 bg-transparent h-auto p-0">
+  <TabsTrigger value="tab1" className="w-full bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 text-sm !h-auto">
+    Full Width Tab Label
+  </TabsTrigger>
+</TabsList>`}
+          </pre>
+        </section>
+
+        {/* 5. IMAGE & SYMBOL POLICIES */}
+        <section className="mb-12">
+          <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
+            <ImageIcon className="text-[#2abcd4]" /> SYMBOLS & EMOJIS
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white border-2 border-[#2abcd4] p-5 rounded-xl">
@@ -132,7 +129,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             </div>
             <div className="bg-red-50 border-l-4 border-red-500 p-5">
               <h3 className="font-bold text-red-800 mb-2 uppercase text-xs">Emoji Policy:</h3>
-              <p className="text-sm text-gray-800">Maintain professional tone. DO NOT use emojis in article headings, body text, or tab content.</p>
+              <p className="text-sm text-gray-800">DO NOT use emojis in headings or body text. Maintain professional tone.</p>
             </div>
           </div>
         </section>
@@ -142,9 +139,9 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="bg-red-600 text-white p-6 rounded-2xl flex items-start gap-4 shadow-xl">
             <AlertTriangle size={48} className="shrink-0" />
             <div>
-              <h2 className="text-xl font-bold mb-2 uppercase">Graphic Integrity Rule</h2>
-              <p className="text-sm opacity-90 leading-relaxed">
-                When updating text or citations, ALWAYS preserve imported graphics and images. Do NOT remove figma:asset imports or change image placements unless explicitly requested.
+              <h2 className="text-xl font-bold mb-2 uppercase text-white">Graphic Integrity Rule</h2>
+              <p className="text-sm opacity-90 leading-relaxed text-white">
+                When updating text or citations, ALWAYS preserve imported graphics. Do NOT remove <code className="bg-black bg-opacity-30 px-1 rounded text-white">ImageWithFallback</code> components or change image placements unless explicitly requested.
               </p>
             </div>
           </div>
@@ -152,8 +149,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
         {/* Footer */}
         <div className="border-t-4 border-[#0c264d] pt-8 text-center">
-          <p className="text-[#0c264d] font-bold text-lg font-spartan">End of Official Brainopedia Standards</p>
-          <p className="text-xs text-gray-400 mt-2 uppercase tracking-widest italic">A living document for Neurodiverse Endeavors</p>
+          <p className="text-[#0c264d] font-bold text-lg font-spartan italic">End of Official Brainopedia Standards</p>
         </div>
 
       </article>
