@@ -147,18 +147,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
           </div>
         </section>
 
-        {/* Mission Statement */}
-        <section className="bg-gradient-to-r from-[#2abcd4]/10 to-[#ffd166]/20 border-l-4 border-[#2abcd4] p-6 rounded-r-xl">
-          <div className="flex items-start gap-4">
-            <Target className="w-8 h-8 text-[#2abcd4] mt-1 shrink-0" />
-            <div>
-              <h2 className="text-[#0c264d] font-bold mb-2 text-xl">Our Mission</h2>
-              <p className="text-sm leading-relaxed text-[#0c264d]">
-                Brainopedia is an innovative online encyclopedia dedicated to providing comprehensive, accessible, and respectful information about neurodivergent experiences.
-              </p>
-            </div>
-          </div>
-        </section>
+
       </div>
     </article>
   );
