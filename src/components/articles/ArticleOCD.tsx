@@ -54,7 +54,7 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
             <strong>Obsessive-compulsive disorder (OCD)</strong> is a neurological condition characterized by 
             persistent, intrusive thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) 
             performed to reduce anxiety.<sup>10</sup> Increasingly understood through a neurodivergent lens, OCD represents 
-            a distinct pattern of brain processing involving specific neural loops and information processing differences.<sup>12</sup>
+            a distinct pattern of brain processing involving specific neural loops and information processing differences.<sup<2/>sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -89,10 +89,10 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
           <p className="mb-4">
             OCD affects approximately 2-3% of the population and involves a complex interplay between 
             neurological pathways, particularly in the orbitofrontal cortex, anterior cingulate cortex, 
-            and basal ganglia.<sup>13</sup> These brain regions are responsible for error detection, doubt resolution, 
+            and basal ganglia.<sup<3/>sup> These brain regions are responsible for error detection, doubt resolution, 
             and behavioral inhibition. While traditionally classified as a mental health disorder, many 
             advocates and researchers now recognize OCD as a neurotype—a fundamental difference in how the 
-            brain processes threat, certainty, and completion.<sup>14</sup>
+            brain processes threat, certainty, and completion.<sup<4/>sup>
           </p>
           
           <p className="mb-4">
@@ -114,7 +114,7 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
           <p className="mb-4">
             OCD is characterized by obsessions and compulsions. Obsessions are unwanted intrusive thoughts, images, 
             or urges that cause significant distress and include contamination fears, need for symmetry, intrusive 
-            thoughts of harm, religious scrupulosity, and unwanted sexual or aggressive thoughts.<sup>16</sup> Compulsions are 
+            thoughts of harm, religious scrupulosity, and unwanted sexual or aggressive thoughts.<sup<6/>sup> Compulsions are 
             repetitive behaviors or mental acts performed to reduce anxiety and include excessive cleaning, checking 
             behaviors, counting, arranging items, mental rituals, and seeking reassurance from others.<sup>7</sup>
           </p>
@@ -153,7 +153,7 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
             are excessive, significant time consumed by symptoms (typically an hour or more per day), and significant distress 
             or impairment in daily functioning.<sup>10</sup> The evaluation includes detailed clinical interview, assessment tools 
             such as the Yale-Brown Obsessive Compulsive Scale, ruling out other conditions, and assessment of co-occurring 
-            conditions.<sup>11</sup>
+            conditions.<sup<1/>sup>
           </p>
         </section>
 
@@ -169,9 +169,9 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
           <p className="mb-4">
             A neurodivergent-affirming approach to OCD combines evidence-based treatment with self-acceptance. Exposure and 
             Response Prevention (ERP) is the gold-standard treatment involving gradual exposure to feared situations while 
-            preventing compulsive responses.<sup>12</sup> Acceptance and Commitment Therapy (ACT) focuses on accepting intrusive 
+            preventing compulsive responses.<sup<2/>sup> Acceptance and Commitment Therapy (ACT) focuses on accepting intrusive 
             thoughts while committing to value-based actions. Medication including SSRIs can help regulate neurotransmitter 
-            systems involved in OCD and is often used in combination with therapy.<sup>13</sup>
+            systems involved in OCD and is often used in combination with therapy.<sup<3/>sup>
           </p>
         </section>
 
@@ -186,11 +186,11 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
           
           <p className="mb-4">
             Individuals with OCD lead successful and fulfilling lives across all areas of society. OCD is a chronic neurotype 
-            that individuals learn to manage throughout their lives, often with symptoms waxing and waning over time.<sup>14</sup> With 
+            that individuals learn to manage throughout their lives, often with symptoms waxing and waning over time.<sup<4/>sup> With 
             appropriate treatment and self-understanding, people with OCD develop effective strategies for managing symptoms 
             and thrive in education, careers, and relationships. Living well with OCD involves understanding one's specific 
             OCD profile, engaging in evidence-based treatment, developing self-compassion, and recognizing both the challenges 
-            and potential strengths of the OCD neurotype.<sup>15</sup>
+            and potential strengths of the OCD neurotype.<sup<5/>sup>
           </p>
         </section>
       </div>

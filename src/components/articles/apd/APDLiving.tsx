@@ -34,7 +34,7 @@ export function APDLiving({ setCurrentArticle }: APDLivingProps) {
             Living with Auditory Processing Disorder presents unique challenges across settings and life stages, 
             but with understanding, appropriate support, and effective strategies, individuals with APD can thrive.<sup>10</sup> 
             Success involves acknowledging both challenges and strengths while developing personalized approaches 
-            for navigating an auditory world.<sup>12</sup>
+            for navigating an auditory world.<sup<2/>sup>
           </p>
         </div>
 
@@ -49,14 +49,14 @@ export function APDLiving({ setCurrentArticle }: APDLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Communication in Everyday Situations</h3>
           <p className="mb-4">
-            Routine communication tasks others take for granted can be exhausting with APD.<sup>13</sup> Phone 
-            conversations without visual cues are particularly challenging.<sup>14</sup> Drive-through ordering, 
+            Routine communication tasks others take for granted can be exhausting with APD.<sup<3/>sup> Phone 
+            conversations without visual cues are particularly challenging.<sup<4/>sup> Drive-through ordering, 
             announcements in stores, and crowded social gatherings all present difficulties.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Invisible Challenge</h3>
           <p className="mb-4">
-            APD is invisible—there's no outward sign of difficulty.<sup>16</sup> People may misinterpret 
+            APD is invisible—there's no outward sign of difficulty.<sup<6/>sup> People may misinterpret 
             challenges as rudeness ("Why aren't you listening?"), lack of intelligence, or willful inattention.<sup>7</sup> 
             Explaining the condition repeatedly becomes necessary but tiring.<sup>8</sup>
           </p>
@@ -65,14 +65,14 @@ export function APDLiving({ setCurrentArticle }: APDLivingProps) {
           <p className="mb-4">
             The constant cognitive effort required to process auditory information leads to exhaustion.<sup>9</sup> 
             By day's end, individuals may have depleted capacity for listening or conversation.<sup>10</sup> 
-            This isn't laziness—it's genuine neurological fatigue.<sup>11</sup>
+            This isn't laziness—it's genuine neurological fatigue.<sup<1/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Misunderstandings</h3>
           <p className="mb-4">
-            Missing parts of conversations leads to confusion, inappropriate responses, or appearing disengaged.<sup>12</sup> 
+            Missing parts of conversations leads to confusion, inappropriate responses, or appearing disengaged.<sup<2/>sup> 
             People may think someone with APD isn't interested or isn't paying attention when they're actually 
-            working hard to process what's being said.<sup>13</sup>
+            working hard to process what's being said.<sup<3/>sup>
           </p>
         </div>
 
@@ -82,8 +82,8 @@ export function APDLiving({ setCurrentArticle }: APDLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Classroom Challenge</h3>
           <p className="mb-4">
             Traditional lecture-based classrooms are optimized for auditory learning—exactly what's difficult 
-            with APD.<sup>14</sup> Background noise from classmates, HVAC systems, or hallways compounds 
-            challenges.<sup>15</sup> By the time information is processed, the teacher has moved on.<sup>16</sup>
+            with APD.<sup<4/>sup> Background noise from classmates, HVAC systems, or hallways compounds 
+            challenges.<sup<5/>sup> By the time information is processed, the teacher has moved on.<sup<6/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Academic Impacts</h3>

@@ -33,7 +33,7 @@ export function HyperlexiaSupport({ setCurrentArticle }: HyperlexiaSupportProps)
           <p className="mb-4">
             Supporting children with hyperlexia involves leveraging their reading strengths while addressing language 
             comprehension and social-communication needs.<sup>10</sup> Intervention should be individualized based on 
-            whether hyperlexia occurs alone or with autism.<sup>12</sup>
+            whether hyperlexia occurs alone or with autism.<sup<2/>sup>
           </p>
         </div>
 
@@ -48,10 +48,10 @@ export function HyperlexiaSupport({ setCurrentArticle }: HyperlexiaSupportProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Using Reading as a Learning Tool</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Visual supports:</strong> Use written words alongside spoken language<sup>13</sup></li>
+            <li className="mb-2"><strong>Visual supports:</strong> Use written words alongside spoken language<sup<3/>sup></li>
             <li className="mb-2"><strong>Reading to learn:</strong> Teach concepts through reading</li>
             <li className="mb-2"><strong>Written schedules:</strong> Visual schedules and routines</li>
-            <li className="mb-2"><strong>Social stories:</strong> Written stories to teach social concepts<sup>14</sup></li>
+            <li className="mb-2"><strong>Social stories:</strong> Written stories to teach social concepts<sup<4/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading as Communication Aid</h3>
@@ -67,7 +67,7 @@ export function HyperlexiaSupport({ setCurrentArticle }: HyperlexiaSupportProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Building Reading Comprehension</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Explicit comprehension strategies:</strong> Direct teaching of understanding<sup>16</sup></li>
+            <li className="mb-2"><strong>Explicit comprehension strategies:</strong> Direct teaching of understanding<sup<6/>sup></li>
             <li className="mb-2"><strong>Questioning:</strong> Teaching to ask and answer questions about text</li>
             <li className="mb-2"><strong>Vocabulary instruction:</strong> Building word meanings, not just recognition</li>
             <li className="mb-2"><strong>Inferencing:</strong> Explicitly teaching "reading between the lines"<sup>7</sup></li>
@@ -106,16 +106,16 @@ export function HyperlexiaSupport({ setCurrentArticle }: HyperlexiaSupportProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Classroom Accommodations</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Written supports:</strong> Provide written instructions and information<sup>11</sup></li>
+            <li className="mb-2"><strong>Written supports:</strong> Provide written instructions and information<sup<1/>sup></li>
             <li className="mb-2"><strong>Visual aids:</strong> Charts, graphic organizers, visual schedules</li>
             <li className="mb-2"><strong>Pre-teaching:</strong> Introduce vocabulary and concepts before lessons</li>
-            <li className="mb-2"><strong>Comprehension checks:</strong> Frequent checking of understanding<sup>12</sup></li>
+            <li className="mb-2"><strong>Comprehension checks:</strong> Frequent checking of understanding<sup<2/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Teaching Strategies</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Explicit, direct instruction</li>
-            <li className="mb-2">Breaking down complex information<sup>13</sup></li>
+            <li className="mb-2">Breaking down complex information<sup<3/>sup></li>
             <li className="mb-2">Using child's reading interest to engage</li>
             <li className="mb-2">Connecting reading to real-world meaning</li>
           </ul>
@@ -132,16 +132,16 @@ export function HyperlexiaSupport({ setCurrentArticle }: HyperlexiaSupportProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Skills Training</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Social stories:</strong> Written stories teaching social situations<sup>14</sup></li>
+            <li className="mb-2"><strong>Social stories:</strong> Written stories teaching social situations<sup<4/>sup></li>
             <li className="mb-2"><strong>Role-playing:</strong> Practicing social interactions</li>
             <li className="mb-2"><strong>Explicit teaching:</strong> Direct instruction in social skills</li>
-            <li className="mb-2"><strong>Peer interactions:</strong> Structured peer activities<sup>15</sup></li>
+            <li className="mb-2"><strong>Peer interactions:</strong> Structured peer activities<sup<5/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Using Reading for Social Learning</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Books about emotions and social situations</li>
-            <li className="mb-2">Written scripts for social scenarios<sup>16</sup></li>
+            <li className="mb-2">Written scripts for social scenarios<sup<6/>sup></li>
             <li className="mb-2">Reading about characters' thoughts and feelings</li>
           </ul>
         </div>

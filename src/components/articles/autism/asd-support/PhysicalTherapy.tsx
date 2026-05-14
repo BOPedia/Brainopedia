@@ -50,7 +50,7 @@ export function PhysicalTherapy() {
           Physical therapy often has a secondary "ripple effect" on social and emotional well-being. 
           Studies show that improving a child's physical competence increases their confidence 
           to join peer groups in the playground, directly impacting social inclusion 
-          and reducing anxiety related to physical education<span className="text-[#10b981] font-bold"><sup>12</sup></span>.
+          and reducing anxiety related to physical education<span className="text-[#10b981] font-bold"><sup<2/>sup></span>.
         </p>
       </div>
 

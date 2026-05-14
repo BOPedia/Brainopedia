@@ -79,7 +79,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
             by a specific pattern of strengths and challenges: exceptional verbal abilities combined with 
             difficulties in visual-spatial processing, motor coordination, and social perception.<sup>10</sup> This creates 
             a unique learning profile where language-based tasks come easily while non-verbal information 
-            processing presents significant challenges.<sup>12</sup>
+            processing presents significant challenges.<sup<2/>sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -115,8 +115,8 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
             NVLD represents a distinct pattern of brain organization where the right hemisphere—responsible 
             for visual-spatial processing, pattern recognition, and holistic thinking—functions differently 
             than typical, while left hemisphere functions (language, sequential processing, verbal reasoning) 
-            often exceed typical development.<sup>13</sup> This neurological profile affects approximately 3-4% of the 
-            population and can significantly impact learning, social interaction, and daily functioning.<sup>14</sup>
+            often exceed typical development.<sup<3/>sup> This neurological profile affects approximately 3-4% of the 
+            population and can significantly impact learning, social interaction, and daily functioning.<sup<4/>sup>
           </p>
           
           <p className="mb-4">
@@ -139,7 +139,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           <p className="mb-4">
             NVLD presents across three primary domains. Visual-spatial-organizational challenges include difficulty 
             with spatial relationships and visual organization, challenges with puzzles, maps, diagrams, and visual 
-            patterns, trouble organizing physical spaces, and difficulty with geometry and spatial aspects of mathematics.<sup>16</sup> 
+            patterns, trouble organizing physical spaces, and difficulty with geometry and spatial aspects of mathematics.<sup<6/>sup> 
             Motor coordination difficulties include poor fine motor skills affecting handwriting, gross motor challenges 
             with sports, balance, and coordination, and appearing clumsy or accident-prone.<sup>7</sup> Social perception challenges 
             include difficulty reading facial expressions and body language, challenges understanding non-verbal social cues, 
@@ -164,9 +164,9 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
             areas responsible for visual-spatial processing, pattern recognition, and holistic thinking, while left 
             hemisphere functions often exceed typical development.<sup>10</sup> The exact neurological mechanisms are still being 
             studied, but brain imaging research has shown differences in white matter development and inter-hemispheric 
-            communication.<sup>11</sup> NVLD may have genetic components and tends to run in families, though the specific causes 
+            communication.<sup<1/>sup> NVLD may have genetic components and tends to run in families, though the specific causes 
             are not fully understood. The condition is present from birth and represents a fundamental difference in 
-            brain organization and information processing.<sup>12</sup>
+            brain organization and information processing.<sup<2/>sup>
           </p>
         </section>
 
@@ -181,13 +181,13 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           
           <p className="mb-4">
             NVLD is diagnosed through comprehensive neuropsychological evaluation by qualified professionals such as 
-            neuropsychologists or educational psychologists.<sup>13</sup> The assessment includes standardized cognitive testing 
+            neuropsychologists or educational psychologists.<sup<3/>sup> The assessment includes standardized cognitive testing 
             showing the characteristic pattern of high verbal abilities with lower visual-spatial and motor skills, 
             evaluation of visual-spatial processing and visual-motor integration, assessment of motor coordination and 
-            fine motor skills, and social-emotional and adaptive functioning evaluation.<sup>14</sup> The diagnosis is based on the 
+            fine motor skills, and social-emotional and adaptive functioning evaluation.<sup<4/>sup> The diagnosis is based on the 
             specific pattern of strengths and weaknesses rather than any single test score. NVLD is often identified in 
             elementary school when visual-spatial and social demands increase, though some individuals may not be 
-            diagnosed until later.<sup>15</sup>
+            diagnosed until later.<sup<5/>sup>
           </p>
         </section>
 
@@ -204,7 +204,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
             Effective support for NVLD builds on verbal strengths while providing accommodations for challenges. 
             Educational accommodations include verbal explanations for visual information, extended time for tasks 
             requiring visual-spatial or motor skills, use of assistive technology for writing, and breaking complex 
-            tasks into sequential verbal steps.<sup>16</sup> Social skills support includes explicit teaching of social rules 
+            tasks into sequential verbal steps.<sup<6/>sup> Social skills support includes explicit teaching of social rules 
             and expectations, role-playing and practice of social scenarios, and verbally explaining non-verbal social 
             cues.<sup>[17]</sup> Therapeutic interventions include occupational therapy for motor skills and visual-spatial 
             development, cognitive-behavioral therapy for anxiety management, executive function coaching, and social 

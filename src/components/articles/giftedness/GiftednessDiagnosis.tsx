@@ -34,7 +34,7 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
             Identifying giftedness involves multiple assessment methods, including standardized testing, 
             behavioral observations, portfolio reviews, and performance assessments.<sup>10</sup> Comprehensive 
             identification practices recognize diverse manifestations of giftedness and aim to reduce bias 
-            in the identification process.<sup>12</sup>
+            in the identification process.<sup<2/>sup>
           </p>
         </div>
 
@@ -50,15 +50,15 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Wechsler Intelligence Scales</h3>
           <p className="mb-4">
             The Wechsler scales (WISC-V for children, WAIS-IV for adults) are widely used to assess 
-            cognitive abilities.<sup>13</sup> These tests provide a Full Scale IQ score and index scores 
-            for Verbal Comprehension, Visual Spatial, Fluid Reasoning, Working Memory, and Processing Speed.<sup>14</sup> 
+            cognitive abilities.<sup<3/>sup> These tests provide a Full Scale IQ score and index scores 
+            for Verbal Comprehension, Visual Spatial, Fluid Reasoning, Working Memory, and Processing Speed.<sup<4/>sup> 
             They are particularly useful for identifying patterns of strengths and weaknesses.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Stanford-Binet Intelligence Scales</h3>
           <p className="mb-4">
             The Stanford-Binet (SB5) assesses five factors: Fluid Reasoning, Knowledge, Quantitative 
-            Reasoning, Visual-Spatial Processing, and Working Memory.<sup>16</sup> It has a higher 
+            Reasoning, Visual-Spatial Processing, and Working Memory.<sup<6/>sup> It has a higher 
             ceiling than the Wechsler scales, making it particularly appropriate for identifying highly 
             and exceptionally gifted individuals.<sup>7</sup>
           </p>
@@ -75,15 +75,15 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
           <p className="mb-4">
             The CogAT measures reasoning abilities in three domains: Verbal, Quantitative, and Nonverbal.<sup>10</sup> 
             It's commonly used for group screening in schools and can identify students who may benefit 
-            from gifted programming.<sup>11</sup>
+            from gifted programming.<sup<1/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Nonverbal Intelligence Tests</h3>
           <p className="mb-4">
             Tests like the Naglieri Nonverbal Ability Test (NNAT) and Raven's Progressive Matrices assess 
-            reasoning ability without requiring language skills.<sup>12</sup> These instruments help 
+            reasoning ability without requiring language skills.<sup<2/>sup> These instruments help 
             identify gifted students who are English language learners, have language disabilities, or 
-            come from culturally diverse backgrounds.<sup>13</sup>
+            come from culturally diverse backgrounds.<sup<3/>sup>
           </p>
         </div>
 
@@ -92,15 +92,15 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Standardized Achievement Tests</h3>
           <p className="mb-4">
-            Achievement tests measure acquired knowledge and skills in specific academic areas.<sup>14</sup> 
+            Achievement tests measure acquired knowledge and skills in specific academic areas.<sup<4/>sup> 
             Tests like the Woodcock-Johnson Tests of Achievement and the Wechsler Individual Achievement 
-            Test provide detailed information about academic strengths and weaknesses.<sup>15</sup>
+            Test provide detailed information about academic strengths and weaknesses.<sup<5/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Above-Level Testing</h3>
           <p className="mb-4">
             Above-level testing involves administering tests designed for older students to younger, 
-            high-ability students.<sup>16</sup> The Talent Search model, pioneered by Julian Stanley, 
+            high-ability students.<sup<6/>sup> The Talent Search model, pioneered by Julian Stanley, 
             uses the SAT or ACT with middle school students to identify academically talented youth.<sup>[17]</sup> 
             This approach avoids ceiling effects and provides better differentiation among gifted students.<sup>[18]</sup>
           </p>

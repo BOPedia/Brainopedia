@@ -54,7 +54,7 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
             <strong>Epilepsy</strong> is a neurological condition characterized by recurrent seizures caused 
             by sudden, abnormal electrical activity in the brain.<sup>10</sup> As a form of neurodivergence, epilepsy 
             represents a distinct pattern of brain function that creates unique cognitive, sensory, and 
-            perceptual experiences beyond the seizures themselves.<sup>12</sup>
+            perceptual experiences beyond the seizures themselves.<sup<2/>sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -88,8 +88,8 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
           
           <p className="mb-4">
             Epilepsy affects approximately 1 in 26 people at some point in their lives, making it one of 
-            the most common neurological conditions.<sup>13</sup> It involves differences in how neurons communicate, 
-            with groups of brain cells sometimes firing in synchronized bursts that create seizures.<sup>14</sup> Beyond 
+            the most common neurological conditions.<sup<3/>sup> It involves differences in how neurons communicate, 
+            with groups of brain cells sometimes firing in synchronized bursts that create seizures.<sup<4/>sup> Beyond 
             seizures, many individuals with epilepsy experience unique ways of perceiving and processing the 
             world.<sup>5</sup>
           </p>
@@ -97,7 +97,7 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
           <p className="mb-4">
             The condition can affect memory, attention, emotional processing, and sensory experiences, 
             creating a distinct neurological profile that shapes how a person experiences consciousness and 
-            reality.<sup>16</sup> Seizures are categorized based on where they begin in the brain including focal onset 
+            reality.<sup<6/>sup> Seizures are categorized based on where they begin in the brain including focal onset 
             seizures (begin in one area), generalized onset seizures (involve both sides of the brain), and 
             unknown onset seizures.<sup>7</sup> With appropriate treatment and support, people with epilepsy thrive in 
             education, careers, and relationships.<sup>8</sup>
@@ -130,7 +130,7 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
             and retrieval, emotional intensity with deep emotional experiences and insights, heightened awareness and attention to 
             bodily states and environmental factors, and many experience unique creative insights linked to their neurological 
             experiences.<sup>[13][14][15]</sup> Cognitive effects can include memory challenges, attention variations, and processing speed 
-            differences that create a distinct cognitive profile.<sup>16</sup>
+            differences that create a distinct cognitive profile.<sup<6/>sup>
           </p>
         </section>
 

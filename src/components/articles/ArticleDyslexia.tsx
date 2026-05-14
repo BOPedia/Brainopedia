@@ -158,9 +158,9 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <p className="mb-4">
             Dyslexia has a strong genetic component and tends to run in families. Research has identified several genes 
             associated with reading difficulties, though the genetic picture is complex with multiple genes contributing 
-            to the condition.<sup>12</sup> Neuroimaging studies have shown that people with dyslexia show differences in brain activity, 
+            to the condition.<sup<2/>sup> Neuroimaging studies have shown that people with dyslexia show differences in brain activity, 
             particularly in the left hemisphere regions involved in reading, including the phonological processing regions, 
-            the visual word form area, and neural connectivity between reading-related brain regions.<sup>13</sup> These neurological 
+            the visual word form area, and neural connectivity between reading-related brain regions.<sup<3/>sup> These neurological 
             differences explain why reading—which requires integrating visual information with language sounds and meanings—is 
             particularly challenging for people with dyslexia.
           </p>

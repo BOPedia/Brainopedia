@@ -33,7 +33,7 @@ export function DysgraphiaSupport({ setCurrentArticle }: DysgraphiaSupportProps)
           <p className="mb-4">
             Effective management of dysgraphia involves a combination of evidence-based interventions, accommodations, 
             assistive technology, and therapeutic support.<sup>10</sup> With appropriate support, individuals with dysgraphia 
-            can successfully complete academic work and function effectively in daily life.<sup>12</sup>
+            can successfully complete academic work and function effectively in daily life.<sup<2/>sup>
           </p>
         </div>
 
@@ -48,11 +48,11 @@ export function DysgraphiaSupport({ setCurrentArticle }: DysgraphiaSupportProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Handwriting Instruction</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Explicit teaching:</strong> Direct instruction in letter formation and writing mechanics<sup>13</sup></li>
-            <li className="mb-2"><strong>Multi-sensory approach:</strong> Visual, auditory, and kinesthetic learning (e.g., Orton-Gillingham)<sup>14</sup></li>
+            <li className="mb-2"><strong>Explicit teaching:</strong> Direct instruction in letter formation and writing mechanics<sup<3/>sup></li>
+            <li className="mb-2"><strong>Multi-sensory approach:</strong> Visual, auditory, and kinesthetic learning (e.g., Orton-Gillingham)<sup<4/>sup></li>
             <li className="mb-2"><strong>Handwriting Without Tears:</strong> Developmentally appropriate program<sup>5</sup></li>
             <li className="mb-2"><strong>Size Matters Handwriting Program:</strong> Focuses on consistent letter sizing</li>
-            <li className="mb-2"><strong>Daily practice:</strong> Short, frequent practice sessions<sup>16</sup></li>
+            <li className="mb-2"><strong>Daily practice:</strong> Short, frequent practice sessions<sup<6/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Print vs. Cursive</h3>
@@ -68,17 +68,17 @@ export function DysgraphiaSupport({ setCurrentArticle }: DysgraphiaSupportProps)
             <li className="mb-2"><strong>SRSD (Self-Regulated Strategy Development):</strong> Explicit teaching of planning, writing, and revising strategies<sup>9</sup></li>
             <li className="mb-2"><strong>POW + TREE:</strong> Pick ideas, Organize, Write + Topic sentence, Reasons, Ending, Examine<sup>10</sup></li>
             <li className="mb-2"><strong>Graphic organizers:</strong> Visual tools for planning writing</li>
-            <li className="mb-2"><strong>Sentence combining:</strong> Practice with sentence structure<sup>11</sup></li>
-            <li className="mb-2"><strong>Paragraph frames:</strong> Templates for organizing writing<sup>12</sup></li>
+            <li className="mb-2"><strong>Sentence combining:</strong> Practice with sentence structure<sup<1/>sup></li>
+            <li className="mb-2"><strong>Paragraph frames:</strong> Templates for organizing writing<sup<2/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Spelling Instruction</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Systematic phonics instruction<sup>13</sup></li>
+            <li className="mb-2">Systematic phonics instruction<sup<3/>sup></li>
             <li className="mb-2">Word families and patterns</li>
-            <li className="mb-2">Morphology instruction (prefixes, suffixes, roots)<sup>14</sup></li>
+            <li className="mb-2">Morphology instruction (prefixes, suffixes, roots)<sup<4/>sup></li>
             <li className="mb-2">Personalized spelling lists based on error patterns</li>
-            <li className="mb-2">Multi-sensory spelling practice<sup>15</sup></li>
+            <li className="mb-2">Multi-sensory spelling practice<sup<5/>sup></li>
           </ul>
         </div>
 
@@ -87,7 +87,7 @@ export function DysgraphiaSupport({ setCurrentArticle }: DysgraphiaSupportProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Fine Motor Skills Development</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Strengthening exercises:</strong> Hand and finger strength activities<sup>16</sup></li>
+            <li className="mb-2"><strong>Strengthening exercises:</strong> Hand and finger strength activities<sup<6/>sup></li>
             <li className="mb-2"><strong>Dexterity activities:</strong> Manipulating small objects, using tweezers</li>
             <li className="mb-2"><strong>Bilateral coordination:</strong> Using both hands together<sup>[17]</sup></li>
             <li className="mb-2"><strong>In-hand manipulation:</strong> Moving objects within one hand</li>

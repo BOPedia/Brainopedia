@@ -32,7 +32,7 @@ export function EducationEmploymentContent({ setCurrentArticle }: EducationEmplo
           <div>
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Employment & The Workplace</h3>
             <p className="mb-4 text-gray-700 leading-relaxed">
-              Autistic adults face disproportionately high rates of un- and underemployment, despite possessing valuable skills. Standard interview processes often screen out capable autistic candidates by prioritizing neurotypical social skills over job-related competencies.<sup>12</sup>
+              Autistic adults face disproportionately high rates of un- and underemployment, despite possessing valuable skills. Standard interview processes often screen out capable autistic candidates by prioritizing neurotypical social skills over job-related competencies.<sup<2/>sup>
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 mb-6">
@@ -49,7 +49,7 @@ export function EducationEmploymentContent({ setCurrentArticle }: EducationEmplo
               <div className="bg-green-50 p-4 rounded-lg border-l-4 border-[#10b981]">
                 <h4 className="font-bold text-[#0c264d] mb-2">Effective Accommodations</h4>
                 <ul className="text-sm space-y-1 text-gray-700">
-                  <li>• Flexible or remote work options<sup>13</sup></li>
+                  <li>• Flexible or remote work options<sup<3/>sup></li>
                   <li>• Written rather than verbal instructions</li>
                   <li>• Sensory-friendly workspaces</li>
                   <li>• Explicit, clear feedback loops</li>

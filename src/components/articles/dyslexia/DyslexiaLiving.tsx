@@ -48,7 +48,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
           Living with dyslexia presents unique challenges, but with appropriate support and self-understanding, 
           individuals with dyslexia can thrive academically, professionally, and personally.<sup>10</sup> Many 
           highly successful people have dyslexia, demonstrating that it doesn't limit potential—it simply means 
-          learning and working differently.<sup>12</sup>
+          learning and working differently.<sup<2/>sup>
         </p>
       </div>
 
@@ -110,16 +110,16 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
             
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Challenges in Daily Activities</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Reading menus and signs:</strong> Can be slow and effortful in public settings<sup>13</sup></li>
+              <li className="mb-2"><strong>Reading menus and signs:</strong> Can be slow and effortful in public settings<sup<3/>sup></li>
               <li className="mb-2"><strong>Following written directions:</strong> Instructions for assembling furniture, recipes, etc.</li>
-              <li className="mb-2"><strong>Forms and paperwork:</strong> Medical forms, job applications can be overwhelming<sup>14</sup></li>
+              <li className="mb-2"><strong>Forms and paperwork:</strong> Medical forms, job applications can be overwhelming<sup<4/>sup></li>
               <li className="mb-2"><strong>Digital navigation:</strong> Reading websites, emails, text messages</li>
               <li className="mb-2"><strong>Time pressure:</strong> Reading under time constraints particularly difficult<sup>5</sup></li>
             </ul>
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Writing Challenges</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Spelling errors:</strong> Frequent misspellings even in common words<sup>16</sup></li>
+              <li className="mb-2"><strong>Spelling errors:</strong> Frequent misspellings even in common words<sup<6/>sup></li>
               <li className="mb-2"><strong>Email and text communication:</strong> Anxiety about spelling and grammar mistakes</li>
               <li className="mb-2"><strong>Note-taking:</strong> Difficulty capturing information quickly in writing<sup>7</sup></li>
               <li className="mb-2"><strong>Written expression:</strong> Gap between verbal abilities and written output</li>

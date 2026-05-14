@@ -33,7 +33,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
           <p className="mb-4">
             Living with NVLD involves navigating challenges in visual-spatial processing, motor skills, and social 
             interactions while leveraging strong verbal abilities.<sup>10</sup> With understanding, support, and 
-            appropriate accommodations, individuals with NVLD can lead successful and fulfilling lives.<sup>12</sup>
+            appropriate accommodations, individuals with NVLD can lead successful and fulfilling lives.<sup<2/>sup>
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Navigation and Spatial Challenges</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Getting lost:</strong> Difficulty with directions and navigation<sup>13</sup></li>
+            <li className="mb-2"><strong>Getting lost:</strong> Difficulty with directions and navigation<sup<3/>sup></li>
             <li className="mb-2"><strong>Driving:</strong> Challenges learning to drive and navigating</li>
             <li className="mb-2"><strong>Spatial organization:</strong> Organizing physical spaces</li>
             <li className="mb-2"><strong>Solutions:</strong> GPS apps, written directions, landmarks</li>
@@ -56,7 +56,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Motor and Physical Activities</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Clumsiness in daily activities<sup>14</sup></li>
+            <li className="mb-2">Clumsiness in daily activities<sup<4/>sup></li>
             <li className="mb-2">Difficulty with sports and physical recreation</li>
             <li className="mb-2">Challenges with fine motor tasks (cooking, crafts)</li>
             <li className="mb-2">Solutions: Choose non-competitive physical activities, focus on enjoyment</li>
@@ -76,7 +76,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Elementary School</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Verbal strengths shine:</strong> Reading decoding, vocabulary<sup>16</sup></li>
+            <li className="mb-2"><strong>Verbal strengths shine:</strong> Reading decoding, vocabulary<sup<6/>sup></li>
             <li className="mb-2"><strong>Challenges emerge:</strong> Handwriting, math, social difficulties</li>
             <li className="mb-2"><strong>Support needs:</strong> IEP or 504 plan with accommodations</li>
             <li className="mb-2"><strong>Building confidence:</strong> Focus on verbal strengths</li>
@@ -117,7 +117,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Writing and journalism:</strong> Verbal expression, research, editing</li>
-            <li className="mb-2"><strong>Law:</strong> Verbal reasoning, advocacy, legal writing<sup>11</sup></li>
+            <li className="mb-2"><strong>Law:</strong> Verbal reasoning, advocacy, legal writing<sup<1/>sup></li>
             <li className="mb-2"><strong>Teaching:</strong> Verbal instruction, especially language arts, history</li>
             <li className="mb-2"><strong>Counseling/therapy:</strong> Verbal communication, helping others</li>
             <li className="mb-2"><strong>Business:</strong> Roles emphasizing communication over spatial tasks</li>
@@ -126,7 +126,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Workplace Accommodations</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Written instructions and procedures<sup>12</sup></li>
+            <li className="mb-2">Written instructions and procedures<sup<2/>sup></li>
             <li className="mb-2">Verbal clarification of visual materials</li>
             <li className="mb-2">Assistive technology (GPS, organizational apps)</li>
             <li className="mb-2">Flexible work arrangements</li>
@@ -136,7 +136,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Disclosure Decisions</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Optional to disclose NVLD to employers</li>
-            <li className="mb-2">May be needed for requesting accommodations<sup>13</sup></li>
+            <li className="mb-2">May be needed for requesting accommodations<sup<3/>sup></li>
             <li className="mb-2">Consider job requirements and culture</li>
             <li className="mb-2">Protected under ADA when requesting accommodations</li>
           </ul>
@@ -153,7 +153,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Friendships</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Finding true friends:</strong> People who appreciate you for who you are<sup>14</sup></li>
+            <li className="mb-2"><strong>Finding true friends:</strong> People who appreciate you for who you are<sup<4/>sup></li>
             <li className="mb-2"><strong>Shared interests:</strong> Connect through common verbal interests</li>
             <li className="mb-2"><strong>Direct communication:</strong> Ask directly when missing social cues</li>
             <li className="mb-2"><strong>Quality over quantity:</strong> Few close friends may be more fulfilling</li>
@@ -161,7 +161,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Romantic Relationships</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Open communication about needs and challenges<sup>15</sup></li>
+            <li className="mb-2">Open communication about needs and challenges<sup<5/>sup></li>
             <li className="mb-2">Partners who appreciate verbal connection</li>
             <li className="mb-2">Being explicit rather than relying on nonverbal cues</li>
             <li className="mb-2">Finding someone understanding and patient</li>
@@ -169,7 +169,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Family Dynamics</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Educating family members about NVLD<sup>16</sup></li>
+            <li className="mb-2">Educating family members about NVLD<sup<6/>sup></li>
             <li className="mb-2">Asking for support when needed</li>
             <li className="mb-2">Appreciating family understanding</li>
           </ul>

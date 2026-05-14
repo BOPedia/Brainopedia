@@ -31,9 +31,9 @@ export function MentalHealthContent({ setCurrentArticle }: MentalHealthContentPr
 
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li><strong>Anxiety:</strong> 40-50% prevalence. Often related to social unpredictability or sensory overwhelm.<sup>10</sup></li>
-              <li><strong>Depression:</strong> 20-37% prevalence. Frequently linked to the exhaustion of "masking."<sup>12</sup></li>
-              <li><strong>ADHD:</strong> 30-60% prevalence. Significant overlap in executive function challenges.<sup>13</sup></li>
-              <li><strong>OCD:</strong> 17-37% prevalence. Distinct from, but often co-occurring with, autistic repetitive behaviors.<sup>14</sup></li>
+              <li><strong>Depression:</strong> 20-37% prevalence. Frequently linked to the exhaustion of "masking."<sup<2/>sup></li>
+              <li><strong>ADHD:</strong> 30-60% prevalence. Significant overlap in executive function challenges.<sup<3/>sup></li>
+              <li><strong>OCD:</strong> 17-37% prevalence. Distinct from, but often co-occurring with, autistic repetitive behaviors.<sup<4/>sup></li>
               <li><strong>Sleep Disorders:</strong> 40-83% prevalence. Affects overall emotional regulation and daily functioning.<sup>5</sup></li>
             </ul>
           </div>

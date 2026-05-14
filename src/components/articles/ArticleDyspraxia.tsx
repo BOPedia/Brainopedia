@@ -53,7 +53,7 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
           <p>
             <strong>Dyspraxia</strong>, also known as <strong>Developmental Coordination Disorder (DCD)</strong>, 
             is a neurological condition that affects physical coordination and movement.<sup>10</sup> Individuals with dyspraxia 
-            may appear clumsy or have difficulty with tasks requiring motor planning and coordination.<sup>12</sup>
+            may appear clumsy or have difficulty with tasks requiring motor planning and coordination.<sup<2/>sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -87,14 +87,14 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
           
           <p className="mb-4">
             Dyspraxia affects approximately 5-6% of children, with males being more commonly diagnosed than females, 
-            though this may reflect diagnostic bias.<sup>13</sup> The condition involves difficulties with motor planning—the 
-            process of planning and executing coordinated movements.<sup>14</sup> This affects not only physical activities but 
+            though this may reflect diagnostic bias.<sup<3/>sup> The condition involves difficulties with motor planning—the 
+            process of planning and executing coordinated movements.<sup<4/>sup> This affects not only physical activities but 
             can also impact speech, organization, and thought processes.<sup>5</sup>
           </p>
           
           <p className="mb-4">
             The term "dyspraxia" comes from the Greek 
-            "dys" (difficulty) and "praxis" (action or movement).<sup>16</sup> The condition is present from birth and persists 
+            "dys" (difficulty) and "praxis" (action or movement).<sup<6/>sup> The condition is present from birth and persists 
             throughout life, though individuals often develop coping strategies and their symptoms may become less 
             apparent over time.<sup>7</sup> Dyspraxia often co-occurs with other neurodevelopmental conditions such as ADHD, 
             dyslexia, and autism spectrum disorder.<sup>8</sup>
@@ -119,12 +119,12 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
           
           <p className="mb-4">
             Some individuals also experience verbal dyspraxia 
-            (apraxia of speech), which causes difficulty coordinating movements needed for speech.<sup>11</sup> Cognitive and perceptual 
+            (apraxia of speech), which causes difficulty coordinating movements needed for speech.<sup<1/>sup> Cognitive and perceptual 
             differences may include challenges with organization and planning, time management, short-term memory, following 
             multi-step instructions, and visual-spatial perception.<sup>[12][13]</sup> Many individuals with dyspraxia demonstrate strengths in 
-            verbal skills, creativity, empathy, and strategic thinking.<sup>14</sup> Additional characteristics can include sensitivity to 
+            verbal skills, creativity, empathy, and strategic thinking.<sup<4/>sup> Additional characteristics can include sensitivity to 
             sensory input, fatigue from the extra effort required for motor tasks, and emotional impacts such as frustration 
-            or lowered self-esteem.<sup>15</sup>
+            or lowered self-esteem.<sup<5/>sup>
           </p>
         </section>
 
@@ -139,7 +139,7 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
           
           <p className="mb-4">
             Research suggests that dyspraxia results from differences in how the brain processes information required 
-            for movement planning and coordination.<sup>16</sup> Brain imaging studies have shown differences in areas involved in 
+            for movement planning and coordination.<sup<6/>sup> Brain imaging studies have shown differences in areas involved in 
             motor control, including the cerebellum, basal ganglia, and motor cortex.<sup>[17][18]</sup> These neurological differences 
             affect the brain's ability to plan and execute coordinated movements effectively.<sup>[19]</sup>
           </p>

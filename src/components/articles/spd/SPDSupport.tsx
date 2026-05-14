@@ -43,12 +43,12 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
             Supporting individuals with Sensory Processing Disorder involves a multi-faceted approach that addresses both the 
             underlying neurological differences and the functional impacts on daily life.<sup>[1][2]</sup> Intervention typically 
             combines direct therapy to improve sensory processing, environmental modifications to support sensory needs, and 
-            strategies to help individuals understand and manage their sensory experiences.<sup>13</sup>
+            strategies to help individuals understand and manage their sensory experiences.<sup<3/>sup>
           </p>
           <p className="mb-4">
             The goal of intervention is not to "cure" SPD but to help individuals develop better sensory processing skills, create 
             environments that support their sensory needs, and build strategies for self-regulation and participation in meaningful 
-            activities.<sup>14</sup> A comprehensive support plan is individualized to the person's unique sensory profile and 
+            activities.<sup<4/>sup> A comprehensive support plan is individualized to the person's unique sensory profile and 
             functional goals.<sup>5</sup>
           </p>
         </div>
@@ -108,13 +108,13 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Sensory Diets</h3>
           <p className="mb-4">
             A "sensory diet" is a personalized schedule of sensory activities designed to help individuals maintain optimal 
-            arousal and attention levels throughout the day.<sup>14</sup> Activities are chosen based on the individual's 
+            arousal and attention levels throughout the day.<sup<4/>sup> Activities are chosen based on the individual's 
             sensory profile and may include:
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Alerting activities: crunchy snacks, bright lights, upbeat music, jumping</li>
             <li className="mb-2">Calming activities: dim lighting, soft music, slow rocking, deep breathing, heavy work (e.g., 
-            chewing gum, rhythmic movement, proprioceptive input)<sup>12</sup></li>
+            chewing gum, rhythmic movement, proprioceptive input)<sup<2/>sup></li>
             <li className="mb-2">Organizing activities: proprioceptive input like pushing/pulling, rhythmic activities</li>
           </ul>
 
@@ -139,7 +139,7 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Tactile: playdough, sand, water play, different textures</li>
             <li className="mb-2">Vestibular: swinging, spinning, rolling, rocking</li>
-            <li className="mb-2">Heavy work: pushing, pulling, carrying weighted objects, wall pushes<sup>12</sup></li>
+            <li className="mb-2">Heavy work: pushing, pulling, carrying weighted objects, wall pushes<sup<2/>sup></li>
             <li className="mb-2">Oral motor: chewing, blowing bubbles, drinking through straws</li>
             <li className="mb-2">Visual: calming visual input, reducing visual clutter</li>
             <li className="mb-2">Proprioceptive: yoga, animal walks, jumping on trampoline<sup>[18]</sup></li>

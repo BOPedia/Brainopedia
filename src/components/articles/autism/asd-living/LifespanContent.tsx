@@ -57,7 +57,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
               <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
                 <li>Navigating Special Education (IEPs/504 Plans)</li>
                 <li>Social difficulties often become more apparent</li>
-                <li>Many develop coping mechanisms, leading to masking and autistic burnout<sup>12</sup></li>
+                <li>Many develop coping mechanisms, leading to masking and autistic burnout<sup<2/>sup></li>
               </ul>
             </div>
 
@@ -70,7 +70,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
                 A complex period combining puberty with changing social landscapes.
               </p>
               <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
-                <li>High rates of co-occurring anxiety and depression emerge<sup>13</sup></li>
+                <li>High rates of co-occurring anxiety and depression emerge<sup<3/>sup></li>
                 <li>Executive functioning demands increase significantly</li>
                 <li>Critical period for transition planning toward adulthood</li>
               </ul>
@@ -85,7 +85,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
                 Autism is a lifelong condition; autistic children become autistic adults.
               </p>
               <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
-                <li>Navigating higher education and employment<sup>14</sup></li>
+                <li>Navigating higher education and employment<sup<4/>sup></li>
                 <li>Relationships: Friendships, romantic partnerships, and family dynamics</li>
                 <li>Self-understanding: Late diagnosis often leads to profound self-discovery</li>
               </ul>

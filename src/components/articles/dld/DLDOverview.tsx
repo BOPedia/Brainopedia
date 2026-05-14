@@ -34,7 +34,7 @@ export function DLDOverview({ setCurrentArticle }: DLDOverviewProps) {
             Developmental Language Disorder (DLD) is a neurodevelopmental condition affecting the acquisition and 
             use of language across spoken, written, and sign modalities.<sup>10</sup> Children with DLD have significant 
             difficulties learning and using language that cannot be explained by other conditions such as autism, 
-            intellectual disability, or hearing loss.<sup>12</sup>
+            intellectual disability, or hearing loss.<sup<2/>sup>
           </p>
         </div>
 
@@ -50,13 +50,13 @@ export function DLDOverview({ setCurrentArticle }: DLDOverviewProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Definition and Core Concept</h3>
           <p className="mb-4">
             DLD is characterized by difficulties with language that persist despite adequate opportunity for learning 
-            and in the absence of other developmental conditions that could explain the language difficulties.<sup>13</sup> 
+            and in the absence of other developmental conditions that could explain the language difficulties.<sup<3/>sup> 
             The condition affects understanding (receptive language), expression (expressive language), or both.
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The CATALISE Consensus</h3>
           <p className="mb-4">
-            In 2017, the CATALISE consortium reached international consensus on terminology and criteria for DLD:<sup>14</sup>
+            In 2017, the CATALISE consortium reached international consensus on terminology and criteria for DLD:<sup<4/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Terminology:</strong> "Developmental Language Disorder" replaces "Specific Language Impairment (SLI)"</li>
@@ -66,7 +66,7 @@ export function DLDOverview({ setCurrentArticle }: DLDOverviewProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Not Just "Late Talking"</h3>
           <p className="mb-4">
-            DLD is a persistent condition, not a developmental delay that children simply outgrow.<sup>16</sup> While 
+            DLD is a persistent condition, not a developmental delay that children simply outgrow.<sup<6/>sup> While 
             some late talkers catch up, children with DLD continue to struggle with language throughout childhood 
             and often into adulthood.
           </p>
@@ -106,15 +106,15 @@ export function DLDOverview({ setCurrentArticle }: DLDOverviewProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Common is DLD?</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Prevalence:</strong> Affects approximately 7-10% of children<sup>11</sup></li>
+            <li className="mb-2"><strong>Prevalence:</strong> Affects approximately 7-10% of children<sup<1/>sup></li>
             <li className="mb-2"><strong>Comparison:</strong> More common than autism (approximately 1-2%)</li>
-            <li className="mb-2"><strong>Awareness:</strong> Despite prevalence, DLD remains under-recognized<sup>12</sup></li>
+            <li className="mb-2"><strong>Awareness:</strong> Despite prevalence, DLD remains under-recognized<sup<2/>sup></li>
             <li className="mb-2"><strong>Every classroom:</strong> Statistically, 1-2 children in every classroom have DLD</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Distribution</h3>
           <p className="mb-4">
-            DLD is more common in boys than girls, with ratios ranging from 2:1 to 3:1 depending on the study.<sup>13</sup>
+            DLD is more common in boys than girls, with ratios ranging from 2:1 to 3:1 depending on the study.<sup<3/>sup>
           </p>
         </div>
 
@@ -129,14 +129,14 @@ export function DLDOverview({ setCurrentArticle }: DLDOverviewProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Evolution of Terminology</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Historical terms:</strong> "Specific Language Impairment (SLI)," "Language Delay," "Language Disorder"<sup>14</sup></li>
+            <li className="mb-2"><strong>Historical terms:</strong> "Specific Language Impairment (SLI)," "Language Delay," "Language Disorder"<sup<4/>sup></li>
             <li className="mb-2"><strong>2017 consensus:</strong> International agreement on "Developmental Language Disorder"</li>
-            <li className="mb-2"><strong>Rationale:</strong> More inclusive, less stigmatizing, clearer terminology<sup>15</sup></li>
+            <li className="mb-2"><strong>Rationale:</strong> More inclusive, less stigmatizing, clearer terminology<sup<5/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Why the Change?</h3>
           <p className="mb-4">
-            The term "Specific Language Impairment" was problematic because:<sup>16</sup>
+            The term "Specific Language Impairment" was problematic because:<sup<6/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">"Specific" implied language was the only area affected (often not true)</li>

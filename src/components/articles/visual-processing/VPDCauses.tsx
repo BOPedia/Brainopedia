@@ -34,7 +34,7 @@ export function VPDCauses({ setCurrentArticle }: VPDCausesProps) {
             Visual Processing Disorder arises from differences in how the brain processes visual information 
             rather than problems with the eyes themselves.<sup>10</sup> Understanding the causes involves 
             examining neurological development, genetic factors, and various influences on visual system 
-            function.<sup>12</sup>
+            function.<sup<2/>sup>
           </p>
         </div>
 
@@ -49,15 +49,15 @@ export function VPDCauses({ setCurrentArticle }: VPDCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Eyes vs. Brain</h3>
           <p className="mb-4">
-            The eyes function like cameras, capturing visual information.<sup>13</sup> Visual processing 
-            occurs in the brain—interpreting, organizing, and making sense of what the eyes see.<sup>14</sup> 
+            The eyes function like cameras, capturing visual information.<sup<3/>sup> Visual processing 
+            occurs in the brain—interpreting, organizing, and making sense of what the eyes see.<sup<4/>sup> 
             VPD involves brain-based differences, not eye-based problems.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Normal Vision with Processing Difficulties</h3>
           <p className="mb-4">
             Individuals with VPD typically have normal visual acuity—20/20 vision or correctable to normal 
-            with glasses.<sup>16</sup> The eyes see clearly; the brain processes differently.<sup>7</sup> 
+            with glasses.<sup<6/>sup> The eyes see clearly; the brain processes differently.<sup>7</sup> 
             This distinction is crucial for understanding VPD's origins.<sup>8</sup>
           </p>
         </div>
@@ -70,21 +70,21 @@ export function VPDCauses({ setCurrentArticle }: VPDCausesProps) {
             Visual information travels from the retina through the optic nerve to various brain regions.<sup>9</sup> 
             The lateral geniculate nucleus relays information to the visual cortex.<sup>10</sup> From there, 
             two major pathways process visual information: the ventral stream (object recognition, "what" 
-            pathway) and the dorsal stream (spatial processing, "where" pathway).<sup>11</sup>
+            pathway) and the dorsal stream (spatial processing, "where" pathway).<sup<1/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Dorsal and Ventral Stream Differences</h3>
           <p className="mb-4">
             The ventral stream, projecting to the temporal lobe, processes object identification, form, and 
-            color.<sup>12</sup> The dorsal stream, projecting to the parietal lobe, processes spatial 
-            relationships, motion, and visual-motor integration.<sup>13</sup> Differences in either pathway 
-            can contribute to specific VPD profiles.<sup>14</sup>
+            color.<sup<2/>sup> The dorsal stream, projecting to the parietal lobe, processes spatial 
+            relationships, motion, and visual-motor integration.<sup<3/>sup> Differences in either pathway 
+            can contribute to specific VPD profiles.<sup<4/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Occipital, Parietal, and Temporal Lobe Functions</h3>
           <p className="mb-4">
-            The occipital lobe processes basic visual features like edges, angles, and colors.<sup>15</sup> 
-            The parietal lobe integrates spatial information and guides visual-motor actions.<sup>16</sup> 
+            The occipital lobe processes basic visual features like edges, angles, and colors.<sup<5/>sup> 
+            The parietal lobe integrates spatial information and guides visual-motor actions.<sup<6/>sup> 
             The temporal lobe recognizes complex objects and faces.<sup>[17]</sup> Atypical development or 
             function in these regions underlies VPD.<sup>[18]</sup>
           </p>

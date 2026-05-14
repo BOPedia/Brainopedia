@@ -34,7 +34,7 @@ export function VPDLiving({ setCurrentArticle }: VPDLivingProps) {
             Living with Visual Processing Disorder involves navigating a visually-oriented world with different 
             visual processing abilities.<sup>10</sup> While VPD presents challenges, understanding, appropriate 
             support, and effective strategies enable individuals to thrive academically, professionally, and 
-            personally.<sup>12</sup>
+            personally.<sup<2/>sup>
           </p>
         </div>
 
@@ -49,15 +49,15 @@ export function VPDLiving({ setCurrentArticle }: VPDLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Visual Fatigue</h3>
           <p className="mb-4">
-            Tasks requiring visual processing are mentally exhausting.<sup>13</sup> Reading, writing, navigating 
+            Tasks requiring visual processing are mentally exhausting.<sup<3/>sup> Reading, writing, navigating 
             visually complex environments, or detailed visual work depletes energy more quickly than for those 
-            without VPD.<sup>14</sup> Managing energy and taking breaks prevents burnout.<sup>5</sup>
+            without VPD.<sup<4/>sup> Managing energy and taking breaks prevents burnout.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Navigation and Spatial Awareness</h3>
           <p className="mb-4">
             Visual-spatial processing challenges affect navigation—getting lost in familiar places, difficulty 
-            following maps, or challenges with spatial relationships in parking or crowded spaces.<sup>16</sup> 
+            following maps, or challenges with spatial relationships in parking or crowded spaces.<sup<6/>sup> 
             Extra time, GPS assistance, and landmark-based navigation help.<sup>7</sup>
           </p>
 
@@ -72,7 +72,7 @@ export function VPDLiving({ setCurrentArticle }: VPDLivingProps) {
           <p className="mb-4">
             Daily tasks requiring visual-motor coordination—buttoning, tying, cutting, assembling items—take 
             longer and require more effort.<sup>10</sup> Adaptive equipment, alternatives (Velcro instead 
-            of buttons), or simply allowing extra time helps.<sup>11</sup>
+            of buttons), or simply allowing extra time helps.<sup<1/>sup>
           </p>
         </div>
 
@@ -82,15 +82,15 @@ export function VPDLiving({ setCurrentArticle }: VPDLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Academic Challenges</h3>
           <p className="mb-4">
             School heavily emphasizes visual learning—reading textbooks, worksheets, copying from boards, 
-            handwriting.<sup>12</sup> Students with VPD must work harder than peers for the same outcomes.<sup>13</sup> 
-            This effort disparity is often invisible to others.<sup>14</sup>
+            handwriting.<sup<2/>sup> Students with VPD must work harder than peers for the same outcomes.<sup<3/>sup> 
+            This effort disparity is often invisible to others.<sup<4/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Subject-Specific Impacts</h3>
           <p className="mb-4">
             Reading-heavy subjects, math (especially geometry), and classes requiring detailed visual work 
-            are most affected.<sup>15</sup> Science diagrams, geography maps, and art classes may be 
-            challenging.<sup>16</sup> However, verbal subjects and hands-on learning may be relative strengths.<sup>[17]</sup>
+            are most affected.<sup<5/>sup> Science diagrams, geography maps, and art classes may be 
+            challenging.<sup<6/>sup> However, verbal subjects and hands-on learning may be relative strengths.<sup>[17]</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Homework Burden</h3>

@@ -77,7 +77,7 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
             <strong>Visual Processing Disorder</strong> is a neurological condition where the brain has 
             difficulty interpreting and making sense of visual information, despite normal eyesight.<sup>10</sup> The 
             eyes see clearly, but the brain processes what is seen differently—creating a unique visual 
-            neurotype that affects how individuals perceive and interact with the visual world.<sup>12</sup>
+            neurotype that affects how individuals perceive and interact with the visual world.<sup<2/>sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -110,16 +110,16 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           
           <p className="mb-4">
             Visual processing disorders occur when the brain's visual pathways—responsible for 
-            interpreting, organizing, and using visual information—function differently.<sup>13</sup> This is distinct 
+            interpreting, organizing, and using visual information—function differently.<sup<3/>sup> This is distinct 
             from vision problems like nearsightedness or farsightedness, which involve the eye's ability 
-            to focus. Visual processing involves what happens after the eyes send information to the brain.<sup>14</sup>
+            to focus. Visual processing involves what happens after the eyes send information to the brain.<sup<4/>sup>
           </p>
           
           <p className="mb-4">
             These differences can affect learning, reading, spatial navigation, hand-eye coordination, 
             and daily tasks that require visual interpretation.<sup>5</sup> Visual processing disorders often co-occur 
             with other neurodivergent conditions like dyslexia, ADHD, or autism, but can also exist 
-            independently.<sup>16</sup> Visual processing encompasses several distinct skills including visual discrimination, 
+            independently.<sup<6/>sup> Visual processing encompasses several distinct skills including visual discrimination, 
             visual figure-ground, visual sequencing, visual memory, visual-spatial processing, visual-motor 
             integration, and visual closure.<sup>7</sup>
           </p>
@@ -147,7 +147,7 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
             Additional characteristics include difficulty understanding spatial relationships and position causing confusion with 
             directions and poor spatial awareness (visual-spatial processing), difficulty coordinating visual information 
             with motor movements affecting handwriting and hand-eye coordination (visual-motor integration), and difficulty 
-            recognizing objects when only part is visible (visual closure).<sup>11</sup> Common experiences include reading difficulties 
+            recognizing objects when only part is visible (visual closure).<sup<1/>sup> Common experiences include reading difficulties 
             despite normal vision, slow reading speed, poor handwriting, difficulty with math involving spatial relationships, 
             clumsiness, trouble with organization, reversing letters and numbers, and overwhelm in visually busy environments.<sup>[12][13]</sup>
           </p>
@@ -165,8 +165,8 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           <p className="mb-4">
             Visual processing disorder is distinct from eyesight problems—it is not related to the eye's ability to see 
             clearly, but rather to how the brain interprets and organizes visual information after the eyes send it to 
-            the brain.<sup>14</sup> Research suggests neurological differences in the brain's visual pathways responsible for interpreting, 
-            organizing, and using visual information.<sup>15</sup>
+            the brain.<sup<4/>sup> Research suggests neurological differences in the brain's visual pathways responsible for interpreting, 
+            organizing, and using visual information.<sup<5/>sup>
           </p>
           
           <p className="mb-4">

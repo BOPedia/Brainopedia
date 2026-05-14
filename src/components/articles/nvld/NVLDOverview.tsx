@@ -34,7 +34,7 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
             Nonverbal Learning Disability (NVLD), also called Nonverbal Learning Disorder, is a neurodevelopmental 
             condition characterized by strengths in verbal abilities alongside significant challenges in visual-spatial 
             processing, motor skills, and social perception.<sup>10</sup> Despite strong language skills, individuals 
-            with NVLD struggle with understanding nonverbal information and spatial relationships.<sup>12</sup>
+            with NVLD struggle with understanding nonverbal information and spatial relationships.<sup<2/>sup>
           </p>
         </div>
 
@@ -50,13 +50,13 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Definition and Core Concept</h3>
           <p className="mb-4">
             NVLD represents a pattern of neuropsychological assets and deficits first comprehensively described 
-            by Byron Rourke in the 1980s.<sup>13</sup> The condition involves a specific profile where verbal 
+            by Byron Rourke in the 1980s.<sup<3/>sup> The condition involves a specific profile where verbal 
             skills are relatively intact or even advanced, while nonverbal abilities are significantly impaired.
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Verbal-Nonverbal Discrepancy</h3>
           <p className="mb-4">
-            The hallmark of NVLD is a significant split between verbal and nonverbal abilities:<sup>14</sup>
+            The hallmark of NVLD is a significant split between verbal and nonverbal abilities:<sup<4/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Verbal strengths:</strong> Strong vocabulary, verbal memory, reading decoding</li>
@@ -68,7 +68,7 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
           <p className="mb-4">
             NVLD is not currently recognized as an official diagnosis in the DSM-5 or ICD-11.<sup>5</sup> However, 
             it is widely used by neuropsychologists and educators to describe a specific pattern of learning difficulties. 
-            Research is ongoing regarding its classification and diagnostic criteria.<sup>16</sup>
+            Research is ongoing regarding its classification and diagnostic criteria.<sup<6/>sup>
           </p>
         </div>
 
@@ -109,12 +109,12 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Strengths in NVLD</h2>
           
           <p className="mb-4">
-            Individuals with NVLD typically have notable verbal strengths:<sup>11</sup>
+            Individuals with NVLD typically have notable verbal strengths:<sup<1/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Advanced vocabulary:</strong> Rich, sophisticated word knowledge</li>
             <li className="mb-2"><strong>Strong rote verbal memory:</strong> Excellent at memorizing verbal information</li>
-            <li className="mb-2"><strong>Early reading skills:</strong> Often learn to read early and decode well<sup>12</sup></li>
+            <li className="mb-2"><strong>Early reading skills:</strong> Often learn to read early and decode well<sup<2/>sup></li>
             <li className="mb-2"><strong>Verbal reasoning:</strong> Good at verbal problem-solving</li>
             <li className="mb-2"><strong>Attention to detail:</strong> Notice verbal details and patterns</li>
           </ul>
@@ -131,7 +131,7 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Common is NVLD?</h3>
           <p className="mb-4">
-            Prevalence estimates are difficult because NVLD is not an official diagnosis:<sup>13</sup>
+            Prevalence estimates are difficult because NVLD is not an official diagnosis:<sup<3/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Estimated to affect 1-3% of the general population</li>
@@ -142,7 +142,7 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Distribution</h3>
           <p className="mb-4">
             Unlike many neurodevelopmental conditions, NVLD appears to affect males and females relatively equally, 
-            or may even be slightly more common in females.<sup>14</sup>
+            or may even be slightly more common in females.<sup<4/>sup>
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">NVLD vs. Autism Spectrum Disorder</h3>
           <p className="mb-4">
-            NVLD and ASD share some similarities, particularly in social challenges:<sup>15</sup>
+            NVLD and ASD share some similarities, particularly in social challenges:<sup<5/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Similarities:</strong> Social difficulties, literal thinking, preference for routines</li>
@@ -161,7 +161,7 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">NVLD vs. Dyslexia</h3>
           <p className="mb-4">
-            NVLD is sometimes considered the "opposite" of dyslexia:<sup>16</sup>
+            NVLD is sometimes considered the "opposite" of dyslexia:<sup<6/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Dyslexia:</strong> Verbal/language difficulties, visual-spatial strengths</li>

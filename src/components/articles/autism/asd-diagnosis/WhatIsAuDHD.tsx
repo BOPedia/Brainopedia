@@ -41,9 +41,9 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         
         <ul className="text-sm space-y-2 ml-6 mb-4">
           <li className="mb-2">• <strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup>10</sup></li>
-          <li className="mb-2">• <strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup>12</sup></li>
+          <li className="mb-2">• <strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup<2/>sup></li>
           <li className="mb-2">• Until the DSM-5 (2013), dual diagnosis was not officially permitted, leading to historical underdiagnosis</li>
-          <li className="mb-2">• Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup>13</sup></li>
+          <li className="mb-2">• Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup<3/>sup></li>
         </ul>
 
         <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
@@ -247,7 +247,7 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
           <strong>Best Practice:</strong> Comprehensive evaluation should systematically assess for both conditions, 
           especially when initial interventions for one diagnosis don't fully address the individual's challenges. 
           Studies show that many autistic individuals benefit from ADHD-specific interventions once ADHD is 
-          properly identified.<sup>14</sup>
+          properly identified.<sup<4/>sup>
         </p>
       </div>
 

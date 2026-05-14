@@ -201,7 +201,7 @@ export function ADHDSymptomsTabInattention() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Life Success and Relationship Satisfaction</h4>
                   <p className="text-sm mb-2">
                     Following participants over a 15-year period, research found that inattention symptoms in early/middle adulthood 
-                    were consistently associated with poorer life success, including lower career and relationship satisfaction<sup style={{color: '#10b981'}}>12</sup>. 
+                    were consistently associated with poorer life success, including lower career and relationship satisfaction<sup style={{color: '#10b981'}}<2/>sup>. 
                     Inattention emerged as a more consistent predictor of negative life outcomes in middle adulthood, while the impact 
                     of hyperactivity/impulsivity was more complex and less stable.
                   </p>
@@ -211,8 +211,8 @@ export function ADHDSymptomsTabInattention() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Financial Distress and Welfare Receipt</h4>
                   <p className="text-sm mb-2">
                     Research highlights that ADHD, particularly with inattention and executive dysfunction, leads to higher financial 
-                    distress, including increased debt and default rates<sup style={{color: '#10b981'}}>13</sup>. Additionally, 
-                    inattention and aggressive behaviors in childhood predicted adult welfare receipt, whereas hyperactivity did not<sup style={{color: '#10b981'}}>14</sup>.
+                    distress, including increased debt and default rates<sup style={{color: '#10b981'}}<3/>sup>. Additionally, 
+                    inattention and aggressive behaviors in childhood predicted adult welfare receipt, whereas hyperactivity did not<sup style={{color: '#10b981'}}<4/>sup>.
                   </p>
                 </div>
 
@@ -231,7 +231,7 @@ export function ADHDSymptomsTabInattention() {
                     <p className="text-sm">
                       <strong>Important Exception:</strong> While inattention is the stronger predictor overall, research indicates 
                       that hyperactivity/impulsivity can still be a significant predictor for specific, immediate work-related issues 
-                      like receiving disciplinary action<sup style={{color: '#10b981'}}>12</sup>.
+                      like receiving disciplinary action<sup style={{color: '#10b981'}}<2/>sup>.
                     </p>
                   </div>
                 </div>

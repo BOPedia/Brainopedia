@@ -34,7 +34,7 @@ export function GiftednessSupport({ setCurrentArticle }: GiftednessSupportProps)
             Supporting gifted individuals requires differentiated educational programming, social-emotional 
             support, and advocacy to ensure their unique needs are met.<sup>10</sup> Effective interventions 
             address both cognitive and affective development while fostering talent development and personal 
-            well-being.<sup>12</sup>
+            well-being.<sup<2/>sup>
           </p>
         </div>
 
@@ -49,16 +49,16 @@ export function GiftednessSupport({ setCurrentArticle }: GiftednessSupportProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Grade Acceleration</h3>
           <p className="mb-4">
-            Grade-skipping allows students to move ahead one or more grade levels.<sup>13</sup> Research 
+            Grade-skipping allows students to move ahead one or more grade levels.<sup<3/>sup> Research 
             consistently shows that appropriately selected students benefit academically and socially from 
-            grade acceleration, with no long-term negative effects.<sup>14</sup> The Iowa Acceleration Scale 
+            grade acceleration, with no long-term negative effects.<sup<4/>sup> The Iowa Acceleration Scale 
             provides a systematic decision-making framework for considering whole-grade acceleration.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Subject-Specific Acceleration</h3>
           <p className="mb-4">
             Single-subject acceleration allows students to advance in one subject while remaining with age peers 
-            for other subjects.<sup>16</sup> This approach is particularly effective for students with domain-specific 
+            for other subjects.<sup<6/>sup> This approach is particularly effective for students with domain-specific 
             talents, such as mathematics or reading.<sup>7</sup>
           </p>
 
@@ -73,14 +73,14 @@ export function GiftednessSupport({ setCurrentArticle }: GiftednessSupportProps)
           <p className="mb-4">
             Compacting eliminates material students have already mastered, freeing time for advanced content or 
             enrichment activities.<sup>10</sup> Research demonstrates that most gifted students can master 
-            40-50% of regular curriculum material before it's taught.<sup>11</sup>
+            40-50% of regular curriculum material before it's taught.<sup<1/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Credit by Examination and Advanced Placement</h3>
           <p className="mb-4">
             Advanced Placement (AP), International Baccalaureate (IB), and dual enrollment programs provide 
-            access to college-level content in high school.<sup>12</sup> These programs offer academic challenge 
-            and may result in college credit.<sup>13</sup>
+            access to college-level content in high school.<sup<2/>sup> These programs offer academic challenge 
+            and may result in college credit.<sup<3/>sup>
           </p>
         </div>
 
@@ -90,14 +90,14 @@ export function GiftednessSupport({ setCurrentArticle }: GiftednessSupportProps)
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Differentiated Instruction</h3>
           <p className="mb-4">
             Differentiation modifies content, process, product, or learning environment to match student readiness, 
-            interests, and learning profiles.<sup>14</sup> For gifted learners, this includes providing greater 
-            depth, complexity, and abstraction in content, as well as opportunities for independent investigation.<sup>15</sup>
+            interests, and learning profiles.<sup<4/>sup> For gifted learners, this includes providing greater 
+            depth, complexity, and abstraction in content, as well as opportunities for independent investigation.<sup<5/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Enrichment Clusters and Schoolwide Enrichment</h3>
           <p className="mb-4">
             The Schoolwide Enrichment Model (SEM) provides enrichment opportunities for all students while offering 
-            more intensive options for high-ability learners.<sup>16</sup> Type III enrichment involves student-initiated 
+            more intensive options for high-ability learners.<sup<6/>sup> Type III enrichment involves student-initiated 
             investigations of real problems using authentic methods.<sup>[17]</sup>
           </p>
 

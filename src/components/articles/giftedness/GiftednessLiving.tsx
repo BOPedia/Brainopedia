@@ -34,7 +34,7 @@ export function GiftednessLiving({ setCurrentArticle }: GiftednessLivingProps) {
             Living as a gifted individual involves navigating unique challenges and opportunities across the 
             lifespan.<sup>10</sup> Understanding and accepting one's giftedness, finding appropriate challenges, 
             developing meaningful relationships, and making life choices that honor both abilities and values 
-            are key aspects of the gifted experience.<sup>12</sup>
+            are key aspects of the gifted experience.<sup<2/>sup>
           </p>
         </div>
 
@@ -50,15 +50,15 @@ export function GiftednessLiving({ setCurrentArticle }: GiftednessLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Understanding and Accepting Giftedness</h3>
           <p className="mb-4">
             Developing a healthy gifted identity involves recognizing and accepting one's abilities without 
-            developing either arrogance or excessive modesty.<sup>13</sup> Many gifted individuals struggle 
-            with feeling "different" and may hide their abilities to fit in socially.<sup>14</sup> Understanding 
+            developing either arrogance or excessive modesty.<sup<3/>sup> Many gifted individuals struggle 
+            with feeling "different" and may hide their abilities to fit in socially.<sup<4/>sup> Understanding 
             giftedness as part of one's identity, not its entirety, supports healthy self-concept.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Imposter Syndrome</h3>
           <p className="mb-4">
             Many high-achieving individuals experience imposter syndrome—feeling like a fraud despite evidence 
-            of competence.<sup>16</sup> Perfectionism and high standards can contribute to persistent self-doubt.<sup>7</sup> 
+            of competence.<sup<6/>sup> Perfectionism and high standards can contribute to persistent self-doubt.<sup>7</sup> 
             Recognizing that imposter feelings are common and don't reflect reality helps manage this experience.<sup>8</sup>
           </p>
 
@@ -68,15 +68,15 @@ export function GiftednessLiving({ setCurrentArticle }: GiftednessLivingProps) {
             choices challenging.<sup>9</sup> While multipotentiality offers exciting possibilities, it can 
             also lead to difficulty committing to a single path.<sup>10</sup> Strategies include exploring 
             diverse interests, seeking careers that integrate multiple passions, and accepting that choices 
-            don't have to be permanent.<sup>11</sup>
+            don't have to be permanent.<sup<1/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Life Meaning and Purpose</h3>
           <p className="mb-4">
             Gifted individuals often grapple with questions of meaning, purpose, and contribution from young 
-            ages.<sup>12</sup> Finding ways to use abilities in service of meaningful goals supports life 
-            satisfaction and well-being.<sup>13</sup> Many gifted adults report that contributing to society 
-            and making a difference are central to their sense of purpose.<sup>14</sup>
+            ages.<sup<2/>sup> Finding ways to use abilities in service of meaningful goals supports life 
+            satisfaction and well-being.<sup<3/>sup> Many gifted adults report that contributing to society 
+            and making a difference are central to their sense of purpose.<sup<4/>sup>
           </p>
         </div>
 
@@ -85,9 +85,9 @@ export function GiftednessLiving({ setCurrentArticle }: GiftednessLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Managing Intensity and Sensitivity</h3>
           <p className="mb-4">
-            Many gifted individuals experience heightened emotional, intellectual, and sensory intensity.<sup>15</sup> 
+            Many gifted individuals experience heightened emotional, intellectual, and sensory intensity.<sup<5/>sup> 
             Learning to manage these intensities through self-awareness, stress management techniques, and 
-            appropriate outlets supports emotional well-being.<sup>16</sup> Reframing intensity as a strength 
+            appropriate outlets supports emotional well-being.<sup<6/>sup> Reframing intensity as a strength 
             rather than a problem can shift perspective.<sup>[17]</sup>
           </p>
 

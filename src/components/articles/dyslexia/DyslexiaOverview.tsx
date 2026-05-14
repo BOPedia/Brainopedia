@@ -51,8 +51,8 @@ export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOver
         <p className="mb-4">
           Dyslexia is a specific learning disorder that primarily affects reading and language processing.<sup>10</sup> 
           It is neurobiological in origin and characterized by difficulties with accurate and/or fluent word recognition, 
-          poor spelling, and decoding abilities.<sup>12</sup> These difficulties typically result from a deficit in the 
-          phonological component of language that is often unexpected in relation to other cognitive abilities.<sup>13</sup>
+          poor spelling, and decoding abilities.<sup<2/>sup> These difficulties typically result from a deficit in the 
+          phonological component of language that is often unexpected in relation to other cognitive abilities.<sup<3/>sup>
         </p>
         
         <ImageWithFallback 
@@ -64,7 +64,7 @@ export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOver
         <p className="mb-4">
           Importantly, dyslexia is not a reflection of low intelligence or lack of effort. Many individuals with dyslexia 
           have average or above-average intelligence and can be highly successful when provided with appropriate support 
-          and accommodations.<sup>14</sup>
+          and accommodations.<sup<4/>sup>
         </p>
       </div>
 
@@ -126,12 +126,12 @@ export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOver
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Key Characteristics</h3>
             <ul className="list-disc ml-6 mb-4">
-              <li className="mb-2"><strong>Phonological processing difficulties:</strong> Trouble with the sound structure of language<sup>16</sup></li>
+              <li className="mb-2"><strong>Phonological processing difficulties:</strong> Trouble with the sound structure of language<sup<6/>sup></li>
               <li className="mb-2"><strong>Word decoding problems:</strong> Difficulty sounding out written words<sup>7</sup></li>
               <li className="mb-2"><strong>Reading fluency challenges:</strong> Slow, effortful reading even of familiar text<sup>8</sup></li>
               <li className="mb-2"><strong>Spelling difficulties:</strong> Persistent spelling errors despite instruction<sup>9</sup></li>
               <li className="mb-2"><strong>Neurobiological basis:</strong> Differences in brain structure and function related to reading<sup>10</sup></li>
-              <li className="mb-2"><strong>Unexpected difficulty:</strong> Reading challenges not explained by intellectual ability, sensory problems, or lack of instruction<sup>11</sup></li>
+              <li className="mb-2"><strong>Unexpected difficulty:</strong> Reading challenges not explained by intellectual ability, sensory problems, or lack of instruction<sup<1/>sup></li>
             </ul>
           </div>
 
@@ -142,7 +142,7 @@ export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOver
             <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-4">
               <h3 className="text-center text-[#0c264d] font-bold mb-4">What Dyslexia Is NOT:</h3>
               <div className="text-sm space-y-3">
-                <p><strong>✗ Visual problem:</strong> Dyslexia is not primarily a vision problem; it's language-based<sup>16</sup></p>
+                <p><strong>✗ Visual problem:</strong> Dyslexia is not primarily a vision problem; it's language-based<sup<6/>sup></p>
                 <p><strong>✗ Seeing letters backwards:</strong> While letter reversals can occur, this is not the core issue and is common in early literacy for all children<sup>[34]</sup></p>
                 <p><strong>✗ Low intelligence:</strong> Dyslexia occurs across the IQ range; many individuals with dyslexia have average or above-average intelligence<sup>[35]</sup></p>
                 <p><strong>✗ Laziness:</strong> Reading difficulties are neurologically based, not due to lack of effort<sup>[36]</sup></p>
@@ -231,15 +231,15 @@ export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOver
             
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Typical Reading Works</h3>
             <p className="mb-4">
-              Reading is not a natural process for the human brain—it must be taught and learned.<sup>12</sup> Proficient 
+              Reading is not a natural process for the human brain—it must be taught and learned.<sup<2/>sup> Proficient 
               reading requires several brain systems working together:
             </p>
             <ul className="list-disc ml-6 mb-4">
               <li className="mb-2"><strong>Visual processing:</strong> Recognizing letters and letter patterns</li>
-              <li className="mb-2"><strong>Phonological processing:</strong> Connecting letters to sounds (phonemes)<sup>13</sup></li>
-              <li className="mb-2"><strong>Orthographic processing:</strong> Recognizing spelling patterns and whole words<sup>14</sup></li>
-              <li className="mb-2"><strong>Semantic processing:</strong> Accessing word meanings<sup>15</sup></li>
-              <li className="mb-2"><strong>Working memory:</strong> Holding information while processing text<sup>16</sup></li>
+              <li className="mb-2"><strong>Phonological processing:</strong> Connecting letters to sounds (phonemes)<sup<3/>sup></li>
+              <li className="mb-2"><strong>Orthographic processing:</strong> Recognizing spelling patterns and whole words<sup<4/>sup></li>
+              <li className="mb-2"><strong>Semantic processing:</strong> Accessing word meanings<sup<5/>sup></li>
+              <li className="mb-2"><strong>Working memory:</strong> Holding information while processing text<sup<6/>sup></li>
             </ul>
 
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Differences in Dyslexia</h3>

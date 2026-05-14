@@ -33,7 +33,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           <p className="mb-4">
             The causes of hyperlexia are not fully understood, but research suggests neurobiological differences 
             affecting language processing and reading development.<sup>10</sup> Because hyperlexia is strongly 
-            associated with autism, it may share some underlying mechanisms with autism spectrum disorder.<sup>12</sup>
+            associated with autism, it may share some underlying mechanisms with autism spectrum disorder.<sup<2/>sup>
           </p>
         </div>
 
@@ -48,12 +48,12 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brain Differences</h3>
           <p className="mb-4">
-            Limited neuroimaging research suggests differences in brain processing:<sup>13</sup>
+            Limited neuroimaging research suggests differences in brain processing:<sup<3/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Reading pathways:</strong> Unusual activation of reading-related brain areas</li>
             <li className="mb-2"><strong>Visual processing:</strong> Enhanced visual processing abilities</li>
-            <li className="mb-2"><strong>Language networks:</strong> Differences in language comprehension areas<sup>14</sup></li>
+            <li className="mb-2"><strong>Language networks:</strong> Differences in language comprehension areas<sup<4/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hemispheric Differences</h3>
@@ -69,7 +69,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Enhanced Visual Processing</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Visual strengths:</strong> Superior visual memory and processing<sup>16</sup></li>
+            <li className="mb-2"><strong>Visual strengths:</strong> Superior visual memory and processing<sup<6/>sup></li>
             <li className="mb-2"><strong>Pattern recognition:</strong> Exceptional ability to recognize visual patterns</li>
             <li className="mb-2"><strong>Orthographic processing:</strong> Strong visual word form processing</li>
           </ul>
@@ -105,7 +105,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Autism-Specific Features</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Reading as restricted/intense interest</li>
-            <li className="mb-2">Repetitive behaviors around letters and reading<sup>11</sup></li>
+            <li className="mb-2">Repetitive behaviors around letters and reading<sup<1/>sup></li>
             <li className="mb-2">Social communication challenges affecting comprehension</li>
           </ul>
         </div>
@@ -115,7 +115,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Family Patterns</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Hyperlexia may run in families<sup>12</sup></li>
+            <li className="mb-2">Hyperlexia may run in families<sup<2/>sup></li>
             <li className="mb-2">Family history of autism increases likelihood</li>
             <li className="mb-2">Limited genetic research specific to hyperlexia</li>
           </ul>
@@ -123,7 +123,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genetic Research Needed</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">More research needed on genetic contributions</li>
-            <li className="mb-2">Overlap with autism genetics likely<sup>13</sup></li>
+            <li className="mb-2">Overlap with autism genetics likely<sup<3/>sup></li>
             <li className="mb-2">Reading ability genes may be involved</li>
           </ul>
         </div>
@@ -133,7 +133,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early Brain Development</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Atypical brain development affecting language and reading<sup>14</sup></li>
+            <li className="mb-2">Atypical brain development affecting language and reading<sup<4/>sup></li>
             <li className="mb-2">Early overactivation of visual-orthographic pathways</li>
             <li className="mb-2">Underactivation of semantic comprehension pathways</li>
           </ul>
@@ -141,7 +141,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Critical Periods</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Atypical development during language-sensitive periods</li>
-            <li className="mb-2">Early visual strengths may compensate for language weaknesses<sup>15</sup></li>
+            <li className="mb-2">Early visual strengths may compensate for language weaknesses<sup<5/>sup></li>
           </ul>
         </div>
 
@@ -156,7 +156,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Compensatory Mechanism Theory</h3>
           <p className="mb-4">
-            One theory suggests hyperlexia is a compensation:<sup>16</sup>
+            One theory suggests hyperlexia is a compensation:<sup<6/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Children with language difficulties turn to visual strengths</li>

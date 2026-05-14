@@ -34,7 +34,7 @@ export function GiftednessSymptoms({ setCurrentArticle }: GiftednessSymptomsProp
             Gifted individuals exhibit a constellation of characteristics that distinguish them from their 
             age peers. These traits span cognitive, academic, creative, social, and emotional domains.<sup>10</sup> 
             It's important to note that not all gifted individuals display all characteristics, and the 
-            expression of giftedness varies considerably.<sup>12</sup>
+            expression of giftedness varies considerably.<sup<2/>sup>
           </p>
         </div>
 
@@ -49,10 +49,10 @@ export function GiftednessSymptoms({ setCurrentArticle }: GiftednessSymptomsProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Advanced Reasoning and Problem-Solving</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Abstract thinking:</strong> Ability to understand complex concepts and abstract relationships earlier than peers<sup>13</sup></li>
-            <li className="mb-2"><strong>Logical reasoning:</strong> Exceptional ability to see cause-and-effect relationships<sup>14</sup></li>
+            <li className="mb-2"><strong>Abstract thinking:</strong> Ability to understand complex concepts and abstract relationships earlier than peers<sup<3/>sup></li>
+            <li className="mb-2"><strong>Logical reasoning:</strong> Exceptional ability to see cause-and-effect relationships<sup<4/>sup></li>
             <li className="mb-2"><strong>Pattern recognition:</strong> Quick identification of patterns and connections<sup>5</sup></li>
-            <li className="mb-2"><strong>Complex problem-solving:</strong> Preference for tackling challenging, multifaceted problems<sup>16</sup></li>
+            <li className="mb-2"><strong>Complex problem-solving:</strong> Preference for tackling challenging, multifaceted problems<sup<6/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Exceptional Memory</h3>
@@ -65,16 +65,16 @@ export function GiftednessSymptoms({ setCurrentArticle }: GiftednessSymptomsProp
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Rapid Learning and Processing</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Quick mastery:</strong> Ability to learn new concepts with minimal instruction or repetition<sup>10</sup></li>
-            <li className="mb-2"><strong>Processing speed:</strong> Faster cognitive processing in many domains<sup>11</sup></li>
-            <li className="mb-2"><strong>Minimal practice needed:</strong> May grasp concepts after single exposure<sup>12</sup></li>
-            <li className="mb-2"><strong>Transfer of learning:</strong> Exceptional ability to apply knowledge to new situations<sup>13</sup></li>
+            <li className="mb-2"><strong>Processing speed:</strong> Faster cognitive processing in many domains<sup<1/>sup></li>
+            <li className="mb-2"><strong>Minimal practice needed:</strong> May grasp concepts after single exposure<sup<2/>sup></li>
+            <li className="mb-2"><strong>Transfer of learning:</strong> Exceptional ability to apply knowledge to new situations<sup<3/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Advanced Verbal Abilities</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Early language development:</strong> May speak in complete sentences earlier than typical<sup>14</sup></li>
-            <li className="mb-2"><strong>Extensive vocabulary:</strong> Use of advanced, sophisticated vocabulary<sup>15</sup></li>
-            <li className="mb-2"><strong>Verbal fluency:</strong> Ease and facility with language expression<sup>16</sup></li>
+            <li className="mb-2"><strong>Early language development:</strong> May speak in complete sentences earlier than typical<sup<4/>sup></li>
+            <li className="mb-2"><strong>Extensive vocabulary:</strong> Use of advanced, sophisticated vocabulary<sup<5/>sup></li>
+            <li className="mb-2"><strong>Verbal fluency:</strong> Ease and facility with language expression<sup<6/>sup></li>
             <li className="mb-2"><strong>Metaphorical thinking:</strong> Understanding and use of figurative language<sup>[17]</sup></li>
           </ul>
         </div>

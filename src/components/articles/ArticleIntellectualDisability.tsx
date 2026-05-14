@@ -55,7 +55,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
             is a neurodevelopmental condition characterized by significant limitations in both intellectual 
             functioning (reasoning, learning, problem-solving) and adaptive behavior (practical, social, and 
             conceptual skills).<sup>10</sup> ID represents a diverse spectrum of cognitive functioning and is a distinct 
-            neurotype with unique support needs and strengths.<sup>12</sup>
+            neurotype with unique support needs and strengths.<sup<2/>sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -89,9 +89,9 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           
           <p className="mb-4">
             Intellectual disability affects approximately 1-3% of the global population, making it one of 
-            the most common developmental conditions.<sup>13</sup> ID begins during the developmental period (before age 18) 
+            the most common developmental conditions.<sup<3/>sup> ID begins during the developmental period (before age 18) 
             and is characterized by cognitive functioning that is significantly below average, along with 
-            limitations in adaptive functioning across multiple life domains.<sup>14</sup> Modern understanding of ID emphasizes 
+            limitations in adaptive functioning across multiple life domains.<sup<4/>sup> Modern understanding of ID emphasizes 
             a social model perspective: disability results not solely from individual limitations, but from the 
             interaction between the person and environmental barriers.<sup>5</sup>
           </p>
@@ -99,7 +99,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           <p className="mb-4">
             With appropriate supports, accommodations, 
             and inclusion, individuals with ID can lead fulfilling, self-determined lives and contribute meaningfully 
-            to their communities.<sup>16</sup> The term "intellectual disability" replaced older terminology to reflect a more 
+            to their communities.<sup<6/>sup> The term "intellectual disability" replaced older terminology to reflect a more 
             respectful, person-first approach that emphasizes human dignity and potential.<sup>7</sup> ID exists on a spectrum 
             with varying levels of support needs from intermittent to pervasive.<sup>8</sup>
           </p>
@@ -119,9 +119,9 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
             language development and literacy, reasoning and problem-solving, abstract thinking, understanding money 
             time and numbers, and self-direction and planning.<sup>10</sup> Social skills include interpersonal communication, 
             understanding social cues and norms, making and maintaining friendships, social problem-solving, understanding 
-            consequences of actions, and vulnerability to manipulation or exploitation.<sup>11</sup> Practical skills include activities 
+            consequences of actions, and vulnerability to manipulation or exploitation.<sup<1/>sup> Practical skills include activities 
             of daily living (eating, dressing, hygiene), using transportation, managing schedules and routines, using 
-            technology and phones, occupational skills and work habits, healthcare management, and safety awareness.<sup>12</sup>
+            technology and phones, occupational skills and work habits, healthcare management, and safety awareness.<sup<2/>sup>
           </p>
           
           <p className="mb-4">
@@ -130,7 +130,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
             can often live independently with some support, capable of maintaining employment) to moderate ID with limited 
             support needs (academic skills to 2nd-4th grade level, can perform self-care with training), severe ID with 
             extensive support needs (limited language, requires substantial support for daily living), and profound ID with 
-            pervasive support needs (requires 24-hour care).<sup>13</sup> Individuals with ID possess unique strengths including authentic 
+            pervasive support needs (requires 24-hour care).<sup<3/>sup> Individuals with ID possess unique strengths including authentic 
             genuine social interactions, strong emotional intuition and empathy, loyalty and commitment in relationships, 
             creativity and unique perspectives, determination and persistence, and specific talents in areas like music, art, 
             or memory for details.<sup>[14][15]</sup>
@@ -147,7 +147,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           />
           
           <p className="mb-4">
-            ID has diverse etiologies often involving genetic, prenatal, perinatal, or postnatal factors.<sup>16</sup> Genetic causes 
+            ID has diverse etiologies often involving genetic, prenatal, perinatal, or postnatal factors.<sup<6/>sup> Genetic causes 
             include chromosomal differences (Down syndrome, Fragile X syndrome), single-gene disorders (Rett syndrome, PKU), 
             and inherited conditions affecting brain development.<sup>[17][18]</sup> Prenatal factors include maternal infections during pregnancy, 
             fetal alcohol spectrum disorder, malnutrition or toxin exposure, and complications of prematurity.<sup>[19]</sup>

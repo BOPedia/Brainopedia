@@ -45,7 +45,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Applied Behavior Analysis (ABA)</h3>
         <p className="mb-4">
-          ABA uses behavioral principles to teach skills and is one of the most researched autism interventions. However, it's also controversial—many autistic adults report trauma from compliance-focused ABA that targeted harmless autistic behaviors.<sup>14</sup> Modern approaches emphasize naturalistic, play-based methods that respect autonomy and neurodiversity.<sup>12</sup>
+          ABA uses behavioral principles to teach skills and is one of the most researched autism interventions. However, it's also controversial—many autistic adults report trauma from compliance-focused ABA that targeted harmless autistic behaviors.<sup<4/>sup> Modern approaches emphasize naturalistic, play-based methods that respect autonomy and neurodiversity.<sup<2/>sup>
         </p>
         <button onClick={() => setCurrentArticle?.('autism-aba-therapy')} className="text-[#10b981] hover:underline font-semibold">
           Read more about ABA Therapy →
@@ -55,7 +55,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Skills Support</h3>
         <p className="mb-4">
-          Social skills interventions teach interaction strategies while respecting autistic communication styles.<sup>13</sup> This includes social skills groups, peer-mediated interventions, social stories, and video modeling. Neurodiversity-informed approaches recognize the "double empathy problem"—that social challenges are bidirectional between autistic and non-autistic people.<sup>13</sup>
+          Social skills interventions teach interaction strategies while respecting autistic communication styles.<sup<3/>sup> This includes social skills groups, peer-mediated interventions, social stories, and video modeling. Neurodiversity-informed approaches recognize the "double empathy problem"—that social challenges are bidirectional between autistic and non-autistic people.<sup<3/>sup>
         </p>
         <button onClick={() => setCurrentArticle?.('autism-social-skills')} className="text-[#10b981] hover:underline font-semibold">
           Read more about Social Skills Support →

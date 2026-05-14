@@ -33,7 +33,7 @@ export function TwiceExceptionalSymptoms({ setCurrentArticle }: TwiceExceptional
           <p className="mb-4">
             Twice-exceptional students exhibit a complex profile of characteristics reflecting both their 
             areas of exceptional ability and their areas of challenge.<sup>10</sup> The interplay between 
-            strengths and weaknesses creates unique patterns that can make identification challenging.<sup>12</sup>
+            strengths and weaknesses creates unique patterns that can make identification challenging.<sup<2/>sup>
           </p>
         </div>
 
@@ -49,15 +49,15 @@ export function TwiceExceptionalSymptoms({ setCurrentArticle }: TwiceExceptional
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Uneven Cognitive Profile</h3>
           <p className="mb-4">
             2e students typically demonstrate significant scatter in cognitive abilities, with substantial 
-            differences between various cognitive domains.<sup>13</sup> Standard deviations between index 
-            scores on intelligence tests may exceed 20 or more points.<sup>14</sup> This discrepancy often 
+            differences between various cognitive domains.<sup<3/>sup> Standard deviations between index 
+            scores on intelligence tests may exceed 20 or more points.<sup<4/>sup> This discrepancy often 
             leads to frustration as students are acutely aware of their internal inconsistencies.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Advanced Reasoning Abilities</h3>
           <p className="mb-4">
             Despite challenges in some areas, 2e students often demonstrate exceptional abstract reasoning, 
-            complex problem-solving, and ability to see patterns and connections that others miss.<sup>16</sup> 
+            complex problem-solving, and ability to see patterns and connections that others miss.<sup<6/>sup> 
             They may grasp sophisticated concepts quickly while struggling with basic skills.<sup>7</sup>
           </p>
 
@@ -72,8 +72,8 @@ export function TwiceExceptionalSymptoms({ setCurrentArticle }: TwiceExceptional
           <p className="mb-4">
             Common among 2e students are weaknesses in processing speed, working memory, or both.<sup>10</sup> 
             These processing difficulties can significantly impact academic performance despite strong reasoning 
-            abilities.<sup>11</sup> Students may need more time to complete tasks or struggle to hold 
-            information in mind while manipulating it.<sup>12</sup>
+            abilities.<sup<1/>sup> Students may need more time to complete tasks or struggle to hold 
+            information in mind while manipulating it.<sup<2/>sup>
           </p>
         </div>
 
@@ -83,14 +83,14 @@ export function TwiceExceptionalSymptoms({ setCurrentArticle }: TwiceExceptional
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Inconsistent Performance</h3>
           <p className="mb-4">
             Academic performance varies dramatically depending on task type, format, interest level, and 
-            support provided.<sup>13</sup> Students may excel on complex projects while failing basic 
-            assignments.<sup>14</sup> This inconsistency often confuses educators and parents.<sup>15</sup>
+            support provided.<sup<3/>sup> Students may excel on complex projects while failing basic 
+            assignments.<sup<4/>sup> This inconsistency often confuses educators and parents.<sup<5/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Discrepancy Between Ability and Achievement</h3>
           <p className="mb-4">
             A hallmark characteristic is significant discrepancy between intellectual potential and academic 
-            achievement.<sup>16</sup> Students may score in the gifted range on intelligence tests while 
+            achievement.<sup<6/>sup> Students may score in the gifted range on intelligence tests while 
             performing at or below grade level academically.<sup>[17]</sup>
           </p>
 

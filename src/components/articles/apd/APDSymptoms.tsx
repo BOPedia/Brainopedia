@@ -33,7 +33,7 @@ export function APDSymptoms({ setCurrentArticle }: APDSymptomsProps) {
           <p className="mb-4">
             The symptoms of Auditory Processing Disorder reflect difficulty processing auditory information 
             despite normal hearing sensitivity.<sup>10</sup> These characteristics manifest across listening, 
-            academic, social, and behavioral domains, creating a complex profile that varies among individuals.<sup>12</sup>
+            academic, social, and behavioral domains, creating a complex profile that varies among individuals.<sup<2/>sup>
           </p>
         </div>
 
@@ -48,15 +48,15 @@ export function APDSymptoms({ setCurrentArticle }: APDSymptomsProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Difficulty Hearing in Noise</h3>
           <p className="mb-4">
-            The hallmark symptom of APD is difficulty understanding speech in background noise.<sup>13</sup> 
+            The hallmark symptom of APD is difficulty understanding speech in background noise.<sup<3/>sup> 
             While individuals may hear well in quiet environments, their performance deteriorates significantly 
-            when competing sounds are present.<sup>14</sup> This affects functioning in classrooms, restaurants, 
+            when competing sounds are present.<sup<4/>sup> This affects functioning in classrooms, restaurants, 
             parties, or anywhere with ambient noise.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Frequent Requests for Repetition</h3>
           <p className="mb-4">
-            Individuals with APD frequently say "what?" or "huh?" even when speech is audible.<sup>16</sup> 
+            Individuals with APD frequently say "what?" or "huh?" even when speech is audible.<sup<6/>sup> 
             They need information repeated, often multiple times, to process it accurately.<sup>7</sup> This 
             isn't due to inattention but reflects genuine difficulty processing what was heard.<sup>8</sup>
           </p>
@@ -65,20 +65,20 @@ export function APDSymptoms({ setCurrentArticle }: APDSymptomsProps) {
           <p className="mb-4">
             Distinguishing between similar-sounding words or phonemes is challenging.<sup>9</sup> Words like 
             "cat" and "cap" or "think" and "thick" may sound identical.<sup>10</sup> This affects spelling, 
-            reading, and communication accuracy.<sup>11</sup>
+            reading, and communication accuracy.<sup<1/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Sound Localization Difficulties</h3>
           <p className="mb-4">
-            Determining where sounds come from may be difficult.<sup>12</sup> This affects safety (not knowing 
-            where a car horn came from) and social situations (not knowing who spoke in a group).<sup>13</sup>
+            Determining where sounds come from may be difficult.<sup<2/>sup> This affects safety (not knowing 
+            where a car horn came from) and social situations (not knowing who spoke in a group).<sup<3/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Temporal Processing Problems</h3>
           <p className="mb-4">
             Difficulty processing the timing and order of sounds affects perception of rapid speech, music, 
-            and tone patterns.<sup>14</sup> Understanding fast talkers or keeping up with rapid verbal 
-            exchanges is challenging.<sup>15</sup>
+            and tone patterns.<sup<4/>sup> Understanding fast talkers or keeping up with rapid verbal 
+            exchanges is challenging.<sup<5/>sup>
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export function APDSymptoms({ setCurrentArticle }: APDSymptomsProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Following Directions Difficulties</h3>
           <p className="mb-4">
-            Multi-step verbal directions are particularly challenging.<sup>16</sup> By the time the third 
+            Multi-step verbal directions are particularly challenging.<sup<6/>sup> By the time the third 
             step is given, the first may be forgotten or misunderstood.<sup>[17]</sup> Written directions are 
             typically processed more successfully.<sup>[18]</sup>
           </p>

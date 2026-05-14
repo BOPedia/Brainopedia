@@ -31,21 +31,21 @@ export function ADHDSymptomsTabRSD() {
                   <div className="font-bold text-[#0c264d] mb-2">Clinical Case Series (2024):</div>
                   <div className="text-sm pl-4">A case series study presented detailed cases of four patients, showing how ADHD-related 
                   emotional dysregulation manifests as an immediate, intense, and painful reaction to perceived rejection, criticism, 
-                  or failure<sup style={{color: '#10b981'}}>12</sup>. The study highlighted that these patients, despite often being high-achieving, experienced 
+                  or failure<sup style={{color: '#10b981'}}<2/>sup>. The study highlighted that these patients, despite often being high-achieving, experienced 
                   severe distress that did not fit traditional anxiety or mood disorder criteria, and responded favorably to alpha-2 
                   agonists like guanfacine.</div>
                 </div>
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">Lived Experience Research (2025):</div>
                   <div className="text-sm pl-4">A qualitative study explored the personal understandings of RSD within the neurodivergent 
-                  community<sup style={{color: '#10b981'}}>13</sup>. This research addressed a gap in the literature regarding the subjective experience of the 
+                  community<sup style={{color: '#10b981'}}<3/>sup>. This research addressed a gap in the literature regarding the subjective experience of the 
                   phenomenon, noting that it often presents as a "predisposition to expect, sense, and react strongly to rejection."</div>
                 </div>
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">Virtual Feedback Study (2019):</div>
                   <div className="text-sm pl-4">Research on emotional regulation in ADHD found that individuals with ADHD displayed 
                   significantly higher levels of emotional sensitivity when receiving feedback in a virtual game compared to neurotypical 
-                  controls<sup style={{color: '#10b981'}}>14</sup>.</div>
+                  controls<sup style={{color: '#10b981'}}<4/>sup>.</div>
                 </div>
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">Rejection Sensitivity in Adolescents (2009):</div>
@@ -56,7 +56,7 @@ export function ADHDSymptomsTabRSD() {
                   <div className="font-bold text-[#0c264d] mb-2">Clinical Observations:</div>
                   <div className="text-sm pl-4">Dr. William Dodson, who coined the term RSD in the context of ADHD, has published 
                   clinical observations stating that nearly 99% of adults with ADHD experience RSD to some degree, with 30% reporting 
-                  it as their most impairing symptom<sup style={{color: '#10b981'}}>16</sup>. Researchers often point back to Dr. Paul Wender's observations in the 
+                  it as their most impairing symptom<sup style={{color: '#10b981'}}<6/>sup>. Researchers often point back to Dr. Paul Wender's observations in the 
                   1960s, which identified high levels of emotional dysregulation and "atypical depression" in ADHD patients, aligning 
                   with modern understandings of RSD<sup style={{color: '#10b981'}}>7</sup>.</div>
                 </div>

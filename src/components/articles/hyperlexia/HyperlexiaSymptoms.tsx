@@ -33,7 +33,7 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
           <p className="mb-4">
             Hyperlexia presents with a distinctive pattern of advanced reading skills alongside significant language 
             and communication challenges.<sup>10</sup> The symptoms vary depending on whether hyperlexia occurs alone 
-            or with autism spectrum disorder.<sup>12</sup>
+            or with autism spectrum disorder.<sup<2/>sup>
           </p>
         </div>
 
@@ -48,9 +48,9 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Precocious Reading Ability</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Early reading onset:</strong> Often before age 5, sometimes as early as 2-3<sup>13</sup></li>
+            <li className="mb-2"><strong>Early reading onset:</strong> Often before age 5, sometimes as early as 2-3<sup<3/>sup></li>
             <li className="mb-2"><strong>Self-taught:</strong> Learn to read without explicit instruction</li>
-            <li className="mb-2"><strong>Advanced decoding:</strong> Can read words far beyond age level<sup>14</sup></li>
+            <li className="mb-2"><strong>Advanced decoding:</strong> Can read words far beyond age level<sup<4/>sup></li>
             <li className="mb-2"><strong>Accurate pronunciation:</strong> Often pronounce words correctly despite age</li>
           </ul>
 
@@ -59,7 +59,7 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
             <li className="mb-2"><strong>Letter obsession:</strong> Intense interest in letters, numbers, symbols<sup>5</sup></li>
             <li className="mb-2"><strong>Alphabet knowledge:</strong> Learning alphabet very early</li>
             <li className="mb-2"><strong>Environmental print:</strong> Reading signs, labels, logos everywhere</li>
-            <li className="mb-2"><strong>Seeking text:</strong> Actively looking for things to read<sup>16</sup></li>
+            <li className="mb-2"><strong>Seeking text:</strong> Actively looking for things to read<sup<6/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Behaviors</h3>
@@ -95,24 +95,24 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Delayed or Disordered Speech</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Late talking:</strong> Delayed speech development despite early reading<sup>11</sup></li>
+            <li className="mb-2"><strong>Late talking:</strong> Delayed speech development despite early reading<sup<1/>sup></li>
             <li className="mb-2"><strong>Limited expressive language:</strong> Difficulty expressing thoughts verbally</li>
             <li className="mb-2"><strong>Language disorder:</strong> May meet criteria for developmental language disorder</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Echolalia and Scripting</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Echolalia:</strong> Repeating words, phrases, or sentences<sup>12</sup></li>
+            <li className="mb-2"><strong>Echolalia:</strong> Repeating words, phrases, or sentences<sup<2/>sup></li>
             <li className="mb-2"><strong>Immediate echoing:</strong> Repeating what just heard</li>
             <li className="mb-2"><strong>Delayed echolalia:</strong> Repeating memorized phrases from books or media</li>
-            <li className="mb-2"><strong>Scripting:</strong> Using memorized language from texts<sup>13</sup></li>
+            <li className="mb-2"><strong>Scripting:</strong> Using memorized language from texts<sup<3/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Vocabulary Patterns</h3>
           
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">May use advanced written vocabulary they've read</li>
-            <li className="mb-2">Limited functional vocabulary for communication<sup>14</sup></li>
+            <li className="mb-2">Limited functional vocabulary for communication<sup<4/>sup></li>
             <li className="mb-2">Difficulty with word meanings despite recognition</li>
           </ul>
         </div>
@@ -122,10 +122,10 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Pragmatic Language Challenges</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Conversational difficulties:</strong> Trouble with back-and-forth conversation<sup>15</sup></li>
+            <li className="mb-2"><strong>Conversational difficulties:</strong> Trouble with back-and-forth conversation<sup<5/>sup></li>
             <li className="mb-2"><strong>Topic maintenance:</strong> Difficulty staying on topic</li>
             <li className="mb-2"><strong>Social cues:</strong> Missing nonverbal communication</li>
-            <li className="mb-2"><strong>Inappropriate responses:</strong> Responses may not match context<sup>16</sup></li>
+            <li className="mb-2"><strong>Inappropriate responses:</strong> Responses may not match context<sup<6/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Interaction</h3>

@@ -35,7 +35,7 @@ export function ChallengesDisparities({ setCurrentArticle }: ChallengesDispariti
             </div>
             <div className="text-sm">
               Girls and women often mask or camouflage autistic traits more effectively than boys, leading to missed 
-              or delayed diagnosis.<sup>12</sup> This masking is exhausting and can lead to burnout, anxiety, 
+              or delayed diagnosis.<sup<2/>sup> This masking is exhausting and can lead to burnout, anxiety, 
               and depression.
             </div>
           </div>

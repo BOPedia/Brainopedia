@@ -43,11 +43,11 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
             Sensory Processing Disorder manifests in diverse ways, affecting how individuals experience and respond to sensory 
             input from their environment and their own bodies.<sup>[1][2]</sup> The symptoms and characteristics of SPD vary 
             widely based on which sensory systems are affected, the type of processing difficulty (over-responsivity, under-responsivity, 
-            or discrimination challenges), and individual differences in coping strategies.<sup>13</sup>
+            or discrimination challenges), and individual differences in coping strategies.<sup<3/>sup>
           </p>
           <p className="mb-4">
             It's important to recognize that sensory processing exists on a continuum, with everyone experiencing occasional 
-            sensory sensitivities or preferences.<sup>14</sup> SPD is diagnosed when sensory processing differences significantly 
+            sensory sensitivities or preferences.<sup<4/>sup> SPD is diagnosed when sensory processing differences significantly 
             interfere with daily functioning, participation in activities, emotional regulation, or quality of life.<sup>5</sup>
           </p>
         </div>
@@ -73,17 +73,17 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
             <li className="mb-2">Avoidance of being touched, especially light or unexpected touch<sup>10</sup></li>
             <li className="mb-2">Difficulty with grooming tasks like haircuts, nail trimming, or teeth brushing</li>
             <li className="mb-2">Strong preferences for specific clothing textures or styles</li>
-            <li className="mb-2">Distress with messy activities like finger painting or playing in sand<sup>11</sup></li>
+            <li className="mb-2">Distress with messy activities like finger painting or playing in sand<sup<1/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Auditory Over-Responsivity</h3>
           <p className="mb-4">
-            Auditory over-responsivity involves heightened sensitivity to sounds:<sup>12</sup>
+            Auditory over-responsivity involves heightened sensitivity to sounds:<sup<2/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Covering ears in response to everyday sounds (vacuum cleaners, hand dryers, fire alarms)</li>
             <li className="mb-2">Distress in noisy environments like cafeterias or shopping centers</li>
-            <li className="mb-2">Difficulty filtering background noise from important sounds<sup>13</sup></li>
+            <li className="mb-2">Difficulty filtering background noise from important sounds<sup<3/>sup></li>
             <li className="mb-2">Strong startle responses to unexpected sounds</li>
             <li className="mb-2">Discomfort with music, singing, or voices at certain pitches</li>
           </ul>
@@ -95,19 +95,19 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Discomfort or pain in bright lights or sunlight</li>
             <li className="mb-2">Preference for dim lighting</li>
-            <li className="mb-2">Difficulty with fluorescent lighting<sup>14</sup></li>
+            <li className="mb-2">Difficulty with fluorescent lighting<sup<4/>sup></li>
             <li className="mb-2">Sensitivity to visual clutter or busy patterns</li>
             <li className="mb-2">Squinting or rubbing eyes frequently</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Olfactory and Gustatory Over-Responsivity</h3>
           <p className="mb-4">
-            Over-sensitivity to smells and tastes can significantly impact eating and daily routines:<sup>15</sup>
+            Over-sensitivity to smells and tastes can significantly impact eating and daily routines:<sup<5/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Extreme reactions to smells that others barely notice</li>
             <li className="mb-2">Nausea or gagging in response to certain odors</li>
-            <li className="mb-2">Highly restricted diet due to texture, taste, or smell sensitivities<sup>16</sup></li>
+            <li className="mb-2">Highly restricted diet due to texture, taste, or smell sensitivities<sup<6/>sup></li>
             <li className="mb-2">Difficulty eating in spaces with strong food smells</li>
             <li className="mb-2">Avoidance of certain locations due to characteristic smells</li>
           </ul>
@@ -147,7 +147,7 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Sensory Seeking/Craving</h2>
           
           <p className="mb-4">
-            Sensory seeking behavior reflects an intense drive for sensory input.<sup>14</sup> While related to under-responsivity, 
+            Sensory seeking behavior reflects an intense drive for sensory input.<sup<4/>sup> While related to under-responsivity, 
             sensory seeking is characterized by active pursuit of sensory experiences rather than passive lack of response. 
             Individuals may engage in intense sensory behaviors to satisfy their sensory needs.<sup>[19]</sup>
           </p>
@@ -161,7 +161,7 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
             <li className="mb-2">Making repetitive noises or seeking loud environments</li>
             <li className="mb-2">Preference for strong flavors and intense tastes</li>
             <li className="mb-2">Chewing on non-food items (clothing, pencils, toys)</li>
-            <li className="mb-2">Difficulty sitting still; always in motion<sup>11</sup></li>
+            <li className="mb-2">Difficulty sitting still; always in motion<sup<1/>sup></li>
             <li className="mb-2">Risk-taking behaviors to get intense sensory input</li>
           </ul>
         </div>
@@ -284,7 +284,7 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
             <li className="mb-2">Resistance to bathing or showering due to water temperature or pressure sensitivities</li>
             <li className="mb-2">Difficulty with grooming tasks (hair brushing, nail trimming, teeth brushing)<sup>[35]</sup></li>
             <li className="mb-2">Challenges with dressing, particularly with certain fabrics or tight clothing</li>
-            <li className="mb-2">Picky eating related to texture, taste, or smell sensitivities<sup>16</sup></li>
+            <li className="mb-2">Picky eating related to texture, taste, or smell sensitivities<sup<6/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">School and Learning</h3>
@@ -311,7 +311,7 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
           
           <p className="mb-4">
             It's crucial to recognize that SPD presents differently in each individual. Most people with SPD experience a mix 
-            of patterns—they might be over-responsive to some sensory inputs while under-responsive to others.<sup>13</sup> Sensory 
+            of patterns—they might be over-responsive to some sensory inputs while under-responsive to others.<sup<3/>sup> Sensory 
             responses can also fluctuate based on factors like stress, fatigue, illness, or environmental context.<sup>10</sup>
           </p>
           <p className="mb-4">

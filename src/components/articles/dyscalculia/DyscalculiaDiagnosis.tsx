@@ -32,7 +32,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
         <div>
           <p className="mb-4">
             Accurate diagnosis of dyscalculia requires comprehensive assessment by qualified professionals.<sup>10</sup> 
-            Early identification is critical, as intervention is most effective when started young.<sup>12</sup> However, 
+            Early identification is critical, as intervention is most effective when started young.<sup<2/>sup> However, 
             diagnosis at any age can provide valuable insights and access to appropriate support.
           </p>
         </div>
@@ -48,13 +48,13 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Red Flags for Assessment</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Performance more than one year below grade level in mathematics<sup>13</sup></li>
+            <li className="mb-2">Performance more than one year below grade level in mathematics<sup<3/>sup></li>
             <li className="mb-2">Significant discrepancy between math ability and other academic areas</li>
-            <li className="mb-2">Persistent difficulty despite quality instruction and intervention<sup>14</sup></li>
+            <li className="mb-2">Persistent difficulty despite quality instruction and intervention<sup<4/>sup></li>
             <li className="mb-2">Extreme math anxiety or avoidance behaviors</li>
             <li className="mb-2">Continued use of immature counting strategies (finger counting past age 8-9)<sup>5</sup></li>
             <li className="mb-2">Family history of math learning difficulties</li>
-            <li className="mb-2">Co-occurring learning disabilities (dyslexia, ADHD)<sup>16</sup></li>
+            <li className="mb-2">Co-occurring learning disabilities (dyslexia, ADHD)<sup<6/>sup></li>
           </ul>
         </div>
 
@@ -78,7 +78,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">ICD-11 Classification</h3>
           <p className="mb-4">
             The World Health Organization's International Classification of Diseases (11th revision) classifies dyscalculia 
-            as "Developmental learning disorder with impairment in mathematics."<sup>11</sup>
+            as "Developmental learning disorder with impairment in mathematics."<sup<1/>sup>
           </p>
         </div>
 
@@ -87,21 +87,21 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Qualified Professionals</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Educational psychologists:</strong> Specialized training in learning disabilities<sup>12</sup></li>
+            <li className="mb-2"><strong>Educational psychologists:</strong> Specialized training in learning disabilities<sup<2/>sup></li>
             <li className="mb-2"><strong>School psychologists:</strong> Conduct assessments within educational settings</li>
-            <li className="mb-2"><strong>Clinical psychologists:</strong> Licensed psychologists with expertise in cognitive assessment<sup>13</sup></li>
+            <li className="mb-2"><strong>Clinical psychologists:</strong> Licensed psychologists with expertise in cognitive assessment<sup<3/>sup></li>
             <li className="mb-2"><strong>Neuropsychologists:</strong> Specialists in brain-behavior relationships</li>
-            <li className="mb-2"><strong>Learning disability specialists:</strong> Trained in identifying specific learning disorders<sup>14</sup></li>
+            <li className="mb-2"><strong>Learning disability specialists:</strong> Trained in identifying specific learning disorders<sup<4/>sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multi-Disciplinary Team Approach</h3>
           <p className="mb-4">
-            Comprehensive assessment often involves:<sup>15</sup>
+            Comprehensive assessment often involves:<sup<5/>sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Psychologist for cognitive and achievement testing</li>
             <li className="mb-2">Special education teacher for educational assessment</li>
-            <li className="mb-2">Parents/caregivers providing developmental history<sup>16</sup></li>
+            <li className="mb-2">Parents/caregivers providing developmental history<sup<6/>sup></li>
             <li className="mb-2">Regular classroom teacher reporting on classroom performance</li>
             <li className="mb-2">Medical professionals ruling out other conditions</li>
           </ul>

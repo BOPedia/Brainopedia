@@ -34,7 +34,7 @@ export function GiftednessOverview({ setCurrentArticle }: GiftednessOverviewProp
             Giftedness refers to exceptional intellectual ability, creativity, or talent that is significantly 
             above average compared to peers of the same age.<sup>10</sup> Gifted individuals demonstrate 
             advanced cognitive processing, rapid learning, and often show exceptional performance in one or 
-            more domains.<sup>12</sup>
+            more domains.<sup<2/>sup>
           </p>
         </div>
 
@@ -51,16 +51,16 @@ export function GiftednessOverview({ setCurrentArticle }: GiftednessOverviewProp
           <p className="mb-4">
             There is no single universally accepted definition of giftedness. The U.S. Department of Education 
             defines gifted students as those who demonstrate outstanding levels of aptitude or competence in one 
-            or more domains.<sup>13</sup> The National Association for Gifted Children (NAGC) emphasizes that 
+            or more domains.<sup<3/>sup> The National Association for Gifted Children (NAGC) emphasizes that 
             giftedness is asynchronous development in which advanced cognitive abilities and heightened intensity 
-            combine to create unique learning needs.<sup>14</sup>
+            combine to create unique learning needs.<sup<4/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Historical Perspectives</h3>
           <p className="mb-4">
             The study of giftedness began in the early 20th century with Lewis Terman's longitudinal research on 
             high-IQ individuals.<sup>5</sup> Early conceptions focused primarily on intellectual ability as 
-            measured by IQ tests, typically identifying individuals scoring above 130 on standardized tests.<sup>16</sup>
+            measured by IQ tests, typically identifying individuals scoring above 130 on standardized tests.<sup<6/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Modern Conceptualizations</h3>
@@ -86,22 +86,22 @@ export function GiftednessOverview({ setCurrentArticle }: GiftednessOverviewProp
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Creative-Productive Giftedness</h3>
           <p className="mb-4">
             Renzulli distinguished between "schoolhouse giftedness" (high test scores and academic achievement) 
-            and "creative-productive giftedness" (applying abilities to develop original ideas and products).<sup>11</sup> 
-            Creative giftedness involves originality, fluency, flexibility, and elaboration in thinking.<sup>12</sup>
+            and "creative-productive giftedness" (applying abilities to develop original ideas and products).<sup<1/>sup> 
+            Creative giftedness involves originality, fluency, flexibility, and elaboration in thinking.<sup<2/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Specific Academic Aptitude</h3>
           <p className="mb-4">
             Some individuals show exceptional ability in specific academic areas such as mathematics, science, 
-            or language arts while performing at grade level in other subjects.<sup>13</sup> Julian Stanley's 
-            work with mathematically precocious youth highlighted domain-specific giftedness.<sup>14</sup>
+            or language arts while performing at grade level in other subjects.<sup<3/>sup> Julian Stanley's 
+            work with mathematically precocious youth highlighted domain-specific giftedness.<sup<4/>sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Talent Development Models</h3>
           <p className="mb-4">
             Gagné's Differentiated Model of Giftedness and Talent (DMGT) distinguishes between natural abilities 
             (gifts) and systematically developed competencies (talents), emphasizing the role of intrapersonal and 
-            environmental catalysts in talent development.<sup>15</sup>
+            environmental catalysts in talent development.<sup<5/>sup>
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export function GiftednessOverview({ setCurrentArticle }: GiftednessOverviewProp
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Moderately Gifted</h3>
           <p className="mb-4">
-            IQ range approximately 130-144, representing about 2-3% of the population.<sup>16</sup> These 
+            IQ range approximately 130-144, representing about 2-3% of the population.<sup<6/>sup> These 
             individuals typically succeed in advanced academic programs with appropriate support.
           </p>
 

@@ -33,7 +33,7 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
           <p className="mb-4">
             Dyscalculia presents differently across individuals and developmental stages, but certain core symptoms are 
             consistently observed.<sup>10</sup> Recognizing these signs early can lead to timely intervention and support, 
-            improving mathematical outcomes and reducing math anxiety.<sup>12</sup>
+            improving mathematical outcomes and reducing math anxiety.<sup<2/>sup>
           </p>
         </div>
 
@@ -48,16 +48,16 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Number Sense Deficits</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Poor understanding of quantity:</strong> Difficulty grasping what numbers represent<sup>13</sup></li>
+            <li className="mb-2"><strong>Poor understanding of quantity:</strong> Difficulty grasping what numbers represent<sup<3/>sup></li>
             <li className="mb-2"><strong>Magnitude comparison problems:</strong> Trouble determining which number is larger</li>
-            <li className="mb-2"><strong>Number line difficulties:</strong> Cannot accurately place numbers on a number line<sup>14</sup></li>
+            <li className="mb-2"><strong>Number line difficulties:</strong> Cannot accurately place numbers on a number line<sup<4/>sup></li>
             <li className="mb-2"><strong>Subitizing deficits:</strong> Cannot instantly recognize small quantities (1-4 items)</li>
             <li className="mb-2"><strong>Estimation problems:</strong> Poor at estimating quantities, distances, or calculations<sup>5</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Counting Difficulties</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Struggles with rote counting, especially beyond 20<sup>16</sup></li>
+            <li className="mb-2">Struggles with rote counting, especially beyond 20<sup<6/>sup></li>
             <li className="mb-2">Difficulty counting backwards</li>
             <li className="mb-2">Problems counting by twos, fives, or tens<sup>7</sup></li>
             <li className="mb-2">Loses track when counting objects</li>
@@ -75,9 +75,9 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Math Fact Retrieval</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Cannot automatically recall basic math facts (3+4=7, 6×7=42)<sup>11</sup></li>
+            <li className="mb-2">Cannot automatically recall basic math facts (3+4=7, 6×7=42)<sup<1/>sup></li>
             <li className="mb-2">Must recalculate every time instead of retrieving from memory</li>
-            <li className="mb-2">Shows no improvement in speed despite extensive practice<sup>12</sup></li>
+            <li className="mb-2">Shows no improvement in speed despite extensive practice<sup<2/>sup></li>
             <li className="mb-2">May remember facts one day but forget them the next</li>
           </ul>
         </div>
@@ -87,17 +87,17 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early Childhood (Ages 3-6)</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty learning to count to 10<sup>13</sup></li>
+            <li className="mb-2">Difficulty learning to count to 10<sup<3/>sup></li>
             <li className="mb-2">Trouble recognizing numbers and number symbols</li>
-            <li className="mb-2">Cannot understand one-to-one correspondence (one number = one object)<sup>14</sup></li>
+            <li className="mb-2">Cannot understand one-to-one correspondence (one number = one object)<sup<4/>sup></li>
             <li className="mb-2">Difficulty comparing quantities (more/less, bigger/smaller)</li>
-            <li className="mb-2">Problems recognizing patterns<sup>15</sup></li>
+            <li className="mb-2">Problems recognizing patterns<sup<5/>sup></li>
             <li className="mb-2">Struggles with simple board games involving counting</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Elementary School (Ages 6-11)</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Persistent finger counting for simple calculations<sup>16</sup></li>
+            <li className="mb-2">Persistent finger counting for simple calculations<sup<6/>sup></li>
             <li className="mb-2">Cannot memorize addition and subtraction facts</li>
             <li className="mb-2">Difficulty learning multiplication tables<sup>[17]</sup></li>
             <li className="mb-2">Trouble with word problems and mathematical reasoning</li>
