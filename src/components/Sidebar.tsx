@@ -1,6 +1,5 @@
 import React from 'react';
 import { X, BookOpen, Brain, Zap, Focus, Users, Palette, Calculator, Info, Heart, PenTool, Ear, Star, Sparkles, Newspaper, ChevronDown, ChevronRight, RefreshCw, Activity, Eye, Waves, Hand, Headphones, ScanEye, MessageSquare, Lightbulb, Grid3x3, Infinity, Dna, Droplets, Shield, Puzzle, TrendingDown, AlertCircle, MessageCircle, Smile, BrainCog, Skull, Bug, Radio } from 'lucide-react';
-import { FootballHelmet } from './icons/FootballHelmet';
 
 interface SidebarProps {
   currentArticle: string;
@@ -74,18 +73,9 @@ const categories = [
           { id: 'cte', label: 'CTE (Chronic Traumatic Encephalopathy)', icon: BrainCog },
         ]
       },
-      {
-        name: 'Strokes and Blood-Flow Problems',
-        articles: []
-      },
-      {
-        name: 'Oxygen-Loss Injuries',
-        articles: []
-      },
-      {
-        name: 'Chemical or Toxin-Related',
-        articles: []
-      },
+      { name: 'Strokes and Blood-Flow Problems', articles: [] },
+      { name: 'Oxygen-Loss Injuries', articles: [] },
+      { name: 'Chemical or Toxin-Related', articles: [] },
       {
         name: 'Brain Inflammation',
         articles: [
@@ -121,146 +111,110 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
 
   return (
     <>
-      {/* Overlay for mobile */}
       {isOpen && (
-        <div 
-          className="fixed inset-0 bg-black/50 z-40 xl:hidden"
-          onClick={closeSidebar}
-        />
+        <div className="fixed inset-0 bg-black/50 z-40 xl:hidden" onClick={closeSidebar} />
       )}
       
-      {/* Sidebar */}
-      <aside 
-        className={`
-          fixed xl:relative h-screen xl:h-auto w-72 bg-[#ffd166] border-r border-[#0c264d] 
-          transition-transform duration-300 z-50 xl:z-0 overflow-y-auto xl:overflow-y-visible
-          ${isOpen ? 'translate-x-0' : '-translate-x-full xl:translate-x-0'}
-        `}
-      >
-        <div className="flex flex-col h-full xl:h-auto">
+      <aside className={`
+        fixed xl:relative h-screen xl:h-auto w-72 bg-[#ffd166] border-r border-[#0c264d] 
+        transition-transform duration-300 z-50 xl:z-0 overflow-y-auto
+        ${isOpen ? 'translate-x-0' : '-translate-x-full xl:translate-x-0'}
+      `}>
+        <div className="flex flex-col h-full">
           {/* Mobile close button */}
           <div className="xl:hidden flex items-center justify-between p-4 border-b border-[#0c264d]">
-            <span className="text-[#0c264d]">Navigation</span>
-            <button
-              onClick={closeSidebar}
-              className="p-2 hover:bg-[#ffcc00]/30 rounded-md"
-              aria-label="Close menu"
-            >
+            <span className="text-[#0c264d] font-bold">Navigation</span>
+            <button onClick={closeSidebar} className="p-2 hover:bg-[#ffcc00]/30 rounded-md">
               <X className="w-5 h-5" />
             </button>
           </div>
           
-          {/* Navigation */}
           <nav className="p-4 flex-1">
-            {/* Home & About - Top Section */}
-            <div className="mb-6">
-              <ul className="space-y-1">
-                <li>
-                  <button
-                    onClick={() => handleArticleClick('about')}
-                    className={`
-                      w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left
-                      ${currentArticle === 'about' 
-                        ? 'bg-[#0A9DC4] text-white' 
-                        : 'text-gray-700 hover:bg-gray-100'
-                      }
-                    `}
-                  >
-                    <Info className="w-5 h-5" />
-                    <span>Home & About</span>
-                  </button>
-                </li>
-              </ul>
+            {/* Top Navigation: Home & About */}
+            <div className="mb-6 space-y-1">
+              <button
+                onClick={() => handleArticleClick('home')}
+                className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left ${
+                  currentArticle === 'home' ? 'bg-[#0A9DC4] text-white' : 'text-[#0c264d] hover:bg-white/50'
+                }`}
+              >
+                <Brain className="w-5 h-5" />
+                <span className="font-bold">Home</span>
+              </button>
+              
+              <button
+                onClick={() => handleArticleClick('about')}
+                className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left ${
+                  currentArticle === 'about' ? 'bg-[#0A9DC4] text-white' : 'text-[#0c264d] hover:bg-white/50'
+                }`}
+              >
+                <Info className="w-5 h-5" />
+                <span className="font-bold">About Brainopedia</span>
+              </button>
             </div>
 
-            <div className="mb-6 pt-6 border-t border-gray-200">
-              <h2 className="text-xs uppercase tracking-wider text-gray-500 mb-3 px-3">
+            {/* Encyclopedia Volumes */}
+            <div className="mb-6 pt-6 border-t border-[#0c264d]/10">
+              <h2 className="text-xs uppercase tracking-wider text-[#0c264d]/60 mb-3 px-3 font-bold">
                 Encyclopedia Volumes
               </h2>
               
               {categories.map((category) => (
-                <div key={category.name} className="mb-4">
+                <div key={category.name} className="mb-2">
                   <button
                     onClick={() => toggleCategory(category.name)}
-                    className="w-full flex items-center justify-between px-3 py-2 text-sm font-semibold text-[#0c264d] hover:bg-gray-50 rounded-md transition-colors"
-                    style={{ fontFamily: 'Avenir, Nunito, sans-serif', fontWeight: 800 }}
+                    className="w-full flex items-center justify-between px-3 py-2 text-sm font-bold text-[#0c264d] hover:bg-white/40 rounded-md transition-colors"
                   >
                     <span>{category.name}</span>
-                    {expandedCategories[category.name] ? (
-                      <ChevronDown className="w-4 h-4" />
-                    ) : (
-                      <ChevronRight className="w-4 h-4" />
-                    )}
+                    {expandedCategories[category.name] ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
                   </button>
                   
                   {expandedCategories[category.name] && (
                     <div className="mt-1 ml-2">
-                      {/* Check if category has subcategories */}
                       {category.subcategories ? (
-                        // Render subcategories
-                        category.subcategories.map((subcategory) => (
-                          <div key={subcategory.name} className="mb-2">
+                        category.subcategories.map((sub) => (
+                          <div key={sub.name} className="mb-1">
                             <button
-                              onClick={() => toggleCategory(`${category.name} - ${subcategory.name}`)}
-                              className="w-full flex items-center justify-between px-2 py-1.5 text-sm text-[#0c264d] hover:bg-gray-50 rounded-md transition-colors"
+                              onClick={() => toggleCategory(`${category.name}-${sub.name}`)}
+                              className="w-full flex items-center justify-between px-2 py-1 text-xs font-bold text-[#0c264d]/80 hover:bg-white/30 rounded-md"
                             >
-                              <span>{subcategory.name}</span>
-                              {expandedCategories[`${category.name} - ${subcategory.name}`] ? (
-                                <ChevronDown className="w-3 h-3" />
-                              ) : (
-                                <ChevronRight className="w-3 h-3" />
-                              )}
+                              <span>{sub.name}</span>
+                              {expandedCategories[`${category.name}-${sub.name}`] ? <ChevronDown className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />}
                             </button>
-                            
-                            {expandedCategories[`${category.name} - ${subcategory.name}`] && subcategory.articles.length > 0 && (
+                            {expandedCategories[`${category.name}-${sub.name}`] && (
                               <ul className="space-y-1 mt-1 ml-4">
-                                {subcategory.articles.map((article) => {
-                                  const Icon = article.icon;
-                                  return (
-                                    <li key={article.id}>
-                                      <button
-                                        onClick={() => handleArticleClick(article.id)}
-                                        className={`
-                                          w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left
-                                          ${currentArticle === article.id 
-                                            ? 'bg-[#0A9DC4] text-white' 
-                                            : 'text-gray-700 hover:bg-gray-100'
-                                          }
-                                        `}
-                                      >
-                                        <Icon className="w-5 h-5" />
-                                        <span>{article.label}</span>
-                                      </button>
-                                    </li>
-                                  );
-                                })}
+                                {sub.articles.map((art) => (
+                                  <li key={art.id}>
+                                    <button
+                                      onClick={() => handleArticleClick(art.id)}
+                                      className={`w-full flex items-center gap-2 px-3 py-1.5 rounded-md text-xs transition-colors ${
+                                        currentArticle === art.id ? 'bg-[#0A9DC4] text-white' : 'text-gray-700 hover:bg-white'
+                                      }`}
+                                    >
+                                      <art.icon className="w-4 h-4" />
+                                      <span>{art.label}</span>
+                                    </button>
+                                  </li>
+                                ))}
                               </ul>
                             )}
                           </div>
                         ))
                       ) : (
-                        // Render regular articles
                         <ul className="space-y-1">
-                          {category.articles.map((article) => {
-                            const Icon = article.icon;
-                            return (
-                              <li key={article.id}>
-                                <button
-                                  onClick={() => handleArticleClick(article.id)}
-                                  className={`
-                                    w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left
-                                    ${currentArticle === article.id 
-                                      ? 'bg-[#0A9DC4] text-white' 
-                                      : 'text-gray-700 hover:bg-gray-100'
-                                    }
-                                  `}
-                                >
-                                  <Icon className="w-5 h-5" />
-                                  <span>{article.label}</span>
-                                </button>
-                              </li>
-                            );
-                          })}
+                          {category.articles.map((art) => (
+                            <li key={art.id}>
+                              <button
+                                onClick={() => handleArticleClick(art.id)}
+                                className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
+                                  currentArticle === art.id ? 'bg-[#0A9DC4] text-white' : 'text-gray-700 hover:bg-white'
+                                }`}
+                              >
+                                <art.icon className="w-4 h-4" />
+                                <span>{art.label}</span>
+                              </button>
+                            </li>
+                          ))}
                         </ul>
                       )}
                     </div>
@@ -269,63 +223,31 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
               ))}
             </div>
             
-            <div className="pt-6 border-t border-gray-200">
-              <h2 className="text-xs uppercase tracking-wider text-gray-500 mb-3 px-3">
+            {/* Resources & Support */}
+            <div className="pt-6 border-t border-[#0c264d]/10 space-y-1">
+              <h2 className="text-xs uppercase tracking-wider text-[#0c264d]/60 mb-3 px-3 font-bold">
                 Resources
               </h2>
-              <ul className="space-y-1">
-                <li>
-                  <button
-                    onClick={() => handleArticleClick('blog')}
-                    className={`
-                      w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left
-                      ${currentArticle === 'blog' 
-                        ? 'bg-[#0A9DC4] text-white' 
-                        : 'text-gray-700 hover:bg-gray-100'
-                      }
-                    `}
-                  >
-                    <Newspaper className="w-5 h-5" />
-                    <span>Blog & Updates</span>
-                  </button>
-                </li>
-                <li>
-                  <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
-                    Community Guidelines
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
-                    Support Resources
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
-                    Newsletters
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <button
+                onClick={() => handleArticleClick('blog')}
+                className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left ${
+                  currentArticle === 'blog' ? 'bg-[#0A9DC4] text-white' : 'text-gray-700 hover:bg-white'
+                }`}
+              >
+                <Newspaper className="w-5 h-5" />
+                <span className="text-sm font-bold">Blog & Updates</span>
+              </button>
 
-            {/* Donate */}
-            <div className="pt-6 border-t border-gray-200">
-              <ul className="space-y-1">
-                <li>
-                  <button
-                    onClick={() => handleArticleClick('donate')}
-                    className={`
-                      w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left
-                      ${currentArticle === 'donate' 
-                        ? 'bg-[#0A9DC4] text-white' 
-                        : 'text-gray-700 hover:bg-gray-100'
-                      }
-                    `}
-                  >
-                    <Heart className="w-5 h-5" />
-                    <span>Donate</span>
-                  </button>
-                </li>
-              </ul>
+              {/* Enhanced Donate Button */}
+              <button
+                onClick={() => handleArticleClick('donate')}
+                className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left mt-4 border border-red-200 ${
+                  currentArticle === 'donate' ? 'bg-red-500 text-white' : 'bg-red-50 text-red-600 hover:bg-red-100'
+                }`}
+              >
+                <Heart className="w-5 h-5" />
+                <span className="font-bold">Support Our Mission</span>
+              </button>
             </div>
           </nav>
         </div>

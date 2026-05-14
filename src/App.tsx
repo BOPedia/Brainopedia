@@ -6,9 +6,6 @@ import { Header } from './components/Header';
 import { DonationBanner } from './components/DonationBanner';
 import { Footer } from './components/Footer';
 
-
-
-
 function AppContent(): import("react/jsx-runtime").JSX.Element {
   const { articleId } = useParams();
   const navigate = useNavigate();
@@ -16,13 +13,14 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const currentArticle = articleId || 'about';
+  // CHANGE: Default to 'home' instead of 'about' when no articleId exists
+  const currentArticle = articleId || 'home';
 
   const setCurrentArticle = (article: string) => {
     navigate(`/${article}`);
   };
 
-  // Scroll to top when article changes, but NOT when only tab changes
+  // Scroll to top when article changes
   useEffect(() => {
     const pathParts = location.pathname.split('/').filter(Boolean);
     const prevPathParts = (window as any).__prevPath?.split('/').filter(Boolean) || [];
@@ -42,7 +40,7 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
     }
     link.type = 'image/png';
     link.href = '/images/favicon.png';
-    document.title = 'Brainopedia - Encyclopedia of Neurodivergent Conditions';
+    document.title = 'Brainopedia - Encyclopedia of Neurodivergent Minds';
   }, []);
 
   return (
@@ -65,6 +63,7 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
         />
 
         <main className="flex-1 p-2 md:p-8 lg:p-12 max-w-5xl mx-auto w-full">
+          {/* ArticleContent will now receive 'home' by default */}
           <ArticleContent articleId={currentArticle} setCurrentArticle={setCurrentArticle} />
         </main>
       </div>

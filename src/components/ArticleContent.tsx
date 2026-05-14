@@ -22,6 +22,8 @@ const articleMap: RouteMap = {
   ...acquiredNeurodivergenceRoutes,
 
   // --- Misc & Site Pages ---
+  // --- Misc & Site Pages ---
+'home': lazy(() => import('./articles/Home').then(m => ({ default: m.Home }))),
   'symptom-wheel-demo': lazy(() => import('./SymptomWheelDemo').then(m => ({ default: m.SymptomWheelDemo }))),
   'project-standards': lazy(() => import('./articles/ProjectStandards')),
   'about': lazy(() => import('./articles/ArticleAbout').then(m => ({ default: m.ArticleAbout }))),
