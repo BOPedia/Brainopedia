@@ -3,12 +3,13 @@ import { BookOpen, List, Users, FileText, Lightbulb } from 'lucide-react';
 
 export function ArticleAbout() {
   return (
+    /* The -m-8 and p-8 ensures the blue background fills the entire content area */
     <article className="bg-[#f0f9ff] -m-8 p-4 sm:p-8 rounded-lg font-spartan text-[#0c264d]">
       <h1 className="pb-4 border-b-2 border-[#0c264d] mb-8 text-3xl font-bold">
         About Brainopedia
       </h1>
 
-      {/* Top Section: Approach with Lean & Move Graphic */}
+      {/* Top Section: Approach */}
       <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
         <div>
           <h2 className="text-2xl font-bold mb-4">Our Approach</h2>
@@ -32,7 +33,7 @@ export function ArticleAbout() {
           </div>
         </div>
 
-        {/* The "Lean & Move" Graphic - Now max-w-lg */}
+        {/* The Brain on Book Graphic - STRICTLY max-w-lg now */}
         <div className="flex justify-center">
           <img 
             src="/images/home-brain-on-book.png" 
@@ -42,7 +43,7 @@ export function ArticleAbout() {
         </div>
       </div>
 
-      {/* White Cards Popping against the Faded Blue */}
+      {/* Grid of White Cards - They will pop against the #f0f9ff blue background */}
       <div className="grid sm:grid-cols-2 gap-6">
         <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[#ffd700] hover:shadow-md transition-shadow">
           <FileText className="w-8 h-8 text-[#ffd700] mb-4" />
