@@ -1,6 +1,6 @@
+import React from 'react';
 import { TableOfContents } from '../TableOfContents';
 import { InfoBox } from '../InfoBox';
-import { ADHDReferences } from '../references/ADHDReferences';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 
 interface ArticleADHDProps {
@@ -61,20 +61,12 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
 
   return (
     <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
+      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl font-bold">
         <span className="md:hidden">ADHD</span>
         <span className="hidden md:block">Attention-Deficit/Hyperactivity Disorder (ADHD)</span>
       </h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
           <p>
             <strong>Attention-deficit/hyperactivity disorder (ADHD)</strong> is a neurodevelopmental disorder 
@@ -86,7 +78,6 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
         <div className="w-full">
           {/* Image: adhd-main.png - add to public/images/ to restore */}
           <InfoBox
@@ -105,6 +96,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
       </div>
 
       <div className="space-y-8 mt-20 clear-both">
+        {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
@@ -119,7 +111,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           </p>
           
           <p className="mb-4">
-            It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup style={{color: '#10b981'}}>10</sup> Among adults, the prevalence is approximately 3.1%,<sup style={{color: '#10b981'}}>2</sup> often lifelong and needing ongoing support. ADHD impacts academics, work, and social relationships, with many individuals experiencing significant symptoms and functional impairment into adulthood. Viewing ADHD as neurodevelopmental helps reduce stigma and promotes evidence-based intervention.
+            It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-green-600 font-bold ml-0.5">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-green-600 font-bold ml-0.5">2</sup> often lifelong and needing ongoing support. ADHD impacts academics, work, and social relationships, with many individuals experiencing significant symptoms and functional impairment into adulthood. Viewing ADHD as neurodevelopmental helps reduce stigma and promotes evidence-based intervention.
           </p>
           <button
             onClick={(e) => {
@@ -132,6 +124,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           </button>
         </section>
 
+        {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
@@ -155,6 +148,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           </button>
         </section>
 
+        {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
@@ -165,7 +159,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           />
           
           <p className="mb-4">
-            ADHD likely results from a mix of genetic, neurological, and environmental factors. It has a strong hereditary component (heritability 70–80%).<sup style={{color: '#10b981'}}>3</sup> Brain imaging shows differences in regions for attention, impulse control, and executive function (notably prefrontal cortex) and in dopamine/norepinephrine systems; smaller overall brain volume and gray matter differences in the prefrontal cortex and basal ganglia have been observed. Environmental risks—premature birth, low birth weight, prenatal tobacco/alcohol exposure, and early adversity—contribute but explain less variance than genetics.
+            ADHD likely results from a mix of genetic, neurological, and environmental factors. It has a strong hereditary component (heritability 70–80%).<sup className="text-green-600 font-bold ml-0.5">3</sup> Brain imaging shows differences in regions for attention, impulse control, and executive function (notably prefrontal cortex) and in dopamine/norepinephrine systems; smaller overall brain volume and gray matter differences in the prefrontal cortex and basal ganglia have been observed. Environmental risks—premature birth, low birth weight, prenatal tobacco/alcohol exposure, and early adversity—contribute but explain less variance than genetics.
           </p>
           <button
             onClick={(e) => {
@@ -178,6 +172,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           </button>
         </section>
 
+        {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
@@ -201,6 +196,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           </button>
         </section>
 
+        {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
@@ -211,7 +207,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           />
           
           <p className="mb-4">
-            ADHD is managed with a multimodal, individualized plan. Options include behavioral interventions (CBT, coaching, and skills training for organization, time management, and emotional regulation), educational accommodations, organizational skills training, and lifestyle factors (exercise, sleep, routines). Medications are often helpful: stimulant medications are highly effective in reducing core ADHD symptoms and improving quality of life in 70-80% of children and adults;<sup style={{color: '#10b981'}}>14</sup> non-stimulants (atomoxetine, guanfacine, clonidine) are moderately effective alternatives, with atomoxetine showing benefit in approximately 50-60% of individuals.<sup style={{color: '#10b981'}}>5</sup> The aim is to develop strategies that fit brain differences, build strengths, and reduce daily impairment.
+            ADHD is managed with a multimodal, individualized plan. Options include behavioral interventions (CBT, coaching, and skills training for organization, time management, and emotional regulation), educational accommodations, organizational skills training, and lifestyle factors (exercise, sleep, routines). Medications are often helpful: stimulant medications are highly effective in reducing core ADHD symptoms and improving quality of life in 70-80% of children and adults;<sup className="text-green-600 font-bold ml-0.5">4</sup> non-stimulants (atomoxetine, guanfacine, clonidine) are moderately effective alternatives, with atomoxetine showing benefit in approximately 50-60% of individuals.<sup className="text-green-600 font-bold ml-0.5">5</sup> The aim is to develop strategies that fit brain differences, build strengths, and reduce daily impairment.
           </p>
           <button
             onClick={(e) => {
@@ -224,6 +220,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           </button>
         </section>
 
+        {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with ADHD</h2>
           
@@ -234,7 +231,17 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           />
           
           <p className="mb-4">
-            People with ADHD can lead full lives despite challenges, with strengths like creativity, energy, hyperfocus, and innovative problem-solving. Hyperfocus can drive productivity and expertise. Many successful people credit ADHD thinking with their achievements. Living well involves understanding symptoms, building personalized strategies, leveraging strengths, and connecting with supportive communities. Self-awareness, accommodations, supportive relationships, and sometimes medication help, while reducing stigma by viewing ADHD as a neurodevelopmental difference.
+            People with ADHD can lead full and meaningful lives across all areas of society. While ADHD presents 
+            challenges, many autistic people also describe unique strengths and perspectives that enrich their lives 
+            and communities. These may include exceptional attention to detail, deep knowledge in areas of interest, 
+            creative and innovative thinking, and strong sense of justice and authenticity.
+          </p>
+          
+          <p className="mb-4">
+            Topics related to living with ADHD include recognizing and celebrating ADHD strengths, navigating 
+            daily life with appropriate accommodations, connecting with the ADHD community and finding peer support, 
+            fostering positive identity, developing self-advocacy skills, and understanding legal protections 
+            like the Americans with Disabilities Act (ADA).
           </p>
           <button
             onClick={(e) => {
@@ -248,7 +255,63 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         </section>
       </div>
 
-      <ADHDReferences />
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Reuben, C., & Elgaddal, N. (2024). "Attention-Deficit/Hyperactivity Disorder in Children Ages 5–17 Years: United States, 2020–2022." <i>NCHS Data Brief</i>, No. 499. National Center for Health Statistics.
+            </li>
+            <li>
+              Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review of evidence generated across the globe." <i>Psychiatry Research</i>, 328, 115449.
+            </li>
+            <li>
+              Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <i>Molecular Psychiatry</i>, 24(4), 562-575.
+            </li>
+            <li>
+              Cortese, S., et al. (2024). "Efficacy and safety of ADHD medications: A comprehensive meta-analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 63(2), 192-208.
+            </li>
+            <li>
+              Cortese, S., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults." <i>The Lancet Psychiatry</i>, 5(9), 727-738.
+            </li>
+          </ol>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>
+              American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).
+            </li>
+            <li>
+              Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.
+            </li>
+            <li>
+              American Psychiatric Association. (2025). "New Research: Understanding Adult ADHD Challenges." Psychiatry.org.
+            </li>
+            <li>
+              Faraone, S. V., Biederman, J., & Mick, E. (2006). "The age-dependent decline of attention deficit hyperactivity disorder: A meta-analysis of follow-up studies." <i>Psychological Medicine</i>, 36(2), 159-165.
+            </li>
+            <li>
+              Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press.
+            </li>
+            <li>
+              Polanczyk, G. V., et al. (2014). "ADHD prevalence estimates across three decades." <i>International Journal of Epidemiology</i>, 43(2), 434-442.
+            </li>
+          </ul>
+        </div>
+      </div>
     </article>
   );
 }
