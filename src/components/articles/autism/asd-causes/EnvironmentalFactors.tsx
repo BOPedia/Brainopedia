@@ -23,7 +23,7 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
       </p>
 
       <p className="mb-8 leading-relaxed text-[#0c264d]">
-        Research indicates that while autism is highly heritable, these non-genetic factors—such as maternal immune responses, metabolic conditions, or exposure to certain medications in utero—can interact with a child's genetic blueprint to influence brain development.<sup className="text-[#0c264d] font-extrabold ml-0.5"<2/>sup>
+        Research indicates that while autism is highly heritable, these non-genetic factors—such as maternal immune responses, metabolic conditions, or exposure to certain medications in utero—can interact with a child's genetic blueprint to influence brain development.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup>
       </p>
 
       <div className="clear-both"></div>
@@ -34,13 +34,13 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
           <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Prenatal Factors</h3>
           <p className="text-sm mb-3 text-[#0c264d] opacity-90 italic">Factors during pregnancy associated with increased risk:</p>
           <ul className="list-disc ml-5 space-y-2 text-sm text-[#0c264d] opacity-90">
-            <li><strong>Advanced parental age:</strong> Both maternal and paternal age over 35.<sup className="text-[#0c264d] font-extrabold ml-0.5"<2/>sup></li>
-            <li><strong>Maternal infections:</strong> Severe infections, particularly in the second trimester.<sup className="text-[#0c264d] font-extrabold ml-0.5"<3/>sup></li>
-            <li><strong>Maternal immune activation:</strong> Immune responses affecting fetal brain development.<sup className="text-[#0c264d] font-extrabold ml-0.5"<3/>sup></li>
-            <li><strong>Certain medications:</strong> Valproic acid exposure during pregnancy.<sup className="text-[#0c264d] font-extrabold ml-0.5"<4/>sup></li>
-            <li><strong>Prenatal nutrition:</strong> Deficiencies in nutrients like folic acid.<sup className="text-[#0c264d] font-extrabold ml-0.5"<3/>sup></li>
+            <li><strong>Advanced parental age:</strong> Both maternal and paternal age over 35.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup></li>
+            <li><strong>Maternal infections:</strong> Severe infections, particularly in the second trimester.<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup></li>
+            <li><strong>Maternal immune activation:</strong> Immune responses affecting fetal brain development.<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup></li>
+            <li><strong>Certain medications:</strong> Valproic acid exposure during pregnancy.<sup className="text-[#0c264d] font-extrabold ml-0.5">4</sup></li>
+            <li><strong>Prenatal nutrition:</strong> Deficiencies in nutrients like folic acid.<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup></li>
             <li><strong>Gestational diabetes:</strong> Metabolic conditions affecting development.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup></li>
-            <li><strong>Air pollution:</strong> Exposure during pregnancy and early life.<sup className="text-[#0c264d] font-extrabold ml-0.5"<3/>sup></li>
+            <li><strong>Air pollution:</strong> Exposure during pregnancy and early life.<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup></li>
           </ul>
         </div>
 
@@ -51,7 +51,7 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
           <ul className="list-disc ml-5 space-y-2 text-sm text-[#0c264d] opacity-90">
             <li><strong>Preterm birth:</strong> Birth before 37 weeks, especially very preterm birth.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup></li>
             <li><strong>Low birth weight:</strong> Particularly very low birth weight infants.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup></li>
-            <li><strong>Birth complications:</strong> Significant oxygen deprivation (hypoxia).<sup className="text-[#0c264d] font-extrabold ml-0.5"<3/>sup></li>
+            <li><strong>Birth complications:</strong> Significant oxygen deprivation (hypoxia).<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup></li>
             <li><strong>Multiple births:</strong> Twins/multiples have a slightly elevated risk.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup></li>
           </ul>
         </div>
@@ -75,7 +75,7 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
       <div className="bg-[#2abcd4] bg-opacity-20 p-5 rounded-lg border-2 border-dashed border-[#0c264d] border-opacity-30 mb-10">
         <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">Gene-Environment Interactions</h3>
         <p className="text-sm leading-relaxed text-[#0c264d]">
-          Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup className="text-[#0c264d] font-extrabold ml-0.5"<2/>sup>
+          Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup>
         </p>
       </div>
 
@@ -97,7 +97,7 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
           <div>
             <h4 className="font-bold text-[#0c264d] text-sm">1. The Antigen Load</h4>
             <p className="text-sm text-gray-700 leading-relaxed">
-              Because modern vaccines are highly purified, the total "antigen load" (the immune-stimulating proteins) a child receives today from the <em>entire</em> schedule is a fraction of what a child received decades ago from just one or two shots. Clinical studies measuring the exact antigen load in children with and without autism show absolutely no difference.<sup className="text-[#0c264d] font-extrabold ml-0.5"<6/>sup> 
+              Because modern vaccines are highly purified, the total "antigen load" (the immune-stimulating proteins) a child receives today from the <em>entire</em> schedule is a fraction of what a child received decades ago from just one or two shots. Clinical studies measuring the exact antigen load in children with and without autism show absolutely no difference.<sup className="text-[#0c264d] font-extrabold ml-0.5">6</sup> 
             </p>
           </div>
 

@@ -211,7 +211,7 @@ export function ADHDSymptomsTabMyths() {
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Emotional Dysregulation</div>
                   <div className="text-sm">
-                    This IS common in ADHD (~70% experience it)<sup style={{color: '#10b981'}}>10</sup> but it's NOT one of the 18 DSM-5 diagnostic criteria<sup style={{color: '#10b981'}}<2/>sup>. 
+                    This IS common in ADHD (~70% experience it)<sup style={{color: '#10b981'}}>10</sup> but it's NOT one of the 18 DSM-5 diagnostic criteria<sup style={{color: '#10b981'}}>2</sup>. 
                     Social media often presents it as the main feature of ADHD when it's actually an associated feature, 
                     not a core diagnostic symptom.
                   </div>

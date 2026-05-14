@@ -32,7 +32,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <p className="mb-4">
             Modern research has identified multiple biological mechanisms and risk factors that contribute to 
             ADHD, including differences in brain structure and function, genetic variations, neurotransmitter 
-            imbalances, and certain environmental exposures during critical developmental periods<sup style={{color: '#10b981'}}<2/>sup>.
+            imbalances, and certain environmental exposures during critical developmental periods<sup style={{color: '#10b981'}}>2</sup>.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           />
 
           <p className="mb-4">
-            Modern research increasingly recognizes that genes and environment interact in complex ways<sup style={{color: '#10b981'}}<3/>sup>. Someone 
+            Modern research increasingly recognizes that genes and environment interact in complex ways<sup style={{color: '#10b981'}}>3</sup>. Someone 
             with genetic vulnerability to ADHD might not develop significant symptoms in one environment but might 
             in another. Conversely, protective factors (supportive family, appropriate interventions, good education) 
             can significantly improve outcomes even for those with strong genetic predisposition.
@@ -76,8 +76,8 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <h3 className="text-[#0c264d] font-semibold mb-2">Inline Citations</h3>
           <div className="text-sm space-y-2 mb-4">
             <p><sup style={{color: '#10b981'}}>10</sup> Thapar, A., & Cooper, M. (2016). "Attention deficit hyperactivity disorder." <em>Lancet</em>, 387(10024), 1240-1250.; Faraone, S. V., et al. (2021). "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 128, 789-818.</p>
-            <p><sup style={{color: '#10b981'}}<2/>sup> Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.; Cortese, S., et al. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</p>
-            <p><sup style={{color: '#10b981'}}<3/>sup> Nigg, J. T., et al. (2010). "Gene-environment interactions and ADHD: A review of the literature." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 432-445.; Thapar, A., et al. (2013). "Gene-environment interplay in attention-deficit hyperactivity disorder and the importance of a developmental perspective." <em>British Journal of Psychiatry</em>, 202(6), 414-415.</p>
+            <p><sup style={{color: '#10b981'}}>2</sup> Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.; Cortese, S., et al. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</p>
+            <p><sup style={{color: '#10b981'}}>3</sup> Nigg, J. T., et al. (2010). "Gene-environment interactions and ADHD: A review of the literature." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 432-445.; Thapar, A., et al. (2013). "Gene-environment interplay in attention-deficit hyperactivity disorder and the importance of a developmental perspective." <em>British Journal of Psychiatry</em>, 202(6), 414-415.</p>
           </div>
           
           <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
@@ -117,21 +117,21 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           means that genetic factors account for a substantial portion of individual differences in ADHD symptoms. 
           If one identical twin has ADHD, there's a high probability the other will as well. Recent large-scale 
           studies confirm these heritability estimates remain consistent across the lifespan, from childhood through 
-          adulthood.<sup className="text-[#10b981]"<2/>sup><sup className="text-[#10b981]"<3/>sup>
+          adulthood.<sup className="text-[#10b981]">2</sup><sup className="text-[#10b981]">3</sup>
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genome-Wide Association Studies (GWAS)</h3>
         <p className="mb-4">
           Major advances in genetic research have come from genome-wide association studies. The largest and most 
           recent GWAS meta-analysis, published in 2023, identified 27 genetic risk loci associated with ADHD by 
-          analyzing data from over 38,000 individuals with ADHD and 186,000 controls.<sup className="text-[#10b981]"<4/>sup> This groundbreaking 
+          analyzing data from over 38,000 individuals with ADHD and 186,000 controls.<sup className="text-[#10b981]">4</sup> This groundbreaking 
           study refined our understanding of ADHD's genetic architecture and implicated several cognitive domains 
           including executive function, processing speed, and working memory.
         </p>
         <p className="mb-4">
           Earlier GWAS studies, including the 2019 discovery of the first genome-wide significant risk loci,<sup className="text-[#10b981]">5</sup> 
           paved the way for these findings. Population-based studies analyzing ADHD symptoms in pediatric cohorts 
-          have also contributed to identifying genetic variants associated with symptom severity.<sup className="text-[#10b981]"<6/>sup>
+          have also contributed to identifying genetic variants associated with symptom severity.<sup className="text-[#10b981]">6</sup>
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multiple Genes Involved</h3>
@@ -155,7 +155,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <p className="mb-4">
           ADHD shares genetic risk factors with several other psychiatric and neurodevelopmental conditions. 
           Large-scale genomic studies have revealed significant genetic correlations between ADHD and conditions 
-          such as autism spectrum disorder, depression, anxiety, and bipolar disorder.<sup className="text-[#10b981]"<1/>sup> This genetic overlap 
+          such as autism spectrum disorder, depression, anxiety, and bipolar disorder.<sup className="text-[#10b981]">1</sup> This genetic overlap 
           helps explain why comorbidity is so common in ADHD and why individuals with ADHD often experience 
           multiple co-occurring conditions.
         </p>
@@ -163,13 +163,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           Genetic research has also investigated sex differences in ADHD prevalence. Studies examining the 
           genetic basis of sex bias have found that while ADHD is more commonly diagnosed in males, the 
           genetic risk factors are largely similar across sexes, suggesting that sex differences may be more 
-          related to expression and diagnostic patterns than underlying genetic vulnerability.<sup className="text-[#10b981]"<2/>sup>
+          related to expression and diagnostic patterns than underlying genetic vulnerability.<sup className="text-[#10b981]">2</sup>
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
         <p className="mb-4">
           While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
-          interact with genetic predisposition to influence whether and how ADHD manifests.<sup className="text-[#10b981]"<3/>sup><sup className="text-[#10b981]"<4/>sup> Understanding 
+          interact with genetic predisposition to influence whether and how ADHD manifests.<sup className="text-[#10b981]">3</sup><sup className="text-[#10b981]">4</sup> Understanding 
           both genetic and environmental contributions is essential for a complete picture of ADHD's origins. 
           This interplay between nature and nurture helps explain why not everyone with genetic risk factors 
           develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
@@ -251,7 +251,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <p className="mb-4">
           A follow-up ENIGMA study in 2019 examined cortical thickness and surface area across more than 
           2,200 individuals with ADHD and found subtle but widespread differences in cortical structure, 
-          particularly in frontal, temporal, and cingulate regions.<sup className="text-[#10b981]"<2/>sup> The findings support the concept 
+          particularly in frontal, temporal, and cingulate regions.<sup className="text-[#10b981]">2</sup> The findings support the concept 
           that ADHD involves alterations in large-scale brain networks rather than isolated regional abnormalities.
         </p>
 
@@ -260,11 +260,11 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           Modern neuroimaging research has identified consistent structural differences in ADHD:
         </p>
         <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Total brain volume:</strong> Meta-analyses confirm smaller total brain volume and intracranial volume in children with ADHD, with these differences being most prominent in childhood<sup className="text-[#10b981]"<3/>sup></li>
+          <li className="mb-2"><strong>Total brain volume:</strong> Meta-analyses confirm smaller total brain volume and intracranial volume in children with ADHD, with these differences being most prominent in childhood<sup className="text-[#10b981]">3</sup></li>
           <li className="mb-2"><strong>Subcortical regions:</strong> Reduced volume in the prefrontal cortex (responsible for executive functions), basal ganglia (involved in motor control and reward), hippocampus (memory and emotion regulation), amygdala (emotional processing), and cerebellum (coordination and timing)<sup className="text-[#10b981]">10</sup></li>
-          <li className="mb-2"><strong>Cortical thickness:</strong> Thinner cortex in multiple regions, particularly in prefrontal and temporal areas, with some studies showing normalization in adulthood<sup className="text-[#10b981]"<4/>sup></li>
+          <li className="mb-2"><strong>Cortical thickness:</strong> Thinner cortex in multiple regions, particularly in prefrontal and temporal areas, with some studies showing normalization in adulthood<sup className="text-[#10b981]">4</sup></li>
           <li className="mb-2"><strong>Delayed cortical maturation:</strong> The brain develops on a typical trajectory but more slowly, with peak cortical thickness achieved approximately 2-3 years later than in neurotypical development<sup className="text-[#10b981]">5</sup></li>
-          <li className="mb-2"><strong>White matter microstructure:</strong> Differences in white matter organization affecting neural connectivity between brain regions, particularly in pathways connecting frontal regions to other brain areas<sup className="text-[#10b981]"<6/>sup><sup className="text-[#10b981]">7</sup></li>
+          <li className="mb-2"><strong>White matter microstructure:</strong> Differences in white matter organization affecting neural connectivity between brain regions, particularly in pathways connecting frontal regions to other brain areas<sup className="text-[#10b981]">6</sup><sup className="text-[#10b981]">7</sup></li>
         </ul>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Functional Differences</h3>
@@ -274,8 +274,8 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <ul className="list-disc ml-6 mb-4">
           <li className="mb-2"><strong>Task-based activation:</strong> Underactivity in prefrontal cortex and parietal regions during tasks requiring attention, inhibition, and working memory<sup className="text-[#10b981]">8</sup></li>
           <li className="mb-2"><strong>Default mode network (DMN):</strong> Altered activity in the DMN (active during rest and mind-wandering), including insufficient suppression of this network during tasks requiring focused attention<sup className="text-[#10b981]">9</sup></li>
-          <li className="mb-2"><strong>Functional connectivity:</strong> Widespread alterations in connectivity between brain regions, particularly involving networks related to attention, executive control, and reward processing<sup className="text-[#10b981]">10</sup><sup className="text-[#10b981]"<1/>sup></li>
-          <li className="mb-2"><strong>Reward processing circuits:</strong> Reduced activation in ventral striatum during reward anticipation, which may explain motivation challenges and preference for immediate rewards<sup className="text-[#10b981]"<2/>sup></li>
+          <li className="mb-2"><strong>Functional connectivity:</strong> Widespread alterations in connectivity between brain regions, particularly involving networks related to attention, executive control, and reward processing<sup className="text-[#10b981]">10</sup><sup className="text-[#10b981]">1</sup></li>
+          <li className="mb-2"><strong>Reward processing circuits:</strong> Reduced activation in ventral striatum during reward anticipation, which may explain motivation challenges and preference for immediate rewards<sup className="text-[#10b981]">2</sup></li>
           <li className="mb-2"><strong>Network organization:</strong> Less efficient organization of large-scale brain networks, potentially contributing to variability in cognitive performance<sup className="text-[#10b981]">10</sup></li>
         </ul>
 
@@ -284,7 +284,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           Research increasingly focuses on brain structure in adults with ADHD. Studies show that while some 
           childhood brain differences normalize with age, adults with persistent ADHD continue to show structural 
           and functional differences, including reduced cortical thickness in frontal regions and altered functional 
-          connectivity in attention networks.<sup className="text-[#10b981]"<3/>sup> This supports the understanding that ADHD is a lifelong 
+          connectivity in attention networks.<sup className="text-[#10b981]">3</sup> This supports the understanding that ADHD is a lifelong 
           neurodevelopmental condition, not simply a childhood disorder.
         </p>
 
@@ -292,7 +292,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <p className="mb-4">
           Longitudinal imaging studies tracking individuals over time reveal that ADHD involves altered 
           developmental trajectories rather than static abnormalities. Some brain differences are most 
-          pronounced in childhood and decrease with age, while others emerge or persist into adulthood.<sup className="text-[#10b981]"<4/>sup> 
+          pronounced in childhood and decrease with age, while others emerge or persist into adulthood.<sup className="text-[#10b981]">4</sup> 
           Understanding these developmental patterns helps explain why some individuals experience symptom 
           improvement while others continue to face challenges throughout life.
         </p>
@@ -370,18 +370,18 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <p className="mb-4">
           <strong>Dopamine transporter (DAT):</strong> Research shows that individuals with ADHD may have altered 
           dopamine transporter density, which affects how quickly dopamine is cleared from the synaptic space 
-          between neurons.<sup className="text-[#10b981]"<2/>sup> This is significant because stimulant medications work primarily by blocking 
+          between neurons.<sup className="text-[#10b981]">2</sup> This is significant because stimulant medications work primarily by blocking 
           the dopamine transporter, allowing dopamine to remain active longer.
         </p>
         <p className="mb-4">
           <strong>Dopamine receptors:</strong> Genetic studies have identified variants in dopamine receptor genes 
-          (particularly DRD4 and DRD5) associated with ADHD.<sup className="text-[#10b981]"<3/>sup> These genetic variations may influence how 
+          (particularly DRD4 and DRD5) associated with ADHD.<sup className="text-[#10b981]">3</sup> These genetic variations may influence how 
           effectively dopamine signals are transmitted in key brain regions.
         </p>
         <p className="mb-4">
           <strong>Reward processing:</strong> Altered dopamine signaling in reward circuits helps explain why people 
           with ADHD often struggle with delayed gratification, have difficulty sustaining motivation for non-preferred 
-          tasks, and may engage in reward-seeking behaviors.<sup className="text-[#10b981]"<4/>sup> Recent research suggests that ADHD 
+          tasks, and may engage in reward-seeking behaviors.<sup className="text-[#10b981]">4</sup> Recent research suggests that ADHD 
           involves not just low dopamine, but altered dynamics of dopamine signaling in response to rewards.
         </p>
 
@@ -394,7 +394,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <p className="mb-4">
           <strong>Prefrontal cortex function:</strong> Optimal levels of norepinephrine in the prefrontal cortex 
           are essential for working memory, response inhibition, and attention control. Both too little and too 
-          much norepinephrine can impair these functions.<sup className="text-[#10b981]"<6/>sup> This helps explain why both stimulant 
+          much norepinephrine can impair these functions.<sup className="text-[#10b981]">6</sup> This helps explain why both stimulant 
           medications (which increase norepinephrine) and non-stimulant medications like atomoxetine (which 
           selectively increase norepinephrine) can be effective for ADHD.
         </p>
@@ -432,15 +432,15 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <li className="mb-2">
             <strong>Glutamate:</strong> As the brain's primary excitatory neurotransmitter, glutamate is essential 
             for learning and memory. Some studies have found alterations in glutamate signaling in ADHD, particularly 
-            in prefrontal regions.<sup className="text-[#10b981]"<1/>sup>
+            in prefrontal regions.<sup className="text-[#10b981]">1</sup>
           </li>
           <li className="mb-2">
             <strong>GABA:</strong> The main inhibitory neurotransmitter, GABA helps regulate neural excitability. 
-            Some research suggests altered GABAergic function may contribute to hyperactivity and impulsivity.<sup className="text-[#10b981]"<2/>sup>
+            Some research suggests altered GABAergic function may contribute to hyperactivity and impulsivity.<sup className="text-[#10b981]">2</sup>
           </li>
           <li className="mb-2">
             <strong>Acetylcholine:</strong> This neurotransmitter is important for attention and learning. Recent 
-            studies have begun exploring whether cholinergic dysfunction contributes to attention deficits in ADHD.<sup className="text-[#10b981]"<3/>sup>
+            studies have begun exploring whether cholinergic dysfunction contributes to attention deficits in ADHD.<sup className="text-[#10b981]">3</sup>
           </li>
         </ul>
 
@@ -449,8 +449,8 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           Modern neuroimaging techniques allow researchers to visualize neurotransmitter systems in living brains. 
           PET (positron emission tomography) and SPECT (single-photon emission computed tomography) imaging studies 
           have provided direct evidence of altered dopamine transporter density and dopamine receptor availability 
-          in individuals with ADHD.<sup className="text-[#10b981]"<4/>sup> More recent studies using advanced imaging methods continue to 
-          refine our understanding of neurotransmitter dysfunction in ADHD across development.<sup className="text-[#10b981]"<5/>sup>
+          in individuals with ADHD.<sup className="text-[#10b981]">4</sup> More recent studies using advanced imaging methods continue to 
+          refine our understanding of neurotransmitter dysfunction in ADHD across development.<sup className="text-[#10b981]">5</sup>
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">From Neurotransmitters to Symptoms</h3>
@@ -469,7 +469,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <p className="mb-4">
           The neurotransmitter theory of ADHD provides a biological foundation for medication treatment. Stimulant 
           medications (methylphenidate and amphetamines) work by increasing dopamine and norepinephrine availability 
-          in the synapse, helping normalize signaling in underactive circuits.<sup className="text-[#10b981]"<6/>sup> Non-stimulant medications 
+          in the synapse, helping normalize signaling in underactive circuits.<sup className="text-[#10b981]">6</sup> Non-stimulant medications 
           like atomoxetine primarily increase norepinephrine, while guanfacine and clonidine target norepinephrine 
           receptors to enhance prefrontal cortex function.<sup className="text-[#10b981]">7</sup>
         </p>
@@ -485,7 +485,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           Modern research has moved beyond simple "chemical imbalance" models. Rather than just having "low dopamine," 
           ADHD likely involves more complex patterns including altered dynamics of neurotransmitter release and 
           reuptake, regional variations in neurotransmitter function, developmental changes in neurotransmitter 
-          systems, and disrupted balance between different neurotransmitter systems.<sup className="text-[#10b981]"<6/>sup>
+          systems, and disrupted balance between different neurotransmitter systems.<sup className="text-[#10b981]">6</sup>
         </p>
         <p className="mb-4">
           The neurotransmitter theory of ADHD provides a biological explanation for symptoms and guides medication 
@@ -574,16 +574,16 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <strong>Maternal smoking during pregnancy:</strong> Numerous studies have established a strong association 
           between maternal smoking during pregnancy and increased ADHD risk in offspring. A comprehensive 2016 
           meta-analysis found that prenatal smoking exposure was associated with approximately 60% increased risk 
-          of ADHD.<sup className="text-[#10b981]"<2/>sup> Recent research using sibling comparison designs suggests that while some of this 
+          of ADHD.<sup className="text-[#10b981]">2</sup> Recent research using sibling comparison designs suggests that while some of this 
           association may be due to shared familial/genetic factors, there likely remains a direct causal effect of 
-          prenatal nicotine exposure on ADHD risk.<sup className="text-[#10b981]"<3/>sup> The mechanisms may involve nicotine's effects on 
+          prenatal nicotine exposure on ADHD risk.<sup className="text-[#10b981]">3</sup> The mechanisms may involve nicotine's effects on 
           developing neurotransmitter systems, particularly dopaminergic and cholinergic pathways.
         </p>
         
         <p className="mb-4">
           <strong>Prenatal alcohol exposure:</strong> Alcohol consumption during pregnancy can have significant 
           neurodevelopmental effects. Children with Fetal Alcohol Spectrum Disorders (FASD) frequently exhibit 
-          attention problems and hyperactivity similar to ADHD.<sup className="text-[#10b981]"<4/>sup> Even moderate alcohol exposure during 
+          attention problems and hyperactivity similar to ADHD.<sup className="text-[#10b981]">4</sup> Even moderate alcohol exposure during 
           pregnancy has been associated with increased ADHD symptoms, though distinguishing causal effects from 
           confounding factors remains challenging in research studies.<sup className="text-[#10b981]">5</sup>
         </p>
@@ -592,7 +592,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <strong>Prenatal stress and maternal mental health:</strong> Maternal stress, anxiety, and depression 
           during pregnancy have been associated with increased ADHD risk in children. A 2018 study found that 
           prenatal maternal stress was associated with increased risk of ADHD symptoms, potentially mediated through 
-          effects on the developing fetal stress response systems and brain development.<sup className="text-[#10b981]"<6/>sup> Maternal depression 
+          effects on the developing fetal stress response systems and brain development.<sup className="text-[#10b981]">6</sup> Maternal depression 
           and anxiety during pregnancy have also been linked to offspring ADHD in multiple studies.<sup className="text-[#10b981]">7</sup>
         </p>
 
@@ -624,23 +624,23 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <strong>Air pollution:</strong> A growing body of research links exposure to air pollution—both prenatal 
           and early childhood—with increased ADHD risk. A 2020 systematic review and meta-analysis found significant 
           associations between various air pollutants (including particulate matter, nitrogen dioxide, and polycyclic 
-          aromatic hydrocarbons) and ADHD.<sup className="text-[#10b981]"<1/>sup> Studies from multiple countries including the United States, 
-          Europe, and Asia have demonstrated these associations.<sup className="text-[#10b981]"<2/>sup><sup className="text-[#10b981]"<3/>sup> The mechanisms likely involve 
+          aromatic hydrocarbons) and ADHD.<sup className="text-[#10b981]">1</sup> Studies from multiple countries including the United States, 
+          Europe, and Asia have demonstrated these associations.<sup className="text-[#10b981]">2</sup><sup className="text-[#10b981]">3</sup> The mechanisms likely involve 
           neuroinflammation and oxidative stress affecting brain development.
         </p>
 
         <p className="mb-4">
           <strong>Lead exposure:</strong> Even at low levels now considered common in developed countries, lead 
           exposure has been associated with attention problems and ADHD symptoms. Blood lead levels well below 
-          traditional thresholds for concern have been linked to increased ADHD risk.<sup className="text-[#10b981]"<4/>sup> A 2018 study found 
+          traditional thresholds for concern have been linked to increased ADHD risk.<sup className="text-[#10b981]">4</sup> A 2018 study found 
           that childhood lead exposure was associated with increased risk of ADHD symptoms, with no safe threshold 
-          identified.<sup className="text-[#10b981]"<5/>sup> Lead affects multiple neurotransmitter systems and can disrupt normal brain development.
+          identified.<sup className="text-[#10b981]">5</sup> Lead affects multiple neurotransmitter systems and can disrupt normal brain development.
         </p>
 
         <p className="mb-4">
           <strong>Pesticides and organophosphates:</strong> Several studies have found associations between exposure 
           to organophosphate pesticides and ADHD symptoms. A 2015 longitudinal study found that prenatal exposure to 
-          organophosphate pesticides was associated with increased ADHD symptoms in childhood.<sup className="text-[#10b981]"<6/>sup> Other research 
+          organophosphate pesticides was associated with increased ADHD symptoms in childhood.<sup className="text-[#10b981]">6</sup> Other research 
           has linked urinary metabolites of organophosphate pesticides with ADHD diagnosis in children.<sup className="text-[#10b981]">[17]</sup> These 
           pesticides affect acetylcholine neurotransmission and may disrupt normal neurodevelopment.
         </p>

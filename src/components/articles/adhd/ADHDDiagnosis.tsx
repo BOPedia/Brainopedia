@@ -239,7 +239,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">ADHD Rating Scale-5 (ADHD-RS-5)</div>
                   <div className="text-sm">
-                    Directly based on DSM-5 criteria<sup className="text-[#10b981]"<2/>sup>. Brief questionnaire (18 items matching the 18 DSM symptoms) 
+                    Directly based on DSM-5 criteria<sup className="text-[#10b981]">2</sup>. Brief questionnaire (18 items matching the 18 DSM symptoms) 
                     with versions for home and school settings.
                   </div>
                 </div>
@@ -271,7 +271,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Adult ADHD Self-Report Scale (ASRS)</div>
                   <div className="text-sm">
-                    WHO-developed screening tool specifically for adults<sup className="text-[#10b981]"<3/>sup>. Brief version (6 items) available for quick screening. 
+                    WHO-developed screening tool specifically for adults<sup className="text-[#10b981]">3</sup>. Brief version (6 items) available for quick screening. 
                     Free and widely used.
                   </div>
                 </div>
@@ -1159,9 +1159,9 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </p>
               <ul className="text-sm space-y-2 list-disc ml-4 mb-4">
                 <li><strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup className="text-[#10b981]">10</sup></li>
-                <li><strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup className="text-[#10b981]"<2/>sup></li>
+                <li><strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup className="text-[#10b981]">2</sup></li>
                 <li>Both conditions share genetic risk factors and neurobiological features</li>
-                <li>Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup className="text-[#10b981]"<3/>sup></li>
+                <li>Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup className="text-[#10b981]">3</sup></li>
               </ul>
             </div>
 
@@ -1398,7 +1398,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 <strong>Best Practice:</strong> Comprehensive evaluation should systematically assess for both conditions, 
                 especially when initial interventions for one diagnosis don't fully address the individual's challenges. 
                 Studies show that many autistic individuals benefit from ADHD-specific interventions once ADHD is 
-                properly identified.<sup className="text-[#10b981]"<4/>sup>
+                properly identified.<sup className="text-[#10b981]">4</sup>
               </p>
             </div>
 

@@ -36,7 +36,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <p className="mb-4">
             Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized 
             by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 
-            or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-[#10b981]">10</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-[#10b981]"<2/>sup> making it one of the most common neurodevelopmental disorders.
+            or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-[#10b981]">10</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-[#10b981]">2</sup> making it one of the most common neurodevelopmental disorders.
           </p>
           <p className="mb-4">
             ADHD is not simply a childhood disorder—symptoms often persist into adulthood. It's a real medical condition with neurological basis, not a character flaw or result of poor parenting. Brain imaging studies reveal significant differences in brain structure and function.
@@ -54,7 +54,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           />
           
           <p className="mb-4">
-            According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-[#10b981]"<3/>sup>
+            According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-[#10b981]">3</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Predominantly Inattentive Presentation</h3>
@@ -155,7 +155,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
                   <div className="text-sm font-bold text-[#0c264d]">Girls</div>
                 </div>
               </div>
-              <div className="text-center mt-2 text-sm text-gray-600">2:1 to 3:1 ratio<sup className="text-[#10b981]"<4/>sup></div>
+              <div className="text-center mt-2 text-sm text-gray-600">2:1 to 3:1 ratio<sup className="text-[#10b981]">4</sup></div>
             </div>
             
             {/* Presentation Types */}
@@ -165,7 +165,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
               </div>
               <div className="bg-[#0A9DC4] text-white rounded p-3 text-center">
                 <div className="text-2xl font-bold">Combined</div>
-                <div className="text-sm">50-75% of cases<sup className="text-[#10b981]"<4/>sup></div>
+                <div className="text-sm">50-75% of cases<sup className="text-[#10b981]">4</sup></div>
               </div>
             </div>
           </div>
@@ -178,7 +178,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Differences</h3>
           <p className="mb-4">
             Boys are diagnosed with ADHD more frequently than girls, with ratios ranging from 2:1 to 3:1 in 
-            community samples.<sup className="text-[#10b981]"<4/>sup> However, this gap narrows in adulthood, and many experts believe ADHD is 
+            community samples.<sup className="text-[#10b981]">4</sup> However, this gap narrows in adulthood, and many experts believe ADHD is 
             underdiagnosed in girls and women. Girls more often present with the inattentive type, which is 
             less disruptive and therefore more likely to be missed. Girls may also develop compensatory strategies 
             or internalize their struggles, leading to later diagnosis.
@@ -341,7 +341,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             
             {/* Co-occurring Conditions */}
             <div>
-              <div className="text-sm text-center mb-3 text-[#0c264d] font-bold">Common Co-occurring Conditions<sup className="text-[#10b981]"<6/>sup></div>
+              <div className="text-sm text-center mb-3 text-[#0c264d] font-bold">Common Co-occurring Conditions<sup className="text-[#10b981]">6</sup></div>
               <div className="grid grid-cols-2 gap-2 mb-3">
                 <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
                   <div className="font-bold text-[#0c264d]">59%</div>

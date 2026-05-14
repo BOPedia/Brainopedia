@@ -58,7 +58,7 @@ export function ADHDSymptomsTabMoreB() {
                 <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
                 <div className="text-sm space-y-2">
                   <p><strong>The "30% Rule":</strong> Clinical research suggests that the "executive age" of an adult with ADHD is often 
-                  30–40% behind their chronological age (e.g., a 30-year-old having the executive skills of a 20-year-old).<sup className="text-[#10b981]"<2/>sup></p>
+                  30–40% behind their chronological age (e.g., a 30-year-old having the executive skills of a 20-year-old).<sup className="text-[#10b981]">2</sup></p>
                   <p><strong>Task Breakdown:</strong> Executive dysfunction disrupts the brain's ability to break down complex tasks, 
                   leading to the "paralysis" felt when starting new projects.</p>
                 </div>

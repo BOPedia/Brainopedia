@@ -14,7 +14,7 @@ export function OverviewContent({ setCurrentArticle }: OverviewContentProps) {
         <p className="mb-4">
           Support for autistic individuals should be individualized, strengths-based, and centered on improving 
           quality of life rather than simply reducing autistic traits.<sup className="text-[#10b981]">10</sup> The goal is to help autistic 
-          people thrive as themselves, not to make them "indistinguishable from their peers."<sup className="text-[#10b981]"<2/>sup> Effective 
+          people thrive as themselves, not to make them "indistinguishable from their peers."<sup className="text-[#10b981]">2</sup> Effective 
           support respects neurodiversity while providing accommodations and skills to navigate a neurotypical world.
         </p>
    

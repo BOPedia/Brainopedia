@@ -48,7 +48,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <p className="mb-4">
             Recent research on treatment sequencing suggests that starting with behavioral interventions first may be 
             more effective and cost less than medication-first approaches, particularly for reducing classroom discipline 
-            referrals and disruptive behaviors.<sup className="text-[#10b981]"<3/>sup> However, the optimal treatment sequence depends on individual 
+            referrals and disruptive behaviors.<sup className="text-[#10b981]">3</sup> However, the optimal treatment sequence depends on individual 
             circumstances, severity of symptoms, and treatment response. Many individuals benefit from combining both 
             medication and behavioral interventions from the outset.
           </p>
@@ -480,7 +480,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             OST has been primarily developed for middle school to early high school students (ages 10-14), though 
             recent work has adapted programs for high school students. Research demonstrates improvements in organizational 
             skills, planner use, homework performance, and reduced adolescent impairment.<sup className="text-[#10b981]">[2][3]</sup> Multicomponent 
-            OST packages lead to meaningful improvements across multiple domains of academic functioning.<sup className="text-[#10b981]"<3/>sup>
+            OST packages lead to meaningful improvements across multiple domains of academic functioning.<sup className="text-[#10b981]">3</sup>
           </p>
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">School-Based Implementation</h3>
@@ -488,7 +488,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             Embedding OST in schools is key to enhancing reach and sustainability. Current work trains school counselors 
             to implement OST with students with ADHD. Studies show that OST delivered by school staff leads to improvements 
             in organization, time management, and planning skills—even when school counselors receive only minimal 
-            training (about 2 hours) with no ongoing supervision.<sup className="text-[#10b981]"<4/>sup> Online tools are also being developed 
+            training (about 2 hours) with no ongoing supervision.<sup className="text-[#10b981]">4</sup> Online tools are also being developed 
             to assist school staff with low-cost OST implementation.
           </p>
         </div>
@@ -560,7 +560,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             Physical exercise has emerged as one of the most promising lifestyle interventions for ADHD management.{' '}
             A comprehensive meta-analysis of 14 studies found that acute and regular physical exercise significantly 
             improved attention, hyperactivity, impulsivity, anxiety, executive function, and social disorders in 
-            children with ADHD.<sup className="text-[#10b981]"<2/>sup> The benefits appear to be most pronounced with moderate-to-vigorous 
+            children with ADHD.<sup className="text-[#10b981]">2</sup> The benefits appear to be most pronounced with moderate-to-vigorous 
             intensity aerobic exercise.
           </p>
           
@@ -601,7 +601,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             similar to ADHD symptoms—including inattention, hyperactivity, and impulsivity.<sup className="text-[#10b981]">5</sup> For individuals with ADHD, 
             sleep problems compound existing difficulties with attention, emotional regulation, and executive function.{' '}
             Some researchers have proposed that sleep problems may contribute to the development or maintenance of ADHD 
-            symptoms in certain individuals.<sup className="text-[#10b981]"<6/>sup>
+            symptoms in certain individuals.<sup className="text-[#10b981]">6</sup>
           </p>
           
           <h4 className="text-[#0c264d] font-semibold mb-2">Evidence-Based Sleep Strategies</h4>

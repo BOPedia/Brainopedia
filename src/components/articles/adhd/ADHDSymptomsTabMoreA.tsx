@@ -209,9 +209,9 @@ export function ADHDSymptomsTabMoreA() {
                   <p>Disorganization in ADHD is strongly linked to Executive Function (EF) deficits.</p>
                   <p><strong>Executive Age Gap:</strong> Research by Dr. Russell Barkley suggests that individuals with ADHD may have 
                   a developmental delay in executive functioning of approximately 30–40%. For example, a 30-year-old may have the 
-                  organizational skills of a 20-year-old.<sup className="text-[#10b981]"<2/>sup></p>
+                  organizational skills of a 20-year-old.<sup className="text-[#10b981]">2</sup></p>
                   <p><strong>Prevalence:</strong> Studies show that 40–60% of adults with ADHD experience significant challenges in 
-                  time management and organization.<sup className="text-[#10b981]"<2/>sup></p>
+                  time management and organization.<sup className="text-[#10b981]">2</sup></p>
                   <p><strong>Memory Encoding:</strong> Forgetfulness in ADHD often stems from disorganized encoding of information, 
                   which prevents the brain from storing new data effectively.</p>
                 </div>
@@ -238,11 +238,11 @@ export function ADHDSymptomsTabMoreA() {
                 <div className="text-sm space-y-2">
                   <p>Fidgeting is increasingly recognized as a compensatory mechanism for self-regulation rather than just a sign of hyperactivity.</p>
                   <p><strong>Cognitive Enhancement:</strong> A 2024 study of 70 adults found that fidgeting significantly increased during 
-                  correct trials of cognitive tasks, suggesting it helps sustain attention during challenging work.<sup className="text-[#10b981]"<3/>sup></p>
+                  correct trials of cognitive tasks, suggesting it helps sustain attention during challenging work.<sup className="text-[#10b981]">3</sup></p>
                   <p><strong>Neurochemical Boost:</strong> Physical movement, even small gestures like foot tapping, increases levels of 
                   dopamine and norepinephrine—the same chemicals targeted by ADHD medications to sharpen focus.</p>
                   <p><strong>Engagement:</strong> Rhythmic fidgeting (e.g., leg bouncing) has been linked to 30% higher task engagement 
-                  in adults during meetings compared to forced stillness.<sup className="text-[#10b981]"<3/>sup></p>
+                  in adults during meetings compared to forced stillness.<sup className="text-[#10b981]">3</sup></p>
                 </div>
               </div>
               
@@ -265,9 +265,9 @@ export function ADHDSymptomsTabMoreA() {
                 <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
                 <div className="text-sm space-y-2">
                   <p>ADHD-related fatigue is often characterized as a state of chronic mental exhaustion caused by the effort required to manage symptoms.</p>
-                  <p><strong>High Prevalence:</strong> One study found that 62% of people with ADHD meet the clinical criteria for fatigue.<sup className="text-[#10b981]"<4/>sup></p>
+                  <p><strong>High Prevalence:</strong> One study found that 62% of people with ADHD meet the clinical criteria for fatigue.<sup className="text-[#10b981]">4</sup></p>
                   <p><strong>Executive Load:</strong> Research indicates that executive function deficits, particularly in self-management 
-                  and problem-solving, directly mediate the relationship between ADHD and job burnout.<sup className="text-[#10b981]"<4/>sup></p>
+                  and problem-solving, directly mediate the relationship between ADHD and job burnout.<sup className="text-[#10b981]">4</sup></p>
                   <p><strong>Brain Activity:</strong> Mental fatigue is linked to dysregulated dopaminergic systems and weak alpha wave 
                   modulation, which are responsible for tuning out environmental distractions.</p>
                 </div>
@@ -322,9 +322,9 @@ export function ADHDSymptomsTabMoreA() {
                 <div className="text-sm space-y-2">
                   <p>Emotional dysregulation is a prominent feature of ADHD, though it is not always listed as a primary diagnostic symptom.</p>
                   <p><strong>Prevalence in Adults:</strong> Between 30% and 70% of adults with ADHD report significant mood swings and 
-                  emotional turbulence.<sup className="text-[#10b981]"<6/>sup></p>
+                  emotional turbulence.<sup className="text-[#10b981]">6</sup></p>
                   <p><strong>Comorbidity:</strong> Adults with ADHD are four times more likely to have a mood disorder than the general 
-                  population.<sup className="text-[#10b981]"<6/>sup></p>
+                  population.<sup className="text-[#10b981]">6</sup></p>
                   <p><strong>Diagnostic Overlap:</strong> Symptoms often include irritability, low tolerance for frustration, and intense 
                   but short-lived emotional changes.</p>
                 </div>
