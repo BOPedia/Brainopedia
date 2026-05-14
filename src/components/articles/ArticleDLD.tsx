@@ -79,7 +79,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
             characterized by persistent difficulties in learning, understanding, and using spoken and/or 
             written language.<sup>10</sup> Despite normal hearing and intelligence, individuals with DLD experience 
             significant challenges with language that are not explained by other conditions, representing 
-            a distinct language-processing neurotype.<sup<2/>sup>
+            a distinct language-processing neurotype.<sup>2</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -121,7 +121,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
           <p className="mb-4">
             Unlike language delays 
             that resolve with time, DLD is persistent and continues into adolescence and adulthood, though 
-            manifestations may change over time.<sup<6/>sup> It's not caused by lack of exposure to language, hearing 
+            manifestations may change over time.<sup>6</sup> It's not caused by lack of exposure to language, hearing 
             loss, intellectual disability, autism, or neurological injury—it represents a primary difference 
             in language processing.<sup>7</sup> The term "Developmental Language Disorder" replaced older terms like 
             "Specific Language Impairment" (SLI) to better reflect current understanding and reduce stigma.<sup>8</sup>
@@ -148,10 +148,10 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
             Receptive language 
             difficulties include difficulty following complex instructions, trouble understanding long or 
             grammatically complex sentences, challenges understanding abstract concepts, missing key information 
-            in conversations, and slower processing of verbal information.<sup<1/>sup> Pragmatic language challenges may 
+            in conversations, and slower processing of verbal information.<sup>1</sup> Pragmatic language challenges may 
             include trouble taking turns in conversation, difficulty staying on topic, challenges with 
-            understanding context, and difficulty making inferences.<sup<2/>sup> Some individuals also experience challenges 
-            with speech sounds and phonological awareness.<sup<3/>sup>
+            understanding context, and difficulty making inferences.<sup>2</sup> Some individuals also experience challenges 
+            with speech sounds and phonological awareness.<sup>3</sup>
           </p>
         </section>
 
@@ -165,9 +165,9 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
           />
           
           <p className="mb-4">
-            DLD reflects differences in how the brain processes and organizes language.<sup<4/>sup> Research suggests 
+            DLD reflects differences in how the brain processes and organizes language.<sup>4</sup> Research suggests 
             neurological differences in brain regions involved in language processing, though the exact 
-            mechanisms are still being studied.<sup<5/>sup> The condition has a genetic component, often running in families, 
+            mechanisms are still being studied.<sup>5</sup> The condition has a genetic component, often running in families, 
             with multiple genes likely contributing to language processing differences.<sup>[16][17]</sup>
           </p>
           

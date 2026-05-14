@@ -55,7 +55,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
             problems from novel angles. Research demonstrates that individuals with ADHD show enhanced 
             divergent thinking and generate more original ideas in creative tasks.<sup>10</sup> This can be a significant 
             asset in creative fields and entrepreneurship. Studies suggest that the disinhibition and cognitive 
-            flexibility associated with ADHD may contribute to creative achievement.<sup<2/>sup>
+            flexibility associated with ADHD may contribute to creative achievement.<sup>2</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hyperfocus</h3>
@@ -229,7 +229,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <p className="mb-4">
           Parents with ADHD face unique challenges and bring unique strengths to parenting. 
           Research shows that parental ADHD symptoms are associated with differences in parenting 
-          behaviors, including more harsh and lax parenting and slightly less positive parenting.<sup<2/>sup> However, 
+          behaviors, including more harsh and lax parenting and slightly less positive parenting.<sup>2</sup> However, 
           these associations are relatively small, and many parents with ADHD successfully raise healthy, 
           well-adjusted children with the right strategies and support.
         </p>

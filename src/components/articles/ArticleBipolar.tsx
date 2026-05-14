@@ -54,7 +54,7 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
             <strong>Bipolar disorder</strong> is a neurological condition characterized by significant shifts 
             in mood, energy, and activity levels.<sup>10</sup> Increasingly viewed through a neurodivergent lens, bipolar 
             disorder represents a distinct pattern of energy cycles, creativity, and emotional intensity rooted 
-            in brain chemistry and neural processing differences.<sup<2/>sup>
+            in brain chemistry and neural processing differences.<sup>2</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -88,16 +88,16 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
           
           <p className="mb-4">
             Bipolar disorder affects approximately 2.8% of adults in the United States and involves 
-            alterations in neurotransmitter systems, particularly dopamine, serotonin, and norepinephrine.<sup<3/>sup> 
+            alterations in neurotransmitter systems, particularly dopamine, serotonin, and norepinephrine.<sup>3</sup> 
             Brain imaging studies show differences in areas responsible for emotion regulation, reward 
-            processing, and energy management.<sup<4/>sup> The neurodivergent perspective recognizes bipolar disorder 
+            processing, and energy management.<sup>4</sup> The neurodivergent perspective recognizes bipolar disorder 
             not just as an illness to be cured, but as a neurotype with both challenges and gifts.<sup>5</sup>
           </p>
           
           <p className="mb-4">
             Many 
             individuals with bipolar disorder experience periods of exceptional creativity, productivity, 
-            and insight, alongside the difficulties of mood dysregulation.<sup<6/>sup> There are several types including 
+            and insight, alongside the difficulties of mood dysregulation.<sup>6</sup> There are several types including 
             Bipolar I (characterized by at least one manic episode), Bipolar II (involving major depressive 
             episodes and hypomanic episodes but no full manic episodes), and Cyclothymic Disorder (a milder 
             form with numerous periods of hypomanic and depressive symptoms).<sup>7</sup> Understanding bipolar disorder 
@@ -121,7 +121,7 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
             rapid speech, inflated self-esteem or grandiosity, impulsive or risky behaviors, and difficulty 
             focusing.<sup>10</sup> Hypomanic episodes are similar to mania but less severe and shorter duration, often 
             experienced as highly productive and creative periods though can still involve impulsivity and 
-            sleep disruption.<sup<1/>sup>
+            sleep disruption.<sup>1</sup>
           </p>
           
           <p className="mb-4">
@@ -146,7 +146,7 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
           
           <p className="mb-4">
             Bipolar disorder involves alterations in neurotransmitter systems, particularly dopamine, serotonin, 
-            and norepinephrine.<sup<6/>sup> Brain imaging studies show differences in areas responsible for emotion regulation, 
+            and norepinephrine.<sup>6</sup> Brain imaging studies show differences in areas responsible for emotion regulation, 
             reward processing, and energy management including the prefrontal cortex, amygdala, and hippocampus.<sup>[17][18]</sup> 
             Research reveals structural and functional differences in brain circuits that regulate mood, energy, 
             and circadian rhythms.<sup>[19]</sup>

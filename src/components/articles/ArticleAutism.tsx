@@ -177,11 +177,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
               alt="Autism Causes and Origins"
               className="w-48 h-auto float-right ml-4 mb-4 rounded"
             />
-            The exact causes of autism are not fully understood, but research indicates that both genetic and environmental factors contribute to its development.<sup style={{color: '#10b981'}}<2/>sup> Autism is best understood as arising from differences in brain development that occur before birth. Studies have identified hundreds of genes associated with autism, though no single gene causes autism in most cases.<sup style={{color: '#10b981'}}<3/>sup>
+            The exact causes of autism are not fully understood, but research indicates that both genetic and environmental factors contribute to its development.<sup style={{color: '#10b981'}}>2</sup> Autism is best understood as arising from differences in brain development that occur before birth. Studies have identified hundreds of genes associated with autism, though no single gene causes autism in most cases.<sup style={{color: '#10b981'}}>3</sup>
           </p>
           
           <p className="mb-4">
-            Brain imaging studies have revealed differences in brain structure and connectivity in autistic individuals, particularly in areas related to social cognition, sensory processing, and executive function.<sup style={{color: '#10b981'}}<4/>sup> These neurological differences help explain why autistic people may process information, perceive sensory input, and interact socially in ways that differ from neurotypical individuals.
+            Brain imaging studies have revealed differences in brain structure and connectivity in autistic individuals, particularly in areas related to social cognition, sensory processing, and executive function.<sup style={{color: '#10b981'}}>4</sup> These neurological differences help explain why autistic people may process information, perceive sensory input, and interact socially in ways that differ from neurotypical individuals.
           </p>
           <button
             onClick={(e) => {

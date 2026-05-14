@@ -49,7 +49,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
           <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Functional Brain Differences</h3>
           <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
-            <li><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions.<sup<2/>sup></li>
+            <li><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions.<sup>2</sup></li>
             <li><strong>Social brain networks:</strong> Differences in activation of brain regions involved in social cognition.</li>
             <li><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli.</li>
             <li><strong>Default mode network:</strong> Differences in brain networks active during rest and self-referential thinking.</li>
@@ -71,7 +71,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           </div>
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">E/I Balance</div>
-            <p className="text-sm text-gray-700">Imbalance between excitatory and inhibitory neurotransmission.<sup<3/>sup></p>
+            <p className="text-sm text-gray-700">Imbalance between excitatory and inhibitory neurotransmission.<sup>3</sup></p>
           </div>
         </div>
         <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap justify-center gap-6">

@@ -34,7 +34,7 @@ export function VPDOverview({ setCurrentArticle }: VPDOverviewProps) {
             Visual Processing Disorder (VPD), also called visual perceptual disorder, is a neurological condition 
             affecting how the brain interprets and makes sense of visual information.<sup>10</sup> Despite having 
             normal eyesight and healthy eyes, individuals with VPD experience difficulties processing what they 
-            see.<sup<2/>sup>
+            see.<sup>2</sup>
           </p>
         </div>
 
@@ -49,16 +49,16 @@ export function VPDOverview({ setCurrentArticle }: VPDOverviewProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Vision vs. Visual Processing</h3>
           <p className="mb-4">
-            Vision refers to the eye's ability to see clearly—detecting light, color, and detail.<sup<3/>sup> 
+            Vision refers to the eye's ability to see clearly—detecting light, color, and detail.<sup>3</sup> 
             Visual processing, in contrast, involves what the brain does with visual information after the eyes 
-            send it to the brain.<sup<4/>sup> It's entirely possible to have 20/20 vision but still struggle 
+            send it to the brain.<sup>4</sup> It's entirely possible to have 20/20 vision but still struggle 
             with visual processing.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">The Visual Processing System</h3>
           <p className="mb-4">
             Visual information travels from the eyes through the optic nerves to various brain regions responsible 
-            for interpretation, organization, and integration with other senses and cognitive functions.<sup<6/>sup> 
+            for interpretation, organization, and integration with other senses and cognitive functions.<sup>6</sup> 
             The occipital lobe processes basic visual information; the temporal lobe identifies objects; the 
             parietal lobe manages spatial relationships and visual-motor integration.<sup>7</sup> In VPD, 
             differences in these processing pathways affect how visual information is interpreted and used.<sup>8</sup>
@@ -68,7 +68,7 @@ export function VPDOverview({ setCurrentArticle }: VPDOverviewProps) {
           <p className="mb-4">
             Visual processing encompasses numerous distinct but interconnected skills.<sup>9</sup> Individuals 
             with VPD may have deficits in one area or multiple areas, creating varied symptom profiles.<sup>10</sup> 
-            This complexity means VPD manifests differently across individuals.<sup<1/>sup>
+            This complexity means VPD manifests differently across individuals.<sup>1</sup>
           </p>
         </div>
 
@@ -77,16 +77,16 @@ export function VPDOverview({ setCurrentArticle }: VPDOverviewProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Visual Discrimination</h3>
           <p className="mb-4">
-            The ability to notice differences between similar objects, shapes, letters, or numbers.<sup<2/>sup> 
+            The ability to notice differences between similar objects, shapes, letters, or numbers.<sup>2</sup> 
             Deficits cause difficulty distinguishing "b" from "d," similar-looking words, or finding differences 
-            in pictures.<sup<3/>sup> Reading becomes challenging when letters appear similar.<sup<4/>sup>
+            in pictures.<sup>3</sup> Reading becomes challenging when letters appear similar.<sup>4</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Visual Figure-Ground</h3>
           <p className="mb-4">
-            The ability to distinguish an object from its background.<sup<5/>sup> Difficulties manifest as 
+            The ability to distinguish an object from its background.<sup>5</sup> Difficulties manifest as 
             losing place while reading, trouble finding items in cluttered spaces, or difficulty focusing on 
-            specific visual information when surrounded by other visual stimuli.<sup<6/>sup> Busy worksheets 
+            specific visual information when surrounded by other visual stimuli.<sup>6</sup> Busy worksheets 
             or crowded pages overwhelm.<sup>[17]</sup>
           </p>
 

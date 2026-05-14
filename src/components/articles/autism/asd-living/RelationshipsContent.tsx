@@ -49,7 +49,7 @@ export function RelationshipsContent({ setCurrentArticle }: RelationshipsContent
               Autism often runs in families, creating unique multi-generational dynamics:
             </p>
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
-              <li><strong>Acceptance:</strong> Family understanding is the single greatest predictor of long-term wellbeing for autistic individuals.<sup<3/>sup></li>
+              <li><strong>Acceptance:</strong> Family understanding is the single greatest predictor of long-term wellbeing for autistic individuals.<sup>3</sup></li>
               <li><strong>Autistic Parenting:</strong> Many autistic adults are parents themselves, often finding deep empathy for their children's sensory or social needs.</li>
               <li><strong>Renegotiating Autonomy:</strong> As autistic adults age, family relationships often shift toward "supported decision-making" rather than guardianship.</li>
             </ul>

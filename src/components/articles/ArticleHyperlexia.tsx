@@ -78,7 +78,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
             <strong>Hyperlexia</strong> is a neurodevelopmental condition characterized by an advanced ability 
             to read at an early age, often significantly beyond what would be expected for a child's 
             chronological age.<sup>10</sup> However, this precocious reading ability is typically accompanied by 
-            difficulties with verbal language comprehension and social communication.<sup<2/>sup>
+            difficulties with verbal language comprehension and social communication.<sup>2</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -111,10 +111,10 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
           />
           
           <p className="mb-4">
-            Hyperlexia is relatively rare and is estimated to affect fewer than 1% of the population.<sup<3/>sup> 
+            Hyperlexia is relatively rare and is estimated to affect fewer than 1% of the population.<sup>3</sup> 
             Children with hyperlexia often begin reading spontaneously, without explicit instruction, 
             sometimes as early as age 2 or 3. They may show an intense fascination with letters, numbers, 
-            and written symbols.<sup<4/>sup>
+            and written symbols.<sup>4</sup>
           </p>
           
           <p className="mb-4">
@@ -123,7 +123,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
             spectrum disorder. Type III involves children who display hyperlexic reading and autism-like 
             behaviors in early childhood but whose symptoms diminish over time.<sup>5</sup> Despite advanced decoding 
             skills, individuals with hyperlexia often struggle with reading comprehension, particularly with 
-            abstract concepts and inferential reasoning.<sup<6/>sup>
+            abstract concepts and inferential reasoning.<sup>6</sup>
           </p>
         </section>
 
@@ -166,15 +166,15 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
             The neurological basis of hyperlexia is not fully understood, but research suggests differences in language 
             processing areas of the brain.<sup>10</sup> Hyperlexia represents a unique pattern of brain organization where visual 
             word recognition and decoding abilities develop exceptionally early and strongly, while language comprehension 
-            and social communication areas develop differently.<sup<1/>sup>
+            and social communication areas develop differently.<sup>1</sup>
           </p>
           
           <p className="mb-4">
             The exact causes are still being studied, though hyperlexia 
             may involve differences in brain development affecting the balance between word decoding skills and language 
-            comprehension.<sup<2/>sup> Hyperlexia frequently co-occurs with autism spectrum disorder, though not all children with 
-            hyperlexia are autistic, and not all autistic children have hyperlexia.<sup<3/>sup> The condition appears to involve 
-            fundamental differences in how the brain processes written versus spoken language.<sup<4/>sup>
+            comprehension.<sup>2</sup> Hyperlexia frequently co-occurs with autism spectrum disorder, though not all children with 
+            hyperlexia are autistic, and not all autistic children have hyperlexia.<sup>3</sup> The condition appears to involve 
+            fundamental differences in how the brain processes written versus spoken language.<sup>4</sup>
           </p>
         </section>
 
@@ -189,10 +189,10 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
           
           <p className="mb-4">
             Hyperlexia is typically identified by developmental pediatricians, child psychologists, or speech-language 
-            pathologists.<sup<5/>sup> The evaluation process includes assessment of reading abilities and age of reading onset, 
+            pathologists.<sup>5</sup> The evaluation process includes assessment of reading abilities and age of reading onset, 
             evaluation of language comprehension and expression, analysis of the gap between decoding and comprehension 
             skills, cognitive and developmental assessments, observation of social communication skills, screening for 
-            autism spectrum disorder, and parent interviews about developmental history.<sup<6/>sup>
+            autism spectrum disorder, and parent interviews about developmental history.<sup>6</sup>
           </p>
           
           <p className="mb-4">

@@ -420,7 +420,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
           <div className="bg-white p-5 rounded-md border-2 border-[#0c264d] mb-6">
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Differences</h3>
             <p className="mb-3">
-              Autism is diagnosed more frequently in males than females, with ratios typically reported around <strong>3-4:1</strong>.<sup<2/>sup> 
+              Autism is diagnosed more frequently in males than females, with ratios typically reported around <strong>3-4:1</strong>.<sup>2</sup> 
               However, research suggests this reflects diagnostic bias—females may be underdiagnosed because they often 
               present differently, "camouflage" symptoms more effectively, and don't match stereotypical autism presentations.
             </p>
@@ -509,7 +509,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <p className="font-bold mb-3 text-red-600">Important: These DO NOT cause autism:</p>
             <div className="space-y-2">
               <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ Vaccines</strong> — This has been thoroughly debunked by extensive research<sup<3/>sup></div>
+                <div className="text-sm"><strong>✗ Vaccines</strong> — This has been thoroughly debunked by extensive research<sup>3</sup></div>
               </div>
               <div className="border-l-2 border-red-500 pl-3">
                 <div className="text-sm"><strong>✗ Parenting Style</strong> — The "refrigerator mother" theory has been completely discredited</div>
@@ -547,7 +547,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <div className="space-y-4">
               <div className="border-l-2 border-[#2abcd4] pl-4">
                 <div className="font-bold text-[#0c264d]">1943</div>
-                <div className="text-sm">Leo Kanner published the first description of "early infantile autism"<sup<4/>sup></div>
+                <div className="text-sm">Leo Kanner published the first description of "early infantile autism"<sup>4</sup></div>
               </div>
               
               <div className="border-l-2 border-[#2abcd4] pl-4">
@@ -557,7 +557,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
               
               <div className="border-l-2 border-red-500 pl-4">
                 <div className="font-bold text-[#0c264d]">1960s-1980s</div>
-                <div className="text-sm">Harmful "refrigerator mother" theory blamed parents<sup<6/>sup></div>
+                <div className="text-sm">Harmful "refrigerator mother" theory blamed parents<sup>6</sup></div>
               </div>
               
               <div className="border-l-2 border-[#2abcd4] pl-4">

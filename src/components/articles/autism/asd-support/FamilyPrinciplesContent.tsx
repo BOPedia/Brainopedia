@@ -24,14 +24,14 @@ export function FamilyPrinciplesContent({ setCurrentArticle }: FamilyPrinciplesC
               <div className="flex items-center gap-3 mb-3">
                 <h4 className="text-[#0c264d] font-bold text-lg">Parent Training Programs</h4>
               </div>
-              <p className="text-sm">Evidence-based programs teaching strategies to support child development and behavior<sup<2/>sup></p>
+              <p className="text-sm">Evidence-based programs teaching strategies to support child development and behavior<sup>2</sup></p>
             </div>
 
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
               <div className="flex items-center gap-3 mb-3">
                 <h4 className="text-[#0c264d] font-bold text-lg">Respite Care</h4>
               </div>
-              <p className="text-sm">Temporary relief care allowing families necessary breaks to rest and recharge<sup<3/>sup></p>
+              <p className="text-sm">Temporary relief care allowing families necessary breaks to rest and recharge<sup>3</sup></p>
             </div>
 
             <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm">
@@ -45,7 +45,7 @@ export function FamilyPrinciplesContent({ setCurrentArticle }: FamilyPrinciplesC
               <div className="flex items-center gap-3 mb-3">
                 <h4 className="text-[#0c264d] font-bold text-lg">Sibling Support</h4>
               </div>
-              <p className="text-sm">Programs and resources specifically for siblings of autistic children<sup<4/>sup></p>
+              <p className="text-sm">Programs and resources specifically for siblings of autistic children<sup>4</sup></p>
             </div>
 
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">

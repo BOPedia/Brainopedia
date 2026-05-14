@@ -34,7 +34,7 @@ export function APDDiagnosis({ setCurrentArticle }: APDDiagnosisProps) {
             Diagnosing Auditory Processing Disorder requires comprehensive assessment by qualified professionals, 
             typically audiologists with specialized training in central auditory processing.<sup>10</sup> The 
             diagnostic process involves multiple tests, careful differential diagnosis, and consideration of 
-            functional impacts.<sup<2/>sup>
+            functional impacts.<sup>2</sup>
           </p>
         </div>
 
@@ -49,15 +49,15 @@ export function APDDiagnosis({ setCurrentArticle }: APDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Qualified Professionals</h3>
           <p className="mb-4">
-            Audiologists are the primary professionals qualified to diagnose APD.<sup<3/>sup> However, not all 
-            audiologists have specialized training in central auditory processing assessment.<sup<4/>sup> Seek 
+            Audiologists are the primary professionals qualified to diagnose APD.<sup>3</sup> However, not all 
+            audiologists have specialized training in central auditory processing assessment.<sup>4</sup> Seek 
             audiologists with specific expertise and equipment for APD testing.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multidisciplinary Team</h3>
           <p className="mb-4">
             While audiologists conduct the core APD testing, comprehensive evaluation often involves a 
-            multidisciplinary team.<sup<6/>sup> This may include speech-language pathologists, psychologists, 
+            multidisciplinary team.<sup>6</sup> This may include speech-language pathologists, psychologists, 
             educators, and physicians to assess related areas and rule out other conditions.<sup>7</sup>
           </p>
 
@@ -77,16 +77,16 @@ export function APDDiagnosis({ setCurrentArticle }: APDDiagnosisProps) {
           <p className="mb-4">
             Seek evaluation if a child or adult shows persistent difficulty hearing in noise, frequently requests 
             repetition, struggles following verbal directions, has academic difficulties despite normal intelligence, 
-            or shows inconsistent listening performance.<sup<1/>sup> History of chronic ear infections may 
-            increase suspicion.<sup<2/>sup>
+            or shows inconsistent listening performance.<sup>1</sup> History of chronic ear infections may 
+            increase suspicion.<sup>2</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Screening Tools</h3>
           <p className="mb-4">
             Questionnaires like the Children's Auditory Performance Scale (CHAPS), SIFTER (Screening Instrument 
             For Targeting Educational Risk), or Evaluation of Children's Listening and Processing Skills (ECLiPS) 
-            can indicate whether formal testing is warranted.<sup<3/>sup> These tools don't diagnose APD but 
-            identify children who should be evaluated.<sup<4/>sup>
+            can indicate whether formal testing is warranted.<sup>3</sup> These tools don't diagnose APD but 
+            identify children who should be evaluated.<sup>4</sup>
           </p>
         </div>
 
@@ -96,8 +96,8 @@ export function APDDiagnosis({ setCurrentArticle }: APDDiagnosisProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Step 1: Case History</h3>
           <p className="mb-4">
             Comprehensive case history documents developmental milestones, medical history (particularly ear 
-            infections), family history, academic performance, and specific listening difficulties.<sup<5/>sup> 
-            Information from parents, teachers, and the individual provides essential context.<sup<6/>sup>
+            infections), family history, academic performance, and specific listening difficulties.<sup>5</sup> 
+            Information from parents, teachers, and the individual provides essential context.<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Step 2: Peripheral Hearing Assessment</h3>

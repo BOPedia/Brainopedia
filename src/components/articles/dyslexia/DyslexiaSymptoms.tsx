@@ -48,8 +48,8 @@ export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymp
         <p className="mb-4">
           Dyslexia manifests differently across individuals and developmental stages, but certain characteristic patterns 
           emerge.<sup>10</sup> Understanding these signs enables early identification and appropriate intervention, which 
-          significantly improves outcomes.<sup<2/>sup> The hallmark features involve difficulties with phonological 
-          processing, reading fluency, spelling, and word decoding.<sup<3/>sup>
+          significantly improves outcomes.<sup>2</sup> The hallmark features involve difficulties with phonological 
+          processing, reading fluency, spelling, and word decoding.<sup>3</sup>
         </p>
       </div>
 
@@ -109,14 +109,14 @@ export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymp
           />
           
           <p className="mb-4">
-            Dyslexia is characterized by a range of symptoms that affect reading, writing, and language processing:<sup<4/>sup>
+            Dyslexia is characterized by a range of symptoms that affect reading, writing, and language processing:<sup>4</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Phonological Awareness Difficulties</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Rhyming:</strong> Trouble recognizing or producing rhymes (e.g., "cat" and "hat")<sup>5</sup></li>
             <li className="mb-2"><strong>Syllable segmentation:</strong> Difficulty breaking words into syllables (e.g., "baseball" into "base-ball")</li>
-            <li className="mb-2"><strong>Sound identification:</strong> Challenges identifying beginning, middle, or ending sounds in words<sup<6/>sup></li>
+            <li className="mb-2"><strong>Sound identification:</strong> Challenges identifying beginning, middle, or ending sounds in words<sup>6</sup></li>
             <li className="mb-2"><strong>Sound blending:</strong> Difficulty combining sounds to make words (e.g., /c/ /a/ /t/ = "cat")</li>
             <li className="mb-2"><strong>Sound manipulation:</strong> Trouble deleting or substituting sounds in words<sup>7</sup></li>
           </ul>
@@ -144,7 +144,7 @@ export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymp
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Reading Challenges in Dyslexia</h2>
           
           <p className="mb-4">
-            Dyslexia typically becomes most apparent when children begin formal reading instruction:<sup<1/>sup>
+            Dyslexia typically becomes most apparent when children begin formal reading instruction:<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Difficulties</h3>
@@ -156,13 +156,13 @@ export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymp
           />
           
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Slow progress:</strong> Learning to read much slower than peers despite adequate instruction<sup<2/>sup></li>
-            <li className="mb-2"><strong>Decoding problems:</strong> Difficulty sounding out unfamiliar words; may guess based on context or first letter<sup<3/>sup></li>
-            <li className="mb-2"><strong>Reading fluency:</strong> Slow, choppy reading with frequent errors; reading requires enormous effort<sup<4/>sup></li>
-            <li className="mb-2"><strong>Accuracy issues:</strong> Substituting, omitting, or adding words when reading<sup<5/>sup></li>
+            <li className="mb-2"><strong>Slow progress:</strong> Learning to read much slower than peers despite adequate instruction<sup>2</sup></li>
+            <li className="mb-2"><strong>Decoding problems:</strong> Difficulty sounding out unfamiliar words; may guess based on context or first letter<sup>3</sup></li>
+            <li className="mb-2"><strong>Reading fluency:</strong> Slow, choppy reading with frequent errors; reading requires enormous effort<sup>4</sup></li>
+            <li className="mb-2"><strong>Accuracy issues:</strong> Substituting, omitting, or adding words when reading<sup>5</sup></li>
             <li className="mb-2"><strong>Loss of place:</strong> Frequently losing place while reading, skipping lines</li>
             <li className="mb-2"><strong>Avoidance:</strong> Reluctance to read, especially aloud; may complain of headaches or fatigue</li>
-            <li className="mb-2"><strong>Comprehension struggles:</strong> Poor comprehension despite good listening comprehension; cognitive energy goes to decoding rather than understanding<sup<6/>sup></li>
+            <li className="mb-2"><strong>Comprehension struggles:</strong> Poor comprehension despite good listening comprehension; cognitive energy goes to decoding rather than understanding<sup>6</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Language Processing</h3>
@@ -224,13 +224,13 @@ export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymp
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">School-Age Symptoms (K-5th Grade)</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Slow progress:</strong> Learning to read much slower than peers despite adequate instruction<sup<2/>sup></li>
-            <li className="mb-2"><strong>Decoding problems:</strong> Difficulty sounding out unfamiliar words; may guess based on context or first letter<sup<3/>sup></li>
-            <li className="mb-2"><strong>Reading fluency:</strong> Slow, choppy reading with frequent errors; reading requires enormous effort<sup<4/>sup></li>
-            <li className="mb-2"><strong>Accuracy issues:</strong> Substituting, omitting, or adding words when reading<sup<5/>sup></li>
+            <li className="mb-2"><strong>Slow progress:</strong> Learning to read much slower than peers despite adequate instruction<sup>2</sup></li>
+            <li className="mb-2"><strong>Decoding problems:</strong> Difficulty sounding out unfamiliar words; may guess based on context or first letter<sup>3</sup></li>
+            <li className="mb-2"><strong>Reading fluency:</strong> Slow, choppy reading with frequent errors; reading requires enormous effort<sup>4</sup></li>
+            <li className="mb-2"><strong>Accuracy issues:</strong> Substituting, omitting, or adding words when reading<sup>5</sup></li>
             <li className="mb-2"><strong>Loss of place:</strong> Frequently losing place while reading, skipping lines</li>
             <li className="mb-2"><strong>Avoidance:</strong> Reluctance to read, especially aloud; may complain of headaches or fatigue</li>
-            <li className="mb-2"><strong>Comprehension struggles:</strong> Poor comprehension despite good listening comprehension; cognitive energy goes to decoding rather than understanding<sup<6/>sup></li>
+            <li className="mb-2"><strong>Comprehension struggles:</strong> Poor comprehension despite good listening comprehension; cognitive energy goes to decoding rather than understanding<sup>6</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Adult Manifestations</h3>

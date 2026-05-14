@@ -33,7 +33,7 @@ export function VPDDiagnosis({ setCurrentArticle }: VPDDiagnosisProps) {
           <p className="mb-4">
             Diagnosing Visual Processing Disorder requires comprehensive evaluation by qualified professionals 
             using standardized tests, observations, and functional assessments.<sup>10</sup> Accurate diagnosis 
-            guides appropriate interventions and accommodations.<sup<2/>sup>
+            guides appropriate interventions and accommodations.<sup>2</sup>
           </p>
         </div>
 
@@ -49,15 +49,15 @@ export function VPDDiagnosis({ setCurrentArticle }: VPDDiagnosisProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Developmental Optometrists</h3>
           <p className="mb-4">
             Developmental or behavioral optometrists specialize in visual information processing beyond basic 
-            eyesight.<sup<3/>sup> They have additional training in visual perception, visual-motor integration, 
-            and learning-related vision problems.<sup<4/>sup> They can assess both eye function and visual 
+            eyesight.<sup>3</sup> They have additional training in visual perception, visual-motor integration, 
+            and learning-related vision problems.<sup>4</sup> They can assess both eye function and visual 
             processing abilities.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Occupational Therapists</h3>
           <p className="mb-4">
             Occupational therapists evaluate visual perception and visual-motor integration as part of assessing 
-            functional skills.<sup<6/>sup> They use standardized tests of visual processing and observe how 
+            functional skills.<sup>6</sup> They use standardized tests of visual processing and observe how 
             visual processing affects daily activities.<sup>7</sup> OTs are particularly skilled in assessing 
             visual-motor integration and recommending practical interventions.<sup>8</sup>
           </p>
@@ -67,21 +67,21 @@ export function VPDDiagnosis({ setCurrentArticle }: VPDDiagnosisProps) {
             Neuropsychologists conduct comprehensive cognitive assessments including visual processing as one 
             component.<sup>9</sup> They can differentiate visual processing difficulties from other cognitive 
             issues and identify patterns across multiple domains.<sup>10</sup> Neuropsychological evaluation 
-            is particularly valuable when multiple conditions are suspected.<sup<1/>sup>
+            is particularly valuable when multiple conditions are suspected.<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Educational Psychologists</h3>
           <p className="mb-4">
             School psychologists or educational psychologists may include visual processing measures in 
-            psychoeducational evaluations.<sup<2/>sup> They assess how visual processing affects academic 
-            performance and learning.<sup<3/>sup>
+            psychoeducational evaluations.<sup>2</sup> They assess how visual processing affects academic 
+            performance and learning.<sup>3</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multidisciplinary Teams</h3>
           <p className="mb-4">
-            Comprehensive evaluation often involves multiple professionals providing different perspectives.<sup<4/>sup> 
+            Comprehensive evaluation often involves multiple professionals providing different perspectives.<sup>4</sup> 
             A developmental optometrist might assess visual processing while an occupational therapist evaluates 
-            functional impacts, and an educational psychologist examines academic implications.<sup<5/>sup>
+            functional impacts, and an educational psychologist examines academic implications.<sup>5</sup>
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export function VPDDiagnosis({ setCurrentArticle }: VPDDiagnosisProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Step 1: Screening and Referral</h3>
           <p className="mb-4">
             Initial concerns typically arise from parents, teachers, or other professionals noticing visual 
-            processing difficulties.<sup<6/>sup> Screening questionnaires or informal observations may 
+            processing difficulties.<sup>6</sup> Screening questionnaires or informal observations may 
             suggest formal evaluation is warranted.<sup>[17]</sup> Persistent academic struggles despite 
             adequate instruction often prompt referral.<sup>[18]</sup>
           </p>

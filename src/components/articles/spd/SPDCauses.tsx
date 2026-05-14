@@ -43,7 +43,7 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
             The causes and origins of Sensory Processing Disorder are complex and multifaceted, involving neurological differences 
             in how the brain receives, processes, and integrates sensory information.<sup>[1][2]</sup> While research continues to 
             advance our understanding, SPD is recognized as a neurodevelopmental difference that reflects variations in brain 
-            structure, connectivity, and function related to sensory processing.<sup<3/>sup>
+            structure, connectivity, and function related to sensory processing.<sup>3</sup>
           </p>
           <p className="mb-4">
             Unlike some conditions with a single identifiable cause, SPD appears to result from a combination of genetic, 
@@ -82,7 +82,7 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
           <p className="mb-4">
             Brain imaging studies have identified differences in how certain brain regions respond to sensory stimuli in 
             individuals with sensory processing differences.<sup>5</sup> The thalamus, which acts as a relay station for 
-            sensory information, and sensory cortices may process information differently in individuals with SPD.<sup<3/>sup>
+            sensory information, and sensory cortices may process information differently in individuals with SPD.<sup>3</sup>
           </p>
           <p className="mb-4">
             Research using EEG (electroencephalography) has shown that children with sensory over-responsivity demonstrate 
@@ -93,7 +93,7 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Neurotransmitter Systems</h3>
           <p className="mb-4">
             Some research suggests that neurotransmitter systems—particularly those involving serotonin, dopamine, and GABA—may 
-            play a role in sensory modulation.<sup<2/>sup> These neurotransmitters help regulate how neurons communicate and 
+            play a role in sensory modulation.<sup>2</sup> These neurotransmitters help regulate how neurons communicate and 
             may influence sensory thresholds and responses. However, much of this research is preliminary and requires further 
             investigation.
           </p>
@@ -116,15 +116,15 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
           </p>
           <p className="mb-4">
             Goldsmith and colleagues conducted a population-based twin study examining tactile and auditory defensiveness in 
-            young children.<sup<3/>sup> Their findings indicated significant genetic influence on these sensory traits, though 
+            young children.<sup>3</sup> Their findings indicated significant genetic influence on these sensory traits, though 
             environmental factors also contributed. This suggests that sensory processing differences run in families and have 
             a biological basis.
           </p>
           <p className="mb-4">
             Parents of children with SPD often report experiencing similar sensory sensitivities themselves, supporting the idea 
-            of familial patterns.<sup<5/>sup> However, specific genes associated with SPD have not yet been definitively 
+            of familial patterns.<sup>5</sup> However, specific genes associated with SPD have not yet been definitively 
             identified, and the genetic architecture is likely complex, involving multiple genes with small effects rather than 
-            a single causative gene.<sup<3/>sup>
+            a single causative gene.<sup>3</sup>
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Prenatal and Perinatal Factors</h2>
           
           <p className="mb-4">
-            Various factors during pregnancy and birth may influence neurological development and sensory processing:<sup<6/>sup>
+            Various factors during pregnancy and birth may influence neurological development and sensory processing:<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Prematurity and Birth Complications</h3>
@@ -145,13 +145,13 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
           </p>
           <p className="mb-4">
             Birth complications such as fetal distress, oxygen deprivation, or other medical issues may also impact neurological 
-            development in ways that affect sensory processing.<sup<6/>sup>
+            development in ways that affect sensory processing.<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Prenatal Exposures</h3>
           <p className="mb-4">
             While research is limited, some studies suggest that certain prenatal exposures—such as maternal stress, toxins, 
-            or nutritional deficiencies—might influence fetal brain development and subsequent sensory processing.<sup<3/>sup> 
+            or nutritional deficiencies—might influence fetal brain development and subsequent sensory processing.<sup>3</sup> 
             However, this remains an area requiring further investigation.
           </p>
         </div>
@@ -173,8 +173,8 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Sensory Experiences and Brain Development</h3>
           <p className="mb-4">
-            The developing brain is shaped by sensory experiences, particularly during critical developmental periods.<sup<6/>sup> 
-            Ayres' theory emphasized the importance of sensory experiences for brain development.<sup<6/>sup> Limited opportunities 
+            The developing brain is shaped by sensory experiences, particularly during critical developmental periods.<sup>6</sup> 
+            Ayres' theory emphasized the importance of sensory experiences for brain development.<sup>6</sup> Limited opportunities 
             for varied sensory-motor experiences might affect how sensory systems develop, though this is not the primary cause 
             of SPD.<sup>[19]</sup>
           </p>
@@ -210,7 +210,7 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
             Sensory processing differences are common in individuals with ADHD, with some studies finding sensory over-responsivity 
             in a significant percentage of children with attention challenges.<sup>[22][23]</sup> The overlap between ADHD and SPD includes 
             difficulties with sensory modulation, attention regulation, and executive function, as well as similarities 
-            including differences in physiological responses to sensory stimuli.<sup<2/>sup> The relationship between attention 
+            including differences in physiological responses to sensory stimuli.<sup>2</sup> The relationship between attention 
             and sensory processing is complex and bidirectional.
           </p>
 
@@ -279,7 +279,7 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genetic Research</h3>
           <p className="mb-4">
-            Ongoing genetic studies aim to identify specific genes or gene variants associated with sensory processing traits.<sup<3/>sup> 
+            Ongoing genetic studies aim to identify specific genes or gene variants associated with sensory processing traits.<sup>3</sup> 
             Understanding the genetic contributions to SPD could illuminate the biological pathways involved and potentially lead 
             to targeted interventions.
           </p>
@@ -296,7 +296,7 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
             <li className="mb-2"><strong>Not a behavioral issue:</strong> SPD reflects genuine neurological differences in how 
             the nervous system is wired and functions, not choices, behaviors, or parenting practices.<sup>[19]</sup></li>
             <li className="mb-2"><strong>Complex and multifactorial:</strong> SPD likely results from an interaction between 
-            genetic predisposition, neurological differences, and environmental factors rather than a single cause.<sup<3/>sup></li>
+            genetic predisposition, neurological differences, and environmental factors rather than a single cause.<sup>3</sup></li>
             <li className="mb-2"><strong>Individual variation:</strong> The specific causes and contributing factors may vary 
             significantly from person to person.</li>
             <li className="mb-2"><strong>Evolving understanding:</strong> Research into SPD is ongoing, and our understanding of 

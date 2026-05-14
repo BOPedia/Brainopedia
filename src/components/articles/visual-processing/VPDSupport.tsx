@@ -33,7 +33,7 @@ export function VPDSupport({ setCurrentArticle }: VPDSupportProps) {
           <p className="mb-4">
             Managing Visual Processing Disorder involves multiple approaches: environmental modifications, 
             compensatory strategies, direct intervention, and appropriate accommodations.<sup>10</sup> Effective 
-            support is individualized based on specific visual processing deficits and functional impacts.<sup<2/>sup>
+            support is individualized based on specific visual processing deficits and functional impacts.<sup>2</sup>
           </p>
         </div>
 
@@ -48,14 +48,14 @@ export function VPDSupport({ setCurrentArticle }: VPDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Environmental Modifications</h3>
           <p className="mb-4">
-            Changing the visual environment to reduce demands and optimize access to information.<sup<3/>sup> 
-            This includes simplifying visual presentations, improving lighting, and organizing spaces.<sup<4/>sup>
+            Changing the visual environment to reduce demands and optimize access to information.<sup>3</sup> 
+            This includes simplifying visual presentations, improving lighting, and organizing spaces.<sup>4</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Compensatory Strategies</h3>
           <p className="mb-4">
             Teaching skills and strategies to work around visual processing deficits.<sup>5</sup> These include 
-            organizational systems, visual aids, and alternative ways of accessing information.<sup<6/>sup>
+            organizational systems, visual aids, and alternative ways of accessing information.<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Direct Remediation</h3>
@@ -77,16 +77,16 @@ export function VPDSupport({ setCurrentArticle }: VPDSupportProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What is Vision Therapy?</h3>
           <p className="mb-4">
             Vision therapy is a structured program of visual activities designed to improve visual processing 
-            skills.<sup<1/>sup> Conducted by developmental optometrists, it targets specific visual processing 
-            deficits through systematic exercises.<sup<2/>sup> Programs are individualized based on assessment 
-            findings.<sup<3/>sup>
+            skills.<sup>1</sup> Conducted by developmental optometrists, it targets specific visual processing 
+            deficits through systematic exercises.<sup>2</sup> Programs are individualized based on assessment 
+            findings.<sup>3</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Components of Vision Therapy</h3>
           <p className="mb-4">
             Activities target visual-motor integration, visual discrimination, visual memory, eye tracking, 
-            eye teaming, and visual-spatial skills.<sup<4/>sup> Therapy progresses systematically from 
-            easier to more challenging tasks.<sup<5/>sup> Home practice reinforces office-based therapy.<sup<6/>sup>
+            eye teaming, and visual-spatial skills.<sup>4</sup> Therapy progresses systematically from 
+            easier to more challenging tasks.<sup>5</sup> Home practice reinforces office-based therapy.<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Evidence for Vision Therapy</h3>

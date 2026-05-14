@@ -33,7 +33,7 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
           <p className="mb-4">
             Diagnosing NVLD presents unique challenges because it is not an official DSM-5 diagnosis.<sup>10</sup> 
             However, qualified professionals can identify the NVLD pattern through comprehensive neuropsychological 
-            assessment focusing on the distinctive profile of verbal strengths and nonverbal weaknesses.<sup<2/>sup>
+            assessment focusing on the distinctive profile of verbal strengths and nonverbal weaknesses.<sup>2</sup>
           </p>
         </div>
 
@@ -42,13 +42,13 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">No Official Diagnosis</h3>
           <p className="mb-4">
-            NVLD is not currently recognized in the DSM-5 or ICD-11:<sup<3/>sup>
+            NVLD is not currently recognized in the DSM-5 or ICD-11:<sup>3</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Widely used clinically despite lack of official status</li>
             <li className="mb-2">No standardized diagnostic criteria across professionals</li>
             <li className="mb-2">May be diagnosed under "Other Specified Learning Disorder" in DSM-5</li>
-            <li className="mb-2">Research ongoing regarding classification<sup<4/>sup></li>
+            <li className="mb-2">Research ongoing regarding classification<sup>4</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Overlapping Conditions</h3>
@@ -64,7 +64,7 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Qualified Professionals</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Neuropsychologists:</strong> Most qualified to identify NVLD pattern<sup<6/>sup></li>
+            <li className="mb-2"><strong>Neuropsychologists:</strong> Most qualified to identify NVLD pattern<sup>6</sup></li>
             <li className="mb-2"><strong>Clinical psychologists:</strong> With expertise in learning disabilities</li>
             <li className="mb-2"><strong>School psychologists:</strong> May identify pattern in educational settings</li>
             <li className="mb-2"><strong>Developmental pediatricians:</strong> In collaboration with psychologists</li>
@@ -115,7 +115,7 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Discrepancy Patterns</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Typically 10+ point difference between verbal and visual-spatial scores<sup<1/>sup></li>
+            <li className="mb-2">Typically 10+ point difference between verbal and visual-spatial scores<sup>1</sup></li>
             <li className="mb-2">Greater discrepancy may indicate more significant NVLD</li>
             <li className="mb-2">Pattern more important than absolute scores</li>
           </ul>
@@ -126,7 +126,7 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Visual-Spatial Tests</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Rey-Osterrieth Complex Figure:</strong> Copy and recall complex design<sup<2/>sup></li>
+            <li className="mb-2"><strong>Rey-Osterrieth Complex Figure:</strong> Copy and recall complex design<sup>2</sup></li>
             <li className="mb-2"><strong>Beery VMI:</strong> Visual-Motor Integration test</li>
             <li className="mb-2"><strong>Judgment of Line Orientation:</strong> Spatial perception</li>
             <li className="mb-2"><strong>Block Design:</strong> From WISC/WAIS</li>
@@ -135,7 +135,7 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Motor Skills Assessment</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Grooved Pegboard:</strong> Fine motor dexterity and speed</li>
-            <li className="mb-2"><strong>Finger Tapping Test:</strong> Motor speed<sup<3/>sup></li>
+            <li className="mb-2"><strong>Finger Tapping Test:</strong> Motor speed<sup>3</sup></li>
             <li className="mb-2"><strong>Handwriting samples:</strong> Graphomotor skills</li>
           </ul>
         </div>
@@ -145,14 +145,14 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Assessment</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Decoding:</strong> Typically strong<sup<4/>sup></li>
+            <li className="mb-2"><strong>Decoding:</strong> Typically strong<sup>4</sup></li>
             <li className="mb-2"><strong>Reading comprehension:</strong> May decline with complex text</li>
             <li className="mb-2"><strong>Pattern:</strong> Decoding stronger than comprehension</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Mathematics Assessment</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Arithmetic:</strong> Computational difficulties<sup<5/>sup></li>
+            <li className="mb-2"><strong>Arithmetic:</strong> Computational difficulties<sup>5</sup></li>
             <li className="mb-2"><strong>Math reasoning:</strong> Especially visual-spatial problems</li>
             <li className="mb-2"><strong>Geometry:</strong> Significant challenges</li>
           </ul>
@@ -160,7 +160,7 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Written Expression</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Handwriting difficulties due to motor and spatial issues</li>
-            <li className="mb-2">Organization challenges in written work<sup<6/>sup></li>
+            <li className="mb-2">Organization challenges in written work<sup>6</sup></li>
           </ul>
         </div>
 

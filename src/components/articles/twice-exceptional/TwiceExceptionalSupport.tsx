@@ -33,7 +33,7 @@ export function TwiceExceptionalSupport({ setCurrentArticle }: TwiceExceptionalS
           <p className="mb-4">
             Supporting twice-exceptional students requires dual differentiation—simultaneously addressing 
             advanced abilities and providing accommodations for disabilities.<sup>10</sup> Neither the 
-            giftedness nor the disability should be neglected in favor of the other.<sup<2/>sup>
+            giftedness nor the disability should be neglected in favor of the other.<sup>2</sup>
           </p>
         </div>
 
@@ -48,14 +48,14 @@ export function TwiceExceptionalSupport({ setCurrentArticle }: TwiceExceptionalS
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Strength-Based Approach</h3>
           <p className="mb-4">
-            A strength-based approach emphasizes developing talents while providing support for challenges.<sup<3/>sup> 
-            Focusing on what students can do rather than only on deficits builds confidence and motivation.<sup<4/>sup> 
+            A strength-based approach emphasizes developing talents while providing support for challenges.<sup>3</sup> 
+            Focusing on what students can do rather than only on deficits builds confidence and motivation.<sup>4</sup> 
             Talents should be nurtured even while addressing areas of weakness.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Addressing Both Exceptionalities</h3>
           <p className="mb-4">
-            Effective programming provides both challenge for gifts and accommodations for disabilities.<sup<6/>sup> 
+            Effective programming provides both challenge for gifts and accommodations for disabilities.<sup>6</sup> 
             Students need access to advanced content and accelerated pacing alongside modifications for learning 
             differences.<sup>7</sup> Educational plans should address cognitive, academic, social-emotional, 
             and behavioral needs comprehensively.<sup>8</sup>
@@ -66,7 +66,7 @@ export function TwiceExceptionalSupport({ setCurrentArticle }: TwiceExceptionalS
             Each 2e student presents a unique profile requiring individualized support.<sup>9</sup> Cookie-cutter 
             approaches fail to address the specific combination of strengths and weaknesses.<sup>10</sup> 
             Collaborative team planning involving gifted specialists, special educators, general educators, 
-            and families optimizes outcomes.<sup<1/>sup>
+            and families optimizes outcomes.<sup>1</sup>
           </p>
         </div>
 
@@ -75,17 +75,17 @@ export function TwiceExceptionalSupport({ setCurrentArticle }: TwiceExceptionalS
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Curriculum Compacting</h3>
           <p className="mb-4">
-            Compacting eliminates content already mastered, replacing it with more challenging material.<sup<2/>sup> 
-            This approach honors advanced abilities while freeing time for skill remediation or enrichment.<sup<3/>sup> 
+            Compacting eliminates content already mastered, replacing it with more challenging material.<sup>2</sup> 
+            This approach honors advanced abilities while freeing time for skill remediation or enrichment.<sup>3</sup> 
             Research shows many gifted students can demonstrate mastery of 40-50% of regular curriculum before 
-            it's taught.<sup<4/>sup>
+            it's taught.<sup>4</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Flexible Pacing and Grouping</h3>
           <p className="mb-4">
             Allowing students to progress at different rates in different subjects accommodates uneven 
-            development.<sup<5/>sup> Subject-specific acceleration enables advancement in areas of strength 
-            while providing additional time or support in challenge areas.<sup<6/>sup>
+            development.<sup>5</sup> Subject-specific acceleration enables advancement in areas of strength 
+            while providing additional time or support in challenge areas.<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Differentiated Instruction</h3>

@@ -43,11 +43,11 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
             The assessment and diagnosis of Sensory Processing Disorder involves a comprehensive evaluation of how an individual 
             receives, processes, and responds to sensory information across all sensory systems.<sup>[1][2]</sup> Evaluation is 
             typically conducted by occupational therapists with specialized training in sensory integration, though other 
-            professionals may also contribute to the assessment process.<sup<3/>sup>
+            professionals may also contribute to the assessment process.<sup>3</sup>
           </p>
           <p className="mb-4">
             It's important to note that SPD is not currently included as a distinct diagnosis in the DSM-5 or ICD-11 diagnostic 
-            manuals.<sup<4/>sup> However, sensory processing differences are widely recognized by occupational therapists and 
+            manuals.<sup>4</sup> However, sensory processing differences are widely recognized by occupational therapists and 
             other professionals, and comprehensive assessment protocols have been developed to identify and characterize sensory 
             processing challenges.<sup>[1][2]</sup>
           </p>
@@ -65,7 +65,7 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
           <p className="mb-4">
             Occupational therapists (OTs), particularly those with specialized training in sensory integration, are the primary 
             professionals who assess and diagnose SPD.<sup>5</sup> Many OTs pursue advanced certification in Ayres Sensory 
-            Integration® (ASI) or complete extensive continuing education in sensory processing assessment and intervention.<sup<6/>sup>
+            Integration® (ASI) or complete extensive continuing education in sensory processing assessment and intervention.<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Other Professionals</h3>
@@ -113,12 +113,12 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
             <li className="mb-2"><strong>Sensory Processing Measure (SPM):</strong> Evaluates sensory processing, praxis, and social 
             participation in both home and school environments.<sup>10</sup></li>
             <li className="mb-2"><strong>Sensory Experiences Questionnaire (SEQ):</strong> Designed for young children, particularly 
-            useful in research and clinical assessment of sensory features.<sup<1/>sup></li>
+            useful in research and clinical assessment of sensory features.<sup>1</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Clinical Observations</h3>
           <p className="mb-4">
-            Direct observation of the individual interacting with sensory experiences provides crucial assessment information:<sup<3/>sup>
+            Direct observation of the individual interacting with sensory experiences provides crucial assessment information:<sup>3</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Responses to various sensory stimuli (tactile, auditory, visual, vestibular, proprioceptive)</li>
@@ -134,16 +134,16 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Sensory Integration and Praxis Tests (SIPT):</strong> A comprehensive battery of 17 tests 
-            measuring various aspects of sensory integration and praxis for children ages 4-8 years.<sup<2/>sup> Requires 
+            measuring various aspects of sensory integration and praxis for children ages 4-8 years.<sup>2</sup> Requires 
             specialized certification to administer and interpret.</li>
             <li className="mb-2"><strong>Evaluation in Ayres Sensory Integration (EASI):</strong> A newer assessment tool designed 
-            to measure fidelity to Ayres Sensory Integration intervention principles and evaluate intervention outcomes.<sup<3/>sup></li>
-            <li className="mb-2">Praxis (motor planning) abilities<sup<2/>sup></li>
+            to measure fidelity to Ayres Sensory Integration intervention principles and evaluate intervention outcomes.<sup>3</sup></li>
+            <li className="mb-2">Praxis (motor planning) abilities<sup>2</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Test of Sensory Functions in Infants (TSFI)</h3>
           <p className="mb-4">
-            For infants and very young children, the TSFI assesses sensory processing and reactivity in children ages 4-18 months.<sup<4/>sup>
+            For infants and very young children, the TSFI assesses sensory processing and reactivity in children ages 4-18 months.<sup>4</sup>
           </p>
         </div>
 
@@ -175,7 +175,7 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
           
           <p className="mb-4">
             A comprehensive assessment considers the relationship between sensory processing differences and other conditions, 
-            screening for related diagnoses:<sup<2/>sup>
+            screening for related diagnoses:<sup>2</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Autism Spectrum Disorder:</strong> Sensory processing differences are common in autism, 
@@ -196,7 +196,7 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
           
           <p className="mb-4">
             While SPD is not in the DSM-5, researchers and clinicians have proposed diagnostic criteria. Miller and 
-            colleagues outlined criteria for diagnosing SPD subtypes:<sup<2/>sup>
+            colleagues outlined criteria for diagnosing SPD subtypes:<sup>2</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Sensory processing difficulties that interfere with participation in daily activities</li>
@@ -240,10 +240,10 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Integration and Interpretation</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Analysis of all assessment data</li>
-            <li className="mb-2">Motor and coordination evaluation<sup<2/>sup></li>
+            <li className="mb-2">Motor and coordination evaluation<sup>2</sup></li>
             <li className="mb-2">Identification of sensory processing patterns and subtypes</li>
             <li className="mb-2">Understanding the individual's unique sensory profile</li>
-            <li className="mb-2">Determining impact on daily functioning and participation<sup<5/>sup></li>
+            <li className="mb-2">Determining impact on daily functioning and participation<sup>5</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Feedback and Recommendations</h3>
@@ -264,15 +264,15 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Ongoing Assessment and Monitoring</h2>
           
           <p className="mb-4">
-            Assessment is not a one-time event but an ongoing process:<sup<3/>sup>
+            Assessment is not a one-time event but an ongoing process:<sup>3</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Progress Monitoring:</strong> Regular evaluation of intervention effectiveness and changes in sensory processing</li>
             <li className="mb-2"><strong>Reassessment:</strong> Periodic comprehensive reassessments to track developmental changes and intervention outcomes</li>
             <li className="mb-2"><strong>Goal Setting and Measurement:</strong> Use of tools like Goal 
-            Attainment Scaling<sup<3/>sup></li>
+            Attainment Scaling<sup>3</sup></li>
             <li className="mb-2"><strong>Family Input:</strong> Continuous feedback from families about functional changes and 
-            quality of life<sup<5/>sup></li>
+            quality of life<sup>5</sup></li>
           </ul>
         </div>
 

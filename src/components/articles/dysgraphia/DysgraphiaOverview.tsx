@@ -33,7 +33,7 @@ export function DysgraphiaOverview({ setCurrentArticle }: DysgraphiaOverviewProp
           <p className="mb-4">
             Dysgraphia is a specific learning disability that affects writing abilities, making the physical act of 
             writing difficult despite adequate instruction and normal intelligence.<sup>10</sup> It is one of the 
-            lesser-known learning disabilities but can significantly impact academic performance and daily functioning.<sup<2/>sup>
+            lesser-known learning disabilities but can significantly impact academic performance and daily functioning.<sup>2</sup>
           </p>
         </div>
 
@@ -50,13 +50,13 @@ export function DysgraphiaOverview({ setCurrentArticle }: DysgraphiaOverviewProp
           <p className="mb-4">
             The term "dysgraphia" comes from the Greek words "dys" (impaired) and "graphia" (writing). 
             It refers to difficulties with the mechanics of writing that are not due to lack of instruction, 
-            intellectual disability, or neurological damage.<sup<3/>sup>
+            intellectual disability, or neurological damage.<sup>3</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Core Features</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Impaired handwriting:</strong> Illegible or slow handwriting</li>
-            <li className="mb-2"><strong>Difficulty with spelling:</strong> Inconsistent spelling errors<sup<4/>sup></li>
+            <li className="mb-2"><strong>Difficulty with spelling:</strong> Inconsistent spelling errors<sup>4</sup></li>
             <li className="mb-2"><strong>Challenges with written expression:</strong> Gap between oral and written abilities</li>
             <li className="mb-2"><strong>Physical discomfort:</strong> Hand cramping or fatigue while writing</li>
           </ul>
@@ -72,7 +72,7 @@ export function DysgraphiaOverview({ setCurrentArticle }: DysgraphiaOverviewProp
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Types of Dysgraphia</h2>
           
           <p className="mb-4">
-            Researchers have identified different types of dysgraphia based on the underlying causes:<sup<6/>sup>
+            Researchers have identified different types of dysgraphia based on the underlying causes:<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Dyslexic Dysgraphia</h3>
@@ -132,15 +132,15 @@ export function DysgraphiaOverview({ setCurrentArticle }: DysgraphiaOverviewProp
           />
           
           <p className="mb-4">
-            Dysgraphia frequently occurs alongside other conditions:<sup<1/>sup>
+            Dysgraphia frequently occurs alongside other conditions:<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Co-occurring Conditions</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Dyslexia:</strong> Reading and writing difficulties often overlap<sup<2/>sup></li>
+            <li className="mb-2"><strong>Dyslexia:</strong> Reading and writing difficulties often overlap<sup>2</sup></li>
             <li className="mb-2"><strong>ADHD:</strong> Attention difficulties compound writing challenges</li>
             <li className="mb-2"><strong>Developmental Coordination Disorder (Dyspraxia):</strong> Motor planning difficulties</li>
-            <li className="mb-2"><strong>Autism Spectrum Disorder:</strong> Motor and executive function challenges<sup<3/>sup></li>
+            <li className="mb-2"><strong>Autism Spectrum Disorder:</strong> Motor and executive function challenges<sup>3</sup></li>
             <li className="mb-2"><strong>Language disorders:</strong> Broader language processing difficulties</li>
           </ul>
         </div>
@@ -150,17 +150,17 @@ export function DysgraphiaOverview({ setCurrentArticle }: DysgraphiaOverviewProp
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Academic Impact</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty taking notes during lectures<sup<4/>sup></li>
+            <li className="mb-2">Difficulty taking notes during lectures<sup>4</sup></li>
             <li className="mb-2">Slower completion of written assignments</li>
             <li className="mb-2">Poor performance on timed tests requiring written responses</li>
             <li className="mb-2">Frustration leading to avoidance of writing tasks</li>
-            <li className="mb-2">Lower grades despite understanding content<sup<5/>sup></li>
+            <li className="mb-2">Lower grades despite understanding content<sup>5</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social and Emotional Impact</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Embarrassment about handwriting quality</li>
-            <li className="mb-2">Low self-esteem related to academic struggles<sup<6/>sup></li>
+            <li className="mb-2">Low self-esteem related to academic struggles<sup>6</sup></li>
             <li className="mb-2">Anxiety about writing tasks</li>
             <li className="mb-2">Being perceived as "lazy" or "not trying hard enough"</li>
           </ul>

@@ -34,7 +34,7 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
             Living with dyscalculia presents unique challenges in a world filled with numbers, but with understanding, 
             strategies, and support, individuals can lead successful, fulfilling lives.<sup>10</sup> Many people with 
             dyscalculia develop strengths in other areas and find careers that minimize mathematical demands while 
-            capitalizing on their talents.<sup<2/>sup>
+            capitalizing on their talents.<sup>2</sup>
           </p>
         </div>
 
@@ -49,16 +49,16 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Time Management Challenges</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Reading clocks:</strong> Difficulty with analog clocks; digital preferred<sup<3/>sup></li>
+            <li className="mb-2"><strong>Reading clocks:</strong> Difficulty with analog clocks; digital preferred<sup>3</sup></li>
             <li className="mb-2"><strong>Estimating time:</strong> Poor sense of time passage</li>
-            <li className="mb-2"><strong>Scheduling:</strong> Trouble coordinating appointments and commitments<sup<4/>sup></li>
+            <li className="mb-2"><strong>Scheduling:</strong> Trouble coordinating appointments and commitments<sup>4</sup></li>
             <li className="mb-2"><strong>Punctuality:</strong> Frequently late due to time estimation difficulties</li>
             <li className="mb-2"><strong>Coping strategies:</strong> Alarms, digital calendars with reminders<sup>5</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Money Management</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Counting change:</strong> Difficulty calculating correct change at stores<sup<6/>sup></li>
+            <li className="mb-2"><strong>Counting change:</strong> Difficulty calculating correct change at stores<sup>6</sup></li>
             <li className="mb-2"><strong>Budgeting:</strong> Challenges tracking spending and saving</li>
             <li className="mb-2"><strong>Banking:</strong> Balancing checkbooks, understanding statements<sup>7</sup></li>
             <li className="mb-2"><strong>Tipping:</strong> Calculating appropriate tip amounts</li>
@@ -76,18 +76,18 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Cooking and Measurements</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Measuring ingredients accurately<sup<1/>sup></li>
+            <li className="mb-2">Measuring ingredients accurately<sup>1</sup></li>
             <li className="mb-2">Converting measurements (cups to tablespoons, etc.)</li>
-            <li className="mb-2">Adjusting recipes (doubling or halving)<sup<2/>sup></li>
+            <li className="mb-2">Adjusting recipes (doubling or halving)<sup>2</sup></li>
             <li className="mb-2">Following multi-step recipes with timing</li>
             <li className="mb-2">Strategies: Visual measuring tools, conversion charts posted in kitchen</li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Navigation and Travel</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Reading maps and understanding directions<sup<3/>sup></li>
+            <li className="mb-2">Reading maps and understanding directions<sup>3</sup></li>
             <li className="mb-2">Estimating distances and travel time</li>
-            <li className="mb-2">Understanding highway exit numbers and addresses<sup<4/>sup></li>
+            <li className="mb-2">Understanding highway exit numbers and addresses<sup>4</sup></li>
             <li className="mb-2">GPS navigation essential tool</li>
           </ul>
         </div>
@@ -97,9 +97,9 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Emotional Experiences</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Embarrassment:</strong> Self-conscious about using calculator or asking for help<sup<5/>sup></li>
+            <li className="mb-2"><strong>Embarrassment:</strong> Self-conscious about using calculator or asking for help<sup>5</sup></li>
             <li className="mb-2"><strong>Frustration:</strong> Simple tasks take longer and require more effort</li>
-            <li className="mb-2"><strong>Anxiety:</strong> Math-related situations cause stress<sup<6/>sup></li>
+            <li className="mb-2"><strong>Anxiety:</strong> Math-related situations cause stress<sup>6</sup></li>
             <li className="mb-2"><strong>Low self-esteem:</strong> Feeling "stupid" despite intelligence in other areas</li>
             <li className="mb-2"><strong>Isolation:</strong> May avoid social situations involving numbers<sup>[17]</sup></li>
           </ul>

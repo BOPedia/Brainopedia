@@ -13,7 +13,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
         <p className="mb-6">
           Early intervention services can significantly impact developmental trajectories for autistic children. 
           A person-centered approach focuses on understanding symptoms, implementing effective strategies, and 
-          connecting with appropriate services to improve individual lives.<sup<3/>sup>
+          connecting with appropriate services to improve individual lives.<sup>3</sup>
         </p>
     
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
@@ -38,7 +38,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 Part C of IDEA provides early intervention services for infants and toddlers with developmental 
-                delays, ages 0-3<sup<4/>sup>
+                delays, ages 0-3<sup>4</sup>
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 Services often delivered in the child's natural environment—home, daycare, or community 
-                settings<sup<6/>sup>
+                settings<sup>6</sup>
               </p>
             </div>
 

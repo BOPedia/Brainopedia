@@ -33,7 +33,7 @@ export function APDSupport({ setCurrentArticle }: APDSupportProps) {
           <p className="mb-4">
             Managing Auditory Processing Disorder requires a multifaceted approach combining environmental 
             modifications, compensatory strategies, direct remediation, and appropriate accommodations.<sup>10</sup> 
-            Effective support is individualized based on the specific deficits, age, and functional impacts.<sup<2/>sup>
+            Effective support is individualized based on the specific deficits, age, and functional impacts.<sup>2</sup>
           </p>
         </div>
 
@@ -48,14 +48,14 @@ export function APDSupport({ setCurrentArticle }: APDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Environmental Modifications</h3>
           <p className="mb-4">
-            Changing the listening environment to optimize signal-to-noise ratio and reduce auditory demands.<sup<3/>sup> 
-            This is often the most immediately effective intervention component.<sup<4/>sup>
+            Changing the listening environment to optimize signal-to-noise ratio and reduce auditory demands.<sup>3</sup> 
+            This is often the most immediately effective intervention component.<sup>4</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Compensatory Strategies</h3>
           <p className="mb-4">
             Teaching skills and strategies to work around auditory processing deficits.<sup>5</sup> These help 
-            individuals function more effectively despite persistent difficulties.<sup<6/>sup>
+            individuals function more effectively despite persistent difficulties.<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Direct Remediation</h3>
@@ -72,20 +72,20 @@ export function APDSupport({ setCurrentArticle }: APDSupportProps) {
           <p className="mb-4">
             Reducing background noise and reverberation improves listening conditions.<sup>9</sup> Strategies 
             include carpeting, acoustic tiles, curtains, and strategic furniture placement to absorb sound.<sup>10</sup> 
-            Classrooms benefit from sound field systems distributing teacher voice evenly.<sup<1/>sup>
+            Classrooms benefit from sound field systems distributing teacher voice evenly.<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Preferential Seating</h3>
           <p className="mb-4">
             Sitting near the speaker and away from noise sources (windows, doors, fans, projectors) significantly 
-            improves comprehension.<sup<2/>sup> Front-row center placement in classrooms is ideal.<sup<3/>sup> 
-            Distance from sound source dramatically affects signal-to-noise ratio.<sup<4/>sup>
+            improves comprehension.<sup>2</sup> Front-row center placement in classrooms is ideal.<sup>3</sup> 
+            Distance from sound source dramatically affects signal-to-noise ratio.<sup>4</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reducing Competing Sounds</h3>
           <p className="mb-4">
-            Minimizing background noise during important listening tasks helps significantly.<sup<5/>sup> Turn 
-            off music, close windows during traffic times, schedule challenging work during quiet periods.<sup<6/>sup> 
+            Minimizing background noise during important listening tasks helps significantly.<sup>5</sup> Turn 
+            off music, close windows during traffic times, schedule challenging work during quiet periods.<sup>6</sup> 
             One-on-one instruction in quiet settings may be necessary for complex material.<sup>[17]</sup>
           </p>
 

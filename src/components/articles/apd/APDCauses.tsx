@@ -34,7 +34,7 @@ export function APDCauses({ setCurrentArticle }: APDCausesProps) {
             The causes of Auditory Processing Disorder are complex and multifactorial, involving neurological, 
             genetic, developmental, and environmental factors.<sup>10</sup> Understanding these origins helps 
             clarify why some individuals develop auditory processing differences and informs intervention 
-            approaches.<sup<2/>sup>
+            approaches.<sup>2</sup>
           </p>
         </div>
 
@@ -50,15 +50,15 @@ export function APDCauses({ setCurrentArticle }: APDCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Central Auditory Pathway Dysfunction</h3>
           <p className="mb-4">
             APD involves dysfunction in the central auditory nervous system—the pathways from the brainstem 
-            through the auditory cortex.<sup<3/>sup> These structures process, analyze, and integrate auditory 
-            information received from the ears.<sup<4/>sup> Differences in how these pathways function underlie 
+            through the auditory cortex.<sup>3</sup> These structures process, analyze, and integrate auditory 
+            information received from the ears.<sup>4</sup> Differences in how these pathways function underlie 
             APD symptoms.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brainstem Involvement</h3>
           <p className="mb-4">
             The brainstem contains critical auditory nuclei including the cochlear nucleus, superior olivary 
-            complex, and inferior colliculus.<sup<6/>sup> These structures process temporal information, sound 
+            complex, and inferior colliculus.<sup>6</sup> These structures process temporal information, sound 
             localization, and binaural integration.<sup>7</sup> Dysfunction at the brainstem level affects 
             fundamental auditory processing abilities.<sup>8</sup>
           </p>
@@ -68,21 +68,21 @@ export function APDCauses({ setCurrentArticle }: APDCausesProps) {
             The auditory cortex in the temporal lobes processes complex auditory information including speech 
             sounds and patterns.<sup>9</sup> Neuroimaging studies show differences in auditory cortex structure 
             and function in individuals with APD.<sup>10</sup> These cortical differences affect higher-level 
-            auditory processing.<sup<1/>sup>
+            auditory processing.<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Interhemispheric Transfer</h3>
           <p className="mb-4">
-            The corpus callosum transfers auditory information between brain hemispheres.<sup<2/>sup> 
+            The corpus callosum transfers auditory information between brain hemispheres.<sup>2</sup> 
             Difficulties with interhemispheric transfer contribute to certain APD subtypes, particularly 
-            affecting binaural integration.<sup<3/>sup>
+            affecting binaural integration.<sup>3</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Neural Timing and Synchrony</h3>
           <p className="mb-4">
-            Precise neural timing is essential for processing rapid auditory changes in speech.<sup<4/>sup> 
-            Reduced neural synchrony or temporal processing precision underlies many APD symptoms.<sup<5/>sup> 
-            The auditory system must process information occurring in millisecond timescales.<sup<6/>sup>
+            Precise neural timing is essential for processing rapid auditory changes in speech.<sup>4</sup> 
+            Reduced neural synchrony or temporal processing precision underlies many APD symptoms.<sup>5</sup> 
+            The auditory system must process information occurring in millisecond timescales.<sup>6</sup>
           </p>
         </div>
 

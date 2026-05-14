@@ -78,7 +78,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
             <strong>Dysgraphia</strong> is a specific learning difference that affects written expression and 
             the physical act of writing.<sup>10</sup> It impacts a person's ability to produce legible, organized written 
             work and can involve difficulties with handwriting, spelling, and putting thoughts into written form 
-            despite adequate language and cognitive abilities.<sup<2/>sup>
+            despite adequate language and cognitive abilities.<sup>2</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -112,9 +112,9 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
           
           <p className="mb-4">
             Dysgraphia affects approximately 5-20% of the population and is thought to have a neurological 
-            basis.<sup<3/>sup> It is not related to intelligence—individuals with dysgraphia can have average or 
+            basis.<sup>3</sup> It is not related to intelligence—individuals with dysgraphia can have average or 
             above-average cognitive abilities and may excel in verbal communication, creative thinking, 
-            or other academic areas.<sup<4/>sup> The condition involves difficulties with the mechanical aspects of writing, 
+            or other academic areas.<sup>4</sup> The condition involves difficulties with the mechanical aspects of writing, 
             including fine motor coordination, orthographic coding (the ability to store written words in working 
             memory), and graphomotor planning (planning and executing the movements required for writing).
           </p>
@@ -137,7 +137,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
           <p className="mb-4">
             Dysgraphia is characterized by difficulties with illegible or inconsistent handwriting, awkward pencil grip 
             or body position while writing, slow writing speed, difficulty keeping up with note-taking, mixing upper and 
-            lowercase letters inappropriately, and inconsistent spacing between letters and words.<sup<6/>sup> Beyond handwriting 
+            lowercase letters inappropriately, and inconsistent spacing between letters and words.<sup>6</sup> Beyond handwriting 
             mechanics, dysgraphia can affect organizing thoughts on paper, grammar and punctuation usage, spelling 
             inconsistencies, and written expression despite strong verbal skills.<sup>7</sup> Individuals may experience hand 
             cramping or fatigue when writing, frustration with writing tasks, and anxiety about written assignments.<sup>8</sup>
@@ -158,7 +158,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
             motor planning, and working memory, including regions in the frontal and parietal lobes.<sup>9</sup> The cerebellum, 
             which coordinates fine motor movements, may also play a role in dysgraphia.<sup>10</sup> These neurological differences 
             affect the mechanical aspects of writing including fine motor coordination, orthographic coding (storing 
-            written words in working memory), and graphomotor planning (planning and executing writing movements).<sup<1/>sup> 
+            written words in working memory), and graphomotor planning (planning and executing writing movements).<sup>1</sup> 
             Like other learning differences, dysgraphia has a neurological basis and may have genetic components, 
             though more research is needed to fully understand its causes.
           </p>
@@ -175,12 +175,12 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
           
           <p className="mb-4">
             Dysgraphia is diagnosed through comprehensive evaluation by qualified professionals such as educational 
-            psychologists, occupational therapists, or neuropsychologists.<sup<2/>sup> The assessment process includes academic 
+            psychologists, occupational therapists, or neuropsychologists.<sup>2</sup> The assessment process includes academic 
             achievement tests for written expression, fine motor skill and visual-motor integration assessments, 
             evaluation of handwriting quality and speed, assessment of spelling and composition abilities, and review of 
-            writing samples and educational history.<sup<3/>sup> Early identification is important to provide appropriate support and 
+            writing samples and educational history.<sup>3</sup> Early identification is important to provide appropriate support and 
             prevent secondary issues like academic struggles and decreased self-confidence. Diagnosis can occur at 
-            any age, though it's often identified when writing demands increase in school.<sup<4/>sup>
+            any age, though it's often identified when writing demands increase in school.<sup>4</sup>
           </p>
         </section>
 
@@ -196,9 +196,9 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
           <p className="mb-4">
             Support for dysgraphia includes educational accommodations such as extended time for writing tasks and exams, 
             use of assistive technology (speech-to-text software, word processors), reduced writing requirements, and 
-            note-taking support.<sup<5/>sup> Therapeutic interventions include occupational therapy for fine motor skills, handwriting 
+            note-taking support.<sup>5</sup> Therapeutic interventions include occupational therapy for fine motor skills, handwriting 
             instruction and practice programs, keyboarding skills training, multisensory writing approaches, and strategies 
-            for organizing and planning written work.<sup<6/>sup> Technology tools are particularly beneficial, including word 
+            for organizing and planning written work.<sup>6</sup> Technology tools are particularly beneficial, including word 
             processing software with spell-check, speech-to-text applications, graphic organizers, text-to-speech programs 
             for proofreading, and digital note-taking apps.<sup>[17]</sup>
           </p>

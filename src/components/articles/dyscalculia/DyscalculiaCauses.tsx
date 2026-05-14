@@ -33,7 +33,7 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
           <p className="mb-4">
             Dyscalculia is a neurodevelopmental condition with complex, multifactorial origins.<sup>10</sup> Research 
             indicates that genetic factors, brain differences, and environmental influences all contribute to mathematical 
-            learning disabilities.<sup<2/>sup> Understanding these causes helps reduce stigma and informs more effective 
+            learning disabilities.<sup>2</sup> Understanding these causes helps reduce stigma and informs more effective 
             interventions.
           </p>
         </div>
@@ -49,12 +49,12 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Heritability of Mathematical Ability</h3>
           <p className="mb-4">
-            Mathematical ability and disability run in families, suggesting significant genetic influence:<sup<3/>sup>
+            Mathematical ability and disability run in families, suggesting significant genetic influence:<sup>3</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Twin studies:</strong> Identical twins show higher concordance for math abilities than fraternal twins<sup<4/>sup></li>
+            <li className="mb-2"><strong>Twin studies:</strong> Identical twins show higher concordance for math abilities than fraternal twins<sup>4</sup></li>
             <li className="mb-2"><strong>Family studies:</strong> 40-50% of siblings of children with dyscalculia also have math difficulties<sup>5</sup></li>
-            <li className="mb-2"><strong>Heritability estimates:</strong> Genetic factors account for 30-70% of individual differences in math ability<sup<6/>sup></li>
+            <li className="mb-2"><strong>Heritability estimates:</strong> Genetic factors account for 30-70% of individual differences in math ability<sup>6</sup></li>
             <li className="mb-2"><strong>Parental history:</strong> Children with a parent who struggled with math are at higher risk<sup>7</sup></li>
           </ul>
 
@@ -63,13 +63,13 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
             <li className="mb-2"><strong>Chromosome 20p:</strong> Associated with numerical processing deficits<sup>8</sup></li>
             <li className="mb-2"><strong>Multiple genes involved:</strong> Likely polygenic condition with many contributing genes<sup>9</sup></li>
             <li className="mb-2"><strong>Shared genetics with dyslexia:</strong> Some genetic overlap between reading and math disabilities<sup>10</sup></li>
-            <li className="mb-2"><strong>ROBO1 gene:</strong> Implicated in both reading and mathematical difficulties<sup<1/>sup></li>
+            <li className="mb-2"><strong>ROBO1 gene:</strong> Implicated in both reading and mathematical difficulties<sup>1</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
           <p className="mb-4">
-            Genetic predisposition interacts with environmental factors to produce dyscalculia:<sup<2/>sup> High-quality 
-            math instruction can help children with genetic risk, while poor instruction can worsen outcomes.<sup<3/>sup>
+            Genetic predisposition interacts with environmental factors to produce dyscalculia:<sup>2</sup> High-quality 
+            math instruction can help children with genetic risk, while poor instruction can worsen outcomes.<sup>3</sup>
           </p>
         </div>
 
@@ -78,9 +78,9 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brain Regions Involved in Mathematical Processing</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Intraparietal sulcus (IPS):</strong> Core region for number sense and magnitude processing<sup<4/>sup></li>
-            <li className="mb-2"><strong>Angular gyrus:</strong> Important for arithmetic fact retrieval and verbally-mediated calculation<sup<5/>sup></li>
-            <li className="mb-2"><strong>Prefrontal cortex:</strong> Working memory and executive control during math tasks<sup<6/>sup></li>
+            <li className="mb-2"><strong>Intraparietal sulcus (IPS):</strong> Core region for number sense and magnitude processing<sup>4</sup></li>
+            <li className="mb-2"><strong>Angular gyrus:</strong> Important for arithmetic fact retrieval and verbally-mediated calculation<sup>5</sup></li>
+            <li className="mb-2"><strong>Prefrontal cortex:</strong> Working memory and executive control during math tasks<sup>6</sup></li>
             <li className="mb-2"><strong>Hippocampus:</strong> Learning and memory for mathematical procedures<sup>[17]</sup></li>
             <li className="mb-2"><strong>Occipito-temporal regions:</strong> Visual processing of numerical symbols<sup>[18]</sup></li>
           </ul>

@@ -33,7 +33,7 @@ export function DLDSupport({ setCurrentArticle }: DLDSupportProps) {
           <p className="mb-4">
             Effective support for DLD involves speech-language therapy, educational interventions, and environmental 
             modifications that target specific language difficulties.<sup>10</sup> Research shows that intensive, 
-            targeted intervention can significantly improve language outcomes.<sup<2/>sup>
+            targeted intervention can significantly improve language outcomes.<sup>2</sup>
           </p>
         </div>
 
@@ -48,16 +48,16 @@ export function DLDSupport({ setCurrentArticle }: DLDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Core Intervention Approaches</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Explicit teaching:</strong> Direct, systematic instruction of language skills<sup<3/>sup></li>
+            <li className="mb-2"><strong>Explicit teaching:</strong> Direct, systematic instruction of language skills<sup>3</sup></li>
             <li className="mb-2"><strong>Modeling:</strong> SLP models correct language forms repeatedly</li>
-            <li className="mb-2"><strong>Recasting:</strong> Repeating child's utterance with corrections<sup<4/>sup></li>
+            <li className="mb-2"><strong>Recasting:</strong> Repeating child's utterance with corrections<sup>4</sup></li>
             <li className="mb-2"><strong>Focused stimulation:</strong> Intensive exposure to target structures</li>
             <li className="mb-2"><strong>Imitation:</strong> Guided practice producing target forms<sup>5</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Grammar Intervention</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Targeting specific grammatical morphemes (past tense, plurals)<sup<6/>sup></li>
+            <li className="mb-2">Targeting specific grammatical morphemes (past tense, plurals)<sup>6</sup></li>
             <li className="mb-2">Shape Coding and other visual supports for grammar</li>
             <li className="mb-2">Sentence building activities</li>
             <li className="mb-2">Intensive practice with feedback<sup>7</sup></li>
@@ -84,9 +84,9 @@ export function DLDSupport({ setCurrentArticle }: DLDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Research-Supported Approaches</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Meta-analyses show:</strong> Language therapy is effective<sup<1/>sup></li>
+            <li className="mb-2"><strong>Meta-analyses show:</strong> Language therapy is effective<sup>1</sup></li>
             <li className="mb-2"><strong>Intensity matters:</strong> More frequent sessions yield better results</li>
-            <li className="mb-2"><strong>Dosage:</strong> Total amount of intervention important<sup<2/>sup></li>
+            <li className="mb-2"><strong>Dosage:</strong> Total amount of intervention important<sup>2</sup></li>
             <li className="mb-2"><strong>Individual or small groups:</strong> Both can be effective</li>
           </ul>
         </div>
@@ -96,18 +96,18 @@ export function DLDSupport({ setCurrentArticle }: DLDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Environmental Modifications</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Reduce background noise:</strong> Quiet learning environments<sup<3/>sup></li>
+            <li className="mb-2"><strong>Reduce background noise:</strong> Quiet learning environments<sup>3</sup></li>
             <li className="mb-2"><strong>Preferential seating:</strong> Near teacher, away from distractions</li>
             <li className="mb-2"><strong>Visual supports:</strong> Pictures, gestures, written supports</li>
-            <li className="mb-2"><strong>Structured routines:</strong> Predictable classroom structure<sup<4/>sup></li>
+            <li className="mb-2"><strong>Structured routines:</strong> Predictable classroom structure<sup>4</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Teacher Communication Strategies</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Simplified language:</strong> Shorter, clearer sentences<sup<5/>sup></li>
+            <li className="mb-2"><strong>Simplified language:</strong> Shorter, clearer sentences<sup>5</sup></li>
             <li className="mb-2"><strong>Slower pace:</strong> Allow processing time</li>
             <li className="mb-2"><strong>Repeat and rephrase:</strong> Say important information multiple ways</li>
-            <li className="mb-2"><strong>Check comprehension:</strong> Ask child to repeat back instructions<sup<6/>sup></li>
+            <li className="mb-2"><strong>Check comprehension:</strong> Ask child to repeat back instructions<sup>6</sup></li>
             <li className="mb-2"><strong>Visual cues:</strong> Pair verbal with visual information</li>
           </ul>
 

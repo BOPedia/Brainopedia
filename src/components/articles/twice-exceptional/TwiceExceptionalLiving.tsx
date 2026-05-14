@@ -34,7 +34,7 @@ export function TwiceExceptionalLiving({ setCurrentArticle }: TwiceExceptionalLi
             Living as a twice-exceptional individual involves navigating the unique challenges and opportunities 
             that come from possessing both exceptional abilities and significant challenges.<sup>10</sup> 
             Success requires self-understanding, effective strategies, supportive relationships, and environments 
-            that honor both aspects of one's exceptionalities.<sup<2/>sup>
+            that honor both aspects of one's exceptionalities.<sup>2</sup>
           </p>
         </div>
 
@@ -49,16 +49,16 @@ export function TwiceExceptionalLiving({ setCurrentArticle }: TwiceExceptionalLi
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Understanding Your Profile</h3>
           <p className="mb-4">
-            Understanding one's specific pattern of strengths and challenges is foundational to success.<sup<3/>sup> 
+            Understanding one's specific pattern of strengths and challenges is foundational to success.<sup>3</sup> 
             Learning about your twice-exceptionality—what it means, how it manifests, and how it affects various 
-            areas of life—provides a framework for making sense of experiences.<sup<4/>sup> This understanding 
+            areas of life—provides a framework for making sense of experiences.<sup>4</sup> This understanding 
             often brings relief and validation.<sup>5</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Integrating Both Identities</h3>
           <p className="mb-4">
             Developing an integrated identity that acknowledges both giftedness and disability is important for 
-            psychological well-being.<sup<6/>sup> Neither aspect should be ignored or overemphasized at the 
+            psychological well-being.<sup>6</sup> Neither aspect should be ignored or overemphasized at the 
             expense of the other.<sup>7</sup> You are not defined solely by either your gifts or your challenges, 
             but by the complex interplay of both.<sup>8</sup>
           </p>
@@ -68,14 +68,14 @@ export function TwiceExceptionalLiving({ setCurrentArticle }: TwiceExceptionalLi
             Many 2e individuals describe feeling "different" from both typical learners and from others who are 
             gifted or who have disabilities.<sup>9</sup> The internal experience often includes awareness of 
             significant discrepancies between abilities and performance, leading to confusion and frustration.<sup>10</sup> 
-            Understanding that these feelings are common among 2e individuals can reduce isolation.<sup<1/>sup>
+            Understanding that these feelings are common among 2e individuals can reduce isolation.<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Overcoming Imposter Syndrome</h3>
           <p className="mb-4">
             Many 2e individuals experience imposter syndrome—feeling like a fraud despite evidence of high 
-            ability.<sup<2/>sup> Disabilities can fuel self-doubt, making accomplishments feel undeserved.<sup<3/>sup> 
-            Recognizing this pattern and actively challenging distorted thinking helps manage imposter feelings.<sup<4/>sup>
+            ability.<sup>2</sup> Disabilities can fuel self-doubt, making accomplishments feel undeserved.<sup>3</sup> 
+            Recognizing this pattern and actively challenging distorted thinking helps manage imposter feelings.<sup>4</sup>
           </p>
         </div>
 
@@ -85,9 +85,9 @@ export function TwiceExceptionalLiving({ setCurrentArticle }: TwiceExceptionalLi
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Navigating School</h3>
           <p className="mb-4">
             School years can be challenging for 2e students who often feel they don't fit in gifted programs, 
-            special education settings, or general classrooms.<sup<5/>sup> Finding the right educational 
+            special education settings, or general classrooms.<sup>5</sup> Finding the right educational 
             environment—whether traditional school, specialized program, homeschooling, or alternative education—
-            significantly impacts success and well-being.<sup<6/>sup>
+            significantly impacts success and well-being.<sup>6</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Advocating for Your Needs</h3>

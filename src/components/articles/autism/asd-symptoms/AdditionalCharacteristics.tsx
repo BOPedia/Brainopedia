@@ -125,7 +125,7 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
               </div>
               <div className="border-l-2 border-[#2abcd4] pl-3">
                 <div className="font-bold text-[#0c264d] mb-1">Alexithymia</div>
-                <div className="text-sm">Difficulty identifying and describing one's own emotions (common in ~50% of autistic people)<sup<2/>sup></div>
+                <div className="text-sm">Difficulty identifying and describing one's own emotions (common in ~50% of autistic people)<sup>2</sup></div>
               </div>
             </div>
             
@@ -146,7 +146,7 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
         <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Motor Skills and Coordination</h3>
           <p className="mb-4 text-sm">
-            Challenges in motor coordination, motor planning, and unusual gait or movements.<sup<3/>sup>
+            Challenges in motor coordination, motor planning, and unusual gait or movements.<sup>3</sup>
           </p>
           
           <div className="space-y-3">
