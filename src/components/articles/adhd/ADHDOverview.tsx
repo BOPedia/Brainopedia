@@ -9,6 +9,7 @@ interface ADHDOverviewProps {
 export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
   return (
     <article className="max-w-full w-full">
+      {/* HEADER SECTION */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl font-bold">
           ADHD: Overview
@@ -24,8 +25,8 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
       </div>
 
       <div className="space-y-8">
-        {/* Introduction Section */}
-        <div>
+        {/* INTRODUCTION */}
+        <section>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is ADHD?</h2>
           
           <ImageWithFallback 
@@ -42,10 +43,10 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <p className="mb-4">
             ADHD is not simply a childhood disorder—symptoms often persist into adulthood. It's a real medical condition with neurological basis, not a character flaw or result of poor parenting. Brain imaging studies reveal significant differences in brain structure and function.
           </p>
-        </div>
+        </section>
 
-        {/* Three Presentations Section */}
-        <div>
+        {/* THREE PRESENTATIONS */}
+        <section>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Three Presentations of ADHD</h2>
           
           <ImageWithFallback 
@@ -80,10 +81,10 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             symptoms. People with combined presentation experience challenges across multiple domains of executive 
             functioning and may find both sustaining attention and managing impulses difficult.
           </p>
-        </div>
+        </section>
 
-        {/* Executive Function Section */}
-        <div>
+        {/* EXECUTIVE FUNCTION */}
+        <section>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Executive Function Challenges</h2>
           
           <ImageWithFallback 
@@ -100,7 +101,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <p className="mb-4">
             People with ADHD often struggle with several key executive functions:
           </p>
-          <ul className="list-disc ml-6 mb-4 text-sm space-y-1">
+          <ul className="list-disc ml-6 mb-4 space-y-2">
             <li><strong>Working memory:</strong> Holding information in mind while using it</li>
             <li><strong>Inhibition:</strong> Controlling impulses and stopping automatic responses</li>
             <li><strong>Emotional regulation:</strong> Managing emotional responses</li>
@@ -113,22 +114,23 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           </ul>
           <p className="mb-4">
             Understanding ADHD through the lens of executive function helps explain why individuals with ADHD 
-            might excel in some situations while struggling in others.
+            might excel in some situations (like crisis management requiring quick decisions) while struggling 
+            in others (like long-term planning projects).
           </p>
-        </div>
+        </section>
 
-        {/* Who is Affected Section */}
-        <div>
+        {/* WHO IS AFFECTED */}
+        <section>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Who is Affected?</h2>
           
+          {/* Infographic: Children */}
           <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 md:float-right md:ml-6 mb-4 w-full md:w-96">
             <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">ADHD in Children</h3>
-            <div className="mb-6 pb-6 border-b-2 border-gray-200">
-              <div className="text-center mb-2">
-                <div className="text-4xl font-bold text-[#2abcd4]">5-7%</div>
-                <div className="text-sm text-[#0c264d]">of children worldwide</div>
-              </div>
+            <div className="mb-6 pb-6 border-b-2 border-gray-200 text-center">
+              <div className="text-4xl font-bold text-[#2abcd4]">5-7%</div>
+              <div className="text-sm text-[#0c264d]">of children worldwide</div>
             </div>
+            
             <div className="mb-6 pb-6 border-b-2 border-gray-200">
               <div className="text-center mb-3">
                 <div className="text-lg font-bold text-[#0c264d]">Gender Diagnosis Ratio</div>
@@ -153,61 +155,68 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
               </div>
               <div className="text-center mt-2 text-sm text-gray-600">2:1 to 3:1 ratio<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
             </div>
-            <div>
-              <div className="text-center mb-3">
-                <div className="text-lg font-bold text-[#0c264d]">Most Common Type</div>
-              </div>
-              <div className="bg-[#0A9DC4] text-white rounded p-3 text-center">
-                <div className="text-2xl font-bold">Combined</div>
-                <div className="text-sm">50-75% of cases<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
-              </div>
+            
+            <div className="bg-[#0A9DC4] text-white rounded p-3 text-center">
+              <div className="text-2xl font-bold">Combined Presentation</div>
+              <div className="text-sm">50-75% of cases<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
             </div>
           </div>
           
-          <p className="mb-4 text-sm md:text-base">
-            ADHD affects people of all backgrounds. Boys are diagnosed more frequently than girls (2:1 to 3:1),<sup className="text-green-600 font-bold ml-0.5">4</sup> though this gap narrows in adulthood. Symptoms must be present before age 12, though many aren't diagnosed until much later.
+          <p className="mb-4">
+            ADHD affects people of all ages, genders, races, and socioeconomic backgrounds. Boys are diagnosed with ADHD more frequently than girls, with ratios ranging from 2:1 to 3:1 in community samples.<sup className="text-green-600 font-bold ml-0.5">4</sup> However, this gap narrows in adulthood, and many experts believe ADHD is underdiagnosed in girls and women.
           </p>
-        </div>
 
-        {/* Adult ADHD Section */}
-        <div className="clear-both">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Age and Development</h3>
+          <p className="mb-4">
+            ADHD symptoms must be present before age 12 for diagnosis, though many people aren't diagnosed until 
+            adulthood. Hyperactivity symptoms often decrease with age, while inattention and executive function 
+            challenges may persist or become more problematic as life demands increase.
+          </p>
+        </section>
+
+        {/* ADULT ADHD SECTION */}
+        <section className="clear-both pt-4">
           <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 md:float-left md:mr-6 mb-4 w-full md:w-[420px]">
             <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">ADHD in Adults<sup className="text-green-600 font-bold ml-0.5">5</sup></h3>
-            <div className="mb-6 pb-6 border-b-2 border-gray-200">
-              <div className="text-sm text-center mb-3 text-[#0c264d] font-bold">Adult Prevalence</div>
-              <div className="grid grid-cols-2 gap-3">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#0A9DC4]">2.6%</div>
-                  <div className="text-xs text-gray-600 mt-1">Persistent</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#ffd166]">6.8%</div>
-                  <div className="text-xs text-gray-600 mt-1">Symptomatic</div>
-                </div>
+            
+            <div className="mb-6 pb-6 border-b-2 border-gray-200 grid grid-cols-2 gap-3">
+              <div className="text-center border-r border-gray-200">
+                <div className="text-3xl font-bold text-[#0A9DC4]">2.6%</div>
+                <div className="text-xs text-gray-600 mt-1">Persistent<br/>(childhood-onset)</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[#ffd166]">6.8%</div>
+                <div className="text-xs text-gray-600 mt-1">Symptomatic<br/>(any onset)</div>
               </div>
             </div>
+
             <div className="mb-6 pb-6 border-b-2 border-gray-200">
-              <div className="text-sm text-center mb-3 text-[#0c264d] font-bold">Childhood to Adult Persistence</div>
               <div className="bg-gradient-to-r from-[#ffd166] to-[#2abcd4] text-white rounded p-4 text-center">
                 <div className="text-4xl font-bold">50-70%</div>
+                <div className="text-sm mt-2 font-bold">Persistence into adulthood</div>
               </div>
             </div>
+
             <div className="bg-[#0c264d] text-white rounded p-4 text-center">
               <div className="text-4xl font-bold">~70%</div>
               <div className="text-sm mt-2">have ≥1 comorbid condition</div>
             </div>
           </div>
 
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Impact and Spectrum</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding the Spectrum</h2>
           <p className="mb-4">
-            ADHD exists on a spectrum, and symptoms vary in type and severity. Approximately 60-100% of children with ADHD have at least one co-occurring condition,<sup className="text-green-600 font-bold ml-0.5">6</sup> such as learning disorders (10-92%), anxiety (15-35%), or depression (12-50%).
+            ADHD exists on a spectrum, and no two people are exactly alike. Symptoms vary in type, 
+            severity, and combination. While ADHD presents challenges, many individuals describe unique 
+            strengths including creativity, hyperfocus, and innovative problem-solving.
           </p>
           <p className="mb-4">
-            Many individuals also describe unique strengths, including creativity, ability to hyperfocus, high energy, and innovative problem-solving.
+            Additionally, ADHD commonly co-occurs with conditions like learning disabilities, anxiety, 
+            depression, and autism spectrum disorder. Individualized care is essential for effective support.
           </p>
-        </div>
+        </section>
       </div>
 
+      {/* FOOTER BUTTON */}
       <div className="flex justify-end my-8 w-full clear-both">
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
@@ -230,11 +239,11 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             Cited Studies & Statistics
           </h4>
           <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>Reuben, C., & Elgaddal, N. (2024). "Attention-Deficit/Hyperactivity Disorder in Children Ages 5–17 Years: United States, 2020–2022." <i>NCHS Data Brief</i>, No. 499.</li>
+            <li>Reuben, C., & Elgaddal, N. (2024). "Attention-Deficit/Hyperactivity Disorder in Children Ages 5–17 Years: United States, 2020–2022." <i>NCHS Data Brief</i>, No. 499. National Center for Health Statistics.</li>
             <li>Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>, 328, 115449.</li>
             <li>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</li>
             <li>Willcutt, E. G. (2012). "The prevalence of DSM-IV attention-deficit/hyperactivity disorder: a meta-analytic review." <i>Neurotherapeutics</i>, 9(3), 490-499.</li>
-            <li>Song, P., et al. (2021). "The global prevalence of adult attention-deficit hyperactivity disorder: A systematic review and meta-analysis." <i>Journal of Global Health</i>, 11.</li>
+            <li>Song, P., et al. (2021). "The global prevalence of adult attention-deficit hyperactivity disorder: A systematic review and meta-analysis." <i>Journal of Global Health</i>, 11, e2021042.</li>
             <li>Larsson, H., et al. (2024). "The psychiatric comorbidity of ADHD." <i>Molecular Psychiatry</i>.</li>
           </ol>
         </div>
@@ -247,7 +256,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
             <li>Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.</li>
             <li>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH.</li>
-            <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.).</li>
+            <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press.</li>
           </ul>
         </div>
       </div>
