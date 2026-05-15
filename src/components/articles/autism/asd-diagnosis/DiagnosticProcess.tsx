@@ -57,19 +57,20 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-6 text-lg">The Three-Stage Diagnostic Process</h3>
         
-        {/* Visual Flowchart */}
+{/* Visual Flowchart */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-2 items-stretch mb-6">
-          {/* Stage 1 */}
+          
+          {/* Stage 1: Initial Screening */}
           <div className="flex-1 relative">
             <div className="bg-[#e0f2fe] border-2 border-[#0A9DC4] rounded-lg p-4 h-full">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-10 h-10 rounded-full bg-[#0A9DC4] text-white flex items-center justify-center font-bold text-lg shrink-0">10</div>
+                <div className="w-10 h-10 rounded-full bg-[#0A9DC4] text-white flex items-center justify-center font-bold text-lg shrink-0">1</div>
                 <div className="font-bold text-[#0c264d]">Initial Screening</div>
               </div>
               <div className="text-sm space-y-1">
-                <p>&bull; General screening at 9, 18, 24 or 30 months<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Zwaigenbaum et al. (2015)">2</sup></p>
-                <p>&bull; Autism-specific screening at 18 and 24 months</p>
-                <p>&bull; M-CHAT-R/F and parent questionnaires</p>
+                <p>• General screening at 9, 18, 24 or 30 months<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Zwaigenbaum et al. (2015)">12</sup></p>
+                <p>• Autism-specific screening at 18 and 24 months</p>
+                <p>• M-CHAT-R/F and parent questionnaires</p>
               </div>
               <div className="mt-3 bg-[#0A9DC4]/10 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
                 <Clock className="inline w-3 h-3 mr-1" /> Brief (10-20 min)
@@ -81,18 +82,18 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
             <div className="md:hidden flex justify-center text-[#0A9DC4] text-2xl font-bold py-1">&darr;</div>
           </div>
 
-          {/* Stage 2 */}
+          {/* Stage 2: Developmental-Behavioral Evaluation */}
           <div className="flex-1 relative">
             <div className="bg-[#fef3c7] border-2 border-[#ffd166] rounded-lg p-4 h-full">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-10 h-10 rounded-full bg-[#ffd166] text-[#0c264d] flex items-center justify-center font-bold text-lg shrink-0"<2/>div>
+                <div className="w-10 h-10 rounded-full bg-[#ffd166] text-[#0c264d] flex items-center justify-center font-bold text-lg shrink-0">2</div>
                 <div className="font-bold text-[#0c264d]">Developmental-Behavioral Evaluation</div>
               </div>
               <div className="text-sm space-y-1">
-                <p>&bull; Detailed parent interview about milestones</p>
-                <p>&bull; Direct observation in various settings</p>
-                <p>&bull; Standardized assessment tools</p>
-                <p>&bull; Medical evaluation for co-occurring conditions</p>
+                <p>• Detailed parent interview about milestones</p>
+                <p>• Direct observation in various settings</p>
+                <p>• Standardized assessment tools</p>
+                <p>• Medical evaluation for co-occurring conditions</p>
               </div>
               <div className="mt-3 bg-[#ffd166]/20 rounded px-2 py-1 text-xs text-[#0c264d] text-center">
                 <Clock className="inline w-3 h-3 mr-1" /> Several hours across visits
@@ -103,12 +104,12 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
             {/* Arrow for mobile */}
             <div className="md:hidden flex justify-center text-[#0A9DC4] text-2xl font-bold py-1">&darr;</div>
           </div>
-
+          
           {/* Stage 3 */}
           <div className="flex-1">
             <div className="bg-[#d1fae5] border-2 border-[#10b981] rounded-lg p-4 h-full">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-10 h-10 rounded-full bg-[#10b981] text-white flex items-center justify-center font-bold text-lg shrink-0"<3/>div>
+                <div className="w-10 h-10 rounded-full bg-[#10b981] text-white flex items-center justify-center font-bold text-lg shrink-0">13</div>
                 <div className="font-bold text-[#0c264d]">Comprehensive Diagnostic Evaluation</div>
               </div>
               <div className="text-sm space-y-1">
@@ -129,7 +130,7 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Gold Standard Diagnostic Instruments</h3>
         <p className="text-sm mb-4">
-          These tools are considered the "gold standard" for autism diagnosis:<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">3</sup>
+          These tools are considered the "gold standard" for autism diagnosis:<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">13</sup>
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -154,7 +155,7 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
               </div>
               <div className="flex items-start gap-2">
                 <Star className="w-4 h-4 text-[#0A9DC4] mt-0.5 shrink-0" />
-                <div><strong>Note:</strong> Most widely used observational assessment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">3</sup></div>
+                <div><strong>Note:</strong> Most widely used observational assessment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">13</sup></div>
               </div>
             </div>
           </div>
