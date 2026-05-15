@@ -49,7 +49,7 @@ export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOver
       {/* Introduction */}
       <div className="mb-8">
         <p className="mb-4">
-          Dyslexia is a specific learning disorder that primarily affects reading and language processing.<sup>10</sup> 
+          Dyslexia is a specific learning disorder that primarily affects reading and language processing.<sup>1</sup> 
           It is neurobiological in origin and characterized by difficulties with accurate and/or fluent word recognition, 
           poor spelling, and decoding abilities.<sup>2</sup> These difficulties typically result from a deficit in the 
           phonological component of language that is often unexpected in relation to other cognitive abilities.<sup>3</sup>
@@ -130,7 +130,7 @@ export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOver
               <li className="mb-2"><strong>Word decoding problems:</strong> Difficulty sounding out written words<sup>7</sup></li>
               <li className="mb-2"><strong>Reading fluency challenges:</strong> Slow, effortful reading even of familiar text<sup>8</sup></li>
               <li className="mb-2"><strong>Spelling difficulties:</strong> Persistent spelling errors despite instruction<sup>9</sup></li>
-              <li className="mb-2"><strong>Neurobiological basis:</strong> Differences in brain structure and function related to reading<sup>10</sup></li>
+              <li className="mb-2"><strong>Neurobiological basis:</strong> Differences in brain structure and function related to reading<sup>1</sup></li>
               <li className="mb-2"><strong>Unexpected difficulty:</strong> Reading challenges not explained by intellectual ability, sensory problems, or lack of instruction<sup>1</sup></li>
             </ul>
           </div>

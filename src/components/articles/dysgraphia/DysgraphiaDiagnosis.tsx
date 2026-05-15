@@ -32,7 +32,7 @@ export function DysgraphiaDiagnosis({ setCurrentArticle }: DysgraphiaDiagnosisPr
         <div>
           <p className="mb-4">
             Diagnosing dysgraphia involves comprehensive evaluation by qualified professionals using standardized assessments, 
-            behavioral observations, and analysis of writing samples.<sup>10</sup> Early and accurate diagnosis is crucial for 
+            behavioral observations, and analysis of writing samples.<sup>1</sup> Early and accurate diagnosis is crucial for 
             accessing appropriate interventions and accommodations.<sup>2</sup>
           </p>
         </div>
@@ -74,7 +74,7 @@ export function DysgraphiaDiagnosis({ setCurrentArticle }: DysgraphiaDiagnosisPr
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Handwriting significantly worse than peers despite practice<sup>9</sup></li>
             <li className="mb-2">Writing causes physical pain or fatigue</li>
-            <li className="mb-2">Large discrepancy between oral and written expression<sup>10</sup></li>
+            <li className="mb-2">Large discrepancy between oral and written expression<sup>1</sup></li>
             <li className="mb-2">Extreme frustration or avoidance of writing tasks</li>
             <li className="mb-2">Writing difficulties persist beyond grade 2-3<sup>1</sup></li>
             <li className="mb-2">Academic performance suffering due to writing challenges</li>

@@ -32,7 +32,7 @@ export function APDLiving({ setCurrentArticle }: APDLivingProps) {
         <div>
           <p className="mb-4">
             Living with Auditory Processing Disorder presents unique challenges across settings and life stages, 
-            but with understanding, appropriate support, and effective strategies, individuals with APD can thrive.<sup>10</sup> 
+            but with understanding, appropriate support, and effective strategies, individuals with APD can thrive.<sup>1</sup> 
             Success involves acknowledging both challenges and strengths while developing personalized approaches 
             for navigating an auditory world.<sup>2</sup>
           </p>
@@ -64,7 +64,7 @@ export function APDLiving({ setCurrentArticle }: APDLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Listening Fatigue</h3>
           <p className="mb-4">
             The constant cognitive effort required to process auditory information leads to exhaustion.<sup>9</sup> 
-            By day's end, individuals may have depleted capacity for listening or conversation.<sup>10</sup> 
+            By day's end, individuals may have depleted capacity for listening or conversation.<sup>1</sup> 
             This isn't laziness—it's genuine neurological fatigue.<sup>1</sup>
           </p>
 

@@ -53,7 +53,7 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
           <p>
             <strong>Obsessive-compulsive disorder (OCD)</strong> is a neurological condition characterized by 
             persistent, intrusive thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) 
-            performed to reduce anxiety.<sup>10</sup> Increasingly understood through a neurodivergent lens, OCD represents 
+            performed to reduce anxiety.<sup>1</sup> Increasingly understood through a neurodivergent lens, OCD represents 
             a distinct pattern of brain processing involving specific neural loops and information processing differences.<sup>2</sup>
           </p>
           
@@ -151,7 +151,7 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
             OCD is diagnosed clinically by mental health professionals including psychiatrists, psychologists, or clinical 
             social workers. The diagnostic criteria include presence of obsessions and compulsions, recognition that these 
             are excessive, significant time consumed by symptoms (typically an hour or more per day), and significant distress 
-            or impairment in daily functioning.<sup>10</sup> The evaluation includes detailed clinical interview, assessment tools 
+            or impairment in daily functioning.<sup>1</sup> The evaluation includes detailed clinical interview, assessment tools 
             such as the Yale-Brown Obsessive Compulsive Scale, ruling out other conditions, and assessment of co-occurring 
             conditions.<sup>1</sup>
           </p>

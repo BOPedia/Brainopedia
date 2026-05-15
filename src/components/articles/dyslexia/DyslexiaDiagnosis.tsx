@@ -46,7 +46,7 @@ export function DyslexiaDiagnosis({ setCurrentArticle, initialTab }: DyslexiaDia
       <div className="mb-8">
         <p className="mb-4">
           Diagnosing dyslexia requires comprehensive evaluation by qualified professionals using multiple assessment 
-          methods.<sup>10</sup> Early identification enables timely intervention, which significantly improves reading 
+          methods.<sup>1</sup> Early identification enables timely intervention, which significantly improves reading 
           outcomes.<sup>2</sup> There is no single test for dyslexia—diagnosis involves gathering information from 
           various sources to understand an individual's reading profile.<sup>3</sup>
         </p>
@@ -166,7 +166,7 @@ export function DyslexiaDiagnosis({ setCurrentArticle, initialTab }: DyslexiaDia
             <ul className="list-disc ml-6 mb-4">
               <li className="mb-2"><strong>Intelligence testing:</strong> WISC-V, WAIS-IV, or Stanford-Binet to assess overall cognitive ability<sup>9</sup></li>
               <li className="mb-2"><strong>Reasoning abilities:</strong> Verbal and nonverbal reasoning</li>
-              <li className="mb-2"><strong>Memory assessment:</strong> Working memory and long-term memory<sup>10</sup></li>
+              <li className="mb-2"><strong>Memory assessment:</strong> Working memory and long-term memory<sup>1</sup></li>
               <li className="mb-2"><strong>Processing speed:</strong> Rate of cognitive processing</li>
             </ul>
 

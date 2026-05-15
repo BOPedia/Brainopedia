@@ -31,7 +31,7 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
               <span>✗</span> The Vaccine Myth
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
-              Extensive global studies involving millions of children have consistently shown <strong>no link</strong> between vaccines (including the MMR vaccine) and autism.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup>
+              Extensive global studies involving millions of children have consistently shown <strong>no link</strong> between vaccines (including the MMR vaccine) and autism.<sup className="text-[#0c264d] font-extrabold ml-0.5">1</sup>
             </p>
             <div className="bg-green-50 p-4 rounded-md border-l-4 border-green-500">
               <p className="text-sm text-green-900 leading-relaxed">

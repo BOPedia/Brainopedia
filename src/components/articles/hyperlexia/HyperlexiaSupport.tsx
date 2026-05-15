@@ -32,7 +32,7 @@ export function HyperlexiaSupport({ setCurrentArticle }: HyperlexiaSupportProps)
         <div>
           <p className="mb-4">
             Supporting children with hyperlexia involves leveraging their reading strengths while addressing language 
-            comprehension and social-communication needs.<sup>10</sup> Intervention should be individualized based on 
+            comprehension and social-communication needs.<sup>1</sup> Intervention should be individualized based on 
             whether hyperlexia occurs alone or with autism.<sup>2</sup>
           </p>
         </div>
@@ -95,7 +95,7 @@ export function HyperlexiaSupport({ setCurrentArticle }: HyperlexiaSupportProps)
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Pragmatic Language</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Social use of language<sup>10</sup></li>
+            <li className="mb-2">Social use of language<sup>1</sup></li>
             <li className="mb-2">Conversational skills</li>
             <li className="mb-2">Understanding context and non-literal language</li>
           </ul>

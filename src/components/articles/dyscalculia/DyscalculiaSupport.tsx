@@ -32,7 +32,7 @@ export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProp
         <div>
           <p className="mb-4">
             Effective support for dyscalculia requires evidence-based interventions, appropriate accommodations, and 
-            comprehensive educational planning.<sup>10</sup> While dyscalculia is lifelong, with proper support individuals 
+            comprehensive educational planning.<sup>1</sup> While dyscalculia is lifelong, with proper support individuals 
             can develop functional mathematical skills and strategies to manage daily mathematical demands.<sup>2</sup>
           </p>
         </div>
@@ -67,7 +67,7 @@ export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProp
             <li className="mb-2"><strong>Number line activities:</strong> Placing numbers on number lines</li>
             <li className="mb-2"><strong>Estimation tasks:</strong> Approximating quantities and calculations<sup>9</sup></li>
             <li className="mb-2"><strong>Part-whole relationships:</strong> Understanding how numbers combine</li>
-            <li className="mb-2"><strong>Number games:</strong> Board games and activities building number sense<sup>10</sup></li>
+            <li className="mb-2"><strong>Number games:</strong> Board games and activities building number sense<sup>1</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Concrete-Representational-Abstract (CRA) Approach</h3>

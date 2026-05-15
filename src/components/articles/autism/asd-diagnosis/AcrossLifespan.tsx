@@ -182,7 +182,7 @@ export function AcrossLifespan({ setCurrentArticle }: AcrossLifespanProps) {
 
           <SubCard icon={EyeOff} title="Important Considerations" accentColor="#f59e0b" bgColor="#fffbeb">
             Some children, particularly girls, may have developed coping strategies or "masking"
-            that hide autistic traits.<sup>10</sup> This can delay
+            that hide autistic traits.<sup>1</sup> This can delay
             diagnosis despite genuine struggles. Burnout from masking often becomes apparent in
             middle school or high school.
           </SubCard>
@@ -223,7 +223,7 @@ export function AcrossLifespan({ setCurrentArticle }: AcrossLifespanProps) {
           <SubCard icon={EyeOff} title="Challenges in Adult Assessment" accentColor="#f59e0b" bgColor="#fffbeb">
             <ul className="space-y-0.5 mt-1">
               <li>• Retrospective developmental history (parents may not be available or remember details)</li>
-              <li>• Learned compensation strategies mask traits<sup>10</sup></li>
+              <li>• Learned compensation strategies mask traits<sup>1</sup></li>
               <li>• Co-occurring conditions (anxiety, depression) developed over years of struggling</li>
               <li>• Adult life demands differ from childhood contexts</li>
             </ul>

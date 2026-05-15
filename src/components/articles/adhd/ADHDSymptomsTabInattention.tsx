@@ -191,9 +191,9 @@ export function ADHDSymptomsTabInattention() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Employment and Occupational Outcomes</h4>
                   <p className="text-sm mb-2">
                     In a study of adults with ADHD (N=149), inattentiveness was a significant predictor of employment status, 
-                    while hyperactivity/impulsivity was not<sup style={{color: '#10b981'}}>10</sup>. A later analysis confirmed a 
+                    while hyperactivity/impulsivity was not<sup style={{color: '#10b981'}}>1</sup>. A later analysis confirmed a 
                     stronger-than-anticipated role for inattention in predicting negative occupational outcomes, with these outcomes 
-                    often mediated by functional impairments<sup style={{color: '#10b981'}}>10</sup>.
+                    often mediated by functional impairments<sup style={{color: '#10b981'}}>1</sup>.
                   </p>
                 </div>
 

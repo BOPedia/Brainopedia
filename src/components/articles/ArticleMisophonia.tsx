@@ -53,7 +53,7 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
           <p>
             <strong>Misophonia</strong>, meaning "hatred of sound," is a neurosensory condition characterized 
             by strong negative emotional and physiological reactions to specific sounds, typically those 
-            produced by other people.<sup>10</sup> These trigger sounds, often related to eating, breathing, or repetitive 
+            produced by other people.<sup>1</sup> These trigger sounds, often related to eating, breathing, or repetitive 
             noises, can provoke intense feelings of anger, anxiety, disgust, or panic.<sup>2</sup>
           </p>
           

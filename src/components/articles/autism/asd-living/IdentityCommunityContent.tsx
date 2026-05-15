@@ -23,7 +23,7 @@ export function IdentityCommunityContent({ setCurrentArticle }: IdentityCommunit
               Understanding oneself as autistic is often a lifelong process of reframing experiences through a neuro-affirming lens:
             </p>
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
-              <li><strong>Late Diagnosis:</strong> For many adults, a diagnosis provides a "missing piece," replacing years of self-criticism with self-understanding.<sup>10</sup></li>
+              <li><strong>Late Diagnosis:</strong> For many adults, a diagnosis provides a "missing piece," replacing years of self-criticism with self-understanding.<sup>1</sup></li>
               <li><strong>Moving Beyond Shame:</strong> Shifting from a "disorder" mindset to seeing autism as a natural neurological variation.</li>
               <li><strong>Disclosure:</strong> Navigating when and how to share one's autistic identity with employers, friends, or the public.</li>
             </ul>

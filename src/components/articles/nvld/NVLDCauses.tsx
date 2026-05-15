@@ -32,7 +32,7 @@ export function NVLDCauses({ setCurrentArticle }: NVLDCausesProps) {
         <div>
           <p className="mb-4">
             The causes of Nonverbal Learning Disability are not fully understood, but research points to neurological 
-            differences, particularly involving the right hemisphere of the brain and white matter pathways.<sup>10</sup> 
+            differences, particularly involving the right hemisphere of the brain and white matter pathways.<sup>1</sup> 
             Unlike some learning disabilities, NVLD appears to have strong neurobiological underpinnings.<sup>2</sup>
           </p>
         </div>
@@ -95,7 +95,7 @@ export function NVLDCauses({ setCurrentArticle }: NVLDCausesProps) {
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Hydrocephalus:</strong> Fluid accumulation affecting white matter</li>
-            <li className="mb-2"><strong>Agenesis of corpus callosum:</strong> Absence of structure connecting hemispheres<sup>10</sup></li>
+            <li className="mb-2"><strong>Agenesis of corpus callosum:</strong> Absence of structure connecting hemispheres<sup>1</sup></li>
             <li className="mb-2"><strong>Traumatic brain injury:</strong> Particularly right hemisphere damage</li>
             <li className="mb-2"><strong>Brain tumors:</strong> Affecting right hemisphere or white matter</li>
             <li className="mb-2"><strong>Multiple sclerosis:</strong> White matter disease</li>

@@ -32,7 +32,7 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
         <div>
           <p className="mb-4">
             Living with dyscalculia presents unique challenges in a world filled with numbers, but with understanding, 
-            strategies, and support, individuals can lead successful, fulfilling lives.<sup>10</sup> Many people with 
+            strategies, and support, individuals can lead successful, fulfilling lives.<sup>1</sup> Many people with 
             dyscalculia develop strengths in other areas and find careers that minimize mathematical demands while 
             capitalizing on their talents.<sup>2</sup>
           </p>
@@ -70,7 +70,7 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Difficulty comparing prices and unit costs<sup>9</sup></li>
             <li className="mb-2">Problems calculating discounts and sales</li>
-            <li className="mb-2">Estimating total cost at checkout<sup>10</sup></li>
+            <li className="mb-2">Estimating total cost at checkout<sup>1</sup></li>
             <li className="mb-2">Using smartphone calculator while shopping</li>
           </ul>
 

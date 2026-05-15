@@ -32,7 +32,7 @@ export function VPDLiving({ setCurrentArticle }: VPDLivingProps) {
         <div>
           <p className="mb-4">
             Living with Visual Processing Disorder involves navigating a visually-oriented world with different 
-            visual processing abilities.<sup>10</sup> While VPD presents challenges, understanding, appropriate 
+            visual processing abilities.<sup>1</sup> While VPD presents challenges, understanding, appropriate 
             support, and effective strategies enable individuals to thrive academically, professionally, and 
             personally.<sup>2</sup>
           </p>
@@ -71,7 +71,7 @@ export function VPDLiving({ setCurrentArticle }: VPDLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Visual-Motor Tasks</h3>
           <p className="mb-4">
             Daily tasks requiring visual-motor coordination—buttoning, tying, cutting, assembling items—take 
-            longer and require more effort.<sup>10</sup> Adaptive equipment, alternatives (Velcro instead 
+            longer and require more effort.<sup>1</sup> Adaptive equipment, alternatives (Velcro instead 
             of buttons), or simply allowing extra time helps.<sup>1</sup>
           </p>
         </div>

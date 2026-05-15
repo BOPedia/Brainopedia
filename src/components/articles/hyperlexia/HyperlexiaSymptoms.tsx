@@ -32,7 +32,7 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
         <div>
           <p className="mb-4">
             Hyperlexia presents with a distinctive pattern of advanced reading skills alongside significant language 
-            and communication challenges.<sup>10</sup> The symptoms vary depending on whether hyperlexia occurs alone 
+            and communication challenges.<sup>1</sup> The symptoms vary depending on whether hyperlexia occurs alone 
             or with autism spectrum disorder.<sup>2</sup>
           </p>
         </div>
@@ -84,7 +84,7 @@ export function HyperlexiaSymptoms({ setCurrentArticle }: HyperlexiaSymptomsProp
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Listening Comprehension</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty understanding spoken language<sup>10</sup></li>
+            <li className="mb-2">Difficulty understanding spoken language<sup>1</sup></li>
             <li className="mb-2">Trouble following verbal instructions</li>
             <li className="mb-2">Limited understanding of conversations</li>
           </ul>

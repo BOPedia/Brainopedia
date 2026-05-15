@@ -23,7 +23,7 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
       <h2 className="font-bold mb-4 text-2xl">Diagnostic Process & Tools</h2>
          <p className="mb-6">
           Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, and 
-          current functioning.<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="American Psychiatric Association (2022)">10</sup> Early diagnosis enables earlier access to support and services, which 
+          current functioning.<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="American Psychiatric Association (2022)">1</sup> Early diagnosis enables earlier access to support and services, which 
           can significantly impact outcomes.
           </p>
        
@@ -40,7 +40,7 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
           <div className="border-l-2 border-[#2abcd4] pl-4">
             <div className="font-bold text-[#0c264d] mb-1">DSM-5-TR</div>
             <p className="text-sm text-gray-700">
-              The primary manual used in the United States. To meet criteria, an individual must show persistent deficits in <strong>social communication</strong> and exhibit <strong>restricted/repetitive behaviors</strong> that began in early development and cause clinically significant impairment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="American Psychiatric Association (2022)">10</sup>.
+              The primary manual used in the United States. To meet criteria, an individual must show persistent deficits in <strong>social communication</strong> and exhibit <strong>restricted/repetitive behaviors</strong> that began in early development and cause clinically significant impairment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="American Psychiatric Association (2022)">1</sup>.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
                 <div className="font-bold text-[#0c264d]">Initial Screening</div>
               </div>
               <div className="text-sm space-y-1">
-                <p>• General screening at 9, 18, 24 or 30 months<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Zwaigenbaum et al. (2015)">12</sup></p>
+                <p>• General screening at 9, 18, 24 or 30 months<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Zwaigenbaum et al. (2015)">2</sup></p>
                 <p>• Autism-specific screening at 18 and 24 months</p>
                 <p>• M-CHAT-R/F and parent questionnaires</p>
               </div>
@@ -130,7 +130,7 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Gold Standard Diagnostic Instruments</h3>
         <p className="text-sm mb-4">
-          These tools are considered the "gold standard" for autism diagnosis:<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">13</sup>
+          These tools are considered the "gold standard" for autism diagnosis:<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">3</sup>
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -155,7 +155,7 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
               </div>
               <div className="flex items-start gap-2">
                 <Star className="w-4 h-4 text-[#0A9DC4] mt-0.5 shrink-0" />
-                <div><strong>Note:</strong> Most widely used observational assessment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">13</sup></div>
+                <div><strong>Note:</strong> Most widely used observational assessment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Lord et al. (2012)">3</sup></div>
               </div>
             </div>
           </div>

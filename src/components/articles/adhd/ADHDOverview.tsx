@@ -36,7 +36,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <p className="mb-4">
             Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized 
             by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 
-            or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-[#10b981]">10</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-[#10b981]">2</sup> making it one of the most common neurodevelopmental disorders.
+            or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-[#10b981]">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-[#10b981]">2</sup> making it one of the most common neurodevelopmental disorders.
           </p>
           <p className="mb-4">
             ADHD is not simply a childhood disorder—symptoms often persist into adulthood. It's a real medical condition with neurological basis, not a character flaw or result of poor parenting. Brain imaging studies reveal significant differences in brain structure and function.

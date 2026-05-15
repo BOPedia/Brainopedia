@@ -66,7 +66,7 @@ export function SPDOverview({ setCurrentArticle }: SPDOverviewProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Visual:</strong> Processing information through sight, including light, color, contrast, and movement</li>
             <li className="mb-2"><strong>Auditory:</strong> Processing sounds, including pitch, volume, rhythm, and location</li>
-            <li className="mb-2"><strong>Tactile:</strong> Processing touch sensations, including texture, pressure, temperature, and pain<sup>10</sup></li>
+            <li className="mb-2"><strong>Tactile:</strong> Processing touch sensations, including texture, pressure, temperature, and pain<sup>1</sup></li>
             <li className="mb-2"><strong>Gustatory:</strong> Processing taste, including sweet, sour, salty, bitter, and umami</li>
             <li className="mb-2"><strong>Olfactory:</strong> Processing smells and odors from the environment</li>
           </ul>
@@ -121,7 +121,7 @@ export function SPDOverview({ setCurrentArticle }: SPDOverviewProps) {
           
           <p className="mb-4">
             Lucy Jane Miller and colleagues proposed a comprehensive nosology for SPD that identifies three main subtypes of 
-            sensory processing difficulties:<sup>10</sup>
+            sensory processing difficulties:<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Sensory Modulation Disorder (SMD)</h3>

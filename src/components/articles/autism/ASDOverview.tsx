@@ -52,7 +52,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             
             <p className="mb-4 leading-relaxed font-spartan text-[#0c264d]">
               ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,
-              <sup className="text-green-600 font-bold ml-0.5">10</sup> representing a significant 
+              <sup className="text-green-600 font-bold ml-0.5">1</sup> representing a significant 
               increase in diagnosis rates over the past two decades. This increase is largely 
               attributed to improved awareness, expanded diagnostic criteria, and better identification 
               rather than a true increase in prevalence.
@@ -405,7 +405,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Current Prevalence</h3>
             
             <p className="mb-3">
-              As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the United States.<sup>10</sup> This represents a substantial increase from 1 in 150 in 2000.
+              As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the United States.<sup>1</sup> This represents a substantial increase from 1 in 150 in 2000.
             </p>
             
             <div className="bg-[#ffd166] p-3 rounded-md mt-3">

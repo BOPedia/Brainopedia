@@ -32,7 +32,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
         <div>
           <p className="mb-4">
             Living with NVLD involves navigating challenges in visual-spatial processing, motor skills, and social 
-            interactions while leveraging strong verbal abilities.<sup>10</sup> With understanding, support, and 
+            interactions while leveraging strong verbal abilities.<sup>1</sup> With understanding, support, and 
             appropriate accommodations, individuals with NVLD can lead successful and fulfilling lives.<sup>2</sup>
           </p>
         </div>
@@ -113,7 +113,7 @@ export function NVLDLiving({ setCurrentArticle }: NVLDLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Suitable Career Paths</h3>
           <p className="mb-4">
-            Careers emphasizing verbal strengths and minimizing visual-spatial demands:<sup>10</sup>
+            Careers emphasizing verbal strengths and minimizing visual-spatial demands:<sup>1</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Writing and journalism:</strong> Verbal expression, research, editing</li>

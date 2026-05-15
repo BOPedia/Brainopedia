@@ -32,7 +32,7 @@ export function APDSupport({ setCurrentArticle }: APDSupportProps) {
         <div>
           <p className="mb-4">
             Managing Auditory Processing Disorder requires a multifaceted approach combining environmental 
-            modifications, compensatory strategies, direct remediation, and appropriate accommodations.<sup>10</sup> 
+            modifications, compensatory strategies, direct remediation, and appropriate accommodations.<sup>1</sup> 
             Effective support is individualized based on the specific deficits, age, and functional impacts.<sup>2</sup>
           </p>
         </div>
@@ -71,7 +71,7 @@ export function APDSupport({ setCurrentArticle }: APDSupportProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Acoustic Treatment of Spaces</h3>
           <p className="mb-4">
             Reducing background noise and reverberation improves listening conditions.<sup>9</sup> Strategies 
-            include carpeting, acoustic tiles, curtains, and strategic furniture placement to absorb sound.<sup>10</sup> 
+            include carpeting, acoustic tiles, curtains, and strategic furniture placement to absorb sound.<sup>1</sup> 
             Classrooms benefit from sound field systems distributing teacher voice evenly.<sup>1</sup>
           </p>
 

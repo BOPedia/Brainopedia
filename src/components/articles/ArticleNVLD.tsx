@@ -77,7 +77,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           <p>
             <strong>Non-Verbal Learning Disability (NVLD)</strong> is a neurological condition characterized 
             by a specific pattern of strengths and challenges: exceptional verbal abilities combined with 
-            difficulties in visual-spatial processing, motor coordination, and social perception.<sup>10</sup> This creates 
+            difficulties in visual-spatial processing, motor coordination, and social perception.<sup>1</sup> This creates 
             a unique learning profile where language-based tasks come easily while non-verbal information 
             processing presents significant challenges.<sup>2</sup>
           </p>
@@ -162,7 +162,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
             NVLD represents a distinct pattern of brain organization related to hemispheric functioning. Research 
             suggests differences in how the right hemisphere of the brain processes information, particularly in 
             areas responsible for visual-spatial processing, pattern recognition, and holistic thinking, while left 
-            hemisphere functions often exceed typical development.<sup>10</sup> The exact neurological mechanisms are still being 
+            hemisphere functions often exceed typical development.<sup>1</sup> The exact neurological mechanisms are still being 
             studied, but brain imaging research has shown differences in white matter development and inter-hemispheric 
             communication.<sup>1</sup> NVLD may have genetic components and tends to run in families, though the specific causes 
             are not fully understood. The condition is present from birth and represents a fundamental difference in 

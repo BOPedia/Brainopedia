@@ -32,7 +32,7 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
         <div>
           <p className="mb-4">
             Diagnosing Developmental Language Disorder requires comprehensive assessment by qualified professionals, 
-            typically speech-language pathologists.<sup>10</sup> The diagnostic process involves standardized testing, 
+            typically speech-language pathologists.<sup>1</sup> The diagnostic process involves standardized testing, 
             observations, and consideration of the child's language use in everyday contexts.<sup>2</sup>
           </p>
         </div>
@@ -94,7 +94,7 @@ export function DLDDiagnosis({ setCurrentArticle }: DLDDiagnosisProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hearing Screening</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Essential to rule out hearing loss as primary cause<sup>10</sup></li>
+            <li className="mb-2">Essential to rule out hearing loss as primary cause<sup>1</sup></li>
             <li className="mb-2">Full audiological evaluation if concerns exist</li>
             <li className="mb-2">History of ear infections documented</li>
           </ul>

@@ -37,7 +37,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early Childhood</h3>
               </div>
               <p className="mb-4 text-sm text-gray-700">
-                Early signs often appear before age 2, though diagnosis may come later.<sup>10</sup>
+                Early signs often appear before age 2, though diagnosis may come later.<sup>1</sup>
               </p>
               <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
                 <li>Focus on early intervention and developmental therapies</li>

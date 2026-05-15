@@ -77,7 +77,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
           <p>
             <strong>Hyperlexia</strong> is a neurodevelopmental condition characterized by an advanced ability 
             to read at an early age, often significantly beyond what would be expected for a child's 
-            chronological age.<sup>10</sup> However, this precocious reading ability is typically accompanied by 
+            chronological age.<sup>1</sup> However, this precocious reading ability is typically accompanied by 
             difficulties with verbal language comprehension and social communication.<sup>2</sup>
           </p>
           
@@ -164,7 +164,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
           
           <p className="mb-4">
             The neurological basis of hyperlexia is not fully understood, but research suggests differences in language 
-            processing areas of the brain.<sup>10</sup> Hyperlexia represents a unique pattern of brain organization where visual 
+            processing areas of the brain.<sup>1</sup> Hyperlexia represents a unique pattern of brain organization where visual 
             word recognition and decoding abilities develop exceptionally early and strongly, while language comprehension 
             and social communication areas develop differently.<sup>1</sup>
           </p>

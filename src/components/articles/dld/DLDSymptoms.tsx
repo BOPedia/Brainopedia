@@ -32,7 +32,7 @@ export function DLDSymptoms({ setCurrentArticle }: DLDSymptomsProps) {
         <div>
           <p className="mb-4">
             Developmental Language Disorder manifests through difficulties across multiple domains of language, 
-            including grammar, vocabulary, understanding, and expression.<sup>10</sup> Symptoms vary significantly 
+            including grammar, vocabulary, understanding, and expression.<sup>1</sup> Symptoms vary significantly 
             among individuals but typically persist across development.<sup>2</sup>
           </p>
         </div>
@@ -84,7 +84,7 @@ export function DLDSymptoms({ setCurrentArticle }: DLDSymptomsProps) {
             <li className="mb-2"><strong>Simple sentences:</strong> Using short, simple sentences when peers use complex ones<sup>9</sup></li>
             <li className="mb-2"><strong>Sentence fragments:</strong> Incomplete sentences</li>
             <li className="mb-2"><strong>Word order errors:</strong> Incorrect arrangement of words</li>
-            <li className="mb-2"><strong>Limited complexity:</strong> Avoiding complex grammatical structures<sup>10</sup></li>
+            <li className="mb-2"><strong>Limited complexity:</strong> Avoiding complex grammatical structures<sup>1</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Question Formation</h3>

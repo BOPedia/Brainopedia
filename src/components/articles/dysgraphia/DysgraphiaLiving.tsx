@@ -32,7 +32,7 @@ export function DysgraphiaLiving({ setCurrentArticle }: DysgraphiaLivingProps) {
         <div>
           <p className="mb-4">
             Living successfully with dysgraphia involves understanding one's strengths, developing effective strategies, 
-            advocating for needed accommodations, and recognizing that writing challenges don't define overall potential.<sup>10</sup> 
+            advocating for needed accommodations, and recognizing that writing challenges don't define overall potential.<sup>1</sup> 
             With appropriate support and tools, individuals with dysgraphia lead fulfilling lives and achieve success across all domains.<sup>2</sup>
           </p>
         </div>
@@ -72,7 +72,7 @@ export function DysgraphiaLiving({ setCurrentArticle }: DysgraphiaLivingProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Early intervention:</strong> Occupational therapy, handwriting instruction<sup>9</sup></li>
             <li className="mb-2"><strong>IEP or 504 plan:</strong> Formalize accommodations</li>
-            <li className="mb-2"><strong>Technology introduction:</strong> Begin keyboarding early<sup>10</sup></li>
+            <li className="mb-2"><strong>Technology introduction:</strong> Begin keyboarding early<sup>1</sup></li>
             <li className="mb-2"><strong>Homework modifications:</strong> Reduce copying, allow typing</li>
             <li className="mb-2"><strong>Building confidence:</strong> Focus on strengths<sup>1</sup></li>
           </ul>

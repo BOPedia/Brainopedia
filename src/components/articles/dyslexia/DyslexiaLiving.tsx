@@ -46,7 +46,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
       <div className="mb-8">
         <p className="mb-4">
           Living with dyslexia presents unique challenges, but with appropriate support and self-understanding, 
-          individuals with dyslexia can thrive academically, professionally, and personally.<sup>10</sup> Many 
+          individuals with dyslexia can thrive academically, professionally, and personally.<sup>1</sup> Many 
           highly successful people have dyslexia, demonstrating that it doesn't limit potential—it simply means 
           learning and working differently.<sup>2</sup>
         </p>
@@ -436,7 +436,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
                 <p className="mb-3">
                   Dyslexia is part of who you are, but it doesn't define your potential or limit your future. With the right 
                   support, strategies, and self-advocacy, individuals with dyslexia can and do achieve their goals—academic, 
-                  professional, and personal.<sup>10</sup>
+                  professional, and personal.<sup>1</sup>
                 </p>
                 <p>
                   The journey may require extra effort and different approaches, but the resilience, creativity, and unique 

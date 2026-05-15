@@ -32,7 +32,7 @@ export function TwiceExceptionalOverview({ setCurrentArticle }: TwiceExceptional
         <div>
           <p className="mb-4">
             Twice-exceptional (2e) individuals are those who demonstrate both exceptional abilities or talents 
-            and one or more disabilities.<sup>10</sup> This dual exceptionality creates unique educational, 
+            and one or more disabilities.<sup>1</sup> This dual exceptionality creates unique educational, 
             social, and emotional needs that require specialized understanding and support.<sup>2</sup>
           </p>
         </div>
@@ -77,7 +77,7 @@ export function TwiceExceptionalOverview({ setCurrentArticle }: TwiceExceptional
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Giftedness with Learning Disabilities</h3>
           <p className="mb-4">
             Many 2e students demonstrate high intellectual ability while experiencing specific learning 
-            disabilities in reading (dyslexia), mathematics (dyscalculia), or written expression (dysgraphia).<sup>10</sup> 
+            disabilities in reading (dyslexia), mathematics (dyscalculia), or written expression (dysgraphia).<sup>1</sup> 
             These students may excel in verbal reasoning while struggling with basic academic skills.<sup>1</sup>
           </p>
 

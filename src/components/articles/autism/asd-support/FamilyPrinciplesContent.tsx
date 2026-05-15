@@ -13,7 +13,7 @@ export function FamilyPrinciplesContent({ setCurrentArticle }: FamilyPrinciplesC
 
         <p className="mb-6">
           Supporting an autistic family member impacts the whole family. Families need support, resources, 
-          and understanding to thrive alongside their autistic loved ones.<sup>10</sup>
+          and understanding to thrive alongside their autistic loved ones.<sup>1</sup>
         </p>
 
         <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">

@@ -32,7 +32,7 @@ export function GiftednessSymptoms({ setCurrentArticle }: GiftednessSymptomsProp
         <div>
           <p className="mb-4">
             Gifted individuals exhibit a constellation of characteristics that distinguish them from their 
-            age peers. These traits span cognitive, academic, creative, social, and emotional domains.<sup>10</sup> 
+            age peers. These traits span cognitive, academic, creative, social, and emotional domains.<sup>1</sup> 
             It's important to note that not all gifted individuals display all characteristics, and the 
             expression of giftedness varies considerably.<sup>2</sup>
           </p>
@@ -64,7 +64,7 @@ export function GiftednessSymptoms({ setCurrentArticle }: GiftednessSymptomsProp
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Rapid Learning and Processing</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Quick mastery:</strong> Ability to learn new concepts with minimal instruction or repetition<sup>10</sup></li>
+            <li className="mb-2"><strong>Quick mastery:</strong> Ability to learn new concepts with minimal instruction or repetition<sup>1</sup></li>
             <li className="mb-2"><strong>Processing speed:</strong> Faster cognitive processing in many domains<sup>1</sup></li>
             <li className="mb-2"><strong>Minimal practice needed:</strong> May grasp concepts after single exposure<sup>2</sup></li>
             <li className="mb-2"><strong>Transfer of learning:</strong> Exceptional ability to apply knowledge to new situations<sup>3</sup></li>

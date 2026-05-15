@@ -32,7 +32,7 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
         <div>
           <p className="mb-4">
             Effective support for NVLD involves addressing visual-spatial, motor, social, and academic challenges 
-            through targeted interventions, accommodations, and leveraging verbal strengths.<sup>10</sup> A multi-faceted 
+            through targeted interventions, accommodations, and leveraging verbal strengths.<sup>1</sup> A multi-faceted 
             approach yields the best outcomes.<sup>2</sup>
           </p>
         </div>
@@ -103,7 +103,7 @@ export function NVLDSupport({ setCurrentArticle }: NVLDSupportProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Explicit Social Skills Instruction</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Teaching nonverbal cues:</strong> Explicit instruction in reading facial expressions<sup>10</sup></li>
+            <li className="mb-2"><strong>Teaching nonverbal cues:</strong> Explicit instruction in reading facial expressions<sup>1</sup></li>
             <li className="mb-2"><strong>Body language:</strong> Understanding personal space, posture, gestures</li>
             <li className="mb-2"><strong>Social rules:</strong> Direct teaching of unwritten social rules<sup>1</sup></li>
             <li className="mb-2"><strong>Perspective-taking:</strong> Understanding others' points of view</li>

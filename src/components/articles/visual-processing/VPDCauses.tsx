@@ -32,7 +32,7 @@ export function VPDCauses({ setCurrentArticle }: VPDCausesProps) {
         <div>
           <p className="mb-4">
             Visual Processing Disorder arises from differences in how the brain processes visual information 
-            rather than problems with the eyes themselves.<sup>10</sup> Understanding the causes involves 
+            rather than problems with the eyes themselves.<sup>1</sup> Understanding the causes involves 
             examining neurological development, genetic factors, and various influences on visual system 
             function.<sup>2</sup>
           </p>
@@ -68,7 +68,7 @@ export function VPDCauses({ setCurrentArticle }: VPDCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Visual Processing Pathways</h3>
           <p className="mb-4">
             Visual information travels from the retina through the optic nerve to various brain regions.<sup>9</sup> 
-            The lateral geniculate nucleus relays information to the visual cortex.<sup>10</sup> From there, 
+            The lateral geniculate nucleus relays information to the visual cortex.<sup>1</sup> From there, 
             two major pathways process visual information: the ventral stream (object recognition, "what" 
             pathway) and the dorsal stream (spatial processing, "where" pathway).<sup>1</sup>
           </p>

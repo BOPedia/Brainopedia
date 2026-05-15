@@ -43,7 +43,7 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
         <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Executive Function Differences</h3>
           <p className="mb-4 text-sm">
-            Challenges in planning, organization, cognitive flexibility, working memory, and initiation.<sup>10</sup>
+            Challenges in planning, organization, cognitive flexibility, working memory, and initiation.<sup>1</sup>
           </p>
           
           <div className="space-y-3">

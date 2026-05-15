@@ -163,8 +163,8 @@ export function ADHDSymptomsTabHyperactivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Objective Measurement of Hyperactive Movement</h4>
                   <p className="text-sm mb-2">
                     A National Institutes of Health (NIH) study used infrared motion analysis to objectively quantify hyperactive 
-                    behavior in children with ADHD<sup style={{color: '#10b981'}}>10</sup>. The research found that boys with ADHD 
-                    moved their heads 2.3 times more often and 3.4 times as far as typical children<sup style={{color: '#10b981'}}>10</sup>, 
+                    behavior in children with ADHD<sup style={{color: '#10b981'}}>1</sup>. The research found that boys with ADHD 
+                    moved their heads 2.3 times more often and 3.4 times as far as typical children<sup style={{color: '#10b981'}}>1</sup>, 
                     demonstrating that hyperactivity is a measurable neurobiological phenomenon rather than simply "excess energy."
                   </p>
                 </div>

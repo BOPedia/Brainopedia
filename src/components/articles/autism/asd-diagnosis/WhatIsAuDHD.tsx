@@ -40,7 +40,7 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         </p>
         
         <ul className="text-sm space-y-2 ml-6 mb-4">
-          <li className="mb-2">• <strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup>10</sup></li>
+          <li className="mb-2">• <strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup>1</sup></li>
           <li className="mb-2">• <strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup>2</sup></li>
           <li className="mb-2">• Until the DSM-5 (2013), dual diagnosis was not officially permitted, leading to historical underdiagnosis</li>
           <li className="mb-2">• Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup>3</sup></li>

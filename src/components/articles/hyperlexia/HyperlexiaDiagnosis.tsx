@@ -32,7 +32,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
         <div>
           <p className="mb-4">
             Diagnosing hyperlexia involves comprehensive evaluation of reading abilities, language development, and 
-            cognitive-communicative functioning.<sup>10</sup> Because hyperlexia is not an official DSM-5 diagnosis, 
+            cognitive-communicative functioning.<sup>1</sup> Because hyperlexia is not an official DSM-5 diagnosis, 
             assessment focuses on identifying the characteristic pattern rather than applying specific diagnostic criteria.<sup>2</sup>
           </p>
         </div>
@@ -108,7 +108,7 @@ export function HyperlexiaDiagnosis({ setCurrentArticle }: HyperlexiaDiagnosisPr
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Comprehension</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Comprehension tests:</strong> Understanding what was read<sup>10</sup></li>
+            <li className="mb-2"><strong>Comprehension tests:</strong> Understanding what was read<sup>1</sup></li>
             <li className="mb-2"><strong>Question answering:</strong> Literal vs. inferential questions</li>
             <li className="mb-2"><strong>Retelling:</strong> Ability to retell stories</li>
             <li className="mb-2"><strong>Discrepancy:</strong> Comprehension significantly lower than decoding</li>

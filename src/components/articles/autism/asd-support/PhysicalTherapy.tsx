@@ -16,7 +16,7 @@ export function PhysicalTherapy() {
         <p className="mb-4 leading-relaxed">
           Research indicates that up to 87% of autistic children demonstrate some form of 
           motor impairment, ranging from low muscle tone to significant challenges with 
-          balance and gait<span className="text-[#10b981] font-bold"><sup>10</sup></span>.
+          balance and gait<span className="text-[#10b981] font-bold"><sup>1</sup></span>.
         </p>
       </div>
 

@@ -74,7 +74,7 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
             <li className="mb-2">Therapist creates a safe, supportive environment using specialized equipment like swings, 
             climbing structures, crash mats, and various tactile materials.<sup>9</sup> The therapist guides the child through 
             playful activities that are challenging yet achievable, promoting neuroplastic changes in how the brain processes 
-            sensory information.<sup>10</sup></li>
+            sensory information.<sup>1</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Evidence for ASI</h3>
@@ -228,7 +228,7 @@ export function SPDSupport({ setCurrentArticle }: SPDSupportProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Auditory Support</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Noise-canceling or noise-reducing headphones<sup>10</sup></li>
+            <li className="mb-2">Noise-canceling or noise-reducing headphones<sup>1</sup></li>
             <li className="mb-2">White noise machines or apps</li>
             <li className="mb-2">Earplugs for overwhelming environments</li>
           </ul>

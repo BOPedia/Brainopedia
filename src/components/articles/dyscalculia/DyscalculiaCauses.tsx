@@ -31,7 +31,7 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
       <div className="space-y-8">
         <div>
           <p className="mb-4">
-            Dyscalculia is a neurodevelopmental condition with complex, multifactorial origins.<sup>10</sup> Research 
+            Dyscalculia is a neurodevelopmental condition with complex, multifactorial origins.<sup>1</sup> Research 
             indicates that genetic factors, brain differences, and environmental influences all contribute to mathematical 
             learning disabilities.<sup>2</sup> Understanding these causes helps reduce stigma and informs more effective 
             interventions.
@@ -62,7 +62,7 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Chromosome 20p:</strong> Associated with numerical processing deficits<sup>8</sup></li>
             <li className="mb-2"><strong>Multiple genes involved:</strong> Likely polygenic condition with many contributing genes<sup>9</sup></li>
-            <li className="mb-2"><strong>Shared genetics with dyslexia:</strong> Some genetic overlap between reading and math disabilities<sup>10</sup></li>
+            <li className="mb-2"><strong>Shared genetics with dyslexia:</strong> Some genetic overlap between reading and math disabilities<sup>1</sup></li>
             <li className="mb-2"><strong>ROBO1 gene:</strong> Implicated in both reading and mathematical difficulties<sup>1</sup></li>
           </ul>
 

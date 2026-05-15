@@ -32,7 +32,7 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
         <div>
           <p className="mb-4">
             Dyscalculia presents differently across individuals and developmental stages, but certain core symptoms are 
-            consistently observed.<sup>10</sup> Recognizing these signs early can lead to timely intervention and support, 
+            consistently observed.<sup>1</sup> Recognizing these signs early can lead to timely intervention and support, 
             improving mathematical outcomes and reducing math anxiety.<sup>2</sup>
           </p>
         </div>
@@ -70,7 +70,7 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
             <li className="mb-2"><strong>Multiplication and division:</strong> Extreme difficulty memorizing times tables</li>
             <li className="mb-2"><strong>Procedural errors:</strong> Makes frequent calculation mistakes<sup>9</sup></li>
             <li className="mb-2"><strong>Place value confusion:</strong> Doesn't understand ones, tens, hundreds columns</li>
-            <li className="mb-2"><strong>Borrowing/carrying errors:</strong> Struggles with multi-digit operations<sup>10</sup></li>
+            <li className="mb-2"><strong>Borrowing/carrying errors:</strong> Struggles with multi-digit operations<sup>1</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Math Fact Retrieval</h3>

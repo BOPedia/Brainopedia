@@ -32,7 +32,7 @@ export function GiftednessSupport({ setCurrentArticle }: GiftednessSupportProps)
         <div>
           <p className="mb-4">
             Supporting gifted individuals requires differentiated educational programming, social-emotional 
-            support, and advocacy to ensure their unique needs are met.<sup>10</sup> Effective interventions 
+            support, and advocacy to ensure their unique needs are met.<sup>1</sup> Effective interventions 
             address both cognitive and affective development while fostering talent development and personal 
             well-being.<sup>2</sup>
           </p>
@@ -72,7 +72,7 @@ export function GiftednessSupport({ setCurrentArticle }: GiftednessSupportProps)
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Curriculum Compacting</h3>
           <p className="mb-4">
             Compacting eliminates material students have already mastered, freeing time for advanced content or 
-            enrichment activities.<sup>10</sup> Research demonstrates that most gifted students can master 
+            enrichment activities.<sup>1</sup> Research demonstrates that most gifted students can master 
             40-50% of regular curriculum material before it's taught.<sup>1</sup>
           </p>
 

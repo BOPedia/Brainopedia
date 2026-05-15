@@ -32,7 +32,7 @@ export function DysgraphiaSupport({ setCurrentArticle }: DysgraphiaSupportProps)
         <div>
           <p className="mb-4">
             Effective management of dysgraphia involves a combination of evidence-based interventions, accommodations, 
-            assistive technology, and therapeutic support.<sup>10</sup> With appropriate support, individuals with dysgraphia 
+            assistive technology, and therapeutic support.<sup>1</sup> With appropriate support, individuals with dysgraphia 
             can successfully complete academic work and function effectively in daily life.<sup>2</sup>
           </p>
         </div>
@@ -66,7 +66,7 @@ export function DysgraphiaSupport({ setCurrentArticle }: DysgraphiaSupportProps)
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Writing Process Instruction</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>SRSD (Self-Regulated Strategy Development):</strong> Explicit teaching of planning, writing, and revising strategies<sup>9</sup></li>
-            <li className="mb-2"><strong>POW + TREE:</strong> Pick ideas, Organize, Write + Topic sentence, Reasons, Ending, Examine<sup>10</sup></li>
+            <li className="mb-2"><strong>POW + TREE:</strong> Pick ideas, Organize, Write + Topic sentence, Reasons, Ending, Examine<sup>1</sup></li>
             <li className="mb-2"><strong>Graphic organizers:</strong> Visual tools for planning writing</li>
             <li className="mb-2"><strong>Sentence combining:</strong> Practice with sentence structure<sup>1</sup></li>
             <li className="mb-2"><strong>Paragraph frames:</strong> Templates for organizing writing<sup>2</sup></li>

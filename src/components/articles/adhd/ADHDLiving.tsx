@@ -53,7 +53,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <p className="mb-4">
             Many people with ADHD excel at creative thinking, making unexpected connections, and approaching 
             problems from novel angles. Research demonstrates that individuals with ADHD show enhanced 
-            divergent thinking and generate more original ideas in creative tasks.<sup>10</sup> This can be a significant 
+            divergent thinking and generate more original ideas in creative tasks.<sup>1</sup> This can be a significant 
             asset in creative fields and entrepreneurship. Studies suggest that the disinhibition and cognitive 
             flexibility associated with ADHD may contribute to creative achievement.<sup>2</sup>
           </p>
@@ -208,7 +208,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <p className="mb-4">
           Social relationships can be challenging for individuals with ADHD due to difficulties with social cues, 
           impulsivity, and maintaining contact. Research shows that children and adults with ADHD often 
-          experience social rejection and have fewer close friendships.<sup>10</sup> Strategies for maintaining friendships include:
+          experience social rejection and have fewer close friendships.<sup>1</sup> Strategies for maintaining friendships include:
         </p>
         <ul className="list-disc ml-6 mb-4">
           <li className="mb-2">Set reminders to reach out to friends regularly</li>
@@ -369,7 +369,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Co-occurring Mental Health Conditions</h3>
           <p className="mb-4">
             ADHD frequently co-occurs with other mental health conditions, with research showing that approximately 
-            two-thirds of individuals with ADHD have at least one comorbid psychiatric disorder:<sup>10</sup>
+            two-thirds of individuals with ADHD have at least one comorbid psychiatric disorder:<sup>1</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Anxiety disorders (25-40% of individuals with ADHD)</li>

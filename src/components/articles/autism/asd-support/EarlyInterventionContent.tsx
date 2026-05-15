@@ -96,7 +96,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           </div>
           <p className="text-[#0c264d] text-sm">
             Research shows that early, intensive intervention can improve outcomes, though every child's response is 
-            individual.<sup>10</sup>
+            individual.<sup>1</sup>
           </p>
         </div>
 
@@ -355,7 +355,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           <p className="text-sm">
             Research shows that early, intensive intervention can improve outcomes, though every child's 
             response is individual. The most effective programs are family-centered, delivered in natural 
-            environments, and respect the child's neurodivergent development.<sup>10</sup>
+            environments, and respect the child's neurodivergent development.<sup>1</sup>
           </p>
         </div>
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 

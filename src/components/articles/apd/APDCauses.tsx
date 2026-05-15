@@ -32,7 +32,7 @@ export function APDCauses({ setCurrentArticle }: APDCausesProps) {
         <div>
           <p className="mb-4">
             The causes of Auditory Processing Disorder are complex and multifactorial, involving neurological, 
-            genetic, developmental, and environmental factors.<sup>10</sup> Understanding these origins helps 
+            genetic, developmental, and environmental factors.<sup>1</sup> Understanding these origins helps 
             clarify why some individuals develop auditory processing differences and informs intervention 
             approaches.<sup>2</sup>
           </p>
@@ -67,7 +67,7 @@ export function APDCauses({ setCurrentArticle }: APDCausesProps) {
           <p className="mb-4">
             The auditory cortex in the temporal lobes processes complex auditory information including speech 
             sounds and patterns.<sup>9</sup> Neuroimaging studies show differences in auditory cortex structure 
-            and function in individuals with APD.<sup>10</sup> These cortical differences affect higher-level 
+            and function in individuals with APD.<sup>1</sup> These cortical differences affect higher-level 
             auditory processing.<sup>1</sup>
           </p>
 

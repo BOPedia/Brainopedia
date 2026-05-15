@@ -38,7 +38,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
           <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Structural Brain Differences</h3>
           <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
-            <li><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in the frontal cortex.<sup>10</sup></li>
+            <li><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in the frontal cortex.<sup>1</sup></li>
             <li><strong>Altered connectivity:</strong> Differences in how brain regions connect and structurally communicate.</li>
             <li><strong>Regional differences:</strong> Variations in size and structure of specific brain areas including the amygdala, cerebellum, and corpus callosum.</li>
             <li><strong>White matter differences:</strong> Atypical development of myelin and white matter tracts.</li>

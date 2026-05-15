@@ -463,7 +463,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <p className="mb-4">
             Children and adolescents with ADHD have impaired organization, time management, and planning skills that 
             undermine their academic abilities and potential. Homework management and organizational skills predict 
-            concurrent GPA and later academic outcomes.<sup className="text-[#10b981]">10</sup> Organizational Skills Training (OST) utilizes behavioral 
+            concurrent GPA and later academic outcomes.<sup className="text-[#10b981]">1</sup> Organizational Skills Training (OST) utilizes behavioral 
             methods to directly teach these skills to students with ADHD.
           </p>
           
@@ -552,7 +552,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             While lifestyle modifications alone are not sufficient to treat ADHD, they play a crucial supporting role 
             in symptom management and overall well-being. Research increasingly demonstrates that certain lifestyle 
             interventions can meaningfully improve ADHD symptoms, executive function, and quality of life when combined 
-            with other evidence-based treatments.<sup className="text-[#10b981]">10</sup>
+            with other evidence-based treatments.<sup className="text-[#10b981]">1</sup>
           </p>
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Exercise</h3>

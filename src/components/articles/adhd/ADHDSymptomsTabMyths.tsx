@@ -44,7 +44,7 @@ export function ADHDSymptomsTabMyths() {
                     <div className="text-sm">
                       This is controversial. It was coined by ONE researcher (Dr. William Dodson) and is NOT in the 
                       DSM-5 or ICD-11. It's not recognized as an official symptom by most ADHD experts. Emotional 
-                      dysregulation IS real in ADHD (~70% experience it)<sup style={{color: '#10b981'}}>10</sup>, but "RSD" as a specific construct lacks 
+                      dysregulation IS real in ADHD (~70% experience it)<sup style={{color: '#10b981'}}>1</sup>, but "RSD" as a specific construct lacks 
                       scientific validation and peer-reviewed research.
                     </div>
                   </div>
@@ -211,7 +211,7 @@ export function ADHDSymptomsTabMyths() {
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Emotional Dysregulation</div>
                   <div className="text-sm">
-                    This IS common in ADHD (~70% experience it)<sup style={{color: '#10b981'}}>10</sup> but it's NOT one of the 18 DSM-5 diagnostic criteria<sup style={{color: '#10b981'}}>2</sup>. 
+                    This IS common in ADHD (~70% experience it)<sup style={{color: '#10b981'}}>1</sup> but it's NOT one of the 18 DSM-5 diagnostic criteria<sup style={{color: '#10b981'}}>2</sup>. 
                     Social media often presents it as the main feature of ADHD when it's actually an associated feature, 
                     not a core diagnostic symptom.
                   </div>

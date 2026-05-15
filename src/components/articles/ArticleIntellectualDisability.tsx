@@ -54,7 +54,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
             <strong>Intellectual Disability (ID)</strong>, also known as intellectual developmental disorder, 
             is a neurodevelopmental condition characterized by significant limitations in both intellectual 
             functioning (reasoning, learning, problem-solving) and adaptive behavior (practical, social, and 
-            conceptual skills).<sup>10</sup> ID represents a diverse spectrum of cognitive functioning and is a distinct 
+            conceptual skills).<sup>1</sup> ID represents a diverse spectrum of cognitive functioning and is a distinct 
             neurotype with unique support needs and strengths.<sup>2</sup>
           </p>
           
@@ -117,7 +117,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           <p className="mb-4">
             ID affects three main areas of adaptive functioning.<sup>9</sup> Conceptual skills include memory and learning, 
             language development and literacy, reasoning and problem-solving, abstract thinking, understanding money 
-            time and numbers, and self-direction and planning.<sup>10</sup> Social skills include interpersonal communication, 
+            time and numbers, and self-direction and planning.<sup>1</sup> Social skills include interpersonal communication, 
             understanding social cues and norms, making and maintaining friendships, social problem-solving, understanding 
             consequences of actions, and vulnerability to manipulation or exploitation.<sup>1</sup> Practical skills include activities 
             of daily living (eating, dressing, hygiene), using transportation, managing schedules and routines, using 

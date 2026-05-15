@@ -32,7 +32,7 @@ export function VPDSymptoms({ setCurrentArticle }: VPDSymptomsProps) {
         <div>
           <p className="mb-4">
             Visual Processing Disorder manifests through a wide range of symptoms affecting how individuals 
-            interpret, remember, and use visual information.<sup>10</sup> Symptoms vary significantly based 
+            interpret, remember, and use visual information.<sup>1</sup> Symptoms vary significantly based 
             on which visual processing skills are affected and to what degree.<sup>2</sup>
           </p>
         </div>
@@ -65,7 +65,7 @@ export function VPDSymptoms({ setCurrentArticle }: VPDSymptomsProps) {
           <p className="mb-4">
             Noticing small differences in shapes, patterns, or pictures is challenging.<sup>8</sup> "Find 
             the difference" activities are particularly difficult.<sup>9</sup> Missing visual details affects 
-            reading comprehension, math problem-solving, and following visual instructions.<sup>10</sup>
+            reading comprehension, math problem-solving, and following visual instructions.<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Color and Shape Sorting</h3>

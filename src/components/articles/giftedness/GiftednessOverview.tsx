@@ -32,7 +32,7 @@ export function GiftednessOverview({ setCurrentArticle }: GiftednessOverviewProp
         <div>
           <p className="mb-4">
             Giftedness refers to exceptional intellectual ability, creativity, or talent that is significantly 
-            above average compared to peers of the same age.<sup>10</sup> Gifted individuals demonstrate 
+            above average compared to peers of the same age.<sup>1</sup> Gifted individuals demonstrate 
             advanced cognitive processing, rapid learning, and often show exceptional performance in one or 
             more domains.<sup>2</sup>
           </p>
@@ -80,7 +80,7 @@ export function GiftednessOverview({ setCurrentArticle }: GiftednessOverviewProp
           <p className="mb-4">
             Intellectual giftedness typically refers to exceptional general cognitive ability, often identified 
             through IQ testing.<sup>9</sup> These individuals demonstrate advanced reasoning, abstract thinking, 
-            problem-solving abilities, and capacity for learning.<sup>10</sup>
+            problem-solving abilities, and capacity for learning.<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Creative-Productive Giftedness</h3>

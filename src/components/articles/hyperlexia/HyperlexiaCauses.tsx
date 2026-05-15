@@ -32,7 +32,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
         <div>
           <p className="mb-4">
             The causes of hyperlexia are not fully understood, but research suggests neurobiological differences 
-            affecting language processing and reading development.<sup>10</sup> Because hyperlexia is strongly 
+            affecting language processing and reading development.<sup>1</sup> Because hyperlexia is strongly 
             associated with autism, it may share some underlying mechanisms with autism spectrum disorder.<sup>2</sup>
           </p>
         </div>
@@ -98,7 +98,7 @@ export function HyperlexiaCauses({ setCurrentArticle }: HyperlexiaCausesProps) {
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Genetic factors:</strong> May involve similar genetic vulnerabilities</li>
-            <li className="mb-2"><strong>Brain development:</strong> Atypical neurodevelopmental pathways<sup>10</sup></li>
+            <li className="mb-2"><strong>Brain development:</strong> Atypical neurodevelopmental pathways<sup>1</sup></li>
             <li className="mb-2"><strong>Processing style:</strong> Detail-focused, pattern-based processing</li>
           </ul>
 

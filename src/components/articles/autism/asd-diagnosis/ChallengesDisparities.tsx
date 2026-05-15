@@ -22,7 +22,7 @@ export function ChallengesDisparities({ setCurrentArticle }: ChallengesDispariti
         
         <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-3 rounded mb-4">
           <p className="text-sm">
-            <strong>The Ratio:</strong> Approximately 3-4 males are diagnosed for every 1 female.<sup>10</sup> 
+            <strong>The Ratio:</strong> Approximately 3-4 males are diagnosed for every 1 female.<sup>1</sup> 
             However, this likely reflects diagnostic bias rather than true prevalence differences.
           </p>
         </div>

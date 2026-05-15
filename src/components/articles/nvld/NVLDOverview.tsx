@@ -33,7 +33,7 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
           <p className="mb-4">
             Nonverbal Learning Disability (NVLD), also called Nonverbal Learning Disorder, is a neurodevelopmental 
             condition characterized by strengths in verbal abilities alongside significant challenges in visual-spatial 
-            processing, motor skills, and social perception.<sup>10</sup> Despite strong language skills, individuals 
+            processing, motor skills, and social perception.<sup>1</sup> Despite strong language skills, individuals 
             with NVLD struggle with understanding nonverbal information and spatial relationships.<sup>2</sup>
           </p>
         </div>
@@ -98,7 +98,7 @@ export function NVLDOverview({ setCurrentArticle }: NVLDOverviewProps) {
 
           <h4 className="font-bold mb-2">3. Social Perception</h4>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty reading facial expressions and body language<sup>10</sup></li>
+            <li className="mb-2">Difficulty reading facial expressions and body language<sup>1</sup></li>
             <li className="mb-2">Missing social cues and context</li>
             <li className="mb-2">Challenges understanding nonverbal communication</li>
             <li className="mb-2">Literal interpretation of language</li>

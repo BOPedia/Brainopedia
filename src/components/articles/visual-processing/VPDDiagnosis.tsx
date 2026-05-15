@@ -32,7 +32,7 @@ export function VPDDiagnosis({ setCurrentArticle }: VPDDiagnosisProps) {
         <div>
           <p className="mb-4">
             Diagnosing Visual Processing Disorder requires comprehensive evaluation by qualified professionals 
-            using standardized tests, observations, and functional assessments.<sup>10</sup> Accurate diagnosis 
+            using standardized tests, observations, and functional assessments.<sup>1</sup> Accurate diagnosis 
             guides appropriate interventions and accommodations.<sup>2</sup>
           </p>
         </div>
@@ -66,7 +66,7 @@ export function VPDDiagnosis({ setCurrentArticle }: VPDDiagnosisProps) {
           <p className="mb-4">
             Neuropsychologists conduct comprehensive cognitive assessments including visual processing as one 
             component.<sup>9</sup> They can differentiate visual processing difficulties from other cognitive 
-            issues and identify patterns across multiple domains.<sup>10</sup> Neuropsychological evaluation 
+            issues and identify patterns across multiple domains.<sup>1</sup> Neuropsychological evaluation 
             is particularly valuable when multiple conditions are suspected.<sup>1</sup>
           </p>
 

@@ -31,7 +31,7 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
       <div className="space-y-8">
         <div>
           <p className="mb-4">
-            Diagnosing NVLD presents unique challenges because it is not an official DSM-5 diagnosis.<sup>10</sup> 
+            Diagnosing NVLD presents unique challenges because it is not an official DSM-5 diagnosis.<sup>1</sup> 
             However, qualified professionals can identify the NVLD pattern through comprehensive neuropsychological 
             assessment focusing on the distinctive profile of verbal strengths and nonverbal weaknesses.<sup>2</sup>
           </p>
@@ -109,7 +109,7 @@ export function NVLDDiagnosis({ setCurrentArticle }: NVLDDiagnosisProps) {
             <li className="mb-2"><strong>WISC-V or WAIS-IV:</strong> Wechsler Intelligence Scales</li>
             <li className="mb-2"><strong>Verbal Comprehension Index:</strong> Typically average to above-average</li>
             <li className="mb-2"><strong>Visual-Spatial Index:</strong> Significantly lower than verbal</li>
-            <li className="mb-2"><strong>Fluid Reasoning Index:</strong> May be lower, especially nonverbal tasks<sup>10</sup></li>
+            <li className="mb-2"><strong>Fluid Reasoning Index:</strong> May be lower, especially nonverbal tasks<sup>1</sup></li>
             <li className="mb-2"><strong>Processing Speed Index:</strong> Often lower</li>
           </ul>
 

@@ -32,7 +32,7 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
         <div>
           <p className="mb-4">
             Dysgraphia manifests through a variety of symptoms related to the physical act of writing, spelling, 
-            and written expression.<sup>10</sup> These symptoms can range from mild to severe and often vary depending 
+            and written expression.<sup>1</sup> These symptoms can range from mild to severe and often vary depending 
             on the type of dysgraphia and individual circumstances.<sup>2</sup>
           </p>
         </div>
@@ -101,7 +101,7 @@ export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProp
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Fine Motor Challenges</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Difficulty with other fine motor tasks (buttons, zippers, tying shoes)</li>
-            <li className="mb-2">Poor coordination in finger movements<sup>10</sup></li>
+            <li className="mb-2">Poor coordination in finger movements<sup>1</sup></li>
             <li className="mb-2">Challenges with tasks requiring precision</li>
           </ul>
         </div>

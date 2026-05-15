@@ -19,7 +19,7 @@ export function EducationEmploymentContent({ setCurrentArticle }: EducationEmplo
           <div>
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Higher Education</h3>
             <p className="mb-4 text-gray-700 leading-relaxed">
-              Increasing numbers of autistic students are pursuing college degrees, bringing deep focus and original thinking to academia:<sup>10</sup>
+              Increasing numbers of autistic students are pursuing college degrees, bringing deep focus and original thinking to academia:<sup>1</sup>
             </p>
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li><strong>Strengths:</strong> Intense dedication to subjects of interest and a high aptitude for detailed research.</li>

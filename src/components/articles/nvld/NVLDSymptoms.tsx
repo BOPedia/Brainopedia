@@ -32,7 +32,7 @@ export function NVLDSymptoms({ setCurrentArticle }: NVLDSymptomsProps) {
         <div>
           <p className="mb-4">
             Nonverbal Learning Disability presents with a distinctive pattern of symptoms characterized by strong 
-            verbal abilities alongside significant deficits in visual-spatial, motor, and social domains.<sup>10</sup> 
+            verbal abilities alongside significant deficits in visual-spatial, motor, and social domains.<sup>1</sup> 
             The constellation of symptoms typically becomes more apparent as academic and social demands increase.<sup>2</sup>
           </p>
         </div>
@@ -94,7 +94,7 @@ export function NVLDSymptoms({ setCurrentArticle }: NVLDSymptomsProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Graphomotor Difficulties</h3>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Inconsistent letter formation and sizing</li>
-            <li className="mb-2">Poor spatial organization on paper<sup>10</sup></li>
+            <li className="mb-2">Poor spatial organization on paper<sup>1</sup></li>
             <li className="mb-2">Difficulty staying on lines</li>
             <li className="mb-2">Slow, labored handwriting</li>
           </ul>

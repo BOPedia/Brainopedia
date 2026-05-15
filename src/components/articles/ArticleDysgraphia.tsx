@@ -76,7 +76,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
         <div className="space-y-6">
           <p>
             <strong>Dysgraphia</strong> is a specific learning difference that affects written expression and 
-            the physical act of writing.<sup>10</sup> It impacts a person's ability to produce legible, organized written 
+            the physical act of writing.<sup>1</sup> It impacts a person's ability to produce legible, organized written 
             work and can involve difficulties with handwriting, spelling, and putting thoughts into written form 
             despite adequate language and cognitive abilities.<sup>2</sup>
           </p>
@@ -156,7 +156,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
           <p className="mb-4">
             Research suggests that dysgraphia involves differences in brain areas responsible for language processing, 
             motor planning, and working memory, including regions in the frontal and parietal lobes.<sup>9</sup> The cerebellum, 
-            which coordinates fine motor movements, may also play a role in dysgraphia.<sup>10</sup> These neurological differences 
+            which coordinates fine motor movements, may also play a role in dysgraphia.<sup>1</sup> These neurological differences 
             affect the mechanical aspects of writing including fine motor coordination, orthographic coding (storing 
             written words in working memory), and graphomotor planning (planning and executing writing movements).<sup>1</sup> 
             Like other learning differences, dysgraphia has a neurological basis and may have genetic components, 

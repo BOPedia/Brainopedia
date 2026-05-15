@@ -32,7 +32,7 @@ export function APDSymptoms({ setCurrentArticle }: APDSymptomsProps) {
         <div>
           <p className="mb-4">
             The symptoms of Auditory Processing Disorder reflect difficulty processing auditory information 
-            despite normal hearing sensitivity.<sup>10</sup> These characteristics manifest across listening, 
+            despite normal hearing sensitivity.<sup>1</sup> These characteristics manifest across listening, 
             academic, social, and behavioral domains, creating a complex profile that varies among individuals.<sup>2</sup>
           </p>
         </div>
@@ -64,7 +64,7 @@ export function APDSymptoms({ setCurrentArticle }: APDSymptomsProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Difficulty with Auditory Discrimination</h3>
           <p className="mb-4">
             Distinguishing between similar-sounding words or phonemes is challenging.<sup>9</sup> Words like 
-            "cat" and "cap" or "think" and "thick" may sound identical.<sup>10</sup> This affects spelling, 
+            "cat" and "cap" or "think" and "thick" may sound identical.<sup>1</sup> This affects spelling, 
             reading, and communication accuracy.<sup>1</sup>
           </p>
 

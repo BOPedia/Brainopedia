@@ -34,7 +34,7 @@ export function ADHDSymptomsTabFemales() {
                 <div className="font-bold text-[#0c264d] mb-2">Symptom Presentation & Comorbidity:</div>
                 <div className="text-sm space-y-2 pl-4">
                   <p>Women with ADHD are more likely to have the combined type, experience greater emotional dysregulation, 
-                  and report higher levels of anxiety and depression compared to men.<sup className="text-[#10b981]">10</sup></p>
+                  and report higher levels of anxiety and depression compared to men.<sup className="text-[#10b981]">1</sup></p>
                   <p>Research indicates a significant association between adult female ADHD and higher rates of insomnia, 
                   substance abuse, chronic pain, and histories of childhood abuse.<sup className="text-[#10b981]">2</sup></p>
                   <p>Women often exhibit inattentive symptoms, making them less likely to be diagnosed in childhood, often 

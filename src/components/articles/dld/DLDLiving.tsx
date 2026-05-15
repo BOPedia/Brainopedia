@@ -32,7 +32,7 @@ export function DLDLiving({ setCurrentArticle }: DLDLivingProps) {
         <div>
           <p className="mb-4">
             Living with Developmental Language Disorder presents ongoing challenges, but with appropriate support, 
-            understanding, and self-advocacy, individuals with DLD can lead successful and fulfilling lives.<sup>10</sup> 
+            understanding, and self-advocacy, individuals with DLD can lead successful and fulfilling lives.<sup>1</sup> 
             While DLD is a lifelong condition, its impact can be significantly reduced through intervention and accommodations.<sup>2</sup>
           </p>
         </div>
@@ -85,7 +85,7 @@ export function DLDLiving({ setCurrentArticle }: DLDLivingProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Post-Secondary Education</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>College/university:</strong> Many students with DLD attend post-secondary education<sup>10</sup></li>
+            <li className="mb-2"><strong>College/university:</strong> Many students with DLD attend post-secondary education<sup>1</sup></li>
             <li className="mb-2"><strong>Disability services:</strong> Accessing campus supports</li>
             <li className="mb-2"><strong>Self-advocacy:</strong> Learning to explain needs</li>
             <li className="mb-2"><strong>Major selection:</strong> Consider language demands of programs<sup>1</sup></li>

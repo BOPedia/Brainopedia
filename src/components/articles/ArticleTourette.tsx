@@ -25,7 +25,7 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         <div className="space-y-6">
           <p>
             <strong>Tourette syndrome (TS)</strong> is a neurodevelopmental disorder characterized by repetitive, 
-            involuntary movements and vocalizations called tics.<sup>10</sup> Named after French physician Georges Gilles de 
+            involuntary movements and vocalizations called tics.<sup>1</sup> Named after French physician Georges Gilles de 
             la Tourette who first described the condition in 1885, Tourette syndrome typically begins in childhood 
             and varies in severity from person to person.<sup>2</sup>
           </p>
@@ -54,7 +54,7 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           <img src="https://images.unsplash.com/photo-1727386245205-2112b722af99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYWNpYWwlMjBleHByZXNzaW9uJTIwaW52b2x1bnRhcnklMjBtb3ZlbWVudHxlbnwxfHx8fDE3Njc0MDc0MDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Facial expressions and movements - characteristics of tics" className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4" />
-          <p className="mb-4">Tourette syndrome is characterized by both motor and vocal tics.<sup>10</sup> Motor tics can be simple (eye blinking, head jerking, shoulder shrugging, facial grimacing, nose twitching, jaw movements) or complex (touching objects or people, jumping, hopping, twirling, spinning, making gestures, bending or gyrating).<sup>1</sup> Vocal (phonic) tics can also be simple (throat clearing, coughing, grunting, sniffing, barking, yelping, clicking sounds) or complex (repeating words or phrases echolalia, repeating one's own words palilalia, using socially inappropriate words coprolalia which affects only 10-15%, making animal sounds).<sup>[12][13]</sup></p>
+          <p className="mb-4">Tourette syndrome is characterized by both motor and vocal tics.<sup>1</sup> Motor tics can be simple (eye blinking, head jerking, shoulder shrugging, facial grimacing, nose twitching, jaw movements) or complex (touching objects or people, jumping, hopping, twirling, spinning, making gestures, bending or gyrating).<sup>1</sup> Vocal (phonic) tics can also be simple (throat clearing, coughing, grunting, sniffing, barking, yelping, clicking sounds) or complex (repeating words or phrases echolalia, repeating one's own words palilalia, using socially inappropriate words coprolalia which affects only 10-15%, making animal sounds).<sup>[12][13]</sup></p>
           <p className="mb-4">Tics wax and wane in frequency and severity, can change type and location over time, may worsen with stress, excitement, or fatigue, often decrease during focused activities, can typically be temporarily suppressed with effort, and typically decrease during sleep.<sup>4</sup> Many individuals with TS also have co-occurring conditions such as ADHD (50-60%), OCD (30-40%), anxiety disorders, or learning differences, which often cause more functional impairment than the tics themselves.<sup>[15][16]</sup></p>
         </section>
 

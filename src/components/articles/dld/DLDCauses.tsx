@@ -32,7 +32,7 @@ export function DLDCauses({ setCurrentArticle }: DLDCausesProps) {
         <div>
           <p className="mb-4">
             Developmental Language Disorder has complex, multifactorial origins involving genetic, neurobiological, 
-            and environmental factors.<sup>10</sup> While the exact causes are still being researched, significant 
+            and environmental factors.<sup>1</sup> While the exact causes are still being researched, significant 
             progress has been made in understanding the biological basis of DLD.<sup>2</sup>
           </p>
         </div>
@@ -81,7 +81,7 @@ export function DLDCauses({ setCurrentArticle }: DLDCausesProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Brain Structure Differences</h3>
           <p className="mb-4">
-            Neuroimaging studies show structural differences in children with DLD:<sup>10</sup>
+            Neuroimaging studies show structural differences in children with DLD:<sup>1</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Perisylvian regions:</strong> Differences in language-related brain areas</li>

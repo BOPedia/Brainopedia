@@ -18,7 +18,7 @@ export function CurrentResearch({ setCurrentArticle }: CurrentResearchProps) {
         className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
       />      
       <p className="mb-8 leading-relaxed">
-        Our understanding of autism's causes continues to evolve as technology allows for deeper genetic sequencing and more nuanced neurological studies.<sup className="text-green-600 font-bold ml-0.5">10</sup>
+        Our understanding of autism's causes continues to evolve as technology allows for deeper genetic sequencing and more nuanced neurological studies.<sup className="text-green-600 font-bold ml-0.5">1</sup>
       </p>
 
       <div className="clear-both"></div>

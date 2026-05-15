@@ -86,7 +86,7 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
           
           <p className="mb-4">
             A thorough sensory processing evaluation includes multiple components to build a complete picture of an individual's 
-            sensory profile:<sup>10</sup>
+            sensory profile:<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Developmental and Sensory History</h3>
@@ -111,7 +111,7 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
             sensory processing patterns across multiple contexts for individuals from birth through adulthood.<sup>9</sup> It 
             identifies patterns related to sensory modulation, discrimination, and sensory-based motor abilities.</li>
             <li className="mb-2"><strong>Sensory Processing Measure (SPM):</strong> Evaluates sensory processing, praxis, and social 
-            participation in both home and school environments.<sup>10</sup></li>
+            participation in both home and school environments.<sup>1</sup></li>
             <li className="mb-2"><strong>Sensory Experiences Questionnaire (SEQ):</strong> Designed for young children, particularly 
             useful in research and clinical assessment of sensory features.<sup>1</sup></li>
           </ul>
@@ -201,7 +201,7 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Sensory processing difficulties that interfere with participation in daily activities</li>
             <li className="mb-2">Patterns consistent with one or more SPD subtypes (modulation, discrimination, motor)</li>
-            <li className="mb-2">Measurable differences on standardized sensory processing assessments<sup>10</sup></li>
+            <li className="mb-2">Measurable differences on standardized sensory processing assessments<sup>1</sup></li>
             <li className="mb-2">Symptoms not better explained by other conditions</li>
             <li className="mb-2">Duration of symptoms (typically present for at least 6 months)</li>
           </ul>
@@ -232,7 +232,7 @@ export function SPDDiagnosis({ setCurrentArticle }: SPDDiagnosisProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Information Gathering</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Teacher or school reports (if applicable)<sup>10</sup></li>
+            <li className="mb-2">Teacher or school reports (if applicable)<sup>1</sup></li>
             <li className="mb-2">Records from other professionals (pediatrician, psychologist, etc.)</li>
             <li className="mb-2">Video recordings or parent observations from home</li>
           </ul>

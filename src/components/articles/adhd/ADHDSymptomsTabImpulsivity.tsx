@@ -162,7 +162,7 @@ export function ADHDSymptomsTabImpulsivity() {
               
               <p className="mb-4">
                 Studies confirm that impulsivity is a core symptom of ADHD across the lifespan, characterized by deficits in motor, 
-                cognitive, and attentional control<sup style={{color: '#10b981'}}>10</sup>. Research indicates that children and adults 
+                cognitive, and attentional control<sup style={{color: '#10b981'}}>1</sup>. Research indicates that children and adults 
                 with ADHD show higher rates of impulsive decision-making, such as instant gratification seeking and difficulty waiting, which 
                 are linked to structural changes in the caudate nucleus and frontostriatal pathways<sup style={{color: '#10b981'}}>2</sup>.
               </p>

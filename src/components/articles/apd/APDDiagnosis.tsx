@@ -32,7 +32,7 @@ export function APDDiagnosis({ setCurrentArticle }: APDDiagnosisProps) {
         <div>
           <p className="mb-4">
             Diagnosing Auditory Processing Disorder requires comprehensive assessment by qualified professionals, 
-            typically audiologists with specialized training in central auditory processing.<sup>10</sup> The 
+            typically audiologists with specialized training in central auditory processing.<sup>1</sup> The 
             diagnostic process involves multiple tests, careful differential diagnosis, and consideration of 
             functional impacts.<sup>2</sup>
           </p>
@@ -66,7 +66,7 @@ export function APDDiagnosis({ setCurrentArticle }: APDDiagnosisProps) {
             APD is typically not diagnosed before age 7, when the auditory system has matured sufficiently for 
             valid testing.<sup>8</sup> However, younger children showing signs can receive early intervention 
             even without formal diagnosis.<sup>9</sup> Some test batteries have norms for children as young 
-            as age 5-6, but interpretation requires caution.<sup>10</sup>
+            as age 5-6, but interpretation requires caution.<sup>1</sup>
           </p>
         </div>
 

@@ -34,7 +34,7 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
           <p className="mb-4">
             Hyperlexia is characterized by an advanced ability to read at an early age, well beyond what would be 
             expected based on the child's age, accompanied by significant difficulties with spoken language comprehension 
-            and social communication.<sup>10</sup> The term was first coined in 1967 to describe children who could 
+            and social communication.<sup>1</sup> The term was first coined in 1967 to describe children who could 
             read exceptionally well but struggled to understand what they read.<sup>2</sup>
           </p>
         </div>
@@ -97,7 +97,7 @@ export function HyperlexiaOverview({ setCurrentArticle }: HyperlexiaOverviewProp
 
           <h4 className="font-bold mb-2">Type 3: Hyperlexia as Transient Phenomenon</h4>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Early autism-like symptoms that diminish over time<sup>10</sup></li>
+            <li className="mb-2">Early autism-like symptoms that diminish over time<sup>1</sup></li>
             <li className="mb-2">Initially appear autistic but don't meet full autism criteria later</li>
             <li className="mb-2">Most controversial category</li>
             <li className="mb-2">Language and social skills improve significantly</li>

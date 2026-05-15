@@ -96,7 +96,7 @@ export function SPDLiving({ setCurrentArticle }: SPDLivingProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Build in regular sensory breaks throughout the day</li>
             <li className="mb-2">Schedule demanding tasks during optimal times (when well-regulated)</li>
-            <li className="mb-2">Plan transitions between activities and environments<sup>10</sup></li>
+            <li className="mb-2">Plan transitions between activities and environments<sup>1</sup></li>
             <li className="mb-2">Incorporate calming or organizing sensory activities (morning routine, transitions from 
             school, work to home)<sup>1</sup></li>
           </ul>

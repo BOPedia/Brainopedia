@@ -25,7 +25,7 @@ export function ArticleSchizophrenia({ setCurrentArticle }: ArticleSchizophrenia
         <div className="space-y-6">
           <p>
             <strong>Schizophrenia</strong> is a complex neurological condition that affects how a person 
-            perceives reality, thinks, and experiences the world.<sup>10</sup> As understanding evolves, many advocates 
+            perceives reality, thinks, and experiences the world.<sup>1</sup> As understanding evolves, many advocates 
             recognize schizophrenia as representing a distinct neurotype—a fundamentally different way of 
             processing information and experiencing consciousness, rather than simply a "broken brain."<sup>2</sup>
           </p>

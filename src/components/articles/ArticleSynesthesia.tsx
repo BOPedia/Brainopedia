@@ -51,7 +51,7 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
         <div className="space-y-6">
           <p>
             <strong>Synesthesia</strong> is a neurological phenomenon in which stimulation of one sensory or cognitive 
-            pathway leads to involuntary experiences in a second sensory or cognitive pathway.<sup>10</sup> For example, a person 
+            pathway leads to involuntary experiences in a second sensory or cognitive pathway.<sup>1</sup> For example, a person 
             with synesthesia might see colors when hearing music, or taste flavors when reading words.<sup>2</sup>
           </p>
           
@@ -111,7 +111,7 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
           
           <p className="mb-4">
             There are many documented forms of synesthesia involving various combinations of senses and cognitive 
-            processes.<sup>10</sup> Grapheme-color synesthesia (the most common form) occurs when letters and numbers are perceived 
+            processes.<sup>1</sup> Grapheme-color synesthesia (the most common form) occurs when letters and numbers are perceived 
             as inherently colored, with each synesthete having their own unique color associations.<sup>1</sup> Chromesthesia 
             (sound-to-color) involves perceiving colors when hearing sounds, music, or voices, with different pitches 
             or timbres evoking different colors.<sup>2</sup> Lexical-gustatory synesthesia occurs when words or phonemes evoke 

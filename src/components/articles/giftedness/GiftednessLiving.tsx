@@ -32,7 +32,7 @@ export function GiftednessLiving({ setCurrentArticle }: GiftednessLivingProps) {
         <div>
           <p className="mb-4">
             Living as a gifted individual involves navigating unique challenges and opportunities across the 
-            lifespan.<sup>10</sup> Understanding and accepting one's giftedness, finding appropriate challenges, 
+            lifespan.<sup>1</sup> Understanding and accepting one's giftedness, finding appropriate challenges, 
             developing meaningful relationships, and making life choices that honor both abilities and values 
             are key aspects of the gifted experience.<sup>2</sup>
           </p>
@@ -66,7 +66,7 @@ export function GiftednessLiving({ setCurrentArticle }: GiftednessLivingProps) {
           <p className="mb-4">
             Gifted individuals often have abilities and interests in multiple areas, making career and life 
             choices challenging.<sup>9</sup> While multipotentiality offers exciting possibilities, it can 
-            also lead to difficulty committing to a single path.<sup>10</sup> Strategies include exploring 
+            also lead to difficulty committing to a single path.<sup>1</sup> Strategies include exploring 
             diverse interests, seeking careers that integrate multiple passions, and accepting that choices 
             don't have to be permanent.<sup>1</sup>
           </p>

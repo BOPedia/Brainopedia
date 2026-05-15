@@ -39,7 +39,7 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
             <li><strong>Maternal immune activation:</strong> Immune responses affecting fetal brain development.<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup></li>
             <li><strong>Certain medications:</strong> Valproic acid exposure during pregnancy.<sup className="text-[#0c264d] font-extrabold ml-0.5">4</sup></li>
             <li><strong>Prenatal nutrition:</strong> Deficiencies in nutrients like folic acid.<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup></li>
-            <li><strong>Gestational diabetes:</strong> Metabolic conditions affecting development.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup></li>
+            <li><strong>Gestational diabetes:</strong> Metabolic conditions affecting development.<sup className="text-[#0c264d] font-extrabold ml-0.5">1</sup></li>
             <li><strong>Air pollution:</strong> Exposure during pregnancy and early life.<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup></li>
           </ul>
         </div>
@@ -49,10 +49,10 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
           <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Perinatal & Neonatal Factors</h3>
           <p className="text-sm mb-3 text-[#0c264d] opacity-90 italic">Complications around birth associated with modest risk increases:</p>
           <ul className="list-disc ml-5 space-y-2 text-sm text-[#0c264d] opacity-90">
-            <li><strong>Preterm birth:</strong> Birth before 37 weeks, especially very preterm birth.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup></li>
-            <li><strong>Low birth weight:</strong> Particularly very low birth weight infants.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup></li>
+            <li><strong>Preterm birth:</strong> Birth before 37 weeks, especially very preterm birth.<sup className="text-[#0c264d] font-extrabold ml-0.5">1</sup></li>
+            <li><strong>Low birth weight:</strong> Particularly very low birth weight infants.<sup className="text-[#0c264d] font-extrabold ml-0.5">1</sup></li>
             <li><strong>Birth complications:</strong> Significant oxygen deprivation (hypoxia).<sup className="text-[#0c264d] font-extrabold ml-0.5">3</sup></li>
-            <li><strong>Multiple births:</strong> Twins/multiples have a slightly elevated risk.<sup className="text-[#0c264d] font-extrabold ml-0.5">10</sup></li>
+            <li><strong>Multiple births:</strong> Twins/multiples have a slightly elevated risk.<sup className="text-[#0c264d] font-extrabold ml-0.5">1</sup></li>
           </ul>
         </div>
       </div>

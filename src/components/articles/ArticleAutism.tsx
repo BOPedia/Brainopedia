@@ -114,7 +114,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
               className="w-48 h-auto float-right ml-4 mb-4 rounded"
             />
             Autism is a lifelong neurodevelopmental condition that affects how people perceive the world and interact 
-            with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup style={{color: '#10b981'}}>10</sup> with 
+            with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup style={{color: '#10b981'}}>1</sup> with 
             increasing recognition and diagnosis rates in recent years. It's important to recognize that autism is 
             not a disease or disorder that needs to be "cured."
           </p>

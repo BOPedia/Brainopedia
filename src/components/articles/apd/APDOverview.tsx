@@ -32,7 +32,7 @@ export function APDOverview({ setCurrentArticle }: APDOverviewProps) {
         <div>
           <p className="mb-4">
             Auditory Processing Disorder (APD), also known as Central Auditory Processing Disorder (CAPD), 
-            is a neurological condition affecting how the brain processes auditory information.<sup>10</sup> 
+            is a neurological condition affecting how the brain processes auditory information.<sup>1</sup> 
             Individuals with APD have normal hearing sensitivity—their ears detect sound normally—but their 
             brains struggle to interpret, organize, and make sense of what they hear.<sup>2</sup>
           </p>
@@ -68,7 +68,7 @@ export function APDOverview({ setCurrentArticle }: APDOverviewProps) {
           <p className="mb-4">
             The central auditory nervous system includes the auditory pathways from the brainstem through the 
             auditory cortex.<sup>9</sup> These structures analyze, filter, organize, and integrate auditory 
-            information.<sup>10</sup> In APD, dysfunction occurs at these central levels despite normal 
+            information.<sup>1</sup> In APD, dysfunction occurs at these central levels despite normal 
             peripheral hearing.<sup>1</sup>
           </p>
         </div>

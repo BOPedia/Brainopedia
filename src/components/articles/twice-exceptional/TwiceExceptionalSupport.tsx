@@ -32,7 +32,7 @@ export function TwiceExceptionalSupport({ setCurrentArticle }: TwiceExceptionalS
         <div>
           <p className="mb-4">
             Supporting twice-exceptional students requires dual differentiation—simultaneously addressing 
-            advanced abilities and providing accommodations for disabilities.<sup>10</sup> Neither the 
+            advanced abilities and providing accommodations for disabilities.<sup>1</sup> Neither the 
             giftedness nor the disability should be neglected in favor of the other.<sup>2</sup>
           </p>
         </div>
@@ -64,7 +64,7 @@ export function TwiceExceptionalSupport({ setCurrentArticle }: TwiceExceptionalS
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Individualized Planning</h3>
           <p className="mb-4">
             Each 2e student presents a unique profile requiring individualized support.<sup>9</sup> Cookie-cutter 
-            approaches fail to address the specific combination of strengths and weaknesses.<sup>10</sup> 
+            approaches fail to address the specific combination of strengths and weaknesses.<sup>1</sup> 
             Collaborative team planning involving gifted specialists, special educators, general educators, 
             and families optimizes outcomes.<sup>1</sup>
           </p>

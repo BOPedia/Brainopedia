@@ -52,7 +52,7 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
         <div className="space-y-6">
           <p>
             <strong>Epilepsy</strong> is a neurological condition characterized by recurrent seizures caused 
-            by sudden, abnormal electrical activity in the brain.<sup>10</sup> As a form of neurodivergence, epilepsy 
+            by sudden, abnormal electrical activity in the brain.<sup>1</sup> As a form of neurodivergence, epilepsy 
             represents a distinct pattern of brain function that creates unique cognitive, sensory, and 
             perceptual experiences beyond the seizures themselves.<sup>2</sup>
           </p>
@@ -117,7 +117,7 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
             Epilepsy is characterized by recurrent seizures with various types.<sup>9</sup> Focal onset seizures begin in one 
             area of the brain and may remain localized or spread, occurring with or without loss of awareness including 
             aware seizures (person remains conscious with unusual sensations, movements, or emotions) and impaired awareness 
-            seizures (altered consciousness with automatisms or confusion).<sup>10</sup> Generalized onset seizures involve both sides of 
+            seizures (altered consciousness with automatisms or confusion).<sup>1</sup> Generalized onset seizures involve both sides of 
             the brain from the start including absence seizures (brief lapses in awareness appearing as staring spells), 
             tonic-clonic seizures (loss of consciousness with muscle stiffening and rhythmic jerking), atonic seizures (sudden 
             loss of muscle tone causing falls), and myoclonic seizures (brief shock-like muscle jerks).<sup>[11][12]</sup>

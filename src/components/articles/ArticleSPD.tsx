@@ -76,7 +76,7 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
           <p>
             <strong>Sensory Processing Disorder (SPD)</strong> is a neurodevelopmental condition where the 
             brain has difficulty receiving, organizing, and responding to sensory information from the body 
-            and environment.<sup>10</sup> Individuals with SPD experience the world with heightened or reduced sensitivity, 
+            and environment.<sup>1</sup> Individuals with SPD experience the world with heightened or reduced sensitivity, 
             creating a unique sensory neurotype that shapes how they interact with their surroundings.<sup>2</sup>
           </p>
           

@@ -32,7 +32,7 @@ export function TwiceExceptionalCauses({ setCurrentArticle }: TwiceExceptionalCa
         <div>
           <p className="mb-4">
             Understanding the causes of twice-exceptionality requires examining both the origins of giftedness 
-            and the causes of various disabilities, as well as how these conditions co-occur.<sup>10</sup> 
+            and the causes of various disabilities, as well as how these conditions co-occur.<sup>1</sup> 
             Research increasingly shows that the same neurological differences can contribute to both exceptional 
             abilities and specific challenges.<sup>2</sup>
           </p>
@@ -66,7 +66,7 @@ export function TwiceExceptionalCauses({ setCurrentArticle }: TwiceExceptionalCa
           <p className="mb-4">
             Pleiotropy—when one gene affects multiple traits—may explain some instances of twice-exceptionality.<sup>9</sup> 
             Genetic variants that enhance one cognitive ability may simultaneously create challenges in another 
-            area.<sup>10</sup>
+            area.<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Family Patterns</h3>

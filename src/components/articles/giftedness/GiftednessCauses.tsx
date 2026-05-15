@@ -32,7 +32,7 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
         <div>
           <p className="mb-4">
             The development of giftedness results from complex interactions between genetic predispositions, 
-            neurobiological factors, and environmental influences.<sup>10</sup> Understanding these origins 
+            neurobiological factors, and environmental influences.<sup>1</sup> Understanding these origins 
             helps inform identification practices and educational interventions while challenging simplistic 
             nature versus nurture dichotomies.<sup>2</sup>
           </p>
@@ -76,7 +76,7 @@ export function GiftednessCauses({ setCurrentArticle }: GiftednessCausesProps) {
           <p className="mb-4">
             Giftedness tends to run in families, though this reflects both genetic and environmental 
             transmission.<sup>9</sup> Siblings of gifted children have elevated rates of giftedness 
-            compared to the general population.<sup>10</sup> However, regression to the mean occurs—
+            compared to the general population.<sup>1</sup> However, regression to the mean occurs—
             extremely gifted parents typically have gifted children who are somewhat less exceptional 
             than themselves.<sup>1</sup>
           </p>

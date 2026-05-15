@@ -32,7 +32,7 @@ export function VPDOverview({ setCurrentArticle }: VPDOverviewProps) {
         <div>
           <p className="mb-4">
             Visual Processing Disorder (VPD), also called visual perceptual disorder, is a neurological condition 
-            affecting how the brain interprets and makes sense of visual information.<sup>10</sup> Despite having 
+            affecting how the brain interprets and makes sense of visual information.<sup>1</sup> Despite having 
             normal eyesight and healthy eyes, individuals with VPD experience difficulties processing what they 
             see.<sup>2</sup>
           </p>
@@ -67,7 +67,7 @@ export function VPDOverview({ setCurrentArticle }: VPDOverviewProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multiple Visual Processing Skills</h3>
           <p className="mb-4">
             Visual processing encompasses numerous distinct but interconnected skills.<sup>9</sup> Individuals 
-            with VPD may have deficits in one area or multiple areas, creating varied symptom profiles.<sup>10</sup> 
+            with VPD may have deficits in one area or multiple areas, creating varied symptom profiles.<sup>1</sup> 
             This complexity means VPD manifests differently across individuals.<sup>1</sup>
           </p>
         </div>

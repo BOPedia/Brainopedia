@@ -32,7 +32,7 @@ export function TwiceExceptionalLiving({ setCurrentArticle }: TwiceExceptionalLi
         <div>
           <p className="mb-4">
             Living as a twice-exceptional individual involves navigating the unique challenges and opportunities 
-            that come from possessing both exceptional abilities and significant challenges.<sup>10</sup> 
+            that come from possessing both exceptional abilities and significant challenges.<sup>1</sup> 
             Success requires self-understanding, effective strategies, supportive relationships, and environments 
             that honor both aspects of one's exceptionalities.<sup>2</sup>
           </p>
@@ -67,7 +67,7 @@ export function TwiceExceptionalLiving({ setCurrentArticle }: TwiceExceptionalLi
           <p className="mb-4">
             Many 2e individuals describe feeling "different" from both typical learners and from others who are 
             gifted or who have disabilities.<sup>9</sup> The internal experience often includes awareness of 
-            significant discrepancies between abilities and performance, leading to confusion and frustration.<sup>10</sup> 
+            significant discrepancies between abilities and performance, leading to confusion and frustration.<sup>1</sup> 
             Understanding that these feelings are common among 2e individuals can reduce isolation.<sup>1</sup>
           </p>
 

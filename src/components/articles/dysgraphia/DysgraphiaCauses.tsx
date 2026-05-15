@@ -32,7 +32,7 @@ export function DysgraphiaCauses({ setCurrentArticle }: DysgraphiaCausesProps) {
         <div>
           <p className="mb-4">
             Dysgraphia is a neurologically-based learning disability with multiple potential causes involving brain structure, 
-            genetics, and developmental factors.<sup>10</sup> Understanding these underlying causes helps inform effective 
+            genetics, and developmental factors.<sup>1</sup> Understanding these underlying causes helps inform effective 
             interventions and support strategies.<sup>2</sup>
           </p>
         </div>
@@ -65,7 +65,7 @@ export function DysgraphiaCauses({ setCurrentArticle }: DysgraphiaCausesProps) {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Reduced activation:</strong> Less activity in left hemisphere regions during writing tasks<sup>9</sup></li>
             <li className="mb-2"><strong>Connectivity differences:</strong> Altered connections between language and motor areas</li>
-            <li className="mb-2"><strong>White matter variations:</strong> Differences in neural pathways connecting brain regions<sup>10</sup></li>
+            <li className="mb-2"><strong>White matter variations:</strong> Differences in neural pathways connecting brain regions<sup>1</sup></li>
             <li className="mb-2"><strong>Cortical thickness:</strong> Variations in specific brain regions related to motor control<sup>1</sup></li>
           </ul>
 

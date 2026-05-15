@@ -37,7 +37,7 @@ export function ADHDSymptomsTabMoreA() {
               
               <p className="mb-4">
                 A comprehensive umbrella review analyzing over 1,000 studies found that ADHD is associated with significantly 
-                increased risks across multiple life domains beyond the core symptoms<sup style={{color: '#10b981'}}>10</sup>. The review identified consistent 
+                increased risks across multiple life domains beyond the core symptoms<sup style={{color: '#10b981'}}>1</sup>. The review identified consistent 
                 associations between ADHD and adverse outcomes in mental health, physical health, and social/lifestyle functioning, 
                 highlighting the importance of taking a holistic approach to ADHD management and support.
               </p>
@@ -46,7 +46,7 @@ export function ADHDSymptomsTabMoreA() {
                 <div>
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Mental Health Risks</h4>
                   <p className="text-sm mb-2">
-                    Research consistently shows strong associations between ADHD and various mental health challenges<sup style={{color: '#10b981'}}>10</sup>:
+                    Research consistently shows strong associations between ADHD and various mental health challenges<sup style={{color: '#10b981'}}>1</sup>:
                   </p>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• <strong>Addiction:</strong> Higher rates of substance use disorders (alcohol, nicotine, drugs), as well as internet, gaming, and gambling addictions</li>
@@ -444,7 +444,7 @@ export function ADHDSymptomsTabMoreA() {
                 <div className="text-sm space-y-2">
                   <p>Social difficulties are often categorized as "performance deficits" rather than "acquisition deficits."</p>
                   <p><strong>Performance Deficit:</strong> Research shows most individuals with ADHD know the social rules but struggle to 
-                  apply them in real-time due to poor inhibitory control and self-regulation.<sup className="text-[#10b981]">10</sup></p>
+                  apply them in real-time due to poor inhibitory control and self-regulation.<sup className="text-[#10b981]">1</sup></p>
                   <p><strong>Social Cognition:</strong> ADHD is linked to difficulties in responding to subtle social cues and managing emotions 
                   during reciprocal interactions.</p>
                 </div>

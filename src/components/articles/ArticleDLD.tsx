@@ -77,7 +77,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
           <p>
             <strong>Developmental Language Disorder (DLD)</strong> is a neurodevelopmental condition 
             characterized by persistent difficulties in learning, understanding, and using spoken and/or 
-            written language.<sup>10</sup> Despite normal hearing and intelligence, individuals with DLD experience 
+            written language.<sup>1</sup> Despite normal hearing and intelligence, individuals with DLD experience 
             significant challenges with language that are not explained by other conditions, representing 
             a distinct language-processing neurotype.<sup>2</sup>
           </p>
@@ -141,7 +141,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
             DLD affects multiple aspects of language with varying patterns among individuals.<sup>9</sup> Expressive 
             language difficulties include limited vocabulary, grammatical errors (verb tense mistakes, word 
             order issues), short simple sentences, word-finding difficulties, trouble organizing thoughts 
-            into coherent narratives, and challenges with abstract or figurative language.<sup>10</sup>
+            into coherent narratives, and challenges with abstract or figurative language.<sup>1</sup>
           </p>
           
           <p className="mb-4">

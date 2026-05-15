@@ -47,7 +47,7 @@ export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymp
       <div className="mb-8">
         <p className="mb-4">
           Dyslexia manifests differently across individuals and developmental stages, but certain characteristic patterns 
-          emerge.<sup>10</sup> Understanding these signs enables early identification and appropriate intervention, which 
+          emerge.<sup>1</sup> Understanding these signs enables early identification and appropriate intervention, which 
           significantly improves outcomes.<sup>2</sup> The hallmark features involve difficulties with phonological 
           processing, reading fluency, spelling, and word decoding.<sup>3</sup>
         </p>
@@ -132,7 +132,7 @@ export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymp
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Family History</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Parent, sibling, or other family member with dyslexia or reading difficulties<sup>10</sup></li>
+            <li className="mb-2">Parent, sibling, or other family member with dyslexia or reading difficulties<sup>1</sup></li>
             <li className="mb-2">Family history of language-based learning problems</li>
           </ul>
         </div>

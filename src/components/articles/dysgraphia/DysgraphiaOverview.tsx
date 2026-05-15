@@ -32,7 +32,7 @@ export function DysgraphiaOverview({ setCurrentArticle }: DysgraphiaOverviewProp
         <div>
           <p className="mb-4">
             Dysgraphia is a specific learning disability that affects writing abilities, making the physical act of 
-            writing difficult despite adequate instruction and normal intelligence.<sup>10</sup> It is one of the 
+            writing difficult despite adequate instruction and normal intelligence.<sup>1</sup> It is one of the 
             lesser-known learning disabilities but can significantly impact academic performance and daily functioning.<sup>2</sup>
           </p>
         </div>
@@ -118,7 +118,7 @@ export function DysgraphiaOverview({ setCurrentArticle }: DysgraphiaOverviewProp
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Differences</h3>
           <p className="mb-4">
             Research on gender prevalence is limited, but some studies suggest boys may be more frequently 
-            identified, possibly due to motor skill development differences.<sup>10</sup>
+            identified, possibly due to motor skill development differences.<sup>1</sup>
           </p>
         </div>
 

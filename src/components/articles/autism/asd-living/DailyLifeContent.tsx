@@ -24,7 +24,7 @@ export function DailyLifeContent({ setCurrentArticle }: DailyLifeContentProps) {
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li><strong>Verbal communication:</strong> Many are fluent but may struggle with processing speed or social pragmatics.</li>
               <li><strong>Selective mutism:</strong> Speaking in certain comfortable situations but not others.</li>
-              <li><strong>Nonspeaking:</strong> Roughly 25-30% of autistic people are nonspeaking or minimally speaking.<sup>10</sup></li>
+              <li><strong>Nonspeaking:</strong> Roughly 25-30% of autistic people are nonspeaking or minimally speaking.<sup>1</sup></li>
               <li><strong>AAC users:</strong> Utilizing tablets, letter boards, or sign language to communicate.</li>
               <li><strong>Processing time:</strong> Requiring extra time to translate spoken words into meaning.</li>
             </ul>

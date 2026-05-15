@@ -32,7 +32,7 @@ export function DLDOverview({ setCurrentArticle }: DLDOverviewProps) {
         <div>
           <p className="mb-4">
             Developmental Language Disorder (DLD) is a neurodevelopmental condition affecting the acquisition and 
-            use of language across spoken, written, and sign modalities.<sup>10</sup> Children with DLD have significant 
+            use of language across spoken, written, and sign modalities.<sup>1</sup> Children with DLD have significant 
             difficulties learning and using language that cannot be explained by other conditions such as autism, 
             intellectual disability, or hearing loss.<sup>2</sup>
           </p>
@@ -97,7 +97,7 @@ export function DLDOverview({ setCurrentArticle }: DLDOverviewProps) {
           <h4 className="font-bold mb-2">3. Mixed Receptive-Expressive DLD</h4>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Difficulties with both understanding and expression</li>
-            <li className="mb-2">Most common presentation<sup>10</sup></li>
+            <li className="mb-2">Most common presentation<sup>1</sup></li>
           </ul>
         </div>
 

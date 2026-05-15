@@ -46,7 +46,7 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
       {/* Introduction */}
       <div className="mb-8">
         <p className="mb-4">
-          Dyscalculia is a specific learning disorder that affects a person's ability to understand and work with numbers and mathematical concepts.<sup>10</sup> 
+          Dyscalculia is a specific learning disorder that affects a person's ability to understand and work with numbers and mathematical concepts.<sup>1</sup> 
           It is neurobiological in origin and characterized by difficulties with number sense, memorization of arithmetic facts, 
           accurate or fluent calculation, and mathematical reasoning.<sup>2</sup>
         </p>
@@ -125,7 +125,7 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
               <li className="mb-2"><strong>Math fact retrieval:</strong> Difficulty memorizing math facts like multiplication tables<sup>7</sup></li>
               <li className="mb-2"><strong>Procedural difficulties:</strong> Challenges with multi-step math procedures<sup>8</sup></li>
               <li className="mb-2"><strong>Neurobiological basis:</strong> Differences in brain structure and function related to numerical processing<sup>9</sup></li>
-              <li className="mb-2"><strong>Unexpected difficulty:</strong> Math challenges not explained by overall intellectual ability<sup>10</sup></li>
+              <li className="mb-2"><strong>Unexpected difficulty:</strong> Math challenges not explained by overall intellectual ability<sup>1</sup></li>
             </ul>
           </div>
 

@@ -76,7 +76,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         <div className="space-y-6">
           <p>
             <strong>Giftedness</strong> is a neurological difference characterized by advanced cognitive 
-            abilities, exceptional intensity of experience, and asynchronous development across domains.<sup>10</sup> 
+            abilities, exceptional intensity of experience, and asynchronous development across domains.<sup>1</sup> 
             Far more than simply "being smart," giftedness represents a distinct neurotype involving 
             differences in brain structure, processing speed, pattern recognition, and emotional intensity 
             that fundamentally shape how individuals perceive and interact with the world.<sup>2</sup>
@@ -150,7 +150,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           <p className="mb-4">
             A hallmark of giftedness is asynchronous development—intellectual abilities far exceed 
             chronological age while emotional, social, or physical development may align more closely with age 
-            peers, creating the "gifted paradox."<sup>10</sup> Emotional and social characteristics include heightened 
+            peers, creating the "gifted paradox."<sup>1</sup> Emotional and social characteristics include heightened 
             sensitivity and emotional depth, strong sense of justice and moral development, concern with 
             philosophical and existential questions from a young age, perfectionism and high self-expectations, 
             difficulty finding like-minded peers, and feeling "different" or not fitting in.<sup>1</sup> Psychologist 

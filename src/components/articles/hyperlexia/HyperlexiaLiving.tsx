@@ -32,7 +32,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
         <div>
           <p className="mb-4">
             Living with hyperlexia involves navigating the unique combination of exceptional reading skills alongside 
-            language comprehension and social challenges.<sup>10</sup> Outcomes vary significantly depending on the 
+            language comprehension and social challenges.<sup>1</sup> Outcomes vary significantly depending on the 
             type of hyperlexia and presence of autism or other conditions.<sup>2</sup>
           </p>
         </div>
@@ -121,7 +121,7 @@ export function HyperlexiaLiving({ setCurrentArticle }: HyperlexiaLivingProps) {
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Leveraging Reading Strength</h3>
           <p className="mb-4">
-            Career paths that utilize reading ability:<sup>10</sup>
+            Career paths that utilize reading ability:<sup>1</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2"><strong>Writing and editing:</strong> Working with text</li>

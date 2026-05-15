@@ -77,7 +77,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         <div className="space-y-6">
           <p>
             <strong>Dyscalculia</strong> is a specific learning difference that affects a person's ability to 
-            understand and work with numbers and mathematical concepts.<sup>10</sup> Often called "math dyslexia," dyscalculia 
+            understand and work with numbers and mathematical concepts.<sup>1</sup> Often called "math dyslexia," dyscalculia 
             is characterized by difficulties with number sense, mathematical reasoning, and performing mathematical 
             calculations that are inconsistent with overall cognitive abilities.<sup>2</sup>
           </p>
@@ -141,7 +141,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
             Research suggests that dyscalculia involves differences in brain areas responsible for numerical processing, 
             particularly the intraparietal sulcus and surrounding regions in the parietal lobe.<sup>9</sup> These areas are involved in 
             our basic "number sense"—the intuitive understanding of quantities and their relationships. Like other learning 
-            differences, dyscalculia has a neurological basis and tends to run in families, suggesting a genetic component.<sup>10</sup> 
+            differences, dyscalculia has a neurological basis and tends to run in families, suggesting a genetic component.<sup>1</sup> 
             Brain imaging studies have revealed differences in how individuals with dyscalculia process numerical information, 
             which helps explain why mathematical tasks that seem intuitive to others can be particularly challenging for people 
             with this condition.<sup>1</sup>

@@ -75,7 +75,7 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
         <div className="space-y-6">
           <p>
             <strong>Visual Processing Disorder</strong> is a neurological condition where the brain has 
-            difficulty interpreting and making sense of visual information, despite normal eyesight.<sup>10</sup> The 
+            difficulty interpreting and making sense of visual information, despite normal eyesight.<sup>1</sup> The 
             eyes see clearly, but the brain processes what is seen differently—creating a unique visual 
             neurotype that affects how individuals perceive and interact with the visual world.<sup>2</sup>
           </p>

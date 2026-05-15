@@ -32,7 +32,7 @@ export function VPDSupport({ setCurrentArticle }: VPDSupportProps) {
         <div>
           <p className="mb-4">
             Managing Visual Processing Disorder involves multiple approaches: environmental modifications, 
-            compensatory strategies, direct intervention, and appropriate accommodations.<sup>10</sup> Effective 
+            compensatory strategies, direct intervention, and appropriate accommodations.<sup>1</sup> Effective 
             support is individualized based on specific visual processing deficits and functional impacts.<sup>2</sup>
           </p>
         </div>
@@ -67,7 +67,7 @@ export function VPDSupport({ setCurrentArticle }: VPDSupportProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Accommodations</h3>
           <p className="mb-4">
             Formal modifications in educational or work settings ensuring equal access despite visual processing 
-            differences.<sup>9</sup> These level the playing field without lowering expectations.<sup>10</sup>
+            differences.<sup>9</sup> These level the playing field without lowering expectations.<sup>1</sup>
           </p>
         </div>
 

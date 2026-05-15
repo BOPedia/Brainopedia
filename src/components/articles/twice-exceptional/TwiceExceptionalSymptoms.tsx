@@ -32,7 +32,7 @@ export function TwiceExceptionalSymptoms({ setCurrentArticle }: TwiceExceptional
         <div>
           <p className="mb-4">
             Twice-exceptional students exhibit a complex profile of characteristics reflecting both their 
-            areas of exceptional ability and their areas of challenge.<sup>10</sup> The interplay between 
+            areas of exceptional ability and their areas of challenge.<sup>1</sup> The interplay between 
             strengths and weaknesses creates unique patterns that can make identification challenging.<sup>2</sup>
           </p>
         </div>
@@ -70,7 +70,7 @@ export function TwiceExceptionalSymptoms({ setCurrentArticle }: TwiceExceptional
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Weak Processing Speed or Working Memory</h3>
           <p className="mb-4">
-            Common among 2e students are weaknesses in processing speed, working memory, or both.<sup>10</sup> 
+            Common among 2e students are weaknesses in processing speed, working memory, or both.<sup>1</sup> 
             These processing difficulties can significantly impact academic performance despite strong reasoning 
             abilities.<sup>1</sup> Students may need more time to complete tasks or struggle to hold 
             information in mind while manipulating it.<sup>2</sup>

@@ -12,7 +12,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
 
         <p className="mb-6">
           Creating supportive environments reduces barriers and allows autistic individuals to thrive by addressing 
-          sensory needs, providing clear communication, and establishing predictable structures.<sup>10</sup>
+          sensory needs, providing clear communication, and establishing predictable structures.<sup>1</sup>
         </p>
 
         {/* Sensory Accommodations */}

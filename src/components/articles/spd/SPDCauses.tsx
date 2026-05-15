@@ -74,7 +74,7 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
           </p>
           <p className="mb-4">
             Chang and colleagues found that children with sensory processing challenges show shared white matter disruption in 
-            sensory pathways, with patterns that differ from those seen in autism spectrum disorder.<sup>10</sup> This suggests 
+            sensory pathways, with patterns that differ from those seen in autism spectrum disorder.<sup>1</sup> This suggests 
             that SPD may have distinct neurological signatures that differentiate it from other conditions.
           </p>
 
@@ -194,14 +194,14 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
           
           <p className="mb-4">
             SPD frequently co-occurs with other neurodevelopmental conditions, suggesting shared neurological pathways and 
-            overlapping pathways.<sup>10</sup>
+            overlapping pathways.<sup>1</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Autism Spectrum Disorder</h3>
           <p className="mb-4">
             A high percentage of individuals with autism spectrum disorder (70-90%) also experience significant sensory processing 
             sensory challenges.<sup>[21][8]</sup> Research has identified both shared and distinct patterns of brain connectivity 
-            in autism and SPD, suggesting overlapping but not identical neurological profiles.<sup>10</sup> Sensory symptoms are 
+            in autism and SPD, suggesting overlapping but not identical neurological profiles.<sup>1</sup> Sensory symptoms are 
             now recognized in the diagnostic criteria for autism, reflecting their significance in the autistic experience.
           </p>
 
@@ -301,7 +301,7 @@ export function SPDCauses({ setCurrentArticle }: SPDCausesProps) {
             significantly from person to person.</li>
             <li className="mb-2"><strong>Evolving understanding:</strong> Research into SPD is ongoing, and our understanding of 
             its causes continues to deepen as neuroscience advances and more studies investigate how sensory processing differences 
-            emerges. Many questions remain about the precise mechanisms and causes.<sup>10</sup></li>
+            emerges. Many questions remain about the precise mechanisms and causes.<sup>1</sup></li>
           </ul>
         </div>
       </div>

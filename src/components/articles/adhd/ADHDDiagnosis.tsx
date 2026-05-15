@@ -102,7 +102,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
 
             <p className="mb-6">
               ADHD diagnosis is based on the criteria outlined in the Diagnostic and Statistical Manual of Mental 
-              Disorders (DSM-5-TR)<sup className="text-[#10b981]">10</sup>. To receive an ADHD diagnosis, an individual must display a persistent 
+              Disorders (DSM-5-TR)<sup className="text-[#10b981]">1</sup>. To receive an ADHD diagnosis, an individual must display a persistent 
               pattern of inattention and/or hyperactivity-impulsivity that interferes with functioning or development, 
               with symptoms present before age 12, occurring in multiple settings, and not better explained by another 
               condition.
@@ -224,7 +224,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               <p className="text-sm mb-4">
                 These standardized questionnaires are completed by parents, teachers, the individual, or other observers 
                 to rate ADHD symptom frequency and severity. These tools have demonstrated reliability and validity across diverse 
-                populations<sup className="text-[#10b981]">10</sup>.
+                populations<sup className="text-[#10b981]">1</sup>.
               </p>
               
               <div className="space-y-3">
@@ -659,7 +659,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Childhood Evidence Requirement</div>
                   <div className="text-sm">
-                    DSM-5 requires symptoms to have been present before age 12.<sup className="text-[#10b981]">10</sup> This can be difficult to document decades 
+                    DSM-5 requires symptoms to have been present before age 12.<sup className="text-[#10b981]">1</sup> This can be difficult to document decades 
                     later. Clinicians may rely on report cards, adult recall, or parent interviews when available.
                   </div>
                 </div>
@@ -1158,7 +1158,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 Research shows that autism and ADHD co-occur at remarkably high rates:
               </p>
               <ul className="text-sm space-y-2 list-disc ml-4 mb-4">
-                <li><strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup className="text-[#10b981]">10</sup></li>
+                <li><strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup className="text-[#10b981]">1</sup></li>
                 <li><strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup className="text-[#10b981]">2</sup></li>
                 <li>Both conditions share genetic risk factors and neurobiological features</li>
                 <li>Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup className="text-[#10b981]">3</sup></li>

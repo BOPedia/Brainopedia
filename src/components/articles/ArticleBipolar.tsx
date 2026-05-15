@@ -52,7 +52,7 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
         <div className="space-y-6">
           <p>
             <strong>Bipolar disorder</strong> is a neurological condition characterized by significant shifts 
-            in mood, energy, and activity levels.<sup>10</sup> Increasingly viewed through a neurodivergent lens, bipolar 
+            in mood, energy, and activity levels.<sup>1</sup> Increasingly viewed through a neurodivergent lens, bipolar 
             disorder represents a distinct pattern of energy cycles, creativity, and emotional intensity rooted 
             in brain chemistry and neural processing differences.<sup>2</sup>
           </p>
@@ -119,7 +119,7 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
             Bipolar disorder involves cycles between different mood states.<sup>9</sup> Manic episodes include elevated 
             or irritable mood, increased energy and activity, decreased need for sleep, racing thoughts and 
             rapid speech, inflated self-esteem or grandiosity, impulsive or risky behaviors, and difficulty 
-            focusing.<sup>10</sup> Hypomanic episodes are similar to mania but less severe and shorter duration, often 
+            focusing.<sup>1</sup> Hypomanic episodes are similar to mania but less severe and shorter duration, often 
             experienced as highly productive and creative periods though can still involve impulsivity and 
             sleep disruption.<sup>1</sup>
           </p>

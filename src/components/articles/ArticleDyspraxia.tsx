@@ -52,7 +52,7 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
         <div className="space-y-6">
           <p>
             <strong>Dyspraxia</strong>, also known as <strong>Developmental Coordination Disorder (DCD)</strong>, 
-            is a neurological condition that affects physical coordination and movement.<sup>10</sup> Individuals with dyspraxia 
+            is a neurological condition that affects physical coordination and movement.<sup>1</sup> Individuals with dyspraxia 
             may appear clumsy or have difficulty with tasks requiring motor planning and coordination.<sup>2</sup>
           </p>
           

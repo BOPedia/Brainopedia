@@ -31,7 +31,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
       <div className="space-y-8">
         <div>
           <p className="mb-4">
-            Accurate diagnosis of dyscalculia requires comprehensive assessment by qualified professionals.<sup>10</sup> 
+            Accurate diagnosis of dyscalculia requires comprehensive assessment by qualified professionals.<sup>1</sup> 
             Early identification is critical, as intervention is most effective when started young.<sup>2</sup> However, 
             diagnosis at any age can provide valuable insights and access to appropriate support.
           </p>
@@ -72,7 +72,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
             <li className="mb-2"><strong>Mathematical problem solving:</strong> Trouble with quantitative reasoning</li>
             <li className="mb-2"><strong>Criterion B:</strong> Skills substantially below expected for chronological age<sup>9</sup></li>
             <li className="mb-2"><strong>Criterion C:</strong> Difficulties begin during school years</li>
-            <li className="mb-2"><strong>Criterion D:</strong> Not better explained by other factors (intellectual disability, vision/hearing problems, inadequate instruction)<sup>10</sup></li>
+            <li className="mb-2"><strong>Criterion D:</strong> Not better explained by other factors (intellectual disability, vision/hearing problems, inadequate instruction)<sup>1</sup></li>
           </ul>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">ICD-11 Classification</h3>

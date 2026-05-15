@@ -52,7 +52,7 @@ export function ArticleFASD({ setCurrentArticle }: ArticleFASDProps) {
         <div className="space-y-6">
           <p>
             <strong>Fetal Alcohol Spectrum Disorder (FASD)</strong> is a permanent brain-based physical 
-            disability caused by prenatal alcohol exposure.<sup>10</sup> FASD represents a spectrum of conditions with 
+            disability caused by prenatal alcohol exposure.<sup>1</sup> FASD represents a spectrum of conditions with 
             significant effects on cognition, behavior, emotional regulation, adaptive functioning, and 
             physical health.<sup>2</sup> It is the leading preventable cause of developmental disability, yet also one 
             of the most misunderstood and under-diagnosed conditions.<sup>3</sup>
@@ -101,7 +101,7 @@ export function ArticleFASD({ setCurrentArticle }: ArticleFASDProps) {
             understanding, and support.<sup>8</sup> Early diagnosis, protective factors like stable home environments, and 
             neurodiversity-affirming approaches significantly improve outcomes.<sup>9</sup> FASD is not a reflection of the 
             individual's worth or potential—it is a medical condition requiring understanding, accommodation, and 
-            support.<sup>10</sup> The spectrum includes Fetal Alcohol Syndrome (FAS), Partial FAS (pFAS), Alcohol-Related 
+            support.<sup>1</sup> The spectrum includes Fetal Alcohol Syndrome (FAS), Partial FAS (pFAS), Alcohol-Related 
             Neurodevelopmental Disorder (ARND), and Alcohol-Related Birth Defects (ARBD).<sup>1</sup>
           </p>
         </section>

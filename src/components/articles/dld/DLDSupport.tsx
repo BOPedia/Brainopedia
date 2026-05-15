@@ -32,7 +32,7 @@ export function DLDSupport({ setCurrentArticle }: DLDSupportProps) {
         <div>
           <p className="mb-4">
             Effective support for DLD involves speech-language therapy, educational interventions, and environmental 
-            modifications that target specific language difficulties.<sup>10</sup> Research shows that intensive, 
+            modifications that target specific language difficulties.<sup>1</sup> Research shows that intensive, 
             targeted intervention can significantly improve language outcomes.<sup>2</sup>
           </p>
         </div>
@@ -73,7 +73,7 @@ export function DLDSupport({ setCurrentArticle }: DLDSupportProps) {
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Narrative Intervention</h3>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Teaching story grammar (setting, characters, problem, solution)<sup>10</sup></li>
+            <li className="mb-2">Teaching story grammar (setting, characters, problem, solution)<sup>1</sup></li>
             <li className="mb-2">Retelling with support structures</li>
             <li className="mb-2">Visual supports and graphic organizers</li>
           </ul>

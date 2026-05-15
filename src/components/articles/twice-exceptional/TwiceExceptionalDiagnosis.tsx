@@ -32,7 +32,7 @@ export function TwiceExceptionalDiagnosis({ setCurrentArticle }: TwiceExceptiona
         <div>
           <p className="mb-4">
             Identifying twice-exceptional students requires comprehensive assessment that captures both 
-            exceptional abilities and disabilities.<sup>10</sup> The assessment process must look beyond 
+            exceptional abilities and disabilities.<sup>1</sup> The assessment process must look beyond 
             average performance to recognize the masking effects that make 2e identification particularly 
             challenging.<sup>2</sup>
           </p>
@@ -66,7 +66,7 @@ export function TwiceExceptionalDiagnosis({ setCurrentArticle }: TwiceExceptiona
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Single-Exception Identification</h3>
           <p className="mb-4">
             Most identification systems are designed to identify either giftedness or disability, not both.<sup>9</sup> 
-            Once students are identified with one exceptionality, the other may be overlooked.<sup>10</sup> 
+            Once students are identified with one exceptionality, the other may be overlooked.<sup>1</sup> 
             Students may receive services for their disability without gifted programming, or vice versa.<sup>1</sup>
           </p>
 

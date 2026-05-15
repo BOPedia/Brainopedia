@@ -70,7 +70,7 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Extreme discomfort with clothing tags, seams, or certain fabric textures</li>
-            <li className="mb-2">Avoidance of being touched, especially light or unexpected touch<sup>10</sup></li>
+            <li className="mb-2">Avoidance of being touched, especially light or unexpected touch<sup>1</sup></li>
             <li className="mb-2">Difficulty with grooming tasks like haircuts, nail trimming, or teeth brushing</li>
             <li className="mb-2">Strong preferences for specific clothing textures or styles</li>
             <li className="mb-2">Distress with messy activities like finger painting or playing in sand<sup>1</sup></li>
@@ -138,7 +138,7 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
             <li className="mb-2">Seems unaware of faces being dirty or clothes being twisted</li>
             <li className="mb-2">Difficulty detecting temperature changes (hot or cold)</li>
             <li className="mb-2">May not notice strong smells</li>
-            <li className="mb-2">Appears lethargic or disengaged from surroundings<sup>10</sup></li>
+            <li className="mb-2">Appears lethargic or disengaged from surroundings<sup>1</sup></li>
           </ul>
         </div>
 
@@ -312,7 +312,7 @@ export function SPDSymptoms({ setCurrentArticle }: SPDSymptomsProps) {
           <p className="mb-4">
             It's crucial to recognize that SPD presents differently in each individual. Most people with SPD experience a mix 
             of patterns—they might be over-responsive to some sensory inputs while under-responsive to others.<sup>3</sup> Sensory 
-            responses can also fluctuate based on factors like stress, fatigue, illness, or environmental context.<sup>10</sup>
+            responses can also fluctuate based on factors like stress, fatigue, illness, or environmental context.<sup>1</sup>
           </p>
           <p className="mb-4">
             Understanding an individual's specific sensory profile—which systems are affected, how they're affected, and what 

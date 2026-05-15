@@ -9,7 +9,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetic Factors</h2>
       
       <p className="mb-6 leading-relaxed text-[#0c264d]">
-        Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup className="text-green-600 font-bold ml-0.5">10</sup> However, autism genetics are extraordinarily complex and involve many different genes rather than a single "autism gene."
+        Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup className="text-green-600 font-bold ml-0.5">1</sup> However, autism genetics are extraordinarily complex and involve many different genes rather than a single "autism gene."
       </p>
 
       <ImageWithFallback 

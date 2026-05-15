@@ -18,7 +18,7 @@ export function ADHDSymptomsTabRSD() {
               Rejection Sensitive Dysphoria (RSD) is an intense emotional response to perceived or actual rejection, criticism, 
               or failure. RSD is largely a clinically-defined concept rather than one heavily studied in peer-reviewed, 
               double-blind trials. However, several studies, clinical case series, and qualitative research papers explore 
-              its mechanisms, particularly in relation to ADHD. While not an official DSM-5-TR diagnosis<sup style={{color: '#10b981'}}>10</sup>, RSD is a commonly 
+              its mechanisms, particularly in relation to ADHD. While not an official DSM-5-TR diagnosis<sup style={{color: '#10b981'}}>1</sup>, RSD is a commonly 
               reported experience among individuals with ADHD. It involves extreme emotional pain triggered by the perception 
               that one has been rejected, teased, or criticized by important people in their life, or that they have failed 
               to meet their own high standards or others' expectations.

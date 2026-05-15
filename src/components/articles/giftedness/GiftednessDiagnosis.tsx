@@ -32,7 +32,7 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
         <div>
           <p className="mb-4">
             Identifying giftedness involves multiple assessment methods, including standardized testing, 
-            behavioral observations, portfolio reviews, and performance assessments.<sup>10</sup> Comprehensive 
+            behavioral observations, portfolio reviews, and performance assessments.<sup>1</sup> Comprehensive 
             identification practices recognize diverse manifestations of giftedness and aim to reduce bias 
             in the identification process.<sup>2</sup>
           </p>
@@ -73,7 +73,7 @@ export function GiftednessDiagnosis({ setCurrentArticle }: GiftednessDiagnosisPr
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Cognitive Abilities Test (CogAT)</h3>
           <p className="mb-4">
-            The CogAT measures reasoning abilities in three domains: Verbal, Quantitative, and Nonverbal.<sup>10</sup> 
+            The CogAT measures reasoning abilities in three domains: Verbal, Quantitative, and Nonverbal.<sup>1</sup> 
             It's commonly used for group screening in schools and can identify students who may benefit 
             from gifted programming.<sup>1</sup>
           </p>

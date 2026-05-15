@@ -52,7 +52,7 @@ export function ArticleDownSyndrome({ setCurrentArticle }: ArticleDownSyndromePr
         <div className="space-y-6">
           <p>
             <strong>Down syndrome</strong> (also known as Trisomy 21) is a genetic condition caused by the 
-            presence of an extra copy of chromosome 21.<sup>10</sup> This chromosomal difference results in a distinct 
+            presence of an extra copy of chromosome 21.<sup>1</sup> This chromosomal difference results in a distinct 
             neurocognitive profile, characteristic physical features, and specific health considerations.<sup>2</sup> 
             Down syndrome represents a natural variation in human genetics and is one of the most common 
             chromosomal conditions, occurring across all racial, ethnic, and socioeconomic groups.<sup>3</sup>
@@ -115,7 +115,7 @@ export function ArticleDownSyndrome({ setCurrentArticle }: ArticleDownSyndromePr
           />
           
           <p className="mb-4">
-            Down syndrome creates a distinct pattern of cognitive strengths and challenges.<sup>10</sup> Cognitive strengths 
+            Down syndrome creates a distinct pattern of cognitive strengths and challenges.<sup>1</sup> Cognitive strengths 
             include visual learning and visual-spatial processing, social awareness and emotional intelligence, 
             learning through observation and imitation, strong long-term memory especially for faces and places, 
             and visuospatial short-term memory.<sup>[11][12]</sup> Cognitive challenges include verbal short-term memory and working 

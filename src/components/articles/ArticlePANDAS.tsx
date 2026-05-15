@@ -26,7 +26,7 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
           <p>
             <strong>PANDAS</strong> (Pediatric Autoimmune Neuropsychiatric Disorders Associated with 
             Streptococcal Infections) is a condition where a streptococcal infection triggers an autoimmune 
-            response that affects the brain, leading to sudden onset of neuropsychiatric symptoms in children.<sup>10</sup>
+            response that affects the brain, leading to sudden onset of neuropsychiatric symptoms in children.<sup>1</sup>
             This acquired brain condition represents a significant shift in how the child's brain processes 
             information and regulates behavior.<sup>2</sup>
           </p>

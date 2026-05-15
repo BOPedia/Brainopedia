@@ -53,7 +53,7 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <p>
             <strong>Chronic Traumatic Encephalopathy (CTE)</strong> is a progressive neurodegenerative 
             disease found in people with a history of repetitive head impacts, including symptomatic 
-            concussions as well as asymptomatic subconcussive hits to the head.<sup>10</sup> CTE has been most commonly 
+            concussions as well as asymptomatic subconcussive hits to the head.<sup>1</sup> CTE has been most commonly 
             found in contact sport athletes (football, boxing, hockey), military veterans, and others with 
             a history of repetitive brain trauma.<sup>2</sup>
           </p>
@@ -100,7 +100,7 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
             CTE in living individuals.<sup>7</sup> The disease is progressive, meaning symptoms worsen over time, and there is 
             currently no cure.<sup>8</sup> CTE was first described in the 1920s as "punch drunk syndrome" in boxers.<sup>9</sup> In 2002, 
             Dr. Bennet Omalu discovered CTE in former NFL player Mike Webster, bringing widespread attention to the 
-            condition in American football and other contact sports.<sup>10</sup>
+            condition in American football and other contact sports.<sup>1</sup>
           </p>
           
           <p className="mb-4">
