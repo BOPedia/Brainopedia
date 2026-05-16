@@ -33,7 +33,7 @@ export function ArticleAbout() {
           <h3 className="font-bold text-lg mb-2">Detailed Volumes</h3>
           <p className="text-sm text-gray-600">Referenced statistics and cited research throughout.</p>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[#ffd166 childhood-onset]">
+        <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[#ffd166]">
           <BookOpen className="w-8 h-8 text-[#ffd166] mb-4" />
           <h3 className="font-bold text-lg mb-2">Comprehensive Info</h3>
           <p className="text-sm text-gray-600">Coverage spanning symptoms, diagnosis, and treatment.</p>
@@ -58,7 +58,6 @@ export function ArticleAbout() {
           loop
           muted
           playsInline
-          {/* aspect-[9/16] locks the portrait dimensions cleanly, and max-w-[360px] keeps it looking great on desktop viewports */}
           className="w-full max-w-[360px] aspect-[9/16] object-cover rounded-2xl shadow-md border-2 border-[#0c264d] border-opacity-10"
         />
       </div>
