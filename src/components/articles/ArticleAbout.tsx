@@ -51,10 +51,10 @@ export function ArticleAbout() {
           <p className="text-sm text-gray-600">Six main topics organized by clear categories.</p>
         </div>
 
-        {/* Card 4: Standard Gold */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[#ffd700]">
-          <Users className="w-8 h-8 text-[#ffd700] mb-4" />
-          <h3 className="font-bold text-[#ffd700] text-lg mb-2">Respectful & Accessible</h3>
+        {/* Card 4: Navy */}
+        <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[#0c264d]">
+          <Users className="w-8 h-8 text-[#0c264d] mb-4" />
+          <h3 className="font-bold text-[#0c264d] text-lg mb-2">Respectful & Accessible</h3>
           <p className="text-sm text-gray-600">Emphasizing strengths alongside challenges.</p>
         </div>
       </div>
