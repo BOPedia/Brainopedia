@@ -4,26 +4,27 @@ import { BookOpen, List, Users, FileText, Target } from 'lucide-react';
 export function ArticleAbout() {
   return (
     <article className="bg-[#f0f9ff] -m-8 p-4 sm:p-8 rounded-lg font-spartan text-[#0c264d]">
-      <h1 className="pb-4 border-b-2 border-[#0c264d] mb-8 text-3xl font-bold">
+      <h1 className="pb-4 border-b-2 border-[#0c264d] mb-12 text-3xl font-bold">
         About Brainopedia
       </h1>
 
-      <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-        <div>
-          <h2 className="text-2xl font-bold mb-4">Our Approach</h2>
-          <p className="leading-relaxed mb-6 text-lg">
+      {/* Our Approach Section */}
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+        <div className="lg:col-span-8 space-y-4">
+          <h2 className="text-2xl font-bold text-[#0c264d]">Our Approach</h2>
+          <p className="leading-relaxed text-lg">
             Brainopedia is an innovative online encyclopedia dedicated to neurodivergent conditions. 
             The aim is to make learning about neurodivergence informative, respectful, and accessible to all.
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="lg:col-span-4 flex justify-center pt-10">
           <img 
             src="/images/home-brain-on-book.png" 
             alt="Brainopedia Concept"
-            className="w-64 max-w-lg rounded-2xl shadow-lg rotate-2 hover:rotate-0 transition-transform duration-500"
+            className="w-48 h-auto rounded-2xl shadow-lg rotate-2 hover:rotate-0 transition-transform duration-500"
           />
         </div>
-      </div>
+      </section>
 
       {/* Pop-out White Cards */}
       <div className="grid sm:grid-cols-2 gap-6 mb-16">
@@ -32,7 +33,7 @@ export function ArticleAbout() {
           <h3 className="font-bold text-lg mb-2">Detailed Volumes</h3>
           <p className="text-sm text-gray-600">Referenced statistics and cited research throughout.</p>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[#ffd166]">
+        <div className="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[#ffd166 childhood-onset]">
           <BookOpen className="w-8 h-8 text-[#ffd166] mb-4" />
           <h3 className="font-bold text-lg mb-2">Comprehensive Info</h3>
           <p className="text-sm text-gray-600">Coverage spanning symptoms, diagnosis, and treatment.</p>
@@ -49,15 +50,16 @@ export function ArticleAbout() {
         </div>
       </div>
 
-      {/* Animated MP4 Photo Reel Container */}
-      <div className="w-full flex justify-center mb-16">
+      {/* 540x960 Portrait MP4 Video Container */}
+      <div className="w-full flex justify-center mb-16 pt-4">
         <video
           src="/images/photo-reel.mp4"
           autoPlay
           loop
           muted
           playsInline
-          className="w-full max-w-2xl rounded-2xl shadow-md border-2 border-[#0c264d] border-opacity-10"
+          {/* aspect-[9/16] locks the portrait dimensions cleanly, and max-w-[360px] keeps it looking great on desktop viewports */}
+          className="w-full max-w-[360px] aspect-[9/16] object-cover rounded-2xl shadow-md border-2 border-[#0c264d] border-opacity-10"
         />
       </div>
 
