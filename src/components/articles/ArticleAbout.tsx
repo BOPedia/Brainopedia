@@ -62,7 +62,7 @@ export function ArticleAbout() {
       {/* PORTRAIT VIDEO: Imported from assets for bulletproof rendering */}
       <div className="w-full flex justify-center mb-16 pt-4">
         <video
-          src={photoReel}
+          src="/images/photo-reel.mp4"
           autoPlay
           loop
           muted
