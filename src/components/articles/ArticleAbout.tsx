@@ -8,20 +8,20 @@ export function ArticleAbout() {
         About Brainopedia
       </h1>
 
-      {/* Our Approach Section */}
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
-        <div className="lg:col-span-8 space-y-4">
+      {/* FIXED: 50/50 Grid layout and enlarged image to completely eliminate top white gaps */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="space-y-4">
           <h2 className="text-2xl font-bold text-[#0c264d]">Our Approach</h2>
           <p className="leading-relaxed text-lg">
             Brainopedia is an innovative online encyclopedia dedicated to neurodivergent conditions. 
             The aim is to make learning about neurodivergence informative, respectful, and accessible to all.
           </p>
         </div>
-        <div className="lg:col-span-4 flex justify-center pt-10">
+        <div className="flex justify-center">
           <img 
             src="/images/home-brain-on-book.png" 
             alt="Brainopedia Concept"
-            className="w-48 h-auto rounded-2xl shadow-lg rotate-2 hover:rotate-0 transition-transform duration-500"
+            className="w-80 md:w-96 h-auto rounded-2xl shadow-lg rotate-2 hover:rotate-0 transition-transform duration-500"
           />
         </div>
       </section>
@@ -50,16 +50,18 @@ export function ArticleAbout() {
         </div>
       </div>
 
-      {/* 540x960 Portrait MP4 Video Container */}
+      {/* FIXED: Multi-browser compliant video element structure to force frames to render */}
       <div className="w-full flex justify-center mb-16 pt-4">
         <video
-          src="/images/photo-reel.mp4"
           autoPlay
           loop
           muted
           playsInline
           className="w-full max-w-[360px] aspect-[9/16] object-cover rounded-2xl shadow-md border-2 border-[#0c264d] border-opacity-10"
-        />
+        >
+          <source src="/images/photo-reel.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       {/* Mission Footer Section */}
