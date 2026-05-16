@@ -20,7 +20,7 @@ export function ArticleAbout() {
           <img 
             src="/images/home-brain-on-book.png" 
             alt="Brainopedia Concept"
-            className="w-full max-w-lg rounded-2xl shadow-lg rotate-2 hover:rotate-0 transition-transform duration-500"
+            className="w-64 max-w-lg rounded-2xl shadow-lg rotate-2 hover:rotate-0 transition-transform duration-500"
           />
         </div>
       </div>
@@ -47,6 +47,18 @@ export function ArticleAbout() {
           <h3 className="font-bold text-lg mb-2">Respectful & Accessible</h3>
           <p className="text-sm text-gray-600">Emphasizing strengths alongside challenges.</p>
         </div>
+      </div>
+
+      {/* Animated MP4 Photo Reel Container */}
+      <div className="w-full flex justify-center mb-16">
+        <video
+          src="/images/photo-reel.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full max-w-2xl rounded-2xl shadow-md border-2 border-[#0c264d] border-opacity-10"
+        />
       </div>
 
       {/* Mission Footer Section */}
