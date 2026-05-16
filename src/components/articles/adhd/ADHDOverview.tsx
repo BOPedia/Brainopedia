@@ -40,7 +40,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           </div>
           <div className="lg:col-span-4 flex justify-center pt-10">
             <ImageWithFallback 
-              src="/images/adhd/adhd-overview-colors-bolt.png"
+              src="/images/adhd/adhd-overview-squirrel.png"
               alt="ADHD Overview Visual"
               className="w-64 h-auto rounded-lg shadow-sm"
             />
