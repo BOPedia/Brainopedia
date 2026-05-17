@@ -256,62 +256,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
-      
-      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
-        
-        {/* CITED STUDIES: GREEN */}
-        <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-            Cited Studies & Statistics
-          </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Reuben, C., & Elgaddal, N. (2024). "Attention-Deficit/Hyperactivity Disorder in Children Ages 5–17 Years: United States, 2020–2022." <i>NCHS Data Brief</i>, No. 499. National Center for Health Statistics.
-            </li>
-            <li>
-              Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review of evidence generated across the globe." <i>Psychiatry Research</i>, 328, 115449.
-            </li>
-            <li>
-              Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <i>Molecular Psychiatry</i>, 24(4), 562-575.
-            </li>
-            <li>
-              Cortese, S., et al. (2024). "Efficacy and safety of ADHD medications: A comprehensive meta-analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 63(2), 192-208.
-            </li>
-            <li>
-              Cortese, S., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults." <i>The Lancet Psychiatry</i>, 5(9), 727-738.
-            </li>
-          </ol>
-        </div>
-        
-        {/* BACKGROUND SOURCES: CYAN */}
-        <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
-            Background Sources
-          </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
-            <li>
-              American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).
-            </li>
-            <li>
-              Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.
-            </li>
-            <li>
-              American Psychiatric Association. (2025). "New Research: Understanding Adult ADHD Challenges." Psychiatry.org.
-            </li>
-            <li>
-              Faraone, S. V., Biederman, J., & Mick, E. (2006). "The age-dependent decline of attention deficit hyperactivity disorder: A meta-analysis of follow-up studies." <i>Psychological Medicine</i>, 36(2), 159-165.
-            </li>
-            <li>
-              Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press.
-            </li>
-            <li>
-              Polanczyk, G. V., et al. (2014). "ADHD prevalence estimates across three decades." <i>International Journal of Epidemiology</i>, 43(2), 434-442.
-            </li>
-          </ul>
-        </div>
-      </div>
+
     </article>
   );
 }

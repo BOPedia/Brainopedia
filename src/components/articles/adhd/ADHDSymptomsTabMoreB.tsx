@@ -230,7 +230,7 @@ export function ADHDSymptomsTabMoreB({ setCurrentArticle }: TabMoreBProps) {
         </p>
       </div>
 
-{/* ===== REFERENCES SECTION ===== */}
+      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
@@ -290,12 +290,12 @@ export function ADHDSymptomsTabMoreB({ setCurrentArticle }: TabMoreBProps) {
           </ol>
         </div>
         
-        {/* BACKGROUND SOURCES: CYAN */}
+        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
               American Psychiatric Association. (2022). Diagnostic and statistical manual of mental disorders (5th ed., text rev.).
             </li>
