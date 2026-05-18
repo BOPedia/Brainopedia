@@ -80,14 +80,14 @@ export function CurrentResearch({ setCurrentArticle }: CurrentResearchProps) {
           While understanding autism's causes is scientifically significant, many in the autistic community emphasize that autism is not a disease requiring a "cure" but a neurological difference requiring <strong>acceptance, accommodation, and support.</strong> 
         </p>
       </div>
-
-      {/* ===== REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      
+{/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        {/* CITED STUDIES: GREEN (Notice the mb-6 here separating it from the Cyan section!) */}
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
@@ -105,7 +105,7 @@ export function CurrentResearch({ setCurrentArticle }: CurrentResearchProps) {
           </ol>
         </div>
         
-        {/* BACKGROUND SOURCES: CYAN */}
+        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
@@ -123,7 +123,7 @@ export function CurrentResearch({ setCurrentArticle }: CurrentResearchProps) {
           </ul>
         </div>
       </div>
-      
-    </div>
+     </div>
+  
   );
 }
