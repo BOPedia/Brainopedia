@@ -1,7 +1,6 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-import { ASDReferences } from './autism/ASDReferences';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 
 interface ArticleAutismProps {
@@ -62,13 +61,6 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
 
   return (
     <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
       <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
         Autism Spectrum Disorder (ASD)
       </h1>
@@ -114,7 +106,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
               className="w-48 h-auto float-right ml-4 mb-4 rounded"
             />
             Autism is a lifelong neurodevelopmental condition that affects how people perceive the world and interact 
-            with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup style={{color: '#10b981'}}>1</sup> with 
+            with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup className="text-green-600 font-bold ml-0.5">1</sup> with 
             increasing recognition and diagnosis rates in recent years. It's important to recognize that autism is 
             not a disease or disorder that needs to be "cured."
           </p>
@@ -177,11 +169,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
               alt="Autism Causes and Origins"
               className="w-48 h-auto float-right ml-4 mb-4 rounded"
             />
-            The exact causes of autism are not fully understood, but research indicates that both genetic and environmental factors contribute to its development.<sup style={{color: '#10b981'}}>2</sup> Autism is best understood as arising from differences in brain development that occur before birth. Studies have identified hundreds of genes associated with autism, though no single gene causes autism in most cases.<sup style={{color: '#10b981'}}>3</sup>
+            The exact causes of autism are not fully understood, but research indicates that both genetic and environmental factors contribute to its development.<sup className="text-green-600 font-bold ml-0.5">2</sup> Autism is best understood as arising from differences in brain development that occur before birth. Studies have identified hundreds of genes associated with autism, though no single gene causes autism in most cases.<sup className="text-green-600 font-bold ml-0.5">3</sup>
           </p>
           
           <p className="mb-4">
-            Brain imaging studies have revealed differences in brain structure and connectivity in autistic individuals, particularly in areas related to social cognition, sensory processing, and executive function.<sup style={{color: '#10b981'}}>4</sup> These neurological differences help explain why autistic people may process information, perceive sensory input, and interact socially in ways that differ from neurotypical individuals.
+            Brain imaging studies have revealed differences in brain structure and connectivity in autistic individuals, particularly in areas related to social cognition, sensory processing, and executive function.<sup className="text-green-600 font-bold ml-0.5">4</sup> These neurological differences help explain why autistic people may process information, perceive sensory input, and interact socially in ways that differ from neurotypical individuals.
           </p>
           <button
             onClick={(e) => {
@@ -203,11 +195,11 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
               alt="Autism Testing and Diagnosis"
               className="w-48 h-auto float-right ml-4 mb-4 rounded"
             />
-            Autism is typically diagnosed through comprehensive developmental and behavioral evaluation by qualified professionals such as developmental pediatricians, child psychologists, or neurologists. There is no medical test (like a blood test or brain scan) for autism; diagnosis is based on observation of behavior and developmental history using standardized diagnostic criteria from the DSM-5-TR.<sup style={{color: '#10b981'}}>5</sup>
+            Autism is typically diagnosed through comprehensive developmental and behavioral evaluation by qualified professionals such as developmental pediatricians, child psychologists, or neurologists. There is no medical test (like a blood test or brain scan) for autism; diagnosis is based on observation of behavior and developmental history using standardized diagnostic criteria from the DSM-5-TR.<sup className="text-green-600 font-bold ml-0.5">5</sup>
           </p>
           
           <p className="mb-4">
-            While autism can often be reliably diagnosed by age 2, many children are not diagnosed until they are older, and some adults are diagnosed later in life after years of unrecognized struggles. The DSM-5-TR includes three levels of support needs (Level 1, 2, and 3)<sup style={{color: '#10b981'}}>5</sup> to help describe the amount of assistance an individual may require in daily functioning.
+            While autism can often be reliably diagnosed by age 2, many children are not diagnosed until they are older, and some adults are diagnosed later in life after years of unrecognized struggles. The DSM-5-TR includes three levels of support needs (Level 1, 2, and 3)<sup className="text-green-600 font-bold ml-0.5">5</sup> to help describe the amount of assistance an individual may require in daily functioning.
           </p>
           <button
             onClick={(e) => {
@@ -286,7 +278,51 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
         </section>
       </div>
 
-      <ASDReferences />
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+      
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References: Autism Overview</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Centers for Disease Control and Prevention. (2023). "Data & Statistics on Autism Spectrum Disorder." U.S. Department of Health and Human Services.
+            </li>
+            <li>
+              Sandin, S., et al. (2014). "The familial risk of autism." <i>JAMA</i>, 311(17), 1770-1777.
+            </li>
+            <li>
+              De Rubeis, S., et al. (2014). "Synaptic, transcriptional and chromatin genes disrupted in autism." <i>Nature</i>, 515(7526), 209-215.
+            </li>
+            <li>
+              Courchesne, E., et al. (2011). "Brain growth across the life span in autism: age-specific changes in anatomical pathology." <i>Brain Research</i>, 1380, 138-145.
+            </li>
+            <li>
+              American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.).
+            </li>
+          </ol>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <li>
+              Autistic Self Advocacy Network (ASAN). "About Autism." National advocacy organization run by and for autistic individuals.
+            </li>
+            <li>
+              National Institute of Mental Health (NIMH). (2023). "Autism Spectrum Disorder." National Institutes of Health.
+            </li>
+          </ul>
+        </div>
+      </div>
     </article>
   );
 }

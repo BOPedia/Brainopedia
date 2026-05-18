@@ -1,5 +1,5 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { ASDOverviewReferences } from '../../references/ASDOverviewReferences';
+
 
 interface ASDOverviewProps {
   setCurrentArticle?: (article: string) => void;
@@ -703,7 +703,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
 
       <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <ASDOverviewReferences />
+
       </div>
 
     </article>
