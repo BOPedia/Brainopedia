@@ -68,7 +68,7 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
               Mottron, L. (2011). "Changing perceptions: The power of autism." <i>Nature</i>, 479(7371), 33-35.
             </li>
