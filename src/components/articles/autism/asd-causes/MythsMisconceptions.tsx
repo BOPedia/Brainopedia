@@ -141,7 +141,7 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
           <h4 className="text-sm uppercase tracking-wider text-cyan-600 font-bold mb-3 border-b border-cyan-600 border-opacity-20 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed pl-2">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
               Institute of Medicine (US) Immunization Safety Review Committee. (2004). <i>Immunization Safety Review: Vaccines and Autism</i>. National Academies Press.
             </li>
