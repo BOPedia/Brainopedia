@@ -1,5 +1,5 @@
+import React from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-
 
 interface ASDOverviewProps {
   setCurrentArticle?: (article: string) => void;
@@ -9,14 +9,6 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
   return (
     
     <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
-
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex items-center justify-between">
         <h1 className="text-3xl">
           Autism: Overview
@@ -51,8 +43,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             </p>
             
             <p className="mb-4 leading-relaxed font-spartan text-[#0c264d]">
-              ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,
-              <sup className="text-green-600 font-bold ml-0.5">1</sup> representing a significant 
+              ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup className="text-green-600 font-bold ml-0.5">1</sup> representing a significant 
               increase in diagnosis rates over the past two decades. This increase is largely 
               attributed to improved awareness, expanded diagnostic criteria, and better identification 
               rather than a true increase in prevalence.
@@ -405,7 +396,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Current Prevalence</h3>
             
             <p className="mb-3">
-              As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the United States.<sup>1</sup> This represents a substantial increase from 1 in 150 in 2000.
+              As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the United States.<sup className="text-green-600 font-bold ml-0.5">1</sup> This represents a substantial increase from 1 in 150 in 2000.
             </p>
             
             <div className="bg-[#ffd166] p-3 rounded-md mt-3">
@@ -420,7 +411,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
           <div className="bg-white p-5 rounded-md border-2 border-[#0c264d] mb-6">
             <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Differences</h3>
             <p className="mb-3">
-              Autism is diagnosed more frequently in males than females, with ratios typically reported around <strong>3-4:1</strong>.<sup>2</sup> 
+              Autism is diagnosed more frequently in males than females, with ratios typically reported around <strong>3-4:1</strong>.<sup className="text-green-600 font-bold ml-0.5">2</sup> 
               However, research suggests this reflects diagnostic bias—females may be underdiagnosed because they often 
               present differently, "camouflage" symptoms more effectively, and don't match stereotypical autism presentations.
             </p>
@@ -509,7 +500,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <p className="font-bold mb-3 text-red-600">Important: These DO NOT cause autism:</p>
             <div className="space-y-2">
               <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ Vaccines</strong> — This has been thoroughly debunked by extensive research<sup>3</sup></div>
+                <div className="text-sm"><strong>✗ Vaccines</strong> — This has been thoroughly debunked by extensive research<sup className="text-green-600 font-bold ml-0.5">3</sup></div>
               </div>
               <div className="border-l-2 border-red-500 pl-3">
                 <div className="text-sm"><strong>✗ Parenting Style</strong> — The "refrigerator mother" theory has been completely discredited</div>
@@ -547,17 +538,17 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <div className="space-y-4">
               <div className="border-l-2 border-[#2abcd4] pl-4">
                 <div className="font-bold text-[#0c264d]">1943</div>
-                <div className="text-sm">Leo Kanner published the first description of "early infantile autism"<sup>4</sup></div>
+                <div className="text-sm">Leo Kanner published the first description of "early infantile autism"<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
               </div>
               
               <div className="border-l-2 border-[#2abcd4] pl-4">
                 <div className="font-bold text-[#0c264d]">1944</div>
-                <div className="text-sm">Hans Asperger described "autistic psychopathy" in children (now known as Asperger syndrome)<sup>5</sup></div>
+                <div className="text-sm">Hans Asperger described "autistic psychopathy" in children (now known as Asperger syndrome)<sup className="text-green-600 font-bold ml-0.5">5</sup></div>
               </div>
               
               <div className="border-l-2 border-red-500 pl-4">
                 <div className="font-bold text-[#0c264d]">1960s-1980s</div>
-                <div className="text-sm">Harmful "refrigerator mother" theory blamed parents<sup>6</sup></div>
+                <div className="text-sm">Harmful "refrigerator mother" theory blamed parents<sup className="text-green-600 font-bold ml-0.5">6</sup></div>
               </div>
               
               <div className="border-l-2 border-[#2abcd4] pl-4">
@@ -701,11 +692,54 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         </button>
       </div>
 
-      <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+      
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References: Autism Overview</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Centers for Disease Control and Prevention. (2023). "Data & Statistics on Autism Spectrum Disorder." U.S. Department of Health and Human Services.
+            </li>
+            <li>
+              Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.
+            </li>
+            <li>
+              Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: an evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.
+            </li>
+            <li>
+              Kanner, L. (1943). "Autistic disturbances of affective contact." <i>Nervous Child</i>, 2, 217-250.
+            </li>
+            <li>
+              Asperger, H. (1944). "Die 'Autistischen Psychopathen' im Kindesalter." <i>Archiv für Psychiatrie und Nervenkrankheiten</i>, 117(1), 76-136.
+            </li>
+            <li>
+              Silverman, C. (2012). <i>Understanding Autism: Parents, Doctors, and the History of a Disorder</i>. Princeton University Press.
+            </li>
+          </ol>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <li>
+              Autistic Self Advocacy Network (ASAN). "About Autism." National advocacy organization run by and for autistic individuals.
+            </li>
+            <li>
+              American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.).
+            </li>
+          </ul>
+        </div>
       </div>
-
     </article>
   );
 }

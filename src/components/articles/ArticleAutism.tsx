@@ -195,7 +195,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
               alt="Autism Testing and Diagnosis"
               className="w-48 h-auto float-right ml-4 mb-4 rounded"
             />
-            Autism is typically diagnosed through comprehensive developmental and behavioral evaluation by qualified professionals such as developmental pediatricians, child psychologists, or neurologists. There is no medical test (like a blood test or brain scan) for autism; diagnosis is based on observation of behavior and developmental history using standardized diagnostic criteria from the DSM-5-TR.<sup className="text-green-600 font-bold ml-0.5">5</sup>
+            Autism is typically diagnosed through comprehensive developmental and behavioral evaluation by qualified professionals such as developmental pediatricians, child psychologists, or neurologists. There is no medical test (like a blood test or brain scan) for autism. Diagnosis is based on observation of behavior and developmental history using standardized diagnostic criteria from the DSM-5-TR, among other gold standard measures.<sup className="text-green-600 font-bold ml-0.5">5</sup>
           </p>
           
           <p className="mb-4">
