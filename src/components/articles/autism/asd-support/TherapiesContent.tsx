@@ -14,7 +14,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
       <div className="text-center w-full mb-8"> 
         <p className="text-[#0c264d] mb-4 italic"></p> 
-        <div className="mx-auto w-full max-w-xl px-4"> 
+       <div className="mx-auto w-48 md:w-64">
           <ImageWithFallback 
             src="/images/autism/autism-support-TTtab-acronyms.png" 
             alt="4 examples of therapies with acronyms"
