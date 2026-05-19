@@ -21,7 +21,7 @@ export function SafetyContent({ setCurrentArticle }: SafetyContentProps) {
         <div className="text-center w-full mb-10 mt-6"> 
           <div className="mx-auto w-full max-w-2xl px-4"> 
             <ImageWithFallback 
-              src="/images/autism/autism-support-safetytab-prism.png" 
+              src="/images/autism/autism-support-Safetytab-prism.png" 
               alt="Autism Safety Prism diagram showing risks across childhood, adolescence, and adulthood"
             /> 
           </div> 
