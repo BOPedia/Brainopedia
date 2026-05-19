@@ -98,7 +98,7 @@ export function OverviewContent({ setCurrentArticle }: OverviewContentProps) {
           </h4>
           <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
             <li>
-              Leadbitter, K., Buckle, K. L., Ellis, C., & Dekker, M. (2021). "Autistic Self-Advocacy and the Neurodiversity Movement: Implications for Autism Early Intervention and Research." <i>Frontiers in Psychology</i>, 12, 635690.
+              Leadbitter, K., Buckle, K. L., Ellis, C., & Dekker, M. (2021). "Autistic Self-Advocacy and the Neurodiversity Movement: Implications for Autism Early Intervention Research and Practice." <i>Frontiers in Psychology</i>, 12, 635690. https://doi.org/10.3389/fpsyg.2021.635690
             </li>
             <li>
               Biklen, D., & Burke, J. (2006). "Presuming Competence." <i>Equity & Excellence in Education</i>, 39(2), 166-175.

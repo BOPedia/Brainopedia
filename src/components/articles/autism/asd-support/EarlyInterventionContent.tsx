@@ -1,3 +1,4 @@
+import React from 'react';
 import { ImageWithFallback } from "../../../figma/ImageWithFallback";
 
 interface EarlyInterventionContentProps {
@@ -13,20 +14,20 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
         <p className="mb-6">
           Early intervention services can significantly impact developmental trajectories for autistic children. 
           A person-centered approach focuses on understanding symptoms, implementing effective strategies, and 
-          connecting with appropriate services to improve individual lives.<sup>3</sup>
+          connecting with appropriate services to improve individual lives.<sup className="text-green-600 font-bold ml-0.5">1</sup>
         </p>
     
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
       <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"></p> 
-        {/* The Wrapper: Centers the image and restricts its width */} 
-        <div className="mx-auto w-48 md:w-64"> 
+        {/* The Wrapper: Expanded to max-w-2xl for a much larger, readable display */} 
+        <div className="mx-auto w-full max-w-2xl px-4"> 
           <ImageWithFallback 
             src="/images/autism/autism-support-EarlyIntervtab-ages0to3.png" 
             alt="arrows surrounding brain symbolizing early intervention"
           /> 
         </div> 
       </div>
+      
         {/* Early Intervention Services */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Early Intervention Services</h3>
@@ -38,7 +39,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 Part C of IDEA provides early intervention services for infants and toddlers with developmental 
-                delays, ages 0-3<sup>4</sup>
+                delays, ages 0-3.<sup className="text-green-600 font-bold ml-0.5">2</sup>
               </p>
             </div>
 
@@ -48,7 +49,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 A service coordinator helps families navigate services and develop an Individualized Family 
-                Service Plan (IFSP)<sup>5</sup>
+                Service Plan (IFSP).<sup className="text-green-600 font-bold ml-0.5">2</sup>
               </p>
             </div>
 
@@ -58,7 +59,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 Services often delivered in the child's natural environment—home, daycare, or community 
-                settings<sup>6</sup>
+                settings.<sup className="text-green-600 font-bold ml-0.5">2</sup>
               </p>
             </div>
 
@@ -68,7 +69,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
               <p className="text-sm">
                 Teaching parents and caregivers strategies to support development throughout daily routines 
-                and activities<sup>7</sup>
+                and activities.<sup className="text-green-600 font-bold ml-0.5">3</sup>
               </p>
             </div>
           </div>
@@ -83,8 +84,8 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             <ul className="space-y-1 text-xs">
               <li>• Early Start Denver Model (ESDM)</li>
               <li>• Pivotal Response Treatment (PRT)</li>
-              <li>• Naturalistic Developmental Behavioral Interventions (NDBIs)</li>
-              <li>• Project ImPACT (parent-mediated intervention)<sup>[8][9]</sup></li>
+              <li>• Naturalistic Developmental Behavioral Interventions (NDBIs)<sup className="text-green-600 font-bold ml-0.5">4</sup></li>
+              <li>• Project ImPACT (parent-mediated intervention)<sup className="text-green-600 font-bold ml-0.5">5</sup></li>
             </ul>
           </div>
         </div>
@@ -96,14 +97,13 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           </div>
           <p className="text-[#0c264d] text-sm">
             Research shows that early, intensive intervention can improve outcomes, though every child's response is 
-            individual.<sup>1</sup>
+            individual.<sup className="text-green-600 font-bold ml-0.5">6</sup>
           </p>
         </div>
 
-      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+      {/* --- CENTERED GRAPHIC SECTION 2 --- */} 
       <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"></p> 
-        {/* The Wrapper: Centers the image, makes it responsive, and sets a large maximum limit */} 
+        {/* The Wrapper: Expanded to max-w-2xl to display the roadmap largely and clearly */} 
         <div className="mx-auto w-full max-w-2xl px-4"> 
           <ImageWithFallback 
             src="/images/autism/autism-support-EarlyIntervtab-ResStartegies.png" 
@@ -111,7 +111,6 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           /> 
         </div> 
       </div>
-
 
         {/* Researching Strategies */}
         <div className="bg-[#e0f7fa] p-6 rounded-lg mb-8">
@@ -124,8 +123,6 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white p-4 rounded-md shadow-sm">
-              <div className="text-center mb-3">
-              </div>
               <h4 className="text-[#0c264d] font-bold mb-2 text-center">Medically Driven</h4>
               <ul className="space-y-1 text-xs">
                 <li>• Evidence-based methods</li>
@@ -136,8 +133,6 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             </div>
 
             <div className="bg-white p-4 rounded-md shadow-sm">
-              <div className="text-center mb-3">
-              </div>
               <h4 className="text-[#0c264d] font-bold mb-2 text-center">Educational & Social</h4>
               <ul className="space-y-1 text-xs">
                 <li>• School-based supports</li>
@@ -172,7 +167,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
 
           <div className="space-y-4">
             <div className="flex items-start gap-3">
-              <div className="bg-[#10b981] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">10</div>
+              <div className="bg-[#10b981] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">1</div>
               <div className="flex-1">
                 <div className="font-bold text-[#0c264d] mb-1">Early Intervention (Ages 0-3)</div>
                 <div className="text-sm">Diagnosis, Part C services, IFSP development, home-based supports, 
@@ -180,10 +175,10 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               </div>
             </div>
 
-<div className="flex items-start gap-3">
+            <div className="flex items-start gap-3">
               <div className="bg-[#2abcd4] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">2</div>
               <div className="flex-1">
-                <div className="font-bold text-[#0c264d] mb-1">School Years (Ages 3-21)<sup>1, 2</sup></div>
+                <div className="font-bold text-[#0c264d] mb-1">School Years (Ages 3-21)<sup className="text-green-600 font-bold ml-0.5">7</sup></div>
                 <div className="text-sm">IEP development, special education services, classroom accommodations, 
                 therapies, and educational supports.</div>
               </div>
@@ -303,6 +298,17 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               {' '}which includes a comprehensive Symptoms Wheel visual guide to understanding autistic experiences across all areas.
             </p>
           </div>
+          
+      {/* --- CENTERED GRAPHIC SECTION 3 --- */} 
+      <div className="text-center w-full mb-8"> 
+        {/* The Wrapper: Expanded to max-w-2xl to display the roadmap clearly */} 
+        <div className="mx-auto w-full max-w-2xl px-4"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-support-EarlyIntervtab-road-thru-the-years.png" 
+            alt="road symbolizing autism journey"
+          /> 
+        </div> 
+      </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
@@ -355,21 +361,10 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           <p className="text-sm">
             Research shows that early, intensive intervention can improve outcomes, though every child's 
             response is individual. The most effective programs are family-centered, delivered in natural 
-            environments, and respect the child's neurodivergent development.<sup>1</sup>
+            environments, and respect the child's neurodivergent development.<sup className="text-green-600 font-bold ml-0.5">6</sup>
           </p>
         </div>
-      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
-      <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"></p> 
-        {/* The Wrapper: Centers the image, makes it responsive, and sets a large maximum limit */} 
-        <div className="mx-auto w-full max-w-xl px-4"> 
 
-          <ImageWithFallback 
-            src="/images/autism/autism-support-EarlyIntervtab-road-thru-the-years.png" 
-            alt="road symbolizing autism journey"
-          /> 
-        </div> 
-      </div>
         {/* Key Principle Callout */}
         <div className="bg-[#ffd166] border-2 border-[#0c264d] p-5 rounded-lg shadow-md">
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg flex items-center gap-2">
@@ -381,6 +376,58 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             is to enhance quality of life and help children reach their individual potential, not to make 
             them less autistic.
           </p>
+        </div>
+      </div>
+
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+      
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Whitehouse, A., et al. (2021). "A randomized controlled trial of a pre-emptive intervention for infants at high clinical risk for autism." <i>JAMA Pediatrics</i>, 175(11).
+            </li>
+            <li>
+              U.S. Department of Education. (2023). "Individuals with Disabilities Education Act (IDEA) Part C: Infants and Toddlers with Disabilities." <i>ED.gov</i>.
+            </li>
+            <li>
+              Oono, I. P., Honey, E. J., & McConachie, H. (2013). "Parent-mediated early intervention for young children with autism spectrum disorders (ASD)." <i>Cochrane Database of Systematic Reviews</i>, (4).
+            </li>
+            <li>
+              Schreibman, L., et al. (2015). "Naturalistic Developmental Behavioral Interventions: Empirically Validated Treatments for Autism Spectrum Disorder." <i>Journal of Autism and Developmental Disorders</i>, 45(8), 2411-2428.
+            </li>
+            <li>
+              Ingersoll, B., & Wainer, A. (2013). "Initial efficacy of Project ImPACT: A parent-mediated social communication intervention for young children with ASD." <i>Journal of Autism and Developmental Disorders</i>, 43(12), 2943-2952.
+            </li>
+            <li>
+              Dawson, G., et al. (2010). "Randomized, controlled trial of an intervention for toddlers with autism: the Early Start Denver Model." <i>Pediatrics</i>, 125(1), e17-e23.
+            </li>
+            <li>
+              U.S. Department of Education. (2023). "Individuals with Disabilities Education Act (IDEA) Part B: Assistance for All Children with Disabilities." <i>ED.gov</i>.
+            </li>
+          </ol>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <li>
+              American Academy of Pediatrics (AAP). "Autism Spectrum Disorder: Early Intervention."
+            </li>
+            <li>
+              Zero to Three. "Early Intervention for Infants and Toddlers."
+            </li>
+          </ul>
         </div>
       </div>
     </>
