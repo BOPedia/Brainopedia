@@ -365,19 +365,6 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           </p>
         </div>
 
-        {/* Key Principle Callout */}
-        <div className="bg-[#ffd166] border-2 border-[#0c264d] p-5 rounded-lg shadow-md">
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg flex items-center gap-2">
-            Remember
-          </h3>
-          <p className="text-sm">
-            Early intervention isn't about "fixing" autism—it's about supporting development, building 
-            communication skills, and helping families understand and support their autistic child. The goal 
-            is to enhance quality of life and help children reach their individual potential, not to make 
-            them less autistic.
-          </p>
-        </div>
-      </div>
 {/* Key Principle Callout */}
         <div className="bg-[#ffd166] border-2 border-[#0c264d] p-5 rounded-lg shadow-md mb-8">
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg flex items-center gap-2">
