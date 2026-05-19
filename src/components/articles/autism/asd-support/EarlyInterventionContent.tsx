@@ -151,7 +151,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           </ul>
         </div>
         {/* --- END NEW RESOURCES CALLOUT --- */}
-        
+
         {/* Research on Early Intervention */}
         <div className="bg-[#ffd166] p-5 rounded-lg mb-8">
           <div className="flex items-center gap-3 mb-2">
@@ -162,17 +162,6 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             individual.<sup className="text-green-600 font-bold ml-0.5">6</sup>
           </p>
         </div>
-
-      {/* --- CENTERED GRAPHIC SECTION 2 --- */} 
-      <div className="text-center w-full mb-8"> 
-        {/* The Wrapper: Scaled to max-w-lg for a "bigger" but controlled presence */} 
-        <div className="mx-auto w-full max-w-lg px-4"> 
-          <ImageWithFallback 
-            src="/images/autism/autism-support-EarlyIntervtab-ResStartegies.png" 
-            alt="Brainopedia roadmap showing path of EI"
-          /> 
-        </div> 
-      </div>
 
         {/* Researching Strategies */}
         <div className="bg-[#e0f7fa] p-6 rounded-lg mb-8">
@@ -219,6 +208,17 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           </div>
         </div>
 
+      {/* --- CENTERED GRAPHIC SECTION 2 --- */} 
+      <div className="text-center w-full mb-8"> 
+        {/* The Wrapper: Scaled to max-w-lg for a "bigger" but controlled presence */} 
+        <div className="mx-auto w-full max-w-lg px-4"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-support-EarlyIntervtab-ResStartegies.png" 
+            alt="Brainopedia roadmap showing path of EI"
+          /> 
+        </div> 
+      </div>
+      
         {/* Navigating Roadmaps */}
         <div className="bg-[#e0f7fa] p-6 rounded-lg mb-8">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Navigating Roadmaps</h3>
