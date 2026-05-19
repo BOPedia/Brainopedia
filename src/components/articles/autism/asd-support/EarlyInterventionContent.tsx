@@ -378,6 +378,80 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           </p>
         </div>
       </div>
+{/* Key Principle Callout */}
+        <div className="bg-[#ffd166] border-2 border-[#0c264d] p-5 rounded-lg shadow-md mb-8">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg flex items-center gap-2">
+            Remember
+          </h3>
+          <p className="text-sm">
+            Early intervention isn't about "fixing" autism—it's about supporting development, building 
+            communication skills, and helping families understand and support their autistic child. The goal 
+            is to enhance quality of life and help children reach their individual potential, not to make 
+            them less autistic.
+          </p>
+        </div>
+
+        {/* --- NEW: ESSENTIAL US RESOURCES CALLOUT --- */}
+        <div className="bg-[#f0f9ff] border-l-4 border-[#2abcd4] p-6 rounded-lg shadow-sm mb-8">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Essential US Early Intervention Resources</h3>
+          <p className="text-sm mb-5">
+            Navigating the Early Intervention (EI) landscape can be overwhelming. These authoritative external resources provide invaluable, deep-dive information into how the US system works:
+          </p>
+          
+          <ul className="space-y-5 text-sm">
+            <li className="flex items-start gap-3">
+              <span className="text-[#2abcd4] font-bold text-lg mt-0.5">→</span>
+              <div>
+                <a 
+                  href="https://www.zerotothree.org/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-bold text-[#0c264d] underline hover:text-[#2abcd4] transition-colors text-base"
+                >
+                  Zero to Three
+                </a>
+                <p className="mt-1 text-slate-600 leading-relaxed">
+                  While not autism-specific, this is a premier organization that beautifully lays out the entire landscape of early childhood development and Early Intervention in the United States.
+                </p>
+              </div>
+            </li>
+            
+            <li className="flex items-start gap-3">
+              <span className="text-[#2abcd4] font-bold text-lg mt-0.5">→</span>
+              <div>
+                <a 
+                  href="https://www.zerotothree.org/wp-content/uploads/2010/02/Georgetown-States-Early-Intervention.png" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-bold text-[#0c264d] underline hover:text-[#2abcd4] transition-colors text-base"
+                >
+                  State-by-State EI Eligibility Map
+                </a>
+                <p className="mt-1 text-slate-600 leading-relaxed">
+                  A highly useful visual graphic (originally sourced from Georgetown University) that illustrates how Early Intervention eligibility criteria vary dramatically across different US states.
+                </p>
+              </div>
+            </li>
+            
+            <li className="flex items-start gap-3">
+              <span className="text-[#2abcd4] font-bold text-lg mt-0.5">→</span>
+              <div>
+                <a 
+                  href="https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-303" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-bold text-[#0c264d] underline hover:text-[#2abcd4] transition-colors text-base"
+                >
+                  eCFR Part 303: Early Intervention Federal Regulations
+                </a>
+                <p className="mt-1 text-slate-600 leading-relaxed">
+                  For those who want to read the exact letter of the law, this is the official Electronic Code of Federal Regulations detailing IDEA Part C (the federal grant program that assists states in operating EI services).
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        {/* --- END NEW RESOURCES CALLOUT --- */}
 
       {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
