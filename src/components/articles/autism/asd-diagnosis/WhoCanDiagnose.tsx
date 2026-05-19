@@ -283,7 +283,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
               American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
             </li>

@@ -287,7 +287,7 @@ export function AcrossLifespan({ setCurrentArticle }: AcrossLifespanProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
               Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <i>Pediatrics</i>, 136(Supplement 1), S1–S9.
             </li>
