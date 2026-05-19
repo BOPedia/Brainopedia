@@ -19,8 +19,8 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
     
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
       <div className="text-center w-full mb-8"> 
-        {/* The Wrapper: Expanded to max-w-2xl for a much larger, readable display */} 
-        <div className="mx-auto w-full max-w-2xl px-4"> 
+        {/* The Wrapper: Reverted to original starting size */} 
+        <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
             src="/images/autism/autism-support-EarlyIntervtab-ages0to3.png" 
             alt="arrows surrounding brain symbolizing early intervention"
@@ -103,8 +103,8 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
 
       {/* --- CENTERED GRAPHIC SECTION 2 --- */} 
       <div className="text-center w-full mb-8"> 
-        {/* The Wrapper: Expanded to max-w-2xl to display the roadmap largely and clearly */} 
-        <div className="mx-auto w-full max-w-2xl px-4"> 
+        {/* The Wrapper: Scaled to max-w-lg for a "bigger" but controlled presence */} 
+        <div className="mx-auto w-full max-w-lg px-4"> 
           <ImageWithFallback 
             src="/images/autism/autism-support-EarlyIntervtab-ResStartegies.png" 
             alt="Brainopedia roadmap showing path of EI"
@@ -301,8 +301,8 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           
       {/* --- CENTERED GRAPHIC SECTION 3 --- */} 
       <div className="text-center w-full mb-8"> 
-        {/* The Wrapper: Expanded to max-w-2xl to display the roadmap clearly */} 
-        <div className="mx-auto w-full max-w-2xl px-4"> 
+        {/* The Wrapper: Shrunk back down to match Graphic 1 */} 
+        <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
             src="/images/autism/autism-support-EarlyIntervtab-road-thru-the-years.png" 
             alt="road symbolizing autism journey"
