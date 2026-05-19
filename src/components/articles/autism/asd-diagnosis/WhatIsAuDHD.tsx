@@ -95,18 +95,18 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         </p>
       </div>
 
-      {/* --- 3rd CENTERED GRAPHIC SECTION 1 --- */} 
+      {/* --- 2nd CENTERED GRAPHIC SECTION --- */} 
       <div className="text-center w-full mb-8"> 
         <p className="text-[#0c264d] mb-4 italic"></p> 
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
-            src="/images/autism/autism-diagnosis-WhatAuDHDtab-silhouette-splatter.png" 
-            alt="AuDHD silhouette with splatter effect"
+            src="/images/autism/autism-diagnosis-WhatAuDHDtab-gold-blue-splitface.png" 
+            alt="split face - AuDHD"
           /> 
         </div> 
       </div>
-      
+
       {/* AuDHD Diagram */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Shared and Sole Symptoms</h3>
@@ -284,6 +284,18 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
           set appropriate goals and understand the full scope of challenges and strengths</li>
         </ul>
       </div>
+ 
+ {/* --- 3rd CENTERED GRAPHIC SECTION 1 --- */}
+     <div className="text-center w-full mb-8">
+       <p className="text-[#0c264d] mb-4 italic"></p>
+       {/* The Wrapper: Centers the image and restricts its width */}
+       <div className="mx-auto w-48 md:w-64">
+         <ImageWithFallback
+           src="/images/autism/autism-diagnosis-WhatAuDHDtab-silhouette-splatter.png"
+           alt="AuDHD silhouette with splatter effect"
+         />
+       </div>
+     </div>
 
       {/* Support Strategies */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
