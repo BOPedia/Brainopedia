@@ -365,8 +365,8 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           </p>
         </div>
 
-{/* Key Principle Callout */}
-        <div className="bg-[#ffd166] border-2 border-[#0c264d] p-5 rounded-lg shadow-md mb-8">
+        {/* Key Principle Callout */}
+        <div className="bg-[#ffd166] border-2 border-[#0c264d] p-5 rounded-lg shadow-md">
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg flex items-center gap-2">
             Remember
           </h3>
@@ -377,6 +377,8 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
             them less autistic.
           </p>
         </div>
+      </div>
+
 
         {/* --- NEW: ESSENTIAL US RESOURCES CALLOUT --- */}
         <div className="bg-[#f0f9ff] border-l-4 border-[#2abcd4] p-6 rounded-lg shadow-sm mb-8">
