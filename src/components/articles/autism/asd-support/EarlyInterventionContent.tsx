@@ -195,7 +195,6 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
 
             <div className="bg-white p-4 rounded-md shadow-sm">
               <div className="text-center mb-3">
-                <span className="text-4xl">♾️</span>
               </div>
               <h4 className="text-[#0c264d] font-bold mb-2 text-center">Needs-Guided</h4>
               <ul className="space-y-1 text-xs">
