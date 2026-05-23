@@ -19,15 +19,27 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         and support needs.
       </p>
 
-      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+{/* --- CENTERED GRAPHIC SECTION 1 --- */} 
       <div className="text-center w-full mb-8"> 
         <p className="text-[#0c264d] mb-4 italic"></p> 
-        {/* The Wrapper: Centers the image and restricts its width */} 
+        {/* The Wrapper: Centers the video and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
-          <ImageWithFallback 
-            src="/images/autism/autism-diagnosis-WhatAuDHDtab-Lightning-Gold Infinity.png" 
-            alt="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
-          /> 
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            poster="/images/autism/autism-diagnosis-WhatAuDHDtab-Lightning-Gold Infinity.png"
+            className="w-full h-auto object-contain"
+            aria-label="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
+          >
+            <source 
+              src="/images/autism/autism-diagnosis-WhatAuDHDtab-Lightning-Gold Infinity.mp4" 
+              type="video/mp4" 
+            />
+            {/* Fallback for older browsers */}
+            Your browser does not support the video tag.
+          </video>
         </div> 
       </div>
  
