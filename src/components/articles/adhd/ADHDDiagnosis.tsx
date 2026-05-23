@@ -1323,34 +1323,39 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </div>
             </div>
 
-            {/* The Paradox */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Conflicting Needs: The AuDHD "Paradox"</h3>
-              
+{/* The Paradox with split face graphic*/}
+
+            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Conflicting Needs: The AuDHD "Paradox"</h3>
+     
+            {/* Image Wrapper: Kept to one line, centered, size 64, with rounded corners */}
+            <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden"> 
               <ImageWithFallback 
                 src="/images/adhd/adhd-audhd-split-face.png" 
                 alt="Split face illustration representing the internal tug-of-war of AuDHD" 
-                className="w-full max-w-sm mx-auto rounded-lg mb-4" 
-              />
-
-              <p className="text-sm mb-3">AuDHD can feel like a constant internal tug-of-war:</p>
-              <div className="space-y-3">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Routine vs. Novelty</div>
-                  <div className="text-sm">The autism side craves predictability and sameness, while the ADHD side craves stimulation and newness. This creates an internal battle where neither need feels fully met.</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Order vs. Chaos</div>
-                  <div className="text-sm">Autism wants rigid organization and structure; ADHD struggles to create or maintain it, leading to frustration and anxiety when the environment doesn't match internal needs.</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Social Push-Pull</div>
-                  <div className="text-sm">ADHD may drive impulsive socializing and talking excessively, while autism may find social interaction confusing, exhausting, or overwhelming. This creates a cycle of seeking then avoiding connection.</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Focus Extremes</div>
-                  <div className="text-sm">Autism may drive intense, sustained focus on special interests while ADHD makes it nearly impossible to sustain attention on anything else—creating a narrow but deep attention pattern.</div>
-                </div>
+              /> 
+            </div>
+             
+            <p className="text-sm mb-3">AuDHD can feel like a constant internal tug-of-war:</p>
+            
+            <div className="space-y-3">
+              <div className="border-l-2 border-[#2abcd4] pl-3">
+                <div className="font-bold text-[#0c264d] mb-1">Routine vs. Novelty</div>
+                <div className="text-sm">The autism side craves predictability and sameness, while the ADHD side craves stimulation and newness. This creates an internal battle where neither need feels fully met.</div>
+              </div>
+              
+              <div className="border-l-2 border-[#2abcd4] pl-3">
+                <div className="font-bold text-[#0c264d] mb-1">Order vs. Chaos</div>
+                <div className="text-sm">Autism wants rigid organization and structure; ADHD struggles to create or maintain it, leading to frustration and anxiety when the environment doesn't match internal needs.</div>
+              </div>
+              
+              <div className="border-l-2 border-[#2abcd4] pl-3">
+                <div className="font-bold text-[#0c264d] mb-1">Social Push-Pull</div>
+                <div className="text-sm">ADHD may drive impulsive socializing and talking excessively, while autism may find social interaction confusing, exhausting, or overwhelming. This creates a cycle of seeking then avoiding connection.</div>
+              </div>
+              
+              <div className="border-l-2 border-[#2abcd4] pl-3">
+                <div className="font-bold text-[#0c264d] mb-1">Focus Extremes</div>
+                <div className="text-sm">Autism may drive intense, sustained focus on special interests while ADHD makes it nearly impossible to sustain attention on anything else—creating a narrow but deep attention pattern.</div>
               </div>
             </div>
 
