@@ -17,22 +17,25 @@ import {
 export function RepetitiveBehaviors() {
   return (
     <div className="space-y-6">
-      {/* 1. CENTERED INTRO & GRAPHIC */}
-      <div className="text-center w-full mb-8">
-        <p className="text-lg text-[#0c264d] mb-6">
-          Autistic individuals display at least two of the following types of restricted, repetitive patterns:        
-        </p>
-        
-        <div className="mx-auto w-64 md:w-80 shadow-md rounded-xl overflow-hidden"> 
-          <ImageWithFallback 
-            src="/images/autism/autism-symptoms-Reptab-pattern.png"
-            alt="a square graphic showing colorful, symmetrical, repetitive patterns"
-          />
-        </div>
-        
-        <p className="mt-4 text-sm italic text-[#0c264d]/70">
-          Visualizing the symmetry and consistency often found in repetitive patterns.
-        </p>
+ {/* --- CENTERED GRAPHIC SECTION: THE VIDEO  --- */} 
+      <div className="text-center w-full mb-12"> 
+         <div className="mx-auto w-full max-w-lg bg-white p-3 rounded-2xl border-2 border-[#2abcd4] shadow-xl"> 
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            poster="/images/autism/autism-symptoms-Reptab-pattern.png"
+            className="w-full h-auto rounded-xl object-contain"
+            aria-label="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
+          >
+            <source 
+              src="/images/autism/autism-symptoms-Reptab-pattern.mp4" 
+              type="video/mp4" 
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div> 
       </div>
 
       {/* 2. STEREOTYPED OR REPETITIVE MOVEMENTS */}
