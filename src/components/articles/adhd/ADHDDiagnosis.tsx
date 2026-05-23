@@ -1186,7 +1186,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         and addressing both diagnoses.
       </p>
  
-{/* --- CENTERED GRAPHIC SECTION 2: THE SWIRLY SUN GRAPHIC --- */} 
+{/* --- CENTERED GRAPHIC SECTION 2: opposing forces GRAPHIC --- */} 
              {/* Image Wrapper: Kept to one line, centered, size 64, with rounded corners */}
             <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden"> 
               <ImageWithFallback 
@@ -1397,8 +1397,8 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Why Recognizing Both Conditions Matters</h3>
               
               <ImageWithFallback 
-                src="/images/adhd/adhd-audhd-infinity-on-brain.png" 
-                alt="Infinity symbol on brain illustration representing the interplay of autism and ADHD" 
+                src="/images/adhd/adhd-audhd-med-edu-symbol.png" 
+                alt="medical type symbol for education and medical support for autism and ADHD" 
                 className="w-full max-w-sm mx-auto rounded-lg mb-4" 
               />
 
