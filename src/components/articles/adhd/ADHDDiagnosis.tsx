@@ -1149,16 +1149,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         </div> 
       </div>
 
-      {/* --- CENTERED GRAPHIC SECTION 2: THE SWIRLY SUN GRAPHIC --- */} 
-      <div className="text-center w-full mb-12"> 
-        {/* Kept this one smaller (w-32 is 128px, or use w-16 if you want it tiny at 64px) */} 
-        <div className="mx-auto w-32"> 
-          <ImageWithFallback 
-            src="/images/autism/autism-diagnosis-WhatAuDHDtab-Lightning-Gold Infinity.png" 
-            alt="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
-          /> 
-        </div> 
-      </div>
+
 
       {/* --- TEXT CONTENT SECTION --- */}
       <p className="text-sm mb-4">
@@ -1194,6 +1185,18 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         multiple domains compared to those with either condition alone, highlighting the importance of recognizing 
         and addressing both diagnoses.
       </p>
+ 
+{/* --- CENTERED GRAPHIC SECTION 2: THE SWIRLY SUN GRAPHIC --- */} 
+      {/* Changed mb-64 back to a normal gap of mb-12 */}
+      <div className="text-center w-full mb-12"> 
+        {/* Changed width to w-64 (Tailwind's size 64) */} 
+        <div className="mx-auto w-64">
+          <ImageWithFallback 
+            src="/images/adhd/adhd-audhd-sun-swirl.png" 
+            alt="abstract sun swirl art"           /> 
+        </div> 
+      </div>
+
             {/* Shared and Sole Symptoms - 3-column diagram */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Shared and Sole Symptoms</h3>
