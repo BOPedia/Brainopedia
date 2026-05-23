@@ -1393,7 +1393,8 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             </div>
 
             {/* Why Dual Diagnosis Matters */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+            {/* Image Wrapper: Kept to one line, centered, size 64, with rounded corners */}
+            <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden"> 
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Why Recognizing Both Conditions Matters</h3>
               
               <ImageWithFallback 
