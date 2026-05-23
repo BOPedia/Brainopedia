@@ -1188,14 +1188,12 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
  
 {/* --- CENTERED GRAPHIC SECTION 2: THE SWIRLY SUN GRAPHIC --- */} 
       {/* Changed mb-64 back to a normal gap of mb-12 */}
-      <div className="text-center w-full mb-12"> 
-        {/* Changed width to w-64 (Tailwind's size 64) */} 
-        <div className="mx-auto w-64">
-          <ImageWithFallback 
-            src="/images/adhd/adhd-audhd-sun-swirl.png" 
-            alt="abstract sun swirl art"           /> 
-        </div> 
-      </div>
+          <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden"> 
+
+                  <ImageWithFallback 
+                    src="/images/adhd/adhd-audhd-sun-swirl.png" 
+                    alt="abstract sun swirl art"           /> 
+          </div> 
 
             {/* Shared and Sole Symptoms - 3-column diagram */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
