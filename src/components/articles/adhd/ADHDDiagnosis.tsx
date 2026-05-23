@@ -1127,9 +1127,12 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
 
         {/* AuDHD Tab */}
         <TabsContent value="audhd" className="space-y-8">
-          <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">AuDHD: The Intersection of Autism and ADHD</h2>
-            
+
+     <div className="text-center w-full mb-8">
+       <p className="text-[#0c264d] mb-4 italic"></p>
+       {/* The Wrapper: Centers the image and restricts its width */}
+       <div className="mx-auto w-48 md:w-64">
+
             <ImageWithFallback 
               src="/images/adhd/adhd-audhd-sun-swirl.png" 
               alt="Warm sun swirl illustration representing the convergence of autism and ADHD" 
@@ -1164,7 +1167,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 <li>Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup className="text-[#10b981]">3</sup></li>
               </ul>
             </div>
-
+</div>
             {/* How They Interact --- CENTERED GRAPHIC SECTION 1 VIDEO bolt and infinity--- */} 
       <div className="text-center w-full mb-12"> 
         {/* The Wrapper: Creates a 'picture frame' effect and limits width */} 
