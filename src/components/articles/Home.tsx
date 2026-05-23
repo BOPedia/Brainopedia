@@ -11,15 +11,22 @@ export function Home({ setCurrentArticle }: HomeProps) {
         Welcome to Brainopedia
       </h1>
 
-      <div className="space-y-12">
-        {/* Banner Image */}
-        <div className="mb-8">
-          <img 
-            src="/images/brainopedia-banner.png" 
-            alt="Brainopedia - Your encyclopedic platform"
-            className="w-full h-auto rounded-xl shadow-lg border border-gray-100"
-          />
-        </div>
+<div className="space-y-12">
+  {/* Banner Video */}
+  <div className="mb-8">
+    <video 
+      autoPlay 
+      loop 
+      muted 
+      playsInline
+      poster="/images/brainopedia-banner.png"
+      className="w-full h-auto rounded-xl shadow-lg border border-gray-100 object-cover"
+    >
+      <source src="/images/brainopedia-banner.mp4" type="video/mp4" />
+      {/* Fallback text if the browser doesn't support video */}
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
         {/* Introduction */}
         <section className="max-w-3xl">
