@@ -1166,15 +1166,28 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             </div>
 
             {/* How They Interact */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">How Autism and ADHD Interact</h3>
-              
-              <ImageWithFallback 
-                src="/images/adhd/adhd-audhd-bolt-gold-infinity.png" 
-                alt="Gold lightning bolt infinity symbol representing the dynamic interplay of autism and ADHD traits" 
-                className="w-full max-w-sm mx-auto rounded-lg mb-4" 
-              />
-
+      {/* --- CENTERED GRAPHIC SECTION 1 VIDEO bolt and infinity--- */} 
+      <div className="text-center w-full mb-8"> 
+        <p className="text-[#0c264d] mb-4 italic"></p> 
+        {/* The Wrapper: Centers the video and restricts its width */} 
+        <div className="mx-auto w-48 md:w-64"> 
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            poster="/images/adhd/adhd-audhd-bolt-gold-infinity.png"
+            className="w-full h-auto object-contain"
+            aria-label="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
+          >
+            <source 
+              src="/images/adhd/adhd-audhd-bolt-gold-infinity.mp4" 
+              type="video/mp4" 
+            />
+            {/* Fallback for older browsers */}
+            Your browser does not support the video tag.
+          </video>
+        </div>
               <p className="text-sm mb-4">
                 When autism and ADHD co-occur, they don't simply exist side-by-side—they interact in complex ways 
                 that create a unique neurodevelopmental profile:
