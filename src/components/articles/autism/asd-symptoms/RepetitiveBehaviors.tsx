@@ -17,25 +17,35 @@ import {
 export function RepetitiveBehaviors() {
   return (
     <div className="space-y-6">
- {/* --- CENTERED GRAPHIC SECTION: THE VIDEO  --- */} 
-      <div className="text-center w-full mb-12"> 
-         <div className="mx-auto w-full max-w-lg bg-white p-3 rounded-2xl border-2 border-[#2abcd4] shadow-xl"> 
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            poster="/images/autism/autism-symptoms-Reptab-pattern.png"
-            className="w-full h-auto rounded-xl object-contain"
-            aria-label="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
-          >
-            <source 
-              src="/images/autism/autism-symptoms-Reptab-pattern.mp4" 
-              type="video/mp4" 
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div> 
+
+
+{/* --- CENTERED GRAPHIC SECTION: THE VIDEO  --- */}
+     <div className="text-center w-full mb-12">
+        <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden">
+         <video
+           autoPlay
+           loop
+           muted
+           playsInline
+           poster="/images/autism/autism-symptoms-Reptab-pattern.png"
+           className="w-full h-auto rounded-xl object-contain"
+           aria-label="kaleidoscope type video showing repetitive patterns in motion"
+         >
+           <source
+             src="/images/autism/autism-symptoms-Reptab-pattern.mp4"
+             type="video/mp4"
+           />
+           Your browser does not support the video tag.
+         </video>
+       </div>
+     </div>
+
+
+      <div className="text-center">
+        
+        <p className="mt-4 text-sm italic text-[#0c264d]/70">
+          Visualizing the symmetry and consistency often found in repetitive patterns.
+        </p>
       </div>
 
       {/* 2. STEREOTYPED OR REPETITIVE MOVEMENTS */}
