@@ -13,8 +13,9 @@ export function ArticleAbout() {
         <div className="flex-1 space-y-6">
           <h2 className="text-2xl font-bold text-[#0c264d]">Our Approach</h2>
           <p className="leading-relaxed text-lg">
-            Brainopedia is an innovative online encyclopedia dedicated to neurodivergent conditions. 
-            The aim is to make learning about neurodivergence informative, respectful, and accessible to all.
+            Brainopedia is an innovative online encyclopedia dedicated to neurodivergent conditions. The aim is to make learning about neurodivergence informative, respectful, and accessible to all.
+
+            Brainopedia is a proud project of Neurodiverse Endeavors, a registered 501(c)(3) nonprofit organization.
           </p>
         </div>
         <div className="shrink-0 flex justify-center mt-4 md:mt-0">
