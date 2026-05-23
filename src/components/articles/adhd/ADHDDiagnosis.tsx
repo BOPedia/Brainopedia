@@ -1127,48 +1127,10 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
 
         {/* AuDHD Tab */}
         <TabsContent value="audhd" className="space-y-8">
-          <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">AuDHD: The Intersection of Autism and ADHD</h2>
-            
-            <ImageWithFallback 
-              src="/images/adhd/adhd-audhd-sun-swirl.png" 
-              alt="Warm sun swirl illustration representing the convergence of autism and ADHD" 
-              className="w-full max-w-md mx-auto rounded-lg mb-6" 
-            />
-          </div>
-            <p className="mb-4">
-              "AuDHD" is a community-created term used primarily within neurodivergent communities to describe individuals 
-              who are both autistic and have ADHD. While not an official medical diagnosis in the DSM-5-TR, this dual diagnosis 
-              is increasingly recognized by clinicians and researchers as a very real and common pattern with unique characteristics 
-              and support needs.
-            </p>
-
-            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
-              <p className="text-sm">
-                <strong>Historical Context:</strong> Before 2013, the DSM-IV prohibited diagnosing both autism and ADHD 
-                in the same person. The DSM-5 removed this exclusionary criterion, acknowledging that these conditions 
-                frequently co-occur and require recognition of both diagnoses for appropriate treatment planning.
-              </p>
-            </div>
-
-            {/* Prevalence */}
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Common is AuDHD?</h3>
-              <p className="text-sm mb-4">
-                Research shows that autism and ADHD co-occur at remarkably high rates:
-              </p>
-              <ul className="text-sm space-y-2 list-disc ml-4 mb-4">
-                <li><strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup className="text-[#10b981]">1</sup></li>
-                <li><strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup className="text-[#10b981]">2</sup></li>
-                <li>Both conditions share genetic risk factors and neurobiological features</li>
-                <li>Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup className="text-[#10b981]">3</sup></li>
-              </ul>
-            </div>
-
-            {/* How They Interact --- CENTERED GRAPHIC SECTION 1 VIDEO bolt and infinity--- */} 
+ {/* --- CENTERED GRAPHIC SECTION 1: THE VIDEO (POPPING & DOUBLED SIZE) --- */} 
       <div className="text-center w-full mb-12"> 
-        {/* The Wrapper: Creates a 'picture frame' effect and limits width */} 
-        <div className="mx-auto w-48 md:w-64 bg-white p-2 rounded-2xl border-2 border-[#2abcd4] shadow-lg"> 
+        {/* Doubled the size to max-w-lg (512px) and made it full width on mobile */} 
+        <div className="mx-auto w-full max-w-lg bg-white p-3 rounded-2xl border-2 border-[#2abcd4] shadow-xl"> 
           <video 
             autoPlay 
             loop 
@@ -1187,6 +1149,18 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         </div> 
       </div>
 
+      {/* --- CENTERED GRAPHIC SECTION 2: THE SWIRLY SUN GRAPHIC --- */} 
+      <div className="text-center w-full mb-12"> 
+        {/* Kept this one smaller (w-32 is 128px, or use w-16 if you want it tiny at 64px) */} 
+        <div className="mx-auto w-32"> 
+          <ImageWithFallback 
+            src="/images/autism/autism-diagnosis-WhatAuDHDtab-Lightning-Gold Infinity.png" 
+            alt="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
+          /> 
+        </div> 
+      </div>
+
+      {/* --- TEXT CONTENT SECTION --- */}
       <p className="text-sm mb-4">
         When autism and ADHD co-occur, they don't simply exist side-by-side—they interact in complex ways 
         that create a unique neurodevelopmental profile:
@@ -1220,7 +1194,6 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         multiple domains compared to those with either condition alone, highlighting the importance of recognizing 
         and addressing both diagnoses.
       </p>
-
             {/* Shared and Sole Symptoms - 3-column diagram */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Shared and Sole Symptoms</h3>
