@@ -1165,63 +1165,61 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </ul>
             </div>
 
-            {/* How They Interact */}
-      {/* --- CENTERED GRAPHIC SECTION 1 VIDEO bolt and infinity--- */} 
-      <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"></p> 
-        {/* The Wrapper: Centers the video and restricts its width */} 
-        <div className="mx-auto w-48 md:w-64"> 
+            {/* How They Interact --- CENTERED GRAPHIC SECTION 1 VIDEO bolt and infinity--- */} 
+      <div className="text-center w-full mb-12"> 
+        {/* The Wrapper: Creates a 'picture frame' effect and limits width */} 
+        <div className="mx-auto w-48 md:w-64 bg-white p-2 rounded-2xl border-2 border-[#2abcd4] shadow-lg"> 
           <video 
             autoPlay 
             loop 
             muted 
             playsInline
             poster="/images/adhd/adhd-audhd-bolt-gold-infinity.png"
-            className="w-full h-auto object-contain"
+            className="w-full h-auto rounded-xl object-contain"
             aria-label="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
           >
             <source 
               src="/images/adhd/adhd-audhd-bolt-gold-infinity.mp4" 
               type="video/mp4" 
             />
-            {/* Fallback for older browsers */}
             Your browser does not support the video tag.
           </video>
+        </div> 
+      </div>
+
+      <p className="text-sm mb-4">
+        When autism and ADHD co-occur, they don't simply exist side-by-side—they interact in complex ways 
+        that create a unique neurodevelopmental profile:
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
+          <h4 className="text-[#0c264d] font-bold text-sm mb-2">Overlapping Traits:</h4>
+          <ul className="text-sm space-y-1">
+            <li>• Executive function challenges</li>
+            <li>• Emotional regulation difficulties</li>
+            <li>• Sensory sensitivities</li>
+            <li>• Social difficulties</li>
+            <li>• Sleep problems</li>
+          </ul>
         </div>
-              <p className="text-sm mb-4">
-                When autism and ADHD co-occur, they don't simply exist side-by-side—they interact in complex ways 
-                that create a unique neurodevelopmental profile:
-              </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
-                  <h4 className="text-[#0c264d] font-bold text-sm mb-2">Overlapping Traits:</h4>
-                  <ul className="text-sm space-y-1">
-                    <li>• Executive function challenges</li>
-                    <li>• Emotional regulation difficulties</li>
-                    <li>• Sensory sensitivities</li>
-                    <li>• Social difficulties</li>
-                    <li>• Sleep problems</li>
-                  </ul>
-                </div>
+        <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
+          <h4 className="text-[#0c264d] font-bold text-sm mb-2">Compounding Effects:</h4>
+          <ul className="text-sm space-y-1">
+            <li>• Greater functional impairment than either alone</li>
+            <li>• More severe executive dysfunction</li>
+            <li>• Increased anxiety and depression</li>
+            <li>• More complex support needs</li>
+          </ul>
+        </div>
+      </div>
 
-                <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
-                  <h4 className="text-[#0c264d] font-bold text-sm mb-2">Compounding Effects:</h4>
-                  <ul className="text-sm space-y-1">
-                    <li>• Greater functional impairment than either alone</li>
-                    <li>• More severe executive dysfunction</li>
-                    <li>• Increased anxiety and depression</li>
-                    <li>• More complex support needs</li>
-                  </ul>
-                </div>
-              </div>
-
-              <p className="text-sm">
-                Research indicates that individuals with both conditions often experience more severe difficulties across 
-                multiple domains compared to those with either condition alone, highlighting the importance of recognizing 
-                and addressing both diagnoses.
-              </p>
-            </div>
+      <p className="text-sm">
+        Research indicates that individuals with both conditions often experience more severe difficulties across 
+        multiple domains compared to those with either condition alone, highlighting the importance of recognizing 
+        and addressing both diagnoses.
+      </p>
 
             {/* Shared and Sole Symptoms - 3-column diagram */}
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
