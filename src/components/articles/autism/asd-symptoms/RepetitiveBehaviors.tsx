@@ -21,7 +21,7 @@ export function RepetitiveBehaviors() {
 
 {/* --- CENTERED GRAPHIC SECTION: THE VIDEO  --- */}
      <div className="text-center w-full mb-12">
-        <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden">
+        <div className="mx-auto w-32 mb-8 rounded-xl overflow-hidden">
          <video
            autoPlay
            loop
