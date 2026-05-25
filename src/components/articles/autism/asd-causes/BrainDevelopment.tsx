@@ -57,9 +57,8 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         </div>
       </div>
 
-{/* --- CENTERED GRAPHIC SECTION: MOVING NEURON VIDEO --- */} 
+      {/* --- CENTERED GRAPHIC SECTION: MOVING NEURON VIDEO --- */} 
       <div className="text-center w-full mb-12"> 
-        {/* You can change w-64 to w-48 or w-32 if you want it smaller */} 
         <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden"> 
           <video 
             autoPlay 
@@ -74,7 +73,6 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
               src="/images/autism/autism-causes-Braintab-moving-neuron.mp4" 
               type="video/mp4" 
             />
-            {/* Fallback for older browsers */}
             Your browser does not support the video tag.
           </video>
         </div> 
@@ -83,7 +81,9 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
       {/* Cellular Level Section */}
       <div className="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#2abcd4] mb-10">
         <h3 className="font-bold mb-4 text-lg text-center font-spartan text-[#0c264d]">Cellular and Molecular Level</h3>
-        <div className="grid md:grid-cols-3 gap-4 text-center">
+        
+        {/* The Grid: 3 columns */}
+        <div className="grid md:grid-cols-3 gap-4 text-center mb-8">
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">Synapses</div>
             <p className="text-sm text-gray-700">Altered number, structure, or function of synaptic connections.</p>
@@ -96,37 +96,38 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
             <div className="font-bold text-[#2abcd4] mb-1">E/I Balance</div>
             <p className="text-sm text-gray-700">Imbalance between excitatory and inhibitory neurotransmission.<sup>3</sup></p>
           </div>
+        </div> {/* <-- Closed the grid here so the video sits below it! */}
 
-{/* --- CENTERED GRAPHIC SECTION: SYNAPSE VIDEO --- */} 
-      <div className="text-center w-full mb-12"> 
-        {/* You can change w-64 to w-48 or w-32 if you want it smaller */} 
-        <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden"> 
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            poster="/images/autism/autism-causes-Braintab-synapse.png"
-            className="w-full h-auto object-contain"
-            aria-label="animation of a moving neuron representing brain connectivity"
-          >
-            <source 
-              src="/images/autism/autism-causes-Braintab-synapse.mp4" 
-              type="video/mp4" 
-            />
-Your browser does not support the video tag.
-          </video>
-        </div> 
+        {/* --- CENTERED GRAPHIC SECTION: SYNAPSE VIDEO --- */} 
+        {/* Removed col-span-full since it is now safely outside the grid, and removed bottom margin to make it flush with the text below */}
+        <div className="text-center w-full mb-0"> 
+          <div className="mx-auto w-64 mb-0 rounded-xl overflow-hidden"> 
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              poster="/images/autism/autism-causes-Braintab-synapse.png"
+              className="w-full h-auto object-contain"
+              aria-label="animation of an active synapse"
+            >
+              <source 
+                src="/images/autism/autism-causes-Braintab-synapse.mp4" 
+                type="video/mp4" 
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div> 
+        </div>
+
+        {/* Flush bottom text section */}
+        <div className="mt-0 pt-0 flex flex-wrap justify-center gap-6">
+           <div className="text-sm text-gray-700"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
+           <div className="text-sm text-gray-700"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
+        </div>
       </div>
 
-      {/* 3. Changed mt-4 to mt-2 to pull this text block closer to the video */}
-      <div className="mt-2 pt-4 border-t border-gray-100 flex flex-wrap justify-center gap-6">
-         <div className="text-sm text-gray-700"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
-         <div className="text-sm text-gray-700"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
-      </div>
-      </div>
-
-{/* ===== REFERENCES SECTION ===== */}
+      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
@@ -172,7 +173,6 @@ Your browser does not support the video tag.
         </div>
       </div>
     </div>
-     </div>
-    </div>
+  </div>
   );
 }
