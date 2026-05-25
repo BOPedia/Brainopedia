@@ -56,6 +56,29 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           </ul>
         </div>
       </div>
+      
+{/* --- CENTERED GRAPHIC SECTION: MOVING NEURON VIDEO --- */} 
+      <div className="text-center w-full mb-12"> 
+        {/* You can change w-64 to w-48 or w-32 if you want it smaller */} 
+        <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden"> 
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            poster="/images/autism/autism-causes-Braintab-moving-neuron.png"
+            className="w-full h-auto object-contain"
+            aria-label="animation of a moving neuron representing brain connectivity"
+          >
+            <source 
+              src="/images/autism/autism-causes-Braintab-moving-neuron.mp4" 
+              type="video/mp4" 
+            />
+            {/* Fallback for older browsers */}
+            Your browser does not support the video tag.
+          </video>
+        </div> 
+      </div>
 
       {/* Cellular Level Section */}
       <div className="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#2abcd4] mb-10">
