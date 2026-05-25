@@ -27,23 +27,14 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
           <li className="mb-2"><strong>Loyalty and consistency:</strong> Deep commitment to people, values, and interests</li>
         </ul>
 
-        {/* --- CENTERED GRAPHIC SECTION: GEARS VIDEO --- */}
-        <div className="w-full max-w-md mx-auto my-6 rounded shadow-sm overflow-hidden">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster="/images/autism/autism-symptoms-Strengthstab-gears.png"
-            className="w-full h-auto object-contain"
-            aria-label="Gears illustrating the interconnected nature of autistic strengths"
-          >
-            <source
-              src="/images/autism/autism-symptoms-Strengthstab-gears.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        {/* --- CENTERED GRAPHIC SECTION: FRAMED GEARS PNG --- */}
+        {/* Adjusted to w-64 (smaller), added cyan border, padding, and a white background for a frame effect */}
+        <div className="mx-auto w-64 my-8 p-3 rounded-2xl border-4 border-[#2abcd4] shadow-md bg-white">
+          <ImageWithFallback 
+            src="/images/autism/autism-symptoms-Strengthstab-gears.png" 
+            alt="Gears illustrating the interconnected nature of autistic strengths"
+            className="w-full h-auto rounded-lg"
+          />
         </div>
 
         <p className="mb-4">
@@ -75,7 +66,7 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
           </p>
         </div>
         
-        {/* BACKGROUND SOURCES: CYAN */}
+{/* BACKGROUND SOURCES: CYAN */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
