@@ -1127,6 +1127,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
 
         {/* AuDHD Tab */}
         <TabsContent value="audhd" className="space-y-8">
+          
  {/* --- CENTERED GRAPHIC SECTION 1: THE VIDEO (POPPING & DOUBLED SIZE) --- */} 
       <div className="text-center w-full mb-12"> 
         {/* Doubled the size to max-w-lg (512px) and made it full width on mobile */} 

@@ -15,11 +15,13 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar, onSearchSel
 
   const filteredResults = searchQuery.trim().length > 0
     ? (() => {
-        const queryWords = searchQuery.toLowerCase().split(/\s+/).filter(word => word.length >= 3);
+        // Reduced word length filter to 2 so acronyms like "IQ" or "ED" still work
+        const queryWords = searchQuery.toLowerCase().split(/\s+/).filter(word => word.length >= 2);
         if (queryWords.length === 0) return [];
         return searchableArticles.filter(article => {
           const searchText = (article.label + ' ' + article.keywords).toLowerCase();
-          return queryWords.some(word => searchText.includes(word));
+          // CHANGED: Use every() instead of some() so results must match ALL typed words
+          return queryWords.every(word => searchText.includes(word));
         });
       })()
     : [];
@@ -107,7 +109,8 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar, onSearchSel
                       {article.label.includes('\u2192') ? (
                         <span>
                           <span className="text-[#2abcd4] font-medium">{article.label.split('\u2192')[0].trim()}</span>
-                          <span className="text-gray-400 mx-1">\u2192</span>
+                          {/* CHANGED: Swapped the raw unicode text for a clean visual arrow */}
+                          <span className="text-gray-400 mx-2">→</span>
                           <span className="text-gray-700">{article.label.split('\u2192')[1].trim()}</span>
                         </span>
                       ) : (
