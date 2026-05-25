@@ -78,12 +78,13 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         </div> 
       </div>
 
-      {/* Cellular Level Section */}
+{/* Cellular Level Section */}
       <div className="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#2abcd4] mb-10">
         <h3 className="font-bold mb-4 text-lg text-center font-spartan text-[#0c264d]">Cellular and Molecular Level</h3>
         
         {/* The Grid: 3 columns */}
-        <div className="grid md:grid-cols-3 gap-4 text-center mb-8">
+        {/* 1. Changed mb-8 to mb-2 to dramatically REDUCE the space BEFORE the video */}
+        <div className="grid md:grid-cols-3 gap-4 text-center mb-2">
           <div className="p-3">
             <div className="font-bold text-[#2abcd4] mb-1">Synapses</div>
             <p className="text-sm text-gray-700">Altered number, structure, or function of synaptic connections.</p>
@@ -96,11 +97,11 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
             <div className="font-bold text-[#2abcd4] mb-1">E/I Balance</div>
             <p className="text-sm text-gray-700">Imbalance between excitatory and inhibitory neurotransmission.<sup>3</sup></p>
           </div>
-        </div> {/* <-- Closed the grid here so the video sits below it! */}
+        </div> 
 
         {/* --- CENTERED GRAPHIC SECTION: SYNAPSE VIDEO --- */} 
-        {/* Removed col-span-full since it is now safely outside the grid, and removed bottom margin to make it flush with the text below */}
-        <div className="text-center w-full mb-0"> 
+        {/* 2. Changed mb-0 to mb-6 to ADD some comfortable space AFTER the video */}
+        <div className="text-center w-full mb-6"> 
           <div className="mx-auto w-64 mb-0 rounded-xl overflow-hidden"> 
             <video 
               autoPlay 
@@ -121,7 +122,8 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         </div>
 
         {/* Flush bottom text section */}
-        <div className="mt-0 pt-0 flex flex-wrap justify-center gap-6">
+        {/* 3. Removed mt-0 pt-0 and gave it a small mt-2 to help separate it slightly */}
+        <div className="mt-2 flex flex-wrap justify-center gap-6">
            <div className="text-sm text-gray-700"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
            <div className="text-sm text-gray-700"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
         </div>
