@@ -56,7 +56,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           </ul>
         </div>
       </div>
-      
+
 {/* --- CENTERED GRAPHIC SECTION: MOVING NEURON VIDEO --- */} 
       <div className="text-center w-full mb-12"> 
         {/* You can change w-64 to w-48 or w-32 if you want it smaller */} 
@@ -96,6 +96,30 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
             <div className="font-bold text-[#2abcd4] mb-1">E/I Balance</div>
             <p className="text-sm text-gray-700">Imbalance between excitatory and inhibitory neurotransmission.<sup>3</sup></p>
           </div>
+
+{/* --- CENTERED GRAPHIC SECTION: SYNAPSE VIDEO --- */} 
+      <div className="text-center w-full mb-12"> 
+        {/* You can change w-64 to w-48 or w-32 if you want it smaller */} 
+        <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden"> 
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            poster="/images/autism/autism-causes-Braintab-synapse.png"
+            className="w-full h-auto object-contain"
+            aria-label="animation of a moving neuron representing brain connectivity"
+          >
+            <source 
+              src="/images/autism/autism-causes-Braintab-synapse.mp4" 
+              type="video/mp4" 
+            />
+            {/* Fallback for older browsers */}
+            Your browser does not support the video tag.
+          </video>
+        </div> 
+      </div>
+
         </div>
         <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap justify-center gap-6">
            <div className="text-sm text-gray-700"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
