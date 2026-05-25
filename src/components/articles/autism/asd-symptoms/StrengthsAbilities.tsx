@@ -27,12 +27,24 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
           <li className="mb-2"><strong>Loyalty and consistency:</strong> Deep commitment to people, values, and interests</li>
         </ul>
 
-        {/* Strengths Gears Image Placement */}
-        <ImageWithFallback 
-          src="/images/autism/autism-symptoms-Strengthstab-gears.png" 
-          alt="Gears illustrating the interconnected nature of autistic strengths"
-          className="w-full max-w-md mx-auto my-6 rounded shadow-sm"
-        />
+        {/* --- CENTERED GRAPHIC SECTION: GEARS VIDEO --- */}
+        <div className="w-full max-w-md mx-auto my-6 rounded shadow-sm overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/images/autism/autism-symptoms-Strengthstab-gears.png"
+            className="w-full h-auto object-contain"
+            aria-label="Gears illustrating the interconnected nature of autistic strengths"
+          >
+            <source
+              src="/images/autism/autism-symptoms-Strengthstab-gears.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
         <p className="mb-4">
           Recognizing and cultivating strengths while providing support for challenges is essential for helping autistic individuals thrive.
