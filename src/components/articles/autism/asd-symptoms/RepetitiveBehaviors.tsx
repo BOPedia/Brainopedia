@@ -39,10 +39,7 @@ export function RepetitiveBehaviors() {
          </video>
        </div>
      </div>
-
-
       <div className="text-center">
-        
         <p className="mt-4 text-sm italic text-[#0c264d]/70">
           Visualizing the symmetry and consistency often found in repetitive patterns.
         </p>

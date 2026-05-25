@@ -29,11 +29,24 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Additional Common Characteristics</h2>
       <div className="space-y-6">
-          <ImageWithFallback 
-          src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png" 
-          alt="Rainbow circle graphic showing additional autistic characteristics"
-          className="w-20 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
-       />
+        
+        {/* Native video tag replaces ImageWithFallback, retaining all positioning classes */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          poster="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png"
+          className="w-20 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300 object-contain"
+          aria-label="Rainbow circle graphic showing additional autistic characteristics"
+        >
+          <source 
+            src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.mp4" 
+            type="video/mp4" 
+          />
+          Your browser does not support the video tag.
+        </video>
+
         <p className="mb-6">
           While not part of the core diagnostic criteria, many autistic individuals share additional characteristics:
         </p>
