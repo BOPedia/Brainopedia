@@ -114,17 +114,16 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
               src="/images/autism/autism-causes-Braintab-synapse.mp4" 
               type="video/mp4" 
             />
-            {/* Fallback for older browsers */}
-            Your browser does not support the video tag.
+Your browser does not support the video tag.
           </video>
         </div> 
       </div>
 
-        </div>
-        <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap justify-center gap-6">
-           <div className="text-sm text-gray-700"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
-           <div className="text-sm text-gray-700"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
-        </div>
+      {/* 3. Changed mt-4 to mt-2 to pull this text block closer to the video */}
+      <div className="mt-2 pt-4 border-t border-gray-100 flex flex-wrap justify-center gap-6">
+         <div className="text-sm text-gray-700"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
+         <div className="text-sm text-gray-700"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
+      </div>
       </div>
 
 {/* ===== REFERENCES SECTION ===== */}
@@ -172,7 +171,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           </ul>
         </div>
       </div>
-
+    </div>
      </div>
     </div>
   );
