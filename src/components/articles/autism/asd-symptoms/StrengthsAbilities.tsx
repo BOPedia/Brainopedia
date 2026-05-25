@@ -29,7 +29,7 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
 
         {/* --- CENTERED GRAPHIC SECTION: FRAMED GEARS PNG --- */}
         {/* Adjusted to w-64 (smaller), added cyan border, padding, and a white background for a frame effect */}
-        <div className="mx-auto w-64 my-8 p-3 rounded-2xl border-4 border-[#2abcd4] shadow-md bg-white">
+        <div className="mx-auto w-48 my-8 p-3 rounded-2xl border-4 border-[#2abcd4] shadow-md bg-white">
           <ImageWithFallback 
             src="/images/autism/autism-symptoms-Strengthstab-gears.png" 
             alt="Gears illustrating the interconnected nature of autistic strengths"
@@ -66,7 +66,7 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
           </p>
         </div>
         
-{/* BACKGROUND SOURCES: CYAN */}
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
