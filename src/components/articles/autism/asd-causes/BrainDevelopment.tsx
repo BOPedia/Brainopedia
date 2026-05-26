@@ -81,7 +81,28 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
 {/* Cellular Level Section */}
       <div className="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#2abcd4] mb-10">
         <h3 className="font-bold mb-4 text-lg text-center font-spartan text-[#0c264d]">Cellular and Molecular Level</h3>
-        
+         {/* --- CENTERED GRAPHIC SECTION: SYNAPSE VIDEO --- */} 
+        {/* 2. Changed mb-0 to mb-6 to ADD some comfortable space AFTER the video */}
+        <div className="text-center w-full mb-6"> 
+          <div className="mx-auto w-64 mb-0 rounded-xl overflow-hidden"> 
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              poster="/images/autism/autism-causes-Braintab-synapse.png"
+              className="w-full h-auto object-contain"
+              aria-label="animation of an active synapse"
+            >
+              <source 
+                src="/images/autism/autism-causes-Braintab-synapse.mp4" 
+                type="video/mp4" 
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div> 
+        </div>
+
         {/* The Grid: 3 columns */}
         {/* 1. Changed mb-8 to mb-2 to dramatically REDUCE the space BEFORE the video */}
         <div className="grid md:grid-cols-3 gap-4 text-center mb-2">
@@ -99,7 +120,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           </div>
         </div> 
 
-        {/* --- CENTERED GRAPHIC SECTION: SYNAPSE VIDEO --- */} 
+        {/* --- CENTERED GRAPHIC SECTION: fetus brain firings VIDEO --- */} 
         {/* 2. Changed mb-0 to mb-6 to ADD some comfortable space AFTER the video */}
         <div className="text-center w-full mb-6"> 
           <div className="mx-auto w-64 mb-0 rounded-xl overflow-hidden"> 
@@ -108,12 +129,12 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
               loop 
               muted 
               playsInline
-              poster="/images/autism/autism-causes-Braintab-synapse.png"
+              poster="/images/autism/autism-causes-Braintab-fetus-brain-firings.png"
               className="w-full h-auto object-contain"
-              aria-label="animation of an active synapse"
+              aria-label="animation of fetal brain firings"
             >
               <source 
-                src="/images/autism/autism-causes-Braintab-synapse.mp4" 
+                src="/images/autism/autism-causes-Braintab-fetus-brain-firings.mp4" 
                 type="video/mp4" 
               />
               Your browser does not support the video tag.
