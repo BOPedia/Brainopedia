@@ -17,13 +17,21 @@ export function SafetyContent({ setCurrentArticle }: SafetyContentProps) {
           dangers an individual faces will shift and evolve from childhood through adulthood. 
         </p>
 
-        {/* --- CENTERED PRISM GRAPHIC --- */} 
+{/* --- CENTERED PRISM VIDEO --- */} 
         <div className="text-center w-full mb-10 mt-6"> 
           <div className="mx-auto w-full max-w-2xl px-4"> 
-            <ImageWithFallback 
-              src="/images/autism/autism-support-safetytab-prism.svg" 
-              alt="Autism Safety Prism diagram showing risks across childhood, adolescence, and adulthood"
-            /> 
+            <div className="rounded-lg shadow-md overflow-hidden bg-white">
+              <video 
+                src="/images/autism/autism-support-safetytab-prism.mp4" 
+                poster="/images/autism/autism-support-safetytab-prism.png"
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-auto block"
+                aria-label="Autism Safety Prism diagram showing risks across childhood, adolescence, and adulthood"
+              />
+            </div>
           </div> 
         </div>
 
