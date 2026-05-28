@@ -17,14 +17,22 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           connecting with appropriate services to improve individual lives.<sup className="text-green-600 font-bold ml-0.5">1</sup>
         </p>
     
-      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+{/* --- CENTERED GRAPHIC video - SECTION 1 --- */} 
       <div className="text-center w-full mb-8"> 
         {/* The Wrapper: Reverted to original starting size */} 
         <div className="mx-auto w-48 md:w-64"> 
-          <ImageWithFallback 
-            src="/images/autism/autism-support-EarlyIntervtab-ages0to3.png" 
-            alt="arrows surrounding brain symbolizing early intervention"
-          /> 
+          <div className="rounded-lg shadow-md overflow-hidden bg-white">
+            <video 
+              src="/images/autism/autism-support-EarlyIntervtab-ages0to3.mp4" 
+              poster="/images/autism/autism-support-EarlyIntervtab-ages0to3.png"
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="w-full h-auto block"
+              aria-label="arrows surrounding brain symbolizing early intervention"
+            />
+          </div>
         </div> 
       </div>
       
