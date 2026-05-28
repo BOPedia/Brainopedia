@@ -17,10 +17,9 @@ export function MedicalContent({ setCurrentArticle }: MedicalContentProps) {
           There is no medication for autism itself, but medications may help co-occurring conditions:<sup className="text-green-600 font-bold ml-0.5">1</sup>
         </p>
 
-        {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+{/* --- CENTERED GRAPHIC SECTION 1 --- */} 
         <div className="text-center w-full mb-8"> 
-          <p className="text-[#0c264d] mb-4 italic"></p> 
-          <div className="mx-auto w-96 md:w-64"> 
+          <div className="mx-auto w-64 md:w-96"> {/* Fixed width classes here! */}
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
               <ImageWithFallback 
                 src="/images/autism/autism-support-MMtab-5guys.png" 
