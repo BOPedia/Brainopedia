@@ -247,8 +247,8 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         </div>
 
         {/* --- CENTERED GRAPHIC SECTION 3 --- */} 
-        <div className="text-center w-full mb-8"> 
-          <div className="mx-auto w-full max-w-xl px-4"> 
+        <div className="text-center w-full mb-8">  
+          <div className="mx-auto w-64">
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
               <ImageWithFallback 
                 src="/images/autism/autism-support-TTtab-redflags.png" 
