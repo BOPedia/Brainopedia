@@ -15,10 +15,6 @@ export function FamilyPrinciplesContent({ setCurrentArticle }: FamilyPrinciplesC
           Supporting an autistic family member impacts the whole family. Families need support, resources, 
           and understanding to thrive alongside their autistic loved ones.<sup>1</sup>
         </p>
-
-        <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Family Support Resources</h3>
-
                 {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
           <div className="text-center w-full mb-8"> 
           <div className="mx-auto w-64">
@@ -30,6 +26,9 @@ export function FamilyPrinciplesContent({ setCurrentArticle }: FamilyPrinciplesC
                       </div>
                     </div> 
                   </div>    
+
+        <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">
+          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Family Support Resources</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
