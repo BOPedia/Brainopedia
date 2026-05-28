@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
 
 /* ─── THE GUEST LIST (Interface) ─── */
 interface RelationshipsContentProps {
@@ -10,55 +11,95 @@ export function RelationshipsContent({ setCurrentArticle }: RelationshipsContent
   return (
     <div className="animate-fadeIn">
       <section className="mb-10">
-        <h2 className="text-[#0c264d] font-bold mb-6 text-2xl border-b border-[#ffd166] pb-2 inline-block">
-          Relationships & Social Life
-        </h2>
+        <div className="bg-[#f0f9ff] p-6 rounded-lg">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">
+            Relationships & Social Life
+          </h2>
 
-        <div className="space-y-8">
-          {/* Friendships Section */}
-          <div>
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Friendships</h3>
-            <p className="mb-4 text-gray-700 leading-relaxed">
-              Autistic people form deep, meaningful friendships, though the patterns of these connections may differ from neurotypical expectations:
-            </p>
-            <ul className="list-disc ml-6 space-y-2 text-gray-700">
-              <li><strong>Quality over Quantity:</strong> Many prefer one or two intense, loyal friendships over a large social circle.</li>
-              <li><strong>Shared Interests:</strong> Connections are often built around "parallel play" or shared deep passions rather than small talk.</li>
-              <li><strong>The "Autistic-Autistic" Bond:</strong> Many report that friendships with other neurodivergent people feel more natural and require less "masking."<sup>1, 2</sup></li>
-              <li><strong>Digital Connection:</strong> Online communities can provide vital social outlets that are less sensory-taxing than in-person hangouts.</li>
-            </ul>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            
+            {/* Friendships Card */}
+            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
+              <div className="text-center">
+                <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Friendships</h3>
+              </div>
+              
+              <div className="mx-auto w-40 mb-4">
+                <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+                  <ImageWithFallback 
+                    src="/images/autism/autism-living-RStab-friends.png" 
+                    alt="Graphic representing autistic friendships"
+                  />
+                </div>
+              </div>
 
-          {/* Romantic Relationships Section */}
-          <div>
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Romantic Relationships</h3>
-            <p className="mb-4 text-gray-700 leading-relaxed">
-              Many autistic people lead fulfilling romantic lives, bringing unique strengths like radical honesty and deep devotion to their partners:
-            </p>
-            <ul className="list-disc ml-6 space-y-2 text-gray-700">
-              <li><strong>Communication Styles:</strong> Direct communication can be a massive strength, reducing the "mind-reading" common in many relationships.</li>
-              <li><strong>Sensory Intimacy:</strong> Navigating physical touch requires open dialogue about sensory boundaries and preferences.</li>
-              <li><strong>Neurodiverse Couples:</strong> Relationships between autistic and neurotypical partners thrive when both parties learn each other's "social languages."</li>
-            </ul>
-          </div>
+              <p className="mb-4 text-sm text-gray-700">
+                Autistic people form deep, meaningful friendships, though the patterns of these connections may differ from neurotypical expectations:
+              </p>
+              <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
+                <li><strong>Quality over Quantity:</strong> Many prefer one or two intense, loyal friendships over a large social circle.</li>
+                <li><strong>Shared Interests:</strong> Connections are often built around "parallel play" or shared deep passions rather than small talk.</li>
+                <li><strong>The "Autistic-Autistic" Bond:</strong> Many report that friendships with other neurodivergent people feel more natural and require less "masking."<sup className="text-green-600 font-bold ml-0.5">1, 2</sup></li>
+                <li><strong>Digital Connection:</strong> Online communities can provide vital social outlets that are less sensory-taxing than in-person hangouts.</li>
+              </ul>
+            </div>
 
-          {/* Family Dynamics Section */}
-          <div>
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Family Relationships</h3>
-            <p className="mb-4 text-gray-700 leading-relaxed">
-              Autism often runs in families, creating unique multi-generational dynamics:
-            </p>
-            <ul className="list-disc ml-6 space-y-2 text-gray-700">
-              <li><strong>Acceptance:</strong> Family understanding is the single greatest predictor of long-term wellbeing for autistic individuals.<sup>3</sup></li>
-              <li><strong>Autistic Parenting:</strong> Many autistic adults are parents themselves, often finding deep empathy for their children's sensory or social needs.</li>
-              <li><strong>Renegotiating Autonomy:</strong> As autistic adults age, family relationships often shift toward "supported decision-making" rather than guardianship.</li>
-            </ul>
+            {/* Romantic Relationships Card */}
+            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
+              <div className="text-center">
+                <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Romantic Relationships</h3>
+              </div>
+              
+              <div className="mx-auto w-40 mb-4">
+                <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+                  <ImageWithFallback 
+                    src="/images/autism/autism-living-RStab-romance.png" 
+                    alt="Graphic representing romantic relationships"
+                  />
+                </div>
+              </div>
+
+              <p className="mb-4 text-sm text-gray-700">
+                Many autistic people lead fulfilling romantic lives, bringing unique strengths like radical honesty and deep devotion to their partners:
+              </p>
+              <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
+                <li><strong>Communication Styles:</strong> Direct communication can be a massive strength, reducing the "mind-reading" common in many relationships.</li>
+                <li><strong>Sensory Intimacy:</strong> Navigating physical touch requires open dialogue about sensory boundaries and preferences.</li>
+                <li><strong>Neurodiverse Couples:</strong> Relationships between autistic and neurotypical partners thrive when both parties learn each other's "social languages."</li>
+              </ul>
+            </div>
+
+            {/* Family Dynamics Card */}
+            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
+              <div className="text-center">
+                <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Family Relationships</h3>
+              </div>
+              
+              <div className="mx-auto w-40 mb-4">
+                <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+                  <ImageWithFallback 
+                    src="/images/autism/autism-living-RStab-family.png" 
+                    alt="Graphic representing family relationships and dynamics"
+                  />
+                </div>
+              </div>
+
+              <p className="mb-4 text-sm text-gray-700">
+                Autism often runs in families, creating unique multi-generational dynamics:
+              </p>
+              <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
+                <li><strong>Acceptance:</strong> Family understanding is the single greatest predictor of long-term wellbeing for autistic individuals.<sup className="text-green-600 font-bold ml-0.5">3</sup></li>
+                <li><strong>Autistic Parenting:</strong> Many autistic adults are parents themselves, often finding deep empathy for their children's sensory or social needs.</li>
+                <li><strong>Renegotiating Autonomy:</strong> As autistic adults age, family relationships often shift toward "supported decision-making" rather than guardianship.</li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -86,7 +127,7 @@ export function RelationshipsContent({ setCurrentArticle }: RelationshipsContent
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
               American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
             </li>
