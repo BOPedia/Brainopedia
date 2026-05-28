@@ -18,7 +18,19 @@ export function FamilyPrinciplesContent({ setCurrentArticle }: FamilyPrinciplesC
 
         <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Family Support Resources</h3>
-          
+
+                {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
+          <div className="text-center w-full mb-8"> 
+          <div className="mx-auto w-64">
+                      <div className="rounded-lg shadow-md overflow-hidden bg-white">
+                        <ImageWithFallback 
+                          src="/images/autism/autism-support-FPtab-3shoulders.png" 
+                          alt="Three family members with arms around shoulders showing family support"
+                        /> 
+                      </div>
+                    </div> 
+                  </div>    
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
               <div className="flex items-center gap-3 mb-3">
