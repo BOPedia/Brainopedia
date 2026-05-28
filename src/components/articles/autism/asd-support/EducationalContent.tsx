@@ -1,3 +1,4 @@
+import React from 'react';
 import { ImageWithFallback } from "../../../figma/ImageWithFallback";
 
 interface EducationalContentProps {
@@ -12,10 +13,10 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
         
         <p className="mb-6">
           Under the Individuals with Disabilities Education Act (IDEA), autistic students are entitled to 
-          a free appropriate public education (FAPE) with services tailored to their unique needs.<sup>[28]</sup>
+          a free appropriate public education (FAPE) with services tailored to their unique needs.<sup className="text-green-600 font-bold ml-0.5">1</sup>
         </p>
         
-{/* --- CENTERED SCALES VIDEO --- */} 
+        {/* --- CENTERED SCALES VIDEO --- */} 
         <div className="text-center w-full mb-8"> 
           <div className="mx-auto w-64"> 
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
@@ -43,7 +44,7 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
                 <h4 className="text-[#0c264d] font-bold text-lg">IEP (Individualized Education Program)</h4>
               </div>
               <p className="text-sm mb-3">
-                Legally binding document outlining goals, services, and accommodations for students ages 3-21<sup>[29]</sup>
+                Legally binding document outlining goals, services, and accommodations for students ages 3-21.<sup className="text-green-600 font-bold ml-0.5">2</sup>
               </p>
               <ul className="space-y-1 text-xs">
                 <li>• Annual goals and progress monitoring</li>
@@ -58,7 +59,7 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
                 <h4 className="text-[#0c264d] font-bold text-lg">504 Plan</h4>
               </div>
               <p className="text-sm mb-3">
-                Accommodations for students who don't need specialized instruction<sup>[30]</sup>
+                Accommodations for students who don't need specialized instruction.<sup className="text-green-600 font-bold ml-0.5">3</sup>
               </p>
               <ul className="space-y-1 text-xs">
                 <li>• Covers K-12 and college</li>
@@ -74,7 +75,7 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
               </div>
               <p className="text-sm">
                 Students should be educated with non-disabled peers to the maximum extent appropriate, 
-                with supports provided as needed<sup>[31]</sup>
+                with supports provided as needed.<sup className="text-green-600 font-bold ml-0.5">4</sup>
               </p>
             </div>
 
@@ -101,12 +102,12 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
             </div>
             <p className="text-sm">
               Beginning at age 14-16, IEPs must include transition planning for post-secondary education, 
-              employment, and independent living<sup>[32]</sup>
+              employment, and independent living.<sup className="text-green-600 font-bold ml-0.5">5</sup>
             </p>
           </div>
         </div>
 
-{/* --- CENTERED ACCOMMODATIONS VIDEO --- */} 
+        {/* --- CENTERED ACCOMMODATIONS VIDEO --- */} 
         <div className="text-center w-full mb-8"> 
           <div className="mx-auto w-64"> 
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
@@ -128,7 +129,7 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
         <div className="bg-[#e0f7fa] p-6 rounded-lg mb-8">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Educational Accommodations</h3>
           <p className="mb-6 text-sm">
-            Common helpful accommodations that can support autistic students in accessing the curriculum:<sup>[33]</sup>
+            Common helpful accommodations that can support autistic students in accessing the curriculum:<sup className="text-green-600 font-bold ml-0.5">6</sup>
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -213,6 +214,55 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
             decisions, request evaluations, bring advocates, and if needed, pursue dispute resolution. Don't 
             hesitate to ask questions and advocate for your child's needs.
           </p>
+        </div>
+      </div>
+
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              U.S. Department of Education. (2023). "Sec. 300.101 Free appropriate public education (FAPE)." <i>Individuals with Disabilities Education Act (IDEA)</i>.
+            </li>
+            <li>
+              U.S. Department of Education. (2023). "Sec. 300.320 Definition of individualized education program." <i>Individuals with Disabilities Education Act (IDEA)</i>.
+            </li>
+            <li>
+              U.S. Department of Education, Office for Civil Rights. (2023). "Protecting Students With Disabilities." <i>Section 504 of the Rehabilitation Act of 1973</i>.
+            </li>
+            <li>
+              U.S. Department of Education. (2023). "Sec. 300.114 LRE requirements." <i>Individuals with Disabilities Education Act (IDEA)</i>.
+            </li>
+            <li>
+              U.S. Department of Education. (2023). "Sec. 300.320(b) Transition services." <i>Individuals with Disabilities Education Act (IDEA)</i>.
+            </li>
+            <li>
+              Hume, K., et al. (2021). "Evidence-based practices for children, youth, and young adults with autism spectrum disorder: A comprehensive review." <i>Journal of Autism and Developmental Disorders</i>, 51(11), 4013-4032.
+            </li>
+          </ol>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <li>
+              Organization for Autism Research (OAR). "Navigating the Special Education System."
+            </li>
+            <li>
+              Wrightslaw. "Special Education Law and Advocacy for Parents."
+            </li>
+          </ul>
         </div>
       </div>
     </>
