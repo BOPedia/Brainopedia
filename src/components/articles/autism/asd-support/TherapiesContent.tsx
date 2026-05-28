@@ -1,3 +1,4 @@
+import React from 'react';
 import { ImageWithFallback } from "../../../figma/ImageWithFallback";
 
 export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (article: string) => void }) {
@@ -8,81 +9,148 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       <p className="mb-6">
         Various therapeutic interventions can support autistic individuals across the lifespan. The most beneficial 
         approach is highly individualized and should be based on the person's specific strengths, challenges, and 
-        goals—not on trying to make someone appear less autistic.<sup>1, 2</sup>
+        goals—not on trying to make someone appear less autistic.<sup className="text-green-600 font-bold ml-0.5">1, 2</sup>
       </p>
 
       {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
       <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"></p> 
-       <div className="mx-auto w-48 md:w-64">
-          <ImageWithFallback 
-            src="/images/autism/autism-support-TTtab-acronyms.png" 
-            alt="4 examples of therapies with acronyms"
-          /> 
+        <div className="mx-auto w-48 md:w-64">
+          <div className="rounded-lg shadow-md overflow-hidden bg-white">
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-acronyms.png" 
+              alt="4 examples of therapies with acronyms"
+            /> 
+          </div>
         </div> 
       </div>
 
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Speech and Language Therapy</h3>
-        <p className="mb-4">
-          Speech-language pathologists (SLPs) help with all forms of communication—verbal, nonverbal, and alternative.<sup>9</sup> They work on expressive and receptive language, pragmatic (social) language skills, and may provide AAC systems for nonspeaking individuals or address feeding difficulties related to sensory processing.
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-speech-therapy')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about Speech and Language Therapy →
-        </button>
+      {/* SPEECH THERAPY */}
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+        <div className="w-32 md:w-40 flex-shrink-0">
+          <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-SLP.png" 
+              alt="Speech and Language Therapy graphic"
+            />
+          </div>
+        </div>
+        <div className="flex-1">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Speech and Language Therapy</h3>
+          <p className="mb-4">
+            Speech-language pathologists (SLPs) help with all forms of communication—verbal, nonverbal, and alternative.<sup className="text-green-600 font-bold ml-0.5">9</sup> They work on expressive and receptive language, pragmatic (social) language skills, and may provide AAC systems for nonspeaking individuals or address feeding difficulties related to sensory processing.
+          </p>
+          <button onClick={() => setCurrentArticle?.('autism-speech-therapy')} className="text-[#10b981] hover:underline font-semibold">
+            Read more about Speech and Language Therapy →
+          </button>
+        </div>
       </div>
 
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Occupational Therapy (OT)</h3>
-        <p className="mb-4">
-          Occupational therapists help with sensory processing, motor coordination, self-care skills, and participation in daily activities.<sup>5, 6</sup> They may work on sensory integration, fine and gross motor skills, executive functioning strategies, and identifying helpful accommodations like sensory tools or environmental modifications.
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-occupational-therapy')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about Occupational Therapy →
-        </button>
+      {/* OCCUPATIONAL THERAPY */}
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+        <div className="w-32 md:w-40 flex-shrink-0">
+          <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-OT.png" 
+              alt="Occupational Therapy graphic"
+            />
+          </div>
+        </div>
+        <div className="flex-1">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Occupational Therapy (OT)</h3>
+          <p className="mb-4">
+            Occupational therapists help with sensory processing, motor coordination, self-care skills, and participation in daily activities.<sup className="text-green-600 font-bold ml-0.5">5, 6</sup> They may work on sensory integration, fine and gross motor skills, executive functioning strategies, and identifying helpful accommodations like sensory tools or environmental modifications.
+          </p>
+          <button onClick={() => setCurrentArticle?.('autism-occupational-therapy')} className="text-[#10b981] hover:underline font-semibold">
+            Read more about Occupational Therapy →
+          </button>
+        </div>
       </div>
 
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Applied Behavior Analysis (ABA)</h3>
-        <p className="mb-4">
-          ABA uses behavioral principles to teach skills and is one of the most researched autism interventions. However, it's also controversial—many autistic adults report trauma from compliance-focused ABA that targeted harmless autistic behaviors.<sup>4</sup> Modern approaches emphasize naturalistic, play-based methods that respect autonomy and neurodiversity.<sup>2</sup>
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-aba-therapy')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about ABA Therapy →
-        </button>
+      {/* ABA THERAPY */}
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+        <div className="w-32 md:w-40 flex-shrink-0">
+          <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-ABA.png" 
+              alt="Applied Behavior Analysis graphic"
+            />
+          </div>
+        </div>
+        <div className="flex-1">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Applied Behavior Analysis (ABA)</h3>
+          <p className="mb-4">
+            ABA uses behavioral principles to teach skills and is one of the most researched autism interventions. However, it's also controversial—many autistic adults report trauma from compliance-focused ABA that targeted harmless autistic behaviors.<sup className="text-green-600 font-bold ml-0.5">4</sup> Modern approaches emphasize naturalistic, play-based methods that respect autonomy and neurodiversity.<sup className="text-green-600 font-bold ml-0.5">2</sup>
+          </p>
+          <button onClick={() => setCurrentArticle?.('autism-aba-therapy')} className="text-[#10b981] hover:underline font-semibold">
+            Read more about ABA Therapy →
+          </button>
+        </div>
       </div>
 
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Skills Support</h3>
-        <p className="mb-4">
-          Social skills interventions teach interaction strategies while respecting autistic communication styles.<sup>3</sup> This includes social skills groups, peer-mediated interventions, social stories, and video modeling. Neurodiversity-informed approaches recognize the "double empathy problem"—that social challenges are bidirectional between autistic and non-autistic people.<sup>3</sup>
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-social-skills')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about Social Skills Support →
-        </button>
+      {/* SOCIAL SKILLS SUPPORT */}
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+        <div className="w-32 md:w-40 flex-shrink-0">
+          <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-SS.png" 
+              alt="Social Skills Support graphic"
+            />
+          </div>
+        </div>
+        <div className="flex-1">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Skills Support</h3>
+          <p className="mb-4">
+            Social skills interventions teach interaction strategies while respecting autistic communication styles.<sup className="text-green-600 font-bold ml-0.5">3</sup> This includes social skills groups, peer-mediated interventions, social stories, and video modeling. Neurodiversity-informed approaches recognize the "double empathy problem"—that social challenges are bidirectional between autistic and non-autistic people.<sup className="text-green-600 font-bold ml-0.5">3</sup>
+          </p>
+          <button onClick={() => setCurrentArticle?.('autism-social-skills')} className="text-[#10b981] hover:underline font-semibold">
+            Read more about Social Skills Support →
+          </button>
+        </div>
       </div>
 
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Mental Health Support</h3>
-        <p className="mb-4">
-          Autistic individuals have elevated rates of anxiety, depression, and other mental health conditions.<sup>7</sup> Autism-informed therapists adapt evidence-based approaches like CBT, ACT, and DBT for autistic thinking styles and sensory needs.<sup>7</sup> Trauma-informed care is especially important, as many autistic people have experienced bullying, abuse, or invalidating experiences.
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-mental-health')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about Mental Health Support →
-        </button>
+      {/* MENTAL HEALTH SUPPORT */}
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+        <div className="w-32 md:w-40 flex-shrink-0">
+          <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-MH.png" 
+              alt="Mental Health Support graphic"
+            />
+          </div>
+        </div>
+        <div className="flex-1">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Mental Health Support</h3>
+          <p className="mb-4">
+            Autistic individuals have elevated rates of anxiety, depression, and other mental health conditions.<sup className="text-green-600 font-bold ml-0.5">7</sup> Autism-informed therapists adapt evidence-based approaches like CBT, ACT, and DBT for autistic thinking styles and sensory needs.<sup className="text-green-600 font-bold ml-0.5">7</sup> Trauma-informed care is especially important, as many autistic people have experienced bullying, abuse, or invalidating experiences.
+          </p>
+          <button onClick={() => setCurrentArticle?.('autism-mental-health')} className="text-[#10b981] hover:underline font-semibold">
+            Read more about Mental Health Support →
+          </button>
+        </div>
       </div>
 
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Therapy</h3>
-        <p className="mb-4">
-          Physical therapy (PT) can be a valuable support for autistic individuals across all ages. Many autistic people experience differences in gross motor skills, muscle tone, balance, and gait — areas where a physical therapist specializes. Sessions are tailored to the individual's needs, with therapists mindful of sensory sensitivities during hands-on work. While PT is often most impactful when started early in childhood, it can be beneficial at any age.<sup>8</sup>
-        </p>
-        <button 
-          onClick={() => setCurrentArticle?.('autism-physical-therapy')} 
-          className="text-[#10b981] hover:underline font-semibold"
-        >
-          Read more about Physical Therapy →
-        </button>
+      {/* PHYSICAL THERAPY */}
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+        <div className="w-32 md:w-40 flex-shrink-0">
+          <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-PT.png" 
+              alt="Physical Therapy graphic"
+            />
+          </div>
+        </div>
+        <div className="flex-1">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Therapy</h3>
+          <p className="mb-4">
+            Physical therapy (PT) can be a valuable support for autistic individuals across all ages. Many autistic people experience differences in gross motor skills, muscle tone, balance, and gait — areas where a physical therapist specializes. Sessions are tailored to the individual's needs, with therapists mindful of sensory sensitivities during hands-on work. While PT is often most impactful when started early in childhood, it can be beneficial at any age.<sup className="text-green-600 font-bold ml-0.5">8</sup>
+          </p>
+          <button 
+            onClick={() => setCurrentArticle?.('autism-physical-therapy')} 
+            className="text-[#10b981] hover:underline font-semibold"
+          >
+            Read more about Physical Therapy →
+          </button>
+        </div>
       </div>
 
       {/* Choosing the Right Approach */}
@@ -91,17 +159,18 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         
         <p className="mb-6">
           Not every autistic person needs every type of therapy. The right combination depends on individual needs, goals, 
-          and priorities.<sup>1, 2</sup>
+          and priorities.<sup className="text-green-600 font-bold ml-0.5">1, 2</sup>
         </p>
 
         {/* --- CENTERED GRAPHIC SECTION 2 --- */} 
-          <div className="text-center w-full mb-8">  
-          <p className="text-[#0c264d] mb-4 italic"></p> 
+        <div className="text-center w-full mb-8">  
           <div className="mx-auto w-64">
-            <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-decisions.png" 
-              alt="decisions arrows pic - different directions"
-            /> 
+            <div className="rounded-lg shadow-md overflow-hidden bg-white">
+              <ImageWithFallback 
+                src="/images/autism/autism-support-TTtab-decisions.png" 
+                alt="decisions arrows pic - different directions"
+              /> 
+            </div>
           </div> 
         </div>
 
@@ -179,12 +248,13 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
 
         {/* --- CENTERED GRAPHIC SECTION 3 --- */} 
         <div className="text-center w-full mb-8"> 
-          <p className="text-[#0c264d] mb-4 italic"></p> 
           <div className="mx-auto w-full max-w-xl px-4"> 
-            <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-redflags.png" 
-              alt="red flags flying outside symbolizing the idea of be wary when needed"
-            /> 
+            <div className="rounded-lg shadow-md overflow-hidden bg-white">
+              <ImageWithFallback 
+                src="/images/autism/autism-support-TTtab-redflags.png" 
+                alt="red flags flying outside symbolizing the idea of be wary when needed"
+              /> 
+            </div>
           </div> 
         </div>
 
@@ -194,7 +264,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
           
           <p className="mb-6 text-sm">
             Some therapy goals and methods can be harmful. Be cautious of approaches that prioritize appearance 
-            over well-being, or compliance over autonomy.<sup>2, 4</sup>
+            over well-being, or compliance over autonomy.<sup className="text-green-600 font-bold ml-0.5">2, 4</sup>
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -238,7 +308,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -273,6 +343,9 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
             <li>
               Gowen, E., & Hamilton, A. (2013). "Motor abilities in autism: A review using a computational context." <i>Journal of Autism and Developmental Disorders</i>, 43(2), 323-344.
             </li>
+            <li>
+              American Speech-Language-Hearing Association (ASHA). (2023). <a href="https://www.asha.org/public/speech/disorders/Autism/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline"><i>Augmentative and Alternative Communication (AAC) Practice Portal</i></a>.
+            </li>
           </ol>
         </div>
         
@@ -281,9 +354,9 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
-              American Speech-Language-Hearing Association (ASHA). (2023). <a href="https://www.asha.org/public/speech/disorders/Autism/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:underline"><i>Augmentative and Alternative Communication (AAC) Practice Portal</i></a>.
+              Autistic Self Advocacy Network (ASAN). "Navigating Healthcare and Therapy Options."
             </li>
           </ul>
         </div>
