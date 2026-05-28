@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageWithFallback } from "../../../figma/ImageWithFallback";
 
 /* ─── THE GUEST LIST (Interface) ─── */
 interface LifespanContentProps {
@@ -32,12 +33,22 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             {/* Early Childhood */}
-            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
               <div className="text-center">
-                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early Childhood</h3>
+                <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Early Childhood</h3>
               </div>
+              
+              <div className="mx-auto w-40 mb-4">
+                <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+                  <ImageWithFallback 
+                    src="/images/autism/autism-living-Acrosstab-early-childhood.png" 
+                    alt="Graphic representing early childhood stage"
+                  />
+                </div>
+              </div>
+
               <p className="mb-4 text-sm text-gray-700">
-                Early signs often appear before age 2, though diagnosis may come later.<sup>1</sup>
+                Early signs often appear before age 2, though diagnosis may come later.<sup className="text-green-600 font-bold ml-0.5">1</sup>
               </p>
               <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
                 <li>Focus on early intervention and developmental therapies</li>
@@ -47,45 +58,76 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
             </div>
 
             {/* School Age */}
-            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
               <div className="text-center">
-                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">School Age</h3>
+                <h3 className="text-[#0c264d] font-bold mb-4 text-lg">School Age</h3>
               </div>
+
+              <div className="mx-auto w-40 mb-4">
+                <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+                  <ImageWithFallback 
+                    src="/images/autism/autism-living-Acrosstab-school-years.png" 
+                    alt="Graphic representing school years stage"
+                  />
+                </div>
+              </div>
+
               <p className="mb-4 text-sm text-gray-700">
                 Increasing social demands and structured environments present new challenges.
               </p>
               <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
                 <li>Navigating Special Education (IEPs/504 Plans)</li>
                 <li>Social difficulties often become more apparent</li>
-                <li>Many develop coping mechanisms, leading to masking and autistic burnout<sup>2</sup></li>
+                <li>Many develop coping mechanisms, leading to masking and autistic burnout<sup className="text-green-600 font-bold ml-0.5">2</sup></li>
               </ul>
             </div>
 
             {/* Adolescence */}
-            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
               <div className="text-center">
-                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Adolescence & Transition</h3>
+                <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Adolescence & Transition</h3>
               </div>
+
+              <div className="mx-auto w-40 mb-4">
+                <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+                  <ImageWithFallback 
+                    src="/images/autism/autism-living-Acrosstab-adolescence.png" 
+                    alt="Graphic representing adolescence and transition stage"
+                  />
+                </div>
+              </div>
+
               <p className="mb-4 text-sm text-gray-700">
                 A complex period combining puberty with changing social landscapes.
               </p>
               <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
-                <li>High rates of co-occurring anxiety and depression emerge<sup>3</sup></li>
+                <li>High rates of co-occurring anxiety and depression emerge<sup className="text-green-600 font-bold ml-0.5">3</sup></li>
                 <li>Executive functioning demands increase significantly</li>
                 <li>Critical period for transition planning toward adulthood</li>
               </ul>
             </div>
 
             {/* Adulthood */}
-            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
               <div className="text-center">
-                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Adulthood</h3>
+                <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Adulthood</h3>
               </div>
+              
+              {/* NEW ADULTHOOD GRAPHIC */}
+              <div className="mx-auto w-40 mb-4">
+                <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+                  <ImageWithFallback 
+                    src="/images/autism/autism-living-Acrosstab-adulthood.png" 
+                    alt="Graphic representing adulthood stage"
+                  />
+                </div>
+              </div>
+
               <p className="mb-4 text-sm text-gray-700">
                 Autism is a lifelong condition; autistic children become autistic adults.
               </p>
               <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
-                <li>Navigating higher education and employment<sup>4</sup></li>
+                <li>Navigating higher education and employment<sup className="text-green-600 font-bold ml-0.5">4</sup></li>
                 <li>Relationships: Friendships, romantic partnerships, and family dynamics</li>
                 <li>Self-understanding: Late diagnosis often leads to profound self-discovery</li>
               </ul>
@@ -93,12 +135,13 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
           </div>
 
           {/* Aging */}
-          <div className="bg-white p-5 rounded-md border-t-4 border-[#0c264d] shadow-sm mt-6">
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg text-center">Aging</h3>
-            <p className="mb-4 text-sm text-gray-700 text-center">
-              Research on aging autistic adults is limited but growing:<sup>5</sup>
+          <div className="bg-white p-5 rounded-md border-t-4 border-[#0c264d] shadow-sm mt-6 flex flex-col items-center">
+            <h3 className="text-[#0c264d] font-bold mb-4 text-lg text-center">Aging</h3>
+            
+            <p className="mb-4 text-sm text-gray-700 text-center w-full max-w-2xl">
+              Research on aging autistic adults is limited but growing:<sup className="text-green-600 font-bold ml-0.5">5</sup>
             </p>
-            <ul className="list-disc ml-6 space-y-2 text-sm text-gray-700 max-w-2xl mx-auto">
+            <ul className="list-disc ml-6 space-y-2 text-sm text-gray-700 w-full max-w-2xl">
               <li>Autism doesn't disappear; core characteristics persist throughout life</li>
               <li>Acceptance and reduced pressure to conform often come with age</li>
               <li>Need for autism-informed elder care and support systems</li>
@@ -108,7 +151,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
       </section>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -142,7 +185,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
               American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
             </li>
