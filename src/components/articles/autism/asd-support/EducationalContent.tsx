@@ -14,6 +14,24 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
           Under the Individuals with Disabilities Education Act (IDEA), autistic students are entitled to 
           a free appropriate public education (FAPE) with services tailored to their unique needs.<sup>[28]</sup>
         </p>
+        
+{/* --- CENTERED SCALES VIDEO --- */} 
+        <div className="text-center w-full mb-8"> 
+          <div className="mx-auto w-64"> 
+            <div className="rounded-lg shadow-md overflow-hidden bg-white">
+              <video 
+                src="/images/autism/autism-support-EduSuptab-scales.mp4" 
+                poster="/images/autism/autism-support-EduSuptab-scales.png"
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-auto block"
+                aria-label="Animation displaying educational scales and supports"
+              />
+            </div>
+          </div> 
+        </div>
 
         {/* Special Education Services */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">
@@ -105,7 +123,7 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
             </div>
           </div> 
         </div>
-        
+
         {/* Educational Accommodations */}
         <div className="bg-[#e0f7fa] p-6 rounded-lg mb-8">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Educational Accommodations</h3>
