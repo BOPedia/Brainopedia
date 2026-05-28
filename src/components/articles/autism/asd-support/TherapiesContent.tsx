@@ -1,244 +1,224 @@
+import React from 'react';
 import { ImageWithFallback } from "../../../figma/ImageWithFallback";
 
-export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (article: string) => void }) {
+interface EducationalContentProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+export function EducationalContent({ setCurrentArticle }: EducationalContentProps) {
   return (
-    <div>
-      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Therapeutic Interventions</h2>
-      
-      <p className="mb-6">
-        Various therapeutic interventions can support autistic individuals across the lifespan. The most beneficial 
-        approach is highly individualized and should be based on the person's specific strengths, challenges, and 
-        goals—not on trying to make someone appear less autistic.<sup>1, 2</sup>
-      </p>
-
-      {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
-      <div className="text-center w-full mb-8"> 
-        <p className="text-[#0c264d] mb-4 italic"></p> 
-       <div className="mx-auto w-48 md:w-64">
-          <ImageWithFallback 
-            src="/images/autism/autism-support-TTtab-acronyms.png" 
-            alt="4 examples of therapies with acronyms"
-          /> 
-        </div> 
-      </div>
-
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Speech and Language Therapy</h3>
-        <p className="mb-4">
-          Speech-language pathologists (SLPs) help with all forms of communication—verbal, nonverbal, and alternative.<sup>9</sup> They work on expressive and receptive language, pragmatic (social) language skills, and may provide AAC systems for nonspeaking individuals or address feeding difficulties related to sensory processing.
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-speech-therapy')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about Speech and Language Therapy →
-        </button>
-      </div>
-
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Occupational Therapy (OT)</h3>
-        <p className="mb-4">
-          Occupational therapists help with sensory processing, motor coordination, self-care skills, and participation in daily activities.<sup>5, 6</sup> They may work on sensory integration, fine and gross motor skills, executive functioning strategies, and identifying helpful accommodations like sensory tools or environmental modifications.
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-occupational-therapy')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about Occupational Therapy →
-        </button>
-      </div>
-
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Applied Behavior Analysis (ABA)</h3>
-        <p className="mb-4">
-          ABA uses behavioral principles to teach skills and is one of the most researched autism interventions. However, it's also controversial—many autistic adults report trauma from compliance-focused ABA that targeted harmless autistic behaviors.<sup>4</sup> Modern approaches emphasize naturalistic, play-based methods that respect autonomy and neurodiversity.<sup>2</sup>
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-aba-therapy')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about ABA Therapy →
-        </button>
-      </div>
-
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Skills Support</h3>
-        <p className="mb-4">
-          Social skills interventions teach interaction strategies while respecting autistic communication styles.<sup>3</sup> This includes social skills groups, peer-mediated interventions, social stories, and video modeling. Neurodiversity-informed approaches recognize the "double empathy problem"—that social challenges are bidirectional between autistic and non-autistic people.<sup>3</sup>
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-social-skills')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about Social Skills Support →
-        </button>
-      </div>
-
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Mental Health Support</h3>
-        <p className="mb-4">
-          Autistic individuals have elevated rates of anxiety, depression, and other mental health conditions.<sup>7</sup> Autism-informed therapists adapt evidence-based approaches like CBT, ACT, and DBT for autistic thinking styles and sensory needs.<sup>7</sup> Trauma-informed care is especially important, as many autistic people have experienced bullying, abuse, or invalidating experiences.
-        </p>
-        <button onClick={() => setCurrentArticle?.('autism-mental-health')} className="text-[#10b981] hover:underline font-semibold">
-          Read more about Mental Health Support →
-        </button>
-      </div>
-
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Therapy</h3>
-        <p className="mb-4">
-          Physical therapy (PT) can be a valuable support for autistic individuals across all ages. Many autistic people experience differences in gross motor skills, muscle tone, balance, and gait — areas where a physical therapist specializes. Sessions are tailored to the individual's needs, with therapists mindful of sensory sensitivities during hands-on work. While PT is often most impactful when started early in childhood, it can be beneficial at any age.<sup>8</sup>
-        </p>
-        <button 
-          onClick={() => setCurrentArticle?.('autism-physical-therapy')} 
-          className="text-[#10b981] hover:underline font-semibold"
-        >
-          Read more about Physical Therapy →
-        </button>
-      </div>
-
-      {/* Choosing the Right Approach */}
-      <div className="mt-8 mb-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Choosing the Right Approach</h2>
+    <>
+      <div>
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Educational Support</h2>
         
         <p className="mb-6">
-          Not every autistic person needs every type of therapy. The right combination depends on individual needs, goals, 
-          and priorities.<sup>1, 2</sup>
+          Under the Individuals with Disabilities Education Act (IDEA), autistic students are entitled to 
+          a free appropriate public education (FAPE) with services tailored to their unique needs.<sup className="text-green-600 font-bold ml-0.5">1</sup>
         </p>
-
-        {/* --- CENTERED GRAPHIC SECTION 2 --- */} 
+        
+        {/* --- CENTERED SCALES VIDEO --- */} 
         <div className="text-center w-full mb-8"> 
-          <p className="text-[#0c264d] mb-4 italic"></p> 
-          <div className="mx-auto w-full max-w-xl px-4"> 
-            <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-decisions.png" 
-              alt="decisions arrows pic - different directions"
-            /> 
+          <div className="mx-auto w-64"> 
+            <div className="rounded-lg shadow-md overflow-hidden bg-white">
+              <video 
+                src="/images/autism/autism-support-EduSuptab-scales.mp4" 
+                poster="/images/autism/autism-support-EduSuptab-scales.png"
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-auto block"
+                aria-label="Animation displaying educational scales and supports"
+              />
+            </div>
           </div> 
         </div>
 
+        {/* Special Education Services */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Decision-Making Framework</h3>
-          <p className="mb-6 text-sm">
-            Choosing therapeutic approaches requires thoughtful consideration of individual needs, preferences, and 
-            circumstances. A person-centered framework prioritizes autonomy, quality of life, and respect for 
-            neurodivergent ways of being.
-          </p>
-
+          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Special Education Services</h3>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
               <div className="flex items-center gap-3 mb-3">
-                <h4 className="text-[#0c264d] font-bold text-lg">Start with Priorities</h4>
+                <h4 className="text-[#0c264d] font-bold text-lg">IEP (Individualized Education Program)</h4>
               </div>
-              <p className="text-sm">
-                What skills or supports would most improve quality of life right now? Focus on meaningful goals 
-                rather than conformity.
+              <p className="text-sm mb-3">
+                Legally binding document outlining goals, services, and accommodations for students ages 3-21.<sup className="text-green-600 font-bold ml-0.5">2</sup>
               </p>
+              <ul className="space-y-1 text-xs">
+                <li>• Annual goals and progress monitoring</li>
+                <li>• Specialized instruction and services</li>
+                <li>• Accommodations and modifications</li>
+                <li>• Placement decisions</li>
+              </ul>
             </div>
 
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
               <div className="flex items-center gap-3 mb-3">
-                <h4 className="text-[#0c264d] font-bold text-lg">Listen to Autistic Voices</h4>
+                <h4 className="text-[#0c264d] font-bold text-lg">504 Plan</h4>
+              </div>
+              <p className="text-sm mb-3">
+                Accommodations for students who don't need specialized instruction.<sup className="text-green-600 font-bold ml-0.5">3</sup>
+              </p>
+              <ul className="space-y-1 text-xs">
+                <li>• Covers K-12 and college</li>
+                <li>• Focuses on access and barriers</li>
+                <li>• Less intensive than IEP</li>
+                <li>• Covers broader disabilities</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm">
+              <div className="flex items-center gap-3 mb-3">
+                <h4 className="text-[#0c264d] font-bold text-lg">Least Restrictive Environment (LRE)</h4>
               </div>
               <p className="text-sm">
-                If the individual can communicate their preferences, center their input. Their lived experience 
-                is invaluable.
+                Students should be educated with non-disabled peers to the maximum extent appropriate, 
+                with supports provided as needed.<sup className="text-green-600 font-bold ml-0.5">4</sup>
               </p>
             </div>
 
             <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm">
               <div className="flex items-center gap-3 mb-3">
-                <h4 className="text-[#0c264d] font-bold text-lg">Consider Intensity</h4>
+                <h4 className="text-[#0c264d] font-bold text-lg">Related Services</h4>
               </div>
-              <p className="text-sm">
-                More hours isn't always better. Balance therapy with rest, play, and family time to avoid 
-                burnout and overwhelm.
+              <p className="text-sm mb-2">
+                Support services necessary for students to benefit from special education:
               </p>
+              <ul className="space-y-1 text-xs">
+                <li>• Speech-language therapy</li>
+                <li>• Occupational therapy</li>
+                <li>• Counseling services</li>
+                <li>• Transportation</li>
+                <li>• Assistive technology</li>
+              </ul>
             </div>
+          </div>
 
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-3xl">♾️</span>
-                <h4 className="text-[#0c264d] font-bold text-lg">Affirming Providers</h4>
-              </div>
-              <p className="text-sm">
-                Seek therapists who respect autistic neurology and don't pathologize harmless differences like 
-                stimming or special interests.
-              </p>
+          <div className="mt-6 bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
+            <div className="flex items-center gap-3 mb-3">
+              <h4 className="text-[#0c264d] font-bold text-lg">Transition Planning</h4>
             </div>
-
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
-              <div className="flex items-center gap-3 mb-3">
-                <h4 className="text-[#0c264d] font-bold text-lg">Monitor for Harm</h4>
-              </div>
-              <p className="text-sm">
-                Watch for increased anxiety, shutdowns, loss of skills, or resistance to therapy. These are 
-                signs something isn't working.
-              </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
-              <div className="flex items-center gap-3 mb-3">
-                <h4 className="text-[#0c264d] font-bold text-lg">You Can Change Course</h4>
-              </div>
-              <p className="text-sm">
-                Starting one approach doesn't mean you're locked in forever. Flexibility and adjustment are 
-                part of the process.
-              </p>
-            </div>
+            <p className="text-sm">
+              Beginning at age 14-16, IEPs must include transition planning for post-secondary education, 
+              employment, and independent living.<sup className="text-green-600 font-bold ml-0.5">5</sup>
+            </p>
           </div>
         </div>
 
-        {/* --- CENTERED GRAPHIC SECTION 3 --- */} 
+        {/* --- CENTERED ACCOMMODATIONS VIDEO --- */} 
         <div className="text-center w-full mb-8"> 
-          <p className="text-[#0c264d] mb-4 italic"></p> 
-          <div className="mx-auto w-full max-w-xl px-4"> 
-            <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-redflags.png" 
-              alt="red flags flying outside symbolizing the idea of be wary when needed"
-            /> 
+          <div className="mx-auto w-64"> 
+            <div className="rounded-lg shadow-md overflow-hidden bg-white">
+              <video 
+                src="/images/autism/autism-support-EduSuptab-Accommodations.mp4" 
+                poster="/images/autism/autism-support-EduSuptab-Accommodations.png"
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-auto block"
+                aria-label="Animation displaying educational accommodations and supports"
+              />
+            </div>
           </div> 
         </div>
 
-        {/* Red Flags in Therapy */}
+        {/* Educational Accommodations */}
         <div className="bg-[#e0f7fa] p-6 rounded-lg mb-8">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Red Flags to Watch For</h3>
-          
+          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Educational Accommodations</h3>
           <p className="mb-6 text-sm">
-            Some therapy goals and methods can be harmful. Be cautious of approaches that prioritize appearance 
-            over well-being, or compliance over autonomy.<sup>2, 4</sup>
+            Common helpful accommodations that can support autistic students in accessing the curriculum:<sup className="text-green-600 font-bold ml-0.5">6</sup>
           </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white p-4 rounded-md shadow-sm">
-              <h4 className="text-[#0c264d] font-bold mb-2 text-center text-sm">Masking & Conformity</h4>
-              <ul className="space-y-1 text-xs">
-                <li>• Making person appear "less autistic"</li>
-                <li>• "Indistinguishable from peers" goals</li>
-                <li>• Targeting harmless stims or interests</li>
+              <h4 className="text-[#0c264d] font-bold mb-3 text-center">Environmental</h4>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Quiet workspace</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Noise-canceling headphones</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Sensory-friendly lighting</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Movement breaks</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Fidget tools allowed</span></li>
               </ul>
             </div>
 
             <div className="bg-white p-4 rounded-md shadow-sm">
-              <h4 className="text-[#0c264d] font-bold mb-2 text-center text-sm">Forced Discomfort</h4>
-              <ul className="space-y-1 text-xs">
-                <li>• Forcing eye contact</li>
-                <li>• Forcing physical touch</li>
-                <li>• Ignoring sensory boundaries</li>
+              <h4 className="text-[#0c264d] font-bold mb-3 text-center">Instructional</h4>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Visual schedules</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Written instructions</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Advance notice of changes</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Reduced homework</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Modified assignments</span></li>
               </ul>
             </div>
 
             <div className="bg-white p-4 rounded-md shadow-sm">
-              <h4 className="text-[#0c264d] font-bold mb-2 text-center text-sm">Punishment & Aversives</h4>
-              <ul className="space-y-1 text-xs">
-                <li>• Using punishment methods</li>
-                <li>• Withholding necessities</li>
-                <li>• Aversive conditioning</li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-4 rounded-md shadow-sm">
-              <h4 className="text-[#0c264d] font-bold mb-2 text-center text-sm">Dismissing Autonomy</h4>
-              <ul className="space-y-1 text-xs">
-                <li>• Prioritizing compliance over communication</li>
-                <li>• Dismissing distress as "behavior"</li>
-                <li>• Excluding individual from goal-setting</li>
+              <h4 className="text-[#0c264d] font-bold mb-3 text-center">Assessment</h4>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Extended time on tests</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Alternative formats</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Quiet testing room</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Oral responses allowed</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#10b981] mt-1">✓</span><span>Calculator/computer use</span></li>
               </ul>
             </div>
           </div>
+
+          <div className="mt-6 bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
+            <div className="flex items-center gap-3 mb-3">
+              <h4 className="text-[#0c264d] font-bold text-lg">Social Skills Support</h4>
+            </div>
+            <p className="text-sm">
+              Social skills groups, lunch bunches, peer buddy systems, and structured recess support can 
+              help autistic students navigate social situations at school.
+            </p>
+          </div>
+        </div>
+
+        {/* Educational Placement Options */}
+        <div className="bg-[#f0f9ff] p-6 rounded-lg mb-8">
+          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Educational Placement Options</h3>
+          <p className="mb-6 text-sm">
+            Placement should be determined by the student's individual needs, following the principle of 
+            least restrictive environment:
+          </p>
+
+          <div className="space-y-4">
+            {[
+              { num: '1', bg: 'bg-[#10b981]', text: 'text-white', label: 'General Education with Supports', desc: 'Full inclusion in general education classroom with accommodations, modifications, and support services. Student participates in all typical classroom activities with appropriate supports.' },
+              { num: '2', bg: 'bg-[#2abcd4]', text: 'text-white', label: 'Resource Room', desc: 'Part-time specialized instruction in a resource room for specific subjects or skills, with the rest of the day spent in general education. Often used for reading, math, or academic support.' },
+              { num: '3', bg: 'bg-[#ffd166]', text: 'text-[#0c264d]', label: 'Special Education Classroom', desc: 'Self-contained classroom with smaller class size, specialized curriculum, and intensive support. May include opportunities for inclusion in general education for certain subjects or activities.' },
+              { num: '4', bg: 'bg-[#0c264d]', text: 'text-white', label: 'Specialized School', desc: 'School specifically designed for students with disabilities, with specialized staff, programs, and therapeutic services on-site. May be public or private.' },
+              { num: '5', bg: 'bg-[#10b981]', text: 'text-white', label: 'Homeschooling', desc: "Some families choose to homeschool with support from online programs, co-ops, therapists, and educational consultants. May still access some school services depending on state laws." },
+            ].map((item) => (
+              <div key={item.num} className="flex items-start gap-3">
+                <div className={`${item.bg} ${item.text} rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold`}>{item.num}</div>
+                <div className="flex-1">
+                  <div className="font-bold text-[#0c264d] mb-1">{item.label}</div>
+                  <div className="text-sm">{item.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-[#ffd166] border-2 border-[#0c264d] p-5 rounded-lg shadow-md">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg flex items-center gap-2">
+            Remember
+          </h3>
+          <p className="text-sm">
+            Parents are equal members of the IEP team. You have the right to participate fully in educational 
+            decisions, request evaluations, bring advocates, and if needed, pursue dispute resolution. Don't 
+            hesitate to ask questions and advocate for your child's needs.
+          </p>
         </div>
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -250,45 +230,41 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
           </h4>
           <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
             <li>
-              Kapp, S. K. (Ed.). (2020). <i>Autistic community and the neurodiversity movement: Stories from the frontline</i>. Palgrave Macmillan.
+              U.S. Department of Education. (2023). "Sec. 300.101 Free appropriate public education (FAPE)." <i>Individuals with Disabilities Education Act (IDEA)</i>.
             </li>
             <li>
-              Pellicano, E., & den Houting, J. (2022). "Annual research review: Shifting from 'normal science' to neurodiversity in autism science." <i>Journal of Child Psychology and Psychiatry</i>, 63(4), 381-396.
+              U.S. Department of Education. (2023). "Sec. 300.320 Definition of individualized education program." <i>Individuals with Disabilities Education Act (IDEA)</i>.
             </li>
             <li>
-              Milton, D. E. (2012). "On the ontological status of autism: the 'double empathy problem'." <i>Disability & Society</i>, 27(6), 883-887.
+              U.S. Department of Education, Office for Civil Rights. (2023). "Protecting Students With Disabilities." <i>Section 504 of the Rehabilitation Act of 1973</i>.
             </li>
             <li>
-              Kupferstein, H. (2018). "Evidence of increased PTSD symptoms in autistics exposed to applied behavior analysis." <i>Advances in Autism</i>, 4(1), 19-29.
+              U.S. Department of Education. (2023). "Sec. 300.114 LRE requirements." <i>Individuals with Disabilities Education Act (IDEA)</i>.
             </li>
             <li>
-              Bal, V. H., et al. (2015). "Daily living skills in individuals with autism spectrum disorder from 2 to 21 years of age." <i>Autism</i>, 19(7), 774-784.
+              U.S. Department of Education. (2023). "Sec. 300.320(b) Transition services." <i>Individuals with Disabilities Education Act (IDEA)</i>.
             </li>
             <li>
-              Baranek, G. T., et al. (2006). "Sensory experiences questionnaire: discriminating sensory features in young children with autism, developmental delays, and typical development." <i>Journal of Child Psychology and Psychiatry</i>, 47(6), 591-601.
-            </li>
-            <li>
-              Wood, J. J., et al. (2009). "Cognitive behavioral therapy for anxiety in children with autism spectrum disorders: a randomized, controlled trial." <i>Journal of Child Psychology and Psychiatry</i>, 50(2), 224-234.
-            </li>
-            <li>
-              Gowen, E., & Hamilton, A. (2013). "Motor abilities in autism: A review using a computational context." <i>Journal of Autism and Developmental Disorders</i>, 43(2), 323-344.
+              Hume, K., et al. (2021). "Evidence-based practices for children, youth, and young adults with autism spectrum disorder: A comprehensive review." <i>Journal of Autism and Developmental Disorders</i>, 51(11), 4013-4032.
             </li>
           </ol>
         </div>
         
-        {/* BACKGROUND SOURCES: CYAN */}
+        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
-              American Speech-Language-Hearing Association (ASHA). (2023). <a href="https://www.asha.org/public/speech/disorders/Autism/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:underline"><i>Augmentative and Alternative Communication (AAC) Practice Portal</i></a>.
+              Organization for Autism Research (OAR). "Navigating the Special Education System."
+            </li>
+            <li>
+              Wrightslaw. "Special Education Law and Advocacy for Parents."
             </li>
           </ul>
         </div>
       </div>
-
-    </div>
+    </>
   );
 }
