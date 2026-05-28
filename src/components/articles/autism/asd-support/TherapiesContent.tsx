@@ -95,9 +95,9 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         </p>
 
         {/* --- CENTERED GRAPHIC SECTION 2 --- */} 
-        <div className="text-center w-full mb-8"> 
+          <div className="text-center w-full mb-8">  
           <p className="text-[#0c264d] mb-4 italic"></p> 
-          <div className="mx-auto w-full max-w-xl px-4"> 
+          <div className="mx-auto w-64">
             <ImageWithFallback 
               src="/images/autism/autism-support-TTtab-decisions.png" 
               alt="decisions arrows pic - different directions"
