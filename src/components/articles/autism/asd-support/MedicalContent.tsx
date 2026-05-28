@@ -20,7 +20,7 @@ export function MedicalContent({ setCurrentArticle }: MedicalContentProps) {
         {/* --- CENTERED GRAPHIC SECTION 1 --- */} 
         <div className="text-center w-full mb-8"> 
           <p className="text-[#0c264d] mb-4 italic"></p> 
-          <div className="mx-auto w-48 md:w-64"> 
+          <div className="mx-auto w-96 md:w-64"> 
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
               <ImageWithFallback 
                 src="/images/autism/autism-support-MMtab-5guys.png" 
