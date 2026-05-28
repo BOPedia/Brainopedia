@@ -67,7 +67,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
               </ul>
             </div>
 
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0A9DC4] shadow-sm">
+<div className="bg-white p-5 rounded-md border-l-4 border-[#0A9DC4] shadow-sm">
               <div className="flex items-center justify-center mb-3">
                 <h4 className="text-[#0c264d] font-bold text-lg">Smell & Tactile</h4>
               </div>
@@ -79,22 +79,23 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
               </ul>
             </div>
           </div>
+          
           {/* --- CENTERED GRAPHIC SECTION 2 --- */} 
-                  <div className="text-center w-full mb-8"> 
-                    <div className="mx-auto w-64 md:w-96"> {/* Fixed width classes here! */}
-                      <div className="rounded-lg shadow-md overflow-hidden bg-white">
-                        <ImageWithFallback 
-                          src="/images/autism/autism-support-EnviroSupptab-VisualSupports.png" 
-                          alt="eyeball to signify visual supports"
-                        /> 
-                      </div>
-                    </div> 
-                  </div>
+          <div className="text-center w-full mt-10 mb-8"> {/* <-- ADDED mt-10 HERE! */}
+            <div className="mx-auto w-64">
+              <div className="rounded-lg shadow-md overflow-hidden bg-white">
+                <ImageWithFallback 
+                  src="/images/autism/autism-support-EnviroSupptab-VisualSupports.png" 
+                  alt="eyeball to signify visual supports"
+                /> 
+              </div>
+            </div> 
+          </div>
 
           <p className="mt-6 text-sm bg-white p-4 rounded border-2 border-[#2abcd4]">
             <strong>Note:</strong> Sensory needs are highly individualized. What is calming to one autistic person 
             (e.g., deep pressure) might be overwhelming to another. A personalized sensory profile is essential because 
-            environmental modifications can significantly improve participation and well-being.<sup>2</sup>
+            environmental modifications can significantly improve participation and well-being.<sup className="text-green-600 font-bold ml-0.5">2</sup>
           </p>
         </div>
 
@@ -140,8 +141,8 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
           </div>
         </div>
           {/* --- CENTERED GRAPHIC SECTION 3 --- */} 
-                  <div className="text-center w-full mb-8"> 
-                    <div className="mx-auto w-64 md:w-96"> {/* Fixed width classes here! */}
+          <div className="text-center w-full mb-8"> 
+          <div className="mx-auto w-64">
                       <div className="rounded-lg shadow-md overflow-hidden bg-white">
                         <ImageWithFallback 
                           src="/images/autism/autism-support-EnviroSupptab-communication-bubbles.png" 
