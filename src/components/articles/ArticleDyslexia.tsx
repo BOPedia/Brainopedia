@@ -1,6 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
 interface ArticleDyslexiaProps {
   setCurrentArticle?: (article: string) => void;
@@ -59,14 +60,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
   ];
 
   return (
-    <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
+    <article className="max-w-6xl animate-fadeIn">
       <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
         Dyslexia
       </h1>
@@ -86,6 +80,13 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
 
         {/* Right column - InfoBox */}
         <div className="w-full">
+          <div className="mb-4">
+            <ImageWithFallback
+              src="/images/dyslexia/dyslexia-main-infobox.png"
+              alt="Dyslexia Infobox graphic"
+              className="w-full h-auto rounded-lg shadow-sm"
+            />
+          </div>
           <InfoBox
             title="Dyslexia"
             data={[
@@ -105,7 +106,12 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
           <p className="mb-4">
-            Dyslexia is one of the most common learning differences, affecting approximately 5-10% of the population.<sup>1</sup> 
+            <ImageWithFallback
+              src="/images/dyslexia/dyslexia-main-overview.png"
+              alt="Dyslexia Overview"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
+            Dyslexia is one of the most common learning differences, affecting approximately 5-10% of the population.<sup className="text-green-600 font-bold ml-0.5">1</sup> 
             It is important to understand that dyslexia is not related to intelligence—many individuals with dyslexia 
             have average to above-average intelligence and may excel in areas such as creative thinking, problem-solving, 
             and visual-spatial reasoning. The term "dyslexia" comes from the Greek words "dys" (difficulty) and "lexia" 
@@ -133,6 +139,11 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/dyslexia/dyslexia-main-symptoms.png"
+              alt="Dyslexia Symptoms and Characteristics"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Dyslexia is characterized by difficulties with reading accuracy and fluency, poor spelling, and challenges 
             with decoding words. Common signs include difficulty recognizing familiar words, slow and laborious reading, 
             poor spelling even of common words, difficulty with phonological awareness (recognizing and manipulating 
@@ -156,11 +167,16 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/dyslexia/dyslexia-main-causes.png"
+              alt="Causes and Origins of Dyslexia"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Dyslexia has a strong genetic component and tends to run in families. Research has identified several genes 
             associated with reading difficulties, though the genetic picture is complex with multiple genes contributing 
-            to the condition.<sup>2</sup> Neuroimaging studies have shown that people with dyslexia show differences in brain activity, 
+            to the condition.<sup className="text-green-600 font-bold ml-0.5">2</sup> Neuroimaging studies have shown that people with dyslexia show differences in brain activity, 
             particularly in the left hemisphere regions involved in reading, including the phonological processing regions, 
-            the visual word form area, and neural connectivity between reading-related brain regions.<sup>3</sup> These neurological 
+            the visual word form area, and neural connectivity between reading-related brain regions.<sup className="text-green-600 font-bold ml-0.5">3</sup> These neurological 
             differences explain why reading—which requires integrating visual information with language sounds and meanings—is 
             particularly challenging for people with dyslexia.
           </p>
@@ -180,6 +196,11 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/dyslexia/dyslexia-main-diagnosis.png"
+              alt="Testing and Diagnosing Dyslexia"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Dyslexia is diagnosed through comprehensive evaluation by qualified professionals such as educational 
             psychologists, school psychologists, or neuropsychologists. The assessment typically includes standardized 
             tests of reading, writing, and spelling, phonological processing assessments, evaluation of cognitive abilities, 
@@ -203,6 +224,11 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/dyslexia/dyslexia-main-support.png"
+              alt="Support and Management for Dyslexia"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Evidence-based reading interventions are essential for individuals with dyslexia. Effective approaches include 
             structured literacy programs (such as Orton-Gillingham and Wilson Reading System), explicit phonics instruction, 
             multisensory teaching methods, and systematic and cumulative instruction. Accommodations and assistive technology 
@@ -226,6 +252,11 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyslexia</h2>
           
           <p className="mb-4">
+            <ImageWithFallback
+              src="/images/dyslexia/dyslexia-main-living.png"
+              alt="Living with Dyslexia"
+              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            />
             Individuals with dyslexia lead successful and fulfilling lives across all areas of society. Many successful 
             individuals have dyslexia, including entrepreneurs, artists, scientists, and leaders, demonstrating that 
             dyslexia often coexists with strengths in creative thinking, problem-solving, and big-picture conceptualization. 
@@ -247,15 +278,42 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         </section>
       </div>
 
-      {/* References Section */}
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <p>[1] Lyon, G. R., Shaywitz, S. E., & Shaywitz, B. A. (2003). "A definition of dyslexia." <em>Annals of Dyslexia</em>, 53(1), 1-14.</p>
-          <p>[2] Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <em>Annual Review of Clinical Psychology</em>, 11, 283-307.</p>
-          <p>[3] Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <em>Science</em>, 325(5938), 280-283.</p>
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Lyon, G. R., Shaywitz, S. E., & Shaywitz, B. A. (2003). "A definition of dyslexia." <i>Annals of Dyslexia</i>, 53(1), 1-14.
+            </li>
+            <li>
+              Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <i>Annual Review of Clinical Psychology</i>, 11, 283-307.
+            </li>
+            <li>
+              Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <i>Science</i>, 325(5938), 280-283.
+            </li>
+          </ol>
         </div>
-      </section>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <li>
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
+            </li>
+          </ul>
+        </div>
+      </div>
     </article>
   );
 }
