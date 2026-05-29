@@ -24,8 +24,8 @@ export function EducationEmploymentContent({ setCurrentArticle }: EducationEmplo
                 <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Higher Education</h3>
               </div>
               
-              <div className="mx-auto w-64 mb-4">
-                <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+              <div className="mx-auto w-32 md:w-64 mb-4">
+              <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
                     src="/images/autism/autism-living-EEtab-college.png" 
                     alt="Graphic representing higher education and college life"
@@ -49,8 +49,8 @@ export function EducationEmploymentContent({ setCurrentArticle }: EducationEmplo
                 <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Employment & The Workplace</h3>
               </div>
               
-              <div className="mx-auto w-64 mb-4">
-                <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+              <div className="mx-auto w-32 md:w-64 mb-4">
+  <           div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
                     src="/images/autism/autism-living-EEtab-workplace.png" 
                     alt="Graphic representing employment and the workplace"
