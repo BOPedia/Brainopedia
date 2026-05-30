@@ -65,13 +65,24 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               </p>
             </div>
           </div>
-          <div className="lg:col-span-4 flex justify-center pt-8">
-            <ImageWithFallback 
-              src="/images/dyslexia/YOUR-INTRO-IMAGE.png"
-              alt="Dyslexia Concept Visual"
-              className="w-full max-w-[250px] h-auto rounded-lg shadow-sm"
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            poster="/images/dyslexia/dyslexia-overview-books-fly.png"
+            className="w-full max-w-[250px] h-auto rounded-lg shadow-sm"
+            aria-label="abstract painting of books flying out of a swirl"
+          >
+            <source src="/images/dyslexia/dyslexia-overview-books-fly.mp4" type="video/mp4" />
+            
+            {/* Fallback image for older browsers or if the video fails to load */}
+            <img 
+              src="/images/dyslexia/dyslexia-overview-books-fly.png" 
+              alt="abstract painting of books flying out of a swirl"
+              className="w-full h-auto rounded-lg shadow-sm"
             />
-          </div>
+          </video>
         </section>
 
         {/* SECTION 1.5: KEY CHARACTERISTICS (ICON GRID) */}
