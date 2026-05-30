@@ -43,7 +43,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           <ImageWithFallback 
             src="/images/dyslexia/dyslexia-overview-intro.png"
             alt="word salad with dyslexia in the middle"
-            className="w-48 md:w-80 h-auto rounded-md shadow-sm float-right ml-6 mb-4"
+            className="w-48 md:w-64 h-auto rounded-md shadow-sm float-right ml-6 mb-4"
           />
           <p className="mb-4 text-gray-800 leading-relaxed">
             Dyslexia is a specific learning disorder that primarily affects reading and language processing.<sup className="text-green-600 font-bold ml-0.5">1</sup> 
@@ -228,7 +228,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           </div>
 {/* This replaces your existing <div className="lg:col-span-4 ..."> block */}
           <div className="lg:col-span-4 flex justify-center pt-8">
-            <div className="w-64 rounded-xl overflow-hidden shadow-sm">
+            <div className="w-80 rounded-xl overflow-hidden shadow-sm">
               <video 
                 autoPlay 
                 loop 
