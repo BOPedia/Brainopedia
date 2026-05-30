@@ -56,8 +56,8 @@ export function DyslexiaOverview({ setCurrentArticle, initialTab }: DyslexiaOver
         </p>
         
         <ImageWithFallback 
-          src={dyslexiaHeroImage} 
-          alt="Child with reading difficulties"
+          src="/images/dyslexia/dyslexia-overview-intro.png"
+          alt="word salad with dyslexia in the middle"
           className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
         />
         
