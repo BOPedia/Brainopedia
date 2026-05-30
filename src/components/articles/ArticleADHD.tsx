@@ -61,7 +61,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
 
   return (
     <article className="max-w-6xl">
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl font-bold">
+      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
         <span className="md:hidden">ADHD</span>
         <span className="hidden md:block">Attention-Deficit/Hyperactivity Disorder (ADHD)</span>
       </h1>

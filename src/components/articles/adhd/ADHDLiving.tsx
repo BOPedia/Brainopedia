@@ -13,7 +13,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
     return (
       <>
         <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Thriving with ADHD</h2>
+          <h2 className="text-[#0c264d] mb-4 text-2xl">Thriving with ADHD</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-living-overview-pathway.png"

@@ -14,7 +14,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
     return (
       <>
         <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding the Causes of ADHD</h2>
+          <h2 className="text-[#0c264d] mb-4 text-2xl">Understanding the Causes of ADHD</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-overview-dna.png"

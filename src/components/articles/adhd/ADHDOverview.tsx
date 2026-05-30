@@ -11,7 +11,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
     <article className="max-w-full w-full">
       {/* HEADER */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-12 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <h1 className="text-3xl font-bold text-[#0c264d]">
+        <h1 className="text-3xl text-[#0c264d]">
           ADHD: Overview
         </h1>
 
