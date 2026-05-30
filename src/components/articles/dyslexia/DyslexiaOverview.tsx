@@ -154,20 +154,73 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             </div>
 
             <div>
-              <h3 className="text-[#0c264d] font-bold text-xl mb-3">Co-occurring Conditions</h3>
-              <p className="leading-relaxed mb-3">
-                Dyslexia frequently co-occurs with other neurodevelopmental and mental health conditions:<sup className="text-green-600 font-bold ml-0.5">25</sup>
-              </p>
-              <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2">
-                <li><strong>ADHD:</strong> 25-40% of individuals with dyslexia also have ADHD.<sup className="text-green-600 font-bold ml-0.5">26</sup></li>
-                <li><strong>Dysgraphia:</strong> Writing difficulties often co-occur with dyslexia.<sup className="text-green-600 font-bold ml-0.5">27</sup></li>
-                <li><strong>Dyscalculia:</strong> Some individuals have both reading and math learning disabilities.<sup className="text-green-600 font-bold ml-0.5">28</sup></li>
-                <li><strong>Anxiety and depression:</strong> Higher rates due to academic struggles and negative experiences.<sup className="text-green-600 font-bold ml-0.5">29</sup></li>
-                <li><strong>Language disorders:</strong> Broader oral language difficulties may be present.<sup className="text-green-600 font-bold ml-0.5">30</sup></li>
-              </ul>
+            <h3 className="text-[#0c264d] font-bold text-xl mb-3">Co-occurring Conditions</h3>
+            <p className="leading-relaxed mb-5">
+              Dyslexia frequently co-occurs with other neurodevelopmental and mental health conditions:<sup className="text-green-600 font-bold ml-0.5">25</sup>
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+              
+              {/* Card 1: ADHD */}
+              <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+                <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h4 className="font-bold text-[#0c264d] mb-2 text-md">ADHD</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">25-40% of individuals with dyslexia also have ADHD.<sup className="text-green-600 font-bold ml-0.5">26</sup></p>
+              </div>
+
+              {/* Card 2: Dysgraphia */}
+              <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+                <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                  </svg>
+                </div>
+                <h4 className="font-bold text-[#0c264d] mb-2 text-md">Dysgraphia</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">Writing difficulties often co-occur with dyslexia.<sup className="text-green-600 font-bold ml-0.5">27</sup></p>
+              </div>
+
+              {/* Card 3: Dyscalculia */}
+              <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+                <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h4 className="font-bold text-[#0c264d] mb-2 text-md">Dyscalculia</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">Some individuals have both reading and math learning disabilities.<sup className="text-green-600 font-bold ml-0.5">28</sup></p>
+              </div>
+
+              {/* Card 4: Anxiety & Depression */}
+              <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+                <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <h4 className="font-bold text-[#0c264d] mb-2 text-md">Anxiety & Depression</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">Higher rates due to academic struggles and negative experiences.<sup className="text-green-600 font-bold ml-0.5">29</sup></p>
+              </div>
+
+              {/* Card 5: Language Disorders */}
+              <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+                <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+
+                </div>
+              </div>
+              
+                <h4 className="font-bold text-[#0c264d] mb-2 text-md">Language Disorders</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">Broader oral language difficulties may be present.<sup className="text-green-600 font-bold ml-0.5">30</sup></p>
+              </div>
+
             </div>
           </div>
-
           <div className="lg:col-span-5 w-full flex justify-center">
             {/* Dyslexia By The Numbers Infobox */}
             <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 w-full max-w-sm shadow-sm">
