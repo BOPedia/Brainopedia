@@ -37,7 +37,13 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
       </button>
 
       <div className="space-y-16">
-        
+          <div className="mb-10 bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
+            <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-overview-intro.png"
+            alt="word salad with dyslexia in the middle"
+            className="w-48 md:w-80 h-auto rounded-md shadow-sm float-right ml-6 mb-4"
+            />
+          </div> 
         {/* SECTION 1: WHAT IS DYSLEXIA? */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-8 space-y-4">
@@ -55,13 +61,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
             </p>
           </div>
-          <div className="mb-10 bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
-            <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-overview-intro.png"
-            alt="word salad with dyslexia in the middle"
-            className="w-48 md:w-80 h-auto rounded-md shadow-sm float-right ml-6 mb-4"
-            />
-          </div>
+
         </section>
 
         {/* SECTION 1.5: KEY CHARACTERISTICS (ICON GRID) */}
