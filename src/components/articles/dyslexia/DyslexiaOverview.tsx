@@ -37,31 +37,40 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
       </button>
 
       <div className="space-y-16">
-          <div className="mb-10 bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
-            <ImageWithFallback 
+        
+        {/* INTRO: BLUE BOX WITH FLOATED IMAGE */}
+        <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
+          <ImageWithFallback 
             src="/images/dyslexia/dyslexia-overview-intro.png"
             alt="word salad with dyslexia in the middle"
             className="w-48 md:w-80 h-auto rounded-md shadow-sm float-right ml-6 mb-4"
-            />
-          </div> 
-    {/* SECTION 1: WHAT IS DYSLEXIA? */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          <div className="lg:col-span-8 space-y-4">
-            <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">What is Dyslexia?</h2>
-            
-            <p className="leading-relaxed">
-              <strong>Dyslexia</strong> is a specific learning disorder that primarily affects reading and language processing.<sup className="text-green-600 font-bold ml-0.5">1</sup> 
-              It is neurobiological in origin and characterized by difficulties with accurate and/or fluent word recognition, 
-              poor spelling, and decoding abilities.<sup className="text-green-600 font-bold ml-0.5">2</sup> These difficulties typically result from a deficit in the 
-              phonological component of language that is often unexpected in relation to other cognitive abilities.<sup className="text-green-600 font-bold ml-0.5">3</sup>
-            </p>
-            <p className="leading-relaxed">
-              Importantly, dyslexia is not a reflection of low intelligence or lack of effort. Many individuals with dyslexia 
-              have average or above-average intelligence and can be highly successful when provided with appropriate support 
-              and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
+          />
+          <p className="mb-4 text-gray-800 leading-relaxed">
+            Dyslexia is a specific learning disorder that primarily affects reading and language processing.<sup className="text-green-600 font-bold ml-0.5">1</sup> 
+            It is neurobiological in origin and characterized by difficulties with accurate and/or fluent word recognition, 
+            poor spelling, and decoding abilities.<sup className="text-green-600 font-bold ml-0.5">2</sup> These difficulties typically result from a deficit in the 
+            phonological component of language that is often unexpected in relation to other cognitive abilities.<sup className="text-green-600 font-bold ml-0.5">3</sup>
+          </p>
+          <p className="text-gray-800 leading-relaxed">
+            Importantly, dyslexia is not a reflection of low intelligence or lack of effort. Many individuals with dyslexia 
+            have average or above-average intelligence and can be highly successful when provided with appropriate support 
+            and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
+          </p>
+        </div>
+
+        {/* SECTION 1: WHAT IS DYSLEXIA? */}
+        <section className="space-y-4">
+          <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">What is Dyslexia?</h2>
+
+          <div className="bg-white rounded-md border-l-4 border-[#2abcd4] p-5 shadow-sm mt-4">
+            <h3 className="text-[#0c264d] font-bold mb-2 text-sm uppercase tracking-wider">The IDA Definition</h3>
+            <p className="italic text-gray-700 text-sm leading-relaxed">
+              "Dyslexia is a specific learning disability that is neurobiological in origin. It is characterized by 
+              difficulties with accurate and/or fluent word recognition and by poor spelling and decoding abilities. 
+              These difficulties typically result from a deficit in the phonological component of language that is often 
+              unexpected in relation to other cognitive abilities and the provision of effective classroom instruction."<sup className="text-green-600 font-bold ml-0.5">5</sup>
             </p>
           </div>
-
         </section>
 
         {/* SECTION 1.5: KEY CHARACTERISTICS (ICON GRID) */}
