@@ -55,27 +55,13 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
             </p>
           </div>
-{/* This replaces your existing <div className="lg:col-span-4 ..."> block */}
-          <div className="lg:col-span-4 flex justify-center pt-8">
-            <div className="w-64 rounded-xl overflow-hidden shadow-sm">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                poster="/images/dyslexia/dyslexia-overview-books-fly.png"
-                className="w-full h-auto object-contain"
-                aria-label="Books flying out of a swirl, representing the challenges of reading with dyslexia"
-              >
-                <source 
-                  src="/images/dyslexia/dyslexia-overview-books-fly.mp4" 
-                  type="video/mp4" 
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+          <div className="mb-10 bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
+            <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-overview-intro.png"
+            alt="word salad with dyslexia in the middle"
+            className="w-48 md:w-80 h-auto rounded-md shadow-sm float-right ml-6 mb-4"
+            />
           </div>
-          
         </section>
 
         {/* SECTION 1.5: KEY CHARACTERISTICS (ICON GRID) */}
@@ -231,13 +217,27 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               When phonological processing is impaired, learning letter-sound correspondences is difficult, sounding out words is challenging, and reading remains effortful rather than automatic.
             </p>
           </div>
+{/* This replaces your existing <div className="lg:col-span-4 ..."> block */}
           <div className="lg:col-span-4 flex justify-center pt-8">
-            <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-overview-books-fly.png"
-              alt="abstract painting of books flying out of a swirl"
-              className="w-full max-w-[250px] h-auto rounded-lg shadow-sm" 
-            />
+            <div className="w-64 rounded-xl overflow-hidden shadow-sm">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                poster="/images/dyslexia/dyslexia-overview-books-fly.png"
+                className="w-full h-auto object-contain"
+                aria-label="Books flying out of a swirl, representing the challenges of reading with dyslexia"
+              >
+                <source 
+                  src="/images/dyslexia/dyslexia-overview-books-fly.mp4" 
+                  type="video/mp4" 
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
+          
         </section>
 
         {/* SECTION 4: STRENGTHS & MOVING FORWARD */}
