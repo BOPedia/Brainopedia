@@ -54,6 +54,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               have average or above-average intelligence and can be highly successful when provided with appropriate support 
               and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
             </p>
+          </div>
 {/* This replaces your existing <div className="lg:col-span-4 ..."> block */}
           <div className="lg:col-span-4 flex justify-center pt-8">
             <div className="w-64 rounded-xl overflow-hidden shadow-sm">
@@ -74,6 +75,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               </video>
             </div>
           </div>
+          
         </section>
 
         {/* SECTION 1.5: KEY CHARACTERISTICS (ICON GRID) */}
@@ -376,6 +378,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           </ul>
         </div>
       </div>
+      
     </article>
   );
 }
