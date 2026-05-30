@@ -13,7 +13,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
     <article className="max-w-6xl animate-fadeIn">
 
       {/* Main Title & Desktop Back Button - NOT BOLD */}
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-12 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl font-spartan text-[#0c264d]">
           Dyslexia: Overview
         </h1>
@@ -30,233 +30,262 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
       {/* Mobile Back Button - NOT BOLD */}
       <button 
         onClick={() => setCurrentArticle?.('dyslexia')}
-        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
+        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-10"
       >
         <span className="text-xl">←</span>
         All About Dyslexia
       </button>
 
-      {/* Introduction */}
-      <div className="mb-10 bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
-        <ImageWithFallback 
-          src="/images/dyslexia/YOUR-INTRO-IMAGE.png"
-          alt="word salad with dyslexia in the middle"
-          className="w-48 md:w-80 h-auto rounded-md shadow-sm float-right ml-6 mb-4"
-        />
-        <p className="mb-4 text-gray-800">
-          Dyslexia is a specific learning disorder that primarily affects reading and language processing.<sup className="text-green-600 font-bold ml-0.5">1</sup> 
-          It is neurobiological in origin and characterized by difficulties with accurate and/or fluent word recognition, 
-          poor spelling, and decoding abilities.<sup className="text-green-600 font-bold ml-0.5">2</sup> These difficulties typically result from a deficit in the 
-          phonological component of language that is often unexpected in relation to other cognitive abilities.<sup className="text-green-600 font-bold ml-0.5">3</sup>
-        </p>
-        <p className="text-gray-800">
-          Importantly, dyslexia is not a reflection of low intelligence or lack of effort. Many individuals with dyslexia 
-          have average or above-average intelligence and can be highly successful when provided with appropriate support 
-          and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
-        </p>
-      </div>
-
-      <div className="space-y-12 animate-fadeIn">
+      <div className="space-y-16">
         
-        {/* SECTION 1: What is Dyslexia? */}
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">What is Dyslexia?</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg mt-2">Core Definition</h3>
-          <p className="mb-4 text-gray-700">
-            The International Dyslexia Association (IDA) defines dyslexia as:<sup className="text-green-600 font-bold ml-0.5">5</sup>
-          </p>
-          <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6 mb-8 shadow-sm">
-            <p className="italic text-gray-700">
-              "Dyslexia is a specific learning disability that is neurobiological in origin. It is characterized by 
-              difficulties with accurate and/or fluent word recognition and by poor spelling and decoding abilities. 
-              These difficulties typically result from a deficit in the phonological component of language that is often 
-              unexpected in relation to other cognitive abilities and the provision of effective classroom instruction. 
-              Secondary consequences may include problems in reading comprehension and reduced reading experience that 
-              can impede growth of vocabulary and background knowledge."
+        {/* SECTION 1: WHAT IS DYSLEXIA? */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="lg:col-span-8 space-y-4">
+            <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">What is Dyslexia?</h2>
+            
+            <p className="leading-relaxed">
+              <strong>Dyslexia</strong> is a specific learning disorder that primarily affects reading and language processing.<sup className="text-green-600 font-bold ml-0.5">1</sup> 
+              It is neurobiological in origin and characterized by difficulties with accurate and/or fluent word recognition, 
+              poor spelling, and decoding abilities.<sup className="text-green-600 font-bold ml-0.5">2</sup> These difficulties typically result from a deficit in the 
+              phonological component of language that is often unexpected in relation to other cognitive abilities.<sup className="text-green-600 font-bold ml-0.5">3</sup>
             </p>
-          </div>
+            <p className="leading-relaxed">
+              Importantly, dyslexia is not a reflection of low intelligence or lack of effort. Many individuals with dyslexia 
+              have average or above-average intelligence and can be highly successful when provided with appropriate support 
+              and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
+            </p>
 
-          {/* ICON GRID: Key Characteristics */}
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Key Characteristics</h3>
+            <div className="bg-white rounded-md border-l-4 border-[#2abcd4] p-5 shadow-sm mt-6">
+              <h3 className="text-[#0c264d] font-bold mb-2 text-sm uppercase tracking-wider">The IDA Definition</h3>
+              <p className="italic text-gray-700 text-sm leading-relaxed">
+                "Dyslexia is a specific learning disability that is neurobiological in origin. It is characterized by 
+                difficulties with accurate and/or fluent word recognition and by poor spelling and decoding abilities. 
+                These difficulties typically result from a deficit in the phonological component of language that is often 
+                unexpected in relation to other cognitive abilities and the provision of effective classroom instruction."<sup className="text-green-600 font-bold ml-0.5">5</sup>
+              </p>
+            </div>
+          </div>
+          <div className="lg:col-span-4 flex justify-center pt-8">
+            <ImageWithFallback 
+              src="/images/dyslexia/YOUR-INTRO-IMAGE.png"
+              alt="Dyslexia Concept Visual"
+              className="w-full max-w-[250px] h-auto rounded-lg shadow-sm"
+            />
+          </div>
+        </section>
+
+        {/* SECTION 1.5: KEY CHARACTERISTICS (ICON GRID) */}
+        <section>
+          <h3 className="text-[#0c264d] font-bold mb-6 text-2xl border-b border-[#ffd166] pb-2">Key Characteristics</h3>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
-                </svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Phonological Processing</h4>
-              <p className="text-sm text-gray-700 leading-relaxed">Trouble with the sound structure of language<sup className="text-green-600 font-bold ml-0.5">6</sup></p>
+              <p className="text-sm text-gray-700 leading-relaxed">Trouble with the sound structure of language.<sup className="text-green-600 font-bold ml-0.5">6</sup></p>
             </div>
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Word Decoding</h4>
-              <p className="text-sm text-gray-700 leading-relaxed">Difficulty sounding out written words<sup className="text-green-600 font-bold ml-0.5">7</sup></p>
+              <p className="text-sm text-gray-700 leading-relaxed">Difficulty sounding out written words.<sup className="text-green-600 font-bold ml-0.5">7</sup></p>
             </div>
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Reading Fluency</h4>
-              <p className="text-sm text-gray-700 leading-relaxed">Slow, effortful reading even of familiar text<sup className="text-green-600 font-bold ml-0.5">8</sup></p>
+              <p className="text-sm text-gray-700 leading-relaxed">Slow, effortful reading even of familiar text.<sup className="text-green-600 font-bold ml-0.5">8</sup></p>
             </div>
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                </svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Spelling Difficulties</h4>
-              <p className="text-sm text-gray-700 leading-relaxed">Persistent spelling errors despite instruction<sup className="text-green-600 font-bold ml-0.5">9</sup></p>
+              <p className="text-sm text-gray-700 leading-relaxed">Persistent spelling errors despite instruction.<sup className="text-green-600 font-bold ml-0.5">9</sup></p>
             </div>
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Neurobiological Basis</h4>
-              <p className="text-sm text-gray-700 leading-relaxed">Differences in brain structure and function related to reading<sup className="text-green-600 font-bold ml-0.5">10</sup></p>
+              <p className="text-sm text-gray-700 leading-relaxed">Differences in brain structure/function related to reading.<sup className="text-green-600 font-bold ml-0.5">10</sup></p>
             </div>
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Unexpected Difficulty</h4>
-              <p className="text-sm text-gray-700 leading-relaxed">Challenges not explained by intellectual ability or lack of instruction<sup className="text-green-600 font-bold ml-0.5">11</sup></p>
+              <p className="text-sm text-gray-700 leading-relaxed">Challenges not explained by intelligence or instruction.<sup className="text-green-600 font-bold ml-0.5">11</sup></p>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 2: PREVALENCE & CO-OCCURRING */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="lg:col-span-7 space-y-6">
+            <div>
+              <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2 mb-4">How Common is Dyslexia?</h2>
+              <p className="leading-relaxed mb-4">
+                Dyslexia is the most common neurocognitive disorder, representing 80% of all learning disabilities.<sup className="text-green-600 font-bold ml-0.5">18</sup> It occurs across all languages and writing systems, though its manifestation may vary depending on the language.<sup className="text-green-600 font-bold ml-0.5">19</sup>
+              </p>
+              <p className="leading-relaxed">
+                Historically, it was thought to be more common in males. However, recent research suggests similar rates in males and females, indicating that girls may frequently be under-identified in classroom settings.<sup className="text-green-600 font-bold ml-0.5">21</sup>
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-[#0c264d] font-bold text-xl mb-3">Dyslexia as a Spectrum</h3>
+              <p className="leading-relaxed mb-3">
+                Dyslexia exists on a continuum of severity, and its manifestation varies heavily among individuals.<sup className="text-green-600 font-bold ml-0.5">22</sup> No two individuals with dyslexia are exactly alike.<sup className="text-green-600 font-bold ml-0.5">24</sup>
+              </p>
+              <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2">
+                <li><strong>Mild:</strong> Reading difficulties that respond well to intervention.</li>
+                <li><strong>Moderate:</strong> More significant challenges requiring intensive, sustained intervention.</li>
+                <li><strong>Severe:</strong> Persistent, substantial difficulties despite appropriate intervention.<sup className="text-green-600 font-bold ml-0.5">23</sup></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-[#0c264d] font-bold text-xl mb-3">Co-occurring Conditions</h3>
+              <p className="leading-relaxed mb-3">
+                Dyslexia frequently co-occurs with other neurodevelopmental and mental health conditions:<sup className="text-green-600 font-bold ml-0.5">25</sup>
+              </p>
+              <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2">
+                <li><strong>ADHD:</strong> 25-40% of individuals with dyslexia also have ADHD.<sup className="text-green-600 font-bold ml-0.5">26</sup></li>
+                <li><strong>Dysgraphia:</strong> Writing difficulties often co-occur with dyslexia.<sup className="text-green-600 font-bold ml-0.5">27</sup></li>
+                <li><strong>Dyscalculia:</strong> Some individuals have both reading and math learning disabilities.<sup className="text-green-600 font-bold ml-0.5">28</sup></li>
+                <li><strong>Anxiety and depression:</strong> Higher rates due to academic struggles and negative experiences.<sup className="text-green-600 font-bold ml-0.5">29</sup></li>
+                <li><strong>Language disorders:</strong> Broader oral language difficulties may be present.<sup className="text-green-600 font-bold ml-0.5">30</sup></li>
+              </ul>
             </div>
           </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Misconceptions</h3>
-          <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-4 shadow-sm">
-            <h4 className="text-center text-[#0c264d] font-bold mb-6 text-lg">What Dyslexia Is NOT:</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
-              <p className="bg-red-50 p-3 rounded"><strong>✗ Visual problem:</strong> Dyslexia is not primarily a vision problem; it's language-based.<sup className="text-green-600 font-bold ml-0.5">6</sup></p>
-              <p className="bg-red-50 p-3 rounded"><strong>✗ Seeing letters backwards:</strong> While letter reversals can occur, this is not the core issue.<sup className="text-green-600 font-bold ml-0.5">12</sup></p>
-              <p className="bg-red-50 p-3 rounded"><strong>✗ Low intelligence:</strong> Dyslexia occurs across the IQ range.<sup className="text-green-600 font-bold ml-0.5">13</sup></p>
-              <p className="bg-red-50 p-3 rounded"><strong>✗ Laziness:</strong> Reading difficulties are neurologically based.<sup className="text-green-600 font-bold ml-0.5">14</sup></p>
-              <p className="bg-red-50 p-3 rounded"><strong>✗ Something you outgrow:</strong> Dyslexia is lifelong.<sup className="text-green-600 font-bold ml-0.5">15</sup></p>
-              <p className="bg-red-50 p-3 rounded"><strong>✗ Rare:</strong> Dyslexia is common, affecting millions.<sup className="text-green-600 font-bold ml-0.5">16</sup></p>
+          <div className="lg:col-span-5 w-full flex justify-center">
+            {/* Dyslexia By The Numbers Infobox */}
+            <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 w-full max-w-sm shadow-sm">
+              <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">Dyslexia by the Numbers</h3>
+              
+              <div className="mb-6 pb-6 border-b-2 border-gray-200 text-center">
+                <div className="text-4xl font-bold text-[#2abcd4]">5-20%</div>
+                <div className="text-sm text-[#0c264d] mt-1">of the global population has some<br/>degree of dyslexia<sup className="text-green-600 font-bold ml-0.5">17</sup></div>
+              </div>
+
+              <div className="mb-6 pb-6 border-b-2 border-gray-200 text-center">
+                <div className="bg-[#0c264d] text-white rounded p-4">
+                  <div className="text-3xl font-bold">80%</div>
+                  <div className="text-sm mt-1">of all diagnosed learning disabilities are Dyslexia<sup className="text-green-600 font-bold ml-0.5">18</sup></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="text-sm text-center mb-3 text-[#0c264d] font-bold">High Overlap with ADHD</div>
+                <div className="flex justify-center items-center gap-3">
+                  <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-3 text-center w-full">
+                    <div className="font-bold text-[#0c264d] text-xl">25-40%</div>
+                    <div className="text-xs text-gray-700 mt-1">of those with Dyslexia<br/>also have ADHD<sup className="text-green-600 font-bold ml-0.5">26</sup></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* SECTION 2: Types & Presentations */}
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">How Common is Dyslexia?</h2>
-          <ul className="list-disc ml-6 mb-8 text-gray-700 space-y-2">
-            <li><strong>Prevalence:</strong> Dyslexia affects approximately 5-10% of the population, with some estimates as high as 15-20%.<sup className="text-green-600 font-bold ml-0.5">17</sup></li>
-            <li><strong>Most common learning disability:</strong> Dyslexia represents 80% of all learning disabilities.<sup className="text-green-600 font-bold ml-0.5">18</sup></li>
-            <li><strong>Cross-linguistic:</strong> Dyslexia occurs across all languages and writing systems, though manifestation may vary.<sup className="text-green-600 font-bold ml-0.5">19</sup></li>
-            <li><strong>Socioeconomic distribution:</strong> Affects individuals across all socioeconomic levels.<sup className="text-green-600 font-bold ml-0.5">20</sup></li>
-            <li><strong>Gender:</strong> Historically thought to be more common in males, but recent research suggests similar rates in males and females; girls may be under-identified.<sup className="text-green-600 font-bold ml-0.5">21</sup></li>
-          </ul>
+        {/* SECTION 3: THE READING BRAIN */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="lg:col-span-8 space-y-6">
+            <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Understanding the Reading Brain</h2>
+            
+            <p className="leading-relaxed">
+              Reading is not a natural process for the human brain—it must be taught and learned.<sup className="text-green-600 font-bold ml-0.5">31</sup> Proficient 
+              reading requires several brain systems working together seamlessly, including visual processing (recognizing letters), 
+              phonological processing (connecting letters to sounds),<sup className="text-green-600 font-bold ml-0.5">32</sup> orthographic processing,<sup className="text-green-600 font-bold ml-0.5">33</sup> semantic processing,<sup className="text-green-600 font-bold ml-0.5">34</sup> and working memory.<sup className="text-green-600 font-bold ml-0.5">35</sup>
+            </p>
 
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">Dyslexia as a Spectrum</h2>
-          <p className="mb-4 text-gray-700">Dyslexia exists on a continuum of severity, and its manifestation varies among individuals:<sup className="text-green-600 font-bold ml-0.5">22</sup></p>
+            <h3 className="text-[#0c264d] font-bold text-xl mt-4 mb-2">Differences in the Dyslexic Brain</h3>
+            <p className="leading-relaxed mb-3">
+              Brain imaging studies show that individuals with dyslexia show different patterns of brain activation during reading tasks:<sup className="text-green-600 font-bold ml-0.5">36</sup>
+            </p>
+            <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 mb-6">
+              <li><strong>Underactivation:</strong> Reduced activity in left hemisphere regions typically involved in reading.<sup className="text-green-600 font-bold ml-0.5">37</sup></li>
+              <li><strong>Compensatory activation:</strong> Increased reliance on other brain regions, such as frontal areas and right hemisphere regions.<sup className="text-green-600 font-bold ml-0.5">38</sup></li>
+              <li><strong>White matter differences:</strong> Atypical connectivity in neural pathways supporting reading.<sup className="text-green-600 font-bold ml-0.5">39</sup></li>
+            </ul>
+
+            <h3 className="text-[#0c264d] font-bold text-xl mt-4 mb-2">The Phonological Core Deficit</h3>
+            <p className="leading-relaxed">
+              The most well-established explanation for dyslexia is the <strong>phonological deficit hypothesis</strong>.<sup className="text-green-600 font-bold ml-0.5">41</sup> 
+              This theory proposes that dyslexia stems from a specific impairment in the representation, storage, and/or retrieval of speech sounds. 
+              When phonological processing is impaired, learning letter-sound correspondences is difficult, sounding out words is challenging, and reading remains effortful rather than automatic.
+            </p>
+          </div>
+          <div className="lg:col-span-4 flex justify-center pt-8">
+            <ImageWithFallback 
+              src="/images/dyslexia/dyslexia-overview-books-fly.png"
+              alt="abstract painting of books flying out of a swirl"
+              className="w-full max-w-[250px] h-auto rounded-lg shadow-sm" 
+            />
+          </div>
+        </section>
+
+        {/* SECTION 4: STRENGTHS & MOVING FORWARD */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="lg:col-span-7 space-y-6">
+            <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Dyslexia and Strengths</h2>
+            <p className="leading-relaxed">
+              While dyslexia presents undeniable challenges in traditional academic settings, many individuals with dyslexia 
+              also demonstrate notable cognitive and creative strengths:<sup className="text-green-600 font-bold ml-0.5">43</sup>
+            </p>
+            
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 list-disc ml-6 text-sm text-slate-700 mb-6">
+              <li><strong>Creative thinking:</strong> Generating novel ideas<sup className="text-green-600 font-bold ml-0.5">44</sup></li>
+              <li><strong>Visual-spatial reasoning:</strong> Mentally manipulating 3D objects<sup className="text-green-600 font-bold ml-0.5">45</sup></li>
+              <li><strong>Big-picture thinking:</strong> Seeing broad connections<sup className="text-green-600 font-bold ml-0.5">46</sup></li>
+              <li><strong>Problem-solving:</strong> Innovative approaches<sup className="text-green-600 font-bold ml-0.5">47</sup></li>
+              <li><strong>Narrative reasoning:</strong> Storytelling strengths<sup className="text-green-600 font-bold ml-0.5">48</sup></li>
+              <li><strong>Resilience:</strong> Determination from overcoming adversity<sup className="text-green-600 font-bold ml-0.5">49</sup></li>
+            </ul>
+
+            <p className="leading-relaxed text-sm italic text-gray-600 border-l-4 border-[#ffd166] pl-4">
+              Many highly successful individuals in diverse fields—including entrepreneurs, artists, scientists, and leaders—have dyslexia.<sup className="text-green-600 font-bold ml-0.5">50</sup>
+            </p>
+
+            <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2 mt-8">Moving Forward</h2>
+            <p className="leading-relaxed">
+              Dyslexia is a well-researched, neurobiological condition that affects reading but does not limit potential. 
+              With understanding, appropriate instruction, accommodations, and support, individuals with dyslexia can develop 
+              strong reading skills and succeed academically, professionally, and personally.<sup className="text-green-600 font-bold ml-0.5">51</sup>
+            </p>
+            <p className="leading-relaxed">
+              The key is recognizing dyslexia early, providing evidence-based intervention, celebrating strengths, and 
+              fostering an environment where individuals with dyslexia can thrive.<sup className="text-green-600 font-bold ml-0.5">52</sup>
+            </p>
+          </div>
           
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Severity Levels</h3>
-          <ul className="list-disc ml-6 mb-6 text-gray-700 space-y-2">
-            <li><strong>Mild:</strong> Reading difficulties that respond well to intervention.</li>
-            <li><strong>Moderate:</strong> More significant challenges requiring intensive, sustained intervention.</li>
-            <li><strong>Severe:</strong> Persistent, substantial difficulties despite appropriate intervention.<sup className="text-green-600 font-bold ml-0.5">23</sup></li>
-          </ul>
+          <div className="lg:col-span-5 flex justify-center pt-8">
+            <ImageWithFallback 
+              src="/images/dyslexia/YOUR-STRENGTHS-IMAGE.png" 
+              alt="Student success and confidence"
+              className="w-full max-w-[350px] h-auto rounded-lg shadow-sm"
+            />
+          </div>
+        </section>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Individual Variation</h3>
-          <p className="mb-4 text-gray-700">No two individuals with dyslexia are exactly alike.<sup className="text-green-600 font-bold ml-0.5">24</sup></p>
-
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">Co-occurring Conditions</h2>
-          <p className="mb-4 text-gray-700">Dyslexia frequently co-occurs with other conditions:<sup className="text-green-600 font-bold ml-0.5">25</sup></p>
-          <ul className="list-disc ml-6 mb-4 text-gray-700 space-y-2">
-            <li><strong>ADHD:</strong> 25-40% of individuals with dyslexia also have ADHD.<sup className="text-green-600 font-bold ml-0.5">26</sup></li>
-            <li><strong>Dysgraphia:</strong> Writing difficulties often co-occur with dyslexia.<sup className="text-green-600 font-bold ml-0.5">27</sup></li>
-            <li><strong>Dyscalculia:</strong> Some individuals have both reading and math learning disabilities.<sup className="text-green-600 font-bold ml-0.5">28</sup></li>
-            <li><strong>Anxiety and depression:</strong> Higher rates due to academic struggles and negative experiences.<sup className="text-green-600 font-bold ml-0.5">29</sup></li>
-            <li><strong>Language disorders:</strong> Broader oral language difficulties may be present.<sup className="text-green-600 font-bold ml-0.5">30</sup></li>
-          </ul>
-        </div>
-
-        {/* SECTION 3: Facts & Stats */}
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">Understanding the Reading Brain</h2>
-          <ImageWithFallback 
-            src="/images/dyslexia/YOUR-BRAIN-IMAGE.png" 
-            alt="Reading brain representation" 
-            className="w-48 md:w-64 h-auto rounded-md shadow-sm float-left mr-6 mb-4" 
-          />
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg mt-2">How Typical Reading Works</h3>
-          <p className="mb-4 text-gray-700">Proficient reading requires several brain systems working together:<sup className="text-green-600 font-bold ml-0.5">31</sup></p>
-          <ul className="list-disc ml-6 mb-6 text-gray-700 space-y-1">
-            <li>Visual processing: Recognizing letters and letter patterns</li>
-            <li>Phonological processing: Connecting letters to sounds (phonemes)<sup className="text-green-600 font-bold ml-0.5">32</sup></li>
-            <li>Orthographic processing: Recognizing spelling patterns and whole words<sup className="text-green-600 font-bold ml-0.5">33</sup></li>
-            <li>Semantic processing: Accessing word meanings<sup className="text-green-600 font-bold ml-0.5">34</sup></li>
-            <li>Working memory: Holding information while processing text<sup className="text-green-600 font-bold ml-0.5">35</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Differences in Dyslexia</h3>
-          <p className="mb-4 text-gray-700">Brain imaging studies show that individuals with dyslexia show different patterns of brain activation during reading tasks:<sup className="text-green-600 font-bold ml-0.5">36</sup></p>
-          <ul className="list-disc ml-6 mb-8 text-gray-700 space-y-2">
-            <li><strong>Underactivation:</strong> Reduced activity in left hemisphere regions typically involved in reading.<sup className="text-green-600 font-bold ml-0.5">37</sup></li>
-            <li><strong>Compensatory activation:</strong> Increased reliance on other brain regions, such as frontal areas and right hemisphere regions.<sup className="text-green-600 font-bold ml-0.5">38</sup></li>
-            <li><strong>White matter differences:</strong> Atypical connectivity in neural pathways supporting reading.<sup className="text-green-600 font-bold ml-0.5">39</sup></li>
-            <li><strong>Phonological circuit disruption:</strong> Particular difficulty in the neural systems that connect letters to sounds.<sup className="text-green-600 font-bold ml-0.5">40</sup></li>
-          </ul>
-
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">The Phonological Core Deficit</h2>
-          <p className="mb-4 text-gray-700">The most well-established explanation for dyslexia is the phonological deficit hypothesis.<sup className="text-green-600 font-bold ml-0.5">41</sup> This theory proposes that dyslexia stems from a specific impairment in the representation, storage, and/or retrieval of speech sounds.</p>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What is Phonological Processing?</h3>
-          <ul className="list-disc ml-6 mb-6 text-gray-700 space-y-2">
-            <li>Phonological awareness: Ability to identify and manipulate sounds in spoken language (rhyming, segmenting).</li>
-            <li>Phonological memory: Ability to hold phonological information in short-term memory.</li>
-            <li>Rapid automatized naming (RAN): Speed of retrieving phonological codes from long-term memory.<sup className="text-green-600 font-bold ml-0.5">42</sup></li>
-          </ul>
-
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">Dyslexia and Strengths</h2>
-          <ImageWithFallback 
-            src="/images/dyslexia/YOUR-STRENGTHS-IMAGE.png" 
-            alt="Student success and confidence"
-            className="w-48 md:w-64 h-auto rounded-md shadow-sm float-left mr-6 mb-4"
-          />
-          <p className="mb-4 text-gray-700">While dyslexia presents challenges, many individuals with dyslexia also demonstrate notable strengths:<sup className="text-green-600 font-bold ml-0.5">43</sup></p>
-          <ul className="list-disc ml-6 mb-6 text-gray-700 space-y-2">
-            <li><strong>Creative thinking:</strong> Strong ability to think outside the box and generate novel ideas.<sup className="text-green-600 font-bold ml-0.5">44</sup></li>
-            <li><strong>Visual-spatial reasoning:</strong> Enhanced ability to think in pictures and mentally manipulate 3D objects.<sup className="text-green-600 font-bold ml-0.5">45</sup></li>
-            <li><strong>Big-picture thinking:</strong> Ability to see connections and patterns others might miss.<sup className="text-green-600 font-bold ml-0.5">46</sup></li>
-            <li><strong>Problem-solving:</strong> Innovative approaches to challenges.<sup className="text-green-600 font-bold ml-0.5">47</sup></li>
-            <li><strong>Narrative reasoning:</strong> Strength in storytelling and understanding complex narratives.<sup className="text-green-600 font-bold ml-0.5">48</sup></li>
-            <li><strong>Resilience:</strong> Persistence and determination developed through overcoming challenges.<sup className="text-green-600 font-bold ml-0.5">49</sup></li>
-          </ul>
-          <p className="mb-8 text-gray-700 clear-both">Many successful individuals in diverse fields—including entrepreneurs, artists, scientists, and leaders—have dyslexia.<sup className="text-green-600 font-bold ml-0.5">50</sup></p>
-
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">Moving Forward</h2>
-          <p className="mb-4 text-gray-700">Dyslexia is a well-researched, neurobiological condition that affects reading but does not limit potential. With understanding, appropriate instruction, accommodations, and support, individuals with dyslexia can develop strong reading skills and succeed academically, professionally, and personally.<sup className="text-green-600 font-bold ml-0.5">51</sup></p>
-          <p className="mb-4 text-gray-700">The key is recognizing dyslexia early, providing evidence-based intervention, celebrating strengths, and fostering an environment where individuals with dyslexia can thrive.<sup className="text-green-600 font-bold ml-0.5">52</sup></p>
-        </div>
       </div>
 
       {/* Bottom navigation button - NOT BOLD */}
-      <div className="mt-12 mb-6 flex flex-col md:flex-row md:justify-end">
+      <div className="mt-16 mb-6 flex flex-col md:flex-row md:justify-end">
         <button 
           onClick={() => setCurrentArticle?.('dyslexia')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap shadow-md"
         >
           <span className="text-xl">←</span>
           All About Dyslexia
