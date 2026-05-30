@@ -54,35 +54,26 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               have average or above-average intelligence and can be highly successful when provided with appropriate support 
               and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
             </p>
-
-            <div className="bg-white rounded-md border-l-4 border-[#2abcd4] p-5 shadow-sm mt-6">
-              <h3 className="text-[#0c264d] font-bold mb-2 text-sm uppercase tracking-wider">The IDA Definition</h3>
-              <p className="italic text-gray-700 text-sm leading-relaxed">
-                "Dyslexia is a specific learning disability that is neurobiological in origin. It is characterized by 
-                difficulties with accurate and/or fluent word recognition and by poor spelling and decoding abilities. 
-                These difficulties typically result from a deficit in the phonological component of language that is often 
-                unexpected in relation to other cognitive abilities and the provision of effective classroom instruction."<sup className="text-green-600 font-bold ml-0.5">5</sup>
-              </p>
+{/* This replaces your existing <div className="lg:col-span-4 ..."> block */}
+          <div className="lg:col-span-4 flex justify-center pt-8">
+            <div className="w-64 rounded-xl overflow-hidden shadow-sm">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                poster="/images/dyslexia/dyslexia-overview-books-fly.png"
+                className="w-full h-auto object-contain"
+                aria-label="Books flying out of a swirl, representing the challenges of reading with dyslexia"
+              >
+                <source 
+                  src="/images/dyslexia/dyslexia-overview-books-fly.mp4" 
+                  type="video/mp4" 
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            poster="/images/dyslexia/dyslexia-overview-books-fly.png"
-            className="w-full max-w-[250px] h-auto rounded-lg shadow-sm"
-            aria-label="abstract painting of books flying out of a swirl"
-          >
-            <source src="/images/dyslexia/dyslexia-overview-books-fly.mp4" type="video/mp4" />
-            
-            {/* Fallback image for older browsers or if the video fails to load */}
-            <img 
-              src="/images/dyslexia/dyslexia-overview-books-fly.png" 
-              alt="abstract painting of books flying out of a swirl"
-              className="w-full h-auto rounded-lg shadow-sm"
-            />
-          </video>
         </section>
 
         {/* SECTION 1.5: KEY CHARACTERISTICS (ICON GRID) */}
