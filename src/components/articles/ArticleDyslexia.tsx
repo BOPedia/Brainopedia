@@ -78,15 +78,13 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
-        <div className="w-full">
-          <div className="mb-4">
-            <ImageWithFallback
-              src="/images/dyslexia/dyslexia-main-infobox.png"
-              alt="Dyslexia Infobox graphic"
-              className="w-full h-auto rounded-lg shadow-sm"
-            />
-          </div>
+{/* Right column - InfoBox */}
+        <div className="w-full rounded-lg shadow-sm overflow-hidden">
+          <ImageWithFallback
+            src="/images/dyslexia/dyslexia-main-infobox.png"
+            alt="Dyslexia Infobox graphic"
+            className="w-full h-auto block"
+          />
           <InfoBox
             title="Dyslexia"
             data={[
