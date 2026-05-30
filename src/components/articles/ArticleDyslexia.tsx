@@ -79,14 +79,10 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         </div>
 
 {/* Right column - InfoBox */}
-        <div className="w-full rounded-lg shadow-sm overflow-hidden">
-          <ImageWithFallback
-            src="/images/dyslexia/dyslexia-main-infobox.png"
-            alt="Dyslexia Infobox graphic"
-            className="w-full h-auto block"
-          />
+        <div className="w-full">
           <InfoBox
             title="Dyslexia"
+            image="/images/dyslexia/dyslexia-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Reading disorder, specific learning disorder with impairment in reading' },
               { label: 'Specialty', value: 'Educational psychology, Neurology' },
@@ -97,7 +93,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
             ]}
           />
         </div>
-      </div>
+        </div>
 
       <div className="space-y-8 mt-20 clear-both">
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
