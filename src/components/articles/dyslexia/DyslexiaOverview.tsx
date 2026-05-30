@@ -36,10 +36,16 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         All About Dyslexia
       </button>
 
-{/* SECTION 1: WHAT IS DYSLEXIA? */}
+      <div className="space-y-16">
+          <div className="mb-10 bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
+            <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-overview-intro.png"
+            alt="word salad with dyslexia in the middle"
+            className="w-48 md:w-80 h-auto rounded-md shadow-sm float-right ml-6 mb-4"
+            />
+          </div> 
+    {/* SECTION 1: WHAT IS DYSLEXIA? */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
-          {/* LEFT SIDE: TEXT */}
           <div className="lg:col-span-8 space-y-4">
             <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">What is Dyslexia?</h2>
             
@@ -54,15 +60,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               have average or above-average intelligence and can be highly successful when provided with appropriate support 
               and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
             </p>
-          </div>
-
-          {/* RIGHT SIDE: IMAGE */}
-          <div className="lg:col-span-4 flex justify-center lg:pt-10">
-            <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-overview-intro.png"
-              alt="word salad with dyslexia in the middle"
-              className="w-full max-w-[250px] h-auto rounded-lg shadow-sm"
-            />
           </div>
 
         </section>
