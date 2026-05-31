@@ -38,13 +38,34 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
       <div className="space-y-16">
         
-        {/* INTRO: BLUE BOX WITH FLOATED IMAGE */}
+ {/* INTRO: BLUE BOX WITH FLOATED VIDEO */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
-          <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-overview-intro.png"
-            alt="word salad with dyslexia in the middle"
-            className="w-48 md:w-64 h-auto rounded-md shadow-sm float-right ml-6 mb-4"
-          />
+          
+          {/* Video Wrapper (floated right) */}
+          <div className="w-48 md:w-64 rounded-md shadow-sm float-right ml-6 mb-4 overflow-hidden"> 
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              poster="/images/dyslexia/dyslexia-overview-intro.png"
+              className="w-full h-auto object-contain"
+              aria-label="word salad with dyslexia in the middle"
+            >
+              <source 
+                src="/images/dyslexia/dyslexia-overview-intro.mp4" 
+                type="video/mp4" 
+              />
+              
+              {/* Fallback image just in case */}
+              <img 
+                src="/images/dyslexia/dyslexia-overview-intro.png" 
+                alt="word salad with dyslexia in the middle"
+                className="w-full h-auto object-contain"
+              />
+            </video>
+          </div>
+
           <p className="mb-4 text-gray-800 leading-relaxed">
             Dyslexia is a specific learning disorder that primarily affects reading and language processing.<sup className="text-green-600 font-bold ml-0.5">1</sup> 
             It is neurobiological in origin and characterized by difficulties with accurate and/or fluent word recognition, 
@@ -57,7 +78,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
           </p>
         </div>
-
+        
         {/* SECTION 1: WHAT IS DYSLEXIA? */}
         <section className="space-y-4">
           <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">What is Dyslexia?</h2>
