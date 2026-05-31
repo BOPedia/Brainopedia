@@ -78,7 +78,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             and accommodations.<sup className="text-green-600 font-bold ml-0.5">4</sup>
           </p>
         </div>
-        
+
         {/* SECTION 1: WHAT IS DYSLEXIA? */}
         <section className="space-y-4">
           <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">What is Dyslexia?</h2>
@@ -95,8 +95,9 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         </section>
 
         {/* SECTION 1.5: KEY CHARACTERISTICS (ICON GRID) */}
-        <section>
-          <h3 className="text-[#0c264d] font-bold mb-6 text-2xl border-b border-[#ffd166] pb-2">Key Characteristics</h3>
+      
+        <section className="bg-[#ffd166]/10 p-8 rounded-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <h3 className="text-[#0c264d] font-bold mb-6 text-2xl border-b border-[#ffd166] pb-2">Key Characteristics</h3>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
