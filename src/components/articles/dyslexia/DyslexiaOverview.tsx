@@ -212,8 +212,9 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         </section>
 
         {/* SECTION 2.5: CO-OCCURRING CONDITIONS (FULL WIDTH LAYOUT) */}
-        <section>
-          <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2 mb-4">Co-occurring Conditions</h2>
+        
+          <section className="bg-[#ffd166]/10 p-8 rounded-2xl mb-8">
+          <h3 className="text-[#0c264d] font-bold mb-6 text-2xl">Co-occurring Conditions</h3>
           <p className="leading-relaxed mb-6">
             Dyslexia frequently co-occurs with other neurodevelopmental and mental health conditions:<sup className="text-green-600 font-bold ml-0.5">25</sup>
           </p>
