@@ -63,9 +63,9 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               />
             </video>
           </div>
-          
+
         {/* INTRO: BLUE BOX WITH FLOATED VIDEO */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
+        <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]"></div>
 
           <p className="mb-4 text-gray-800 leading-relaxed">
             Dyslexia is a specific learning disorder that primarily affects reading and language processing. 
