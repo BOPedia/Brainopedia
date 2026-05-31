@@ -42,7 +42,7 @@ export function DyslexiaSymptomsTabCore() {
 
       {/* LOCAL REFERENCES */}
       <div className="mt-8 pt-6 border-t-2 border-[#0c264d] border-opacity-10">
-        <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3">Core Symptoms References</h4>
+        <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
         <ol className="list-decimal ml-5 text-xs space-y-2 text-slate-600 leading-relaxed">
           <li>Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2007). <i>Learning disabilities: From identification to intervention</i>. Guilford Press.</li>
           <li>Wagner, R. K., Torgesen, J. K., & Rashotte, C. A. (1997). "Development of reading-related phonological processing abilities." <i>Developmental Psychology</i>, 33(4), 926-938.</li>

@@ -40,7 +40,7 @@ export function DyslexiaSymptomsTabAge() {
 
       {/* LOCAL REFERENCES */}
       <div className="mt-8 pt-6 border-t-2 border-[#0c264d] border-opacity-10">
-        <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3">Age-Specific Signs References</h4>
+        <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
         <ol className="list-decimal ml-5 text-xs space-y-2 text-slate-600 leading-relaxed">
           <li>Torgesen, J. K., Wagner, R. K., Rashotte, C. A., & Rose, E. (2001). "Contributions of phonological awareness to the growth of word-reading skills." <i>Journal of Educational Psychology</i>, 93(4), 645-662.</li>
           <li>Shaywitz, S. E., & Shaywitz, B. A. (2001). "The neurobiology of reading and dyslexia." <i>Scientific American</i>, 284(5), 40-47.</li>

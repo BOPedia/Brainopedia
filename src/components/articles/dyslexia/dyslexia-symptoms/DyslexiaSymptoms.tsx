@@ -111,19 +111,6 @@ export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymp
           All About Dyslexia
         </button>
       </div>
-
-      {/* ===== INTRODUCTION REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
-
-      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-        <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Introduction References</h3>
-        <ol className="list-decimal ml-5 text-xs space-y-2 text-slate-600 leading-relaxed">
-          <li>Shaywitz, S. E., & Shaywitz, B. A. (2008). <i>Dyslexia</i> (2nd ed.). Yale University Press.</li>
-          <li>National Institute of Child Health and Human Development. (2000). <i>Report of the National Reading Panel</i>.</li>
-          <li>Snowling, M. J. (2000). <i>Dyslexia</i>. Oxford University Press.</li>
-        </ol>
-      </div>
-
     </article>
   );
 }

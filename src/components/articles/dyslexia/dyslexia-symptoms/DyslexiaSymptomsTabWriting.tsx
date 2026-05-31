@@ -22,7 +22,7 @@ export function DyslexiaSymptomsTabWriting() {
 
       {/* LOCAL REFERENCES */}
       <div className="mt-8 pt-6 border-t-2 border-[#0c264d] border-opacity-10">
-        <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3">Writing & Spelling References</h4>
+        <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3">Cited Studies & Statistics</h4>
         <ol className="list-decimal ml-5 text-xs space-y-2 text-slate-600 leading-relaxed">
           <li>Wagner, R. K., Torgesen, J. K., & Rashotte, C. A. (1999). "The development of reading-related phonological processing abilities." <i>Journal of Educational Psychology</i>, 91(1), 47-57.</li>
           <li>Torgesen, J. K., Wagner, R. K., Rashotte, C. A., & Rose, E. (2001). "Contributions of phonological awareness to the growth of word-reading skills." <i>Journal of Educational Psychology</i>, 93(4), 645-662.</li>
