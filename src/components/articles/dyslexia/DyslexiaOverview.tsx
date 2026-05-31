@@ -12,7 +12,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
   return (
     <article className="max-w-6xl animate-fadeIn">
 
-      {/* Main Title & Desktop Back Button - NOT BOLD */}
+      {/* Main Title & Desktop Back Button */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-12 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl font-spartan text-[#0c264d]">
           Dyslexia: Overview
@@ -27,7 +27,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         </button>
       </div>
 
-      {/* Mobile Back Button - NOT BOLD */}
+      {/* Mobile Back Button */}
       <button 
         onClick={() => setCurrentArticle?.('dyslexia')}
         className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-10"
@@ -36,10 +36,11 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         All About Dyslexia
       </button>
 
+      {/* Main Content Wrapper */}
       <div className="space-y-16">
         
-          
-          {/* Video Wrapper (floated right) */}
+        {/* INTRO: BLUE BOX WITH FLOATED VIDEO */}
+        <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
           <div className="w-48 md:w-64 rounded-md shadow-sm float-right ml-6 mb-4 overflow-hidden"> 
             <video 
               autoPlay 
@@ -54,8 +55,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
                 src="/images/dyslexia/dyslexia-overview-intro.mp4" 
                 type="video/mp4" 
               />
-              
-              {/* Fallback image just in case */}
               <img 
                 src="/images/dyslexia/dyslexia-overview-intro.png" 
                 alt="word salad with dyslexia in the middle"
@@ -63,9 +62,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               />
             </video>
           </div>
-
-        {/* INTRO: BLUE BOX WITH FLOATED VIDEO */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]"></div>
 
           <p className="mb-4 text-gray-800 leading-relaxed">
             Dyslexia is a specific learning disorder that primarily affects reading and language processing. 
@@ -95,12 +91,11 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           </div>
         </section>
 
-        {/* SECTION 1.5: KEY CHARACTERISTICS (ICON GRID) */}
+        {/* SECTION 1.5: KEY CHARACTERISTICS */}
         <section className="bg-[#ffd166]/10 p-8 rounded-2xl mb-8">
           <h3 className="text-[#0c264d] font-bold mb-6 text-2xl">Key Characteristics</h3>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {/* Card 1 */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
@@ -109,7 +104,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               <p className="text-sm text-gray-700 leading-relaxed">Trouble with the sound structure of language.</p>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
@@ -118,7 +112,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               <p className="text-sm text-gray-700 leading-relaxed">Difficulty sounding out written words.</p>
             </div>
 
-            {/* Card 3 */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
@@ -127,7 +120,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               <p className="text-sm text-gray-700 leading-relaxed">Slow, effortful reading even of familiar text.</p>
             </div>
 
-            {/* Card 4 */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
@@ -136,7 +128,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               <p className="text-sm text-gray-700 leading-relaxed">Persistent spelling errors despite instruction.</p>
             </div>
 
-            {/* Card 5 */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
@@ -145,7 +136,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               <p className="text-sm text-gray-700 leading-relaxed">Differences in brain structure/function related to reading.</p>
             </div>
 
-            {/* Card 6 */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -156,7 +146,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           </div>
         </section>
 
-        {/* SECTION 2: PREVALENCE & SPECTRUM (GRID LAYOUT) */}
+        {/* SECTION 2: PREVALENCE & SPECTRUM */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-7 space-y-6">
             <div>
@@ -212,16 +202,14 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           </div>
         </section>
 
-        {/* SECTION 2.5: CO-OCCURRING CONDITIONS (FULL WIDTH LAYOUT) */}
-        
-          <section className="bg-[#ffd166]/10 p-8 rounded-2xl mb-8">
+        {/* SECTION 2.5: CO-OCCURRING CONDITIONS */}
+        <section className="bg-[#ffd166]/10 p-8 rounded-2xl mb-8">
           <h3 className="text-[#0c264d] font-bold mb-6 text-2xl">Co-occurring Conditions</h3>
           <p className="leading-relaxed mb-6">
             Dyslexia frequently co-occurs with other neurodevelopmental and mental health conditions:
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {/* Card 1: ADHD */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +220,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               <p className="text-sm text-gray-700 leading-relaxed">25-40% of individuals with dyslexia also have ADHD.<sup className="text-green-600 font-bold ml-0.5">4</sup></p>
             </div>
 
-            {/* Card 2: Dysgraphia */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -243,7 +230,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               <p className="text-sm text-gray-700 leading-relaxed">Writing difficulties often co-occur with dyslexia.</p>
             </div>
 
-            {/* Card 3: Dyscalculia */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -254,7 +240,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               <p className="text-sm text-gray-700 leading-relaxed">Some individuals have both reading and math learning disabilities.</p>
             </div>
 
-            {/* Card 4: Anxiety & Depression */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +250,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               <p className="text-sm text-gray-700 leading-relaxed">Higher rates due to academic struggles and negative experiences.</p>
             </div>
 
-            {/* Card 5: Language Disorders */}
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -322,7 +306,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
                   src="/images/dyslexia/dyslexia-overview-books-fly.mp4" 
                   type="video/mp4" 
                 />
-                Your browser does not support the video tag.
               </video>
             </div>
           </div>
@@ -373,7 +356,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
       </div>
 
-      {/* Bottom navigation button - NOT BOLD */}
+      {/* Bottom navigation button */}
       <div className="mt-16 mb-6 flex flex-col md:flex-row md:justify-end">
         <button 
           onClick={() => setCurrentArticle?.('dyslexia')}
