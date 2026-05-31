@@ -366,8 +366,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           All About Dyslexia
         </button>
       </div>
-
-      {/* ===== REFERENCES SECTION ===== */}
+{/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
