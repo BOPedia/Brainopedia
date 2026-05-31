@@ -152,10 +152,10 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             <div>
               <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2 mb-4">How Common is Dyslexia?</h2>
               <p className="leading-relaxed mb-4">
-                Dyslexia is the most common neurocognitive disorder, representing 80% of all learning disabilities.<sup className="text-green-600 font-bold ml-0.5">2</sup> It occurs across all languages and writing systems, though its manifestation may vary depending on the language.
+                Dyslexia is the most common neurocognitive disorder, representing 80% of all learning disabilities.<sup className="text-green-600 font-bold ml-0.5">1</sup> It occurs across all languages and writing systems, though its manifestation may vary depending on the language.
               </p>
               <p className="leading-relaxed">
-                Historically, it was thought to be more common in males. However, recent research suggests similar rates in males and females, indicating that girls may frequently be under-identified in classroom settings.<sup className="text-green-600 font-bold ml-0.5">3</sup>
+                Historically, it was thought to be more common in males. However, recent research suggests similar rates in males and females, indicating that girls may frequently be under-identified in classroom settings.<sup className="text-green-600 font-bold ml-0.5">2</sup>
               </p>
             </div>
 
@@ -179,13 +179,13 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               
               <div className="mb-6 pb-6 border-b-2 border-gray-200 text-center">
                 <div className="text-4xl font-bold text-[#2abcd4]">5-20%</div>
-                <div className="text-sm text-[#0c264d] mt-1">of the global population has some<br/>degree of dyslexia<sup className="text-green-600 font-bold ml-0.5">1</sup></div>
+                <div className="text-sm text-[#0c264d] mt-1">of the global population has some<br/>degree of dyslexia<sup className="text-green-600 font-bold ml-0.5">3</sup></div>
               </div>
 
               <div className="mb-6 pb-6 border-b-2 border-gray-200 text-center">
                 <div className="bg-[#0c264d] text-white rounded p-4">
                   <div className="text-3xl font-bold">80%</div>
-                  <div className="text-sm mt-1">of all diagnosed learning disabilities are Dyslexia<sup className="text-green-600 font-bold ml-0.5">2</sup></div>
+                  <div className="text-sm mt-1">of all diagnosed learning disabilities are Dyslexia<sup className="text-green-600 font-bold ml-0.5">1</sup></div>
                 </div>
               </div>
 
@@ -233,7 +233,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2v14a2 2 0 002 2z" />
                 </svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Dyscalculia</h4>
@@ -366,28 +366,39 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           All About Dyslexia
         </button>
       </div>
-{/* ===== REFERENCES SECTION ===== */}
+
+      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-        <div className="text-sm space-y-2 ml-4">
-          <p>[1] Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages." <em>Psychological Bulletin</em>, 131(1), 3-29.</p>
-          <p>[2] Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia." <em>Psychological Bulletin</em>, 142(5), 498-545.</p>
-          <p>[3] Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2018). <em>Learning disabilities: From identification to intervention</em>. Guilford Publications.</p>
-          <p>[4] Landerl, K., & Moll, K. (2010). "Comorbidity of learning disorders." <em>Journal of Child Psychology and Psychiatry</em>, 51(3), 287-294.</p>
-          <p>[5] Richlan, F., Kronbichler, M., & Wimmer, H. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <em>Neuroimage</em>, 56(3), 1735-1742.</p>
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <div className="text-sm space-y-2 ml-4 text-slate-600">
+            <p>[1] Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia." <em>Psychological Bulletin</em>, 142(5), 498-545.</p>
+            <p>[2] Quinn, J. M., & Wagner, R. K. (2015). "Gender differences in reading impairment." <em>Journal of Learning Disabilities</em>, 48(4), 433-445.</p>
+            <p>[3] Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages." <em>Psychological Bulletin</em>, 131(1), 3-29.</p>
+            <p>[4] Landerl, K., & Moll, K. (2010). "Comorbidity of learning disorders." <em>Journal of Child Psychology and Psychiatry</em>, 51(3), 287-294.</p>
+            <p>[5] Richlan, F., Kronbichler, M., & Wimmer, H. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <em>Neuroimage</em>, 56(3), 1735-1742.</p>
+          </div>
         </div>
-
-        <h3 className="text-[#0c264d] font-semibold mb-2 mt-8">Background Sources</h3>
-        <div className="text-sm space-y-2 text-slate-700">
-          <p>International Dyslexia Association. (2017). Dyslexia in the Classroom: What Every Teacher Needs to Know.</p>
-          <p>American Psychiatric Association. (2013). Diagnostic and Statistical Manual of Mental Disorders (5th ed.). American Psychiatric Publishing.</p>
-          <p>Shaywitz, S. (2003). Overcoming Dyslexia. Knopf.</p>
-          <p>Eide, B. L., & Eide, F. F. (2011). The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain. Penguin.</p>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <div className="text-sm space-y-2 text-slate-600">
+            <p>International Dyslexia Association. (2017). Dyslexia in the Classroom: What Every Teacher Needs to Know.</p>
+            <p>American Psychiatric Association. (2013). Diagnostic and Statistical Manual of Mental Disorders (5th ed.). American Psychiatric Publishing.</p>
+            <p>Shaywitz, S. (2003). Overcoming Dyslexia. Knopf.</p>
+            <p>Eide, B. L., & Eide, F. F. (2011). The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain. Penguin.</p>
+          </div>
         </div>
-
       </div>
     </article>
   );
