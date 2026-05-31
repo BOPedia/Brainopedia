@@ -1,4 +1,6 @@
 import React from 'react';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
+
 
 export function DyslexiaSymptomsTabWriting() {
   return (

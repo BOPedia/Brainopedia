@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 export function DyslexiaSymptomsTabCore() {
   return (
