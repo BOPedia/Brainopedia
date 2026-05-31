@@ -693,43 +693,57 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
       </div>
 
 {/* ===== REFERENCES SECTION ===== */}
-<hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
-
-<div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-  <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
-  
-  {/* CITED STUDIES: GREEN */}
-  <div className="mb-6">
-    <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-      Cited Studies & Statistics
-    </h4>
-    {/* The <ol> tag with list-decimal automatically creates 1., 2., 3. without brackets */}
-    <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-      <li>
-        Author. (Year). "Title of the cited study." <i>Journal Name</i>, vol(issue), pages.
-      </li>
-      <li>
-        Author. (Year). "Another cited study." <i>Journal Name</i>, vol(issue), pages.
-      </li>
-    </ol>
-  </div>
-  
-  {/* BACKGROUND SOURCES: CYAN */}
-  <div>
-    <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
-      Background Sources
-    </h4>
-    {/* The <ul> tag with list-none ensures plain text with zero bullets or indentation */}
-    <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-      <li>
-        Organization or Author. (Year). <i>Title of the background book or resource</i>. Publisher.
-      </li>
-      <li>
-        Organization or Author. (Year). <i>Another background resource</i>. Publisher.
-      </li>
-    </ul>
-  </div>
-</div>
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+      
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>
+              Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages." <i>Psychological Bulletin</i>, 131(1), 3-29.
+            </li>
+            <li>
+              Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia." <i>Psychological Bulletin</i>, 142(5), 498-545.
+            </li>
+            <li>
+              Quinn, J. M., & Wagner, R. K. (2015). "Gender differences in reading impairment." <i>Journal of Learning Disabilities</i>, 48(4), 433-445.
+            </li>
+            <li>
+              Landerl, K., & Moll, K. (2010). "Comorbidity of learning disorders." <i>Journal of Child Psychology and Psychiatry</i>, 51(3), 287-294.
+            </li>
+            <li>
+              Richlan, F., Kronbichler, M., & Wimmer, H. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <i>Neuroimage</i>, 56(3), 1735-1742.
+            </li>
+          </ol>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <li>
+              International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.
+            </li>
+            <li>
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
+            </li>
+            <li>
+              Shaywitz, S. (2003). <i>Overcoming Dyslexia</i>. Knopf.
+            </li>
+            <li>
+              Eide, B. L., & Eide, F. F. (2011). <i>The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain</i>. Penguin.
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </article>
   );
 }
