@@ -81,21 +81,33 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
         </section>
 
-        {/* 3. REFERENCE SECTION MANDATORY CODE */}
+{/* 3. REFERENCE SECTION MANDATORY CODE */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
             <CheckCircle className="text-[#2abcd4]" /> REFERENCE SECTION CODE
           </h2>
           <div className="bg-red-100 border-4 border-red-600 p-6 rounded-xl">
             <pre className="bg-white p-4 rounded text-xs overflow-x-auto border border-red-200">
-{`<h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-<div className="text-sm space-y-2 ml-4">
-  <p>[1] Author. (Year). "Title." <em>Journal</em>, vol(issue), pages.</p>
+{`<h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+
+{/* CITED STUDIES: GREEN */}
+<div className="mb-6">
+  <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+    Cited Studies & Statistics
+  </h4>
+  <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+    <li>Author. (Year). "Title." <em>Journal</em>, vol(issue), pages.</li>
+  </ol>
 </div>
 
-<h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-<div className="text-sm space-y-2">
-  <p>Source (NO BULLET POINTS, NO NUMBERS, NO INDENTATION)</p>
+{/* BACKGROUND SOURCES: CYAN */}
+<div>
+  <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+    Background Sources
+  </h4>
+  <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+    <li>Source (NO BULLET POINTS, NO NUMBERS, NO INDENTATION)</li>
+  </ul>
 </div>`}
             </pre>
           </div>
