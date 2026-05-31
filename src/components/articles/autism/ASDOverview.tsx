@@ -692,11 +692,11 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         </button>
       </div>
 
-      {/* ===== REFERENCES SECTION ===== */}
+{/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References: Autism Overview</h3>
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References: Dyslexia Overview</h3>
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
@@ -705,22 +705,19 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
           </h4>
           <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
             <li>
-              Centers for Disease Control and Prevention. (2023). "Data & Statistics on Autism Spectrum Disorder." U.S. Department of Health and Human Services.
+              Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages." <i>Psychological Bulletin</i>, 131(1), 3-29.
             </li>
             <li>
-              Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.
+              Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia." <i>Psychological Bulletin</i>, 142(5), 498-545.
             </li>
             <li>
-              Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: an evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.
+              Quinn, J. M., & Wagner, R. K. (2015). "Gender differences in reading impairment." <i>Journal of Learning Disabilities</i>, 48(4), 433-445.
             </li>
             <li>
-              Kanner, L. (1943). "Autistic disturbances of affective contact." <i>Nervous Child</i>, 2, 217-250.
+              Landerl, K., & Moll, K. (2010). "Comorbidity of learning disorders." <i>Journal of Child Psychology and Psychiatry</i>, 51(3), 287-294.
             </li>
             <li>
-              Asperger, H. (1944). "Die 'Autistischen Psychopathen' im Kindesalter." <i>Archiv für Psychiatrie und Nervenkrankheiten</i>, 117(1), 76-136.
-            </li>
-            <li>
-              Silverman, C. (2012). <i>Understanding Autism: Parents, Doctors, and the History of a Disorder</i>. Princeton University Press.
+              Richlan, F., Kronbichler, M., & Wimmer, H. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <i>Neuroimage</i>, 56(3), 1735-1742.
             </li>
           </ol>
         </div>
@@ -732,10 +729,16 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
-              Autistic Self Advocacy Network (ASAN). "About Autism." National advocacy organization run by and for autistic individuals.
+              International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.
             </li>
             <li>
-              American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.).
+              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
+            </li>
+            <li>
+              Shaywitz, S. (2003). <i>Overcoming Dyslexia</i>. Knopf.
+            </li>
+            <li>
+              Eide, B. L., & Eide, F. F. (2011). <i>The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain</i>. Penguin.
             </li>
           </ul>
         </div>
