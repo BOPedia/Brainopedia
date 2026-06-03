@@ -163,8 +163,8 @@ export function ADHDSymptomsTabHyperactivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Objective Measurement of Hyperactive Movement</h4>
                   <p className="text-sm mb-2">
                     A National Institutes of Health (NIH) study used infrared motion analysis to objectively quantify hyperactive 
-                    behavior in children with ADHD<sup style={{color: '#10b981'}}>1</sup>. The research found that boys with ADHD 
-                    moved their heads 2.3 times more often and 3.4 times as far as typical children<sup style={{color: '#10b981'}}>1</sup>, 
+                    behavior in children with ADHD<sup className="text-green-600 font-bold ml-0.5">1</sup>. The research found that boys with ADHD 
+                    moved their heads 2.3 times more often and 3.4 times as far as typical children<sup className="text-green-600 font-bold ml-0.5">1</sup>, 
                     demonstrating that hyperactivity is a measurable neurobiological phenomenon rather than simply "excess energy."
                   </p>
                 </div>
@@ -172,9 +172,9 @@ export function ADHDSymptomsTabHyperactivity() {
                 <div>
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Persistence of Hyperactivity in Adults</h4>
                   <p className="text-sm mb-2">
-                    Research indicates that while hyperactivity may decrease with age, it still persists in many adults with ADHD<sup style={{color: '#10b981'}}>2</sup>. 
+                    Research indicates that while hyperactivity may decrease with age, it still persists in many adults with ADHD<sup className="text-green-600 font-bold ml-0.5">2</sup>. 
                     Studies comparing head and lower extremity movements to control groups have documented that hyperactive symptoms 
-                    remain present and measurable in adulthood, though they often manifest differently than in childhood<sup style={{color: '#10b981'}}>2</sup>.
+                    remain present and measurable in adulthood, though they often manifest differently than in childhood<sup className="text-green-600 font-bold ml-0.5">2</sup>.
                   </p>
                 </div>
 
@@ -182,7 +182,7 @@ export function ADHDSymptomsTabHyperactivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Behavioral and Cognitive Aspects</h4>
                   <p className="text-sm mb-2">
                     Studies indicate that hyperactive, rather than inattentive, symptoms are specifically linked to increased 
-                    variability in thought content<sup style={{color: '#10b981'}}>3</sup>. This finding suggests that the motor 
+                    variability in thought content<sup className="text-green-600 font-bold ml-0.5">3</sup>. This finding suggests that the motor 
                     restlessness characteristic of hyperactivity may reflect underlying cognitive processes, including difficulty 
                     maintaining stable thought patterns.
                   </p>
@@ -192,7 +192,7 @@ export function ADHDSymptomsTabHyperactivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Impact on Social Functioning</h4>
                   <p className="text-sm mb-2">
                     Research highlights that hyperactivity/impulsivity is a strong predictor of social impairment, particularly in 
-                    early childhood<sup style={{color: '#10b981'}}>4</sup>. The excessive movement and difficulty with behavioral 
+                    early childhood<sup className="text-green-600 font-bold ml-0.5">4</sup>. The excessive movement and difficulty with behavioral 
                     inhibition associated with hyperactivity can interfere with peer relationships and social development during 
                     critical developmental periods.
                   </p>
@@ -201,7 +201,7 @@ export function ADHDSymptomsTabHyperactivity() {
                 <div>
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Neurobiological Basis</h4>
                   <p className="text-sm mb-2">
-                    Findings indicate that levels of hyperactivity correlate with dopamine D₂ receptor density in the caudate<sup style={{color: '#10b981'}}>5</sup>, 
+                    Findings indicate that levels of hyperactivity correlate with dopamine D₂ receptor density in the caudate<sup className="text-green-600 font-bold ml-0.5">5</sup>, 
                     providing evidence for the neurobiological underpinnings of hyperactive behavior. This research supports the 
                     understanding that hyperactivity is rooted in brain structure and neurochemistry, not simply behavioral choices.
                   </p>
@@ -211,9 +211,9 @@ export function ADHDSymptomsTabHyperactivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Prevalence and Treatment</h4>
                   <p className="text-sm mb-2">
                     Studies show that while the inattentive type is common, the hyperactive/impulsive and combined types account for a 
-                    significant portion of ADHD cases<sup style={{color: '#10b981'}}>6</sup>. Research has evaluated the impact of 
+                    significant portion of ADHD cases<sup className="text-green-600 font-bold ml-0.5">6</sup>. Research has evaluated the impact of 
                     methylphenidate, which has been shown to reduce the three main symptoms: hyperactivity, impulsiveness, and 
-                    inattentiveness<sup style={{color: '#10b981'}}>7</sup>, demonstrating that targeted pharmacological treatment can 
+                    inattentiveness<sup className="text-green-600 font-bold ml-0.5">7</sup>, demonstrating that targeted pharmacological treatment can 
                     effectively address hyperactive symptoms.
                   </p>
                 </div>
@@ -230,28 +230,64 @@ export function ADHDSymptomsTabHyperactivity() {
             </div>
           </div>
 
-          {/* References Section */}
-          <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+          {/* ===== REFERENCES SECTION ===== */}
+          <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+          
+          <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+            <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
             
-            <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-            <div className="text-sm space-y-3">
-              <p>[1] Teicher, M. H., Ito, Y., Glod, C. A., & Barber, N. I. (1996). Objective measurement of hyperactivity and attentional problems in ADHD. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 35(3), 334-342.</p>
-              <p>[2] Teicher, M. H., Polcari, A., Fourligas, N., Vitaliano, G., & Navalta, C. P. (2012). Hyperactivity persists in male and female adults with ADHD and remains a highly discriminative feature of the disorder: A case-control study. <em>BMC Psychiatry</em>, 12, 190.</p>
-              <p>[3] Shaw, G. A., & Giambra, L. (1993). Task-unrelated thoughts of college students diagnosed as hyperactive in childhood. <em>Developmental Neuropsychology</em>, 9(1), 17-30.</p>
-              <p>[4] McQuade, J. D., & Hoza, B. (2008). Peer problems in attention deficit hyperactivity disorder: Current status and future directions. <em>Developmental Disabilities Research Reviews</em>, 14(4), 320-324.</p>
-              <p>[5] Volkow, N. D., Wang, G. J., Kollins, S. H., Wigal, T. L., Newcorn, J. H., Telang, F., ... & Swanson, J. M. (2009). Evaluating dopamine reward pathway in ADHD: Clinical implications. <em>JAMA</em>, 302(10), 1084-1091.</p>
-              <p>[6] Willcutt, E. G. (2012). The prevalence of DSM-IV attention-deficit/hyperactivity disorder: A meta-analytic review. <em>Neurotherapeutics</em>, 9(3), 490-499.</p>
-              <p>[7] Greenhill, L. L., Halperin, J. M., & Abikoff, H. (1999). Stimulant medications. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 38(5), 503-512.</p>
+            {/* CITED STUDIES: GREEN */}
+            <div className="mb-6">
+              <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+                Cited Studies & Statistics
+              </h4>
+              <ol className="list-decimal ml-5 text-xs space-y-4 text-slate-700">
+                <li>
+                  Teicher, M. H., Ito, Y., Glod, C. A., & Barber, N. I. (1996). Objective measurement of hyperactivity and attentional problems in ADHD. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 35(3), 334-342.
+                </li>
+                <li>
+                  Teicher, M. H., Polcari, A., Fourligas, N., Vitaliano, G., & Navalta, C. P. (2012). Hyperactivity persists in male and female adults with ADHD and remains a highly discriminative feature of the disorder: A case-control study. <em>BMC Psychiatry</em>, 12, 190.
+                </li>
+                <li>
+                  Shaw, G. A., & Giambra, L. (1993). Task-unrelated thoughts of college students diagnosed as hyperactive in childhood. <em>Developmental Neuropsychology</em>, 9(1), 17-30.
+                </li>
+                <li>
+                  McQuade, J. D., & Hoza, B. (2008). Peer problems in attention deficit hyperactivity disorder: Current status and future directions. <em>Developmental Disabilities Research Reviews</em>, 14(4), 320-324.
+                </li>
+                <li>
+                  Volkow, N. D., Wang, G. J., Kollins, S. H., Wigal, T. L., Newcorn, J. H., Telang, F., ... & Swanson, J. M. (2009). Evaluating dopamine reward pathway in ADHD: Clinical implications. <em>JAMA</em>, 302(10), 1084-1091.
+                </li>
+                <li>
+                  Willcutt, E. G. (2012). The prevalence of DSM-IV attention-deficit/hyperactivity disorder: A meta-analytic review. <em>Neurotherapeutics</em>, 9(3), 490-499.
+                </li>
+                <li>
+                  Greenhill, L. L., Halperin, J. M., & Abikoff, H. (1999). Stimulant medications. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 38(5), 503-512.
+                </li>
+              </ol>
             </div>
             
-            <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-            <div className="text-sm space-y-2">
-              <p>American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</p>
-              <p>Barkley, R. A. (2015). "Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment" (4th ed.). <em>Guilford Press</em>.</p>
-              <p>Faraone, S. V., et al. (2006). "Age-dependent decline of symptoms of attention deficit hyperactivity disorder: impact of remission definition and symptom type." <em>American Journal of Psychiatry</em>, 163(5), 816-823.</p>
-              <p>Sibley, M. H., et al. (2012). "Diagnosing ADHD in adolescence." <em>Journal of Consulting and Clinical Psychology</em>, 80(1), 139-150.</p>
-              <p>Wilens, T. E., & Spencer, T. J. (2010). "Understanding attention-deficit/hyperactivity disorder from childhood to adulthood." <em>Postgraduate Medicine</em>, 122(5), 97-109.</p>
+            {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+            <div>
+              <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+                Background Sources
+              </h4>
+              <ul className="list-none text-xs space-y-4 text-slate-700 p-0 m-0">
+                <li>
+                  American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).
+                </li>
+                <li>
+                  Barkley, R. A. (2015). "Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment" (4th ed.). <em>Guilford Press</em>.
+                </li>
+                <li>
+                  Faraone, S. V., et al. (2006). "Age-dependent decline of symptoms of attention deficit hyperactivity disorder: impact of remission definition and symptom type." <em>American Journal of Psychiatry</em>, 163(5), 816-823.
+                </li>
+                <li>
+                  Sibley, M. H., et al. (2012). "Diagnosing ADHD in adolescence." <em>Journal of Consulting and Clinical Psychology</em>, 80(1), 139-150.
+                </li>
+                <li>
+                  Wilens, T. E., & Spencer, T. J. (2010). "Understanding attention-deficit/hyperactivity disorder from childhood to adulthood." <em>Postgraduate Medicine</em>, 122(5), 97-109.
+                </li>
+              </ul>
             </div>
           </div>
     </>
