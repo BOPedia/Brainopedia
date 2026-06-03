@@ -39,7 +39,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             </p>
           </div>
           <div className="lg:col-span-4 flex justify-center pt-10">
-            <div className="w-64 rounded-lg shadow-sm overflow-hidden">
+            <div className="w-32 rounded-lg shadow-sm overflow-hidden">
               <video 
                 autoPlay 
                 loop 
