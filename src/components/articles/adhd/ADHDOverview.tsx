@@ -26,43 +26,46 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
 
       <div className="space-y-16">
         {/* WHAT IS ADHD? */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-         <div className="lg:col-span-4 flex justify-center pt-10">
-            <div className="w-32 rounded-lg shadow-sm overflow-hidden">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                poster="/images/adhd/adhd-overview-squirrel.png"
+ <section className="space-y-4">
+          <h2 className="text-[#0c264d] font-bold text-2xl border-b pb-2">What is ADHD?</h2>
+          
+          {/* Floated graphic: Must be placed BEFORE the text that wraps around it */}
+          <div className="w-32 float-right ml-6 mb-4 rounded-lg shadow-sm overflow-hidden mt-1">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              poster="/images/adhd/adhd-overview-squirrel.png"
+              className="w-full h-auto object-contain"
+              aria-label="ADHD Overview Visual"
+            >
+              <source 
+                src="/images/adhd/adhd-overview-squirrel.mp4" 
+                type="video/mp4" 
+              />
+              {/* Fallback image */}
+              <img 
+                src="/images/adhd/adhd-overview-squirrel.png" 
+                alt="ADHD Overview Visual"
                 className="w-full h-auto object-contain"
-                aria-label="ADHD Overview Visual"
-              >
-                <source 
-                  src="/images/adhd/adhd-overview-squirrel.mp4" 
-                  type="video/mp4" 
-                />
-                {/* Fallback image just in case the video fails to load */}
-                <img 
-                  src="/images/adhd/adhd-overview-squirrel.png" 
-                  alt="ADHD Overview Visual"
-                  className="w-full h-auto object-contain"
-                />
-              </video>
-            </div>
+              />
+            </video>
           </div>
-            <div className="lg:col-span-8 space-y-4">
-            <h2 className="text-[#0c264d] font-bold text-2xl border-b pb-2">What is ADHD?</h2>
-            <p className="leading-relaxed">
-              <strong>Attention-Deficit/Hyperactivity Disorder (ADHD)</strong> is a neurodevelopmental condition characterized 
-              by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 
-              or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-green-600 font-bold ml-0.5">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-green-600 font-bold ml-0.5">2</sup> making it one of the most common neurodevelopmental disorders.
-            </p>
-            <p className="leading-relaxed">
-              ADHD is not simply a childhood disorder—symptoms often persist into adulthood. It's a real medical condition with neurological basis, not a character flaw or result of poor parenting. Brain imaging studies reveal significant differences in brain structure and function.
-            </p>
-          </div>
-         </section>
+
+          <p className="leading-relaxed">
+            <strong>Attention-Deficit/Hyperactivity Disorder (ADHD)</strong> is a neurodevelopmental condition characterized 
+            by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 
+            or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-green-600 font-bold ml-0.5">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-green-600 font-bold ml-0.5">2</sup> making it one of the most common neurodevelopmental disorders.
+          </p>
+          
+          <p className="leading-relaxed">
+            ADHD is not simply a childhood disorder—symptoms often persist into adulthood. It's a real medical condition with neurological basis, not a character flaw or result of poor parenting. Brain imaging studies reveal significant differences in brain structure and function.
+          </p>
+          
+          {/* This ensures the next section doesn't accidentally wrap around the image if the text above is too short */}
+          <div className="clear-both"></div>
+        </section>
 
         {/* THREE PRESENTATIONS */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
