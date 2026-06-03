@@ -39,11 +39,28 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             </p>
           </div>
           <div className="lg:col-span-4 flex justify-center pt-10">
-            <ImageWithFallback 
-              src="/images/adhd/adhd-overview-squirrel.png"
-              alt="ADHD Overview Visual"
-              className="w-64 h-auto rounded-lg shadow-sm"
-            />
+            <div className="w-64 rounded-lg shadow-sm overflow-hidden">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                poster="/images/adhd/adhd-overview-squirrel.png"
+                className="w-full h-auto object-contain"
+                aria-label="ADHD Overview Visual"
+              >
+                <source 
+                  src="/images/adhd/adhd-overview-squirrel.mp4" 
+                  type="video/mp4" 
+                />
+                {/* Fallback image just in case the video fails to load */}
+                <img 
+                  src="/images/adhd/adhd-overview-squirrel.png" 
+                  alt="ADHD Overview Visual"
+                  className="w-full h-auto object-contain"
+                />
+              </video>
+            </div>
           </div>
         </section>
 
