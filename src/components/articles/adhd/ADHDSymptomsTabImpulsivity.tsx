@@ -162,9 +162,9 @@ export function ADHDSymptomsTabImpulsivity() {
               
               <p className="mb-4">
                 Studies confirm that impulsivity is a core symptom of ADHD across the lifespan, characterized by deficits in motor, 
-                cognitive, and attentional control<sup style={{color: '#10b981'}}>1</sup>. Research indicates that children and adults 
+                cognitive, and attentional control<sup className="text-green-600 font-bold ml-0.5">1</sup>. Research indicates that children and adults 
                 with ADHD show higher rates of impulsive decision-making, such as instant gratification seeking and difficulty waiting, which 
-                are linked to structural changes in the caudate nucleus and frontostriatal pathways<sup style={{color: '#10b981'}}>2</sup>.
+                are linked to structural changes in the caudate nucleus and frontostriatal pathways<sup className="text-green-600 font-bold ml-0.5">2</sup>.
               </p>
 
               <div className="space-y-5">
@@ -172,7 +172,7 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Longitudinal Developmental Impact</h4>
                   <p className="text-sm mb-2">
                     A 2024 study highlighted that key impulsive behaviors—specifically difficulty waiting turn, blurting out, and 
-                    interrupting—are central to ADHD and disruptive behavior disorder (DBD) from childhood through adolescence<sup style={{color: '#10b981'}}>3</sup>. 
+                    interrupting—are central to ADHD and disruptive behavior disorder (DBD) from childhood through adolescence<sup className="text-green-600 font-bold ml-0.5">3</sup>. 
                     This longitudinal research demonstrates how these core symptoms persist and evolve throughout developmental stages.
                   </p>
                 </div>
@@ -181,8 +181,8 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Decision-Making & Reward Delays</h4>
                   <p className="text-sm mb-2">
                     Research shows adults with ADHD often prioritize immediate, less valuable rewards over delayed, higher-value ones 
-                    (delay discounting)<sup style={{color: '#10b981'}}>4</sup>. A 2016 meta-analysis found this impulsive decision-making 
-                    was consistently present across ages<sup style={{color: '#10b981'}}>5</sup>, indicating that difficulty with delayed 
+                    (delay discounting)<sup className="text-green-600 font-bold ml-0.5">4</sup>. A 2016 meta-analysis found this impulsive decision-making 
+                    was consistently present across ages<sup className="text-green-600 font-bold ml-0.5">5</sup>, indicating that difficulty with delayed 
                     gratification is a stable feature of ADHD throughout the lifespan.
                   </p>
                 </div>
@@ -191,7 +191,7 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Dimensions of Impulsivity</h4>
                   <p className="text-sm mb-2">
                     Adults with ADHD exhibit higher impulsivity across three main dimensions: motor (acting without thinking), cognitive 
-                    (poor planning), and attentional (short attention span)<sup style={{color: '#10b981'}}>6</sup>. This multi-dimensional 
+                    (poor planning), and attentional (short attention span)<sup className="text-green-600 font-bold ml-0.5">6</sup>. This multi-dimensional 
                     conceptualization helps explain why impulsivity manifests in diverse ways across different life situations and contexts.
                   </p>
                 </div>
@@ -200,7 +200,7 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Neurobiological Basis</h4>
                   <p className="text-sm mb-2">
                     Unlike other conditions, ADHD-related impulsivity is strongly associated with structural differences in the caudate 
-                    nucleus and frontostriatal pathways<sup style={{color: '#10b981'}}>2</sup>. These neurological findings provide 
+                    nucleus and frontostriatal pathways<sup className="text-green-600 font-bold ml-0.5">2</sup>. These neurological findings provide 
                     evidence for the biological underpinnings of impulsive behavior in ADHD and distinguish it from impulsivity seen in 
                     other psychiatric conditions.
                   </p>
@@ -210,7 +210,7 @@ export function ADHDSymptomsTabImpulsivity() {
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Behavioral Consequences</h4>
                   <p className="text-sm mb-2">
                     High levels of impulsivity in ADHD are associated with increased risk for poor interpersonal skills, substance abuse, 
-                    and dangerous behavior<sup style={{color: '#10b981'}}>7</sup>. These adverse outcomes underscore the importance of 
+                    and dangerous behavior<sup className="text-green-600 font-bold ml-0.5">7</sup>. These adverse outcomes underscore the importance of 
                     addressing impulsivity through appropriate interventions and support systems.
                   </p>
                 </div>
@@ -238,27 +238,61 @@ export function ADHDSymptomsTabImpulsivity() {
             </div>
           </div>
 
-          {/* References for Impulsivity Tab */}
-          <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+          {/* ===== REFERENCES SECTION ===== */}
+          <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+          
+          <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+            <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
             
-            <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-            <div className="text-sm space-y-3">
-              <p>[1] Nigg, J. T. (2017). Annual Research Review: On the relations among self-regulation, self-control, executive functioning, effortful control, cognitive control, impulsivity, risk-taking, and inhibition for developmental psychopathology. <em>Journal of Child Psychology and Psychiatry</em>, 58(4), 361-383.</p>
-              <p>[2] Plichta, M. M., & Scheres, A. (2014). Ventral-striatal responsiveness during reward anticipation in ADHD and its relation to trait impulsivity in the healthy population: A meta-analytic review of the fMRI literature. <em>Neuroscience & Biobehavioral Reviews</em>, 38, 125-134.</p>
-              <p>[3] Burns, G. L., et al. (2024). Longitudinal developmental relations of ADHD and oppositional defiant disorder symptoms with impulsivity symptoms in childhood and early adolescence. <em>Journal of Child Psychology and Psychiatry</em>, 65(1), 42-53.</p>
-              <p>[4] Sonuga-Barke, E. J., & Fairchild, G. (2012). Neuroeconomics of attention-deficit/hyperactivity disorder: differential influences of medial, dorsal, and ventral prefrontal brain networks on suboptimal decision making? <em>Biological Psychiatry</em>, 72(2), 126-133.</p>
-              <p>[5] Jackson, J. N., & MacKillop, J. (2016). Attention-deficit/hyperactivity disorder and monetary delay discounting: A meta-analysis of case-control studies. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>, 1(4), 316-325.</p>
-              <p>[6] Moeller, F. G., et al. (2001). Psychiatric aspects of impulsivity. <em>American Journal of Psychiatry</em>, 158(11), 1783-1793.</p>
-              <p>[7] Barkley, R. A., & Fischer, M. (2010). The unique contribution of emotional impulsiveness to impairment in major life activities in hyperactive children as adults. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 503-513.</p>
+            {/* CITED STUDIES: GREEN */}
+            <div className="mb-6">
+              <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+                Cited Studies & Statistics
+              </h4>
+              <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+                <li>
+                  Nigg, J. T. (2017). Annual Research Review: On the relations among self-regulation, self-control, executive functioning, effortful control, cognitive control, impulsivity, risk-taking, and inhibition for developmental psychopathology. <em>Journal of Child Psychology and Psychiatry</em>, 58(4), 361-383.
+                </li>
+                <li>
+                  Plichta, M. M., & Scheres, A. (2014). Ventral-striatal responsiveness during reward anticipation in ADHD and its relation to trait impulsivity in the healthy population: A meta-analytic review of the fMRI literature. <em>Neuroscience & Biobehavioral Reviews</em>, 38, 125-134.
+                </li>
+                <li>
+                  Burns, G. L., et al. (2024). Longitudinal developmental relations of ADHD and oppositional defiant disorder symptoms with impulsivity symptoms in childhood and early adolescence. <em>Journal of Child Psychology and Psychiatry</em>, 65(1), 42-53.
+                </li>
+                <li>
+                  Sonuga-Barke, E. J., & Fairchild, G. (2012). Neuroeconomics of attention-deficit/hyperactivity disorder: differential influences of medial, dorsal, and ventral prefrontal brain networks on suboptimal decision making? <em>Biological Psychiatry</em>, 72(2), 126-133.
+                </li>
+                <li>
+                  Jackson, J. N., & MacKillop, J. (2016). Attention-deficit/hyperactivity disorder and monetary delay discounting: A meta-analysis of case-control studies. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>, 1(4), 316-325.
+                </li>
+                <li>
+                  Moeller, F. G., et al. (2001). Psychiatric aspects of impulsivity. <em>American Journal of Psychiatry</em>, 158(11), 1783-1793.
+                </li>
+                <li>
+                  Barkley, R. A., & Fischer, M. (2010). The unique contribution of emotional impulsiveness to impairment in major life activities in hyperactive children as adults. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 503-513.
+                </li>
+              </ol>
             </div>
             
-            <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-            <div className="text-sm space-y-2">
-              <p>American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</p>
-              <p>Barkley, R. A. (2015). "Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment" (4th ed.). <em>Guilford Press</em>.</p>
-              <p>Dalley, J. W., & Robbins, T. W. (2017). "Fractionating impulsivity: neuropsychiatric implications." <em>Nature Reviews Neuroscience</em>, 18(3), 158-171.</p>
-              <p>Solanto, M. V. (2011). "Cognitive-behavioral therapy for adult ADHD: Targeting executive dysfunction." <em>Guilford Press</em>.</p>
+            {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+            <div>
+              <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                Background Sources
+              </h4>
+              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+                <li>
+                  American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).
+                </li>
+                <li>
+                  Barkley, R. A. (2015). "Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment" (4th ed.). <em>Guilford Press</em>.
+                </li>
+                <li>
+                  Dalley, J. W., & Robbins, T. W. (2017). "Fractionating impulsivity: neuropsychiatric implications." <em>Nature Reviews Neuroscience</em>, 18(3), 158-171.
+                </li>
+                <li>
+                  Solanto, M. V. (2011). "Cognitive-behavioral therapy for adult ADHD: Targeting executive dysfunction." <em>Guilford Press</em>.
+                </li>
+              </ul>
             </div>
           </div>
     </>
