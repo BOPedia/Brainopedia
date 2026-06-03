@@ -27,18 +27,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
       <div className="space-y-16">
         {/* WHAT IS ADHD? */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          <div className="lg:col-span-8 space-y-4">
-            <h2 className="text-[#0c264d] font-bold text-2xl border-b pb-2">What is ADHD?</h2>
-            <p className="leading-relaxed">
-              <strong>Attention-Deficit/Hyperactivity Disorder (ADHD)</strong> is a neurodevelopmental condition characterized 
-              by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 
-              or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-green-600 font-bold ml-0.5">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-green-600 font-bold ml-0.5">2</sup> making it one of the most common neurodevelopmental disorders.
-            </p>
-            <p className="leading-relaxed">
-              ADHD is not simply a childhood disorder—symptoms often persist into adulthood. It's a real medical condition with neurological basis, not a character flaw or result of poor parenting. Brain imaging studies reveal significant differences in brain structure and function.
-            </p>
-          </div>
-          <div className="lg:col-span-4 flex justify-center pt-10">
+         <div className="lg:col-span-4 flex justify-center pt-10">
             <div className="w-32 rounded-lg shadow-sm overflow-hidden">
               <video 
                 autoPlay 
@@ -62,7 +51,18 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
               </video>
             </div>
           </div>
-        </section>
+            <div className="lg:col-span-8 space-y-4">
+            <h2 className="text-[#0c264d] font-bold text-2xl border-b pb-2">What is ADHD?</h2>
+            <p className="leading-relaxed">
+              <strong>Attention-Deficit/Hyperactivity Disorder (ADHD)</strong> is a neurodevelopmental condition characterized 
+              by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 
+              or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-green-600 font-bold ml-0.5">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-green-600 font-bold ml-0.5">2</sup> making it one of the most common neurodevelopmental disorders.
+            </p>
+            <p className="leading-relaxed">
+              ADHD is not simply a childhood disorder—symptoms often persist into adulthood. It's a real medical condition with neurological basis, not a character flaw or result of poor parenting. Brain imaging studies reveal significant differences in brain structure and function.
+            </p>
+          </div>
+         </section>
 
         {/* THREE PRESENTATIONS */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
