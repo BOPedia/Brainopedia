@@ -100,7 +100,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
             <h4 className="font-bold text-[#0c264d] mb-4 text-lg border-b border-gray-100 pb-2">Physical Health</h4>
             <ul className="text-sm space-y-3 text-slate-700 flex-grow">
               <li>• <strong>Sleep disorders:</strong> Higher rates of sleep problems, periodic limb movement, and bi-directional relationship between poor sleep and symptoms</li>
-              <li>• <strong>Obesity:</strong> Significant association with higher BMI and weight, particularly in Europe and Asia</li>
+              <li>• <strong>Nutritional & Metabolic Health:</strong> Increased potential for weight-related challenges, highlighting the importance of building supportive, ADHD-friendly routines around eating.</li>
               <li>• <strong>Oral health:</strong> Increased risk of tooth decay, cavities, higher plaque scores, and dental trauma</li>
               <li>• <strong>Injuries:</strong> Higher rates of poisoning, non-intentional injury, bone fractures, and traumatic brain injury</li>
               <li>• <strong>Other conditions:</strong> Associations with asthma, migraines, chronic pain, and vision problems</li>
@@ -114,7 +114,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
             </div>
             <h4 className="font-bold text-[#0c264d] mb-4 text-lg border-b border-gray-100 pb-2">Social & Lifestyle</h4>
             <ul className="text-sm space-y-3 text-slate-700 flex-grow">
-              <li>• <strong>Criminal behavior:</strong> Elevated rates of offending, convictions, and incarceration, with earlier onset</li>
+              <li>• <strong>Legal Vulnerability:</strong>Higher likelihood of encountering legal challenges or justice system involvement early in life without appropriate support systems.</li>
               <li>• <strong>Education:</strong> Lower academic achievement, leaving school early, and achieving fewer qualifications</li>
               <li>• <strong>Occupational:</strong> Higher unemployment, frequent job changes, and lower income compared to peers</li>
               <li>• <strong>Relationships:</strong> Challenges forming and maintaining peer and intimate relationships, poorer social skills</li>
