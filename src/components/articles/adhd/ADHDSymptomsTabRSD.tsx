@@ -9,10 +9,7 @@ export function ADHDSymptomsTabRSD() {
               <p className="text-sm">
                 <strong>Important:</strong> RSD is one specific manifestation of the emotional dysregulation issues commonly experienced with ADHD. While not everyone with ADHD experiences RSD, emotional dysregulation in various forms affects a significant portion of individuals with ADHD.
               </p>
-            </div>
-            
-
-
+            </div>          
            
  <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
               <p className="mb-6 leading-relaxed">
