@@ -114,7 +114,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
             </div>
             <h4 className="font-bold text-[#0c264d] mb-4 text-lg border-b border-gray-100 pb-2">Social & Lifestyle</h4>
             <ul className="text-sm space-y-3 text-slate-700 flex-grow">
-              <li>• <strong>Legal Vulnerability:</strong>Higher likelihood of encountering legal challenges or justice system involvement early in life without appropriate support systems.</li>
+              <li>• <strong>Legal Vulnerability:</strong> Higher likelihood of encountering legal challenges or justice system involvement early in life without appropriate support systems.</li>
               <li>• <strong>Education:</strong> Lower academic achievement, leaving school early, and achieving fewer qualifications</li>
               <li>• <strong>Occupational:</strong> Higher unemployment, frequent job changes, and lower income compared to peers</li>
               <li>• <strong>Relationships:</strong> Challenges forming and maintaining peer and intimate relationships, poorer social skills</li>

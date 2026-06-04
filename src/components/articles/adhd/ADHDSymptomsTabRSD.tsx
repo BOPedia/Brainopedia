@@ -6,7 +6,11 @@ export function ADHDSymptomsTabRSD() {
 
             
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
-            <ImageWithFallback src="/images/adhd/adhd-rsd-red-crossout.png" alt="Red crossout symbol representing rejection sensitive dysphoria" className="w-full max-w-md mx-auto rounded-lg mb-4" />
+            <ImageWithFallback 
+              src="/images/adhd/adhd-rsd-red-crossout.png" 
+              alt="Red crossout symbol representing rejection sensitive dysphoria" 
+              className="w-48 mx-auto rounded-lg mb-4" 
+            />
             
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
