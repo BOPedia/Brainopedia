@@ -3,31 +3,34 @@ export function ADHDSymptomsTabRSD() {
   return (
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-
             
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
+ <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
+            
+            {/* Floated graphic: Placed here so the banner and paragraph below wrap around it */}
             <ImageWithFallback 
               src="/images/adhd/adhd-rsd-red-crossout.png" 
               alt="Red crossout symbol representing rejection sensitive dysphoria" 
-              className="w-48 mx-auto rounded-lg mb-4" 
+              className="w-48 float-right ml-6 mb-4 rounded-lg" 
             />
             
-            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
+            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6 mt-1">
               <p className="text-sm">
                 <strong>Important:</strong> RSD is one specific manifestation of the emotional dysregulation issues commonly experienced with ADHD. While not everyone with ADHD experiences RSD, emotional dysregulation in various forms affects a significant portion of individuals with ADHD.
               </p>
             </div>
             
-            <p className="mb-6">
+            <p className="mb-6 leading-relaxed">
               Rejection Sensitive Dysphoria (RSD) is an intense emotional response to perceived or actual rejection, criticism, 
               or failure. RSD is largely a clinically-defined concept rather than one heavily studied in peer-reviewed, 
               double-blind trials. However, several studies, clinical case series, and qualitative research papers explore 
-              its mechanisms, particularly in relation to ADHD. While not an official DSM-5-TR diagnosis<sup style={{color: '#10b981'}}>1</sup>, RSD is a commonly 
+              its mechanisms, particularly in relation to ADHD. While not an official DSM-5-TR diagnosis<sup className="text-green-600 font-bold ml-0.5">1</sup>, RSD is a commonly 
               reported experience among individuals with ADHD. It involves extreme emotional pain triggered by the perception 
               that one has been rejected, teased, or criticized by important people in their life, or that they have failed 
               to meet their own high standards or others' expectations.
             </p>
-            
+
+            {/* Clear-both ensures the next section doesn't accidentally wrap around the image if the text is short */}
+            <div className="clear-both"></div>
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Research Behind RSD</h3>
               <div className="space-y-4">
