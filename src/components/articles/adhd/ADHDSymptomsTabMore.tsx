@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, Brain, Activity, Users } from 'lucide-react';
 import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
 
 // --- ACCORDION COMPONENT ---
@@ -57,7 +57,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
     <>
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Beyond the DSM-5: Additional ADHD Symptoms</h2>
 
-      <div className="bg-[#d6e9ff] border-l-4 border-[#0c264d] p-4 rounded mb-6">
+      <div className="bg-[#d6e9ff] border-l-4 border-[#0c264d] p-4 rounded mb-8">
         <p className="text-sm">
           <strong>Important:</strong> These symptoms are common experiences reported by people with ADHD, though they may 
           not be present in every individual. ADHD presents differently in each person, and symptom severity can vary 
@@ -65,64 +65,65 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </p>
       </div>
 
-      {/* Associated Risks and Impacts Section */}
-      <div className="bg-white p-6 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+      {/* Associated Risks and Impacts Section (New Card Layout) */}
+      <div className="mb-10">
         <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Associated Risks and Broader Impacts of ADHD</h3>
         
-        <p className="mb-4">
+        <p className="mb-6 text-slate-700 leading-relaxed">
           A comprehensive umbrella review analyzing over 1,000 studies found that ADHD is associated with significantly 
           increased risks across multiple life domains beyond the core symptoms<sup className="text-green-600 font-bold ml-0.5">1</sup>. The review identified consistent 
           associations between ADHD and adverse outcomes in mental health, physical health, and social/lifestyle functioning, 
           highlighting the importance of taking a holistic approach to ADHD management and support.
         </p>
 
-        <div className="space-y-5">
-          <div>
-            <h4 className="font-bold text-[#0c264d] mb-2 text-base">Mental Health Risks</h4>
-            <p className="text-sm mb-2">
-              Research consistently shows strong associations between ADHD and various mental health challenges<sup className="text-green-600 font-bold ml-0.5">1</sup>:
-            </p>
-            <ul className="text-sm space-y-1 ml-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          {/* Card 1: Mental Health */}
+          <div className="bg-white p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-md flex flex-col h-full">
+            <div className="bg-[#f0f9ff] w-12 h-12 rounded-full flex items-center justify-center mb-4">
+              <Brain className="w-6 h-6 text-[#0c264d]" />
+            </div>
+            <h4 className="font-bold text-[#0c264d] mb-4 text-lg border-b border-gray-100 pb-2">Mental Health</h4>
+            <ul className="text-sm space-y-3 text-slate-700 flex-grow">
               <li>• <strong>Addiction:</strong> Higher rates of substance use disorders (alcohol, nicotine, drugs), as well as internet, gaming, and gambling addictions</li>
-              <li>• <strong>Self-harm and suicide:</strong> Significantly elevated risk of suicidal ideation, attempts, and completed suicide</li>
+              <li>• <strong>Self-harm:</strong> Significantly elevated risk of suicidal ideation, attempts, and completed suicide</li>
               <li>• <strong>Mood disorders:</strong> Increased rates of depression and bipolar disorder</li>
-              <li>• <strong>Personality disorders:</strong> Higher prevalence of co-occurring personality disorders</li>
-              <li>• <strong>Poor self-esteem:</strong> Consistently reported across studies, often linked to depression</li>
+              <li>• <strong>Personality:</strong> Higher prevalence of co-occurring personality disorders</li>
+              <li>• <strong>Self-esteem:</strong> Consistently reported poor self-esteem across studies, often linked to depression</li>
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold text-[#0c264d] mb-2 text-base">Physical Health Risks</h4>
-            <p className="text-sm mb-2">
-              ADHD is associated with numerous physical health challenges:
-            </p>
-            <ul className="text-sm space-y-1 ml-4">
-              <li>• <strong>Sleep disorders:</strong> Higher rates of sleep problems, periodic limb movement, and bi-directional relationship between poor sleep and ADHD symptoms</li>
+          {/* Card 2: Physical Health */}
+          <div className="bg-white p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-md flex flex-col h-full">
+            <div className="bg-[#f0f9ff] w-12 h-12 rounded-full flex items-center justify-center mb-4">
+              <Activity className="w-6 h-6 text-[#0c264d]" />
+            </div>
+            <h4 className="font-bold text-[#0c264d] mb-4 text-lg border-b border-gray-100 pb-2">Physical Health</h4>
+            <ul className="text-sm space-y-3 text-slate-700 flex-grow">
+              <li>• <strong>Sleep disorders:</strong> Higher rates of sleep problems, periodic limb movement, and bi-directional relationship between poor sleep and symptoms</li>
               <li>• <strong>Obesity:</strong> Significant association with higher BMI and weight, particularly in Europe and Asia</li>
               <li>• <strong>Oral health:</strong> Increased risk of tooth decay, cavities, higher plaque scores, and dental trauma</li>
-              <li>• <strong>Accidents and injuries:</strong> Higher rates of poisoning, non-intentional injury, bone fractures, and traumatic brain injury in adults</li>
+              <li>• <strong>Injuries:</strong> Higher rates of poisoning, non-intentional injury, bone fractures, and traumatic brain injury</li>
               <li>• <strong>Other conditions:</strong> Associations with asthma, migraines, chronic pain, and vision problems</li>
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold text-[#0c264d] mb-2 text-base">Social and Lifestyle Impacts</h4>
-            <p className="text-sm mb-2">
-              ADHD significantly affects various aspects of daily life and social functioning:
-            </p>
-            <ul className="text-sm space-y-1 ml-4">
-              <li>• <strong>Criminal behavior:</strong> Elevated rates of offending, convictions, and incarceration, with earlier onset of criminal activity</li>
-              <li>• <strong>Educational outcomes:</strong> Lower academic achievement, leaving school early, and achieving fewer qualifications</li>
-              <li>• <strong>Occupational challenges:</strong> Higher unemployment, frequent job changes, and lower income compared to peers</li>
-              <li>• <strong>Relationship difficulties:</strong> Challenges forming and maintaining peer and intimate relationships, poorer social skills</li>
-              <li>• <strong>Driving risks:</strong> Increased rates of accidents, collisions, road rage, and driving violations</li>
-              <li>• <strong>Risky behaviors:</strong> Higher rates of unplanned and teenage pregnancy</li>
-              <li>• <strong>Quality of life:</strong> Reduced quality of life, particularly in school, psychosocial functioning, and family/social relationships</li>
+          {/* Card 3: Social & Lifestyle */}
+          <div className="bg-white p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-md flex flex-col h-full">
+            <div className="bg-[#f0f9ff] w-12 h-12 rounded-full flex items-center justify-center mb-4">
+              <Users className="w-6 h-6 text-[#0c264d]" />
+            </div>
+            <h4 className="font-bold text-[#0c264d] mb-4 text-lg border-b border-gray-100 pb-2">Social & Lifestyle</h4>
+            <ul className="text-sm space-y-3 text-slate-700 flex-grow">
+              <li>• <strong>Criminal behavior:</strong> Elevated rates of offending, convictions, and incarceration, with earlier onset</li>
+              <li>• <strong>Education:</strong> Lower academic achievement, leaving school early, and achieving fewer qualifications</li>
+              <li>• <strong>Occupational:</strong> Higher unemployment, frequent job changes, and lower income compared to peers</li>
+              <li>• <strong>Relationships:</strong> Challenges forming and maintaining peer and intimate relationships, poorer social skills</li>
+              <li>• <strong>Driving:</strong> Increased rates of accidents, collisions, road rage, and driving violations</li>
             </ul>
           </div>
         </div>
 
-        <div className="bg-[#e8f5e8] border-l-4 border-[#0c264d] p-4 rounded mt-5">
+        <div className="bg-[#e8f5e8] border-l-4 border-[#0c264d] p-4 rounded mt-2 shadow-sm">
           <p className="text-sm">
             <strong>Clinical Implications:</strong> These findings emphasize the importance of clinicians, educators, and 
             families taking a holistic approach to ADHD assessment and management. Being aware of these associated risks 
@@ -141,14 +142,14 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         className="w-full max-w-md mx-auto mb-4 rounded"
       />
 
-      <p className="mb-4">
+      <p className="mb-4 text-slate-700 leading-relaxed">
         While the DSM-5-TR focuses on the three core symptoms of inattention, hyperactivity, and impulsivity (covered 
         in the previous tabs), people with ADHD experience a much broader range of symptoms that significantly impact 
         daily life. The symptom wheel above shows additional symptoms commonly reported by individuals with ADHD, 
         rated on a scale from 0 (no symptoms) to 10 (maximum symptoms).
       </p>
       
-      <p className="mb-6">
+      <p className="mb-6 text-slate-700 leading-relaxed">
         These symptoms aren't formally part of the DSM-5 diagnostic criteria, but they're widely recognized by 
         researchers, clinicians, and the ADHD community as important aspects of the lived experience. Understanding 
         them is crucial for comprehensive self-awareness and management.<sup className="text-green-600 font-bold ml-0.5">2</sup>
@@ -157,16 +158,16 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
       {/* Interactive Symptom Profile Chart */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-8">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Interactive Symptom Profile Chart</h3>
-        <p className="mb-4 text-sm">
+        <p className="mb-4 text-sm text-slate-700">
           Below is an interactive visual example of one individual's symptom profile. Each person's chart will 
           look different, reflecting their unique combination of characteristics and support needs.
         </p>
 
         <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
-          <p className="text-sm mb-2">
+          <p className="text-sm mb-2 text-[#0c264d]">
             <strong>How to Read This Chart:</strong>
           </p>
-          <ul className="text-sm space-y-1">
+          <ul className="text-sm space-y-1 text-[#0c264d]">
             <li>• <strong>Center (0):</strong> The symptom is not present or causes no difficulty</li>
             <li>• <strong>Outer edge (10):</strong> Maximum level of impact or challenge in that area</li>
             <li>• <strong>Each spoke:</strong> Represents a different symptom category (14 total)</li>
@@ -216,7 +217,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </div>
 
         <div className="bg-[#f0f9ff] p-4 rounded mt-6">
-          <p className="text-sm">
+          <p className="text-sm text-slate-700">
             <strong>Why This Matters:</strong> Understanding that ADHD presents differently in every individual 
             helps clinicians, educators, and families provide personalized support. This chart format is commonly 
             used by professionals to visualize assessment results and track changes over time. The example shown 
@@ -231,14 +232,14 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Explore Specific Symptoms (Click to Expand)</h3>
 
         <Accordion title="Disorganization">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Chronic difficulty maintaining order in physical spaces, schedules, and digital systems. This goes beyond 
             occasional messiness to affect daily functioning, making it hard to find important items, keep track of 
             commitments, and maintain structured routines.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p>Disorganization in ADHD is strongly linked to Executive Function (EF) deficits.</p>
               <p><strong>Executive Age Gap:</strong> Research by Dr. Russell Barkley suggests that individuals with ADHD may have 
               a developmental delay in executive functioning of approximately 30–40%. For example, a 30-year-old may have the 
@@ -249,7 +250,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               which prevents the brain from storing new data effectively.</p>
             </div>
           </div>
-          <div className="text-sm bg-[#ffe8d6] p-3 rounded">
+          <div className="text-sm bg-[#ffe8d6] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Frequently losing keys, wallets, or phones; missing appointments because 
             you forgot to write them down; cluttered workspaces that make it difficult to focus; piles of unsorted mail 
             and papers.
@@ -257,14 +258,14 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
 
         <Accordion title="Fidgeting">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Constant need for physical movement or tactile stimulation, including finger tapping, leg bouncing, pen 
             clicking, hair twirling, or handling objects. While related to hyperactivity, fidgeting is often a self-regulation 
             strategy that helps with focus and emotional regulation.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p>Fidgeting is increasingly recognized as a compensatory mechanism for self-regulation rather than just a sign of hyperactivity.</p>
               <p><strong>Cognitive Enhancement:</strong> A 2024 study of 70 adults found that fidgeting significantly increased during 
               correct trials of cognitive tasks, suggesting it helps sustain attention during challenging work.<sup className="text-green-600 font-bold ml-0.5">3</sup></p>
@@ -274,21 +275,21 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               in adults during meetings compared to forced stillness.<sup className="text-green-600 font-bold ml-0.5">3</sup></p>
             </div>
           </div>
-          <div className="text-sm bg-[#e8f5e8] p-3 rounded">
+          <div className="text-sm bg-[#e8f5e8] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Needing to doodle during meetings to stay focused, constantly repositioning 
             yourself in your seat, unable to keep your hands still, or needing a fidget toy to concentrate during lectures.
           </div>
         </Accordion>
 
         <Accordion title="Fatigue">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Persistent mental and physical exhaustion that isn't always relieved by rest. This can stem from the constant 
             effort required to regulate attention, manage executive functions, and cope with sensory input. The brain's 
             constant "on" state leads to burnout even when tasks seem simple to others.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p>ADHD-related fatigue is often characterized as a state of chronic mental exhaustion caused by the effort required to manage symptoms.</p>
               <p><strong>High Prevalence:</strong> One study found that 62% of people with ADHD meet the clinical criteria for fatigue.<sup className="text-green-600 font-bold ml-0.5">4</sup></p>
               <p><strong>Executive Load:</strong> Research indicates that executive function deficits, particularly in self-management 
@@ -297,21 +298,21 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               modulation, which are responsible for tuning out environmental distractions.</p>
             </div>
           </div>
-          <div className="text-sm bg-[#e6e6fa] p-3 rounded">
+          <div className="text-sm bg-[#e6e6fa] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Feeling completely drained after social interactions or focused work, 
             needing excessive amounts of sleep, experiencing "ADHD burnout" after periods of high masking or compensation.
           </div>
         </Accordion>
 
         <Accordion title="Risk-taking">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Tendency to engage in behaviors with potential negative consequences, often driven by novelty-seeking, 
             impulsivity, and difficulty forecasting future outcomes. This can manifest in financial decisions, driving 
             behavior, relationship choices, or physical activities.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p>Research consistently links ADHD to increased engagement in risky behaviors across various domains.</p>
               <p><strong>Laboratory Evidence:</strong> A meta-analysis of 37 studies involving over 2,300 participants found 
               substantial evidence that individuals with ADHD are more likely to make risky decisions in controlled tasks.<sup className="text-green-600 font-bold ml-0.5">5</sup></p>
@@ -322,21 +323,21 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               risky traffic behavior, substance abuse, gambling, and financial risk-taking.<sup className="text-green-600 font-bold ml-0.5">5</sup></p>
             </div>
           </div>
-          <div className="text-sm bg-[#ffe8d6] p-3 rounded">
+          <div className="text-sm bg-[#ffe8d6] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Making impulsive purchases you can't afford, speeding or driving recklessly, 
             quitting jobs without backup plans, or engaging in extreme sports without proper safety considerations.
           </div>
         </Accordion>
 
         <Accordion title="Mood Swings">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Rapid shifts in emotional states that can occur multiple times throughout the day. These aren't the same as 
             bipolar mood episodes but reflect the emotional dysregulation common in ADHD. Emotions can feel intense, 
             change quickly, and be difficult to predict or control.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p>Emotional dysregulation is a prominent feature of ADHD, though it is not always listed as a primary diagnostic symptom.</p>
               <p><strong>Prevalence in Adults:</strong> Between 30% and 70% of adults with ADHD report significant mood swings and 
               emotional turbulence.<sup className="text-green-600 font-bold ml-0.5">6</sup></p>
@@ -345,21 +346,21 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               but short-lived emotional changes.</p>
             </div>
           </div>
-          <div className="text-sm bg-[#fde8f3] p-3 rounded">
+          <div className="text-sm bg-[#fde8f3] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Going from happy to irritable to sad within minutes, having emotional 
             reactions that surprise even yourself, struggling to maintain emotional stability throughout the day.
           </div>
         </Accordion>
 
         <Accordion title="Time Management Issues (Time Blindness)">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Difficulty accurately perceiving time, estimating task duration, planning schedules, and meeting deadlines. 
             Also known as "time blindness," this symptom makes it hard to gauge how long things take or how much time 
             has passed, leading to chronic lateness and poor planning.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p>Research highlights that individuals with ADHD have a fundamentally different perception of time compared to neurotypical peers.</p>
               <p><strong>Altered Internal Clock:</strong> A meta-analysis indicates that people with ADHD exhibit an "accelerated internal clock," 
               leading to systematic inaccuracies in time estimation and reproduction.<sup className="text-green-600 font-bold ml-0.5">8</sup></p>
@@ -368,7 +369,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               "prospective memory" tasks—remembering to perform an action at a specific future time.<sup className="text-green-600 font-bold ml-0.5">8</sup></p>
             </div>
           </div>
-          <div className="text-sm bg-[#e8f5e8] p-3 rounded">
+          <div className="text-sm bg-[#e8f5e8] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Consistently underestimating how long tasks will take, losing track of time 
             completely when engaged in activities, perpetual lateness despite best intentions, last-minute rushing to meet 
             deadlines.
@@ -376,14 +377,14 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
 
         <Accordion title="Sensory Processing">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Heightened or unusual responses to sensory input including sounds, textures, lights, smells, and tastes. 
             This can involve both hypersensitivity (being overwhelmed by stimuli) and hyposensitivity (seeking intense 
             sensory experiences). Sensory processing differences significantly impact comfort and focus.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p>Recent meta-analyses have formalized the link between ADHD and atypical sensory experiences.<sup className="text-green-600 font-bold ml-0.5">9</sup></p>
               <p><strong>Atypical Sensory Profile:</strong> Research across more than 30 studies indicates that individuals with ADHD experience 
               significantly higher rates of sensory sensitivity, sensory avoidance, and sensory seeking.<sup className="text-green-600 font-bold ml-0.5">9</sup></p>
@@ -393,14 +394,14 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               and should be included in standard clinical evaluations.<sup className="text-green-600 font-bold ml-0.5">9</sup></p>
             </div>
           </div>
-          <p className="mb-3 text-sm">
+          <p className="mb-3 text-sm text-slate-700">
             <strong>Note:</strong> These sensory challenges can also be characteristic of{' '}
             <a href="/spd" className="text-[#2abcd4] underline hover:text-[#0c264d]">
               Sensory Processing Disorder (SPD)
             </a>, which can occur independently or alongside ADHD. If sensory issues are a primary concern, 
             exploring SPD may provide additional insight.
           </p>
-          <div className="text-sm bg-[#e6e6fa] p-3 rounded">
+          <div className="text-sm bg-[#e6e6fa] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Clothing tags are unbearable, fluorescent lights cause headaches, certain 
             food textures are intolerable, background noise makes concentration impossible, or needing loud music and 
             intense flavors.
@@ -408,14 +409,14 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
 
         <Accordion title="Forgetfulness">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Frequent memory lapses affecting daily activities, appointments, conversations, and tasks. This involves both 
             working memory (holding information temporarily) and prospective memory (remembering to do things in the future). 
             It's not about long-term memory but rather the executive function required to encode and retrieve information.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p>The "forgetfulness" in ADHD is primarily a failure of the brain's "mental scratchpad."</p>
               <p><strong>Working Memory Impairment:</strong> Large-scale impairments have been measured in visuospatial and phonological 
               short-term memory (d=0.89 and d=0.55 respectively).<sup className="text-green-600 font-bold ml-0.5">10</sup></p>
@@ -426,21 +427,21 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               reordering"—the ability to mentally manipulate information they just heard.<sup className="text-green-600 font-bold ml-0.5">10</sup></p>
             </div>
           </div>
-          <div className="text-sm bg-[#ffe8d6] p-3 rounded">
+          <div className="text-sm bg-[#ffe8d6] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Walking into rooms and forgetting why, losing track of what someone just 
             said, forgetting appointments even when they're written down, repeatedly buying items you already have at home.
           </div>
         </Accordion>
 
         <Accordion title="Social Challenges">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Difficulty with social interactions including interrupting others, missing social cues, talking excessively, 
             struggling with turn-taking in conversations, and misreading emotional expressions. These challenges stem from 
             impulsivity, inattention to social details, and executive function difficulties with self-monitoring.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p>Social difficulties are often categorized as "performance deficits" rather than "acquisition deficits."</p>
               <p><strong>Performance Deficit:</strong> Research shows most individuals with ADHD know the social rules but struggle to 
               apply them in real-time due to poor inhibitory control and self-regulation.<sup className="text-green-600 font-bold ml-0.5">11</sup></p>
@@ -448,7 +449,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               during reciprocal interactions.</p>
             </div>
           </div>
-          <div className="text-sm bg-[#fde8f3] p-3 rounded">
+          <div className="text-sm bg-[#fde8f3] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Interrupting others without meaning to, dominating conversations, missing 
             hints that someone wants to leave, forgetting what was said earlier in the conversation, struggling to maintain 
             friendships.
@@ -456,20 +457,20 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
 
         <Accordion title="Working Memory Challenges">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Working memory is your brain's ability to temporarily hold and manipulate information—like a mental workspace 
             or scratchpad. In ADHD, working memory deficits make it difficult to keep multiple pieces of information "active" 
             in your mind simultaneously, follow multi-step instructions, or mentally manipulate information (like doing math 
             in your head or reversing a sequence).
           </p>
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             This is distinct from long-term memory. People with ADHD often have excellent long-term memory for topics of 
             interest, but struggle with the temporary "holding space" needed for active tasks. Working memory challenges 
             affect everything from following conversations to completing complex tasks to learning new skills.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p><strong>Working Memory Impairment:</strong> Large-scale impairments have been measured in visuospatial and phonological 
               short-term memory (d=0.89 and d=0.55 respectively).<sup className="text-green-600 font-bold ml-0.5">10</sup></p>
               <p><strong>Capacity vs. Selection:</strong> While overall working memory capacity is lower in ADHD, individuals can still 
@@ -478,7 +479,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               reordering"—the ability to mentally manipulate information they just heard.<sup className="text-green-600 font-bold ml-0.5">10</sup></p>
             </div>
           </div>
-          <div className="text-sm bg-[#e6e6fa] p-3 rounded">
+          <div className="text-sm bg-[#e6e6fa] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Losing your train of thought mid-sentence, forgetting what you were doing 
             when interrupted, struggling to follow verbal directions with multiple steps, difficulty doing mental math, 
             re-reading the same paragraph multiple times because the information doesn't "stick," or forgetting the beginning 
@@ -487,19 +488,19 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
 
         <Accordion title="Executive Dysfunction">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Executive functions are the brain's management system—a set of mental processes that help you plan, organize, 
             initiate tasks, regulate emotions, monitor your behavior, and adapt to changing situations. In ADHD, executive 
             dysfunction affects these core processes, creating a ripple effect across many areas of life.
           </p>
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             This is the underlying mechanism behind many ADHD symptoms. Poor executive function explains why someone might 
             know exactly what they need to do but can't get started, or why they struggle to shift between tasks, or why 
             they have difficulty planning ahead and anticipating consequences.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p><strong>The "Root" Cause:</strong> Dr. Thomas Brown’s models argue that the DSM's core symptoms are just surface-level expressions of a much deeper, structural impairment of the brain's entire executive management system.<sup className="text-green-600 font-bold ml-0.5">12</sup></p>
               <p><strong>The "30% Rule":</strong> Clinical research suggests that the "executive age" of an adult with ADHD is often 
               30–40% behind their chronological age (e.g., a 30-year-old having the executive skills of a 20-year-old).<sup className="text-green-600 font-bold ml-0.5">2</sup></p>
@@ -507,7 +508,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               leading to the "paralysis" felt when starting new projects.</p>
             </div>
           </div>
-          <div className="text-sm bg-[#e8f5e8] p-3 rounded">
+          <div className="text-sm bg-[#e8f5e8] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Knowing you need to start a project but feeling paralyzed, difficulty breaking 
             large tasks into manageable steps, struggling to prioritize when everything feels equally urgent, poor self-monitoring 
             (not noticing when you're off-track), and challenges adapting plans when circumstances change.
@@ -515,44 +516,44 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
 
         <Accordion title="Rejection Sensitive Dysphoria (RSD)">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Rejection Sensitive Dysphoria (RSD) is an extreme emotional sensitivity and physical pain triggered by the perception that a person has been rejected, teased, or criticized by important people in their life. 
           </p>
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             While not an official DSM diagnosis, the underlying extreme emotional pain triggered by perceived rejection is well-documented in literature and is considered by many experts to be a near-universal experience for adults with ADHD.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p><strong>Clinical Consensus:</strong> Groundbreaking clinical observations have defined RSD as a defining feature of the ADHD emotional landscape.<sup className="text-green-600 font-bold ml-0.5">13</sup></p>
               <p><strong>Baseline Sensitivity:</strong> Studies show individuals with ADHD exhibit significantly higher baseline rejection sensitivity than neurotypical peers, contributing heavily to social anxiety and depressive symptoms.<sup className="text-green-600 font-bold ml-0.5">14</sup></p>
             </div>
           </div>
-          <div className="text-sm bg-[#fde8f3] p-3 rounded">
+          <div className="text-sm bg-[#fde8f3] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> People-pleasing to avoid criticism, abandoning projects at the first sign of negative feedback, striving for perfectionism to prevent judgment, or withdrawing entirely from social situations to prevent the possibility of perceived rejection.
           </div>
         </Accordion>
 
         <Accordion title="Task Initiation & Analysis Paralysis">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Task initiation difficulty is the struggle to begin tasks even when you're motivated and have time. This isn't 
             procrastination in the traditional sense—you genuinely want to start, but your brain won't cooperate. Analysis 
             paralysis occurs when facing too many options or steps, leading to complete overwhelm and inability to choose 
             or begin.
           </p>
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             The ADHD brain often needs extra stimulation or pressure to activate the "start" mechanism. Without external 
             deadlines, novel situations, or high interest, the initiation system doesn't engage, leaving you stuck in a 
             frustrating state of knowing what to do but being unable to do it.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p><strong>Analysis Paralysis:</strong> Executive dysfunction disrupts the brain's ability to break down complex tasks, 
               leading to the "paralysis" felt when starting new projects.</p>
             </div>
           </div>
-          <div className="text-sm bg-[#fde8f3] p-3 rounded">
+          <div className="text-sm bg-[#fde8f3] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Staring at a blank document for hours, spending all day "getting ready" to 
             work without actually starting, becoming overwhelmed by choices (even simple ones like what to eat), over-planning 
             as a substitute for doing, or needing the panic of a deadline to finally begin.
@@ -560,13 +561,13 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
 
         <Accordion title="Hyperfocus">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Hyperfocus is intense, sustained concentration on tasks of high interest or stimulation, often to the point of 
             losing awareness of time, surroundings, and basic needs. While it might seem contradictory to ADHD's attention 
             difficulties, hyperfocus actually reflects the same core issue: difficulty regulating attention rather than a 
             simple lack of it.
           </p>
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             When the ADHD brain finds something sufficiently stimulating, it can lock onto that activity with laser-like 
             intensity. The problem is that you can't control when this happens or easily disengage from it. Hyperfocus can 
             be productive (finishing a project in one marathon session) or problematic (losing hours to a video game when 
@@ -574,12 +575,12 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p><strong>Regulatory Failure:</strong> Rather than a "lack" of attention, hyperfocus is the inability to disengage from 
               a high-stimulation task once the brain's reward system (dopamine) is locked in.</p>
             </div>
           </div>
-          <div className="text-sm bg-[#ffe8d6] p-3 rounded">
+          <div className="text-sm bg-[#ffe8d6] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Working or gaming for 8+ hours without eating, drinking, or using the bathroom; 
             missing appointments because you were absorbed in an activity; inability to "pull yourself away" even when you 
             know you should stop; finishing passion projects in record time but unable to focus on boring necessities.
@@ -587,24 +588,24 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
 
         <Accordion title="Sleep Difficulties">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Sleep problems are extremely common in ADHD and often include delayed sleep phase syndrome (natural tendency to 
             stay up late and sleep in), difficulty falling asleep due to racing thoughts, trouble waking up despite multiple 
             alarms, and non-restorative sleep. The ADHD brain's dysregulation extends to the sleep-wake cycle.
           </p>
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Many people with ADHD describe feeling most alert and focused late at night, making it nearly impossible to fall 
             asleep at "normal" times. Morning awakening is equally challenging—sleep inertia can be extreme, with intense 
             grogginess lasting well into the day. Poor sleep then exacerbates ADHD symptoms, creating a difficult cycle.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p><strong>Delayed Circadian Rhythms:</strong> Systematic reviews establish a strong, intrinsic link between ADHD and delayed circadian rhythms, showing it is a biological feature of the condition, not just "poor sleep hygiene."<sup className="text-green-600 font-bold ml-0.5">15</sup></p>
               <p><strong>Prevalence:</strong> Almost 80% of adults with ADHD have sleep phase delays, naturally functioning as "night owls."<sup className="text-green-600 font-bold ml-0.5">15</sup></p>
             </div>
           </div>
-          <div className="text-sm bg-[#e6e6fa] p-3 rounded">
+          <div className="text-sm bg-[#e6e6fa] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Naturally staying awake until 2-4 AM regardless of when you need to wake up, 
             lying in bed with racing thoughts for hours, needing 5+ alarms and still struggling to get up, feeling like you 
             didn't sleep even after 8+ hours, functioning better at night than during the day.
@@ -612,24 +613,24 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
 
         <Accordion title="Difficulty with Transitions">
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             Transitions—shifting between activities, locations, mental states, or tasks—require significant executive function. 
             You must disengage from what you're doing, shift your mental set, and initiate something new. For people with ADHD, 
             this process is exhausting and often triggers frustration, anxiety, or resistance.
           </p>
-          <p className="mb-3">
+          <p className="mb-3 text-slate-700">
             This difficulty applies to both physical transitions (leaving the house, moving between locations) and mental ones 
             (switching from work mode to relaxation, changing tasks). The "in-between" state feels uncomfortable and 
             disorganizing, so there's often procrastination around transitions or irritability when they're required.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
-            <div className="text-sm space-y-2">
+            <div className="text-sm space-y-2 text-slate-700">
               <p><strong>Transition Exhaustion:</strong> Shifting between mental states requires significant executive effort; the 
               "in-between" state of a transition is often where people with ADHD lose the most time and emotional regulation.</p>
             </div>
           </div>
-          <div className="text-sm bg-[#e8f5e8] p-3 rounded">
+          <div className="text-sm bg-[#e8f5e8] p-3 rounded text-slate-800">
             <strong>Real-life impact:</strong> Feeling irrationally angry when interrupted, procrastinating leaving the house 
             even for enjoyable activities, needing extensive "decompression time" between work and home, struggling to switch 
             between different types of tasks, or staying in uncomfortable situations because transitioning out feels too hard.
@@ -637,13 +638,13 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         </Accordion>
       </div>
 
-      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-8">
-        <p className="text-sm mb-2">
+      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-8 shadow-sm">
+        <p className="text-sm mb-2 text-[#0c264d]">
           <strong>About the Symptom Wheel:</strong> The wheel rates each symptom from 0 to 10 based on severity of 
           impact. Each person with ADHD experiences these symptoms differently—some may rate high on certain symptoms 
           and low on others. There's no "correct" pattern, and your individual symptom profile is valid.
         </p>
-        <p className="text-sm mt-3">
+        <p className="text-sm mt-3 text-[#0c264d]">
           <strong>Why These Aren't in the DSM-5:</strong> Diagnostic criteria focus on core features that distinguish 
           ADHD from other conditions. These additional symptoms are widely recognized by researchers and clinicians as 
           important aspects of the ADHD experience that deserve attention in treatment planning, even though they're 
