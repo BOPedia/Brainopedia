@@ -11,7 +11,11 @@ export function ADHDSymptomsTabRSD() {
               </p>
             </div>
             
-            <p className="mb-6 leading-relaxed">
+
+
+           
+ <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
+              <p className="mb-6 leading-relaxed">
               Rejection Sensitive Dysphoria (RSD) is an intense emotional response to perceived or actual rejection, criticism, 
               or failure. RSD is largely a clinically-defined concept rather than one heavily studied in peer-reviewed, 
               double-blind trials. However, several studies, clinical case series, and qualitative research papers explore 
@@ -19,11 +23,7 @@ export function ADHDSymptomsTabRSD() {
               reported experience among individuals with ADHD. It involves extreme emotional pain triggered by the perception 
               that one has been rejected, teased, or criticized by important people in their life, or that they have failed 
               to meet their own high standards or others' expectations.
-            </p>
-
-           
- <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
-            
+            </p>          
             {/* Floated graphic: Placed here so the banner and paragraph below wrap around it */}
             <ImageWithFallback 
               src="/images/adhd/adhd-rsd-red-crossout.png" 
