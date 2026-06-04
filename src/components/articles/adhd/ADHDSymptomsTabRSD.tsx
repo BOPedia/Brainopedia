@@ -1,5 +1,6 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { HeartCrack, ShieldAlert, Zap, RefreshCw, Flame, EyeOff } from 'lucide-react';
+import { MessageSquare, Smartphone, AlertCircle, Users, Frown, ClipboardList, Scale, Target, UserX } from 'lucide-react';
 
 export function ADHDSymptomsTabRSD() {
   return (
@@ -183,25 +184,62 @@ export function ADHDSymptomsTabRSD() {
               </div>
             </div>
             
+<div className="bg-[#fff9e6] p-6 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6 mt-8">
+              <h3 className="text-[#0c264d] font-bold mb-3 text-xl">Common RSD Triggers</h3>
+              <p className="text-sm text-slate-700 mb-6">
+                RSD can be activated by a wide variety of everyday social and professional situations. For someone with RSD, these events are not just mildly upsetting—they can trigger an immediate, overwhelming emotional response:
+              </p>
+              
+              {/* Trigger Cloud / Tag Layout */}
+              <div className="flex flex-wrap gap-3">
+                
+                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+                  <MessageSquare className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#0c264d]">Being criticized at work or in relationships</span>
+                </div>
 
-            
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common RSD Triggers</h3>
-              <ImageWithFallback src="/images/adhd/adhd-rsd-artistic-explosion.png" alt="Artistic explosion representing intense RSD trigger reactions" className="w-full max-w-md mx-auto rounded-lg mb-4" />
-              <ul className="list-disc ml-6 space-y-2 text-sm">
-                <li>Being criticized at work or in relationships</li>
-                <li>Not receiving a response to a text message or email</li>
-                <li>Making a mistake in front of others</li>
-                <li>Not being invited to a social event</li>
-                <li>Perceiving disappointment in someone's tone or facial expression</li>
-                <li>Receiving constructive feedback, even when delivered kindly</li>
-                <li>Comparing oneself to others and feeling "less than"</li>
-                <li>Failing to meet self-imposed standards or goals</li>
-                <li>Social awkwardness or perceived social mistakes</li>
-              </ul>
+                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+                  <Smartphone className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#0c264d]">Not receiving a response to a text or email</span>
+                </div>
+
+                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+                  <AlertCircle className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#0c264d]">Making a mistake in front of others</span>
+                </div>
+
+                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+                  <Users className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#0c264d]">Not being invited to a social event</span>
+                </div>
+
+                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+                  <Frown className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#0c264d]">Perceiving disappointment in tone or facial expression</span>
+                </div>
+
+                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+                  <ClipboardList className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#0c264d]">Receiving constructive feedback (even kindly delivered)</span>
+                </div>
+
+                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+                  <Scale className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#0c264d]">Comparing oneself to others and feeling "less than"</span>
+                </div>
+
+                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+                  <Target className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#0c264d]">Failing to meet self-imposed standards or goals</span>
+                </div>
+
+                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+                  <UserX className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#0c264d]">Social awkwardness or perceived social mistakes</span>
+                </div>
+
+              </div>
             </div>
-            
-
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Coping Strategies for RSD</h3>
