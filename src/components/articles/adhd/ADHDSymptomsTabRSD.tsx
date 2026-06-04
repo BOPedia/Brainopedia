@@ -3,18 +3,7 @@ export function ADHDSymptomsTabRSD() {
   return (
     <>
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            
- <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
-            
-            {/* Floated graphic: Placed here so the banner and paragraph below wrap around it */}
-            <ImageWithFallback 
-              src="/images/adhd/adhd-rsd-red-crossout.png" 
-              alt="Red crossout symbol representing rejection sensitive dysphoria" 
-              className="w-48 float-right ml-6 mb-4 rounded-lg" 
-            />
-            
-            {/* Clear-both ensures the next section doesn't accidentally wrap around the image if the text is short */}
-            <div className="clear-both"></div>
+             <div className="clear-both"></div>
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
           <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6 mt-1">
               <p className="text-sm">
@@ -32,6 +21,17 @@ export function ADHDSymptomsTabRSD() {
               to meet their own high standards or others' expectations.
             </p>
 
+           
+ <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
+            
+            {/* Floated graphic: Placed here so the banner and paragraph below wrap around it */}
+            <ImageWithFallback 
+              src="/images/adhd/adhd-rsd-red-crossout.png" 
+              alt="Red crossout symbol representing rejection sensitive dysphoria" 
+              className="w-48 float-right ml-6 mb-4 rounded-lg" 
+            />
+            
+            {/* Clear-both ensures the next section doesn't accidentally wrap around the image if the text is short */}
  
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Research Behind RSD</h3>
               <div className="space-y-4">
