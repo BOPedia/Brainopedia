@@ -1,6 +1,7 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { HeartCrack, ShieldAlert, Zap, RefreshCw, Flame, EyeOff } from 'lucide-react';
 import { MessageSquare, Smartphone, AlertCircle, Users, Frown, ClipboardList, Scale, Target, UserX } from 'lucide-react';
+import { Clock, Compass, MessageCircle } from 'lucide-react';
 
 export function ADHDSymptomsTabRSD() {
   return (
@@ -253,40 +254,70 @@ export function ADHDSymptomsTabRSD() {
               </div>
             </div>
             
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Coping Strategies for RSD</h3>
-              <ImageWithFallback src="/images/adhd/adhd-rsd-positive-talk.png" alt="Positive self-talk illustration for RSD coping strategies" className="w-full max-w-md mx-auto rounded-lg mb-4" />
-              <div className="space-y-4">
-                <div>
-                  <div className="font-bold text-[#0c264d] mb-2">In-the-Moment Strategies:</div>
-                  <ul className="list-disc ml-6 space-y-1 text-sm pl-4">
-                    <li>Practice grounding techniques (5-4-3-2-1 sensory awareness)</li>
-                    <li>Take a break before responding to perceived criticism</li>
-                    <li>Use self-compassion phrases: "This feeling will pass," "I'm doing my best"</li>
-                    <li>Physical movement to release emotional intensity (walk, stretch)</li>
-                    <li>Reach out to a trusted person who understands RSD</li>
+ <div className="bg-white p-6 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
+              <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center">Coping Strategies for RSD</h3>
+              
+              {/* Centered, smaller graphic */}
+              <ImageWithFallback 
+                src="/images/adhd/adhd-rsd-positive-talk.png" 
+                alt="Positive self-talk illustration for RSD coping strategies" 
+                className="w-48 mx-auto rounded-lg mb-8 shadow-sm" 
+              />
+              
+              {/* 3-Column Strategy Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                {/* Column 1: In-the-Moment */}
+                <div className="bg-[#f0f9ff] p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-sm flex flex-col h-full">
+                  <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mb-4 shadow-sm">
+                    <Clock className="w-6 h-6 text-[#0c264d]" />
+                  </div>
+                  <h4 className="font-bold text-[#0c264d] mb-4 text-lg border-b border-[#2abcd4] border-opacity-20 pb-2">
+                    In-the-Moment
+                  </h4>
+                  <ul className="text-sm space-y-3 text-slate-700 flex-grow">
+                    <li>• Practice grounding techniques (5-4-3-2-1 sensory awareness)</li>
+                    <li>• Take a break before responding to perceived criticism</li>
+                    <li>• Use self-compassion phrases: "This feeling will pass," "I'm doing my best"</li>
+                    <li>• Physical movement to release emotional intensity (walk, stretch)</li>
+                    <li>• Reach out to a trusted person who understands RSD</li>
                   </ul>
                 </div>
-                <div>
-                  <div className="font-bold text-[#0c264d] mb-2">Long-Term Strategies:</div>
-                  <ul className="list-disc ml-6 space-y-1 text-sm pl-4">
-                    <li>Work with a therapist trained in ADHD and emotional regulation</li>
-                    <li>Learn to distinguish between actual rejection and RSD perception</li>
-                    <li>Build a support network of people who understand ADHD and RSD</li>
-                    <li>Practice self-compassion and challenge negative self-talk</li>
-                    <li>Consider medication adjustments (ADHD medications may help with RSD)</li>
-                    <li>Develop emotional regulation skills through DBT or CBT</li>
+
+                {/* Column 2: Long-Term */}
+                <div className="bg-[#f0f9ff] p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-sm flex flex-col h-full">
+                  <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mb-4 shadow-sm">
+                    <Compass className="w-6 h-6 text-[#0c264d]" />
+                  </div>
+                  <h4 className="font-bold text-[#0c264d] mb-4 text-lg border-b border-[#2abcd4] border-opacity-20 pb-2">
+                    Long-Term
+                  </h4>
+                  <ul className="text-sm space-y-3 text-slate-700 flex-grow">
+                    <li>• Work with a therapist trained in ADHD and emotional regulation</li>
+                    <li>• Learn to distinguish between actual rejection and RSD perception</li>
+                    <li>• Build a support network of people who understand ADHD and RSD</li>
+                    <li>• Practice self-compassion and challenge negative self-talk</li>
+                    <li>• Consider medication adjustments (ADHD medications may help)</li>
+                    <li>• Develop emotional regulation skills through DBT or CBT</li>
                   </ul>
                 </div>
-                <div>
-                  <div className="font-bold text-[#0c264d] mb-2">Communication Strategies:</div>
-                  <ul className="list-disc ml-6 space-y-1 text-sm pl-4">
-                    <li>Educate close friends, family, and partners about RSD</li>
-                    <li>Request specific types of feedback delivery (written vs. verbal)</li>
-                    <li>Ask for "feedback sandwiches" (positive-constructive-positive)</li>
-                    <li>Communicate your needs: "I need time to process this feedback"</li>
+
+                {/* Column 3: Communication */}
+                <div className="bg-[#f0f9ff] p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-sm flex flex-col h-full">
+                  <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mb-4 shadow-sm">
+                    <MessageCircle className="w-6 h-6 text-[#0c264d]" />
+                  </div>
+                  <h4 className="font-bold text-[#0c264d] mb-4 text-lg border-b border-[#2abcd4] border-opacity-20 pb-2">
+                    Communication
+                  </h4>
+                  <ul className="text-sm space-y-3 text-slate-700 flex-grow">
+                    <li>• Educate close friends, family, and partners about RSD</li>
+                    <li>• Request specific types of feedback delivery (written vs. verbal)</li>
+                    <li>• Ask for "feedback sandwiches" (positive-constructive-positive)</li>
+                    <li>• Communicate your needs: "I need time to process this feedback"</li>
                   </ul>
                 </div>
+
               </div>
             </div>
             
