@@ -4,8 +4,7 @@ import { ADHDSymptomsTabCore } from './ADHDSymptomsTabCore';
 import { ADHDSymptomsTabInattention } from './ADHDSymptomsTabInattention';
 import { ADHDSymptomsTabHyperactivity } from './ADHDSymptomsTabHyperactivity';
 import { ADHDSymptomsTabImpulsivity } from './ADHDSymptomsTabImpulsivity';
-import { ADHDSymptomsTabMoreA } from './ADHDSymptomsTabMoreA';
-import { ADHDSymptomsTabMoreB } from './ADHDSymptomsTabMoreB';
+import { ADHDSymptomsTabMore } from './ADHDSymptomsTabMore';
 import { ADHDSymptomsTabRSD } from './ADHDSymptomsTabRSD';
 import { ADHDSymptomsTabFemales } from './ADHDSymptomsTabFemales';
 import { ADHDSymptomsTabMyths } from './ADHDSymptomsTabMyths';
@@ -106,8 +105,7 @@ export function ADHDSymptoms({ setCurrentArticle, initialTab }: ADHDSymptomsProp
         {/* More Symptoms Tab */}
         <TabsContent value="more" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <ADHDSymptomsTabMoreA />
-            <ADHDSymptomsTabMoreB />
+            <ADHDSymptomsTabMore setCurrentArticle={setCurrentArticle} />
           </div>
 
           {/* Back to ADHD Button - Mobile Only */}
