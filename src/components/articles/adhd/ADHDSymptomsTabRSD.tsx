@@ -184,61 +184,42 @@ export function ADHDSymptomsTabRSD() {
               </div>
             </div>
             
-<div className="bg-[#fff9e6] p-6 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6 mt-8">
-              <h3 className="text-[#0c264d] font-bold mb-3 text-xl">Common RSD Triggers</h3>
-              <p className="text-sm text-slate-700 mb-6">
-                RSD can be activated by a wide variety of everyday social and professional situations. For someone with RSD, these events are not just mildly upsetting—they can trigger an immediate, overwhelming emotional response:
-              </p>
+<div className="bg-white p-6 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
+              <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Why RSD Sometimes Happens with ADHD</h3>
               
-              {/* Trigger Cloud / Tag Layout */}
-              <div className="flex flex-wrap gap-3">
+              {/* Floated graphic: Placed before the text so the paragraphs wrap around it */}
+              <ImageWithFallback 
+                src="/images/adhd/adhd-rsd-rejected-typewriter.png" 
+                alt="Typewriter with rejected text representing why RSD occurs in ADHD" 
+                className="w-48 float-right ml-6 mb-4 rounded-lg shadow-sm" 
+              />
+              
+              <div className="space-y-5">
+                <div>
+                  <div className="font-bold text-[#0c264d] mb-1">Neurological Factors:</div>
+                  <div className="text-sm text-slate-700 leading-relaxed">Research suggests that for those with ADHD, the brain processes rejection differently, 
+                  creating a "hyperalert" state to social rejection. RSD is related to differences in emotional regulation in ADHD brains. 
+                  The same executive function deficits that affect attention and impulse control also impact emotional control. 
+                  People with ADHD may experience all emotions more intensely, and negative emotions related to perceived rejection 
+                  can be particularly overwhelming.</div>
+                </div>
                 
-                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
-                  <MessageSquare className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
-                  <span className="text-sm font-semibold text-[#0c264d]">Being criticized at work or in relationships</span>
+                <div>
+                  <div className="font-bold text-[#0c264d] mb-1">Lifetime of Negative Feedback:</div>
+                  <div className="text-sm text-slate-700 leading-relaxed">Many people with ADHD have experienced years of criticism, correction, and negative 
+                  feedback about ADHD-related behaviors (being "too much," "not trying hard enough," "careless," "irresponsible"). 
+                  This history can create a heightened sensitivity to any perceived criticism or rejection.</div>
                 </div>
-
-                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
-                  <Smartphone className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
-                  <span className="text-sm font-semibold text-[#0c264d]">Not receiving a response to a text or email</span>
+                
+                <div>
+                  <div className="font-bold text-[#0c264d] mb-1">Perfectionism and Compensation:</div>
+                  <div className="text-sm text-slate-700 leading-relaxed">Many people with ADHD develop perfectionist tendencies as a way to compensate for 
+                  their difficulties and avoid criticism. This makes any perceived failure particularly painful.</div>
                 </div>
-
-                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
-                  <AlertCircle className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
-                  <span className="text-sm font-semibold text-[#0c264d]">Making a mistake in front of others</span>
-                </div>
-
-                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
-                  <Users className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
-                  <span className="text-sm font-semibold text-[#0c264d]">Not being invited to a social event</span>
-                </div>
-
-                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
-                  <Frown className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
-                  <span className="text-sm font-semibold text-[#0c264d]">Perceiving disappointment in tone or facial expression</span>
-                </div>
-
-                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
-                  <ClipboardList className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
-                  <span className="text-sm font-semibold text-[#0c264d]">Receiving constructive feedback (even kindly delivered)</span>
-                </div>
-
-                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
-                  <Scale className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
-                  <span className="text-sm font-semibold text-[#0c264d]">Comparing oneself to others and feeling "less than"</span>
-                </div>
-
-                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
-                  <Target className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
-                  <span className="text-sm font-semibold text-[#0c264d]">Failing to meet self-imposed standards or goals</span>
-                </div>
-
-                <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
-                  <UserX className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
-                  <span className="text-sm font-semibold text-[#0c264d]">Social awkwardness or perceived social mistakes</span>
-                </div>
-
               </div>
+
+              {/* Clears the float so the white background box stretches all the way down to fit the image */}
+              <div className="clear-both"></div>
             </div>
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
