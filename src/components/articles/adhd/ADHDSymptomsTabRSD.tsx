@@ -15,7 +15,7 @@ export function ADHDSymptomsTabRSD() {
               </p>
             </div>          
            
- <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
              <ImageWithFallback 
               src="/images/adhd/adhd-rsd-red-crossout.png" 
               alt="Red crossout symbol representing rejection sensitive dysphoria" 
@@ -31,50 +31,46 @@ export function ADHDSymptomsTabRSD() {
               that one has been rejected, teased, or criticized by important people in their life, or that they have failed 
               to meet their own high standards or others' expectations.
             </p>          
-            {/* Floated graphic: Placed here so the banner and paragraph below wrap around it */}
 
-            
-            {/* Clear-both ensures the next section doesn't accidentally wrap around the image if the text is short */}
- 
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Research Behind RSD</h3>
               <div className="space-y-4">
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">Clinical Case Series (2024):</div>
-                  <div className="text-sm pl-4">A case series study presented detailed cases of four patients, showing how ADHD-related 
+                  <div className="text-sm pl-4 text-slate-700">A case series study presented detailed cases of four patients, showing how ADHD-related 
                   emotional dysregulation manifests as an immediate, intense, and painful reaction to perceived rejection, criticism, 
-                  or failure<sup style={{color: '#10b981'}}>2</sup>. The study highlighted that these patients, despite often being high-achieving, experienced 
+                  or failure<sup className="text-green-600 font-bold ml-0.5">2</sup>. The study highlighted that these patients, despite often being high-achieving, experienced 
                   severe distress that did not fit traditional anxiety or mood disorder criteria, and responded favorably to alpha-2 
                   agonists like guanfacine.</div>
                 </div>
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">Lived Experience Research (2025):</div>
-                  <div className="text-sm pl-4">A qualitative study explored the personal understandings of RSD within the neurodivergent 
-                  community<sup style={{color: '#10b981'}}>3</sup>. This research addressed a gap in the literature regarding the subjective experience of the 
+                  <div className="text-sm pl-4 text-slate-700">A qualitative study explored the personal understandings of RSD within the neurodivergent 
+                  community<sup className="text-green-600 font-bold ml-0.5">3</sup>. This research addressed a gap in the literature regarding the subjective experience of the 
                   phenomenon, noting that it often presents as a "predisposition to expect, sense, and react strongly to rejection."</div>
                 </div>
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">Virtual Feedback Study (2019):</div>
-                  <div className="text-sm pl-4">Research on emotional regulation in ADHD found that individuals with ADHD displayed 
+                  <div className="text-sm pl-4 text-slate-700">Research on emotional regulation in ADHD found that individuals with ADHD displayed 
                   significantly higher levels of emotional sensitivity when receiving feedback in a virtual game compared to neurotypical 
-                  controls<sup style={{color: '#10b981'}}>4</sup>.</div>
+                  controls<sup className="text-green-600 font-bold ml-0.5">4</sup>.</div>
                 </div>
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">Rejection Sensitivity in Adolescents (2009):</div>
-                  <div className="text-sm pl-4">A study examining adolescents with ADHD found that high attachment-related anxiety and 
-                  avoidance correlated with higher levels of sensitivity to peer rejection<sup style={{color: '#10b981'}}>5</sup>.</div>
+                  <div className="text-sm pl-4 text-slate-700">A study examining adolescents with ADHD found that high attachment-related anxiety and 
+                  avoidance correlated with higher levels of sensitivity to peer rejection<sup className="text-green-600 font-bold ml-0.5">5</sup>.</div>
                 </div>
                 <div>
                   <div className="font-bold text-[#0c264d] mb-2">Clinical Observations:</div>
-                  <div className="text-sm pl-4">Dr. William Dodson, who coined the term RSD in the context of ADHD, has published 
+                  <div className="text-sm pl-4 text-slate-700">Dr. William Dodson, who coined the term RSD in the context of ADHD, has published 
                   clinical observations stating that nearly 99% of adults with ADHD experience RSD to some degree, with 30% reporting 
-                  it as their most impairing symptom<sup style={{color: '#10b981'}}>6</sup>. Researchers often point back to Dr. Paul Wender's observations in the 
+                  it as their most impairing symptom<sup className="text-green-600 font-bold ml-0.5">6</sup>. Researchers often point back to Dr. Paul Wender's observations in the 
                   1960s, which identified high levels of emotional dysregulation and "atypical depression" in ADHD patients, aligning 
-                  with modern understandings of RSD<sup style={{color: '#10b981'}}>7</sup>.</div>
+                  with modern understandings of RSD<sup className="text-green-600 font-bold ml-0.5">7</sup>.</div>
                 </div>
               </div>
             </div>
               
-<div className="bg-white p-6 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+            <div className="bg-white p-6 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center">What RSD Looks Like</h3>
               
               {/* Centered, smaller graphic */}
@@ -87,7 +83,6 @@ export function ADHDSymptomsTabRSD() {
               {/* Icon List Layout */}
               <div className="space-y-5">
                 
-                {/* Item 1 */}
                 <div className="flex items-start gap-4">
                   <div className="bg-[#f0f9ff] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm border border-[#2abcd4] border-opacity-20">
                     <HeartCrack className="w-6 h-6 text-[#2abcd4]" />
@@ -100,7 +95,6 @@ export function ADHDSymptomsTabRSD() {
                   </div>
                 </div>
                 
-                {/* Item 2 */}
                 <div className="flex items-start gap-4">
                   <div className="bg-[#f0f9ff] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm border border-[#2abcd4] border-opacity-20">
                     <ShieldAlert className="w-6 h-6 text-[#2abcd4]" />
@@ -111,7 +105,6 @@ export function ADHDSymptomsTabRSD() {
                   </div>
                 </div>
                 
-                {/* Item 3 */}
                 <div className="flex items-start gap-4">
                   <div className="bg-[#f0f9ff] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm border border-[#2abcd4] border-opacity-20">
                     <Zap className="w-6 h-6 text-[#2abcd4]" />
@@ -123,7 +116,6 @@ export function ADHDSymptomsTabRSD() {
                   </div>
                 </div>
                 
-                {/* Item 4 */}
                 <div className="flex items-start gap-4">
                   <div className="bg-[#f0f9ff] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm border border-[#2abcd4] border-opacity-20">
                     <RefreshCw className="w-6 h-6 text-[#2abcd4]" />
@@ -134,7 +126,6 @@ export function ADHDSymptomsTabRSD() {
                   </div>
                 </div>
                 
-                {/* Item 5 */}
                 <div className="flex items-start gap-4">
                   <div className="bg-[#f0f9ff] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm border border-[#2abcd4] border-opacity-20">
                     <Flame className="w-6 h-6 text-[#2abcd4]" />
@@ -145,7 +136,6 @@ export function ADHDSymptomsTabRSD() {
                   </div>
                 </div>
                 
-                {/* Item 6 */}
                 <div className="flex items-start gap-4">
                   <div className="bg-[#f0f9ff] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm border border-[#2abcd4] border-opacity-20">
                     <EyeOff className="w-6 h-6 text-[#2abcd4]" />
@@ -159,14 +149,13 @@ export function ADHDSymptomsTabRSD() {
               </div>
             </div>
             
-<div className="bg-white p-6 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
+            <div className="bg-white p-6 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Why RSD Sometimes Happens with ADHD</h3>
               
-              {/* Floated graphic: Placed before the text so the paragraphs wrap around it */}
               <ImageWithFallback 
                 src="/images/adhd/adhd-rsd-rejected-typewriter.png" 
                 alt="Typewriter with rejected text representing why RSD occurs in ADHD" 
-                className="w-64 float-right ml-6 mb-4 rounded-lg shadow-sm" 
+                className="w-48 float-right ml-6 mb-4 rounded-lg shadow-sm" 
               />
               
               <div className="space-y-5">
@@ -192,82 +181,65 @@ export function ADHDSymptomsTabRSD() {
                   their difficulties and avoid criticism. This makes any perceived failure particularly painful.</div>
                 </div>
               </div>
-
-              {/* Clears the float so the white background box stretches all the way down to fit the image */}
               <div className="clear-both"></div>
             </div>
             
-<div className="bg-[#fff9e6] p-6 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6 mt-8">
+            <div className="bg-[#fff9e6] p-6 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6 mt-8">
               <h3 className="text-[#0c264d] font-bold mb-3 text-xl">Common RSD Triggers</h3>
               <p className="text-sm text-slate-700 mb-6">
                 RSD can be activated by a wide variety of everyday social and professional situations. For someone with RSD, these events are not just mildly upsetting—they can trigger an immediate, overwhelming emotional response:
               </p>
               
-              {/* Trigger Cloud / Tag Layout */}
               <div className="flex flex-wrap gap-3">
-                
                 <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
                   <MessageSquare className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#0c264d]">Being criticized at work or in relationships</span>
                 </div>
-
                 <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
                   <Smartphone className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#0c264d]">Not receiving a response to a text or email</span>
                 </div>
-
                 <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
                   <AlertCircle className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#0c264d]">Making a mistake in front of others</span>
                 </div>
-
                 <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
                   <Users className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#0c264d]">Not being invited to a social event</span>
                 </div>
-
                 <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
                   <Frown className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#0c264d]">Perceiving disappointment in tone or facial expression</span>
                 </div>
-
                 <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
                   <ClipboardList className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#0c264d]">Receiving constructive feedback (even kindly delivered)</span>
                 </div>
-
                 <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
                   <Scale className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#0c264d]">Comparing oneself to others and feeling "less than"</span>
                 </div>
-
                 <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
                   <Target className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#0c264d]">Failing to meet self-imposed standards or goals</span>
                 </div>
-
                 <div className="bg-white border border-slate-200 hover:border-[#ffd166] hover:shadow-md hover:-translate-y-0.5 transition-all px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
                   <UserX className="w-5 h-5 text-[#2abcd4] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#0c264d]">Social awkwardness or perceived social mistakes</span>
                 </div>
-
               </div>
             </div>
             
- <div className="bg-white p-6 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
+            <div className="bg-white p-6 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center">Coping Strategies for RSD</h3>
               
-              {/* Centered, smaller graphic */}
               <ImageWithFallback 
                 src="/images/adhd/adhd-rsd-artistic-explosion.png" 
                 alt="Positive self-talk illustration for RSD coping strategies" 
                 className="w-48 mx-auto rounded-lg mb-8 shadow-sm" 
               />
               
-              {/* 3-Column Strategy Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                {/* Column 1: In-the-Moment */}
                 <div className="bg-[#f0f9ff] p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-sm flex flex-col h-full">
                   <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mb-4 shadow-sm">
                     <Clock className="w-6 h-6 text-[#0c264d]" />
@@ -284,7 +256,6 @@ export function ADHDSymptomsTabRSD() {
                   </ul>
                 </div>
 
-                {/* Column 2: Long-Term */}
                 <div className="bg-[#f0f9ff] p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-sm flex flex-col h-full">
                   <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mb-4 shadow-sm">
                     <Compass className="w-6 h-6 text-[#0c264d]" />
@@ -302,7 +273,6 @@ export function ADHDSymptomsTabRSD() {
                   </ul>
                 </div>
 
-                {/* Column 3: Communication */}
                 <div className="bg-[#f0f9ff] p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-sm flex flex-col h-full">
                   <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mb-4 shadow-sm">
                     <MessageCircle className="w-6 h-6 text-[#0c264d]" />
@@ -317,7 +287,6 @@ export function ADHDSymptomsTabRSD() {
                     <li>• Communicate your needs: "I need time to process this feedback"</li>
                   </ul>
                 </div>
-
               </div>
             </div>
 
@@ -351,27 +320,39 @@ export function ADHDSymptomsTabRSD() {
             </div>
           </div>
 
-          {/* References for RSD Tab */}
-          <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+          {/* ===== REFERENCES SECTION ===== */}
+          <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+          
+          <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+            <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
             
-            <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-            <div className="text-sm space-y-2">
-              <p>[1] American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</p>
-              <p>[2] Rejection Sensitivity Dysphoria in Attention-Deficit/Hyperactivity Disorder: A Case Series. (2024). <em>Acta Scientific Neurological Sciences</em>.</p>
-              <p>[3] Neurodivergent Experiences of Rejection Sensitive Dysphoria. (2025). <em>Journal of Neural Engineering</em>.</p>
-              <p>[4] Renton, T. (2022). Research on emotional regulation in ADHD examining virtual feedback responses.</p>
-              <p>[5] Adolescents' ADHD symptoms and adjustment: The role of attachment and rejection sensitivity. (2009). <em>Journal of Clinical Child & Adolescent Psychology</em>.</p>
-              <p>[6] Dodson, W. (Clinical observations). Nearly 99% of adults with ADHD experience RSD to some degree, with 30% reporting it as their most impairing symptom. Published in ADDitude Magazine.</p>
-              <p>[7] Wender, P. (1960s). Historical observations on emotional dysregulation and "atypical depression" in ADHD patients.</p>
+            {/* CITED STUDIES: GREEN */}
+            <div className="mb-6">
+              <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+                Cited Studies & Statistics
+              </h4>
+              <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+                <li>American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</li>
+                <li>Rejection Sensitivity Dysphoria in Attention-Deficit/Hyperactivity Disorder: A Case Series. (2024). <em>Acta Scientific Neurological Sciences</em>.</li>
+                <li>Neurodivergent Experiences of Rejection Sensitive Dysphoria. (2025). <em>Journal of Neural Engineering</em>.</li>
+                <li>Renton, T. (2022). Research on emotional regulation in ADHD examining virtual feedback responses.</li>
+                <li>Adolescents' ADHD symptoms and adjustment: The role of attachment and rejection sensitivity. (2009). <em>Journal of Clinical Child & Adolescent Psychology</em>.</li>
+                <li>Dodson, W. (Clinical observations). Nearly 99% of adults with ADHD experience RSD to some degree, with 30% reporting it as their most impairing symptom. Published in ADDitude Magazine.</li>
+                <li>Wender, P. (1960s). Historical observations on emotional dysregulation and "atypical depression" in ADHD patients.</li>
+              </ol>
             </div>
             
-            <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-            <div className="text-sm space-y-2">
-              <p>Barkley, R. A. (2015). "Emotional dysregulation is a core component of ADHD." In R. A. Barkley (Ed.), <em>Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment</em> (4th ed.). Guilford Press.</p>
-              <p>Shaw, P., et al. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</p>
-              <p>Surman, C. B., et al. (2013). "Understanding deficient emotional self-regulation in adults with ADHD: A controlled study." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 5(3), 273-281.</p>
-              <p>Ramsay, J. R. (2017). "'I feel like I'm constantly treading water': Persistent affective problems in adults with ADHD." <em>ADHD Report</em>, 25(6), 1-7.</p>
+            {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+            <div>
+              <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                Background Sources
+              </h4>
+              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+                <li>Barkley, R. A. (2015). "Emotional dysregulation is a core component of ADHD." In R. A. Barkley (Ed.), <em>Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment</em> (4th ed.). Guilford Press.</li>
+                <li>Shaw, P., et al. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</li>
+                <li>Surman, C. B., et al. (2013). "Understanding deficient emotional self-regulation in adults with ADHD: A controlled study." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 5(3), 273-281.</li>
+                <li>Ramsay, J. R. (2017). "'I feel like I'm constantly treading water': Persistent affective problems in adults with ADHD." <em>ADHD Report</em>, 25(6), 1-7.</li>
+              </ul>
             </div>
           </div>
     </>
