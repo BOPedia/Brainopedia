@@ -154,78 +154,18 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         researchers, clinicians, and the ADHD community as important aspects of the lived experience. Understanding 
         them is crucial for comprehensive self-awareness and management.<sup className="text-green-600 font-bold ml-0.5">2</sup>
       </p>
-
-      {/* Interactive Symptom Profile Chart */}
-      <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-8">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Interactive Symptom Profile Chart</h3>
-        <p className="mb-4 text-sm text-slate-700">
-          Below is an interactive visual example of one individual's symptom profile. Each person's chart will 
-          look different, reflecting their unique combination of characteristics and support needs.
+      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-8 shadow-sm">
+        <p className="text-sm mb-2 text-[#0c264d]">
+          <strong>About the Symptom Wheel:</strong> The wheel rates each symptom from 0 to 10 based on severity of 
+          impact. Each person with ADHD experiences these symptoms differently—some may rate high on certain symptoms 
+          and low on others. There's no "correct" pattern, and your individual symptom profile is valid.
         </p>
-
-        <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
-          <p className="text-sm mb-2 text-[#0c264d]">
-            <strong>How to Read This Chart:</strong>
-          </p>
-          <ul className="text-sm space-y-1 text-[#0c264d]">
-            <li>• <strong>Center (0):</strong> The symptom is not present or causes no difficulty</li>
-            <li>• <strong>Outer edge (10):</strong> Maximum level of impact or challenge in that area</li>
-            <li>• <strong>Each spoke:</strong> Represents a different symptom category (14 total)</li>
-            <li>• <strong>The colored area:</strong> Shows an example individual's profile across all categories</li>
-            <li>• <strong>Hover over the chart:</strong> See exact values for each category</li>
-            <li>• <strong>Different patterns:</strong> Everyone's chart looks different—no two people with ADHD have the same profile!</li>
-          </ul>
-        </div>
-
-        <div className="bg-gray-50 p-6 rounded-lg border-2 border-[#2abcd4] hidden md:block">
-          <ResponsiveContainer width="100%" height={500}>
-            <RadarChart data={adhdSymptomData}>
-              <PolarGrid stroke="#2abcd4" strokeWidth={1.5} />
-              <PolarAngleAxis 
-                dataKey="category" 
-                tick={{ fill: '#0c264d', fontSize: 12, fontWeight: 'bold' }}
-              />
-              <PolarRadiusAxis 
-                angle={90} 
-                domain={[0, 10]} 
-                tick={{ fill: '#0c264d', fontSize: 11, dy: 10 }}
-                tickCount={6}
-              />
-              <Radar
-                name="Example ADHD Profile"
-                dataKey="value"
-                stroke="#2abcd4"
-                fill="#2abcd4"
-                fillOpacity={0.6}
-                strokeWidth={2}
-              />
-              <Tooltip 
-                contentStyle={{ 
-                  backgroundColor: '#fff', 
-                  border: '2px solid #2abcd4',
-                  borderRadius: '8px',
-                  padding: '10px'
-                }}
-                labelStyle={{ color: '#0c264d', fontWeight: 'bold' }}
-              />
-              <Legend 
-                wrapperStyle={{ paddingTop: '20px' }}
-                iconType="circle"
-              />
-            </RadarChart>
-          </ResponsiveContainer>
-        </div>
-
-        <div className="bg-[#f0f9ff] p-4 rounded mt-6">
-          <p className="text-sm text-slate-700">
-            <strong>Why This Matters:</strong> Understanding that ADHD presents differently in every individual 
-            helps clinicians, educators, and families provide personalized support. This chart format is commonly 
-            used by professionals to visualize assessment results and track changes over time. The example shown 
-            demonstrates how one person might have significant rejection sensitive dysphoria (9/10) and task initiation 
-            difficulties (9/10) while having moderate hyperfocus tendencies (6/10)—highlighting the heterogeneity 
-            of ADHD presentation.
-          </p>
-        </div>
+        <p className="text-sm mt-3 text-[#0c264d]">
+          <strong>Why These Aren't in the DSM-5:</strong> Diagnostic criteria focus on core features that distinguish 
+          ADHD from other conditions. These additional symptoms are widely recognized by researchers and clinicians as 
+          important aspects of the ADHD experience that deserve attention in treatment planning, even though they're 
+          not part of the formal diagnostic criteria.
+        </p>
       </div>
 
       <div className="mb-8">
@@ -637,20 +577,79 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
           </div>
         </Accordion>
       </div>
+     {/* Interactive Symptom Profile Chart */}
+      <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-8">
+        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Interactive Symptom Profile Chart</h3>
+        <p className="mb-4 text-sm text-slate-700">
+          Below is an interactive visual example of one individual's symptom profile. Each person's chart will 
+          look different, reflecting their unique combination of characteristics and support needs.
+        </p>
 
-      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-8 shadow-sm">
-        <p className="text-sm mb-2 text-[#0c264d]">
-          <strong>About the Symptom Wheel:</strong> The wheel rates each symptom from 0 to 10 based on severity of 
-          impact. Each person with ADHD experiences these symptoms differently—some may rate high on certain symptoms 
-          and low on others. There's no "correct" pattern, and your individual symptom profile is valid.
-        </p>
-        <p className="text-sm mt-3 text-[#0c264d]">
-          <strong>Why These Aren't in the DSM-5:</strong> Diagnostic criteria focus on core features that distinguish 
-          ADHD from other conditions. These additional symptoms are widely recognized by researchers and clinicians as 
-          important aspects of the ADHD experience that deserve attention in treatment planning, even though they're 
-          not part of the formal diagnostic criteria.
-        </p>
+        <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
+          <p className="text-sm mb-2 text-[#0c264d]">
+            <strong>How to Read This Chart:</strong>
+          </p>
+          <ul className="text-sm space-y-1 text-[#0c264d]">
+            <li>• <strong>Center (0):</strong> The symptom is not present or causes no difficulty</li>
+            <li>• <strong>Outer edge (10):</strong> Maximum level of impact or challenge in that area</li>
+            <li>• <strong>Each spoke:</strong> Represents a different symptom category (14 total)</li>
+            <li>• <strong>The colored area:</strong> Shows an example individual's profile across all categories</li>
+            <li>• <strong>Hover over the chart:</strong> See exact values for each category</li>
+            <li>• <strong>Different patterns:</strong> Everyone's chart looks different—no two people with ADHD have the same profile!</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-6 rounded-lg border-2 border-[#2abcd4] hidden md:block">
+          <ResponsiveContainer width="100%" height={500}>
+            <RadarChart data={adhdSymptomData}>
+              <PolarGrid stroke="#2abcd4" strokeWidth={1.5} />
+              <PolarAngleAxis 
+                dataKey="category" 
+                tick={{ fill: '#0c264d', fontSize: 12, fontWeight: 'bold' }}
+              />
+              <PolarRadiusAxis 
+                angle={90} 
+                domain={[0, 10]} 
+                tick={{ fill: '#0c264d', fontSize: 11, dy: 10 }}
+                tickCount={6}
+              />
+              <Radar
+                name="Example ADHD Profile"
+                dataKey="value"
+                stroke="#2abcd4"
+                fill="#2abcd4"
+                fillOpacity={0.6}
+                strokeWidth={2}
+              />
+              <Tooltip 
+                contentStyle={{ 
+                  backgroundColor: '#fff', 
+                  border: '2px solid #2abcd4',
+                  borderRadius: '8px',
+                  padding: '10px'
+                }}
+                labelStyle={{ color: '#0c264d', fontWeight: 'bold' }}
+              />
+              <Legend 
+                wrapperStyle={{ paddingTop: '20px' }}
+                iconType="circle"
+              />
+            </RadarChart>
+          </ResponsiveContainer>
+        </div>
+
+        <div className="bg-[#f0f9ff] p-4 rounded mt-6">
+          <p className="text-sm text-slate-700">
+            <strong>Why This Matters:</strong> Understanding that ADHD presents differently in every individual 
+            helps clinicians, educators, and families provide personalized support. This chart format is commonly 
+            used by professionals to visualize assessment results and track changes over time. The example shown 
+            demonstrates how one person might have significant rejection sensitive dysphoria (9/10) and task initiation 
+            difficulties (9/10) while having moderate hyperfocus tendencies (6/10)—highlighting the heterogeneity 
+            of ADHD presentation.
+          </p>
+        </div>
       </div>
+
 
       {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
