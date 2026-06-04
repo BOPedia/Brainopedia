@@ -165,7 +165,7 @@ export function ADHDSymptomsTabRSD() {
               <ImageWithFallback 
                 src="/images/adhd/adhd-rsd-rejected-typewriter.png" 
                 alt="Typewriter with rejected text representing why RSD occurs in ADHD" 
-                className="w-48 float-right ml-6 mb-4 rounded-lg shadow-sm" 
+                className="w-64 float-right ml-6 mb-4 rounded-lg shadow-sm" 
               />
               
               <div className="space-y-5">
