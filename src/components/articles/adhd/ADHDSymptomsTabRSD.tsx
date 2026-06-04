@@ -12,6 +12,12 @@ export function ADHDSymptomsTabRSD() {
             </div>          
            
  <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Rejection Sensitive Dysphoria (RSD)</h2>
+             <ImageWithFallback 
+              src="/images/adhd/adhd-rsd-red-crossout.png" 
+              alt="Red crossout symbol representing rejection sensitive dysphoria" 
+              className="w-48 float-right ml-6 mb-4 rounded-lg" 
+            />
+ 
               <p className="mb-6 leading-relaxed">
               Rejection Sensitive Dysphoria (RSD) is an intense emotional response to perceived or actual rejection, criticism, 
               or failure. RSD is largely a clinically-defined concept rather than one heavily studied in peer-reviewed, 
@@ -22,11 +28,7 @@ export function ADHDSymptomsTabRSD() {
               to meet their own high standards or others' expectations.
             </p>          
             {/* Floated graphic: Placed here so the banner and paragraph below wrap around it */}
-            <ImageWithFallback 
-              src="/images/adhd/adhd-rsd-red-crossout.png" 
-              alt="Red crossout symbol representing rejection sensitive dysphoria" 
-              className="w-48 float-right ml-6 mb-4 rounded-lg" 
-            />
+
             
             {/* Clear-both ensures the next section doesn't accidentally wrap around the image if the text is short */}
  
