@@ -1,4 +1,6 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
+import { HeartCrack, ShieldAlert, Zap, RefreshCw, Flame, EyeOff } from 'lucide-react';
+
 export function ADHDSymptomsTabRSD() {
   return (
     <>
@@ -7,7 +9,7 @@ export function ADHDSymptomsTabRSD() {
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
           <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6 mt-1">
               <p className="text-sm">
-                <strong>Important:</strong> RSD is one specific manifestation of the emotional dysregulation issues commonly experienced with ADHD. While not everyone with ADHD experiences RSD, emotional dysregulation in various forms affects a significant portion of individuals with ADHD.
+                <strong>Important:</strong> While not officially recognized in the DSM-5-TR, RSD is one specific manifestation of the emotional dysregulation issues commonly experienced with ADHD. While not everyone with ADHD experiences RSD, emotional dysregulation in various forms affects a significant portion of individuals with ADHD.
               </p>
             </div>          
            
@@ -72,43 +74,78 @@ export function ADHDSymptomsTabRSD() {
             
 
             
-            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What RSD Looks Like</h3>
-              <ImageWithFallback src="/images/adhd/adhd-rsd-heart.png" alt="Heart illustration representing emotional sensitivity in RSD" className="w-full max-w-md mx-auto rounded-lg mb-4" />
-              <div className="space-y-3">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Extreme Emotional Pain</div>
-                  <div className="text-sm">Sudden, intense emotional distress in response to perceived rejection or criticism. 
+<div className="bg-white p-6 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+              <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center">What RSD Looks Like</h3>
+              
+              {/* Centered, smaller graphic */}
+              <ImageWithFallback 
+                src="/images/adhd/adhd-rsd-heart.png" 
+                alt="Heart illustration representing emotional sensitivity in RSD" 
+                className="w-48 mx-auto rounded-lg mb-8" 
+              />
+              
+              {/* 6-Item Responsive Card Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                {/* Card 1 */}
+                <div className="bg-[#f0f9ff] p-5 rounded-lg border border-[#2abcd4] shadow-sm flex flex-col h-full">
+                  <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                    <HeartCrack className="w-5 h-5 text-[#2abcd4]" />
+                  </div>
+                  <div className="font-bold text-[#0c264d] mb-2 border-b border-[#2abcd4] border-opacity-20 pb-2">Extreme Emotional Pain</div>
+                  <div className="text-sm text-slate-700 flex-grow">Sudden, intense emotional distress in response to perceived rejection or criticism. 
                   Studies frequently note that individuals describe the feeling of rejection as a physical "stab" or "punch" to the chest, 
                   making it feel physically painful and overwhelming.</div>
                 </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Hypersensitivity to Criticism</div>
-                  <div className="text-sm">Taking criticism very personally, even constructive feedback feels like a personal attack</div>
+                
+                {/* Card 2 */}
+                <div className="bg-[#f0f9ff] p-5 rounded-lg border border-[#2abcd4] shadow-sm flex flex-col h-full">
+                  <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                    <ShieldAlert className="w-5 h-5 text-[#2abcd4]" />
+                  </div>
+                  <div className="font-bold text-[#0c264d] mb-2 border-b border-[#2abcd4] border-opacity-20 pb-2">Hypersensitivity to Criticism</div>
+                  <div className="text-sm text-slate-700 flex-grow">Taking criticism very personally; even gentle, constructive feedback feels like a direct personal attack.</div>
                 </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Immediate, Intense Reactions</div>
-                  <div className="text-sm">Emotional response happens instantly and can feel uncontrollable, often disproportionate 
-                  to the triggering event</div>
+                
+                {/* Card 3 */}
+                <div className="bg-[#f0f9ff] p-5 rounded-lg border border-[#2abcd4] shadow-sm flex flex-col h-full">
+                  <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                    <Zap className="w-5 h-5 text-[#2abcd4]" />
+                  </div>
+                  <div className="font-bold text-[#0c264d] mb-2 border-b border-[#2abcd4] border-opacity-20 pb-2">Immediate, Intense Reactions</div>
+                  <div className="text-sm text-slate-700 flex-grow">Emotional response happens instantly and can feel entirely uncontrollable, often disproportionate 
+                  to the triggering event.</div>
                 </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Rumination and Overthinking</div>
-                  <div className="text-sm">Replaying perceived rejections or criticisms repeatedly, unable to let go of the experience</div>
+                
+                {/* Card 4 */}
+                <div className="bg-[#f0f9ff] p-5 rounded-lg border border-[#2abcd4] shadow-sm flex flex-col h-full">
+                  <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                    <RefreshCw className="w-5 h-5 text-[#2abcd4]" />
+                  </div>
+                  <div className="font-bold text-[#0c264d] mb-2 border-b border-[#2abcd4] border-opacity-20 pb-2">Rumination and Overthinking</div>
+                  <div className="text-sm text-slate-700 flex-grow">Replaying perceived rejections or criticisms repeatedly in your mind, unable to let go of the experience.</div>
                 </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Rage or Withdrawal</div>
-                  <div className="text-sm">Responding with sudden anger, emotional outbursts, or complete withdrawal and isolation</div>
+                
+                {/* Card 5 */}
+                <div className="bg-[#f0f9ff] p-5 rounded-lg border border-[#2abcd4] shadow-sm flex flex-col h-full">
+                  <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                    <Flame className="w-5 h-5 text-[#2abcd4]" />
+                  </div>
+                  <div className="font-bold text-[#0c264d] mb-2 border-b border-[#2abcd4] border-opacity-20 pb-2">Rage or Withdrawal</div>
+                  <div className="text-sm text-slate-700 flex-grow">Responding with sudden anger and emotional outbursts, or flipping to complete withdrawal and isolation.</div>
                 </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Avoidance Behaviors</div>
-                  <div className="text-sm">Avoiding situations where rejection or criticism might occur, even at significant personal cost. 
-                  This is strongly linked to high-achieving perfectionism or, conversely, complete avoidance of situations where failure 
-                  is possible.</div>
+                
+                {/* Card 6 */}
+                <div className="bg-[#f0f9ff] p-5 rounded-lg border border-[#2abcd4] shadow-sm flex flex-col h-full">
+                  <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                    <EyeOff className="w-5 h-5 text-[#2abcd4]" />
+                  </div>
+                  <div className="font-bold text-[#0c264d] mb-2 border-b border-[#2abcd4] border-opacity-20 pb-2">Avoidance Behaviors</div>
+                  <div className="text-sm text-slate-700 flex-grow">Avoiding situations where rejection or criticism might occur. This is strongly linked to high-achieving perfectionism or, conversely, complete avoidance of situations where failure is possible.</div>
                 </div>
+
               </div>
             </div>
-            
-
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Why RSD Happens with ADHD</h3>
