@@ -259,7 +259,7 @@ export function ADHDSymptomsTabRSD() {
               
               {/* Centered, smaller graphic */}
               <ImageWithFallback 
-                src="/images/adhd/adhd-rsd-positive-talk.png" 
+                src="/images/adhd/adhd-rsd-artistic-explosion.png" 
                 alt="Positive self-talk illustration for RSD coping strategies" 
                 className="w-48 mx-auto rounded-lg mb-8 shadow-sm" 
               />
@@ -320,7 +320,7 @@ export function ADHDSymptomsTabRSD() {
 
               </div>
             </div>
-            
+
             {/* YouTube Video for RSD */}
             <div className="mt-6 mb-6 max-w-2xl mx-auto">
               <h4 className="text-[#0c264d] font-bold mb-4 text-center">Understanding Rejection Sensitive Dysphoria</h4>
