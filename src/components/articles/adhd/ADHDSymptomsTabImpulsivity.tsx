@@ -79,13 +79,13 @@ export function ADHDSymptomsTabImpulsivity() {
 
             {/* Research on Impulsivity Section */}
             <div className="bg-white p-6 rounded-md border-l-4 border-[#0c264d] shadow-sm mt-6">
+
+              <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Research on Impulsivity as a Core ADHD Symptom</h3>
                   <ImageWithFallback 
                   src="/images/adhd/adhd-impulsivity-purple-wires.png"
                   alt="Impulsivity and neural connections"
                   className="w-32 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
                   />
-              <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Research on Impulsivity as a Core ADHD Symptom</h3>
-              
               <p className="mb-4">
                 Studies confirm that impulsivity is a core symptom of ADHD across the lifespan, characterized by deficits in motor, 
                 cognitive, and attentional control<sup className="text-green-600 font-bold ml-0.5">1</sup>. Research indicates that children and adults 
