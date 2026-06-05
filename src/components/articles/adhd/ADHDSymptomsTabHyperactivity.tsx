@@ -7,12 +7,6 @@ export function ADHDSymptomsTabHyperactivity() {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Hyperactivity Symptoms</h2>
             
-            <ImageWithFallback 
-              src="/images/adhd/adhd-hyperactivity-street-view.png"
-              alt="Hyperactivity in everyday life - street view"
-              className="w-32 h-auto float-right ml-4 mb-4 rounded"
-            />
-
             
             <p className="mb-6">
               Hyperactivity involves excessive motor activity and restlessness. While often associated with children, 
@@ -21,6 +15,12 @@ export function ADHDSymptomsTabHyperactivity() {
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hyperactivity Across the Lifespan</h3>
+              
+              <ImageWithFallback 
+                src="/images/adhd/adhd-hyperactivity-lifespan.png"
+                alt="Hyperactivity changes across the lifespan"
+                className="w-full max-w-xs mx-auto mb-4 rounded"
+              />
 
               {/* Timeline */}
               <div className="relative">
@@ -75,13 +75,7 @@ export function ADHDSymptomsTabHyperactivity() {
                 that as children they "couldn't sit still" but now feel more internally restless rather than physically hyperactive.
               </p>
             </div>
-              
-              <ImageWithFallback 
-                src="/images/adhd/adhd-hyperactivity-lifespan.png"
-                alt="Hyperactivity changes across the lifespan"
-                className="w-full max-w-xs mx-auto mb-4 rounded"
-              />
-              
+
             {/* Research on Hyperactivity Section */}
             <div className="bg-white p-6 rounded-md border-l-4 border-[#0c264d] shadow-sm mt-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Research on Hyperactivity as a Core ADHD Symptom</h3>
@@ -161,6 +155,11 @@ export function ADHDSymptomsTabHyperactivity() {
                   requiring targeted treatment. Understanding hyperactivity as a measurable, persistent, and biologically-based symptom 
                   helps reduce stigma and supports evidence-based intervention approaches.
                 </p>
+              <ImageWithFallback 
+              src="/images/adhd/adhd-hyperactivity-street-view.png"
+              alt="Hyperactivity in everyday life - street view"
+              className="w-32 h-auto float-right ml-4 mb-4 rounded"
+              />
               </div>
             </div>
           </div>
