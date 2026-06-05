@@ -1,4 +1,5 @@
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
+
 export function ADHDSymptomsTabFemales() {
   return (
     <>
@@ -7,7 +8,7 @@ export function ADHDSymptomsTabFemales() {
             <ImageWithFallback src="/images/adhd/adhd-females-diversity-faces.png" alt="Diverse female faces representing ADHD in females" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-              <p className="text-sm mb-3">
+              <p className="text-sm mb-3 text-slate-700">
                 <strong>Note on Gender and Research:</strong> Much of the research on ADHD has historically focused on individuals 
                 assigned male at birth, leading to an understanding of symptoms that may not fully capture the experiences of those 
                 assigned female at birth or those who identify as women and girls. While this section uses the terms "girls" and "women" 
@@ -15,11 +16,9 @@ export function ADHDSymptomsTabFemales() {
                 people of all gender identities. The symptom patterns described here are relevant to anyone assigned female at birth and 
                 may also resonate with individuals across the gender spectrum.
               </p>
-              
-
             </div>
             
-            <p className="mb-6">
+            <p className="mb-6 text-slate-700 leading-relaxed">
               ADHD in individuals assigned female at birth is significantly underdiagnosed and undertreated. Research 
               suggests that girls and women with ADHD often present differently than boys and men, leading to missed or delayed 
               diagnoses. The inattentive presentation is more common in females, and symptoms may be less externally 
@@ -32,11 +31,11 @@ export function ADHDSymptomsTabFemales() {
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Symptom Presentation & Comorbidity:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Women with ADHD are more likely to have the combined type, experience greater emotional dysregulation, 
-                  and report higher levels of anxiety and depression compared to men.<sup className="text-[#10b981]">1</sup></p>
+                  and report higher levels of anxiety and depression compared to men.<sup className="text-green-600 font-bold ml-0.5">1</sup></p>
                   <p>Research indicates a significant association between adult female ADHD and higher rates of insomnia, 
-                  substance abuse, chronic pain, and histories of childhood abuse.<sup className="text-[#10b981]">2</sup></p>
+                  substance abuse, chronic pain, and histories of childhood abuse.<sup className="text-green-600 font-bold ml-0.5">2</sup></p>
                   <p>Women often exhibit inattentive symptoms, making them less likely to be diagnosed in childhood, often 
                   waiting until they recognize similar symptoms in their own children.</p>
                 </div>
@@ -44,30 +43,30 @@ export function ADHDSymptomsTabFemales() {
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Persistence Into Adulthood:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Research suggests that while 60% of women have symptoms lasting into adulthood, they are less likely to 
-                  "outgrow" the condition than men (30%).<sup className="text-[#10b981]">3</sup></p>
+                  "outgrow" the condition than men (30%).<sup className="text-green-600 font-bold ml-0.5">3</sup></p>
                 </div>
               </div>
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Social & Personal Impact:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Women with ADHD face greater difficulties with peer relationships, social behavior, and sustaining stable 
-                  relationships compared to women without ADHD.<sup className="text-[#10b981]">4</sup></p>
+                  relationships compared to women without ADHD.<sup className="text-green-600 font-bold ml-0.5">4</sup></p>
                   <p>A qualitative study found that women with late-diagnosed ADHD experienced severe, long-term consequences, 
                   including low self-esteem, intense guilt, shame, and a sense of grieving over the life they could have led 
-                  if diagnosed earlier.<sup className="text-[#10b981]">5</sup></p>
+                  if diagnosed earlier.<sup className="text-green-600 font-bold ml-0.5">5</sup></p>
                 </div>
               </div>
               
               <div>
                 <div className="font-bold text-[#0c264d] mb-2">Medical & Diagnostic Bias:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Studies demonstrate a "missed diagnosis" phenomenon where professionals mislabel ADHD in women as only 
-                  anxiety or depression.<sup className="text-[#10b981]">6</sup></p>
+                  anxiety or depression.<sup className="text-green-600 font-bold ml-0.5">6</sup></p>
                   <p>Female adolescents (over 13) may experience more frequent and different adverse events from stimulant 
-                  medications compared to males.<sup className="text-[#10b981]">7</sup></p>
+                  medications compared to males.<sup className="text-green-600 font-bold ml-0.5">7</sup></p>
                 </div>
               </div>
             </div>
@@ -79,7 +78,7 @@ export function ADHDSymptomsTabFemales() {
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Presentation Differences:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Girls with ADHD are more likely to present with the inattentive type rather than hyperactive-impulsive type. 
                   They may appear dreamy, spacey, or lost in thought rather than disruptive or hyperactive.</p>
                   <p>Hyperactivity in girls may manifest as excessive talking, social chattiness, or emotional reactivity rather 
@@ -89,7 +88,7 @@ export function ADHDSymptomsTabFemales() {
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Academic Challenges:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Girls with ADHD often work harder to compensate for their difficulties, masking symptoms through extra effort. 
                   They may maintain acceptable grades in elementary school but struggle as academic demands increase.</p>
                   <p>Common challenges include difficulty with organization, time management, completing homework, and test-taking 
@@ -97,11 +96,9 @@ export function ADHDSymptomsTabFemales() {
                 </div>
               </div>
               
-
-              
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Social and Emotional Aspects:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Girls with ADHD often experience more internalizing symptoms such as anxiety, depression, and low self-esteem 
                   compared to boys with ADHD. They may be more aware of their social difficulties and internalize 
                   negative feedback.</p>
@@ -114,7 +111,7 @@ export function ADHDSymptomsTabFemales() {
               
               <div>
                 <div className="font-bold text-[#0c264d] mb-2">Diagnostic Challenges:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Girls are often diagnosed later than boys, sometimes not until adolescence or adulthood when coping mechanisms 
                   break down under increased demands.</p>
                   <p>Teachers and parents may attribute symptoms to personality traits ("she's just a daydreamer," "she's shy") 
@@ -132,7 +129,7 @@ export function ADHDSymptomsTabFemales() {
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Adult Presentation:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Women with ADHD often describe feeling overwhelmed by daily life demands, struggling to manage multiple 
                   responsibilities (work, household, family, social obligations).</p>
                   <p>Common challenges include chronic disorganization, difficulty with time management, forgetting appointments, 
@@ -144,7 +141,7 @@ export function ADHDSymptomsTabFemales() {
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Hormonal Influences:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>ADHD symptoms in women can fluctuate with hormonal changes across the menstrual cycle, pregnancy, postpartum 
                   period, and menopause. Many women report worsening symptoms during low-estrogen phases of their cycle 
                   and during perimenopause.</p>
@@ -155,7 +152,7 @@ export function ADHDSymptomsTabFemales() {
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Career and Relationships:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Women with ADHD may struggle with career advancement due to difficulties with organization, time management, 
                   and executive function demands. They may underperform relative to their intelligence and education.</p>
                   <p>Relationship challenges are common, including difficulty with household management, emotional regulation, 
@@ -165,11 +162,9 @@ export function ADHDSymptomsTabFemales() {
                 </div>
               </div>
               
-
-              
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Mental Health Considerations:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Women with ADHD have higher rates of anxiety, depression, eating disorders, and trauma compared to women 
                   without ADHD. The chronic stress of managing untreated ADHD contributes to these conditions.</p>
                   <p>Self-esteem issues are common, often stemming from years of feeling "different," underachieving, or receiving 
@@ -181,7 +176,7 @@ export function ADHDSymptomsTabFemales() {
               
               <div className="mb-4">
                 <div className="font-bold text-[#0c264d] mb-2">Late Diagnosis:</div>
-                <div className="text-sm space-y-2 pl-4">
+                <div className="text-sm space-y-2 pl-4 text-slate-700">
                   <p>Many women are not diagnosed until adulthood, often in their 30s, 40s, or later. Diagnosis often 
                   occurs when seeking evaluation for their own child, recognizing similar struggles, or when life demands exceed 
                   coping abilities.</p>
@@ -206,8 +201,8 @@ export function ADHDSymptomsTabFemales() {
               </div>
             </div>
             
-            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-              <p className="text-sm">
+            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-8 shadow-sm">
+              <p className="text-sm text-[#0c264d]">
                 <strong>Advocacy Note:</strong> Increased awareness of how ADHD presents in individuals assigned female at birth 
                 is crucial for improving diagnosis and treatment. Healthcare providers, educators, and the general public need better 
                 education about the diverse presentations of ADHD across gender identities to ensure everyone receives appropriate 
@@ -215,30 +210,41 @@ export function ADHDSymptomsTabFemales() {
               </p>
             </div>
           
-
-          {/* References for ADHD in Females Tab */}
-          <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+          {/* ===== REFERENCES SECTION ===== */}
+          <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+          
+          <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+            <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
             
-            <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-            <div className="text-sm space-y-2 mb-4">
-              <p>[1] Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</p>
-              <p>[2] Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</p>
-              <p>[3] Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</p>
-              <p>[4] Dorani, F., et al. (2025). "Research advances and future directions in female ADHD." <em>Frontiers in Psychiatry</em>. Frontiers.</p>
-              <p>[5] Smith, A., et al. (2025). "Adverse experiences of women with undiagnosed ADHD and the consequences of late diagnosis." <em>Nature Scientific Reports</em>. Nature.</p>
-              <p>[6] Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</p>
-              <p>[7] Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</p>
+            {/* CITED STUDIES: GREEN */}
+            <div className="mb-6">
+              <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+                Cited Studies & Statistics
+              </h4>
+              <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+                <li>Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</li>
+                <li>Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</li>
+                <li>Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</li>
+                <li>Dorani, F., et al. (2025). "Research advances and future directions in female ADHD." <em>Frontiers in Psychiatry</em>. Frontiers.</li>
+                <li>Smith, A., et al. (2025). "Adverse experiences of women with undiagnosed ADHD and the consequences of late diagnosis." <em>Nature Scientific Reports</em>. Nature.</li>
+                <li>Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</li>
+                <li>Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</li>
+              </ol>
             </div>
             
-            <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-            <div className="text-sm space-y-2">
-              <p>Quinn, P. O., & Madhoo, M. (2014). "A review of attention-deficit/hyperactivity disorder in women and girls: Uncovering this hidden diagnosis." <em>The Primary Care Companion for CNS Disorders</em>, 16(3).</p>
-              <p>Hinshaw, S. P., et al. (2012). "Prospective follow-up of girls with attention-deficit/hyperactivity disorder into early adulthood: Continuing impairment includes elevated risk for suicide attempts and self-injury." <em>Journal of Consulting and Clinical Psychology</em>, 80(6), 1041-1051.</p>
-              <p>Nadeau, K. G., Littman, E. B., & Quinn, P. O. (2015). <em>Understanding girls with ADHD: How they feel and why they do what they do</em> (Updated ed.). Advantage Books.</p>
-              <p>Young, S., Adamo, N., Ásgeirsdóttir, B. B., et al. (2020). "Females with ADHD: An expert consensus statement taking a lifespan approach providing guidance for the identification and treatment of attention-deficit/hyperactivity disorder in girls and women." <em>BMC Psychiatry</em>, 20, 404.</p>
-              <p>Skogli, E. W., et al. (2013). "ADHD in girls and boys—gender differences in co-existing symptoms and executive function measures." <em>BMC Psychiatry</em>, 13, 298.</p>
-              <p>Dorani, F., et al. (2021). "Prevalence of hormone-related mood disorder symptoms in women with ADHD." <em>Journal of Psychiatric Research</em>, 133, 10-15.</p>
+            {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+            <div>
+              <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                Background Sources
+              </h4>
+              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+                <li>Quinn, P. O., & Madhoo, M. (2014). "A review of attention-deficit/hyperactivity disorder in women and girls: Uncovering this hidden diagnosis." <em>The Primary Care Companion for CNS Disorders</em>, 16(3).</li>
+                <li>Hinshaw, S. P., et al. (2012). "Prospective follow-up of girls with attention-deficit/hyperactivity disorder into early adulthood: Continuing impairment includes elevated risk for suicide attempts and self-injury." <em>Journal of Consulting and Clinical Psychology</em>, 80(6), 1041-1051.</li>
+                <li>Nadeau, K. G., Littman, E. B., & Quinn, P. O. (2015). <em>Understanding girls with ADHD: How they feel and why they do what they do</em> (Updated ed.). Advantage Books.</li>
+                <li>Young, S., Adamo, N., Ásgeirsdóttir, B. B., et al. (2020). "Females with ADHD: An expert consensus statement taking a lifespan approach providing guidance for the identification and treatment of attention-deficit/hyperactivity disorder in girls and women." <em>BMC Psychiatry</em>, 20, 404.</li>
+                <li>Skogli, E. W., et al. (2013). "ADHD in girls and boys—gender differences in co-existing symptoms and executive function measures." <em>BMC Psychiatry</em>, 13, 298.</li>
+                <li>Dorani, F., et al. (2021). "Prevalence of hormone-related mood disorder symptoms in women with ADHD." <em>Journal of Psychiatric Research</em>, 133, 10-15.</li>
+              </ul>
             </div>
           </div>
     </>
