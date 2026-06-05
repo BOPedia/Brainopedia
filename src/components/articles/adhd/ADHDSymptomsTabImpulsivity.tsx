@@ -7,13 +7,6 @@ export function ADHDSymptomsTabImpulsivity() {
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Impulsivity Symptoms</h2>
             
-            <ImageWithFallback 
-              src="/images/adhd/adhd-impulsivity-purple-wires.png"
-              alt="Impulsivity and neural connections"
-              className="w-32 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-            />
-
-            
             <p className="mb-6">
               Impulsivity involves acting without forethought or consideration of consequences. It reflects difficulty 
               with inhibition—the ability to stop oneself from acting on immediate impulses.
@@ -155,7 +148,11 @@ export function ADHDSymptomsTabImpulsivity() {
                   </ul>
                 </div>
               </div>
-
+            <ImageWithFallback 
+              src="/images/adhd/adhd-impulsivity-purple-wires.png"
+              alt="Impulsivity and neural connections"
+              className="w-32 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            />
               <div className="bg-[#d6e9ff] border-l-4 border-[#0c264d] p-4 rounded mt-4">
                 <p className="text-sm">
                   <strong>Clinical Significance:</strong> These studies, often published in journals like <em>Journal of Child Psychology 

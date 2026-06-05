@@ -21,12 +21,6 @@ export function ADHDSymptomsTabHyperactivity() {
             
             <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hyperactivity Across the Lifespan</h3>
-              
-              <ImageWithFallback 
-                src="/images/adhd/adhd-hyperactivity-lifespan.png"
-                alt="Hyperactivity changes across the lifespan"
-                className="w-full max-w-xs mx-auto mb-4 rounded"
-              />
 
               {/* Timeline */}
               <div className="relative">
@@ -81,7 +75,13 @@ export function ADHDSymptomsTabHyperactivity() {
                 that as children they "couldn't sit still" but now feel more internally restless rather than physically hyperactive.
               </p>
             </div>
-
+              
+              <ImageWithFallback 
+                src="/images/adhd/adhd-hyperactivity-lifespan.png"
+                alt="Hyperactivity changes across the lifespan"
+                className="w-full max-w-xs mx-auto mb-4 rounded"
+              />
+              
             {/* Research on Hyperactivity Section */}
             <div className="bg-white p-6 rounded-md border-l-4 border-[#0c264d] shadow-sm mt-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Research on Hyperactivity as a Core ADHD Symptom</h3>

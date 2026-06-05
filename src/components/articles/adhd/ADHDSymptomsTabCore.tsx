@@ -76,12 +76,6 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
       <div className="bg-[#f0f9ff] p-6 rounded-lg space-y-4">
         <h2 className="text-[#0c264d] font-bold text-2xl">Defining ADHD: DSM-5-TR Diagnostic Criteria</h2>
         
-        <ImageWithFallback 
-          src="/images/adhd/adhd-core-symptoms-venn.png"
-          alt="ADHD Diagnostic Criteria Venn Diagram"
-          className="w-full max-w-3xl mx-auto mb-4 rounded"
-        />
-        
         <p className="leading-relaxed">
           The diagram above illustrates the complete DSM-5-TR diagnostic criteria<sup className="text-green-600 font-bold ml-0.5">1</sup> for ADHD, showing the specific 
           symptoms that define each presentation. To receive a diagnosis of ADHD combined type, an individual 
