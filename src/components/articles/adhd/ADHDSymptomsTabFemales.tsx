@@ -2,7 +2,7 @@ import { ImageWithFallback } from '../../figma/ImageWithFallback';
 export function ADHDSymptomsTabFemales() {
   return (
     <>
-          <div className="bg-[#f0f9ff] p-6 rounded-lg">
+  
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">ADHD in Females</h2>
             <ImageWithFallback src="/images/adhd/adhd-females-diversity-faces.png" alt="Diverse female faces representing ADHD in females" className="w-full max-w-md mx-auto rounded-lg mb-4" />
             
@@ -214,7 +214,7 @@ export function ADHDSymptomsTabFemales() {
                 support and care.
               </p>
             </div>
-          </div>
+          
 
           {/* References for ADHD in Females Tab */}
           <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
