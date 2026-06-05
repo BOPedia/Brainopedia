@@ -88,6 +88,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
         <div className="w-full">
           <InfoBox
             title="Hyperlexia"
+            image="/images/hyperlexia/hyperlexia-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Precocious Reading Syndrome' },
               { label: 'Specialty', value: 'Developmental Pediatrics, Speech-Language Pathology' },

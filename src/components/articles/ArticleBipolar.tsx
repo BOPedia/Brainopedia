@@ -60,10 +60,11 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Bipolar Disorder"
+            image="/images/bipolar/bipolar-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Manic-depressive illness' },
               { label: 'Specialty', value: 'Psychiatry, Psychology' },

@@ -83,9 +83,11 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Sensory Processing Disorder"
+            image="/images/spd/spd-main-infobox.png"
             data={[
               { label: 'Other names', value: 'SPD, Sensory Integration Dysfunction' },
               { label: 'Specialty', value: 'Occupational Therapy, Neurology' },

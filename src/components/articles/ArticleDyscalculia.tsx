@@ -85,11 +85,11 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Dyscalculia"
-            image="/images/dyscalculia-infobox-icon.png"
+            image="/images/dyscalculia/dyscalculia-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Math learning disability, number blindness' },
               { label: 'Specialty', value: 'Educational psychology, Neurology' },

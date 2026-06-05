@@ -27,7 +27,10 @@ export function ArticleTwiceExceptional({ setCurrentArticle }: ArticleTwiceExcep
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
         <div className="w-full">
-          <InfoBox title="Twice Exceptional (2e)" data={[
+          <InfoBox 
+          title="Twice Exceptional (2e)" 
+          image="/images/twoE/twoE-main-infobox.png"
+          data={[
             { label: 'Other names', value: 'Gifted with Learning Disabilities, Gifted/LD, 2e' },
             { label: 'Specialty', value: 'Gifted Education, Educational Psychology' },
             { label: 'Symptoms', value: 'Coexistence of high ability and learning challenges' },

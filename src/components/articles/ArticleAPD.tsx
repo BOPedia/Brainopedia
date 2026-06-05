@@ -87,6 +87,7 @@ export function ArticleAPD({ setCurrentArticle }: ArticleAPDProps) {
         <div className="w-full">
           <InfoBox
             title="Auditory Processing Disorder"
+            image="/images/apd/apd-main-infobox.png"
             data={[
               { label: 'Other names', value: 'APD, CAPD, Central Auditory Processing Disorder' },
               { label: 'Specialty', value: 'Audiology, Speech-Language Pathology' },

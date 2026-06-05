@@ -85,10 +85,11 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Non-Verbal Learning Disability"
+            image="/images/nvld/nvld-main-infobox.png"
             data={[
               { label: 'Other names', value: 'NVLD, NLD' },
               { label: 'Specialty', value: 'Neuropsychology, Educational Psychology' },

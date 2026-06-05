@@ -59,8 +59,11 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
         </div>
 
         <div className="w-full">
+       {/* Right column - InfoBox */}
+        <div className="w-full">
           <InfoBox
             title="Synesthesia"
+            image="/images/synesthesia/synesthesia-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Synaesthesia' },
               { label: 'Specialty', value: 'Neurology, Psychology' },

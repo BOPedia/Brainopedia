@@ -61,10 +61,11 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
-            title="Chronic Traumatic Encephalopathy"
+            title="CTE or Chronic Traumatic Encephalopathy"
+            image="/images/cte/cte-main-infobox.png"
             data={[
               { label: 'Other names', value: 'CTE, formerly "punch drunk syndrome"' },
               { label: 'Specialty', value: 'Neurology, Neuropathology' },

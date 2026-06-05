@@ -61,10 +61,11 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Intellectual Disability"
+            image="/images/id/id-main-infobox.png"
             data={[
               { label: 'Other names', value: 'ID, Intellectual developmental disorder' },
               { label: 'Specialty', value: 'Developmental Medicine, Psychology' },

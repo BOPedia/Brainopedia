@@ -32,7 +32,9 @@ export function ArticleSchizophrenia({ setCurrentArticle }: ArticleSchizophrenia
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
         <div className="w-full">
-          <InfoBox title="Schizophrenia" data={[
+          <InfoBox title="Schizophrenia" 
+          image="/images/schizophrenia/schizophrenia-main-infobox.png"
+          data={[
             { label: 'Specialty', value: 'Psychiatry, Psychology, Neurology' },
             { label: 'Symptoms', value: 'Altered perception, different thought patterns, varied experiences' },
             { label: 'Usual onset', value: 'Late teens to early 30s' },

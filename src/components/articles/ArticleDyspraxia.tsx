@@ -59,10 +59,11 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
-            title="Dyspraxia (DCD)"
+            title="Dyspraxia (Developmental Coordination Disorder)"
+            image="/images/dyspraxia/dyspraxia-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Developmental Coordination Disorder (DCD), Motor Learning Difficulties' },
               { label: 'Specialty', value: 'Occupational therapy, Neurology, Pediatrics' },

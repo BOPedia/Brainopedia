@@ -89,6 +89,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         <div className="w-full">
           <InfoBox
             title="Giftedness"
+            image="/images/giftedness/giftedness-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Intellectually gifted, high ability' },
               { label: 'Specialty', value: 'Gifted Education, Psychology' },

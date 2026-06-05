@@ -61,10 +61,11 @@ export function ArticleDownSyndrome({ setCurrentArticle }: ArticleDownSyndromePr
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Down Syndrome"
+            image="/images/downsyndrome/downsyndrome-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Trisomy 21' },
               { label: 'Specialty', value: 'Medical Genetics, Developmental Medicine' },

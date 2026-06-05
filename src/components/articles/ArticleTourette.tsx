@@ -32,7 +32,9 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
         <div className="w-full">
-          <InfoBox title="Tourette Syndrome" data={[
+          <InfoBox title="Tourette Syndrome" 
+          image="/images/tourette/tourette-main-infobox.png"
+          data={[
             { label: 'Other names', value: 'Tourette disorder, TS, Gilles de la Tourette syndrome' },
             { label: 'Specialty', value: 'Neurology, Psychiatry' },
             { label: 'Symptoms', value: 'Motor and vocal tics' },

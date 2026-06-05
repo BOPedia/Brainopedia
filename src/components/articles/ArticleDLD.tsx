@@ -85,10 +85,11 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Developmental Language Disorder"
+            image="/images/dld/dld-main-infobox.png"
             data={[
               { label: 'Other names', value: 'DLD, formerly Specific Language Impairment (SLI)' },
               { label: 'Specialty', value: 'Speech-Language Pathology' },

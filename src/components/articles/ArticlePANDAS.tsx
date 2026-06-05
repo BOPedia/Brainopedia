@@ -33,7 +33,9 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
         <div className="w-full">
-          <InfoBox title="PANDAS" data={[
+          <InfoBox title="PANDAS" 
+          image="/images/pandas/pandas-main-infobox.png"
+          data={[
             { label: 'Full name', value: 'Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptococcal Infections' },
             { label: 'Specialty', value: 'Pediatric Neurology, Immunology, Psychiatry' },
             { label: 'Cause', value: 'Autoimmune response to streptococcal infection' },

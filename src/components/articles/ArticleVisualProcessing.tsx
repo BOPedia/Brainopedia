@@ -84,8 +84,11 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
         </div>
 
         <div className="w-full">
+       {/* Right column - InfoBox */}
+        <div className="w-full">
           <InfoBox
-            title="Visual Processing Disorder"
+            title="Visual Processing Disorder or VPD"
+            image="/images/vpd/vpd-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Visual perceptual disorder' },
               { label: 'Specialty', value: 'Developmental Optometry, Occupational Therapy' },

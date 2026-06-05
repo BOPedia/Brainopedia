@@ -60,10 +60,11 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Misophonia"
+            image="/images/misophonia/misophonia-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Selective Sound Sensitivity Syndrome (4S)' },
               { label: 'Specialty', value: 'Audiology, Psychology, Psychiatry' },

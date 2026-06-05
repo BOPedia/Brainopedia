@@ -84,10 +84,11 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Dysgraphia"
+            image="/images/dysgraphia/dysgraphia-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Writing Learning Disorder, Disorder of Written Expression' },
               { label: 'Specialty', value: 'Educational psychology, Occupational therapy' },

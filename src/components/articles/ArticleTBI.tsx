@@ -33,7 +33,9 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
         <div className="w-full">
-          <InfoBox title="Traumatic Brain Injury" data={[
+          <InfoBox title="Traumatic Brain Injury" 
+          image="/images/tbi/tbi-main-infobox.png"
+          data={[
             { label: 'Other names', value: 'TBI, acquired brain injury' },
             { label: 'Specialty', value: 'Neurology, Rehabilitation Medicine' },
             { label: 'Cause', value: 'External force injuring the brain' },
