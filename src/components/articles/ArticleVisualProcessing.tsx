@@ -304,6 +304,7 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           <p>[35] Mulligan, S. (2003). "Occupational therapy evaluation for children: A pocket guide." <em>Philadelphia: Lippincott Williams & Wilkins</em>.</p>
           <p>[36] Frostig, M., Lefever, D. W., & Whittlesey, J. R. B. (1964). "The Marianne Frostig Developmental Test of Visual Perception." <em>Perceptual and Motor Skills</em>, 19(2), 463-499.</p>
         </div>
+    
       </section>
     </article>
   );
