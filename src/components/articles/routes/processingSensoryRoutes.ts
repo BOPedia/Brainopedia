@@ -37,22 +37,22 @@ export const processingSensoryRoutes: RouteMap = {
   // ==========================================
   // MISOPHONIA
   // ==========================================
-  //'misophonia': lazy(() => import('../ArticleMisophonia').then(m => ({ default: m.ArticleMisophonia }))),
-  //'misophonia-overview': lazy(() => import('../misophonia/MisophoniaOverview').then(m => ({ default: m.MisophoniaOverview }))),
-  //'misophonia-symptoms': lazy(() => import('../misophonia/MisophoniaSymptoms').then(m => ({ default: m.MisophoniaSymptoms }))),
-  //'misophonia-causes': lazy(() => import('../misophonia/MisophoniaCauses').then(m => ({ default: m.MisophoniaCauses }))),
-  //'misophonia-diagnosis': lazy(() => import('../misophonia/MisophoniaDiagnosis').then(m => ({ default: m.MisophoniaDiagnosis }))),
-  //'misophonia-support': lazy(() => import('../misophonia/MisophoniaSupport').then(m => ({ default: m.MisophoniaSupport }))),
-  //'misophonia-living': lazy(() => import('../misophonia/MisophoniaLiving').then(m => ({ default: m.MisophoniaLiving }))),
+  'misophonia': lazy(() => import('../ArticleMisophonia').then(m => ({ default: m.ArticleMisophonia }))),
+  'misophonia-overview': lazy(() => import('../misophonia/MisophoniaOverview').then(m => ({ default: m.MisophoniaOverview }))),
+  'misophonia-symptoms': lazy(() => import('../misophonia/MisophoniaSymptoms').then(m => ({ default: m.MisophoniaSymptoms }))),
+  'misophonia-causes': lazy(() => import('../misophonia/MisophoniaCauses').then(m => ({ default: m.MisophoniaCauses }))),
+  'misophonia-diagnosis': lazy(() => import('../misophonia/MisophoniaDiagnosis').then(m => ({ default: m.MisophoniaDiagnosis }))),
+  'misophonia-support': lazy(() => import('../misophonia/MisophoniaSupport').then(m => ({ default: m.MisophoniaSupport }))),
+  'misophonia-living': lazy(() => import('../misophonia/MisophoniaLiving').then(m => ({ default: m.MisophoniaLiving }))),
 
   // ==========================================
   // SYNESTHESIA
   // ==========================================
-  //'synesthesia': lazy(() => import('../ArticleSynesthesia').then(m => ({ default: m.ArticleSynesthesia }))),
-  //'synesthesia-overview': lazy(() => import('../synesthesia/SynesthesiaOverview').then(m => ({ default: m.SynesthesiaOverview }))),
-  //'synesthesia-symptoms': lazy(() => import('../synesthesia/SynesthesiaSymptoms').then(m => ({ default: m.SynesthesiaSymptoms }))),
-  //'synesthesia-causes': lazy(() => import('../synesthesia/SynesthesiaCauses').then(m => ({ default: m.SynesthesiaCauses }))),
-  //'synesthesia-diagnosis': lazy(() => import('../synesthesia/SynesthesiaDiagnosis').then(m => ({ default: m.SynesthesiaDiagnosis }))),
-  //'synesthesia-support': lazy(() => import('../synesthesia/SynesthesiaSupport').then(m => ({ default: m.SynesthesiaSupport }))),
-  //'synesthesia-living': lazy(() => import('../synesthesia/SynesthesiaLiving').then(m => ({ default: m.SynesthesiaLiving }))),
+  'synesthesia': lazy(() => import('../ArticleSynesthesia').then(m => ({ default: m.ArticleSynesthesia }))),
+  'synesthesia-overview': lazy(() => import('../synesthesia/SynesthesiaOverview').then(m => ({ default: m.SynesthesiaOverview }))),
+  'synesthesia-symptoms': lazy(() => import('../synesthesia/SynesthesiaSymptoms').then(m => ({ default: m.SynesthesiaSymptoms }))),
+  'synesthesia-causes': lazy(() => import('../synesthesia/SynesthesiaCauses').then(m => ({ default: m.SynesthesiaCauses }))),
+  'synesthesia-diagnosis': lazy(() => import('../synesthesia/SynesthesiaDiagnosis').then(m => ({ default: m.SynesthesiaDiagnosis }))),
+  'synesthesia-support': lazy(() => import('../synesthesia/SynesthesiaSupport').then(m => ({ default: m.SynesthesiaSupport }))),
+  'synesthesia-living': lazy(() => import('../synesthesia/SynesthesiaLiving').then(m => ({ default: m.SynesthesiaLiving }))),
 };

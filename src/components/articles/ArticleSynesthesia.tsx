@@ -57,6 +57,7 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
+      </div>
 
         <div className="w-full">
        {/* Right column - InfoBox */}
@@ -293,6 +294,7 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
           <p>[45] Cohen Kadosh, R., Henik, A., & Walsh, V. (2009). "Synaesthesia: Learned or lost?" <em>Developmental Science</em>, 12(3), 484-491.</p>
           <p>[46] Cytowic, R. E., & Wood, F. B. (1982). "Synesthesia: II. Psychophysical relations in the synesthesia of geometrically shaped taste and colored hearing." <em>Brain and Cognition</em>, 1(1), 36-49.</p>
         </div>
+      
       </section>
     </article>
   );
