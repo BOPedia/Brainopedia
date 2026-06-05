@@ -227,7 +227,7 @@ export function ArticleBlog({ setCurrentArticle }: ArticleBlogProps) {
         
         {/* Social media follow section */}
         <div className="bg-gradient-to-r from-[#2abcd4]/10 to-[#ffd166]/20 border-l-4 border-[#2abcd4] p-4 sm:p-6 rounded-r-lg">
-          <h2 className="text-[#0c264d] font-bold mb-3">Follow Us on Social Media</h2>
+          <h2 className="text-[#0c264d] font-bold mb-3">COMING SOON - Follow Us on Social Media</h2>
           <p className="text-sm text-gray-700 mb-4">
             Join our growing community on social media for daily updates, resources, and conversations 
             about neurodiversity. Connect with us on your favorite platform:
@@ -324,17 +324,19 @@ export function ArticleBlog({ setCurrentArticle }: ArticleBlogProps) {
           </article>
         ))}
       </div>
-
-      {/* Call to action */}
+{/* Call to action */}
       <div className="mt-12 bg-[#ffd166]/20 border-2 border-[#ffd166] rounded-lg p-6 text-center">
         <h3 className="text-[#0c264d] font-bold mb-3">Want to Contribute?</h3>
         <p className="text-gray-700 mb-4">
           We welcome guest posts and contributions from the neurodivergent community. 
-          Share your story, research, or insights with our readers.
+          Share your story, research, or insights with our readers at <strong>contact@brainopedia.org</strong>.
         </p>
-        <button className="bg-[#2abcd4] text-white px-6 py-2 rounded-md hover:bg-[#0c264d] transition-colors">
-          Contact Us
-        </button>
+        <a 
+          href="mailto:contact@brainopedia.org"
+          className="inline-block bg-[#2abcd4] text-white px-6 py-2 rounded-md hover:bg-[#0c264d] transition-colors font-semibold"
+        >
+          Email Us
+        </a>
       </div>
     </article>
   );
