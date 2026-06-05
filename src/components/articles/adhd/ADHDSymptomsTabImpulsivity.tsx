@@ -79,6 +79,11 @@ export function ADHDSymptomsTabImpulsivity() {
 
             {/* Research on Impulsivity Section */}
             <div className="bg-white p-6 rounded-md border-l-4 border-[#0c264d] shadow-sm mt-6">
+                  <ImageWithFallback 
+                  src="/images/adhd/adhd-impulsivity-purple-wires.png"
+                  alt="Impulsivity and neural connections"
+                  className="w-32 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+                  />
               <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Research on Impulsivity as a Core ADHD Symptom</h3>
               
               <p className="mb-4">
@@ -146,11 +151,7 @@ export function ADHDSymptomsTabImpulsivity() {
                     <li>• <strong>Continuous Performance Task (CPT-II):</strong> Measures errors of commission (impulsive actions)</li>
                     <li>• <strong>Iowa Gambling Task (IGT):</strong> Evaluates risky decision-making</li>
                   </ul>
-                  <ImageWithFallback 
-                  src="/images/adhd/adhd-impulsivity-purple-wires.png"
-                  alt="Impulsivity and neural connections"
-                  className="w-32 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-                  />
+
                 </div>
               </div>
 
