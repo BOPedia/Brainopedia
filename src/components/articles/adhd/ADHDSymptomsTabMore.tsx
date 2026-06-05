@@ -582,7 +582,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Interactive Symptom Profile Chart</h3>
         <p className="mb-4 text-sm text-slate-700">
           Below is an interactive visual example of one individual's symptom profile. Each person's chart will 
-          look different, reflecting their unique combination of characteristics and support needs.
+          look different, reflecting their unique combination of characteristics and support needs. (*Interactive chart available only on desktop/tablet devices)
         </p>
 
         <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
