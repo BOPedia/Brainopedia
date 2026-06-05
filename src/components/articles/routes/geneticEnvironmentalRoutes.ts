@@ -13,7 +13,7 @@ export const geneticEnvironmentalRoutes: RouteMap = {
   'down-syndrome-causes': lazy(() => import('../downsyndrome/DownSyndromeCauses').then(m => ({ default: m.DownSyndromeCauses }))),
   'down-syndrome-diagnosis': lazy(() => import('../downsyndrome/DownSyndromeDiagnosis').then(m => ({ default: m.DownSyndromeDiagnosis }))),
   'down-syndrome-support': lazy(() => import('../downsyndrome/DownSyndromeSupport').then(m => ({ default: m.DownSyndromeSupport }))),
-  'down-syndrome-living': lazy(() => import('../downsyndrome/DownSyndromeLiving').then(m => ({ default: m.DownSyndromeLiving })))),
+  'down-syndrome-living': lazy(() => import('../downsyndrome/DownSyndromeLiving').then(m => ({ default: m.DownSyndromeLiving }))),
 
   // ==========================================
   // INTELLECTUAL DISABILITY (ID)
