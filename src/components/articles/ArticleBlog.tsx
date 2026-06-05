@@ -214,7 +214,7 @@ export function ArticleBlog({ setCurrentArticle }: ArticleBlogProps) {
   return (
     <article className="max-w-4xl">
       <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
-        Blog & Updates
+        Blog & Updates - Coming Soon!
       </h1>
 
       {/* Introduction */}
@@ -329,14 +329,19 @@ export function ArticleBlog({ setCurrentArticle }: ArticleBlogProps) {
         <h3 className="text-[#0c264d] font-bold mb-3">Want to Contribute?</h3>
         <p className="text-gray-700 mb-4">
           We welcome guest posts and contributions from the neurodivergent community. 
-          Share your story, research, or insights with our readers at <strong>contact@brainopedia.org</strong>.
+          Share your story, research, or insights with our readers at <strong>contact [at] brainopedia.org</strong>.
         </p>
-        <a 
-          href="mailto:contact@brainopedia.org"
+        <button 
+          onClick={() => {
+            // Pieces the email together dynamically so bots can't easily read it in the source code
+            const user = 'contact';
+            const domain = 'brainopedia.org';
+            window.location.href = `mailto:${user}@${domain}`;
+          }}
           className="inline-block bg-[#2abcd4] text-white px-6 py-2 rounded-md hover:bg-[#0c264d] transition-colors font-semibold"
         >
           Email Us
-        </a>
+        </button>
       </div>
     </article>
   );
