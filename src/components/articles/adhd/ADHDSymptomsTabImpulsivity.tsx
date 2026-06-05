@@ -4,7 +4,7 @@ import { ImageWithFallback } from '../../figma/ImageWithFallback';
 export function ADHDSymptomsTabImpulsivity() {
   return (
     <>
-          <div className="bg-[#f0f9ff] p-6 rounded-lg">
+          
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Impulsivity Symptoms</h2>
             
             <p className="mb-6">
@@ -163,7 +163,7 @@ export function ADHDSymptomsTabImpulsivity() {
                 </p>
               </div>
             </div>
-          </div>
+          
 
           {/* ===== REFERENCES SECTION ===== */}
           <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
