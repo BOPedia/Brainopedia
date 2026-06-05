@@ -77,19 +77,19 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         <div className="space-y-6">
           <p>
             <strong>Dyscalculia</strong> is a specific learning difference that affects a person's ability to 
-            understand and work with numbers and mathematical concepts.<sup>1</sup> Often called "math dyslexia," dyscalculia 
+            understand and work with numbers and mathematical concepts.<sup>[1]</sup> Often called "math dyslexia," dyscalculia 
             is characterized by difficulties with number sense, mathematical reasoning, and performing mathematical 
-            calculations that are inconsistent with overall cognitive abilities.<sup>2</sup>
+            calculations that are inconsistent with overall cognitive abilities.<sup>[2]</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-       {/* Right column - InfoBox */}
+        {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Dyscalculia"
-            image="/images/dyscalculia/dyscalculia-main-infobox.png"
+            image="/images/dyscalculia-infobox-icon.png"
             data={[
               { label: 'Other names', value: 'Math learning disability, number blindness' },
               { label: 'Specialty', value: 'Educational psychology, Neurology' },
@@ -107,9 +107,9 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
           <p className="mb-4">
-            Dyscalculia affects approximately 3-7% of the population and is thought to have a neurological basis.<sup>3</sup> 
+            Dyscalculia affects approximately 3-7% of the population and is thought to have a neurological basis.<sup>[3]</sup> 
             Like dyslexia, dyscalculia is not related to intelligence—individuals with dyscalculia can have average 
-            or above-average intelligence and may excel in other academic areas such as reading, writing, or the arts.<sup>4</sup> 
+            or above-average intelligence and may excel in other academic areas such as reading, writing, or the arts.<sup>[4]</sup> 
             The condition involves difficulties with understanding numerical quantities, number symbols, and the 
             relationships between them.
           </p>
@@ -117,7 +117,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
           <p className="mb-4">
             This can make everyday tasks involving numbers—such as telling time, managing money, measuring ingredients, 
             or understanding schedules—challenging. With appropriate support and accommodations, individuals with dyscalculia 
-            can be successful in both academic and professional settings.<sup>5</sup>
+            can be successful in both academic and professional settings.<sup>[5]</sup>
           </p>
         </section>
 
@@ -127,10 +127,10 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
           <p className="mb-4">
             Dyscalculia is characterized by difficulties with understanding quantities and the concept of "more" or "less," 
             recognizing numbers and number symbols, counting accurately, performing mental math calculations, memorizing math 
-            facts, understanding mathematical concepts and operations, and estimating amounts or distances.<sup>6</sup> Beyond academic 
+            facts, understanding mathematical concepts and operations, and estimating amounts or distances.<sup>[6]</sup> Beyond academic 
             mathematics, dyscalculia can affect financial management and budgeting, cooking and following recipes, navigation 
-            and direction-finding, time management and scheduling, and understanding statistics and probabilities.<sup>7</sup> These 
-            difficulties stem from underlying deficits in number sense and numerical processing.<sup>8</sup>
+            and direction-finding, time management and scheduling, and understanding statistics and probabilities.<sup>[7]</sup> These 
+            difficulties stem from underlying deficits in number sense and numerical processing.<sup>[8]</sup>
           </p>
         </section>
 
@@ -139,12 +139,12 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
           
           <p className="mb-4">
             Research suggests that dyscalculia involves differences in brain areas responsible for numerical processing, 
-            particularly the intraparietal sulcus and surrounding regions in the parietal lobe.<sup>9</sup> These areas are involved in 
+            particularly the intraparietal sulcus and surrounding regions in the parietal lobe.<sup>[9]</sup> These areas are involved in 
             our basic "number sense"—the intuitive understanding of quantities and their relationships. Like other learning 
-            differences, dyscalculia has a neurological basis and tends to run in families, suggesting a genetic component.<sup>1</sup> 
+            differences, dyscalculia has a neurological basis and tends to run in families, suggesting a genetic component.<sup>[10]</sup> 
             Brain imaging studies have revealed differences in how individuals with dyscalculia process numerical information, 
             which helps explain why mathematical tasks that seem intuitive to others can be particularly challenging for people 
-            with this condition.<sup>1</sup>
+            with this condition.<sup>[11]</sup>
           </p>
         </section>
 
@@ -153,12 +153,12 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
           
           <p className="mb-4">
             Dyscalculia is diagnosed through comprehensive evaluation by qualified professionals such as educational 
-            psychologists or neuropsychologists.<sup>2</sup> The assessment process includes standardized tests of mathematical ability, 
+            psychologists or neuropsychologists.<sup>[12]</sup> The assessment process includes standardized tests of mathematical ability, 
             assessment of number sense and numerical reasoning, evaluation of cognitive abilities and processing, review of 
             educational history and performance, interviews with the individual, parents, and teachers, and screening for 
-            co-occurring conditions.<sup>3</sup> Because dyscalculia is less well-known than dyslexia, it may go undiagnosed, particularly 
+            co-occurring conditions.<sup>[13]</sup> Because dyscalculia is less well-known than dyslexia, it may go undiagnosed, particularly 
             if the individual performs well in other academic areas. Some people are not diagnosed until adulthood when they 
-            encounter specific challenges in work or daily life involving numbers.<sup>4</sup>
+            encounter specific challenges in work or daily life involving numbers.<sup>[14]</sup>
           </p>
         </section>
 
@@ -168,9 +168,9 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
           <p className="mb-4">
             Support for dyscalculia includes multi-sensory instruction using concrete manipulatives, visual representations of 
             mathematical concepts, breaking down complex problems into smaller steps, explicit teaching of mathematical language 
-            and symbols, and building number sense through games and activities.<sup>5</sup> Accommodations and tools include calculator 
+            and symbols, and building number sense through games and activities.<sup>[15]</sup> Accommodations and tools include calculator 
             use when appropriate, extended time on tests and assignments, access to formula sheets and number lines, graph paper 
-            for organizing work, digital tools and apps for math support, and alternative assessment methods.<sup>6</sup> Technology such 
+            for organizing work, digital tools and apps for math support, and alternative assessment methods.<sup>[16]</sup> Technology such 
             as smartphone calculators, money management apps, digital calendars, and GPS navigation can be particularly helpful 
             for managing daily life tasks.<sup>[17]</sup>
           </p>

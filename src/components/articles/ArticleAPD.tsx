@@ -76,8 +76,8 @@ export function ArticleAPD({ setCurrentArticle }: ArticleAPDProps) {
           <p>
             <strong>Auditory Processing Disorder (APD)</strong>, also known as Central Auditory Processing 
             Disorder (CAPD), is a neurological condition where the brain has difficulty processing and 
-            interpreting auditory information.<sup>1</sup> While hearing sensitivity is typically normal, the brain 
-            struggles to make sense of what the ears detect—creating a unique auditory neurotype. <sup>2</sup>
+            interpreting auditory information.<sup>[1]</sup> While hearing sensitivity is typically normal, the brain 
+            struggles to make sense of what the ears detect—creating a unique auditory neurotype.<sup>[2]</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -87,7 +87,6 @@ export function ArticleAPD({ setCurrentArticle }: ArticleAPDProps) {
         <div className="w-full">
           <InfoBox
             title="Auditory Processing Disorder"
-            image="/images/apd/apd-main-infobox.png"
             data={[
               { label: 'Other names', value: 'APD, CAPD, Central Auditory Processing Disorder' },
               { label: 'Specialty', value: 'Audiology, Speech-Language Pathology' },
@@ -112,16 +111,16 @@ export function ArticleAPD({ setCurrentArticle }: ArticleAPDProps) {
           
           <p className="mb-4">
             APD affects the central auditory nervous system's ability to filter, analyze, and integrate 
-            sound.<sup>3</sup> The ears function normally, but the auditory pathways in the brain process sound 
+            sound.<sup>[3]</sup> The ears function normally, but the auditory pathways in the brain process sound 
             differently, making it challenging to distinguish between similar sounds, filter background 
-            noise, remember auditory information, or quickly process verbal instructions.<sup>4/</sup>
+            noise, remember auditory information, or quickly process verbal instructions.<sup>[4]</sup>
           </p>
           
           <p className="mb-4">
             Approximately 
-            5% of school-aged children have APD, though it often goes undiagnosed.<sup>5</sup> The condition can occur 
-            independently or alongside other neurodivergent conditions like ADHD, dyslexia, or autism.<sup>6</sup> APD 
-            represents a fundamental difference in how the brain organizes and interprets the auditory world.<sup>7</sup>
+            5% of school-aged children have APD, though it often goes undiagnosed.<sup>[5]</sup> The condition can occur 
+            independently or alongside other neurodivergent conditions like ADHD, dyslexia, or autism.<sup>[6]</sup> APD 
+            represents a fundamental difference in how the brain organizes and interprets the auditory world.<sup>[7]</sup>
           </p>
         </section>
 
@@ -137,7 +136,7 @@ export function ArticleAPD({ setCurrentArticle }: ArticleAPDProps) {
           <p className="mb-4">
             APD is characterized by auditory discrimination difficulties including trouble distinguishing between 
             similar-sounding words, difficulty hearing subtle differences in speech sounds, mishearing words, and 
-            challenges with rhyming or phonics.<sup>8</sup> Background noise challenges are significant, with extreme difficulty 
+            challenges with rhyming or phonics.<sup>[8]</sup> Background noise challenges are significant, with extreme difficulty 
             understanding speech in noisy environments, inability to filter out background sounds, and feeling 
             overwhelmed in acoustically busy spaces.<sup>[9][10]</sup>
           </p>
@@ -145,9 +144,9 @@ export function ArticleAPD({ setCurrentArticle }: ArticleAPDProps) {
           <p className="mb-4">
             Auditory memory and sequencing difficulties include trouble 
             remembering spoken information, difficulty following multi-step verbal instructions, and needing 
-            information repeated multiple times.<sup>1</sup> Processing speed challenges include delayed responses to auditory 
-            information, needing extra time to process what was said, and difficulty following fast-paced conversations.<sup>2</sup> 
-            Some individuals also have difficulty determining where sounds are coming from (sound localization).<sup>3</sup>
+            information repeated multiple times.<sup>[11]</sup> Processing speed challenges include delayed responses to auditory 
+            information, needing extra time to process what was said, and difficulty following fast-paced conversations.<sup>[12]</sup> 
+            Some individuals also have difficulty determining where sounds are coming from (sound localization).<sup>[13]</sup>
           </p>
         </section>
 
@@ -162,15 +161,15 @@ export function ArticleAPD({ setCurrentArticle }: ArticleAPDProps) {
           
           <p className="mb-4">
             APD is fundamentally different from hearing loss—it is not a problem with the ear's ability to detect 
-            sound, but rather a problem with how the brain processes sound that the ear successfully detects.<sup>4</sup> The 
+            sound, but rather a problem with how the brain processes sound that the ear successfully detects.<sup>[14]</sup> The 
             ears work normally, but the brain's auditory pathways interpret the information differently, representing 
-            a central processing difference rather than peripheral hearing loss.<sup>5</sup>
+            a central processing difference rather than peripheral hearing loss.<sup>[15]</sup>
           </p>
           
           <p className="mb-4">
             Research suggests neurological 
             differences in the auditory pathways of the brain, particularly in areas responsible for filtering, 
-            analyzing, and integrating sound.<sup>6</sup> The exact causes are not fully understood, though APD may result from 
+            analyzing, and integrating sound.<sup>[16]</sup> The exact causes are not fully understood, though APD may result from 
             differences in brain development, genetics, or in some cases, factors like early chronic ear infections 
             or neurological conditions.<sup>[17][18]</sup> Brain imaging studies have revealed differences in how auditory information 
             is processed in the central auditory nervous system.<sup>[19]</sup>

@@ -52,9 +52,9 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
         <div className="space-y-6">
           <p>
             <strong>Epilepsy</strong> is a neurological condition characterized by recurrent seizures caused 
-            by sudden, abnormal electrical activity in the brain.<sup>1</sup> As a form of neurodivergence, epilepsy 
+            by sudden, abnormal electrical activity in the brain.<sup>[1]</sup> As a form of neurodivergence, epilepsy 
             represents a distinct pattern of brain function that creates unique cognitive, sensory, and 
-            perceptual experiences beyond the seizures themselves.<sup>2</sup>
+            perceptual experiences beyond the seizures themselves.<sup>[2]</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -64,7 +64,6 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
         <div className="w-full">
           <InfoBox
             title="Epilepsy"
-            image="/images/epilepsy/epilepsy-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Seizure disorder' },
               { label: 'Specialty', value: 'Neurology' },
@@ -89,19 +88,19 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
           
           <p className="mb-4">
             Epilepsy affects approximately 1 in 26 people at some point in their lives, making it one of 
-            the most common neurological conditions.<sup>3</sup> It involves differences in how neurons communicate, 
-            with groups of brain cells sometimes firing in synchronized bursts that create seizures.<sup>4</sup> Beyond 
+            the most common neurological conditions.<sup>[3]</sup> It involves differences in how neurons communicate, 
+            with groups of brain cells sometimes firing in synchronized bursts that create seizures.<sup>[4]</sup> Beyond 
             seizures, many individuals with epilepsy experience unique ways of perceiving and processing the 
-            world.<sup>5</sup>
+            world.<sup>[5]</sup>
           </p>
           
           <p className="mb-4">
             The condition can affect memory, attention, emotional processing, and sensory experiences, 
             creating a distinct neurological profile that shapes how a person experiences consciousness and 
-            reality.<sup>6</sup> Seizures are categorized based on where they begin in the brain including focal onset 
+            reality.<sup>[6]</sup> Seizures are categorized based on where they begin in the brain including focal onset 
             seizures (begin in one area), generalized onset seizures (involve both sides of the brain), and 
-            unknown onset seizures.<sup>7</sup> With appropriate treatment and support, people with epilepsy thrive in 
-            education, careers, and relationships.<sup>8</sup>
+            unknown onset seizures.<sup>[7]</sup> With appropriate treatment and support, people with epilepsy thrive in 
+            education, careers, and relationships.<sup>[8]</sup>
           </p>
         </section>
 
@@ -115,10 +114,10 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
           />
           
           <p className="mb-4">
-            Epilepsy is characterized by recurrent seizures with various types.<sup>9</sup> Focal onset seizures begin in one 
+            Epilepsy is characterized by recurrent seizures with various types.<sup>[9]</sup> Focal onset seizures begin in one 
             area of the brain and may remain localized or spread, occurring with or without loss of awareness including 
             aware seizures (person remains conscious with unusual sensations, movements, or emotions) and impaired awareness 
-            seizures (altered consciousness with automatisms or confusion).<sup>1</sup> Generalized onset seizures involve both sides of 
+            seizures (altered consciousness with automatisms or confusion).<sup>[10]</sup> Generalized onset seizures involve both sides of 
             the brain from the start including absence seizures (brief lapses in awareness appearing as staring spells), 
             tonic-clonic seizures (loss of consciousness with muscle stiffening and rhythmic jerking), atonic seizures (sudden 
             loss of muscle tone causing falls), and myoclonic seizures (brief shock-like muscle jerks).<sup>[11][12]</sup>
@@ -131,7 +130,7 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
             and retrieval, emotional intensity with deep emotional experiences and insights, heightened awareness and attention to 
             bodily states and environmental factors, and many experience unique creative insights linked to their neurological 
             experiences.<sup>[13][14][15]</sup> Cognitive effects can include memory challenges, attention variations, and processing speed 
-            differences that create a distinct cognitive profile.<sup>6</sup>
+            differences that create a distinct cognitive profile.<sup>[16]</sup>
           </p>
         </section>
 
@@ -186,7 +185,7 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
             Epilepsy can develop at any age though certain types are more common in childhood or 
             older adulthood.<sup>[30]</sup> Accurate diagnosis includes identifying the specific epilepsy syndrome and seizure types to guide treatment.<sup>[31]</sup> 
             The International League Against Epilepsy (ILAE) classification system categorizes epilepsies by seizure type, epilepsy type, 
-            epilepsy syndrome, and etiology to provide comprehensive diagnostic clarity.<sup>7</sup> Differential diagnosis includes ruling out 
+            epilepsy syndrome, and etiology to provide comprehensive diagnostic clarity.<sup>[7]</sup> Differential diagnosis includes ruling out 
             other conditions that can cause seizure-like events such as syncope, psychogenic non-epileptic seizures, migraine with aura, 
             or movement disorders.<sup>[32]</sup>
           </p>
