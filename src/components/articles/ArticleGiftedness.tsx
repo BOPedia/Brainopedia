@@ -76,10 +76,10 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         <div className="space-y-6">
           <p>
             <strong>Giftedness</strong> is a neurological difference characterized by advanced cognitive 
-            abilities, exceptional intensity of experience, and asynchronous development across domains.<sup>[1]</sup> 
+            abilities, exceptional intensity of experience, and asynchronous development across domains.<sup>1</sup> 
             Far more than simply "being smart," giftedness represents a distinct neurotype involving 
             differences in brain structure, processing speed, pattern recognition, and emotional intensity 
-            that fundamentally shape how individuals perceive and interact with the world.<sup>[2]</sup>
+            that fundamentally shape how individuals perceive and interact with the world.<sup>2</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -89,6 +89,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         <div className="w-full">
           <InfoBox
             title="Giftedness"
+            image="/images/giftedness/giftedness-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Intellectually gifted, high ability' },
               { label: 'Specialty', value: 'Gifted Education, Psychology' },
@@ -119,13 +120,13 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           </p>
           
           <p className="mb-4">
-            Giftedness affects approximately 2-10% of the population, depending on how it's defined.<sup>[5]</sup> While traditionally 
+            Giftedness affects approximately 2-10% of the population, depending on how it's defined.<sup>5</sup> While traditionally 
             identified through IQ testing, modern understanding recognizes multiple forms of giftedness—
             intellectual, creative, artistic, leadership, and specific academic domains—and acknowledges 
-            that giftedness exists across all cultural, ethnic, and socioeconomic backgrounds.<sup>[6]</sup> Importantly, 
+            that giftedness exists across all cultural, ethnic, and socioeconomic backgrounds.<sup>6</sup> Importantly, 
             giftedness is not the same as high achievement or academic success. It's a neurological way of 
             being that exists independent of performance, and gifted individuals face unique social, emotional, 
-            and existential challenges alongside their cognitive strengths.<sup>[7]</sup>
+            and existential challenges alongside their cognitive strengths.<sup>7</sup>
           </p>
         </section>
 
@@ -150,12 +151,12 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           <p className="mb-4">
             A hallmark of giftedness is asynchronous development—intellectual abilities far exceed 
             chronological age while emotional, social, or physical development may align more closely with age 
-            peers, creating the "gifted paradox."<sup>[10]</sup> Emotional and social characteristics include heightened 
+            peers, creating the "gifted paradox."<sup>1</sup> Emotional and social characteristics include heightened 
             sensitivity and emotional depth, strong sense of justice and moral development, concern with 
             philosophical and existential questions from a young age, perfectionism and high self-expectations, 
-            difficulty finding like-minded peers, and feeling "different" or not fitting in.<sup>[11]</sup> Psychologist 
+            difficulty finding like-minded peers, and feeling "different" or not fitting in.<sup>1</sup> Psychologist 
             Kazimierz Dąbrowski identified "overexcitabilities"—heightened intensities in psychomotor, sensual, 
-            intellectual, imaginational, and emotional domains that represent neurological supersensitivities.<sup>[12]</sup>
+            intellectual, imaginational, and emotional domains that represent neurological supersensitivities.<sup>2</sup>
           </p>
         </section>
 
@@ -173,12 +174,12 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
             gifted individuals, including enhanced neural connectivity, increased synaptic efficiency, and 
             differences in brain metabolism.<sup>[13][14]</sup> These neurological variations create a fundamentally different way 
             of experiencing consciousness, learning, and emotional life. Giftedness has a strong genetic component 
-            and tends to run in families, though environmental factors also play a role in how potential is expressed.<sup>[15]</sup>
+            and tends to run in families, though environmental factors also play a role in how potential is expressed.<sup>5</sup>
           </p>
           
           <p className="mb-4">
             The exact mechanisms are still being studied, but research suggests differences in brain structure, 
-            white matter development, neural efficiency, and neurotransmitter function.<sup>[16]</sup> Giftedness represents a 
+            white matter development, neural efficiency, and neurotransmitter function.<sup>6</sup> Giftedness represents a 
             natural variation in human neurology, present from birth, that involves differences in how the brain 
             processes information, forms connections, and responds to stimuli.<sup>[17]</sup> The "overexcitabilities" common in 
             giftedness are neurological, not behavioral choices, and represent the gifted brain's enhanced 

@@ -53,17 +53,18 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
           <p>
             <strong>Misophonia</strong>, meaning "hatred of sound," is a neurosensory condition characterized 
             by strong negative emotional and physiological reactions to specific sounds, typically those 
-            produced by other people.<sup>[1]</sup> These trigger sounds, often related to eating, breathing, or repetitive 
-            noises, can provoke intense feelings of anger, anxiety, disgust, or panic.<sup>[2]</sup>
+            produced by other people.<sup>1</sup> These trigger sounds, often related to eating, breathing, or repetitive 
+            noises, can provoke intense feelings of anger, anxiety, disgust, or panic.<sup>2</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
-        {/* Right column - InfoBox */}
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Misophonia"
+            image="/images/misophonia/misophonia-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Selective Sound Sensitivity Syndrome (4S)' },
               { label: 'Specialty', value: 'Audiology, Psychology, Psychiatry' },
@@ -88,15 +89,15 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
           
           <p className="mb-4">
             Misophonia is estimated to affect approximately 6-20% of the population to some degree, with 
-            varying levels of severity.<sup>[3]</sup> It typically begins in late childhood or early adolescence, often 
-            between ages 9-13, though it can develop at any age.<sup>[4]</sup> Unlike general noise sensitivity or hyperacusis 
+            varying levels of severity.<sup>3</sup> It typically begins in late childhood or early adolescence, often 
+            between ages 9-13, though it can develop at any age.<sup>4</sup> Unlike general noise sensitivity or hyperacusis 
             (sensitivity to loud sounds), misophonia involves specific trigger sounds that are typically at normal 
-            volume levels.<sup>[5]</sup>
+            volume levels.<sup>5</sup>
           </p>
           
           <p className="mb-4">
             The response is not about the loudness of the sound but rather the specific type and 
-            context of the sound, particularly when produced by another person.<sup>[6]</sup> Common trigger sounds include eating 
+            context of the sound, particularly when produced by another person.<sup>6</sup> Common trigger sounds include eating 
             sounds (chewing, slurping, swallowing, crunching), breathing sounds (heavy breathing, sniffing, throat 
             clearing), repetitive sounds (pen clicking, keyboard typing, foot tapping), vocal sounds, and sometimes 
             even visual triggers like seeing someone chew gum.<sup>[7][8]</sup>
@@ -125,9 +126,9 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
             situations especially meals, strained relationships with family, friends, and colleagues, difficulty in 
             work or school environments, feelings of isolation and being misunderstood, anxiety about encountering 
             trigger sounds, need for environmental control and predictability, and development of coping behaviors 
-            (wearing headphones, leaving situations).<sup>[12]</sup> Unlike hyperacusis, reactions are not about loudness but about 
+            (wearing headphones, leaving situations).<sup>2</sup> Unlike hyperacusis, reactions are not about loudness but about 
             specific sound types and contexts, and responses are involuntary and intense despite being aware the 
-            reaction is disproportionate.<sup>[13]</sup>
+            reaction is disproportionate.<sup>3</sup>
           </p>
         </section>
 
@@ -143,7 +144,7 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
           <p className="mb-4">
             Research suggests that misophonia involves differences in how the brain processes and responds to certain 
             sounds, particularly in areas responsible for emotion regulation, sound processing, and the connection between 
-            auditory and limbic (emotional) systems.<sup>[14]</sup> Brain imaging studies have shown abnormal activity in the anterior 
+            auditory and limbic (emotional) systems.<sup>4</sup> Brain imaging studies have shown abnormal activity in the anterior 
             insular cortex when trigger sounds are heard, suggesting atypical connectivity between auditory processing 
             areas and emotional regulation centers.<sup>[15][16]</sup>
           </p>

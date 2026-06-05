@@ -76,16 +76,18 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
           <p>
             <strong>Sensory Processing Disorder (SPD)</strong> is a neurodevelopmental condition where the 
             brain has difficulty receiving, organizing, and responding to sensory information from the body 
-            and environment.<sup>[1]</sup> Individuals with SPD experience the world with heightened or reduced sensitivity, 
-            creating a unique sensory neurotype that shapes how they interact with their surroundings.<sup>[2]</sup>
+            and environment.<sup>1</sup> Individuals with SPD experience the world with heightened or reduced sensitivity, 
+            creating a unique sensory neurotype that shapes how they interact with their surroundings.<sup>2</sup>
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
 
+       {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
             title="Sensory Processing Disorder"
+            image="/images/spd/spd-main-infobox.png"
             data={[
               { label: 'Other names', value: 'SPD, Sensory Integration Dysfunction' },
               { label: 'Specialty', value: 'Occupational Therapy, Neurology' },
@@ -110,18 +112,18 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
           
           <p className="mb-4">
             While SPD often co-occurs with autism, ADHD, and other neurodivergent conditions, it can also 
-            exist as a distinct diagnosis.<sup>[3]</sup> The condition affects how the nervous system detects, modulates, 
+            exist as a distinct diagnosis.<sup>3</sup> The condition affects how the nervous system detects, modulates, 
             discriminates, and integrates sensory input—essentially, how the brain's "filters" work when 
-            processing the constant stream of sensory information.<sup>[4]</sup>
+            processing the constant stream of sensory information.<sup>4</sup>
           </p>
           
           <p className="mb-4">
             Research suggests that 1 in 20 children 
-            experience sensory processing challenges significant enough to impact daily functioning.<sup>[5]</sup> SPD 
+            experience sensory processing challenges significant enough to impact daily functioning.<sup>5</sup> SPD 
             reflects differences in neurological wiring and sensory threshold regulation, creating a 
-            fundamentally different lived experience of sensation.<sup>[6]</sup> SPD can affect any of the eight sensory 
+            fundamentally different lived experience of sensation.<sup>6</sup> SPD can affect any of the eight sensory 
             systems including the five common senses (visual, auditory, tactile, gustatory, olfactory) and 
-            three hidden senses (vestibular, proprioceptive, interoceptive).<sup>[7]</sup>
+            three hidden senses (vestibular, proprioceptive, interoceptive).<sup>7</sup>
           </p>
         </section>
 
@@ -135,7 +137,7 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
           />
           
           <p className="mb-4">
-            SPD manifests in three primary patterns.<sup>[8]</sup> Sensory over-responsivity (hypersensitivity) occurs when 
+            SPD manifests in three primary patterns.<sup>8</sup> Sensory over-responsivity (hypersensitivity) occurs when 
             the nervous system responds too intensely to sensory input, with experiences like clothing tags or 
             textures feeling unbearable, sounds being intensely distressing, bright lights causing pain, light 
             touch feeling overwhelming, strong smells triggering nausea, and avoidance of sensory-rich environments.<sup>[9][10]</sup>
@@ -145,11 +147,11 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
             Sensory under-responsivity (hyposensitivity) occurs when the nervous system requires more intense 
             sensory input to register sensation, with experiences like higher pain threshold, seeking intense 
             sensory experiences, difficulty noticing hunger or bodily needs, seeming unaware of injuries, craving 
-            strong flavors, and constant movement or touching objects.<sup>[11]</sup> Sensory discrimination disorder involves 
+            strong flavors, and constant movement or touching objects.<sup>1</sup> Sensory discrimination disorder involves 
             difficulty interpreting the specific qualities of sensory input, including challenges distinguishing 
             similar sensations, difficulty with body awareness and spatial positioning, clumsiness, trouble with 
-            fine motor tasks, and difficulty judging force.<sup>[12]</sup> SPD affects daily functioning including self-care, 
-            eating, sleep, social interaction, school/work performance, and emotional regulation.<sup>[13]</sup>
+            fine motor tasks, and difficulty judging force.<sup>2</sup> SPD affects daily functioning including self-care, 
+            eating, sleep, social interaction, school/work performance, and emotional regulation.<sup>3</sup>
           </p>
         </section>
 
@@ -163,10 +165,10 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
           />
           
           <p className="mb-4">
-            SPD reflects differences in neurological wiring and sensory threshold regulation.<sup>[14]</sup> Research suggests 
+            SPD reflects differences in neurological wiring and sensory threshold regulation.<sup>4</sup> Research suggests 
             differences in how the nervous system detects, modulates, discriminates, and integrates sensory 
             input—essentially, how the brain's "filters" work when processing the constant stream of sensory 
-            information.<sup>[15]</sup>
+            information.<sup>5</sup>
           </p>
           
           <p className="mb-4">
