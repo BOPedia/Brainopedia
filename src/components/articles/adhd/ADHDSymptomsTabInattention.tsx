@@ -4,8 +4,8 @@ import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
 export function ADHDSymptomsTabInattention() {
   return (
     <>
-          <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Inattention Symptoms</h2>
+      <div className="bg-[#f0f9ff] p-6 rounded-lg">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Inattention Symptoms</h2>
             
             <p className="mb-4">
               The inattentive presentation is characterized by difficulty sustaining attention and organizational 
@@ -151,58 +151,57 @@ export function ADHDSymptomsTabInattention() {
               </div>
             </div>
           </div>
-
           {/* ===== REFERENCES SECTION ===== */}
           <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
-          
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-            <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
-            
-            {/* CITED STUDIES: GREEN */}
-            <div className="mb-6">
-              <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
-                Cited Studies & Statistics
-              </h4>
-              <ol className="list-decimal ml-5 text-xs space-y-4 text-slate-700">
-                <li>
-                  Gjervan, B., Torgersen, T., Nordahl, H. M., & Rasmussen, K. (2012). Functional impairment and occupational outcome in adults with ADHD. <em>Journal of Attention Disorders</em>, 16(7), 544-552; Gjervan, B., Nordahl, H. M., Hjemdal, O., & Knudsen, G. P. (2016). Functional impairments associated with ADHD in adulthood: The mediating role of emotional dysregulation. <em>Nordic Psychology</em>, 68(3), 159-173.
-                </li>
-                <li>
-                  Henning, A., Summerfeldt, L. J., & Parker, J. D. A. (2024). Longitudinal associations between symptoms of ADHD and life success in middle adulthood. <em>Journal of Attention Disorders</em>, 28(1), 125-138.
-                </li>
-                <li>
-                  Beauchaine, T. P., Zisner, A. R., & Sauder, C. L. (2020). ADHD, financial distress, and suicide in adulthood. <em>Science Advances</em>, 6(40), eaba1551.
-                </li>
-                <li>
-                  Vergunst, F., Tremblay, R. E., Nagin, D., Algan, Y., Beasley, E., Park, J., ... & Côté, S. M. (2021). Association of behavior in boys from low socioeconomic neighborhoods with employment earnings in adulthood. <em>JAMA Pediatrics</em>, 175(4), 334-341.
-                </li>
-              </ol>
-            </div>
-            
-            {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
-            <div>
-              <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
-                Background Sources
-              </h4>
-              <ul className="list-none text-xs space-y-4 text-slate-700 p-0 m-0">
-                <li>
-                  American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).
-                </li>
-                <li>
-                  Barkley, R. A. (2015). "Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment" (4th ed.). <em>Guilford Press</em>.
-                </li>
-                <li>
-                  Willcutt, E. G. (2012). "The prevalence of DSM-IV attention-deficit/hyperactivity disorder: A meta-analytic review." <em>Neurotherapeutics</em>, 9(3), 490-499.
-                </li>
-                <li>
-                  Quinn, P. O., & Madhoo, M. (2014). "A review of attention-deficit/hyperactivity disorder in women and girls: Uncovering this hidden diagnosis." <em>The Primary Care Companion for CNS Disorders</em>, 16(3).
-                </li>
-                <li>
-                  Hinshaw, S. P., et al. (2022). "Annual Research Review: Attention-deficit/hyperactivity disorder in girls and women: underrepresentation, longitudinal processes, and key directions." <em>Journal of Child Psychology and Psychiatry</em>, 63(4), 484-496.
-                </li>
-              </ul>
-            </div>
-          </div>
-    </>
+    <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+
+    {/* CITED STUDIES: GREEN */}
+    <div className="mb-6">
+      <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+        Cited Studies & Statistics
+      </h4>
+      <ol className="list-decimal ml-5 text-xs space-y-4 text-slate-700">
+        <li>
+          Gjervan, B., Torgersen, T., Nordahl, H. M., & Rasmussen, K. (2012). Functional impairment and occupational outcome in adults with ADHD. <em>Journal of Attention Disorders</em>, 16(7), 544-552; Gjervan, B., Nordahl, H. M., Hjemdal, O., & Knudsen, G. P. (2016). Functional impairments associated with ADHD in adulthood: The mediating role of emotional dysregulation. <em>Nordic Psychology</em>, 68(3), 159-173.
+        </li>
+        <li>
+          Henning, A., Summerfeldt, L. J., & Parker, J. D. A. (2024). Longitudinal associations between symptoms of ADHD and life success in middle adulthood. <em>Journal of Attention Disorders</em>, 28(1), 125-138.
+        </li>
+        <li>
+          Beauchaine, T. P., Zisner, A. R., & Sauder, C. L. (2020). ADHD, financial distress, and suicide in adulthood. <em>Science Advances</em>, 6(40), eaba1551.
+        </li>
+        <li>
+          Vergunst, F., Tremblay, R. E., Nagin, D., Algan, Y., Beasley, E., Park, J., ... & Côté, S. M. (2021). Association of behavior in boys from low socioeconomic neighborhoods with employment earnings in adulthood. <em>JAMA Pediatrics</em>, 175(4), 334-341.
+        </li>
+      </ol>
+    </div>
+
+    {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+    <div>
+      <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+        Background Sources
+      </h4>
+      <ul className="list-none text-xs space-y-4 text-slate-700 p-0 m-0">
+        <li>
+          American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).
+        </li>
+        <li>
+          Barkley, R. A. (2015). "Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment" (4th ed.). <em>Guilford Press</em>.
+        </li>
+        <li>
+          Willcutt, E. G. (2012). "The prevalence of DSM-IV attention-deficit/hyperactivity disorder: A meta-analytic review." <em>Neurotherapeutics</em>, 9(3), 490-499.
+        </li>
+        <li>
+          Quinn, P. O., & Madhoo, M. (2014). "A review of attention-deficit/hyperactivity disorder in women and girls: Uncovering this hidden diagnosis." <em>The Primary Care Companion for CNS Disorders</em>, 16(3).
+        </li>
+        <li>
+          Hinshaw, S. P., et al. (2022). "Annual Research Review: Attention-deficit/hyperactivity disorder in girls and women: underrepresentation, longitudinal processes, and key directions." <em>Journal of Child Psychology and Psychiatry</em>, 63(4), 484-496.
+        </li>
+      </ul>
+    </div>
+  </div>
+  </>
+   
   );
 }
