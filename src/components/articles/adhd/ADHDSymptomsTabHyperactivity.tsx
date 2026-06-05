@@ -137,6 +137,11 @@ export function ADHDSymptomsTabHyperactivity() {
                 </div>
 
                 <div>
+                  <ImageWithFallback 
+                  src="/images/adhd/adhd-hyperactivity-street-view.png"
+                  alt="Hyperactivity in everyday life - street view"
+                  className="w-32 h-auto float-right ml-4 mb-4 rounded"
+                  />
                   <h4 className="font-bold text-[#0c264d] mb-2 text-base">Prevalence and Treatment</h4>
                   <p className="text-sm mb-2">
                     Studies show that while the inattentive type is common, the hyperactive/impulsive and combined types account for a 
@@ -155,11 +160,7 @@ export function ADHDSymptomsTabHyperactivity() {
                   requiring targeted treatment. Understanding hyperactivity as a measurable, persistent, and biologically-based symptom 
                   helps reduce stigma and supports evidence-based intervention approaches.
                 </p>
-              <ImageWithFallback 
-              src="/images/adhd/adhd-hyperactivity-street-view.png"
-              alt="Hyperactivity in everyday life - street view"
-              className="w-32 h-auto float-right ml-4 mb-4 rounded"
-              />
+
               </div>
             </div>
           </div>

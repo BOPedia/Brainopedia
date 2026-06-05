@@ -76,14 +76,15 @@ export function ADHDSymptomsTabInattention() {
                 "unmotivated," or "not living up to potential" when in fact they're struggling with executive function deficits.
               </p>
             </div>
-              		src="/images/adhd/adhd-inattention-boy-looks-out-window.png"
-              		alt="ADHD Inattention"
-              		className="w-32 h-auto float-right ml-4 mb-4 rounded"
            	 
             {/* Long-term Functional Outcomes Section */}
             <div className="bg-white p-6 rounded-md border-l-4 border-[#0c264d] shadow-sm mt-6">
               <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Inattention and Long-Term Functional Outcomes</h3>
-              
+                  <ImageWithFallback 
+                  src="/images/adhd/adhd-inattention-boy-looks-out-window.png"
+              		alt="ADHD Inattention"
+              		className="w-32 h-auto float-right ml-4 mb-4 rounded"
+                  />
               <p className="mb-4">
                 Several studies indicate that inattention is a stronger or more consistent predictor of negative, long-term functional 
                 outcomes in adults with ADHD—specifically regarding career, education, and financial stability—compared to 
