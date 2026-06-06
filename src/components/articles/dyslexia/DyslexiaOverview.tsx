@@ -339,7 +339,17 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               Dyslexia is a well-researched, neurobiological condition that affects reading but does not limit potential. 
               With understanding, appropriate instruction, accommodations, and support, individuals with dyslexia can develop 
               strong reading skills and succeed academically, professionally, and personally.
-            </p>
+            </p>            
+            {/* YOUTUBE EMBED FLOATED TO THE RIGHT */}
+            <div className="w-full sm:w-64 float-none sm:float-right sm:ml-6 mb-4 mt-2 rounded-lg overflow-hidden shadow-md border border-gray-200">
+              <iframe
+                className="w-full aspect-video"
+                src="https://www.youtube.com/embed/11r7CFlK2sc"
+                title="Dyslexia Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
             <p className="leading-relaxed">
               The key is recognizing dyslexia early, providing evidence-based intervention, celebrating strengths, and 
               fostering an environment where individuals with dyslexia can thrive.
@@ -353,16 +363,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               className="w-80 h-auto rounded-lg shadow-sm"
             />
           </div>
-            {/* YOUTUBE EMBED FLOATED TO THE RIGHT */}
-            <div className="w-full sm:w-64 float-none sm:float-right sm:ml-6 mb-4 mt-2 rounded-lg overflow-hidden shadow-md border border-gray-200">
-              <iframe
-                className="w-full aspect-video"
-                src="https://www.youtube.com/embed/11r7CFlK2sc"
-                title="Dyslexia Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
         </section>
 
       </div>
