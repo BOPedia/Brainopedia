@@ -146,35 +146,55 @@ export function DyslexiaCauses({ setCurrentArticle }: DyslexiaCausesProps) {
               </div>
             </div>
 
-            {/* BRAIN REFERENCES */}
-            <div className="mt-10 pt-6 border-t-2 border-gray-100">
-              <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4">Brain & Neurobiology References</h4>
-              <ol start={17} className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-                <li>Richlan, F., Kronbichler, M., & Wimmer, H. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <em>NeuroImage</em>, 56(3), 1735-1742.</li>
-                <li>Shaywitz, B. A., Shaywitz, S. E., Pugh, K. R., et al. (2002). "Disruption of posterior brain systems for reading in children with developmental dyslexia." <em>Biological Psychiatry</em>, 52(2), 101-110.</li>
-                <li>Pugh, K. R., Mencl, W. E., Jenner, A. R., et al. (2001). "Neurobiological studies of reading and reading disability." <em>Journal of Communication Disorders</em>, 34(6), 479-492.</li>
-                <li>McCandliss, B. D., Cohen, L., & Dehaene, S. (2003). "The visual word form area: Expertise for reading in the fusiform gyrus." <em>Trends in Cognitive Sciences</em>, 7(7), 293-299.</li>
-                <li>Shaywitz, S. E., Shaywitz, B. A., Fulbright, R. K., et al. (2003). "Neural systems for compensation and persistence: Young adult outcome of childhood reading disability." <em>Biological Psychiatry</em>, 54(1), 25-33.</li>
-                <li>Silani, G., Frith, U., Demonet, J. F., et al. (2005). "Brain abnormalities underlying altered activation in dyslexia: A voxel based morphometry study." <em>Brain</em>, 128(10), 2453-2461.</li>
-                <li>Vandermosten, M., Boets, B., Wouters, J., & Ghesquière, P. (2012). "A qualitative and quantitative review of diffusion tensor imaging studies in reading and dyslexia." <em>Neuroscience & Biobehavioral Reviews</em>, 36(6), 1532-1552.</li>
-                <li>Richards, T. L., & Berninger, V. W. (2008). "Abnormal fMRI connectivity in children with dyslexia during a phoneme task: Before but not after treatment." <em>Journal of Neurolinguistics</em>, 21(4), 294-304.</li>
-                <li>Galaburda, A. M., Sherman, G. F., Rosen, G. D., Aboitiz, F., & Geschwind, N. (1985). "Developmental dyslexia: Four consecutive patients with cortical anomalies." <em>Annals of Neurology</em>, 18(2), 222-233.</li>
-                <li>Galaburda, A. M., & Cestnick, L. (2003). "Dislexia del desarrollo." <em>Revista de Neurología</em>, 36(Suppl 1), S3-S9.</li>
-                <li>Galaburda, A. M. (1993). "Neurology of developmental dyslexia." <em>Current Opinion in Neurobiology</em>, 3(2), 237-242.</li>
-                <li>Ramus, F., & Szenkovits, G. (2008). "What phonological deficit?" <em>Quarterly Journal of Experimental Psychology</em>, 61(1), 129-141.</li>
-                <li>Swan, D., & Goswami, U. (1997). "Phonological awareness deficits in developmental dyslexia and the phonological representations hypothesis." <em>Journal of Experimental Child Psychology</em>, 66(1), 18-41.</li>
-                <li>Wagner, R. K., & Torgesen, J. K. (1987). "The nature of phonological processing and its causal role in the acquisition of reading skills." <em>Psychological Bulletin</em>, 101(2), 192-212.</li>
-                <li>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>, 63, 427-452.</li>
-                <li>Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). "Specific reading disability (dyslexia): What have we learned in the past four decades?" <em>Journal of Child Psychology and Psychiatry</em>, 45(1), 2-40.</li>
-                <li>Snowling, M. J. (2000). <em>Dyslexia</em> (2nd ed.). Blackwell Publishing.</li>
-                <li>Pennington, B. F. (2006). "From single to multiple deficit models of developmental disorders." <em>Cognition</em>, 101(2), 385-413.</li>
-                <li>Wolf, M., & Bowers, P. G. (1999). "The double-deficit hypothesis for the developmental dyslexias." <em>Journal of Educational Psychology</em>, 91(3), 415-438.</li>
-                <li>Stein, J., & Walsh, V. (1997). "To see but not to read; the magnocellular theory of dyslexia." <em>Trends in Neurosciences</em>, 20(4), 147-152.</li>
-                <li>Bosse, M. L., Tainturier, M. J., & Valdois, S. (2007). "Developmental dyslexia: The visual attention span deficit hypothesis." <em>Cognition</em>, 104(2), 198-230.</li>
-                <li>Ramus, F. (2003). "Developmental dyslexia: Specific phonological deficit or general sensorimotor dysfunction?" <em>Current Opinion in Neurobiology</em>, 13(2), 212-218.</li>
-                <li>Nicolson, R. I., Fawcett, A. J., & Dean, P. (2001). "Developmental dyslexia: The cerebellar deficit hypothesis." <em>Trends in Neurosciences</em>, 24(9), 508-511.</li>
-                <li>Ramus, F., Pidgeon, E., & Frith, U. (2003). "The relationship between motor control and phonology in dyslexic children." <em>Journal of Child Psychology and Psychiatry</em>, 44(5), 712-722.</li>
-              </ol>
+            {/* BRAIN REFERENCES (Standardized) */}
+            <div className="mt-12 pt-6 border-t-2 border-gray-100">
+              <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+                <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+                
+                {/* CITED STUDIES: GREEN */}
+                <div className="mb-6">
+                  <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+                    Cited Studies & Statistics
+                  </h4>
+                  <ol start={17} className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+                    <li>Richlan, F., Kronbichler, M., & Wimmer, H. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <em>NeuroImage</em>, 56(3), 1735-1742.</li>
+                    <li>Shaywitz, B. A., Shaywitz, S. E., Pugh, K. R., et al. (2002). "Disruption of posterior brain systems for reading in children with developmental dyslexia." <em>Biological Psychiatry</em>, 52(2), 101-110.</li>
+                    <li>Pugh, K. R., Mencl, W. E., Jenner, A. R., et al. (2001). "Neurobiological studies of reading and reading disability." <em>Journal of Communication Disorders</em>, 34(6), 479-492.</li>
+                    <li>McCandliss, B. D., Cohen, L., & Dehaene, S. (2003). "The visual word form area: Expertise for reading in the fusiform gyrus." <em>Trends in Cognitive Sciences</em>, 7(7), 293-299.</li>
+                    <li>Shaywitz, S. E., Shaywitz, B. A., Fulbright, R. K., et al. (2003). "Neural systems for compensation and persistence: Young adult outcome of childhood reading disability." <em>Biological Psychiatry</em>, 54(1), 25-33.</li>
+                    <li>Silani, G., Frith, U., Demonet, J. F., et al. (2005). "Brain abnormalities underlying altered activation in dyslexia: A voxel based morphometry study." <em>Brain</em>, 128(10), 2453-2461.</li>
+                    <li>Vandermosten, M., Boets, B., Wouters, J., & Ghesquière, P. (2012). "A qualitative and quantitative review of diffusion tensor imaging studies in reading and dyslexia." <em>Neuroscience & Biobehavioral Reviews</em>, 36(6), 1532-1552.</li>
+                    <li>Richards, T. L., & Berninger, V. W. (2008). "Abnormal fMRI connectivity in children with dyslexia during a phoneme task: Before but not after treatment." <em>Journal of Neurolinguistics</em>, 21(4), 294-304.</li>
+                    <li>Galaburda, A. M., Sherman, G. F., Rosen, G. D., Aboitiz, F., & Geschwind, N. (1985). "Developmental dyslexia: Four consecutive patients with cortical anomalies." <em>Annals of Neurology</em>, 18(2), 222-233.</li>
+                    <li>Galaburda, A. M., & Cestnick, L. (2003). "Dislexia del desarrollo." <em>Revista de Neurología</em>, 36(Suppl 1), S3-S9.</li>
+                    <li>Galaburda, A. M. (1993). "Neurology of developmental dyslexia." <em>Current Opinion in Neurobiology</em>, 3(2), 237-242.</li>
+                    <li>Ramus, F., & Szenkovits, G. (2008). "What phonological deficit?" <em>Quarterly Journal of Experimental Psychology</em>, 61(1), 129-141.</li>
+                    <li>Swan, D., & Goswami, U. (1997). "Phonological awareness deficits in developmental dyslexia and the phonological representations hypothesis." <em>Journal of Experimental Child Psychology</em>, 66(1), 18-41.</li>
+                    <li>Wagner, R. K., & Torgesen, J. K. (1987). "The nature of phonological processing and its causal role in the acquisition of reading skills." <em>Psychological Bulletin</em>, 101(2), 192-212.</li>
+                    <li>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>, 63, 427-452.</li>
+                    <li>Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). "Specific reading disability (dyslexia): What have we learned in the past four decades?" <em>Journal of Child Psychology and Psychiatry</em>, 45(1), 2-40.</li>
+                    <li>Snowling, M. J. (2000). <em>Dyslexia</em> (2nd ed.). Blackwell Publishing.</li>
+                    <li>Pennington, B. F. (2006). "From single to multiple deficit models of developmental disorders." <em>Cognition</em>, 101(2), 385-413.</li>
+                    <li>Wolf, M., & Bowers, P. G. (1999). "The double-deficit hypothesis for the developmental dyslexias." <em>Journal of Educational Psychology</em>, 91(3), 415-438.</li>
+                    <li>Stein, J., & Walsh, V. (1997). "To see but not to read; the magnocellular theory of dyslexia." <em>Trends in Neurosciences</em>, 20(4), 147-152.</li>
+                    <li>Bosse, M. L., Tainturier, M. J., & Valdois, S. (2007). "Developmental dyslexia: The visual attention span deficit hypothesis." <em>Cognition</em>, 104(2), 198-230.</li>
+                    <li>Ramus, F. (2003). "Developmental dyslexia: Specific phonological deficit or general sensorimotor dysfunction?" <em>Current Opinion in Neurobiology</em>, 13(2), 212-218.</li>
+                    <li>Nicolson, R. I., Fawcett, A. J., & Dean, P. (2001). "Developmental dyslexia: The cerebellar deficit hypothesis." <em>Trends in Neurosciences</em>, 24(9), 508-511.</li>
+                    <li>Ramus, F., Pidgeon, E., & Frith, U. (2003). "The relationship between motor control and phonology in dyslexic children." <em>Journal of Child Psychology and Psychiatry</em>, 44(5), 712-722.</li>
+                  </ol>
+                </div>
+                
+                {/* BACKGROUND SOURCES: CYAN */}
+                <div>
+                  <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                    Background Sources
+                  </h4>
+                  <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+                    <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.</li>
+                    <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -228,24 +248,44 @@ export function DyslexiaCauses({ setCurrentArticle }: DyslexiaCausesProps) {
               <li><strong>Quantitative trait:</strong> Reading ability exists on a continuum; genes influence where individuals fall on this spectrum.<sup className="text-green-600 font-bold ml-0.5">16</sup></li>
             </ul>
 
-            {/* GENETICS REFERENCES */}
-            <div className="mt-10 pt-6 border-t-2 border-gray-100">
-              <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4">Genetics References</h4>
-              <ol start={4} className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-                <li>Fisher, S. E., & DeFries, J. C. (2002). "Developmental dyslexia: Genetic dissection of a complex cognitive trait." <em>Nature Reviews Neuroscience</em>, 3(10), 767-780.</li>
-                <li>Pennington, B. F., & Lefly, D. L. (2001). "Early reading development in children at family risk for dyslexia." <em>Child Development</em>, 72(3), 816-833.</li>
-                <li>DeFries, J. C., & Alarcón, M. (1996). "Genetics of specific reading disability." <em>Mental Retardation and Developmental Disabilities Research Reviews</em>, 2(1), 39-47.</li>
-                <li>Byrne, B., Wadsworth, S., Corley, R., et al. (2005). "Longitudinal twin study of early literacy development: Preschool and kindergarten phases." <em>Scientific Studies of Reading</em>, 9(3), 219-235.</li>
-                <li>Scerri, T. S., & Schulte-Körne, G. (2010). "Genetics of developmental dyslexia." <em>European Child & Adolescent Psychiatry</em>, 19(3), 179-197.</li>
-                <li>Taipale, M., Kaminen, N., Nopola-Hemmi, J., et al. (2003). "A candidate gene for developmental dyslexia encodes a nuclear tetratricopeptide repeat domain protein dynamically regulated in brain." <em>Proceedings of the National Academy of Sciences</em>, 100(20), 11553-11558.</li>
-                <li>Meng, H., Smith, S. D., Hager, K., et al. (2005). "DCDC2 is associated with reading disability and modulates neuronal development in the brain." <em>Proceedings of the National Academy of Sciences</em>, 102(47), 17053-17058.</li>
-                <li>Paracchini, S., Steer, C. D., Buckingham, L. L., et al. (2008). "Association of the KIAA0319 dyslexia susceptibility gene with reading skills in the general population." <em>American Journal of Psychiatry</em>, 165(12), 1576-1584.</li>
-                <li>Hannula-Jouppi, K., Kaminen-Ahola, N., Taipale, M., et al. (2005). "The axon guidance receptor gene ROBO1 is a candidate gene for developmental dyslexia." <em>PLoS Genetics</em>, 1(4), e50.</li>
-                <li>Carrion-Castillo, A., Franke, B., & Fisher, S. E. (2013). "Molecular genetics of dyslexia: An overview." <em>Dyslexia</em>, 19(4), 214-240.</li>
-                <li>Galaburda, A. M., LoTurco, J., Ramus, F., Fitch, R. H., & Rosen, G. D. (2006). "From genes to behavior in developmental dyslexia." <em>Nature Neuroscience</em>, 9(10), 1213-1217.</li>
-                <li>Pennington, B. F., & Bishop, D. V. (2009). "Relations among speech, language, and reading disorders." <em>Annual Review of Psychology</em>, 60, 283-306.</li>
-                <li>Shaywitz, S. E., Escobar, M. D., Shaywitz, B. A., Fletcher, J. M., & Makuch, R. (1992). "Evidence that dyslexia may represent the lower tail of a normal distribution of reading ability." <em>New England Journal of Medicine</em>, 326(3), 145-150.</li>
-              </ol>
+            {/* GENETICS REFERENCES (Standardized) */}
+            <div className="mt-12 pt-6 border-t-2 border-gray-100">
+              <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+                <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+                
+                {/* CITED STUDIES: GREEN */}
+                <div className="mb-6">
+                  <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+                    Cited Studies & Statistics
+                  </h4>
+                  <ol start={4} className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+                    <li>Fisher, S. E., & DeFries, J. C. (2002). "Developmental dyslexia: Genetic dissection of a complex cognitive trait." <em>Nature Reviews Neuroscience</em>, 3(10), 767-780.</li>
+                    <li>Pennington, B. F., & Lefly, D. L. (2001). "Early reading development in children at family risk for dyslexia." <em>Child Development</em>, 72(3), 816-833.</li>
+                    <li>DeFries, J. C., & Alarcón, M. (1996). "Genetics of specific reading disability." <em>Mental Retardation and Developmental Disabilities Research Reviews</em>, 2(1), 39-47.</li>
+                    <li>Byrne, B., Wadsworth, S., Corley, R., et al. (2005). "Longitudinal twin study of early literacy development: Preschool and kindergarten phases." <em>Scientific Studies of Reading</em>, 9(3), 219-235.</li>
+                    <li>Scerri, T. S., & Schulte-Körne, G. (2010). "Genetics of developmental dyslexia." <em>European Child & Adolescent Psychiatry</em>, 19(3), 179-197.</li>
+                    <li>Taipale, M., Kaminen, N., Nopola-Hemmi, J., et al. (2003). "A candidate gene for developmental dyslexia encodes a nuclear tetratricopeptide repeat domain protein dynamically regulated in brain." <em>Proceedings of the National Academy of Sciences</em>, 100(20), 11553-11558.</li>
+                    <li>Meng, H., Smith, S. D., Hager, K., et al. (2005). "DCDC2 is associated with reading disability and modulates neuronal development in the brain." <em>Proceedings of the National Academy of Sciences</em>, 102(47), 17053-17058.</li>
+                    <li>Paracchini, S., Steer, C. D., Buckingham, L. L., et al. (2008). "Association of the KIAA0319 dyslexia susceptibility gene with reading skills in the general population." <em>American Journal of Psychiatry</em>, 165(12), 1576-1584.</li>
+                    <li>Hannula-Jouppi, K., Kaminen-Ahola, N., Taipale, M., et al. (2005). "The axon guidance receptor gene ROBO1 is a candidate gene for developmental dyslexia." <em>PLoS Genetics</em>, 1(4), e50.</li>
+                    <li>Carrion-Castillo, A., Franke, B., & Fisher, S. E. (2013). "Molecular genetics of dyslexia: An overview." <em>Dyslexia</em>, 19(4), 214-240.</li>
+                    <li>Galaburda, A. M., LoTurco, J., Ramus, F., Fitch, R. H., & Rosen, G. D. (2006). "From genes to behavior in developmental dyslexia." <em>Nature Neuroscience</em>, 9(10), 1213-1217.</li>
+                    <li>Pennington, B. F., & Bishop, D. V. (2009). "Relations among speech, language, and reading disorders." <em>Annual Review of Psychology</em>, 60, 283-306.</li>
+                    <li>Shaywitz, S. E., Escobar, M. D., Shaywitz, B. A., Fletcher, J. M., & Makuch, R. (1992). "Evidence that dyslexia may represent the lower tail of a normal distribution of reading ability." <em>New England Journal of Medicine</em>, 326(3), 145-150.</li>
+                  </ol>
+                </div>
+
+                {/* BACKGROUND SOURCES: CYAN */}
+                <div>
+                  <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                    Background Sources
+                  </h4>
+                  <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+                    <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.</li>
+                    <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -372,32 +412,52 @@ export function DyslexiaCauses({ setCurrentArticle }: DyslexiaCausesProps) {
               </div>
             </div>
 
-            {/* RISK FACTORS REFERENCES */}
-            <div className="mt-10 pt-6 border-t-2 border-gray-100">
-              <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4">Risk Factors References</h4>
-              {/* Using list-none so we can explicitly match your master cross-reference numbers like [32] */}
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed">
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[32]</span><span>Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). "Specific reading disability (dyslexia): What have we learned in the past four decades?" <em>Journal of Child Psychology and Psychiatry</em>, 45(1), 2-40.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[41]</span><span>Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia: A meta-analysis and review." <em>Psychological Bulletin</em>, 142(5), 498-545.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[42]</span><span>Torgesen, J. K. (2004). "Lessons learned from research on interventions for students who have difficulty learning to read." In <em>The voice of evidence in reading research</em> (pp. 355-382). Paul H. Brookes.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[43]</span><span>Snowling, M. J., & Hulme, C. (2011). "Evidence‐based interventions for reading and language difficulties: Creating a virtuous circle." <em>British Journal of Educational Psychology</em>, 81(1), 1-23.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[44]</span><span>Noble, K. G., Wolmetz, M. E., Ochs, L. G., Farah, M. J., & McCandliss, B. D. (2006). "Brain–behavior relationships in reading acquisition are modulated by socioeconomic factors." <em>Developmental Science</em>, 9(6), 642-654.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[45]</span><span>Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages: A psycholinguistic grain size theory." <em>Psychological Bulletin</em>, 131(1), 3-29.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[46]</span><span>Share, D. L. (2008). "On the Anglocentricities of current reading research and practice: The perils of overreliance on an outlier orthography." <em>Psychological Bulletin</em>, 134(4), 584-615.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[47]</span><span>Paulesu, E., Démonet, J. F., Fazio, F., et al. (2001). "Dyslexia: Cultural diversity and biological unity." <em>Science</em>, 291(5511), 2165-2167.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[48]</span><span>Espy, K. A., Molfese, D. L., Molfese, V. J., & Modglin, A. (2004). "Development of auditory event-related potentials in young children and relations to word-level reading abilities at age 8 years." <em>Annals of Dyslexia</em>, 54(1), 9-38.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[49]</span><span>Litt, J., Taylor, H. G., Klein, N., & Hack, M. (2005). "Learning disabilities in children with very low birthweight: Prevalence, neuropsychological correlates, and educational interventions." <em>Journal of Learning Disabilities</em>, 38(2), 130-141.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[50]</span><span>Fischer, F. W., Liberman, I. Y., & Shankweiler, D. (1978). "Reading reversals and developmental dyslexia: A further study." <em>Cortex</em>, 14(4), 496-510.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[51]</span><span>Ferrer, E., Shaywitz, B. A., Holahan, J. M., Marchione, K., & Shaywitz, S. E. (2010). "Uncoupling of reading and IQ over time: Empirical evidence for a definition of dyslexia." <em>Psychological Science</em>, 21(1), 93-101.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[52]</span><span>Shaywitz, S. (2003). <em>Overcoming dyslexia</em>. Knopf.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[53]</span><span>Snowling, M. J., & Hulme, C. (2012). "Annual research review: The nature and classification of reading disorders–a commentary on proposals for DSM‐5." <em>Journal of Child Psychology and Psychiatry</em>, 53(5), 593-607.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[54]</span><span>Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2018). <em>Learning disabilities: From identification to intervention</em> (2nd ed.). Guilford Publications.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[55]</span><span>Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia: A meta-analysis and review." <em>Psychological Bulletin</em>, 142(5), 498-545.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[56]</span><span>Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <em>Science</em>, 325(5938), 280-283.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[57]</span><span>McNulty, M. A. (2003). "Dyslexia and the life course." <em>Journal of Learning Disabilities</em>, 36(4), 363-381.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[58]</span><span>Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <em>Annual Review of Clinical Psychology</em>, 11, 283-307.</span></li>
-                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[59]</span><span>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>, 63, 427-452.</span></li>
-              </ul>
+            {/* RISK FACTORS REFERENCES (Standardized) */}
+            <div className="mt-12 pt-6 border-t-2 border-gray-100">
+              <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+                <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+                
+                {/* CITED STUDIES: GREEN */}
+                <div className="mb-6">
+                  <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+                    Cited Studies & Statistics
+                  </h4>
+                  {/* Using value={} explicitly assigns the list number so we don't have to use brackets! */}
+                  <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+                    <li value={32}>Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). "Specific reading disability (dyslexia): What have we learned in the past four decades?" <em>Journal of Child Psychology and Psychiatry</em>, 45(1), 2-40.</li>
+                    <li value={41}>Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia: A meta-analysis and review." <em>Psychological Bulletin</em>, 142(5), 498-545.</li>
+                    <li value={42}>Torgesen, J. K. (2004). "Lessons learned from research on interventions for students who have difficulty learning to read." In <em>The voice of evidence in reading research</em> (pp. 355-382). Paul H. Brookes.</li>
+                    <li value={43}>Snowling, M. J., & Hulme, C. (2011). "Evidence‐based interventions for reading and language difficulties: Creating a virtuous circle." <em>British Journal of Educational Psychology</em>, 81(1), 1-23.</li>
+                    <li value={44}>Noble, K. G., Wolmetz, M. E., Ochs, L. G., Farah, M. J., & McCandliss, B. D. (2006). "Brain–behavior relationships in reading acquisition are modulated by socioeconomic factors." <em>Developmental Science</em>, 9(6), 642-654.</li>
+                    <li value={45}>Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages: A psycholinguistic grain size theory." <em>Psychological Bulletin</em>, 131(1), 3-29.</li>
+                    <li value={46}>Share, D. L. (2008). "On the Anglocentricities of current reading research and practice: The perils of overreliance on an outlier orthography." <em>Psychological Bulletin</em>, 134(4), 584-615.</li>
+                    <li value={47}>Paulesu, E., Démonet, J. F., Fazio, F., et al. (2001). "Dyslexia: Cultural diversity and biological unity." <em>Science</em>, 291(5511), 2165-2167.</li>
+                    <li value={48}>Espy, K. A., Molfese, D. L., Molfese, V. J., & Modglin, A. (2004). "Development of auditory event-related potentials in young children and relations to word-level reading abilities at age 8 years." <em>Annals of Dyslexia</em>, 54(1), 9-38.</li>
+                    <li value={49}>Litt, J., Taylor, H. G., Klein, N., & Hack, M. (2005). "Learning disabilities in children with very low birthweight: Prevalence, neuropsychological correlates, and educational interventions." <em>Journal of Learning Disabilities</em>, 38(2), 130-141.</li>
+                    <li value={50}>Fischer, F. W., Liberman, I. Y., & Shankweiler, D. (1978). "Reading reversals and developmental dyslexia: A further study." <em>Cortex</em>, 14(4), 496-510.</li>
+                    <li value={51}>Ferrer, E., Shaywitz, B. A., Holahan, J. M., Marchione, K., & Shaywitz, S. E. (2010). "Uncoupling of reading and IQ over time: Empirical evidence for a definition of dyslexia." <em>Psychological Science</em>, 21(1), 93-101.</li>
+                    <li value={52}>Shaywitz, S. (2003). <em>Overcoming dyslexia</em>. Knopf.</li>
+                    <li value={53}>Snowling, M. J., & Hulme, C. (2012). "Annual research review: The nature and classification of reading disorders–a commentary on proposals for DSM‐5." <em>Journal of Child Psychology and Psychiatry</em>, 53(5), 593-607.</li>
+                    <li value={54}>Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2018). <em>Learning disabilities: From identification to intervention</em> (2nd ed.). Guilford Publications.</li>
+                    <li value={55}>Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia: A meta-analysis and review." <em>Psychological Bulletin</em>, 142(5), 498-545.</li>
+                    <li value={56}>Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <em>Science</em>, 325(5938), 280-283.</li>
+                    <li value={57}>McNulty, M. A. (2003). "Dyslexia and the life course." <em>Journal of Learning Disabilities</em>, 36(4), 363-381.</li>
+                    <li value={58}>Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <em>Annual Review of Clinical Psychology</em>, 11, 283-307.</li>
+                    <li value={59}>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>, 63, 427-452.</li>
+                  </ol>
+                </div>
+
+                {/* BACKGROUND SOURCES: CYAN */}
+                <div>
+                  <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                    Background Sources
+                  </h4>
+                  <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+                    <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.</li>
+                    <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         )}
