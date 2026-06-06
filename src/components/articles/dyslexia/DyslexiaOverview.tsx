@@ -353,10 +353,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               className="w-80 h-auto rounded-lg shadow-sm"
             />
           </div>
-
-        </section>
-
-      </div>
             {/* YOUTUBE EMBED FLOATED TO THE RIGHT */}
             <div className="w-full sm:w-64 float-none sm:float-right sm:ml-6 mb-4 mt-2 rounded-lg overflow-hidden shadow-md border border-gray-200">
               <iframe
@@ -367,6 +363,10 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
                 allowFullScreen
               ></iframe>
             </div>
+        </section>
+
+      </div>
+
       {/* Bottom navigation button */}
       <div className="mt-16 mb-6 flex flex-col md:flex-row md:justify-end">
         <button 
