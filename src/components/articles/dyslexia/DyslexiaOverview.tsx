@@ -261,101 +261,95 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             </div>
           </div>
         </section>
-
-        {/* SECTION 3: THE READING BRAIN */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          <div className="lg:col-span-8 space-y-6">
-            <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Understanding the Reading Brain</h2>
-            
-            <p className="leading-relaxed">
-              Reading is not a natural process for the human brain—it must be taught and learned. Proficient 
-              reading requires several brain systems working together seamlessly, including visual processing (recognizing letters), 
-              phonological processing (connecting letters to sounds), orthographic processing, semantic processing, and working memory.
-            </p>
-
-            <h3 className="text-[#0c264d] font-bold text-xl mt-4 mb-2">Differences in the Dyslexic Brain</h3>
-            <p className="leading-relaxed mb-3">
-              Brain imaging studies show that individuals with dyslexia show different patterns of brain activation during reading tasks:<sup className="text-green-600 font-bold ml-0.5">5</sup>
-            </p>
-            <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 mb-6">
-              <li><strong>Underactivation:</strong> Reduced activity in left hemisphere regions typically involved in reading.</li>
-              <li><strong>Compensatory activation:</strong> Increased reliance on other brain regions, such as frontal areas and right hemisphere regions.</li>
-              <li><strong>White matter differences:</strong> Atypical connectivity in neural pathways supporting reading.</li>
-            </ul>
-
-            <h3 className="text-[#0c264d] font-bold text-xl mt-4 mb-2">The Phonological Core Deficit</h3>
-            <p className="leading-relaxed">
-              The most well-established explanation for dyslexia is the <strong>phonological deficit hypothesis</strong>. 
-              This theory proposes that dyslexia stems from a specific impairment in the representation, storage, and/or retrieval of speech sounds. 
-              When phonological processing is impaired, learning letter-sound correspondences is difficult, sounding out words is challenging, and reading remains effortful rather than automatic.
-            </p>
-          </div>
+{/* SECTION 3: THE READING BRAIN */}
+        <section className="space-y-6 mb-12 clear-both">
+          <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Understanding the Reading Brain</h2>
           
-          <div className="lg:col-span-4 flex justify-center pt-8">
-            <div className="w-64 rounded-xl overflow-hidden shadow-sm">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                poster="/images/dyslexia/dyslexia-overview-books-fly.png"
-                className="w-full h-auto object-contain"
-                aria-label="Books flying out of a swirl, representing the challenges of reading with dyslexia"
-              >
-                <source 
-                  src="/images/dyslexia/dyslexia-overview-books-fly.mp4" 
-                  type="video/mp4" 
-                />
-              </video>
-            </div>
+          {/* Floated Video */}
+          <div className="w-48 md:w-64 rounded-xl overflow-hidden shadow-sm float-right ml-6 mb-4">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              poster="/images/dyslexia/dyslexia-overview-books-fly.png"
+              className="w-full h-auto object-contain"
+              aria-label="Books flying out of a swirl, representing the challenges of reading with dyslexia"
+            >
+              <source 
+                src="/images/dyslexia/dyslexia-overview-books-fly.mp4" 
+                type="video/mp4" 
+              />
+            </video>
           </div>
+
+          <p className="leading-relaxed text-slate-700">
+            Reading is not a natural process for the human brain—it must be taught and learned. Proficient 
+            reading requires several brain systems working together seamlessly, including visual processing (recognizing letters), 
+            phonological processing (connecting letters to sounds), orthographic processing, semantic processing, and working memory.
+          </p>
+
+          <h3 className="text-[#0c264d] font-bold text-xl mt-4 mb-2">Differences in the Dyslexic Brain</h3>
+          <p className="leading-relaxed mb-3 text-slate-700">
+            Brain imaging studies show that individuals with dyslexia show different patterns of brain activation during reading tasks:<sup className="text-green-600 font-bold ml-0.5">5</sup>
+          </p>
+          <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 mb-6">
+            <li><strong>Underactivation:</strong> Reduced activity in left hemisphere regions typically involved in reading.</li>
+            <li><strong>Compensatory activation:</strong> Increased reliance on other brain regions, such as frontal areas and right hemisphere regions.</li>
+            <li><strong>White matter differences:</strong> Atypical connectivity in neural pathways supporting reading.</li>
+          </ul>
+
+          <h3 className="text-[#0c264d] font-bold text-xl mt-4 mb-2">The Phonological Core Deficit</h3>
+          <p className="leading-relaxed text-slate-700">
+            The most well-established explanation for dyslexia is the <strong>phonological deficit hypothesis</strong>. 
+            This theory proposes that dyslexia stems from a specific impairment in the representation, storage, and/or retrieval of speech sounds. 
+            When phonological processing is impaired, learning letter-sound correspondences is difficult, sounding out words is challenging, and reading remains effortful rather than automatic.
+          </p>
         </section>
 
- {/* SECTION 4: STRENGTHS */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
-          <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Dyslexia and Strengths</h2>
-            <p className="leading-relaxed">
-              While dyslexia presents undeniable challenges in traditional academic settings, many individuals with dyslexia 
-              also demonstrate notable cognitive and creative strengths:
-            </p>
-            
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 list-disc ml-6 text-sm text-slate-700 mb-6">
-              <li><strong>Creative thinking:</strong> Generating novel ideas</li>
-              <li><strong>Visual-spatial reasoning:</strong> Mentally manipulating 3D objects</li>
-              <li><strong>Big-picture thinking:</strong> Seeing broad connections</li>
-              <li><strong>Problem-solving:</strong> Innovative approaches</li>
-              <li><strong>Narrative reasoning:</strong> Storytelling strengths</li>
-              <li><strong>Resilience:</strong> Determination from overcoming adversity</li>
-            </ul>
-
-            <p className="leading-relaxed text-sm italic text-gray-600 border-l-4 border-[#ffd166] pl-4">
-              Many highly successful individuals in diverse fields—including entrepreneurs, artists, scientists, and leaders—have dyslexia.
-            </p>
-          </div>
+        {/* SECTION 4: STRENGTHS */}
+        <section className="space-y-6 mb-12 clear-both">
+          <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Dyslexia and Strengths</h2>
           
-          <div className="lg:col-span-5 flex justify-center pt-8">
-            <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-overview-strengths.png" 
-              alt="show a colorful brain with different areas highlighted to represent the creative strengths of many individuals with dyslexia"
-              className="w-80 h-auto rounded-lg shadow-sm"
-            />
-          </div>
+          {/* Floated Image */}
+          <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-overview-strengths.png" 
+            alt="show a colorful brain with different areas highlighted to represent the creative strengths of many individuals with dyslexia"
+            className="w-64 md:w-80 h-auto rounded-lg shadow-sm float-right ml-6 mb-4"
+          />
+
+          <p className="leading-relaxed text-slate-700">
+            While dyslexia presents undeniable challenges in traditional academic settings, many individuals with dyslexia 
+            also demonstrate notable cognitive and creative strengths:
+          </p>
+          
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 list-disc ml-6 text-sm text-slate-700 mb-6">
+            <li><strong>Creative thinking:</strong> Generating novel ideas</li>
+            <li><strong>Visual-spatial reasoning:</strong> Mentally manipulating 3D objects</li>
+            <li><strong>Big-picture thinking:</strong> Seeing broad connections</li>
+            <li><strong>Problem-solving:</strong> Innovative approaches</li>
+            <li><strong>Narrative reasoning:</strong> Storytelling strengths</li>
+            <li><strong>Resilience:</strong> Determination from overcoming adversity</li>
+          </ul>
+
+          <p className="leading-relaxed text-sm italic text-gray-600 border-l-4 border-[#ffd166] pl-4">
+            Many highly successful individuals in diverse fields—including entrepreneurs, artists, scientists, and leaders—have dyslexia.
+          </p>
         </section>
 
         {/* SECTION 5: MOVING FORWARD (Full Width) */}
-        <section className="space-y-6">
+        <section className="space-y-6 clear-both">
           <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Moving Forward</h2>
 
-          <p className="leading-relaxed">
+          <p className="leading-relaxed text-slate-700">
             Dyslexia is a well-researched, neurobiological condition that affects reading but does not limit potential. 
             With understanding, appropriate instruction, accommodations, and support, individuals with dyslexia can develop 
             strong reading skills and succeed academically, professionally, and personally.
           </p>            
           
-          {/* YOUTUBE EMBED - CENTERED */}
+          {/* YOUTUBE EMBED - CENTERED & SMALLER */}
           <div className="flex justify-center my-8">
-            <div className="w-full max-w-2xl rounded-lg overflow-hidden shadow-lg border border-gray-200">
+            <div className="w-full max-w-md rounded-lg overflow-hidden shadow-lg border border-gray-200">
               <iframe
                 className="w-full aspect-video"
                 src="https://www.youtube.com/embed/11r7CFlK2sc"
@@ -366,7 +360,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             </div>
           </div>
 
-          <p className="leading-relaxed">
+          <p className="leading-relaxed text-slate-700">
             The key is recognizing dyslexia early, providing evidence-based intervention, celebrating strengths, and 
             fostering an environment where individuals with dyslexia can thrive.
           </p>
@@ -375,7 +369,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
       </div>
 
       {/* Bottom navigation button */}
-      <div className="mt-16 mb-6 flex flex-col md:flex-row md:justify-end">
+      <div className="mt-16 mb-6 flex flex-col md:flex-row md:justify-end clear-both">
         <button 
           onClick={() => setCurrentArticle?.('dyslexia')}
           className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap shadow-md"
