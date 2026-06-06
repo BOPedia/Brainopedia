@@ -233,7 +233,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2v14a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2v14a2 2 0 002 2v14a2 2 0 002 2z" />
                 </svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Dyscalculia</h4>
@@ -334,6 +334,18 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             </p>
 
             <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2 mt-8">Moving Forward</h2>
+            
+            {/* YOUTUBE EMBED FLOATED TO THE RIGHT */}
+            <div className="w-full sm:w-64 float-none sm:float-right sm:ml-6 mb-4 mt-2 rounded-lg overflow-hidden shadow-md border border-gray-200">
+              <iframe
+                className="w-full aspect-video"
+                src="https://www.youtube.com/embed/11r7CFlK2sc"
+                title="Dyslexia Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+
             <p className="leading-relaxed">
               Dyslexia is a well-researched, neurobiological condition that affects reading but does not limit potential. 
               With understanding, appropriate instruction, accommodations, and support, individuals with dyslexia can develop 
@@ -352,6 +364,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               className="w-80 h-auto rounded-lg shadow-sm"
             />
           </div>
+
         </section>
 
       </div>
@@ -367,7 +380,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         </button>
       </div>
 
-{/* ===== REFERENCES SECTION ===== */}
+      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
