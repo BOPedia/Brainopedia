@@ -26,11 +26,36 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
           Dyslexia is a neurodevelopmental condition with strong genetic and neurobiological underpinnings.<sup className="text-green-600 font-bold ml-0.5">1</sup> Research over the past several decades has revealed that dyslexia results from differences in brain structure and function, particularly in regions involved in reading and language processing.<sup className="text-green-600 font-bold ml-0.5">2</sup> Understanding the origins of dyslexia helps demystify the condition and inform effective interventions.<sup className="text-green-600 font-bold ml-0.5">3</sup>
         </p>
 
+        {/* ========================================= */}
+        {/* INTERACTIVE TABS (These are the buttons!) */}
+        {/* ========================================= */}
+        <div className="flex flex-col md:flex-row gap-3 mb-8">
+          <button 
+            onClick={() => setCurrentArticle?.('dyslexia-causes-brain')}
+            className="py-3 px-6 rounded-lg font-bold transition-colors duration-200 w-full md:w-auto bg-[#0A9DC4] text-white shadow-md"
+          >
+            Brain & Neurobiology
+          </button>
+          
+          <button 
+            onClick={() => setCurrentArticle?.('dyslexia-causes-genetics')}
+            className="py-3 px-6 rounded-lg font-bold transition-colors duration-200 w-full md:w-auto bg-[#ffd166] text-[#0c264d] hover:bg-opacity-80 shadow-sm"
+          >
+            Genetics
+          </button>
+          
+          <button 
+            onClick={() => setCurrentArticle?.('dyslexia-causes-risk')}
+            className="py-3 px-6 rounded-lg font-bold transition-colors duration-200 w-full md:w-auto bg-[#ffd166] text-[#0c264d] hover:bg-opacity-80 shadow-sm"
+          >
+            Risk Factors
+          </button>
+        </div>
+
         <p className="mb-4 text-slate-700">
           Brain imaging studies have revealed consistent differences in brain structure and function in individuals with dyslexia:<sup className="text-green-600 font-bold ml-0.5">4</sup>
         </p>
 
-        {/* Interior Headers remain bolded */}
         <h3 className="text-xl font-bold mt-6 mb-3 text-[#0c264d] border-b border-gray-200 pb-2">Functional Differences</h3>
         <ul className="list-disc ml-6 space-y-2 mb-6 text-slate-700">
           <li><strong>Left hemisphere underactivation:</strong> Reduced activity in left-hemisphere reading regions during reading tasks.<sup className="text-green-600 font-bold ml-0.5">5</sup></li>
@@ -120,7 +145,6 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
               <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
                 Cited Studies & Statistics
               </h4>
-              {/* Natural numbering starting at 1, no brackets */}
               <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
                 <li>Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <em>Annual Review of Clinical Psychology</em>, 11, 283-307.</li>
                 <li>Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <em>Science</em>, 325(5938), 280-283.</li>
