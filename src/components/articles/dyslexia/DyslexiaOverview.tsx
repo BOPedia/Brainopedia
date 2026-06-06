@@ -311,8 +311,8 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           </div>
         </section>
 
-        {/* SECTION 4: STRENGTHS & MOVING FORWARD */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+ {/* SECTION 4: STRENGTHS */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Dyslexia and Strengths</h2>
             <p className="leading-relaxed">
@@ -332,28 +332,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             <p className="leading-relaxed text-sm italic text-gray-600 border-l-4 border-[#ffd166] pl-4">
               Many highly successful individuals in diverse fields—including entrepreneurs, artists, scientists, and leaders—have dyslexia.
             </p>
-
-            <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2 mt-8">Moving Forward</h2>
-
-            <p className="leading-relaxed">
-              Dyslexia is a well-researched, neurobiological condition that affects reading but does not limit potential. 
-              With understanding, appropriate instruction, accommodations, and support, individuals with dyslexia can develop 
-              strong reading skills and succeed academically, professionally, and personally.
-            </p>            
-            {/* YOUTUBE EMBED FLOATED TO THE RIGHT */}
-            <div className="w-full sm:w-64 float-none sm:float-right sm:ml-6 mb-4 mt-2 rounded-lg overflow-hidden shadow-md border border-gray-200">
-              <iframe
-                className="w-full aspect-video"
-                src="https://www.youtube.com/embed/11r7CFlK2sc"
-                title="Dyslexia Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <p className="leading-relaxed">
-              The key is recognizing dyslexia early, providing evidence-based intervention, celebrating strengths, and 
-              fostering an environment where individuals with dyslexia can thrive.
-            </p>
           </div>
           
           <div className="lg:col-span-5 flex justify-center pt-8">
@@ -363,6 +341,35 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               className="w-80 h-auto rounded-lg shadow-sm"
             />
           </div>
+        </section>
+
+        {/* SECTION 5: MOVING FORWARD (Full Width) */}
+        <section className="space-y-6">
+          <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Moving Forward</h2>
+
+          <p className="leading-relaxed">
+            Dyslexia is a well-researched, neurobiological condition that affects reading but does not limit potential. 
+            With understanding, appropriate instruction, accommodations, and support, individuals with dyslexia can develop 
+            strong reading skills and succeed academically, professionally, and personally.
+          </p>            
+          
+          {/* YOUTUBE EMBED - CENTERED */}
+          <div className="flex justify-center my-8">
+            <div className="w-full max-w-2xl rounded-lg overflow-hidden shadow-lg border border-gray-200">
+              <iframe
+                className="w-full aspect-video"
+                src="https://www.youtube.com/embed/11r7CFlK2sc"
+                title="Dyslexia Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
+          <p className="leading-relaxed">
+            The key is recognizing dyslexia early, providing evidence-based intervention, celebrating strengths, and 
+            fostering an environment where individuals with dyslexia can thrive.
+          </p>
         </section>
 
       </div>
