@@ -88,6 +88,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         <div className="w-full">
           <InfoBox
             title="Dyslexia"
+            image="/images/dyslexia/dyslexia-main-infobox.png"
             data={[
               { label: 'Other names', value: 'Reading disorder, specific learning disorder with impairment in reading' },
               { label: 'Specialty', value: 'Educational psychology, Neurology' },
