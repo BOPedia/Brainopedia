@@ -37,7 +37,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
       title: 'Testing & Diagnosing',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('dyslexia-diagnosis');
+        setCurrentArticle?.('dyslexia-diagnosis-overview');
       }
     },
     { 
