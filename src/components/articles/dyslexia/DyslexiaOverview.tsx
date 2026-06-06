@@ -315,7 +315,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           <ImageWithFallback 
             src="/images/dyslexia/dyslexia-overview-strengths.png" 
             alt="show a colorful brain with different areas highlighted to represent the creative strengths of many individuals with dyslexia"
-            className="w-48 md:w-80 h-auto rounded-lg shadow-sm float-right ml-6 mb-4"
+            className="w-32 md:w-32 h-auto rounded-lg shadow-sm float-right ml-6 mb-4"
           />
 
           <p className="leading-relaxed text-slate-700">
