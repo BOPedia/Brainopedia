@@ -21,7 +21,9 @@ export const learningDifferencesRoutes: RouteMap = {
   // ==========================================
   // DYSLEXIA - diagnosis 
   // ==========================================
-  'dyslexia-diagnosis': lazy(() => import('../dyslexia/dyslexia-diagnosis/DyslexiaDiagnosis').then(m => ({ default: m.DyslexiaDiagnosis }))),
+  'dyslexia-diagnosis-overview': lazy(() => import('../dyslexia/dyslexia-diagnosis/DiagnosisOverview').then(m => ({ default: m.DiagnosisOverview }))),
+  'dyslexia-diagnosis-ages': lazy(() => import('../dyslexia/dyslexia-diagnosis/DiagnosisAges').then(m => ({ default: m.DiagnosisAges }))),
+  'dyslexia-diagnosis-evaluation': lazy(() => import('../dyslexia/dyslexia-diagnosis/DiagnosisEvaluation').then(m => ({ default: m.DiagnosisEvaluation }))),
   
   // ==========================================
   // DYSLEXIA - living 
