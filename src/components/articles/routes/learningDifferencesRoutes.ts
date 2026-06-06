@@ -7,11 +7,26 @@ export const learningDifferencesRoutes: RouteMap = {
   // ==========================================
   'dyslexia': lazy(() => import('../ArticleDyslexia').then(m => ({ default: m.ArticleDyslexia }))),
   'dyslexia-overview': lazy(() => import('../dyslexia/DyslexiaOverview').then(m => ({ default: m.DyslexiaOverview }))),
+  // ==========================================
+  // DYSLEXIA - symptoms
+  // ==========================================
   'dyslexia-symptoms': lazy(() => import('../dyslexia/dyslexia-symptoms/DyslexiaSymptoms').then(m => ({ default: m.DyslexiaSymptoms }))),
-  'dyslexia-causes': lazy(() => import('../dyslexia/DyslexiaCauses').then(m => ({ default: m.DyslexiaCauses }))),
-  'dyslexia-diagnosis': lazy(() => import('../dyslexia/DyslexiaDiagnosis').then(m => ({ default: m.DyslexiaDiagnosis }))),
-  'dyslexia-support': lazy(() => import('../dyslexia/DyslexiaSupport').then(m => ({ default: m.DyslexiaSupport }))),
-  'dyslexia-living': lazy(() => import('../dyslexia/DyslexiaLiving').then(m => ({ default: m.DyslexiaLiving }))),
+  
+  // ==========================================
+  // DYSLEXIA - causes 
+  // ==========================================
+  'dyslexia-causes-brain': lazy(() => import('../dyslexia/dyslexia-causes/DyslexiaCausesBrain').then(m => ({ default: m.DyslexiaCausesBrain }))),
+  'dyslexia-causes-genetics': lazy(() => import('../dyslexia/dyslexia-causes/DyslexiaCausesGenetics').then(m => ({ default: m.DyslexiaCausesGenetics }))),
+  'dyslexia-causes-risk': lazy(() => import('../dyslexia/dyslexia-causes/DyslexiaCausesRisk').then(m => ({ default: m.DyslexiaCausesRisk }))),
+  // ==========================================
+  // DYSLEXIA - diagnosis 
+  // ==========================================
+  'dyslexia-diagnosis': lazy(() => import('../dyslexia/dyslexia-diagnosis/DyslexiaDiagnosis').then(m => ({ default: m.DyslexiaDiagnosis }))),
+  
+  // ==========================================
+  // DYSLEXIA - living 
+  // ==========================================
+  'dyslexia-living': lazy(() => import('../dyslexia/dyslexia-living/DyslexiaLiving').then(m => ({ default: m.DyslexiaLiving }))),
 
   // ==========================================
   // DYSCALCULIA
