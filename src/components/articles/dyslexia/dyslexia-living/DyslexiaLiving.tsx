@@ -1,8 +1,25 @@
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+
+// Simple ImageWithFallback used in this file
+function ImageWithFallback({ src, alt, className }: { src: string; alt: string; className?: string }) {
+  const [failed, setFailed] = useState(false);
+  const placeholder = 'https://via.placeholder.com/400x300?text=Image+not+available';
+  return (
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore allow string className
+    <img
+      src={failed ? placeholder : src}
+      alt={alt}
+      className={className}
+      onError={() => setFailed(true)}
+    />
+  );
+}
 
 interface DyslexiaLivingProps {
   setCurrentArticle?: (article: string) => void; // add the ?
+  initialTab?: string;
 }
 
 export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLivingProps) {
