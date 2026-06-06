@@ -334,17 +334,6 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             </p>
 
             <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2 mt-8">Moving Forward</h2>
-            
-            {/* YOUTUBE EMBED FLOATED TO THE RIGHT */}
-            <div className="w-full sm:w-64 float-none sm:float-right sm:ml-6 mb-4 mt-2 rounded-lg overflow-hidden shadow-md border border-gray-200">
-              <iframe
-                className="w-full aspect-video"
-                src="https://www.youtube.com/embed/11r7CFlK2sc"
-                title="Dyslexia Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
 
             <p className="leading-relaxed">
               Dyslexia is a well-researched, neurobiological condition that affects reading but does not limit potential. 
@@ -368,7 +357,16 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         </section>
 
       </div>
-
+            {/* YOUTUBE EMBED FLOATED TO THE RIGHT */}
+            <div className="w-full sm:w-64 float-none sm:float-right sm:ml-6 mb-4 mt-2 rounded-lg overflow-hidden shadow-md border border-gray-200">
+              <iframe
+                className="w-full aspect-video"
+                src="https://www.youtube.com/embed/11r7CFlK2sc"
+                title="Dyslexia Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
       {/* Bottom navigation button */}
       <div className="mt-16 mb-6 flex flex-col md:flex-row md:justify-end">
         <button 
