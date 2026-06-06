@@ -16,6 +16,7 @@ export const processingSensoryRoutes: RouteMap = {
   // ==========================================
   // VISUAL PROCESSING DISORDER
   // ==========================================
+  'visual-processing': lazy(() => import('../ArticleVisualProcessing').then(m => ({ default: m.ArticleVisualProcessing }))),
   'visual-processing-overview': lazy(() => import('../visual-processing/VPDOverview').then(m => ({ default: m.VPDOverview }))),
   'visual-processing-symptoms': lazy(() => import('../visual-processing/VPDSymptoms').then(m => ({ default: m.VPDSymptoms }))),
   'visual-processing-causes': lazy(() => import('../visual-processing/VPDCauses').then(m => ({ default: m.VPDCauses }))),
