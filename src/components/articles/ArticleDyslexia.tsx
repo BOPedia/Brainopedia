@@ -29,7 +29,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
       title: 'Causes & Origins',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('dyslexia-causes');
+        setCurrentArticle?.('dyslexia-causes-brain');
       }
     },
     { 
