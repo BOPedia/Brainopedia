@@ -18,7 +18,7 @@ export function DyslexiaSymptoms({ setCurrentArticle, initialTab }: DyslexiaSymp
       {/* Main Title & Desktop Back Button - NOT BOLD */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl font-spartan text-[#0c264d]">
-          Dyslexia: Symptoms & Signs
+          Dyslexia: Symptoms & Characteristics
         </h1>
 
         <button 

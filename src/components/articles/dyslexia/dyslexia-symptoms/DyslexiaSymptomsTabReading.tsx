@@ -13,7 +13,7 @@ export function DyslexiaSymptomsTabReading() {
       <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reading Difficulties</h3>
       
       <ImageWithFallback 
-        src="/images/dyslexia/YOUR-READING-CHALLENGES-IMAGE.png" 
+        src="/images/dyslexia/dyslexia-symptoms-reading-letters-air.png" 
         alt="Child struggling with reading"
         className="w-64 h-auto rounded-lg shadow-sm float-left mr-6 mb-4"
       />

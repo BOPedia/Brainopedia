@@ -10,7 +10,11 @@ export function DyslexiaSymptomsTabWriting() {
       <p className="mb-6 text-gray-700 leading-relaxed">
         Dyslexia often manifests in difficulties with writing and spelling, which can be immensely frustrating for individuals:<sup className="text-green-600 font-bold ml-0.5">1</sup>
       </p>
-
+      <ImageWithFallback 
+        src="/images/dyslexia/dyslexia-symptoms-writing-words.png" 
+        alt="Child struggling with reading"
+        className="w-64 h-auto rounded-lg shadow-sm float-left mr-6 mb-4"
+      />
       <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Spelling and Writing Difficulties</h3>
       <ul className="list-disc ml-6 mb-4 text-gray-700 space-y-2">
         <li><strong>Spelling:</strong> Severe and persistent spelling problems; inconsistent spelling of the same word.<sup className="text-green-600 font-bold ml-0.5">1</sup></li>

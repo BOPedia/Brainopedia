@@ -7,7 +7,7 @@ export function DyslexiaSymptomsTabCore() {
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl border-b border-[#ffd166] pb-2 inline-block">Core Symptoms of Dyslexia</h2>
       
       <ImageWithFallback 
-        src="/images/dyslexia/YOUR-CORE-SYMPTOMS-IMAGE.png" 
+        src="/images/dyslexia/dyslexia-symptoms-core-phonics.png" 
         alt="Early literacy and phonics"
         className="w-80 h-auto rounded-lg shadow-sm float-right ml-6 mb-4"
       />

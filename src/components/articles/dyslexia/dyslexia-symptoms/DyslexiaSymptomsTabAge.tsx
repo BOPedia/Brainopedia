@@ -9,7 +9,11 @@ export function DyslexiaSymptomsTabAge() {
       <p className="mb-6 text-gray-700 leading-relaxed">
         Dyslexia presents differently at various developmental stages, from early childhood to adulthood:<sup className="text-green-600 font-bold ml-0.5">1</sup>
       </p>
-
+      <ImageWithFallback 
+        src="/images/dyslexia/dyslexia-symptoms-age-boy-book-letters.png" 
+        alt="Child writing words"
+        className="w-64 h-auto rounded-lg shadow-sm float-left mr-6 mb-4"
+      />
       <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Early Signs (Preschool)</h3>
       <ul className="list-disc ml-6 mb-6 text-gray-700 space-y-2">
         <li>Late talking or slow vocabulary development.<sup className="text-green-600 font-bold ml-0.5">2</sup></li>
