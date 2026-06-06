@@ -57,9 +57,7 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
         </div>
-      </div>
 
-        <div className="w-full">
        {/* Right column - InfoBox */}
         <div className="w-full">
           <InfoBox
