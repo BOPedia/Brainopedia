@@ -210,4 +210,199 @@ export function DyslexiaCauses({ setCurrentArticle }: DyslexiaCausesProps) {
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <strong className="text-[#0c264d]">KIAA0319</strong>
-                <p className="text-sm mt-1">Plays role in neuronal migration; influences brain organization for reading.<sup className="text-green-600
+                <p className="text-sm mt-1">Plays role in neuronal migration; influences brain organization for reading.<sup className="text-green-600 font-bold ml-0.5">11</sup></p>
+              </div>
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <strong className="text-[#0c264d]">ROBO1</strong>
+                <p className="text-sm mt-1">Involved in axon guidance and brain connectivity.<sup className="text-green-600 font-bold ml-0.5">12</sup></p>
+              </div>
+            </div>
+            <p className="text-slate-700 italic text-sm mb-8">Additional genes: Many other genes have been implicated, including those affecting phonological processing and rapid naming.<sup className="text-green-600 font-bold ml-0.5">13</sup></p>
+
+            <h4 className="font-bold mb-3 text-[#0A9DC4] text-lg border-b border-gray-100 pb-2">Complex Genetic Architecture</h4>
+            <p className="mb-3 text-slate-700">Dyslexia's genetics are complex rather than straightforward:<sup className="text-green-600 font-bold ml-0.5">14</sup></p>
+            <ul className="list-disc ml-6 space-y-2 text-slate-700 mb-8">
+              <li><strong>Polygenic:</strong> Multiple genes contribute, each with small effects.</li>
+              <li><strong>Heterogeneity:</strong> Different genetic variations can lead to similar reading difficulties.</li>
+              <li><strong>Gene-environment interaction:</strong> Genetic risk interacts with environmental factors like instruction quality.<sup className="text-green-600 font-bold ml-0.5">15</sup></li>
+              <li><strong>Quantitative trait:</strong> Reading ability exists on a continuum; genes influence where individuals fall on this spectrum.<sup className="text-green-600 font-bold ml-0.5">16</sup></li>
+            </ul>
+
+            {/* GENETICS REFERENCES */}
+            <div className="mt-10 pt-6 border-t-2 border-gray-100">
+              <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4">Genetics References</h4>
+              <ol start={4} className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+                <li>Fisher, S. E., & DeFries, J. C. (2002). "Developmental dyslexia: Genetic dissection of a complex cognitive trait." <em>Nature Reviews Neuroscience</em>, 3(10), 767-780.</li>
+                <li>Pennington, B. F., & Lefly, D. L. (2001). "Early reading development in children at family risk for dyslexia." <em>Child Development</em>, 72(3), 816-833.</li>
+                <li>DeFries, J. C., & Alarcón, M. (1996). "Genetics of specific reading disability." <em>Mental Retardation and Developmental Disabilities Research Reviews</em>, 2(1), 39-47.</li>
+                <li>Byrne, B., Wadsworth, S., Corley, R., et al. (2005). "Longitudinal twin study of early literacy development: Preschool and kindergarten phases." <em>Scientific Studies of Reading</em>, 9(3), 219-235.</li>
+                <li>Scerri, T. S., & Schulte-Körne, G. (2010). "Genetics of developmental dyslexia." <em>European Child & Adolescent Psychiatry</em>, 19(3), 179-197.</li>
+                <li>Taipale, M., Kaminen, N., Nopola-Hemmi, J., et al. (2003). "A candidate gene for developmental dyslexia encodes a nuclear tetratricopeptide repeat domain protein dynamically regulated in brain." <em>Proceedings of the National Academy of Sciences</em>, 100(20), 11553-11558.</li>
+                <li>Meng, H., Smith, S. D., Hager, K., et al. (2005). "DCDC2 is associated with reading disability and modulates neuronal development in the brain." <em>Proceedings of the National Academy of Sciences</em>, 102(47), 17053-17058.</li>
+                <li>Paracchini, S., Steer, C. D., Buckingham, L. L., et al. (2008). "Association of the KIAA0319 dyslexia susceptibility gene with reading skills in the general population." <em>American Journal of Psychiatry</em>, 165(12), 1576-1584.</li>
+                <li>Hannula-Jouppi, K., Kaminen-Ahola, N., Taipale, M., et al. (2005). "The axon guidance receptor gene ROBO1 is a candidate gene for developmental dyslexia." <em>PLoS Genetics</em>, 1(4), e50.</li>
+                <li>Carrion-Castillo, A., Franke, B., & Fisher, S. E. (2013). "Molecular genetics of dyslexia: An overview." <em>Dyslexia</em>, 19(4), 214-240.</li>
+                <li>Galaburda, A. M., LoTurco, J., Ramus, F., Fitch, R. H., & Rosen, G. D. (2006). "From genes to behavior in developmental dyslexia." <em>Nature Neuroscience</em>, 9(10), 1213-1217.</li>
+                <li>Pennington, B. F., & Bishop, D. V. (2009). "Relations among speech, language, and reading disorders." <em>Annual Review of Psychology</em>, 60, 283-306.</li>
+                <li>Shaywitz, S. E., Escobar, M. D., Shaywitz, B. A., Fletcher, J. M., & Makuch, R. (1992). "Evidence that dyslexia may represent the lower tail of a normal distribution of reading ability." <em>New England Journal of Medicine</em>, 326(3), 145-150.</li>
+              </ol>
+            </div>
+          </div>
+        )}
+
+        {/* ========================================== */}
+        {/* TAB 3: RISK FACTORS                        */}
+        {/* ========================================== */}
+        {activeTab === 'risk' && (
+          <div className="animate-fadeIn">
+            <h3 className="text-2xl font-bold mt-2 mb-3 text-[#0c264d]">Environmental and Risk Factors</h3>
+            <p className="mb-6 text-slate-700">
+              While dyslexia is primarily neurobiological and genetic, environmental factors play a role:<sup className="text-green-600 font-bold ml-0.5">41</sup>
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h4 className="font-bold mb-2 text-[#0A9DC4] border-b border-gray-100 pb-1">Quality of Instruction</h4>
+                <ul className="list-disc ml-5 space-y-2 text-slate-700 text-sm">
+                  <li>Inadequate early reading instruction can exacerbate genetic risk.<sup className="text-green-600 font-bold ml-0.5">42</sup></li>
+                  <li>High-quality, explicit phonics instruction can partially compensate for phonological deficits.</li>
+                  <li>Early intervention can significantly improve outcomes.<sup className="text-green-600 font-bold ml-0.5">43</sup></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-bold mb-2 text-[#0A9DC4] border-b border-gray-100 pb-1">Language Environment</h4>
+                <ul className="list-disc ml-5 space-y-2 text-slate-700 text-sm">
+                  <li>Limited exposure to rich language and books in early childhood.</li>
+                  <li>Lack of phonological awareness activities (rhyming games, sound play).</li>
+                  <li>Socioeconomic factors affecting access to books and educational resources.<sup className="text-green-600 font-bold ml-0.5">44</sup></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-bold mb-2 text-[#0A9DC4] border-b border-gray-100 pb-1">Language Orthography</h4>
+                <ul className="list-disc ml-5 space-y-2 text-slate-700 text-sm">
+                  <li><strong>Deep vs. shallow orthographies:</strong> Dyslexia manifests differently across languages.<sup className="text-green-600 font-bold ml-0.5">45</sup></li>
+                  <li><strong>English complexity:</strong> English has particularly complex letter-sound rules, making it harder for individuals with dyslexia.<sup className="text-green-600 font-bold ml-0.5">46</sup></li>
+                  <li><strong>Transparent languages:</strong> Dyslexia in languages like Italian or Finnish may be less severe but still present.<sup className="text-green-600 font-bold ml-0.5">47</sup></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-bold mb-2 text-[#0A9DC4] border-b border-gray-100 pb-1">Prenatal and Perinatal Factors</h4>
+                <ul className="list-disc ml-5 space-y-2 text-slate-700 text-sm">
+                  <li>Some studies suggest associations with prenatal exposure to certain substances.<sup className="text-green-600 font-bold ml-0.5">48</sup></li>
+                  <li>Premature birth and low birth weight show modest associations.<sup className="text-green-600 font-bold ml-0.5">49</sup></li>
+                  <li className="italic">These factors likely interact with genetic vulnerabilities rather than causing dyslexia independently.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* MYTH BUSTING BOX */}
+            <div className="bg-red-50 border-2 border-red-200 rounded-lg p-6 mb-8">
+              <h3 className="text-xl font-bold mb-4 text-red-800 flex items-center gap-2">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                What Does NOT Cause Dyslexia
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex items-start gap-2">
+                  <span className="text-red-500 font-bold text-lg leading-none mt-0.5">✗</span>
+                  <p className="text-sm text-slate-800"><strong>Vision problems:</strong> Dyslexia is not caused by visual deficits or eye problems.<sup className="text-green-600 font-bold ml-0.5">32</sup></p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-red-500 font-bold text-lg leading-none mt-0.5">✗</span>
+                  <p className="text-sm text-slate-800"><strong>Seeing words backwards:</strong> This is not the cause; dyslexia is a language-based disorder.<sup className="text-green-600 font-bold ml-0.5">50</sup></p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-red-500 font-bold text-lg leading-none mt-0.5">✗</span>
+                  <p className="text-sm text-slate-800"><strong>Low intelligence:</strong> Dyslexia occurs across all intelligence levels.<sup className="text-green-600 font-bold ml-0.5">51</sup></p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-red-500 font-bold text-lg leading-none mt-0.5">✗</span>
+                  <p className="text-sm text-slate-800"><strong>Lack of effort:</strong> Dyslexia is neurological, not motivational.<sup className="text-green-600 font-bold ml-0.5">52</sup></p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-red-500 font-bold text-lg leading-none mt-0.5">✗</span>
+                  <p className="text-sm text-slate-800"><strong>Poor parenting/teaching:</strong> While instruction quality matters, it doesn't cause dyslexia.<sup className="text-green-600 font-bold ml-0.5">53</sup></p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-red-500 font-bold text-lg leading-none mt-0.5">✗</span>
+                  <p className="text-sm text-slate-800"><strong>Too much screen time:</strong> No evidence that technology causes dyslexia.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-6 mb-3 text-[#0c264d]">Integrative Understanding</h3>
+            <p className="mb-4 text-slate-700">The current scientific consensus views dyslexia as a multifactorial condition:<sup className="text-green-600 font-bold ml-0.5">54</sup></p>
+            <div className="bg-[#f0f9ff] p-5 rounded-lg border-l-4 border-[#0A9DC4] mb-8">
+              <h4 className="font-bold mb-2 text-[#0c264d]">Multiple Levels of Causation:</h4>
+              <ul className="list-disc ml-5 text-sm space-y-1 text-slate-700">
+                <li><strong>Genetic level:</strong> Multiple genes affecting brain development and function.</li>
+                <li><strong>Neurobiological level:</strong> Differences in brain structure, connectivity, and activation.</li>
+                <li><strong>Cognitive level:</strong> Phonological processing deficits as primary mechanism.</li>
+                <li><strong>Behavioral level:</strong> Reading, spelling, and writing difficulties.</li>
+                <li><strong>Environmental level:</strong> Instruction quality and language environment influence expression and severity.<sup className="text-green-600 font-bold ml-0.5">55</sup></li>
+              </ul>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 className="text-xl font-bold mb-3 text-[#0c264d] border-b border-gray-100 pb-2">Implications for Intervention</h3>
+                <p className="text-sm text-slate-700 mb-2">Understanding dyslexia's causes informs treatment:<sup className="text-green-600 font-bold ml-0.5">56</sup></p>
+                <ul className="list-disc ml-5 space-y-1 text-sm text-slate-700">
+                  <li>Targeted phonological training addresses core deficit.</li>
+                  <li>Early intervention can capitalize on brain plasticity.</li>
+                  <li>Explicit, systematic instruction compensates for inefficient neural processing.</li>
+                  <li>Accommodations recognize neurobiological basis and allow demonstration of knowledge.</li>
+                  <li>Understanding biological basis reduces stigma and blame.<sup className="text-green-600 font-bold ml-0.5">57</sup></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3 text-[#0c264d] border-b border-gray-100 pb-2">Ongoing Research</h3>
+                <p className="text-sm text-slate-700 mb-2">Dyslexia research continues to evolve:<sup className="text-green-600 font-bold ml-0.5">58</sup></p>
+                <ul className="list-disc ml-5 space-y-1 text-sm text-slate-700">
+                  <li>Identifying additional genetic variants and their functions.</li>
+                  <li>Understanding gene-environment interactions more precisely.</li>
+                  <li>Mapping neural networks involved in reading with greater detail.</li>
+                  <li>Investigating brain plasticity and response to intervention.</li>
+                  <li>Developing biomarkers for early identification.</li>
+                  <li>Understanding heterogeneity within dyslexia population.<sup className="text-green-600 font-bold ml-0.5">59</sup></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* RISK FACTORS REFERENCES */}
+            <div className="mt-10 pt-6 border-t-2 border-gray-100">
+              <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4">Risk Factors References</h4>
+              {/* Using list-none so we can explicitly match your master cross-reference numbers like [32] */}
+              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed">
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[32]</span><span>Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). "Specific reading disability (dyslexia): What have we learned in the past four decades?" <em>Journal of Child Psychology and Psychiatry</em>, 45(1), 2-40.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[41]</span><span>Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia: A meta-analysis and review." <em>Psychological Bulletin</em>, 142(5), 498-545.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[42]</span><span>Torgesen, J. K. (2004). "Lessons learned from research on interventions for students who have difficulty learning to read." In <em>The voice of evidence in reading research</em> (pp. 355-382). Paul H. Brookes.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[43]</span><span>Snowling, M. J., & Hulme, C. (2011). "Evidence‐based interventions for reading and language difficulties: Creating a virtuous circle." <em>British Journal of Educational Psychology</em>, 81(1), 1-23.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[44]</span><span>Noble, K. G., Wolmetz, M. E., Ochs, L. G., Farah, M. J., & McCandliss, B. D. (2006). "Brain–behavior relationships in reading acquisition are modulated by socioeconomic factors." <em>Developmental Science</em>, 9(6), 642-654.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[45]</span><span>Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages: A psycholinguistic grain size theory." <em>Psychological Bulletin</em>, 131(1), 3-29.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[46]</span><span>Share, D. L. (2008). "On the Anglocentricities of current reading research and practice: The perils of overreliance on an outlier orthography." <em>Psychological Bulletin</em>, 134(4), 584-615.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[47]</span><span>Paulesu, E., Démonet, J. F., Fazio, F., et al. (2001). "Dyslexia: Cultural diversity and biological unity." <em>Science</em>, 291(5511), 2165-2167.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[48]</span><span>Espy, K. A., Molfese, D. L., Molfese, V. J., & Modglin, A. (2004). "Development of auditory event-related potentials in young children and relations to word-level reading abilities at age 8 years." <em>Annals of Dyslexia</em>, 54(1), 9-38.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[49]</span><span>Litt, J., Taylor, H. G., Klein, N., & Hack, M. (2005). "Learning disabilities in children with very low birthweight: Prevalence, neuropsychological correlates, and educational interventions." <em>Journal of Learning Disabilities</em>, 38(2), 130-141.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[50]</span><span>Fischer, F. W., Liberman, I. Y., & Shankweiler, D. (1978). "Reading reversals and developmental dyslexia: A further study." <em>Cortex</em>, 14(4), 496-510.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[51]</span><span>Ferrer, E., Shaywitz, B. A., Holahan, J. M., Marchione, K., & Shaywitz, S. E. (2010). "Uncoupling of reading and IQ over time: Empirical evidence for a definition of dyslexia." <em>Psychological Science</em>, 21(1), 93-101.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[52]</span><span>Shaywitz, S. (2003). <em>Overcoming dyslexia</em>. Knopf.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[53]</span><span>Snowling, M. J., & Hulme, C. (2012). "Annual research review: The nature and classification of reading disorders–a commentary on proposals for DSM‐5." <em>Journal of Child Psychology and Psychiatry</em>, 53(5), 593-607.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[54]</span><span>Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2018). <em>Learning disabilities: From identification to intervention</em> (2nd ed.). Guilford Publications.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[55]</span><span>Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia: A meta-analysis and review." <em>Psychological Bulletin</em>, 142(5), 498-545.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[56]</span><span>Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <em>Science</em>, 325(5938), 280-283.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[57]</span><span>McNulty, M. A. (2003). "Dyslexia and the life course." <em>Journal of Learning Disabilities</em>, 36(4), 363-381.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[58]</span><span>Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <em>Annual Review of Clinical Psychology</em>, 11, 283-307.</span></li>
+                <li className="flex gap-2"><span className="font-bold min-w-[24px]">[59]</span><span>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>, 63, 427-452.</span></li>
+              </ul>
+            </div>
+          </div>
+        )}
+
+      </div>
+    </div>
+  );
+}
