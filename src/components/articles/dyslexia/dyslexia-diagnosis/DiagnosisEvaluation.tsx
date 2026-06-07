@@ -10,7 +10,7 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
       
       {/* Header and Back Button */}
       <div className="flex flex-col md:flex-row md:items-center justify-between border-b-2 border-[#0c264d] pb-4 mb-6 gap-4">
-        <h2 className="text-3xl font-spartan text-[#0c264d]">Diagnosis: Comprehensive Evaluation</h2>
+        <h2 className="text-3xl font-spartan text-[#0c264d]">Dyslexia: Diagnosis</h2>
         <button 
           onClick={() => setCurrentArticle?.('dyslexia')}
           className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-2 px-6 rounded-lg font-bold transition-colors duration-200 flex items-center gap-2"
