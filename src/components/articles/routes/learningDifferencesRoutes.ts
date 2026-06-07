@@ -36,7 +36,8 @@ export const learningDifferencesRoutes: RouteMap = {
   'dyslexia-support-interventions': lazy(() => import('../dyslexia/dyslexia-support/SupportInterventions').then(m => ({ default: m.SupportInterventions }))),
   'dyslexia-support-tutoring': lazy(() => import('../dyslexia/dyslexia-support/SupportTutoring').then(m => ({ default: m.SupportTutoring }))),
   'dyslexia-support-multisensory': lazy(() => import('../dyslexia/dyslexia-support/SupportMultisensory').then(m => ({ default: m.SupportMultisensory }))),
-  
+  'dyslexia-support-technology': lazy(() => import('../dyslexia/dyslexia-support/SupportTechnology').then(m => ({ default: m.SupportTechnology }))),
+
   // ==========================================
   // DYSCALCULIA
   // ==========================================
