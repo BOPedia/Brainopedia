@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface SymptomsStrengthsProps {
+interface DyslexiaSymptomsStrengthsProps {
   setCurrentArticle?: (article: string) => void;
 }
 
-export function SymptomsStrengths({ setCurrentArticle }: SymptomsStrengthsProps) {
+export function DyslexiaSymptomsStrengths({ setCurrentArticle }: DyslexiaSymptomsStrengthsProps) {
   return (
     <div className="bg-white rounded-lg border-2 border-[#2abcd4] p-6 mb-6">
       
