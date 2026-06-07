@@ -145,7 +145,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <button
             onClick={(e) => {
               e.preventDefault();
-              setCurrentArticle?.('dyslexia-symptoms');
+              setCurrentArticle?.('dyslexia-symptoms-tabcore');
             }}
             className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
           >
@@ -169,7 +169,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <button
             onClick={(e) => {
               e.preventDefault();
-              setCurrentArticle?.('dyslexia-causes');
+              setCurrentArticle?.('dyslexia-causes-brain');
             }}
             className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
           >
@@ -192,7 +192,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <button
             onClick={(e) => {
               e.preventDefault();
-              setCurrentArticle?.('dyslexia-diagnosis');
+              setCurrentArticle?.('dyslexia-diagnosis-overview');
             }}
             className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
           >
@@ -215,7 +215,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <button
             onClick={(e) => {
               e.preventDefault();
-              setCurrentArticle?.('dyslexia-support');
+              setCurrentArticle?.('dyslexia-support-overview');
             }}
             className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
           >
