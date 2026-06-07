@@ -21,7 +21,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
       title: 'Symptoms & Characteristics',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('dyslexia-symptoms-tabcore');
+        setCurrentArticle?.('dyslexia-symptoms-core');
       }
     },
     { 
