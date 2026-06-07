@@ -10,7 +10,7 @@ export const learningDifferencesRoutes: RouteMap = {
   // ==========================================
   // DYSLEXIA - symptoms
   // ==========================================
-  'dyslexia-symptoms-core': lazy(() => import('../dyslexia/dyslexia-symptoms/DyslexiaSymptomsCore').then(m => ({ default: m.SymptomsCore }))),
+  'dyslexia-symptoms-core': lazy(() => import('../dyslexia/dyslexia-symptoms/SymptomsCore').then(m => ({ default: m.SymptomsCore }))),
   'dyslexia-symptoms-impact': lazy(() => import('../dyslexia/dyslexia-symptoms/SymptomsImpact').then(m => ({ default: m.SymptomsImpact }))),
   'dyslexia-symptoms-strengths': lazy(() => import('../dyslexia/dyslexia-symptoms/SymptomsStrengths').then(m => ({ default: m.SymptomsStrengths }))),
   
