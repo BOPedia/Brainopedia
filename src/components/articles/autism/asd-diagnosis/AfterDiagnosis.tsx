@@ -268,9 +268,9 @@ export function AfterDiagnosis({ setCurrentArticle }: AfterDiagnosisProps) {
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+        <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
-          </h4>
+        </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
               Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.
