@@ -6,17 +6,6 @@ export function ADHDEpigenetics() {
   return (
     <div className="max-w-6xl mx-auto p-4">
       
-      {/* --- INLINE SUPERSCRIPT STYLING --- */}
-      <style>
-        {`
-          sup {
-            color: #10b981;
-            font-weight: bold;
-            margin-left: 2px;
-          }
-        `}
-      </style>
-
       {/* --- INTRO SECTION WITH FLOATING GRAPHIC --- */}
       <div className="bg-[#f0f9ff] p-8 rounded-xl text-[#0c264d] border border-[#0c264d]/5 mb-8 shadow-sm overflow-hidden">
         
