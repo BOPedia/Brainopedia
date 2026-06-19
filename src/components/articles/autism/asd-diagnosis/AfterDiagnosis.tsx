@@ -233,7 +233,7 @@ export function AfterDiagnosis({ setCurrentArticle }: AfterDiagnosisProps) {
         </p>
       </div>
 
-      {/* ===== REFERENCES SECTION ===== */}
+{/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
@@ -244,9 +244,26 @@ export function AfterDiagnosis({ setCurrentArticle }: AfterDiagnosisProps) {
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <p className="text-xs text-slate-600 italic pl-2">
-            No inline citations for this tab.
-          </p>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <li>
+              Reuben, C., & Elgaddal, N. (2024). "ADHD in Children Ages 5–17 Years: US, 2020–2022." <i>NCHS Data Brief</i>, No. 499.
+            </li>
+            <li>
+              Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>, 328, 115449.
+            </li>
+            <li>
+              American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).
+            </li>
+            <li>
+              Willcutt, E. G. (2012). "The prevalence of DSM-IV attention-deficit/hyperactivity disorder: a meta-analytic review." <i>Neurotherapeutics</i>, 9(3).
+            </li>
+            <li>
+              Song, P., et al. (2021). "The global prevalence of adult attention-deficit hyperactivity disorder: A systematic review and meta-analysis." <i>Journal of Global Health</i>, 11.
+            </li>
+            <li>
+              Larsson, H., et al. (2024). "The psychiatric comorbidity of ADHD." <i>Molecular Psychiatry</i>.
+            </li>
+          </ul>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
@@ -254,15 +271,15 @@ export function AfterDiagnosis({ setCurrentArticle }: AfterDiagnosisProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0"> 
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
             <li>
-              Kapp, S. K. (Ed.). (2020). <i>Autistic community and the neurodiversity movement: Stories from the frontline</i>. Palgrave Macmillan.
+              Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.
             </li>
             <li>
-              Pellicano, E., & den Houting, J. (2022). "Annual research review: Shifting from 'normal science' to neurodiversity in autism science." <i>Journal of Child Psychology and Psychiatry</i>, 63(4), 381-396.
+              National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH.
             </li>
             <li>
-              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.
+              Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.).
             </li>
           </ul>
         </div>
