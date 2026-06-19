@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { Microscope, Zap, Brain, ShieldAlert, Beaker, Leaf } from 'lucide-react';
 
 export function ADHDEpigenetics() {
