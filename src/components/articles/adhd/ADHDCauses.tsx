@@ -58,15 +58,18 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           </p>
         </div>
 
-        {/* References for Overview Tab */}
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner mt-8">
+        {/* ===== REFERENCES SECTION ===== */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
+          {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
-            <ol className="list-decimal pl-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
               <li>Thapar, A., & Cooper, M. (2016). "Attention deficit hyperactivity disorder." <em>Lancet</em>, 387(10024), 1240-1250.</li>
               <li>Faraone, S. V., et al. (2021). "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 128, 789-818.</li>
               <li>Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</li>
@@ -76,16 +79,17 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             </ol>
           </div>
           
+          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
               Background Sources
             </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-              <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</p>
-              <p>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press.</p>
-              <p>National Institute of Mental Health. (2023). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</p>
-              <p>Nigg, J. T., Sibley, M. H., Thapar, A., & Karalunas, S. L. (2020). "Development of ADHD: etiology, heterogeneity, and early life course." <em>Annual Review of Developmental Psychology</em>, 2, 559-583.</p>
-            </div>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</li>
+              <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press.</li>
+              <li>National Institute of Mental Health. (2023). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</li>
+              <li>Nigg, J. T., Sibley, M. H., Thapar, A., & Karalunas, S. L. (2020). "Development of ADHD: etiology, heterogeneity, and early life course." <em>Annual Review of Developmental Psychology</em>, 2, 559-583.</li>
+            </ul>
           </div>
         </div>
       </>
@@ -173,15 +177,18 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
         </p>
 
-        {/* References for Genetics Tab */}
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner mt-8">
+        {/* ===== REFERENCES SECTION ===== */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
+          {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
-            <ol className="list-decimal pl-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
               <li>Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</li>
               <li>Brikell, I., Kuja-Halkola, R., & Larsson, H. (2015). "Heritability of attention-deficit hyperactivity disorder in adults." <em>American Journal of Medical Genetics Part B: Neuropsychiatric Genetics</em>, 168(6), 406-413.</li>
               <li>Larsson, H., et al. (2014). "The heritability of clinically diagnosed attention deficit hyperactivity disorder across the lifespan." <em>Psychological Medicine</em>, 44(10), 2223-2229.</li>
@@ -199,17 +206,18 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             </ol>
           </div>
           
+          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
               Background Sources
             </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-              <p>Nikolas, M. A., & Burt, S. A. (2010). "Genetic and environmental influences on ADHD symptom dimensions of inattention and hyperactivity: a meta-analysis." <em>Journal of Abnormal Psychology</em>, 119(1), 1-17.</p>
-              <p>Franke, B., et al. (2012). "The genetics of attention deficit/hyperactivity disorder in adults, a review." <em>Molecular Psychiatry</em>, 17(10), 960-987.</p>
-              <p>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</p>
-              <p>Chang, Z., et al. (2013). "Developmental twin study of attention problems: high heritabilities throughout development." <em>JAMA Psychiatry</em>, 70(3), 311-318.</p>
-              <p>Kendler, K. S., et al. (2010). "The interaction of genetic and environmental risk factors for psychiatric disorders." <em>Annual Review of Clinical Psychology</em>, 6, 183-209.</p>
-            </div>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Nikolas, M. A., & Burt, S. A. (2010). "Genetic and environmental influences on ADHD symptom dimensions of inattention and hyperactivity: a meta-analysis." <em>Journal of Abnormal Psychology</em>, 119(1), 1-17.</li>
+              <li>Franke, B., et al. (2012). "The genetics of attention deficit/hyperactivity disorder in adults, a review." <em>Molecular Psychiatry</em>, 17(10), 960-987.</li>
+              <li>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</li>
+              <li>Chang, Z., et al. (2013). "Developmental twin study of attention problems: high heritabilities throughout development." <em>JAMA Psychiatry</em>, 70(3), 311-318.</li>
+              <li>Kendler, K. S., et al. (2010). "The interaction of genetic and environmental risk factors for psychiatric disorders." <em>Annual Review of Clinical Psychology</em>, 6, 183-209.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -301,15 +309,18 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           with and without ADHD at the individual level, despite clear group differences in research studies.
         </p>
 
-        {/* References for Brain Tab */}
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner mt-8">
+        {/* ===== REFERENCES SECTION ===== */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
+          {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
-            <ol className="list-decimal pl-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
               <li>Hoogman, M., Bralten, J., Hibar, D. P., Mennes, M., Zwiers, M. P., Schweren, L. S., ... & Franke, B. (2017). "Subcortical brain volume differences in participants with attention deficit hyperactivity disorder in children and adults: A cross-sectional mega-analysis." <em>The Lancet Psychiatry</em>, 4(4), 310-319.</li>
               <li>Hoogman, M., Muetzel, R., Guimaraes, J. P., Shumskaya, E., Mennes, M., Zwiers, M. P., ... & Franke, B. (2019). "Brain imaging of the cortex in ADHD: A coordinated analysis of large-scale clinical and population-based samples." <em>American Journal of Psychiatry</em>, 176(7), 531-542.</li>
               <li>Frodl, T., & Skokauskas, N. (2012). "Meta-analysis of structural MRI studies in children and adults with attention deficit hyperactivity disorder indicates treatment effects." <em>Acta Psychiatrica Scandinavica</em>, 125(2), 114-126.</li>
@@ -327,15 +338,16 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             </ol>
           </div>
           
+          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
               Background Sources
             </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-              <p>Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</p>
-              <p>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</p>
-              <p>Rubia, K. (2018). "Cognitive neuroscience of attention deficit hyperactivity disorder (ADHD) and its clinical translation." <em>Frontiers in Human Neuroscience</em>, 12, 100.</p>
-            </div>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</li>
+              <li>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</li>
+              <li>Rubia, K. (2018). "Cognitive neuroscience of attention deficit hyperactivity disorder (ADHD) and its clinical translation." <em>Frontiers in Human Neuroscience</em>, 12, 100.</li>
+            </ul>
           </div>
         </div>
       </div>
