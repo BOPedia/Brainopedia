@@ -308,6 +308,31 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           is not currently used for clinical diagnosis of ADHD, as there is too much overlap between individuals 
           with and without ADHD at the individual level, despite clear group differences in research studies.
         </p>
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
+        <p className="mb-4">
+          While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
+          interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
+          both genetic and environmental contributions is essential for a complete picture of ADHD's origins. 
+          This interplay between nature and nurture helps explain why not everyone with genetic risk factors 
+          develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
+        </p>
+
+        {/* --- ADD THIS DEEP DIVE CALLOUT --- */}
+        <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm">
+          <h3 className="text-[#0c264d] font-bold mb-2 flex items-center gap-2 text-lg">
+            <span className="text-xl">🧬</span> Deep Dive: Epigenetics & ADHD
+          </h3>
+          <p className="mb-4 text-sm text-slate-700">
+            Want to understand the molecular bridge? Explore how environmental factors like stress, nutrition, and toxins can physically alter gene expression without changing underlying DNA.
+          </p>
+          <button
+            onClick={() => setCurrentArticle?.('adhd-epigenetics')}
+            className="inline-flex items-center gap-2 bg-white border-2 border-[#ffd166] hover:bg-[#ffd166] text-[#0c264d] font-bold py-2 px-4 rounded-md transition-colors duration-200"
+          >
+            Explore ADHD Epigenetics →
+          </button>
+        </div>
+        {/* --- END DEEP DIVE CALLOUT --- */}
 
         {/* ===== REFERENCES SECTION ===== */}
         <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
