@@ -177,11 +177,30 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
         </p>
 
+        {/* --- ADD THIS DEEP DIVE CALLOUT --- */}
+        <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm">
+          <h3 className="text-[#0c264d] font-bold mb-2 flex items-center gap-2 text-lg">
+            <span className="text-xl">🧬</span> Deep Dive: Epigenetics & ADHD
+          </h3>
+          <p className="mb-4 text-sm text-slate-700">
+            Want to understand the molecular bridge? Explore how environmental factors like stress, nutrition, and toxins can physically alter gene expression without changing underlying DNA.
+          </p>
+          <button
+            onClick={() => setCurrentArticle?.('adhdepigenetics')}
+            className="inline-flex items-center gap-2 bg-white border-2 border-[#ffd166] hover:bg-[#ffd166] text-[#0c264d] font-bold py-2 px-4 rounded-md transition-colors duration-200"
+          >
+            Explore ADHD Epigenetics →
+          </button>
+        </div>
+        {/* --- END DEEP DIVE CALLOUT --- */}
+
+
         {/* ===== REFERENCES SECTION ===== */}
         <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
         
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+    
           
           {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
@@ -316,23 +335,6 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           This interplay between nature and nurture helps explain why not everyone with genetic risk factors 
           develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
         </p>
-
-        {/* --- ADD THIS DEEP DIVE CALLOUT --- */}
-        <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm">
-          <h3 className="text-[#0c264d] font-bold mb-2 flex items-center gap-2 text-lg">
-            <span className="text-xl">🧬</span> Deep Dive: Epigenetics & ADHD
-          </h3>
-          <p className="mb-4 text-sm text-slate-700">
-            Want to understand the molecular bridge? Explore how environmental factors like stress, nutrition, and toxins can physically alter gene expression without changing underlying DNA.
-          </p>
-          <button
-            onClick={() => setCurrentArticle?.('adhd-epigenetics')}
-            className="inline-flex items-center gap-2 bg-white border-2 border-[#ffd166] hover:bg-[#ffd166] text-[#0c264d] font-bold py-2 px-4 rounded-md transition-colors duration-200"
-          >
-            Explore ADHD Epigenetics →
-          </button>
-        </div>
-        {/* --- END DEEP DIVE CALLOUT --- */}
 
         {/* ===== REFERENCES SECTION ===== */}
         <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
