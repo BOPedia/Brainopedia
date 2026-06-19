@@ -98,13 +98,7 @@ export function ADHDEpigenetics() {
         </div>
       </div>
 
-      {/* --- GRAPHIC / DEEP DIVE PLACEHOLDER --- */}
-      <div className="my-8">
-        <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4 font-spartan">
-          Featured Resource: How Environment Shapes the Brain
-        </h4>
-        
-{/* --- EPIGENETICS VIDEO EMBED --- */}
+      {/* --- EPIGENETICS VIDEO EMBED --- */}
       <div className="my-8 flex flex-col items-center">
         <div className="w-full">
           <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4 font-spartan">
@@ -129,7 +123,7 @@ export function ADHDEpigenetics() {
           </p>
         </div>
       </div>
-      
+
       {/* --- FUTURE HORIZONS --- */}
       <div className="bg-[#ffffff] bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-[#ffd166] mb-10 shadow-sm">
         <h3 className="font-bold mb-3 text-xl font-spartan flex items-center gap-2 text-[#0c264d]">
