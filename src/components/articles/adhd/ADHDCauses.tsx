@@ -186,7 +186,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             Want to understand the molecular bridge? Explore how environmental factors like stress, nutrition, and toxins can physically alter gene expression without changing underlying DNA.
           </p>
           <button
-            onClick={() => setCurrentArticle?.('adhdepigenetics')}
+            onClick={() => setCurrentArticle?.('adhd-epigenetics')}
             className="inline-flex items-center gap-2 bg-white border-2 border-[#ffd166] hover:bg-[#ffd166] text-[#0c264d] font-bold py-2 px-4 rounded-md transition-colors duration-200"
           >
             Explore ADHD Epigenetics →
