@@ -30,7 +30,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <h2 className="text-[#0c264d] font-bold text-2xl border-b pb-2">What is ADHD?</h2>
           
           {/* Floated graphic: Must be placed BEFORE the text that wraps around it */}
-          <div className="w-32 float-right ml-6 mb-4 rounded-lg shadow-sm overflow-hidden mt-1">
+          <div className="w-64 float-right ml-6 mb-4 rounded-lg shadow-sm overflow-hidden mt-1">
             <video 
               autoPlay 
               loop 
