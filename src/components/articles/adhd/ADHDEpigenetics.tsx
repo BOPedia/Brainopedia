@@ -107,7 +107,7 @@ export function ADHDEpigenetics() {
         </div>
         
         {/* Sized to exactly w-96, centered, and locked to 16:9 ratio */}
-        <div className="relative w-96 aspect-video overflow-hidden rounded-lg shadow-inner border border-[#0c264d] border-opacity-10 bg-slate-50">
+        <div className="relative w-150 aspect-video overflow-hidden rounded-lg shadow-inner border border-[#0c264d] border-opacity-10 bg-slate-50">
           <iframe 
             className="absolute top-0 left-0 w-full h-full rounded-lg"
             src="https://www.youtube.com/embed/g12kIu9jrIk?rel=0" 
