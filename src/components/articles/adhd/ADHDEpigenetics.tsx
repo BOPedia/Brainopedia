@@ -16,7 +16,7 @@ export function ADHDEpigenetics() {
           </p>
           <div className="mx-auto border border-[#0c264d]/10 rounded-lg shadow-sm bg-white p-1">
             <ImageWithFallback 
-              src="/images/adhd/adhd-epigenetics-main-placeholder.png" 
+              src="/images/adhd/adhd-epigenetics-main-brain-dna.png" 
               alt="Epigenetic mechanisms in ADHD"
               className="w-full h-auto rounded-md"
             />
@@ -104,23 +104,32 @@ export function ADHDEpigenetics() {
           Featured Resource: How Environment Shapes the Brain
         </h4>
         
-        {/* Placeholder for future video or large graphic */}
-        <div className="relative w-full overflow-hidden pt-[56.25%] rounded-lg shadow-inner border border-[#0c264d] border-opacity-10 bg-slate-50 flex items-center justify-center">
-          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-slate-400">
-            <ImageWithFallback 
-              src="/images/adhd/adhd-epigenetics-video-placeholder.png" 
-              alt="Video or Graphic Placeholder"
-              className="max-w-[150px] opacity-50 mb-4"
-            />
-            <p className="font-spartan font-medium">[ Future Video or Infographic Embed Here ]</p>
-          </div>
+{/* --- EPIGENETICS VIDEO EMBED --- */}
+      <div className="my-8 flex flex-col items-center">
+        <div className="w-full">
+          <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4 font-spartan">
+            Featured Resource: How Environment Shapes the Brain
+          </h4>
         </div>
         
-        <p className="mt-3 text-xs text-slate-600 leading-relaxed ml-1">
-          <strong>Visualizing the Data:</strong> Understanding the physical changes that occur at the molecular level when genetic risk meets environmental exposure.
-        </p>
+        {/* Sized to exactly w-96, centered, and locked to 16:9 ratio */}
+        <div className="relative w-96 aspect-video overflow-hidden rounded-lg shadow-inner border border-[#0c264d] border-opacity-10 bg-slate-50">
+          <iframe 
+            className="absolute top-0 left-0 w-full h-full rounded-lg"
+            src="https://www.youtube.com/embed/g12kIu9jrIk?rel=0" 
+            title="Epigenetics: How Environment Shapes the Brain"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen
+          ></iframe>
+        </div>
+        
+        <div className="w-full mt-3">
+          <p className="text-xs text-slate-600 leading-relaxed ml-1">
+            <strong>Video:</strong> Understanding the physical changes that occur at the molecular level when genetic risk meets environmental exposure.
+          </p>
+        </div>
       </div>
-
+      
       {/* --- FUTURE HORIZONS --- */}
       <div className="bg-[#ffffff] bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-[#ffd166] mb-10 shadow-sm">
         <h3 className="font-bold mb-3 text-xl font-spartan flex items-center gap-2 text-[#0c264d]">
