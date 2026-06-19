@@ -370,8 +370,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           All About ADHD
         </button>
       </div>
-
-      {/* ===== REFERENCES SECTION ===== */}
+{/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
@@ -382,12 +381,12 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             Cited Studies & Statistics
           </h4>
           <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>Reuben, C., & Elgaddal, N. (2024). "ADHD in Children Ages 5–17 Years: US, 2020–2022." <i>NCHS Data Brief</i>, No. 499.</li>
-            <li>Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>, 328, 115449.</li>
-            <li>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</li>
-            <li>Willcutt, E. G. (2012). "The prevalence of DSM-IV attention-deficit/hyperactivity disorder: a meta-analytic review." <i>Neurotherapeutics</i>, 9(3).</li>
-            <li>Song, P., et al. (2021). "The global prevalence of adult attention-deficit hyperactivity disorder: A systematic review and meta-analysis." <i>Journal of Global Health</i>, 11.</li>
-            <li>Larsson, H., et al. (2024). "The psychiatric comorbidity of ADHD." <i>Molecular Psychiatry</i>.</li>
+            <li className="pl-6 -indent-6">Reuben, C., & Elgaddal, N. (2024). "ADHD in Children Ages 5–17 Years: US, 2020–2022." <i>NCHS Data Brief</i>, No. 499.</li>
+            <li className="pl-6 -indent-6">Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>, 328, 115449.</li>
+            <li className="pl-6 -indent-6">American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</li>
+            <li className="pl-6 -indent-6">Willcutt, E. G. (2012). "The prevalence of DSM-IV attention-deficit/hyperactivity disorder: a meta-analytic review." <i>Neurotherapeutics</i>, 9(3).</li>
+            <li className="pl-6 -indent-6">Song, P., et al. (2021). "The global prevalence of adult attention-deficit hyperactivity disorder: A systematic review and meta-analysis." <i>Journal of Global Health</i>, 11.</li>
+            <li className="pl-6 -indent-6">Larsson, H., et al. (2024). "The psychiatric comorbidity of ADHD." <i>Molecular Psychiatry</i>.</li>
           </ol>
         </div>
         
@@ -396,9 +395,9 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
-            <li>Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.</li>
-            <li>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH.</li>
-            <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.).</li>
+            <li className="pl-6 -indent-6">Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.</li>
+            <li className="pl-6 -indent-6">National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH.</li>
+            <li className="pl-6 -indent-6">Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.).</li>
           </ul>
         </div>
       </div>
