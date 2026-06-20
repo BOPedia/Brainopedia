@@ -44,7 +44,7 @@ const tabs = [
       
       {/* Title and Button Header Area */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 border-b-2 border-[#0c264d] pb-2 mt-4">
-        <h1 className="text-3xl text-[#0c264d] font-bold font-spartan">
+        <h1 className="text-3xl text-[#0c264d] font-spartan">
           Autism: Causes & Origins
         </h1>
         <BackButton />
