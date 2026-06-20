@@ -9,14 +9,14 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
   return (
     
     <article className="max-w-6xl">
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex items-center justify-between">
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6 border-b-2 border-[#0c264d] pb-2">
         <h1 className="text-3xl">
           Autism: Overview
         </h1>
 
         <button 
           onClick={() => setCurrentArticle?.('autism')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap shrink-0"
         >
           <span className="text-xl">←</span>
           All About Autism
