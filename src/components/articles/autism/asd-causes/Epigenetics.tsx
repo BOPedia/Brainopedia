@@ -2,11 +2,13 @@ import React from 'react';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 import { Microscope, Zap, Brain, ShieldAlert, Beaker, Leaf } from 'lucide-react';
 
-export function Epigenetics() {
-  function setCurrentArticle(arg0: string): void {
-    throw new Error('Function not implemented.');
-  }
+// 1. Define the props so TypeScript knows what setCurrentArticle is
+interface EpigeneticsProps {
+  setCurrentArticle?: (article: string) => void;
+}
 
+// 2. Pass it into the component here
+export function Epigenetics({ setCurrentArticle }: EpigeneticsProps) {
   return (
     <div className="max-w-6xl mx-auto p-4">
       {/* --- INTRO SECTION WITH FLOATING GRAPHIC --- */}
