@@ -135,7 +135,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
                   State-by-State EI Eligibility Map
                 </a>
                 <p className="mt-1 text-slate-600 leading-relaxed">
-                  A highly useful visual graphic (originally sourced from Georgetown University) that illustrates how Early Intervention eligibility criteria vary dramatically across different US states.
+                  A visual graphic (originally sourced from Georgetown University) that illustrates how Early Intervention eligibility criteria vary dramatically across different US states.
                 </p>
               </div>
             </li>

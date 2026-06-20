@@ -15,18 +15,15 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar, onSearchSel
 
   const filteredResults = searchQuery.trim().length > 0
     ? (() => {
-        // Reduced word length filter to 2 so acronyms like "IQ" or "ED" still work
         const queryWords = searchQuery.toLowerCase().split(/\s+/).filter(word => word.length >= 2);
         if (queryWords.length === 0) return [];
         return searchableArticles.filter(article => {
           const searchText = (article.label + ' ' + article.keywords).toLowerCase();
-          // CHANGED: Use every() instead of some() so results must match ALL typed words
           return queryWords.every(word => searchText.includes(word));
         });
       })()
     : [];
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
@@ -54,24 +51,32 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar, onSearchSel
 
   return (
     <header className="bg-[#0c264d] text-white sticky top-0 z-50 shadow-md w-full">
-      <div className="flex items-center gap-4 px-4 md:px-6 py-2 w-full max-w-full">
-        <button
-          onClick={toggleSidebar}
-          className="xl:hidden p-2 hover:bg-white/10 rounded-md transition-colors"
-          aria-label="Toggle menu"
-        >
-          <Menu className="w-5 h-5" />
-        </button>
+      {/* CHANGED: flex-col on mobile, flex-row on desktop (md:) */}
+      <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 px-4 md:px-6 py-3 w-full max-w-full">
         
-        <div className="flex items-center gap-3">
-          <img src="/images/brainopedia-logo.png" alt="Brainopedia Logo" className="w-18 h-18 object-contain" />
-          <div>
-            <h1 className="text-[#f4f4f4] text-2xl font-bold" style={{ fontFamily: 'Avenir, Nunito, sans-serif', fontWeight: 800 }}>Brainopedia</h1>
-            <p className="text-sm text-[#ffd166] opacity-90">Your encyclopedic platform about neurodivergent minds.</p>
+        {/* Top Row for Mobile: Menu + Branding */}
+        <div className="flex items-center w-full md:w-auto">
+          <button
+            onClick={toggleSidebar}
+            className="xl:hidden p-2 -ml-2 mr-2 hover:bg-white/10 rounded-md transition-colors"
+            aria-label="Toggle menu"
+          >
+            <Menu className="w-6 h-6" />
+          </button>
+          
+          <div className="flex items-center gap-2 md:gap-3">
+            {/* Logo scales down on mobile */}
+            <img src="/images/brainopedia-logo.png" alt="Brainopedia Logo" className="w-10 h-10 md:w-16 md:h-16 object-contain" />
+            <div>
+              <h1 className="text-[#f4f4f4] text-xl md:text-2xl font-bold" style={{ fontFamily: 'Avenir, Nunito, sans-serif', fontWeight: 800 }}>Brainopedia</h1>
+              {/* Subtitle hidden on mobile, visible on desktop */}
+              <p className="hidden md:block text-sm text-[#ffd166] opacity-90">Your encyclopedic platform about neurodivergent minds.</p>
+            </div>
           </div>
         </div>
         
-        <div className="flex-1 max-w-md ml-auto" ref={searchRef}>
+        {/* Search Bar: Full width on mobile, flex-1 on desktop */}
+        <div className="w-full md:flex-1 md:max-w-md md:ml-auto" ref={searchRef}>
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
             <input
@@ -109,7 +114,6 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar, onSearchSel
                       {article.label.includes('\u2192') ? (
                         <span>
                           <span className="text-[#2abcd4] font-medium">{article.label.split('\u2192')[0].trim()}</span>
-                          {/* CHANGED: Swapped the raw unicode text for a clean visual arrow */}
                           <span className="text-gray-400 mx-2">→</span>
                           <span className="text-gray-700">{article.label.split('\u2192')[1].trim()}</span>
                         </span>
