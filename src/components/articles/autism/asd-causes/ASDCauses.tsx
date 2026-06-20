@@ -21,8 +21,7 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
   };
-
-  const tabs = [
+const tabs = [
     { id: 'environmental', label: 'Environmental Factors' },
     { id: 'brain', label: 'Brain Development' },
     { id: 'myths', label: 'Myths & Misconceptions' },
@@ -33,7 +32,7 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
   const BackButton = () => (
     <button 
       onClick={() => setCurrentArticle?.('autism')}
-      className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-8 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+      className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-8 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap shrink-0"
     >
       <span className="text-xl">←</span>
       All About Autism
@@ -41,17 +40,13 @@ export function ASDCauses({ setCurrentArticle, initialTab }: ASDCausesProps) {
   );
 
   return (
-    <article className="max-w-6xl">
-      <style>
-        {`sup { color: #10b981; }`}
-      </style>
+    <article className="max-w-6xl mx-auto">
       
-      {/* --- PAGE HEADER SECTION --- */}
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <h1 className="text-3xl">
-          Autism: Causes & Risk Factors
+      {/* Title and Button Header Area */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 border-b-2 border-[#0c264d] pb-2 mt-4">
+        <h1 className="text-3xl text-[#0c264d] font-bold font-spartan">
+          Autism: Causes & Origins
         </h1>
-
         <BackButton />
       </div>
 
