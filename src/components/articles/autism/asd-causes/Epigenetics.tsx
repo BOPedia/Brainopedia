@@ -3,6 +3,10 @@ import { ImageWithFallback } from '../../../../components/figma/ImageWithFallbac
 import { Microscope, Zap, Brain, ShieldAlert, Beaker, Leaf } from 'lucide-react';
 
 export function Epigenetics() {
+  function setCurrentArticle(arg0: string): void {
+    throw new Error('Function not implemented.');
+  }
+
   return (
     <div className="max-w-6xl mx-auto p-4">
       {/* --- INTRO SECTION WITH FLOATING GRAPHIC --- */}
@@ -124,7 +128,17 @@ export function Epigenetics() {
           Researchers are identifying epigenetic signatures in peripheral blood that mirror brain tissue patterns, offering a pathway to non-invasive early diagnosis. Additionally, the development of <strong>"Epidrugs"</strong> — pharmacological agents designed to modify aberrant methylation patterns — represents a growing frontier in symptom-targeted treatment<sup className="text-green-700 font-bold ml-0.5 cursor-help" title="Gholamalizadeh et al. (2024)">2</sup>.
         </p>
       </div>
-
+   
+      {/* Bottom back button: Simplified for cleaner exit */}
+      <div className="flex justify-end mt-12 mb-6">
+        <button 
+          onClick={() => setCurrentArticle?.('autism')}
+          className="bg-[#ffd166] text-[#0c264d] px-5 py-2.5 rounded-lg font-normal text-sm shadow-sm hover:bg-[#0c264d] hover:text-white transition-all flex items-center gap-2 font-spartan whitespace-nowrap shrink-0"
+        >
+          <span className="text-lg">←</span>All About Autism
+        </button>
+      </div>
+ 
       {/* --- REFERENCES SECTION --- */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
 
