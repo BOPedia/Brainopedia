@@ -109,7 +109,7 @@ export function DiagnosticProcess({ setCurrentArticle }: DiagnosticProcessProps)
           <div className="flex-1">
             <div className="bg-[#d1fae5] border-2 border-[#10b981] rounded-lg p-4 h-full">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-10 h-10 rounded-full bg-[#10b981] text-white flex items-center justify-center font-bold text-lg shrink-0">13</div>
+                <div className="w-10 h-10 rounded-full bg-[#10b981] text-white flex items-center justify-center font-bold text-lg shrink-0">3</div>
                 <div className="font-bold text-[#0c264d]">Comprehensive Diagnostic Evaluation</div>
               </div>
               <div className="text-sm space-y-1">
