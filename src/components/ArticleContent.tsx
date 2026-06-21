@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 
 // 1. Import from the articles/routes folder
 import { RouteMap } from './articles/routes/routeTypes';
@@ -9,6 +9,30 @@ import { movementMotorRoutes } from './articles/routes/movementMotorRoutes';
 import { mentalHealthRoutes } from './articles/routes/mentalHealthRoutes';
 import { geneticEnvironmentalRoutes } from './articles/routes/geneticEnvironmentalRoutes';
 import { acquiredNeurodivergenceRoutes } from './articles/routes/acquiredNeurodivergenceRoutes';
+
+// --- THE DELAYED LOADER ---
+// A smart loader that waits 250ms before showing up!
+const DelayedFallback = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    // Start a 250ms stopwatch
+    const timer = setTimeout(() => setShow(true), 250);
+    // If the page loads before 250ms, cancel the stopwatch
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Show absolutely nothing for the first fraction of a second
+  if (!show) return null; 
+
+  // If we are still waiting, show a clean, subtle spinner
+  return (
+    <div className="flex justify-center items-center py-20 opacity-0 animate-fadeIn">
+      <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#0c264d]"></div>
+      <span className="ml-3 text-[#0c264d] font-spartan font-medium">Loading volume...</span>
+    </div>
+  );
+};
 
 // 2. The Master Map
 const articleMap: RouteMap = {
@@ -22,8 +46,7 @@ const articleMap: RouteMap = {
   ...acquiredNeurodivergenceRoutes,
 
   // --- Misc & Site Pages ---
-  // --- Misc & Site Pages ---
-'home': lazy(() => import('./articles/Home').then(m => ({ default: m.Home }))),
+  'home': lazy(() => import('./articles/Home').then(m => ({ default: m.Home }))),
   'symptom-wheel-demo': lazy(() => import('./SymptomWheelDemo').then(m => ({ default: m.SymptomWheelDemo }))),
   'project-standards': lazy(() => import('./articles/ProjectStandards')),
   'about': lazy(() => import('./articles/ArticleAbout').then(m => ({ default: m.ArticleAbout }))),
@@ -63,12 +86,8 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
   // IF THE LINK IS GOOD
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
-      <Suspense fallback={
-        <div className="flex flex-col items-center justify-center py-20">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-900"></div>
-          <p className="mt-4 text-blue-900 font-medium">Loading content...</p>
-        </div>
-      }>
+      {/* CHANGED: Replaced the hardcoded div with our smart DelayedFallback */}
+      <Suspense fallback={<DelayedFallback />}>
         <SelectedComponent setCurrentArticle={setCurrentArticle} />
       </Suspense>
     </div>
