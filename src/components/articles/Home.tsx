@@ -134,7 +134,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
             <img src="/images/home-acquired-brain.png" alt="Injury" className="w-28 sm:w-32 shrink-0 h-auto rounded-lg shadow-md" />
             <div className="flex-1 w-full text-center sm:text-left">
               <h3 className="text-[#0c264d] text-xl font-bold mb-2">Acquired Neurodivergence</h3>
-              <p className="mb-4 text-base leading-relaxed">Differences developing after birth due to injury, illness, or environmental factors.</p>
+              <p className="mb-4 text-base leading-relaxed">Neurological differences that can develop at any point across the lifespan due to injury, illness, or environmental factors.</p>
               <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
                 {['tbi', 'cte', 'pandas'].map(id => (
                   <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-2 bg-white border-2 border-[#ffcc00] rounded-full text-sm hover:bg-[#ffcc00] hover:text-[#0c264d] transition-all font-bold uppercase">
