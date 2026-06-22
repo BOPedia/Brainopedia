@@ -30,7 +30,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
         {/* Introduction */}
         <section className="max-w-3xl">
           <p className="text-lg leading-relaxed text-[#0c264d]">
-            Explore our comprehensive volumes of neurodivergent conditions shown below in seven clusters dictinctly named. 
+            Explore our comprehensive volumes of neurodivergent conditions shown below in seven clusters distinctly named. 
             Select a category below to begin your journey through the encyclopedia of the mind.
           </p>
         </section>
