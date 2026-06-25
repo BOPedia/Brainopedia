@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, ResponsiveContainer, Tooltip } from 'recharts';
 import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
@@ -24,187 +24,263 @@ interface AdditionalCharacteristicsProps {
 
 /* ─── MAIN COMPONENT ─── */
 export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalCharacteristicsProps) {
+  // State to track which accordion dropdown is open
+  const [expandedSection, setExpandedSection] = useState<string | null>(null);
+
+  const toggleSection = (section: string) => {
+    if (expandedSection === section) {
+      setExpandedSection(null);
+    } else {
+      setExpandedSection(section);
+    }
+  };
+
   return (
-    
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
-      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Additional Common Characteristics</h2>
+      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Spectrum Profile Characteristics</h2>
       <div className="space-y-6">
         
-{/* THE FIX: Swapped to static PNG and locked width to w-48 on all screens */}
+        {/* Intro Graphic */}
         <img 
           src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png" 
           alt="Rainbow circle graphic showing additional autistic characteristics"
           className="block mx-auto mb-6 w-48 h-auto rounded-xl shadow-md border-4 border-[#ffd166] object-contain"
         />
 
-        {/* Centered this text to match the centered graphic beautifully! */}
         <p className="mb-8 text-center leading-relaxed text-[#0c264d] max-w-2xl mx-auto">
-          While not part of the core diagnostic criteria, many autistic individuals share additional characteristics:
+          Autism is a highly dimensional spectrum. Rather than a linear scale from "mild" to "severe," 
+          individuals experience a unique combination of characteristics across various categories:
         </p>
 
-        {/* Executive Function Differences */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Executive Function Differences</h3>
-          <p className="mb-4 text-sm">
-            Challenges in planning, organization, cognitive flexibility, working memory, and initiation.<sup>1</sup>
+        {/* MOVED TO TOP: Static Symptom Wheel Image */}
+        <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-8">
+          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Symptom Profile Wheel</h3>
+          <p className="mb-4 text-sm text-slate-700">
+            Before diving into the specific traits below, here is a visual example of how an individual's symptom profile might look. Each slice represents a distinct characteristic category scored on a spectrum.
           </p>
-          
-          <div className="space-y-3">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Planning and Organization</div>
-                <div className="text-sm">Difficulty planning multi-step tasks, organizing materials, or managing time</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Cognitive Flexibility</div>
-                <div className="text-sm">Challenges with shifting attention, adapting to changes, or seeing alternative perspectives</div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Working Memory</div>
-                <div className="text-sm">Difficulty holding and manipulating information in mind</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Initiation</div>
-                <div className="text-sm">Trouble starting tasks, especially open-ended or ambiguous ones</div>
-              </div>
-            </div>
-          </div>
+          <ImageWithFallback 
+            src="/images/autism/autism-symptoms-AddChartab-numberswheel.png" 
+            alt="Symptom profile wheel showing various trait scores"
+            className="w-full max-w-md mx-auto mt-4 rounded shadow-sm"
+          />
         </div>
 
-        {/* Language and Communication Patterns */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Language and Communication Patterns</h3>
-          <p className="mb-4 text-sm">
-            Challenges in literal interpretation, pragmatic language, monologuing, prosody, and echolalia.
-          </p>
+        {/* ========================================= */}
+        {/*           ACCORDION DROPDOWNS             */}
+        {/* ========================================= */}
+
+        {/* 1. Communication & Social Issues */}
+        <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
+          <button 
+            onClick={() => toggleSection('communication')}
+            className="w-full p-5 flex justify-between items-center text-left hover:bg-slate-50 transition-colors"
+          >
+            <h3 className="text-[#0c264d] font-bold text-lg m-0">Communication & Social Issues</h3>
+            <svg className={`w-6 h-6 text-[#0c264d] transform transition-transform duration-200 ${expandedSection === 'communication' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
           
-          <div className="space-y-3">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Literal Interpretation</div>
-                <div className="text-sm">Taking language literally, missing sarcasm, idioms, or implied meaning</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Pragmatic Language</div>
-                <div className="text-sm">Difficulty with the social use of language—knowing what to say when, to whom, and how</div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Monologuing</div>
-                <div className="text-sm">Speaking at length about special interests without recognizing listener engagement</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Prosody Differences</div>
-                <div className="text-sm">Unusual rhythm, pitch, or intonation; may sound flat, robotic, or overly formal</div>
+          {expandedSection === 'communication' && (
+            <div className="px-5 pb-5 pt-2 border-t border-gray-50">
+              <p className="mb-4 text-sm text-slate-700">Differences in pragmatic language, social interaction, and conversational patterns.</p>
+              <div className="space-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Communication</div>
+                    <div className="text-sm">Challenges with the social use of language, literal interpretation, taking turns, or unusual prosody (robotic or flat tone).</div>
+                  </div>
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Social Issues</div>
+                    <div className="text-sm">Difficulty navigating neurotypical social norms, making small talk, or experiencing "social hangover" from masking.</div>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            <div className="grid grid-cols-1 gap-4 mt-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Echolalia</div>
-                <div className="text-sm">Repeating heard words or phrases, which can be immediate or delayed</div>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
 
-        {/* Emotional Regulation and Processing */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Emotional Regulation and Processing</h3>
-          <p className="mb-4 text-sm">
-            Challenges in emotional intensity, alexithymia, meltdowns, and shutdowns.
-          </p>
+        {/* 2. Behavior, Routines & Interests */}
+        <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
+          <button 
+            onClick={() => toggleSection('behavior')}
+            className="w-full p-5 flex justify-between items-center text-left hover:bg-slate-50 transition-colors"
+          >
+            <h3 className="text-[#0c264d] font-bold text-lg m-0">Behavior, Routines & Interests</h3>
+            <svg className={`w-6 h-6 text-[#0c264d] transform transition-transform duration-200 ${expandedSection === 'behavior' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
           
-          <div className="space-y-3">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Emotional Intensity</div>
-                <div className="text-sm">Experiencing emotions very intensely</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Alexithymia</div>
-                <div className="text-sm">Difficulty identifying and describing one's own emotions (common in ~50% of autistic people)<sup>2</sup></div>
+          {expandedSection === 'behavior' && (
+            <div className="px-5 pb-5 pt-2 border-t border-gray-50">
+              <p className="mb-4 text-sm text-slate-700">Intense passions, systemic thinking, and a strong preference for predictability.</p>
+              <div className="space-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Restricted Interests</div>
+                    <div className="text-sm">Deep, highly focused passions for specific topics. Often leads to "monologuing" or vast expertise in niche subjects.</div>
+                  </div>
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Need for Routine</div>
+                    <div className="text-sm">A strong reliance on predictable schedules. Sudden transitions, unexpected plans, or disrupted routines can cause significant distress.</div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 gap-4 mt-4">
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Stimming (Self-Stimulatory Behavior)</div>
+                    <div className="text-sm">Repetitive physical movements or vocalizations (like hand-flapping, rocking, or repeating phrases) used to self-regulate, focus, or express joy.</div>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Meltdowns</div>
-                <div className="text-sm">Overwhelming emotional responses when capacity is exceeded, different from tantrums</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Shutdowns</div>
-                <div className="text-sm">Withdrawing and becoming nonverbal or nonresponsive when overwhelmed</div>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
 
-        {/* Motor Skills and Coordination */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Motor Skills and Coordination</h3>
-          <p className="mb-4 text-sm">
-            Challenges in motor coordination, motor planning, and unusual gait or movements.<sup>3</sup>
-          </p>
+        {/* 3. Sensory Processing */}
+        <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
+          <button 
+            onClick={() => toggleSection('sensory')}
+            className="w-full p-5 flex justify-between items-center text-left hover:bg-slate-50 transition-colors"
+          >
+            <h3 className="text-[#0c264d] font-bold text-lg m-0">Sensory Processing</h3>
+            <svg className={`w-6 h-6 text-[#0c264d] transform transition-transform duration-200 ${expandedSection === 'sensory' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
           
-          <div className="space-y-3">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Motor Coordination</div>
-                <div className="text-sm">Challenges with gross or fine motor skills, handwriting, or coordination</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Motor Planning</div>
-                <div className="text-sm">Difficulty planning and executing physical movements (dyspraxia is common)</div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Unusual Gait or Movements</div>
-                <div className="text-sm">Walking on toes, unusual postures, or movement patterns</div>
+          {expandedSection === 'sensory' && (
+            <div className="px-5 pb-5 pt-2 border-t border-gray-50">
+              <p className="mb-4 text-sm text-slate-700">Atypical ways of interpreting environmental inputs like sound, light, and touch.</p>
+              <div className="space-y-3">
+                <div className="grid grid-cols-1 gap-4">
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Sensory Processing Differences</div>
+                    <div className="text-sm">Can manifest as <strong>hyper-reactivity</strong> (becoming overwhelmed by bright lights, loud noises, or specific textures) or <strong>hypo-reactivity</strong> (seeking out intense sensory input like deep pressure or loud music).</div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
 
-        {/* Understanding Individual Profiles */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm">
+        {/* 4. Executive Function Differences */}
+        <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
+          <button 
+            onClick={() => toggleSection('exec')}
+            className="w-full p-5 flex justify-between items-center text-left hover:bg-slate-50 transition-colors"
+          >
+            <h3 className="text-[#0c264d] font-bold text-lg m-0">Executive Function Differences</h3>
+            <svg className={`w-6 h-6 text-[#0c264d] transform transition-transform duration-200 ${expandedSection === 'exec' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          {expandedSection === 'exec' && (
+            <div className="px-5 pb-5 pt-2 border-t border-gray-50">
+              <p className="mb-4 text-sm text-slate-700">Challenges in cognitive management and self-regulation.<sup>1</sup></p>
+              <div className="space-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Executive Function</div>
+                    <div className="text-sm">Difficulty planning multi-step tasks, holding working memory, organizing materials, or initiating open-ended tasks.</div>
+                  </div>
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Cognitive Flexibility</div>
+                    <div className="text-sm">Challenges with shifting attention between tasks, adapting to sudden changes, or seeing alternative perspectives.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* 5. Emotional Regulation & Mental Health */}
+        <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
+          <button 
+            onClick={() => toggleSection('emotional')}
+            className="w-full p-5 flex justify-between items-center text-left hover:bg-slate-50 transition-colors"
+          >
+            <h3 className="text-[#0c264d] font-bold text-lg m-0">Emotional Regulation & Mental Health</h3>
+            <svg className={`w-6 h-6 text-[#0c264d] transform transition-transform duration-200 ${expandedSection === 'emotional' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          {expandedSection === 'emotional' && (
+            <div className="px-5 pb-5 pt-2 border-t border-gray-50">
+              <p className="mb-4 text-sm text-slate-700">How emotions are processed, recognized, and physically experienced.</p>
+              <div className="space-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Dysregulation</div>
+                    <div className="text-sm">Experiencing emotions with extreme intensity, which can lead to involuntary meltdowns or non-responsive shutdowns when capacity is exceeded.</div>
+                  </div>
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Anxiety</div>
+                    <div className="text-sm">Highly prevalent in the autistic community, often stemming from sensory overload or the constant pressure to mask neurodivergent traits.</div>
+                  </div>
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Depression</div>
+                    <div className="text-sm">Frequently co-occurs, sometimes due to autistic burnout, social isolation, or navigating an inaccessible world.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* 6. Motor Skills & Posture */}
+        <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
+          <button 
+            onClick={() => toggleSection('motor')}
+            className="w-full p-5 flex justify-between items-center text-left hover:bg-slate-50 transition-colors"
+          >
+            <h3 className="text-[#0c264d] font-bold text-lg m-0">Motor Skills & Posture</h3>
+            <svg className={`w-6 h-6 text-[#0c264d] transform transition-transform duration-200 ${expandedSection === 'motor' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          {expandedSection === 'motor' && (
+            <div className="px-5 pb-5 pt-2 border-t border-gray-50">
+              <p className="mb-4 text-sm text-slate-700">Challenges related to the physical body and spatial coordination.<sup>3</sup></p>
+              <div className="space-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Motor Skills</div>
+                    <div className="text-sm">Challenges with gross motor (clumsiness, balance) or fine motor skills (handwriting, tying shoes). Dyspraxia is a common co-occurrence.</div>
+                  </div>
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Posture Issues</div>
+                    <div className="text-sm">Low muscle tone, unusual gait, or atypical postures (such as sitting positions or walking on toes).</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* ========================================= */}
+        {/*        INTERACTIVE CHART SECTION          */}
+        {/* ========================================= */}
+
+        <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mt-8">
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Understanding Individual Profiles</h3>
-          <p className="mb-4 text-sm">
-            Each autistic person has a unique profile of characteristics, and these can vary significantly in intensity. 
-            These visual representations show how different characteristics can be rated on a scale from 0 to 10, 
-            where 0 indicates the characteristic is not present or causes no difficulty, and 10 represents the maximum 
-            level of impact or challenge. This personalized approach helps in understanding individual support needs 
-            and recognizing the tremendous diversity within the autism spectrum.
-          </p>
-        </div>
-
-        {/* Interactive Symptom Profile Chart */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mt-6">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Interactive Symptom Profile Chart</h3>
-          
-          <p className="mb-4 text-sm">
-            Below is an interactive visual example of one individual's symptom profile. Each person's chart will 
-            look different, reflecting their unique combination of characteristics and support needs.
+          <p className="mb-4 text-sm text-slate-700">
+            Each autistic person has a unique profile. The chart below shows how different characteristics can be rated on a scale from 0 to 10, 
+            where 0 indicates the characteristic is not present, and 10 represents the maximum level of impact. 
           </p>
 
           <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
-            <p className="text-sm mb-2">
-              <strong>How to Read This Chart:</strong>
+            <p className="text-sm mb-2 text-[#0c264d]">
+              <strong>How to Read This Interactive Chart:</strong>
             </p>
-            <ul className="text-sm space-y-1">
+            <ul className="text-sm space-y-1 text-slate-800">
               <li>• <strong>Center (0):</strong> The characteristic is not present or causes no difficulty</li>
-              <li>• <strong>Outer edge (10):</strong> Maximum level of impact or challenge in that area</li>
-              <li>• <strong>Each spoke:</strong> Represents a different symptom category (12 total)</li>
-              <li>• <strong>The colored area:</strong> Shows an example individual's profile across all categories</li>
-              <li>• <strong>Hover over the chart:</strong> See exact values for each category</li>
-              <li>• <strong>Different patterns:</strong> Everyone's chart looks different—no two autistic people have the same profile!</li>
+              <li>• <strong>Outer edge (10):</strong> Maximum level of impact or challenge</li>
+              <li>• <strong>Hover over the chart:</strong> See exact values for each of the 12 categories</li>
+              <li>• <strong>Different patterns:</strong> No two autistic people have the same profile!</li>
             </ul>
           </div>
 
@@ -248,31 +324,12 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
           </div>
 
           <div className="bg-[#f0f9ff] p-4 rounded mt-6">
-            <p className="text-sm">
-              <strong>Why This Matters:</strong> Understanding that autism presents differently in every individual 
-              helps clinicians, educators, and families provide personalized support. This chart format is commonly 
-              used by professionals to visualize assessment results and track changes over time. The example shown 
-              demonstrates how one person might have significant sensory processing challenges (9/10) while having 
-              minimal posture issues (3/10)—highlighting the heterogeneity of the autism spectrum.
+            <p className="text-sm text-slate-700">
+              <strong>Why This Matters:</strong> This format is used by professionals to visualize assessment results and track changes over time. The example shown demonstrates how a person might have significant sensory processing challenges (9/10) while having minimal posture issues (3/10)—highlighting the heterogeneity of the spectrum.
             </p>
           </div>
         </div>
 
-        {/* Static Symptom Wheel Image */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mt-6">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Symptom Profile Wheel</h3>
-          <p className="mb-4 text-sm">
-            Here is another visual example of how an individual's symptom profile might look across different 
-            characteristic categories.
-          </p>
-
-          {/* Numbers Wheel Image Placement */}
-          <ImageWithFallback 
-            src="/images/autism/autism-symptoms-AddChartab-numberswheel.png" 
-            alt="Symptom profile wheel showing various trait scores"
-            className="w-full max-w-md mx-auto mt-4 rounded shadow-sm"
-          />
-        </div>
       </div>
       
       {/* ===== REFERENCES SECTION ===== */}
