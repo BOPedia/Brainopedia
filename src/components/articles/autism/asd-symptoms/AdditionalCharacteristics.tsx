@@ -30,14 +30,14 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Additional Common Characteristics</h2>
       <div className="space-y-6">
         
-        {/* Native video tag replaces ImageWithFallback, retaining all positioning classes */}
+        {/* THE FIX: Enlarge to w-56/md:w-72. Center on mobile. Float right on desktop. */}
         <video 
           autoPlay 
           loop 
           muted 
           playsInline
           poster="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png"
-          className="w-20 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300 object-contain"
+          className="float-none md:float-right block mx-auto md:ml-8 mb-6 w-56 md:w-72 h-auto rounded-xl shadow-md border border-gray-200 object-contain"
           aria-label="Rainbow circle graphic showing additional autistic characteristics"
         >
           <source 
@@ -47,13 +47,15 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
           Your browser does not support the video tag.
         </video>
 
-        <p className="mb-6">
+        <p className="mb-6 leading-relaxed text-[#0c264d]">
           While not part of the core diagnostic criteria, many autistic individuals share additional characteristics:
         </p>
-        <div className="clear-both"></div>
+        
+        {/* Note: I removed the <div className="clear-both"></div> that was here so your boxes below will naturally wrap around the left side of the moving graphic on a desktop! */}
 
         {/* Executive Function Differences */}
         <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Executive Function Differences</h3>
           <p className="mb-4 text-sm">
             Challenges in planning, organization, cognitive flexibility, working memory, and initiation.<sup>1</sup>
