@@ -13,14 +13,14 @@ export function SocialCommunication({ setCurrentArticle }: SocialCommunicationPr
       <div className="bg-[#f0f9ff] p-4 sm:p-8 rounded-lg">
         <h2 className="text-[#0c264d] font-bold mb-8 text-2xl sm:text-3xl text-center">Social Communication & Interaction</h2>
 
-        {/* --- NEW VIDEO ADDED AND CENTERED --- */}
+{/* --- NEW VIDEO ADDED AND CENTERED --- */}
         <video 
           autoPlay 
           loop 
           muted 
           playsInline
           poster="/images/autism/autism-symptoms-SCtab-social-video.png"
-          className="block mx-auto mb-8 w-full max-w-lg h-auto rounded-xl shadow-lg border-4 border-[#2abcd4] object-cover"
+          className="block mx-auto mb-8 w-56 sm:w-64 h-auto rounded-xl shadow-lg border-4 border-[#2abcd4] object-cover"
           aria-label="Three people sitting on a bench interacting"
         >
           <source 
