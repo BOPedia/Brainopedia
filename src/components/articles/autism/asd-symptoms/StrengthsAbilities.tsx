@@ -125,7 +125,7 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
         </div>
 
         <p className="mb-8 text-center text-lg text-[#0c264d] max-w-2xl mx-auto">
-          While autism is often framed exclusively through a medical lens of deficits, 
+          While autism is often framed exclusively through a lens of deficits, 
           many autistic individuals possess profound and notable strengths:
         </p>
 
