@@ -37,10 +37,15 @@ export function RepetitiveBehaviors() {
            Your browser does not support the video tag.
          </video>
         </div>
-        {/* THE FIX: Tucked the caption into the same container with a tight mt-2 */}
-        <p className="mt-2 text-sm italic text-[#0c264d]/70 max-w-sm mx-auto">
-          Visualizing the symmetry and consistency often found in repetitive patterns.
-        </p>
+        {/* THE FIX: Expanded segue caption */}
+        <div className="mt-4 max-w-2xl mx-auto">
+          <p className="text-sm italic text-[#0c264d]/70 mb-3">
+            Visualizing the symmetry and consistency often found in repetitive patterns.
+          </p>
+          <p className="text-base text-[#0c264d] leading-relaxed">
+            While these behaviors are often clinically categorized as "restricted" or "repetitive," they frequently serve as essential tools for emotional regulation, deep focus, and joyful expression. Let's explore the four primary ways these behaviors naturally present across the spectrum:
+          </p>
+        </div>
       </div>
 
       {/* 2. STEREOTYPED OR REPETITIVE MOVEMENTS */}
@@ -52,6 +57,18 @@ export function RepetitiveBehaviors() {
           <h3 className="text-[#0c264d] font-bold text-lg leading-tight">
             Stereotyped or Repetitive Movements, Speech, or Object Use
           </h3>
+        </div>
+
+        {/* GRAPHIC PLACEHOLDER 1 */}
+        <div className="mb-6 mt-4">
+          <ImageWithFallback
+            src="/images/autism/autism-symptoms-Reptab-movements.png
+            alt="Placeholder for stereotyped movements graphic"
+            className="block mx-auto w-40 h-auto rounded-lg shadow-sm border-2 border-[#2abcd4] object-contain mb-3 bg-slate-50"
+          />
+          <p className="text-center text-xs italic text-slate-600 max-w-sm mx-auto">
+            Stimming can include physical movements or vocalizations that actively help regulate the nervous system.
+          </p>
         </div>
         
         <p className="mb-6 text-[#0c264d]">
@@ -99,6 +116,18 @@ export function RepetitiveBehaviors() {
           </h3>
         </div>
 
+        {/* GRAPHIC PLACEHOLDER 2 */}
+        <div className="mb-6 mt-4">
+          <ImageWithFallback
+            src="/images/autism/autism-symptoms-Reptab-sameness.png"
+            alt="Placeholder for sameness and routines graphic"
+            className="block mx-auto w-40 h-auto rounded-lg shadow-sm border-2 border-[#2abcd4] object-contain mb-3 bg-slate-50"
+          />
+          <p className="text-center text-xs italic text-slate-600 max-w-sm mx-auto">
+            Predictability provides a strong sense of safety and reduces cognitive load in an unpredictable world.
+          </p>
+        </div>
+
         <p className="mb-4 text-sm text-[#0c264d]">
           Many autistic individuals find comfort and security in predictability and sameness.
         </p>
@@ -126,6 +155,18 @@ export function RepetitiveBehaviors() {
           </h3>
         </div>
 
+        {/* GRAPHIC PLACEHOLDER 3 */}
+        <div className="mb-6 mt-4">
+          <ImageWithFallback
+            src="/images/autism/autism-symptoms-Reptab-interests.png"
+            alt="Placeholder for fixated interests graphic"
+            className="block mx-auto w-40 h-auto rounded-lg shadow-sm border-2 border-[#2abcd4] object-contain mb-3 bg-slate-50"
+          />
+          <p className="text-center text-xs italic text-slate-600 max-w-sm mx-auto">
+            Deep, specialized interests often lead to profound expertise, flow states, and immense personal joy.
+          </p>
+        </div>
+
         <p className="mb-4 text-sm text-[#0c264d]">
           Special interests are a hallmark feature of autism and can be a source of joy, expertise, and identity.
         </p>
@@ -151,6 +192,18 @@ export function RepetitiveBehaviors() {
           <h3 className="text-[#0c264d] font-bold text-lg leading-tight">
             Hyper- or Hyporeactivity to Sensory Input<sup className="text-green-600 font-bold ml-0.5">2</sup>
           </h3>
+        </div>
+
+        {/* GRAPHIC PLACEHOLDER 4 */}
+        <div className="mb-6 mt-4">
+          <ImageWithFallback
+            src="/images/autism/autism-symptoms-Reptab-sensory.png"
+            alt="Placeholder for sensory reactivity graphic"
+            className="block mx-auto w-40 h-auto rounded-lg shadow-sm border-2 border-[#2abcd4] object-contain mb-3 bg-slate-50"
+          />
+          <p className="text-center text-xs italic text-slate-600 max-w-sm mx-auto">
+            Sensory processing differences mean the environment is often experienced with unique and powerful intensity.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
