@@ -62,7 +62,7 @@ export function RepetitiveBehaviors() {
         {/* GRAPHIC PLACEHOLDER 1 */}
         <div className="mb-6 mt-4">
           <ImageWithFallback
-            src="/images/autism/autism-symptoms-Reptab-movements.png
+            src="/images/autism/autism-symptoms-Reptab-movements.png"
             alt="Placeholder for stereotyped movements graphic"
             className="block mx-auto w-40 h-auto rounded-lg shadow-sm border-2 border-[#2abcd4] object-contain mb-3 bg-slate-50"
           />
