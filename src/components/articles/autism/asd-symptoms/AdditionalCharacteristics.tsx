@@ -30,22 +30,12 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Additional Common Characteristics</h2>
       <div className="space-y-6">
         
-        {/* THE FIX: Removed float entirely, centered on all screens, and reduced max size to w-60 */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          poster="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png"
-          className="block mx-auto mb-6 w-48 md:w-60 h-auto rounded-xl shadow-md border-4 border-[#ffd166] object-contain"
-          aria-label="Rainbow circle graphic showing additional autistic characteristics"
-        >
-          <source 
-            src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.mp4" 
-            type="video/mp4" 
-          />
-          Your browser does not support the video tag.
-        </video>
+{/* THE FIX: Swapped to static PNG and locked width to w-48 on all screens */}
+        <img 
+          src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png" 
+          alt="Rainbow circle graphic showing additional autistic characteristics"
+          className="block mx-auto mb-6 w-48 h-auto rounded-xl shadow-md border-4 border-[#ffd166] object-contain"
+        />
 
         {/* Centered this text to match the centered graphic beautifully! */}
         <p className="mb-8 text-center leading-relaxed text-[#0c264d] max-w-2xl mx-auto">
