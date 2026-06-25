@@ -1,4 +1,5 @@
-import { ImageWithFallback } from '../../../figma/ImageWithFallback';
+import React from 'react';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
 
 /* ─── THE GUEST LIST (Interface) ─── */
 interface SocialCommunicationProps {
@@ -8,118 +9,133 @@ interface SocialCommunicationProps {
 /* ─── MAIN COMPONENT ─── */
 export function SocialCommunication({ setCurrentArticle }: SocialCommunicationProps) {
   return (
-    
     <div className="space-y-6">
-      <div className="bg-[#f0f9ff] p-6 rounded-lg">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Social Communication and Interaction Differences</h2>
+      <div className="bg-[#f0f9ff] p-4 sm:p-8 rounded-lg">
+        <h2 className="text-[#0c264d] font-bold mb-8 text-2xl sm:text-3xl text-center">Social Communication & Interaction</h2>
 
-        <ImageWithFallback
-          src="/images/autism/autism-symptoms-SCtab-2facingfaces.png"
-          alt="Two faces facing each other representing social communication"
-          className="w-48 h-auto float-left mr-6 mb-4 rounded-md border border-gray-300"
-        />
+        {/* --- NEW VIDEO ADDED AND CENTERED --- */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          poster="/images/autism/autism-symptoms-SCtab-social-video.png"
+          className="block mx-auto mb-8 w-full max-w-lg h-auto rounded-xl shadow-lg border-4 border-[#2abcd4] object-cover"
+          aria-label="Three people sitting on a bench interacting"
+        >
+          <source 
+            src="/images/autism/autism-symptoms-SCtab-social-video.mp4" 
+            type="video/mp4" 
+          />
+          Your browser does not support the video tag.
+        </video>
 
-        <p className="mb-6">
+        <p className="mb-10 text-center leading-relaxed text-[#0c264d] text-lg max-w-3xl mx-auto">
           Autistic individuals experience persistent differences across social-emotional reciprocity, nonverbal 
           communication, and developing and maintaining relationships. These differences are present 
           from early childhood and affect functioning across contexts.
         </p>
-        <div className="clear-both"></div>
 
-        {/* Social-Emotional Reciprocity */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Social-Emotional Reciprocity</h3>
-          <p className="mb-4 text-sm">
+        {/* --- SECTION 1: Social-Emotional Reciprocity --- */}
+        <div className="bg-white p-6 rounded-xl border-t-4 border-[#0c264d] shadow-sm mb-10">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-xl text-center sm:text-left">Social-Emotional Reciprocity</h3>
+          <p className="mb-6 text-sm text-slate-700 text-center sm:text-left">
             Social-emotional reciprocity refers to the back-and-forth flow of social interaction. Autistic people may experience challenges with:
           </p>
           
-          <div className="space-y-3">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Conversation Flow</div>
-                <div className="text-sm">Difficulty with turn-taking in conversation, knowing when to speak or listen, or maintaining topic relevance</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Sharing Interests</div>
-                <div className="text-sm">Limited sharing of interests, emotions, or achievements with others</div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-[#f8fafc] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#2abcd4]">
+              <div className="font-bold text-[#0c264d] mb-2">Conversation Flow</div>
+              <div className="text-sm text-slate-600">Difficulty with turn-taking in conversation, knowing when to speak or listen, or maintaining topic relevance.</div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Emotional Expression</div>
-                <div className="text-sm">Differences in expressing or responding to emotions; may have difficulty reading others' emotional states</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Social Initiation</div>
-                <div className="text-sm">Reduced initiation of social interactions; may appear uninterested in others or prefer solitary activities</div>
-              </div>
+            <div className="bg-[#f8fafc] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#2abcd4]">
+              <div className="font-bold text-[#0c264d] mb-2">Sharing Interests</div>
+              <div className="text-sm text-slate-600">Limited sharing of interests, emotions, or achievements with others in standard conversational formats.</div>
             </div>
             
-            <div className="grid grid-cols-1 gap-4 mt-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Response to Social Approaches</div>
-                <div className="text-sm">Unusual responses when others initiate interaction; may not respond to their name, ignore social bids, or respond in unexpected ways</div>
-              </div>
+            <div className="bg-[#f8fafc] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#2abcd4]">
+              <div className="font-bold text-[#0c264d] mb-2">Emotional Expression</div>
+              <div className="text-sm text-slate-600">Differences in expressing or responding to emotions; may have difficulty intuitively reading others' emotional states.</div>
+            </div>
+            
+            <div className="bg-[#f8fafc] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#2abcd4]">
+              <div className="font-bold text-[#0c264d] mb-2">Social Initiation</div>
+              <div className="text-sm text-slate-600">Reduced initiation of neurotypical social interactions; may appear uninterested in others or prefer solitary activities.</div>
+            </div>
+            
+            <div className="bg-[#f8fafc] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#2abcd4] md:col-span-2">
+              <div className="font-bold text-[#0c264d] mb-2">Response to Social Approaches</div>
+              <div className="text-sm text-slate-600">Unusual responses when others initiate interaction; may not respond to their name, ignore social bids, or respond in unexpected ways.</div>
             </div>
           </div>
         </div>
 
-        {/* Nonverbal Communication */}
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Nonverbal Communication Differences</h3>
-          <p className="mb-4 text-sm">
+        {/* --- EXISTING GRAPHIC CENTERED HERE --- */}
+        <div className="my-10">
+          <ImageWithFallback
+            src="/images/autism/autism-symptoms-SCtab-2facingfaces.png"
+            alt="Two faces facing each other representing social communication"
+            className="block mx-auto w-48 h-auto rounded-full shadow-md border-4 border-[#ffd166] object-contain"
+          />
+        </div>
+
+        {/* --- SECTION 2: Nonverbal Communication --- */}
+        <div className="bg-white p-6 rounded-xl border-t-4 border-[#0c264d] shadow-sm mb-10">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-xl text-center sm:text-left">Nonverbal Communication Differences</h3>
+          <p className="mb-6 text-sm text-slate-700 text-center sm:text-left">
             Nonverbal communication includes all the unspoken aspects of interaction—body language, facial expressions, eye contact, and gestures.
           </p>
           
-          <div className="space-y-3">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Eye Contact Differences</div>
-                <div className="text-sm">Reduced, fleeting, or atypical eye contact; some find eye contact uncomfortable or overwhelming</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Facial Expression</div>
-                <div className="text-sm">Limited facial expressions or expressions that don't match internal emotions</div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-[#fdfbf7] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#ffd166]">
+              <div className="font-bold text-[#0c264d] mb-2">Eye Contact Differences</div>
+              <div className="text-sm text-slate-600">Reduced, fleeting, or atypical eye contact; some find eye contact intensely uncomfortable or overwhelming.</div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Body Language</div>
-                <div className="text-sm">Unusual body postures, limited use of gestures, or difficulty interpreting others' body language</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Gesture Use</div>
-                <div className="text-sm">Reduced pointing, showing, or other communicative gestures</div>
-              </div>
+            <div className="bg-[#fdfbf7] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#ffd166]">
+              <div className="font-bold text-[#0c264d] mb-2">Facial Expression</div>
+              <div className="text-sm text-slate-600">Limited facial expressions or utilizing expressions that don't traditionally match internal emotions.</div>
             </div>
             
-            <div className="grid grid-cols-1 gap-4 mt-4">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Integration</div>
-                <div className="text-sm">Difficulty integrating verbal and nonverbal communication—what they say may not match their facial expression or tone</div>
-              </div>
+            <div className="bg-[#fdfbf7] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#ffd166]">
+              <div className="font-bold text-[#0c264d] mb-2">Body Language</div>
+              <div className="text-sm text-slate-600">Unusual body postures, limited use of gestures, or difficulty naturally interpreting others' body language.</div>
+            </div>
+            
+            <div className="bg-[#fdfbf7] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#ffd166]">
+              <div className="font-bold text-[#0c264d] mb-2">Gesture Use</div>
+              <div className="text-sm text-slate-600">Reduced pointing, showing, or other communicative gestures, especially in early development.</div>
+            </div>
+
+            <div className="bg-[#fdfbf7] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#ffd166] md:col-span-2">
+              <div className="font-bold text-[#0c264d] mb-2">Integration</div>
+              <div className="text-sm text-slate-600">Difficulty integrating verbal and nonverbal communication—what is said aloud may not match the accompanying facial expression or tone.</div>
             </div>
           </div>
         </div>
 
-        {/* Developing and Maintaining Relationships */}
-        <div className="bg-white p-5 rounded-md border-2 border-[#0c264d] mb-4">
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Developing and Maintaining Relationships</h3>
-          <p className="mb-3 text-sm">
+        {/* --- SECTION 3: Developing and Maintaining Relationships --- */}
+        <div className="bg-white p-6 rounded-xl border-t-4 border-[#0c264d] shadow-sm mb-4">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-xl text-center sm:text-left">Developing & Maintaining Relationships</h3>
+          <p className="mb-6 text-sm text-slate-700 text-center sm:text-left">
             Many autistic people experience challenges in forming and sustaining relationships, though this varies widely across the spectrum:
           </p>
           
-          <div className="space-y-2">
-            <div className="border-l-2 border-[#2abcd4] pl-3">
-              <div className="text-sm"><strong>Friendship Formation:</strong> Difficulty making friends, understanding friendship "rules," or knowing how to approach peers</div>
+          <div className="grid grid-cols-1 gap-4">
+            <div className="bg-[#fdf2f8] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#ec4899]">
+              <div className="font-bold text-[#0c264d] mb-2">Friendship Formation</div>
+              <div className="text-sm text-slate-600">Difficulty making friends, understanding neurotypical friendship "rules," or knowing how to approach peers.</div>
             </div>
-            <div className="border-l-2 border-[#2abcd4] pl-3">
-              <div className="text-sm"><strong>Social Imagination:</strong> Challenges with imaginative or pretend play, especially cooperative pretend play with peers</div>
+            
+            <div className="bg-[#fdf2f8] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#ec4899]">
+              <div className="font-bold text-[#0c264d] mb-2">Social Imagination</div>
+              <div className="text-sm text-slate-600">Challenges with imaginative or pretend play, especially cooperative pretend play with peers during childhood.</div>
             </div>
-            <div className="border-l-2 border-[#2abcd4] pl-3">
-              <div className="text-sm"><strong>Adjusting Behavior:</strong> Difficulty adapting behavior to different social contexts (school vs. home, formal vs. casual)</div>
+            
+            <div className="bg-[#fdf2f8] p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-[#ec4899]">
+              <div className="font-bold text-[#0c264d] mb-2">Adjusting Behavior</div>
+              <div className="text-sm text-slate-600">Difficulty seamlessly adapting behavior to different social contexts (e.g., school vs. home, formal vs. casual environments).</div>
             </div>
           </div>
         </div>
