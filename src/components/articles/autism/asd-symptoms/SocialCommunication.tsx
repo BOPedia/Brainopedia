@@ -16,7 +16,6 @@ export function SocialCommunication({ setCurrentArticle }: SocialCommunicationPr
 {/* --- NEW VIDEO ADDED AND CENTERED --- */}
         <video 
           autoPlay 
-          loop 
           muted 
           playsInline
           poster="/images/autism/autism-symptoms-SCtab-social-video.png"
