@@ -30,14 +30,14 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Additional Common Characteristics</h2>
       <div className="space-y-6">
         
-        {/* THE FIX: Enlarge to w-56/md:w-72. Center on mobile. Float right on desktop. */}
+        {/* THE FIX: Removed float entirely, centered on all screens, and reduced max size to w-60 */}
         <video 
           autoPlay 
           loop 
           muted 
           playsInline
           poster="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png"
-          className="float-none md:float-right block mx-auto md:ml-8 mb-6 w-56 md:w-72 h-auto rounded-xl shadow-md border border-gray-200 object-contain"
+          className="block mx-auto mb-6 w-48 md:w-60 h-auto rounded-xl shadow-md border-4 border-[#ffd166] object-contain"
           aria-label="Rainbow circle graphic showing additional autistic characteristics"
         >
           <source 
@@ -47,15 +47,13 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
           Your browser does not support the video tag.
         </video>
 
-        <p className="mb-6 leading-relaxed text-[#0c264d]">
+        {/* Centered this text to match the centered graphic beautifully! */}
+        <p className="mb-8 text-center leading-relaxed text-[#0c264d] max-w-2xl mx-auto">
           While not part of the core diagnostic criteria, many autistic individuals share additional characteristics:
         </p>
-        
-        {/* Note: I removed the <div className="clear-both"></div> that was here so your boxes below will naturally wrap around the left side of the moving graphic on a desktop! */}
 
         {/* Executive Function Differences */}
         <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-
           <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Executive Function Differences</h3>
           <p className="mb-4 text-sm">
             Challenges in planning, organization, cognitive flexibility, working memory, and initiation.<sup>1</sup>
