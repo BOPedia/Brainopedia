@@ -54,12 +54,11 @@ export function RepetitiveBehaviors() {
           <h3 className="text-[#0c264d] font-bold text-lg leading-tight">
             Stereotyped or Repetitive Movements, Speech, or Object Use
           </h3>
-        </div>
-         
+        
         <p className="mb-6 text-[#0c264d]">
           These behaviors, often called "stimming," serve various functions including self-regulation, expressing emotions, or responding to sensory input.<sup className="text-green-600 font-bold ml-0.5">1</sup>
         </p>
-          
+        </div> 
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border-l-2 border-[#2abcd4] pl-3">
