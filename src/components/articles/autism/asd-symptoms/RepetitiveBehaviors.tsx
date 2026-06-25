@@ -40,7 +40,6 @@ export function RepetitiveBehaviors() {
         {/* THE FIX: Expanded segue caption */}
         <div className="mt-4 max-w-2xl mx-auto">
           <p className="text-sm italic text-[#0c264d]/70 mb-3">
-            Visualizing the symmetry and consistency often found in repetitive patterns.
           </p>
           <p className="text-base text-[#0c264d] leading-relaxed">
             While these behaviors are often clinically categorized as "restricted" or "repetitive," they frequently serve as essential tools for emotional regulation, deep focus, and joyful expression. Let's explore the four primary ways these behaviors naturally present across the spectrum:
