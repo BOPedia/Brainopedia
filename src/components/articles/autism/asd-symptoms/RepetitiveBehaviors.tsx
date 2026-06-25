@@ -18,17 +18,16 @@ export function RepetitiveBehaviors() {
   return (
     <div className="space-y-6">
 
-
-{/* --- CENTERED GRAPHIC SECTION: THE VIDEO  --- */}
-     <div className="text-center w-full mb-12">
-        <div className="mx-auto w-44 mb-8 rounded-xl overflow-hidden">
+      {/* --- CENTERED GRAPHIC SECTION: THE VIDEO  --- */}
+      <div className="text-center w-full mb-10">
+        <div className="mx-auto w-44 rounded-xl overflow-hidden">
          <video
            autoPlay
            loop
            muted
            playsInline
            poster="/images/autism/autism-symptoms-Reptab-pattern.png"
-           className="w-full h-auto rounded-xl object-contain"
+           className="w-full h-auto object-contain"
            aria-label="kaleidoscope type video showing repetitive patterns in motion"
          >
            <source
@@ -37,10 +36,9 @@ export function RepetitiveBehaviors() {
            />
            Your browser does not support the video tag.
          </video>
-       </div>
-     </div>
-      <div className="text-center">
-        <p className="mt-4 text-sm italic text-[#0c264d]/70">
+        </div>
+        {/* THE FIX: Tucked the caption into the same container with a tight mt-2 */}
+        <p className="mt-2 text-sm italic text-[#0c264d]/70 max-w-sm mx-auto">
           Visualizing the symmetry and consistency often found in repetitive patterns.
         </p>
       </div>
@@ -54,11 +52,12 @@ export function RepetitiveBehaviors() {
           <h3 className="text-[#0c264d] font-bold text-lg leading-tight">
             Stereotyped or Repetitive Movements, Speech, or Object Use
           </h3>
+        </div>
         
         <p className="mb-6 text-[#0c264d]">
           These behaviors, often called "stimming," serve various functions including self-regulation, expressing emotions, or responding to sensory input.<sup className="text-green-600 font-bold ml-0.5">1</sup>
         </p>
-        </div> 
+        
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border-l-2 border-[#2abcd4] pl-3">
