@@ -22,14 +22,14 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
 
-          <p className="mb-4">
+          <p className="mb-4 text-slate-700 leading-relaxed">
             The exact cause of ADHD remains under investigation, but research suggests a combination of genetic, 
             neurological, and environmental factors contribute to its development.<sup>1,2</sup> ADHD is a complex condition 
             with no single cause, and understanding its origins helps reduce stigma and emphasizes that ADHD is 
             a genuine neurobiological condition, not a result of poor parenting, lack of discipline, or personal 
             character flaws.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-slate-700 leading-relaxed">
             Modern research has identified multiple biological mechanisms and risk factors that contribute to 
             ADHD, including differences in brain structure and function,<sup>4</sup> genetic variations,<sup>3</sup> neurotransmitter 
             imbalances, and certain environmental exposures during critical developmental periods.
@@ -45,13 +45,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
 
-          <p className="mb-4">
+          <p className="mb-4 text-slate-700 leading-relaxed">
             Modern research increasingly recognizes that genes and environment interact in complex ways.<sup>5,6</sup> Someone 
             with genetic vulnerability to ADHD might not develop significant symptoms in one environment but might 
             in another. Conversely, protective factors (supportive family, appropriate interventions, good education) 
             can significantly improve outcomes even for those with strong genetic predisposition.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-slate-700 leading-relaxed">
             This understanding has important implications: while we can't change genes, we can modify environments 
             and provide supports that help individuals with ADHD thrive. Understanding biological causes doesn't 
             mean fatalism—it means we can develop more effective, targeted interventions.
@@ -107,14 +107,14 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
         />
 
-        <p className="mb-4">
+        <p className="mb-4 text-slate-700 leading-relaxed">
           ADHD has a strong genetic component. Family studies consistently show that ADHD runs in families, 
           with children of parents with ADHD having a significantly higher risk of developing the condition 
           themselves.<sup>1</sup>
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Heritability Rates</h3>
-        <p className="mb-4">
+        <p className="mb-4 text-slate-700 leading-relaxed">
           Twin studies reveal that ADHD is highly heritable, with heritability estimates around 70-80%.<sup>2,3</sup> This 
           means that genetic factors account for a substantial portion of individual differences in ADHD symptoms. 
           If one identical twin has ADHD, there's a high probability the other will as well. Recent large-scale 
@@ -123,21 +123,21 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genome-Wide Association Studies (GWAS)</h3>
-        <p className="mb-4">
+        <p className="mb-4 text-slate-700 leading-relaxed">
           Major advances in genetic research have come from genome-wide association studies. The largest and most 
           recent GWAS meta-analysis, published in 2023, identified 27 genetic risk loci associated with ADHD by 
           analyzing data from over 38,000 individuals with ADHD and 186,000 controls.<sup>4</sup> This groundbreaking 
           study refined our understanding of ADHD's genetic architecture and implicated several cognitive domains 
           including executive function, processing speed, and working memory.
         </p>
-        <p className="mb-4">
+        <p className="mb-4 text-slate-700 leading-relaxed">
           Earlier GWAS studies, including the 2019 discovery of the first genome-wide significant risk loci,<sup>5</sup> 
           paved the way for these findings. Population-based studies analyzing ADHD symptoms in pediatric cohorts 
           have also contributed to identifying genetic variants associated with symptom severity.<sup>6</sup>
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multiple Genes Involved</h3>
-        <p className="mb-4">
+        <p className="mb-4 text-slate-700 leading-relaxed">
           Rather than being caused by a single gene, ADHD involves many genes, each contributing a small effect. 
           Research has identified multiple candidate genes,<sup>7</sup> particularly those involved in dopamine and 
           norepinephrine regulation. These include genes for dopamine receptors (DRD4, DRD5), dopamine 
@@ -145,7 +145,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           effects across many genetic variants—have shown that ADHD genetic risk affects neural activation 
           patterns during cognitive tasks, regardless of whether someone has an ADHD diagnosis.<sup>9</sup>
         </p>
-        <p className="mb-4">
+        <p className="mb-4 text-slate-700 leading-relaxed">
           The genetic architecture of ADHD is complex, and researchers continue to discover new genetic 
           variants associated with the condition. This genetic complexity helps explain why ADHD symptoms 
           vary so widely from person to person. Importantly, research has revealed shared genetic background 
@@ -154,14 +154,14 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genetic Overlap with Other Conditions</h3>
-        <p className="mb-4">
+        <p className="mb-4 text-slate-700 leading-relaxed">
           ADHD shares genetic risk factors with several other psychiatric and neurodevelopmental conditions. 
           Large-scale genomic studies have revealed significant genetic correlations between ADHD and conditions 
           such as autism spectrum disorder, depression, anxiety, and bipolar disorder.<sup>11</sup> This genetic overlap 
           helps explain why comorbidity is so common in ADHD and why individuals with ADHD often experience 
           multiple co-occurring conditions.
         </p>
-        <p className="mb-4">
+        <p className="mb-4 text-slate-700 leading-relaxed">
           Genetic research has also investigated sex differences in ADHD prevalence. Studies examining the 
           genetic basis of sex bias have found that while ADHD is more commonly diagnosed in males, the 
           genetic risk factors are largely similar across sexes, suggesting that sex differences may be more 
@@ -169,7 +169,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         </p>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
-        <p className="mb-4">
+        <p className="mb-4 text-slate-700 leading-relaxed">
           While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
           interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
           both genetic and environmental contributions is essential for a complete picture of ADHD's origins. 
@@ -245,96 +245,142 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
 
   function BrainContent() {
     return (
-      <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Brain Structure and Function</h2>
+      <div className="bg-[#f0f9ff] p-6 rounded-xl">
+        {/* --- HEADER SECTION --- */}
+        <div className="text-center w-full mb-10">
+          <h2 className="text-[#0c264d] font-bold mb-6 text-3xl">Brain Structure and Function</h2>
+          
+          <ImageWithFallback 
+            src="/images/adhd/adhd-structure-brain-anatomy.png"
+            alt="Brain structure differences in ADHD"
+            className="block mx-auto w-56 h-auto rounded-xl shadow-md border-4 border-[#2abcd4] object-contain mb-6 bg-white"
+          />
+
+          <p className="text-slate-700 leading-relaxed max-w-3xl mx-auto text-lg">
+            Brain imaging studies have revealed several differences in brain structure and activity in individuals 
+            with ADHD. These differences help explain why people with ADHD experience challenges with attention, 
+            impulse control, and executive functioning. Large-scale collaborative neuroimaging studies from the 
+            past decade have provided unprecedented insights into the neurobiology of ADHD across the lifespan.
+          </p>
+        </div>
         
-        <ImageWithFallback 
-          src="/images/adhd/adhd-structure-brain-anatomy.png"
-          alt="Brain structure differences in ADHD"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
+        {/* --- LARGE SCALE FINDINGS --- */}
+        <div className="bg-white p-6 rounded-xl border-t-4 border-[#0c264d] shadow-sm mb-10">
+          <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center sm:text-left">Large-Scale Neuroimaging Findings</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
+              <div className="font-bold text-[#0c264d] mb-2">2017 ENIGMA-ADHD Study</div>
+              <div className="text-sm text-slate-700">
+                Analyzed brain scans from over 3,200 participants and found smaller volumes in several subcortical brain regions, including the amygdala, caudate, putamen, nucleus accumbens, and hippocampus.<sup>1</sup> These differences were most pronounced in children.
+              </div>
+            </div>
+            
+            <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
+              <div className="font-bold text-[#0c264d] mb-2">2019 Follow-Up Study</div>
+              <div className="text-sm text-slate-700">
+                Examined cortical thickness across more than 2,200 individuals and found subtle but widespread differences in cortical structure, particularly in frontal, temporal, and cingulate regions.<sup>2</sup>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <p className="mb-4">
-          Brain imaging studies have revealed several differences in brain structure and activity in individuals 
-          with ADHD. These differences help explain why people with ADHD experience challenges with attention, 
-          impulse control, and executive functioning. Large-scale collaborative neuroimaging studies from the 
-          past decade have provided unprecedented insights into the neurobiology of ADHD across the lifespan.
-        </p>
-        
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Large-Scale Neuroimaging Findings</h3>
-        <p className="mb-4">
-          The ENIGMA-ADHD consortium conducted the largest brain imaging study of ADHD to date, analyzing 
-          brain scans from over 3,200 participants. This groundbreaking 2017 study found that individuals 
-          with ADHD have smaller volumes in several subcortical brain regions, including the amygdala, 
-          caudate, putamen, nucleus accumbens, and hippocampus.<sup>1</sup> These differences were most pronounced 
-          in children and became less apparent with age, suggesting that some brain differences may normalize 
-          during development.
-        </p>
-        <p className="mb-4">
-          A follow-up ENIGMA study in 2019 examined cortical thickness and surface area across more than 
-          2,200 individuals with ADHD and found subtle but widespread differences in cortical structure, 
-          particularly in frontal, temporal, and cingulate regions.<sup>2</sup> The findings support the concept 
-          that ADHD involves alterations in large-scale brain networks rather than isolated regional abnormalities.
-        </p>
+        {/* --- STRUCTURAL DIFFERENCES (Cards) --- */}
+        <div className="mb-10">
+          <h3 className="text-[#0c264d] font-bold mb-4 text-2xl px-2">Structural Differences</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
+              <div className="font-bold text-[#0c264d] mb-2">Total Brain Volume</div>
+              <div className="text-sm text-slate-700">Meta-analyses confirm smaller total brain and intracranial volume in children with ADHD, with differences most prominent in childhood.<sup>3</sup></div>
+            </div>
+            
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
+              <div className="font-bold text-[#0c264d] mb-2">Subcortical Regions</div>
+              <div className="text-sm text-slate-700">Reduced volume in the prefrontal cortex, basal ganglia, hippocampus, amygdala, and cerebellum.<sup>1</sup></div>
+            </div>
+            
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
+              <div className="font-bold text-[#0c264d] mb-2">Cortical Thickness</div>
+              <div className="text-sm text-slate-700">Thinner cortex in multiple regions, particularly in prefrontal and temporal areas, with some normalization in adulthood.<sup>4</sup></div>
+            </div>
+            
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
+              <div className="font-bold text-[#0c264d] mb-2">Delayed Maturation</div>
+              <div className="text-sm text-slate-700">The brain develops on a typical trajectory but more slowly, with peak cortical thickness achieved ~2-3 years later than average.<sup>5</sup></div>
+            </div>
+            
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4] md:col-span-2 lg:col-span-2">
+              <div className="font-bold text-[#0c264d] mb-2">White Matter Microstructure</div>
+              <div className="text-sm text-slate-700">Differences in white matter organization affecting neural connectivity between brain regions, particularly in pathways connecting frontal regions to other areas.<sup>6,7</sup></div>
+            </div>
+          </div>
+        </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Structural Differences</h3>
-        <p className="mb-4">
-          Modern neuroimaging research has identified consistent structural differences in ADHD:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Total brain volume:</strong> Meta-analyses confirm smaller total brain volume and intracranial volume in children with ADHD, with these differences being most prominent in childhood<sup>3</sup></li>
-          <li className="mb-2"><strong>Subcortical regions:</strong> Reduced volume in the prefrontal cortex (responsible for executive functions), basal ganglia (involved in motor control and reward), hippocampus (memory and emotion regulation), amygdala (emotional processing), and cerebellum (coordination and timing)<sup>1</sup></li>
-          <li className="mb-2"><strong>Cortical thickness:</strong> Thinner cortex in multiple regions, particularly in prefrontal and temporal areas, with some studies showing normalization in adulthood<sup>4</sup></li>
-          <li className="mb-2"><strong>Delayed cortical maturation:</strong> The brain develops on a typical trajectory but more slowly, with peak cortical thickness achieved approximately 2-3 years later than in neurotypical development<sup>5</sup></li>
-          <li className="mb-2"><strong>White matter microstructure:</strong> Differences in white matter organization affecting neural connectivity between brain regions, particularly in pathways connecting frontal regions to other brain areas<sup>6,7</sup></li>
-        </ul>
+        {/* --- FUNCTIONAL DIFFERENCES (Cards) --- */}
+        <div className="mb-10">
+          <h3 className="text-[#0c264d] font-bold mb-4 text-2xl px-2">Functional Differences</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
+              <div className="font-bold text-[#0c264d] mb-2">Task-Based Activation</div>
+              <div className="text-sm text-slate-700">Underactivity in prefrontal cortex and parietal regions during tasks requiring attention, inhibition, and working memory.<sup>8,11</sup></div>
+            </div>
+            
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
+              <div className="font-bold text-[#0c264d] mb-2">Default Mode Network (DMN)</div>
+              <div className="text-sm text-slate-700">Altered activity in the DMN (active during mind-wandering), including insufficient suppression of this network during tasks requiring focus.<sup>9,10</sup></div>
+            </div>
+            
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
+              <div className="font-bold text-[#0c264d] mb-2">Functional Connectivity</div>
+              <div className="text-sm text-slate-700">Widespread alterations in connectivity, particularly involving networks related to attention, executive control, and reward processing.<sup>11</sup></div>
+            </div>
+            
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
+              <div className="font-bold text-[#0c264d] mb-2">Reward Circuits</div>
+              <div className="text-sm text-slate-700">Reduced activation in ventral striatum during reward anticipation, which may explain motivation challenges and preference for immediate rewards.<sup>12</sup></div>
+            </div>
+            
+            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166] md:col-span-2 lg:col-span-2">
+              <div className="font-bold text-[#0c264d] mb-2">Network Organization</div>
+              <div className="text-sm text-slate-700">Less efficient organization of large-scale brain networks, potentially contributing to the variability often seen in cognitive performance.<sup>10</sup></div>
+            </div>
+          </div>
+        </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Functional Differences</h3>
-        <p className="mb-4">
-          Functional neuroimaging reveals how brain activity differs during cognitive tasks and at rest:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Task-based activation:</strong> Underactivity in prefrontal cortex and parietal regions during tasks requiring attention, inhibition, and working memory<sup>8,11</sup></li>
-          <li className="mb-2"><strong>Default mode network (DMN):</strong> Altered activity in the DMN (active during rest and mind-wandering), including insufficient suppression of this network during tasks requiring focused attention<sup>9,10</sup></li>
-          <li className="mb-2"><strong>Functional connectivity:</strong> Widespread alterations in connectivity between brain regions, particularly involving networks related to attention, executive control, and reward processing<sup>11</sup></li>
-          <li className="mb-2"><strong>Reward processing circuits:</strong> Reduced activation in ventral striatum during reward anticipation, which may explain motivation challenges and preference for immediate rewards<sup>12</sup></li>
-          <li className="mb-2"><strong>Network organization:</strong> Less efficient organization of large-scale brain networks, potentially contributing to variability in cognitive performance<sup>10</sup></li>
-        </ul>
+        {/* --- CONTEXT & IMPLICATIONS (3-Column Layout) --- */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
+            <div className="font-bold text-[#0c264d] mb-2 text-lg">Adult Brain Differences</div>
+            <p className="text-sm text-slate-700 leading-relaxed">
+              While some childhood brain differences normalize with age, adults with persistent ADHD continue to show structural and functional differences. This supports the understanding that ADHD is a lifelong neurodevelopmental condition.
+            </p>
+          </div>
+          
+          <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#2abcd4]">
+            <div className="font-bold text-[#0c264d] mb-2 text-lg">Developmental Trajectories</div>
+            <p className="text-sm text-slate-700 leading-relaxed">
+              Longitudinal studies reveal ADHD involves altered developmental trajectories rather than static abnormalities. Some differences decrease with age, while others emerge or persist into adulthood.<sup>13,14</sup>
+            </p>
+          </div>
+          
+          <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#ffd166]">
+            <div className="font-bold text-[#0c264d] mb-2 text-lg">Clinical Implications</div>
+            <p className="text-sm text-slate-700 leading-relaxed">
+              These findings validate ADHD as a neurobiological condition. However, brain imaging is not currently used for clinical diagnosis, as there is too much overlap between individuals with and without ADHD at the individual level.
+            </p>
+          </div>
+        </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Adult ADHD Brain Differences</h3>
-        <p className="mb-4">
-          Research increasingly focuses on brain structure in adults with ADHD. Studies show that while some 
-          childhood brain differences normalize with age, adults with persistent ADHD continue to show structural 
-          and functional differences, including reduced cortical thickness in frontal regions and altered functional 
-          connectivity in attention networks. This supports the understanding that ADHD is a lifelong 
-          neurodevelopmental condition, not simply a childhood disorder.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Developmental Trajectories</h3>
-        <p className="mb-4">
-          Longitudinal imaging studies tracking individuals over time reveal that ADHD involves altered 
-          developmental trajectories rather than static abnormalities. Some brain differences are most 
-          pronounced in childhood and decrease with age, while others emerge or persist into adulthood. 
-          Understanding these developmental patterns helps explain why some individuals experience symptom 
-          improvement while others continue to face challenges throughout life.<sup>13,14</sup>
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Clinical Implications</h3>
-        <p className="mb-4">
-          These neuroimaging findings validate ADHD as a neurobiological condition and help reduce stigma. 
-          The brain differences identified correlate with symptom severity and cognitive performance, providing 
-          biological markers that may eventually aid in diagnosis and treatment planning. However, brain imaging 
-          is not currently used for clinical diagnosis of ADHD, as there is too much overlap between individuals 
-          with and without ADHD at the individual level, despite clear group differences in research studies.
-        </p>
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
-        <p className="mb-4">
-          While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
-          interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
-          both genetic and environmental contributions is essential for a complete picture of ADHD's origins. 
-          This interplay between nature and nurture helps explain why not everyone with genetic risk factors 
-          develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
-        </p>
+        {/* --- GENE-ENVIRONMENT BANNER --- */}
+        <div className="bg-white p-5 rounded-lg border border-slate-200 shadow-sm mt-8">
+          <h3 className="text-[#0c264d] font-bold mb-2 text-lg flex items-center gap-2">
+            <span className="text-xl">🌱</span> Gene-Environment Interactions
+          </h3>
+          <p className="text-sm text-slate-700 leading-relaxed">
+            While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
+            interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
+            both genetic and environmental contributions is essential for a complete picture of ADHD's origins, and helps explain why environmental interventions can be highly effective.
+          </p>
+        </div>
 
         {/* ===== REFERENCES SECTION ===== */}
         <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
