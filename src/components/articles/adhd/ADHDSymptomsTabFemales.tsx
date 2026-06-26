@@ -36,12 +36,15 @@ export function ADHDSymptomsTabFemales() {
         </p>
       </div>
             
-      {/* --- KEY RESEARCH FINDINGS (Grid Taxonomy) --- */}
+      {/* --- KEY RESEARCH FINDINGS (Strips) --- */}
       <div className="bg-white p-6 rounded-xl border-t-4 border-[#0c264d] shadow-sm mt-8">
         <h3 className="text-[#0c264d] font-bold mb-6 text-2xl text-center sm:text-left">Key Research Findings</h3>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
+        {/* THE FIX: Replaced grid classes with space-y-4 to create stacked strips */}
+        <div className="space-y-4">
+          
+          {/* STRIP 1: Faded Green/Teal */}
+          <div className="bg-teal-50 p-5 rounded-lg border border-teal-100 shadow-sm border-l-4 border-l-teal-500">
             <div className="font-bold text-[#0c264d] mb-3">Symptom Presentation & Comorbidity</div>
             <div className="text-sm space-y-3 text-slate-700">
               <p>• Women with ADHD are more likely to have the combined type, experience greater emotional dysregulation, 
@@ -53,6 +56,7 @@ export function ADHDSymptomsTabFemales() {
             </div>
           </div>
           
+          {/* STRIP 2 */}
           <div className="bg-[#f0f9ff] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#2abcd4]">
             <div className="font-bold text-[#0c264d] mb-3">Persistence Into Adulthood</div>
             <div className="text-sm space-y-3 text-slate-700">
@@ -61,6 +65,7 @@ export function ADHDSymptomsTabFemales() {
             </div>
           </div>
           
+          {/* STRIP 3 */}
           <div className="bg-[#fdf2f8] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#ec4899]">
             <div className="font-bold text-[#0c264d] mb-3">Social & Personal Impact</div>
             <div className="text-sm space-y-3 text-slate-700">
@@ -72,6 +77,7 @@ export function ADHDSymptomsTabFemales() {
             </div>
           </div>
           
+          {/* STRIP 4 */}
           <div className="bg-[#fcfcfa] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#ffd166]">
             <div className="font-bold text-[#0c264d] mb-3">Medical & Diagnostic Bias</div>
             <div className="text-sm space-y-3 text-slate-700">
