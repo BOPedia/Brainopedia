@@ -70,10 +70,11 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
         <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Associated Risks and Broader Impacts of ADHD</h3>
         
         <p className="mb-6 text-slate-700 leading-relaxed">
-          A comprehensive umbrella review analyzing over 1,000 studies found that ADHD is associated with significantly 
-          increased risks across multiple life domains beyond the core symptoms<sup className="text-green-600 font-bold ml-0.5">1</sup>. The review identified consistent 
-          associations between ADHD and adverse outcomes in mental health, physical health, and social/lifestyle functioning, 
-          highlighting the importance of taking a holistic approach to ADHD management and support.
+          A comprehensive umbrella review analyzing over 1,000 studies found that ADHD is associated with increased risks 
+          across multiple life domains beyond the core symptoms<sup className="text-green-600 font-bold ml-0.5">1</sup>. However, 
+          when viewed through a strengths-based lens, it is crucial to understand that these outcomes are not inevitable destinies. 
+          They are frequently the direct result of unsupported environments, a lack of early intervention, and the chronic stress 
+          of navigating systems that were not designed for neurodivergent minds.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
@@ -88,7 +89,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
               <li>• <strong>Self-harm:</strong> Significantly elevated risk of suicidal ideation, attempts, and completed suicide</li>
               <li>• <strong>Mood disorders:</strong> Increased rates of depression and bipolar disorder</li>
               <li>• <strong>Personality:</strong> Higher prevalence of co-occurring personality disorders</li>
-              <li>• <strong>Self-esteem:</strong> Consistently reported poor self-esteem across studies, often linked to depression</li>
+              <li>• <strong>Self-esteem:</strong> Consistently reported poor self-esteem across studies, often linked to depression and chronic invalidation</li>
             </ul>
           </div>
 
@@ -125,11 +126,10 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
 
         <div className="bg-[#e8f5e8] border-l-4 border-[#0c264d] p-4 rounded mt-2 shadow-sm">
           <p className="text-sm">
-            <strong>Clinical Implications:</strong> These findings emphasize the importance of clinicians, educators, and 
-            families taking a holistic approach to ADHD assessment and management. Being aware of these associated risks 
-            allows for early intervention, appropriate screening for co-occurring conditions, and comprehensive support 
-            that addresses not just core symptoms but also broader impacts on health, education, relationships, and 
-            overall well-being.
+            <strong>Clinical Implications:</strong> These findings emphasize why early intervention and neuro-affirming support 
+            are so critical. By recognizing these risks as systemic friction points rather than inherent character flaws, educators, 
+            clinicians, and families can build holistic scaffolding. Proper support empowers individuals to leverage their natural 
+            strengths, drastically reducing these secondary risks and promoting overall well-being.
           </p>
         </div>
       </div>
@@ -457,20 +457,37 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
 
         <Accordion title="Rejection Sensitive Dysphoria (RSD)">
           <p className="mb-3 text-slate-700">
-            Rejection Sensitive Dysphoria (RSD) is an extreme emotional sensitivity and physical pain triggered by the perception that a person has been rejected, teased, or criticized by important people in their life. 
+            Rejection Sensitive Dysphoria (RSD) is an extreme emotional sensitivity and physical pain triggered by the perception that a person has been rejected, teased, or criticized. 
           </p>
           <p className="mb-3 text-slate-700">
-            While not an official DSM diagnosis, the underlying extreme emotional pain triggered by perceived rejection is well-documented in literature and is considered by many experts to be a near-universal experience for adults with ADHD.
+            While not an official DSM diagnosis, the underlying extreme emotional pain triggered by perceived rejection is well-documented and is considered a near-universal experience for adults with ADHD.
+          </p>
+          
+          {/* ROUTING BUTTON */}
+          <button 
+            onClick={() => setCurrentArticle?.('rsd-deep-dive')} 
+            className="mt-4 bg-[#2abcd4] text-white px-5 py-2.5 rounded-lg font-normal text-sm shadow-sm hover:bg-[#0c264d] transition-all flex items-center gap-2 font-spartan"
+          >
+            Explore RSD in Depth <span className="text-lg">→</span>
+          </button>
+        </Accordion>
+
+        <Accordion title="Pervasive Drive for Autonomy (PDA / Demand Avoidance)">
+          <p className="mb-3 text-slate-700">
+            Often referred to clinically as Pathological Demand Avoidance (PDA), this is a profound neurological need for self-direction. When autonomy is threatened by external demands, expectations, or rigid rules, the nervous system reacts with an intense fight/flight response or a severe executive block.
+          </p>
+          <p className="mb-3 text-slate-700">
+            In the ADHD brain, demand avoidance is heavily tied to dopamine. Because the brain runs on interest, urgency, and novelty rather than importance, arbitrary external demands can strip away the stimulation required to initiate a task.
           </p>
           <div className="bg-[#f0f9ff] p-4 rounded mb-3">
-            <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence:</h4>
+            <h4 className="font-bold text-[#0c264d] mb-2 text-sm">Scientific Evidence & Lived Experience:</h4>
             <div className="text-sm space-y-2 text-slate-700">
-              <p><strong>Clinical Consensus:</strong> Groundbreaking clinical observations have defined RSD as a defining feature of the ADHD emotional landscape.<sup className="text-green-600 font-bold ml-0.5">13</sup></p>
-              <p><strong>Baseline Sensitivity:</strong> Studies show individuals with ADHD exhibit significantly higher baseline rejection sensitivity than neurotypical peers, contributing heavily to social anxiety and depressive symptoms.<sup className="text-green-600 font-bold ml-0.5">14</sup></p>
+              <p><strong>Nervous System Response:</strong> Demand avoidance is not an active choice or defiance; it is a rapid, involuntary nervous system response to a perceived loss of control.</p>
+              <p><strong>Interest-Based Momentum:</strong> Under-stimulating demands create a literal cognitive block. The brain cannot produce the neurotransmitters required to bridge the gap between knowing what to do and actually doing it.</p>
             </div>
           </div>
-          <div className="text-sm bg-[#fde8f3] p-3 rounded text-slate-800">
-            <strong>Real-life impact:</strong> People-pleasing to avoid criticism, abandoning projects at the first sign of negative feedback, striving for perfectionism to prevent judgment, or withdrawing entirely from social situations to prevent the possibility of perceived rejection.
+          <div className="text-sm bg-[#ffe8d6] p-3 rounded text-slate-800">
+            <strong>Real-life impact:</strong> Feeling physically paralyzed when someone tells you to do something you were already planning to do; intense resistance to rigid schedules; or conversely, displaying fierce independent thinking, self-advocacy, and innovative problem-solving when placed in low-pressure, flexible environments.
           </div>
         </Accordion>
 
@@ -577,6 +594,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
           </div>
         </Accordion>
       </div>
+      
      {/* Interactive Symptom Profile Chart */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-8">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Interactive Symptom Profile Chart</h3>

@@ -5,7 +5,6 @@ import { ADHDSymptomsTabInattention } from './ADHDSymptomsTabInattention';
 import { ADHDSymptomsTabHyperactivity } from './ADHDSymptomsTabHyperactivity';
 import { ADHDSymptomsTabImpulsivity } from './ADHDSymptomsTabImpulsivity';
 import { ADHDSymptomsTabMore } from './ADHDSymptomsTabMore';
-import { ADHDSymptomsTabRSD } from './ADHDSymptomsTabRSD';
 import { ADHDSymptomsTabFemales } from './ADHDSymptomsTabFemales';
 import { ADHDSymptomsTabMyths } from './ADHDSymptomsTabMyths';
 
@@ -71,9 +70,6 @@ export function ADHDSymptoms({ setCurrentArticle, initialTab }: ADHDSymptomsProp
           <TabsTrigger value="more" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
             More Symptoms
           </TabsTrigger>
-          <TabsTrigger value="rsd" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
-            RSD?
-          </TabsTrigger>
           <TabsTrigger value="females" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
             ADHD in Females
           </TabsTrigger>
@@ -118,11 +114,6 @@ export function ADHDSymptoms({ setCurrentArticle, initialTab }: ADHDSymptomsProp
               All About ADHD
             </button>
           </div>
-        </TabsContent>
-
-        {/* RSD Tab */}
-        <TabsContent value="rsd" className="space-y-8">
-          <ADHDSymptomsTabRSD />
         </TabsContent>
 
         {/* ADHD in Females Tab */}
