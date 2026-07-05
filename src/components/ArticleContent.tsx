@@ -52,6 +52,10 @@ const articleMap: RouteMap = {
   'about': lazy(() => import('./articles/ArticleAbout').then(m => ({ default: m.ArticleAbout }))),
   'donate': lazy(() => import('./articles/ArticleDonate').then(m => ({ default: m.ArticleDonate }))),
   'blog': lazy(() => import('./articles/ArticleBlog').then(m => ({ default: m.ArticleBlog }))),
+  
+  // --- NEW ROUTE ADDED HERE ---
+  // Ensure the path './articles/ADHDSymptomsTabRSD' matches your actual folder structure
+ 'rsd-deep-dive': lazy(() => import('./articles/adhd/ADHDSymptomsTabRSD').then(m => ({ default: m.ADHDSymptomsTabRSD }))),
 };
 
 interface ArticleContentProps {

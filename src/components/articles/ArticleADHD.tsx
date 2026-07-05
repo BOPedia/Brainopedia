@@ -231,9 +231,9 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           
           <p className="mb-4">
             People with ADHD can lead full and meaningful lives across all areas of society. While ADHD presents 
-            challenges, many autistic people also describe unique strengths and perspectives that enrich their lives 
-            and communities. These may include exceptional attention to detail, deep knowledge in areas of interest, 
-            creative and innovative thinking, and strong sense of justice and authenticity.
+            challenges, many people with ADHD also describe unique strengths and perspectives that enrich their lives 
+            and communities. These may include exceptional capacity for hyperfocus, deep knowledge in areas of interest, 
+            creative and innovative problem-solving, rapid adaptability, and high energy.
           </p>
           
           <p className="mb-4">
