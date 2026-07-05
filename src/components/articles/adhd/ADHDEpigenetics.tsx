@@ -2,10 +2,30 @@ import React from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { Microscope, Zap, Brain, ShieldAlert, Beaker, Leaf } from 'lucide-react';
 
-export function ADHDEpigenetics() {
+// 1. ADD THE INTERFACE TO ACCEPT ROUTING PROPS
+interface ADHDEpigeneticsProps {
+  setCurrentArticle?: (article: string) => void;
+}
+
+// 2. PASS THE PROP INTO THE COMPONENT
+export function ADHDEpigenetics({ setCurrentArticle }: ADHDEpigeneticsProps) {
   return (
     <div className="max-w-6xl mx-auto p-4">
       
+      {/* --- PAGE HEADER & TOP BACK BUTTON --- */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 mt-4">
+        <h1 className="text-3xl text-[#0c264d] font-normal font-spartan">
+          Epigenetics and ADHD
+        </h1>
+
+        <button 
+          onClick={() => setCurrentArticle?.('adhd')}
+          className="bg-[#ffd166] text-[#0c264d] px-5 py-2.5 rounded-lg font-normal text-sm shadow-sm hover:bg-[#0c264d] hover:text-white transition-all flex items-center gap-2 font-spartan whitespace-nowrap shrink-0"
+        >
+          <span className="text-lg">←</span>All About ADHD
+        </button>
+      </div>
+
       {/* --- INTRO SECTION WITH FLOATING GRAPHIC --- */}
       <div className="bg-[#f0f9ff] p-8 rounded-xl text-[#0c264d] border border-[#0c264d]/5 mb-8 shadow-sm overflow-hidden">
         
@@ -22,11 +42,8 @@ export function ADHDEpigenetics() {
             />
           </div>
         </div>
-
-        <h2 className="font-bold mb-4 text-2xl font-spartan underline decoration-[#ffd166] decoration-2 underline-offset-4">
-          Epigenetics and ADHD
-        </h2>
-        <p className="leading-relaxed font-spartan text-lg">
+        
+        <p className="leading-relaxed font-spartan text-lg mt-2">
           Epigenetics—the study of how environmental factors alter the way our genes work without changing the underlying DNA sequence—is revolutionizing our understanding of ADHD. While ADHD is highly heritable, genetics alone do not tell the whole story. Epigenetic mechanisms act as a molecular switchboard, turning specific genes "on" or "off" in response to environmental exposures during early development. This helps explain the wide variability in ADHD symptoms and why certain environmental factors can increase the likelihood of ADHD traits expressing themselves.<sup>1,2</sup>
         </p>
       </div>
@@ -98,7 +115,7 @@ export function ADHDEpigenetics() {
         </div>
       </div>
 
-{/* --- EPIGENETICS VIDEO EMBED --- */}
+      {/* --- EPIGENETICS VIDEO EMBED --- */}
       <div className="my-8 flex flex-col items-center">
         <div className="w-full max-w-2xl">
           <h4 className="text-sm uppercase tracking-wider text-[#0c264d] font-bold mb-4 font-spartan">
@@ -168,6 +185,17 @@ export function ADHDEpigenetics() {
           </div>
         </div>
       </div>
+
+      {/* --- BOTTOM BACK BUTTON --- */}
+      <div className="flex justify-end mt-8">
+        <button 
+          onClick={() => setCurrentArticle?.('adhd')}
+          className="bg-[#ffd166] text-[#0c264d] px-5 py-2.5 rounded-lg font-normal text-sm shadow-sm hover:bg-[#0c264d] hover:text-white transition-all flex items-center gap-2 font-spartan whitespace-nowrap shrink-0"
+        >
+          <span className="text-lg">←</span>All About ADHD
+        </button>
+      </div>
+
     </div>
   );
 }
