@@ -136,7 +136,36 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
             </div>
           )}
         </div>
-
+{expandedSection === 'behavior' && (
+  <div className="px-5 pb-5 pt-2 border-t border-gray-50">
+    <p className="mb-4 text-sm text-slate-700">Intense passions, systemic thinking, and a strong preference for predictability.</p>
+    <div className="space-y-3">
+      {/* Existing Top Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="border-l-2 border-[#2abcd4] pl-3">
+          <div className="font-bold text-[#0c264d] mb-1">Restricted Interests</div>
+          <div className="text-sm">Deep, highly focused passions for specific topics. Often leads to "monologuing" or vast expertise in niche subjects.</div>
+        </div>
+        <div className="border-l-2 border-[#2abcd4] pl-3">
+          <div className="font-bold text-[#0c264d] mb-1">Need for Routine</div>
+          <div className="text-sm">A strong reliance on predictable schedules. Sudden transitions, unexpected plans, or disrupted routines can cause significant distress.</div>
+        </div>
+      </div>
+      
+      {/* Updated Bottom Grid: Now includes PDA alongside Stimming */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div className="border-l-2 border-[#2abcd4] pl-3">
+          <div className="font-bold text-[#0c264d] mb-1">Stimming (Self-Stimulatory Behavior)</div>
+          <div className="text-sm">Repetitive physical movements or vocalizations (like hand-flapping, rocking, or repeating phrases) used to self-regulate, focus, or express joy.</div>
+        </div>
+        <div className="border-l-2 border-[#2abcd4] pl-3">
+          <div className="font-bold text-[#0c264d] mb-1">Demand Avoidance (PDA)</div>
+          <div className="text-sm">Often reframed as a <strong>Pervasive Drive for Autonomy</strong>. A nervous system response where everyday demands trigger a fight/flight reaction, requiring highly flexible, low-pressure environments.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
         {/* 3. Sensory Processing */}
         <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
           <button 
@@ -229,7 +258,32 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
             </div>
           )}
         </div>
-
+{expandedSection === 'emotional' && (
+  <div className="px-5 pb-5 pt-2 border-t border-gray-50">
+    <p className="mb-4 text-sm text-slate-700">How emotions are processed, recognized, and physically experienced.</p>
+    <div className="space-y-3">
+      {/* Changed to md:grid-cols-2 to accommodate 4 items evenly */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="border-l-2 border-[#2abcd4] pl-3">
+          <div className="font-bold text-[#0c264d] mb-1">Dysregulation</div>
+          <div className="text-sm">Experiencing emotions with extreme intensity, which can lead to involuntary meltdowns or non-responsive shutdowns when capacity is exceeded.</div>
+        </div>
+        <div className="border-l-2 border-[#2abcd4] pl-3">
+          <div className="font-bold text-[#0c264d] mb-1">Rejection Sensitive Dysphoria (RSD)</div>
+          <div className="text-sm">An intense, almost physical emotional pain triggered by perceived rejection, criticism, or failure. Often tied to a deep capacity for empathy and responsiveness.</div>
+        </div>
+        <div className="border-l-2 border-[#2abcd4] pl-3">
+          <div className="font-bold text-[#0c264d] mb-1">Anxiety</div>
+          <div className="text-sm">Highly prevalent in the autistic community, often stemming from sensory overload or the constant pressure to mask neurodivergent traits.</div>
+        </div>
+        <div className="border-l-2 border-[#2abcd4] pl-3">
+          <div className="font-bold text-[#0c264d] mb-1">Depression</div>
+          <div className="text-sm">Frequently co-occurs, sometimes due to autistic burnout, social isolation, or navigating an inaccessible world.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
         {/* 6. Motor Skills & Posture */}
         <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
           <button 
