@@ -44,7 +44,7 @@ export function ADHDEpigenetics({ setCurrentArticle }: ADHDEpigeneticsProps) {
         </div>
         
         <p className="leading-relaxed font-spartan text-lg mt-2">
-          Epigenetics—the study of how environmental factors alter the way our genes work without changing the underlying DNA sequence—is revolutionizing our understanding of ADHD. While ADHD is highly heritable, genetics alone do not tell the whole story. Epigenetic mechanisms act as a molecular switchboard, turning specific genes "on" or "off" in response to environmental exposures during early development. This helps explain the wide variability in ADHD symptoms and why certain environmental factors can increase the likelihood of ADHD traits expressing themselves.<sup>1,2</sup>
+          Epigenetics—the study of how environmental factors alter the way our genes work without changing the underlying DNA sequence—is revolutionizing our understanding of ADHD. While ADHD is highly heritable, genetics alone do not tell the whole story. Epigenetic mechanisms act as a molecular switchboard, turning specific genes "on" or "off" in response to environmental exposures during early development. This helps explain the wide variability in ADHD symptoms and why certain environmental factors can increase the likelihood of ADHD traits expressing themselves.<sup className="text-green-600 font-bold ml-0.5">1,2</sup>
         </p>
       </div>
 
@@ -56,7 +56,7 @@ export function ADHDEpigenetics({ setCurrentArticle }: ADHDEpigeneticsProps) {
             <h3 className="font-bold font-spartan text-[#0c264d]">Dopamine Pathways</h3>
           </div>
           <p className="text-sm font-spartan leading-relaxed text-gray-700">
-            Epigenetic marks frequently target genes responsible for dopamine regulation (like DAT1 and DRD4), directly influencing executive function and reward processing networks.<sup>3</sup>
+            Epigenetic marks frequently target genes responsible for dopamine regulation (like DAT1 and DRD4), directly influencing executive function and reward processing networks.<sup className="text-green-600 font-bold ml-0.5">3</sup>
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export function ADHDEpigenetics({ setCurrentArticle }: ADHDEpigeneticsProps) {
           </h3>
           <ul className="space-y-4 font-spartan text-sm text-gray-700">
             <li>
-              <strong className="font-bold text-[#0c264d]">DNA Methylation:</strong> The most studied mechanism in ADHD. Research shows distinct methylation patterns in genes related to neurotransmitter signaling, which can reduce the production of essential proteins needed for sustained attention.<sup>4</sup>
+              <strong className="font-bold text-[#0c264d]">DNA Methylation:</strong> The most studied mechanism in ADHD. Research shows distinct methylation patterns in genes related to neurotransmitter signaling, which can reduce the production of essential proteins needed for sustained attention.<sup className="text-green-600 font-bold ml-0.5">4</sup>
             </li>
             <li>
               <strong className="font-bold text-[#0c264d]">Histone Modification:</strong> Changes in how tightly DNA is spooled around histone proteins can limit the brain's ability to express genes necessary for rapid neural adaptability and learning.
@@ -106,7 +106,7 @@ export function ADHDEpigenetics({ setCurrentArticle }: ADHDEpigeneticsProps) {
           </h3>
           <ul className="space-y-4 font-spartan text-sm text-gray-700">
             <li>
-              <strong className="font-bold text-red-600">Prenatal Exposures:</strong> Exposure to maternal stress, tobacco smoke, or heavy metals (like lead) during pregnancy has been shown to alter DNA methylation at specific ADHD-risk gene sites.<sup>5</sup>
+              <strong className="font-bold text-red-600">Prenatal Exposures:</strong> Exposure to maternal stress, tobacco smoke, or heavy metals (like lead) during pregnancy has been shown to alter DNA methylation at specific ADHD-risk gene sites.<sup className="text-green-600 font-bold ml-0.5">5</sup>
             </li>
             <li>
               <strong className="font-bold text-red-600">Early Life Stress:</strong> Significant psychosocial adversity in early childhood can induce epigenetic changes that alter the reactivity of the HPA axis (the body's stress response system), compounding ADHD symptoms.
@@ -148,7 +148,7 @@ export function ADHDEpigenetics({ setCurrentArticle }: ADHDEpigeneticsProps) {
           Diagnosis & Targeted Therapies
         </h3>
         <p className="text-sm leading-relaxed font-spartan mb-4 text-gray-700">
-          The future of ADHD treatment may lie in the epigenome. Researchers are actively mapping epigenetic "signatures" in peripheral blood that could serve as objective biomarkers for ADHD subtypes. Furthermore, because epigenetic changes are reversible, nutritional interventions (like specific methyl-donor diets) and novel behavioral therapies are being studied for their ability to positively re-regulate epigenetic markers associated with ADHD.<sup>6</sup>
+          The future of ADHD treatment may lie in the epigenome. Researchers are actively mapping epigenetic "signatures" in peripheral blood that could serve as objective biomarkers for ADHD subtypes. Furthermore, because epigenetic changes are reversible, nutritional interventions (like specific methyl-donor diets) and novel behavioral therapies are being studied for their ability to positively re-regulate epigenetic markers associated with ADHD.<sup className="text-green-600 font-bold ml-0.5">6</sup>
         </p>
       </div>
 
