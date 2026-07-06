@@ -81,7 +81,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
         </section>
 
-{/* 3. REFERENCE SECTION MANDATORY CODE */}
+        {/* 3. REFERENCE SECTION MANDATORY CODE */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
             <CheckCircle className="text-[#2abcd4]" /> REFERENCE SECTION CODE
@@ -95,9 +95,9 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
   <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
     Cited Studies & Statistics
   </h4>
-  <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-    <li>Author. (Year). "Title." <em>Journal</em>, vol(issue), pages.</li>
-  </ol>
+  <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+    <p>1. Author. (Year). "Title." <em>Journal</em>, vol(issue), pages.</p>
+  </div>
 </div>
 
 {/* BACKGROUND SOURCES: CYAN */}
