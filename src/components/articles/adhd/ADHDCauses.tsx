@@ -56,6 +56,26 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             and provide supports that help individuals with ADHD thrive. Understanding biological causes doesn't 
             mean fatalism—it means we can develop more effective, targeted interventions.
           </p>
+          
+          <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4] mt-6 clear-both">
+            <h3 className="text-[#0c264d] font-bold mb-4 text-xl">The Genetic Blueprint</h3>
+            
+            <ImageWithFallback 
+              src="/images/adhd/adhd-causes-overview-analogies.png"
+              alt="Genetic nesting analogies"
+              className="w-full max-w-sm mx-auto mb-6 rounded-lg float-right ml-6 shadow-sm border border-slate-200"
+            />
+            
+            <p className="mb-4 text-slate-700 leading-relaxed">
+              To truly understand how genetics and environment interact, it helps to visualize how our genetic material is structured. You can think of it like a set of microscopic Russian nesting dolls:
+            </p>
+            <ul className="space-y-3 text-slate-700 text-sm">
+              <li><strong>The Cell & Nucleus:</strong> The cell is the body's microscopic building block. Deep inside is the nucleus, which acts as a protective library for your biological instructions.</li>
+              <li><strong>Chromosomes & Chromatin:</strong> Inside that library, DNA is tightly spooled around structural proteins (chromatin) and organized into distinct, packed volumes called chromosomes.</li>
+              <li><strong>DNA & The Double Helix:</strong> DNA is the long, continuous molecule that holds your genetic code. Its physical shape looks like a twisted ladder, which is called a double helix.</li>
+              <li><strong>The Gene:</strong> A gene is simply a specific, short segment—or a single paragraph—on that DNA ladder that provides the exact instructions to build a specific trait or protein.</li>
+            </ul>
+          </div>
         </div>
 
         {/* ===== REFERENCES SECTION ===== */}
@@ -69,14 +89,14 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
-            <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-              <li>Thapar, A., & Cooper, M. (2016). "Attention deficit hyperactivity disorder." <em>Lancet</em>, 387(10024), 1240-1250.</li>
-              <li>Faraone, S. V., et al. (2021). "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 128, 789-818.</li>
-              <li>Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</li>
-              <li>Cortese, S., et al. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</li>
-              <li>Nigg, J. T., et al. (2010). "Gene-environment interactions and ADHD: A review of the literature." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 432-445.</li>
-              <li>Thapar, A., et al. (2013). "Gene-environment interplay in attention-deficit hyperactivity disorder and the importance of a developmental perspective." <em>British Journal of Psychiatry</em>, 202(6), 414-415.</li>
-            </ol>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Thapar, A., & Cooper, M. (2016). "Attention deficit hyperactivity disorder." <em>Lancet</em>, 387(10024), 1240-1250.</p>
+              <p>2. Faraone, S. V., et al. (2021). "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 128, 789-818.</p>
+              <p>3. Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</p>
+              <p>4. Cortese, S., et al. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</p>
+              <p>5. Nigg, J. T., et al. (2010). "Gene-environment interactions and ADHD: A review of the literature." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 432-445.</p>
+              <p>6. Thapar, A., et al. (2013). "Gene-environment interplay in attention-deficit hyperactivity disorder and the importance of a developmental perspective." <em>British Journal of Psychiatry</em>, 202(6), 414-415.</p>
+            </div>
           </div>
           
           {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
@@ -136,22 +156,31 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           have also contributed to identifying genetic variants associated with symptom severity.<sup>6</sup>
         </p>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multiple Genes Involved</h3>
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          Rather than being caused by a single gene, ADHD involves many genes, each contributing a small effect. 
-          Research has identified multiple candidate genes,<sup>7</sup> particularly those involved in dopamine and 
-          norepinephrine regulation. These include genes for dopamine receptors (DRD4, DRD5), dopamine 
-          transporter (DAT1),<sup>8</sup> and other neurotransmitter-related genes. Polygenic risk scores—which combine 
-          effects across many genetic variants—have shown that ADHD genetic risk affects neural activation 
-          patterns during cognitive tasks, regardless of whether someone has an ADHD diagnosis.<sup>9</sup>
-        </p>
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          The genetic architecture of ADHD is complex, and researchers continue to discover new genetic 
-          variants associated with the condition. This genetic complexity helps explain why ADHD symptoms 
-          vary so widely from person to person. Importantly, research has revealed shared genetic background 
-          between childhood and adult ADHD, supporting the understanding that ADHD is a lifelong condition 
-          with consistent genetic underpinnings.<sup>10</sup>
-        </p>
+        <div className="clear-both pt-4">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multiple Genes Involved</h3>
+          
+          <ImageWithFallback 
+            src="/images/adhd/adhd-causes-genetic-polygenic.png"
+            alt="Multiple genes involved in ADHD"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            Rather than being caused by a single gene, ADHD involves many genes, each contributing a small effect. 
+            Research has identified multiple candidate genes,<sup>7</sup> particularly those involved in dopamine and 
+            norepinephrine regulation. These include genes for dopamine receptors (DRD4, DRD5), dopamine 
+            transporter (DAT1),<sup>8</sup> and other neurotransmitter-related genes. Polygenic risk scores—which combine 
+            effects across many genetic variants—have shown that ADHD genetic risk affects neural activation 
+            patterns during cognitive tasks, regardless of whether someone has an ADHD diagnosis.<sup>9</sup>
+          </p>
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            The genetic architecture of ADHD is complex, and researchers continue to discover new genetic 
+            variants associated with the condition. This genetic complexity helps explain why ADHD symptoms 
+            vary so widely from person to person. Importantly, research has revealed shared genetic background 
+            between childhood and adult ADHD, supporting the understanding that ADHD is a lifelong condition 
+            with consistent genetic underpinnings.<sup>10</sup>
+          </p>
+        </div>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genetic Overlap with Other Conditions</h3>
         <p className="mb-4 text-slate-700 leading-relaxed">
@@ -168,17 +197,26 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           related to expression and diagnostic patterns than underlying genetic vulnerability.<sup>12</sup>
         </p>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
-          interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
-          both genetic and environmental contributions is essential for a complete picture of ADHD's origins. 
-          This interplay between nature and nurture helps explain why not everyone with genetic risk factors 
-          develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
-        </p>
+        <div className="clear-both pt-4">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
+          
+          <ImageWithFallback 
+            src="/images/adhd/adhd-causes-genetics-environment.png"
+            alt="Gene-environment interactions"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
+            interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
+            both genetic and environmental contributions is essential for a complete picture of ADHD's origins. 
+            This interplay between nature and nurture helps explain why not everyone with genetic risk factors 
+            develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
+          </p>
+        </div>
 
         {/* --- ADD THIS DEEP DIVE CALLOUT --- */}
-        <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm">
+        <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm clear-both">
           <h3 className="text-[#0c264d] font-bold mb-2 flex items-center gap-2 text-lg">
             <span className="text-xl">🧬</span> Deep Dive: Epigenetics & ADHD
           </h3>
@@ -201,28 +239,27 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
     
-          
           {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
-            <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-              <li>Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</li>
-              <li>Brikell, I., Kuja-Halkola, R., & Larsson, H. (2015). "Heritability of attention-deficit hyperactivity disorder in adults." <em>American Journal of Medical Genetics Part B: Neuropsychiatric Genetics</em>, 168(6), 406-413.</li>
-              <li>Larsson, H., et al. (2014). "The heritability of clinically diagnosed attention deficit hyperactivity disorder across the lifespan." <em>Psychological Medicine</em>, 44(10), 2223-2229.</li>
-              <li>Demontis, D., et al. (2023). "Genome-wide analyses of ADHD identify 27 risk loci, refine the genetic architecture and implicate several cognitive domains." <em>Nature Genetics</em>, 55(2), 198-208.</li>
-              <li>Demontis, D., et al. (2019). "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder." <em>Nature Genetics</em>, 51(1), 63-75.</li>
-              <li>Middeldorp, C. M., et al. (2016). "A genome-wide association meta-analysis of attention-deficit/hyperactivity disorder symptoms in population-based pediatric cohorts." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 55(10), 896-905.</li>
-              <li>Gizer, I. R., et al. (2009). "Candidate gene studies of ADHD: a meta-analytic review." <em>Human Genetics</em>, 126(1), 51-90.</li>
-              <li>Li, D., et al. (2006). "Meta-analysis shows significant association between dopamine system genes and attention deficit hyperactivity disorder (ADHD)." <em>Human Molecular Genetics</em>, 15(14), 2276-2284.</li>
-              <li>Grimm, O., et al. (2020). "Polygenic risk for ADHD affects neural activation during response inhibition regardless of ADHD diagnosis." <em>Translational Psychiatry</em>, 10(1), 1-10.</li>
-              <li>Rovira, P., et al. (2020). "Shared genetic background between children and adults with attention deficit/hyperactivity disorder." <em>Neuropsychopharmacology</em>, 45(10), 1617-1626.</li>
-              <li>Cross-Disorder Group of the Psychiatric Genomics Consortium. (2019). "Genomic relationships, novel loci, and pleiotropic mechanisms across eight psychiatric disorders." <em>Cell</em>, 179(7), 1469-1482.</li>
-              <li>Martin, J., et al. (2018). "A genetic investigation of sex bias in the prevalence of attention-deficit/hyperactivity disorder." <em>Biological Psychiatry</em>, 83(12), 1044-1053.</li>
-              <li>Thapar, A., & Cooper, M. (2016). "Attention deficit hyperactivity disorder." <em>Lancet</em>, 387(10024), 1240-1250.</li>
-              <li>Nigg, J. T., Sibley, M. H., Thapar, A., & Karalunas, S. L. (2020). "Development of ADHD: etiology, heterogeneity, and early life course." <em>Annual Review of Developmental Psychology</em>, 2, 559-583.</li>
-            </ol>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</p>
+              <p>2. Brikell, I., Kuja-Halkola, R., & Larsson, H. (2015). "Heritability of attention-deficit hyperactivity disorder in adults." <em>American Journal of Medical Genetics Part B: Neuropsychiatric Genetics</em>, 168(6), 406-413.</p>
+              <p>3. Larsson, H., et al. (2014). "The heritability of clinically diagnosed attention deficit hyperactivity disorder across the lifespan." <em>Psychological Medicine</em>, 44(10), 2223-2229.</p>
+              <p>4. Demontis, D., et al. (2023). "Genome-wide analyses of ADHD identify 27 risk loci, refine the genetic architecture and implicate several cognitive domains." <em>Nature Genetics</em>, 55(2), 198-208.</p>
+              <p>5. Demontis, D., et al. (2019). "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder." <em>Nature Genetics</em>, 51(1), 63-75.</p>
+              <p>6. Middeldorp, C. M., et al. (2016). "A genome-wide association meta-analysis of attention-deficit/hyperactivity disorder symptoms in population-based pediatric cohorts." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 55(10), 896-905.</p>
+              <p>7. Gizer, I. R., et al. (2009). "Candidate gene studies of ADHD: a meta-analytic review." <em>Human Genetics</em>, 126(1), 51-90.</p>
+              <p>8. Li, D., et al. (2006). "Meta-analysis shows significant association between dopamine system genes and attention deficit hyperactivity disorder (ADHD)." <em>Human Molecular Genetics</em>, 15(14), 2276-2284.</p>
+              <p>9. Grimm, O., et al. (2020). "Polygenic risk for ADHD affects neural activation during response inhibition regardless of ADHD diagnosis." <em>Translational Psychiatry</em>, 10(1), 1-10.</p>
+              <p>10. Rovira, P., et al. (2020). "Shared genetic background between children and adults with attention deficit/hyperactivity disorder." <em>Neuropsychopharmacology</em>, 45(10), 1617-1626.</p>
+              <p>11. Cross-Disorder Group of the Psychiatric Genomics Consortium. (2019). "Genomic relationships, novel loci, and pleiotropic mechanisms across eight psychiatric disorders." <em>Cell</em>, 179(7), 1469-1482.</p>
+              <p>12. Martin, J., et al. (2018). "A genetic investigation of sex bias in the prevalence of attention-deficit/hyperactivity disorder." <em>Biological Psychiatry</em>, 83(12), 1044-1053.</p>
+              <p>13. Thapar, A., & Cooper, M. (2016). "Attention deficit hyperactivity disorder." <em>Lancet</em>, 387(10024), 1240-1250.</p>
+              <p>14. Nigg, J. T., Sibley, M. H., Thapar, A., & Karalunas, S. L. (2020). "Development of ADHD: etiology, heterogeneity, and early life course." <em>Annual Review of Developmental Psychology</em>, 2, 559-583.</p>
+            </div>
           </div>
           
           {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
@@ -393,22 +430,22 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
-            <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-              <li>Hoogman, M., Bralten, J., Hibar, D. P., Mennes, M., Zwiers, M. P., Schweren, L. S., ... & Franke, B. (2017). "Subcortical brain volume differences in participants with attention deficit hyperactivity disorder in children and adults: A cross-sectional mega-analysis." <em>The Lancet Psychiatry</em>, 4(4), 310-319.</li>
-              <li>Hoogman, M., Muetzel, R., Guimaraes, J. P., Shumskaya, E., Mennes, M., Zwiers, M. P., ... & Franke, B. (2019). "Brain imaging of the cortex in ADHD: A coordinated analysis of large-scale clinical and population-based samples." <em>American Journal of Psychiatry</em>, 176(7), 531-542.</li>
-              <li>Frodl, T., & Skokauskas, N. (2012). "Meta-analysis of structural MRI studies in children and adults with attention deficit hyperactivity disorder indicates treatment effects." <em>Acta Psychiatrica Scandinavica</em>, 125(2), 114-126.</li>
-              <li>Narr, K. L., Woods, R. P., Lin, J., Kim, J., Phillips, O. R., Del'Homme, M., ... & Toga, A. W. (2009). "Widespread cortical thinning is a robust anatomical marker for attention-deficit/hyperactivity disorder." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 48(10), 1014-1022.</li>
-              <li>Shaw, P., Eckstrand, K., Sharp, W., Blumenthal, J., Lerch, J. P., Greenstein, D., ... & Rapoport, J. L. (2007). "Attention-deficit/hyperactivity disorder is characterized by a delay in cortical maturation." <em>Proceedings of the National Academy of Sciences</em>, 104(49), 19649-19654.</li>
-              <li>Chen, L., Hu, X., Ouyang, L., He, N., Thumbhekar Ramakrishnan, V., Guo, W., ... & Wang, Y. (2016). "A systematic review and meta-analysis of tract-based spatial statistics studies regarding attention-deficit/hyperactivity disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 68, 838-847.</li>
-              <li>van Ewijk, H., Heslenfeld, D. J., Zwiers, M. P., Buitelaar, J. K., & Oosterlaan, J. (2012). "Diffusion tensor imaging in attention deficit/hyperactivity disorder: A systematic review and meta-analysis." <em>Neuroscience & Biobehavioral Reviews</em>, 36(4), 1093-1106.</li>
-              <li>Hart, H., Radua, J., Nakao, T., Mataix-Cols, D., & Rubia, K. (2013). "Meta-analysis of functional magnetic resonance imaging studies of inhibition and attention in attention-deficit/hyperactivity disorder: Exploring task-specific, stimulant medication, and age effects." <em>JAMA Psychiatry</em>, 70(2), 185-198.</li>
-              <li>Sonuga-Barke, E. J., & Castellanos, F. X. (2007). "Spontaneous attentional fluctuations in impaired states and pathological conditions: A neurobiological hypothesis." <em>Neuroscience & Biobehavioral Reviews</em>, 31(7), 977-986.</li>
-              <li>Sripada, C., Kessler, D., Fang, Y., Welsh, R. C., Prem Kumar, K., & Angstadt, M. (2014). "Disrupted network architecture of the resting brain in attention-deficit/hyperactivity disorder." <em>Human Brain Mapping</em>, 35(9), 4693-4705.</li>
-              <li>Cortese, S., Kelly, C., Chabernaud, C., Proal, E., Di Martino, A., Milham, M. P., & Castellanos, F. X. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</li>
-              <li>Plichta, M. M., & Scheres, A. (2014). "Ventral-striatal responsiveness during reward anticipation in ADHD and its relation to trait impulsivity in the healthy population: A meta-analytic review of the fMRI literature." <em>Neuroscience & Biobehavioral Reviews</em>, 38, 125-134.</li>
-              <li>Francx, W., Zwiers, M. P., Mennes, M., Oosterlaan, J., Heslenfeld, D., Hoekstra, P. J., ... & Buitelaar, J. K. (2015). "White matter microstructure and developmental improvement of hyperactive/impulsive symptoms in attention-deficit/hyperactivity disorder." <em>Journal of Child Psychology and Psychiatry</em>, 56(12), 1289-1297.</li>
-              <li>Shaw, P., Malek, M., Watson, B., Greenstein, D., de Rossi, P., & Sharp, W. (2013). "Trajectories of cerebral cortical development in childhood and adolescence and adult attention-deficit/hyperactivity disorder." <em>Biological Psychiatry</em>, 74(8), 599-606.</li>
-            </ol>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Hoogman, M., Bralten, J., Hibar, D. P., Mennes, M., Zwiers, M. P., Schweren, L. S., ... & Franke, B. (2017). "Subcortical brain volume differences in participants with attention deficit hyperactivity disorder in children and adults: A cross-sectional mega-analysis." <em>The Lancet Psychiatry</em>, 4(4), 310-319.</p>
+              <p>2. Hoogman, M., Muetzel, R., Guimaraes, J. P., Shumskaya, E., Mennes, M., Zwiers, M. P., ... & Franke, B. (2019). "Brain imaging of the cortex in ADHD: A coordinated analysis of large-scale clinical and population-based samples." <em>American Journal of Psychiatry</em>, 176(7), 531-542.</p>
+              <p>3. Frodl, T., & Skokauskas, N. (2012). "Meta-analysis of structural MRI studies in children and adults with attention deficit hyperactivity disorder indicates treatment effects." <em>Acta Psychiatrica Scandinavica</em>, 125(2), 114-126.</p>
+              <p>4. Narr, K. L., Woods, R. P., Lin, J., Kim, J., Phillips, O. R., Del'Homme, M., ... & Toga, A. W. (2009). "Widespread cortical thinning is a robust anatomical marker for attention-deficit/hyperactivity disorder." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 48(10), 1014-1022.</p>
+              <p>5. Shaw, P., Eckstrand, K., Sharp, W., Blumenthal, J., Lerch, J. P., Greenstein, D., ... & Rapoport, J. L. (2007). "Attention-deficit/hyperactivity disorder is characterized by a delay in cortical maturation." <em>Proceedings of the National Academy of Sciences</em>, 104(49), 19649-19654.</p>
+              <p>6. Chen, L., Hu, X., Ouyang, L., He, N., Thumbhekar Ramakrishnan, V., Guo, W., ... & Wang, Y. (2016). "A systematic review and meta-analysis of tract-based spatial statistics studies regarding attention-deficit/hyperactivity disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 68, 838-847.</p>
+              <p>7. van Ewijk, H., Heslenfeld, D. J., Zwiers, M. P., Buitelaar, J. K., & Oosterlaan, J. (2012). "Diffusion tensor imaging in attention deficit/hyperactivity disorder: A systematic review and meta-analysis." <em>Neuroscience & Biobehavioral Reviews</em>, 36(4), 1093-1106.</p>
+              <p>8. Hart, H., Radua, J., Nakao, T., Mataix-Cols, D., & Rubia, K. (2013). "Meta-analysis of functional magnetic resonance imaging studies of inhibition and attention in attention-deficit/hyperactivity disorder: Exploring task-specific, stimulant medication, and age effects." <em>JAMA Psychiatry</em>, 70(2), 185-198.</p>
+              <p>9. Sonuga-Barke, E. J., & Castellanos, F. X. (2007). "Spontaneous attentional fluctuations in impaired states and pathological conditions: A neurobiological hypothesis." <em>Neuroscience & Biobehavioral Reviews</em>, 31(7), 977-986.</p>
+              <p>10. Sripada, C., Kessler, D., Fang, Y., Welsh, R. C., Prem Kumar, K., & Angstadt, M. (2014). "Disrupted network architecture of the resting brain in attention-deficit/hyperactivity disorder." <em>Human Brain Mapping</em>, 35(9), 4693-4705.</p>
+              <p>11. Cortese, S., Kelly, C., Chabernaud, C., Proal, E., Di Martino, A., Milham, M. P., & Castellanos, F. X. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</p>
+              <p>12. Plichta, M. M., & Scheres, A. (2014). "Ventral-striatal responsiveness during reward anticipation in ADHD and its relation to trait impulsivity in the healthy population: A meta-analytic review of the fMRI literature." <em>Neuroscience & Biobehavioral Reviews</em>, 38, 125-134.</p>
+              <p>13. Francx, W., Zwiers, M. P., Mennes, M., Oosterlaan, J., Heslenfeld, D., Hoekstra, P. J., ... & Buitelaar, J. K. (2015). "White matter microstructure and developmental improvement of hyperactive/impulsive symptoms in attention-deficit/hyperactivity disorder." <em>Journal of Child Psychology and Psychiatry</em>, 56(12), 1289-1297.</p>
+              <p>14. Shaw, P., Malek, M., Watson, B., Greenstein, D., de Rossi, P., & Sharp, W. (2013). "Trajectories of cerebral cortical development in childhood and adolescence and adult attention-deficit/hyperactivity disorder." <em>Biological Psychiatry</em>, 74(8), 599-606.</p>
+            </div>
           </div>
           
           {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
@@ -491,7 +528,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         </TabsContent>
       </Tabs>
 
-      <div className="flex justify-end my-8">
+      <div className="flex justify-end my-8 clear-both">
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
           className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
