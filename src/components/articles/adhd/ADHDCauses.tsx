@@ -160,7 +160,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multiple Genes Involved</h3>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-causes-genetic-polygenic.png"
+            src="/images/adhd/adhd-causes-genetics-polygenic.png"
             alt="Multiple genes involved in ADHD"
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
