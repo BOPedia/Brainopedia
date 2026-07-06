@@ -58,12 +58,12 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           </p>
           
           <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4] mt-6 clear-both">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-xl">The Genetic Blueprint</h3>
+            <h3 className="text-[#0c264d] font-bold mb-6 text-xl">The Genetic Blueprint</h3>
             
             <ImageWithFallback 
               src="/images/adhd/adhd-causes-overview-analogies.png"
               alt="Genetic nesting analogies"
-              className="w-full max-w-sm mx-auto mb-6 rounded-lg float-right ml-6 shadow-sm border border-slate-200"
+              className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
             />
             
             <p className="mb-4 text-slate-700 leading-relaxed">
@@ -156,13 +156,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           have also contributed to identifying genetic variants associated with symptom severity.<sup>6</sup>
         </p>
 
-        <div className="clear-both pt-4">
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multiple Genes Involved</h3>
+        <div className="clear-both pt-8 pb-4">
+          <h3 className="text-[#0c264d] font-bold mb-6 text-xl text-center">Multiple Genes Involved</h3>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-causes-genetic-polygenic.png"
+            src="/images/adhd/adhd-causes-genetics-polygenic.png"
             alt="Multiple genes involved in ADHD"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
 
           <p className="mb-4 text-slate-700 leading-relaxed">
@@ -197,13 +197,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           related to expression and diagnostic patterns than underlying genetic vulnerability.<sup>12</sup>
         </p>
 
-        <div className="clear-both pt-4">
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gene-Environment Interactions</h3>
+        <div className="clear-both pt-8 pb-4">
+          <h3 className="text-[#0c264d] font-bold mb-6 text-xl text-center">Gene-Environment Interactions</h3>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-causes-genetics-environment.png"
             alt="Gene-environment interactions"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
 
           <p className="mb-4 text-slate-700 leading-relaxed">
