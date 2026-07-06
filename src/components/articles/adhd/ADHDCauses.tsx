@@ -36,13 +36,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           </p>
         </div>
 
-        <div className="clear-both pt-6">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Gene-Environment Interactions</h2>
+        <div className="clear-both pt-8 pb-4">
+          <h2 className="text-[#0c264d] font-bold mb-6 text-xl text-center">Gene-Environment Interactions</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-overview-dna-treetrunk.png"
-            alt="Gene-environment interaction in ADHD"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            src="/images/adhd/adhd-causes-genetics-environment.png"
+            alt="Gene-environment interactions"
+            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
 
           <p className="mb-4 text-slate-700 leading-relaxed">
@@ -56,26 +56,6 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             and provide supports that help individuals with ADHD thrive. Understanding biological causes doesn't 
             mean fatalism—it means we can develop more effective, targeted interventions.
           </p>
-          
-          <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4] mt-6 clear-both">
-            <h3 className="text-[#0c264d] font-bold mb-6 text-xl">The Genetic Blueprint</h3>
-            
-            <ImageWithFallback 
-              src="/images/adhd/adhd-causes-overview-analogies.png"
-              alt="Genetic nesting analogies"
-              className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-            />
-            
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              To truly understand how genetics and environment interact, it helps to visualize how our genetic material is structured. You can think of it like a set of microscopic Russian nesting dolls:
-            </p>
-            <ul className="space-y-3 text-slate-700 text-sm">
-              <li><strong>The Cell & Nucleus:</strong> The cell is the body's microscopic building block. Deep inside is the nucleus, which acts as a protective library for your biological instructions.</li>
-              <li><strong>Chromosomes & Chromatin:</strong> Inside that library, DNA is tightly spooled around structural proteins (chromatin) and organized into distinct, packed volumes called chromosomes.</li>
-              <li><strong>DNA & The Double Helix:</strong> DNA is the long, continuous molecule that holds your genetic code. Its physical shape looks like a twisted ladder, which is called a double helix.</li>
-              <li><strong>The Gene:</strong> A gene is simply a specific, short segment—or a single paragraph—on that DNA ladder that provides the exact instructions to build a specific trait or protein.</li>
-            </ul>
-          </div>
         </div>
 
         {/* ===== REFERENCES SECTION ===== */}
@@ -99,7 +79,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             </div>
           </div>
           
-          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+          {/* BACKGROUND SOURCES: CYAN */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
               Background Sources
@@ -132,6 +112,26 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           with children of parents with ADHD having a significantly higher risk of developing the condition 
           themselves.<sup>1</sup>
         </p>
+
+        <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4] mt-6 mb-8 clear-both">
+          <h3 className="text-[#0c264d] font-bold mb-6 text-xl text-center">The Genetic Blueprint</h3>
+          
+          <ImageWithFallback 
+            src="/images/adhd/adhd-causes-overview-analogies.png"
+            alt="Genetic nesting analogies"
+            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+          />
+          
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            To truly understand how genetics influence development, it helps to visualize how our genetic material is structured. You can think of it like a set of microscopic Russian nesting dolls:
+          </p>
+          <ul className="space-y-3 text-slate-700 text-sm">
+            <li><strong>The Cell & Nucleus:</strong> The cell is the body's microscopic building block. Deep inside is the nucleus, which acts as a protective library for your biological instructions.</li>
+            <li><strong>Chromosomes & Chromatin:</strong> Inside that library, DNA is tightly spooled around structural proteins (chromatin) and organized into distinct, packed volumes called chromosomes.</li>
+            <li><strong>DNA & The Double Helix:</strong> DNA is the long, continuous molecule that holds your genetic code. Its physical shape looks like a twisted ladder, which is called a double helix.</li>
+            <li><strong>The Gene:</strong> A gene is simply a specific, short segment—or a single paragraph—on that DNA ladder that provides the exact instructions to build a specific trait or protein.</li>
+          </ul>
+        </div>
 
         <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Heritability Rates</h3>
         <p className="mb-4 text-slate-700 leading-relaxed">
@@ -197,24 +197,6 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           related to expression and diagnostic patterns than underlying genetic vulnerability.<sup>12</sup>
         </p>
 
-        <div className="clear-both pt-8 pb-4">
-          <h3 className="text-[#0c264d] font-bold mb-6 text-xl text-center">Gene-Environment Interactions</h3>
-          
-          <ImageWithFallback 
-            src="/images/adhd/adhd-causes-genetics-environment.png"
-            alt="Gene-environment interactions"
-            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-          />
-
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
-            interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
-            both genetic and environmental contributions is essential for a complete picture of ADHD's origins. 
-            This interplay between nature and nurture helps explain why not everyone with genetic risk factors 
-            develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
-          </p>
-        </div>
-
         {/* --- ADD THIS DEEP DIVE CALLOUT --- */}
         <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm clear-both">
           <h3 className="text-[#0c264d] font-bold mb-2 flex items-center gap-2 text-lg">
@@ -231,7 +213,6 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           </button>
         </div>
         {/* --- END DEEP DIVE CALLOUT --- */}
-
 
         {/* ===== REFERENCES SECTION ===== */}
         <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
@@ -262,7 +243,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             </div>
           </div>
           
-          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+          {/* BACKGROUND SOURCES: CYAN */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
               Background Sources
@@ -407,18 +388,6 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           </div>
         </div>
 
-        {/* --- GENE-ENVIRONMENT BANNER --- */}
-        <div className="bg-white p-5 rounded-lg border border-slate-200 shadow-sm mt-8">
-          <h3 className="text-[#0c264d] font-bold mb-2 text-lg flex items-center gap-2">
-            <span className="text-xl">🌱</span> Gene-Environment Interactions
-          </h3>
-          <p className="text-sm text-slate-700 leading-relaxed">
-            While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
-            interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
-            both genetic and environmental contributions is essential for a complete picture of ADHD's origins, and helps explain why environmental interventions can be highly effective.
-          </p>
-        </div>
-
         {/* ===== REFERENCES SECTION ===== */}
         <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
         
@@ -448,7 +417,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             </div>
           </div>
           
-          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+          {/* BACKGROUND SOURCES: CYAN */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
               Background Sources
@@ -457,6 +426,88 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
               <li>Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</li>
               <li>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</li>
               <li>Rubia, K. (2018). "Cognitive neuroscience of attention deficit hyperactivity disorder (ADHD) and its clinical translation." <em>Frontiers in Human Neuroscience</em>, 12, 100.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  function EnvironmentalContent() {
+    return (
+      <div>
+        <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Environmental Influences</h2>
+        
+        <ImageWithFallback 
+          src="/images/adhd/adhd-causes-environment.png"
+          alt="Environmental factors influencing ADHD"
+          className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+        />
+
+        <p className="mb-6 text-slate-700 leading-relaxed">
+          While genetics provide the blueprint, environmental factors can act as the switch that turns certain genetic vulnerabilities "on" or "off." Research has identified several environmental influences, occurring primarily during early neurodevelopment, that correlate with a higher likelihood of ADHD:
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          {/* Prenatal & Perinatal Factors */}
+          <div className="bg-white p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-3 text-lg">Prenatal & Perinatal Factors</h4>
+            <ul className="text-sm space-y-3 text-slate-700">
+              <li>• <strong>Prematurity & Birth Weight:</strong> Premature birth and extremely low birth weight are among the strongest environmental risk factors for ADHD.</li>
+              <li>• <strong>In Utero Exposures:</strong> Exposure to significant maternal stress, tobacco smoke, alcohol, or certain environmental toxins during pregnancy can affect fetal brain development.</li>
+            </ul>
+          </div>
+
+          {/* Postnatal Toxins & Adversity */}
+          <div className="bg-white p-6 rounded-xl border-t-4 border-[#ffd166] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-3 text-lg">Early Childhood Factors</h4>
+            <ul className="text-sm space-y-3 text-slate-700">
+              <li>• <strong>Toxin Exposure:</strong> High levels of lead exposure in early childhood (such as from old paint or plumbing) have been robustly linked to ADHD symptoms and cognitive differences.</li>
+              <li>• <strong>Severe Early Adversity:</strong> Extreme psychosocial deprivation or trauma in early childhood can alter the development of the brain's stress-response and executive functioning networks.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Myth Busting Box */}
+        <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 shadow-sm mt-8 mb-8">
+          <h4 className="font-bold text-red-800 mb-2 text-lg">What DOES NOT Cause ADHD</h4>
+          <p className="text-sm text-slate-800 leading-relaxed mb-3">
+            To understand environmental factors, we must clear away the stigma. Decades of research have definitively proven that ADHD is <strong>not</strong> caused by:
+          </p>
+          <ul className="text-sm text-slate-800 space-y-2 font-medium">
+            <li>• "Bad" or permissive parenting</li>
+            <li>• Consuming too much sugar or artificial food coloring</li>
+            <li>• Excessive screen time or video games (though these can exacerbate existing symptoms)</li>
+            <li>• A lack of discipline or a moral failing</li>
+          </ul>
+        </div>
+        
+        {/* ===== REFERENCES SECTION ===== */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+          
+          {/* CITED STUDIES: GREEN */}
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Nigg, J. T., et al. (2010). "Gene-environment interactions and ADHD: A review of the literature." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 432-445.</p>
+              <p>2. Thapar, A., et al. (2013). "Gene-environment interplay in attention-deficit hyperactivity disorder and the importance of a developmental perspective." <em>British Journal of Psychiatry</em>, 202(6), 414-415.</p>
+              <p>3. Froehlich, T. E., et al. (2011). "Update on environmental risk factors for attention-deficit/hyperactivity disorder." <em>Current Psychiatry Reports</em>, 13(5), 333-344.</p>
+            </div>
+          </div>
+          
+          {/* BACKGROUND SOURCES: CYAN */}
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Centers for Disease Control and Prevention (CDC). (2022). "What is ADHD?"</li>
+              <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press.</li>
             </ul>
           </div>
         </div>
@@ -500,7 +551,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
       </button>
 
       <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab} className="w-full">
-        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
+        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger value="overview" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
             Overview
           </TabsTrigger>
@@ -509,6 +560,9 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           </TabsTrigger>
           <TabsTrigger value="brain" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
             Brain Structure
+          </TabsTrigger>
+          <TabsTrigger value="environmental" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
+            Environment
           </TabsTrigger>
         </TabsList>
 
@@ -525,6 +579,11 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         {/* Brain Tab */}
         <TabsContent value="brain" className="space-y-8">
           <BrainContent />
+        </TabsContent>
+
+        {/* Environmental Tab */}
+        <TabsContent value="environmental" className="space-y-8">
+          <EnvironmentalContent />
         </TabsContent>
       </Tabs>
 
