@@ -309,7 +309,7 @@ function BrainContent() {
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-frontal-cortex.png"
                 alt="Frontal cortex highlighted in neuroanatomy"
-                className="w-40 h-40 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
+                className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Frontal Cortex</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
@@ -324,7 +324,7 @@ function BrainContent() {
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-limbic-system.png"
                 alt="Limbic system highlighted in neuroanatomy"
-                className="w-40 h-40 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
+                className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Limbic System</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
@@ -339,7 +339,7 @@ function BrainContent() {
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-basal-ganglia.png"
                 alt="Basal ganglia highlighted in neuroanatomy"
-                className="w-40 h-40 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
+                className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Basal Ganglia</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
@@ -354,7 +354,7 @@ function BrainContent() {
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-ras.png"
                 alt="Reticular activating system highlighted in neuroanatomy"
-                className="w-40 h-40 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
+                className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Reticular Activating System (RAS)</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
