@@ -127,19 +127,9 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
         </section>
 
-        {/* 4. TAB COMPONENTS (THE "STACKED" STANDARD) */}
+        {/* 4. Empty */}
         <section className="mb-12">
-          <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
-            <Layout className="text-[#2abcd4]" /> UI TABS
-          </h2>
-          <p className="text-sm mb-4"><strong>Full-Width Stack:</strong> To avoid awkward spacing, all tab triggers must be 100% width.</p>
-          <pre className="bg-gray-900 text-green-400 p-5 rounded-xl text-xs overflow-x-auto">
-{`<TabsList className="flex flex-col w-full gap-3 mb-12 bg-transparent h-auto p-0">
-  <TabsTrigger value="tab1" className="w-full bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 text-sm !h-auto">
-    Full Width Tab Label
-  </TabsTrigger>
-</TabsList>`}
-          </pre>
+          
         </section>
 
         {/* 5. IMAGE & SYMBOL POLICIES */}
