@@ -215,7 +215,6 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           </p>
         </div>
 
-        {/* --- ADD THIS DEEP DIVE CALLOUT --- */}
         <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm clear-both">
           <h3 className="text-[#0c264d] font-bold mb-2 flex items-center gap-2 text-lg">
             <span className="text-xl">🧬</span> Deep Dive: Epigenetics & ADHD
@@ -230,7 +229,6 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             Explore ADHD Epigenetics →
           </button>
         </div>
-        {/* --- END DEEP DIVE CALLOUT --- */}
 
 
         {/* ===== REFERENCES SECTION ===== */}
@@ -288,17 +286,84 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <h2 className="text-[#0c264d] font-bold mb-6 text-3xl">Brain Structure and Function</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-structure-brain-anatomy.png"
-            alt="Brain structure differences in ADHD"
-            className="block mx-auto w-56 h-auto rounded-xl shadow-md border-4 border-[#2abcd4] object-contain mb-6 bg-white"
+            src="/images/adhd/adhd-causes-brain-structure-main-anatomy.png"
+            alt="Overview of brain regions affected by ADHD"
+            className="block mx-auto w-64 h-auto rounded-xl shadow-md border-4 border-[#2abcd4] object-contain mb-6 bg-white"
           />
 
           <p className="text-slate-700 leading-relaxed max-w-3xl mx-auto text-lg">
-            Brain imaging studies have revealed several differences in brain structure and activity in individuals 
-            with ADHD. These differences help explain why people with ADHD experience challenges with attention, 
-            impulse control, and executive functioning. Large-scale collaborative neuroimaging studies from the 
-            past decade have provided unprecedented insights into the neurobiology of ADHD across the lifespan.
+            Brain imaging studies have revealed specific differences in how certain regions of the ADHD brain 
+            communicate and process neurotransmitters like norepinephrine and dopamine. These structural and 
+            functional differences help explain why people with ADHD experience challenges with attention, 
+            impulse control, and executive functioning.
           </p>
+        </div>
+
+        {/* --- CORE BRAIN REGIONS --- */}
+        <div className="mb-12">
+          <h3 className="text-[#0c264d] font-bold mb-6 text-2xl px-2 text-center">Key Regions & Mechanisms</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            {/* Frontal Cortex */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0c264d] flex flex-col">
+              <ImageWithFallback 
+                src="/images/adhd/adhd-causes-brain-structure-frontal-cortex-highlight.png"
+                alt="Frontal cortex highlighted"
+                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
+              />
+              <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Frontal Cortex</h4>
+              <p className="text-sm text-slate-700 leading-relaxed flex-grow">
+                <strong>The Orchestrator:</strong> This region orchestrates high-level functioning: maintaining attention, 
+                organization, and executive function. A deficiency of norepinephrine and dopamine within this brain region 
+                might cause inattention, problems with organization, and/or impaired executive functioning.<sup>15</sup>
+              </p>
+            </div>
+
+            {/* Limbic System */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#2abcd4] flex flex-col">
+              <ImageWithFallback 
+                src="/images/adhd/adhd-causes-brain-structure-limbic-system-highlight.png"
+                alt="Limbic system highlighted"
+                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
+              />
+              <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Limbic System</h4>
+              <p className="text-sm text-slate-700 leading-relaxed flex-grow">
+                <strong>The Emotional Center:</strong> Located deeper in the brain, this region regulates our emotions. 
+                A deficiency in neurotransmitter connectivity within this neural pathway might result in restlessness, 
+                inattention, or emotional volatility.<sup>16</sup>
+              </p>
+            </div>
+
+            {/* Basal Ganglia */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#ffd166] flex flex-col">
+              <ImageWithFallback 
+                src="/images/adhd/adhd-causes-brain-structure-basal-ganglia-highlight.png"
+                alt="Basal ganglia highlighted"
+                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
+              />
+              <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Basal Ganglia</h4>
+              <p className="text-sm text-slate-700 leading-relaxed flex-grow">
+                <strong>The Switchboard:</strong> These neural circuits regulate communication within the brain. Information 
+                from all regions of the brain enters the basal ganglia, and is then relayed to the correct sites. A deficiency 
+                here can cause information to "short-circuit," resulting in inattention or impulsivity.<sup>17</sup>
+              </p>
+            </div>
+
+            {/* Reticular Activating System */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0A9DC4] flex flex-col">
+              <ImageWithFallback 
+                src="/images/adhd/adhd-causes-brain-structure-ras-highlight.png"
+                alt="Reticular activating system highlighted"
+                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
+              />
+              <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Reticular Activating System (RAS)</h4>
+              <p className="text-sm text-slate-700 leading-relaxed flex-grow">
+                <strong>The Relay System:</strong> This is the major relay system among the many pathways that enter 
+                and leave the brain, directly influencing arousal and consciousness. A deficiency in the RAS can cause 
+                inattention, impulsivity, or hyperactivity.<sup>18</sup>
+              </p>
+            </div>
+          </div>
         </div>
         
         {/* --- LARGE SCALE FINDINGS --- */}
@@ -445,6 +510,10 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
               <p>12. Plichta, M. M., & Scheres, A. (2014). "Ventral-striatal responsiveness during reward anticipation in ADHD and its relation to trait impulsivity in the healthy population: A meta-analytic review of the fMRI literature." <em>Neuroscience & Biobehavioral Reviews</em>, 38, 125-134.</p>
               <p>13. Francx, W., Zwiers, M. P., Mennes, M., Oosterlaan, J., Heslenfeld, D., Hoekstra, P. J., ... & Buitelaar, J. K. (2015). "White matter microstructure and developmental improvement of hyperactive/impulsive symptoms in attention-deficit/hyperactivity disorder." <em>Journal of Child Psychology and Psychiatry</em>, 56(12), 1289-1297.</p>
               <p>14. Shaw, P., Malek, M., Watson, B., Greenstein, D., de Rossi, P., & Sharp, W. (2013). "Trajectories of cerebral cortical development in childhood and adolescence and adult attention-deficit/hyperactivity disorder." <em>Biological Psychiatry</em>, 74(8), 599-606.</p>
+              <p>15. Arnsten, A. F. T. (2009). "Toward a new understanding of attention-deficit hyperactivity disorder pathophysiology: an important role for prefrontal cortex dysfunction." <em>CNS Drugs</em>, 23(1), 33-41.</p>
+              <p>16. Shaw, P., Stringaris, A., Nigg, J., & Leibenluft, E. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</p>
+              <p>17. Frodl, T., & Skokauskas, N. (2012). "Meta-analysis of structural MRI studies in children and adults with attention deficit hyperactivity disorder indicates treatment effects." <em>Acta Psychiatrica Scandinavica</em>, 125(2), 114-126.</p>
+              <p>18. Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</p>
             </div>
           </div>
           
@@ -499,7 +568,8 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         All About ADHD
       </button>
 
-      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab} className="w-full">
+      {/* Implemented the smart VS Code suggestion while keeping your Tailwind styles */}
+      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={(v) => setActiveTab(v)} className="w-full">
         <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger value="overview" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
             Overview
@@ -512,19 +582,16 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           </TabsTrigger>
         </TabsList>
 
-        {/* Overview Tab */}
         <TabsContent value="overview" className="space-y-8">
-          <OverviewContent />
+          {OverviewContent()}
         </TabsContent>
 
-        {/* Genetics Tab */}
         <TabsContent value="genetics" className="space-y-8">
-          <GeneticsContent />
+          {GeneticsContent()}
         </TabsContent>
 
-        {/* Brain Tab */}
         <TabsContent value="brain" className="space-y-8">
-          <BrainContent />
+          {BrainContent()}
         </TabsContent>
       </Tabs>
 
