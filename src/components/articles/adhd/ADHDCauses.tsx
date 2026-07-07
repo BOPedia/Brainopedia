@@ -492,6 +492,21 @@ function BrainContent() {
           </p>
         </div>
 
+        <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm clear-both">
+          <h3 className="text-[#0c264d] font-bold mb-2 flex items-center gap-2 text-lg">
+            <span className="text-xl">🧬</span> Deep Dive: Epigenetics & ADHD
+          </h3>
+          <p className="mb-4 text-sm text-slate-700">
+            Want to understand the molecular bridge? Explore how environmental factors like stress, nutrition, and toxins can physically alter gene expression without changing underlying DNA.
+          </p>
+          <button
+            onClick={() => setCurrentArticle?.('adhd-epigenetics')}
+            className="inline-flex items-center gap-2 bg-white border-2 border-[#ffd166] hover:bg-[#ffd166] text-[#0c264d] font-bold py-2 px-4 rounded-md transition-colors duration-200"
+          >
+            Explore ADHD Epigenetics →
+          </button>
+        </div>
+
         {/* ===== REFERENCES SECTION ===== */}
         <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
         
