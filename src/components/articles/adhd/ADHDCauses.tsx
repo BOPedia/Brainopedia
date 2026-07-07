@@ -278,7 +278,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
     );
   }
 
-  function BrainContent() {
+function BrainContent() {
     return (
       <div className="bg-[#f0f9ff] p-6 rounded-xl">
         {/* --- HEADER SECTION --- */}
@@ -294,13 +294,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <p className="text-slate-700 leading-relaxed max-w-3xl mx-auto text-lg">
             Brain imaging studies have revealed specific differences in how certain regions of the ADHD brain 
             communicate and process neurotransmitters like norepinephrine and dopamine. These structural and 
-            functional differences help explain why people with ADHD experience challenges with attention, 
-            impulse control, and executive functioning.
+            functional differences directly connect to the lived experiences of inattention, impulsivity, and 
+            executive dysfunction.
           </p>
         </div>
 
-        {/* --- CORE BRAIN REGIONS --- */}
-        <div className="mb-12">
+        {/* --- CORE BRAIN REGIONS & MECHANISMS --- */}
+        <div className="mb-12 clear-both">
           <h3 className="text-[#0c264d] font-bold mb-6 text-2xl px-2 text-center">Key Regions & Mechanisms</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
@@ -308,14 +308,14 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0c264d] flex flex-col">
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-frontal-cortex-highlight.png"
-                alt="Frontal cortex highlighted"
+                alt="Frontal cortex highlighted in neuroanatomy"
                 className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Frontal Cortex</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
                 <strong>The Orchestrator:</strong> This region orchestrates high-level functioning: maintaining attention, 
                 organization, and executive function. A deficiency of norepinephrine and dopamine within this brain region 
-                might cause inattention, problems with organization, and/or impaired executive functioning.<sup>15</sup>
+                might cause inattention, problems with organization, and or impaired executive functioning.<sup className="text-green-600 font-bold ml-0.5">15</sup>
               </p>
             </div>
 
@@ -323,14 +323,14 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#2abcd4] flex flex-col">
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-limbic-system-highlight.png"
-                alt="Limbic system highlighted"
+                alt="Limbic system highlighted in neuroanatomy"
                 className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Limbic System</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
                 <strong>The Emotional Center:</strong> Located deeper in the brain, this region regulates our emotions. 
                 A deficiency in neurotransmitter connectivity within this neural pathway might result in restlessness, 
-                inattention, or emotional volatility.<sup>16</sup>
+                inattention, or emotional volatility.<sup className="text-green-600 font-bold ml-0.5">16</sup>
               </p>
             </div>
 
@@ -338,14 +338,14 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#ffd166] flex flex-col">
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-basal-ganglia-highlight.png"
-                alt="Basal ganglia highlighted"
+                alt="Basal ganglia highlighted in neuroanatomy"
                 className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Basal Ganglia</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
                 <strong>The Switchboard:</strong> These neural circuits regulate communication within the brain. Information 
                 from all regions of the brain enters the basal ganglia, and is then relayed to the correct sites. A deficiency 
-                here can cause information to "short-circuit," resulting in inattention or impulsivity.<sup>17</sup>
+                here can cause information to short-circuit, resulting in inattention or impulsivity.<sup className="text-green-600 font-bold ml-0.5">17</sup>
               </p>
             </div>
 
@@ -353,103 +353,104 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0A9DC4] flex flex-col">
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-ras-highlight.png"
-                alt="Reticular activating system highlighted"
+                alt="Reticular activating system highlighted in neuroanatomy"
                 className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Reticular Activating System (RAS)</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
                 <strong>The Relay System:</strong> This is the major relay system among the many pathways that enter 
                 and leave the brain, directly influencing arousal and consciousness. A deficiency in the RAS can cause 
-                inattention, impulsivity, or hyperactivity.<sup>18</sup>
+                inattention, impulsivity, or hyperactivity.<sup className="text-green-600 font-bold ml-0.5">18</sup>
               </p>
             </div>
+
           </div>
         </div>
         
-        {/* --- LARGE SCALE FINDINGS --- */}
-        <div className="bg-white p-6 rounded-xl border-t-4 border-[#0c264d] shadow-sm mb-10">
+        {/* --- LARGE-SCALE FINDINGS --- */}
+        <div className="bg-white p-6 rounded-xl border-t-4 border-[#0c264d] shadow-sm mb-10 clear-both">
           <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center sm:text-left">Large-Scale Neuroimaging Findings</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
               <div className="font-bold text-[#0c264d] mb-2">2017 ENIGMA-ADHD Study</div>
               <div className="text-sm text-slate-700">
-                Analyzed brain scans from over 3,200 participants and found smaller volumes in several subcortical brain regions, including the amygdala, caudate, putamen, nucleus accumbens, and hippocampus.<sup>1</sup> These differences were most pronounced in children.
+                Analyzed brain scans from over 3,200 participants and found smaller volumes in several subcortical brain regions, including the amygdala, caudate, putamen, nucleus accumbens, and hippocampus.<sup className="text-green-600 font-bold ml-0.5">1</sup> These differences were most pronounced in children.
               </div>
             </div>
             
             <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
               <div className="font-bold text-[#0c264d] mb-2">2019 Follow-Up Study</div>
               <div className="text-sm text-slate-700">
-                Examined cortical thickness across more than 2,200 individuals and found subtle but widespread differences in cortical structure, particularly in frontal, temporal, and cingulate regions.<sup>2</sup>
+                Examined cortical thickness across more than 2,200 individuals and found subtle but widespread differences in cortical structure, particularly in frontal, temporal, and cingulate regions.<sup className="text-green-600 font-bold ml-0.5">2</sup>
               </div>
             </div>
           </div>
         </div>
 
         {/* --- STRUCTURAL DIFFERENCES (Cards) --- */}
-        <div className="mb-10">
+        <div className="mb-10 clear-both">
           <h3 className="text-[#0c264d] font-bold mb-4 text-2xl px-2">Structural Differences</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
               <div className="font-bold text-[#0c264d] mb-2">Total Brain Volume</div>
-              <div className="text-sm text-slate-700">Meta-analyses confirm smaller total brain and intracranial volume in children with ADHD, with differences most prominent in childhood.<sup>3</sup></div>
+              <div className="text-sm text-slate-700">Meta-analyses confirm smaller total brain and intracranial volume in children with ADHD, with differences most prominent in childhood.<sup className="text-green-600 font-bold ml-0.5">3</sup></div>
             </div>
             
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
               <div className="font-bold text-[#0c264d] mb-2">Subcortical Regions</div>
-              <div className="text-sm text-slate-700">Reduced volume in the prefrontal cortex, basal ganglia, hippocampus, amygdala, and cerebellum.<sup>1</sup></div>
+              <div className="text-sm text-slate-700">Reduced volume in the prefrontal cortex, basal ganglia, hippocampus, amygdala, and cerebellum.<sup className="text-green-600 font-bold ml-0.5">1</sup></div>
             </div>
             
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
               <div className="font-bold text-[#0c264d] mb-2">Cortical Thickness</div>
-              <div className="text-sm text-slate-700">Thinner cortex in multiple regions, particularly in prefrontal and temporal areas, with some normalization in adulthood.<sup>4</sup></div>
+              <div className="text-sm text-slate-700">Thinner cortex in multiple regions, particularly in prefrontal and temporal areas, with some normalization in adulthood.<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
             </div>
             
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
               <div className="font-bold text-[#0c264d] mb-2">Delayed Maturation</div>
-              <div className="text-sm text-slate-700">The brain develops on a typical trajectory but more slowly, with peak cortical thickness achieved ~2-3 years later than average.<sup>5</sup></div>
+              <div className="text-sm text-slate-700">The brain develops on a typical trajectory but more slowly, with peak cortical thickness achieved approximately 2 to 3 years later than average.<sup className="text-green-600 font-bold ml-0.5">5</sup></div>
             </div>
             
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4] md:col-span-2 lg:col-span-2">
               <div className="font-bold text-[#0c264d] mb-2">White Matter Microstructure</div>
-              <div className="text-sm text-slate-700">Differences in white matter organization affecting neural connectivity between brain regions, particularly in pathways connecting frontal regions to other areas.<sup>6,7</sup></div>
+              <div className="text-sm text-slate-700">Differences in white matter organization affecting neural connectivity between brain regions, particularly in pathways connecting frontal regions to other areas.<sup className="text-green-600 font-bold ml-0.5">6,7</sup></div>
             </div>
           </div>
         </div>
 
         {/* --- FUNCTIONAL DIFFERENCES (Cards) --- */}
-        <div className="mb-10">
+        <div className="mb-10 clear-both">
           <h3 className="text-[#0c264d] font-bold mb-4 text-2xl px-2">Functional Differences</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
               <div className="font-bold text-[#0c264d] mb-2">Task-Based Activation</div>
-              <div className="text-sm text-slate-700">Underactivity in prefrontal cortex and parietal regions during tasks requiring attention, inhibition, and working memory.<sup>8,11</sup></div>
+              <div className="text-sm text-slate-700">Underactivity in prefrontal cortex and parietal regions during tasks requiring attention, inhibition, and working memory.<sup className="text-green-600 font-bold ml-0.5">8,11</sup></div>
             </div>
             
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
               <div className="font-bold text-[#0c264d] mb-2">Default Mode Network (DMN)</div>
-              <div className="text-sm text-slate-700">Altered activity in the DMN (active during mind-wandering), including insufficient suppression of this network during tasks requiring focus.<sup>9,10</sup></div>
+              <div className="text-sm text-slate-700">Altered activity in the DMN (active during mind-wandering), including insufficient suppression of this network during tasks requiring focus.<sup className="text-green-600 font-bold ml-0.5">9,10</sup></div>
             </div>
             
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
               <div className="font-bold text-[#0c264d] mb-2">Functional Connectivity</div>
-              <div className="text-sm text-slate-700">Widespread alterations in connectivity, particularly involving networks related to attention, executive control, and reward processing.<sup>11</sup></div>
+              <div className="text-sm text-slate-700">Widespread alterations in connectivity, particularly involving networks related to attention, executive control, and reward processing.<sup className="text-green-600 font-bold ml-0.5">11</sup></div>
             </div>
             
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
               <div className="font-bold text-[#0c264d] mb-2">Reward Circuits</div>
-              <div className="text-sm text-slate-700">Reduced activation in ventral striatum during reward anticipation, which may explain motivation challenges and preference for immediate rewards.<sup>12</sup></div>
+              <div className="text-sm text-slate-700">Reduced activation in ventral striatum during reward anticipation, which may explain motivation challenges and preference for immediate rewards.<sup className="text-green-600 font-bold ml-0.5">12</sup></div>
             </div>
             
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166] md:col-span-2 lg:col-span-2">
               <div className="font-bold text-[#0c264d] mb-2">Network Organization</div>
-              <div className="text-sm text-slate-700">Less efficient organization of large-scale brain networks, potentially contributing to the variability often seen in cognitive performance.<sup>10</sup></div>
+              <div className="text-sm text-slate-700">Less efficient organization of large-scale brain networks, potentially contributing to the variability often seen in cognitive performance.<sup className="text-green-600 font-bold ml-0.5">10</sup></div>
             </div>
           </div>
         </div>
 
         {/* --- CONTEXT & IMPLICATIONS (3-Column Layout) --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 clear-both">
           <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
             <div className="font-bold text-[#0c264d] mb-2 text-lg">Adult Brain Differences</div>
             <p className="text-sm text-slate-700 leading-relaxed">
@@ -460,7 +461,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#2abcd4]">
             <div className="font-bold text-[#0c264d] mb-2 text-lg">Developmental Trajectories</div>
             <p className="text-sm text-slate-700 leading-relaxed">
-              Longitudinal studies reveal ADHD involves altered developmental trajectories rather than static abnormalities. Some differences decrease with age, while others emerge or persist into adulthood.<sup>13,14</sup>
+              Longitudinal studies reveal ADHD involves altered developmental trajectories rather than static abnormalities. Some differences decrease with age, while others emerge or persist into adulthood.<sup className="text-green-600 font-bold ml-0.5">13,14</sup>
             </p>
           </div>
           
@@ -473,13 +474,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         </div>
 
         {/* --- GENE-ENVIRONMENT BANNER --- */}
-        <div className="bg-white p-5 rounded-lg border border-slate-200 shadow-sm mt-8">
-          <h3 className="text-[#0c264d] font-bold mb-2 text-lg flex items-center gap-2">
-            <span className="text-xl">🌱</span> Gene-Environment Interactions
+        <div className="bg-white p-5 rounded-lg border border-slate-200 shadow-sm mt-8 clear-both">
+          <h3 className="text-[#0c264d] font-bold mb-2 text-lg">
+            Gene-Environment Interactions
           </h3>
           <p className="text-sm text-slate-700 leading-relaxed">
             While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
-            interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
+            interact with genetic predisposition to influence whether and how ADHD manifests.<sup className="text-green-600 font-bold ml-0.5">13,14</sup> Understanding 
             both genetic and environmental contributions is essential for a complete picture of ADHD's origins, and helps explain why environmental interventions can be highly effective.
           </p>
         </div>
@@ -532,7 +533,6 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
       </div>
     );
   }
-
   return (
     <article className="max-w-full w-full">
       <style>
