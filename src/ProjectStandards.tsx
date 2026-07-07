@@ -15,17 +15,26 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <h1 className="text-4xl text-[#0c264d] font-bold mb-2">
             Brainopedia Project Standards & Design System
           </h1>
-          <p className="text-sm text-gray-500 font-bold uppercase tracking-widest">Last Updated: May 13, 2026</p>
+          <p className="text-sm text-gray-500 font-bold uppercase tracking-widest">Last Updated: July 2026</p>
           <p className="mt-4 text-[#0c264d]">
             The definitive technical and editorial manual for the Brainopedia digital encyclopedia.
           </p>
         </div>
 
-        {/* 1. IMAGE PLACEMENT & CLEARING STANDARDS */}
+        {/* 1. IMAGE PLACEMENT, CLEARING & NAMING STANDARDS */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
-            <Move className="text-[#2abcd4]" /> IMAGE PLACEMENT & POSITIONING
+            <Move className="text-[#2abcd4]" /> IMAGE PLACEMENT, NAMING & POSITIONING
           </h2>
+          
+          <div className="bg-[#f0f9ff] border-l-4 border-[#2abcd4] p-5 mb-6 rounded-r-xl shadow-sm">
+            <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">File Naming Convention:</h3>
+            <p className="text-sm text-gray-700 mb-2">All graphics must follow this exact naming structure to maintain consistency across the platform:</p>
+            <code className="text-xs font-bold bg-white text-[#2abcd4] p-2 rounded border border-[#2abcd4] border-opacity-20 block w-max">
+              neurodivergence-section-tab-detail-about-pic.png
+            </code>
+          </div>
+
           <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these three patterns for consistency:</p>
           
           <div className="grid md:grid-cols-3 gap-6">
@@ -33,7 +42,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
               <h3 className="font-bold text-[#0c264d] text-sm mb-2">1. The Centered Hero</h3>
               <p className="text-xs mb-3 text-gray-600">For large diagrams (DNA, Brains) between text blocks.</p>
               <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-                className="w-full max-w-md mx-auto mb-8 rounded-xl shadow-md"
+                className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm"
               </code>
             </div>
 
@@ -41,15 +50,15 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
               <h3 className="font-bold text-[#0c264d] text-sm mb-2">2. The Inline Float</h3>
               <p className="text-xs mb-3 text-gray-600">Small icons or supporting graphics inside info-boxes.</p>
               <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-                className="w-full max-w-sm mx-auto mb-6 rounded-lg"
+                className="w-64 h-auto rounded-md float-right ml-6 mb-4"
               </code>
             </div>
 
             <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
               <h3 className="font-bold text-[#0c264d] text-sm mb-2">3. The Clearing Rule</h3>
-              <p className="text-xs mb-3 text-gray-600">Always use <code className="bg-white px-1">clear-both</code> or <code className="bg-white px-1">w-full</code> on buttons below images.</p>
+              <p className="text-xs mb-3 text-gray-600">Always use <code className="bg-white px-1">clear-both</code> on containers or buttons below floated images.</p>
               <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-                className="flex justify-end my-8 w-full clear-both"
+                className="clear-both pt-8 pb-4"
               </code>
             </div>
           </div>
@@ -86,6 +95,11 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
             <CheckCircle className="text-[#2abcd4]" /> REFERENCE SECTION CODE
           </h2>
+          
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4 text-sm text-gray-800">
+            <strong>Mandatory Header Styling:</strong> Reference sub-headers must always include the subtle bottom border line using the exact classes: <code className="bg-white px-1 rounded text-xs">border-b border-green-700 border-opacity-10 pb-1</code> (or cyan for Background Sources).
+          </div>
+
           <div className="bg-red-100 border-4 border-red-600 p-6 rounded-xl">
             <pre className="bg-white p-4 rounded text-xs overflow-x-auto border border-red-200">
 {`<h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -142,6 +156,36 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             <div className="bg-red-50 border-l-4 border-red-500 p-5">
               <h3 className="font-bold text-red-800 mb-2 uppercase text-xs">Emoji Policy:</h3>
               <p className="text-sm text-gray-800">DO NOT use emojis in headings or body text. Maintain professional tone.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. INFORMATION ARCHITECTURE & TAB ORDERING */}
+        <section className="mb-12">
+          <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
+            <Layout className="text-[#2abcd4]" /> INFORMATION ARCHITECTURE
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
+              <h3 className="font-bold text-[#0c264d] mb-2">Domain-Specific Definitions</h3>
+              <p className="text-sm text-gray-700">Foundational analogies and structural definitions (e.g., explaining how a cell/gene works) must live inside their specific domain tab (e.g., Genetics) rather than cluttering the General Overview.</p>
+            </div>
+
+            <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
+              <h3 className="font-bold text-[#0c264d] mb-2">Standardized Tab Ordering</h3>
+              <p className="text-sm text-gray-700 mb-3">To maintain a logical flow of information across the platform, deep-dive tabs should consistently follow this sequential order:</p>
+              <ol className="list-decimal ml-5 text-sm font-bold text-[#2abcd4] space-y-1">
+                <li><span className="text-gray-700 font-normal">Overview</span></li>
+                <li><span className="text-gray-700 font-normal">Genetics</span></li>
+                <li><span className="text-gray-700 font-normal">Environment</span></li>
+                <li><span className="text-gray-700 font-normal">Brain / Neurobiology</span></li>
+              </ol>
+            </div>
+            
+            <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-5 rounded-r-lg">
+              <h3 className="font-bold text-[#0c264d] mb-2">Graphic Naming Integrity</h3>
+              <p className="text-sm text-gray-800">If a graphic's file name no longer matches its tab location due to restructuring (e.g., an "overview" graphic is moved into the "genetics" tab), <strong>maintain the original file name</strong>. Do not rename the file, as this prevents broken links across the platform.</p>
             </div>
           </div>
         </section>
