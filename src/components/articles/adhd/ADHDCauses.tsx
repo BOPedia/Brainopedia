@@ -299,17 +299,17 @@ function BrainContent() {
           </p>
         </div>
 
-        {/* --- CORE BRAIN REGIONS & MECHANISMS --- */}
+        {/* --- CORE BRAIN REGIONS & MECHANISMS (SQUARE CARDS) --- */}
         <div className="mb-12 clear-both">
           <h3 className="text-[#0c264d] font-bold mb-6 text-2xl px-2 text-center">Key Regions & Mechanisms</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             {/* Frontal Cortex */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0c264d] flex flex-col">
+            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0c264d] flex flex-col aspect-square overflow-y-auto">
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-frontal-cortex-highlight.png"
                 alt="Frontal cortex highlighted in neuroanatomy"
-                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
+                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100 flex-shrink-0"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Frontal Cortex</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
@@ -320,11 +320,11 @@ function BrainContent() {
             </div>
 
             {/* Limbic System */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#2abcd4] flex flex-col">
+            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#2abcd4] flex flex-col aspect-square overflow-y-auto">
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-limbic-system-highlight.png"
                 alt="Limbic system highlighted in neuroanatomy"
-                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
+                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100 flex-shrink-0"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Limbic System</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
@@ -335,11 +335,11 @@ function BrainContent() {
             </div>
 
             {/* Basal Ganglia */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#ffd166] flex flex-col">
+            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#ffd166] flex flex-col aspect-square overflow-y-auto">
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-basal-ganglia-highlight.png"
                 alt="Basal ganglia highlighted in neuroanatomy"
-                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
+                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100 flex-shrink-0"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Basal Ganglia</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
@@ -350,11 +350,11 @@ function BrainContent() {
             </div>
 
             {/* Reticular Activating System */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0A9DC4] flex flex-col">
+            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0A9DC4] flex flex-col aspect-square overflow-y-auto">
               <ImageWithFallback 
                 src="/images/adhd/adhd-causes-brain-structure-ras-highlight.png"
                 alt="Reticular activating system highlighted in neuroanatomy"
-                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100"
+                className="w-full h-32 object-cover rounded-md mb-4 bg-slate-100 flex-shrink-0"
               />
               <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Reticular Activating System (RAS)</h4>
               <p className="text-sm text-slate-700 leading-relaxed flex-grow">
@@ -387,9 +387,16 @@ function BrainContent() {
           </div>
         </div>
 
-        {/* --- STRUCTURAL DIFFERENCES (Cards) --- */}
+        {/* --- STRUCTURAL DIFFERENCES (Cards + New Centered Image) --- */}
         <div className="mb-10 clear-both">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-2xl px-2">Structural Differences</h3>
+          <h3 className="text-[#0c264d] font-bold mb-6 text-2xl px-2">Structural Differences</h3>
+          
+          <ImageWithFallback 
+            src="/images/adhd/adhd-causes-brain-structure-structural-differences-scan.png"
+            alt="Structural brain differences in ADHD"
+            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+          />
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
               <div className="font-bold text-[#0c264d] mb-2">Total Brain Volume</div>
@@ -530,9 +537,56 @@ function BrainContent() {
             </ul>
           </div>
         </div>
+        
+        {/* ===== REFERENCES SECTION ===== */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+          
+          {/* CITED STUDIES: GREEN */}
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Hoogman, M., Bralten, J., Hibar, D. P., Mennes, M., Zwiers, M. P., Schweren, L. S., ... & Franke, B. (2017). "Subcortical brain volume differences in participants with attention deficit hyperactivity disorder in children and adults: A cross-sectional mega-analysis." <em>The Lancet Psychiatry</em>, 4(4), 310-319.</p>
+              <p>2. Hoogman, M., Muetzel, R., Guimaraes, J. P., Shumskaya, E., Mennes, M., Zwiers, M. P., ... & Franke, B. (2019). "Brain imaging of the cortex in ADHD: A coordinated analysis of large-scale clinical and population-based samples." <em>American Journal of Psychiatry</em>, 176(7), 531-542.</p>
+              <p>3. Frodl, T., & Skokauskas, N. (2012). "Meta-analysis of structural MRI studies in children and adults with attention deficit hyperactivity disorder indicates treatment effects." <em>Acta Psychiatrica Scandinavica</em>, 125(2), 114-126.</p>
+              <p>4. Narr, K. L., Woods, R. P., Lin, J., Kim, J., Phillips, O. R., Del'Homme, M., ... & Toga, A. W. (2009). "Widespread cortical thinning is a robust anatomical marker for attention-deficit/hyperactivity disorder." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 48(10), 1014-1022.</p>
+              <p>5. Shaw, P., Eckstrand, K., Sharp, W., Blumenthal, J., Lerch, J. P., Greenstein, D., ... & Rapoport, J. L. (2007). "Attention-deficit/hyperactivity disorder is characterized by a delay in cortical maturation." <em>Proceedings of the National Academy of Sciences</em>, 104(49), 19649-19654.</p>
+              <p>6. Chen, L., Hu, X., Ouyang, L., He, N., Thumbhekar Ramakrishnan, V., Guo, W., ... & Wang, Y. (2016). "A systematic review and meta-analysis of tract-based spatial statistics studies regarding attention-deficit/hyperactivity disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 68, 838-847.</p>
+              <p>7. van Ewijk, H., Heslenfeld, D. J., Zwiers, M. P., Buitelaar, J. K., & Oosterlaan, J. (2012). "Diffusion tensor imaging in attention deficit/hyperactivity disorder: A systematic review and meta-analysis." <em>Neuroscience & Biobehavioral Reviews</em>, 36(4), 1093-1106.</p>
+              <p>8. Hart, H., Radua, J., Nakao, T., Mataix-Cols, D., & Rubia, K. (2013). "Meta-analysis of functional magnetic resonance imaging studies of inhibition and attention in attention-deficit/hyperactivity disorder: Exploring task-specific, stimulant medication, and age effects." <em>JAMA Psychiatry</em>, 70(2), 185-198.</p>
+              <p>9. Sonuga-Barke, E. J., & Castellanos, F. X. (2007). "Spontaneous attentional fluctuations in impaired states and pathological conditions: A neurobiological hypothesis." <em>Neuroscience & Biobehavioral Reviews</em>, 31(7), 977-986.</p>
+              <p>10. Sripada, C., Kessler, D., Fang, Y., Welsh, R. C., Prem Kumar, K., & Angstadt, M. (2014). "Disrupted network architecture of the resting brain in attention-deficit/hyperactivity disorder." <em>Human Brain Mapping</em>, 35(9), 4693-4705.</p>
+              <p>11. Cortese, S., Kelly, C., Chabernaud, C., Proal, E., Di Martino, A., Milham, M. P., & Castellanos, F. X. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</p>
+              <p>12. Plichta, M. M., & Scheres, A. (2014). "Ventral-striatal responsiveness during reward anticipation in ADHD and its relation to trait impulsivity in the healthy population: A meta-analytic review of the fMRI literature." <em>Neuroscience & Biobehavioral Reviews</em>, 38, 125-134.</p>
+              <p>13. Francx, W., Zwiers, M. P., Mennes, M., Oosterlaan, J., Heslenfeld, D., Hoekstra, P. J., ... & Buitelaar, J. K. (2015). "White matter microstructure and developmental improvement of hyperactive/impulsive symptoms in attention-deficit/hyperactivity disorder." <em>Journal of Child Psychology and Psychiatry</em>, 56(12), 1289-1297.</p>
+              <p>14. Shaw, P., Malek, M., Watson, B., Greenstein, D., de Rossi, P., & Sharp, W. (2013). "Trajectories of cerebral cortical development in childhood and adolescence and adult attention-deficit/hyperactivity disorder." <em>Biological Psychiatry</em>, 74(8), 599-606.</p>
+              <p>15. Arnsten, A. F. T. (2009). "Toward a new understanding of attention-deficit hyperactivity disorder pathophysiology: an important role for prefrontal cortex dysfunction." <em>CNS Drugs</em>, 23(1), 33-41.</p>
+              <p>16. Shaw, P., Stringaris, A., Nigg, J., & Leibenluft, E. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</p>
+              <p>17. Frodl, T., & Skokauskas, N. (2012). "Meta-analysis of structural MRI studies in children and adults with attention deficit hyperactivity disorder indicates treatment effects." <em>Acta Psychiatrica Scandinavica</em>, 125(2), 114-126.</p>
+              <p>18. Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</p>
+            </div>
+          </div>
+          
+          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</li>
+              <li>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</li>
+              <li>Rubia, K. (2018). "Cognitive neuroscience of attention deficit hyperactivity disorder (ADHD) and its clinical translation." <em>Frontiers in Human Neuroscience</em>, 12, 100.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
-  }
+  };
+
   return (
     <article className="max-w-full w-full">
       <style>
