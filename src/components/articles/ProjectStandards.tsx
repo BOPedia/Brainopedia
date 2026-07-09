@@ -35,13 +35,6 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             </code>
           </div>
 
-	<div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
-  		<h3 className="font-bold text-[#0c264d] text-sm mb-2">5. Centered Image Headings</h3>
-  		<p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered PNG, it must be centered and clear any previous floats.</p>
- 		 <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
- 		   className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
- 		 </code>
-		</div>
           <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these four patterns for consistency:</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -77,6 +70,14 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
               </code>
             </div>
           </div>
+
+	     <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+  		  <h3 className="font-bold text-[#0c264d] text-sm mb-2">5. Centered Image Headings</h3>
+  		  <p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered PNG, it must be centered and clear any previous floats.</p>
+ 		    <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+ 		   className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
+ 		    </code>
+		  </div>
         </section>
 
         {/* 2. CITATION SYSTEM */}
