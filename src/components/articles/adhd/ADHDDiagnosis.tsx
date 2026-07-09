@@ -68,7 +68,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         {/* Diagnostic Process Tab */}
         <TabsContent value="process" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The ADHD Diagnostic Process</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">The ADHD Diagnostic Process</h2>
             
             <ImageWithFallback 
               src="/images/adhd/adhd-diag-proc-ball-over-head-boy.png"
@@ -204,7 +204,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         {/* Tests & Assessments Tab */}
         <TabsContent value="tests" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Tests & Assessments Used in ADHD Evaluation</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Tests & Assessments Used in ADHD Evaluation</h2>
             
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
               <p className="text-sm">
@@ -456,7 +456,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         {/* Who Can Diagnose Tab */}
         <TabsContent value="professionals" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Professionals Qualified to Diagnose ADHD</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Professionals Qualified to Diagnose ADHD</h2>
             
             <div className="flex justify-center mb-6">
               <ADHDDiagnosticProfessionals className="w-80 h-auto rounded-md border border-gray-300" />
@@ -639,7 +639,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         {/* Adult Diagnosis Tab */}
         <TabsContent value="adults" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnosing ADHD in Adults</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Diagnosing ADHD in Adults</h2>
             
             <ImageWithFallback 
               src="/images/adhd/adhd-adult-dx-adult-male.png"
@@ -859,7 +859,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         {/* Challenges & Comorbidities Tab */}
         <TabsContent value="challenges" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnostic Challenges & Comorbidities</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Diagnostic Challenges & Comorbidities</h2>
             
             <ImageWithFallback 
               src="/images/adhd/adhd-challenges-question-mark-maze.png"
@@ -1008,7 +1008,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         {/* After Diagnosis Tab */}
         <TabsContent value="after" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Comes After Diagnosis?</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">What Comes After Diagnosis?</h2>
             
             <ImageWithFallback 
               src="/images/adhd/adhd-after-dx-treatment-roadmap.png"
@@ -1088,7 +1088,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         {/* Recent Research Tab */}
         <TabsContent value="research" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Recent Research in ADHD Diagnosis</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Recent Research in ADHD Diagnosis</h2>
             
             <p className="mb-6">
               The field of ADHD research is rapidly evolving. Here are some key recent findings relevant to diagnosis:

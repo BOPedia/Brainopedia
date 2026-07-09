@@ -18,15 +18,14 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
       <>
         {/* Treatment Approaches Section */}
         <div>
-
+        
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Comprehensive Treatment Approaches</h2>
+   
           <ImageWithFallback 
             src="/images/adhd/adhd-support-overview-gray-happy-sad-brain.png"
             alt="ADHD treatment and support overview"
             className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
-          />
-          
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Comprehensive Treatment Approaches</h2>
-          
+          />       
           <p className="mb-4">
             ADHD is now understood as a chronic, life-course persistent disorder requiring ongoing, integrated treatment 
             across development. Effective ADHD management typically involves a multimodal approach combining 
@@ -215,7 +214,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
     return (
       <>
         <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Medication</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Medication</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-medical-pills-packaged.png"
@@ -321,7 +320,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
     return (
       <>
         <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Behavioral Interventions and Therapy</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Behavioral Interventions and Therapy</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-behavioral-family-therapy.png"
@@ -461,7 +460,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
     return (
       <>
         <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Educational Accommodations and Support</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Educational Accommodations and Support</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-work-overhead-organized.png"
@@ -487,7 +486,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Organizational Skills Training (OST)</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Organizational Skills Training (OST)</h2>
           
           <p className="mb-4">
             Children and adolescents with ADHD have impaired organization, time management, and planning skills that 
@@ -523,7 +522,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Workplace Accommodations</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Workplace Accommodations</h2>
           
           <p className="mb-4">
             Under the Americans with Disabilities Act (ADA), adults with ADHD may request reasonable accommodations:
@@ -579,7 +578,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
     return (
       <>
         <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Lifestyle Modifications</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Lifestyle Modifications</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-support-lifestyle-kids-yoga.png"
@@ -752,7 +751,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
     return (
       <>
         <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Self-Management Strategies and Tools</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Self-Management Strategies and Tools</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-tools-organizing-at-work.png"
@@ -791,7 +790,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
 
         {/* Time Management Section */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Time Management Strategies</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Time Management Strategies</h2>
           
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
             <div className="space-y-3">
@@ -831,7 +830,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
 
         {/* Organization Systems Section */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Organization Systems</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Organization Systems</h2>
           
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
             <div className="space-y-3">
@@ -857,7 +856,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
 
         {/* Task Management Section */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Task Management</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Task Management</h2>
           
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
             <div className="space-y-3">
@@ -883,7 +882,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
 
         {/* Technology and Apps Section */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Technology and Apps</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Technology and Apps</h2>
           
           <p className="mb-6">
             Digital tools can provide structure and reminders for individuals with ADHD:
@@ -915,7 +914,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
 
         {/* Environmental Modifications Section */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Environmental Modifications</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Environmental Modifications</h2>
           
           <p className="mb-6">
             Optimizing the physical environment can significantly reduce distractions and support focus:
@@ -949,7 +948,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
 
         {/* Emotional Regulation Section */}
         <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Emotional Regulation Strategies</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Emotional Regulation Strategies</h2>
           
           <p className="mb-6">
             Managing emotional dysregulation is often a key challenge for individuals with ADHD:
