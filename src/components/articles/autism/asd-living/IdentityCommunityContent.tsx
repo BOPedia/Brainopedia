@@ -28,7 +28,7 @@ export function IdentityCommunityContent({ setCurrentArticle }: IdentityCommunit
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-ICtab-pastel-brain-infinity.png" 
+                    src="/images/autism/autism-living-ICtab-acceptance.png" 
                     alt="Brain with infinity symbol representing all neurodiversity"
                   />
                 </div>
