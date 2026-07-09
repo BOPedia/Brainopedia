@@ -73,7 +73,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <ImageWithFallback 
               src="/images/adhd/adhd-diag-proc-ball-over-head-boy.png"
               alt="The ADHD diagnostic process - clinical evaluation"
-              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+              className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
             />
 
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6 clear-both">
@@ -644,7 +644,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <ImageWithFallback 
               src="/images/adhd/adhd-adult-dx-adult-male.png"
               alt="Adult ADHD diagnosis - recognizing symptoms in adulthood"
-              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+              className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
             />
 
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6 clear-both">
@@ -864,7 +864,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <ImageWithFallback 
               src="/images/adhd/adhd-challenges-question-mark-maze.png"
               alt="Diagnostic challenges and comorbidities in ADHD"
-              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+              className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
             />
 
             {/* Challenges Section */}
@@ -1013,7 +1013,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <ImageWithFallback 
               src="/images/adhd/adhd-after-dx-treatment-roadmap.png"
               alt="After ADHD diagnosis - next steps and planning"
-              className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+              className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
             />
 
             <p className="mb-6 clear-both">

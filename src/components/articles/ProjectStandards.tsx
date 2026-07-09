@@ -35,9 +35,9 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             </code>
           </div>
 
-          <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these three patterns for consistency:</p>
+          <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these four patterns for consistency:</p>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
               <h3 className="font-bold text-[#0c264d] text-sm mb-2">1. The Centered Hero</h3>
               <p className="text-xs mb-3 text-gray-600">For large diagrams (DNA, Brains) between text blocks.</p>
@@ -55,8 +55,16 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             </div>
 
             <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
-              <h3 className="font-bold text-[#0c264d] text-sm mb-2">3. The Clearing Rule</h3>
-              <p className="text-xs mb-3 text-gray-600">Always use <code className="bg-white px-1">clear-both</code> on containers or buttons below floated images.</p>
+              <h3 className="font-bold text-[#0c264d] text-sm mb-2">3. The Centered Block</h3>
+              <p className="text-xs mb-3 text-gray-600">For centering standard medium-sized graphics without floating text around them.</p>
+              <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+                className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
+              </code>
+            </div>
+
+            <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+              <h3 className="font-bold text-[#0c264d] text-sm mb-2">4. The Clearing Rule</h3>
+              <p className="text-xs mb-3 text-gray-600">Always use <code className="bg-white px-1 border border-gray-200 text-[#0c264d]">clear-both</code> on containers or buttons below floated images.</p>
               <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
                 className="clear-both pt-8 pb-4"
               </code>
