@@ -9,11 +9,12 @@ interface ADHDLivingProps {
 
 export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
+  
   function OverviewContent() {
     return (
       <>
         <div>
-          <h2 className="text-[#0c264d] mb-4 text-2xl">Thriving with ADHD</h2>
+          <h2 className="text-[#0c264d] mb-4 text-2xl clear-both">Thriving with ADHD</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-living-overview-pathway.png"
@@ -53,53 +54,54 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <p className="mb-4">
             Many people with ADHD excel at creative thinking, making unexpected connections, and approaching 
             problems from novel angles. Research demonstrates that individuals with ADHD show enhanced 
-            divergent thinking and generate more original ideas in creative tasks.<sup>1</sup> This can be a significant 
+            divergent thinking and generate more original ideas in creative tasks.<sup className="text-green-600 font-bold ml-0.5">1</sup> This can be a significant 
             asset in creative fields and entrepreneurship. Studies suggest that the disinhibition and cognitive 
-            flexibility associated with ADHD may contribute to creative achievement.<sup>2</sup>
+            flexibility associated with ADHD may contribute to creative achievement.<sup className="text-green-600 font-bold ml-0.5">2</sup>
           </p>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Hyperfocus</h3>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Hyperfocus</h3>
           <p className="mb-4">
             While sustaining attention on boring tasks can be difficult, many individuals with ADHD experience 
-            intense, prolonged concentration on activities that capture their interest, leading to exceptional 
-            productivity. This phenomenon, sometimes called "hyperfocus," represents a state of intense 
-            absorption that can result in remarkable achievements. The ability to hyperfocus is often reported 
-            as one of the most valuable aspects of having ADHD.
+            intense, prolonged concentration on activities that capture their interest, leading to intense 
+            productivity and skill development. This state of hyperfocus allows for deep dives into subjects 
+            and can result in exceptional expertise in specific areas of interest.
           </p>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Energy and Enthusiasm</h3>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Resilience</h3>
           <p className="mb-4">
-            The high energy that can be challenging in some contexts can also be a tremendous strength. Many 
-            people with ADHD bring enthusiasm, spontaneity, and infectious energy to their relationships and work, 
-            making them engaging collaborators and passionate advocates for causes they care about. This energy 
-            and drive can translate into high levels of productivity when properly channeled.
-          </p>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Resilience and Adaptability</h3>
-          <p className="mb-4">
-            Growing up with ADHD often means developing resilience and learning to adapt to changing circumstances. 
-            Many individuals with ADHD become skilled at thinking on their feet and pivoting when plans change 
-            unexpectedly. This adaptability and problem-solving under pressure can be invaluable in fast-paced 
-            or unpredictable environments.
+            Navigating a world not built for an ADHD brain requires tremendous resilience. Many individuals 
+            with ADHD develop strong problem-solving skills, adaptability, and the ability to persevere 
+            through setbacks. This resilience often translates into a strong capacity to handle crises and 
+            adapt quickly to change.
           </p>
         </div>
 
-        {/* Overview & Strengths Tab References */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-
-          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2">
-            <p>[1] White, H. A., & Shah, P. (2006). "Uninhibited imaginations: Creativity in adults with attention-deficit/hyperactivity disorder." <em>Personality and Individual Differences</em>, 40(6), 1121-1131.</p>
-            <p>[2] White, H. A., & Shah, P. (2011). "Creative style and achievement in adults with attention-deficit/hyperactivity disorder." <em>Personality and Individual Differences</em>, 50(5), 673-677.</p>
+        {/* Overview Tab References */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+          
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. White, H. A., & Shah, P. (2006). "Uninhibited imaginations: Creativity in adults with attention-deficit/hyperactivity disorder." <em>Personality and Individual Differences</em>, 40(6), 1121-1131.</p>
+              <p>2. White, H. A., & Shah, P. (2011). "Creative style and achievement in adults with attention-deficit/hyperactivity disorder." <em>Personality and Individual Differences</em>, 50(5), 673-677.</p>
+            </div>
           </div>
-
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Sedgwick, J. A., Merwood, A., & Asherson, P. (2019). "The positive aspects of attention deficit hyperactivity disorder: A qualitative investigation of successful adults with ADHD." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 11(3), 241-253.</p>
-            <p>Antshel, K. M. (2018). "Attention-deficit/hyperactivity disorder (ADHD) and entrepreneurship." <em>Academy of Management Perspectives</em>, 32(2), 243-265.</p>
-            <p>Archer, D. (2014). <em>The ADHD Advantage: What You Thought Was a Diagnosis May Be Your Greatest Strength</em>. Avery.</p>
-            <p>Brown, T. E. (2013). <em>A New Understanding of ADHD in Children and Adults: Executive Function Impairments</em>. Routledge.</p>
+          
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Sedgwick, J. A., Merwood, A., & Asherson, P. (2019). "The positive aspects of attention deficit hyperactivity disorder: A qualitative investigation of successful adults with ADHD." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 11(3), 241-253.</li>
+              <li>Antshel, K. M. (2018). "Attention-deficit/hyperactivity disorder (ADHD) and entrepreneurship." <em>Academy of Management Perspectives</em>, 32(2), 243-265.</li>
+              <li>Archer, D. (2014). <em>The ADHD Advantage: What You Thought Was a Diagnosis May Be Your Greatest Strength</em>. Avery.</li>
+              <li>Brown, T. E. (2013). <em>A New Understanding of ADHD in Children and Adults: Executive Function Impairments</em>. Routledge.</li>
+            </ul>
           </div>
         </div>
       </>
@@ -109,7 +111,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
   function DailyLifeContent() {
     return (
       <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life and Practical Considerations</h2>
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Daily Life and Practical Considerations</h2>
         
         <ImageWithFallback 
           src="/images/adhd/adhd-living-routines-checkmark.png"
@@ -128,7 +130,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <li className="mb-2">Build in extra time for transitions</li>
         </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Household Management</h3>
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Household Management</h3>
         <p className="mb-4">
           Executive function deficits in ADHD can make household organization challenging. Practical strategies include:
         </p>
@@ -139,7 +141,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <li className="mb-2">Use automatic bill pay to avoid late fees</li>
         </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Managing Finances</h3>
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Managing Finances</h3>
 
         <ImageWithFallback 
           src="/images/adhd/adhd-living-table-calculator-finances.png"
@@ -161,17 +163,23 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <li className="mb-2">Delete shopping apps to add friction to impulse purchases</li>
         </ul>
 
-        {/* Daily Life & Routines Tab References */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-
-          <h3 className="text-[#0c264d] font-semibold mb-2">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Dawson, P., & Guare, R. (2009). <em>Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential</em>. Guilford Press.</p>
-            <p>Ratey, N. (2008). <em>The Disorganized Mind: Coaching Your ADHD Brain to Take Control of Your Time, Tasks, and Talents</em>. St. Martin's Press.</p>
-            <p>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</p>
-            <p>Barkley, R. A., & Murphy, K. R. (2006). <em>Attention-Deficit Hyperactivity Disorder: A Clinical Workbook</em> (3rd ed.). Guilford Press.</p>
-            <p>Biederman, J., et al. (2012). "Adult outcome of attention-deficit/hyperactivity disorder: A controlled 16-year follow-up study." <em>Journal of Clinical Psychiatry</em>, 73(7), 941-950.</p>
+        {/* Daily Life Tab References */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+          
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Dawson, P., & Guare, R. (2009). <em>Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential</em>. Guilford Press.</li>
+              <li>Ratey, N. (2008). <em>The Disorganized Mind: Coaching Your ADHD Brain to Take Control of Your Time, Tasks, and Talents</em>. St. Martin's Press.</li>
+              <li>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</li>
+              <li>Barkley, R. A., & Murphy, K. R. (2006). <em>Attention-Deficit Hyperactivity Disorder: A Clinical Workbook</em> (3rd ed.). Guilford Press.</li>
+              <li>Biederman, J., et al. (2012). "Adult outcome of attention-deficit/hyperactivity disorder: A controlled 16-year follow-up study." <em>Journal of Clinical Psychiatry</em>, 73(7), 941-950.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -181,7 +189,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
   function RelationshipsContent() {
     return (
       <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left">Relationships and Social Life</h2>
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left clear-both">Relationships and Social Life</h2>
         
         <ImageWithFallback 
           src="/images/adhd/adhd-living-relationships-heart-connections.png"
@@ -204,11 +212,11 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <li className="mb-2"><strong>Couples therapy:</strong> Consider working with a therapist who understands ADHD</li>
         </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Friendships</h3>
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Friendships</h3>
         <p className="mb-4">
           Social relationships can be challenging for individuals with ADHD due to difficulties with social cues, 
           impulsivity, and maintaining contact. Research shows that children and adults with ADHD often 
-          experience social rejection and have fewer close friendships.<sup>1</sup> Strategies for maintaining friendships include:
+          experience social rejection and have fewer close friendships.<sup className="text-green-600 font-bold ml-0.5">1</sup> Strategies for maintaining friendships include:
         </p>
         <ul className="list-disc ml-6 mb-4">
           <li className="mb-2">Set reminders to reach out to friends regularly</li>
@@ -218,7 +226,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <li className="mb-2">Be patient with yourself when social mistakes happen</li>
         </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Parenting with ADHD</h3>
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Parenting with ADHD</h3>
 
         <ImageWithFallback 
           src="/images/adhd/adhd-living-relationships-read-kids-books.png"
@@ -229,7 +237,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <p className="mb-4">
           Parents with ADHD face unique challenges and bring unique strengths to parenting. 
           Research shows that parental ADHD symptoms are associated with differences in parenting 
-          behaviors, including more harsh and lax parenting and slightly less positive parenting.<sup>2</sup> However, 
+          behaviors, including more harsh and lax parenting and slightly less positive parenting.<sup className="text-green-600 font-bold ml-0.5">2</sup> However, 
           these associations are relatively small, and many parents with ADHD successfully raise healthy, 
           well-adjusted children with the right strategies and support.
         </p>
@@ -247,21 +255,31 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         </ul>
 
         {/* Relationships Tab References */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-
-          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2">
-            <p>[1] Hoza, B. (2007). "Peer functioning in children with ADHD." <em>Journal of Pediatric Psychology</em>, 32(6), 655-663.</p>
-            <p>[2] Johnston, C., Mash, E. J., Miller, N., & Ninowski, J. E. (2012). "Parenting in adults with attention-deficit/hyperactivity disorder (ADHD)." <em>Clinical Psychology Review</em>, 32(4), 215-228.</p>
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+          
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Hoza, B. (2007). "Peer functioning in children with ADHD." <em>Journal of Pediatric Psychology</em>, 32(6), 655-663.</p>
+              <p>2. Johnston, C., Mash, E. J., Miller, N., & Ninowski, J. E. (2012). "Parenting in adults with attention-deficit/hyperactivity disorder (ADHD)." <em>Clinical Psychology Review</em>, 32(4), 215-228.</p>
+            </div>
           </div>
-
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
-            <p>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</p>
-            <p>Orlov, M. (2010). <em>The ADHD Effect on Marriage: Understand and Rebuild Your Relationship in Six Steps</em>. Specialty Press.</p>
-            <p>Chronis-Tuscano, A., et al. (2011). "Very early predictors of adolescent depression and suicide attempts in children with attention-deficit/hyperactivity disorder." <em>Archives of General Psychiatry</em>, 68(12), 1267-1275.</p>
+          
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
+              <li>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</li>
+              <li>Orlov, M. (2010). <em>The ADHD Effect on Marriage: Understand and Rebuild Your Relationship in Six Steps</em>. Specialty Press.</li>
+              <li>Chronis-Tuscano, A., et al. (2011). "Very early predictors of adolescent depression and suicide attempts in children with attention-deficit/hyperactivity disorder." <em>Archives of General Psychiatry</em>, 68(12), 1267-1275.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -271,7 +289,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
   function CareerContent() {
     return (
       <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left">Education and Career</h2>
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left clear-both">Education and Career</h2>
         
         <ImageWithFallback 
           src="/images/adhd/adhd-living-educ-career-paths.png"
@@ -294,7 +312,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <li className="mb-2">Provide clear deadlines and external accountability</li>
         </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Workplace Strategies</h3>
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Workplace Strategies</h3>
         <p className="mb-4">
           Adults with ADHD often experience workplace difficulties including problems with time management, 
           organization, and interpersonal relationships. However, targeted strategies and accommodations 
@@ -310,16 +328,22 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         </ul>
 
         {/* Education & Career Tab References */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-
-          <h3 className="text-[#0c264d] font-semibold mb-2">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
-            <p>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</p>
-            <p>Nadeau, K. G. (2005). "Career choices and workplace challenges for individuals with ADHD." <em>Journal of Clinical Psychology</em>, 61(5), 549-563.</p>
-            <p>DuPaul, G. J., & Stoner, G. (2014). <em>ADHD in the Schools: Assessment and Intervention Strategies</em> (3rd ed.). Guilford Press.</p>
-            <p>Biederman, J., et al. (2005). "Functional impairments in adults with self-reports of diagnosed ADHD: A controlled study of 1001 adults in the community." <em>The Journal of Clinical Psychiatry</em>, 67(4), 524-540.</p>
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+          
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
+              <li>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</li>
+              <li>Nadeau, K. G. (2005). "Career choices and workplace challenges for individuals with ADHD." <em>Journal of Clinical Psychology</em>, 61(5), 549-563.</li>
+              <li>DuPaul, G. J., & Stoner, G. (2014). <em>ADHD in the Schools: Assessment and Intervention Strategies</em> (3rd ed.). Guilford Press.</li>
+              <li>Biederman, J., et al. (2005). "Functional impairments in adults with self-reports of diagnosed ADHD: A controlled study of 1001 adults in the community." <em>The Journal of Clinical Psychiatry</em>, 67(4), 524-540.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -329,7 +353,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
   function MentalHealthContent() {
     return (
       <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Managing Stigma and Misconceptions</h2>
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Managing Stigma and Misconceptions</h2>
         
         <ImageWithFallback 
           src="/images/adhd/adhd-living-stigma-four-faces.png"
@@ -351,7 +375,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <li className="mb-2">"People with ADHD just need to try harder" — Effort alone cannot overcome neurobiological differences</li>
         </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Self-Advocacy</h3>
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Self-Advocacy</h3>
         <p className="mb-4">
           Effective self-advocacy is crucial for accessing appropriate supports and accommodations. Key strategies include:
         </p>
@@ -369,7 +393,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Co-occurring Mental Health Conditions</h3>
           <p className="mb-4">
             ADHD frequently co-occurs with other mental health conditions, with research showing that approximately 
-            two-thirds of individuals with ADHD have at least one comorbid psychiatric disorder:<sup>1</sup>
+            two-thirds of individuals with ADHD have at least one comorbid psychiatric disorder:<sup className="text-green-600 font-bold ml-0.5">1</sup>
           </p>
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Anxiety disorders (25-40% of individuals with ADHD)</li>
@@ -383,7 +407,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
             both ADHD and comorbid disorders leads to better outcomes.
           </p>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Building Self-Esteem</h3>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Building Self-Esteem</h3>
 
           <ImageWithFallback 
             src="/images/adhd/adhd-living-stigma-self-esteem.png"
@@ -406,21 +430,31 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           </ul>
         </div>
 
-        {/* Mental Health & Stigma Tab References */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-
-          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2">
-            <p>[1] Kessler, R. C., Adler, L., Barkley, R., et al. (2006). "The prevalence and correlates of adult ADHD in the United States: Results from the National Comorbidity Survey Replication." <em>American Journal of Psychiatry</em>, 163(4), 716-723.</p>
+        {/* Mental Health Tab References */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+          
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Kessler, R. C., Adler, L., Barkley, R., et al. (2006). "The prevalence and correlates of adult ADHD in the United States: Results from the National Comorbidity Survey Replication." <em>American Journal of Psychiatry</em>, 163(4), 716-723.</p>
+            </div>
           </div>
-
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
-            <p>Hinshaw, S. P. (2018). "Attention deficit hyperactivity disorder (ADHD): Controversy, developmental mechanisms, and multiple levels of analysis." <em>Annual Review of Clinical Psychology</em>, 14, 291-316.</p>
-            <p>Safren, S. A., et al. (2005). "Cognitive-behavioral therapy for ADHD in medication-treated adults with continued symptoms." <em>Behaviour Research and Therapy</em>, 43(7), 831-842.</p>
-            <p>Ramsay, J. R., & Rostain, A. L. (2008). <em>Cognitive-Behavioral Therapy for Adult ADHD: An Integrative Psychosocial and Medical Approach</em>. Routledge.</p>
+          
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
+              <li>Hinshaw, S. P. (2018). "Attention deficit hyperactivity disorder (ADHD): Controversy, developmental mechanisms, and multiple levels of analysis." <em>Annual Review of Clinical Psychology</em>, 14, 291-316.</li>
+              <li>Safren, S. A., et al. (2005). "Cognitive-behavioral therapy for ADHD in medication-treated adults with continued symptoms." <em>Behaviour Research and Therapy</em>, 43(7), 831-842.</li>
+              <li>Ramsay, J. R., & Rostain, A. L. (2008). <em>Cognitive-Behavioral Therapy for Adult ADHD: An Integrative Psychosocial and Medical Approach</em>. Routledge.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -430,7 +464,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
   function CommunityContent() {
     return (
       <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Finding Community and Support</h2>
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Finding Community and Support</h2>
         
         <ImageWithFallback 
           src="/images/adhd/adhd-living-community-hands.png"
@@ -450,7 +484,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <li className="mb-2"><strong>Coaching:</strong> ADHD coaches provide accountability and strategy development</li>
         </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Celebrating Neurodiversity</h3>
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Celebrating Neurodiversity</h3>
         <p className="mb-4">
           Many individuals embrace the neurodiversity paradigm, which views ADHD as a natural variation 
           in human neurology rather than purely a disorder or deficit. This perspective honors both challenges and 
@@ -460,7 +494,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         </p>
 
         <div className="clear-both pt-6">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Looking Forward</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Looking Forward</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-living-future-girl-cheers.png"
@@ -489,16 +523,22 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           </p>
         </div>
 
-        {/* Community & Future Tab References */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-
-          <h3 className="text-[#0c264d] font-semibold mb-2">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Hallowell, E. M., & Ratey, J. J. (2011). <em>Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder</em> (Rev. ed.). Anchor Books.</p>
-            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
-            <p>CHADD (Children and Adults with Attention-Deficit/Hyperactivity Disorder). <em>National Resource Center on ADHD</em>. https://chadd.org</p>
-            <p>Armstrong, T. (2010). <em>Neurodiversity: Discovering the Extraordinary Gifts of Autism, ADHD, Dyslexia, and Other Brain Differences</em>. Da Capo Lifelong Books.</p>
+        {/* Community Tab References */}
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+          
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Hallowell, E. M., & Ratey, J. J. (2011). <em>Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder</em> (Rev. ed.). Anchor Books.</li>
+              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
+              <li>CHADD (Children and Adults with Attention-Deficit/Hyperactivity Disorder). <em>National Resource Center on ADHD</em>. https://chadd.org</li>
+              <li>Armstrong, T. (2010). <em>Neurodiversity: Discovering the Extraordinary Gifts of Autism, ADHD, Dyslexia, and Other Brain Differences</em>. Da Capo Lifelong Books.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -507,14 +547,6 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
 
   return (
     <article className="max-w-full w-full">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
-      
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl">
           Living with ADHD
@@ -538,7 +570,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         All About ADHD
       </button>
 
-      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab} className="w-full">
+      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={(v) => setActiveTab(v)} className="w-full">
         <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger value="overview" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
             Overview & Strengths
@@ -562,36 +594,36 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
 
         {/* Overview Tab */}
         <TabsContent value="overview" className="space-y-8">
-          <OverviewContent />
+          {OverviewContent()}
         </TabsContent>
 
         {/* Daily Life Tab */}
         <TabsContent value="daily-life" className="space-y-8">
-          <DailyLifeContent />
+          {DailyLifeContent()}
         </TabsContent>
 
         {/* Relationships Tab */}
         <TabsContent value="relationships" className="space-y-8">
-          <RelationshipsContent />
+          {RelationshipsContent()}
         </TabsContent>
 
         {/* Career Tab */}
         <TabsContent value="career" className="space-y-8">
-          <CareerContent />
+          {CareerContent()}
         </TabsContent>
 
         {/* Mental Health Tab */}
         <TabsContent value="mental-health" className="space-y-8">
-          <MentalHealthContent />
+          {MentalHealthContent()}
         </TabsContent>
 
         {/* Community Tab */}
         <TabsContent value="community" className="space-y-8">
-          <CommunityContent />
+          {CommunityContent()}
         </TabsContent>
       </Tabs>
 
-      <div className="flex justify-end my-8">
+      <div className="flex justify-end my-8 clear-both">
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
           className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
