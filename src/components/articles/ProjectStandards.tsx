@@ -35,6 +35,13 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             </code>
           </div>
 
+	<div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+  		<h3 className="font-bold text-[#0c264d] text-sm mb-2">5. Centered Image Headings</h3>
+  		<p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered PNG, it must be centered and clear any previous floats.</p>
+ 		 <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+ 		   className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
+ 		 </code>
+		</div>
           <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these four patterns for consistency:</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -117,7 +124,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
   <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
     Cited Studies & Statistics
   </h4>
-  <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+  <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
     <p>1. Author. (Year). "Title." <em>Journal</em>, vol(issue), pages.</p>
   </div>
 </div>
@@ -127,7 +134,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
   <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
     Background Sources
   </h4>
-  <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+  <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
     <li>Source (NO BULLET POINTS, NO NUMBERS, NO INDENTATION)</li>
   </ul>
 </div>`}
@@ -135,9 +142,17 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
         </section>
 
-        {/* 4. Empty */}
+        {/* 4. EDITORIAL TONE & FRAMEWORK */}
         <section className="mb-12">
-          
+          <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
+            <Type className="text-[#2abcd4]" /> EDITORIAL TONE & FRAMEWORK
+          </h2>
+          <div className="bg-white border-2 border-green-500 p-5 rounded-xl shadow-sm">
+            <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">Strengths-Based Approach:</h3>
+            <p className="text-sm text-gray-700">
+              All content, definitions, and articles must be presented through a strengths-based model. We prioritize highlighting character-driven excellence, capabilities, and holistic understanding, rather than relying strictly on deficit-based clinical language.
+            </p>
+          </div>
         </section>
 
         {/* 5. IMAGE & SYMBOL POLICIES */}
