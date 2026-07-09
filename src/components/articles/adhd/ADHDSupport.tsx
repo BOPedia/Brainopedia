@@ -12,6 +12,7 @@ interface ADHDSupportProps {
 
 export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps) {
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
+  
   function OverviewContent() {
     return (
       <>
@@ -21,10 +22,10 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <ImageWithFallback 
             src="/images/adhd/adhd-support-overview-gray-happy-sad-brain.png"
             alt="ADHD treatment and support overview"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
           
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Comprehensive Treatment Approaches</h2>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Comprehensive Treatment Approaches</h2>
           
           <p className="mb-4">
             ADHD is now understood as a chronic, life-course persistent disorder requiring ongoing, integrated treatment 
@@ -35,44 +36,42 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <p className="mb-4">
             The most effective treatment plans often include medication, behavioral interventions, educational or 
             workplace accommodations, lifestyle modifications, and support systems. Research consistently shows that 
-            combination treatments are more effective than any single intervention alone. The landmark MTA study demonstrated that combined medication and behavioral treatment produced the best outcomes for children with ADHD.<sup className="text-[#10b981]">[1][2]</sup>
+            combination treatments are more effective than any single intervention alone. The landmark MTA study demonstrated that combined medication and behavioral treatment produced the best outcomes for children with ADHD.<sup className="text-green-600 font-bold ml-0.5">1,2</sup>
           </p>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-support-overview-charts-running.png"
             alt="Treatment approach charts and outcomes"
-            className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
+            className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Treatment Sequencing</h3>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Treatment Sequencing</h3>
           <p className="mb-4">
             Recent research on treatment sequencing suggests that starting with behavioral interventions first may be 
             more effective and cost less than medication-first approaches, particularly for reducing classroom discipline 
-            referrals and disruptive behaviors.<sup className="text-[#10b981]">3</sup> However, the optimal treatment sequence depends on individual 
+            referrals and disruptive behaviors.<sup className="text-green-600 font-bold ml-0.5">3</sup> However, the optimal treatment sequence depends on individual 
             circumstances, severity of symptoms, and treatment response. Many individuals benefit from combining both 
             medication and behavioral interventions from the outset.
           </p>
           
-
-          
           <ImageWithFallback 
             src="/images/adhd/adhd-support-overview-pills-scattered.png"
             alt="Overview of medication and treatment options"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Access to Evidence-Based Treatment</h3>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Access to Evidence-Based Treatment</h3>
           <p className="mb-4">
             Despite strong evidence supporting psychosocial interventions, there is a significant gap between research 
             and practice. Recent data indicates that only 31% of families of children with ADHD receive behavioral parent 
-            training, and just 32% receive behavioral classroom management interventions.<sup className="text-[#10b981]">[4][5]</sup> Barriers include 
+            training, and just 32% receive behavioral classroom management interventions.<sup className="text-green-600 font-bold ml-0.5">4,5</sup> Barriers include 
             workforce shortages, lack of available providers trained in evidence-based approaches, and practical challenges 
             such as transportation, childcare, and scheduling conflicts.
           </p>
         </div>
         
         {/* Multimodal Treatment Components */}
-        <div className="my-8">
+        <div className="my-8 clear-both">
           <div className="bg-[#0c264d] text-center py-4 rounded-t-lg">
             <h3 className="text-[#ffd166] font-bold text-xl">Multimodal ADHD Treatment Approach</h3>
             <p className="text-white text-sm mt-1">Research shows combination treatments are more effective than any single intervention alone</p>
@@ -178,24 +177,34 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* References Section */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
-          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2">
-            <p>[1] MTA Cooperative Group. (1999). "A 14-month randomized clinical trial of treatment strategies for attention-deficit/hyperactivity disorder." <em>Archives of General Psychiatry</em>, 56(12), 1073-1086.</p>
-            <p>[2] Cortese, S., Adamo, N., Del Giovane, C., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis." <em>The Lancet Psychiatry</em>, 5(9), 727-738.</p>
-            <p>[3] Pelham, W. E., Jr., et al. (2016). "Sequential, adaptive, behavioral and pharmacological treatment for childhood ADHD." <em>Journal of Clinical Child & Adolescent Psychology</em>, 45(4), 396-415.</p>
-            <p>[4] Chacko, A., Merrill, B. M., Kofler, M. J., & Jensen, P. S. (2024). "Improving the efficacy and effectiveness of evidence-based psychosocial interventions for attention-deficit/hyperactivity disorder (ADHD) in children and adolescents: Embracing the complexity and living up to our potential." <em>Translational Psychiatry</em>, 14, 244.</p>
-            <p>[5] Fabiano, G. A., et al. (2015). "A systematic review of meta-analyses of psychosocial treatment for attention-deficit/hyperactivity disorder." <em>Clinical Child and Family Psychology Review</em>, 18(1), 77-97.</p>
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. MTA Cooperative Group. (1999). "A 14-month randomized clinical trial of treatment strategies for attention-deficit/hyperactivity disorder." <em>Archives of General Psychiatry</em>, 56(12), 1073-1086.</p>
+              <p>2. Cortese, S., Adamo, N., Del Giovane, C., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis." <em>The Lancet Psychiatry</em>, 5(9), 727-738.</p>
+              <p>3. Pelham, W. E., Jr., et al. (2016). "Sequential, adaptive, behavioral and pharmacological treatment for childhood ADHD." <em>Journal of Clinical Child & Adolescent Psychology</em>, 45(4), 396-415.</p>
+              <p>4. Chacko, A., Merrill, B. M., Kofler, M. J., & Jensen, P. S. (2024). "Improving the efficacy and effectiveness of evidence-based psychosocial interventions for attention-deficit/hyperactivity disorder (ADHD) in children and adolescents: Embracing the complexity and living up to our potential." <em>Translational Psychiatry</em>, 14, 244.</p>
+              <p>5. Fabiano, G. A., et al. (2015). "A systematic review of meta-analyses of psychosocial treatment for attention-deficit/hyperactivity disorder." <em>Clinical Child and Family Psychology Review</em>, 18(1), 77-97.</p>
+            </div>
           </div>
           
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>American Academy of Pediatrics. (2011). "ADHD: Clinical practice guideline for the diagnosis, evaluation, and treatment of attention-deficit/hyperactivity disorder in children and adolescents." <em>Pediatrics</em>, 128(5), 1007-1022.</p>
-            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
-            <p>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</p>
-            <p>Wolraich, M. L., Hagan, J. F., Allan, C., et al. (2019). "Clinical practice guideline for the diagnosis, evaluation, and treatment of attention-deficit/hyperactivity disorder in children and adolescents." <em>Pediatrics</em>, 144(4), e20192528.</p>
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>American Academy of Pediatrics. (2011). "ADHD: Clinical practice guideline for the diagnosis, evaluation, and treatment of attention-deficit/hyperactivity disorder in children and adolescents." <em>Pediatrics</em>, 128(5), 1007-1022.</li>
+              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
+              <li>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</li>
+              <li>Wolraich, M. L., Hagan, J. F., Allan, C., et al. (2019). "Clinical practice guideline for the diagnosis, evaluation, and treatment of attention-deficit/hyperactivity disorder in children and adolescents." <em>Pediatrics</em>, 144(4), e20192528.</li>
+            </ul>
           </div>
         </div>
       </>
@@ -211,10 +220,10 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <ImageWithFallback 
             src="/images/adhd/adhd-medical-pills-packaged.png"
             alt="ADHD medication - packaged pills"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
 
-          <div className="bg-[#0c264d] border-l-4 border-gray-700 p-4 rounded mb-6">
+          <div className="bg-[#0c264d] border-l-4 border-gray-700 p-4 rounded mb-6 clear-both">
             <p className="text-white text-sm">
               <strong>Important:</strong> All prescription and over-the-counter medications should only be used under the guidance and recommendations of a qualified medical professional. This information is for educational purposes only and does not replace professional medical advice.
             </p>
@@ -222,8 +231,8 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           
           <p className="mb-4">
             Medication is often the first-line treatment for ADHD, particularly for moderate to severe symptoms. 
-            Stimulant medications are highly effective for about 70-80% of people with ADHD,<sup className="text-[#10b981]">[1][2]</sup> with improvements 
-            typically seen in attention, impulse control, and hyperactivity. Meta-analyses consistently demonstrate large effect sizes for stimulant medications across multiple outcome domains.<sup className="text-[#10b981]">[3][4]</sup>
+            Stimulant medications are highly effective for about 70-80% of people with ADHD,<sup className="text-green-600 font-bold ml-0.5">1,2</sup> with improvements 
+            typically seen in attention, impulse control, and hyperactivity. Meta-analyses consistently demonstrate large effect sizes for stimulant medications across multiple outcome domains.<sup className="text-green-600 font-bold ml-0.5">3,4</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Stimulant Medications</h3>
@@ -232,7 +241,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             dopamine and norepinephrine in the brain. Two main categories exist:
           </p>
           <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Methylphenidate-based:</strong> Ritalin, Concerta, Focalin, Daytrana patch. Available in short-acting (3-6 hours) and long-acting (8-12 hours) formulations<sup className="text-[#10b981]">[5][6]</sup></li>
+            <li className="mb-2"><strong>Methylphenidate-based:</strong> Ritalin, Concerta, Focalin, Daytrana patch. Available in short-acting (3-6 hours) and long-acting (8-12 hours) formulations<sup className="text-green-600 font-bold ml-0.5">5,6</sup></li>
             <li className="mb-2"><strong>Amphetamine-based:</strong> Adderall, Vyvanse, Dexedrine. Also available in various durations of action</li>
           </ul>
           <p className="mb-4">
@@ -268,30 +277,40 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             </p>
           </div>
 
-          <div className="flex justify-center my-8 clear-both">
+          <div className="flex justify-center my-8 clear-both w-full overflow-x-auto">
             <ADHDMedicationComparison />
           </div>
         </div>
 
         {/* References Section */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
-          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2">
-            <p>[1] Faraone, S. V., & Buitelaar, J. (2010). "Comparing the efficacy of stimulants for ADHD in children and adolescents using meta-analysis." <em>European Child & Adolescent Psychiatry</em>, 19(4), 353-364.</p>
-            <p>[2] Spencer, T., Biederman, J., Wilens, T., et al. (1996). "Pharmacotherapy of attention-deficit hyperactivity disorder across the life cycle." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 35(4), 409-432.</p>
-            <p>[3] Cortese, S., Adamo, N., Del Giovane, C., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis." <em>The Lancet Psychiatry</em>, 5(9), 727-738.</p>
-            <p>[4] Faraone, S. V., & Glatt, S. J. (2010). "A comparison of the efficacy of medications for adult attention-deficit/hyperactivity disorder using meta-analysis of effect sizes." <em>The Journal of Clinical Psychiatry</em>, 71(6), 754-763.</p>
-            <p>[5] Pelham, W. E., et al. (2001). "Once-a-day Concerta methylphenidate versus three-times-daily methylphenidate in laboratory and natural settings." <em>Pediatrics</em>, 107(6), E105.</p>
-            <p>[6] Biederman, J., et al. (2003). "A comparison of once-daily and divided doses of modafinil in children with attention-deficit/hyperactivity disorder." <em>Journal of Clinical Psychiatry</em>, 64(9), 1092-1096.</p>
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Faraone, S. V., & Buitelaar, J. (2010). "Comparing the efficacy of stimulants for ADHD in children and adolescents using meta-analysis." <em>European Child & Adolescent Psychiatry</em>, 19(4), 353-364.</p>
+              <p>2. Spencer, T., Biederman, J., Wilens, T., et al. (1996). "Pharmacotherapy of attention-deficit hyperactivity disorder across the life cycle." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 35(4), 409-432.</p>
+              <p>3. Cortese, S., Adamo, N., Del Giovane, C., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis." <em>The Lancet Psychiatry</em>, 5(9), 727-738.</p>
+              <p>4. Faraone, S. V., & Glatt, S. J. (2010). "A comparison of the efficacy of medications for adult attention-deficit/hyperactivity disorder using meta-analysis of effect sizes." <em>The Journal of Clinical Psychiatry</em>, 71(6), 754-763.</p>
+              <p>5. Pelham, W. E., et al. (2001). "Once-a-day Concerta methylphenidate versus three-times-daily methylphenidate in laboratory and natural settings." <em>Pediatrics</em>, 107(6), E105.</p>
+              <p>6. Biederman, J., et al. (2003). "A comparison of once-daily and divided doses of modafinil in children with attention-deficit/hyperactivity disorder." <em>Journal of Clinical Psychiatry</em>, 64(9), 1092-1096.</p>
+            </div>
           </div>
           
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
-            <p>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</p>
-            <p>Wolraich, M. L., Hagan, J. F., Allan, C., et al. (2019). "Clinical practice guideline for the diagnosis, evaluation, and treatment of attention-deficit/hyperactivity disorder in children and adolescents." <em>Pediatrics</em>, 144(4), e20192528.</p>
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
+              <li>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</li>
+              <li>Wolraich, M. L., Hagan, J. F., Allan, C., et al. (2019). "Clinical practice guideline for the diagnosis, evaluation, and treatment of attention-deficit/hyperactivity disorder in children and adolescents." <em>Pediatrics</em>, 144(4), e20192528.</li>
+            </ul>
           </div>
         </div>
       </>
@@ -307,28 +326,28 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <ImageWithFallback 
             src="/images/adhd/adhd-behavioral-family-therapy.png"
             alt="Behavioral therapy and interventions for ADHD"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
 
-          <p className="mb-4">
+          <p className="mb-4 clear-both">
             Evidence-based psychosocial interventions play a critical role in ADHD treatment, particularly for children 
             and adolescents. Recent research continues to refine these approaches to improve their efficacy and 
-            effectiveness in real-world settings.<sup className="text-[#10b981]">[1][2]</sup>
+            effectiveness in real-world settings.<sup className="text-green-600 font-bold ml-0.5">1,2</sup>
           </p>
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Cognitive Behavioral Therapy (CBT)</h3>
           <p className="mb-4">
             CBT for ADHD helps individuals develop practical skills for managing symptoms and addressing negative 
             thought patterns. It focuses on organization, time management, planning, and challenging unhelpful beliefs 
-            about oneself. Studies show that CBT is effective for adults with ADHD, with significant reductions in ADHD symptoms and improvements in executive functioning.<sup className="text-[#10b981]">[3][4][5]</sup>
+            about oneself. Studies show that CBT is effective for adults with ADHD, with significant reductions in ADHD symptoms and improvements in executive functioning.<sup className="text-green-600 font-bold ml-0.5">3,4,5</sup>
           </p>
           
           <p className="mb-4">
-            Modern CBT approaches for ADHD incorporate skills training modules targeting specific executive function deficits. These include cognitive restructuring to address negative self-perceptions that often develop after years of ADHD-related challenges, mindfulness techniques to improve sustained attention and reduce impulsivity, and practical problem-solving strategies for everyday situations. Group CBT formats have shown particular promise, offering peer support while being more cost-effective than individual therapy.<sup className="text-[#10b981]">[6][7]</sup>
+            Modern CBT approaches for ADHD incorporate skills training modules targeting specific executive function deficits. These include cognitive restructuring to address negative self-perceptions that often develop after years of ADHD-related challenges, mindfulness techniques to improve sustained attention and reduce impulsivity, and practical problem-solving strategies for everyday situations. Group CBT formats have shown particular promise, offering peer support while being more cost-effective than individual therapy.<sup className="text-green-600 font-bold ml-0.5">6,7</sup>
           </p>
           
           <p className="mb-4">
-            Recent developments in CBT delivery include digital therapeutics and smartphone-based interventions that provide real-time support and skill practice. These technology-enhanced approaches show promising results in improving treatment accessibility and engagement, particularly for young adults who may prefer app-based support over traditional therapy sessions.<sup className="text-[#10b981]">8</sup>
+            Recent developments in CBT delivery include digital therapeutics and smartphone-based interventions that provide real-time support and skill practice. These technology-enhanced approaches show promising results in improving treatment accessibility and engagement, particularly for young adults who may prefer app-based support over traditional therapy sessions.<sup className="text-green-600 font-bold ml-0.5">8</sup>
           </p>
 
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Behavioral Parent Training</h3>
@@ -342,16 +361,16 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             BPT focuses on both antecedents (effective instructions, clear rules) and consequences (active ignoring, 
             time-out from positive reinforcement, rewards for positive behaviors). Research shows statistically significant 
             improvements with small-to-medium effect sizes on child ADHD symptoms, parenting behaviors, parenting sense of 
-            competence, and parental mental health, with benefits sustained over the course of a year.<sup className="text-[#10b981]">[9][10][11]</sup>
+            competence, and parental mental health, with benefits sustained over the course of a year.<sup className="text-green-600 font-bold ml-0.5">9,10,11</sup>
           </p>
           
           <h4 className="text-[#0c264d] font-semibold mb-2">Modern Adaptations and Digital Delivery</h4>
           <p className="mb-4">
-            To address access barriers, researchers have developed innovative delivery formats including self-directed online programs, videoconference-based sessions, and brief intervention models that can be delivered in pediatric primary care settings. These adaptations show comparable effectiveness to traditional in-person formats while significantly improving accessibility for families facing transportation, work schedule, or geographic challenges.<sup className="text-[#10b981]">[12][13][8]</sup>
+            To address access barriers, researchers have developed innovative delivery formats including self-directed online programs, videoconference-based sessions, and brief intervention models that can be delivered in pediatric primary care settings. These adaptations show comparable effectiveness to traditional in-person formats while significantly improving accessibility for families facing transportation, work schedule, or geographic challenges.<sup className="text-green-600 font-bold ml-0.5">12,13,8</sup>
           </p>
           
           <p className="mb-4">
-            Recent programs also incorporate cultural adaptations to better serve diverse families, recognizing that parenting practices and family structures vary across cultures. Tailored approaches that respect cultural values while teaching core behavioral principles have demonstrated improved engagement and outcomes in underserved communities.<sup className="text-[#10b981]">[14][15]</sup>
+            Recent programs also incorporate cultural adaptations to better serve diverse families, recognizing that parenting practices and family structures vary across cultures. Tailored approaches that respect cultural values while teaching core behavioral principles have demonstrated improved engagement and outcomes in underserved communities.<sup className="text-green-600 font-bold ml-0.5">14,15</sup>
           </p>
           
           <h4 className="text-[#0c264d] font-semibold mb-2">Engagement and Access Challenges</h4>
@@ -376,7 +395,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           </p>
           
           <p className="mb-4">
-            Adaptations designed specifically for ADHD incorporate shorter meditation periods, more movement-based practices, and concrete skill-building exercises. Family-based mindfulness programs that teach both parents and children have shown benefits for reducing parental stress while improving child behavior regulation.<sup className="text-[#10b981]">[16][17][18]</sup> While still an emerging area, mindfulness appears most effective when combined with other evidence-based treatments rather than used in isolation.
+            Adaptations designed specifically for ADHD incorporate shorter meditation periods, more movement-based practices, and concrete skill-building exercises. Family-based mindfulness programs that teach both parents and children have shown benefits for reducing parental stress while improving child behavior regulation.<sup className="text-green-600 font-bold ml-0.5">16,17,18</sup> While still an emerging area, mindfulness appears most effective when combined with other evidence-based treatments rather than used in isolation.
           </p>
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">ADHD Coaching</h3>
@@ -385,43 +404,53 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           </p>
           
           <p className="mb-4">
-            Coaches work with clients on time management, project planning, workplace productivity, academic success strategies, and relationship skills. Sessions typically occur weekly via phone or video call, with check-ins throughout the week. While research on ADHD coaching is still developing, preliminary studies suggest improvements in executive functioning, time management, and quality of life, particularly when coaching supplements medication or therapy.<sup className="text-[#10b981]">[19][20]</sup>
+            Coaches work with clients on time management, project planning, workplace productivity, academic success strategies, and relationship skills. Sessions typically occur weekly via phone or video call, with check-ins throughout the week. While research on ADHD coaching is still developing, preliminary studies suggest improvements in executive functioning, time management, and quality of life, particularly when coaching supplements medication or therapy.<sup className="text-green-600 font-bold ml-0.5">19,20</sup>
           </p>
         </div>
 
         {/* References Section */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
-          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2">
-            <p>[1] Chacko, A., Merrill, B. M., Kofler, M. J., & Jensen, P. S. (2024). "Improving the efficacy and effectiveness of evidence-based psychosocial interventions for attention-deficit/hyperactivity disorder (ADHD) in children and adolescents." <em>Translational Psychiatry</em>, 14, 244.</p>
-            <p>[2] Evans, S. W., Owens, J. S., Wymbs, B. T., & Ray, A. R. (2018). "Evidence-based psychosocial treatments for children and adolescents with attention deficit/hyperactivity disorder." <em>Journal of Clinical Child & Adolescent Psychology</em>, 47(2), 157-198.</p>
-            <p>[3] Safren, S. A., et al. (2005). "Cognitive-behavioral therapy for ADHD in medication-treated adults with continued symptoms." <em>Behaviour Research and Therapy</em>, 43(7), 831-842.</p>
-            <p>[4] Ramsay, J. R., & Rostain, A. L. (2008). <em>Cognitive-Behavioral Therapy for Adult ADHD: An Integrative Psychosocial and Medical Approach</em>. Routledge.</p>
-            <p>[5] Solanto, M. V., Marks, D. J., Wasserstein, J., et al. (2010). "Efficacy of meta-cognitive therapy for adult ADHD." <em>American Journal of Psychiatry</em>, 167(8), 958-968.</p>
-            <p>[6] Virta, M., et al. (2010). "Adults with ADHD benefit from cognitive-behaviorally oriented group rehabilitation." <em>Journal of Attention Disorders</em>, 12(3), 218-226.</p>
-            <p>[7] Bramham, J., et al. (2009). "Evaluation of group cognitive behavioral therapy for adults with ADHD." <em>Journal of Attention Disorders</em>, 12(5), 434-441.</p>
-            <p>[8] Franke, N., et al. (2018). "Technology-assisted parenting interventions for families of children with ADHD." <em>Journal of Child and Family Studies</em>, 27(9), 2699-2713.</p>
-            <p>[9] Pelham, W. E., Jr., & Fabiano, G. A. (2008). "Evidence-based psychosocial treatments for attention-deficit/hyperactivity disorder." <em>Journal of Clinical Child & Adolescent Psychology</em>, 37(1), 184-214.</p>
-            <p>[10] Fabiano, G. A., et al. (2015). "A systematic review of meta-analyses of psychosocial treatment for attention-deficit/hyperactivity disorder." <em>Clinical Child and Family Psychology Review</em>, 18(1), 77-97.</p>
-            <p>[11] Fabiano, G. A., et al. (2009). "A meta-analysis of behavioral treatments for attention-deficit/hyperactivity disorder." <em>Clinical Psychology Review</em>, 29(2), 129-140.</p>
-            <p>[12] Jones, D. J., et al. (2013). "Technology-enhanced program for child disruptive behavior disorders." <em>Journal of Clinical Child & Adolescent Psychology</em>, 43(1), 88-101.</p>
-            <p>[13] Xie, Y., et al. (2013). "Effectiveness of videoconferencing on teaching parent training skills to parents of children with ADHD." <em>Telemedicine and e-Health</em>, 19(3), 192-199.</p>
-            <p>[14] Epstein, J. N., et al. (2015). "The role of children's ethnicity in the relationship between teacher ratings of ADHD and observed classroom behavior." <em>Journal of Consulting and Clinical Psychology</em>, 83(5), 960-964.</p>
-            <p>[15] Matos, M., Bauermeister, J. J., & Bernal, G. (2009). "Parent-child interaction therapy for Puerto Rican preschool children with ADHD and behavior problems." <em>Family Process</em>, 48(2), 232-252.</p>
-            <p>[16] Zylowska, L., et al. (2008). "Mindfulness meditation training in adults and adolescents with ADHD." <em>Journal of Attention Disorders</em>, 11(6), 737-746.</p>
-            <p>[17] Cairncross, M., & Miller, C. J. (2016). "The effectiveness of mindfulness-based therapies for ADHD." <em>Journal of Attention Disorders</em>, 24(5), 627-643.</p>
-            <p>[18] Mitchell, J. T., et al. (2017). "A pilot trial of mindfulness meditation training for ADHD in adulthood." <em>Journal of Attention Disorders</em>, 21(13), 1105-1120.</p>
-            <p>[19] Safren, S. A. (2006). "Cognitive-behavioral approaches to ADHD treatment in adulthood." <em>The Journal of Clinical Psychiatry</em>, 67(Suppl 8), 46-50.</p>
-            <p>[20] Ramsay, J. R. (2010). <em>Nonmedication Treatments for Adult ADHD</em>. American Psychological Association.</p>
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Chacko, A., Merrill, B. M., Kofler, M. J., & Jensen, P. S. (2024). "Improving the efficacy and effectiveness of evidence-based psychosocial interventions for attention-deficit/hyperactivity disorder (ADHD) in children and adolescents." <em>Translational Psychiatry</em>, 14, 244.</p>
+              <p>2. Evans, S. W., Owens, J. S., Wymbs, B. T., & Ray, A. R. (2018). "Evidence-based psychosocial treatments for children and adolescents with attention deficit/hyperactivity disorder." <em>Journal of Clinical Child & Adolescent Psychology</em>, 47(2), 157-198.</p>
+              <p>3. Safren, S. A., et al. (2005). "Cognitive-behavioral therapy for ADHD in medication-treated adults with continued symptoms." <em>Behaviour Research and Therapy</em>, 43(7), 831-842.</p>
+              <p>4. Ramsay, J. R., & Rostain, A. L. (2008). <em>Cognitive-Behavioral Therapy for Adult ADHD: An Integrative Psychosocial and Medical Approach</em>. Routledge.</p>
+              <p>5. Solanto, M. V., Marks, D. J., Wasserstein, J., et al. (2010). "Efficacy of meta-cognitive therapy for adult ADHD." <em>American Journal of Psychiatry</em>, 167(8), 958-968.</p>
+              <p>6. Virta, M., et al. (2010). "Adults with ADHD benefit from cognitive-behaviorally oriented group rehabilitation." <em>Journal of Attention Disorders</em>, 12(3), 218-226.</p>
+              <p>7. Bramham, J., et al. (2009). "Evaluation of group cognitive behavioral therapy for adults with ADHD." <em>Journal of Attention Disorders</em>, 12(5), 434-441.</p>
+              <p>8. Franke, N., et al. (2018). "Technology-assisted parenting interventions for families of children with ADHD." <em>Journal of Child and Family Studies</em>, 27(9), 2699-2713.</p>
+              <p>9. Pelham, W. E., Jr., & Fabiano, G. A. (2008). "Evidence-based psychosocial treatments for attention-deficit/hyperactivity disorder." <em>Journal of Clinical Child & Adolescent Psychology</em>, 37(1), 184-214.</p>
+              <p>10. Fabiano, G. A., et al. (2015). "A systematic review of meta-analyses of psychosocial treatment for attention-deficit/hyperactivity disorder." <em>Clinical Child and Family Psychology Review</em>, 18(1), 77-97.</p>
+              <p>11. Fabiano, G. A., et al. (2009). "A meta-analysis of behavioral treatments for attention-deficit/hyperactivity disorder." <em>Clinical Psychology Review</em>, 29(2), 129-140.</p>
+              <p>12. Jones, D. J., et al. (2013). "Technology-enhanced program for child disruptive behavior disorders." <em>Journal of Clinical Child & Adolescent Psychology</em>, 43(1), 88-101.</p>
+              <p>13. Xie, Y., et al. (2013). "Effectiveness of videoconferencing on teaching parent training skills to parents of children with ADHD." <em>Telemedicine and e-Health</em>, 19(3), 192-199.</p>
+              <p>14. Epstein, J. N., et al. (2015). "The role of children's ethnicity in the relationship between teacher ratings of ADHD and observed classroom behavior." <em>Journal of Consulting and Clinical Psychology</em>, 83(5), 960-964.</p>
+              <p>15. Matos, M., Bauermeister, J. J., & Bernal, G. (2009). "Parent-child interaction therapy for Puerto Rican preschool children with ADHD and behavior problems." <em>Family Process</em>, 48(2), 232-252.</p>
+              <p>16. Zylowska, L., et al. (2008). "Mindfulness meditation training in adults and adolescents with ADHD." <em>Journal of Attention Disorders</em>, 11(6), 737-746.</p>
+              <p>17. Cairncross, M., & Miller, C. J. (2016). "The effectiveness of mindfulness-based therapies for ADHD." <em>Journal of Attention Disorders</em>, 24(5), 627-643.</p>
+              <p>18. Mitchell, J. T., et al. (2017). "A pilot trial of mindfulness meditation training for ADHD in adulthood." <em>Journal of Attention Disorders</em>, 21(13), 1105-1120.</p>
+              <p>19. Safren, S. A. (2006). "Cognitive-behavioral approaches to ADHD treatment in adulthood." <em>The Journal of Clinical Psychiatry</em>, 67(Suppl 8), 46-50.</p>
+              <p>20. Ramsay, J. R. (2010). <em>Nonmedication Treatments for Adult ADHD</em>. American Psychological Association.</p>
+            </div>
           </div>
           
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</p>
-            <p>American Academy of Pediatrics. (2011). "ADHD: Clinical practice guideline for the diagnosis, evaluation, and treatment of attention-deficit/hyperactivity disorder in children and adolescents." <em>Pediatrics</em>, 128(5), 1007-1022.</p>
-            <p>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</p>
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
+              <li>American Academy of Pediatrics. (2011). "ADHD: Clinical practice guideline for the diagnosis, evaluation, and treatment of attention-deficit/hyperactivity disorder in children and adolescents." <em>Pediatrics</em>, 128(5), 1007-1022.</li>
+              <li>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</li>
+            </ul>
           </div>
         </div>
       </>
@@ -437,10 +466,10 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <ImageWithFallback 
             src="/images/adhd/adhd-work-overhead-organized.png"
             alt="Educational and workplace accommodations for ADHD"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
 
-          <p className="mb-4">
+          <p className="mb-4 clear-both">
             Students with ADHD are entitled to accommodations under Section 504 of the Rehabilitation Act or through an Individualized Education Program (IEP) under the Individuals with Disabilities Education Act (IDEA).
           </p>
           
@@ -463,7 +492,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <p className="mb-4">
             Children and adolescents with ADHD have impaired organization, time management, and planning skills that 
             undermine their academic abilities and potential. Homework management and organizational skills predict 
-            concurrent GPA and later academic outcomes.<sup className="text-[#10b981]">1</sup> Organizational Skills Training (OST) utilizes behavioral 
+            concurrent GPA and later academic outcomes.<sup className="text-green-600 font-bold ml-0.5">1</sup> Organizational Skills Training (OST) utilizes behavioral 
             methods to directly teach these skills to students with ADHD.
           </p>
           
@@ -479,8 +508,8 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <p className="mb-4">
             OST has been primarily developed for middle school to early high school students (ages 10-14), though 
             recent work has adapted programs for high school students. Research demonstrates improvements in organizational 
-            skills, planner use, homework performance, and reduced adolescent impairment.<sup className="text-[#10b981]">[2][3]</sup> Multicomponent 
-            OST packages lead to meaningful improvements across multiple domains of academic functioning.<sup className="text-[#10b981]">3</sup>
+            skills, planner use, homework performance, and reduced adolescent impairment.<sup className="text-green-600 font-bold ml-0.5">2,3</sup> Multicomponent 
+            OST packages lead to meaningful improvements across multiple domains of academic functioning.<sup className="text-green-600 font-bold ml-0.5">3</sup>
           </p>
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">School-Based Implementation</h3>
@@ -488,7 +517,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             Embedding OST in schools is key to enhancing reach and sustainability. Current work trains school counselors 
             to implement OST with students with ADHD. Studies show that OST delivered by school staff leads to improvements 
             in organization, time management, and planning skills—even when school counselors receive only minimal 
-            training (about 2 hours) with no ongoing supervision.<sup className="text-[#10b981]">4</sup> Online tools are also being developed 
+            training (about 2 hours) with no ongoing supervision.<sup className="text-green-600 font-bold ml-0.5">4</sup> Online tools are also being developed 
             to assist school staff with low-cost OST implementation.
           </p>
         </div>
@@ -514,22 +543,32 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* References Section */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
-          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2">
-            <p>[1] Langberg, J. M., et al. (2011). "Patterns and predictors of adolescent academic achievement and performance in a sample of children with ADHD." <em>Journal of Clinical Child & Adolescent Psychology</em>, 40(4), 519-531.</p>
-            <p>[2] Gureasko-Moore, S., DuPaul, G. J., & White, G. P. (2006). "The effects of self-management in general education classrooms on the organizational skills of adolescents with ADHD." <em>Behavior Modification</em>, 30(2), 159-183.</p>
-            <p>[3] Vidal, R., et al. (2013). "Organizational skills training for children with ADHD: A randomized controlled trial." <em>Journal of Clinical Child & Adolescent Psychology</em>, 42(1), 41-52.</p>
-            <p>[4] Evans, S. W., Langberg, J. M., Schultz, B. K., et al. (2016). "Evaluation of a school-based treatment program for young adolescents with ADHD." <em>Journal of Consulting and Clinical Psychology</em>, 84(1), 15-30.</p>
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Langberg, J. M., et al. (2011). "Patterns and predictors of adolescent academic achievement and performance in a sample of children with ADHD." <em>Journal of Clinical Child & Adolescent Psychology</em>, 40(4), 519-531.</p>
+              <p>2. Gureasko-Moore, S., DuPaul, G. J., & White, G. P. (2006). "The effects of self-management in general education classrooms on the organizational skills of adolescents with ADHD." <em>Behavior Modification</em>, 30(2), 159-183.</p>
+              <p>3. Vidal, R., et al. (2013). "Organizational skills training for children with ADHD: A randomized controlled trial." <em>Journal of Clinical Child & Adolescent Psychology</em>, 42(1), 41-52.</p>
+              <p>4. Evans, S. W., Langberg, J. M., Schultz, B. K., et al. (2016). "Evaluation of a school-based treatment program for young adolescents with ADHD." <em>Journal of Consulting and Clinical Psychology</em>, 84(1), 15-30.</p>
+            </div>
           </div>
           
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>U.S. Department of Education. (2016). "Supporting Child and Student Social, Emotional, Behavioral, and Mental Health Needs." Retrieved from ed.gov</p>
-            <p>Individuals with Disabilities Education Act (IDEA). (2004). 20 U.S.C. § 1400 et seq.</p>
-            <p>Job Accommodation Network. (2024). "Accommodation and Compliance: Attention Deficit/Hyperactivity Disorder (ADHD)." Retrieved from askjan.org</p>
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>U.S. Department of Education. (2016). "Supporting Child and Student Social, Emotional, Behavioral, and Mental Health Needs." Retrieved from ed.gov</li>
+              <li>Individuals with Disabilities Education Act (IDEA). (2004). 20 U.S.C. § 1400 et seq.</li>
+              <li>Job Accommodation Network. (2024). "Accommodation and Compliance: Attention Deficit/Hyperactivity Disorder (ADHD)." Retrieved from askjan.org</li>
+            </ul>
           </div>
         </div>
       </>
@@ -545,14 +584,14 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <ImageWithFallback 
             src="/images/adhd/adhd-support-lifestyle-kids-yoga.png"
             alt="Kids doing yoga - lifestyle modifications for ADHD"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
 
-          <p className="mb-4">
+          <p className="mb-4 clear-both">
             While lifestyle modifications alone are not sufficient to treat ADHD, they play a crucial supporting role 
             in symptom management and overall well-being. Research increasingly demonstrates that certain lifestyle 
             interventions can meaningfully improve ADHD symptoms, executive function, and quality of life when combined 
-            with other evidence-based treatments.<sup className="text-[#10b981]">1</sup>
+            with other evidence-based treatments.<sup className="text-green-600 font-bold ml-0.5">1</sup>
           </p>
           
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Exercise</h3>
@@ -560,7 +599,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
             Physical exercise has emerged as one of the most promising lifestyle interventions for ADHD management.{' '}
             A comprehensive meta-analysis of 14 studies found that acute and regular physical exercise significantly 
             improved attention, hyperactivity, impulsivity, anxiety, executive function, and social disorders in 
-            children with ADHD.<sup className="text-[#10b981]">2</sup> The benefits appear to be most pronounced with moderate-to-vigorous 
+            children with ADHD.<sup className="text-green-600 font-bold ml-0.5">2</sup> The benefits appear to be most pronounced with moderate-to-vigorous 
             intensity aerobic exercise.
           </p>
           
@@ -590,7 +629,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Sleep Hygiene and Sleep Interventions</h3>
           <p className="mb-4">
             Sleep problems are highly prevalent in individuals with ADHD, affecting 25-55% of children and up to 80% 
-            of adults with the condition.<sup className="text-[#10b981]">[3][4]</sup> Common sleep difficulties include delayed sleep onset, insomnia, 
+            of adults with the condition.<sup className="text-green-600 font-bold ml-0.5">3,4</sup> Common sleep difficulties include delayed sleep onset, insomnia, 
             restless sleep, difficulty waking, and daytime sleepiness. Poor sleep significantly exacerbates ADHD symptoms, 
             creating a problematic cycle where ADHD interferes with sleep, and inadequate sleep worsens ADHD symptoms.
           </p>
@@ -598,10 +637,10 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h4 className="text-[#0c264d] font-semibold mb-2">Sleep and ADHD Symptoms</h4>
           <p className="mb-4">
             Research demonstrates that sleep deprivation in typically developing children produces behaviors remarkably 
-            similar to ADHD symptoms—including inattention, hyperactivity, and impulsivity.<sup className="text-[#10b981]">5</sup> For individuals with ADHD, 
+            similar to ADHD symptoms—including inattention, hyperactivity, and impulsivity.<sup className="text-green-600 font-bold ml-0.5">5</sup> For individuals with ADHD, 
             sleep problems compound existing difficulties with attention, emotional regulation, and executive function.{' '}
             Some researchers have proposed that sleep problems may contribute to the development or maintenance of ADHD 
-            symptoms in certain individuals.<sup className="text-[#10b981]">6</sup>
+            symptoms in certain individuals.<sup className="text-green-600 font-bold ml-0.5">6</sup>
           </p>
           
           <h4 className="text-[#0c264d] font-semibold mb-2">Evidence-Based Sleep Strategies</h4>
@@ -630,14 +669,14 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h4 className="text-[#0c264d] font-semibold mb-2">Omega-3 Fatty Acids</h4>
           <p className="mb-4">
             Some research suggests that omega-3 fatty acid supplementation (particularly EPA and DHA) may produce modest 
-            improvements in ADHD symptoms, especially inattention.<sup className="text-[#10b981]">7</sup> While the effect sizes are generally small compared 
+            improvements in ADHD symptoms, especially inattention.<sup className="text-green-600 font-bold ml-0.5">7</sup> While the effect sizes are generally small compared 
             to medication, omega-3s are well-tolerated and may provide complementary benefits.
           </p>
           
           <h4 className="text-[#0c264d] font-semibold mb-2">Artificial Food Colorings and Additives</h4>
           <p className="mb-4">
             Research on artificial food colorings and preservatives shows mixed results. Some meta-analyses find small 
-            but statistically significant effects of eliminating artificial additives on hyperactivity in children.<sup className="text-[#10b981]">8</sup> While 
+            but statistically significant effects of eliminating artificial additives on hyperactivity in children.<sup className="text-green-600 font-bold ml-0.5">8</sup> While 
             not all children with ADHD are sensitive to these substances, a small subset may benefit from dietary 
             restriction.
           </p>
@@ -654,7 +693,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Mindfulness and Meditation</h3>
           <p className="mb-4">
             Mindfulness-based interventions show promise for individuals with ADHD, with research demonstrating improvements 
-            in attention, executive functioning, and emotional regulation.<sup className="text-[#10b981]">9</sup> Mindfulness meditation training helps 
+            in attention, executive functioning, and emotional regulation.<sup className="text-green-600 font-bold ml-0.5">9</sup> Mindfulness meditation training helps 
             individuals develop meta-awareness of their internal experiences and build skills for redirecting attention. 
             While mindfulness practice can be challenging for individuals with ADHD, adapted programs with shorter sessions 
             and more structure have shown positive results.
@@ -662,37 +701,47 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Lifestyle Tab References */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
 
-          <h3 className="text-[#0c264d] font-semibold mb-2">Cited Studies or Statistics</h3>
-          <div className="text-sm space-y-2">
-            <p>[1] Faraone, S. V., et al. (2015). "Attention-deficit/hyperactivity disorder." <em>Nature Reviews Disease Primers</em>, 1, 15020.</p>
-            <p>[2] Cerrillo-Urbina, A. J., García-Hermoso, A., Sánchez-López, M., et al. (2015). "The effects of physical exercise in children with attention deficit hyperactivity disorder: A systematic review and meta-analysis of randomized control trials." <em>Child: Care, Health and Development</em>, 41(6), 779-788.</p>
-            <p>[3] Cortese, S., Faraone, S. V., Konofal, E., & Lecendreux, M. (2009). "Sleep in children with attention-deficit/hyperactivity disorder: Meta-analysis of subjective and objective studies." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 48(9), 894-908.</p>
-            <p>[4] Sobanski, E., et al. (2008). "Sleep in adults with attention deficit hyperactivity disorder (ADHD) before and during treatment with methylphenidate: A controlled polysomnographic study." <em>Sleep</em>, 31(3), 375-381.</p>
-            <p>[5] Fallone, G., Acebo, C., Seifer, R., & Carskadon, M. A. (2005). "Experimental restriction of sleep opportunity in children: Effects on teacher ratings." <em>Sleep</em>, 28(12), 1561-1567.</p>
-            <p>[6] Chervin, R. D., Dillon, J. E., Bassetti, C., Ganoczy, D. A., & Pituch, K. J. (1997). "Symptoms of sleep disorders, inattention, and hyperactivity in children." <em>Sleep</em>, 20(12), 1185-1192.</p>
-            <p>[7] Bloch, M. H., & Qawasmi, A. (2011). "Omega-3 fatty acid supplementation for the treatment of children with attention-deficit/hyperactivity disorder symptomatology: Systematic review and meta-analysis." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 50(10), 991-1000.</p>
-            <p>[8] Nigg, J. T., Lewis, K., Edinger, T., & Falk, M. (2012). "Meta-analysis of attention-deficit/hyperactivity disorder or attention-deficit/hyperactivity disorder symptoms, restriction diet, and synthetic food color additives." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 51(1), 86-97.</p>
-            <p>[9] Cairncross, M., & Miller, C. J. (2016). "The effectiveness of mindfulness-based therapies for ADHD: A meta-analytic review." <em>Journal of Attention Disorders</em>, 24(5), 627-643.</p>
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              Cited Studies & Statistics
+            </h4>
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+              <p>1. Faraone, S. V., et al. (2015). "Attention-deficit/hyperactivity disorder." <em>Nature Reviews Disease Primers</em>, 1, 15020.</p>
+              <p>2. Cerrillo-Urbina, A. J., García-Hermoso, A., Sánchez-López, M., et al. (2015). "The effects of physical exercise in children with attention deficit hyperactivity disorder: A systematic review and meta-analysis of randomized control trials." <em>Child: Care, Health and Development</em>, 41(6), 779-788.</p>
+              <p>3. Cortese, S., Faraone, S. V., Konofal, E., & Lecendreux, M. (2009). "Sleep in children with attention-deficit/hyperactivity disorder: Meta-analysis of subjective and objective studies." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 48(9), 894-908.</p>
+              <p>4. Sobanski, E., et al. (2008). "Sleep in adults with attention deficit hyperactivity disorder (ADHD) before and during treatment with methylphenidate: A controlled polysomnographic study." <em>Sleep</em>, 31(3), 375-381.</p>
+              <p>5. Fallone, G., Acebo, C., Seifer, R., & Carskadon, M. A. (2005). "Experimental restriction of sleep opportunity in children: Effects on teacher ratings." <em>Sleep</em>, 28(12), 1561-1567.</p>
+              <p>6. Chervin, R. D., Dillon, J. E., Bassetti, C., Ganoczy, D. A., & Pituch, K. J. (1997). "Symptoms of sleep disorders, inattention, and hyperactivity in children." <em>Sleep</em>, 20(12), 1185-1192.</p>
+              <p>7. Bloch, M. H., & Qawasmi, A. (2011). "Omega-3 fatty acid supplementation for the treatment of children with attention-deficit/hyperactivity disorder symptomatology: Systematic review and meta-analysis." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 50(10), 991-1000.</p>
+              <p>8. Nigg, J. T., Lewis, K., Edinger, T., & Falk, M. (2012). "Meta-analysis of attention-deficit/hyperactivity disorder or attention-deficit/hyperactivity disorder symptoms, restriction diet, and synthetic food color additives." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 51(1), 86-97.</p>
+              <p>9. Cairncross, M., & Miller, C. J. (2016). "The effectiveness of mindfulness-based therapies for ADHD: A meta-analytic review." <em>Journal of Attention Disorders</em>, 24(5), 627-643.</p>
+            </div>
           </div>
 
-          <h3 className="text-[#0c264d] font-semibold mb-2 mt-4">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Gapin, J. I., Labban, J. D., & Etnier, J. L. (2011). "The effects of physical activity on attention deficit hyperactivity disorder symptoms: The evidence." <em>Preventive Medicine</em>, 52(Suppl 1), S70-S74.</p>
-            <p>Medina, J. A., et al. (2010). "Exercise impact on sustained attention of ADHD children, methylphenidate effects." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 2(1), 49-58.</p>
-            <p>Wigal, S. B., et al. (2013). "Exercise: Applications to childhood ADHD." <em>Journal of Attention Disorders</em>, 17(4), 279-290.</p>
-            <p>Neeper, S. A., Gómez-Pinilla, F., Choi, J., & Cotman, C. (1995). "Exercise and brain neurotrophins." <em>Nature</em>, 373(6510), 109.</p>
-            <p>Hillman, C. H., Erickson, K. I., & Kramer, A. F. (2008). "Be smart, exercise your heart: Exercise effects on brain and cognition." <em>Nature Reviews Neuroscience</em>, 9(1), 58-65.</p>
-            <p>Ratey, J. J., & Loehr, J. E. (2011). "The positive impact of physical activity on cognition during adulthood: A review of underlying mechanisms, evidence and recommendations." <em>Reviews in the Neurosciences</em>, 22(2), 171-185.</p>
-            <p>Chang, Y. K., Liu, S., Yu, H. H., & Lee, Y. H. (2012). "Effect of acute exercise on executive function in children with attention deficit hyperactivity disorder." <em>Archives of Clinical Neuropsychology</em>, 27(2), 225-237.</p>
-            <p>Fedewa, A. L., & Ahn, S. (2011). "The effects of physical activity and physical fitness on children's achievement and cognitive outcomes: A meta-analysis." <em>Research Quarterly for Exercise and Sport</em>, 82(3), 521-535.</p>
-            <p>Mahar, M. T., et al. (2006). "Effects of a classroom-based program on physical activity and on-task behavior." <em>Medicine & Science in Sports & Exercise</em>, 38(12), 2086-2094.</p>
-            <p>Gruber, R., et al. (2011). "Impact of sleep extension and restriction on children's emotional lability and impulsivity." <em>Pediatrics</em>, 130(5), e1155-e1161.</p>
-            <p>Corkum, P., Tannock, R., & Moldofsky, H. (1998). "Sleep disturbances in children with attention-deficit/hyperactivity disorder." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 37(6), 637-646.</p>
-            <p>Cajochen, C., et al. (2011). "Evening exposure to a light-emitting diodes (LED)-backlit computer screen affects circadian physiology and cognitive performance." <em>Journal of Applied Physiology</em>, 110(5), 1432-1438.</p>
-            <p>van de Weijer-Bergsma, E., Formsma, A. R., de Bruin, E. I., & Bögels, S. M. (2012). "The effectiveness of mindfulness training on behavioral problems and attentional functioning in adolescents with ADHD." <em>Journal of Child and Family Studies</em>, 21(5), 775-787.</p>
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Gapin, J. I., Labban, J. D., & Etnier, J. L. (2011). "The effects of physical activity on attention deficit hyperactivity disorder symptoms: The evidence." <em>Preventive Medicine</em>, 52(Suppl 1), S70-S74.</li>
+              <li>Medina, J. A., et al. (2010). "Exercise impact on sustained attention of ADHD children, methylphenidate effects." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 2(1), 49-58.</li>
+              <li>Wigal, S. B., et al. (2013). "Exercise: Applications to childhood ADHD." <em>Journal of Attention Disorders</em>, 17(4), 279-290.</li>
+              <li>Neeper, S. A., Gómez-Pinilla, F., Choi, J., & Cotman, C. (1995). "Exercise and brain neurotrophins." <em>Nature</em>, 373(6510), 109.</li>
+              <li>Hillman, C. H., Erickson, K. I., & Kramer, A. F. (2008). "Be smart, exercise your heart: Exercise effects on brain and cognition." <em>Nature Reviews Neuroscience</em>, 9(1), 58-65.</li>
+              <li>Ratey, J. J., & Loehr, J. E. (2011). "The positive impact of physical activity on cognition during adulthood: A review of underlying mechanisms, evidence and recommendations." <em>Reviews in the Neurosciences</em>, 22(2), 171-185.</li>
+              <li>Chang, Y. K., Liu, S., Yu, H. H., & Lee, Y. H. (2012). "Effect of acute exercise on executive function in children with attention deficit hyperactivity disorder." <em>Archives of Clinical Neuropsychology</em>, 27(2), 225-237.</li>
+              <li>Fedewa, A. L., & Ahn, S. (2011). "The effects of physical activity and physical fitness on children's achievement and cognitive outcomes: A meta-analysis." <em>Research Quarterly for Exercise and Sport</em>, 82(3), 521-535.</li>
+              <li>Mahar, M. T., et al. (2006). "Effects of a classroom-based program on physical activity and on-task behavior." <em>Medicine & Science in Sports & Exercise</em>, 38(12), 2086-2094.</li>
+              <li>Gruber, R., et al. (2011). "Impact of sleep extension and restriction on children's emotional lability and impulsivity." <em>Pediatrics</em>, 130(5), e1155-e1161.</li>
+              <li>Corkum, P., Tannock, R., & Moldofsky, H. (1998). "Sleep disturbances in children with attention-deficit/hyperactivity disorder." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 37(6), 637-646.</li>
+              <li>Cajochen, C., et al. (2011). "Evening exposure to a light-emitting diodes (LED)-backlit computer screen affects circadian physiology and cognitive performance." <em>Journal of Applied Physiology</em>, 110(5), 1432-1438.</li>
+              <li>van de Weijer-Bergsma, E., Formsma, A. R., de Bruin, E. I., & Bögels, S. M. (2012). "The effectiveness of mindfulness training on behavioral problems and attentional functioning in adolescents with ADHD." <em>Journal of Child and Family Studies</em>, 21(5), 775-787.</li>
+            </ul>
           </div>
         </div>
       </>
@@ -708,10 +757,10 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <ImageWithFallback 
             src="/images/adhd/adhd-tools-organizing-at-work.png"
             alt="Self-management tools and apps for ADHD"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
 
-          <p className="mb-6">
+          <p className="mb-6 clear-both">
             Individuals with ADHD benefit from developing personalized systems and tools to compensate for executive function 
             challenges. Effective self-management involves creating external supports to reduce cognitive load and 
             build consistent routines.
@@ -726,7 +775,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* YouTube Video Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
+        <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
           <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center">Finding Motivation with ADHD</h3>
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
@@ -741,7 +790,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Time Management Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
+        <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Time Management Strategies</h2>
           
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -781,7 +830,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Organization Systems Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
+        <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Organization Systems</h2>
           
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -807,7 +856,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Task Management Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
+        <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Task Management</h2>
           
           <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
@@ -833,7 +882,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Technology and Apps Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
+        <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Technology and Apps</h2>
           
           <p className="mb-6">
@@ -865,7 +914,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Environmental Modifications Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
+        <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Environmental Modifications</h2>
           
           <p className="mb-6">
@@ -899,7 +948,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Emotional Regulation Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
+        <div className="bg-[#f0f9ff] p-6 rounded-lg mt-8">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Emotional Regulation Strategies</h2>
           
           <p className="mb-6">
@@ -940,18 +989,24 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Self-Management Tab References */}
-        <div className="bg-white p-6 rounded-lg border-l-4 border-[#2abcd4] mt-8">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
 
-          <h3 className="text-[#0c264d] font-semibold mb-2">Background Sources</h3>
-          <div className="text-sm space-y-2">
-            <p>Brown, T. E. (2013). <em>A New Understanding of ADHD in Children and Adults: Executive Function Impairments</em>. Routledge.</p>
-            <p>Dawson, P., & Guare, R. (2009). <em>Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential</em>. Guilford Press.</p>
-            <p>Barkley, R. A., Koplowitz, S., Anderson, T., & McMurray, M. B. (1997). "Sense of time in children with ADHD: Effects of duration, distraction, and stimulant medication." <em>Journal of the International Neuropsychological Society</em>, 3(4), 359-369.</p>
-            <p>Powell, L., Parker, J., & Harpin, V. (2018). "ADHD: Is there an app for that? A suitability assessment of apps for the parents of children and young people with ADHD." <em>JMIR mHealth and uHealth</em>, 6(6), e149.</p>
-            <p>Lally, P., van Jaarsveld, C. H., Potts, H. W., & Wardle, J. (2010). "How are habits formed: Modelling habit formation in the real world." <em>European Journal of Social Psychology</em>, 40(6), 998-1009.</p>
-            <p>Sarver, D. E., Rapport, M. D., Kofler, M. J., Raiker, J. S., & Friedman, L. M. (2015). "Hyperactivity in attention-deficit/hyperactivity disorder (ADHD): Impairing deficit or compensatory behavior?" <em>Journal of Abnormal Child Psychology</em>, 43(7), 1219-1232.</p>
-            <p>Shaw, P., Stringaris, A., Nigg, J., & Leibenluft, E. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</p>
+          <div>
+            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              Background Sources
+            </h4>
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+              <li>Brown, T. E. (2013). <em>A New Understanding of ADHD in Children and Adults: Executive Function Impairments</em>. Routledge.</li>
+              <li>Dawson, P., & Guare, R. (2009). <em>Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential</em>. Guilford Press.</li>
+              <li>Barkley, R. A., Koplowitz, S., Anderson, T., & McMurray, M. B. (1997). "Sense of time in children with ADHD: Effects of duration, distraction, and stimulant medication." <em>Journal of the International Neuropsychological Society</em>, 3(4), 359-369.</li>
+              <li>Powell, L., Parker, J., & Harpin, V. (2018). "ADHD: Is there an app for that? A suitability assessment of apps for the parents of children and young people with ADHD." <em>JMIR mHealth and uHealth</em>, 6(6), e149.</li>
+              <li>Lally, P., van Jaarsveld, C. H., Potts, H. W., & Wardle, J. (2010). "How are habits formed: Modelling habit formation in the real world." <em>European Journal of Social Psychology</em>, 40(6), 998-1009.</li>
+              <li>Sarver, D. E., Rapport, M. D., Kofler, M. J., Raiker, J. S., & Friedman, L. M. (2015). "Hyperactivity in attention-deficit/hyperactivity disorder (ADHD): Impairing deficit or compensatory behavior?" <em>Journal of Abnormal Child Psychology</em>, 43(7), 1219-1232.</li>
+              <li>Shaw, P., Stringaris, A., Nigg, J., & Leibenluft, E. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</li>
+            </ul>
           </div>
         </div>
       </>
@@ -960,14 +1015,6 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
 
   return (
     <article className="max-w-full w-full">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
-      
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl">
           ADHD: Support & Management
@@ -991,7 +1038,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         All About ADHD
       </button>
 
-      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab} className="w-full">
+      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={(v) => setActiveTab(v)} className="w-full">
         <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger value="overview" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
             Overview & Approach
@@ -1014,31 +1061,31 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </TabsList>
 
         <TabsContent value="overview" className="space-y-8">
-          <OverviewContent />
+          {OverviewContent()}
         </TabsContent>
 
         <TabsContent value="medical" className="space-y-8">
-          <MedicalContent />
+          {MedicalContent()}
         </TabsContent>
 
         <TabsContent value="behavioral" className="space-y-8">
-          <BehavioralContent />
+          {BehavioralContent()}
         </TabsContent>
 
         <TabsContent value="educational" className="space-y-8">
-          <EducationalContent />
+          {EducationalContent()}
         </TabsContent>
 
         <TabsContent value="lifestyle" className="space-y-8">
-          <LifestyleContent />
+          {LifestyleContent()}
         </TabsContent>
 
         <TabsContent value="self-management" className="space-y-8">
-          <SelfManagementContent />
+          {SelfManagementContent()}
         </TabsContent>
       </Tabs>
 
-      <div className="flex justify-end my-8">
+      <div className="flex justify-end my-8 clear-both">
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
           className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
