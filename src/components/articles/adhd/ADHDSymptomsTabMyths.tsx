@@ -261,17 +261,16 @@ export function ADHDSymptomsTabMyths() {
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h2 className="text-[#0c264d] font-bold mb-5 text-xl font-spartan">References</h2>
             
-            {/* CITED STUDIES: GREEN */}
+ {/* CITED STUDIES: GREEN */}
             <div className="mb-6">
               <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
                 Cited Studies & Statistics
               </h4>
-              <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-                <li>Shaw, P., Stringaris, A., Nigg, J., & Leibenluft, E. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</li>
-                <li>American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</li>
-              </ol>
-            </div>
-            
+              <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>1. Shaw, P., Stringaris, A., Nigg, J., & Leibenluft, E. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</p>
+                <p>2. American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</p>
+              </div>
+            </div>       
             {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
             <div>
               <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">

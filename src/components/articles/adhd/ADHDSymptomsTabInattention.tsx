@@ -156,28 +156,18 @@ export function ADHDSymptomsTabInattention() {
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
     <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
 
-    {/* CITED STUDIES: GREEN */}
+{/* CITED STUDIES: GREEN */}
     <div className="mb-6">
-      <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+      <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
         Cited Studies & Statistics
       </h4>
-      <ol className="list-decimal ml-5 text-xs space-y-4 text-slate-700">
-        <li>
-          Gjervan, B., Torgersen, T., Nordahl, H. M., & Rasmussen, K. (2012). Functional impairment and occupational outcome in adults with ADHD. <em>Journal of Attention Disorders</em>, 16(7), 544-552; Gjervan, B., Nordahl, H. M., Hjemdal, O., & Knudsen, G. P. (2016). Functional impairments associated with ADHD in adulthood: The mediating role of emotional dysregulation. <em>Nordic Psychology</em>, 68(3), 159-173.
-        </li>
-        <li>
-          Henning, A., Summerfeldt, L. J., & Parker, J. D. A. (2024). Longitudinal associations between symptoms of ADHD and life success in middle adulthood. <em>Journal of Attention Disorders</em>, 28(1), 125-138.
-        </li>
-        <li>
-          Beauchaine, T. P., Zisner, A. R., & Sauder, C. L. (2020). ADHD, financial distress, and suicide in adulthood. <em>Science Advances</em>, 6(40), eaba1551.
-        </li>
-        <li>
-          Vergunst, F., Tremblay, R. E., Nagin, D., Algan, Y., Beasley, E., Park, J., ... & Côté, S. M. (2021). Association of behavior in boys from low socioeconomic neighborhoods with employment earnings in adulthood. <em>JAMA Pediatrics</em>, 175(4), 334-341.
-        </li>
-      </ol>
-    </div>
-
-    {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+      <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+        <p>1. Gjervan, B., Torgersen, T., Nordahl, H. M., & Rasmussen, K. (2012). Functional impairment and occupational outcome in adults with ADHD. <em>Journal of Attention Disorders</em>, 16(7), 544-552; Gjervan, B., Nordahl, H. M., Hjemdal, O., & Knudsen, G. P. (2016). Functional impairments associated with ADHD in adulthood: The mediating role of emotional dysregulation. <em>Nordic Psychology</em>, 68(3), 159-173.</p>
+        <p>2. Henning, A., Summerfeldt, L. J., & Parker, J. D. A. (2024). Longitudinal associations between symptoms of ADHD and life success in middle adulthood. <em>Journal of Attention Disorders</em>, 28(1), 125-138.</p>
+        <p>3. Beauchaine, T. P., Zisner, A. R., & Sauder, C. L. (2020). ADHD, financial distress, and suicide in adulthood. <em>Science Advances</em>, 6(40), eaba1551.</p>
+        <p>4. Vergunst, F., Tremblay, R. E., Nagin, D., Algan, Y., Beasley, E., Park, J., ... & Côté, S. M. (2021). Association of behavior in boys from low socioeconomic neighborhoods with employment earnings in adulthood. <em>JAMA Pediatrics</em>, 175(4), 334-341.</p>
+      </div>
+    </div>    {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
     <div>
       <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
         Background Sources

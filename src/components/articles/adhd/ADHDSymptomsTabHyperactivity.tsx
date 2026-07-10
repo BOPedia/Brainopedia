@@ -171,36 +171,22 @@ export function ADHDSymptomsTabHyperactivity() {
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
             
-            {/* CITED STUDIES: GREEN */}
+ {/* CITED STUDIES: GREEN */}
             <div className="mb-6">
-              <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+              <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
                 Cited Studies & Statistics
               </h4>
-              <ol className="list-decimal ml-5 text-xs space-y-4 text-slate-700">
-                <li>
-                  Teicher, M. H., Ito, Y., Glod, C. A., & Barber, N. I. (1996). Objective measurement of hyperactivity and attentional problems in ADHD. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 35(3), 334-342.
-                </li>
-                <li>
-                  Teicher, M. H., Polcari, A., Fourligas, N., Vitaliano, G., & Navalta, C. P. (2012). Hyperactivity persists in male and female adults with ADHD and remains a highly discriminative feature of the disorder: A case-control study. <em>BMC Psychiatry</em>, 12, 190.
-                </li>
-                <li>
-                  Shaw, G. A., & Giambra, L. (1993). Task-unrelated thoughts of college students diagnosed as hyperactive in childhood. <em>Developmental Neuropsychology</em>, 9(1), 17-30.
-                </li>
-                <li>
-                  McQuade, J. D., & Hoza, B. (2008). Peer problems in attention deficit hyperactivity disorder: Current status and future directions. <em>Developmental Disabilities Research Reviews</em>, 14(4), 320-324.
-                </li>
-                <li>
-                  Volkow, N. D., Wang, G. J., Kollins, S. H., Wigal, T. L., Newcorn, J. H., Telang, F., ... & Swanson, J. M. (2009). Evaluating dopamine reward pathway in ADHD: Clinical implications. <em>JAMA</em>, 302(10), 1084-1091.
-                </li>
-                <li>
-                  Willcutt, E. G. (2012). The prevalence of DSM-IV attention-deficit/hyperactivity disorder: A meta-analytic review. <em>Neurotherapeutics</em>, 9(3), 490-499.
-                </li>
-                <li>
-                  Greenhill, L. L., Halperin, J. M., & Abikoff, H. (1999). Stimulant medications. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 38(5), 503-512.
-                </li>
-              </ol>
-            </div>
-            
+              <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>1. Teicher, M. H., Ito, Y., Glod, C. A., & Barber, N. I. (1996). Objective measurement of hyperactivity and attentional problems in ADHD. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 35(3), 334-342.</p>
+                <p>2. Teicher, M. H., Polcari, A., Fourligas, N., Vitaliano, G., & Navalta, C. P. (2012). Hyperactivity persists in male and female adults with ADHD and remains a highly discriminative feature of the disorder: A case-control study. <em>BMC Psychiatry</em>, 12, 190.</p>
+                <p>3. Shaw, G. A., & Giambra, L. (1993). Task-unrelated thoughts of college students diagnosed as hyperactive in childhood. <em>Developmental Neuropsychology</em>, 9(1), 17-30.</p>
+                <p>4. McQuade, J. D., & Hoza, B. (2008). Peer problems in attention deficit hyperactivity disorder: Current status and future directions. <em>Developmental Disabilities Research Reviews</em>, 14(4), 320-324.</p>
+                <p>5. Volkow, N. D., Wang, G. J., Kollins, S. H., Wigal, T. L., Newcorn, J. H., Telang, F., ... & Swanson, J. M. (2009). Evaluating dopamine reward pathway in ADHD: Clinical implications. <em>JAMA</em>, 302(10), 1084-1091.</p>
+                <p>6. Willcutt, E. G. (2012). The prevalence of DSM-IV attention-deficit/hyperactivity disorder: A meta-analytic review. <em>Neurotherapeutics</em>, 9(3), 490-499.</p>
+                <p>7. Greenhill, L. L., Halperin, J. M., & Abikoff, H. (1999). Stimulant medications. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 38(5), 503-512.</p>
+              </div>
+            </div>      
+                  
             {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
             <div>
               <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">

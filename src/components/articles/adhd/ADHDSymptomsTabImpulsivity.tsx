@@ -170,34 +170,20 @@ export function ADHDSymptomsTabImpulsivity() {
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
             
-            {/* CITED STUDIES: GREEN */}
+{/* CITED STUDIES: GREEN */}
             <div className="mb-6">
               <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
                 Cited Studies & Statistics
               </h4>
-              <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-                <li>
-                  Nigg, J. T. (2017). Annual Research Review: On the relations among self-regulation, self-control, executive functioning, effortful control, cognitive control, impulsivity, risk-taking, and inhibition for developmental psychopathology. <em>Journal of Child Psychology and Psychiatry</em>, 58(4), 361-383.
-                </li>
-                <li>
-                  Plichta, M. M., & Scheres, A. (2014). Ventral-striatal responsiveness during reward anticipation in ADHD and its relation to trait impulsivity in the healthy population: A meta-analytic review of the fMRI literature. <em>Neuroscience & Biobehavioral Reviews</em>, 38, 125-134.
-                </li>
-                <li>
-                  Burns, G. L., et al. (2024). Longitudinal developmental relations of ADHD and oppositional defiant disorder symptoms with impulsivity symptoms in childhood and early adolescence. <em>Journal of Child Psychology and Psychiatry</em>, 65(1), 42-53.
-                </li>
-                <li>
-                  Sonuga-Barke, E. J., & Fairchild, G. (2012). Neuroeconomics of attention-deficit/hyperactivity disorder: differential influences of medial, dorsal, and ventral prefrontal brain networks on suboptimal decision making? <em>Biological Psychiatry</em>, 72(2), 126-133.
-                </li>
-                <li>
-                  Jackson, J. N., & MacKillop, J. (2016). Attention-deficit/hyperactivity disorder and monetary delay discounting: A meta-analysis of case-control studies. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>, 1(4), 316-325.
-                </li>
-                <li>
-                  Moeller, F. G., et al. (2001). Psychiatric aspects of impulsivity. <em>American Journal of Psychiatry</em>, 158(11), 1783-1793.
-                </li>
-                <li>
-                  Barkley, R. A., & Fischer, M. (2010). The unique contribution of emotional impulsiveness to impairment in major life activities in hyperactive children as adults. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 503-513.
-                </li>
-              </ol>
+              <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>1. Nigg, J. T. (2017). Annual Research Review: On the relations among self-regulation, self-control, executive functioning, effortful control, cognitive control, impulsivity, risk-taking, and inhibition for developmental psychopathology. <em>Journal of Child Psychology and Psychiatry</em>, 58(4), 361-383.</p>
+                <p>2. Plichta, M. M., & Scheres, A. (2014). Ventral-striatal responsiveness during reward anticipation in ADHD and its relation to trait impulsivity in the healthy population: A meta-analytic review of the fMRI literature. <em>Neuroscience & Biobehavioral Reviews</em>, 38, 125-134.</p>
+                <p>3. Burns, G. L., et al. (2024). Longitudinal developmental relations of ADHD and oppositional defiant disorder symptoms with impulsivity symptoms in childhood and early adolescence. <em>Journal of Child Psychology and Psychiatry</em>, 65(1), 42-53.</p>
+                <p>4. Sonuga-Barke, E. J., & Fairchild, G. (2012). Neuroeconomics of attention-deficit/hyperactivity disorder: differential influences of medial, dorsal, and ventral prefrontal brain networks on suboptimal decision making? <em>Biological Psychiatry</em>, 72(2), 126-133.</p>
+                <p>5. Jackson, J. N., & MacKillop, J. (2016). Attention-deficit/hyperactivity disorder and monetary delay discounting: A meta-analysis of case-control studies. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>, 1(4), 316-325.</p>
+                <p>6. Moeller, F. G., et al. (2001). Psychiatric aspects of impulsivity. <em>American Journal of Psychiatry</em>, 158(11), 1783-1793.</p>
+                <p>7. Barkley, R. A., & Fischer, M. (2010). The unique contribution of emotional impulsiveness to impairment in major life activities in hyperactive children as adults. <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 503-513.</p>
+              </div>
             </div>
             
             {/* BACKGROUND SOURCES: CYAN (No Indentation) */}

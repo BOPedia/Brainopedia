@@ -343,20 +343,20 @@ export function ADHDSymptomsTabRSD({ setCurrentArticle }: ADHDSymptomsTabRSDProp
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        {/* CITED STUDIES: GREEN */}
+{/* CITED STUDIES: GREEN */}
         <div className="mb-6">
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</li>
-            <li>Rejection Sensitivity Dysphoria in Attention-Deficit/Hyperactivity Disorder: A Case Series. (2024). <em>Acta Scientific Neurological Sciences</em>.</li>
-            <li>Neurodivergent Experiences of Rejection Sensitive Dysphoria. (2025). <em>Journal of Neural Engineering</em>.</li>
-            <li>Renton, T. (2022). Research on emotional regulation in ADHD examining virtual feedback responses.</li>
-            <li>Adolescents' ADHD symptoms and adjustment: The role of attachment and rejection sensitivity. (2009). <em>Journal of Clinical Child & Adolescent Psychology</em>.</li>
-            <li>Dodson, W. (Clinical observations). Nearly 99% of adults with ADHD experience RSD to some degree, with 30% reporting it as their most impairing symptom. Published in ADDitude Magazine.</li>
-            <li>Wender, P. (1960s). Historical observations on emotional dysregulation and "atypical depression" in ADHD patients.</li>
-          </ol>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</p>
+            <p>2. Rejection Sensitivity Dysphoria in Attention-Deficit/Hyperactivity Disorder: A Case Series. (2024). <em>Acta Scientific Neurological Sciences</em>.</p>
+            <p>3. Neurodivergent Experiences of Rejection Sensitive Dysphoria. (2025). <em>Journal of Neural Engineering</em>.</p>
+            <p>4. Renton, T. (2022). Research on emotional regulation in ADHD examining virtual feedback responses.</p>
+            <p>5. Adolescents' ADHD symptoms and adjustment: The role of attachment and rejection sensitivity. (2009). <em>Journal of Clinical Child & Adolescent Psychology</em>.</p>
+            <p>6. Dodson, W. (Clinical observations). Nearly 99% of adults with ADHD experience RSD to some degree, with 30% reporting it as their most impairing symptom. Published in ADDitude Magazine.</p>
+            <p>7. Wender, P. (1960s). Historical observations on emotional dysregulation and "atypical depression" in ADHD patients.</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN (No Indentation) */}

@@ -223,20 +223,20 @@ export function ADHDSymptomsTabFemales() {
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        {/* CITED STUDIES: GREEN */}
+{/* CITED STUDIES: GREEN */}
         <div className="mb-6">
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</li>
-            <li>Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</li>
-            <li>Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</li>
-            <li>Dorani, F., et al. (2025). "Research advances and future directions in female ADHD." <em>Frontiers in Psychiatry</em>. Frontiers.</li>
-            <li>Smith, A., et al. (2025). "Adverse experiences of women with undiagnosed ADHD and the consequences of late diagnosis." <em>Nature Scientific Reports</em>. Nature.</li>
-            <li>Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</li>
-            <li>Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</li>
-          </ol>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</p>
+            <p>2. Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</p>
+            <p>3. Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</p>
+            <p>4. Dorani, F., et al. (2025). "Research advances and future directions in female ADHD." <em>Frontiers in Psychiatry</em>. Frontiers.</p>
+            <p>5. Smith, A., et al. (2025). "Adverse experiences of women with undiagnosed ADHD and the consequences of late diagnosis." <em>Nature Scientific Reports</em>. Nature.</p>
+            <p>6. Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</p>
+            <p>7. Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
