@@ -45,12 +45,12 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
           loop 
           muted 
           playsInline
-          poster="/images/autism/autism-causes-polygenic.png"
+          poster="/images/autism/autism-causes-genetics-polygenic.png"
           className="w-full h-auto object-contain rounded-md"
           aria-label="Animation illustrating multiple genes involved in autism"
         >
           <source 
-            src="/images/autism/autism-genetics-polygenic.mp4" 
+            src="/images/autism/autism-causes-genetics-polygenic.mp4" 
             type="video/mp4" 
           />
           {/* Fallback image for older browsers or failed video loads */}
