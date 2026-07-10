@@ -38,6 +38,30 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
         </div>
       </div>
 
+{/* Polygenic Video Hero */}
+      <div className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm overflow-hidden bg-white border border-gray-100 p-2">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          poster="/images/autism/autism-causes-polygenic.png"
+          className="w-full h-auto object-contain rounded-md"
+          aria-label="Animation illustrating multiple genes involved in autism"
+        >
+          <source 
+            src="/images/autism/autism-genetics-polygenic.mp4" 
+            type="video/mp4" 
+          />
+          {/* Fallback image for older browsers or failed video loads */}
+          <img 
+            src="/images/autism/autism-causes-polygenic.png" 
+            alt="Multiple genes involved in autism"
+            className="w-full h-auto object-contain rounded-md"
+          />
+        </video>
+      </div>
+
       {/* Multiple Genes Involved Section */}
       <div className="bg-white p-6 rounded-xl border-l-4 border-[#ffd166] shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg font-spartan">Multiple Genes Involved</h3>
