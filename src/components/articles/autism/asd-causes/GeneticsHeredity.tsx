@@ -38,7 +38,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
         </div>
       </div>
 
-{/* Polygenic Video Hero */}
+      {/* Polygenic Video Hero */}
       <div className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm overflow-hidden bg-white border border-gray-100 p-2">
         <video 
           autoPlay 
@@ -55,19 +55,56 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
           />
           {/* Fallback image for older browsers or failed video loads */}
           <img 
-            src="/images/autism/autism-causes-polygenic.png" 
+            src="/images/autism/autism-causes-genetics-polygenic.png" 
             alt="Multiple genes involved in autism"
             className="w-full h-auto object-contain rounded-md"
           />
         </video>
       </div>
 
+      {/* Polygenic & Epigenetic Blurb Section */}
+      <div className="bg-white p-6 rounded-xl border-l-4 border-[#2abcd4] shadow-sm mb-6">
+        <h3 className="text-[#0c264d] font-bold mb-3 text-lg font-spartan">The Polygenic & Epigenetic Reality</h3>
+        <p className="text-sm leading-relaxed mb-6 text-gray-700">
+          Autism is highly <strong>polygenic</strong>, meaning it rarely stems from a single genetic mutation. Instead, it typically arises from the combined effects of thousands of common genetic variants scattered across the genome. While each variant individually contributes a tiny fraction to the overall likelihood, their cumulative effect creates the foundation for autism.<sup className="text-green-600 font-bold ml-0.5">8</sup> 
+        </p>
+
+        {/* Soundboard Analogy Callout */}
+        <div className="bg-[#f0f9ff] p-5 rounded-lg border border-[#2abcd4] border-opacity-30 mb-6">
+          <h4 className="font-bold text-[#0c264d] mb-3">The Soundboard Analogy</h4>
+          <p className="text-sm leading-relaxed mb-5 text-gray-700">
+            To understand what polygenic means, it helps to compare it to how we traditionally learn about genetics. Many genetic conditions are caused by a single mutation—like flipping an <strong>on/off light switch</strong>. Polygenic inheritance is completely different; it operates like a massive <strong>audio mixing board</strong> with thousands of tiny sliders.
+          </p>
+          
+          <ImageWithFallback 
+            src="/images/autism/autism-causes-genetics-soundboard.png"
+            alt="Light switch versus audio soundboard analogy for genetics"
+            className="w-full max-w-md mx-auto mb-5 rounded-lg shadow-sm border border-gray-200"
+          />
+
+          <p className="text-sm leading-relaxed text-gray-700">
+            Pushing just one slider up a fraction of a millimeter doesn't change the song, which is why everyone carries some of these genetic variants. However, if you adjust thousands of specific sliders at once, you completely alter the acoustics, the bass, and the final sound of the track. In autism, it is the cumulative "load" of these thousands of tiny variations that shapes neurodevelopment.
+          </p>
+        </div>
+
+        <p className="text-sm leading-relaxed mb-4 text-gray-700">
+          However, DNA is not destiny. Environmental factors constantly interact with this genetic predisposition through a mechanism called <strong>epigenetics</strong>. Epigenetic processes act like molecular switches that can physically turn specific genes on or off based on environmental exposures (such as maternal stress, nutrition, or environmental toxins) without ever altering the underlying DNA sequence itself.<sup className="text-green-600 font-bold ml-0.5">9</sup>
+        </p>
+        <div 
+          className="bg-[#ffd166] bg-opacity-20 p-4 rounded-lg text-sm text-[#0c264d] font-semibold flex items-center gap-3 cursor-pointer hover:bg-opacity-40 transition-colors"
+          onClick={() => setCurrentArticle?.('autism-epigenetics')}
+        >
+          <div className="bg-white p-1 rounded-full shadow-sm flex-shrink-0"><ArrowRight size={16} className="text-[#0c264d]" /></div>
+          Scroll down to the deep-dive at the bottom of this page to see exactly how epigenetics bridge the gap between environment and genetics!
+        </div>
+      </div>
+
       {/* Multiple Genes Involved Section */}
       <div className="bg-white p-6 rounded-xl border-l-4 border-[#ffd166] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg font-spartan">Multiple Genes Involved</h3>
-        <p className="text-sm mb-4 text-gray-700">Autism is genetically heterogeneous, meaning different genetic variations can lead to similar outcomes:</p>
+        <h3 className="text-[#0c264d] font-bold mb-4 text-lg font-spartan">Genetic Architecture</h3>
+        <p className="text-sm mb-4 text-gray-700">Because autism is genetically heterogeneous, different genetic variations can lead to similar outcomes:</p>
         <div className="space-y-4">
-          <div className="text-sm text-gray-700"><strong>Complex Genetic Architecture:</strong> A massive study of multiplex families identified 152 distinct associated genes.<sup className="text-green-600 font-bold ml-0.5">8</sup></div>
+          <div className="text-sm text-gray-700"><strong>Complex Architecture:</strong> A massive study of multiplex families identified 152 distinct associated genes.<sup className="text-green-600 font-bold ml-0.5">8</sup></div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-[#e0f7fa] bg-opacity-50 p-3 rounded text-xs text-[#0c264d]"><strong>Common Variants:</strong> Many small-effect variations common in the general population.</div>
             <div className="bg-[#e0f7fa] bg-opacity-50 p-3 rounded text-xs text-[#0c264d]"><strong>Rare Variants:</strong> Rare mutations or CNVs with much larger neurological effects.</div>
@@ -186,32 +223,35 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-20 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed">
-            <li>
-              Genovese, A., & Butler, M. G. (2023). "The Autism Spectrum: Behavioral, Psychiatric and Genetic Associations." <i>Genes</i>, 14(3), 637. (PMCID: PMC10048473).
-            </li>
-            <li>
-              Tick, B., Bolton, P., Happé, F., Rutter, M., & Rijsdijk, F. (2016). "Heritability of autism spectrum disorders: A meta-analysis of twin studies." <i>Journal of Child Psychology and Psychiatry</i>, 57(5), 585-595. (PMCID: PMC4996332).
-            </li>
-            <li>
-              Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.
-            </li>
-            <li>
-              Yoon, S., et al. (2021). "Rates of contributory de novo mutation in high and low-risk autism families." <i>Communications Biology</i>, 4(1), 1026. (PMCID: PMC8410909).
-            </li>
-            <li>
-              Haebig, E., et al. (2020). "Rates and predictors of co-occurring autism spectrum disorder in boys with fragile X syndrome." <i>Research in Developmental Disabilities</i>, 107, 103783. (PMCID: PMC9281610).
-            </li>
-            <li>
-              Vignoli, A., et al. (2015). "Autism spectrum disorder in tuberous sclerosis complex: searching for risk markers." <i>Orphanet Journal of Rare Diseases</i>, 10, 154. (PMCID: PMC4668631).
-            </li>
-            <li>
-              Ozonoff, S., et al. (2024). "Familial recurrence of autism: Updates from the Baby Siblings Research Consortium." <i>Pediatrics</i>, 154(2), e2023065297. (PMCID: PMC11291960).
-            </li>
-            <li>
-              Cirnigliaro, M., et al. (2023). "The contributions of rare inherited and polygenic risk to ASD in multiplex families." <i>Proceedings of the National Academy of Sciences</i>, 120(31), e2215632120. (PMCID: PMC10400943).
-            </li>
-          </ol>
+          <div className="text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>
+              1. Genovese, A., & Butler, M. G. (2023). "The Autism Spectrum: Behavioral, Psychiatric and Genetic Associations." <i>Genes</i>, 14(3), 637. (PMCID: PMC10048473).
+            </p>
+            <p>
+              2. Tick, B., Bolton, P., Happé, F., Rutter, M., & Rijsdijk, F. (2016). "Heritability of autism spectrum disorders: A meta-analysis of twin studies." <i>Journal of Child Psychology and Psychiatry</i>, 57(5), 585-595. (PMCID: PMC4996332).
+            </p>
+            <p>
+              3. Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.
+            </p>
+            <p>
+              4. Yoon, S., et al. (2021). "Rates of contributory de novo mutation in high and low-risk autism families." <i>Communications Biology</i>, 4(1), 1026. (PMCID: PMC8410909).
+            </p>
+            <p>
+              5. Haebig, E., et al. (2020). "Rates and predictors of co-occurring autism spectrum disorder in boys with fragile X syndrome." <i>Research in Developmental Disabilities</i>, 107, 103783. (PMCID: PMC9281610).
+            </p>
+            <p>
+              6. Vignoli, A., et al. (2015). "Autism spectrum disorder in tuberous sclerosis complex: searching for risk markers." <i>Orphanet Journal of Rare Diseases</i>, 10, 154. (PMCID: PMC4668631).
+            </p>
+            <p>
+              7. Ozonoff, S., et al. (2024). "Familial recurrence of autism: Updates from the Baby Siblings Research Consortium." <i>Pediatrics</i>, 154(2), e2023065297. (PMCID: PMC11291960).
+            </p>
+            <p>
+              8. Cirnigliaro, M., et al. (2023). "The contributions of rare inherited and polygenic risk to ASD in multiplex families." <i>Proceedings of the National Academy of Sciences</i>, 120(31), e2215632120. (PMCID: PMC10400943).
+            </p>
+            <p>
+              9. Loke, Y. J., Hannan, A. J., & Craig, J. M. (2015). "The Role of Epigenetics in Autism Spectrum Disorders." <i>Neural Plasticity</i>, 2015, 502812. (PMCID: PMC4538466).
+            </p>
+          </div>
         </div>
 
         {/* BACKGROUND SOURCES: CYAN */}
@@ -219,7 +259,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-20 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
             <li>
               National Institute of Mental Health (NIMH) - <i>Autism Genetics Overview</i>.
             </li>
