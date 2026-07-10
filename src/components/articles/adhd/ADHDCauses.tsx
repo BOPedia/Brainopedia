@@ -84,7 +84,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
-{/* OVERVIEW CONTENT - CITED STUDIES: GREEN */}
+          {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
@@ -99,12 +99,12 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             </div>
           </div>
           
-          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+          {/* BACKGROUND SOURCES: CYAN */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
               <li>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</li>
               <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press.</li>
               <li>National Institute of Mental Health. (2023). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</li>
@@ -237,7 +237,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
     
-{/* GENETICS CONTENT - CITED STUDIES: GREEN */}
+          {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
@@ -259,13 +259,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
               <p>14. Nigg, J. T., Sibley, M. H., Thapar, A., & Karalunas, S. L. (2020). "Development of ADHD: etiology, heterogeneity, and early life course." <em>Annual Review of Developmental Psychology</em>, 2, 559-583.</p>
             </div>
           </div>
-
-          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+          
+          {/* BACKGROUND SOURCES: CYAN */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
               <li>Nikolas, M. A., & Burt, S. A. (2010). "Genetic and environmental influences on ADHD symptom dimensions of inattention and hyperactivity: a meta-analysis." <em>Journal of Abnormal Psychology</em>, 119(1), 1-17.</li>
               <li>Franke, B., et al. (2012). "The genetics of attention deficit/hyperactivity disorder in adults, a review." <em>Molecular Psychiatry</em>, 17(10), 960-987.</li>
               <li>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</li>
@@ -278,7 +278,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
     );
   }
 
-function BrainContent() {
+  function BrainContent() {
     return (
       <div className="bg-[#f0f9ff] p-6 rounded-xl">
         {/* --- HEADER SECTION --- */}
@@ -516,9 +516,6 @@ function BrainContent() {
           {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-{/* BRAIN CONTENT - CITED STUDIES: GREEN */}
-          <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
             <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
@@ -542,12 +539,13 @@ function BrainContent() {
               <p>18. Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</p>
             </div>
           </div>
-          {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+          
+          {/* BACKGROUND SOURCES: CYAN */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
+            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
               <li>Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</li>
               <li>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</li>
               <li>Rubia, K. (2018). "Cognitive neuroscience of attention deficit hyperactivity disorder (ADHD) and its clinical translation." <em>Frontiers in Human Neuroscience</em>, 12, 100.</li>
@@ -557,6 +555,7 @@ function BrainContent() {
       </div>
     );
   }
+  
   return (
     <article className="max-w-full w-full">
       <style>
