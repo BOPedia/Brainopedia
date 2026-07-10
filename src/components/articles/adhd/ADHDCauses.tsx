@@ -84,12 +84,12 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
-          {/* CITED STUDIES: GREEN */}
+{/* OVERVIEW CONTENT - CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
               <p>1. Thapar, A., & Cooper, M. (2016). "Attention deficit hyperactivity disorder." <em>Lancet</em>, 387(10024), 1240-1250.</p>
               <p>2. Faraone, S. V., et al. (2021). "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 128, 789-818.</p>
               <p>3. Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</p>
@@ -237,12 +237,12 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
     
-          {/* CITED STUDIES: GREEN */}
+{/* GENETICS CONTENT - CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
               <p>1. Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</p>
               <p>2. Brikell, I., Kuja-Halkola, R., & Larsson, H. (2015). "Heritability of attention-deficit hyperactivity disorder in adults." <em>American Journal of Medical Genetics Part B: Neuropsychiatric Genetics</em>, 168(6), 406-413.</p>
               <p>3. Larsson, H., et al. (2014). "The heritability of clinically diagnosed attention deficit hyperactivity disorder across the lifespan." <em>Psychological Medicine</em>, 44(10), 2223-2229.</p>
@@ -259,7 +259,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
               <p>14. Nigg, J. T., Sibley, M. H., Thapar, A., & Karalunas, S. L. (2020). "Development of ADHD: etiology, heterogeneity, and early life course." <em>Annual Review of Developmental Psychology</em>, 2, 559-583.</p>
             </div>
           </div>
-          
+
           {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
@@ -516,9 +516,12 @@ function BrainContent() {
           {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
             <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+{/* BRAIN CONTENT - CITED STUDIES: GREEN */}
+          <div className="mb-6">
+            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
               Cited Studies & Statistics
             </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
+            <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
               <p>1. Hoogman, M., Bralten, J., Hibar, D. P., Mennes, M., Zwiers, M. P., Schweren, L. S., ... & Franke, B. (2017). "Subcortical brain volume differences in participants with attention deficit hyperactivity disorder in children and adults: A cross-sectional mega-analysis." <em>The Lancet Psychiatry</em>, 4(4), 310-319.</p>
               <p>2. Hoogman, M., Muetzel, R., Guimaraes, J. P., Shumskaya, E., Mennes, M., Zwiers, M. P., ... & Franke, B. (2019). "Brain imaging of the cortex in ADHD: A coordinated analysis of large-scale clinical and population-based samples." <em>American Journal of Psychiatry</em>, 176(7), 531-542.</p>
               <p>3. Frodl, T., & Skokauskas, N. (2012). "Meta-analysis of structural MRI studies in children and adults with attention deficit hyperactivity disorder indicates treatment effects." <em>Acta Psychiatrica Scandinavica</em>, 125(2), 114-126.</p>
@@ -539,7 +542,6 @@ function BrainContent() {
               <p>18. Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</p>
             </div>
           </div>
-          
           {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
           <div>
             <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
