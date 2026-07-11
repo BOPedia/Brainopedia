@@ -151,11 +151,6 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
       
       {/* Intro Section */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg mb-6">
-        <ImageWithFallback
-          src="/images/autism/autism-diagnosis-WhoCantab-doctor-plays.png"
-          alt="Doctor playing with child during assessment"
-          className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm" 
-        />
         <h2 className="font-bold mb-4 text-2xl">Who Can Diagnose Autism?</h2>
         <p className="mb-4 leading-relaxed">
           Diagnosing autism involves a comprehensive evaluation of developmental history, behavior patterns, 
@@ -168,10 +163,20 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
 
       {/* Pediatric Professionals Grid */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+        <h3 className="text-[#0c264d] font-bold mb-6 text-xl flex items-center gap-2">
           <Users className="text-[#2abcd4]" size={24} /> Evaluating Children & Adolescents
         </h3>
-        <p className="mb-6 text-sm text-gray-700">These professionals are typically accessed through pediatric referrals, early intervention programs, or school systems.</p>
+        
+        <div className="flex flex-col items-center text-center mb-8">
+          <ImageWithFallback
+            src="/images/autism/autism-diagnosis-WhoCantab-doctor-plays.png"
+            alt="Doctor playing with child during assessment"
+            className="w-48 h-auto mb-4 rounded-md border border-gray-300 shadow-sm" 
+          />
+          <p className="text-sm text-gray-700 max-w-2xl">
+            These professionals are typically accessed through pediatric referrals, early intervention programs, or school systems.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {pediatricProfessionals.map((pro) => (
@@ -195,10 +200,20 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
 
       {/* Adult Professionals Grid */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+        <h3 className="text-[#0c264d] font-bold mb-6 text-xl flex items-center gap-2">
           <User className="text-[#d97706]" size={24} /> Evaluating Adults
         </h3>
-        <p className="mb-6 text-sm text-gray-700">Adult assessments require clinicians experienced in high-masking presentations, psychiatric overlaps, and retrospective developmental interviews.</p>
+        
+        <div className="flex flex-col items-center text-center mb-8">
+          <ImageWithFallback
+            src="/images/autism/autism-diagnosis-WhoCantab-adult-dx.png"
+            alt="Adult in a clinical evaluation setting"
+            className="w-48 h-auto mb-4 rounded-md border border-gray-300 shadow-sm" 
+          />
+          <p className="text-sm text-gray-700 max-w-2xl">
+            Adult assessments require clinicians experienced in high-masking presentations, psychiatric overlaps, and retrospective developmental interviews.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {adultProfessionals.map((pro) => (
@@ -318,7 +333,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
       {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
 
-      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+      <div className="pt-2">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
         <div>
