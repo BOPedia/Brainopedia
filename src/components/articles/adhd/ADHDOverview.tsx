@@ -9,14 +9,15 @@ interface ADHDOverviewProps {
 export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
   return (
     <article className="max-w-full w-full">
+      {/* HEADER */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <h1 className="text-3xl">
-          ADHD: Overview 
+        <h1 className="text-3xl font-bold">
+          ADHD: Overview
         </h1>
 
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
         >
           <span className="text-xl">←</span>
           All About ADHD
@@ -24,7 +25,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
       </div>
 
       <div className="space-y-8">
-{/* WHAT IS ADHD? */}
+        {/* WHAT IS ADHD? */}
         <section className="clear-both">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is ADHD?</h2>
           
@@ -41,7 +42,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
                 aria-label="A squirrel bites bulb and it lights up, representing the hyperactive and impulsive nature of ADHD."
               />
             </div>
-          </div>          
+          </div>
           
           <p className="mb-4">
             Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized 
@@ -57,11 +58,11 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         <section>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Three Presentations of ADHD</h2>
           
-        <ImageWithFallback 
-          src="/images/adhd/adhd-overview-venn.png"
-          alt="ADHD Three Presentations Venn Diagram"
-          className="w-full sm:w-64 md:w-80 h-auto float-right ml-0 sm:ml-4 mb-4 rounded"
-        />
+          <ImageWithFallback 
+            src="/images/adhd/adhd-overview-venn.png"
+            alt="ADHD Three Presentations Venn Diagram"
+            className="w-full sm:w-64 md:w-80 h-auto float-right ml-0 sm:ml-4 mb-4 rounded"
+          />
           
           <p className="mb-4">
             According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-green-600 font-bold ml-0.5">3</sup>
@@ -190,66 +191,72 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             challenges may persist or become more problematic as life demands increase.
           </p>
 
-          {/* ADULT ADHD CHART */}
-          <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 md:float-left md:mr-6 mb-4 w-full md:w-[420px] shadow-sm">
-            <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">ADHD in Adults<sup className="text-green-600 font-bold ml-0.5">5</sup></h3>
-            <div className="mb-6 pb-6 border-b-2 border-gray-200 grid grid-cols-2 gap-3">
-              <div className="text-center border-r border-gray-200">
-                <div className="text-3xl font-bold text-[#0A9DC4]">2.6%</div>
-                <div className="text-xs text-gray-600 mt-1">Persistent<br/>(childhood-onset)</div>
+          {/* ADULT ADHD CHART & CULTURAL CONSIDERATIONS (Flexbox Fix) */}
+          <div className="flex flex-col md:flex-row gap-6 mb-4">
+            
+            <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 w-full md:w-[420px] shadow-sm shrink-0">
+              <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">ADHD in Adults<sup className="text-green-600 font-bold ml-0.5">5</sup></h3>
+              <div className="mb-6 pb-6 border-b-2 border-gray-200 grid grid-cols-2 gap-3">
+                <div className="text-center border-r border-gray-200">
+                  <div className="text-3xl font-bold text-[#0A9DC4]">2.6%</div>
+                  <div className="text-xs text-gray-600 mt-1">Persistent<br/>(childhood-onset)</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#ffd166]">6.8%</div>
+                  <div className="text-xs text-gray-600 mt-1">Symptomatic<br/>(any onset)</div>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#ffd166]">6.8%</div>
-                <div className="text-xs text-gray-600 mt-1">Symptomatic<br/>(any onset)</div>
+              <div className="mb-6 pb-6 border-b-2 border-gray-200">
+                <div className="bg-gradient-to-r from-[#ffd166] to-[#2abcd4] text-white rounded p-4 text-center">
+                  <div className="text-4xl font-bold">50-70%</div>
+                  <div className="text-sm mt-2">of childhood cases persist into adulthood</div>
+                </div>
               </div>
-            </div>
-            <div className="mb-6 pb-6 border-b-2 border-gray-200">
-              <div className="bg-gradient-to-r from-[#ffd166] to-[#2abcd4] text-white rounded p-4 text-center">
-                <div className="text-4xl font-bold">50-70%</div>
-                <div className="text-sm mt-2">of childhood cases persist into adulthood</div>
-              </div>
-            </div>
-            <div className="mb-6 pb-6 border-b-2 border-gray-200">
-              <div className="bg-[#0c264d] text-white rounded p-4 text-center">
-                <div className="text-4xl font-bold">~70%</div>
-                <div className="text-sm mt-2">have ≥1 comorbid mental health condition</div>
-              </div>
-            </div>
-            <div>
-              <div className="text-sm text-center mb-4 text-[#0c264d] font-bold">Gender Differences in Comorbidity</div>
-              <div className="mb-4">
-                <div className="text-center mb-2 text-sm font-bold text-[#ffd166]">Females: Higher Rates Of</div>
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
-                    <div className="font-bold text-[#0c264d]">47-50%</div>
-                    <div className="text-gray-700">Anxiety</div>
-                  </div>
-                  <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
-                    <div className="font-bold text-[#0c264d]">19-53%</div>
-                    <div className="text-gray-700">Depression</div>
-                  </div>
+              <div className="mb-6 pb-6 border-b-2 border-gray-200">
+                <div className="bg-[#0c264d] text-white rounded p-4 text-center">
+                  <div className="text-4xl font-bold">~70%</div>
+                  <div className="text-sm mt-2">have ≥1 comorbid mental health condition</div>
                 </div>
               </div>
               <div>
-                <div className="text-center mb-2 text-sm font-bold text-[#0A9DC4]">Males: Higher Rates Of</div>
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
-                    <div className="text-gray-700">Substance Use</div>
+                <div className="text-sm text-center mb-4 text-[#0c264d] font-bold">Gender Differences in Comorbidity</div>
+                <div className="mb-4">
+                  <div className="text-center mb-2 text-sm font-bold text-[#ffd166]">Females: Higher Rates Of</div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
+                      <div className="font-bold text-[#0c264d]">47-50%</div>
+                      <div className="text-gray-700">Anxiety</div>
+                    </div>
+                    <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
+                      <div className="font-bold text-[#0c264d]">19-53%</div>
+                      <div className="text-gray-700">Depression</div>
+                    </div>
                   </div>
-                  <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
-                    <div className="text-gray-700">Schizophrenia</div>
+                </div>
+                <div>
+                  <div className="text-center mb-2 text-sm font-bold text-[#0A9DC4]">Males: Higher Rates Of</div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
+                      <div className="text-gray-700">Substance Use</div>
+                    </div>
+                    <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
+                      <div className="text-gray-700">Schizophrenia</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Cultural Considerations</h3>
-          <p className="mb-4">
-            Diagnosis rates vary across countries and cultures, reflecting differences in awareness, access to 
-            healthcare, diagnostic practices, and cultural attitudes toward mental health. Some cultural contexts 
-            may normalize or stigmatize ADHD symptoms differently.
-          </p>
+            <div className="flex-1">
+              <h3 className="text-[#0c264d] font-bold mb-3 text-lg mt-0 md:mt-2">Cultural Considerations</h3>
+              <p className="mb-4">
+                Diagnosis rates vary across countries and cultures, reflecting differences in awareness, access to 
+                healthcare, diagnostic practices, and cultural attitudes toward mental health. Some cultural contexts 
+                may normalize or stigmatize ADHD symptoms differently.
+              </p>
+            </div>
+            
+          </div>
         </section>
 
         {/* IMPACT ON DAILY LIFE */}
@@ -343,7 +350,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+          <ol className="list-decimal list-inside m-0 p-0 text-xs space-y-3 text-slate-600 leading-relaxed">
             <li>Reuben, C., & Elgaddal, N. (2024). "ADHD in Children Ages 5–17 Years: US, 2020–2022." <i>NCHS Data Brief</i>, No. 499.</li>
             <li>Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>, 328, 115449.</li>
             <li>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</li>
@@ -357,7 +364,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+          <ul className="list-none m-0 p-0 text-xs space-y-3 text-slate-600 leading-relaxed">
             <li>Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.</li>
             <li>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH.</li>
             <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.).</li>
