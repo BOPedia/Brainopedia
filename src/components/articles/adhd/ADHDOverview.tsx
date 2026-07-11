@@ -57,11 +57,11 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         <section>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Three Presentations of ADHD</h2>
           
-          <ImageWithFallback 
-            src="/images/adhd/adhd-overview-venn.png"
-            alt="ADHD Three Presentations Venn Diagram"
-            className="w-110 h-auto float-right ml-4 mb-4 rounded"
-          />
+        <ImageWithFallback 
+          src="/images/adhd/adhd-overview-venn.png"
+          alt="ADHD Three Presentations Venn Diagram"
+          className="w-full sm:w-64 md:w-80 h-auto float-right ml-0 sm:ml-4 mb-4 rounded"
+        />
           
           <p className="mb-4">
             According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-green-600 font-bold ml-0.5">3</sup>
