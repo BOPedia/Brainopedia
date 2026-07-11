@@ -1,5 +1,6 @@
-import { ImageWithFallback } from '../../../figma/ImageWithFallback';
-import { Stethoscope, MessageSquare, Hand, BookOpen, XCircle } from 'lucide-react';
+import React from 'react';
+import { ImageWithFallback } from '../../../../components/figma/ImageWithFallback';
+import { Stethoscope, MessageSquare, Hand, BookOpen, XCircle, Users, User } from 'lucide-react';
 
 /* ─── THE GUEST LIST (Interface) ─── */
 interface WhoCanDiagnoseProps {
@@ -9,8 +10,8 @@ interface WhoCanDiagnoseProps {
 /* ─── MAIN COMPONENT ─── */
 export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
   
-  // 1. ALL DATA LIVES HERE (Before the return statement)
-  const professionals = [
+  // 1. ALL DATA LIVES HERE
+  const pediatricProfessionals = [
     {
       credential: 'MD',
       title: 'Developmental Pediatricians',
@@ -30,7 +31,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
       badgeBg: 'bg-[#0c264d]',
       titleColor: 'text-[#0c264d]',
       description:
-        'Doctoral-level professionals (Ph.D. or Psy.D.) trained in psychological assessment and child development. Can administer ADOS-2 and ADI-R.',
+        'Doctoral-level professionals (Ph.D. or Psy.D.) trained in psychological assessment and child development. Administer observational tools like the ADOS-2.',
       bullets: ['Comprehensive testing and evaluation', 'Cannot prescribe medication (most states)'],
     },
     {
@@ -41,7 +42,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
       badgeBg: 'bg-[#2abcd4]',
       titleColor: 'text-[#ffd166]',
       description:
-        'Medical doctors (M.D. or D.O.) specializing in child and adolescent mental health. Can diagnose autism, prescribe medication, and treat co-occurring conditions.',
+        'Medical doctors specializing in child mental health. Can diagnose autism, prescribe medication, and treat co-occurring conditions.',
       bullets: ['Can prescribe and manage medications', 'Treat co-occurring anxiety, ADHD, etc.'],
     },
     {
@@ -52,100 +53,132 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
       badgeBg: 'bg-[#0c264d]',
       titleColor: 'text-[#0c264d]',
       description:
-        'Medical doctors specializing in nervous system disorders in children. Often diagnose autism, particularly when seizures, regression, or neurological issues are present.',
+        'Medical doctors specializing in nervous system disorders in children. Often diagnose autism when seizures or neurological issues are present.',
       bullets: ['Key when neurological concerns exist', 'Can rule out other neurological conditions'],
     },
     {
-      credential: 'PhD',
-      title: 'Neuropsychologists',
+      credential: 'MD',
+      title: 'Pediatricians (with training)',
       color: 'bg-[#0c264d]',
       textColor: 'text-white',
       badgeBg: 'bg-[#2abcd4]',
       titleColor: 'text-[#ffd166]',
       description:
-        'Psychologists specializing in brain-behavior relationships. Conduct comprehensive testing of cognitive, language, social, and adaptive functions.',
-      bullets: ['Best for complex diagnostic cases', 'Detailed cognitive profile and report'],
+        'General pediatricians CAN diagnose autism if they have appropriate training. May refer to specialists for complex cases or comprehensive testing.',
+      bullets: ['Often first point of contact for families', 'May refer to specialists for full eval'],
+    },
+  ];
+
+  const adultProfessionals = [
+    {
+      credential: 'PhD',
+      title: 'Clinical Psychologists',
+      color: 'bg-[#0c264d]',
+      textColor: 'text-white',
+      badgeBg: 'bg-[#ffd166]',
+      titleColor: 'text-[#ffd166]',
+      description:
+        'Doctoral-level psychologists (Ph.D. or Psy.D.) who are often the primary diagnosticians for adults. Look for those specifically stating they evaluate adults.',
+      bullets: ['Conduct deep clinical interviews (MIGDAS-2)', 'Identify high-masking presentations'],
     },
     {
-      credential: 'MD',
-      title: 'Pediatricians (with training)',
-      color: 'bg-[#2abcd4]',
+      credential: 'PhD',
+      title: 'Neuropsychologists',
+      color: 'bg-[#ffd166]',
       textColor: 'text-[#0c264d]',
       badgeBg: 'bg-[#0c264d]',
       titleColor: 'text-[#0c264d]',
       description:
-        'General pediatricians CAN diagnose autism if they have appropriate training and experience. May refer to specialists for complex cases or comprehensive testing.',
-      bullets: ['Often first point of contact for families', 'May refer to specialists for full eval'],
+        'Psychologists specializing in brain-behavior relationships. Conduct comprehensive testing of cognitive, language, social, and adaptive functions across the lifespan.',
+      bullets: ['Best for complex diagnostic profiles', 'Detailed cognitive profile and report'],
+    },
+    {
+      credential: 'MD',
+      title: 'Adult Psychiatrists',
+      color: 'bg-[#0c264d]',
+      textColor: 'text-white',
+      badgeBg: 'bg-[#ffd166]',
+      titleColor: 'text-[#ffd166]',
+      description:
+        'Medical doctors (M.D. or D.O.) who can officially diagnose and are crucial for managing co-occurring conditions like severe anxiety, depression, or ADHD.',
+      bullets: ['Can prescribe medication', 'Differentiate autism from mental health disorders'],
+    },
+    {
+      credential: 'MD',
+      title: 'Neurologists',
+      color: 'bg-[#ffd166]',
+      textColor: 'text-[#0c264d]',
+      badgeBg: 'bg-[#0c264d]',
+      titleColor: 'text-[#0c264d]',
+      description:
+        'While less common for primary adult autism diagnosis, they are essential if there is a history of seizures, sudden regression, or overlapping neurological issues.',
+      bullets: ['Rule out medical causes of symptoms', 'Manage epilepsy and migraines'],
     },
   ];
 
   const teamMembers = [
     {
-      role: 'Developmental Pediatrician or Psychologist',
-      duty: 'Leads the evaluation, conducts ADOS-2/ADI-R assessments, makes the diagnosis',
+      role: 'Evaluating Clinician',
+      duty: 'Leads the evaluation, synthesizes data, makes the official diagnosis',
       icon: Stethoscope,
     },
     {
       role: 'Speech-Language Pathologist',
-      duty: 'Evaluates communication skills, language development, pragmatic (social) language',
+      duty: 'Evaluates communication differences, self-advocacy skills, and pragmatic (social) language',
       icon: MessageSquare,
     },
     {
       role: 'Occupational Therapist',
-      duty: 'Assesses sensory processing, fine motor skills, adaptive daily living skills',
+      duty: 'Assesses sensory processing differences, executive functioning, and motor skills',
       icon: Hand,
     },
     {
-      role: 'Educational Psychologist or Special Educator',
-      duty: 'Evaluates learning profile, academic skills, educational needs',
+      role: 'Educational / Vocational Specialist',
+      duty: 'Evaluates learning profiles, workplace accommodations, or educational needs',
       icon: BookOpen,
     },
   ];
 
   const cannotDiagnose = [
-    { label: 'Teachers or School Counselors', note: 'Can recommend evaluation but cannot diagnose' },
-    {
-      label: 'Speech-Language Pathologists or OTs alone',
-      note: 'Important team members but cannot make the diagnosis independently (varies by state)',
-    },
-    {
-      label: 'Licensed Clinical Social Workers (LCSWs) or LPCs',
-      note: 'Can provide therapy but typically cannot diagnose autism (varies by state)',
-    },
-    { label: 'Online "Autism Tests"', note: 'Cannot replace a professional evaluation' },
+    { label: 'Licensed Therapists (LCSW, LPC, LMFT)', note: 'Often the first to suspect autism in adults. They can provide essential therapy and suggest pursuing an evaluation, but typically cannot legally diagnose it themselves (varies by state).' },
+    { label: 'Teachers or School Counselors', note: 'Can recommend evaluation and provide school-based supports, but cannot diagnose medically.' },
+    { label: 'Online "Autism Tests" (AQ, RAADS-R)', note: 'Excellent tools for self-discovery and deciding to seek an evaluation, but cannot replace a professional clinical diagnosis.' },
   ];
 
-  // 2. THE RENDER BLOCK STARTS HERE
+  // 2. THE RENDER BLOCK
   return (
-    <div className="space-y-6"> {/* Master wrapper for the whole page */}
+    <div className="space-y-6 text-[#0c264d] font-spartan"> 
       
       {/* Intro Section */}
-      <div className="block mb-6">
+      <div className="bg-[#f0f9ff] p-6 rounded-lg mb-6">
         <ImageWithFallback
           src="/images/autism/autism-diagnosis-WhoCantab-doctor-plays.png"
           alt="Doctor playing with child during assessment"
           className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm" 
         />
-        <h2 className="font-bold mb-4 text-2xl">Professionals Who Can Diagnose Autism</h2>
-        <p className="mb-6">
-          Diagnosing autism involves comprehensive evaluation of developmental history, behavior patterns, 
-          and current functioning. An autism diagnosis should be made by professionals with specific training and experience 
-          in autism assessment. Not all medical or mental health professionals have this expertise.
+        <h2 className="font-bold mb-4 text-2xl">Who Can Diagnose Autism?</h2>
+        <p className="mb-4 leading-relaxed">
+          Diagnosing autism involves a comprehensive evaluation of developmental history, behavior patterns, 
+          and current functioning. Because autism presents differently across the lifespan, the specialists who evaluate toddlers are rarely the same specialists who evaluate adults.
         </p> 
+        <p className="mb-2 leading-relaxed">
+          An autism diagnosis must be made by licensed medical or mental health professionals with specific training in autism assessment.
+        </p>
       </div>
 
-      {/* Professionals Card Grid */}
-      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Licensed Professionals Who Can Diagnose Autism</h3>
+      {/* Pediatric Professionals Grid */}
+      <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
+        <h3 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+          <Users className="text-[#2abcd4]" size={24} /> Evaluating Children & Adolescents
+        </h3>
+        <p className="mb-6 text-sm text-gray-700">These professionals are typically accessed through pediatric referrals, early intervention programs, or school systems.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {professionals.map((pro) => (
+          {pediatricProfessionals.map((pro) => (
             <div key={pro.title} className={`${pro.color} rounded-lg p-4 flex gap-3`}>
-              {/* Credential Badge */}
               <div className={`${pro.badgeBg} rounded-full w-12 h-12 flex items-center justify-center shrink-0 mt-1`}>
                 <span className="text-white text-xs font-bold">{pro.credential}</span>
               </div>
-              {/* Content */}
               <div>
                 <div className={`font-bold text-sm mb-1 ${pro.titleColor}`}>{pro.title}</div>
                 <div className={`text-xs mb-2 ${pro.textColor} opacity-90`}>{pro.description}</div>
@@ -160,11 +193,38 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
         </div>
       </div>
 
-      {/* Multidisciplinary Team — card row */}
+      {/* Adult Professionals Grid */}
+      <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6">
+        <h3 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+          <User className="text-[#d97706]" size={24} /> Evaluating Adults
+        </h3>
+        <p className="mb-6 text-sm text-gray-700">Adult assessments require clinicians experienced in high-masking presentations, psychiatric overlaps, and retrospective developmental interviews.</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {adultProfessionals.map((pro) => (
+            <div key={pro.title} className={`${pro.color} rounded-lg p-4 flex gap-3`}>
+              <div className={`${pro.badgeBg} rounded-full w-12 h-12 flex items-center justify-center shrink-0 mt-1`}>
+                <span className={`${pro.badgeBg === 'bg-[#ffd166]' ? 'text-[#0c264d]' : 'text-white'} text-xs font-bold`}>{pro.credential}</span>
+              </div>
+              <div>
+                <div className={`font-bold text-sm mb-1 ${pro.titleColor}`}>{pro.title}</div>
+                <div className={`text-xs mb-2 ${pro.textColor} opacity-90`}>{pro.description}</div>
+                <ul className={`text-xs space-y-0.5 ${pro.textColor}`}>
+                  {pro.bullets.map((b) => (
+                    <li key={b}>• {b}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Multidisciplinary Team */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Multidisciplinary Team Approach</h3>
+        <h3 className="text-[#0c264d] font-bold mb-2 text-lg">The Multidisciplinary Approach</h3>
         <p className="text-sm mb-4">
-          The best autism evaluations often involve a team of professionals working together:
+          The most thorough evaluations, particularly for complex cases, involve a team of professionals mapping out a comprehensive support profile:
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -183,19 +243,19 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
         </div>
       </div>
 
-      {/* Who CANNOT Diagnose — table style */}
-      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+      {/* Who CANNOT Diagnose */}
+      <div className="bg-white p-5 rounded-md border-l-4 border-red-400 shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
           <XCircle className="text-red-500" size={20} />
-          Who CANNOT Diagnose Autism
+          Who Cannot Legally Diagnose Autism
         </h3>
 
         <div className="overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="bg-[#0c264d] text-white">
-                <th className="text-left p-3 rounded-tl-md w-2/5">Professional</th>
-                <th className="text-left p-3 rounded-tr-md">Why Not?</th>
+                <th className="text-left p-3 rounded-tl-md w-2/5">Professional / Entity</th>
+                <th className="text-left p-3 rounded-tr-md">Their Role</th>
               </tr>
             </thead>
             <tbody>
@@ -212,53 +272,46 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
 
       {/* Finding a Provider */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-4 text-lg">How to Find a Qualified Professional</h3>
+        <h3 className="text-[#0c264d] font-bold mb-6 text-lg">Navigating the System: Finding a Provider</h3>
 
-        <div className="space-y-3">
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Ask About Autism Experience</div>
-            <div className="text-sm">
-              Look for providers who regularly diagnose autism. Ask: "How many autism evaluations do you conduct per
-              year?" and "Are you trained in ADOS-2 and ADI-R?"
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="space-y-4">
+            <h4 className="font-bold text-[#2abcd4] border-b border-[#2abcd4]/20 pb-2">For Children</h4>
+            
+            <div className="border-l-2 border-[#2abcd4] pl-3">
+              <div className="font-bold text-[#0c264d] mb-1">Start with the Pediatrician</div>
+              <div className="text-sm text-gray-700">They can provide the necessary medical referrals to regional Developmental Pediatricians or autism centers to ensure insurance covers the visit.</div>
+            </div>
+
+            <div className="border-l-2 border-[#2abcd4] pl-3">
+              <div className="font-bold text-[#0c264d] mb-1">State & School Resources</div>
+              <div className="text-sm text-gray-700">For children under 3, contact your state's Early Intervention program. For children 3+, submit a written request for evaluation to your local school district (these are federally mandated and free).</div>
             </div>
           </div>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Get Referrals</div>
-            <div className="text-sm">
-              Ask your pediatrician for referrals to autism specialists. Connect with local autism support organizations
-              for recommendations.
+          <div className="space-y-4">
+            <h4 className="font-bold text-[#ffd166] border-b border-[#ffd166]/30 pb-2">For Adults</h4>
+            
+            <div className="border-l-2 border-[#ffd166] pl-3">
+              <div className="font-bold text-[#0c264d] mb-1">Search Neurodiversity Directories</div>
+              <div className="text-sm text-gray-700">Look for Clinical Psychologists on specialized directories (like NDtherapists.com or Psychology Today) and filter specifically for "Autism" and "Adults."</div>
             </div>
-          </div>
 
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Check University Centers</div>
-            <div className="text-sm">
-              Many universities have autism centers or developmental clinics that provide evaluations (may have wait
-              lists).
-            </div>
-          </div>
-
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Contact Early Intervention or School Districts</div>
-            <div className="text-sm">
-              For children under 3, contact Early Intervention services. For children 3+, contact your school
-              district's special education department — evaluations through schools are free.
+            <div className="border-l-2 border-[#ffd166] pl-3">
+              <div className="font-bold text-[#0c264d] mb-1">University Clinics</div>
+              <div className="text-sm text-gray-700">Many major university psychology departments operate training clinics that offer comprehensive adult neuropsychological evaluations on a sliding fee scale.</div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Important Notice */}
-      <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
-        <p className="text-sm mb-2">
-          <strong>Important:</strong> Wait times for autism evaluations can be 6–18 months in many areas. Don't wait
-          to seek evaluation if you have concerns. You can also access Early Intervention services or school supports
-          while waiting for a formal diagnosis.
+      <div className="bg-[#fef3c7] border-l-4 border-[#d97706] p-4 rounded mb-6">
+        <p className="text-sm mb-3">
+          <strong className="text-[#d97706]">Wait Times:</strong> Evaluations at specialized clinics frequently have waitlists ranging from 6 to 18 months. Do not wait to seek an evaluation if you have concerns.
         </p>
         <p className="text-sm">
-          <strong>Cost:</strong> Evaluations can cost $1,500–$5,000 if not covered by insurance. Check your insurance
-          benefits. School-based evaluations are free but may not be as comprehensive as clinical evaluations.
+          <strong className="text-[#d97706]">Financial Reality:</strong> While pediatric evaluations are often covered by health insurance or provided free by schools, adult evaluations are frequently out-of-network. Private clinical evaluations can range from $1,500 to $5,000 depending on the depth of testing.
         </p>
       </div>
 
@@ -268,28 +321,13 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        {/* CITED STUDIES: GREEN */}
-        <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-            Cited Studies & Statistics
-          </h4>
-          <p className="text-xs text-slate-600 italic pl-2">
-            No inline citations for this tab.
-          </p>
-        </div>
-        
-        {/* BACKGROUND SOURCES: CYAN */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-            <li>
-              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508–520.
-            </li>
+            <li>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</li>
+            <li>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508–520.</li>
           </ul>
         </div>
       </div>
