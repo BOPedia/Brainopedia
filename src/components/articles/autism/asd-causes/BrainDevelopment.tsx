@@ -59,7 +59,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
 
       {/* --- CENTERED GRAPHIC SECTION: MOVING NEURON VIDEO --- */} 
       <div className="text-center w-full mb-12"> 
-        <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden"> 
+        <div className="mx-auto w-full max-w-[256px] mb-8 rounded-xl overflow-hidden"> 
           <video 
             autoPlay 
             loop 
@@ -84,7 +84,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
          {/* --- CENTERED GRAPHIC SECTION: SYNAPSE VIDEO --- */} 
         {/* 2. Changed mb-0 to mb-6 to ADD some comfortable space AFTER the video */}
         <div className="text-center w-full mb-6"> 
-          <div className="mx-auto w-64 mb-0 rounded-xl overflow-hidden"> 
+          <div className="mx-auto w-full max-w-[256px] mb-0 rounded-xl overflow-hidden"> 
             <video 
               autoPlay 
               loop 
@@ -123,7 +123,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         {/* --- CENTERED GRAPHIC SECTION: fetus brain firings VIDEO --- */} 
         {/* 2. Changed mb-0 to mb-6 to ADD some comfortable space AFTER the video */}
         <div className="text-center w-full mb-6"> 
-          <div className="mx-auto w-64 mb-0 rounded-xl overflow-hidden"> 
+          <div className="mx-auto w-full max-w-[256px] mb-0 rounded-xl overflow-hidden"> 
             <video 
               autoPlay 
               loop 
@@ -161,17 +161,11 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Courchesne, E., et al. (2011). "Brain growth across the life span in autism: age-specific changes in anatomical pathology." <i>Brain Research</i>, 1380, 138-145.
-            </li>
-            <li>
-              Belmonte, M. K., et al. (2004). "Autism and abnormal development of brain connectivity." <i>Journal of Neuroscience</i>, 24(42), 9228-9231.
-            </li>
-            <li>
-              Rubenstein, J. L., & Merzenich, M. M. (2003). "Model of autism: increased ratio of excitation/inhibition in key neural systems." <i>Genes, Brain and Behavior</i>, 2(5), 255-267.
-            </li>
-          </ol>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Courchesne, E., et al. (2011). "Brain growth across the life span in autism: age-specific changes in anatomical pathology." <i>Brain Research</i>, 1380, 138-145.</p>
+            <p>2. Belmonte, M. K., et al. (2004). "Autism and abnormal development of brain connectivity." <i>Journal of Neuroscience</i>, 24(42), 9228-9231.</p>
+            <p>3. Rubenstein, J. L., & Merzenich, M. M. (2003). "Model of autism: increased ratio of excitation/inhibition in key neural systems." <i>Genes, Brain and Behavior</i>, 2(5), 255-267.</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
@@ -179,19 +173,11 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Hazlett, H. C., et al. (2017). "Early brain development in infants at high risk for autism spectrum disorder." <i>Nature</i>.
-            </li>
-            <li>
-              Robertson, C. E., & Baron-Cohen, S. (2017). "Sensory perception in autism." <i>Nature Reviews Neuroscience</i>.
-            </li>
-            <li>
-              Vargas, D. L., et al. (2005). "Neuroinflammation in Autism." <i>Annals of Neurology</i>.
-            </li>
-            <li>
-              Zoghbi, H. Y., & Bear, M. F. (2012). "Synaptic Dysfunction in Neurodevelopmental Disorders." <i>Cold Spring Harbor Perspectives in Biology</i>.
-            </li>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+            <li>Hazlett, H. C., et al. (2017). "Early brain development in infants at high risk for autism spectrum disorder." <i>Nature</i>.</li>
+            <li>Robertson, C. E., & Baron-Cohen, S. (2017). "Sensory perception in autism." <i>Nature Reviews Neuroscience</i>.</li>
+            <li>Vargas, D. L., et al. (2005). "Neuroinflammation in Autism." <i>Annals of Neurology</i>.</li>
+            <li>Zoghbi, H. Y., & Bear, M. F. (2012). "Synaptic Dysfunction in Neurodevelopmental Disorders." <i>Cold Spring Harbor Perspectives in Biology</i>.</li>
           </ul>
         </div>
       </div>
