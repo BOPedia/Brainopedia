@@ -233,7 +233,63 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           </div>
         </div>
       </div>
+{/* ===== PRIORITIZING SELF-ADVOCACY ===== */}
+      <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+          <HandMetal className="text-[#0c264d]" size={24} /> 
+          Prioritizing Self-Advocacy
+        </h2>
+        
+        <p className="text-sm mb-4 text-gray-700 leading-relaxed">
+          In neuro-affirming speech therapy, the highest priority is not teaching an individual to request items (like juice or a toy), but teaching them how to advocate for their bodily autonomy and sensory needs. Communication tools must first and foremost allow a person to safely navigate their environment.
+        </p>
 
+        <div className="grid md:grid-cols-3 gap-4 mt-4">
+          <div className="bg-white p-4 rounded border border-[#0A9DC4]/20 shadow-sm">
+            <div className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">The Power of "No"</div>
+            <div className="text-sm text-gray-700">Validating refusals is critical. If a child uses AAC or a gesture to say "No," "Stop," or "Don't want," honoring that communication teaches them that their voice has power and protects them from compliance-based abuse.</div>
+          </div>
+          <div className="bg-white p-4 rounded border border-[#0A9DC4]/20 shadow-sm">
+            <div className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">Requesting Breaks</div>
+            <div className="text-sm text-gray-700">Ensuring the individual always has access to a visual or auditory way to say, <em>"I need a break,"</em> <em>"It's too loud,"</em> or <em>"I need to leave."</em></div>
+          </div>
+          <div className="bg-white p-4 rounded border border-[#0A9DC4]/20 shadow-sm">
+            <div className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">Pain & Sickness</div>
+            <div className="text-sm text-gray-700">Equipping individuals with the vocabulary to explain where their body hurts or if they feel unwell, which is often difficult to articulate during sensory overload.</div>
+          </div>
+        </div>
+      </div>
+
+      {/* ===== ALEXITHYMIA & PRAGMATICS ===== */}
+      <div className="grid md:grid-cols-2 gap-6 mb-6">
+        
+        {/* Alexithymia */}
+        <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
+          <h2 className="text-[#0c264d] font-bold mb-3 text-xl">
+            Alexithymia & Interoception
+          </h2>
+          <p className="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">
+            <strong>Alexithymia</strong> is the difficulty in identifying and describing one's own emotions. This is closely tied to <strong>Interoception</strong>, the hidden sense that allows us to feel our internal body signals (like hunger, heart rate, or a full bladder). 
+          </p>
+          <p className="text-sm text-gray-700 leading-relaxed bg-[#f0f9ff] p-3 rounded border border-[#0A9DC4]/20">
+            A speech therapist cannot simply ask, <em>"How do you feel?"</em> if the individual cannot interpret their body's signals. Therapy often involves bridging this gap—using body mapping and visual scales to connect physical sensations (e.g., a tight chest) to vocabulary (e.g., anxiety).
+          </p>
+        </div>
+
+        {/* Social Pragmatics */}
+        <div className="bg-white p-5 rounded-md border-t-4 border-[#ffd166] shadow-sm flex flex-col">
+          <h2 className="text-[#0c264d] font-bold mb-3 text-xl">
+            Social Pragmatics
+          </h2>
+          <p className="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">
+            Historically, "social skills training" forced autistic individuals to mimic neurotypical behaviors (like forcing eye contact), which leads to exhausting masking. Modern therapy focuses on the <strong>Double Empathy Problem</strong>—the idea that communication breakdowns happen because autistic and neurotypical people have different, equally valid social languages.
+          </p>
+          <p className="text-sm text-gray-700 leading-relaxed bg-[#fff9e6] p-3 rounded border border-[#ffd166]/30">
+            Affirming pragmatics helps individuals understand neurotypical expectations without forcing them to change who they are, while simultaneously teaching self-advocacy (e.g., <em>"I am listening to you, but making eye contact hurts my brain."</em>).
+          </p>
+        </div>
+
+      </div>
       {/* Back Button Bottom */}
       <div className="flex justify-end mt-8 mb-6">
         <button 
