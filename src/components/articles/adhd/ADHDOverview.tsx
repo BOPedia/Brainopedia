@@ -1,647 +1,360 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
-import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { useState } from 'react';
+import React from 'react';
+import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
+import { Clock } from 'lucide-react';
 
-// 1. CHANGED THIS NAME
 interface ADHDOverviewProps {
   setCurrentArticle?: (article: string) => void;
-  initialTab?: string;
 }
 
-// 2. CHANGED THIS NAME AND THE PROPS IN THE PARENTHESES
-export function ADHDOverview({ setCurrentArticle, initialTab }: ADHDOverviewProps) {
-  const [activeTab, setActiveTab] = useState(initialTab || 'overview');
-  
-  function OverviewContent() {
-    return (
-      <>
-      {/* Header with Back Button */}
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <h1 className="text-3xl text-[#0c264d] font-bold">
+export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
+  return (
+    <article className="max-w-full w-full">
+      {/* HEADER */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl font-bold">
           ADHD: Overview
         </h1>
 
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shrink-0"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
         >
-          <span className="text-xl">&larr;</span>
+          <span className="text-xl">←</span>
           All About ADHD
         </button>
       </div>
-        <div>
-          <h2 className="text-[#0c264d] mb-4 text-2xl font-bold">Understanding ADHD Causes</h2>
+
+      <div className="space-y-8">
+        {/* WHAT IS ADHD? */}
+        <section>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is ADHD?</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-overview-dna.png"
-            alt="Brain illustration - understanding ADHD causes"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            src="/images/adhd/adhd-overview-colors-bolt.png"
+            alt="ADHD Overview Visual"
+            className="w-48 h-auto float-right ml-4 mb-4 rounded"
           />
-
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            The exact cause of ADHD remains under investigation, but research suggests a combination of genetic, 
-            neurological, and environmental factors contribute to its development.<sup>1,2</sup> ADHD is a complex condition 
-            with no single cause, and understanding its origins helps reduce stigma and emphasizes that ADHD is 
-            a genuine neurobiological condition, not a result of poor parenting, lack of discipline, or personal 
-            character flaws.
+          
+          <p className="mb-4">
+            Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized 
+            by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 
+            or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-green-600 font-bold ml-0.5">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-green-600 font-bold ml-0.5">2</sup> making it one of the most common neurodevelopmental disorders.
           </p>
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            Modern research has identified multiple biological mechanisms and risk factors that contribute to 
-            ADHD, including differences in brain structure and function,<sup>4</sup> genetic variations,<sup>3</sup> neurotransmitter 
-            imbalances, and certain environmental exposures during critical developmental periods.
+          <p className="mb-4">
+            ADHD is not simply a childhood disorder—symptoms often persist into adulthood. It's a real medical condition with neurological basis, not a character flaw or result of poor parenting. Brain imaging studies reveal significant differences in brain structure and function.
           </p>
-        </div>
+        </section>
 
-        <div className="clear-both pt-6">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Gene-Environment Interactions</h2>
+        {/* THREE PRESENTATIONS */}
+        <section>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Three Presentations of ADHD</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-overview-dna-treetrunk.png"
-            alt="Gene-environment interaction in ADHD"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            src="/images/adhd/adhd-overview-venn.png"
+            alt="ADHD Three Presentations Venn Diagram"
+            className="w-110 h-auto float-right ml-4 mb-4 rounded"
           />
-
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            Modern research increasingly recognizes that genes and environment interact in complex ways.<sup>5,6</sup> Someone 
-            with genetic vulnerability to ADHD might not develop significant symptoms in one environment but might 
-            in another. Conversely, protective factors (supportive family, appropriate interventions, good education) 
-            can significantly improve outcomes even for those with strong genetic predisposition.
-          </p>
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            This understanding has important implications: while we can't change genes, we can modify environments 
-            and provide supports that help individuals with ADHD thrive. Understanding biological causes doesn't 
-            mean fatalism—it means we can develop more effective, targeted interventions.
-          </p>
           
-          <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4] mt-6 clear-both">
-            <h3 className="text-[#0c264d] font-bold mb-6 text-xl">The Genetic Blueprint</h3>
+          <p className="mb-4">
+            According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-green-600 font-bold ml-0.5">3</sup>
+          </p>
+
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Predominantly Inattentive Presentation</h3>
+          <p className="mb-4">
+            Individuals primarily struggle with attention and focus. They may appear forgetful, disorganized, 
+            easily distracted, and have difficulty completing tasks. This presentation is sometimes still 
+            referred to as "ADD" in casual conversation, though that term is no longer used in official diagnosis. 
+            People with this presentation may seem to daydream or be "in their own world."
+          </p>
+
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Predominantly Hyperactive-Impulsive Presentation</h3>
+          <p className="mb-4">
+            Individuals primarily experience restlessness, excessive energy, difficulty sitting still, and 
+            impulsive behaviors. They may fidget constantly, interrupt others, have trouble waiting their turn, 
+            and act without thinking about consequences. This presentation is more commonly diagnosed in childhood 
+            when hyperactive symptoms are most visible.
+          </p>
+
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Combined Presentation</h3>
+          <p className="mb-4">
+            This is the most common type, where individuals meet criteria for both inattentive and hyperactive-impulsive 
+            symptoms. People with combined presentation experience challenges across multiple domains of executive 
+            functioning and may find both sustaining attention and managing impulses difficult.
+          </p>
+        </section>
+
+        {/* EXECUTIVE FUNCTION */}
+        <section>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Executive Function Challenges</h2>
+          
+          <ImageWithFallback 
+            src="/images/adhd/adhd-overview-executive-function.png"
+            alt="ADHD Executive Function"
+            className="w-48 h-auto float-right ml-4 mb-4 rounded"
+          />
+          
+          <p className="mb-4">
+            At its core, ADHD is fundamentally a disorder of executive function—the cognitive processes that 
+            allow us to plan, focus attention, remember instructions, and manage multiple tasks. Executive 
+            functions are controlled primarily by the prefrontal cortex of the brain.
+          </p>
+          <p className="mb-4">
+            People with ADHD often struggle with several key executive functions:
+          </p>
+          <ul className="list-disc ml-6 mb-4 space-y-2">
+            <li><strong>Working memory:</strong> Holding information in mind while using it</li>
+            <li><strong>Inhibition:</strong> Controlling impulses and stopping automatic responses</li>
+            <li><strong>Emotional regulation:</strong> Managing emotional responses</li>
+            <li><strong>Task initiation:</strong> Getting started on activities</li>
+            <li><strong>Planning and prioritization:</strong> Creating roadmaps for completing tasks</li>
+            <li><strong>Organization:</strong> Keeping track of information and materials</li>
+            <li><strong>Time management:</strong> Estimating how long tasks will take</li>
+            <li><strong>Sustained attention:</strong> Maintaining focus over time</li>
+            <li><strong>Flexibility:</strong> Adapting to changing situations</li>
+          </ul>
+          <p className="mb-4">
+            Understanding ADHD through the lens of executive function helps explain why individuals with ADHD 
+            might excel in some situations (like crisis management requiring quick decisions) while struggling 
+            in others (like long-term planning projects).
+          </p>
+        </section>
+
+        {/* WHO IS AFFECTED */}
+        <section>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Who is Affected?</h2>
+          
+          <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 md:float-right md:ml-6 mb-4 w-full md:w-96 shadow-sm">
+            <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">ADHD in Children</h3>
+            <div className="mb-6 pb-6 border-b-2 border-gray-200 text-center">
+              <div className="text-4xl font-bold text-[#2abcd4]">5-7%</div>
+              <div className="text-sm text-[#0c264d]">of children worldwide</div>
+            </div>
             
-            <ImageWithFallback 
-              src="/images/adhd/adhd-causes-overview-analogies.png"
-              alt="Genetic nesting analogies"
-              className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-            />
+            <div className="mb-6 pb-6 border-b-2 border-gray-200">
+              <div className="text-center mb-3">
+                <div className="text-lg font-bold text-[#0c264d]">Gender Diagnosis Ratio</div>
+                <div className="text-sm text-gray-600 mb-3">(Community Samples)</div>
+              </div>
+              <div className="flex items-center justify-center gap-4">
+                <div className="text-center">
+                  <div className="flex gap-1 mb-2">
+                    <div className="w-8 h-8 bg-[#0A9DC4] rounded"></div>
+                    <div className="w-8 h-8 bg-[#0A9DC4] rounded"></div>
+                    <div className="w-8 h-8 bg-[#0A9DC4] rounded"></div>
+                  </div>
+                  <div className="text-sm font-bold text-[#0c264d]">Boys</div>
+                </div>
+                <div className="text-2xl text-gray-400">:</div>
+                <div className="text-center">
+                  <div className="flex gap-1 mb-2">
+                    <div className="w-8 h-8 bg-[#ffd166] rounded"></div>
+                  </div>
+                  <div className="text-sm font-bold text-[#0c264d]">Girls</div>
+                </div>
+              </div>
+              <div className="text-center mt-2 text-sm text-gray-600">2:1 to 3:1 ratio<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
+            </div>
             
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              To truly understand how genetics and environment interact, it helps to visualize how our genetic material is structured. You can think of it like a set of microscopic Russian nesting dolls:
-            </p>
-            <ul className="space-y-3 text-slate-700 text-sm">
-              <li><strong>The Cell & Nucleus:</strong> The cell is the body's microscopic building block. Deep inside is the nucleus, which acts as a protective library for your biological instructions.</li>
-              <li><strong>Chromosomes & Chromatin:</strong> Inside that library, DNA is tightly spooled around structural proteins (chromatin) and organized into distinct, packed volumes called chromosomes.</li>
-              <li><strong>DNA & The Double Helix:</strong> DNA is the long, continuous molecule that holds your genetic code. Its physical shape looks like a twisted ladder, which is called a double helix.</li>
-              <li><strong>The Gene:</strong> A gene is simply a specific, short segment—or a single paragraph—on that DNA ladder that provides the exact instructions to build a specific trait or protein.</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* ===== REFERENCES SECTION ===== */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
-        
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
-          
-          {/* CITED STUDIES: GREEN */}
-          <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-              Cited Studies & Statistics
-            </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-              <p>1. Thapar, A., & Cooper, M. (2016). "Attention deficit hyperactivity disorder." <em>Lancet</em>, 387(10024), 1240-1250.</p>
-              <p>2. Faraone, S. V., et al. (2021). "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 128, 789-818.</p>
-              <p>3. Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</p>
-              <p>4. Cortese, S., et al. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</p>
-              <p>5. Nigg, J. T., et al. (2010). "Gene-environment interactions and ADHD: A review of the literature." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 49(5), 432-445.</p>
-              <p>6. Thapar, A., et al. (2013). "Gene-environment interplay in attention-deficit hyperactivity disorder and the importance of a developmental perspective." <em>British Journal of Psychiatry</em>, 202(6), 414-415.</p>
+            <div className="bg-[#0A9DC4] text-white rounded p-3 text-center">
+              <div className="text-2xl font-bold">Combined Presentation</div>
+              <div className="text-sm">50-75% of cases<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
             </div>
           </div>
           
-          {/* BACKGROUND SOURCES: CYAN */}
-          <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
-              Background Sources
-            </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-              <li>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</li>
-              <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press.</li>
-              <li>National Institute of Mental Health. (2023). "Attention-Deficit/Hyperactivity Disorder." Retrieved from nimh.nih.gov</li>
-              <li>Nigg, J. T., Sibley, M. H., Thapar, A., & Karalunas, S. L. (2020). "Development of ADHD: etiology, heterogeneity, and early life course." <em>Annual Review of Developmental Psychology</em>, 2, 559-583.</li>
-            </ul>
-          </div>
-        </div>
-      </>
-    );
-  }
-
-  function GeneticsContent() {
-    return (
-      <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetics and Heredity</h2>
-        
-        <ImageWithFallback 
-          src="/images/adhd/adhd-heredity-tree.png"
-          alt="DNA and genetics - hereditary factors in ADHD"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
-
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          ADHD has a strong genetic component. Family studies consistently show that ADHD runs in families, 
-          with children of parents with ADHD having a significantly higher risk of developing the condition 
-          themselves.<sup>1</sup>
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Heritability Rates</h3>
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          Twin studies reveal that ADHD is highly heritable, with heritability estimates around 70-80%.<sup>2,3</sup> This 
-          means that genetic factors account for a substantial portion of individual differences in ADHD symptoms. 
-          If one identical twin has ADHD, there's a high probability the other will as well. Recent large-scale 
-          studies confirm these heritability estimates remain consistent across the lifespan, from childhood through 
-          adulthood.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genome-Wide Association Studies (GWAS)</h3>
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          Major advances in genetic research have come from genome-wide association studies. The largest and most 
-          recent GWAS meta-analysis, published in 2023, identified 27 genetic risk loci associated with ADHD by 
-          analyzing data from over 38,000 individuals with ADHD and 186,000 controls.<sup>4</sup> This groundbreaking 
-          study refined our understanding of ADHD's genetic architecture and implicated several cognitive domains 
-          including executive function, processing speed, and working memory.
-        </p>
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          Earlier GWAS studies, including the 2019 discovery of the first genome-wide significant risk loci,<sup>5</sup> 
-          paved the way for these findings. Population-based studies analyzing ADHD symptoms in pediatric cohorts 
-          have also contributed to identifying genetic variants associated with symptom severity.<sup>6</sup>
-        </p>
-
-        <div className="clear-both pt-8 pb-4">
-          <h3 className="text-[#0c264d] font-bold mb-6 text-xl text-center">Multiple Genes Involved</h3>
-          
-          <ImageWithFallback 
-            src="/images/adhd/adhd-causes-genetics-polygenic.png"
-            alt="Multiple genes involved in ADHD"
-            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-          />
-
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            Rather than being caused by a single gene, ADHD involves many genes, each contributing a small effect. 
-            Research has identified multiple candidate genes,<sup>7</sup> particularly those involved in dopamine and 
-            norepinephrine regulation. These include genes for dopamine receptors (DRD4, DRD5), dopamine 
-            transporter (DAT1),<sup>8</sup> and other neurotransmitter-related genes. Polygenic risk scores—which combine 
-            effects across many genetic variants—have shown that ADHD genetic risk affects neural activation 
-            patterns during cognitive tasks, regardless of whether someone has an ADHD diagnosis.<sup>9</sup>
+          <p className="mb-4">
+            ADHD affects people of all ages, genders, races, and socioeconomic backgrounds. However, there are 
+            some demographic patterns worth noting:
           </p>
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            The genetic architecture of ADHD is complex, and researchers continue to discover new genetic 
-            variants associated with the condition. This genetic complexity helps explain why ADHD symptoms 
-            vary so widely from person to person. Importantly, research has revealed shared genetic background 
-            between childhood and adult ADHD, supporting the understanding that ADHD is a lifelong condition 
-            with consistent genetic underpinnings.<sup>10</sup>
+
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Differences</h3>
+          <p className="mb-4">
+            Boys are diagnosed with ADHD more frequently than girls, with ratios ranging from 2:1 to 3:1 in 
+            community samples.<sup className="text-green-600 font-bold ml-0.5">4</sup> However, this gap narrows in adulthood, and many experts believe ADHD is 
+            underdiagnosed in girls and women. Girls more often present with the inattentive type, which is 
+            less disruptive and therefore more likely to be missed. Girls may also develop compensatory strategies 
+            or internalize their struggles, leading to later diagnosis.
           </p>
-        </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Genetic Overlap with Other Conditions</h3>
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          ADHD shares genetic risk factors with several other psychiatric and neurodevelopmental conditions. 
-          Large-scale genomic studies have revealed significant genetic correlations between ADHD and conditions 
-          such as autism spectrum disorder, depression, anxiety, and bipolar disorder.<sup>11</sup> This genetic overlap 
-          helps explain why comorbidity is so common in ADHD and why individuals with ADHD often experience 
-          multiple co-occurring conditions.
-        </p>
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          Genetic research has also investigated sex differences in ADHD prevalence. Studies examining the 
-          genetic basis of sex bias have found that while ADHD is more commonly diagnosed in males, the 
-          genetic risk factors are largely similar across sexes, suggesting that sex differences may be more 
-          related to expression and diagnostic patterns than underlying genetic vulnerability.<sup>12</sup>
-        </p>
-
-        <div className="clear-both pt-8 pb-4">
-          <h3 className="text-[#0c264d] font-bold mb-6 text-xl text-center">Gene-Environment Interactions</h3>
-          
-          <ImageWithFallback 
-            src="/images/adhd/adhd-causes-genetics-environment.png"
-            alt="Gene-environment interactions"
-            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-          />
-
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
-            interact with genetic predisposition to influence whether and how ADHD manifests.<sup>13,14</sup> Understanding 
-            both genetic and environmental contributions is essential for a complete picture of ADHD's origins. 
-            This interplay between nature and nurture helps explain why not everyone with genetic risk factors 
-            develops ADHD, and why environmental interventions can be effective even for highly heritable conditions.
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Age and Development</h3>
+          <p className="mb-4">
+            ADHD symptoms must be present before age 12 for diagnosis, though many people aren't diagnosed until 
+            adulthood. Hyperactivity symptoms often decrease with age, while inattention and executive function 
+            challenges may persist or become more problematic as life demands increase.
           </p>
-        </div>
 
-        <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm clear-both">
-          <h3 className="text-[#0c264d] font-bold mb-2 flex items-center gap-2 text-lg">
-            <span className="text-xl">🧬</span> Deep Dive: Epigenetics & ADHD
-          </h3>
-          <p className="mb-4 text-sm text-slate-700">
-            Want to understand the molecular bridge? Explore how environmental factors like stress, nutrition, and toxins can physically alter gene expression without changing underlying DNA.
-          </p>
-          <button
-            onClick={() => setCurrentArticle?.('adhd-epigenetics')}
-            className="inline-flex items-center gap-2 bg-white border-2 border-[#ffd166] hover:bg-[#ffd166] text-[#0c264d] font-bold py-2 px-4 rounded-md transition-colors duration-200"
-          >
-            Explore ADHD Epigenetics →
-          </button>
-        </div>
-
-
-        {/* ===== REFERENCES SECTION ===== */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
-        
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
-    
-          {/* CITED STUDIES: GREEN */}
-          <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-              Cited Studies & Statistics
-            </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-              <p>1. Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <em>Molecular Psychiatry</em>, 24(4), 562-575.</p>
-              <p>2. Brikell, I., Kuja-Halkola, R., & Larsson, H. (2015). "Heritability of attention-deficit hyperactivity disorder in adults." <em>American Journal of Medical Genetics Part B: Neuropsychiatric Genetics</em>, 168(6), 406-413.</p>
-              <p>3. Larsson, H., et al. (2014). "The heritability of clinically diagnosed attention deficit hyperactivity disorder across the lifespan." <em>Psychological Medicine</em>, 44(10), 2223-2229.</p>
-              <p>4. Demontis, D., et al. (2023). "Genome-wide analyses of ADHD identify 27 risk loci, refine the genetic architecture and implicate several cognitive domains." <em>Nature Genetics</em>, 55(2), 198-208.</p>
-              <p>5. Demontis, D., et al. (2019). "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder." <em>Nature Genetics</em>, 51(1), 63-75.</p>
-              <p>6. Middeldorp, C. M., et al. (2016). "A genome-wide association meta-analysis of attention-deficit/hyperactivity disorder symptoms in population-based pediatric cohorts." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 55(10), 896-905.</p>
-              <p>7. Gizer, I. R., et al. (2009). "Candidate gene studies of ADHD: a meta-analytic review." <em>Human Genetics</em>, 126(1), 51-90.</p>
-              <p>8. Li, D., et al. (2006). "Meta-analysis shows significant association between dopamine system genes and attention deficit hyperactivity disorder (ADHD)." <em>Human Molecular Genetics</em>, 15(14), 2276-2284.</p>
-              <p>9. Grimm, O., et al. (2020). "Polygenic risk for ADHD affects neural activation during response inhibition regardless of ADHD diagnosis." <em>Translational Psychiatry</em>, 10(1), 1-10.</p>
-              <p>10. Rovira, P., et al. (2020). "Shared genetic background between children and adults with attention deficit/hyperactivity disorder." <em>Neuropsychopharmacology</em>, 45(10), 1617-1626.</p>
-              <p>11. Cross-Disorder Group of the Psychiatric Genomics Consortium. (2019). "Genomic relationships, novel loci, and pleiotropic mechanisms across eight psychiatric disorders." <em>Cell</em>, 179(7), 1469-1482.</p>
-              <p>12. Martin, J., et al. (2018). "A genetic investigation of sex bias in the prevalence of attention-deficit/hyperactivity disorder." <em>Biological Psychiatry</em>, 83(12), 1044-1053.</p>
-              <p>13. Thapar, A., & Cooper, M. (2016). "Attention deficit hyperactivity disorder." <em>Lancet</em>, 387(10024), 1240-1250.</p>
-              <p>14. Nigg, J. T., Sibley, M. H., Thapar, A., & Karalunas, S. L. (2020). "Development of ADHD: etiology, heterogeneity, and early life course." <em>Annual Review of Developmental Psychology</em>, 2, 559-583.</p>
-            </div>
-          </div>
-          
-          {/* BACKGROUND SOURCES: CYAN */}
-          <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
-              Background Sources
-            </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-              <li>Nikolas, M. A., & Burt, S. A. (2010). "Genetic and environmental influences on ADHD symptom dimensions of inattention and hyperactivity: a meta-analysis." <em>Journal of Abnormal Psychology</em>, 119(1), 1-17.</li>
-              <li>Franke, B., et al. (2012). "The genetics of attention deficit/hyperactivity disorder in adults, a review." <em>Molecular Psychiatry</em>, 17(10), 960-987.</li>
-              <li>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</li>
-              <li>Chang, Z., et al. (2013). "Developmental twin study of attention problems: high heritabilities throughout development." <em>JAMA Psychiatry</em>, 70(3), 311-318.</li>
-              <li>Kendler, K. S., et al. (2010). "The interaction of genetic and environmental risk factors for psychiatric disorders." <em>Annual Review of Clinical Psychology</em>, 6, 183-209.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  function BrainContent() {
-    return (
-      <div className="bg-[#f0f9ff] p-6 rounded-xl">
-        {/* --- HEADER SECTION --- */}
-        <div className="text-center w-full mb-10">
-          <h2 className="text-[#0c264d] font-bold mb-6 text-3xl">Brain Structure and Function</h2>
-          
-          <ImageWithFallback 
-            src="/images/adhd/adhd-causes-brain-structure-main-anatomy.png"
-            alt="Overview of brain regions affected by ADHD"
-            className="block mx-auto w-64 h-auto rounded-xl shadow-md border-4 border-[#2abcd4] object-contain mb-6 bg-white"
-          />
-
-          <p className="text-slate-700 leading-relaxed max-w-3xl mx-auto text-lg">
-            Brain imaging studies have revealed specific differences in how certain regions of the ADHD brain 
-            communicate and process neurotransmitters like norepinephrine and dopamine. These structural and 
-            functional differences directly connect to the lived experiences of inattention, impulsivity, and 
-            executive dysfunction.
-          </p>
-        </div>
-
-        {/* --- CORE BRAIN REGIONS & MECHANISMS --- */}
-        <div className="mb-12 clear-both">
-          <h3 className="text-[#0c264d] font-bold mb-6 text-2xl px-2 text-center">Key Regions & Mechanisms</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            {/* Frontal Cortex */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0c264d] flex flex-col h-full">
-              <ImageWithFallback 
-                src="/images/adhd/adhd-causes-brain-structure-frontal-cortex.png"
-                alt="Frontal cortex highlighted in neuroanatomy"
-                className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
-              />
-              <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Frontal Cortex</h4>
-              <p className="text-sm text-slate-700 leading-relaxed flex-grow">
-                <strong>The Orchestrator:</strong> This region orchestrates high-level functioning: maintaining attention, 
-                organization, and executive function. A deficiency of norepinephrine and dopamine within this brain region 
-                might cause inattention, problems with organization, and or impaired executive functioning.<sup className="text-green-600 font-bold ml-0.5">15</sup>
-              </p>
-            </div>
-
-            {/* Limbic System */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#2abcd4] flex flex-col h-full">
-              <ImageWithFallback 
-                src="/images/adhd/adhd-causes-brain-structure-limbic-system.png"
-                alt="Limbic system highlighted in neuroanatomy"
-                className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
-              />
-              <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Limbic System</h4>
-              <p className="text-sm text-slate-700 leading-relaxed flex-grow">
-                <strong>The Emotional Center:</strong> Located deeper in the brain, this region regulates our emotions. 
-                A deficiency in neurotransmitter connectivity within this neural pathway might result in restlessness, 
-                inattention, or emotional volatility.<sup className="text-green-600 font-bold ml-0.5">16</sup>
-              </p>
-            </div>
-
-            {/* Basal Ganglia */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#ffd166] flex flex-col h-full">
-              <ImageWithFallback 
-                src="/images/adhd/adhd-causes-brain-structure-basal-ganglia.png"
-                alt="Basal ganglia highlighted in neuroanatomy"
-                className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
-              />
-              <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Basal Ganglia</h4>
-              <p className="text-sm text-slate-700 leading-relaxed flex-grow">
-                <strong>The Switchboard:</strong> These neural circuits regulate communication within the brain. Information 
-                from all regions of the brain enters the basal ganglia, and is then relayed to the correct sites. A deficiency 
-                here can cause information to short-circuit, resulting in inattention or impulsivity.<sup className="text-green-600 font-bold ml-0.5">17</sup>
-              </p>
-            </div>
-
-            {/* Reticular Activating System */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0A9DC4] flex flex-col h-full">
-              <ImageWithFallback 
-                src="/images/adhd/adhd-causes-brain-structure-ras.png"
-                alt="Reticular activating system highlighted in neuroanatomy"
-                className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
-              />
-              <h4 className="font-bold text-[#0c264d] mb-2 text-xl">Reticular Activating System (RAS)</h4>
-              <p className="text-sm text-slate-700 leading-relaxed flex-grow">
-                <strong>The Relay System:</strong> This is the major relay system among the many pathways that enter 
-                and leave the brain, directly influencing arousal and consciousness. A deficiency in the RAS can cause 
-                inattention, impulsivity, or hyperactivity.<sup className="text-green-600 font-bold ml-0.5">18</sup>
-              </p>
-            </div>
-
-          </div>
-        </div>
-        
-        {/* --- LARGE-SCALE FINDINGS --- */}
-        <div className="bg-white p-6 rounded-xl border-t-4 border-[#0c264d] shadow-sm mb-10 clear-both">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center sm:text-left">Large-Scale Neuroimaging Findings</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
-              <div className="font-bold text-[#0c264d] mb-2">2017 ENIGMA-ADHD Study</div>
-              <div className="text-sm text-slate-700">
-                Analyzed brain scans from over 3,200 participants and found smaller volumes in several subcortical brain regions, including the amygdala, caudate, putamen, nucleus accumbens, and hippocampus.<sup className="text-green-600 font-bold ml-0.5">1</sup> These differences were most pronounced in children.
+          {/* ADULT ADHD CHART */}
+          <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 md:float-left md:mr-6 mb-4 w-full md:w-[420px] shadow-sm">
+            <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">ADHD in Adults<sup className="text-green-600 font-bold ml-0.5">5</sup></h3>
+            <div className="mb-6 pb-6 border-b-2 border-gray-200 grid grid-cols-2 gap-3">
+              <div className="text-center border-r border-gray-200">
+                <div className="text-3xl font-bold text-[#0A9DC4]">2.6%</div>
+                <div className="text-xs text-gray-600 mt-1">Persistent<br/>(childhood-onset)</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[#ffd166]">6.8%</div>
+                <div className="text-xs text-gray-600 mt-1">Symptomatic<br/>(any onset)</div>
               </div>
             </div>
-            
-            <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
-              <div className="font-bold text-[#0c264d] mb-2">2019 Follow-Up Study</div>
-              <div className="text-sm text-slate-700">
-                Examined cortical thickness across more than 2,200 individuals and found subtle but widespread differences in cortical structure, particularly in frontal, temporal, and cingulate regions.<sup className="text-green-600 font-bold ml-0.5">2</sup>
+            <div className="mb-6 pb-6 border-b-2 border-gray-200">
+              <div className="bg-gradient-to-r from-[#ffd166] to-[#2abcd4] text-white rounded p-4 text-center">
+                <div className="text-4xl font-bold">50-70%</div>
+                <div className="text-sm mt-2">of childhood cases persist into adulthood</div>
+              </div>
+            </div>
+            <div className="mb-6 pb-6 border-b-2 border-gray-200">
+              <div className="bg-[#0c264d] text-white rounded p-4 text-center">
+                <div className="text-4xl font-bold">~70%</div>
+                <div className="text-sm mt-2">have ≥1 comorbid mental health condition</div>
+              </div>
+            </div>
+            <div>
+              <div className="text-sm text-center mb-4 text-[#0c264d] font-bold">Gender Differences in Comorbidity</div>
+              <div className="mb-4">
+                <div className="text-center mb-2 text-sm font-bold text-[#ffd166]">Females: Higher Rates Of</div>
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
+                    <div className="font-bold text-[#0c264d]">47-50%</div>
+                    <div className="text-gray-700">Anxiety</div>
+                  </div>
+                  <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
+                    <div className="font-bold text-[#0c264d]">19-53%</div>
+                    <div className="text-gray-700">Depression</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="text-center mb-2 text-sm font-bold text-[#0A9DC4]">Males: Higher Rates Of</div>
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
+                    <div className="text-gray-700">Substance Use</div>
+                  </div>
+                  <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
+                    <div className="text-gray-700">Schizophrenia</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* --- STRUCTURAL DIFFERENCES --- */}
-        <div className="mb-10 clear-both">
-          <h3 className="text-[#0c264d] font-bold mb-6 text-2xl px-2">Structural Differences</h3>
-          
-          <ImageWithFallback 
-            src="/images/adhd/adhd-causes-brain-structure-differences.png"
-            alt="Structural brain differences in ADHD"
-            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
-              <div className="font-bold text-[#0c264d] mb-2">Total Brain Volume</div>
-              <div className="text-sm text-slate-700">Meta-analyses confirm smaller total brain and intracranial volume in children with ADHD, with differences most prominent in childhood.<sup className="text-green-600 font-bold ml-0.5">3</sup></div>
-            </div>
-            
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
-              <div className="font-bold text-[#0c264d] mb-2">Subcortical Regions</div>
-              <div className="text-sm text-slate-700">Reduced volume in the prefrontal cortex, basal ganglia, hippocampus, amygdala, and cerebellum.<sup className="text-green-600 font-bold ml-0.5">1</sup></div>
-            </div>
-            
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
-              <div className="font-bold text-[#0c264d] mb-2">Cortical Thickness</div>
-              <div className="text-sm text-slate-700">Thinner cortex in multiple regions, particularly in prefrontal and temporal areas, with some normalization in adulthood.<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
-            </div>
-            
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4]">
-              <div className="font-bold text-[#0c264d] mb-2">Delayed Maturation</div>
-              <div className="text-sm text-slate-700">The brain develops on a typical trajectory but more slowly, with peak cortical thickness achieved approximately 2 to 3 years later than average.<sup className="text-green-600 font-bold ml-0.5">5</sup></div>
-            </div>
-            
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#2abcd4] md:col-span-2 lg:col-span-2">
-              <div className="font-bold text-[#0c264d] mb-2">White Matter Microstructure</div>
-              <div className="text-sm text-slate-700">Differences in white matter organization affecting neural connectivity between brain regions, particularly in pathways connecting frontal regions to other areas.<sup className="text-green-600 font-bold ml-0.5">6,7</sup></div>
-            </div>
-          </div>
-        </div>
-
-        {/* --- FUNCTIONAL DIFFERENCES (Cards) --- */}
-        <div className="mb-10 clear-both">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-2xl px-2">Functional Differences</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
-              <div className="font-bold text-[#0c264d] mb-2">Task-Based Activation</div>
-              <div className="text-sm text-slate-700">Underactivity in prefrontal cortex and parietal regions during tasks requiring attention, inhibition, and working memory.<sup className="text-green-600 font-bold ml-0.5">8,11</sup></div>
-            </div>
-            
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
-              <div className="font-bold text-[#0c264d] mb-2">Default Mode Network (DMN)</div>
-              <div className="text-sm text-slate-700">Altered activity in the DMN (active during mind-wandering), including insufficient suppression of this network during tasks requiring focus.<sup className="text-green-600 font-bold ml-0.5">9,10</sup></div>
-            </div>
-            
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
-              <div className="font-bold text-[#0c264d] mb-2">Functional Connectivity</div>
-              <div className="text-sm text-slate-700">Widespread alterations in connectivity, particularly involving networks related to attention, executive control, and reward processing.<sup className="text-green-600 font-bold ml-0.5">11</sup></div>
-            </div>
-            
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166]">
-              <div className="font-bold text-[#0c264d] mb-2">Reward Circuits</div>
-              <div className="text-sm text-slate-700">Reduced activation in ventral striatum during reward anticipation, which may explain motivation challenges and preference for immediate rewards.<sup className="text-green-600 font-bold ml-0.5">12</sup></div>
-            </div>
-            
-            <div className="bg-white p-5 rounded-xl shadow-sm border-b-4 border-[#ffd166] md:col-span-2 lg:col-span-2">
-              <div className="font-bold text-[#0c264d] mb-2">Network Organization</div>
-              <div className="text-sm text-slate-700">Less efficient organization of large-scale brain networks, potentially contributing to the variability often seen in cognitive performance.<sup className="text-green-600 font-bold ml-0.5">10</sup></div>
-            </div>
-          </div>
-        </div>
-
-        {/* --- CONTEXT & IMPLICATIONS (3-Column Layout) --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 clear-both">
-          <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#0c264d]">
-            <div className="font-bold text-[#0c264d] mb-2 text-lg">Adult Brain Differences</div>
-            <p className="text-sm text-slate-700 leading-relaxed">
-              While some childhood brain differences normalize with age, adults with persistent ADHD continue to show structural and functional differences. This supports the understanding that ADHD is a lifelong neurodevelopmental condition.
-            </p>
-          </div>
-          
-          <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#2abcd4]">
-            <div className="font-bold text-[#0c264d] mb-2 text-lg">Developmental Trajectories</div>
-            <p className="text-sm text-slate-700 leading-relaxed">
-              Longitudinal studies reveal ADHD involves altered developmental trajectories rather than static abnormalities. Some differences decrease with age, while others emerge or persist into adulthood.<sup className="text-green-600 font-bold ml-0.5">13,14</sup>
-            </p>
-          </div>
-          
-          <div className="bg-[#f8fafc] p-5 rounded-lg border border-slate-100 shadow-sm border-l-4 border-l-[#ffd166]">
-            <div className="font-bold text-[#0c264d] mb-2 text-lg">Clinical Implications</div>
-            <p className="text-sm text-slate-700 leading-relaxed">
-              These findings validate ADHD as a neurobiological condition. However, brain imaging is not currently used for clinical diagnosis, as there is too much overlap between individuals with and without ADHD at the individual level.
-            </p>
-          </div>
-        </div>
-
-        {/* --- GENE-ENVIRONMENT BANNER --- */}
-        <div className="bg-white p-5 rounded-lg border border-slate-200 shadow-sm mt-8 clear-both">
-          <h3 className="text-[#0c264d] font-bold mb-2 text-lg">
-            Gene-Environment Interactions
-          </h3>
-          <p className="text-sm text-slate-700 leading-relaxed">
-            While genetics play a major role, ADHD doesn't develop from genes alone. Environmental factors 
-            interact with genetic predisposition to influence whether and how ADHD manifests.<sup className="text-green-600 font-bold ml-0.5">13,14</sup> Understanding 
-            both genetic and environmental contributions is essential for a complete picture of ADHD's origins, and helps explain why environmental interventions can be highly effective.
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Cultural Considerations</h3>
+          <p className="mb-4">
+            Diagnosis rates vary across countries and cultures, reflecting differences in awareness, access to 
+            healthcare, diagnostic practices, and cultural attitudes toward mental health. Some cultural contexts 
+            may normalize or stigmatize ADHD symptoms differently.
           </p>
-        </div>
+        </section>
 
-        <div className="mt-6 mb-8 bg-[#ffd166] bg-opacity-20 p-6 rounded-lg border-l-4 border-[#ffd166] shadow-sm clear-both">
-          <h3 className="text-[#0c264d] font-bold mb-2 flex items-center gap-2 text-lg">
-            <span className="text-xl">🧬</span> Deep Dive: Epigenetics & ADHD
-          </h3>
-          <p className="mb-4 text-sm text-slate-700">
-            Want to understand the molecular bridge? Explore how environmental factors like stress, nutrition, and toxins can physically alter gene expression without changing underlying DNA.
+        {/* IMPACT ON DAILY LIFE */}
+        <section className="clear-both pt-4">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Impact on Daily Life</h2>
+          <p className="mb-4">
+            ADHD can significantly impact various life domains:
           </p>
-          <button
-            onClick={() => setCurrentArticle?.('adhd-epigenetics')}
-            className="inline-flex items-center gap-2 bg-white border-2 border-[#ffd166] hover:bg-[#ffd166] text-[#0c264d] font-bold py-2 px-4 rounded-md transition-colors duration-200"
-          >
-            Explore ADHD Epigenetics →
-          </button>
-        </div>
+          <ul className="list-disc ml-6 mb-4 space-y-2">
+            <li><strong>Academic/Work:</strong> Difficulty completing assignments, meeting deadlines, staying organized, and maintaining consistent performance</li>
+            <li><strong>Relationships:</strong> Challenges with listening, following through on commitments, emotional regulation, and managing conflict</li>
+            <li><strong>Self-esteem:</strong> Repeated experiences of failure or criticism can lead to low self-confidence and negative self-perception</li>
+            <li><strong>Daily functioning:</strong> Struggles with routine tasks like paying bills, household management, and personal organization</li>
+            <li><strong>Safety:</strong> Increased risk of accidents due to inattention or impulsivity, particularly in driving</li>
+          </ul>
+          <p className="mb-4">
+            However, it's important to recognize that many individuals with ADHD also describe unique strengths, 
+            including creativity, ability to hyperfocus on interesting tasks, high energy, resilience, and 
+            thinking outside the box.
+          </p>
+        </section>
 
-        {/* ===== REFERENCES SECTION ===== */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
-        
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-          <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        {/* SPECTRUM SECTION */}
+        <section>
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding ADHD as a Spectrum</h2>
           
-          {/* CITED STUDIES: GREEN */}
-          <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-              Cited Studies & Statistics
-            </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-              <p>1. Hoogman, M., Bralten, J., Hibar, D. P., Mennes, M., Zwiers, M. P., Schweren, L. S., ... & Franke, B. (2017). "Subcortical brain volume differences in participants with attention deficit hyperactivity disorder in children and adults: A cross-sectional mega-analysis." <em>The Lancet Psychiatry</em>, 4(4), 310-319.</p>
-              <p>2. Hoogman, M., Muetzel, R., Guimaraes, J. P., Shumskaya, E., Mennes, M., Zwiers, M. P., ... & Franke, B. (2019). "Brain imaging of the cortex in ADHD: A coordinated analysis of large-scale clinical and population-based samples." <em>American Journal of Psychiatry</em>, 176(7), 531-542.</p>
-              <p>3. Frodl, T., & Skokauskas, N. (2012). "Meta-analysis of structural MRI studies in children and adults with attention deficit hyperactivity disorder indicates treatment effects." <em>Acta Psychiatrica Scandinavica</em>, 125(2), 114-126.</p>
-              <p>4. Narr, K. L., Woods, R. P., Lin, J., Kim, J., Phillips, O. R., Del'Homme, M., ... & Toga, A. W. (2009). "Widespread cortical thinning is a robust anatomical marker for attention-deficit/hyperactivity disorder." <em>Journal of the American Academy of Child & Adolescent Psychiatry</em>, 48(10), 1014-1022.</p>
-              <p>5. Shaw, P., Eckstrand, K., Sharp, W., Blumenthal, J., Lerch, J. P., Greenstein, D., ... & Rapoport, J. L. (2007). "Attention-deficit/hyperactivity disorder is characterized by a delay in cortical maturation." <em>Proceedings of the National Academy of Sciences</em>, 104(49), 19649-19654.</p>
-              <p>6. Chen, L., Hu, X., Ouyang, L., He, N., Thumbhekar Ramakrishnan, V., Guo, W., ... & Wang, Y. (2016). "A systematic review and meta-analysis of tract-based spatial statistics studies regarding attention-deficit/hyperactivity disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 68, 838-847.</p>
-              <p>7. van Ewijk, H., Heslenfeld, D. J., Zwiers, M. P., Buitelaar, J. K., & Oosterlaan, J. (2012). "Diffusion tensor imaging in attention deficit/hyperactivity disorder: A systematic review and meta-analysis." <em>Neuroscience & Biobehavioral Reviews</em>, 36(4), 1093-1106.</p>
-              <p>8. Hart, H., Radua, J., Nakao, T., Mataix-Cols, D., & Rubia, K. (2013). "Meta-analysis of functional magnetic resonance imaging studies of inhibition and attention in attention-deficit/hyperactivity disorder: Exploring task-specific, stimulant medication, and age effects." <em>JAMA Psychiatry</em>, 70(2), 185-198.</p>
-              <p>9. Sonuga-Barke, E. J., & Castellanos, F. X. (2007). "Spontaneous attentional fluctuations in impaired states and pathological conditions: A neurobiological hypothesis." <em>Neuroscience & Biobehavioral Reviews</em>, 31(7), 977-986.</p>
-              <p>10. Sripada, C., Kessler, D., Fang, Y., Welsh, R. C., Prem Kumar, K., & Angstadt, M. (2014). "Disrupted network architecture of the resting brain in attention-deficit/hyperactivity disorder." <em>Human Brain Mapping</em>, 35(9), 4693-4705.</p>
-              <p>11. Cortese, S., Kelly, C., Chabernaud, C., Proal, E., Di Martino, A., Milham, M. P., & Castellanos, F. X. (2012). "Toward systems neuroscience of ADHD: A meta-analysis of 55 fMRI studies." <em>American Journal of Psychiatry</em>, 169(10), 1038-1055.</p>
-              <p>12. Plichta, M. M., & Scheres, A. (2014). "Ventral-striatal responsiveness during reward anticipation in ADHD and its relation to trait impulsivity in the healthy population: A meta-analytic review of the fMRI literature." <em>Neuroscience & Biobehavioral Reviews</em>, 38, 125-134.</p>
-              <p>13. Francx, W., Zwiers, M. P., Mennes, M., Oosterlaan, J., Heslenfeld, D., Hoekstra, P. J., ... & Buitelaar, J. K. (2015). "White matter microstructure and developmental improvement of hyperactive/impulsive symptoms in attention-deficit/hyperactivity disorder." <em>Journal of Child Psychology and Psychiatry</em>, 56(12), 1289-1297.</p>
-              <p>14. Shaw, P., Malek, M., Watson, B., Greenstein, D., de Rossi, P., & Sharp, W. (2013). "Trajectories of cerebral cortical development in childhood and adolescence and adult attention-deficit/hyperactivity disorder." <em>Biological Psychiatry</em>, 74(8), 599-606.</p>
-              <p>15. Arnsten, A. F. T. (2009). "Toward a new understanding of attention-deficit hyperactivity disorder pathophysiology: an important role for prefrontal cortex dysfunction." <em>CNS Drugs</em>, 23(1), 33-41.</p>
-              <p>16. Shaw, P., Stringaris, A., Nigg, J., & Leibenluft, E. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</p>
-              <p>17. Frodl, T., & Skokauskas, N. (2012). "Meta-analysis of structural MRI studies in children and adults with attention deficit hyperactivity disorder indicates treatment effects." <em>Acta Psychiatrica Scandinavica</em>, 125(2), 114-126.</p>
-              <p>18. Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</p>
+          <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 md:float-right md:ml-6 mb-4 w-full md:w-[420px] shadow-sm">
+            <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">The ADHD Spectrum</h3>
+            <div className="mb-6">
+              <div className="text-sm text-center mb-2 text-[#0c264d] font-bold">Symptom Severity</div>
+              <div className="h-16 rounded-lg overflow-hidden relative" style={{ background: 'linear-gradient(to right, #ffd166 0%, #2abcd4 50%, #0c264d 100%)' }}>
+                <div className="absolute inset-0 flex items-center justify-between px-4 text-white text-xs font-bold">
+                  <span className="text-[#0c264d]">Mild</span>
+                  <span>Moderate</span>
+                  <span>Severe</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mb-6">
+              <div className="text-sm text-center mb-3 text-[#0c264d] font-bold">Common Co-occurring Conditions<sup className="text-green-600 font-bold ml-0.5">6</sup></div>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
+                  <div className="font-bold text-[#0c264d]">59%</div>
+                  <div className="text-gray-700">Autism</div>
+                </div>
+                <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
+                  <div className="font-bold text-[#0c264d]">10-92%</div>
+                  <div className="text-gray-700">Learning Disorders</div>
+                </div>
+              </div>
+              <div className="text-xs text-center mt-3 text-gray-600 italic">60-100% of children with ADHD have ≥1 comorbid condition</div>
             </div>
           </div>
           
-          {/* BACKGROUND SOURCES: CYAN */}
-          <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
-              Background Sources
-            </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-              <li>Castellanos, F. X., & Proal, E. (2012). "Large-scale brain systems in ADHD: beyond the prefrontal-striatal model." <em>Trends in Cognitive Sciences</em>, 16(1), 17-26.</li>
-              <li>Faraone, S. V., & Biederman, J. (1998). "Neurobiology of attention-deficit hyperactivity disorder." <em>Biological Psychiatry</em>, 44(10), 951-958.</li>
-              <li>Rubia, K. (2018). "Cognitive neuroscience of attention deficit hyperactivity disorder (ADHD) and its clinical translation." <em>Frontiers in Human Neuroscience</em>, 12, 100.</li>
-            </ul>
-          </div>
-        </div>
+          <p className="mb-4">
+            ADHD exists on a spectrum, and no two people with ADHD are exactly alike. Symptoms vary in type, 
+            severity, and combination. Some individuals are mildly affected and develop effective coping strategies 
+            with minimal support, while others experience significant impairment requiring comprehensive treatment.
+          </p>
+          <p className="mb-4">
+            Additionally, ADHD commonly co-occurs with other conditions including learning disabilities, anxiety 
+            disorders, depression, autism spectrum disorder, and sleep disorders. These co-occurring conditions 
+            can complicate diagnosis and treatment, making individualized assessment and care essential.
+          </p>
+          <p className="mb-4">
+            Understanding ADHD as a complex, multifaceted condition—rather than a simple checklist of behaviors—is 
+            crucial for effective support and treatment.
+          </p>
+        </section>
       </div>
-    );
-  }
-  
-  return (
-    <article className="max-w-full w-full">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-            font-weight: bold;
-            margin-left: 2px;
-          }
-        `}
-      </style>
+
+      {/* FOOTER BUTTON */}
+      <div className="flex justify-end my-8 w-full clear-both">
+        <button 
+          onClick={() => setCurrentArticle?.('adhd')}
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md"
+        >
+          <span className="text-xl">←</span>
+          All About ADHD
+        </button>
+      </div>
+
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
       
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <h1 className="text-3xl">
-          ADHD: Causes & Origins
-        </h1>
-
-        <button 
-          onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
-        >
-          <span className="text-xl">←</span>
-          All About ADHD
-        </button>
-      </div>
-
-      {/* Mobile button - shows only on small screens below title */}
-      <button 
-        onClick={() => setCurrentArticle?.('adhd')}
-        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
-      >
-        <span className="text-xl">←</span>
-        All About ADHD
-      </button>
-
-      {/* Implemented the smart VS Code suggestion while keeping your Tailwind styles */}
-      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={(v) => setActiveTab(v)} className="w-full">
-        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
-          <TabsTrigger value="overview" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
-            Overview
-          </TabsTrigger>
-          <TabsTrigger value="genetics" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
-            Genetics
-          </TabsTrigger>
-          <TabsTrigger value="brain" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
-            Brain Structure
-          </TabsTrigger>
-        </TabsList>
-
-        <TabsContent value="overview" className="space-y-8">
-          {OverviewContent()}
-        </TabsContent>
-
-        <TabsContent value="genetics" className="space-y-8">
-          {GeneticsContent()}
-        </TabsContent>
-
-        <TabsContent value="brain" className="space-y-8">
-          {BrainContent()}
-        </TabsContent>
-      </Tabs>
-
-      <div className="flex justify-end my-8 clear-both">
-        <button 
-          onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
-        >
-          <span className="text-xl">←</span>
-          All About ADHD
-        </button>
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>Reuben, C., & Elgaddal, N. (2024). "ADHD in Children Ages 5–17 Years: US, 2020–2022." <i>NCHS Data Brief</i>, No. 499.</li>
+            <li>Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>, 328, 115449.</li>
+            <li>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</li>
+            <li>Willcutt, E. G. (2012). "The prevalence of DSM-IV attention-deficit/hyperactivity disorder: a meta-analytic review." <i>Neurotherapeutics</i>, 9(3).</li>
+            <li>Song, P., et al. (2021). "The global prevalence of adult attention-deficit hyperactivity disorder: A systematic review and meta-analysis." <i>Journal of Global Health</i>, 11.</li>
+            <li>Larsson, H., et al. (2024). "The psychiatric comorbidity of ADHD." <i>Molecular Psychiatry</i>.</li>
+          </ol>
+        </div>
+        
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
+            <li>Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.</li>
+            <li>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH.</li>
+            <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.).</li>
+          </ul>
+        </div>
       </div>
     </article>
   );
