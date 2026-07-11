@@ -261,7 +261,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
       {/* Who CANNOT Diagnose */}
       <div className="bg-white p-5 rounded-md border-l-4 border-red-400 shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
-          <XCircle className="text-red-500" size={20} />
+          <XCircle className="text-purple-500" size={20} />
           Who Cannot Legally Diagnose Autism
         </h3>
 
@@ -275,9 +275,9 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
             </thead>
             <tbody>
               {cannotDiagnose.map((row, i) => (
-                <tr key={row.label} className={i % 2 === 0 ? 'bg-red-50' : 'bg-white'}>
-                  <td className="p-3 font-semibold text-red-700 border-b border-red-100 align-top">{row.label}</td>
-                  <td className="p-3 text-gray-700 border-b border-red-100">{row.note}</td>
+                <tr key={row.label} className={i % 2 === 0 ? 'bg-purple-50' : 'bg-white'}>
+                  <td className="p-3 font-semibold text-purple-700 border-b border-purple-100 align-top">{row.label}</td>
+                  <td className="p-3 text-gray-700 border-b border-purple-100">{row.note}</td>
                 </tr>
               ))}
             </tbody>
