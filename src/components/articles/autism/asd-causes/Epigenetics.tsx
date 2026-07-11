@@ -152,13 +152,13 @@ export function Epigenetics({ setCurrentArticle }: EpigeneticsProps) {
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>Han, E., Canada, K. A., Puglia, M. H., Pelphrey, K. A., & Evans, T. M. (2025). The convergence of early-life stress and autism spectrum disorder on the epigenetics of genes key to the HPA axis. <i>Biology</i>, 15(1), 66. https://doi.org/10.3390/biology15010066</li>
-            <li>Gholamalizadeh, H., Amiri-Shahri, M., Rasouli, F., Ansari, A., Baradaran Rahimi, V., & Reza Askari, V. (2024). DNA methylation in autism spectrum disorders: Biomarker or pharmacological target? <i>Brain Sciences</i>, 14(8), 737. https://doi.org/10.3390/brainsci14080737</li>
-            <li>Cao-Lei, L., Elgbeili, G., Laplante, D. P., Szyf, M., & King, S. (2025). DNA methylation mediates the association between prenatal maternal stress and the broad autism phenotype in human adolescents: Project Ice Storm. <i>International Journal of Molecular Sciences</i>, 26(19), 9468. https://doi.org/10.3390/ijms26199468</li>
-            <li>Dorsey, S. G., Mocci, E., Lane, M. V., & Krueger, B. K. (2024). Rapid effects of valproic acid on the fetal brain transcriptome: Implications for brain development and autism. <i>Translational Psychiatry</i>, 14(1), 482. https://doi.org/10.1038/s41398-024-03179-1</li>
-            <li>Yang, J., Li, X., Tan, J., et al. (2025). Prenatal exposure to valproic acid induces increased autism-like behaviors and impairment of learning and memory functions in rat offspring by upregulating ADAM10 expression. <i>Neurochemical Research</i>, 50(3), 14-16. https://doi.org/10.1007/s11064-025-04398-8</li>
-          </ol>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Han, E., Canada, K. A., Puglia, M. H., Pelphrey, K. A., & Evans, T. M. (2025). The convergence of early-life stress and autism spectrum disorder on the epigenetics of genes key to the HPA axis. <i>Biology</i>, 15(1), 66. https://doi.org/10.3390/biology15010066</p>
+            <p>2. Gholamalizadeh, H., Amiri-Shahri, M., Rasouli, F., Ansari, A., Baradaran Rahimi, V., & Reza Askari, V. (2024). DNA methylation in autism spectrum disorders: Biomarker or pharmacological target? <i>Brain Sciences</i>, 14(8), 737. https://doi.org/10.3390/brainsci14080737</p>
+            <p>3. Cao-Lei, L., Elgbeili, G., Laplante, D. P., Szyf, M., & King, S. (2025). DNA methylation mediates the association between prenatal maternal stress and the broad autism phenotype in human adolescents: Project Ice Storm. <i>International Journal of Molecular Sciences</i>, 26(19), 9468. https://doi.org/10.3390/ijms26199468</p>
+            <p>4. Dorsey, S. G., Mocci, E., Lane, M. V., & Krueger, B. K. (2024). Rapid effects of valproic acid on the fetal brain transcriptome: Implications for brain development and autism. <i>Translational Psychiatry</i>, 14(1), 482. https://doi.org/10.1038/s41398-024-03179-1</p>
+            <p>5. Yang, J., Li, X., Tan, J., et al. (2025). Prenatal exposure to valproic acid induces increased autism-like behaviors and impairment of learning and memory functions in rat offspring by upregulating ADAM10 expression. <i>Neurochemical Research</i>, 50(3), 14-16. https://doi.org/10.1007/s11064-025-04398-8</p>
+          </div>
         </div>
 
         {/* BACKGROUND SOURCES: CYAN */}
@@ -166,7 +166,7 @@ export function Epigenetics({ setCurrentArticle }: EpigeneticsProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed">
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
             <li>Arca, G., Scapigliati, G., & Fuso, A. (2024). Intercontinental insights into ASD: A synthesis of DNA methylation and environment. <i>Environmental Epigenetics</i>, 10(1), dvae012. https://doi.org/10.1093/eep/dvae012</li>
             <li>Herrera, M. L., Paraíso-Luna, J., Bustos-Martínez, I., & Barco, A. (2024). Targeting epigenetic dysregulation in autism spectrum disorders. <i>Trends in Molecular Medicine</i>, 30(10), 1028-1046. https://doi.org/10.1016/j.molmed.2024.06.004</li>
             <li>Grazioli, S., et al. (2025). Epigenetic changes and their potential reversibility in mental health. <i>Clinical Epigenetics</i>, 17, 42. https://doi.org/10.1186/s13148-025-01824-w</li>
