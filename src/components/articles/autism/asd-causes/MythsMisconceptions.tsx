@@ -114,26 +114,14 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-20 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed">
-            <li>
-              Hviid, A., Hansen, J. V., Frisch, M., & Melbye, M. (2019). "Measles, Mumps, Rubella Vaccination and Autism: A Nationwide Cohort Study." <i>Annals of Internal Medicine</i>, 170(8), 513-520.
-            </li>
-            <li>
-              McElhanon, B. O., McCracken, C., Karpen, S., & Sharp, W. G. (2014). "Gastrointestinal symptoms in autism spectrum disorder: a meta-analysis." <i>Pediatrics</i>, 133(5), 872-883.
-            </li>
-            <li>
-              Fiorentino, M., Sapone, A., Senger, S., et al. (2016). "Blood-brain barrier and intestinal epithelial barrier alterations in autism spectrum disorders." <i>Molecular Autism</i>, 7(1), 59.
-            </li>
-            <li>
-              Milton, D. E. (2012). "On the ontological status of autism: the 'double empathy problem'." <i>Disability & Society</i>, 27(6), 883-887.
-            </li>
-            <li>
-              Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What is the male-to-female ratio in autism spectrum disorder? A systematic review and meta-analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.
-            </li>
-            <li>
-              Treffert, D. A. (2009). "The savant syndrome: an extraordinary condition. A synopsis: past, present, future." <i>Philosophical Transactions of the Royal Society B: Biological Sciences</i>, 364(1522), 1351-1357.
-            </li>
-          </ol>
+          <div className="text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Hviid, A., Hansen, J. V., Frisch, M., & Melbye, M. (2019). "Measles, Mumps, Rubella Vaccination and Autism: A Nationwide Cohort Study." <i>Annals of Internal Medicine</i>, 170(8), 513-520.</p>
+            <p>2. McElhanon, B. O., McCracken, C., Karpen, S., & Sharp, W. G. (2014). "Gastrointestinal symptoms in autism spectrum disorder: a meta-analysis." <i>Pediatrics</i>, 133(5), 872-883.</p>
+            <p>3. Fiorentino, M., Sapone, A., Senger, S., et al. (2016). "Blood-brain barrier and intestinal epithelial barrier alterations in autism spectrum disorders." <i>Molecular Autism</i>, 7(1), 59.</p>
+            <p>4. Milton, D. E. (2012). "On the ontological status of autism: the 'double empathy problem'." <i>Disability & Society</i>, 27(6), 883-887.</p>
+            <p>5. Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What is the male-to-female ratio in autism spectrum disorder? A systematic review and meta-analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.</p>
+            <p>6. Treffert, D. A. (2009). "The savant syndrome: an extraordinary condition. A synopsis: past, present, future." <i>Philosophical Transactions of the Royal Society B: Biological Sciences</i>, 364(1522), 1351-1357.</p>
+          </div>
         </div>
 
         {/* BACKGROUND SOURCES: CYAN */}
@@ -141,16 +129,10 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-20 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Institute of Medicine (US) Immunization Safety Review Committee. (2004). <i>Immunization Safety Review: Vaccines and Autism</i>. National Academies Press.
-            </li>
-            <li>
-              Piwowarczyk, A., Horvath, A., Łukasik, J., Pisula, E., & Szajewska, H. (2018). "Gluten- and casein-free diet and autism spectrum disorders in children: a systematic review." <i>European Journal of Nutrition</i>, 57(2), 433-440.
-            </li>
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.).
-            </li>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+            <li>Institute of Medicine (US) Immunization Safety Review Committee. (2004). <i>Immunization Safety Review: Vaccines and Autism</i>. National Academies Press.</li>
+            <li>Piwowarczyk, A., Horvath, A., Łukasik, J., Pisula, E., & Szajewska, H. (2018). "Gluten- and casein-free diet and autism spectrum disorders in children: a systematic review." <i>European Journal of Nutrition</i>, 57(2), 433-440.</li>
+            <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.).</li>
           </ul>
         </div>
       </div>
