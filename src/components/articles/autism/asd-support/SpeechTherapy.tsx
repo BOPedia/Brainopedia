@@ -18,7 +18,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </h1>
 
         <button 
-          onClick={() => setCurrentArticle?.('autism-support')}
+          onClick={() => setCurrentArticle?.('autism-support-therapies')}
           className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shrink-0"
         >
           <span className="text-xl">&larr;</span>
@@ -241,7 +241,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
         >
           <span className="text-xl">&larr;</span>
-          Back to Autism Support
+          Back to Therapies
         </button>
       </div>
 
