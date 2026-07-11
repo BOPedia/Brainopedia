@@ -35,7 +35,7 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
         {`sup { color: #10b981; }`}
       </style>
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex items-center justify-between">
-        <h1 className="text-3xl font-bold text-[#0c264d]">
+        <h1 className="text-3xl text-[#0c264d]">
           Autism: Testing & Diagnosing
         </h1>
 
@@ -53,7 +53,7 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
           <button
             key={tab.id}
             onClick={() => handleTabChange(tab.id)}
-            className={`px-6 py-3 rounded-md text-sm transition-colors font-bold ${
+            className={`px-6 py-3 rounded-md text-sm transition-colors ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'
                 : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffd166]/80'
@@ -70,13 +70,13 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
             <TabsList className="grid w-full grid-cols-2 gap-3 mb-6 bg-transparent h-auto p-0">
               <TabsTrigger 
                 value="child-general" 
-                className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !py-3 font-bold"
+                className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md py-3"
               >
                 Child / General Diagnosis
               </TabsTrigger>
               <TabsTrigger 
                 value="adult" 
-                className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !py-3 font-bold"
+                className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md py-3"
               >
                 Adult Diagnosis
               </TabsTrigger>
