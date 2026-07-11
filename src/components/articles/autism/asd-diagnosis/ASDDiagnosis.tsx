@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
-import { DiagnosticProcess } from './DiagnosticProcess';
+import { GeneralProcess } from './GeneralProcess';
+import { ChildDiagnosis } from './ChildDiagnosis';
 import { AdultDiagnosis } from './AdultDiagnosis';
 import { WhoCanDiagnose } from './WhoCanDiagnose';
 import { AcrossLifespan } from './AcrossLifespan';
@@ -14,14 +14,16 @@ interface ASDDiagnosisProps {
 }
 
 export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProps) {
-  const [activeTab, setActiveTab] = useState(initialTab || 'process');
+  const [activeTab, setActiveTab] = useState(initialTab || 'general');
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
   };
 
   const tabs = [
-    { id: 'process', label: 'Diagnostic Process' },
+    { id: 'general', label: 'General Process' },
+    { id: 'child', label: 'Child Diagnosis' },
+    { id: 'adult', label: 'Adult Diagnosis' },
     { id: 'professionals', label: 'Who Can Diagnose' },
     { id: 'lifespan', label: 'Across the Lifespan' },
     { id: 'challenges', label: 'Challenges & Disparities' },
@@ -48,7 +50,7 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
         </button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mb-6">
         {tabs.map((tab) => (
           <button
             key={tab.id}
@@ -65,33 +67,9 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
       </div>
 
       <div className="space-y-8">
-        {activeTab === 'process' && (
-          <Tabs defaultValue="child-general" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 gap-3 mb-6 bg-transparent h-auto p-0">
-              <TabsTrigger 
-                value="child-general" 
-                className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md py-3"
-              >
-                Child / General Diagnosis
-              </TabsTrigger>
-              <TabsTrigger 
-                value="adult" 
-                className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md py-3"
-              >
-                Adult Diagnosis
-              </TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="child-general">
-              <DiagnosticProcess setCurrentArticle={setCurrentArticle} />
-            </TabsContent>
-
-            <TabsContent value="adult">
-              <AdultDiagnosis setCurrentArticle={setCurrentArticle} />
-            </TabsContent>
-          </Tabs>
-        )}
-
+        {activeTab === 'general' && <GeneralProcess setCurrentArticle={setCurrentArticle} />}
+        {activeTab === 'child' && <ChildDiagnosis setCurrentArticle={setCurrentArticle} />}
+        {activeTab === 'adult' && <AdultDiagnosis setCurrentArticle={setCurrentArticle} />}
         {activeTab === 'professionals' && <WhoCanDiagnose />}
         {activeTab === 'lifespan' && <AcrossLifespan />}
         {activeTab === 'challenges' && <ChallengesDisparities />}
