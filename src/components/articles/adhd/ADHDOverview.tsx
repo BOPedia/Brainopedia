@@ -29,16 +29,24 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         <section>
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is ADHD?</h2>
           
-          <ImageWithFallback 
-            src="/images/adhd/adhd-overview-colors-bolt.png"
-            alt="ADHD Overview Visual"
-            className="w-48 h-auto float-right ml-4 mb-4 rounded"
-          />
-          
+                <div className="mx-auto w-40 mb-4">
+                  <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+                    <video 
+                      src="/images/adhd/adhd-overview-squirrel.mp4" 
+                      poster="/images/adhd/adhd-overview-squirrel.png"
+                      autoPlay 
+                      loop 
+                      muted 
+                      playsInline
+                      className="w-full h-auto block"
+                      aria-label="Asquirrel bites bulb and it lights up, representing the hyperactive and impulsive nature of ADHD."
+                    />
+                  </div>
+                </div>          
           <p className="mb-4">
             Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized 
             by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 
-            or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-green-600 font-bold ml-0.5">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-green-600 font-bold ml-0.5">2</sup> making it one of the most common neurodevelopmental disorders.
+            or development. It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5 to 17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-green-600 font-bold ml-0.5">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-green-600 font-bold ml-0.5">2</sup> making it one of the most common neurodevelopmental disorders.
           </p>
           <p className="mb-4">
             ADHD is not simply a childhood disorder—symptoms often persist into adulthood. It's a real medical condition with neurological basis, not a character flaw or result of poor parenting. Brain imaging studies reveal significant differences in brain structure and function.
