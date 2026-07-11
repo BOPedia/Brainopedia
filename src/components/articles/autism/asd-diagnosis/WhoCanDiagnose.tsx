@@ -163,17 +163,17 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
 
       {/* Pediatric Professionals Grid */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-6 text-xl flex items-center gap-2">
-          <Users className="text-[#2abcd4]" size={24} /> Evaluating Children & Adolescents
-        </h3>
-        
         <div className="flex flex-col items-center text-center mb-8">
+          <h3 className="text-[#0c264d] font-bold mb-6 text-xl flex items-center justify-center gap-2 w-full">
+            <Users className="text-[#2abcd4]" size={24} /> Evaluating Children & Adolescents
+          </h3>
+          
           <ImageWithFallback
             src="/images/autism/autism-diagnosis-WhoCantab-doctor-plays.png"
             alt="Doctor playing with child during assessment"
             className="w-48 h-auto mb-4 rounded-md border border-gray-300 shadow-sm" 
           />
-          <p className="text-sm text-gray-700 max-w-2xl">
+          <p className="text-sm text-gray-700 max-w-2xl text-left">
             These professionals are typically accessed through pediatric referrals, early intervention programs, or school systems.
           </p>
         </div>
@@ -198,19 +198,19 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
         </div>
       </div>
 
-      {/* Adult Professionals Grid */}
+    {/* Adult Professionals Grid */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6">
-        <h3 className="text-[#0c264d] font-bold mb-6 text-xl flex items-center gap-2">
-          <User className="text-[#d97706]" size={24} /> Evaluating Adults
-        </h3>
-        
         <div className="flex flex-col items-center text-center mb-8">
+          <h3 className="text-[#0c264d] font-bold mb-6 text-xl flex items-center justify-center gap-2 w-full">
+            <User className="text-[#d97706]" size={24} /> Evaluating Adults
+          </h3>
+          
           <ImageWithFallback
             src="/images/autism/autism-diagnosis-WhoCantab-adult-dx.png"
             alt="Adult in a clinical evaluation setting"
             className="w-48 h-auto mb-4 rounded-md border border-gray-300 shadow-sm" 
           />
-          <p className="text-sm text-gray-700 max-w-2xl">
+          <p className="text-sm text-gray-700 max-w-2xl text-left">
             Adult assessments require clinicians experienced in high-masking presentations, psychiatric overlaps, and retrospective developmental interviews.
           </p>
         </div>
@@ -309,7 +309,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
             
             <div className="border-l-2 border-[#ffd166] pl-3">
               <div className="font-bold text-[#0c264d] mb-1">Search Neurodiversity Directories</div>
-              <div className="text-sm text-gray-700">Look for Clinical Psychologists on specialized directories (like NDtherapists.com or Psychology Today) and filter specifically for "Autism" and "Adults."</div>
+              <div className="text-sm text-gray-700">Search online therapeutic directories and filter your results specifically for "Autism" and "Adults." Please note that public directories are not formally vetted, so always ask potential providers about their specific training and experience with adult autism assessments.</div>
             </div>
 
             <div className="border-l-2 border-[#ffd166] pl-3">
