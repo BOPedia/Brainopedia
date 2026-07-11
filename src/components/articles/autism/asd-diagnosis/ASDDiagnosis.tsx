@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
 import { DiagnosticProcess } from './DiagnosticProcess';
+import { AdultDiagnosis } from './AdultDiagnosis';
 import { WhoCanDiagnose } from './WhoCanDiagnose';
 import { AcrossLifespan } from './AcrossLifespan';
 import { ChallengesDisparities } from './ChallengesDisparities';
@@ -33,7 +35,7 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
         {`sup { color: #10b981; }`}
       </style>
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex items-center justify-between">
-        <h1 className="text-3xl">
+        <h1 className="text-3xl font-bold text-[#0c264d]">
           Autism: Testing & Diagnosing
         </h1>
 
@@ -51,7 +53,7 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
           <button
             key={tab.id}
             onClick={() => handleTabChange(tab.id)}
-            className={`px-6 py-3 rounded-md text-sm transition-colors ${
+            className={`px-6 py-3 rounded-md text-sm transition-colors font-bold ${
               activeTab === tab.id
                 ? 'bg-[#0A9DC4] text-white'
                 : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffd166]/80'
@@ -63,7 +65,33 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
       </div>
 
       <div className="space-y-8">
-        {activeTab === 'process' && <DiagnosticProcess />}
+        {activeTab === 'process' && (
+          <Tabs defaultValue="child-general" className="w-full">
+            <TabsList className="grid w-full grid-cols-2 gap-3 mb-6 bg-transparent h-auto p-0">
+              <TabsTrigger 
+                value="child-general" 
+                className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !py-3 font-bold"
+              >
+                Child / General Diagnosis
+              </TabsTrigger>
+              <TabsTrigger 
+                value="adult" 
+                className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !py-3 font-bold"
+              >
+                Adult Diagnosis
+              </TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="child-general">
+              <DiagnosticProcess setCurrentArticle={setCurrentArticle} />
+            </TabsContent>
+
+            <TabsContent value="adult">
+              <AdultDiagnosis setCurrentArticle={setCurrentArticle} />
+            </TabsContent>
+          </Tabs>
+        )}
+
         {activeTab === 'professionals' && <WhoCanDiagnose />}
         {activeTab === 'lifespan' && <AcrossLifespan />}
         {activeTab === 'challenges' && <ChallengesDisparities />}
