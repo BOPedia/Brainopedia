@@ -9,15 +9,14 @@ interface ADHDOverviewProps {
 export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
   return (
     <article className="max-w-full w-full">
-      {/* HEADER */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <h1 className="text-3xl font-bold">
-          ADHD: Overview
+        <h1 className="text-3xl">
+          ADHD: Overview 
         </h1>
 
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
         >
           <span className="text-xl">←</span>
           All About ADHD
@@ -25,24 +24,25 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
       </div>
 
       <div className="space-y-8">
-        {/* WHAT IS ADHD? */}
-        <section>
+{/* WHAT IS ADHD? */}
+        <section className="clear-both">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is ADHD?</h2>
           
-                <div className="mx-auto w-40 mb-4">
-                  <div className="rounded-lg shadow-sm overflow-hidden bg-white">
-                    <video 
-                      src="/images/adhd/adhd-overview-squirrel.mp4" 
-                      poster="/images/adhd/adhd-overview-squirrel.png"
-                      autoPlay 
-                      loop 
-                      muted 
-                      playsInline
-                      className="w-full h-auto block"
-                      aria-label="Asquirrel bites bulb and it lights up, representing the hyperactive and impulsive nature of ADHD."
-                    />
-                  </div>
-                </div>          
+          <div className="w-40 float-right ml-6 mb-4">
+            <div className="rounded-lg shadow-sm overflow-hidden bg-white">
+              <video 
+                src="/images/adhd/adhd-overview-squirrel.mp4" 
+                poster="/images/adhd/adhd-overview-squirrel.png"
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-auto block"
+                aria-label="A squirrel bites bulb and it lights up, representing the hyperactive and impulsive nature of ADHD."
+              />
+            </div>
+          </div>          
+          
           <p className="mb-4">
             Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized 
             by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning 

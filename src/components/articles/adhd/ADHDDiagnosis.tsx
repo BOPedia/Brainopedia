@@ -459,7 +459,9 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Professionals Qualified to Diagnose ADHD</h2>
             
             <div className="flex justify-center mb-6">
-              <ADHDDiagnosticProfessionals className="w-80 h-auto rounded-md border border-gray-300" />
+              <div className="w-80 h-auto rounded-md border border-gray-300">
+                <ADHDDiagnosticProfessionals />
+              </div>
             </div>
 
             <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded mb-6">
@@ -965,7 +967,9 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </p>
               
               <div className="flex justify-center mb-6">
-                <ADHDComorbidities className="w-full max-w-lg h-auto rounded-md border border-gray-300" />
+                <div className="w-full max-w-lg h-auto rounded-md border border-gray-300">
+                  <ADHDComorbidities />
+                </div>
               </div>
 
               <div className="space-y-3">
