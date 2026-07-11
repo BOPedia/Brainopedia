@@ -151,13 +151,18 @@ export function ChildDiagnosis({ setCurrentArticle }: ChildDiagnosisProps) {
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">Cited Studies</h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). Early identification and interventions for autism spectrum disorder. <i>Pediatrics</i>, 136(Supplement 1), S1-S9.</li>
-            <li>Lord, C., Rutter, M., DiLavore, P. C., et al. (2012). <i>Autism diagnostic observation schedule, second edition (ADOS-2)</i>. Western Psychological Services.</li>
-          </ol>
+  {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). Early identification and interventions for autism spectrum disorder. <i>Pediatrics</i>, 136(Supplement 1), S1-S9.</p>
+            <p>2. Lord, C., Rutter, M., DiLavore, P. C., et al. (2012). <i>Autism diagnostic observation schedule, second edition (ADOS-2)</i>. Western Psychological Services.</p>
+          </div>
         </div>
-      </div>
     </div>
+  </div>
+  </div>
   );
 }

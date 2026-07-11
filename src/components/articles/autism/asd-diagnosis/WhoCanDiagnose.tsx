@@ -259,7 +259,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
       </div>
 
       {/* Who CANNOT Diagnose */}
-      <div className="bg-white p-5 rounded-md border-l-4 border-red-400 shadow-sm mb-6">
+      <div className="bg-white p-5 rounded-md border-l-4 border-purple-500 shadow-sm mb-6">
         <h3 className="text-[#0c264d] font-bold mb-4 text-lg flex items-center gap-2">
           <XCircle className="text-purple-500" size={20} />
           Who Cannot Legally Diagnose Autism
@@ -335,8 +335,17 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
 
       <div className="pt-2">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+  
+{/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <i>Journal of Autism and Developmental Disorders</i>, 47(8), 2519–2534.</p>
+          </div>
+        </div>
         
-        <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
@@ -346,6 +355,5 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
           </ul>
         </div>
       </div>
-    </div> 
   );
 }

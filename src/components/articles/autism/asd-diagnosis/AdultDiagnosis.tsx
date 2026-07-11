@@ -99,6 +99,8 @@ export function AdultDiagnosis({ setCurrentArticle }: AdultDiagnosisProps) {
 
       <div className="pt-2">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+    {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics

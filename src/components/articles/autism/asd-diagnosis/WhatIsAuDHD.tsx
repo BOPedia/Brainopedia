@@ -360,22 +360,14 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Antshel, K. M., & Russo, N. (2019). "Autism spectrum disorders and ADHD: Overlapping phenomenology, diagnostic issues, and treatment considerations." <i>Current Psychiatry Reports</i>, 21(5), 34.
-            </li>
-            <li>
-              Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <i>Frontiers in Human Neuroscience</i>, 8, 268.
-            </li>
-            <li>
-              Jang, J., Matson, J. L., Williams, L. W., et al. (2013). "Rates of comorbid symptoms in children with ASD, ADHD, and comorbid ASD and ADHD." <i>Research in Developmental Disabilities</i>, 34(8), 2369-2378.
-            </li>
-            <li>
-              Mulligan, A., Anney, R. J., O'Regan, M., et al. (2009). "Autism symptoms in attention-deficit/hyperactivity disorder: A familial trait which correlates with conduct, oppositional defiant, language and motor disorders." <i>Journal of Autism and Developmental Disorders</i>, 39(2), 197-209.
-            </li>
-          </ol>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Antshel, K. M., & Russo, N. (2019). "Autism spectrum disorders and ADHD: Overlapping phenomenology, diagnostic issues, and treatment considerations." <i>Current Psychiatry Reports</i>, 21(5), 34.</p>
+            <p>2. Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <i>Frontiers in Human Neuroscience</i>, 8, 268.</p>
+            <p>3. Jang, J., Matson, J. L., Williams, L. W., et al. (2013). "Rates of comorbid symptoms in children with ASD, ADHD, and comorbid ASD and ADHD." <i>Research in Developmental Disabilities</i>, 34(8), 2369-2378.</p>
+            <p>4. Mulligan, A., Anney, R. J., O'Regan, M., et al. (2009). "Autism symptoms in attention-deficit/hyperactivity disorder: A familial trait which correlates with conduct, oppositional defiant, language and motor disorders." <i>Journal of Autism and Developmental Disorders</i>, 39(2), 197-209.</p>
+          </div>
         </div>
-        
+
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
