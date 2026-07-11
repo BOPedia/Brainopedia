@@ -14,6 +14,7 @@ export const coreNeurodevelopmentalRoutes: RouteMap = {
   'adhd-epigenetics': lazy(() => import('../adhd/ADHDEpigenetics').then(m => ({ default: m.ADHDEpigenetics }))),
   'adhd-diagnosis': lazy(() => import('../adhd/ADHDDiagnosis').then(m => ({ default: m.ADHDDiagnosis }))),
   'adhd-support': lazy(() => import('../adhd/ADHDSupport').then(m => ({ default: m.ADHDSupport }))),
+  'autism-support-therapies': lazy(() => import('../autism/asd-support/ASDSupport').then(m => ({ default: (props: any) => <m.ASDSupport {...props} initialTab="therapies" /> }))),
   'adhd-living': lazy(() => import('../adhd/ADHDLiving').then(m => ({ default: m.ADHDLiving }))),
 
   // ==========================================
