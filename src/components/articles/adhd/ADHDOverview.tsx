@@ -183,73 +183,81 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             or internalize their struggles, leading to later diagnosis.
           </p>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Age and Development</h3>
+<h3 className="text-[#0c264d] font-bold mb-3 text-lg">Age and Development</h3>
           <p className="mb-4">
             ADHD symptoms must be present before age 12 for diagnosis, though many people aren't diagnosed until 
             adulthood. Hyperactivity symptoms often decrease with age, while inattention and executive function 
             challenges may persist or become more problematic as life demands increase.
           </p>
 
-          {/* ADULT ADHD CHART */}
-          <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 md:float-left md:mr-6 mb-4 w-full md:w-[420px] shadow-sm">
-            <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">ADHD in Adults<sup className="text-green-600 font-bold ml-0.5">5</sup></h3>
-            <div className="mb-6 pb-6 border-b-2 border-gray-200 grid grid-cols-2 gap-3">
-              <div className="text-center border-r border-gray-200">
-                <div className="text-3xl font-bold text-[#0A9DC4]">2.6%</div>
-                <div className="text-xs text-gray-600 mt-1">Persistent<br/>(childhood-onset)</div>
+          {/* ADULT ADHD CHART & CULTURAL CONSIDERATIONS (Flexbox Fix) */}
+          <div className="flex flex-col md:flex-row gap-6 mb-4">
+            
+            {/* The Chart (Removed float-left, changed to shrink-0) */}
+            <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 w-full md:w-[420px] shadow-sm shrink-0">
+              <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">ADHD in Adults<sup className="text-green-600 font-bold ml-0.5">5</sup></h3>
+              <div className="mb-6 pb-6 border-b-2 border-gray-200 grid grid-cols-2 gap-3">
+                <div className="text-center border-r border-gray-200">
+                  <div className="text-3xl font-bold text-[#0A9DC4]">2.6%</div>
+                  <div className="text-xs text-gray-600 mt-1">Persistent<br/>(childhood-onset)</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#ffd166]">6.8%</div>
+                  <div className="text-xs text-gray-600 mt-1">Symptomatic<br/>(any onset)</div>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#ffd166]">6.8%</div>
-                <div className="text-xs text-gray-600 mt-1">Symptomatic<br/>(any onset)</div>
+              <div className="mb-6 pb-6 border-b-2 border-gray-200">
+                <div className="bg-gradient-to-r from-[#ffd166] to-[#2abcd4] text-white rounded p-4 text-center">
+                  <div className="text-4xl font-bold">50-70%</div>
+                  <div className="text-sm mt-2">of childhood cases persist into adulthood</div>
+                </div>
               </div>
-            </div>
-            <div className="mb-6 pb-6 border-b-2 border-gray-200">
-              <div className="bg-gradient-to-r from-[#ffd166] to-[#2abcd4] text-white rounded p-4 text-center">
-                <div className="text-4xl font-bold">50-70%</div>
-                <div className="text-sm mt-2">of childhood cases persist into adulthood</div>
-              </div>
-            </div>
-            <div className="mb-6 pb-6 border-b-2 border-gray-200">
-              <div className="bg-[#0c264d] text-white rounded p-4 text-center">
-                <div className="text-4xl font-bold">~70%</div>
-                <div className="text-sm mt-2">have ≥1 comorbid mental health condition</div>
-              </div>
-            </div>
-            <div>
-              <div className="text-sm text-center mb-4 text-[#0c264d] font-bold">Gender Differences in Comorbidity</div>
-              <div className="mb-4">
-                <div className="text-center mb-2 text-sm font-bold text-[#ffd166]">Females: Higher Rates Of</div>
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
-                    <div className="font-bold text-[#0c264d]">47-50%</div>
-                    <div className="text-gray-700">Anxiety</div>
-                  </div>
-                  <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
-                    <div className="font-bold text-[#0c264d]">19-53%</div>
-                    <div className="text-gray-700">Depression</div>
-                  </div>
+              <div className="mb-6 pb-6 border-b-2 border-gray-200">
+                <div className="bg-[#0c264d] text-white rounded p-4 text-center">
+                  <div className="text-4xl font-bold">~70%</div>
+                  <div className="text-sm mt-2">have ≥1 comorbid mental health condition</div>
                 </div>
               </div>
               <div>
-                <div className="text-center mb-2 text-sm font-bold text-[#0A9DC4]">Males: Higher Rates Of</div>
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
-                    <div className="text-gray-700">Substance Use</div>
+                <div className="text-sm text-center mb-4 text-[#0c264d] font-bold">Gender Differences in Comorbidity</div>
+                <div className="mb-4">
+                  <div className="text-center mb-2 text-sm font-bold text-[#ffd166]">Females: Higher Rates Of</div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
+                      <div className="font-bold text-[#0c264d]">47-50%</div>
+                      <div className="text-gray-700">Anxiety</div>
+                    </div>
+                    <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
+                      <div className="font-bold text-[#0c264d]">19-53%</div>
+                      <div className="text-gray-700">Depression</div>
+                    </div>
                   </div>
-                  <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
-                    <div className="text-gray-700">Schizophrenia</div>
+                </div>
+                <div>
+                  <div className="text-center mb-2 text-sm font-bold text-[#0A9DC4]">Males: Higher Rates Of</div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
+                      <div className="text-gray-700">Substance Use</div>
+                    </div>
+                    <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
+                      <div className="text-gray-700">Schizophrenia</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Cultural Considerations</h3>
-          <p className="mb-4">
-            Diagnosis rates vary across countries and cultures, reflecting differences in awareness, access to 
-            healthcare, diagnostic practices, and cultural attitudes toward mental health. Some cultural contexts 
-            may normalize or stigmatize ADHD symptoms differently.
-          </p>
+            {/* Cultural Considerations Text (Now lives beside the chart on desktop) */}
+            <div className="flex-1">
+              <h3 className="text-[#0c264d] font-bold mb-3 text-lg mt-0 md:mt-2">Cultural Considerations</h3>
+              <p className="mb-4">
+                Diagnosis rates vary across countries and cultures, reflecting differences in awareness, access to 
+                healthcare, diagnostic practices, and cultural attitudes toward mental health. Some cultural contexts 
+                may normalize or stigmatize ADHD symptoms differently.
+              </p>
+            </div>
+            
+          </div>
         </section>
 
         {/* IMPACT ON DAILY LIFE */}
