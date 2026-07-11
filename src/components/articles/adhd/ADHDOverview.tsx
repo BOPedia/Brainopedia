@@ -2,17 +2,33 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useState } from 'react';
 
-interface ADHDCausesProps {
+// 1. CHANGED THIS NAME
+interface ADHDOverviewProps {
   setCurrentArticle?: (article: string) => void;
   initialTab?: string;
 }
 
-export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
+// 2. CHANGED THIS NAME AND THE PROPS IN THE PARENTHESES
+export function ADHDOverview({ setCurrentArticle, initialTab }: ADHDOverviewProps) {
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
   
   function OverviewContent() {
     return (
       <>
+      {/* Header with Back Button */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <h1 className="text-3xl text-[#0c264d] font-bold">
+          ADHD: Overview
+        </h1>
+
+        <button 
+          onClick={() => setCurrentArticle?.('adhd')}
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shrink-0"
+        >
+          <span className="text-xl">&larr;</span>
+          All About ADHD
+        </button>
+      </div>
         <div>
           <h2 className="text-[#0c264d] mb-4 text-2xl font-bold">Understanding ADHD Causes</h2>
           
