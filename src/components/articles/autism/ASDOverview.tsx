@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 interface ASDOverviewProps {
@@ -6,55 +6,86 @@ interface ASDOverviewProps {
 }
 
 export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
+  const [activeTab, setActiveTab] = useState('basics');
+
+  const tabs = [
+    { id: 'basics', label: 'Basics & Features' },
+    { id: 'culture', label: 'Neurodiversity & Language' },
+    { id: 'context', label: 'Context & History' }
+  ];
+
+  const BackButton = () => (
+    <button 
+      onClick={() => setCurrentArticle?.('autism')}
+      className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap shrink-0 shadow-sm"
+    >
+      <span className="text-xl">←</span>
+      All About Autism
+    </button>
+  );
+
   return (
-    
-    <article className="max-w-6xl">
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6 border-b-2 border-[#0c264d] pb-2">
-        <h1 className="text-3xl">
+    <article className="max-w-6xl animate-in fade-in duration-300">
+      
+      {/* HEADER */}
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6 border-b-2 border-[#0c264d] pb-4">
+        <h1 className="text-3xl font-bold text-[#0c264d]">
           Autism: Overview
         </h1>
-
-        <button 
-          onClick={() => setCurrentArticle?.('autism')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap shrink-0"
-        >
-          <span className="text-xl">←</span>
-          All About Autism
-        </button>
+        <BackButton />
       </div>
 
-      <div className="space-y-8">
-        {/* Introduction Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">∞ What is Autism Spectrum Disorder?</h2>
+      {/* TABS NAVIGATION */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
+        {tabs.map((tab) => (
+          <button
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id)}
+            className={`px-6 py-3 rounded-md text-sm transition-colors font-medium border-2 ${
+              activeTab === tab.id
+                ? 'bg-[#0A9DC4] text-white border-[#0A9DC4]'
+                : 'bg-white text-[#0c264d] border-[#0A9DC4]/20 hover:border-[#0A9DC4] hover:bg-[#f0f9ff]'
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+
+      {/* ========================================== */}
+      {/* TAB 1: BASICS & FEATURES                     */}
+      {/* ========================================== */}
+      {activeTab === 'basics' && (
+        <div className="space-y-8 animate-in slide-in-from-bottom-4 duration-500">
           
-          <div className="mb-4 block"> 
-            <ImageWithFallback
-              src="/images/autism/autism-overview-pattern-brain.png"
-              alt="Colorful patterned brain illustration representing autism spectrum diversity"
-              className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300" 
-            />
+          {/* Introduction Section */}
+          <div className="bg-[#f0f9ff] p-6 rounded-lg">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">∞ What is Autism Spectrum Disorder?</h2>
             
-            <p className="mb-4 leading-relaxed font-spartan text-[#0c264d]">
-              Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by 
-              differences in social communication and interaction, alongside restricted or repetitive 
-              patterns of behavior, interests, or activities. Autism is called a "spectrum" disorder 
-              because there is wide variation in the type and severity of symptoms people experience.
-            </p>
+            <div className="mb-4 block flow-root"> 
+              <ImageWithFallback
+                src="/images/autism/autism-overview-pattern-brain.png"
+                alt="Colorful patterned brain illustration representing autism spectrum diversity"
+                className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm" 
+              />
+              
+              <p className="mb-4 leading-relaxed font-spartan text-[#0c264d]">
+                Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by 
+                differences in social communication and interaction, alongside restricted or repetitive 
+                patterns of behavior, interests, or activities. Autism is called a "spectrum" disorder 
+                because there is wide variation in the type and severity of symptoms people experience.
+              </p>
+              
+              <p className="mb-4 leading-relaxed font-spartan text-[#0c264d]">
+                ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup className="text-green-600 font-bold ml-0.5">1</sup> representing a significant 
+                increase in diagnosis rates over the past two decades. This increase is largely 
+                attributed to improved awareness, expanded diagnostic criteria, and better identification 
+                rather than a true increase in prevalence.
+              </p>
+            </div>
             
-            <p className="mb-4 leading-relaxed font-spartan text-[#0c264d]">
-              ASD affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup className="text-green-600 font-bold ml-0.5">1</sup> representing a significant 
-              increase in diagnosis rates over the past two decades. This increase is largely 
-              attributed to improved awareness, expanded diagnostic criteria, and better identification 
-              rather than a true increase in prevalence.
-            </p>
-          </div>
-          
-          {/* Nested: Key Facts */}
-          <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Key Facts About Autism</h3>
-            
-            <div className="space-y-3">
+            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Key Facts About Autism</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Lifelong Condition</div>
@@ -66,677 +97,437 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
                 </div>
               </div>
             </div>
+
+            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded shadow-sm">
+              <p className="text-sm">
+                <strong>Important:</strong> Autism is not caused by poor parenting, vaccines, or other debunked myths. 
+                It is a natural neurological variation that deserves understanding, acceptance, and appropriate support.
+              </p>
+            </div>
           </div>
 
-          {/* Callout box */}
-          <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-            <p className="text-sm">
-              <strong>Important:</strong> Autism is not caused by poor parenting, vaccines, or other debunked myths. 
-              It is a natural neurological variation that deserves understanding, acceptance, and appropriate support.
+          {/* Core Features Section */}
+          <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm flow-root">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Features of Autism</h2>
+
+            <p className="mb-4">
+              According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
             </p>
-          </div>
-        </div>
 
-        {/* The Spectrum Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding "The Spectrum"</h2>
-          
-          <div className="flex gap-4 items-start mb-6">
             <ImageWithFallback
-              src="/images/autism/autism-overview-rainbowgoldinfinity.png"
-              alt="Rainbow and gold infinity symbol representing autism spectrum diversity"
-              className="w-32 h-auto flex-shrink-0 rounded"
+              src="/images/autism/autism-overview-venn.png"
+              alt="Autism core features Venn diagram"
+              className="w-full sm:w-80 h-auto float-right sm:ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
             />
-            <p className="flex-1">
-              The autism spectrum is not a linear scale from "mild" to "severe." Instead, it represents the diverse 
-              ways autism can manifest across multiple dimensions. Each autistic person has a unique profile 
-              of strengths and challenges across various domains.
-            </p>
+
+            <h3 className="text-[#0c264d] font-bold mb-3 text-lg mt-4">1. Persistent Differences in Social Communication</h3>
+            <ul className="list-disc ml-6 mb-6 text-gray-700 space-y-1">
+              <li><strong>Social-emotional reciprocity:</strong> Back-and-forth conversation, sharing interests and emotions</li>
+              <li><strong>Nonverbal communication:</strong> Eye contact, body language, facial expressions, gestures</li>
+              <li><strong>Relationships:</strong> Making friends, understanding social expectations, adjusting behavior</li>
+            </ul>
+
+            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">2. Restricted, Repetitive Patterns of Behavior</h3>
+            <ul className="list-disc ml-6 mb-4 text-gray-700 space-y-1">
+              <li><strong>Repetitive movements or speech:</strong> Hand flapping, echolalia, lining up toys</li>
+              <li><strong>Insistence on sameness:</strong> Distress at changes, rigid thinking patterns, routines</li>
+              <li><strong>Restricted interests:</strong> Intense focus on specific topics or objects</li>
+              <li><strong>Sensory sensitivities:</strong> Hyper- or hypo-reactivity to sensory input</li>
+            </ul>
           </div>
 
-          {/* Nested: Spectrum Dimensions */}
-          <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Dimensions of the Spectrum</h3>
+          {/* The Spectrum Section */}
+          <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding "The Spectrum"</h2>
             
-            <div className="space-y-3">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col md:flex-row gap-6 items-start mb-6">
+              <ImageWithFallback
+                src="/images/autism/autism-overview-rainbowgoldinfinity.png"
+                alt="Rainbow and gold infinity symbol representing autism spectrum diversity"
+                className="w-32 h-auto flex-shrink-0 rounded shadow-sm"
+              />
+              <p className="flex-1 leading-relaxed text-gray-700">
+                The autism spectrum is not a linear scale from "mild" to "severe." Instead, it represents the diverse 
+                ways autism can manifest across multiple dimensions. Each autistic person has a unique profile 
+                of strengths and challenges across various domains.
+              </p>
+            </div>
+
+            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Dimensions of the Spectrum</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Social Communication</div>
-                  <div className="text-sm">From nonspeaking to highly verbal, from difficulty with social cues to developing compensatory strategies</div>
+                  <div className="font-bold text-[#0c264d] mb-1">Social Comm.</div>
+                  <div className="text-xs text-gray-600">From nonspeaking to highly verbal</div>
                 </div>
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Sensory Processing</div>
-                  <div className="text-sm">Hyper-sensitivity or hypo-sensitivity to sensory input like sound, light, touch, taste, and smell</div>
+                  <div className="text-xs text-gray-600">Hyper- or hypo-sensitivity to input</div>
                 </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Executive Functioning</div>
-                  <div className="text-sm">Planning, organization, flexibility, and self-regulation abilities</div>
+                  <div className="font-bold text-[#0c264d] mb-1">Executive Function</div>
+                  <div className="text-xs text-gray-600">Planning, flexibility, regulation</div>
                 </div>
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Restricted Interests</div>
-                  <div className="text-sm">Depth and intensity of focused interests</div>
+                  <div className="text-xs text-gray-600">Depth and intensity of focus</div>
                 </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Repetitive Behaviors</div>
-                  <div className="text-sm">Self-stimulatory behaviors (stimming), routines, and need for sameness</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Cognitive Abilities</div>
-                  <div className="text-sm">From intellectual disability to giftedness</div>
+                  <div className="text-xs text-gray-600">Stimming and need for sameness</div>
                 </div>
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="font-bold text-[#0c264d] mb-1">Support Needs</div>
-                  <div className="text-sm">From minimal to substantial across different life domains</div>
+                  <div className="text-xs text-gray-600">From minimal to substantial</div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Callout box */}
-          <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-            <p className="text-sm">
-              <strong>∞ Infinity Symbol:</strong> The gold infinity symbol represents the diversity of the autism spectrum, 
-              while the rainbow infinity symbol represents all of neurodiversity. Two autistic people can have 
-              very different presentations and support needs, which is why the spectrum concept is so important.
-            </p>
-          </div>
-        </div>
-
-        {/* Neurodiversity Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Neurodiversity Paradigm</h2>
-          
-          <div className="mb-6">
-            <ImageWithFallback
-              src="/images/autism/autism-overview-NDparadigm.png"
-              alt="Neurodiversity paradigm concept"
-              className="w-32 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-            />
-            <p>
-              Many autistic individuals and advocates embrace the neurodiversity paradigm, which views autism as a natural variation in human neurology rather than a disorder or deficit that needs to be "cured." This perspective, pioneered by autistic sociologist Judy Singer in the 1990s, has fundamentally changed how many people understand autism.
-            </p>
-            <div className="clear-both"></div>
-          </div>
-          
-          {/* Nested: Neurodiversity Principles */}
-          <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Core Principles of Neurodiversity</h3>
+          {/* Support Levels Section */}
+          <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm flex flex-col md:flex-row gap-6">
+            <div className="flex-1">
+              <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support Levels</h2>
+              <p className="mb-4 text-gray-700">
+                The DSM-5 specifies three support levels based on the amount of support needed. 
+                Important note: Support needs can vary across different domains (social vs. behavioral) and can change 
+                over time or in different contexts. These levels are descriptive, not rigid categories.
+              </p>
+            </div>
             
-            <div className="space-y-3">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Natural Variation</div>
-                  <div className="text-sm">Autism as a natural neurological difference, not a disease</div>
+            <div className="bg-gray-50 rounded-md border-2 border-[#0c264d] p-5 w-full md:w-[420px] shrink-0">
+              <h3 className="text-center text-[#0c264d] font-bold mb-4 text-lg">DSM-5 Support Levels</h3>
+              <div className="space-y-3">
+                <div className="border-l-4 border-[#2abcd4] bg-white rounded shadow-sm p-3">
+                  <div className="font-bold text-[#0c264d] text-sm">Level 1: Requiring Support</div>
+                  <div className="text-xs text-gray-600 mt-1">Noticeable impairments without support. Difficulty initiating social interactions.</div>
                 </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Acceptance</div>
-                  <div className="text-sm">Acceptance and celebration of autistic ways of being</div>
+                <div className="border-l-4 border-[#ffd166] bg-white rounded shadow-sm p-3">
+                  <div className="font-bold text-[#0c264d] text-sm">Level 2: Substantial Support</div>
+                  <div className="text-xs text-gray-600 mt-1">Marked difficulties in verbal/nonverbal communication. Inflexibility interferes with functioning.</div>
                 </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Accommodation</div>
-                  <div className="text-sm">Providing accommodations and support rather than trying to "fix" autistic people</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Amplifying Voices</div>
-                  <div className="text-sm">Centering autistic perspectives in research, policy, and support</div>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Balanced Perspective</div>
-                  <div className="text-sm">Recognizing both challenges and strengths associated with autism</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Removing Barriers</div>
-                  <div className="text-sm">Understanding that disability often arises from societal barriers, not inherent deficits</div>
+                <div className="border-l-4 border-[#ff6b6b] bg-white rounded shadow-sm p-3">
+                  <div className="font-bold text-[#0c264d] text-sm">Level 3: Very Substantial Support</div>
+                  <div className="text-xs text-gray-600 mt-1">Severe difficulties. Extreme difficulty coping with change; behaviors markedly interfere in all areas.</div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Callout box */}
-          <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-            <p className="text-sm">
-              <strong>Important Note:</strong> The neurodiversity paradigm doesn't deny that autism comes with genuine challenges
-              or that many autistic people need significant support. Rather, it advocates for supporting autistic
-              people in ways that respect their neurological differences rather than trying to make them "normal."
-            </p>
+          {/* Challenges and Strengths */}
+          <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Challenges and Strengths</h2>
+            <p className="mb-6 text-gray-700">Autism involves both real challenges and notable strengths, though the balance varies greatly among individuals:</p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white p-5 rounded border-t-4 border-[#ff6b6b] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Challenges</h3>
+                <ul className="list-disc ml-5 text-sm text-gray-700 space-y-2">
+                  <li>Navigating unspoken social rules</li>
+                  <li>Sensory overload in everyday environments</li>
+                  <li>Executive function difficulties</li>
+                  <li>Anxiety and mental health challenges</li>
+                  <li>Facing stigma, bullying, and social rejection</li>
+                </ul>
+              </div>
+              <div className="bg-white p-5 rounded border-t-4 border-[#2abcd4] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Strengths</h3>
+                <ul className="list-disc ml-5 text-sm text-gray-700 space-y-2">
+                  <li>Attention to detail and pattern recognition</li>
+                  <li>Deep knowledge in areas of interest</li>
+                  <li>Honesty and direct communication</li>
+                  <li>Strong sense of justice and fairness</li>
+                  <li>Ability to hyperfocus on tasks</li>
+                </ul>
+              </div>
+            </div>
           </div>
+
         </div>
+      )}
 
-        {/* YouTube Video Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center">Learn More About Autism</h3>
-          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-            <iframe
-              className="absolute top-0 left-0 w-full h-full rounded-md"
-              src="https://www.youtube.com/embed/MTW7H5UQ8Ts"
-              title="YouTube video about autism"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
-
-        {/* Core Features Section */}
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Features of Autism</h2>
-
-          <p className="mb-4">
-            According to the DSM-5, autism is defined by two main categories of characteristics that must be present from early childhood:
-          </p>
-
-          <ImageWithFallback
-            src="/images/autism/autism-overview-venn.png"
-            alt="Autism core features Venn diagram"
-            className="w-80 h-auto float-right mr-6 mb-4 rounded-md border border-gray-300"
-          />
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">1. Persistent Differences in Social Communication and Social Interaction</h3>
-          <p className="mb-4">
-            This includes challenges across multiple contexts in:
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Social-emotional reciprocity:</strong> Back-and-forth conversation, sharing interests and emotions, responding to social interactions</li>
-            <li className="mb-2"><strong>Nonverbal communication:</strong> Eye contact, body language, facial expressions, gestures</li>
-            <li className="mb-2"><strong>Developing and maintaining relationships:</strong> Making friends, understanding social expectations, adjusting behavior to different contexts</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">2. Restricted, Repetitive Patterns of Behavior, Interests, or Activities</h3>
-          <p className="mb-4">
-            Including at least two of the following:
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Repetitive movements, speech, or use of objects:</strong> Hand flapping, echolalia, lining up toys</li>
-            <li className="mb-2"><strong>Insistence on sameness and routines:</strong> Distress at changes, rigid thinking patterns, ritualized behaviors</li>
-            <li className="mb-2"><strong>Highly restricted, fixated interests:</strong> Intense focus on specific topics or objects</li>
-            <li className="mb-2"><strong>Sensory sensitivities:</strong> Hyper- or hypo-reactivity to sensory input, unusual sensory interests</li>
-          </ul>
-
-          <p className="mb-4">
-            These features must cause clinically significant impairment in social, occupational, or other important
-            areas of functioning, and are not better explained by intellectual disability or global developmental
-            delay.
-          </p>
-          <div className="clear-both"></div>
-        </div>
-
-        {/* Support Levels Section */}
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support Levels</h2>
+      {/* ========================================== */}
+      {/* TAB 2: NEURODIVERSITY & LANGUAGE             */}
+      {/* ========================================== */}
+      {activeTab === 'culture' && (
+        <div className="space-y-8 animate-in slide-in-from-bottom-4 duration-500">
           
-          <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 float-right ml-6 mb-4 w-[420px]">
-            <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">DSM-5 Support Levels</h3>
+          {/* Neurodiversity Section */}
+          <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Neurodiversity Paradigm</h2>
             
-            <div className="space-y-4">
-              <div className="border-2 border-[#2abcd4] rounded-lg p-4">
-                <div className="font-bold text-[#0c264d] mb-2">Level 1: Requiring Support</div>
-                <div className="text-sm text-gray-700">
-                  Without support, social communication difficulties cause noticeable impairments. Difficulty initiating 
-                  social interactions. Inflexibility causing significant interference with functioning.
-                </div>
-              </div>
-              
-              <div className="border-2 border-[#ffd166] rounded-lg p-4">
-                <div className="font-bold text-[#0c264d] mb-2">Level 2: Requiring Substantial Support</div>
-                <div className="text-sm text-gray-700">
-                  Marked difficulties in verbal and nonverbal social communication. Limited initiation of social 
-                  interactions. Inflexibility, difficulty coping with change, restricted/repetitive behaviors 
-                  appear frequently and interfere with functioning.
-                </div>
-              </div>
-              
-              <div className="border-2 border-[#ff6b6b] rounded-lg p-4">
-                <div className="font-bold text-[#0c264d] mb-2">Level 3: Requiring Very Substantial Support</div>
-                <div className="text-sm text-gray-700">
-                  Severe difficulties in social communication. Very limited initiation of social interactions. 
-                  Inflexibility, extreme difficulty coping with change, repetitive behaviors markedly interfere 
-                  with functioning in all areas.
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <p className="mb-4">
-            The DSM-5 specifies three support levels based on the amount of support needed:
-          </p>
-          <p className="mb-4">
-            Important note: Support needs can vary across different domains (social vs. behavioral) and can change 
-            over time or in different contexts. These levels are descriptive, not rigid categories.
-          </p>
-        </div>
-
-        {/* Challenges and Strengths Section */}
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Challenges and Strengths</h2>
-          
-          <p className="mb-4">
-            Autism involves both real challenges and notable strengths, though the balance varies greatly among 
-            individuals:
-          </p>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Challenges</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Navigating social situations and understanding unspoken social rules</li>
-            <li className="mb-2">Sensory overload in everyday environments</li>
-            <li className="mb-2">Executive function difficulties (organization, planning, task switching)</li>
-            <li className="mb-2">Anxiety and mental health challenges</li>
-            <li className="mb-2">Communication differences that can lead to misunderstandings</li>
-            <li className="mb-2">Facing stigma, bullying, and social rejection</li>
-            <li className="mb-2">Barriers to education, employment, and independence</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Strengths</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Attention to detail and pattern recognition</li>
-            <li className="mb-2">Deep knowledge and expertise in areas of interest</li>
-            <li className="mb-2">Logical, systematic thinking</li>
-            <li className="mb-2">Honesty and direct communication</li>
-            <li className="mb-2">Strong sense of justice and fairness</li>
-            <li className="mb-2">Creativity and unique perspectives</li>
-            <li className="mb-2">Ability to hyperfocus on tasks</li>
-            <li className="mb-2">Reliability and consistency</li>
-          </ul>
-
-          <p className="mb-4">
-            The double empathy problem suggests that communication difficulties between autistic and non-autistic people go both ways—neurotypical people also struggle to understand autistic communication styles.
-          </p>
-        </div>
-
-        {/* Quote from Autism in Heels */}
-        <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-6 rounded-lg mb-8">
-          <div className="flex items-start gap-3">
-            <div className="text-3xl">👠</div>
-            <div>
-              <p className="mb-3 italic">
-                "It is now our charge to explain that regardless of how obvious our autism is to others, it is equally 
-                present to the person living it. It is our job to correct those who reject some for being too 
-                "high-functioning" or forget those who are more visibly challenged. It is our privilege to speak aloud 
-                for those who can't and to have compassion for those who can. To the research community, educators, 
-                scientists, psychologists, and - most important - to regular folks like you and me... the best answer 
-                isn't that we're Aspie or that we're autistic.
-              </p>
-              <p className="mb-3 italic">
-                The best answer is...
-              </p>
-              <p className="mb-3 italic">
-                ...we aren't any one word.
-              </p>
-              <p className="mb-4 italic">
-                We are the spectrum."
-              </p>
-              <p className="text-sm font-bold text-[#0c264d]">
-                — Jennifer Cook O'Toole, <em>Autism in Heels</em>
+            <div className="mb-6 flow-root">
+              <ImageWithFallback
+                src="/images/autism/autism-overview-NDparadigm.png"
+                alt="Neurodiversity paradigm concept"
+                className="w-32 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4 shadow-sm"
+              />
+              <p className="leading-relaxed text-gray-700">
+                Many autistic individuals and advocates embrace the neurodiversity paradigm, which views autism as a natural variation in human neurology rather than a disorder or deficit that needs to be "cured." This perspective, pioneered by autistic sociologist Judy Singer in the 1990s, has fundamentally changed how many people understand autism.
               </p>
             </div>
-          </div>
-        </div>
-
-        {/* Prevalence Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Prevalence and Demographics</h2>
-          
-          <p className="mb-6">
-            Understanding who is diagnosed with autism and how often helps contextualize the condition:
-          </p>
-
-          {/* Nested: Current Stats */}
-          <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Current Prevalence</h3>
             
-            <p className="mb-3">
-              As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the United States.<sup className="text-green-600 font-bold ml-0.5">1</sup> This represents a substantial increase from 1 in 150 in 2000.
-            </p>
-            
-            <div className="bg-[#ffd166] p-3 rounded-md mt-3">
-              <p className="text-sm font-bold">
-                This increase is largely attributed to improved awareness, expanded diagnostic criteria, and better 
-                identification rather than a true increase in prevalence.
+            <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+              <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Core Principles</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="border-l-2 border-[#2abcd4] pl-3">
+                  <div className="font-bold text-[#0c264d] text-sm mb-1">Natural Variation</div>
+                  <div className="text-xs text-gray-600">Autism is a natural difference, not a disease.</div>
+                </div>
+                <div className="border-l-2 border-[#2abcd4] pl-3">
+                  <div className="font-bold text-[#0c264d] text-sm mb-1">Accommodation</div>
+                  <div className="text-xs text-gray-600">Provide support rather than trying to "fix" people.</div>
+                </div>
+                <div className="border-l-2 border-[#2abcd4] pl-3">
+                  <div className="font-bold text-[#0c264d] text-sm mb-1">Removing Barriers</div>
+                  <div className="text-xs text-gray-600">Disability often arises from societal barriers.</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded shadow-sm">
+              <p className="text-sm">
+                <strong>Important Note:</strong> The neurodiversity paradigm doesn't deny that autism comes with genuine challenges
+                or that many autistic people need significant support. Rather, it advocates for supporting autistic
+                people in ways that respect their neurological differences.
               </p>
             </div>
           </div>
 
-          {/* Gender Differences */}
-          <div className="bg-white p-5 rounded-md border-2 border-[#0c264d] mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Gender Differences</h3>
-            <p className="mb-3">
-              Autism is diagnosed more frequently in males than females, with ratios typically reported around <strong>3-4:1</strong>.<sup className="text-green-600 font-bold ml-0.5">2</sup> 
-              However, research suggests this reflects diagnostic bias—females may be underdiagnosed because they often 
-              present differently, "camouflage" symptoms more effectively, and don't match stereotypical autism presentations.
-            </p>
-          </div>
-
-          {/* Underdiagnosis */}
-          <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Underdiagnosis in Certain Groups</h3>
-            <p className="mb-3">Significant disparities exist in autism diagnosis:</p>
+          {/* Language and Terminology */}
+          <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Language and Terminology</h2>
             
-            <div className="space-y-3">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Women and Girls</div>
-                  <div className="text-sm">Often diagnosed later or missed entirely</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Racial Disparities</div>
-                  <div className="text-sm">Black and Hispanic children diagnosed on average 1-3 years later than white children</div>
+            <div className="mb-6 flow-root">
+              <ImageWithFallback
+                src="/images/autism/autism-overview-NDlabels.png"
+                alt="Neurodivergent Labels tag graphic"
+                className="w-40 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4 shadow-sm"
+              />
+              <p className="leading-relaxed text-gray-700">
+                How we talk about autism matters. While language preferences vary within the autistic community, there is a strong consensus on a few key concepts. Many autistic people prefer identity-first language because autism is an inseparable part of who they are, not an add-on.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0A9DC4] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Terms to Embrace</h3>
+                <div className="space-y-3">
+                  <div className="bg-white p-3 rounded shadow-sm">
+                    <div className="font-bold text-[#0c264d] text-sm">"Autistic person" (Identity-First)</div>
+                    <div className="text-xs text-gray-600 mt-1">Preferred by most autistic adults and self-advocates.</div>
+                  </div>
+                  <div className="bg-white p-3 rounded shadow-sm">
+                    <div className="font-bold text-[#0c264d] text-sm">"Neurodiversity-Affirming"</div>
+                    <div className="text-xs text-gray-600 mt-1">Approaches that respect and support autistic ways of being.</div>
+                  </div>
                 </div>
               </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Socioeconomic Barriers</div>
-                  <div className="text-sm">Children from lower socioeconomic backgrounds have less access to diagnostic services</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Adults</div>
-                  <div className="text-sm">Especially those without intellectual disability, often remain undiagnosed</div>
+
+              <div className="bg-[#fff0f0] p-5 rounded-md border-l-4 border-[#ff6b6b] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Terms to Avoid</h3>
+                <div className="space-y-3">
+                  <div className="bg-white p-3 rounded shadow-sm">
+                    <div className="font-bold text-[#0c264d] text-sm text-red-700">"Suffers from" / "Victim of"</div>
+                    <div className="text-xs text-gray-600 mt-1">Implies a purely tragic narrative.</div>
+                  </div>
+                  <div className="bg-white p-3 rounded shadow-sm">
+                    <div className="font-bold text-[#0c264d] text-sm text-red-700">"High/Low-Functioning"</div>
+                    <div className="text-xs text-gray-600 mt-1">Oversimplifies and ignores fluctuating support needs.</div>
+                  </div>
+                  <div className="bg-white p-3 rounded shadow-sm">
+                    <div className="font-bold text-[#0c264d] text-sm text-red-700">"Asperger's"</div>
+                    <div className="text-xs text-gray-600 mt-1">Phased out clinically; harmful historical associations.</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Causes Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Causes Autism?</h2>
+          {/* Quote Section */}
+          <div className="bg-[#ffd166] border-l-8 border-[#0c264d] p-8 rounded-lg shadow-md">
+            <div className="flex items-start gap-4">
+              <div className="text-4xl">👠</div>
+              <div>
+                <p className="mb-4 italic text-lg leading-relaxed text-[#0c264d]">
+                  "It is now our charge to explain that regardless of how obvious our autism is to others, it is equally 
+                  present to the person living it. It is our job to correct those who reject some for being too 
+                  'high-functioning' or forget those who are more visibly challenged... To the research community, educators, 
+                  scientists, psychologists, and regular folks like you and me... the best answer 
+                  isn't that we're Aspie or that we're autistic.
+                </p>
+                <p className="mb-4 italic font-bold text-xl text-[#0c264d]">
+                  We are the spectrum."
+                </p>
+                <p className="text-sm font-bold uppercase tracking-wider text-[#0c264d]">
+                  — Jennifer Cook O'Toole, <em>Autism in Heels</em>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      )}
+
+      {/* ========================================== */}
+      {/* TAB 3: CONTEXT & HISTORY                     */}
+      {/* ========================================== */}
+      {activeTab === 'context' && (
+        <div className="space-y-8 animate-in slide-in-from-bottom-4 duration-500">
           
-          <div className="mb-6">
+          {/* Video Overview (Placed here as a great summary) */}
+          <div className="bg-slate-900 p-6 rounded-lg shadow-lg">
+            <h3 className="text-white font-bold mb-4 text-xl text-center">Video: Understanding Autism</h3>
+            <div className="relative w-full max-w-3xl mx-auto rounded-md overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/MTW7H5UQ8Ts"
+                title="YouTube video about autism"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          {/* Prevalence Section */}
+          <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Prevalence and Demographics</h2>
+            
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Current Statistics</h3>
+                <p className="text-sm mb-3">
+                  As of 2023, the CDC estimates autism affects approximately <strong>1 in 36 children (2.8%)</strong> in the US.<sup className="text-green-600 font-bold ml-0.5">1</sup> 
+                </p>
+                <p className="text-xs bg-[#ffd166]/30 p-2 rounded text-[#0c264d]">
+                  <strong>Why the increase?</strong> This is largely attributed to improved awareness, expanded criteria, and better identification.
+                </p>
+              </div>
+
+              <div className="bg-white p-5 rounded-md border-l-4 border-[#0A9DC4] shadow-sm">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Gender Differences</h3>
+                <p className="text-sm mb-3">
+                  Autism is diagnosed more frequently in males than females (typically <strong>3-4:1</strong>).<sup className="text-green-600 font-bold ml-0.5">2</sup>
+                </p>
+                <p className="text-xs bg-[#f0f9ff] p-2 rounded text-gray-700">
+                  Research suggests this reflects diagnostic bias—females often present differently and "camouflage" symptoms.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white p-5 rounded-md border-t-4 border-[#0c264d] shadow-sm">
+              <h3 className="text-[#0c264d] font-bold mb-4 text-lg text-center">Populations Facing Underdiagnosis</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
+                <div className="p-3 bg-gray-50 rounded border border-gray-100">
+                  <div className="font-bold text-[#0c264d] text-sm">Women & Girls</div>
+                </div>
+                <div className="p-3 bg-gray-50 rounded border border-gray-100">
+                  <div className="font-bold text-[#0c264d] text-sm">Adults</div>
+                </div>
+                <div className="p-3 bg-gray-50 rounded border border-gray-100">
+                  <div className="font-bold text-[#0c264d] text-sm">Lower Income</div>
+                </div>
+                <div className="p-3 bg-gray-50 rounded border border-gray-100">
+                  <div className="font-bold text-[#0c264d] text-sm">POC Communities</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Causes Brief */}
+          <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm flow-root">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Causes Autism?</h2>
+            
             <ImageWithFallback
               src="/images/autism/autism-overview-genetics.png"
               alt="Genetics and autism chromosomes illustration"
-              className="w-32 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
+              className="w-32 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4 shadow-sm"
             />
-            <p>
-              Autism is a complex neurodevelopmental condition with multiple contributing factors. Current evidence 
-              indicates genetics plays a major role, with environmental factors also contributing.
+            <p className="leading-relaxed text-gray-700 mb-6">
+              Autism is a complex neurodevelopmental condition. Current evidence indicates it is <strong>highly heritable</strong> (genetics plays a major role, involving multiple genes), with early environmental factors contributing to brain development. It often runs in families.
             </p>
-            <div className="clear-both"></div>
-          </div>
-
-          {/* What We Know */}
-          <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">What We Know</h3>
             
-            <div className="space-y-3">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Highly Heritable</div>
-                  <div className="text-sm">Genetic factors contribute significantly</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Multiple Genes</div>
-                  <div className="text-sm">Many genes are involved, each contributing small effects</div>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Early Brain Development</div>
-                  <div className="text-sm">Brain development differences are present from early in development</div>
-                </div>
-                <div className="border-l-2 border-[#2abcd4] pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Runs in Families</div>
-                  <div className="text-sm">Autism often runs in families</div>
-                </div>
+            <div className="clear-both bg-[#fff0f0] rounded-md border-l-4 border-red-500 p-4">
+              <h3 className="font-bold text-red-700 mb-2 text-sm uppercase tracking-wider">What Does NOT Cause Autism:</h3>
+              <div className="grid grid-cols-2 gap-2 text-sm text-gray-800">
+                <div><strong>✗ Vaccines</strong> (Thoroughly debunked<sup className="text-green-600 font-bold ml-0.5">3</sup>)</div>
+                <div><strong>✗ Parenting Style</strong></div>
+                <div><strong>✗ Childhood Trauma</strong></div>
+                <div><strong>✗ Diet</strong> (Though it may affect symptoms)</div>
               </div>
             </div>
           </div>
 
-          {/* What Does NOT Cause Autism */}
-          <div className="bg-white rounded-md border-2 border-[#0c264d] p-5 mb-4">
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What Does NOT Cause Autism</h3>
-            <p className="font-bold mb-3 text-red-600">Important: These DO NOT cause autism:</p>
-            <div className="space-y-2">
-              <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ Vaccines</strong> — This has been thoroughly debunked by extensive research<sup className="text-green-600 font-bold ml-0.5">3</sup></div>
+          {/* History & Looking Forward */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm">
+              <h2 className="text-[#0c264d] font-bold mb-4 text-xl">Historical Milestones</h2>
+              <div className="space-y-4">
+                <div className="border-l-2 border-[#0A9DC4] pl-4">
+                  <div className="font-bold text-[#0c264d] text-sm">1943 - 1944</div>
+                  <div className="text-xs text-gray-600">Kanner & Asperger publish first descriptions.<sup className="text-green-600 font-bold ml-0.5">4,5</sup></div>
+                </div>
+                <div className="border-l-2 border-red-400 pl-4">
+                  <div className="font-bold text-red-700 text-sm">1960s - 1980s</div>
+                  <div className="text-xs text-gray-600">Harmful "refrigerator mother" theory blamed parents.<sup className="text-green-600 font-bold ml-0.5">6</sup></div>
+                </div>
+                <div className="border-l-2 border-[#0A9DC4] pl-4">
+                  <div className="font-bold text-[#0c264d] text-sm">1990s</div>
+                  <div className="text-xs text-gray-600">Neurodiversity movement emerges, led by advocates.</div>
+                </div>
+                <div className="border-l-2 border-[#0A9DC4] pl-4">
+                  <div className="font-bold text-[#0c264d] text-sm">2013</div>
+                  <div className="text-xs text-gray-600">DSM-5 consolidates diagnoses under "Autism Spectrum Disorder."</div>
+                </div>
               </div>
-              <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ Parenting Style</strong> — The "refrigerator mother" theory has been completely discredited</div>
-              </div>
-              <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ Trauma</strong> — Adverse childhood experiences do not cause autism</div>
-              </div>
-              <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ Diet or Nutrition</strong> — Though these may affect symptoms</div>
-              </div>
+            </div>
+
+            <div className="bg-[#ffd166]/20 p-6 rounded-lg border border-[#ffd166]/50 shadow-sm flex flex-col justify-center">
+              <h2 className="text-[#0c264d] font-bold mb-3 text-xl">Looking Forward</h2>
+              <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                The understanding of autism continues to evolve, driven increasingly by autistic voices and neurodiversity perspectives. The focus is shifting drastically from "fixing" or "curing" autism to supporting autistic individuals to thrive authentically as themselves.
+              </p>
+              <p className="text-sm font-bold text-[#0c264d]">
+                Explore the other volumes of Brainopedia for deep dives into Symptoms, Causes, and Support!
+              </p>
             </div>
           </div>
 
-          {/* Callout box */}
-          <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-            <p className="text-sm">
-              <strong>Key Insight:</strong> The increase in autism diagnosis is primarily due to better awareness, expanded 
-              diagnostic criteria, and improved identification, not environmental toxins or vaccines.
-            </p>
-          </div>
         </div>
+      )}
 
-        {/* Historical Perspective Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Historical Perspective</h2>
-          
-          <p className="mb-6">
-            Understanding autism's history helps contextualize current knowledge and approaches:
-          </p>
-
-          {/* Historical Timeline */}
-          <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Key Historical Milestones</h3>
-            
-            <div className="space-y-4">
-              <div className="border-l-2 border-[#2abcd4] pl-4">
-                <div className="font-bold text-[#0c264d]">1943</div>
-                <div className="text-sm">Leo Kanner published the first description of "early infantile autism"<sup className="text-green-600 font-bold ml-0.5">4</sup></div>
-              </div>
-              
-              <div className="border-l-2 border-[#2abcd4] pl-4">
-                <div className="font-bold text-[#0c264d]">1944</div>
-                <div className="text-sm">Hans Asperger described "autistic psychopathy" in children (now known as Asperger syndrome)<sup className="text-green-600 font-bold ml-0.5">5</sup></div>
-              </div>
-              
-              <div className="border-l-2 border-red-500 pl-4">
-                <div className="font-bold text-[#0c264d]">1960s-1980s</div>
-                <div className="text-sm">Harmful "refrigerator mother" theory blamed parents<sup className="text-green-600 font-bold ml-0.5">6</sup></div>
-              </div>
-              
-              <div className="border-l-2 border-[#2abcd4] pl-4">
-                <div className="font-bold text-[#0c264d]">1980</div>
-                <div className="text-sm">Autism officially recognized as separate from schizophrenia in DSM-III</div>
-              </div>
-              
-              <div className="border-l-2 border-[#2abcd4] pl-4">
-                <div className="font-bold text-[#0c264d]">1994</div>
-                <div className="text-sm">Asperger syndrome added to DSM-IV</div>
-              </div>
-              
-              <div className="border-l-2 border-[#ffd166] pl-4 bg-[#fffbf0]">
-                <div className="font-bold text-[#0c264d]">1990s</div>
-                <div className="text-sm">Neurodiversity movement emerges, led by autistic advocates</div>
-              </div>
-              
-              <div className="border-l-2 border-[#2abcd4] pl-4">
-                <div className="font-bold text-[#0c264d]">2013</div>
-                <div className="text-sm">DSM-5 consolidates autism diagnoses under single "autism spectrum disorder"</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Callout box */}
-          <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-4 rounded">
-            <p className="text-sm">
-              <strong>Progress:</strong> The field has moved from viewing autism as a childhood psychiatric disorder to 
-              understanding it as a lifelong neurological difference.
-            </p>
-          </div>
-        </div>
-
-        {/* Language and Terminology Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Language and Terminology</h2>
-          
-          <div className="mb-6">
-            <ImageWithFallback
-              src="/images/autism/autism-overview-NDlabels.png"
-              alt="Neurodivergent Labels tag graphic"
-              className="w-40 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-            />
-            <p>
-              How we talk about autism matters. Language preferences vary within the autistic community:
-            </p>
-            <div className="clear-both"></div>
-          </div>
-
-          {/* Identity-First vs Person-First */}
-          <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Identity-First vs. Person-First Language</h3>
-            
-            <div className="space-y-3">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="border-l-2 border-[#2abcd4] pl-3 bg-[#f0f9ff]">
-                  <div className="font-bold text-[#0c264d] mb-1">✓ Identity-First</div>
-                  <div className="text-sm">"Autistic person" — Preferred by most autistic individuals</div>
-                </div>
-                <div className="border-l-2 border-gray-400 pl-3">
-                  <div className="font-bold text-[#0c264d] mb-1">Person-First</div>
-                  <div className="text-sm">"Person with autism" — Traditionally preferred in medical/educational settings</div>
-                </div>
-              </div>
-            </div>
-            
-            <p className="mt-4 text-sm">
-              Many autistic people prefer identity-first language because autism is an inseparable part of who they are, 
-              not an add-on. When possible, ask individuals their preference.
-            </p>
-          </div>
-
-          {/* Terms to Avoid */}
-          <div className="bg-white rounded-md border-2 border-[#0c264d] p-5 mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Terms to Avoid</h3>
-            
-            <div className="space-y-2">
-              <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ "Suffers from autism"</strong> or "victim of autism" — Implies tragic narrative</div>
-              </div>
-              <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ "High-functioning" / "Low-functioning"</strong> — Oversimplifies and can be harmful</div>
-              </div>
-              <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ "Asperger's"</strong> — Term being phased out due to Hans Asperger's Nazi affiliations</div>
-              </div>
-              <div className="border-l-2 border-red-500 pl-3">
-                <div className="text-sm"><strong>✗ "On the spectrum"</strong> to refer to mild quirks in non-autistic people — Minimizes autism</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Important Concepts */}
-          <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-            <h3 className="text-[#0c264d] font-bold mb-4 text-lg">Important Concepts</h3>
-            
-            <div className="space-y-3">
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">"Nothing About Us Without Us"</div>
-                <div className="text-sm">Autistic people should be included in decisions affecting them</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Neurodiversity-Affirming</div>
-                <div className="text-sm">Approach that respects and supports autistic ways of being</div>
-              </div>
-              <div className="border-l-2 border-[#2abcd4] pl-3">
-                <div className="font-bold text-[#0c264d] mb-1">Ableism</div>
-                <div className="text-sm">Discrimination against disabled people, including autistic individuals</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Looking Forward Section */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Looking Forward</h2>
-          
-          <p className="mb-4">
-            Understanding of autism continues to evolve, driven increasingly by autistic voices and neurodiversity 
-            perspectives. The focus is shifting from "fixing" autism to supporting autistic people to thrive as themselves.
-          </p>
-
-          <div className="bg-white p-5 rounded-md border-2 border-[#0c264d] mb-4">
-            <p className="mb-0">
-              This overview provides a foundation for understanding autism spectrum disorder. Explore the other sections 
-              of Brainopedia for detailed information on symptoms, causes, diagnosis, support approaches, and living 
-              with autism across the lifespan.
-            </p>
-          </div>
-        </div>
+      {/* FOOTER & REFERENCES */}
+      <div className="flex justify-end mt-12 mb-6">
+        <BackButton />
       </div>
 
-      {/* Bottom back button - positioned to the right above References */}
-      <div className="flex justify-end mt-8 mb-6">
-        <button 
-          onClick={() => setCurrentArticle?.('autism')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
-        >
-          <span className="text-xl">←</span>
-          All About Autism
-        </button>
-      </div>
-
-      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References: Autism Overview</h3>
         
-        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Centers for Disease Control and Prevention. (2023). "Data & Statistics on Autism Spectrum Disorder." U.S. Department of Health and Human Services.
-            </li>
-            <li>
-              Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.
-            </li>
-            <li>
-              Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: an evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.
-            </li>
-            <li>
-              Kanner, L. (1943). "Autistic disturbances of affective contact." <i>Nervous Child</i>, 2, 217-250.
-            </li>
-            <li>
-              Asperger, H. (1944). "Die 'Autistischen Psychopathen' im Kindesalter." <i>Archiv für Psychiatrie und Nervenkrankheiten</i>, 117(1), 76-136.
-            </li>
-            <li>
-              Silverman, C. (2012). <i>Understanding Autism: Parents, Doctors, and the History of a Disorder</i>. Princeton University Press.
-            </li>
+          <ol className="list-decimal list-inside m-0 p-0 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>Centers for Disease Control and Prevention. (2023). "Data & Statistics on Autism Spectrum Disorder." U.S. Department of Health and Human Services.</li>
+            <li>Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.</li>
+            <li>Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: an evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.</li>
+            <li>Kanner, L. (1943). "Autistic disturbances of affective contact." <i>Nervous Child</i>, 2, 217-250.</li>
+            <li>Asperger, H. (1944). "Die 'Autistischen Psychopathen' im Kindesalter." <i>Archiv für Psychiatrie und Nervenkrankheiten</i>, 117(1), 76-136.</li>
+            <li>Silverman, C. (2012). <i>Understanding Autism: Parents, Doctors, and the History of a Disorder</i>. Princeton University Press.</li>
           </ol>
         </div>
         
-        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Autistic Self Advocacy Network (ASAN). "About Autism." National advocacy organization run by and for autistic individuals.
-            </li>
-            <li>
-              American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.).
-            </li>
+          <ul className="list-none m-0 p-0 text-xs space-y-3 text-slate-600 leading-relaxed">
+            <li>Autistic Self Advocacy Network (ASAN). "About Autism." National advocacy organization run by and for autistic individuals.</li>
+            <li>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.).</li>
           </ul>
         </div>
       </div>
