@@ -14,7 +14,6 @@ export const coreNeurodevelopmentalRoutes: RouteMap = {
   'adhd-epigenetics': lazy(() => import('../adhd/ADHDEpigenetics').then(m => ({ default: m.ADHDEpigenetics }))),
   'adhd-diagnosis': lazy(() => import('../adhd/ADHDDiagnosis').then(m => ({ default: m.ADHDDiagnosis }))),
   'adhd-support': lazy(() => import('../adhd/ADHDSupport').then(m => ({ default: m.ADHDSupport }))),
-  'autism-support-therapies': lazy(() => import('../autism/asd-support/ASDSupport').then(m => ({ default: (props: any) => <m.ASDSupport {...props} initialTab="therapies" /> }))),
   'adhd-living': lazy(() => import('../adhd/ADHDLiving').then(m => ({ default: m.ADHDLiving }))),
 
   // ==========================================
@@ -29,7 +28,8 @@ export const coreNeurodevelopmentalRoutes: RouteMap = {
   'autism-diagnosis': lazy(() => import('../autism/asd-diagnosis/ASDDiagnosis').then(m => ({ default: m.ASDDiagnosis }))),
   'autism-living':    lazy(() => import('../autism/asd-living/ASDLiving').then(m => ({ default: m.ASDLiving }))),
   'autism-support':   lazy(() => import('../autism/asd-support/ASDSupport').then(m => ({ default: m.ASDSupport }))),
- 
+  'autism-support-therapies': lazy(() => import('../autism/asd-support/ASDSupport').then(m => ({ default: (props: any) => <m.ASDSupport {...props} initialTab="therapies" /> }))),
+
   // Autism Support Deep Dives
   'autism-early-intervention': lazy(() => import('../autism/asd-support/EarlyInterventionContent').then(m => ({ default: m.EarlyInterventionContent }))),
   'autism-therapies': lazy(() => import('../autism/asd-support/TherapiesContent').then(m => ({ default: m.TherapiesContent }))),
