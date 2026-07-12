@@ -27,10 +27,15 @@ export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
   }, [initialTab]);
   // ---------------
 
-  const handleTabChange = (tabId: string) => {
+const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
+    
+    // Quietly clean up the URL bar if it is stuck on the backdoor route
+    if (window.location.pathname.includes('autism-support-therapies')) {
+      window.history.replaceState(null, '', '/autism-support');
+    }
   };
-
+  
   const tabs = [
     { id: 'overview', label: 'Overview & Philosophy' },
     { id: 'early-intervention', label: 'Early Intervention' },
@@ -46,6 +51,7 @@ export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
   const BackButton = () => (
     <button 
       onClick={() => setCurrentArticle?.('autism')}
+
       className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
     >
       <span className="text-xl">←</span>
