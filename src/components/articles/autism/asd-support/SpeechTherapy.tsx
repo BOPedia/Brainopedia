@@ -1,21 +1,6 @@
 import React from 'react';
 import { MessageSquare, Repeat, MonitorSmartphone, HandMetal, Eye, Volume2, LayoutGrid, Users } from 'lucide-react';
-// Local ImageWithFallback to avoid missing external module
-import { useState } from 'react';
-
-function ImageWithFallback({ src, alt, className }: { src: string; alt: string; className?: string }) {
-  const [errored, setErrored] = useState(false);
-  const fallback = '/images/placeholder-image.png';
-  return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={errored ? fallback : src}
-      alt={alt}
-      className={className}
-      onError={() => setErrored(true)}
-    />
-  );
-}
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 /* ─── INTERFACE ─── */
 interface SpeechTherapyProps {
@@ -46,12 +31,12 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </button>
       </div>
 
-      {/* Introduction */}
-      <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
+      {/* Introduction (Floated Image) */}
+      <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8 flow-root">
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-intro.png"
           alt="Speech Therapy Intro"
-          className={responsiveImageClass}
+          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4 shadow-sm"
         />
         <p className="text-sm leading-relaxed mb-4">
           After an autism diagnosis, selecting communication strategies is a crucial step to empower the individual. Approaches range from high-tech AAC devices and structured language programs to naturalistic, everyday strategies that integrate seamlessly into a person's life.
@@ -63,7 +48,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
 
       {/* ===== THE COMMUNICATION ENVIRONMENT ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <Users className="text-[#0A9DC4]" size={24} /> 
           Setting Up the Communication Environment
         </h2>
@@ -100,7 +85,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
 
       {/* ===== VISUAL SUPPORTS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <Eye className="text-[#2abcd4]" size={24} /> 
           Visual Support Strategies
         </h2>
@@ -137,7 +122,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
 
       {/* ===== AAC (Augmentative and Alternative Communication) ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <MonitorSmartphone className="text-[#d97706]" size={24} /> 
           AAC: Augmentative & Alternative Communication
         </h2>
@@ -215,7 +200,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
 
       {/* ===== GESTALT LANGUAGE PROCESSING & ECHOLALIA ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <Repeat className="text-[#0A9DC4]" size={24} /> 
           Echolalia, Scripting, and GLP
         </h2>
@@ -264,7 +249,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
 
       {/* ===== SPEECH CHARACTERISTICS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <MessageSquare className="text-[#2abcd4]" size={24} /> 
           Speech Differences & Characteristics
         </h2>
@@ -297,7 +282,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
 
       {/* ===== PRIORITIZING SELF-ADVOCACY ===== */}
       <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <HandMetal className="text-[#0c264d]" size={24} /> 
           Prioritizing Self-Advocacy
         </h2>
@@ -333,7 +318,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         
         {/* Alexithymia */}
         <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
-          <h2 className="text-[#0c264d] font-bold mb-3 text-xl">
+          <h2 className="text-[#0c264d] font-bold mb-3 text-xl text-center">
             Alexithymia & Interoception
           </h2>
           
@@ -353,7 +338,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
 
         {/* Social Pragmatics */}
         <div className="bg-white p-5 rounded-md border-t-4 border-[#ffd166] shadow-sm flex flex-col">
-          <h2 className="text-[#0c264d] font-bold mb-3 text-xl">
+          <h2 className="text-[#0c264d] font-bold mb-3 text-xl text-center">
             Social Pragmatics
           </h2>
           
