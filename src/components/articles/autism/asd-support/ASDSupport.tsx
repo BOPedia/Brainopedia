@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Updated paths based on your articleMap directory structure
 import { OverviewContent } from './OverviewContent';
@@ -17,6 +17,15 @@ interface ASDSupportProps {
 
 export function ASDSupport({ setCurrentArticle, initialTab }: ASDSupportProps) {
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
+
+  // --- THE FIX ---
+  // This forces React to change the tab if the router sends a new instruction
+  useEffect(() => {
+    if (initialTab) {
+      setActiveTab(initialTab);
+    }
+  }, [initialTab]);
+  // ---------------
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
