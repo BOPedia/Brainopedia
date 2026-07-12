@@ -17,7 +17,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
   const BackButton = () => (
     <button 
       onClick={() => setCurrentArticle?.('autism')}
-      className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-regular py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap shrink-0 shadow-sm"
+      className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semi-bold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap shrink-0 shadow-sm"
     >
       <span className="text-xl">←</span>
       All About Autism
@@ -29,7 +29,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
       
       {/* HEADER */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6 border-b-2 border-[#0c264d] pb-4">
-        <h1 className="text-3xl font-bold text-[#0c264d]">
+        <h1 className="text-3xl font-regular text-[#0c264d]">
           Autism: Overview
         </h1>
         <BackButton />
