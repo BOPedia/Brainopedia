@@ -1,5 +1,21 @@
 import React from 'react';
 import { MessageSquare, Repeat, MonitorSmartphone, HandMetal, Eye, Volume2, LayoutGrid, Users } from 'lucide-react';
+// Local ImageWithFallback to avoid missing external module
+import { useState } from 'react';
+
+function ImageWithFallback({ src, alt, className }: { src: string; alt: string; className?: string }) {
+  const [errored, setErrored] = useState(false);
+  const fallback = '/images/placeholder-image.png';
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={errored ? fallback : src}
+      alt={alt}
+      className={className}
+      onError={() => setErrored(true)}
+    />
+  );
+}
 
 /* ─── INTERFACE ─── */
 interface SpeechTherapyProps {
@@ -8,6 +24,10 @@ interface SpeechTherapyProps {
 
 /* ─── MAIN COMPONENT ─── */
 export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
+  
+  // Responsive image class that is larger than w-64 but safe for mobile
+  const responsiveImageClass = "w-full sm:w-96 md:w-[28rem] h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm";
+  
   return (
     <div className="space-y-6 text-[#0c264d] font-spartan animate-in fade-in duration-300">
       
@@ -28,6 +48,11 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
 
       {/* Introduction */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-intro.png"
+          alt="Speech Therapy Intro"
+          className={responsiveImageClass}
+        />
         <p className="text-sm leading-relaxed mb-4">
           After an autism diagnosis, selecting communication strategies is a crucial step to empower the individual. Approaches range from high-tech AAC devices and structured language programs to naturalistic, everyday strategies that integrate seamlessly into a person's life.
         </p>
@@ -43,6 +68,12 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           Setting Up the Communication Environment
         </h2>
         
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-comm-enviro.png"
+          alt="Communication Environment"
+          className={responsiveImageClass}
+        />
+
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
           Communication isn't just about the tools an individual uses; it is heavily dependent on how we set up the physical space and how we act as communication partners.
         </p>
@@ -74,6 +105,12 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           Visual Support Strategies
         </h2>
         
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-visuals.png"
+          alt="Visual Supports"
+          className={responsiveImageClass}
+        />
+
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
           Visuals make language concrete, reduce anxiety, and aid in processing information. They are an essential foundation for communication.
         </p>
@@ -114,7 +151,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
             <h4 className="font-bold text-[#0c264d] mb-3 flex items-center gap-2 border-b border-[#ffd166]/50 pb-1">
               <HandMetal className="text-[#d97706]" size={18} /> No-Tech / Low-Tech AAC
             </h4>
-            <div className="grid md:grid-cols-3 gap-3">
+            <div className="grid md:grid-cols-3 gap-3 mb-4">
               <div className="bg-[#fff9e6] p-3 rounded border border-[#ffd166]/30">
                 <div className="font-bold text-[#0c264d] text-sm mb-1">Core Boards</div>
                 <div className="text-xs text-gray-700">Printed binders or boards with categorized vocabulary that the user points to.</div>
@@ -128,13 +165,19 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
                 <div className="text-xs text-gray-700">A structured exchange system where the user hands a picture to a partner to communicate.</div>
               </div>
             </div>
+            
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-speech-lo-tech-choices.png"
+              alt="Low-Tech AAC Examples"
+              className={responsiveImageClass}
+            />
           </div>
 
           <div>
             <h4 className="font-bold text-[#0c264d] mb-3 flex items-center gap-2 border-b border-[#ffd166]/50 pb-1">
               <LayoutGrid className="text-[#d97706]" size={18} /> High-Tech AAC & Devices
             </h4>
-            <div className="grid md:grid-cols-2 gap-3">
+            <div className="grid md:grid-cols-2 gap-3 mb-4">
               <div className="bg-[#fff9e6] p-3 rounded border border-[#ffd166]/30">
                 <div className="font-bold text-[#0c264d] text-sm mb-1">Robust iOS Apps</div>
                 <div className="text-sm text-gray-700">Apps like <em>ProLoQuo2Go, TouchChat</em>, and <em>LAMP Words for Life</em> allow users to build complete sentences via symbols on a tablet.</div>
@@ -144,6 +187,12 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
                 <div className="text-sm text-gray-700">Medical-grade speech-generating devices (from companies like Tobii Dynavox or PRC), often featuring eye-gaze technology for limited motor skills.</div>
               </div>
             </div>
+            
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-speech-hi-tech-choices.png"
+              alt="High-Tech AAC Examples"
+              className={responsiveImageClass}
+            />
           </div>
 
           <div>
@@ -171,6 +220,12 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           Echolalia, Scripting, and GLP
         </h2>
         
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-echo-script.png"
+          alt="Echolalia and Scripting"
+          className={responsiveImageClass}
+        />
+
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
           Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup>1</sup> This approach emphasizes the emotional and relational aspects of communication.
         </p>
@@ -214,6 +269,12 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           Speech Differences & Characteristics
         </h2>
         
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-diff-charcteristics.png"
+          alt="Speech Differences"
+          className={responsiveImageClass}
+        />
+
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
           Some autistic individuals may struggle to modulate their tone or volume, leading to speech patterns that sound unique. Therapy can help individuals self-monitor these traits if desired.
         </p>
@@ -233,13 +294,20 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           </div>
         </div>
       </div>
-{/* ===== PRIORITIZING SELF-ADVOCACY ===== */}
+
+      {/* ===== PRIORITIZING SELF-ADVOCACY ===== */}
       <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
           <HandMetal className="text-[#0c264d]" size={24} /> 
           Prioritizing Self-Advocacy
         </h2>
         
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-self-advo.png"
+          alt="Prioritizing Self Advocacy"
+          className={responsiveImageClass}
+        />
+
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
           In neuro-affirming speech therapy, the highest priority is not teaching an individual to request items (like juice or a toy), but teaching them how to advocate for their bodily autonomy and sensory needs. Communication tools must first and foremost allow a person to safely navigate their environment.
         </p>
@@ -268,6 +336,13 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           <h2 className="text-[#0c264d] font-bold mb-3 text-xl">
             Alexithymia & Interoception
           </h2>
+          
+          <ImageWithFallback 
+            src="/images/autism/autism-support-TTtab-speech-alex-intero.png"
+            alt="Alexithymia and Interoception"
+            className={responsiveImageClass}
+          />
+          
           <p className="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">
             <strong>Alexithymia</strong> is the difficulty in identifying and describing one's own emotions. This is closely tied to <strong>Interoception</strong>, the hidden sense that allows us to feel our internal body signals (like hunger, heart rate, or a full bladder). 
           </p>
@@ -281,6 +356,13 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           <h2 className="text-[#0c264d] font-bold mb-3 text-xl">
             Social Pragmatics
           </h2>
+          
+          <ImageWithFallback 
+            src="/images/autism/autism-support-TTtab-speech-double-empath.png"
+            alt="Social Pragmatics and Double Empathy"
+            className={responsiveImageClass}
+          />
+          
           <p className="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">
             Historically, "social skills training" forced autistic individuals to mimic neurotypical behaviors (like forcing eye contact), which leads to exhausting masking. Modern therapy focuses on the <strong>Double Empathy Problem</strong>—the idea that communication breakdowns happen because autistic and neurotypical people have different, equally valid social languages.
           </p>
@@ -290,6 +372,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </div>
 
       </div>
+
       {/* Back Button Bottom */}
       <div className="flex justify-end mt-8 mb-6">
         <button 
