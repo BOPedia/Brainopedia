@@ -1,5 +1,5 @@
 import React from 'react';
-import { Microscope, ArrowRight, Layout, Palette, FileText, CheckCircle, ImageIcon, Smartphone, AlertTriangle, Type, Move } from 'lucide-react';
+import { Microscope, ArrowRight, Layout, Palette, FileText, CheckCircle, ImageIcon, Smartphone, AlertTriangle, Type, Move, Heart } from 'lucide-react';
 
 interface ProjectStandardsProps {
   setCurrentArticle?: (article: string) => void;
@@ -71,13 +71,13 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             </div>
           </div>
 
-	     <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
-  		  <h3 className="font-bold text-[#0c264d] text-sm mb-2">5. Centered Image Headings</h3>
-  		  <p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered PNG, it must be centered and clear any previous floats.</p>
- 		    <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
- 		   className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
- 		    </code>
-		  </div>
+         <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6">
+          <h3 className="font-bold text-[#0c264d] text-sm mb-2">5. Centered Image Headings</h3>
+          <p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered PNG, it must be centered and clear any previous floats.</p>
+            <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+           className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
+            </code>
+          </div>
         </section>
 
         {/* 2. CITATION SYSTEM */}
@@ -204,6 +204,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
         </section>
 
+  
         {/* CRITICAL ALERTS */}
         <section className="mb-12">
           <div className="bg-red-600 text-white p-6 rounded-2xl flex items-start gap-4 shadow-xl">
