@@ -285,7 +285,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-gestalt-adults.png"
           alt="Adult Gestalt Language Processing"
-          className={responsiveImageClass}
+          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
         />
       </div>
 
@@ -355,11 +355,11 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </div>
       </div>
 
-      {/* ===== ALEXITHYMIA & PRAGMATICS ===== */}
-      <div className="grid md:grid-cols-2 gap-6 mb-6">
+ {/* ===== ALEXITHYMIA & PRAGMATICS ===== */}
+      <div className="space-y-6 mb-6">
         
         {/* Alexithymia */}
-        <div className="bg-white p-5 rounded-md border-t-4 border-[#2abcd4] shadow-sm flex flex-col">
+        <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm flex flex-col">
           <h2 className="text-[#0c264d] font-bold mb-3 text-xl text-center">
             Alexithymia & Interoception
           </h2>
@@ -367,7 +367,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           <ImageWithFallback 
             src="/images/autism/autism-support-TTtab-speech-alex-intero.png"
             alt="Alexithymia and Interoception"
-            className={responsiveImageClass}
+            className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
           />
           
           <p className="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">
@@ -379,7 +379,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </div>
 
         {/* Social Pragmatics */}
-        <div className="bg-white p-5 rounded-md border-t-4 border-[#ffd166] shadow-sm flex flex-col">
+        <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm flex flex-col">
           <h2 className="text-[#0c264d] font-bold mb-3 text-xl text-center">
             Social Pragmatics
           </h2>
@@ -387,7 +387,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           <ImageWithFallback 
             src="/images/autism/autism-support-TTtab-speech-double-empath.png"
             alt="Social Pragmatics and Double Empathy"
-            className={responsiveImageClass}
+            className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
           />
           
           <p className="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">
