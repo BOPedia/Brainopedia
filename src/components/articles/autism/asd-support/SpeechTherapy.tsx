@@ -332,7 +332,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-self-advo.png"
           alt="Prioritizing Self Advocacy"
-          className={responsiveImageClass}
+          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
         />
 
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
