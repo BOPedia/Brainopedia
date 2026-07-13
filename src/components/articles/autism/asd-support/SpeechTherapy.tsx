@@ -202,23 +202,9 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <Repeat className="text-[#0A9DC4]" size={24} /> 
-          Echolalia, Scripting, and GLP
+          Echolalia, Scripting, and Gestalt Language Processing
         </h2>
-        
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-gestalt-children.png"
-          alt="Children Gestalt Language Processing"
-          className={responsiveImageClass}
-        />
 
-        <p className="text-sm mb-4 text-gray-700 leading-relaxed">
-          Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup>1</sup> This approach emphasizes the emotional and relational aspects of communication.
-        </p>
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-gestalt-adults.png"
-          alt="Adult Gestalt Language Processing"
-          className={responsiveImageClass}
-        />
         <div className="space-y-4 mb-6">
           <div className="border-l-2 border-[#2abcd4] pl-4">
             <div className="font-bold text-[#0c264d] mb-1">Immediate Echolalia</div>
@@ -231,17 +217,6 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-echolalia.png"
           alt="Children Echolalia"
-          className={responsiveImageClass}
-        />
-
-          <div className="border-l-2 border-[#2abcd4] pl-4">
-            <div className="font-bold text-[#0c264d] mb-1">Scripting</div>
-            <p className="text-sm text-gray-700">Using memorized phrases or sequences intentionally to navigate social situations. It reflects a purposeful behavior where familiar, internalized lines are adapted to fit a current context.</p>
-          </div>
-        </div>
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-scripting-children.png"
-          alt="Scripting"
           className={responsiveImageClass}
         />
         <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
@@ -260,6 +235,31 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           </div>
         </div>
       </div>
+          <div className="border-l-2 border-[#2abcd4] pl-4">
+            <div className="font-bold text-[#0c264d] mb-1">Scripting</div>
+            <p className="text-sm text-gray-700">Using memorized phrases or sequences intentionally to navigate social situations. It reflects a purposeful behavior where familiar, internalized lines are adapted to fit a current context.</p>
+          </div>
+        </div>
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-scripting-children.png"
+          alt="Scripting"
+          className={responsiveImageClass}
+        />
+                
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-gestalt.png"
+          alt="Children Gestalt Language Processing"
+          className={responsiveImageClass}
+        />
+
+        <p className="text-sm mb-4 text-gray-700 leading-relaxed">
+          Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup>1</sup> This approach emphasizes the emotional and relational aspects of communication.
+        </p>
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-gestalt-adults.png"
+          alt="Adult Gestalt Language Processing"
+          className={responsiveImageClass}
+        />
 
       {/* ===== SPEECH CHARACTERISTICS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
