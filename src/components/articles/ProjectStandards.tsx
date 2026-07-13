@@ -78,8 +78,15 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
            className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
             </code>
           </div>
-        </section>
-
+      
+          <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6">
+            <h3 className="font-bold text-[#0c264d] text-sm mb-2">6. The Full-Width Span</h3>
+            <p className="text-xs mb-3 text-gray-600">For diagrams or graphics that need to stretch to 100% of their container's width (overriding the standard max-width).</p>
+            <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+              className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+            </code>
+          </div>
+            </section>
         {/* 2. CITATION SYSTEM */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
