@@ -38,13 +38,13 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
       {/* TABS NAVIGATION */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
         {tabs.map((tab) => (
-          <button
+<button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`px-6 py-3 rounded-md text-sm transition-colors font-medium border-2 ${
+            className={`px-6 py-3 rounded-md text-sm transition-colors font-medium ${
               activeTab === tab.id
-                ? 'bg-[#0A9DC4] text-white border-[#0A9DC4]'
-                : 'bg-white text-[#0c264d] border-[#0A9DC4]/20 hover:border-[#0A9DC4] hover:bg-[#f0f9ff]'
+                ? 'bg-[#0A9DC4] text-white'
+                : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffd166]/80'
             }`}
           >
             {tab.label}
