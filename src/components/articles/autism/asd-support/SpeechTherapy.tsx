@@ -215,7 +215,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup>1</sup> This approach emphasizes the emotional and relational aspects of communication.
         </p>
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-gestalt-adult.png"
+          src="/images/autism/autism-support-TTtab-speech-gestalt-adults.png"
           alt="Adult Gestalt Language Processing"
           className={responsiveImageClass}
         />
@@ -229,8 +229,8 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
             <p className="text-sm text-gray-700">Repeating phrases after a delay, which can include recalling lines from movies, books, or conversations heard days or even months earlier in a completely different context.</p>
           </div>
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-gestalt-children.png"
-          alt="Children Gestalt Language Processing"
+          src="/images/autism/autism-support-TTtab-speech-echolalia.png"
+          alt="Children Echolalia"
           className={responsiveImageClass}
         />
 
