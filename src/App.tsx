@@ -52,7 +52,7 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
         onSearchSelect={(articleId) => setCurrentArticle(articleId)}
       />
 
-      <DonationBanner onNavigateToDonate={() => setCurrentArticle('donate')} />
+      <DonationBanner onNavigateTo={() => setCurrentArticle('')} />
 
       <div className="flex">
         <Sidebar

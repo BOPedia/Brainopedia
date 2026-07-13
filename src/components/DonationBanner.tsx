@@ -2,28 +2,42 @@ import React, { useState, useEffect } from 'react';
 import { X, Heart } from 'lucide-react';
 
 interface DonationBannerProps {
-  onNavigateToDonate: () => void;
+  onNavigateTo: () => void; // FIXED: Now perfectly matches App.tsx!
 }
 
-export function DonationBanner({ onNavigateToDonate }: DonationBannerProps) {
-  const [isVisible, setIsVisible] = useState(true); // Changed to true to always show
+export function DonationBanner({ onNavigateTo }: DonationBannerProps) {
+  // Start false so it doesn't "flash" on the screen for frequent flyers
+  const [isVisible, setIsVisible] = useState(false); 
 
   useEffect(() => {
-    // Check if banner was previously dismissed
-    const isDismissed = localStorage.getItem('donation-banner-dismissed');
-    if (!isDismissed) {
-      setIsVisible(true);
+    // Check browser memory for the exact time they clicked 'X'
+    const dismissedAt = localStorage.getItem('donation-banner-dismissed-date');
+    
+    if (dismissedAt) {
+      const dismissDate = parseInt(dismissedAt, 10);
+      // Calculate how many days it has been since they closed it
+      const daysSinceDismissed = (Date.now() - dismissDate) / (1000 * 60 * 60 * 24);
+      
+      // If it has been less than 7 days, keep it hidden
+      if (daysSinceDismissed < 7) {
+        setIsVisible(false);
+        return;
+      }
     }
+    
+    // If they've never closed it, or it's been 7+ days, show the banner!
+    setIsVisible(true);
   }, []);
 
   const handleDismiss = () => {
     setIsVisible(false);
-    localStorage.setItem('donation-banner-dismissed', 'true');
+    // Stamp the exact current time into the browser memory
+    localStorage.setItem('donation-banner-dismissed-date', Date.now().toString());
   };
 
   const handleDonate = () => {
-    onNavigateToDonate();
-    handleDismiss();
+    onNavigateTo(); // FIXED: Now successfully triggers the navigation!
+    handleDismiss(); // Still hides the banner after they click donate
   };
 
   if (!isVisible) return null;
