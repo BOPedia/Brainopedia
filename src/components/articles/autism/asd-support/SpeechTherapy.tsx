@@ -245,6 +245,12 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           <Repeat className="text-[#0A9DC4]" size={24} /> 
           Scripting
         </h2>
+       
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-scripting-understand-children.png"
+          alt="Scripting"
+          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+        />
         
         <div className="border-l-2 border-[#2abcd4] pl-4 mb-6">
             <div className="font-bold text-[#0c264d] mb-1">Scripting</div>
@@ -252,7 +258,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </div>
 
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-scripting-children.png"
+          src="/images/autism/autism-support-TTtab-speech-scripting-support-children.png"
           alt="Scripting"
           className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
         />
