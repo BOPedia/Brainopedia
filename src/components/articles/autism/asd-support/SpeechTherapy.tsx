@@ -206,15 +206,19 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </h2>
         
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-echo-script.png"
-          alt="Echolalia and Scripting"
+          src="/images/autism/autism-support-TTtab-speech-gestalt-children.png"
+          alt="Children Gestalt Language Processing"
           className={responsiveImageClass}
         />
 
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
           Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup>1</sup> This approach emphasizes the emotional and relational aspects of communication.
         </p>
-
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-gestalt-adult.png"
+          alt="Adult Gestalt Language Processing"
+          className={responsiveImageClass}
+        />
         <div className="space-y-4 mb-6">
           <div className="border-l-2 border-[#2abcd4] pl-4">
             <div className="font-bold text-[#0c264d] mb-1">Immediate Echolalia</div>
@@ -224,12 +228,22 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
             <div className="font-bold text-[#0c264d] mb-1">Delayed Echolalia</div>
             <p className="text-sm text-gray-700">Repeating phrases after a delay, which can include recalling lines from movies, books, or conversations heard days or even months earlier in a completely different context.</p>
           </div>
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-gestalt-children.png"
+          alt="Children Gestalt Language Processing"
+          className={responsiveImageClass}
+        />
+
           <div className="border-l-2 border-[#2abcd4] pl-4">
             <div className="font-bold text-[#0c264d] mb-1">Scripting</div>
             <p className="text-sm text-gray-700">Using memorized phrases or sequences intentionally to navigate social situations. It reflects a purposeful behavior where familiar, internalized lines are adapted to fit a current context.</p>
           </div>
         </div>
-
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-scripting-children.png"
+          alt="Scripting"
+          className={responsiveImageClass}
+        />
         <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
           <h4 className="font-bold text-[#0c264d] mb-3 text-center border-b border-[#0A9DC4]/20 pb-2">10 Strategies for Supporting Echolalia</h4>
           <div className="grid md:grid-cols-2 gap-x-4 gap-y-3 text-sm text-gray-700">
