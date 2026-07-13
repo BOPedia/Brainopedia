@@ -254,8 +254,9 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-scripting-children.png"
           alt="Scripting"
-          className={responsiveImageClass}
+          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
         />
+
       </div>
 
       {/* GESTALT LANGUAGE PROCESSING BLOCK */}
