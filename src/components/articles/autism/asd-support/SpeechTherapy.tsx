@@ -30,7 +30,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           Back to Therapies
         </button>
       </div>
-</div>
+
       {/* Introduction (Floated Image) */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8 flow-root">
         <ImageWithFallback 
@@ -198,7 +198,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </div>
       </div>
 
-      {/* ===== GESTALT LANGUAGE PROCESSING & ECHOLALIA ===== */}
+      {/* ===== ECHOLALIA & SCRIPTING ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <Repeat className="text-[#0A9DC4]" size={24} /> 
@@ -214,11 +214,14 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
             <div className="font-bold text-[#0c264d] mb-1">Delayed Echolalia</div>
             <p className="text-sm text-gray-700">Repeating phrases after a delay, which can include recalling lines from movies, books, or conversations heard days or even months earlier in a completely different context.</p>
           </div>
+        </div>
+
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-echolalia.png"
           alt="Children Echolalia"
           className={responsiveImageClass}
         />
+
         <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
           <h4 className="font-bold text-[#0c264d] mb-3 text-center border-b border-[#0A9DC4]/20 pb-2">10 Strategies for Supporting Echolalia</h4>
           <div className="grid md:grid-cols-2 gap-x-4 gap-y-3 text-sm text-gray-700">
@@ -235,27 +238,33 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           </div>
         </div>
       </div>
-          <div className="border-l-2 border-[#2abcd4] pl-4">
-            <div className="font-bold text-[#0c264d] mb-1">Scripting</div>
-            <p className="text-sm text-gray-700">Using memorized phrases or sequences intentionally to navigate social situations. It reflects a purposeful behavior where familiar, internalized lines are adapted to fit a current context.</p>
-          </div>
-        </div>
-        <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+
+      {/* SCRIPTING BLOCK */}
+      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <Repeat className="text-[#0A9DC4]" size={24} /> 
           Scripting
         </h2>
+        
+        <div className="border-l-2 border-[#2abcd4] pl-4 mb-6">
+            <div className="font-bold text-[#0c264d] mb-1">Scripting</div>
+            <p className="text-sm text-gray-700">Using memorized phrases or sequences intentionally to navigate social situations. It reflects a purposeful behavior where familiar, internalized lines are adapted to fit a current context.</p>
         </div>
+
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-scripting-children.png"
           alt="Scripting"
           className={responsiveImageClass}
         />
-        <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+      </div>
+
+      {/* GESTALT LANGUAGE PROCESSING BLOCK */}
+      <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <HandMetal className="text-[#0c264d]" size={24} /> 
           Gestalt Language Processing
         </h2>              
+        
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-gestalt-children.png"
           alt="Children Gestalt Language Processing"
@@ -265,11 +274,13 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
           Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup>1</sup> This approach emphasizes the emotional and relational aspects of communication.
         </p>
+
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-gestalt-adults.png"
           alt="Adult Gestalt Language Processing"
           className={responsiveImageClass}
         />
+      </div>
 
       {/* ===== SPEECH CHARACTERISTICS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
