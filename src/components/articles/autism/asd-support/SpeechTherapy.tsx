@@ -247,7 +247,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         />
                 
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-gestalt.png"
+          src="/images/autism/autism-support-TTtab-speech-gestalt-children.png"
           alt="Children Gestalt Language Processing"
           className={responsiveImageClass}
         />
