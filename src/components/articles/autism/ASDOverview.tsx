@@ -505,8 +505,8 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References: Autism Overview</h3>
-        
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+      
         <div className="mb-6">
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
