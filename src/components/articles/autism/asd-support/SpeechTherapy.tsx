@@ -351,7 +351,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           </div>
         </div>
 
-        <div className="bg-light-green p-5 rounded-lg border border-[#0A9DC4]/20 text-center shadow-inner">
+        <div className="bg-cyan-400 p-5 rounded-lg border border-[#0A9DC4]/20 text-center shadow-inner">
           <p className="text-[#0c264d] font-bold text-xl mb-2 font-spartan">Connection comes before comprehension.</p>
         </div>
     {/* Deep Dive: Connection vs Comprehension */}
