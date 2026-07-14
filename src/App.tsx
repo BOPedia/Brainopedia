@@ -43,32 +43,43 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
     document.title = 'Brainopedia - Encyclopedia of Neurodivergent Minds';
   }, []);
 
-  return (
-    <div className="min-h-screen bg-[#0A9DC4]">
-      <Header
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-        toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
-        onSearchSelect={(articleId) => setCurrentArticle(articleId)}
-      />
-
-      <DonationBanner onNavigateTo={() => setCurrentArticle('')} />
-
-      <div className="flex">
-        <Sidebar
-          currentArticle={currentArticle}
-          setCurrentArticle={setCurrentArticle}
-          isOpen={isSidebarOpen}
-          closeSidebar={() => setIsSidebarOpen(false)}
+ return (
+    <div className="min-h-screen bg-[#0A9DC4] print:bg-white">
+      {/* ADDED: print:hidden wrappers */}
+      <div className="print:hidden">
+        <Header
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+          onSearchSelect={(articleId) => setCurrentArticle(articleId)}
         />
+      </div>
 
-        <main className="flex-1 p-2 md:p-8 lg:p-12 max-w-5xl mx-auto w-full">
+      <div className="print:hidden">
+        <DonationBanner onNavigateTo={() => setCurrentArticle('')} />
+      </div>
+
+      {/* ADDED: print:block to prevent flexbox from squishing printed text */}
+      <div className="flex print:block">
+        <div className="print:hidden">
+          <Sidebar
+            currentArticle={currentArticle}
+            setCurrentArticle={setCurrentArticle}
+            isOpen={isSidebarOpen}
+            closeSidebar={() => setIsSidebarOpen(false)}
+          />
+        </div>
+
+        {/* ADDED: print:p-0 and print:max-w-none to let content fill the physical page */}
+        <main className="flex-1 p-2 md:p-8 lg:p-12 max-w-5xl mx-auto w-full print:p-0 print:max-w-none">
           {/* ArticleContent will now receive 'home' by default */}
           <ArticleContent articleId={currentArticle} setCurrentArticle={setCurrentArticle} />
         </main>
       </div>
 
-      <Footer setCurrentArticle={setCurrentArticle} />
+      <div className="print:hidden">
+        <Footer setCurrentArticle={setCurrentArticle} />
+      </div>
     </div>
   );
 }

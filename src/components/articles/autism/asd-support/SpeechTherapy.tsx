@@ -1,6 +1,8 @@
 import React from 'react';
 import { MessageSquare, Repeat, MonitorSmartphone, HandMetal, Eye, Heart, Volume2, LayoutGrid, Users } from 'lucide-react';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
+import { SectionActions } from '../../../SectionActions';
+// (Make sure the path matches where you saved it!)
 
 /* ─── INTERFACE ─── */
 interface SpeechTherapyProps {
@@ -290,11 +292,18 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
       </div>
 
 {/* ===== SUPPORTING PROFOUND AUTISM & ATTUNEMENT ===== */}
-      <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+      {/* ADDED: id="attunement" so the link knows exactly where to scroll */}
+      <div id="attunement" className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <Users className="text-[#0c264d]" size={24} />
           Supporting Profound Autism: The Shift to Attunement
         </h2>
+
+        {/* ADDED: The new action bar component! */}
+        <SectionActions 
+          sectionId="attunement" 
+          sectionTitle="Supporting Profound Autism: The Shift to Attunement" 
+        />
 
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
           When supporting individuals with level 3 or profound autism—especially teens and young adults who script, are echolalic, or speak in gestalts—the foundational rule is to <strong>presume competence</strong>. There is always profound potential for connection. Traditional active listening (like expecting eye contact, verbal affirmations, or paraphrasing) is often developmentally inappropriate. Instead, the focus shifts to a multimodal process called <strong>Attunement</strong>.
@@ -377,7 +386,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
               </li>
               <li className="flex gap-2">
                 <span className="text-[#d97706] font-bold">•</span> 
-                <span><strong>Sitting side-by-side at a comfortable distance:</strong> Sitting next to them and engaging in their current interest without placing verbal demands.</span>
+                <span><strong>Sitting Side-by-Side - at a comfortable distance:</strong> Sitting next to them and engaging in their current interest without placing verbal demands.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#d97706] font-bold">•</span> 
