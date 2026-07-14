@@ -20,15 +20,27 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
     navigate(`/${article}`);
   };
 
-  // Scroll to top when article changes
+// Scroll to top when article changes (unless it's a section link)
   useEffect(() => {
     const pathParts = location.pathname.split('/').filter(Boolean);
     const prevPathParts = (window as any).__prevPath?.split('/').filter(Boolean) || [];
-    if (pathParts[0] !== prevPathParts[0]) {
+    
+    // If the URL has a hash link (like #attunement), smooth scroll right to it
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.getElementById(location.hash.replace('#', ''));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // 100ms delay ensures React finishes drawing the page first
+    } 
+    // Otherwise, do the normal behavior and scroll to the top
+    else if (pathParts[0] !== prevPathParts[0]) {
       window.scrollTo(0, 0);
     }
+    
     (window as any).__prevPath = location.pathname;
-  }, [articleId, location.pathname]);
+  }, [articleId, location.pathname, location.hash]);
 
   // Set favicon and page title
   useEffect(() => {
