@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, Brain, Layers, Users, Hand, Sun, CheckCircle, Home } from 'lucide-react';
+import { Activity, Brain, Layers, Users, Hand, Sun, CheckCircle, Home, MessageCircle, ArrowRight } from 'lucide-react';
 import { SectionActions } from '../../../SectionActions';
 
 interface OccupationalTherapyProps {
@@ -169,6 +169,52 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         </div>
       </div>
 
+      {/* ===== SPECIFIC TECHNIQUES & QUESTIONS FOR YOUR OT ===== */}
+      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
+          <MessageCircle className="text-[#0A9DC4]" size={24} /> 
+          Specific Techniques & Questions for Your OT
+        </h2>
+        
+        <p className="text-sm text-gray-700 mb-6">
+          When interviewing or evaluating a new occupational therapist, it is vital to ensure they utilize modern, neurodiversity-affirming approaches. Here are specific clinical methodologies and questions you can ask to gauge their practice style<sup className="text-green-600 font-bold ml-0.5">3</sup>.
+        </p>
+
+        <div className="space-y-4">
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
+            <h4 className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <ArrowRight className="text-[#0A9DC4]" size={16} /> Interoception Curriculums
+            </h4>
+            <p className="text-sm text-gray-700 mb-2">Interoception is the internal sense of recognizing hunger, pain, temperature, and emotional states. Autistic individuals often have disrupted interoceptive signals.</p>
+            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "Do you utilize interoception mapping or curriculums to help them recognize their internal body signals, rather than just treating external behaviors?"<sup className="text-green-600 font-bold ml-0.5">4</sup></p>
+          </div>
+
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
+            <h4 className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <ArrowRight className="text-[#0A9DC4]" size={16} /> The CO-OP Approach
+            </h4>
+            <p className="text-sm text-gray-700 mb-2">Cognitive Orientation to daily Occupational Performance (CO-OP) is an active, collaborative approach where the individual guides their own motor-skill goals (like learning to ride a bike or tie shoes) through problem-solving.</p>
+            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "Are you familiar with the CO-OP approach to allow them to lead their own goal-setting and problem-solving?"<sup className="text-green-600 font-bold ml-0.5">5</sup></p>
+          </div>
+
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
+            <h4 className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <ArrowRight className="text-[#0A9DC4]" size={16} /> Affirming Sensory Diets
+            </h4>
+            <p className="text-sm text-gray-700 mb-2">Sensory diets should proactively regulate the nervous system, not punish or extinguish natural "stimming" (self-stimulatory behavior).</p>
+            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "How do you build a proactive sensory diet that supports their natural regulation, rather than trying to suppress their stimming?"</p>
+          </div>
+
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
+            <h4 className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
+              <ArrowRight className="text-[#0A9DC4]" size={16} /> AAC Integration
+            </h4>
+            <p className="text-sm text-gray-700 mb-2">OT does not exist in a vacuum. Motor skills are required to effectively use Alternative and Augmentative Communication (AAC) devices like tablets.</p>
+            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "How will you collaborate with their Speech-Language Pathologist to ensure their AAC device is fully integrated into our physical OT sessions?"</p>
+          </div>
+        </div>
+      </div>
+
       {/* ===== SUPPORTING OT AT HOME ===== */}
       <div id="ot-support" className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
@@ -216,26 +262,27 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-            Cited Studies & Statistics
+            Cited Studies & Literature
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Case-Smith, J., & Arbesman, M. (2008). "Evidence-based review of occupational therapy for autism." <em>American Journal of Occupational Therapy</em>.</p>
-            <p>2. Schaaf, R. C., et al. (2014). "Sensory integration outcomes in children with autism." <em>Journal of Autism and Developmental Disorders</em>.</p>
+            <p>1. Case-Smith, J., & Arbesman, M. (2008). "Evidence-based review of interventions for autism used in or of relevance to occupational therapy." <em>American Journal of Occupational Therapy</em>, 62(4), 416-429.</p>
+            <p>2. Schaaf, R. C., et al. (2014). "An intervention for sensory difficulties in children with autism: A randomized trial." <em>Journal of Autism and Developmental Disorders</em>, 44(7), 1493-1506.</p>
+            <p>3. Dallman, A. R., et al. (2022). "Neurodiversity-Affirming Practices in Occupational Therapy." <em>American Journal of Occupational Therapy</em>, 76(Supplement_1).</p>
+            <p>4. Mahler, K. (2015). <em>Interoception: The Eighth Sensory System</em>. AAPC Publishing.</p>
+            <p>5. Polatajko, H. J., & Mandich, A. (2004). <em>Enabling occupation in children: The cognitive orientation to daily occupational performance (CO-OP) approach</em>. CAOT Publications ACE.</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
-            Background Sources
+            Background Academic Textbooks
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>American Occupational Therapy Association (AOTA) Guidelines</li>
-            <li>Cleveland Clinic Occupational Therapy Guide</li>
-            <li>Autism Society & Autism Speaks Toolkits</li>
-            <li>Star Institute for Sensory Processing</li>
-            <li>Autism National Committee (AutCom)</li>
-            <li>Organization for Autism Research (OAR)</li>
+            <li>Ayres, A. J. (2005). Sensory Integration and the Child: Understanding Hidden Sensory Challenges. Western Psychological Services.</li>
+            <li>Dunn, W. (2014). Sensory Profile 2: User's Manual. Pearson Clinical Assessment.</li>
+            <li>Kramer, P., Hinojosa, J., & Royeen, C. B. (2020). Perspectives in Human Occupation: Participation in Life. F.A. Davis Company.</li>
+            <li>Roley, S. S., et al. (2008). "Understanding occupational therapy using the AOTA Practice Framework." American Journal of Occupational Therapy.</li>
           </ul>
         </div>
       </div>
