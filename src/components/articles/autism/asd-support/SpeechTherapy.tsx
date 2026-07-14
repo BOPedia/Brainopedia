@@ -321,8 +321,14 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           <div className="bg-white p-4 rounded-lg border-t-4 border-[#ffd166] shadow-sm">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">2. Interpreting Behavior</h4>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li className="flex gap-2"><span className="text-[#ffd166] font-bold">•</span> Understand that <em>all</em> behavior has meaning, e.g., rocking might mean "I need calm"; silence might mean "I am overwhelmed".</li>
-              <li className="flex gap-2"><span className="text-[#ffd166] font-bold">•</span> Avoid assuming behaviors are simply "attention-seeking" or defiant.</li>
+              <li className="flex gap-2 items-start">
+                <span className="text-[#ffd166] font-bold shrink-0 mt-0.5">•</span> 
+                <span>Understand that <em>all</em> behavior has meaning, e.g., rocking might mean "I need calm"; silence might mean "I am overwhelmed".</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="text-[#ffd166] font-bold shrink-0 mt-0.5">•</span> 
+                <span>Avoid assuming behaviors are simply "attention-seeking" or defiant.</span>
+              </li>
             </ul>
           </div>
           
@@ -345,7 +351,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           </div>
         </div>
 
-        <div className="bg-white p-5 rounded-lg border border-[#0A9DC4]/20 text-center shadow-inner">
+        <div className="bg-light-green p-5 rounded-lg border border-[#0A9DC4]/20 text-center shadow-inner">
           <p className="text-[#0c264d] font-bold text-xl mb-2 font-spartan">Connection comes before comprehension.</p>
         </div>
     {/* Deep Dive: Connection vs Comprehension */}
@@ -379,9 +385,9 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
               </li>
             </ul>
             
-            <p className="pt-2 font-bold text-[#0c264d]">
-              Once profound trust and nervous system safety are established, the cognitive load drops, and comprehension naturally becomes possible.
-            </p>
+            <p className="pt-2 font-bold text-[#0c264d]"> 
+              Once profound trust and nervous system safety are established, the cognitive load drops. Comprehension naturally becomes possible, and only then can they truly process your words and understand you.
+            </p>  
           </div>
       
         </div>
