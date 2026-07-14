@@ -288,6 +288,70 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
         />
       </div>
+      
+{/* ===== SUPPORTING PROFOUND AUTISM & ATTUNEMENT ===== */}
+      <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
+          <Users className="text-[#0c264d]" size={24} />
+          Supporting Profound Autism: The Shift to Attunement
+        </h2>
+
+        <p className="text-sm mb-4 text-gray-700 leading-relaxed">
+          When supporting individuals with level 3 or profound autism—especially teens and young adults who script, are echolalic, or speak in gestalts—the foundational rule is to <strong>presume competence</strong>. There is always profound potential for connection. Traditional active listening (like expecting eye contact, verbal affirmations, or paraphrasing) is often developmentally inappropriate. Instead, the focus shifts to a multimodal process called <strong>Attunement</strong>.
+        </p>
+
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-teens-young-adults-level3.png"
+          alt="Attunement for Profound Autism"
+          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+        />
+
+        <div className="grid md:grid-cols-2 gap-4 mb-6">
+          {/* Pillar 1 */}
+          <div className="bg-white p-4 rounded-lg border-t-4 border-[#2abcd4] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">1. Observing Body Language</h4>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex gap-2"><span className="text-[#2abcd4] font-bold">•</span> Notice posture, facial expressions, breathing, and energy levels.</li>
+              <li className="flex gap-2"><span className="text-[#2abcd4] font-bold">•</span> Look for patterns that indicate regulation, stress, or discomfort.</li>
+              <li className="flex gap-2"><span className="text-[#2abcd4] font-bold">•</span> Always respect personal space and sensory boundaries.</li>
+            </ul>
+          </div>
+          
+          {/* Pillar 2 */}
+          <div className="bg-white p-4 rounded-lg border-t-4 border-[#ffd166] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">2. Interpreting Behavior</h4>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex gap-2"><span className="text-[#ffd166] font-bold">•</span> Understand that <em>all</em> behavior has meaning (e.g., rocking might mean "I need calm"; silence might mean "I am overwhelmed").</li>
+              <li className="flex gap-2"><span className="text-[#ffd166] font-bold">•</span> Avoid assuming behaviors are simply "attention-seeking" or defiant.</li>
+            </ul>
+          </div>
+          
+          {/* Pillar 3 */}
+          <div className="bg-white p-4 rounded-lg border-t-4 border-[#0c264d] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">3. Sensory Accommodations</h4>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex gap-2"><span className="text-[#0c264d] font-bold">•</span> Proactively reduce sensory overload from lighting, noise, textures, or crowds.</li>
+              <li className="flex gap-2"><span className="text-[#0c264d] font-bold">•</span> Offer tools that support regulation, such as fidgets, heavy blankets, or quiet spaces.</li>
+            </ul>
+          </div>
+          
+          {/* Pillar 4 */}
+          <div className="bg-white p-4 rounded-lg border-t-4 border-[#2abcd4] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">4. Validating Unconventional Cues</h4>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex gap-2"><span className="text-[#2abcd4] font-bold">•</span> Respond to their unique way of communicating, whether through words, sounds, scripts, or gestures.</li>
+              <li className="flex gap-2"><span className="text-[#2abcd4] font-bold">•</span> Affirm their identity, emotions, and autonomy, acknowledging their communication even if it is unconventional.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white p-5 rounded-lg border border-[#0A9DC4]/20 text-center shadow-inner">
+          <p className="text-[#0c264d] font-bold text-xl mb-2 font-spartan">Connection comes before comprehension.</p>
+          <p className="text-sm text-gray-700 italic max-w-2xl mx-auto">
+            Attunement is not about "fixing" or changing the person—it is about connecting, understanding, and walking alongside them in their world.
+          </p>
+        </div>
+      </div>
 
       {/* ===== SPEECH CHARACTERISTICS ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
