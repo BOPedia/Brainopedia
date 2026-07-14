@@ -78,9 +78,11 @@ export function SectionActions({ sectionId, sectionTitle }: SectionActionsProps)
         {copied ? <Check size={14} className="text-green-600" /> : <Link size={14} />}
         {copied ? 'Copied!' : 'Copy Link'}
       </button>
-
+{/* Changed to an <a> tag with target="_blank" to force webmail support */}
       <a 
         href={mailtoUrl}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center gap-1.5 text-xs font-bold text-[#0A9DC4] hover:text-[#0c264d] transition-colors bg-white px-3 py-1.5 rounded border border-[#0A9DC4]/20 shadow-sm"
       >
         <Mail size={14} />
