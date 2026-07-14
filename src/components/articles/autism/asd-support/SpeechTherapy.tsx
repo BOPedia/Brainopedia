@@ -2,7 +2,6 @@ import React from 'react';
 import { MessageSquare, Repeat, MonitorSmartphone, HandMetal, Eye, Heart, Volume2, LayoutGrid, Users } from 'lucide-react';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 import { SectionActions } from '../../../SectionActions';
-// (Make sure the path matches where you saved it!)
 
 /* ─── INTERFACE ─── */
 interface SpeechTherapyProps {
@@ -12,11 +11,11 @@ interface SpeechTherapyProps {
 /* ─── MAIN COMPONENT ─── */
 export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
   
-  // Responsive image class that is larger than w-64 but safe for mobile
   const responsiveImageClass = "w-full sm:w-96 md:w-[28rem] h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm";
   
   return (
-    <div className="space-y-6 text-[#0c264d] font-spartan animate-in fade-in duration-300">
+    <div id="full-speech-article" className="space-y-6 text-[#0c264d] font-spartan animate-in fade-in duration-300">
+      {/* 1. I added the id directly to your existing main wrapper ABOVE! */}
       
       {/* Header with Back Button */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -32,6 +31,12 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           Back to Therapies
         </button>
       </div>
+
+      {/* 2. Here is the Master Action Bar for the whole page */}
+      <SectionActions 
+        sectionId="full-speech-article" 
+        sectionTitle="Complete Guide to Speech Therapy" 
+      />
 
       {/* Introduction (Floated Image) */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8 flow-root">
@@ -291,15 +296,13 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         />
       </div>
 
-{/* ===== SUPPORTING PROFOUND AUTISM & ATTUNEMENT ===== */}
-      {/* ADDED: id="attunement" so the link knows exactly where to scroll */}
+      {/* ===== SUPPORTING PROFOUND AUTISM & ATTUNEMENT ===== */}
       <div id="attunement" className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <Users className="text-[#0c264d]" size={24} />
           Supporting Profound Autism: The Shift to Attunement
         </h2>
 
-        {/* ADDED: The new action bar component! */}
         <SectionActions 
           sectionId="attunement" 
           sectionTitle="Supporting Profound Autism: The Shift to Attunement" 
@@ -363,7 +366,8 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         <div className="bg-cyan-400 p-5 rounded-lg border border-[#0A9DC4]/20 text-center shadow-inner">
           <p className="text-[#0c264d] font-bold text-xl mb-2 font-spartan">Connection comes before comprehension.</p>
         </div>
-    {/* Deep Dive: Connection vs Comprehension */}
+        
+        {/* Deep Dive: Connection vs Comprehension */}
         <div className="mt-4 bg-[#fff9e6] p-5 rounded-lg border-l-4 border-[#ffd166] shadow-sm text-left">
           <h4 className="font-bold text-[#0c264d] mb-3 flex items-center gap-2 border-b border-[#ffd166]/30 pb-2">
             <Heart className="text-[#d97706]" size={18} />
@@ -398,7 +402,6 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
               Once profound trust and nervous system safety are established, the cognitive load drops. Comprehension naturally becomes possible, and only then can they truly process your words and understand you.
             </p>  
           </div>
-      
         </div>
       </div>
 
@@ -468,7 +471,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </div>
       </div>
 
- {/* ===== ALEXITHYMIA & PRAGMATICS ===== */}
+      {/* ===== ALEXITHYMIA & PRAGMATICS ===== */}
       <div className="space-y-6 mb-6">
         
         {/* Alexithymia */}
