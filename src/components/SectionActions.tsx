@@ -17,39 +17,55 @@ export function SectionActions({ sectionId, sectionTitle }: SectionActionsProps)
     setTimeout(() => setCopied(false), 2000); 
   };
 
-  // 2. Email Logic (Using native <a> tag for better browser support)
+  // 2. Email Logic
   const mailtoSubject = encodeURIComponent(`Helpful resource: ${sectionTitle}`);
   const mailtoBody = encodeURIComponent(`I found this section on Brainopedia and thought it would be helpful for you:\n\n${window.location.origin}${window.location.pathname}#${sectionId}`);
   const mailtoUrl = `mailto:?subject=${mailtoSubject}&body=${mailtoBody}`;
 
-  // 3. Smart Print Logic (The Clone Fix!)
+  // 3. Bulletproof Print Logic (The Iframe Trick)
   const handlePrint = () => {
     const printElement = document.getElementById(sectionId);
     if (!printElement) return;
 
-    // Clone the section so we don't break React
-    const clone = printElement.cloneNode(true) as HTMLElement;
-    
-    // Create a temporary container
-    const printContainer = document.createElement('div');
-    printContainer.id = 'temp-print-container';
-    printContainer.className = 'print:block'; 
-    printContainer.appendChild(clone);
-    
-    // Find the main app root and hide it completely so it takes up zero physical space
-    const rootNode = document.getElementById('root') || document.body.firstElementChild;
-    const originalDisplay = rootNode ? (rootNode as HTMLElement).style.display : '';
-    if (rootNode) {
-      (rootNode as HTMLElement).style.display = 'none';
-    }
-    
-    // Append the clone, trigger the printer, and instantly clean up
-    document.body.appendChild(printContainer);
-    window.print();
-    document.body.removeChild(printContainer);
-    
-    if (rootNode) {
-      (rootNode as HTMLElement).style.display = originalDisplay;
+    // Create an invisible mini-browser window
+    const iframe = document.createElement('iframe');
+    iframe.style.position = 'fixed';
+    iframe.style.right = '0';
+    iframe.style.bottom = '0';
+    iframe.style.width = '0';
+    iframe.style.height = '0';
+    iframe.style.border = '0';
+    document.body.appendChild(iframe);
+
+    const iframeDoc = iframe.contentWindow?.document;
+    if (iframeDoc) {
+      // Grab all the Tailwind CSS from your main site so it stays pretty
+      const styles = Array.from(document.querySelectorAll('style, link[rel="stylesheet"]'))
+        .map(s => s.outerHTML)
+        .join('');
+
+      // Write ONLY the specific section into the mini-browser
+      iframeDoc.open();
+      iframeDoc.write(`
+        <html>
+          <head>
+            <title>Brainopedia Resource</title>
+            ${styles}
+          </head>
+          <body style="background: white; padding: 2rem;">
+            ${printElement.outerHTML}
+          </body>
+        </html>
+      `);
+      iframeDoc.close();
+
+      // Give the mini-browser a split second to load the styles, then print it
+      setTimeout(() => {
+        iframe.contentWindow?.focus();
+        iframe.contentWindow?.print();
+        // Clean up the invisible browser after 2 seconds
+        setTimeout(() => document.body.removeChild(iframe), 2000);
+      }, 250);
     }
   };
 
@@ -63,7 +79,6 @@ export function SectionActions({ sectionId, sectionTitle }: SectionActionsProps)
         {copied ? 'Copied!' : 'Copy Link'}
       </button>
 
-      {/* Changed to an <a> tag so it reliably opens native mail clients */}
       <a 
         href={mailtoUrl}
         className="flex items-center gap-1.5 text-xs font-bold text-[#0A9DC4] hover:text-[#0c264d] transition-colors bg-white px-3 py-1.5 rounded border border-[#0A9DC4]/20 shadow-sm"

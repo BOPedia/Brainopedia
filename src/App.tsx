@@ -13,30 +13,47 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // CHANGE: Default to 'home' instead of 'about' when no articleId exists
   const currentArticle = articleId || 'home';
 
   const setCurrentArticle = (article: string) => {
     navigate(`/${article}`);
   };
 
-// Scroll to top when article changes (unless it's a section link)
+  // ===== THE "HUNTER" LOOP FOR SCROLLING =====
   useEffect(() => {
-    const pathParts = location.pathname.split('/').filter(Boolean);
-    const prevPathParts = (window as any).__prevPath?.split('/').filter(Boolean) || [];
-    
-    // If the URL has a hash link (like #attunement), smooth scroll right to it
-    if (location.hash) {
-      setTimeout(() => {
-        const element = document.getElementById(location.hash.replace('#', ''));
+    const scrollToHash = () => {
+      if (location.hash) {
+        const id = location.hash.replace('#', '');
+        const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          // Add a slight offset so the header doesn't cover the title!
+          const yOffset = -80; 
+          const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+          return true; // We found it!
         }
-      }, 100); // 100ms delay ensures React finishes drawing the page first
-    } 
-    // Otherwise, do the normal behavior and scroll to the top
-    else if (pathParts[0] !== prevPathParts[0]) {
-      window.scrollTo(0, 0);
+      }
+      return false; // Not found yet
+    };
+
+    if (location.hash) {
+      // If there is a link, hunt for the element for up to 2 seconds
+      if (!scrollToHash()) {
+        let attempts = 0;
+        const interval = setInterval(() => {
+          attempts++;
+          if (scrollToHash() || attempts > 20) {
+            clearInterval(interval);
+          }
+        }, 100);
+      }
+    } else {
+      // If there is no link, just do the normal scroll to the very top
+      const pathParts = location.pathname.split('/').filter(Boolean);
+      const prevPathParts = (window as any).__prevPath?.split('/').filter(Boolean) || [];
+      if (pathParts[0] !== prevPathParts[0]) {
+        window.scrollTo(0, 0);
+      }
     }
     
     (window as any).__prevPath = location.pathname;
@@ -55,9 +72,8 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
     document.title = 'Brainopedia - Encyclopedia of Neurodivergent Minds';
   }, []);
 
- return (
+  return (
     <div className="min-h-screen bg-[#0A9DC4] print:bg-white">
-      {/* ADDED: print:hidden wrappers */}
       <div className="print:hidden">
         <Header
           searchQuery={searchQuery}
@@ -71,7 +87,6 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
         <DonationBanner onNavigateTo={() => setCurrentArticle('')} />
       </div>
 
-      {/* ADDED: print:block to prevent flexbox from squishing printed text */}
       <div className="flex print:block">
         <div className="print:hidden">
           <Sidebar
@@ -82,9 +97,7 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
           />
         </div>
 
-        {/* ADDED: print:p-0 and print:max-w-none to let content fill the physical page */}
         <main className="flex-1 p-2 md:p-8 lg:p-12 max-w-5xl mx-auto w-full print:p-0 print:max-w-none">
-          {/* ArticleContent will now receive 'home' by default */}
           <ArticleContent articleId={currentArticle} setCurrentArticle={setCurrentArticle} />
         </main>
       </div>
