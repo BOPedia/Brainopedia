@@ -1,6 +1,7 @@
 import React from 'react';
 import { Activity, Brain, Layers, Users, Hand, Sun, CheckCircle, Home, MessageCircle, ArrowRight } from 'lucide-react';
 import { SectionActions } from '../../../SectionActions';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 interface OccupationalTherapyProps {
   setCurrentArticle?: (article: string) => void;
@@ -32,8 +33,13 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         sectionTitle="Complete Guide to Occupational Therapy" 
       />
 
-      {/* Introduction */}
-      <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
+{/* Introduction (Floated Image) */}
+      <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8 flow-root">
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-OT-intro.png"
+          alt="Occupational Therapy Intro"
+          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4 shadow-sm"
+        />
         <p className="text-sm leading-relaxed mb-4">
           Occupational therapy (OT) helps people of all ages regain or build the skills needed for daily living. Rather than focusing strictly on physical movement, OT focuses on functional independence, supporting "occupations"—the meaningful activities that occupy your time, such as working, self-care, or play<sup className="text-green-600 font-bold ml-0.5">1</sup>.
         </p>
