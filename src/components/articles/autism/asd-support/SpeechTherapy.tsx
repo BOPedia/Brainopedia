@@ -385,7 +385,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
               </li>
             </ul>
             
-            <p className="pt-2 font-bold text-[#0c264d]"> 
+            <p className="pt-2 font-bold font-cyan-900 text-[#0c264d]"> 
               Once profound trust and nervous system safety are established, the cognitive load drops. Comprehension naturally becomes possible, and only then can they truly process your words and understand you.
             </p>  
           </div>
