@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, Repeat, MonitorSmartphone, HandMetal, Eye, Volume2, LayoutGrid, Users } from 'lucide-react';
+import { MessageSquare, Repeat, MonitorSmartphone, HandMetal, Eye, Heart, Volume2, LayoutGrid, Users } from 'lucide-react';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 /* ─── INTERFACE ─── */
@@ -288,7 +288,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
         />
       </div>
-      
+
 {/* ===== SUPPORTING PROFOUND AUTISM & ATTUNEMENT ===== */}
       <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
@@ -321,7 +321,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           <div className="bg-white p-4 rounded-lg border-t-4 border-[#ffd166] shadow-sm">
             <h4 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">2. Interpreting Behavior</h4>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li className="flex gap-2"><span className="text-[#ffd166] font-bold">•</span> Understand that <em>all</em> behavior has meaning (e.g., rocking might mean "I need calm"; silence might mean "I am overwhelmed").</li>
+              <li className="flex gap-2"><span className="text-[#ffd166] font-bold">•</span> Understand that <em>all</em> behavior has meaning, e.g., rocking might mean "I need calm"; silence might mean "I am overwhelmed".</li>
               <li className="flex gap-2"><span className="text-[#ffd166] font-bold">•</span> Avoid assuming behaviors are simply "attention-seeking" or defiant.</li>
             </ul>
           </div>
@@ -347,9 +347,43 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
 
         <div className="bg-white p-5 rounded-lg border border-[#0A9DC4]/20 text-center shadow-inner">
           <p className="text-[#0c264d] font-bold text-xl mb-2 font-spartan">Connection comes before comprehension.</p>
-          <p className="text-sm text-gray-700 italic max-w-2xl mx-auto">
-            Attunement is not about "fixing" or changing the person—it is about connecting, understanding, and walking alongside them in their world.
-          </p>
+        </div>
+    {/* Deep Dive: Connection vs Comprehension */}
+        <div className="mt-4 bg-[#fff9e6] p-5 rounded-lg border-l-4 border-[#ffd166] shadow-sm text-left">
+          <h4 className="font-bold text-[#0c264d] mb-3 flex items-center gap-2 border-b border-[#ffd166]/30 pb-2">
+            <Heart className="text-[#d97706]" size={18} />
+            What does this mean in practice?
+          </h4>
+          
+          <div className="space-y-4 text-sm text-gray-700 leading-relaxed">
+            <p>
+              <strong>The Biological Reality:</strong> When an autistic individual is overwhelmed or experiencing sensory overload, their nervous system shifts into survival mode. In this state, the cognitive centers responsible for language processing and following directions effectively shut down. You cannot force a dysregulated brain to learn or communicate.
+            </p>
+            
+            <p>
+              <strong>The Attunement Solution:</strong> Before you can expect someone to understand words, follow an instruction, or use an AAC device (<em>comprehension</em>), you must first establish that they are safe, seen, and valued (<em>connection</em>). This looks like:
+            </p>
+            
+            <ul className="space-y-2 pl-3 border-l-2 border-[#ffd166]/50 ml-1">
+              <li className="flex gap-2">
+                <span className="text-[#d97706] font-bold">•</span> 
+                <span><strong>Sensory Safety:</strong> Dimming lights or offering noise-canceling headphones before attempting to start a conversation.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#d97706] font-bold">•</span> 
+                <span><strong>Parallel Play:</strong> Sitting next to them and engaging in their current interest without placing verbal demands.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#d97706] font-bold">•</span> 
+                <span><strong>Validating the "No":</strong> Respecting when they push a therapy material away, rather than forcing compliance.</span>
+              </li>
+            </ul>
+            
+            <p className="pt-2 font-bold text-[#0c264d]">
+              Once profound trust and nervous system safety are established, the cognitive load drops, and comprehension naturally becomes possible.
+            </p>
+          </div>
+      
         </div>
       </div>
 
