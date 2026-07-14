@@ -377,7 +377,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
               </li>
               <li className="flex gap-2">
                 <span className="text-[#d97706] font-bold">•</span> 
-                <span><strong>Parallel Play:</strong> Sitting next to them and engaging in their current interest without placing verbal demands.</span>
+                <span><strong>Sitting side-by-side at a comfortable distance:</strong> Sitting next to them and engaging in their current interest without placing verbal demands.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#d97706] font-bold">•</span> 
