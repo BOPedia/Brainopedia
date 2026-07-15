@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldAlert, Map, AlertTriangle, MessageCircle, Activity, Heart, ArrowRight } from 'lucide-react';
+import { ShieldAlert, Map, AlertTriangle, MessageCircle, Activity, Heart, ArrowRight, Sparkles } from 'lucide-react';
 import { SectionActions } from '../../../SectionActions';
 
 interface AutismDysregulationProps {
@@ -30,7 +30,19 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         sectionId="full-dysregulation-article" 
         sectionTitle="Guide to Dysregulation and Aggression" 
       />
-
+{/* ===== THE SPIKY PROFILE: STRENGTHS & VULNERABILITIES ===== */}
+<div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffd166] mb-8">
+  <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+    <Sparkles className="text-[#ffd166]" size={24} /> 
+    The Spiky Cognitive Profile: Understanding Asynchronous Development
+  </h2>
+  <p className="text-sm leading-relaxed mb-4 text-gray-700">
+    To support a dysregulated individual effectively, we must first presume competence. Many autistic individuals possess a "spiky" cognitive profile, where extraordinary strengths—such as deep focus, remarkable memory, or immense empathy—exist alongside significant vulnerabilities in sensory processing and internal regulation.
+  </p>
+  <p className="text-sm leading-relaxed text-gray-700">
+    When staff understand that this individual is not "acting out," but rather navigating a brain that processes information with different intensity, the training shifts from "control" to "attunement." By respecting and leveraging their unique strengths, we create a sense of safety that is the most effective tool for preventing escalation. When the individual feels understood, the need for reactive aggression diminishes significantly.
+  </p>
+</div>
       {/* ===== REFRAMING DYSREGULATION & AGGRESSION ===== */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">

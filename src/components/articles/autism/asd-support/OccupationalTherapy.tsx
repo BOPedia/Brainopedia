@@ -144,6 +144,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
               <li><strong>Zero Optical Flicker:</strong> Look for a "flicker-free" or "high-frequency" label. Low-quality LEDs strobe rapidly, which overtaxes the nervous system even if the pulsing is invisible to neurotypical eyes.</li>
               <li><strong>Warm Color Temperatures:</strong> Opt for warm white tones (around 2700K or lower) instead of "cool white" or "daylight" to signal the nervous system to relax and wind down.</li>
               <li><strong>Glare Minimization:</strong> Use bulbs with frosted glass lenses, diffusers, or smooth dimmability to minimize painful direct overhead glare and allow for autonomy.</li>
+              <li><strong>Incandescent Lighting:</strong> Traditional incandescent bulbs are an excellent, sensory-friendly alternative because they naturally emit a warm, continuous light completely free of optical flicker. However, keep in mind they are less energy-efficient and become incredibly hot to the touch, which can pose a physical safety risk in high-activity areas.</li>
             </ul>
           </div>
 
