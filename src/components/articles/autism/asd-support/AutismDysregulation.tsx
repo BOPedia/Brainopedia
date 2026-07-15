@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldAlert, Map, AlertTriangle, MessageCircle, Activity, Heart, ArrowRight, Sparkles } from 'lucide-react';
 import { SectionActions } from '../../../SectionActions';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 interface AutismDysregulationProps {
   setCurrentArticle?: (article: string) => void;
@@ -30,6 +31,20 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         sectionId="full-dysregulation-article" 
         sectionTitle="Guide to Dysregulation and Aggression" 
       />
+{/* ===== INTRODUCTION: A SHARED EXPERIENCE ===== */}
+<div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
+  <ImageWithFallback 
+    src="/images/autism/autism-support-TTtab-speech-dysreg-intro.png"
+    alt="Caregiver and individual co-regulation"
+    className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+  />
+  <p className="text-sm leading-relaxed text-gray-700">
+    Navigating dysregulation is a profoundly shared experience between the autistic individual and their support team. When the nervous system is pushed to its limits—often due to overwhelming sensory input or a lack of accessible communication tools—it creates intense distress for the individual and a parallel layer of stress for the caregiver. True support is never about compliance or controlling behavior; it is about building a co-regulated partnership where the individual’s urgent need for physical and emotional safety, and the caregiver’s need for sustainable, compassionate strategies, are equally prioritized and deeply honored.
+  </p>
+  {/* The Clearing Rule: ensures the background box stretches to fit the floated image if the text is short */}
+  <div className="clear-both"></div>
+</div>
+
 {/* ===== THE SPIKY PROFILE: STRENGTHS & VULNERABILITIES ===== */}
 <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffd166] mb-8">
   <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
