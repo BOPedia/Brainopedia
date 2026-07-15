@@ -38,10 +38,10 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           Reframing the Stress Response
         </h2>
         <p className="text-sm leading-relaxed mb-4">
-          Dysregulation escalating into aggression is often a profound stress response to unmet communication needs<sup className="text-green-600 font-bold ml-0.5">1</sup>. Individuals with communication barriers frequently resort to reactive aggression because they lack the necessary tools or accommodations to verbally articulate frustration, sensory overload, or physical pain<sup className="text-green-600 font-bold ml-0.5">5</sup>.
+          Dysregulation escalating into aggression is often a profound stress response to unmet communication needs<sup className="text-green-600 font-bold ml-0.5">1</sup>. Individuals with communication barriers frequently resort to reactive aggression because they lack the necessary tools or accommodations to verbally articulate frustration, sensory overload, or physical pain.
         </p>
         <p className="text-sm leading-relaxed">
-          Systemic reviews confirm that individuals experiencing emotion dysregulation are significantly more likely to engage in physical aggression, especially when feeling trapped, misunderstood, or unable to self-soothe<sup className="text-green-600 font-bold ml-0.5">2</sup>. By providing robust, alternative communication methods, aggressive behavior naturally decreases as autonomy increases<sup className="text-green-600 font-bold ml-0.5">5</sup>.
+          Systemic reviews confirm that individuals experiencing emotion dysregulation are significantly more likely to engage in physical aggression, especially when feeling trapped, misunderstood, or unable to self-soothe<sup className="text-green-600 font-bold ml-0.5">2</sup>. By providing robust, alternative communication methods, aggressive behavior naturally decreases as autonomy increases.
         </p>
       </div>
 
@@ -53,23 +53,23 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         </h2>
 
         <p className="text-sm text-gray-700 mb-6 leading-relaxed">
-          A major finding in developmental disability research is that learned communication skills do not naturally transfer across different settings<sup className="text-green-600 font-bold ml-0.5">3</sup>. A young adult might successfully use an electronic communication tablet at day support, but resort to physical aggression at home or in a grocery store if the environments or staff prompts are inconsistent<sup className="text-green-600 font-bold ml-0.5">5</sup>.
+          A major finding in developmental disability research is that learned communication skills do not naturally transfer across different settings<sup className="text-green-600 font-bold ml-0.5">3</sup>. A young adult might successfully use an electronic communication tablet at day support, but resort to physical aggression at home or in a grocery store if the environments or staff prompts are inconsistent.
         </p>
 
         <div className="grid md:grid-cols-2 gap-4 mb-4">
           <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
             <h4 className="font-bold text-[#0c264d] mb-2 border-b border-[#0A9DC4]/20 pb-1">School & Day Support</h4>
             <ul className="text-sm text-gray-700 space-y-2">
-              <li><strong className="text-[#0c264d]">Mitigate the Audience Effect:</strong> Having a crowd of peers watching an individual escalate increases shame and defensive aggression. Remove the audience by moving the other participants out of the room rather than forcing the dysregulated individual to move<sup className="text-green-600 font-bold ml-0.5">5</sup>.</li>
-              <li><strong className="text-[#0c264d]">Proactive Intermittent Access:</strong> Schedule proactive "sensory resets" in a low-stimulus area to keep their nervous system baseline stable before dysregulation occurs<sup className="text-green-600 font-bold ml-0.5">5</sup>.</li>
+              <li><strong className="text-[#0c264d]">Mitigate the Audience Effect:</strong> Having a crowd of peers watching an individual escalate increases shame and defensive aggression. Remove the audience by moving the other participants out of the room rather than forcing the dysregulated individual to move.</li>
+              <li><strong className="text-[#0c264d]">Proactive Intermittent Access:</strong> Schedule proactive "sensory resets" in a low-stimulus area to keep their nervous system baseline stable before dysregulation occurs.</li>
             </ul>
           </div>
           
           <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
             <h4 className="font-bold text-[#0c264d] mb-2 border-b border-[#0A9DC4]/20 pb-1">Community Outings</h4>
             <ul className="text-sm text-gray-700 space-y-2">
-              <li><strong className="text-[#0c264d]">Portable Micro-Schedules:</strong> Outings fail when the timeline becomes ambiguous. Staff should carry a highly visual, 3-step portable schedule to anchor the individual<sup className="text-green-600 font-bold ml-0.5">5</sup>.</li>
-              <li><strong className="text-[#0c264d]">Environmental Reconnaissance:</strong> Map out "escape hatches" (quiet aisles, park benches, service vehicles) before arriving where co-regulation can happen privately<sup className="text-green-600 font-bold ml-0.5">5</sup>.</li>
+              <li><strong className="text-[#0c264d]">Portable Micro-Schedules:</strong> Outings fail when the timeline becomes ambiguous. Staff should carry a highly visual, 3-step portable schedule to anchor the individual.</li>
+              <li><strong className="text-[#0c264d]">Environmental Reconnaissance:</strong> Map out "escape hatches" (quiet aisles, park benches, service vehicles) before arriving where co-regulation can happen privately.</li>
             </ul>
           </div>
         </div>
@@ -78,7 +78,7 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           <h4 className="font-bold text-[#0c264d] mb-2">Home Environments</h4>
           <ul className="text-sm text-gray-700 space-y-2">
             <li><strong className="text-[#0c264d]">Communication Continuity:</strong> Ensure the exact same visual icons, phrase structures, and AAC setups used at day support are physically present and utilized at home<sup className="text-green-600 font-bold ml-0.5">3</sup>.</li>
-            <li><strong className="text-[#0c264d]">Physical De-escalation Zones:</strong> Establish a designated, permanent "safe space" at home that is purely associated with comfort, never punishment<sup className="text-green-600 font-bold ml-0.5">5</sup>.</li>
+            <li><strong className="text-[#0c264d]">Physical De-escalation Zones:</strong> Establish a designated, permanent "safe space" at home that is purely associated with comfort, never punishment.</li>
           </ul>
         </div>
       </div>
@@ -98,13 +98,13 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           <div className="bg-red-50 p-4 rounded border border-red-100 shadow-sm">
             <div className="font-bold text-[#0c264d] text-sm mb-2 pb-1 border-b border-red-200">The L-Position</div>
             <p className="text-sm text-gray-700">
-              Stand at a 90-degree angle relative to the individual's hip, rather than square-front. This eliminates a direct line of sight for strikes and removes the confrontational "standoff" posture<sup className="text-green-600 font-bold ml-0.5">5</sup>.
+              Stand at a 90-degree angle relative to the individual's hip, rather than square-front. This eliminates a direct line of sight for strikes and removes the confrontational "standoff" posture.
             </p>
           </div>
           <div className="bg-red-50 p-4 rounded border border-red-100 shadow-sm">
             <div className="font-bold text-[#0c264d] text-sm mb-2 pb-1 border-b border-red-200">Environmental Triangulation</div>
             <p className="text-sm text-gray-700">
-              In any room or public venue, always position yourself so the individual is never between you and the exit. This prevents staff from being backed into corners during a sudden escalation<sup className="text-green-600 font-bold ml-0.5">5</sup>.
+              In any room or public venue, always position yourself so the individual is never between you and the exit. This prevents staff from being backed into corners during a sudden escalation.
             </p>
           </div>
           <div className="bg-red-50 p-4 rounded border border-red-100 shadow-sm">
@@ -121,10 +121,10 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
             Staff Trauma & The Symptom-Interaction Cycle
           </h4>
           <p className="text-sm text-gray-700 mb-3 leading-relaxed">
-            Working one-on-one with aggressive behavior causes cumulative nervous system trauma for staff. When a worker experiences chronic stress or hypervigilance, their micro-expressions change. They may display rigid posture, a sharper tone, or defensive pacing<sup className="text-green-600 font-bold ml-0.5">5</sup>.
+            Working one-on-one with aggressive behavior causes cumulative nervous system trauma for staff. When a worker experiences chronic stress or hypervigilance, their micro-expressions change. They may display rigid posture, a sharper tone, or defensive pacing.
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            The dysregulated individual immediately detects these subtle threat signals, which heightens their own panic and increases the likelihood of an aggressive outburst. Breaking this cycle requires a heavy emphasis on post-crisis staff debriefing and operational safety nets, rather than relying solely on individual worker stamina<sup className="text-green-600 font-bold ml-0.5">5</sup>.
+            The dysregulated individual immediately detects these subtle threat signals, which heightens their own panic and increases the likelihood of an aggressive outburst. Breaking this cycle requires a heavy emphasis on post-crisis staff debriefing and operational safety nets, rather than relying solely on individual worker stamina.
           </p>
         </div>
       </div>
@@ -145,7 +145,6 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
             <p>2. Behavior Frontiers. (2021). "Emotion Regulation and Aggression: A Systematic Review." <em>Behavioral Intervention Studies</em>.</p>
             <p>3. Autism Communication Network. (2019). "Generalization Gaps in AAC and Environmental Prompts." <em>Journal of Developmental Disabilities</em>.</p>
             <p>4. Crisis Prevention Institute (CPI). (2022). "De-escalation and Micro-Expressions in Care Settings." <em>Safety Protocols in Practice</em>.</p>
-            <p>5. Every Moment Counts. (2023). "Embedded Strategies for Environmental Modification & Safety." <em>Occupational Therapy Field Resources</em>.</p>
           </div>
         </div>
         
@@ -155,8 +154,9 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Teaching Autism: Supporting Students with Aggression or Meltdowns (Video Curriculum)</li>
-            <li>Ordinarily Available Inclusive Provision Guidelines</li>
+            <li>Every Moment Counts. (2023). "Embedded Strategies for Environmental Modification & Safety." Occupational Therapy Field Resources.</li>
+            <li>Teaching Autism: Supporting Students with Aggression or Meltdowns (Video Curriculum).</li>
+            <li>Ordinarily Available Inclusive Provision Guidelines.</li>
           </ul>
         </div>
       </div>

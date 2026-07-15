@@ -34,10 +34,10 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
       {/* Introduction */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
         <p className="text-sm leading-relaxed mb-4">
-          Occupational therapy (OT) helps people of all ages regain or build the skills needed for daily living. Rather than focusing strictly on physical movement, OT focuses on functional independence, supporting "occupations"—the meaningful activities that occupy your time, such as working, self-care, or play<sup className="text-green-600 font-bold ml-0.5">1</sup>.
+          Occupational therapy (OT) helps people of all ages regain or build the skills needed for daily living. Rather than focusing strictly on physical movement, OT focuses on functional independence, supporting "occupations"—the meaningful activities that occupy your time, such as working, self-care, or play.
         </p>
         <p className="text-sm leading-relaxed">
-          For autistic individuals, OT supports functional communication, sensory regulation, and daily independence across all support levels. Because autism impacts individuals differently, an OT evaluates unique strengths and challenges to help people adapt to physical, cognitive, or developmental challenges so they can participate in everyday life<sup className="text-green-600 font-bold ml-0.5">1, 2</sup>.
+          For autistic individuals, OT supports functional communication, sensory regulation, and daily independence across all support levels. Because autism impacts individuals differently, an OT evaluates unique strengths and challenges to help people adapt to physical, cognitive, or developmental challenges so they can participate in everyday life.
         </p>
       </div>
 
@@ -95,21 +95,21 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         </h2>
         
         <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-          An Affirming Sensory Diet is a personalized plan of daily physical activities and environmental adjustments designed to keep a person's nervous system feeling regulated and safe<sup className="text-green-600 font-bold ml-0.5">6</sup>. Unlike older, compliance-based approaches that tried to stop neurodivergent behaviors, an affirming sensory diet embraces neurodiversity-affirming care<sup className="text-green-600 font-bold ml-0.5">6</sup>. It treats self-stimulatory behaviors (stimming)—like rocking, hand-flapping, or humming—as vital, natural tools for self-regulation, rather than behaviors that need to be fixed or extinguished<sup className="text-green-600 font-bold ml-0.5">6</sup>.
+          An Affirming Sensory Diet is a personalized plan of daily physical activities and environmental adjustments designed to keep a person's nervous system feeling regulated and safe. Unlike older, compliance-based approaches that tried to stop neurodivergent behaviors, an affirming sensory diet embraces neurodiversity-affirming care. It treats self-stimulatory behaviors (stimming)—like rocking, hand-flapping, or humming—as vital, natural tools for self-regulation, rather than behaviors that need to be fixed or extinguished.
         </p>
 
         <div className="grid md:grid-cols-3 gap-4 mb-6">
           <div className="bg-white p-4 rounded border border-[#0A9DC4]/20 shadow-sm">
             <div className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">Proactive over Reactive</div>
-            <div className="text-sm text-gray-700">Schedule sensory inputs before dysregulation happens, instead of using them only during a meltdown<sup className="text-green-600 font-bold ml-0.5">6</sup>.</div>
+            <div className="text-sm text-gray-700">Schedule sensory inputs before dysregulation happens, instead of using them only during a meltdown.</div>
           </div>
           <div className="bg-white p-4 rounded border border-[#0A9DC4]/20 shadow-sm">
             <div className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">Support over Suppression</div>
-            <div className="text-sm text-gray-700">View stimming as a necessary tool that helps the brain process overwhelming environments<sup className="text-green-600 font-bold ml-0.5">6</sup>.</div>
+            <div className="text-sm text-gray-700">View stimming as a necessary tool that helps the brain process overwhelming environments.</div>
           </div>
           <div className="bg-white p-4 rounded border border-[#0A9DC4]/20 shadow-sm">
             <div className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">Collaboration over Compliance</div>
-            <div className="text-sm text-gray-700">Build the plan with the individual based on what feels good to them, not what makes them look "normal" to others<sup className="text-green-600 font-bold ml-0.5">6</sup>.</div>
+            <div className="text-sm text-gray-700">Build the plan with the individual based on what feels good to them, not what makes them look "normal" to others.</div>
           </div>
         </div>
 
@@ -118,38 +118,41 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         <div className="space-y-4">
           <div className="border-l-2 border-[#2abcd4] pl-4 py-1">
             <div className="font-bold text-[#0c264d] mb-1">1. Track the Current Sensory Profile</div>
-            <p className="text-sm text-gray-700 mb-1">Observe the individual throughout the day to identify their unique sensory needs. Do not look for ways to stop their stimming; instead, look for what their stimming is telling you<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
+            <p className="text-sm text-gray-700 mb-1">Observe the individual throughout the day to identify their unique sensory needs. Do not look for ways to stop their stimming; instead, look for what their stimming is telling you.</p>
             <ul className="text-sm text-gray-700 list-disc ml-5 space-y-1">
-              <li><strong>Sensory Seeking:</strong> Are they seeking movement (vestibular), deep pressure (proprioceptive), or specific sounds?<sup className="text-green-600 font-bold ml-0.5">6</sup></li>
-              <li><strong>Sensory Avoiding:</strong> Are they overwhelmed by bright lights, loud noises, or certain textures?<sup className="text-green-600 font-bold ml-0.5">6</sup></li>
+              <li><strong>Sensory Seeking:</strong> Are they seeking movement (vestibular), deep pressure (proprioceptive), or specific sounds?</li>
+              <li><strong>Sensory Avoiding:</strong> Are they overwhelmed by bright lights, loud noises, or certain textures?</li>
             </ul>
           </div>
           
           <div className="border-l-2 border-[#2abcd4] pl-4 py-1">
             <div className="font-bold text-[#0c264d] mb-1">2. Schedule Proactive "Sensory Snacks"</div>
-            <p className="text-sm text-gray-700 mb-1">Insert tailored sensory activities into the daily routine before demands or transitions occur, keeping the nervous system in a baseline state of safety<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
+            <p className="text-sm text-gray-700 mb-1">Insert tailored sensory activities into the daily routine before demands or transitions occur, keeping the nervous system in a baseline state of safety.</p>
             <ul className="text-sm text-gray-700 list-disc ml-5 space-y-1">
-              <li><strong>For movement seekers:</strong> Schedule regular intervals for jumping, swinging, or heavy work (like carrying groceries)<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
-              <li><strong>For calming:</strong> Provide predictable access to dim lighting, noise-canceling headphones, or weighted blankets<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
+              <li><strong>For movement seekers:</strong> Schedule regular intervals for jumping, swinging, or heavy work (like carrying groceries).</li>
+              <li><strong>For calming:</strong> Provide predictable access to dim lighting, noise-canceling headphones, or weighted blankets.</li>
             </ul>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-4 py-1">
             <div className="font-bold text-[#0c264d] mb-1">3. Modify the Environment</div>
-            <p className="text-sm text-gray-700 mb-1">Instead of forcing the person to tolerate an overwhelming environment, change the environment to reduce the baseline stress on their nervous system<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
+            <p className="text-sm text-gray-700 mb-2">Instead of forcing the person to tolerate an overwhelming environment, change the environment to reduce the baseline stress on their nervous system.</p>
             <ul className="text-sm text-gray-700 list-disc ml-5 space-y-1">
-              <li>Reduce visual clutter<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
-              <li>Use incandescent or natural light instead of flickering fluorescent bulbs<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
-              <li>Create a dedicated "quiet zone" where they can retreat freely<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
+              <li>Create a dedicated "quiet zone" where they can retreat freely.</li>
+              <li>Reduce visual clutter in primary living spaces.</li>
+              <li><strong>Sensory-Friendly Lighting:</strong> LED bulbs can be highly effective for autism sensory diets, provided you choose high-quality bulbs. Traditional fluorescent tubes can cause profound sensory overload due to audible hums and highly visible flickering, while quality LEDs are customizable to create a calming space.</li>
+              <li><strong>Zero Optical Flicker:</strong> Look for a "flicker-free" or "high-frequency" label. Low-quality LEDs strobe rapidly, which overtaxes the nervous system even if the pulsing is invisible to neurotypical eyes.</li>
+              <li><strong>Warm Color Temperatures:</strong> Opt for warm white tones (around 2700K or lower) instead of "cool white" or "daylight" to signal the nervous system to relax and wind down.</li>
+              <li><strong>Glare Minimization:</strong> Use bulbs with frosted glass lenses, diffusers, or smooth dimmability to minimize painful direct overhead glare and allow for autonomy.</li>
             </ul>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-4 py-1">
             <div className="font-bold text-[#0c264d] mb-1">4. Protect and Expand Stimming Space</div>
-            <p className="text-sm text-gray-700 mb-1">Never make access to stimming contingent on good behavior. Make it a safe, unpunished part of their day<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
+            <p className="text-sm text-gray-700 mb-1">Never make access to stimming contingent on good behavior. Make it a safe, unpunished part of their day.</p>
             <ul className="text-sm text-gray-700 list-disc ml-5 space-y-1">
-              <li><strong>Validate the stim:</strong> Recognize that a hand-flap or vocalization is the body successfully letting out steam<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
-              <li><strong>Offer safe alternatives if needed:</strong> Only redirect a stim if it causes physical harm (e.g., head-banging). Redirect it to a safe version that provides the exact same sensory feedback, like trading head-banging for a crash mat or a heavy vibration toy<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
+              <li><strong>Validate the stim:</strong> Recognize that a hand-flap or vocalization is the body successfully letting out steam.</li>
+              <li><strong>Offer safe alternatives if needed:</strong> Only redirect a stim if it causes physical harm (e.g., head-banging). Redirect it to a safe version that provides the exact same sensory feedback, like trading head-banging for a crash mat or a heavy vibration toy.</li>
             </ul>
           </div>
         </div>
@@ -253,7 +256,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
               <ArrowRight className="text-[#0A9DC4]" size={16} /> Interoception Curriculums
             </h4>
             <p className="text-sm text-gray-700 mb-2">Interoception is the internal sense of recognizing hunger, pain, temperature, and emotional states. Autistic individuals often have disrupted interoceptive signals.</p>
-            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "Do you utilize interoception mapping or curriculums to help them recognize their internal body signals, rather than just treating external behaviors?"<sup className="text-green-600 font-bold ml-0.5">4</sup></p>
+            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "Do you utilize interoception mapping or curriculums to help them recognize their internal body signals, rather than just treating external behaviors?"</p>
           </div>
 
           <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
@@ -261,15 +264,15 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
               <ArrowRight className="text-[#0A9DC4]" size={16} /> The CO-OP Approach
             </h4>
             <p className="text-sm text-gray-700 mb-2">Cognitive Orientation to daily Occupational Performance (CO-OP) is an active, collaborative approach where the individual guides their own motor-skill goals (like learning to ride a bike or tie shoes) through problem-solving.</p>
-            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "Are you familiar with the CO-OP approach to allow them to lead their own goal-setting and problem-solving?"<sup className="text-green-600 font-bold ml-0.5">5</sup></p>
+            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "Are you familiar with the CO-OP approach to allow them to lead their own goal-setting and problem-solving?"</p>
           </div>
 
           <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
             <h4 className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
               <ArrowRight className="text-[#0A9DC4]" size={16} /> Affirming Sensory Diets
             </h4>
-            <p className="text-sm text-gray-700 mb-2">Sensory diets should proactively regulate the nervous system, not punish or extinguish natural "stimming" (self-stimulatory behavior)<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
-            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "How do you build a proactive sensory diet that supports their natural regulation, rather than trying to suppress their stimming?"<sup className="text-green-600 font-bold ml-0.5">6</sup></p>
+            <p className="text-sm text-gray-700 mb-2">Sensory diets should proactively regulate the nervous system, not punish or extinguish natural "stimming" (self-stimulatory behavior).</p>
+            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "How do you build a proactive sensory diet that supports their natural regulation, rather than trying to suppress their stimming?"</p>
           </div>
         </div>
       </div>
@@ -321,26 +324,26 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-            Cited Studies & Literature
+            Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
             <p>1. Case-Smith, J., & Arbesman, M. (2008). "Evidence-based review of interventions for autism used in or of relevance to occupational therapy." <em>American Journal of Occupational Therapy</em>, 62(4), 416-429.</p>
             <p>2. Schaaf, R. C., et al. (2014). "An intervention for sensory difficulties in children with autism: A randomized trial." <em>Journal of Autism and Developmental Disorders</em>, 44(7), 1493-1506.</p>
             <p>3. Dallman, A. R., et al. (2022). "Neurodiversity-Affirming Practices in Occupational Therapy." <em>American Journal of Occupational Therapy</em>, 76(Supplement_1).</p>
-            <p>4. Mahler, K. (2015). <em>Interoception: The Eighth Sensory System</em>. AAPC Publishing.</p>
-            <p>5. Polatajko, H. J., & Mandich, A. (2004). <em>Enabling occupation in children: The cognitive orientation to daily occupational performance (CO-OP) approach</em>. CAOT Publications ACE.</p>
-            <p>6. Dunn, W. (2014). <em>Sensory Profile 2: User's Manual and Assessing Sensory Processing</em>. Pearson Clinical Assessment.</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
-            Background Academic Textbooks
+            Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
             <li>Ayres, A. J. (2005). Sensory Integration and the Child: Understanding Hidden Sensory Challenges. Western Psychological Services.</li>
+            <li>Dunn, W. (2014). Sensory Profile 2: User's Manual and Assessing Sensory Processing. Pearson Clinical Assessment.</li>
             <li>Kramer, P., Hinojosa, J., & Royeen, C. B. (2020). Perspectives in Human Occupation: Participation in Life. F.A. Davis Company.</li>
+            <li>Mahler, K. (2015). Interoception: The Eighth Sensory System. AAPC Publishing.</li>
+            <li>Polatajko, H. J., & Mandich, A. (2004). Enabling occupation in children: The cognitive orientation to daily occupational performance (CO-OP) approach. CAOT Publications ACE.</li>
             <li>Roley, S. S., et al. (2008). "Understanding occupational therapy using the AOTA Practice Framework." American Journal of Occupational Therapy.</li>
           </ul>
         </div>
