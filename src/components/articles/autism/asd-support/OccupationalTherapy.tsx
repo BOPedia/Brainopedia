@@ -95,21 +95,21 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         </h2>
         
         <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-          An Affirming Sensory Diet is a personalized plan of daily physical activities and environmental adjustments designed to keep a person's nervous system feeling regulated and safe[cite: 6]. Unlike older, compliance-based approaches that tried to stop neurodivergent behaviors, an affirming sensory diet embraces neurodiversity-affirming care[cite: 6]. It treats self-stimulatory behaviors (stimming)—like rocking, hand-flapping, or humming—as vital, natural tools for self-regulation, rather than behaviors that need to be fixed or extinguished[cite: 6].
+          An Affirming Sensory Diet is a personalized plan of daily physical activities and environmental adjustments designed to keep a person's nervous system feeling regulated and safe<sup className="text-green-600 font-bold ml-0.5">6</sup>. Unlike older, compliance-based approaches that tried to stop neurodivergent behaviors, an affirming sensory diet embraces neurodiversity-affirming care<sup className="text-green-600 font-bold ml-0.5">6</sup>. It treats self-stimulatory behaviors (stimming)—like rocking, hand-flapping, or humming—as vital, natural tools for self-regulation, rather than behaviors that need to be fixed or extinguished<sup className="text-green-600 font-bold ml-0.5">6</sup>.
         </p>
 
         <div className="grid md:grid-cols-3 gap-4 mb-6">
           <div className="bg-white p-4 rounded border border-[#0A9DC4]/20 shadow-sm">
             <div className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">Proactive over Reactive</div>
-            <div className="text-sm text-gray-700">Schedule sensory inputs before dysregulation happens, instead of using them only during a meltdown[cite: 6].</div>
+            <div className="text-sm text-gray-700">Schedule sensory inputs before dysregulation happens, instead of using them only during a meltdown<sup className="text-green-600 font-bold ml-0.5">6</sup>.</div>
           </div>
           <div className="bg-white p-4 rounded border border-[#0A9DC4]/20 shadow-sm">
             <div className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">Support over Suppression</div>
-            <div className="text-sm text-gray-700">View stimming as a necessary tool that helps the brain process overwhelming environments[cite: 6].</div>
+            <div className="text-sm text-gray-700">View stimming as a necessary tool that helps the brain process overwhelming environments<sup className="text-green-600 font-bold ml-0.5">6</sup>.</div>
           </div>
           <div className="bg-white p-4 rounded border border-[#0A9DC4]/20 shadow-sm">
             <div className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">Collaboration over Compliance</div>
-            <div className="text-sm text-gray-700">Build the plan with the individual based on what feels good to them, not what makes them look "normal" to others[cite: 6].</div>
+            <div className="text-sm text-gray-700">Build the plan with the individual based on what feels good to them, not what makes them look "normal" to others<sup className="text-green-600 font-bold ml-0.5">6</sup>.</div>
           </div>
         </div>
 
@@ -118,38 +118,38 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         <div className="space-y-4">
           <div className="border-l-2 border-[#2abcd4] pl-4 py-1">
             <div className="font-bold text-[#0c264d] mb-1">1. Track the Current Sensory Profile</div>
-            <p className="text-sm text-gray-700 mb-1">Observe the individual throughout the day to identify their unique sensory needs. Do not look for ways to stop their stimming; instead, look for what their stimming is telling you[cite: 6].</p>
+            <p className="text-sm text-gray-700 mb-1">Observe the individual throughout the day to identify their unique sensory needs. Do not look for ways to stop their stimming; instead, look for what their stimming is telling you<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
             <ul className="text-sm text-gray-700 list-disc ml-5 space-y-1">
-              <li><strong>Sensory Seeking:</strong> Are they seeking movement (vestibular), deep pressure (proprioceptive), or specific sounds?[cite: 6]</li>
-              <li><strong>Sensory Avoiding:</strong> Are they overwhelmed by bright lights, loud noises, or certain textures?[cite: 6]</li>
+              <li><strong>Sensory Seeking:</strong> Are they seeking movement (vestibular), deep pressure (proprioceptive), or specific sounds?<sup className="text-green-600 font-bold ml-0.5">6</sup></li>
+              <li><strong>Sensory Avoiding:</strong> Are they overwhelmed by bright lights, loud noises, or certain textures?<sup className="text-green-600 font-bold ml-0.5">6</sup></li>
             </ul>
           </div>
           
           <div className="border-l-2 border-[#2abcd4] pl-4 py-1">
             <div className="font-bold text-[#0c264d] mb-1">2. Schedule Proactive "Sensory Snacks"</div>
-            <p className="text-sm text-gray-700 mb-1">Insert tailored sensory activities into the daily routine before demands or transitions occur, keeping the nervous system in a baseline state of safety[cite: 6].</p>
+            <p className="text-sm text-gray-700 mb-1">Insert tailored sensory activities into the daily routine before demands or transitions occur, keeping the nervous system in a baseline state of safety<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
             <ul className="text-sm text-gray-700 list-disc ml-5 space-y-1">
-              <li><strong>For movement seekers:</strong> Schedule regular intervals for jumping, swinging, or heavy work (like carrying groceries)[cite: 6].</li>
-              <li><strong>For calming:</strong> Provide predictable access to dim lighting, noise-canceling headphones, or weighted blankets[cite: 6].</li>
+              <li><strong>For movement seekers:</strong> Schedule regular intervals for jumping, swinging, or heavy work (like carrying groceries)<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
+              <li><strong>For calming:</strong> Provide predictable access to dim lighting, noise-canceling headphones, or weighted blankets<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
             </ul>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-4 py-1">
             <div className="font-bold text-[#0c264d] mb-1">3. Modify the Environment</div>
-            <p className="text-sm text-gray-700 mb-1">Instead of forcing the person to tolerate an overwhelming environment, change the environment to reduce the baseline stress on their nervous system[cite: 6].</p>
+            <p className="text-sm text-gray-700 mb-1">Instead of forcing the person to tolerate an overwhelming environment, change the environment to reduce the baseline stress on their nervous system<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
             <ul className="text-sm text-gray-700 list-disc ml-5 space-y-1">
-              <li>Reduce visual clutter[cite: 6].</li>
-              <li>Use incandescent or natural light instead of flickering fluorescent bulbs[cite: 6].</li>
-              <li>Create a dedicated "quiet zone" where they can retreat freely[cite: 6].</li>
+              <li>Reduce visual clutter<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
+              <li>Use incandescent or natural light instead of flickering fluorescent bulbs<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
+              <li>Create a dedicated "quiet zone" where they can retreat freely<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
             </ul>
           </div>
 
           <div className="border-l-2 border-[#2abcd4] pl-4 py-1">
             <div className="font-bold text-[#0c264d] mb-1">4. Protect and Expand Stimming Space</div>
-            <p className="text-sm text-gray-700 mb-1">Never make access to stimming contingent on good behavior. Make it a safe, unpunished part of their day[cite: 6].</p>
+            <p className="text-sm text-gray-700 mb-1">Never make access to stimming contingent on good behavior. Make it a safe, unpunished part of their day<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
             <ul className="text-sm text-gray-700 list-disc ml-5 space-y-1">
-              <li><strong>Validate the stim:</strong> Recognize that a hand-flap or vocalization is the body successfully letting out steam[cite: 6].</li>
-              <li><strong>Offer safe alternatives if needed:</strong> Only redirect a stim if it causes physical harm (e.g., head-banging). Redirect it to a safe version that provides the exact same sensory feedback, like trading head-banging for a crash mat or a heavy vibration toy[cite: 6].</li>
+              <li><strong>Validate the stim:</strong> Recognize that a hand-flap or vocalization is the body successfully letting out steam<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
+              <li><strong>Offer safe alternatives if needed:</strong> Only redirect a stim if it causes physical harm (e.g., head-banging). Redirect it to a safe version that provides the exact same sensory feedback, like trading head-banging for a crash mat or a heavy vibration toy<sup className="text-green-600 font-bold ml-0.5">6</sup>.</li>
             </ul>
           </div>
         </div>
@@ -268,8 +268,8 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
             <h4 className="font-bold text-[#0c264d] mb-1 flex items-center gap-2">
               <ArrowRight className="text-[#0A9DC4]" size={16} /> Affirming Sensory Diets
             </h4>
-            <p className="text-sm text-gray-700 mb-2">Sensory diets should proactively regulate the nervous system, not punish or extinguish natural "stimming" (self-stimulatory behavior)[cite: 6].</p>
-            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "How do you build a proactive sensory diet that supports their natural regulation, rather than trying to suppress their stimming?"[cite: 6]</p>
+            <p className="text-sm text-gray-700 mb-2">Sensory diets should proactively regulate the nervous system, not punish or extinguish natural "stimming" (self-stimulatory behavior)<sup className="text-green-600 font-bold ml-0.5">6</sup>.</p>
+            <p className="text-sm italic text-[#0c264d]"><strong>Ask:</strong> "How do you build a proactive sensory diet that supports their natural regulation, rather than trying to suppress their stimming?"<sup className="text-green-600 font-bold ml-0.5">6</sup></p>
           </div>
         </div>
       </div>
@@ -329,6 +329,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
             <p>3. Dallman, A. R., et al. (2022). "Neurodiversity-Affirming Practices in Occupational Therapy." <em>American Journal of Occupational Therapy</em>, 76(Supplement_1).</p>
             <p>4. Mahler, K. (2015). <em>Interoception: The Eighth Sensory System</em>. AAPC Publishing.</p>
             <p>5. Polatajko, H. J., & Mandich, A. (2004). <em>Enabling occupation in children: The cognitive orientation to daily occupational performance (CO-OP) approach</em>. CAOT Publications ACE.</p>
+            <p>6. Dunn, W. (2014). <em>Sensory Profile 2: User's Manual and Assessing Sensory Processing</em>. Pearson Clinical Assessment.</p>
           </div>
         </div>
         
@@ -339,7 +340,6 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
             <li>Ayres, A. J. (2005). Sensory Integration and the Child: Understanding Hidden Sensory Challenges. Western Psychological Services.</li>
-            <li>Dunn, W. (2014). Sensory Profile 2: User's Manual. Pearson Clinical Assessment.</li>
             <li>Kramer, P., Hinojosa, J., & Royeen, C. B. (2020). Perspectives in Human Occupation: Participation in Life. F.A. Davis Company.</li>
             <li>Roley, S. S., et al. (2008). "Understanding occupational therapy using the AOTA Practice Framework." American Journal of Occupational Therapy.</li>
           </ul>

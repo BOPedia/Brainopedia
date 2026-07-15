@@ -493,6 +493,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
             A speech therapist cannot simply ask, <em>"How do you feel?"</em> if the individual cannot interpret their body's signals. Therapy often involves bridging this gap—using body mapping and visual scales to connect physical sensations (e.g., a tight chest) to vocabulary (e.g., anxiety).
           </p>
         </div>
+        
 {/* ===== LINK TO DYSREGULATION PAGE ===== */}
 <div className="mt-6 flex justify-center print:hidden">
   <button 
