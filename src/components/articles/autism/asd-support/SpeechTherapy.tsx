@@ -313,7 +313,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </p>
 
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-teens-young-adults-level3.png"
+          src="/images/autism/autism-support-TTtab-speech-teens-young-adults-level3.WebP"
           alt="Attunement for Profound Autism"
           className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
         />
