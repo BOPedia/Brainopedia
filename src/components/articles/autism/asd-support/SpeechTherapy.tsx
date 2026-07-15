@@ -493,6 +493,16 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
             A speech therapist cannot simply ask, <em>"How do you feel?"</em> if the individual cannot interpret their body's signals. Therapy often involves bridging this gap—using body mapping and visual scales to connect physical sensations (e.g., a tight chest) to vocabulary (e.g., anxiety).
           </p>
         </div>
+{/* ===== LINK TO DYSREGULATION PAGE ===== */}
+<div className="mt-6 flex justify-center print:hidden">
+  <button 
+    onClick={() => setCurrentArticle?.('autism-dysregulation')}
+    className="bg-[#0A9DC4] hover:bg-[#0c264d] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md"
+  >
+    For more information on supporting dysregulation in autism - which can lead to aggression - click here.
+    <span className="text-xl">&rarr;</span>
+  </button>
+</div>
 
         {/* Social Pragmatics */}
         <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm flex flex-col">
