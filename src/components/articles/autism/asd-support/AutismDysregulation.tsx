@@ -38,7 +38,7 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
     alt="Caregiver and individual co-regulation"
     className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
   />
-  <p className="text-md leading-relaxed text-gray-700">
+  <p className="text-base leading-relaxed text-gray-700">
     Navigating dysregulation is a profoundly shared experience between the autistic individual and their support team. When the nervous system is pushed to its limits—often due to overwhelming sensory input or a lack of accessible communication tools—it creates intense distress for the individual and a parallel layer of stress for the caregiver. True support is never about compliance or controlling behavior; it is about building a co-regulated partnership where the individual’s urgent need for physical and emotional safety, and the caregiver’s need for sustainable, compassionate strategies, are equally prioritized and deeply honored.
   </p>
   {/* The Clearing Rule: ensures the background box stretches to fit the floated image if the text is short */}
