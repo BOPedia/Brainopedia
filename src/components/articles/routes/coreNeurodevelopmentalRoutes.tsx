@@ -48,6 +48,9 @@ export const coreNeurodevelopmentalRoutes: RouteMap = {
   'autism-mental-health': lazy(() => import('../autism/asd-support/MentalHealth').then(m => ({ default: m.MentalHealth }))),
   'autism-physical-therapy': lazy(() => import('../autism/asd-support/PhysicalTherapy').then(m => ({ default: m.PhysicalTherapy }))),
   
+  // NEW DYSREGULATION ROUTE 
+  'autism-dysregulation': lazy(() => import('../autism/asd-support/AutismDysregulation').then(m => ({ default: m.AutismDysregulation }))),
+  
   // Autism Causes Deep Dives
   'autism-epigenetics': lazy(() => import('../autism/asd-causes/Epigenetics').then(m => ({ default: m.Epigenetics }))),
-}; 
+};
