@@ -71,7 +71,25 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           Systemic reviews confirm that individuals experiencing emotion dysregulation are significantly more likely to engage in physical aggression, especially when feeling trapped, misunderstood, or unable to self-soothe<sup className="text-green-600 font-bold ml-0.5">2</sup>. By providing robust, alternative communication methods, aggressive behavior naturally decreases as autonomy increases.
         </p>
       </div>
-
+{/* ===== HIDDEN PAIN: MEDICAL & TRAUMA TRIGGERS ===== */}
+<div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ff6b6b] mb-8">
+  <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+    <Activity className="text-[#ff6b6b]" size={24} /> 
+    Hidden Pain: Medical Comorbidities & Trauma
+  </h2>
+  
+  <p className="text-base leading-relaxed mb-4 text-gray-700">
+    When evaluating dysregulation, it is critical to look beyond the surface behavior and audit for hidden pain, unmet physical needs, or underlying trauma. Because many autistic individuals experience differences in interoception—the ability to recognize internal bodily signals—or face significant communication barriers, what appears to be an aggressive outburst is frequently an urgent, desperate communication of acute physical distress.
+  </p>
+  
+  <p className="text-base leading-relaxed mb-4 text-gray-700">
+    Research indicates that medical comorbidities are highly prevalent in the autistic community; for instance, gastrointestinal (GI) disorders affect between 46% and 84% of autistic children<sup className="text-green-600 font-bold ml-0.5">6</sup>, while migraine prevalence in autistic adults is estimated at over 42%, more than double the rate of the general population<sup className="text-green-600 font-bold ml-0.5">7</sup>.
+  </p>
+  
+  <p className="text-base leading-relaxed text-gray-700">
+    When an individual cannot verbally articulate that they are experiencing debilitating acid reflux, severe constipation, a blinding headache, a blood-sugar crash from hunger, or a nervous system flashback triggered by past trauma, their biological fight-or-flight system naturally takes over. Reframing reactive behavior as a distress signal for hidden physical pain allows support teams to shift away from behavioral management and toward compassionate medical and emotional attunement.
+  </p>
+</div>
       {/* ===== BRIDGING THE GENERALIZATION GAP ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
