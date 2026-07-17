@@ -68,7 +68,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
-          <p>
+          <p className="text-base leading-relaxed text-gray-700">
             <strong>Autism spectrum disorder (ASD)</strong> is a neurodevelopmental condition characterized 
             by differences in social communication and interaction, alongside restricted or repetitive patterns of 
             behavior, interests, or activities. The term "spectrum" reflects the wide variation in challenges and 
@@ -96,45 +96,45 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
       </div>
 
       <div className="space-y-8 mt-20 clear-both">
-<section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
-  <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-  
-  <p className="mb-4 text-base leading-relaxed text-gray-700">
-    <ImageWithFallback
-      src="/images/autism/autism-main-overview.png"
-      alt="Autism Overview"
-      className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
-    />
-    Autism is a lifelong neurodevelopmental condition that affects how people perceive the world and interact 
-    with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup className="text-green-600 font-bold ml-0.5">1</sup> with 
-    increasing recognition and diagnosis rates in recent years. It's important to recognize that autism is 
-    not a disease or disorder that needs to be "cured."
-  </p>
-  
-  <p className="mb-4 text-base leading-relaxed text-gray-700">
-    Many autistic individuals and advocates promote the concept of neurodiversity, viewing autism as a natural 
-    variation in human neurology rather than a deficit. The neurodiversity paradigm emphasizes acceptance, 
-    accommodation, and celebration of neurological differences while providing support where needed.
-  </p>
-  <button
-    onClick={(e) => {
-      e.preventDefault();
-      setCurrentArticle?.('autism-overview');
-    }}
-    className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
-  >
-    Read more →
-  </button>
-</section>
+        <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
+          
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
+            <ImageWithFallback
+              src="/images/autism/autism-main-overview.png"
+              alt="Autism Overview"
+              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
+            />
+            Autism is a lifelong neurodevelopmental condition that affects how people perceive the world and interact 
+            with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup className="text-green-600 font-bold ml-0.5">1</sup> with 
+            increasing recognition and diagnosis rates in recent years. It's important to recognize that autism is 
+            not a disease or disorder that needs to be "cured."
+          </p>
+          
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
+            Many autistic individuals and advocates promote the concept of neurodiversity, viewing autism as a natural 
+            variation in human neurology rather than a deficit. The neurodiversity paradigm emphasizes acceptance, 
+            accommodation, and celebration of neurological differences while providing support where needed.
+          </p>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentArticle?.('autism-overview');
+            }}
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+          >
+            Read more →
+          </button>
+        </section>
 
-        <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             <ImageWithFallback
               src="/images/autism/autism-main-symptoms.png"
               alt="Autism Symptoms and Characteristics"
-              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             Autism is characterized by differences in social communication and interaction, alongside restricted or 
             repetitive behaviors and interests. The way these characteristics present varies significantly from person 
@@ -144,7 +144,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
             or focused interests in specific topics.
           </p>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             It's crucial to understand that these characteristics exist on a continuum, and each autistic individual 
             has a unique profile of strengths and challenges. Many autistic people also possess remarkable abilities 
             in pattern recognition, attention to detail, creative thinking, and sustained focus on areas of interest.
@@ -160,19 +160,19 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           </button>
         </section>
 
-        <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             <ImageWithFallback
               src="/images/autism/autism-main-causes.png"
               alt="Autism Causes and Origins"
-              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             The exact causes of autism are not fully understood, but research indicates that both genetic and environmental factors contribute to its development.<sup className="text-green-600 font-bold ml-0.5">2</sup> Autism is best understood as arising from differences in brain development that occur before birth. Studies have identified hundreds of genes associated with autism, though no single gene causes autism in most cases.<sup className="text-green-600 font-bold ml-0.5">3</sup>
           </p>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             Brain imaging studies have revealed differences in brain structure and connectivity in autistic individuals, particularly in areas related to social cognition, sensory processing, and executive function.<sup className="text-green-600 font-bold ml-0.5">4</sup> These neurological differences help explain why autistic people may process information, perceive sensory input, and interact socially in ways that differ from neurotypical individuals.
           </p>
           <button
@@ -186,19 +186,19 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           </button>
         </section>
 
-        <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             <ImageWithFallback
               src="/images/autism/autism-main-diagnosis.png"
               alt="Autism Testing and Diagnosis"
-              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             Autism is typically diagnosed through comprehensive developmental and behavioral evaluation by qualified professionals such as developmental pediatricians, child psychologists, or neurologists. There is no medical test (like a blood test or brain scan) for autism. Diagnosis is based on observation of behavior and developmental history using standardized diagnostic criteria from the DSM-5-TR, among other gold standard measures.<sup className="text-green-600 font-bold ml-0.5">5</sup>
           </p>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             While autism can often be reliably diagnosed by age 2, many children are not diagnosed until they are older, and some adults are diagnosed later in life after years of unrecognized struggles. The DSM-5-TR includes three levels of support needs (Level 1, 2, and 3)<sup className="text-green-600 font-bold ml-0.5">5</sup> to help describe the amount of assistance an individual may require in daily functioning.
           </p>
           <button
@@ -212,14 +212,14 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           </button>
         </section>
 
-        <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             <ImageWithFallback
               src="/images/autism/autism-main-support.png"
               alt="Autism Support and Management"
-              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             Support for autistic individuals should be individualized based on their unique needs, strengths, and 
             preferences. The goal is to provide accommodations and support that help autistic people thrive while 
@@ -229,7 +229,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
             services for co-occurring conditions like anxiety.
           </p>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             Many autistic adults and advocates emphasize the importance of neurodiversity-affirming approaches that 
             focus on acceptance, building on strengths, and providing support without trying to eliminate autistic 
             traits that are part of the person's identity.
@@ -245,14 +245,14 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
           </button>
         </section>
 
-        <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Autism</h2>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             <ImageWithFallback
               src="/images/autism/autism-main-living.png"
               alt="Living with Autism"
-              className="w-48 h-auto float-right ml-4 mb-4 rounded"
+              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             Autistic individuals lead full and meaningful lives across all areas of society. While autism presents 
             challenges, many autistic people also describe unique strengths and perspectives that enrich their lives 
@@ -260,7 +260,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
             creative and innovative thinking, and strong sense of justice and authenticity.
           </p>
           
-          <p className="mb-4">
+          <p className="mb-4 text-base leading-relaxed text-gray-700">
             Topics related to living with autism include recognizing and celebrating autistic strengths, navigating 
             daily life with appropriate accommodations, connecting with the autistic community and finding peer support, 
             fostering positive autistic identity, developing self-advocacy skills, and understanding legal protections 
