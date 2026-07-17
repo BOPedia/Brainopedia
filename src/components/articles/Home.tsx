@@ -35,8 +35,8 @@ export function Home({ setCurrentArticle }: HomeProps) {
           </p>
         </section>
 
-        {/* Encyclopedia Volumes */}
-        <section className="space-y-6">
+        {/* Encyclopedia Volumes - NOW CONSTRAINED TO max-w-4xl */}
+        <section className="max-w-4xl space-y-6">
           <h2 className="text-[#0c264d] font-bold mb-6 text-2xl">Encyclopedia Volumes</h2>
 
           {/* Volume 1: Core Neurodevelopmental */}
