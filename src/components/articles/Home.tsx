@@ -41,7 +41,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
 
           {/* Volume 1: Core Neurodevelopmental */}
           <div className="bg-gradient-to-br from-[#2abcd4]/20 to-[#2abcd4]/5 p-6 rounded-xl border-2 border-[#2abcd4] shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
-            <img src="/images/home-apple-core-neurodev.png" alt="Neural apple" className="w-48 sm:w-64 shrink-0 h-auto rounded-lg shadow-md" />
+            <img src="/images/home-apple-core-neurodev.png" alt="Neural apple" className="w-40 sm:w-48 shrink-0 h-auto rounded-lg shadow-md" />
             <div className="flex-1 w-full text-center sm:text-left">
               <h3 className="text-[#0c264d] text-xl font-bold mb-2">Core Neurodevelopmental</h3>
               <p className="mb-4 text-base leading-relaxed text-gray-700">Fundamental neurodevelopmental conditions affecting attention, social communication, and sensory processing from early childhood.</p>
@@ -54,7 +54,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
 
           {/* Volume 2: Learning Differences */}
           <div className="bg-gradient-to-br from-[#ffd166]/30 to-[#ffd166]/5 p-6 rounded-xl border-2 border-[#ffd166] shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
-            <img src="/images/home-learning-diff.png" alt="Gears" className="w-48 sm:w-64 shrink-0 h-auto rounded-lg shadow-md" />
+            <img src="/images/home-learning-diff.png" alt="Gears" className="w-40 sm:w-48 shrink-0 h-auto rounded-lg shadow-md" />
             <div className="flex-1 w-full text-center sm:text-left">
               <h3 className="text-[#0c264d] text-xl font-bold mb-2">Learning Differences & Profiles</h3>
               <p className="mb-4 text-base leading-relaxed text-gray-700">Profiles affecting how individuals process, retain, and express information across reading, writing, and math.</p>
@@ -70,7 +70,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
 
           {/* Volume 3: Processing & Sensory */}
           <div className="bg-gradient-to-br from-[#ec4899]/20 to-[#ec4899]/5 p-6 rounded-xl border-2 border-[#ec4899] shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
-            <img src="/images/home-math-sensory-brain.png" alt="Sensory" className="w-48 sm:w-64 shrink-0 h-auto rounded-lg shadow-md" />
+            <img src="/images/home-math-sensory-brain.png" alt="Sensory" className="w-40 sm:w-48 shrink-0 h-auto rounded-lg shadow-md" />
             <div className="flex-1 w-full text-center sm:text-left">
               <h3 className="text-[#0c264d] text-xl font-bold mb-2">Processing & Sensory</h3>
               <p className="mb-4 text-base leading-relaxed text-gray-700">Atypical ways of interpreting sensory information like auditory, visual, and tactile inputs.</p>
@@ -86,7 +86,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
 
           {/* Volume 4: Movement & Motor */}
           <div className="bg-gradient-to-br from-[#ffd700]/30 to-[#ffd700]/5 p-6 rounded-xl border-2 border-[#ffd700] shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
-            <img src="/images/home-movement-motor.png" alt="Motor" className="w-48 sm:w-64 shrink-0 h-auto rounded-lg shadow-md" />
+            <img src="/images/home-movement-motor.png" alt="Motor" className="w-40 sm:w-48 shrink-0 h-auto rounded-lg shadow-md" />
             <div className="flex-1 w-full text-center sm:text-left">
               <h3 className="text-[#0c264d] text-xl font-bold mb-2">Movement & Motor</h3>
               <p className="mb-4 text-base leading-relaxed text-gray-700">Conditions affecting the brain's ability to plan, coordinate, and execute physical movements.</p>
@@ -99,7 +99,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
 
           {/* Volume 5: Mental Health Crossovers */}
           <div className="bg-gradient-to-br from-[#0a9dc4]/20 to-[#0a9dc4]/5 p-6 rounded-xl border-2 border-[#0a9dc4] shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
-            <img src="/images/home-mental-health-fire-brain-bright.png" alt="Brain" className="w-48 sm:w-64 shrink-0 h-auto rounded-lg shadow-md" />
+            <img src="/images/home-mental-health-fire-brain-bright.png" alt="Brain" className="w-40 sm:w-48 shrink-0 h-auto rounded-lg shadow-md" />
             <div className="flex-1 w-full text-center sm:text-left">
               <h3 className="text-[#0c264d] text-xl font-bold mb-2">Mental Health Crossovers</h3>
               <p className="mb-4 text-base leading-relaxed text-gray-700">Distinctive neurological patterns at the intersection of neurodivergence and mental health.</p>
@@ -115,7 +115,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
 
           {/* Volume 6: Genetic or Environmental */}
           <div className="bg-gradient-to-br from-[#8b5cf6]/20 to-[#8b5cf6]/5 p-6 rounded-xl border-2 border-[#8b5cf6] shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
-            <img src="/images/home-genetics-or-enviro.png" alt="DNA" className="w-48 sm:w-64 shrink-0 h-auto rounded-lg shadow-md" />
+            <img src="/images/home-genetics-or-enviro.png" alt="DNA" className="w-40 sm:w-48 shrink-0 h-auto rounded-lg shadow-md" />
             <div className="flex-1 w-full text-center sm:text-left">
               <h3 className="text-[#0c264d] text-xl font-bold mb-2">Genetic or Environmental</h3>
               <p className="mb-4 text-base leading-relaxed text-gray-700">Conditions arising from genetic variations or environmental factors during early development.</p>
@@ -131,7 +131,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
 
           {/* Volume 7: Acquired Neurodivergence */}
           <div className="bg-gradient-to-br from-[#ffcc00]/25 to-[#ffcc00]/5 p-6 rounded-xl border-2 border-[#ffcc00] shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
-            <img src="/images/home-acquired-brain.png" alt="Injury" className="w-48 sm:w-64 shrink-0 h-auto rounded-lg shadow-md" />
+            <img src="/images/home-acquired-brain.png" alt="Injury" className="w-40 sm:w-48 shrink-0 h-auto rounded-lg shadow-md" />
             <div className="flex-1 w-full text-center sm:text-left">
               <h3 className="text-[#0c264d] text-xl font-bold mb-2">Acquired Neurodivergence</h3>
               <p className="mb-4 text-base leading-relaxed text-gray-700">Neurological differences that can develop at any point across the lifespan due to injury, illness, or environmental factors.</p>
