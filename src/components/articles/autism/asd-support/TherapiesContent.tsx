@@ -25,7 +25,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       </div>
 
       {/* SPEECH THERAPY */}
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row-reverse gap-6 items-center sm:items-start">
         <div className="w-32 md:w-40 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
@@ -46,7 +46,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       </div>
 
       {/* OCCUPATIONAL THERAPY */}
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row-reverse gap-6 items-center sm:items-start">
         <div className="w-32 md:w-40 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
@@ -67,7 +67,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       </div>
 
       {/* ABA THERAPY */}
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row-reverse gap-6 items-center sm:items-start">
         <div className="w-32 md:w-40 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
@@ -88,7 +88,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       </div>
 
       {/* SOCIAL SKILLS SUPPORT */}
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row-reverse gap-6 items-center sm:items-start">
         <div className="w-32 md:w-40 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
@@ -109,7 +109,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       </div>
 
       {/* MENTAL HEALTH SUPPORT */}
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row-reverse gap-6 items-center sm:items-start">
         <div className="w-32 md:w-40 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
@@ -130,7 +130,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
       </div>
 
       {/* PHYSICAL THERAPY */}
-      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+      <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-6 flex flex-col sm:flex-row-reverse gap-6 items-center sm:items-start">
         <div className="w-32 md:w-40 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
