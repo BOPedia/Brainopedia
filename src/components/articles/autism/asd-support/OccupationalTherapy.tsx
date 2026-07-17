@@ -8,7 +8,8 @@ interface OccupationalTherapyProps {
 }
 
 export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyProps) {
-  
+  const responsiveImageClass = "w-full h-auto rounded-md border border-gray-300 shadow-sm";
+
   return (
     <div id="full-ot-article" className="space-y-6 text-[#0c264d] font-spartan animate-in fade-in duration-300">
       
@@ -164,7 +165,11 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
           </div>
         </div>
       </div>
-
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-OT-2nd.png"
+          alt="Communication Environment"
+          className={responsiveImageClass}
+        />
       {/* ===== OT ACROSS AUTISM LEVELS ===== */}
       <div id="ot-levels" className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
