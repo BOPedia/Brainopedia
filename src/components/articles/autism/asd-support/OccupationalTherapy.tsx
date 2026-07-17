@@ -54,7 +54,11 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
           <Activity className="text-[#ff6b6b]" size={24} /> 
           Core Intervention Areas
         </h2>
-        
+              <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-OT-core-areas.png"
+          alt="OT Core Intervention Areas"
+          className={responsiveImageClass}
+      />
         <div className="grid md:grid-cols-2 gap-4 mt-4">
           <div className="bg-[#fff5f5] p-4 rounded-lg border border-[#ff6b6b]/20">
             <h4 className="font-bold text-[#0c264d] mb-2 flex items-center gap-2">
@@ -170,7 +174,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
           </div>
         </div>
       </div>
-      
+
       <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-OT-2nd.png"
           alt="Communication Environment"
