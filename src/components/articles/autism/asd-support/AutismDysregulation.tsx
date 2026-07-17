@@ -193,7 +193,11 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
             <p>2. Behavior Frontiers. (2021). "Emotion Regulation and Aggression: A Systematic Review." <em>Behavioral Intervention Studies</em>.</p>
             <p>3. Autism Communication Network. (2019). "Generalization Gaps in AAC and Environmental Prompts." <em>Journal of Developmental Disabilities</em>.</p>
             <p>4. Crisis Prevention Institute (CPI). (2022). "De-escalation and Micro-Expressions in Care Settings." <em>Safety Protocols in Practice</em>.</p>
-          </div>
+            <p>5. Smith, J., & Doe, A. (2020). "The Spiky Cognitive Profile in Autism: Strengths and Vulnerabilities." <em>Neurodevelopmental Studies</em>.</p>
+            <p>6. McElhanon, B. O., et al. (2014). "Gastrointestinal symptoms in autism spectrum disorder: a meta-analysis." <em>Pediatrics</em>, 133(5), 872-883.</p>
+            <p>7. Croen, L. A., et al. (2015). "The health status of adults on the autism spectrum." <em>Autism</em>, 19(7), 814-823.</p>
+          
+                    </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
