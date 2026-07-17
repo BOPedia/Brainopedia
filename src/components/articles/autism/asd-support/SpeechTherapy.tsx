@@ -49,7 +49,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           With an autism diagnosis, selecting communication strategies is a crucial step to empower the individual. Approaches range from high-tech AAC devices and structured language programs to naturalistic, everyday strategies that integrate seamlessly into a person's life.
         </p>
         <p className="text-sm leading-relaxed">
-          Modern, neurodiversity-affirming speech therapy has shifted away from compliance-based models or trying to make autistic individuals sound "indistinguishable from their peers." Instead, the focus is on fostering <strong>autonomous communication</strong>—giving an individual the ability to say what they want, to whom they want, when they want—and honoring their unique voice and needs.
+          Modern, neurodiversity-affirming speech therapy has shifted away from compliance-based models or trying to make autistic individuals sound "indistinguishable from their peers." Instead, the focus is on fostering <strong>autonomous communication</strong>—giving an individual the ability to convey what they want, to whom they want, when they want—and honoring their unique voice and needs.
         </p>
       </div>
 
