@@ -40,7 +40,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
             alt="Occupational Therapy Intro"
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4 shadow-sm"
           />
-        <p className="text-sm leading-relaxed mb-4">
+        <p className="text-base leading-relaxed mb-4">
           Occupational therapy (OT) helps people of all ages regain or build the skills needed for daily living. Rather than focusing strictly on physical movement, OT focuses on functional independence, supporting "occupations"—the meaningful activities that occupy your time, such as working, self-care, or play.
         </p>
         <p className="text-sm leading-relaxed">
