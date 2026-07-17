@@ -93,7 +93,11 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
           </div>
         </div>
       </div>
-
+      <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-OT-2nd.png"
+          alt="Communication Environment"
+          className={responsiveImageClass}
+      />
       {/* ===== AFFIRMING SENSORY DIETS ===== */}
       <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
@@ -119,7 +123,11 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
             <div className="text-sm text-gray-700">Build the plan with the individual based on what feels good to them, not what makes them look "normal" to others.</div>
           </div>
         </div>
-
+      <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-OT-sensory-diet.png"
+          alt="Communication Environment"
+          className={responsiveImageClass}
+      />
         <h4 className="font-bold text-[#0c264d] mb-3 border-b border-[#0A9DC4]/20 pb-2">How to Build a Proactive, Affirming Sensory Diet</h4>
         
         <div className="space-y-4">
@@ -165,11 +173,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
           </div>
         </div>
       </div>
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-OT-2nd.png"
-          alt="Communication Environment"
-          className={responsiveImageClass}
-        />
+
       {/* ===== OT ACROSS AUTISM LEVELS ===== */}
       <div id="ot-levels" className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
