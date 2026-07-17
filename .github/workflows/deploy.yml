@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20' # Ensures the environment matches your local setup
+          cache: 'npm'
 
       - name: Install dependencies and Build
         run: |
