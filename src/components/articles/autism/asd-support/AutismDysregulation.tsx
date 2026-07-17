@@ -58,19 +58,7 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
     When staff understand that this individual is not "acting out," but rather navigating a brain that processes information with different intensity, the training shifts from "control" to "attunement." By respecting and leveraging their unique strengths, we create a sense of safety that is the most effective tool for preventing escalation. When the individual feels understood, the need for reactive aggression diminishes significantly.
   </p>
 </div>
-      {/* ===== REFRAMING DYSREGULATION & AGGRESSION ===== */}
-      <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
-          <ShieldAlert className="text-[#0A9DC4]" size={24} /> 
-          Reframing the Stress Response
-        </h2>
-        <p className="text-sm leading-relaxed mb-4">
-          Dysregulation escalating into aggression is often a profound stress response to unmet communication needs<sup className="text-green-600 font-bold ml-0.5">1</sup>. Individuals with communication barriers frequently resort to reactive aggression because they lack the necessary tools or accommodations to verbally articulate frustration, sensory overload, or physical pain.
-        </p>
-        <p className="text-sm leading-relaxed">
-          Systemic reviews confirm that individuals experiencing emotion dysregulation are significantly more likely to engage in physical aggression, especially when feeling trapped, misunderstood, or unable to self-soothe<sup className="text-green-600 font-bold ml-0.5">2</sup>. By providing robust, alternative communication methods, aggressive behavior naturally decreases as autonomy increases.
-        </p>
-      </div>
+
 {/* ===== HIDDEN PAIN: MEDICAL & TRAUMA TRIGGERS ===== */}
 <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ff6b6b] mb-8">
   <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
@@ -90,6 +78,21 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
     When an individual cannot verbally articulate that they are experiencing debilitating acid reflux, severe constipation, a blinding headache, a blood-sugar crash from hunger, or a nervous system flashback triggered by past trauma, their biological fight-or-flight system naturally takes over. Reframing reactive behavior as a distress signal for hidden physical pain allows support teams to shift away from behavioral management and toward compassionate medical and emotional attunement.
   </p>
 </div>
+
+      {/* ===== REFRAMING DYSREGULATION & AGGRESSION ===== */}
+      <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+          <ShieldAlert className="text-[#0A9DC4]" size={24} /> 
+          Reframing the Stress Response
+        </h2>
+        <p className="text-sm leading-relaxed mb-4">
+          Dysregulation escalating into aggression is often a profound stress response to unmet communication needs<sup className="text-green-600 font-bold ml-0.5">1</sup>. Individuals with communication barriers frequently resort to reactive aggression because they lack the necessary tools or accommodations to verbally articulate frustration, sensory overload, or physical pain.
+        </p>
+        <p className="text-sm leading-relaxed">
+          Systemic reviews confirm that individuals experiencing emotion dysregulation are significantly more likely to engage in physical aggression, especially when feeling trapped, misunderstood, or unable to self-soothe<sup className="text-green-600 font-bold ml-0.5">2</sup>. By providing robust, alternative communication methods, aggressive behavior naturally decreases as autonomy increases.
+        </p>
+      </div>
+
       {/* ===== BRIDGING THE GENERALIZATION GAP ===== */}
       <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm mb-6">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
