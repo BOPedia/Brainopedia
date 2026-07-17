@@ -96,36 +96,36 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
       </div>
 
       <div className="space-y-8 mt-20 clear-both">
-        <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
-          <p className="mb-4">
-            <ImageWithFallback
-              src="/images/autism/autism-main-overview.png"
-              alt="Autism Overview"
-              className="w-48 h-auto float-right ml-4 mb-4 rounded"
-            />
-            Autism is a lifelong neurodevelopmental condition that affects how people perceive the world and interact 
-            with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup className="text-green-600 font-bold ml-0.5">1</sup> with 
-            increasing recognition and diagnosis rates in recent years. It's important to recognize that autism is 
-            not a disease or disorder that needs to be "cured."
-          </p>
-          
-          <p className="mb-4">
-            Many autistic individuals and advocates promote the concept of neurodiversity, viewing autism as a natural 
-            variation in human neurology rather than a deficit. The neurodiversity paradigm emphasizes acceptance, 
-            accommodation, and celebration of neurological differences while providing support where needed.
-          </p>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              setCurrentArticle?.('autism-overview');
-            }}
-            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
-          >
-            Read more →
-          </button>
-        </section>
+<section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+  <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
+  
+  <p className="mb-4 text-base leading-relaxed text-gray-700">
+    <ImageWithFallback
+      src="/images/autism/autism-main-overview.png"
+      alt="Autism Overview"
+      className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
+    />
+    Autism is a lifelong neurodevelopmental condition that affects how people perceive the world and interact 
+    with others. Autism affects approximately 1 in 36 children in the United States according to 2023 CDC data,<sup className="text-green-600 font-bold ml-0.5">1</sup> with 
+    increasing recognition and diagnosis rates in recent years. It's important to recognize that autism is 
+    not a disease or disorder that needs to be "cured."
+  </p>
+  
+  <p className="mb-4 text-base leading-relaxed text-gray-700">
+    Many autistic individuals and advocates promote the concept of neurodiversity, viewing autism as a natural 
+    variation in human neurology rather than a deficit. The neurodiversity paradigm emphasizes acceptance, 
+    accommodation, and celebration of neurological differences while providing support where needed.
+  </p>
+  <button
+    onClick={(e) => {
+      e.preventDefault();
+      setCurrentArticle?.('autism-overview');
+    }}
+    className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+  >
+    Read more →
+  </button>
+</section>
 
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
