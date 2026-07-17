@@ -43,7 +43,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         <p className="text-base leading-relaxed mb-4">
           Occupational therapy (OT) helps people of all ages regain or build the skills needed for daily living. Rather than focusing strictly on physical movement, OT focuses on functional independence, supporting "occupations"—the meaningful activities that occupy your time, such as working, self-care, or play.
         </p>
-        <p className="text-sm leading-relaxed">
+        <p className="text-base leading-relaxed">
           For autistic individuals, OT supports functional communication, sensory regulation, and daily independence across all support levels. Because autism impacts individuals differently, an OT evaluates unique strengths and challenges to help people adapt to physical, cognitive, or developmental challenges so they can participate in everyday life.
         </p>
       </div>
