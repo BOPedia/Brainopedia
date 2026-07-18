@@ -20,10 +20,11 @@ jobs:
 
       - name: Install dependencies and Build
         run: |
-          npm install
-          npm run build 
+          npm ci
+          npm run build
           # This creates the /dist folder with the fresh index.html
 
+          
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@7.0.1
         with:
