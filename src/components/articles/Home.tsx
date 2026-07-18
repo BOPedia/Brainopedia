@@ -59,7 +59,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
               <img src="/images/home-learning-diff.png" alt="Gears" className="w-28 sm:w-32 h-auto rounded-lg shadow-md mb-5" />
               <div className="flex flex-col flex-1 w-full items-center">
                 <h3 className="text-[#0c264d] text-xl font-bold mb-3">Learning Differences & Profiles</h3>
-                <p className="mb-5 text-base leading-relaxed text-gray-700 max-w-lg">Profiles affecting how individuals process, retain, and express information across reading, writing, and math.</p>
+                <p className="mb-5 text-base leading-relaxed text-gray-700 max-w-lg">Distinct cognitive profiles affecting how individuals process, retain, and express information beyond traditional academics, including language, reasoning, and accelerated learning.</p>
                 <div className="flex flex-wrap gap-2 justify-center mt-auto">
                   {['dyslexia', 'dyscalculia', 'dysgraphia', 'nvld', 'dld', 'hyperlexia', 'giftedness', 'twice-exceptional'].map(id => (
                     <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-2 bg-white border-2 border-[#ffd166] rounded-full text-sm hover:bg-[#ffd166] hover:text-[#0c264d] transition-all font-bold uppercase">
