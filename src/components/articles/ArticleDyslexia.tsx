@@ -53,7 +53,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
       title: 'Living with Dyslexia',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('dyslexia-living-overview');
+        setCurrentArticle?.('dyslexia-living');
       }
     },
   ];
@@ -133,7 +133,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyslexia</h2>
           <p className="mb-4">Individuals with dyslexia lead successful and fulfilling lives...</p>
-          <button onClick={() => setCurrentArticle?.('dyslexia-living-overview')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+          <button onClick={() => setCurrentArticle?.('dyslexia-living')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
         </section>
       </div>
 
