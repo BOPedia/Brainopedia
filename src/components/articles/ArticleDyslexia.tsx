@@ -100,41 +100,67 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
       </div>
 
       <div className="space-y-8 mt-20 clear-both">
-        <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          <p className="mb-4">Dyslexia is one of the most common learning differences... (Read the full Overview page for more).</p>
-          <button onClick={() => setCurrentArticle?.('dyslexia-overview')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+        
+        {/* Overview Section */}
+        <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          <img src="/images/dyslexia/dyslexia-main-overview.png" alt="Dyslexia Overview" className="w-32 sm:w-48 h-auto rounded-lg shadow-sm shrink-0" />
+          <div className="flex-1 text-center sm:text-left">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
+            <p className="mb-4">Dyslexia is one of the most common learning differences... (Read the full Overview page for more).</p>
+            <button onClick={() => setCurrentArticle?.('dyslexia-overview')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+          </div>
         </section>
 
-        <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
-          <p className="mb-4">Dyslexia is characterized by difficulties with reading accuracy and fluency...</p>
-          <button onClick={() => setCurrentArticle?.('dyslexia-symptoms-tabcore')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+        {/* Symptoms Section */}
+        <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          <img src="/images/dyslexia/dyslexia-main-symptoms.png" alt="Symptoms and Characteristics" className="w-32 sm:w-48 h-auto rounded-lg shadow-sm shrink-0" />
+          <div className="flex-1 text-center sm:text-left">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
+            <p className="mb-4">Dyslexia is characterized by difficulties with reading accuracy and fluency...</p>
+            <button onClick={() => setCurrentArticle?.('dyslexia-symptoms-tabcore')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+          </div>
         </section>
 
-        <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
-          <p className="mb-4">Dyslexia has a strong genetic component and tends to run in families...</p>
-          <button onClick={() => setCurrentArticle?.('dyslexia-causes-brain')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+        {/* Causes Section */}
+        <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          <img src="/images/dyslexia/dyslexia-main-causes.png" alt="Causes and Origins" className="w-32 sm:w-48 h-auto rounded-lg shadow-sm shrink-0" />
+          <div className="flex-1 text-center sm:text-left">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
+            <p className="mb-4">Dyslexia has a strong genetic component and tends to run in families...</p>
+            <button onClick={() => setCurrentArticle?.('dyslexia-causes-brain')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+          </div>
         </section>
 
-        <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
-          <p className="mb-4">Dyslexia is diagnosed through comprehensive evaluation...</p>
-          <button onClick={() => setCurrentArticle?.('dyslexia-diagnosis-overview')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+        {/* Diagnosis Section */}
+        <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          <img src="/images/dyslexia/dyslexia-main-diagnosing.png" alt="Testing and Diagnosing" className="w-32 sm:w-48 h-auto rounded-lg shadow-sm shrink-0" />
+          <div className="flex-1 text-center sm:text-left">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
+            <p className="mb-4">Dyslexia is diagnosed through comprehensive evaluation...</p>
+            <button onClick={() => setCurrentArticle?.('dyslexia-diagnosis-overview')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+          </div>
         </section>
 
-        <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
-          <p className="mb-4">Evidence-based reading interventions are essential...</p>
-          <button onClick={() => setCurrentArticle?.('dyslexia-support-interventions')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+        {/* Support Section */}
+        <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          <img src="/images/dyslexia/dyslexia-main-support.png" alt="Support and Management" className="w-32 sm:w-48 h-auto rounded-lg shadow-sm shrink-0" />
+          <div className="flex-1 text-center sm:text-left">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
+            <p className="mb-4">Evidence-based reading interventions are essential...</p>
+            <button onClick={() => setCurrentArticle?.('dyslexia-support-interventions')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+          </div>
         </section>
 
-        <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyslexia</h2>
-          <p className="mb-4">Individuals with dyslexia lead successful and fulfilling lives...</p>
-          <button onClick={() => setCurrentArticle?.('dyslexia-living')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+        {/* Living Section */}
+        <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          <img src="/images/dyslexia/dyslexia-main-living.png" alt="Living with Dyslexia" className="w-32 sm:w-48 h-auto rounded-lg shadow-sm shrink-0" />
+          <div className="flex-1 text-center sm:text-left">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyslexia</h2>
+            <p className="mb-4">Individuals with dyslexia lead successful and fulfilling lives...</p>
+            <button onClick={() => setCurrentArticle?.('dyslexia-living')} className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold">Read more →</button>
+          </div>
         </section>
+
       </div>
 
       <section className="mt-12 pt-6 border-t-2 border-gray-300">
