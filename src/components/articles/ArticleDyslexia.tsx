@@ -133,7 +133,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
 
         {/* Diagnosis Section */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start">
-          <img src="/images/dyslexia/dyslexia-main-diagnosing.png" alt="Testing and Diagnosing" className="w-32 sm:w-48 h-auto rounded-lg shadow-sm shrink-0" />
+          <img src="/images/dyslexia/dyslexia-main-diagnosis.png" alt="Testing and Diagnosing" className="w-32 sm:w-48 h-auto rounded-lg shadow-sm shrink-0" />
           <div className="flex-1 text-center sm:text-left">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
             <p className="mb-4">Dyslexia is diagnosed through comprehensive evaluation...</p>
