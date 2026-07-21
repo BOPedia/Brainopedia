@@ -264,21 +264,55 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
             <Layout className="text-[#2abcd4]" /> INFORMATION ARCHITECTURE
           </h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
-              <h3 className="font-bold text-[#0c264d] mb-2">Domain-Specific Definitions</h3>
-              <p className="text-sm text-gray-700">Foundational analogies and structural definitions (e.g., explaining how a cell/gene works) must live inside their specific domain tab (e.g., Genetics) rather than cluttering the General Overview.</p>
-            </div>
 
             
             <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-5 rounded-r-lg">
               <h3 className="font-bold text-[#0c264d] mb-2">Graphic Naming Integrity</h3>
               <p className="text-sm text-gray-800">If a graphic's file name no longer matches its tab location due to restructuring (e.g., an "overview" graphic is moved into the "genetics" tab), <strong>maintain the original file name</strong>. Do not rename the file, as this prevents broken links across the platform.</p>
             </div>
+        
+        </section>
+        
+{/* TABS & NAVIGATION BUTTONS */}
+        <section className="mb-12">
+          <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
+            <Palette className="text-[#2abcd4]" /> TABS & NAVIGATION BUTTONS
+          </h2>
+          
+          <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm mb-6">
+            <h3 className="font-bold text-[#0c264d] mb-4 uppercase text-xs">Font Rules & Styling</h3>
+            <ul className="list-disc ml-5 text-sm text-gray-700 space-y-2 mb-4">
+              <li><strong>Weight:</strong> Medium (<code className="bg-gray-100 px-1 rounded">font-medium</code>) or Normal (<code className="bg-gray-100 px-1 rounded">font-normal</code>).</li>
+              <li className="text-red-600 font-bold">STRICT RULE: NO bolding (<code className="bg-red-50 px-1 rounded">font-bold</code> or <code className="bg-red-50 px-1 rounded">font-semibold</code>) is allowed on tabs or standard navigation buttons.</li>
+            </ul>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+              <h3 className="font-bold text-[#0c264d] text-sm mb-2">Resting State</h3>
+              <p className="text-xs mb-3 text-gray-600">Yellow background with Navy text.</p>
+              <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+                bg-[#ffd166] text-[#0c264d]
+              </code>
+            </div>
+            
+            <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+              <h3 className="font-bold text-[#0c264d] text-sm mb-2">Hover State</h3>
+              <p className="text-xs mb-3 text-gray-600">Yellow background with 80% opacity.</p>
+              <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+                hover:bg-[#ffd166]/80
+              </code>
+            </div>
+
+            <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+              <h3 className="font-bold text-[#0c264d] text-sm mb-2">Active / Highlighted</h3>
+              <p className="text-xs mb-3 text-gray-600">Darker Cyan background with White text.</p>
+              <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+                bg-[#0A9DC4] text-white
+              </code>
+            </div>
           </div>
         </section>
-
   
         {/* CRITICAL ALERTS */}
         <section className="mb-12">
