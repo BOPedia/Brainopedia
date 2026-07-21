@@ -7,7 +7,7 @@ interface ProjectStandardsProps {
 
 export default function ProjectStandards({ setCurrentArticle }: ProjectStandardsProps) {
   return (
-    <article className="max-w-6xl bg-white p-4 sm:p-8 rounded-xl shadow-lg border border-gray-100 font-spartan animate-in fade-in duration-300">
+   <article className="max-w-6xl font-spartan animate-in fade-in duration-300">
       
       {/* Header */}
       <div className="pb-6 border-b-4 border-[#0c264d] mb-10">
@@ -20,72 +20,72 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         </p>
       </div>
 
-      {/* 1. IMAGE PLACEMENT, CLEARING & NAMING STANDARDS */}
-      <section className="mb-12">
-        <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
-          <Move className="text-[#2abcd4]" /> IMAGE PLACEMENT, NAMING & POSITIONING
-        </h2>
-        
-        <div className="bg-[#f0f9ff] border-l-4 border-[#2abcd4] p-5 mb-6 rounded-r-xl shadow-sm">
-          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">File Naming Convention:</h3>
-          <p className="text-sm text-gray-700 mb-2">All graphics must follow this exact naming structure to maintain consistency across the platform:</p>
-          <code className="text-xs font-bold bg-white text-[#2abcd4] p-2 rounded border border-[#2abcd4] border-opacity-20 block w-max">
-            neurodivergence-section-tab-detail-about-pic.png
-          </code>
-        </div>
+{/* 1. IMAGE PLACEMENT, CLEARING & NAMING STANDARDS */}
+<section className="mb-12">
+  <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
+    <Move className="text-[#2abcd4]" /> IMAGE PLACEMENT, NAMING & POSITIONING
+  </h2>
+  
+  <div className="bg-[#f0f9ff] border-l-4 border-[#2abcd4] p-5 mb-6 rounded-r-xl shadow-sm">
+    <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">File Naming Convention:</h3>
+    <p className="text-sm text-gray-700 mb-2">All graphics must follow this exact naming structure to maintain consistency across the platform:</p>
+    <code className="text-sm font-bold bg-white text-[#2abcd4] p-2 rounded border border-[#2abcd4] border-opacity-20 block w-max">
+      neurodivergence-section-tab-detail-about-pic.png
+    </code>
+  </div>
 
-        <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these four patterns for consistency:</p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
-            <h3 className="font-bold text-[#0c264d] text-sm mb-2">1. The Centered Hero</h3>
-            <p className="text-xs mb-3 text-gray-600">For large diagrams (DNA, Brains) between text blocks.</p>
-            <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-              className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm"
-            </code>
-          </div>
+  <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these four patterns for consistency:</p>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+      <h3 className="font-bold text-[#0c264d] text-sm mb-2">1. The Centered Hero</h3>
+      <p className="text-xs mb-3 text-gray-600">For large diagrams (DNA, Brains) between text blocks.</p>
+      <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto">
+        className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm"
+      </code>
+    </div>
 
-          <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
-            <h3 className="font-bold text-[#0c264d] text-sm mb-2">2. The Inline Float</h3>
-            <p className="text-xs mb-3 text-gray-600">Small icons or supporting graphics inside info-boxes.</p>
-            <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-              className="w-64 h-auto rounded-md float-right ml-6 mb-4"
-            </code>
-          </div>
+    <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+      <h3 className="font-bold text-[#0c264d] text-sm mb-2">2. The Inline Float</h3>
+      <p className="text-xs mb-3 text-gray-600">Small icons or supporting graphics inside info-boxes.</p>
+      <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto">
+        className="w-64 h-auto rounded-md float-right ml-6 mb-4"
+      </code>
+    </div>
 
-          <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
-            <h3 className="font-bold text-[#0c264d] text-sm mb-2">3. The Centered Block</h3>
-            <p className="text-xs mb-3 text-gray-600">For centering standard medium-sized graphics without floating text around them.</p>
-            <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-              className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
-            </code>
-          </div>
+    <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+      <h3 className="font-bold text-[#0c264d] text-sm mb-2">3. The Centered Block</h3>
+      <p className="text-xs mb-3 text-gray-600">For centering standard medium-sized graphics without floating text around them.</p>
+      <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto">
+        className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
+      </code>
+    </div>
 
-          <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
-            <h3 className="font-bold text-[#0c264d] text-sm mb-2">4. The Clearing Rule</h3>
-            <p className="text-xs mb-3 text-gray-600">Always use <code className="bg-white px-1 border border-gray-200 text-[#0c264d]">clear-both</code> on containers or buttons below floated images.</p>
-            <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-              className="clear-both pt-8 pb-4"
-            </code>
-          </div>
-        </div>
+    <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
+      <h3 className="font-bold text-[#0c264d] text-sm mb-2">4. The Clearing Rule</h3>
+      <p className="text-xs mb-3 text-gray-600">Always use <code className="bg-white px-1 border border-gray-200 text-[#0c264d]">clear-both</code> on containers or buttons below floated images.</p>
+      <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto">
+        className="clear-both pt-8 pb-4"
+      </code>
+    </div>
+  </div>
 
-       <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6">
-        <h3 className="font-bold text-[#0c264d] text-sm mb-2">5. Centered Image Headings</h3>
-        <p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered PNG, it must be centered and clear any previous floats.</p>
-          <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-         className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
-          </code>
-        </div>
-    
-        <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6">
-          <h3 className="font-bold text-[#0c264d] text-sm mb-2">6. The Full-Width Span</h3>
-          <p className="text-xs mb-3 text-gray-600">For diagrams or graphics that need to stretch to 100% of their container's width (overriding the standard max-width).</p>
-          <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-            className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
-          </code>
-        </div>
-      </section>
+  <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6">
+    <h3 className="font-bold text-[#0c264d] text-sm mb-2">5. Centered Image Headings</h3>
+    <p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered PNG, it must be centered and clear any previous floats.</p>
+    <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto">
+      className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
+    </code>
+  </div>
+
+  <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6">
+    <h3 className="font-bold text-[#0c264d] text-sm mb-2">6. The Full-Width Span</h3>
+    <p className="text-xs mb-3 text-gray-600">For diagrams or graphics that need to stretch to 100% of their container's width (overriding the standard max-width).</p>
+    <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto">
+      className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+    </code>
+  </div>
+</section>
 
       {/* 2. CITATION SYSTEM */}
       <section className="mb-12">
