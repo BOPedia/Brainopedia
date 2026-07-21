@@ -228,30 +228,29 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References: Autism Overview</h3>
-        
-        {/* CITED STUDIES: GREEN */}
-        <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-            Cited Studies & Statistics
-          </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Centers for Disease Control and Prevention. (2023). "Data & Statistics on Autism Spectrum Disorder." U.S. Department of Health and Human Services.
-            </li>
-            <li>
-              Sandin, S., et al. (2014). "The familial risk of autism." <i>JAMA</i>, 311(17), 1770-1777.
-            </li>
-            <li>
-              De Rubeis, S., et al. (2014). "Synaptic, transcriptional and chromatin genes disrupted in autism." <i>Nature</i>, 515(7526), 209-215.
-            </li>
-            <li>
-              Courchesne, E., et al. (2011). "Brain growth across the life span in autism: age-specific changes in anatomical pathology." <i>Brain Research</i>, 1380, 138-145.
-            </li>
-            <li>
-              American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.).
-            </li>
-          </ol>
-        </div>
+{/* CITED STUDIES: GREEN */}
+<div className="mb-6">
+  <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+    Cited Studies & Statistics
+  </h4>
+  <ol className="list-decimal list-inside text-xs space-y-3 text-slate-600 leading-relaxed">
+    <li>
+      Centers for Disease Control and Prevention. (2023). "Data & Statistics on Autism Spectrum Disorder." U.S. Department of Health and Human Services.
+    </li>
+    <li>
+      Sandin, S., et al. (2014). "The familial risk of autism." <i>JAMA</i>, 311(17), 1770-1777.
+    </li>
+    <li>
+      De Rubeis, S., et al. (2014). "Synaptic, transcriptional and chromatin genes disrupted in autism." <i>Nature</i>, 515(7526), 209-215.
+    </li>
+    <li>
+      Courchesne, E., et al. (2011). "Brain growth across the life span in autism: age-specific changes in anatomical pathology." <i>Brain Research</i>, 1380, 138-145.
+    </li>
+    <li>
+      American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.).
+    </li>
+  </ol>
+</div>
         
         {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
         <div>
