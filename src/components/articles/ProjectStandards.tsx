@@ -272,21 +272,20 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             </div>
         
         </section>
-        
+
 {/* TABS & NAVIGATION BUTTONS */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
             <Palette className="text-[#2abcd4]" /> TABS & NAVIGATION BUTTONS
           </h2>
           
-          <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm mb-6">
-            <h3 className="font-bold text-[#0c264d] mb-4 uppercase text-xs">Font Rules & Styling</h3>
-            <ul className="list-disc ml-5 text-sm text-gray-700 space-y-2 mb-4">
-              <li><strong>Weight:</strong> Medium (<code className="bg-gray-100 px-1 rounded">font-medium</code>) or Normal (<code className="bg-gray-100 px-1 rounded">font-normal</code>).</li>
-              <li className="text-red-600 font-bold">STRICT RULE: NO bolding (<code className="bg-red-50 px-1 rounded">font-bold</code> or <code className="bg-red-50 px-1 rounded">font-semibold</code>) is allowed on tabs or standard navigation buttons.</li>
-            </ul>
-          </div>
-
+         <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm mb-6">
+  <h3 className="font-bold text-[#0c264d] mb-4 uppercase text-xs">Font Rules & Styling</h3>
+  <ul className="list-disc ml-5 text-sm text-gray-700 space-y-2 mb-4">
+    <li><strong>Weight:</strong> Normal (<code className="bg-gray-100 px-1 rounded">font-normal</code>).</li>
+    <li className="text-red-600 font-bold">STRICT RULE: NO bolding (<code className="bg-red-50 px-1 rounded">font-bold</code> or <code className="bg-red-50 px-1 rounded">font-semibold</code>) is allowed on tabs or standard navigation buttons.</li>
+  </ul>
+</div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
               <h3 className="font-bold text-[#0c264d] text-sm mb-2">Resting State</h3>
@@ -316,7 +315,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
   
         {/* CRITICAL ALERTS */}
         <section className="mb-12">
-          <div className="bg-red-200 text-white p-6 rounded-2xl flex items-start gap-4 shadow-xl">
+          <div className="bg-red-200 text-navy p-6 rounded-2xl flex items-start gap-4 shadow-xl">
             <AlertTriangle size={48} className="shrink-0" />
             <div>
               <h2 className="text-xl font-bold mb-2 uppercase text-white">Graphic Integrity Rule</h2>
