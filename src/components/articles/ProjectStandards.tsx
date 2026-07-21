@@ -7,7 +7,7 @@ interface ProjectStandardsProps {
 
 export default function ProjectStandards({ setCurrentArticle }: ProjectStandardsProps) {
   return (
-   <article className="w-full font-spartan animate-in fade-in duration-300">
+   <article className="max-w-6xl font-spartan animate-in fade-in duration-300">
       
       {/* Header */}
       <div className="pb-6 border-b-4 border-[#0c264d] mb-10">
