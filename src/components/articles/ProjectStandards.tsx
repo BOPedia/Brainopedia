@@ -180,7 +180,85 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             </div>
           </div>
         </section>
+        {/* COLOR PALETTE */}
+        <section className="mb-10">
+          <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
+            COLOR PALETTE
+          </h2>
+          
+          <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Primary Colors</h3>
+          <div className="space-y-2 mb-4 ml-4">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded border-2 border-gray-300" style={{backgroundColor: '#ffd166'}}></div>
+              <p><strong>Yellow (Primary):</strong> <code className="bg-gray-100 px-2 py-1 rounded">#ffd166</code> - Used for buttons, tab backgrounds, highlights</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded border-2 border-gray-300" style={{backgroundColor: '#2abcd4'}}></div>
+              <p><strong>Cyan (Accent):</strong> <code className="bg-gray-100 px-2 py-1 rounded">#2abcd4</code> - Used for borders, links, decorative elements</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded border-2 border-gray-300" style={{backgroundColor: '#0A9DC4'}}></div>
+              <p><strong>Dark Cyan (Professional):</strong> <code className="bg-gray-100 px-2 py-1 rounded">#0A9DC4</code> - Used for active tab states, hover states (introduced Dec 2025)</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded border-2 border-gray-300" style={{backgroundColor: '#0c264d'}}></div>
+              <p><strong>Dark Navy Blue (Text/Headers):</strong> <code className="bg-gray-100 px-2 py-1 rounded">#0c264d</code> - Primary text color, headers, borders</p>
+            </div>
+          </div>
 
+          <h3 className="text-[#0c264d] font-semibold text-lg mb-3 mt-6">Secondary Colors</h3>
+          <div className="space-y-2 mb-4 ml-4">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded border-2 border-gray-300" style={{backgroundColor: '#10b981'}}></div>
+              <p><strong>Bright Green (Citations):</strong> <code className="bg-gray-100 px-2 py-1 rounded">#10b981</code> - ONLY for citation superscript numbers</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded border-2 border-gray-300" style={{backgroundColor: '#ffffff'}}></div>
+              <p><strong>White:</strong> <code className="bg-gray-100 px-2 py-1 rounded">#ffffff</code> - Card backgrounds, content areas</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded border-2 border-gray-300" style={{backgroundColor: '#f0f9ff'}}></div>
+              <p><strong>Light Blue Background:</strong> <code className="bg-gray-100 px-2 py-1 rounded">#f0f9ff</code> - Alternate section backgrounds</p>
+            </div>
+          </div>
+
+          <h3 className="text-[#0c264d] font-semibold text-lg mb-3 mt-6">Color Usage Rules</h3>
+          <ul className="list-disc ml-8 space-y-2">
+            <li><strong>Never</strong> use the old cyan <code className="bg-gray-100 px-2 py-1 rounded">#2abcd4</code> for active tab states - always use <code className="bg-gray-100 px-2 py-1 rounded">#0A9DC4</code></li>
+            <li>Citation numbers must ALWAYS be <code className="bg-gray-100 px-2 py-1 rounded">#10b981</code> (bright green)</li>
+            <li>Button hover states: Yellow buttons hover to dark navy (<code className="bg-gray-100 px-2 py-1 rounded">#0c264d</code>)</li>
+            <li>Tab active states: Always <code className="bg-gray-100 px-2 py-1 rounded">#0A9DC4</code> with white text</li>
+          </ul>
+        </section>
+
+        {/* TYPOGRAPHY */}
+        <section className="mb-10">
+          <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
+            TYPOGRAPHY
+          </h2>
+          
+          <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Font Family</h3>
+          <ul className="list-disc ml-8 space-y-2 mb-4">
+            <li><strong>Primary Font:</strong> League Spartan - Used for ALL body text throughout the site</li>
+            <li><strong>Fallback:</strong> system-ui, sans-serif</li>
+          </ul>
+
+          <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Font Sizes</h3>
+          <ul className="list-disc ml-8 space-y-2 mb-4">
+            <li><strong>DO NOT</strong> use Tailwind font size classes (text-xl, text-2xl, etc.) unless specifically requested</li>
+            <li><strong>DO NOT</strong> use Tailwind font weight classes (font-bold, font-semibold, etc.) unless specifically requested</li>
+            <li><strong>Exception:</strong> <code className="bg-gray-100 px-2 py-1 rounded">text-sm</code> is standardized for ALL tabs across all subpages (14px)</li>
+            <li>Default body text relies on globals.css styling</li>
+          </ul>
+
+          <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Headers</h3>
+          <ul className="list-disc ml-8 space-y-2">
+            <li><code className="bg-gray-100 px-2 py-1 rounded">&lt;h1&gt;</code> - Page titles (styled in globals.css)</li>
+            <li><code className="bg-gray-100 px-2 py-1 rounded">&lt;h2&gt;</code> - Section headers (styled in globals.css)</li>
+            <li><code className="bg-gray-100 px-2 py-1 rounded">&lt;h3&gt;</code> - Subsection headers (styled in globals.css)</li>
+            <li>Custom font sizes/weights only when user explicitly requests them</li>
+          </ul>
+        </section>
         {/* 6. INFORMATION ARCHITECTURE & TAB ORDERING */}
         <section className="mb-12">
           <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
@@ -193,16 +271,6 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
               <p className="text-sm text-gray-700">Foundational analogies and structural definitions (e.g., explaining how a cell/gene works) must live inside their specific domain tab (e.g., Genetics) rather than cluttering the General Overview.</p>
             </div>
 
-            <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
-              <h3 className="font-bold text-[#0c264d] mb-2">Standardized Tab Ordering</h3>
-              <p className="text-sm text-gray-700 mb-3">To maintain a logical flow of information across the platform, deep-dive tabs should consistently follow this sequential order:</p>
-              <ol className="list-decimal ml-5 text-sm font-bold text-[#2abcd4] space-y-1">
-                <li><span className="text-gray-700 font-normal">Overview</span></li>
-                <li><span className="text-gray-700 font-normal">Genetics</span></li>
-                <li><span className="text-gray-700 font-normal">Environment</span></li>
-                <li><span className="text-gray-700 font-normal">Brain / Neurobiology</span></li>
-              </ol>
-            </div>
             
             <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-5 rounded-r-lg">
               <h3 className="font-bold text-[#0c264d] mb-2">Graphic Naming Integrity</h3>
@@ -214,7 +282,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
   
         {/* CRITICAL ALERTS */}
         <section className="mb-12">
-          <div className="bg-red-600 text-white p-6 rounded-2xl flex items-start gap-4 shadow-xl">
+          <div className="bg-red-200 text-white p-6 rounded-2xl flex items-start gap-4 shadow-xl">
             <AlertTriangle size={48} className="shrink-0" />
             <div>
               <h2 className="text-xl font-bold mb-2 uppercase text-white">Graphic Integrity Rule</h2>
