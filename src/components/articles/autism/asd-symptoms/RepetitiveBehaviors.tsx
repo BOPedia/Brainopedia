@@ -17,7 +17,9 @@ import {
 export function RepetitiveBehaviors() {
   return (
     <div className="space-y-6">
-
+<h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">
+  Restricted/Repetitive Behaviors
+</h2>
       {/* --- CENTERED GRAPHIC SECTION: THE VIDEO  --- */}
       <div className="text-center w-full mb-10">
         <div className="mx-auto w-44 rounded-xl overflow-hidden">

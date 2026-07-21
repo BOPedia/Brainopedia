@@ -37,10 +37,10 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
 
   return (
     <div className="bg-[#f0f9ff] p-6 rounded-lg">
-      <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Spectrum Profile Characteristics</h2>
+     <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Spectrum Profile Characteristics</h2>
       <div className="space-y-6">
         
-        {/* Intro Graphic */}
+ {/* Intro Graphic */}
         <img 
           src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png" 
           alt="Rainbow circle graphic showing additional autistic characteristics"
@@ -126,46 +126,21 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
                     <div className="text-sm">A strong reliance on predictable schedules. Sudden transitions, unexpected plans, or disrupted routines can cause significant distress.</div>
                   </div>
                 </div>
-                <div className="grid grid-cols-1 gap-4 mt-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                   <div className="border-l-2 border-[#2abcd4] pl-3">
                     <div className="font-bold text-[#0c264d] mb-1">Stimming (Self-Stimulatory Behavior)</div>
                     <div className="text-sm">Repetitive physical movements or vocalizations (like hand-flapping, rocking, or repeating phrases) used to self-regulate, focus, or express joy.</div>
+                  </div>
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Demand Avoidance (PDA)</div>
+                    <div className="text-sm">Often reframed as a <strong>Pervasive Drive for Autonomy</strong>. A nervous system response where everyday demands trigger a fight/flight reaction, requiring highly flexible, low-pressure environments.</div>
                   </div>
                 </div>
               </div>
             </div>
           )}
         </div>
-{expandedSection === 'behavior' && (
-  <div className="px-5 pb-5 pt-2 border-t border-gray-50">
-    <p className="mb-4 text-sm text-slate-700">Intense passions, systemic thinking, and a strong preference for predictability.</p>
-    <div className="space-y-3">
-      {/* Existing Top Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="border-l-2 border-[#2abcd4] pl-3">
-          <div className="font-bold text-[#0c264d] mb-1">Restricted Interests</div>
-          <div className="text-sm">Deep, highly focused passions for specific topics. Often leads to "monologuing" or vast expertise in niche subjects.</div>
-        </div>
-        <div className="border-l-2 border-[#2abcd4] pl-3">
-          <div className="font-bold text-[#0c264d] mb-1">Need for Routine</div>
-          <div className="text-sm">A strong reliance on predictable schedules. Sudden transitions, unexpected plans, or disrupted routines can cause significant distress.</div>
-        </div>
-      </div>
-      
-      {/* Updated Bottom Grid: Now includes PDA alongside Stimming */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div className="border-l-2 border-[#2abcd4] pl-3">
-          <div className="font-bold text-[#0c264d] mb-1">Stimming (Self-Stimulatory Behavior)</div>
-          <div className="text-sm">Repetitive physical movements or vocalizations (like hand-flapping, rocking, or repeating phrases) used to self-regulate, focus, or express joy.</div>
-        </div>
-        <div className="border-l-2 border-[#2abcd4] pl-3">
-          <div className="font-bold text-[#0c264d] mb-1">Demand Avoidance (PDA)</div>
-          <div className="text-sm">Often reframed as a <strong>Pervasive Drive for Autonomy</strong>. A nervous system response where everyday demands trigger a fight/flight reaction, requiring highly flexible, low-pressure environments.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
+
         {/* 3. Sensory Processing */}
         <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
           <button 
@@ -240,10 +215,14 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
             <div className="px-5 pb-5 pt-2 border-t border-gray-50">
               <p className="mb-4 text-sm text-slate-700">How emotions are processed, recognized, and physically experienced.</p>
               <div className="space-y-3">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="border-l-2 border-[#2abcd4] pl-3">
                     <div className="font-bold text-[#0c264d] mb-1">Dysregulation</div>
                     <div className="text-sm">Experiencing emotions with extreme intensity, which can lead to involuntary meltdowns or non-responsive shutdowns when capacity is exceeded.</div>
+                  </div>
+                  <div className="border-l-2 border-[#2abcd4] pl-3">
+                    <div className="font-bold text-[#0c264d] mb-1">Rejection Sensitive Dysphoria (RSD)</div>
+                    <div className="text-sm">An intense, almost physical emotional pain triggered by perceived rejection, criticism, or failure. Often tied to a deep capacity for empathy and responsiveness.</div>
                   </div>
                   <div className="border-l-2 border-[#2abcd4] pl-3">
                     <div className="font-bold text-[#0c264d] mb-1">Anxiety</div>
@@ -258,32 +237,7 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
             </div>
           )}
         </div>
-{expandedSection === 'emotional' && (
-  <div className="px-5 pb-5 pt-2 border-t border-gray-50">
-    <p className="mb-4 text-sm text-slate-700">How emotions are processed, recognized, and physically experienced.</p>
-    <div className="space-y-3">
-      {/* Changed to md:grid-cols-2 to accommodate 4 items evenly */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="border-l-2 border-[#2abcd4] pl-3">
-          <div className="font-bold text-[#0c264d] mb-1">Dysregulation</div>
-          <div className="text-sm">Experiencing emotions with extreme intensity, which can lead to involuntary meltdowns or non-responsive shutdowns when capacity is exceeded.</div>
-        </div>
-        <div className="border-l-2 border-[#2abcd4] pl-3">
-          <div className="font-bold text-[#0c264d] mb-1">Rejection Sensitive Dysphoria (RSD)</div>
-          <div className="text-sm">An intense, almost physical emotional pain triggered by perceived rejection, criticism, or failure. Often tied to a deep capacity for empathy and responsiveness.</div>
-        </div>
-        <div className="border-l-2 border-[#2abcd4] pl-3">
-          <div className="font-bold text-[#0c264d] mb-1">Anxiety</div>
-          <div className="text-sm">Highly prevalent in the autistic community, often stemming from sensory overload or the constant pressure to mask neurodivergent traits.</div>
-        </div>
-        <div className="border-l-2 border-[#2abcd4] pl-3">
-          <div className="font-bold text-[#0c264d] mb-1">Depression</div>
-          <div className="text-sm">Frequently co-occurs, sometimes due to autistic burnout, social isolation, or navigating an inaccessible world.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
+
         {/* 6. Motor Skills & Posture */}
         <div className="bg-white rounded-md border-l-4 border-[#0c264d] shadow-sm overflow-hidden">
           <button 
@@ -397,17 +351,11 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Demetriou, E. A., Lampit, A., Quintana, D. S., et al. (2018). "Autism spectrum disorder: An executive function meta-analysis." <i>Neuroscience & Biobehavioral Reviews</i>, 84, 213-221.
-            </li>
-            <li>
-              Kinnaird, E., Stewart, C., & Tchanturia, K. (2019). "Investigating alexithymia in autism: A systematic review and meta-analysis." <i>European Psychiatry</i>, 55, 80-89.
-            </li>
-            <li>
-              Fournier, K. A., Hass, C. J., Naik, S. K., et al. (2010). "Motor coordination in autism spectrum disorders: A synthesis and meta-analysis." <i>Journal of Autism and Developmental Disorders</i>, 40(10), 1227-1240.
-            </li>
-          </ol>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Demetriou, E. A., Lampit, A., Quintana, D. S., et al. (2018). "Autism spectrum disorder: An executive function meta-analysis." <i>Neuroscience & Biobehavioral Reviews</i>, 84, 213-221.</p>
+            <p>2. Kinnaird, E., Stewart, C., & Tchanturia, K. (2019). "Investigating alexithymia in autism: A systematic review and meta-analysis." <i>European Psychiatry</i>, 55, 80-89.</p>
+            <p>3. Fournier, K. A., Hass, C. J., Naik, S. K., et al. (2010). "Motor coordination in autism spectrum disorders: A synthesis and meta-analysis." <i>Journal of Autism and Developmental Disorders</i>, 40(10), 1227-1240.</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
@@ -415,13 +363,9 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-         <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-            <li>
-              Fletcher-Watson, S., & Happé, F. (2019). <i>Autism: A new introduction to psychological theory and current debate</i>. Routledge.
-            </li>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+            <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
+            <li>Fletcher-Watson, S., & Happé, F. (2019). <i>Autism: A new introduction to psychological theory and current debate</i>. Routledge.</li>
           </ul>
         </div>
       </div>
