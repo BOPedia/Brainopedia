@@ -11,7 +11,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
       
       {/* Header */}
       <div className="pb-6 border-b-4 border-[#0c264d] mb-10">
-        <h1 className="text-4xl text-[#0c264d] font-bold mb-2">
+        <h1 className="text-4xl text-[#0c264d] font-normal mb-2">
           Brainopedia Project Standards & Design System
         </h1>
         <p className="text-sm text-gray-500 font-bold uppercase tracking-widest">Last Updated: July 2026</p>
@@ -187,7 +187,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           COLOR PALETTE
         </h2>
         
-        <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Primary Colors</h3>
+        <h3 className="text-[#0c264d] font-bold text-lg mb-3">Primary Colors</h3>
         <div className="space-y-2 mb-4 ml-4">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded border-2 border-gray-300 shrink-0" style={{backgroundColor: '#ffd166'}}></div>
@@ -207,7 +207,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
         </div>
 
-        <h3 className="text-[#0c264d] font-semibold text-lg mb-3 mt-6">Secondary Colors</h3>
+        <h3 className="text-[#0c264d] font-bold text-lg mb-3 mt-6">Secondary Colors</h3>
         <div className="space-y-2 mb-4 ml-4">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded border-2 border-gray-300 shrink-0" style={{backgroundColor: '#10b981'}}></div>
@@ -223,7 +223,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
         </div>
 
-        <h3 className="text-[#0c264d] font-semibold text-lg mb-3 mt-6">Color Usage Rules</h3>
+        <h3 className="text-[#0c264d] font-bold text-lg mb-3 mt-6">Color Usage Rules</h3>
         <ul className="list-disc ml-8 space-y-2">
           <li>Citation numbers must ALWAYS be <code className="bg-gray-100 px-2 py-1 rounded break-words">#10b981</code> (bright green)</li>
           <li>Tab active states: Always Dark Cyan (<code className="bg-gray-100 px-2 py-1 rounded break-words">#0A9DC4</code>) with white text</li>
@@ -238,13 +238,13 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           TYPOGRAPHY
         </h2>
         
-        <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Font Family</h3>
+        <h3 className="text-[#0c264d] font-bold text-lg mb-3">Font Family</h3>
         <ul className="list-disc ml-8 space-y-2 mb-4">
           <li><strong>Primary Font:</strong> League Spartan - Used for ALL body text throughout the site</li>
           <li><strong>Fallback:</strong> system-ui, sans-serif</li>
         </ul>
 
-        <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Font Sizes</h3>
+        <h3 className="text-[#0c264d] font-bold text-lg mb-3">Font Sizes & Weights</h3>
         <ul className="list-disc ml-8 space-y-2 mb-4">
           <li><strong>DO NOT</strong> use Tailwind font size classes (text-xl, text-2xl, etc.) unless specifically requested</li>
           <li><strong>DO NOT</strong> use Tailwind font weight classes (font-bold, font-semibold, etc.) unless specifically requested</li>
@@ -252,11 +252,10 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <li>Default body text relies on globals.css styling</li>
         </ul>
 
-        <h3 className="text-[#0c264d] font-semibold text-lg mb-3">Headers</h3>
+        <h3 className="text-[#0c264d] font-bold text-lg mb-3">Headers</h3>
         <ul className="list-disc ml-8 space-y-2">
-          <li><code className="bg-gray-100 px-2 py-1 rounded break-words">&lt;h1&gt;</code> - Page titles (styled in globals.css)</li>
-          <li><code className="bg-gray-100 px-2 py-1 rounded break-words">&lt;h2&gt;</code> - Section headers (styled in globals.css)</li>
-          <li><code className="bg-gray-100 px-2 py-1 rounded break-words">&lt;h3&gt;</code> - Subsection headers (styled in globals.css)</li>
+          <li className="text-red-600 font-bold">STRICT RULE: <code className="bg-red-50 px-1 rounded break-words">&lt;h1&gt;</code> tags MUST NEVER be bolded. Use <code className="bg-red-50 px-1 rounded break-words">font-normal</code>.</li>
+          <li><code className="bg-gray-100 px-2 py-1 rounded break-words">&lt;h2&gt;</code> and <code className="bg-gray-100 px-2 py-1 rounded break-words">&lt;h3&gt;</code> tags MUST ALWAYS be bolded (<code className="bg-gray-100 px-2 py-1 rounded break-words">font-bold</code>).</li>
           <li>Custom font sizes/weights only when user explicitly requests them</li>
         </ul>
       </section>
@@ -283,7 +282,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <h3 className="font-bold text-[#0c264d] mb-4 uppercase text-xs">Font Rules & Styling</h3>
           <ul className="list-disc ml-5 text-sm text-gray-700 space-y-2 mb-4">
             <li><strong>Weight:</strong> Normal (<code className="bg-gray-100 px-1 rounded break-words">font-normal</code>).</li>
-            <li className="text-red-600 font-bold">STRICT RULE: NO bolding (<code className="bg-red-50 px-1 rounded break-words">font-bold</code> or <code className="bg-red-50 px-1 rounded break-words">font-semibold</code>) is allowed on tabs or standard navigation buttons.</li>
+            <li className="text-red-600 font-bold">STRICT RULE: NO bolding (<code className="bg-red-50 px-1 rounded break-words">font-bold</code> or <code className="bg-red-50 px-1 rounded break-words">font-semibold</code>) is allowed on tabs, standard navigation buttons, or "About" buttons. Text must be <code className="bg-red-50 px-1 rounded break-words">font-normal</code>.</li>
           </ul>
         </div>
 
