@@ -7,7 +7,7 @@ interface ProjectStandardsProps {
 
 export default function ProjectStandards({ setCurrentArticle }: ProjectStandardsProps) {
   return (
-   <article className="w-full bg-white p-4 sm:p-8 rounded-xl shadow-lg border border-gray-100 font-spartan animate-in fade-in duration-300">
+   <article className="font-spartan animate-in fade-in duration-300">
       
       {/* Header */}
       <div className="pb-6 border-b-4 border-[#0c264d] mb-10">
@@ -199,11 +199,11 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded border-2 border-gray-300" style={{backgroundColor: '#0A9DC4'}}></div>
-            <p><strong>Dark Cyan (Professional):</strong> <code className="bg-gray-100 px-2 py-1 rounded">#0A9DC4</code> - Used for active tab states, hover states (introduced Dec 2025)</p>
+            <p><strong>Dark Cyan (Professional):</strong> <code className="bg-gray-100 px-2 py-1 rounded">#0A9DC4</code> - Used for active tab states, background colors</p>
           </div>
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded border-2 border-gray-300" style={{backgroundColor: '#0c264d'}}></div>
-            <p><strong>Dark Navy Blue (Text/Headers):</strong> <code className="bg-gray-100 px-2 py-1 rounded">#0c264d</code> - Primary text color, headers, borders</p>
+            <p><strong>Dark Navy Blue (Text/Headers):</strong> <code className="bg-gray-100 px-2 py-1 rounded">#0c264d</code> - Primary text color, headers, hover states</p>
           </div>
         </div>
 
@@ -225,10 +225,10 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
         <h3 className="text-[#0c264d] font-semibold text-lg mb-3 mt-6">Color Usage Rules</h3>
         <ul className="list-disc ml-8 space-y-2">
-          <li><strong>Never</strong> use the old cyan <code className="bg-gray-100 px-2 py-1 rounded">#2abcd4</code> for active tab states - always use <code className="bg-gray-100 px-2 py-1 rounded">#0A9DC4</code></li>
           <li>Citation numbers must ALWAYS be <code className="bg-gray-100 px-2 py-1 rounded">#10b981</code> (bright green)</li>
-          <li>Button hover states: Yellow buttons hover to dark navy (<code className="bg-gray-100 px-2 py-1 rounded">#0c264d</code>)</li>
-          <li>Tab active states: Always <code className="bg-gray-100 px-2 py-1 rounded">#0A9DC4</code> with white text</li>
+          <li>Tab active states: Always Dark Cyan (<code className="bg-gray-100 px-2 py-1 rounded">#0A9DC4</code>) with white text</li>
+          <li>Tab/Button hover states: Always Navy (<code className="bg-gray-100 px-2 py-1 rounded">#0c264d</code>) with white text</li>
+          <li>Tab resting states: Always Yellow (<code className="bg-gray-100 px-2 py-1 rounded">#ffd166</code>) with Navy text</li>
         </ul>
       </section>
 
@@ -291,23 +291,23 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">Resting State</h3>
             <p className="text-xs mb-3 text-gray-600">Yellow background with Navy text.</p>
-            <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded">
               bg-[#ffd166] text-[#0c264d]
             </code>
           </div>
           
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">Hover State</h3>
-            <p className="text-xs mb-3 text-gray-600">Yellow background with 80% opacity.</p>
-            <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
-              hover:bg-[#ffd166]/80
+            <p className="text-xs mb-3 text-gray-600">Navy background with White text.</p>
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded">
+              hover:bg-[#0c264d] hover:text-white
             </code>
           </div>
 
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">Active / Highlighted</h3>
             <p className="text-xs mb-3 text-gray-600">Darker Cyan background with White text.</p>
-            <code className="text-[10px] block bg-gray-900 text-green-400 p-2 rounded">
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded">
               bg-[#0A9DC4] text-white
             </code>
           </div>
