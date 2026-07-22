@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useNavigate } from 'react-router-dom';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
 interface DyslexiaOverviewProps {
   setCurrentArticle?: (article: string) => void;
@@ -8,39 +9,13 @@ interface DyslexiaOverviewProps {
 
 export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
   const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState('what-is');
 
-  return (
-    <article className="max-w-6xl animate-fadeIn">
-
-      {/* Main Title & Desktop Back Button */}
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-12 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <h1 className="text-3xl font-spartan text-[#0c264d]">
-          Dyslexia: Overview
-        </h1>
-
-        <button 
-          onClick={() => setCurrentArticle?.('dyslexia')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
-        >
-          <span className="text-xl">←</span>
-          All About Dyslexia
-        </button>
-      </div>
-
-      {/* Mobile Back Button */}
-      <button 
-        onClick={() => setCurrentArticle?.('dyslexia')}
-        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-10"
-      >
-        <span className="text-xl">←</span>
-        All About Dyslexia
-      </button>
-
-      {/* Main Content Wrapper */}
-      <div className="space-y-16">
-        
+  function WhatIsContent() {
+    return (
+      <div className="animate-fadeIn">
         {/* INTRO: BLUE BOX WITH FLOATED VIDEO */}
-        <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4]">
+        <div className="bg-[#f0f9ff] p-6 rounded-lg border-l-4 border-[#2abcd4] mb-8">
           <div className="w-48 md:w-64 rounded-md shadow-sm float-right ml-6 mb-4 overflow-hidden"> 
             <video 
               autoPlay 
@@ -77,7 +52,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         </div>
 
         {/* SECTION 1: WHAT IS DYSLEXIA? */}
-        <section className="space-y-4">
+        <section className="space-y-4 mb-8 clear-both">
           <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">What is Dyslexia?</h2>
 
           <div className="bg-white rounded-md border-l-4 border-[#2abcd4] p-5 shadow-sm mt-4">
@@ -92,7 +67,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         </section>
 
         {/* SECTION 1.5: KEY CHARACTERISTICS */}
-        <section className="bg-[#ffd166]/10 p-8 rounded-2xl mb-8">
+        <section className="bg-[#ffd166]/10 p-8 rounded-2xl mb-8 clear-both">
           <h3 className="text-[#0c264d] font-bold mb-6 text-2xl">Key Characteristics</h3>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -145,9 +120,18 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             </div>
           </div>
         </section>
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
+          Key Points
+        </h2>
+        
+        <ImageWithFallback 
+          src="/images/dyslexia/dyslexia-overview-What-IsTAB-lg-circle.png"
+          alt="Key POints to be made about Dyslexia"
+          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+        />
 
         {/* SECTION 2: PREVALENCE & SPECTRUM */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-8 clear-both">
           <div className="lg:col-span-7 space-y-6">
             <div>
               <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2 mb-4">How Common is Dyslexia?</h2>
@@ -203,7 +187,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         </section>
 
         {/* SECTION 2.5: CO-OCCURRING CONDITIONS */}
-        <section className="bg-[#ffd166]/10 p-8 rounded-2xl mb-8">
+        <section className="bg-[#ffd166]/10 p-8 rounded-2xl clear-both">
           <h3 className="text-[#0c264d] font-bold mb-6 text-2xl">Co-occurring Conditions</h3>
           <p className="leading-relaxed mb-6">
             Dyslexia frequently co-occurs with other neurodevelopmental and mental health conditions:
@@ -261,8 +245,15 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             </div>
           </div>
         </section>
-{/* SECTION 3: THE READING BRAIN */}
-        <section className="space-y-6 mb-12 clear-both">
+      </div>
+    );
+  }
+
+  function ReadingBrainContent() {
+    return (
+      <div className="animate-fadeIn">
+        {/* SECTION 3: THE READING BRAIN */}
+        <section className="space-y-6 clear-both">
           <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Understanding the Reading Brain</h2>
           
           {/* Floated Video */}
@@ -306,16 +297,22 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             When phonological processing is impaired, learning letter-sound correspondences is difficult, sounding out words is challenging, and reading remains effortful rather than automatic.
           </p>
         </section>
+      </div>
+    );
+  }
 
+  function StrengthsContent() {
+    return (
+      <div className="animate-fadeIn">
         {/* SECTION 4: STRENGTHS */}
         <section className="space-y-6 mb-12 clear-both">
           <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Dyslexia and Strengths</h2>
           
-          {/* Floated Image */}
+          {/* Floated Image - Moved precisely into Tab 3 as requested */}
           <ImageWithFallback 
             src="/images/dyslexia/dyslexia-overview-strengths.png" 
             alt="show a colorful brain with different areas highlighted to represent the creative strengths of many individuals with dyslexia"
-            className="w-32 md:w-32 h-auto rounded-lg shadow-sm float-right ml-6 mb-4"
+            className="w-32 md:w-48 h-auto rounded-lg shadow-sm float-right ml-6 mb-4"
           />
 
           <p className="leading-relaxed text-slate-700">
@@ -332,12 +329,12 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             <li><strong>Resilience:</strong> Determination from overcoming adversity</li>
           </ul>
 
-          <p className="leading-relaxed text-sm italic text-gray-600 border-l-4 border-[#ffd166] pl-4">
+          <p className="leading-relaxed text-sm italic text-gray-600 border-l-4 border-[#ffd166] pl-4 clear-both">
             Many highly successful individuals in diverse fields—including entrepreneurs, artists, scientists, and leaders—have dyslexia.
           </p>
         </section>
 
-        {/* SECTION 5: MOVING FORWARD (Full Width) */}
+        {/* SECTION 5: MOVING FORWARD */}
         <section className="space-y-6 clear-both">
           <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Moving Forward</h2>
 
@@ -365,16 +362,71 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
             fostering an environment where individuals with dyslexia can thrive.
           </p>
         </section>
-
       </div>
+    );
+  }
+
+  return (
+    <article className="max-w-6xl animate-fadeIn">
+
+      {/* Main Title & Desktop Back Button */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl font-spartan text-[#0c264d] font-normal">
+          Dyslexia: Overview
+        </h1>
+
+        <button 
+          onClick={() => setCurrentArticle?.('dyslexia')}
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0 md:block hidden"
+        >
+          <span className="text-lg">←</span>
+          All About Dyslexia
+        </button>
+      </div>
+
+      {/* Mobile Back Button */}
+      <button 
+        onClick={() => setCurrentArticle?.('dyslexia')}
+        className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6 shadow-sm shrink-0"
+      >
+        <span className="text-lg">←</span>
+        All About Dyslexia
+      </button>
+
+      {/* TAB NAVIGATION */}
+      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab} className="w-full">
+        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
+          <TabsTrigger value="what-is" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
+            What is Dyslexia
+          </TabsTrigger>
+          <TabsTrigger value="brain" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
+            The Reading Brain
+          </TabsTrigger>
+          <TabsTrigger value="strengths" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
+            Strengths & Future
+          </TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="what-is" className="space-y-8">
+          {WhatIsContent()}
+        </TabsContent>
+
+        <TabsContent value="brain" className="space-y-8">
+          {ReadingBrainContent()}
+        </TabsContent>
+
+        <TabsContent value="strengths" className="space-y-8">
+          {StrengthsContent()}
+        </TabsContent>
+      </Tabs>
 
       {/* Bottom navigation button */}
       <div className="mt-16 mb-6 flex flex-col md:flex-row md:justify-end clear-both">
         <button 
           onClick={() => setCurrentArticle?.('dyslexia')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap shadow-md"
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
         >
-          <span className="text-xl">←</span>
+          <span className="text-lg">←</span>
           All About Dyslexia
         </button>
       </div>
@@ -390,23 +442,13 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages." <i>Psychological Bulletin</i>, 131(1), 3-29.
-            </li>
-            <li>
-              Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia." <i>Psychological Bulletin</i>, 142(5), 498-545.
-            </li>
-            <li>
-              Quinn, J. M., & Wagner, R. K. (2015). "Gender differences in reading impairment." <i>Journal of Learning Disabilities</i>, 48(4), 433-445.
-            </li>
-            <li>
-              Landerl, K., & Moll, K. (2010). "Comorbidity of learning disorders." <i>Journal of Child Psychology and Psychiatry</i>, 51(3), 287-294.
-            </li>
-            <li>
-              Richlan, F., Kronbichler, M., & Wimmer, H. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <i>Neuroimage</i>, 56(3), 1735-1742.
-            </li>
-          </ol>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages." <i>Psychological Bulletin</i>, 131(1), 3-29.</p>
+            <p>2. Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia." <i>Psychological Bulletin</i>, 142(5), 498-545.</p>
+            <p>3. Quinn, J. M., & Wagner, R. K. (2015). "Gender differences in reading impairment." <i>Journal of Learning Disabilities</i>, 48(4), 433-445.</p>
+            <p>4. Landerl, K., & Moll, K. (2010). "Comorbidity of learning disorders." <i>Journal of Child Psychology and Psychiatry</i>, 51(3), 287-294.</p>
+            <p>5. Richlan, F., Kronbichler, M., & Wimmer, H. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <i>Neuroimage</i>, 56(3), 1735-1742.</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
@@ -414,19 +456,11 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.
-            </li>
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-            <li>
-              Shaywitz, S. (2003). <i>Overcoming Dyslexia</i>. Knopf.
-            </li>
-            <li>
-              Eide, B. L., & Eide, F. F. (2011). <i>The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain</i>. Penguin.
-            </li>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+            <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.</li>
+            <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
+            <li>Shaywitz, S. (2003). <i>Overcoming Dyslexia</i>. Knopf.</li>
+            <li>Eide, B. L., & Eide, F. F. (2011). <i>The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain</i>. Penguin.</li>
           </ul>
         </div>
       </div>
