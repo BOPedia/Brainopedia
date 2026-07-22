@@ -14,7 +14,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
     return (
       <>
         <div>
-          <h2 className="text-[#0c264d] mb-4 text-2xl clear-both">Thriving with ADHD</h2>
+          <h2 className="text-[#0c264d] mb-4 text-2xl font-bold clear-both">Thriving with ADHD</h2>
           
           <ImageWithFallback 
             src="/images/adhd/adhd-living-overview-pathway.png"
@@ -548,15 +548,15 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
   return (
     <article className="max-w-full w-full">
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <h1 className="text-3xl">
+        <h1 className="text-3xl text-[#0c264d] font-normal">
           Living with ADHD
         </h1>
 
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0 md:block hidden"
         >
-          <span className="text-xl">←</span>
+          <span className="text-lg">←</span>
           All About ADHD
         </button>
       </div>
@@ -564,30 +564,30 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
       {/* Mobile button - shows only on small screens below title */}
       <button 
         onClick={() => setCurrentArticle?.('adhd')}
-        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
+        className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6 shadow-sm shrink-0"
       >
-        <span className="text-xl">←</span>
+        <span className="text-lg">←</span>
         All About ADHD
       </button>
 
-      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={(v) => setActiveTab(v)} className="w-full">
+      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab} className="w-full">
         <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
-          <TabsTrigger value="overview" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
+          <TabsTrigger value="overview" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Overview & Strengths
           </TabsTrigger>
-          <TabsTrigger value="daily-life" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
+          <TabsTrigger value="daily-life" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Daily Life & Routines
           </TabsTrigger>
-          <TabsTrigger value="relationships" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
+          <TabsTrigger value="relationships" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Relationships
           </TabsTrigger>
-          <TabsTrigger value="career" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
+          <TabsTrigger value="career" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Education & Career
           </TabsTrigger>
-          <TabsTrigger value="mental-health" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
+          <TabsTrigger value="mental-health" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Mental Health & Stigma
           </TabsTrigger>
-          <TabsTrigger value="community" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 !h-auto">
+          <TabsTrigger value="community" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Community & Future
           </TabsTrigger>
         </TabsList>
@@ -626,9 +626,9 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
       <div className="flex justify-end my-8 clear-both">
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
         >
-          <span className="text-xl">←</span>
+          <span className="text-lg">←</span>
           All About ADHD
         </button>
       </div>
