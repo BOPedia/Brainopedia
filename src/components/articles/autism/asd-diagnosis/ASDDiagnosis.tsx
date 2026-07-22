@@ -57,8 +57,8 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
             onClick={() => handleTabChange(tab.id)}
             className={`px-6 py-3 rounded-md text-sm transition-colors ${
               activeTab === tab.id
-                ? 'bg-[#0A9DC4] text-white'
-                : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffd166]/80'
+                ? 'bg-[#0A9DC4] text-white shadow-md' // UPDATED to standard Dark Cyan
+                : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
             }`}
           >
             {tab.label}

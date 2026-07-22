@@ -58,8 +58,8 @@ const tabs = [
             onClick={() => handleTabChange(tab.id)}
             className={`px-4 py-4 rounded-lg text-sm transition-colors font-normal shadow-sm ${
               activeTab === tab.id
-                ? 'bg-[#0A9DC4] text-white'
-                : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#ffd166]/80'
+                ? 'bg-[#0A9DC4] text-white shadow-md' // UPDATED to standard Dark Cyan
+                : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
             }`}
           >
             {tab.label}

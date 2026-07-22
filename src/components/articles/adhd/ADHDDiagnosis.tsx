@@ -19,13 +19,13 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
           ADHD: Testing & Diagnosing
         </h1>
 
-        <button 
-          onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
-        >
-          <span className="text-xl">←</span>
-          All About ADHD
-        </button>
+<button 
+  onClick={() => setCurrentArticle?.('adhd')}
+  className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
+>
+  <span className="text-lg">←</span>
+  All About ADHD
+</button>
       </div>
 
       {/* Mobile button - shows only on small screens below title */}
@@ -37,30 +37,30 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         All About ADHD
       </button>
 
-      <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab} className="w-full">
+ <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab} className="w-full">
         <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
-          <TabsTrigger value="process" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="process" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Diagnostic Process
           </TabsTrigger>
-          <TabsTrigger value="tests" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="tests" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Tests & Assessments
           </TabsTrigger>
-          <TabsTrigger value="professionals" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="professionals" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Who Can Diagnose
           </TabsTrigger>
-          <TabsTrigger value="adults" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="adults" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Adult Diagnosis
           </TabsTrigger>
-          <TabsTrigger value="challenges" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="challenges" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Challenges & Comorbidities
           </TabsTrigger>
-          <TabsTrigger value="after" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="after" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             After Diagnosis
           </TabsTrigger>
-          <TabsTrigger value="research" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="research" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Recent Research
           </TabsTrigger>
-          <TabsTrigger value="audhd" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="audhd" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             What is AuDHD?
           </TabsTrigger>
         </TabsList>
@@ -173,13 +173,13 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
 
             {/* Bottom button */}
             <div className="flex justify-end my-8 clear-both">
-              <button 
-                onClick={() => setCurrentArticle?.('adhd')}
-                className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
-              >
-                <span className="text-xl">←</span>
-                All About ADHD
-              </button>
+<button 
+  onClick={() => setCurrentArticle?.('adhd')}
+  className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
+>
+  <span className="text-lg">←</span>
+  All About ADHD
+</button>
             </div>
 
             {/* ===== REFERENCES SECTION ===== */}

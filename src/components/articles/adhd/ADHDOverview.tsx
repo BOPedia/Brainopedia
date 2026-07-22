@@ -11,13 +11,13 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
     <article className="max-w-full w-full">
       {/* HEADER */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl font-normal">
           ADHD: Overview
         </h1>
 
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
         >
           <span className="text-xl">←</span>
           All About ADHD

@@ -8,12 +8,12 @@ import { ADHDSymptomsTabMore } from './ADHDSymptomsTabMore';
 import { ADHDSymptomsTabFemales } from './ADHDSymptomsTabFemales';
 import { ADHDSymptomsTabMyths } from './ADHDSymptomsTabMyths';
 
-interface ADHDSymptomsProps {
+interface ASDSymptomsProps {
   setCurrentArticle?: (article: string) => void;
   initialTab?: string;
 }
 
-export function ADHDSymptoms({ setCurrentArticle, initialTab }: ADHDSymptomsProps) {
+export function ADHDSymptoms({ setCurrentArticle, initialTab }: ASDSymptomsProps) {
   const [activeTab, setActiveTab] = useState(initialTab || 'core');
 
   const handleTabChange = (value: string) => {
@@ -35,19 +35,20 @@ export function ADHDSymptoms({ setCurrentArticle, initialTab }: ADHDSymptomsProp
           ADHD: Symptoms & Characteristics
         </h1>
 
-        <button 
-          onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
-        >
-          <span className="text-xl">←</span>
-          All About ADHD
-        </button>
+        {/* Desktop "All About ADHD" Button - Unbolded */}
+<button 
+  onClick={() => setCurrentArticle?.('adhd')}
+  className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
+>
+  <span className="text-lg">←</span>
+  All About ADHD
+</button>
       </div>
 
-      {/* Mobile button - shows only on small screens below title */}
+      {/* Mobile button - shows only on small screens below title - Unbolded */}
       <button 
         onClick={() => setCurrentArticle?.('adhd')}
-        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
+        className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm py-2.5 px-5 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6 shadow-sm"
       >
         <span className="text-xl">←</span>
         All About ADHD
@@ -55,25 +56,25 @@ export function ADHDSymptoms({ setCurrentArticle, initialTab }: ADHDSymptomsProp
 
       <Tabs defaultValue={activeTab} value={activeTab} onValueChange={handleTabChange} className="w-full">
         <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-12 bg-transparent h-auto p-0">
-          <TabsTrigger value="core" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="core" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Core Symptoms
           </TabsTrigger>
-          <TabsTrigger value="inattention" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="inattention" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Inattention
           </TabsTrigger>
-          <TabsTrigger value="hyperactivity" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="hyperactivity" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Hyperactivity
           </TabsTrigger>
-          <TabsTrigger value="impulsivity" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="impulsivity" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Impulsivity
           </TabsTrigger>
-          <TabsTrigger value="more" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="more" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             More Symptoms
           </TabsTrigger>
-          <TabsTrigger value="females" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="females" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             ADHD in Females
           </TabsTrigger>
-          <TabsTrigger value="myths" className="bg-[#ffd166] data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white rounded-md !px-6 !py-3 md:!py-2 text-sm !h-auto">
+          <TabsTrigger value="myths" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             Myths & Misconceptions
           </TabsTrigger>
         </TabsList>
@@ -98,21 +99,10 @@ export function ADHDSymptoms({ setCurrentArticle, initialTab }: ADHDSymptomsProp
           <ADHDSymptomsTabImpulsivity />
         </TabsContent>
 
-        {/* More Symptoms Tab */}
+        {/* More Symptoms Tab (Extra mobile button removed here) */}
         <TabsContent value="more" className="space-y-8">
           <div className="bg-[#f0f9ff] p-6 rounded-lg">
             <ADHDSymptomsTabMore setCurrentArticle={setCurrentArticle} />
-          </div>
-
-          {/* Back to ADHD Button - Mobile Only */}
-          <div className="md:hidden">
-            <button 
-              onClick={() => setCurrentArticle?.('adhd')}
-              className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap w-full justify-center"
-            >
-              <span className="text-xl">←</span>
-              All About ADHD
-            </button>
           </div>
         </TabsContent>
 

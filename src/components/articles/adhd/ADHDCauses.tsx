@@ -573,13 +573,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           ADHD: Causes & Origins
         </h1>
 
-        <button 
-          onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
-        >
-          <span className="text-xl">←</span>
-          All About ADHD
-        </button>
+<button 
+  onClick={() => setCurrentArticle?.('adhd')}
+  className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
+>
+  <span className="text-lg">←</span>
+  All About ADHD
+</button>
       </div>
 
       {/* Mobile button - shows only on small screens below title */}
@@ -619,13 +619,13 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
       </Tabs>
 
       <div className="flex justify-end my-8 clear-both">
-        <button 
-          onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
-        >
-          <span className="text-xl">←</span>
-          All About ADHD
-        </button>
+<button 
+  onClick={() => setCurrentArticle?.('adhd')}
+  className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
+>
+  <span className="text-lg">←</span>
+  All About ADHD
+</button>
       </div>
     </article>
   );

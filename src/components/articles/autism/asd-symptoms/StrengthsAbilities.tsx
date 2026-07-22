@@ -113,10 +113,10 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
   return (
     <div className="space-y-6">
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Autistic Strengths and Abilities</h2>
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Autistic Strengths and Abilities</h2>
         
         {/* --- CENTERED GRAPHIC SECTION --- */}
-        <div className="mx-auto w-48 mb-8 mt-4 p-3 rounded-2xl border-4 border-[#2abcd4] shadow-md bg-white">
+        <div className="mx-auto w-48 mb-8 mt-4 p-3 rounded-2xl border-4 border-[#0A9DC4] shadow-md bg-white">
           <ImageWithFallback 
             src="/images/autism/autism-symptoms-Strengthstab-gears.png" 
             alt="Gears illustrating the interconnected nature of autistic strengths"
