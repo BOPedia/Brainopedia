@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 interface DyslexiaCausesGeneticsProps {
   setCurrentArticle?: (article: string) => void;
@@ -57,6 +58,18 @@ export function DyslexiaCausesGenetics({ setCurrentArticle }: DyslexiaCausesGene
         </TabsList>
 
         <TabsContent value="genetics" className="animate-fadeIn">
+
+          <div>
+          <h2 className="text-[#0c264d] mb-4 text-2xl font-bold clear-both">Introduction to Genetics in Dyslexia</h2>
+          
+          <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-causes-geneticsTAB-Intro-gen.png"
+            alt="Child Reading under Genetics tab"
+            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+          />
+          </div>
+
+
           <p className="mb-6 text-slate-700 leading-relaxed">
             Dyslexia is a neurodevelopmental condition with strong genetic and neurobiological underpinnings. Research over the past several decades has revealed that dyslexia results from differences in brain structure and function, particularly in regions involved in reading and language processing. Understanding the origins of dyslexia helps demystify the condition and inform effective interventions.
           </p>

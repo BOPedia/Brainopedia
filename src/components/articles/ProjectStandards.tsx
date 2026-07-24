@@ -92,24 +92,42 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
           <FileText className="text-[#2abcd4]" /> CITATION SYSTEM
         </h2>
+        
         <div className="grid md:grid-cols-2 gap-4 mb-6">
-           <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-4 text-xs">
-            <p className="font-bold mb-1 uppercase">ONLY cite when:</p>
-            <ul className="list-disc ml-4 space-y-1">
-              <li>Text mentions research/studies directly.</li>
-              <li>Text presents statistics or numerical data.</li>
+           <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-4 text-sm">
+            <p className="font-bold mb-2 uppercase text-[#0c264d]">ONLY Use Inline Citations When:</p>
+            <ul className="list-disc ml-4 space-y-2 text-slate-700">
+              <li>The text explicitly says "research shows," "studies indicate," or similar phrasing.</li>
+              <li>A specific statistic, percentage, or numerical data point is mentioned.</li>
+              <li>These items go into the <strong>Cited Studies & Statistics</strong> reference list.</li>
             </ul>
           </div>
-          <div className="bg-red-50 border-l-4 border-red-500 p-4 text-xs">
-            <p className="font-bold mb-1 uppercase">NEVER cite:</p>
-            <p>General knowledge or descriptive symptom lists. (Use Background Sources instead).</p>
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 text-sm">
+            <p className="font-bold mb-2 uppercase text-red-800">NEVER Use Inline Citations For:</p>
+            <ul className="list-disc ml-4 space-y-2 text-slate-700">
+              <li>General foundational knowledge.</li>
+              <li>Standard definitions of teaching methods or conditions.</li>
+              <li>Descriptive symptom lists.</li>
+              <li>These items must be placed directly into the <strong>Background Sources</strong> list with NO inline superscript.</li>
+            </ul>
           </div>
         </div>
-        <div className="bg-gray-900 text-green-400 p-6 rounded-xl shadow-inner overflow-x-auto">
+
+        <div className="bg-gray-900 text-green-400 p-6 rounded-xl shadow-inner overflow-x-auto mb-6">
           <h3 className="text-white font-bold mb-2 text-sm">The "Naked" Superscript Standard</h3>
+          <p className="text-xs text-gray-400 mb-3">All inline citations must be flush with the text, using strictly this class string:</p>
           <code className="block bg-black p-3 rounded text-xs whitespace-nowrap">
             {`Statistics show 10%<sup className="text-green-600 font-bold ml-0.5">1</sup>`}
           </code>
+        </div>
+
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg shadow-sm">
+          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">Web-Adapted Citation Formatting</h3>
+          <p className="text-sm text-gray-700 mb-2">We use a "Digital-First" APA 7th style for references. <strong>Do not use archaic print-publishing artifacts.</strong></p>
+          <ul className="list-disc ml-5 text-sm text-gray-700 space-y-1">
+            <li><strong>REMOVE:</strong> Journal volume numbers, issue numbers, and page ranges.</li>
+            <li><strong>KEEP:</strong> Author, Year, Article Title, Journal Title, and the direct DOI or URL.</li>
+          </ul>
         </div>
       </section>
 
@@ -132,8 +150,9 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
   <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
     Cited Studies & Statistics
   </h4>
+  {/* NOTE: Zero text indent rule applied to paragraphs */}
   <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-    <p>1. Author. (Year). "Title." <em>Journal</em>, vol(issue), pages.</p>
+    <p>1. Author. (Year). "Title." <em>Journal</em>. https://doi.org/10.xxxx/xxxxx</p>
   </div>
 </div>
 
@@ -142,8 +161,9 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
   <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
     Background Sources
   </h4>
+  {/* NOTE: Zero text indent rule applied to lists */}
   <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-    <li>Source (NO BULLET POINTS, NO NUMBERS, NO INDENTATION)</li>
+    <li>Source Book/Manual (NO BULLET POINTS, NO NUMBERS, NO INDENTATION)</li>
   </ul>
 </div>`}
           </pre>
