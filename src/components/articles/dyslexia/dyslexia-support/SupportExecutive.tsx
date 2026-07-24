@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 interface SupportExecutiveProps {
   setCurrentArticle?: (article: string) => void;
@@ -84,7 +85,13 @@ export function SupportExecutive({ setCurrentArticle }: SupportExecutiveProps) {
             Home Support
           </TabsTrigger>
         </TabsList>
-        
+                  <h3 className="text-2xl font-bold mt-8 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both text-center">How to Support Executive Dysfunction</h3>
+                  
+                  <ImageWithFallback 
+                    src="/images/dyslexia/dyslexia-support-execdys-TAB-tools.png"
+                    alt="Timeline and intensity of dyslexia intervention"
+                    className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+                  />
         <TabsContent value="executive" className="animate-fadeIn">
           <p className="mb-6 text-slate-700 leading-relaxed">
             Many individuals with dyslexia also experience executive function challenges:<sup className="text-green-600 font-bold ml-0.5">1</sup>
@@ -116,6 +123,7 @@ export function SupportExecutive({ setCurrentArticle }: SupportExecutiveProps) {
               </ul>
             </div>
           </div>
+
 
           <div className="flex justify-end my-8 clear-both">
             <button 

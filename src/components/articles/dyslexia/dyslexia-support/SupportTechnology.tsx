@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 interface SupportTechnologyProps {
   setCurrentArticle?: (article: string) => void;
@@ -85,54 +86,162 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
           </TabsTrigger>
         </TabsList>
 
-        <TabsContent value="technology" className="animate-fadeIn">
-          <h3 className="text-2xl font-bold mt-2 mb-3 text-[#0c264d] border-b border-gray-200 pb-2">Assistive Technology</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="border border-[#2abcd4] rounded-lg p-4">
-              <h4 className="font-bold text-[#0A9DC4] mb-2">Reading Technology</h4>
-              <ul className="list-disc ml-5 space-y-1 text-sm text-slate-700">
-                <li><strong>Text-to-speech:</strong> NaturalReader, Voice Dream Reader, Kurzweil 3000.<sup className="text-green-600 font-bold ml-0.5">1</sup></li>
-                <li><strong>OCR:</strong> Converts images/PDFs to readable text.</li>
-                <li><strong>Electronic books:</strong> Kindle, iPad with accessibility features.<sup className="text-green-600 font-bold ml-0.5">2</sup></li>
-                <li><strong>Reading pens:</strong> C-Pen Reader scans/reads text aloud.</li>
-              </ul>
-            </div>
-            <div className="border border-[#2abcd4] rounded-lg p-4">
-              <h4 className="font-bold text-[#0A9DC4] mb-2">Writing Technology</h4>
-              <ul className="list-disc ml-5 space-y-1 text-sm text-slate-700">
-                <li><strong>Word prediction:</strong> Co:Writer, Read&Write.<sup className="text-green-600 font-bold ml-0.5">3</sup></li>
-                <li><strong>Speech-to-text:</strong> Google Docs voice typing, Windows dictation.</li>
-                <li><strong>Grammar checkers:</strong> Grammarly, ProWritingAid.<sup className="text-green-600 font-bold ml-0.5">4</sup></li>
-              </ul>
-            </div>
-            <div className="border border-[#2abcd4] rounded-lg p-4">
-              <h4 className="font-bold text-[#0A9DC4] mb-2">Organization Tools</h4>
-              <ul className="list-disc ml-5 space-y-1 text-sm text-slate-700">
-                <li><strong>Organizers:</strong> Google Calendar, Trello, Notion.<sup className="text-green-600 font-bold ml-0.5">5</sup></li>
-                <li><strong>Note-taking:</strong> OneNote, Notability (with audio).</li>
-                <li><strong>Study apps:</strong> Quizlet, Evernote.<sup className="text-green-600 font-bold ml-0.5">6</sup></li>
-              </ul>
-            </div>
+ <TabsContent value="technology" className="animate-fadeIn">
+          
+          <div className="clear-both">
+            <h2 className="text-[#0c264d] font-bold mt-2 mb-8 text-2xl clear-both text-center border-b border-gray-200 pb-2">
+              Assistive Technology
+            </h2>
           </div>
 
-          <h3 className="text-2xl font-bold mt-6 mb-3 text-[#0c264d] border-b border-gray-200 pb-2">Educational Programs (IEP vs. 504)</h3>
-          <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-8">
-            <h4 className="font-bold text-[#0c264d] mb-3">IEP (Individualized Education Program)</h4>
-            <p className="text-sm text-slate-700 mb-2">Under IDEA for students whose dyslexia impacts academic performance.</p>
-            <ul className="list-disc ml-5 text-sm text-slate-700 space-y-1 mb-4">
-              <li>Includes specialized instruction (e.g., resource room).</li>
-              <li>Requires measurable annual goals and monitoring.</li>
-            </ul>
-
-            <h4 className="font-bold text-[#0c264d] mb-3">504 Plan</h4>
-            <p className="text-sm text-slate-700 mb-2">Under Section 504 of the Rehabilitation Act; requires accommodations only.</p>
-            <ul className="list-disc ml-5 text-sm text-slate-700 space-y-1">
-              <li>Modifies the learning environment (e.g., extended time).</li>
-              <li>Broad eligibility; easier to qualify than IEP.</li>
-            </ul>
+          {/* READING TECHNOLOGY */}
+          <div className="mb-16">
+            <div className="max-w-2xl mx-auto bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm mb-6 text-center">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-4">Reading Technology</h4>
+              <div className="flex flex-col gap-3 text-sm text-slate-700 text-left">
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>Text-to-speech:</strong> NaturalReader, Voice Dream Reader, Kurzweil 3000.
+                </div>
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>OCR:</strong> Converts images/PDFs to readable text.
+                </div>
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>Electronic books:</strong> Kindle, iPad with accessibility features.
+                </div>
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>Reading pens:</strong> C-Pen Reader scans/reads text aloud.
+                </div>
+              </div>
+            </div>
+            <ImageWithFallback 
+              src="/images/dyslexia/dyslexia-support-techtools-TAB-reading.png"
+              alt="tech reading tools"
+              className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
+            /> 
           </div>
 
-          <div className="flex justify-end my-8 clear-both">
+          {/* WRITING TECHNOLOGY */}
+          <div className="mb-16">
+            <div className="max-w-2xl mx-auto bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm mb-6 text-center">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-4">Writing Technology</h4>
+              <div className="flex flex-col gap-3 text-sm text-slate-700 text-left">
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>Word prediction:</strong> Co:Writer, Read&Write.
+                </div>
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>Speech-to-text:</strong> Google Docs voice typing, Windows dictation.
+                </div>
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>Grammar checkers:</strong> Grammarly, ProWritingAid.
+                </div>
+              </div>
+            </div>
+            <ImageWithFallback 
+              src="/images/dyslexia/dyslexia-support-techtools-TAB-writing.png"
+              alt="tech writing tools"
+              className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
+            />
+          </div>
+
+          {/* ORGANIZATION TOOLS */}
+          <div className="mb-16">
+            <div className="max-w-2xl mx-auto bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm mb-6 text-center">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-4">Organization Tools</h4>
+              <div className="flex flex-col gap-3 text-sm text-slate-700 text-left">
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>Organizers:</strong> Google Calendar, Trello, Notion.
+                </div>
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>Note-taking:</strong> OneNote, Notability (with audio).
+                </div>
+                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
+                  <strong>Study apps:</strong> Quizlet, Evernote.
+                </div>
+              </div>
+            </div>
+            <ImageWithFallback 
+              src="/images/dyslexia/dyslexia-support-techtools-TAB-organize-tools.png"
+              alt="tech organization tools"
+              className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
+            />     
+          </div>
+<div className="clear-both mt-10">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center border-b border-gray-200 pb-2">
+              Educational Frameworks
+            </h2>
+          </div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {/* IEP Card */}
+            <div className="bg-gray-300 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3">IEP (Individualized Education Program)</h4>
+              <p className="text-sm text-slate-800 mb-5 leading-relaxed font-medium">
+                Governed by the Individuals with Disabilities Education Act (IDEA), an IEP is designed for students whose dyslexia requires specialized, direct instruction to make academic progress.
+              </p>
+              <div className="space-y-3">
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Core Focus:</strong> Provides specialized, individualized instruction (such as resource room support or evidence-based reading interventions).
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Eligibility:</strong> Must meet specific criteria for 1 of 13 federal categories (like Specific Learning Disability) and require special education.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Technology Requests:</strong> The IEP team is legally required to consider Assistive Technology (AT). You can request an <strong>AT Evaluation</strong> to have specific tools (like C-Pens or text-to-speech software) mandated and funded by the plan.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Legal Structure:</strong> Highly regulated, legally binding document with strictly mandated evaluation and meeting timelines.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Annual Goals:</strong> Requires specific, measurable academic and functional goals with mandatory progress monitoring.
+                </div>
+              </div>
+            </div>
+
+            {/* 504 Card */}
+            <div className="bg-gray-300 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-md">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3">504 Plan</h4>
+              <p className="text-sm text-slate-800 mb-5 leading-relaxed font-medium">
+                Covered under Section 504 of the Rehabilitation Act, this civil rights plan is for students who do not necessarily require specialized instruction, but need specific accommodations to ensure equal access to learning.
+              </p>
+              <div className="space-y-3">
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Core Focus:</strong> Removes barriers through environmental, instructional, and testing accommodations.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Eligibility:</strong> Broader criteria; any disability that substantially limits a major life activity (such as reading, concentrating, or learning).
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Technology Requests:</strong> You can explicitly request access to everyday tech tools (such as audiobooks, speech-to-text dictation, or the use of a laptop for taking notes) as reasonable accommodations to remove barriers.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Legal Structure:</strong> A more flexible civil rights statute focused on preventing discrimination, with fewer procedural requirements than IDEA.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Annual Goals:</strong> No formal goals required; the plan focuses entirely on effectively implementing the listed accommodations.
+                </div>
+              </div>
+            </div>
+          </div>
+{/* Policy Alert Pop-out */}
+          <div className="bg-[#576d8e] border-l-4 border-[#ffd166] p-6 mb-10 rounded-r-lg shadow-sm">
+            <h4 className="font-bold text-[#ffd166] mb-3 uppercase text-xs tracking-wider">
+              Policy Alert: Federal Oversight Changes
+            </h4>
+            <p className="text-sm text-white mb-4 leading-relaxed font-medium">
+              In June 2026, the U.S. Department of Education announced interagency agreements shifting the administration of IDEA to the Department of Health and Human Services (HHS) and Section 504 enforcement to the Department of Justice (DOJ).
+            </p>
+            <div className="space-y-3">
+              <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                <strong className="text-[#0A9DC4]">Shift to a Medical Model:</strong> Advocacy groups warn that moving IDEA oversight to HHS may push students toward a medical model that treats disability as a diagnosis to be managed rather than focusing on educational inclusion.
+              </div>
+              <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                <strong className="text-[#0A9DC4]">Fragmented Enforcement:</strong> Splitting special education management and civil rights enforcement across separate departments risks creating confusion, longer delays, and less accountability for families.
+              </div>
+              <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                <strong className="text-[#0A9DC4]">Unchanged Legal Rights:</strong> Despite these administrative shifts, federal officials maintain that a student's statutory rights, IEP requirements, and Section 504 accommodations have not changed.
+              </div>
+            </div>
+          </div>  
+               <div className="flex justify-end my-8 clear-both">
             <button 
               onClick={() => setCurrentArticle?.('dyslexia')}
               className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
@@ -141,8 +250,7 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
               All About Dyslexia
             </button>
           </div>
-
-          {/* REFERENCES SECTION */}
+        {/* REFERENCES SECTION */}
           <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
           
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
@@ -153,12 +261,12 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
                 Cited Studies & Statistics
               </h4>
               <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-                <p>1. Stodden, R. A., Roberts, K. D., Takahashi, K., Park, H. J., & Stodden, N. J. (2012). "Use of text-to-speech software to improve reading skills of high school struggling readers." <em>Procedia Computer Science</em>, 14, 359-362.</p>
-                <p>2. Schneps, M. H., Thomson, J. M., Sonnert, G., Pomplun, M., Chen, C., & Heffner-Wong, A. (2013). "Shorter lines facilitate reading in those who struggle." <em>PloS One</em>, 8(8), e71161.</p>
-                <p>3. MacArthur, C. A. (2009). "Reflections on research on writing and technology for struggling writers." <em>Learning Disabilities Research & Practice</em>, 24(2), 93-103.</p>
-                <p>4. Grimes, D., & Warschauer, M. (2010). "Utility in a fallible tool: A multi-site case study of automated writing evaluation." <em>The Journal of Technology, Learning and Assessment</em>, 8(6).</p>
-                <p>5. Cumming, T. M., & Rodríguez, C. D. (2017). "A meta-analysis of mobile technology supporting individuals with disabilities." <em>The Journal of Special Education Technology</em>, 32(2), 93-109.</p>
-                <p>6. Haydon, T., Mancil, G. R., Kroeger, S. D., McLeskey, J., & Lin, W. J. (2011). "A review of the effectiveness of guided notes for students who struggle learning academic content." <em>Preventing School Failure</em>, 55(4), 226-231.</p>
+                <p>1. Stodden, R. A., Roberts, K. D., Takahashi, K., Park, H. J., & Stodden, N. J. (2012). "Use of text-to-speech software to improve reading skills of high school struggling readers." <em>Procedia Computer Science</em>. https://doi.org/10.1016/j.procs.2012.10.041</p>
+                <p>2. Schneps, M. H., Thomson, J. M., Sonnert, G., Pomplun, M., Chen, C., & Heffner-Wong, A. (2013). "Shorter lines facilitate reading in those who struggle." <em>PloS One</em>. https://doi.org/10.1371/journal.pone.0071161</p>
+                <p>3. MacArthur, C. A. (2009). "Reflections on research on writing and technology for struggling writers." <em>Learning Disabilities Research & Practice</em>. https://doi.org/10.1111/j.1540-5826.2009.00283.x</p>
+                <p>4. Grimes, D., & Warschauer, M. (2010). "Utility in a fallible tool: A multi-site case study of automated writing evaluation." <em>The Journal of Technology, Learning and Assessment</em>.</p>
+                <p>5. Cumming, T. M., & Rodríguez, C. D. (2017). "A meta-analysis of mobile technology supporting individuals with disabilities." <em>The Journal of Special Education Technology</em>. https://doi.org/10.1177/0162643417704439</p>
+                <p>6. Haydon, T., Mancil, G. R., Kroeger, S. D., McLeskey, J., & Lin, W. J. (2011). "A review of the effectiveness of guided notes for students who struggle learning academic content." <em>Preventing School Failure</em>. https://doi.org/10.1080/1045988.2010.520359</p>
               </div>
             </div>
 
@@ -167,11 +275,11 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
                 Background Sources
               </h4>
               <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+                <li>Drasgow, E., Yell, M. L., & Robinson, T. R. (2001). "Developing legally correct and educationally appropriate IEPs." <em>Remedial and Special Education</em>. https://doi.org/10.1177/074193250102200604</li>
                 <li>Individuals with Disabilities Education Act, 20 U.S.C. § 1400 (2004).</li>
-                <li>Yell, M. L., & Bateman, D. F. (2017). "Endrew F. v. Douglas County School District (2017): FAPE and the U.S. Supreme Court." <em>Teaching Exceptional Children</em>, 50(1), 7-15.</li>
                 <li>Section 504 of the Rehabilitation Act of 1973, 29 U.S.C. § 794.</li>
-                <li>Zirkel, P. A. (2009). "What does the law say? Section 504, the ADA, and the schools." <em>Teaching Exceptional Children</em>, 41(5), 68-71.</li>
-                <li>Drasgow, E., Yell, M. L., & Robinson, T. R. (2001). "Developing legally correct and educationally appropriate IEPs." <em>Remedial and Special Education</em>, 22(6), 359-373.</li>
+                <li>Yell, M. L., & Bateman, D. F. (2017). "Endrew F. v. Douglas County School District (2017): FAPE and the U.S. Supreme Court." <em>Teaching Exceptional Children</em>. https://doi.org/10.1177/0040059917721116</li>
+                <li>Zirkel, P. A. (2009). "What does the law say? Section 504, the ADA, and the schools." <em>Teaching Exceptional Children</em>. https://doi.org/10.1177/004005990904100509</li>
               </ul>
             </div>
           </div>

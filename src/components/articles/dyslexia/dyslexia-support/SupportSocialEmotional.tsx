@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 interface SupportSocialEmotionalProps {
   setCurrentArticle?: (article: string) => void;
@@ -33,7 +34,7 @@ export function SupportSocialEmotional({ setCurrentArticle }: SupportSocialEmoti
       </button>
 
       <Tabs defaultValue="social" className="w-full">
-  <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-12 bg-transparent h-auto p-0">
+        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger 
             value="interventions" 
             onClick={() => setCurrentArticle?.('dyslexia-support-interventions')} 
@@ -86,27 +87,99 @@ export function SupportSocialEmotional({ setCurrentArticle }: SupportSocialEmoti
         </TabsList>
         
         <TabsContent value="social" className="animate-fadeIn">
-          <h3 className="text-xl font-bold mb-4 text-[#0c264d]">Building Self-Esteem & Resilience</h3>
-          <ul className="list-disc ml-5 space-y-2 mb-6 text-slate-700">
-            <li>Focus on strengths/talents, not just weaknesses.<sup className="text-green-600 font-bold ml-0.5">1</sup></li>
-            <li>Celebrate progress and effort.</li>
-            <li>Connect with successful role models.<sup className="text-green-600 font-bold ml-0.5">2</sup></li>
-            <li>Educate on dyslexia: it is a learning difference, not a deficiency.</li>
-          </ul>
+          
+          {/* Section Intro */}
+          <div className="clear-both">
+            <h2 className="text-[#0c264d] font-bold mt-2 mb-8 text-2xl clear-both text-center border-b border-gray-200 pb-2">
+              Social-Emotional Well-Being
+            </h2>
+            <ImageWithFallback 
+              src="/images/dyslexia/dyslexia-support-social-TAB-intro.png"
+              alt="Social and emotional support for dyslexia"
+              className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
+            />
+            <p className="mb-6 text-slate-700 leading-relaxed">
+              Navigating a neurotypical academic environment with a learning difference can deeply impact a person's self-image and emotional well-being. Providing robust social-emotional support is just as critical as academic intervention for fostering long-term resilience, confidence, and success.
+            </p>
+          </div>
 
-          <h3 className="text-xl font-bold mb-4 text-[#0c264d]">Managing Anxiety</h3>
-          <ul className="list-disc ml-5 space-y-2 mb-6 text-slate-700">
-            <li>Counseling for stress.<sup className="text-green-600 font-bold ml-0.5">3</sup></li>
-            <li>Mindfulness and relaxation.</li>
-            <li>Chunking tasks.<sup className="text-green-600 font-bold ml-0.5">4</sup></li>
-          </ul>
+          {/* Building Self-Esteem */}
+          <h3 className="text-2xl font-bold mt-8 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Building Self-Esteem & Resilience</h3>
+          
+          <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-support-social-TAB-esteem.png"
+            alt="Building self-esteem and resilience"
+            className="w-64 h-auto rounded-md border border-gray-300 shadow-sm float-right ml-6 mb-4"
+          />
 
-          <h3 className="text-xl font-bold mb-4 text-[#0c264d]">Self-Advocacy</h3>
-          <ul className="list-disc ml-5 space-y-2 mb-8 text-slate-700">
-            <li>Understand own learning profile.</li>
-            <li>Ask for accommodations.<sup className="text-green-600 font-bold ml-0.5">5</sup></li>
-            <li>Explain dyslexia to others.</li>
-          </ul>
+          <div className="space-y-4 mb-10">
+            <div className="bg-white p-4 rounded-lg border-l-4 border-[#ffd166] shadow-sm flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <div className="font-bold text-[#0A9DC4] md:w-1/4">Strengths Focus</div>
+              <div className="text-sm text-slate-700 md:w-3/4">Identify, encourage, and deeply cultivate natural talents and creative abilities rather than solely focusing on remediation and academic weaknesses.</div>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg border-l-4 border-[#ffd166] shadow-sm flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <div className="font-bold text-[#0A9DC4] md:w-1/4">Celebrate Effort</div>
+              <div className="text-sm text-slate-700 md:w-3/4">Praise the process, resilience, and hard work rather than just the final grades. Redefine what "success" looks like in the classroom.</div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg border-l-4 border-[#ffd166] shadow-sm flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <div className="font-bold text-[#0A9DC4] md:w-1/4">Representation</div>
+              <div className="text-sm text-slate-700 md:w-3/4">Connect with successful adults and older peers who also navigate dyslexia to provide concrete examples of what is possible and reduce feelings of isolation.</div>
+            </div>
+          </div>
+
+          {/* Managing Anxiety */}
+          <h3 className="text-2xl font-bold mt-10 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Managing Anxiety</h3>
+          
+          <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-support-social-TAB-anxiety.png"
+            alt="Strategies for managing anxiety"
+            className="w-64 h-auto rounded-md border border-gray-300 shadow-sm float-right ml-6 mb-4"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div className="bg-gray-50 p-5 rounded-xl border border-gray-200">
+              <h4 className="font-bold text-[#0c264d] mb-2">Professional Support</h4>
+              <p className="text-sm text-slate-700">Counseling and therapy can provide individuals with dedicated spaces to process school-related trauma and build healthy, actionable coping mechanisms.</p>
+            </div>
+            <div className="bg-gray-50 p-5 rounded-xl border border-gray-200">
+              <h4 className="font-bold text-[#0c264d] mb-2">Regulation Practices</h4>
+              <p className="text-sm text-slate-700">Techniques like deep breathing, physical movement, and mindfulness can help regulate the nervous system during overwhelming moments of academic stress.</p>
+            </div>
+            <div className="bg-gray-50 p-5 rounded-xl border border-gray-200">
+              <h4 className="font-bold text-[#0c264d] mb-2">Task Chunking</h4>
+              <p className="text-sm text-slate-700">Breaking large assignments or lengthy readings into much smaller, manageable steps reduces cognitive overload and helps prevent avoidance behaviors.</p>
+            </div>
+          </div>
+
+          {/* Self-Advocacy */}
+          <h3 className="text-2xl font-bold mt-10 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Cultivating Self-Advocacy</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 items-start">
+            <div className="bg-white border-t-4 border-[#0A9DC4] rounded-xl p-4 shadow-sm">
+              <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-support-social-TAB-advocacy.png" 
+                alt="Self-advocacy for individuals with dyslexia" 
+                className="w-full h-auto rounded-md border border-gray-200 block mx-auto" 
+              />
+            </div>
+            
+            <div className="space-y-4">
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 className="font-bold text-[#0A9DC4] mb-1">Understand Your Profile</h4>
+                <p className="text-sm text-slate-700">Help the individual know exactly how their brain works, where they naturally excel, and what specific supports they need to bridge the gap.</p>
+              </div>
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 className="font-bold text-[#0A9DC4] mb-1">Request Accommodations</h4>
+                <p className="text-sm text-slate-700">Practice the language needed to confidently ask teachers or employers for extra time, assistive technology, or alternative formats.</p>
+              </div>
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 className="font-bold text-[#0A9DC4] mb-1">Explain to Others</h4>
+                <p className="text-sm text-slate-700">Develop a short, confident "elevator pitch" to explain dyslexia to peers as a structural learning difference, not a deficit in intelligence.</p>
+              </div>
+            </div>
+          </div>
 
           <div className="flex justify-end my-8 clear-both">
             <button 
@@ -124,16 +197,13 @@ export function SupportSocialEmotional({ setCurrentArticle }: SupportSocialEmoti
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             
+            {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
               <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-                <p>1. Humphrey, N., & Mullins, P. M. (2002). "Self-concept and self-esteem in developmental dyslexia." <em>Journal of Research in Special Educational Needs</em>, 2(2).</p>
-                <p>2. Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). "Identifying alterable patterns in employment success." <em>Journal of Learning Disabilities</em>, 25(8), 475-487.</p>
-                <p>3. Boetsch, E. A., Green, P. A., & Pennington, B. F. (1996). "Psychosocial correlates of dyslexia across the life span." <em>Development and Psychopathology</em>, 8(3), 539-562.</p>
-                <p>4. Grills-Taquechel, A. E., et al. (2012). "Anxiety and reading difficulties." <em>Child Psychiatry & Human Development</em>, 43(1), 35-47.</p>
-                <p>5. Gerber, P. J. (2012). "The impact of learning disabilities on adulthood." <em>Journal of Learning Disabilities</em>, 45(1), 31-46.</p>
+              <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+                <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
               </div>
             </div>
 
@@ -142,7 +212,12 @@ export function SupportSocialEmotional({ setCurrentArticle }: SupportSocialEmoti
                 Background Sources
               </h4>
               <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>Daly, C., Kelley, K., & Krauss, A. (2003). <em>Self-advocacy: A valuable skill for your teenager with LD</em>.</li>
+                <li>Boetsch, E. A., Green, P. A., & Pennington, B. F. (1996). "Psychosocial correlates of dyslexia across the life span." <em>Development and Psychopathology</em>. https://doi.org/10.1017/S095457940000724X</li>
+                <li>Daly, C., Kelley, K., & Krauss, A. (2003). <em>Self-advocacy: A valuable skill for your teenager with LD</em>. National Center for Learning Disabilities.</li>
+                <li>Gerber, P. J. (2012). "The impact of learning disabilities on adulthood: A review of the evidenced-based literature for research and practice in adult education." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/0022219411426858</li>
+                <li>Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). "Identifying alterable patterns in employment success for highly successful adults with learning disabilities." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/002221949202500802</li>
+                <li>Grills-Taquechel, A. E., Fletcher, J. M., Vaughn, S. R., & Stuebing, K. K. (2012). "Anxiety and reading difficulties in early elementary school: Evidence for unidirectional- or bi-directional relations?" <em>Child Psychiatry & Human Development</em>. https://doi.org/10.1007/s10578-011-0253-x</li>
+                <li>Humphrey, N., & Mullins, P. M. (2002). "Self-concept and self-esteem in developmental dyslexia." <em>Journal of Research in Special Educational Needs</em>. https://doi.org/10.1111/j.1471-3802.2002.00163.x</li>
               </ul>
             </div>
           </div>
