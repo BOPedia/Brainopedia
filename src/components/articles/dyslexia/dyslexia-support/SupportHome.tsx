@@ -149,32 +149,112 @@ export function SupportHome({ setCurrentArticle }: SupportHomeProps) {
             </div>
           </div>
 
-          {/* School Communication (Cards) */}
+{/* School Communication (Cards) */}
           <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">School Communication</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {/* Check-ins Card */}
             <div className="bg-gray-300 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-3 text-center">Teacher Check-ins</h4>
-              <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-slate-700 flex-grow">
-                Maintain open, regular communication with teachers. Share what is working at home and ask for specific updates on classroom progress to ensure strategies are aligned.
+              <div className="bg-white p-5 rounded-lg shadow-sm text-sm text-slate-700 flex-grow space-y-5">
+                
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#0c264d] flex items-center justify-center shadow-sm mt-0.5">
+                    <svg className="w-4 h-4 text-[#ffd166]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                  </div>
+                  <div>
+                    <strong className="text-[#0c264d] block mb-0.5">Align Strategies:</strong>
+                    Maintain open, regular communication with teachers. Share what is working at home and ask for classroom updates.
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#ffd166] flex items-center justify-center shadow-sm mt-0.5">
+                    <svg className="w-4 h-4 text-[#0c264d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                  </div>
+                  <div>
+                    <strong className="text-[#0c264d] block mb-0.5">Map Timelines:</strong>
+                    For college-bound students, use meetings to proactively map out transition timelines and deadlines.
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#0A9DC4] flex items-center justify-center shadow-sm mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                  </div>
+                  <div>
+                    <strong className="text-[#0c264d] block mb-0.5">Update Evaluations:</strong>
+                    Ensure psychoeducational evaluations remain current (universities typically require testing within three years).
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2abcd4] flex items-center justify-center shadow-sm mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                  </div>
+                  <div>
+                    <strong className="text-[#0c264d] block mb-0.5">Shift to Self-Advocacy:</strong>
+                    Gradually hand over the reins toward student-led meetings to build university-level independence.
+                  </div>
+                </div>
+
               </div>
             </div>
 
             {/* IEP/504 Card */}
             <div className="bg-gray-300 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-3 text-center">IEP & 504 Advocacy</h4>
-              <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-slate-700 flex-grow">
-                Prepare thoroughly for school meetings. Keep an organized binder of all evaluations, work samples, and formal communications to effectively advocate for necessary accommodations.
+              <div className="bg-white p-5 rounded-lg shadow-sm text-sm text-slate-700 flex-grow space-y-5">
+                
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#0c264d] flex items-center justify-center shadow-sm mt-0.5">
+                    <svg className="w-4 h-4 text-[#ffd166]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                  </div>
+                  <div>
+                    <strong className="text-[#0c264d] block mb-0.5">Meeting Preparation:</strong>
+                    Prepare thoroughly for school meetings to effectively advocate for necessary accommodations.
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#ffd166] flex items-center justify-center shadow-sm mt-0.5">
+                    <svg className="w-4 h-4 text-[#0c264d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                  </div>
+                  <div>
+                    <strong className="text-[#0c264d] block mb-0.5">Digital Organization:</strong>
+                    Keep a dedicated folder of documents on your computer or phone for quick reference during meetings.
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#0A9DC4] flex items-center justify-center shadow-sm mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                  </div>
+                  <div>
+                    <strong className="text-[#0c264d] block mb-0.5">Physical Binder:</strong>
+                    If you prefer paper copies, maintain an organized binder of all evaluations, work samples, and formal communications.
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2abcd4] flex items-center justify-center shadow-sm mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                  </div>
+                  <div>
+                    <strong className="text-[#0c264d] block mb-0.5">Actionable Advocacy:</strong>
+                    Use these organized records to clearly demonstrate the student's progress and secure necessary interventions.
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
                   
-                    <ImageWithFallback 
-                      src="/images/dyslexia/dyslexia-support-home-TAB-school.png"
-                      alt="Timeline and intensity of dyslexia intervention"
-                      className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-                    />
+          <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-support-home-TAB-school.png"
+            alt="School communication and advocacy strategies"
+            className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+          />
 
           <div className="flex justify-end my-8 clear-both">
             <button 
