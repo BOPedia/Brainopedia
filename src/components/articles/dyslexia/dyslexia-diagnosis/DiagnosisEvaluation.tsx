@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 interface DiagnosisEvaluationProps {
   setCurrentArticle?: (article: string) => void;
@@ -57,60 +58,132 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
         </TabsList>
 
         <TabsContent value="evaluation" className="animate-fadeIn">
-          <p className="mb-6 text-slate-700 leading-relaxed">
-            A comprehensive evaluation is essential to identify the underlying cognitive and academic profile characteristic of dyslexia. This process involves multiple domains of assessment to ensure an accurate diagnosis and targeted recommendations.
-          </p>
+          
+          {/* Centered Intro Section */}
+          <div className="clear-both">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">
+              Comprehensive Evaluation
+            </h2>
+            <ImageWithFallback 
+              src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-intro.png"
+              alt="Comprehensive dyslexia evaluation process"
+              className="block mx-auto w-64 max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+            />
+            <p className="mb-10 text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
+              A comprehensive evaluation is essential to identify the underlying cognitive and academic profile characteristic of dyslexia. This process involves multiple domains of assessment to ensure an accurate diagnosis and targeted recommendations.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 mt-4">
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-[#0A9DC4] border-b border-gray-100 pb-2">Developmental & Educational History</h3>
-              <ul className="list-disc ml-5 space-y-2 text-slate-700 text-sm">
-                <li>Early language development milestones.</li>
-                <li>Family history of reading or learning difficulties.</li>
-                <li>Previous educational experiences and interventions.<sup className="text-green-600 font-bold ml-0.5">1</sup></li>
-                <li>Current reading challenges and their impact.</li>
-              </ul>
+          {/* Diagnostic Domains Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            
+            {/* History Card */}
+            <div className="bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Developmental & Educational History</h4>
+              <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-history.png"
+                alt="Developmental history assessment"
+                className="w-full h-auto rounded-md border border-gray-200 mb-5"
+              />
+              <div className="flex flex-col gap-3 flex-grow">
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Milestones:</strong> Track early language development and speech milestones.
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Genetics:</strong> Evaluate family history for reading or learning difficulties.
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Academic Context:</strong> Review previous educational experiences, interventions, and the impact of current reading challenges.
+                </div>
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-[#0A9DC4] border-b border-gray-100 pb-2">Cognitive Assessment</h3>
-              <ul className="list-disc ml-5 space-y-2 text-slate-700 text-sm">
-                <li><strong>Intelligence testing:</strong> WISC-V, WAIS-IV, or Stanford-Binet to assess overall cognitive ability.</li>
-                <li><strong>Reasoning abilities:</strong> Verbal and nonverbal reasoning.</li>
-                <li><strong>Memory assessment:</strong> Working memory and long-term memory.<sup className="text-green-600 font-bold ml-0.5">2</sup></li>
-                <li><strong>Processing speed:</strong> Rate of cognitive processing.</li>
-              </ul>
+            {/* Cognitive Assessment Card */}
+            <div className="bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Cognitive Assessment</h4>
+              <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-cognitive.png"
+                alt="Cognitive assessment tools"
+                className="w-full h-auto rounded-md border border-gray-200 mb-5"
+              />
+              <div className="flex flex-col gap-3 flex-grow">
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Intelligence Testing:</strong> Utilize tools like WISC-V, WAIS-IV, or Stanford-Binet to assess overall cognitive ability.
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Memory & Speed:</strong> Map out working memory, long-term memory retrieval, and the general rate of cognitive processing.
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Reasoning Abilities:</strong> Measure both verbal and nonverbal reasoning skills to identify relative strengths.
+                </div>
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-[#0A9DC4] border-b border-gray-100 pb-2">Reading & Academic Achievement</h3>
-              <ul className="list-disc ml-5 space-y-2 text-slate-700 text-sm">
-                <li><strong>Word reading:</strong> Real word reading accuracy (WIAT-III, KTEA-3).</li>
-                <li><strong>Pseudoword decoding:</strong> Nonsense word reading to assess phonetic decoding.<sup className="text-green-600 font-bold ml-0.5">3</sup></li>
-                <li><strong>Reading fluency:</strong> Speed and accuracy of reading connected text.<sup className="text-green-600 font-bold ml-0.5">4</sup></li>
-                <li><strong>Reading comprehension:</strong> Understanding written passages.</li>
-                <li><strong>Spelling:</strong> Written spelling of words.<sup className="text-green-600 font-bold ml-0.5">5</sup></li>
-                <li><strong>Written expression:</strong> Quality and fluency of writing.</li>
-              </ul>
+            {/* Reading Achievement Card */}
+            <div className="bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Reading & Academic Achievement</h4>
+              <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-reading.png"
+                alt="Reading achievement testing"
+                className="w-full h-auto rounded-md border border-gray-200 mb-5"
+              />
+              <div className="flex flex-col gap-3 flex-grow">
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Decoding:</strong> Test real word reading accuracy (e.g., WIAT-III, KTEA-3) alongside pseudoword (nonsense word) decoding.
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Fluency & Comprehension:</strong> Measure the speed and accuracy of reading connected text, and how well written passages are understood.
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Written Expression:</strong> Evaluate the quality, fluency, and mechanical spelling of written text.
+                </div>
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-[#0A9DC4] border-b border-gray-100 pb-2">Phonological Processing</h3>
-              <ul className="list-disc ml-5 space-y-2 text-slate-700 text-sm">
-                <li><strong>Phonological awareness:</strong> CTOPP-2, PAT-2 to assess sound manipulation skills.</li>
-                <li><strong>Phonological memory:</strong> Ability to hold sound information in memory.</li>
-                <li><strong>Rapid automatized naming (RAN):</strong> Speed of retrieving familiar verbal information.<sup className="text-green-600 font-bold ml-0.5">6</sup></li>
-              </ul>
+            {/* Phonological Processing Card */}
+            <div className="bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Phonological Processing</h4>
+              <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-phonological.png"
+                alt="Phonological processing evaluation"
+                className="w-full h-auto rounded-md border border-gray-200 mb-5"
+              />
+              <div className="flex flex-col gap-3 flex-grow">
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Phonological Awareness:</strong> Use assessments like the CTOPP-2 or PAT-2 to measure sound manipulation skills.
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Phonological Memory:</strong> Test the individual's ability to temporarily hold and process sound information in their memory.
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Rapid Automatized Naming (RAN):</strong> Assess the speed of retrieving familiar verbal information (like letters, numbers, or colors).
+                </div>
+              </div>
             </div>
 
-            <div className="md:col-span-2">
-              <h3 className="text-xl font-bold mb-3 text-[#0A9DC4] border-b border-gray-100 pb-2">Oral Language</h3>
-              <ul className="list-disc ml-5 space-y-2 text-slate-700 text-sm">
-                <li><strong>Vocabulary:</strong> Receptive and expressive vocabulary.<sup className="text-green-600 font-bold ml-0.5">7</sup></li>
-                <li><strong>Listening comprehension:</strong> Understanding spoken language.</li>
-                <li><strong>Morphological awareness:</strong> Understanding word structure.</li>
-              </ul>
+            {/* Oral Language Card (Full Width Span) */}
+            <div className="bg-white border-t-4 border-[#0c264d] rounded-xl p-6 shadow-sm flex flex-col md:col-span-2">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Oral Language</h4>
+              <div className="flex flex-col md:flex-row gap-6 items-center">
+                <ImageWithFallback 
+                  src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-oral.png"
+                  alt="Oral language assessment"
+                  className="w-full md:w-1/3 h-auto rounded-md border border-gray-200"
+                />
+                <div className="flex flex-col gap-3 flex-grow w-full md:w-2/3">
+                  <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                    <strong className="text-[#0A9DC4]">Vocabulary:</strong> Evaluate both receptive (understanding) and expressive (speaking) vocabulary capabilities.
+                  </div>
+                  <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                    <strong className="text-[#0A9DC4]">Listening Comprehension:</strong> Test the overall capacity for understanding and processing spoken language in real-time.
+                  </div>
+                  <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
+                    <strong className="text-[#0A9DC4]">Morphological Awareness:</strong> Assess the individual's understanding of word structures, roots, prefixes, and suffixes.
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
 
           <div className="flex justify-end my-8 clear-both">
@@ -129,18 +202,13 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             
+            {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
               <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-                <p>1. Shaywitz, S. E., Morris, R., & Shaywitz, B. A. (2008). "The education of dyslexic children from childhood to young adulthood." <em>Annual Review of Psychology</em>, 59, 451-475.</p>
-                <p>2. Swanson, H. L., & Berninger, V. (1995). "The role of working memory in skilled and less skilled readers' comprehension." <em>Intelligence</em>, 21(1), 83-108.</p>
-                <p>3. Rack, J. P., Snowling, M. J., & Olson, R. K. (1992). "The nonword reading deficit in developmental dyslexia: A review." <em>Reading Research Quarterly</em>, 27(1), 29-53.</p>
-                <p>4. Fuchs, L. S., Fuchs, D., Hosp, M. K., & Jenkins, J. R. (2001). "Oral reading fluency as an indicator of reading competence: A theoretical, empirical, and historical analysis." <em>Scientific Studies of Reading</em>, 5(3), 239-256.</p>
-                <p>5. Ehri, L. C. (2000). "Learning to read and learning to spell: Two sides of a coin." <em>Topics in Language Disorders</em>, 20(3), 19-36.</p>
-                <p>6. Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>, 63, 427-452.</p>
-                <p>7. Perfetti, C. (2007). "Reading ability: Lexical quality to comprehension." <em>Scientific Studies of Reading</em>, 11(4), 357-383.</p>
+              <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+                <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
               </div>
             </div>
 
@@ -149,13 +217,20 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
                 Background Sources
               </h4>
               <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2018). <em>Learning disabilities: From identification to intervention</em> (2nd ed.). Guilford Publications.</li>
-                <li>Scarborough, H. S. (1998). "Early identification of children at risk for reading disabilities." In B. K. Shapiro, P. J. Accardo, & A. J. Capute (Eds.), <em>Specific reading disability: A view of the spectrum</em> (pp. 75-119). York Press.</li>
-                <li>Wechsler, D. (2014). <em>Wechsler Intelligence Scale for Children–Fifth Edition</em>. Pearson.</li>
-                <li>Pearson Education. (2020). <em>Wechsler Individual Achievement Test–Fourth Edition</em>. Author.</li>
-                <li>Wagner, R. K., Torgesen, J. K., Rashotte, C. A., & Pearson, N. A. (2013). <em>Comprehensive Test of Phonological Processing–Second Edition</em>. Pro-Ed.</li>
-                <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.</li>
                 <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
+                <li>Ehri, L. C. (2000). "Learning to read and learning to spell: Two sides of a coin." <em>Topics in Language Disorders</em>. https://doi.org/10.1097/00011363-200020030-00005</li>
+                <li>Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2018). <em>Learning disabilities: From identification to intervention</em> (2nd ed.). Guilford Publications.</li>
+                <li>Fuchs, L. S., Fuchs, D., Hosp, M. K., & Jenkins, J. R. (2001). "Oral reading fluency as an indicator of reading competence: A theoretical, empirical, and historical analysis." <em>Scientific Studies of Reading</em>. https://doi.org/10.1207/S1532799XSSR0503_3</li>
+                <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.</li>
+                <li>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>. https://doi.org/10.1146/annurev-psych-120710-100431</li>
+                <li>Pearson Education. (2020). <em>Wechsler Individual Achievement Test–Fourth Edition</em>. Author.</li>
+                <li>Perfetti, C. (2007). "Reading ability: Lexical quality to comprehension." <em>Scientific Studies of Reading</em>. https://doi.org/10.1080/10888430701530730</li>
+                <li>Rack, J. P., Snowling, M. J., & Olson, R. K. (1992). "The nonword reading deficit in developmental dyslexia: A review." <em>Reading Research Quarterly</em>. https://doi.org/10.2307/747832</li>
+                <li>Scarborough, H. S. (1998). "Early identification of children at risk for reading disabilities." In B. K. Shapiro, P. J. Accardo, & A. J. Capute (Eds.), <em>Specific reading disability: A view of the spectrum</em>. York Press.</li>
+                <li>Shaywitz, S. E., Morris, R., & Shaywitz, B. A. (2008). "The education of dyslexic children from childhood to young adulthood." <em>Annual Review of Psychology</em>. https://doi.org/10.1146/annurev.psych.59.103006.093633</li>
+                <li>Swanson, H. L., & Berninger, V. (1995). "The role of working memory in skilled and less skilled readers' comprehension." <em>Intelligence</em>. https://doi.org/10.1016/0160-2896(95)90039-X</li>
+                <li>Wagner, R. K., Torgesen, J. K., Rashotte, C. A., & Pearson, N. A. (2013). <em>Comprehensive Test of Phonological Processing–Second Edition</em>. Pro-Ed.</li>
+                <li>Wechsler, D. (2014). <em>Wechsler Intelligence Scale for Children–Fifth Edition</em>. Pearson.</li>
               </ul>
             </div>
           </div>
