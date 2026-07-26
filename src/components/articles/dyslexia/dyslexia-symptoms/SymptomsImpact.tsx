@@ -77,7 +77,7 @@ export function DyslexiaSymptomsImpact({ setCurrentArticle }: DyslexiaSymptomsIm
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             
             {/* Academic Impact */}
-            <div className="bg-[#d5b690] border-t-4 border-[#0c264d] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-gray-300 border-t-4 border-[#0c264d] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Academic & School Impact</h4>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700 flex items-start gap-3">
@@ -111,7 +111,7 @@ export function DyslexiaSymptomsImpact({ setCurrentArticle }: DyslexiaSymptomsIm
             </div>
             
             {/* Social Impact */}
-            <div className="bg-[#d5b690] border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-gray-300 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Social & Emotional Impact</h4>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700 flex items-start gap-3">
