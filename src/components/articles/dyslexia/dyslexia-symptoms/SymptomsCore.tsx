@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
 interface SymptomsCoreProps {
   setCurrentArticle?: (article: string) => void;
@@ -57,21 +58,115 @@ export function DyslexiaSymptomsCore({ setCurrentArticle }: SymptomsCoreProps) {
         </TabsList>
 
         <TabsContent value="core" className="animate-fadeIn">
-          <h3 className="text-2xl font-bold mt-2 mb-3 text-[#0c264d] border-b border-gray-200 pb-2">Primary Reading Challenges</h3>
-          <p className="mb-4 text-slate-700">Dyslexia is primarily characterized by neurobiological differences that impede the development of accurate and fluent word recognition.<sup className="text-green-600 font-bold ml-0.5">1</sup></p>
           
-          <ul className="list-disc ml-6 space-y-2 mb-8 text-slate-700">
-            <li><strong>Decoding difficulties:</strong> Challenges sounding out new words, often due to phonological processing deficits.<sup className="text-green-600 font-bold ml-0.5">2</sup></li>
-            <li><strong>Slow, labored reading:</strong> High cognitive demand spent on decoding leaves little capacity for comprehension.</li>
-            <li><strong>Inaccurate word recognition:</strong> Guessing words based on shape or context rather than mapping letter-to-sound.<sup className="text-green-600 font-bold ml-0.5">3</sup></li>
-            <li><strong>Phonological awareness:</strong> Difficulty manipulating the individual sounds (phonemes) within words.</li>
-          </ul>
+          {/* Centered Intro Section */}
+          <div className="clear-both">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">
+              Core Characteristics
+            </h2>
+            <ImageWithFallback 
+              src="/images/dyslexia/dyslexia-symptoms-core-TAB-intro.png"
+              alt="Core characteristics of dyslexia"
+              className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+            />
+            <p className="mb-10 text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
+              Dyslexia is primarily characterized by neurobiological differences that impede the development of accurate and fluent word recognition.
+            </p>
+          </div>
 
-          <h3 className="text-2xl font-bold mt-6 mb-3 text-[#0c264d] border-b border-gray-200 pb-2">Spelling & Writing</h3>
-          <ul className="list-disc ml-6 space-y-2 mb-8 text-slate-700">
-            <li><strong>Poor spelling:</strong> Often does not match phonological rules (e.g., phonetic spelling errors).<sup className="text-green-600 font-bold ml-0.5">4</sup></li>
-            <li><strong>Writing output:</strong> Written expression may be limited compared to oral vocabulary due to the mechanics of spelling and writing.<sup className="text-green-600 font-bold ml-0.5">5</sup></li>
-          </ul>
+          {/* Primary Reading Challenges Grid */}
+          <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 text-center">
+            Primary Reading Challenges
+          </h3>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+            
+            {/* Decoding Difficulties */}
+            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#0c264d] flex items-center justify-center shadow-sm mb-4">
+                <svg className="w-7 h-7 text-[#ffd166]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+              </div>
+              <h4 className="font-bold text-[#0c264d] text-lg mb-2">Decoding Difficulties</h4>
+              <p className="text-sm text-slate-700 w-full flex-grow">
+                Challenges sounding out new words, often due to underlying phonological processing deficits.
+              </p>
+            </div>
+
+            {/* Slow Reading */}
+            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#ffd166] flex items-center justify-center shadow-sm mb-4">
+                <svg className="w-7 h-7 text-[#0c264d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <h4 className="font-bold text-[#0c264d] text-lg mb-2">Slow, Labored Reading</h4>
+              <p className="text-sm text-slate-700 w-full flex-grow">
+                High cognitive demand spent on decoding leaves little working memory capacity for comprehension.
+              </p>
+            </div>
+
+            {/* Inaccurate Word Recognition */}
+            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#0A9DC4] flex items-center justify-center shadow-sm mb-4">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+              </div>
+              <h4 className="font-bold text-[#0c264d] text-lg mb-2">Inaccurate Word Recognition</h4>
+              <p className="text-sm text-slate-700 w-full flex-grow">
+                A tendency to guess words based on their shape or context rather than accurately mapping letters to sounds.
+              </p>
+            </div>
+
+            {/* Phonological Awareness */}
+            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#2abcd4] flex items-center justify-center shadow-sm mb-4">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+              </div>
+              <h4 className="font-bold text-[#0c264d] text-lg mb-2">Phonological Awareness</h4>
+              <p className="text-sm text-slate-700 w-full flex-grow">
+                Persistent difficulty isolating and manipulating the individual sounds (phonemes) within spoken words.
+              </p>
+            </div>
+
+          </div>
+
+          {/* Spelling & Writing Split-Cards */}
+          <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 text-center">
+            Spelling & Writing
+          </h3>
+          
+          <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-symptoms-core-TAB-writing.png"
+            alt="Spelling and writing challenges"
+            className="block mx-auto w-64 max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+          />
+
+          <div className="flex flex-col gap-6 mb-10">
+            
+            {/* Split Card 1 */}
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row overflow-hidden">
+              <div className="bg-[#0c264d] p-6 md:w-1/3 flex flex-col justify-center items-center text-center">
+                <svg className="w-10 h-10 text-[#ffd166] mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                <h4 className="font-bold text-white text-xl">Poor Spelling</h4>
+              </div>
+              <div className="p-6 md:w-2/3 flex flex-col justify-center">
+                <p className="text-sm text-slate-700">
+                  Spelling often does not match standard phonological rules. Individuals may produce heavy phonetic spelling errors (spelling a word exactly as it sounds rather than how it is conventionally written) or struggle to recall the visual representation of common words.
+                </p>
+              </div>
+            </div>
+
+            {/* Split Card 2 */}
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row overflow-hidden">
+              <div className="bg-[#0A9DC4] p-6 md:w-1/3 flex flex-col justify-center items-center text-center">
+                <svg className="w-10 h-10 text-white mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                <h4 className="font-bold text-white text-xl">Writing Output</h4>
+              </div>
+              <div className="p-6 md:w-2/3 flex flex-col justify-center">
+                <p className="text-sm text-slate-700">
+                  Written expression may be severely limited compared to the individual's oral vocabulary and intelligence. The heavy cognitive toll required by the mechanics of spelling, grammar, and handwriting often bottlenecks their ability to get complex thoughts onto paper.
+                </p>
+              </div>
+            </div>
+
+          </div>
 
           <div className="flex justify-end my-8 clear-both">
             <button 
@@ -83,23 +178,33 @@ export function DyslexiaSymptomsCore({ setCurrentArticle }: SymptomsCoreProps) {
             </button>
           </div>
 
-          {/* REFERENCES */}
+          {/* REFERENCES SECTION */}
           <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
           
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             
+            {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
               <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-                <p>1. Shaywitz, S. E., & Shaywitz, B. A. (2005). "Dyslexia (specific reading disability)." <em>Biological Psychiatry</em>, 57(11), 1301-1309.</p>
-                <p>2. Wagner, R. K., & Torgesen, J. K. (1987). "The nature of phonological processing." <em>Psychological Bulletin</em>, 101(2), 192-212.</p>
-                <p>3. Stanovich, K. E. (1988). "Explaining the differences between the dyslexic and the garden-variety poor reader." <em>Journal of Learning Disabilities</em>, 21(10), 590-604.</p>
-                <p>4. Ehri, L. C. (2000). "Learning to read and learning to spell." <em>Topics in Language Disorders</em>, 20(3), 19-36.</p>
-                <p>5. Graham, S., & Harris, K. R. (2009). "Almost everything you need to know about writing instruction." <em>Focus on Exceptional Children</em>, 42(2), 1-22.</p>
+              <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+                <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
               </div>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                Background Sources
+              </h4>
+              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+                <li>Ehri, L. C. (2000). "Learning to read and learning to spell." <em>Topics in Language Disorders</em>. https://doi.org/10.1097/00011363-200020030-00005</li>
+                <li>Graham, S., & Harris, K. R. (2009). "Almost everything you need to know about writing instruction." <em>Focus on Exceptional Children</em>.</li>
+                <li>Shaywitz, S. E., & Shaywitz, B. A. (2005). "Dyslexia (specific reading disability)." <em>Biological Psychiatry</em>.</li>
+                <li>Stanovich, K. E. (1988). "Explaining the differences between the dyslexic and the garden-variety poor reader." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/002221948802101003</li>
+                <li>Wagner, R. K., & Torgesen, J. K. (1987). "The nature of phonological processing." <em>Psychological Bulletin</em>. https://doi.org/10.1037/0033-2909.101.2.192</li>
+              </ul>
             </div>
           </div>
         </TabsContent>
