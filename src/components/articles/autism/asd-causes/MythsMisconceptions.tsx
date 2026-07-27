@@ -44,10 +44,10 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
 
       {/* The Gut / Diet Feature Box */}
       <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-indigo-400 mb-8">
-        <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">
+        <h3 className="font-bold mb-2 text-med font-spartan text-[#0c264d]">
           <span className="text-red-500 mr-2">✗</span> Myth: Specific diets (like GFCF) can "cure" autism.
         </h3>
-        <h4 className="font-bold text-green-600 mb-3 text-sm">
+        <h4 className="font-bold text-green-600 mb-3 text-medium">
           <span className="mr-2">✓</span> Fact: Diets don't change neurology, but they can alleviate severe, hidden physical pain.
         </h4>
         <p className="text-sm text-gray-700 leading-relaxed mb-3">

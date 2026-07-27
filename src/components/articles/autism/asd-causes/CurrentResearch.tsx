@@ -64,13 +64,13 @@ export function CurrentResearch({ setCurrentArticle }: CurrentResearchProps) {
             <p className="text-xs">Developing interventions and supports that improve day-to-day life and understanding co-occurring conditions.</p>
           </div>
           <div className="p-4 bg-[#f0f9ff] rounded-lg md:col-span-2 text-center">
-            <h4 className="font-bold text-sm mb-3 text-[#0c264d]">Neurodiversity-Led Research</h4>
+            <h4 className="font-bold text-medium mb-3 text-[#0c264d]">Neurodiversity-Led Research</h4>
             <ImageWithFallback 
               src="/images/autism/autism-causes-CurrentRestab-neurodiversitysymbol.png"
               alt="Neurodiversity Symbol"
-              className="w-16 h-auto block mx-auto mb-3"
+              className="w-32 h-auto block mx-auto mb-3"
             />
-            <p className="text-xs max-w-lg mx-auto">Centering autistic voices in research priorities to ensure methods align with the needs of the community.</p>
+            <p className="text-sm max-w-lg mx-auto">Centering autistic voices in research priorities to ensure methods align with the needs of the community.</p>
           </div>
         </div>
       </div>
