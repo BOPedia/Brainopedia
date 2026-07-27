@@ -57,99 +57,65 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         </div>
       </div>
 
-      {/* --- CENTERED GRAPHIC SECTION: MOVING NEURON VIDEO --- */} 
-      <div className="text-center w-full mb-12"> 
-        <div className="mx-auto w-full max-w-[256px] mb-8 rounded-xl overflow-hidden"> 
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            poster="/images/autism/autism-causes-Braintab-moving-neuron.png"
-            className="w-full h-auto object-contain"
-            aria-label="animation of a moving neuron representing brain connectivity"
-          >
-            <source 
-              src="/images/autism/autism-causes-Braintab-moving-neuron.mp4" 
-              type="video/mp4" 
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div> 
-      </div>
-
-{/* Cellular Level Section */}
+{/* Cellular and Molecular Level Section */}
       <div className="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#2abcd4] mb-10">
-        <h3 className="font-bold mb-4 text-lg text-center font-spartan text-[#0c264d]">Cellular and Molecular Level</h3>
-         {/* --- CENTERED GRAPHIC SECTION: SYNAPSE VIDEO --- */} 
-        {/* 2. Changed mb-0 to mb-6 to ADD some comfortable space AFTER the video */}
-        <div className="text-center w-full mb-6"> 
-          <div className="mx-auto w-full max-w-[256px] mb-0 rounded-xl overflow-hidden"> 
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              poster="/images/autism/autism-causes-Braintab-synapse.png"
-              className="w-full h-auto object-contain"
-              aria-label="animation of an active synapse"
-            >
-              <source 
-                src="/images/autism/autism-causes-Braintab-synapse.mp4" 
-                type="video/mp4" 
-              />
-              Your browser does not support the video tag.
-            </video>
-          </div> 
-        </div>
+        <h3 className="font-bold mb-8 text-xl text-center font-spartan text-[#0c264d]">Cellular and Molecular Level</h3>
+        
+        <div className="flex flex-col gap-6 mb-8">
+          
+          {/* Item 1: Synapses */}
+          <div className="flex flex-col md:flex-row items-center gap-6 bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+            <div className="w-full md:w-1/3 flex justify-center flex-shrink-0">
+              <div className="w-full max-w-[200px] rounded-lg overflow-hidden shadow-sm">
+                <video autoPlay loop muted playsInline poster="/images/autism/autism-causes-Braintab-synapse.png" className="w-full h-auto object-contain">
+                  <source src="/images/autism/autism-causes-Braintab-synapse.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div className="w-full md:w-2/3 text-center md:text-left">
+              <div className="font-bold text-[#2abcd4] mb-2 text-lg">Synapses</div>
+              <p className="text-sm text-gray-700">Altered number, structure, or function of synaptic connections.</p>
+            </div>
+          </div>
 
-        {/* The Grid: 3 columns */}
-        {/* 1. Changed mb-8 to mb-2 to dramatically REDUCE the space BEFORE the video */}
-        <div className="grid md:grid-cols-3 gap-4 text-center mb-2">
-          <div className="p-3">
-            <div className="font-bold text-[#2abcd4] mb-1">Synapses</div>
-            <p className="text-sm text-gray-700">Altered number, structure, or function of synaptic connections.</p>
+          {/* Item 2: Neuronal Migration (Fetus Video) */}
+          <div className="flex flex-col md:flex-row items-center gap-6 bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+            <div className="w-full md:w-1/3 flex justify-center flex-shrink-0">
+              <div className="w-full max-w-[200px] rounded-lg overflow-hidden shadow-sm">
+                <video autoPlay loop muted playsInline poster="/images/autism/autism-causes-Braintab-fetus-brain-firings.png" className="w-full h-auto object-contain">
+                  <source src="/images/autism/autism-causes-Braintab-fetus-brain-firings.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div className="w-full md:w-2/3 text-center md:text-left">
+              <div className="font-bold text-[#2abcd4] mb-2 text-lg">Neuronal Migration</div>
+              <p className="text-sm text-gray-700">Atypical positioning of neurons during fetal development.</p>
+            </div>
           </div>
-          <div className="p-3">
-            <div className="font-bold text-[#2abcd4] mb-1">Neuronal Migration</div>
-            <p className="text-sm text-gray-700">Atypical positioning of neurons during fetal development.</p>
-          </div>
-          <div className="p-3">
-            <div className="font-bold text-[#2abcd4] mb-1">E/I Balance</div>
-            <p className="text-sm text-gray-700">Imbalance between excitatory and inhibitory neurotransmission.<sup>3</sup></p>
-          </div>
-        </div> 
 
-        {/* --- CENTERED GRAPHIC SECTION: fetus brain firings VIDEO --- */} 
-        {/* 2. Changed mb-0 to mb-6 to ADD some comfortable space AFTER the video */}
-        <div className="text-center w-full mb-6"> 
-          <div className="mx-auto w-full max-w-[256px] mb-0 rounded-xl overflow-hidden"> 
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              poster="/images/autism/autism-causes-Braintab-fetus-brain-firings.png"
-              className="w-full h-auto object-contain"
-              aria-label="animation of fetal brain firings"
-            >
-              <source 
-                src="/images/autism/autism-causes-Braintab-fetus-brain-firings.mp4" 
-                type="video/mp4" 
-              />
-              Your browser does not support the video tag.
-            </video>
-          </div> 
+          {/* Item 3: E/I Balance (Moving Neuron Video) */}
+          <div className="flex flex-col md:flex-row items-center gap-6 bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+            <div className="w-full md:w-1/3 flex justify-center flex-shrink-0">
+              <div className="w-full max-w-[200px] rounded-lg overflow-hidden shadow-sm">
+                <video autoPlay loop muted playsInline poster="/images/autism/autism-causes-Braintab-moving-neuron.png" className="w-full h-auto object-contain">
+                  <source src="/images/autism/autism-causes-Braintab-moving-neuron.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div className="w-full md:w-2/3 text-center md:text-left">
+              <div className="font-bold text-[#2abcd4] mb-2 text-lg">E/I Balance</div>
+              <p className="text-sm text-gray-700">Imbalance between excitatory and inhibitory neurotransmission.<sup className="text-green-600 font-bold ml-0.5">3</sup></p>
+            </div>
+          </div>
+
         </div>
 
         {/* Flush bottom text section */}
-        {/* 3. Removed mt-0 pt-0 and gave it a small mt-2 to help separate it slightly */}
-        <div className="mt-2 flex flex-wrap justify-center gap-6">
-           <div className="text-sm text-gray-700"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
-           <div className="text-sm text-gray-700"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
+        <div className="mt-6 pt-6 border-t border-gray-100 flex flex-wrap justify-center gap-4">
+           <div className="text-sm text-gray-700 bg-gray-50 px-4 py-3 rounded-md border border-gray-100 shadow-sm"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
+           <div className="text-sm text-gray-700 bg-gray-50 px-4 py-3 rounded-md border border-gray-100 shadow-sm"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
         </div>
       </div>
-
       {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
       
