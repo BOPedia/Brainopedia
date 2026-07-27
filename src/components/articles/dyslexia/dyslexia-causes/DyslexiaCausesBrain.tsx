@@ -70,11 +70,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
           <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 text-center">
             Functional Differences
           </h3>
-          <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Functional Diff.png"
-            alt="Functional differences in the dyslexic brain"
-            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-          />
+
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
             <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
@@ -109,16 +105,17 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
               <p className="text-sm text-slate-700 flex-grow">Increased reliance on other brain regions, including the right hemisphere and frontal areas, to compensate.</p>
             </div>
           </div>
+          <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Functional Diff.png"
+            alt="Functional differences in the dyslexic brain"
+            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+          />
 
           {/* Structural Differences */}
           <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 text-center">
             Structural Differences
           </h3>
-          <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Structural.png"
-            alt="Structural differences in the dyslexic brain"
-            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-          />
+         
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
             <div className="bg-gray-50 border-l-4 border-[#0c264d] p-5 rounded-r-lg shadow-sm">
@@ -138,16 +135,15 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
               <p className="text-sm text-slate-700">Less asymmetry typically found in language-related brain regions.</p>
             </div>
           </div>
-
+ <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Structural.png"
+            alt="Structural differences in the dyslexic brain"
+            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+          />
           {/* Neural Migration */}
           <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 text-center">
             Neural Migration & Development
           </h3>
-          <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Neural-Mig.png"
-            alt="Neural migration and development differences in dyslexia"
-            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
-          />
           
           <p className="mb-6 text-slate-700 text-center">Early brain development differences may underlie dyslexia:</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
@@ -168,7 +164,11 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
               <span className="text-sm text-slate-700 font-medium">Altered development of reading-specialized brain circuits.</span>
             </div>
           </div>
-
+          <ImageWithFallback 
+            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Neural-Mig.png"
+            alt="Neural migration and development differences in dyslexia"
+            className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+          />
           {/* Phonological Deficit Hypothesis */}
           <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 text-center">
             The Phonological Deficit Hypothesis
