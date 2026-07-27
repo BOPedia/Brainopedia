@@ -111,29 +111,29 @@ export function SupportInterventions({ setCurrentArticle }: SupportInterventions
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-            <div className="bg-white p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-gray-100 p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
               <h4 className="font-bold text-[#0c264d] mb-2">Phonology</h4>
-              <p className="text-sm text-slate-700">The sound structure of language, emphasizing crucial skills like phonemic awareness.</p>
+              <p className="text-sm text-black">The sound structure of language, emphasizing crucial skills like phonemic awareness.</p>
             </div>
-            <div className="bg-white p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-gray-100 p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
               <h4 className="font-bold text-[#0c264d] mb-2">Sound-Symbol</h4>
-              <p className="text-sm text-slate-700">The direct, explicit relationship between written letters and their spoken sounds (phonics).</p>
+              <p className="text-sm text-black">The direct, explicit relationship between written letters and their spoken sounds (phonics).</p>
             </div>
-            <div className="bg-white p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-gray-100 p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
               <h4 className="font-bold text-[#0c264d] mb-2">Syllable Instruction</h4>
-              <p className="text-sm text-slate-700">Teaching the six syllable types in English to help decode longer, more complex words.</p>
+              <p className="text-sm text-black">Teaching the six syllable types in English to help decode longer, more complex words.</p>
             </div>
-            <div className="bg-white p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-gray-100 p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
               <h4 className="font-bold text-[#0c264d] mb-2">Morphology</h4>
-              <p className="text-sm text-slate-700">The study of meaningful word parts, including prefixes, suffixes, and base roots.</p>
+              <p className="text-sm text-black">The study of meaningful word parts, including prefixes, suffixes, and base roots.</p>
             </div>
-            <div className="bg-white p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-gray-100 p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
               <h4 className="font-bold text-[#0c264d] mb-2">Syntax</h4>
-              <p className="text-sm text-slate-700">The rules of sentence structure, grammar, and how words combine to convey meaning.</p>
+              <p className="text-sm text-black">The rules of sentence structure, grammar, and how words combine to convey meaning.</p>
             </div>
-            <div className="bg-white p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
+            <div className="bg-gray-100 p-5 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
               <h4 className="font-bold text-[#0c264d] mb-2">Semantics</h4>
-              <p className="text-sm text-slate-700">The overarching focus on comprehending meaning in language and connected text.</p>
+              <p className="text-sm text-black">The overarching focus on comprehending meaning in language and connected text.</p>
             </div>
           </div>
 
@@ -155,45 +155,45 @@ export function SupportInterventions({ setCurrentArticle }: SupportInterventions
           <h3 className="text-2xl font-bold mt-8 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Other Evidence-Based Programs</h3>
           
           <div className="space-y-4 mb-10">
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
-              <div className="font-bold text-[#0A9DC4] md:w-1/4">Lindamood-Bell</div>
-              <div className="text-sm text-slate-700 md:w-3/4">Programs like LiPS (focusing on phonemic awareness) and Seeing Stars (focusing on symbol imagery).</div>
+            <div className="bg-[#0c264d] p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <div className="font-bold text-white md:w-1/4">Lindamood-Bell</div>
+              <div className="text-sm text-white md:w-3/4">Programs like LiPS (focusing on phonemic awareness) and Seeing Stars (focusing on symbol imagery).</div>
             </div>
             
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
-              <div className="font-bold text-[#0A9DC4] md:w-1/4">Reading Recovery</div>
-              <div className="text-sm text-slate-700 md:w-3/4">An intensive early intervention program specifically designed for first graders who are struggling to read.</div>
+            <div className="bg-[#0c264d] p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <div className="font-bold text-white md:w-1/4">Reading Recovery</div>
+              <div className="text-sm text-white md:w-3/4">An intensive early intervention program specifically designed for first graders who are struggling to read.</div>
             </div>
 
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
-              <div className="font-bold text-[#0A9DC4] md:w-1/4">RAVE-O</div>
-              <div className="text-sm text-slate-700 md:w-3/4">A comprehensive program targeting Retrieval, Automaticity, Vocabulary, Engagement, and Orthography.</div>
+            <div className="bg-[#0c264d] p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <div className="font-bold text-white md:w-1/4">RAVE-O</div>
+              <div className="text-sm text-white md:w-3/4">A comprehensive program targeting Retrieval, Automaticity, Vocabulary, Engagement, and Orthography.</div>
             </div>
 
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
-              <div className="font-bold text-[#0A9DC4] md:w-1/4">Leveled Literacy (LLI)</div>
-              <div className="text-sm text-slate-700 md:w-3/4">A short-term, supplementary reading intervention designed to bring students up to grade-level achievement.</div>
+            <div className="bg-[#0c264d] p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <div className="font-bold text-white md:w-1/4">Leveled Literacy (LLI)</div>
+              <div className="text-sm text-white md:w-3/4">A short-term, supplementary reading intervention designed to bring students up to grade-level achievement.</div>
             </div>
 
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
-              <div className="font-bold text-[#0A9DC4] md:w-1/4">Corrective Reading</div>
-              <div className="text-sm text-slate-700 md:w-3/4">A direct instruction program aimed at older students and adults to improve decoding and comprehension.</div>
+            <div className="bg-[#0c264d] p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <div className="font-bold text-white md:w-1/4">Corrective Reading</div>
+              <div className="text-sm text-white md:w-3/4">A direct instruction program aimed at older students and adults to improve decoding and comprehension.</div>
             </div>
           </div>
 
           <h3 className="text-2xl font-bold mt-8 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Building Reading Fluency</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+            <div className="bg-gray-200 p-5 rounded-lg border border-gray-200 shadow-sm">
               <h4 className="text-lg font-bold mb-2 text-[#0c264d]">Repeated Reading</h4>
-              <p className="text-sm text-slate-700">Student reads same passage multiple times until achieving target fluency. Improves automaticity, rate, and expression.</p>
+              <p className="text-sm text-black">Student reads same passage multiple times until achieving target fluency. Improves automaticity, rate, and expression.</p>
             </div>
-            <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+            <div className="bg-gray-200 p-5 rounded-lg border border-gray-200 shadow-sm">
               <h4 className="text-lg font-bold mb-2 text-[#0c264d]">Partner Reading</h4>
-              <p className="text-sm text-slate-700">Reading with a more fluent reader who models good reading. Includes choral and echo reading.</p>
+              <p className="text-sm text-black">Reading with a more fluent reader who models good reading. Includes choral and echo reading.</p>
             </div>
-            <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm md:col-span-2">
+            <div className="bg-gray-200 p-5 rounded-lg border border-gray-200 shadow-sm md:col-span-2">
               <h4 className="text-lg font-bold mb-2 text-[#0c264d]">Wide Reading</h4>
-              <p className="text-sm text-slate-700">Reading large amounts of text at independent level to build stamina and confidence. Emphasizes high-interest, decodable books.</p>
+              <p className="text-sm text-black">Reading large amounts of text at independent level to build stamina and confidence. Emphasizes high-interest, decodable books.</p>
             </div>
           </div>
 

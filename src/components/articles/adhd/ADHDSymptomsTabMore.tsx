@@ -68,7 +68,11 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
       {/* Associated Risks and Impacts Section (New Card Layout) */}
       <div className="mb-10">
         <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Associated Risks and Broader Impacts of ADHD</h3>
-        
+                    <ImageWithFallback 
+                      src="/images/adhd/adhd-support-more-TAB-unmanaged.png"
+                      alt="Structural differences and risk factors in the dyslexic brain"
+                      className="block mx-auto w-full max-w-3xl mb-6 rounded-lg shadow-sm border border-slate-200 bg-white"
+                    />            
         <p className="mb-6 text-slate-700 leading-relaxed">
           A comprehensive umbrella review analyzing over 1,000 studies found that ADHD is associated with increased risks 
           across multiple life domains beyond the core symptoms<sup className="text-green-600 font-bold ml-0.5">1</sup>. However, 

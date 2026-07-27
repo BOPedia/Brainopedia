@@ -34,7 +34,6 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
         All About Dyslexia
       </button>
 
-
       <Tabs defaultValue={initialTab || 'daily'} className="w-full">
         <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger 
@@ -62,12 +61,14 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
             Strengths & Success
           </TabsTrigger>
         </TabsList>
-      {/* Introduction */}
-      <div className="mb-8">
-        <p className="text-slate-700 leading-relaxed">
-          Living with dyslexia presents unique challenges, but with appropriate support and self-understanding, individuals with dyslexia can thrive academically, professionally, and personally. Many highly successful people have dyslexia, demonstrating that it doesn't limit potential—it simply means learning and working differently.
-        </p>
-      </div>
+        
+        {/* Introduction */}
+        <div className="mb-8">
+          <p className="text-slate-700 leading-relaxed">
+            Living with dyslexia presents unique challenges, but with appropriate support and self-understanding, individuals with dyslexia can thrive academically, professionally, and personally. Many highly successful people have dyslexia, demonstrating that it doesn't limit potential—it simply means learning and working differently.
+          </p>
+        </div>
+        
         {/* =========================================
             TAB 1: DAILY STRATEGIES
             ========================================= */}
@@ -90,41 +91,95 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             
             {/* Reading Challenges */}
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
+            <div className="bg-gray-100 p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#0A9DC4] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
               </div>
-              <h4 className="font-bold text-[#0c264d] text-lg mb-4 text-center">Reading Hurdles</h4>
-              <ul className="space-y-3 text-sm text-slate-700 w-full flex-grow">
-                <li className="flex items-start gap-2"><span className="text-[#0A9DC4] font-bold mt-0.5">•</span> <strong>Menus & Signs:</strong> Can be slow and effortful in public settings.</li>
-                <li className="flex items-start gap-2"><span className="text-[#0A9DC4] font-bold mt-0.5">•</span> <strong>Forms:</strong> Medical forms and applications can feel overwhelming.</li>
-                <li className="flex items-start gap-2"><span className="text-[#0A9DC4] font-bold mt-0.5">•</span> <strong>Time Pressure:</strong> Reading under constraints is particularly difficult.</li>
+              <h4 className="font-bold text-[#0c264d] text-lg mb-6 text-center">Reading Hurdles</h4>
+              <ul className="space-y-4 text-sm w-full flex-grow text-left">
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold text-lg leading-none mt-0.5">•</span>
+                  <div>
+                    <strong className="block text-[#0c264d] mb-1">Menus & Signs:</strong>
+                    <span className="text-slate-700">Can be slow and effortful in public settings.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#0A9DC4] font-bold text-lg leading-none mt-0.5">•</span>
+                  <div>
+                    <strong className="block text-[#0c264d] mb-1">Forms:</strong>
+                    <span className="text-slate-700">Medical forms and applications can feel overwhelming.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#0A9DC4] font-bold text-lg leading-none mt-0.5">•</span>
+                  <div>
+                    <strong className="block text-[#0c264d] mb-1">Time Pressure:</strong>
+                    <span className="text-slate-700">Reading under constraints is particularly difficult.</span>
+                  </div>
+                </li>
               </ul>
             </div>
 
             {/* Writing Challenges */}
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
+            <div className="bg-gray-100 p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#ffd166] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-[#0c264d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
               </div>
-              <h4 className="font-bold text-[#0c264d] text-lg mb-4 text-center">Writing Hurdles</h4>
-              <ul className="space-y-3 text-sm text-slate-700 w-full flex-grow">
-                <li className="flex items-start gap-2"><span className="text-[#ffd166] font-bold mt-0.5">•</span> <strong>Spelling:</strong> Frequent errors even in common words.</li>
-                <li className="flex items-start gap-2"><span className="text-[#ffd166] font-bold mt-0.5">•</span> <strong>Communication:</strong> Anxiety about mistakes in emails or texts.</li>
-                <li className="flex items-start gap-2"><span className="text-[#ffd166] font-bold mt-0.5">•</span> <strong>Expression Gap:</strong> High verbal abilities contrast with written output.</li>
+              <h4 className="font-bold text-[#0c264d] text-lg mb-6 text-center">Writing Hurdles</h4>
+              <ul className="space-y-4 text-sm w-full flex-grow text-left">
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffd166] font-bold text-lg leading-none mt-0.5">•</span>
+                  <div>
+                    <strong className="block text-[#0c264d] mb-1">Spelling:</strong>
+                    <span className="text-slate-700">Frequent errors even in common words.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffd166] font-bold text-lg leading-none mt-0.5">•</span>
+                  <div>
+                    <strong className="block text-[#0c264d] mb-1">Communication:</strong>
+                    <span className="text-slate-700">Anxiety about mistakes in emails or texts.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffd166] font-bold text-lg leading-none mt-0.5">•</span>
+                  <div>
+                    <strong className="block text-[#0c264d] mb-1">Expression Gap:</strong>
+                    <span className="text-slate-700">High verbal abilities contrast with written output.</span>
+                  </div>
+                </li>
               </ul>
             </div>
 
             {/* Memory Challenges */}
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
+            <div className="bg-gray-100 p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#2abcd4] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
               </div>
-              <h4 className="font-bold text-[#0c264d] text-lg mb-4 text-center">Memory & Organization</h4>
-              <ul className="space-y-3 text-sm text-slate-700 w-full flex-grow">
-                <li className="flex items-start gap-2"><span className="text-[#2abcd4] font-bold mt-0.5">•</span> <strong>Working Memory:</strong> Difficulty holding multiple pieces of verbal info.</li>
-                <li className="flex items-start gap-2"><span className="text-[#2abcd4] font-bold mt-0.5">•</span> <strong>Directions:</strong> May need multi-step instructions written down.</li>
-                <li className="flex items-start gap-2"><span className="text-[#2abcd4] font-bold mt-0.5">•</span> <strong>Time Management:</strong> Tasks often take much longer than anticipated.</li>
+              <h4 className="font-bold text-[#0c264d] text-lg mb-6 text-center">Memory & Organization</h4>
+              <ul className="space-y-4 text-sm w-full flex-grow text-left">
+                <li className="flex items-start gap-3">
+                  <span className="text-[#2abcd4] font-bold text-lg leading-none mt-0.5">•</span>
+                  <div>
+                    <strong className="block text-[#0c264d] mb-1">Working Memory:</strong>
+                    <span className="text-slate-700">Difficulty holding multiple pieces of verbal info.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#2abcd4] font-bold text-lg leading-none mt-0.5">•</span>
+                  <div>
+                    <strong className="block text-[#0c264d] mb-1">Directions:</strong>
+                    <span className="text-slate-700">May need multi-step instructions written down.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#2abcd4] font-bold text-lg leading-none mt-0.5">•</span>
+                  <div>
+                    <strong className="block text-[#0c264d] mb-1">Time Management:</strong>
+                    <span className="text-slate-700">Tasks often take much longer than anticipated.</span>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -177,7 +232,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             
             {/* Elementary */}
-            <div className="bg-gray-300 border-t-4 border-[#ffd166] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-gray-200 border-t-4 border-[#ffd166] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Elementary School</h4>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
@@ -193,7 +248,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
             </div>
 
             {/* Middle/High School */}
-            <div className="bg-gray-300 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-gray-200 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Middle & High School</h4>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
@@ -209,7 +264,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
             </div>
 
             {/* College */}
-            <div className="bg-gray-300 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-gray-200 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">College & University</h4>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
@@ -272,7 +327,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
             
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
+            <div className="bg-gray-100 p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#0c264d] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-[#ffd166]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
               </div>
@@ -284,7 +339,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
               </ul>
             </div>
 
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
+            <div className="bg-gray-100 p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#0A9DC4] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
               </div>
@@ -407,7 +462,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             
             {/* Cognitive */}
-            <div className="bg-gray-300 border-t-4 border-[#ffd166] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-gray-200 border-t-4 border-[#ffd166] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Cognitive Strengths</h4>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
@@ -423,7 +478,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
             </div>
 
             {/* Personal */}
-            <div className="bg-gray-300 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-gray-200 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Personal Strengths</h4>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
@@ -439,7 +494,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
             </div>
 
             {/* Professional */}
-            <div className="bg-gray-300 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-gray-200 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Professional Strengths</h4>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
