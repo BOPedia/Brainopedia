@@ -32,6 +32,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         </p>
         
         <div className="clear-both"></div>
+      </div>
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
         {/* Structural Differences */}
@@ -104,12 +105,33 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
 
         </div>
 
-        {/* Flush bottom text section */}
-        <div className="mt-6 pt-6 border-t border-gray-100 flex flex-wrap justify-center gap-4">
-           <div className="text-sm text-gray-700 bg-gray-50 px-4 py-3 rounded-md border border-gray-100 shadow-sm"><strong>Neuroinflammation:</strong> Evidence of immune activation in some autistic brains.</div>
-           <div className="text-sm text-gray-700 bg-gray-50 px-4 py-3 rounded-md border border-gray-100 shadow-sm"><strong>Mitochondrial function:</strong> Potential mitochondrial dysfunction in some individuals.</div>
-        </div>
-      </div>
+         {/* Item 4: Mitochondrial Function */}
+          <div className="flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+            <ImageWithFallback 
+              src="/images/autism/autism-causes-Braintab-mitochondrial.png" 
+              alt="Mitochondrial function and cellular energy"
+              className="w-full max-w-sm rounded-lg shadow-sm object-contain bg-white"
+            />
+            <div className="text-center max-w-lg mx-auto">
+              <h4 className="font-bold text-[#2abcd4] mb-2 text-xl">Mitochondrial Function</h4>
+              <p className="text-base text-gray-700">Potential mitochondrial dysfunction in some individuals.</p>
+            </div>
+          </div>
+
+{/* Item 5: Neuroinflammation */}
+          <div className="flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+            <ImageWithFallback 
+              src="/images/autism/autism-causes-Braintab-neuroinflammation.png" 
+              alt="Neuroinflammation in the brain"
+              className="w-full max-w-sm rounded-lg shadow-sm object-contain bg-white"
+            />
+            <div className="text-center max-w-lg mx-auto">
+              <h4 className="font-bold text-[#2abcd4] mb-2 text-xl">Neuroinflammation</h4>
+              <p className="text-base text-gray-700">Evidence of immune activation in some autistic brains.</p>
+            </div>
+          </div>
+
+ 
 
       {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
