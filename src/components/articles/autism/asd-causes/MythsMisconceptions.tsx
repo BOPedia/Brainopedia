@@ -67,7 +67,7 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
             <span className="text-red-500 mr-2">✗</span> Myth: "Refrigerator Mothers"
           </h3>
           <p className="text-sm text-gray-700 leading-relaxed">
-            In the 1950s, a devastatingly harmful theory suggested that "cold" or unaffectionate parenting caused autism. <strong>Science has entirely debunked this.</strong> Autism is a biological and neurological developmental difference, not the result of parenting style or a lack of love.
+            In the 1950s, a devastatingly harmful theory suggested that "cold" or unaffectionate parenting caused autism. <strong>Research has entirely debunked this.</strong><sup className="text-[#0c264d] font-extrabold ml-0.5">7,8</sup> Autism is a biological and neurological developmental difference, not the result of parenting style or a lack of love.
           </p>
         </div>
 
@@ -121,6 +121,8 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
             <p>4. Milton, D. E. (2012). "On the ontological status of autism: the 'double empathy problem'." <i>Disability & Society</i>, 27(6), 883-887.</p>
             <p>5. Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What is the male-to-female ratio in autism spectrum disorder? A systematic review and meta-analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.</p>
             <p>6. Treffert, D. A. (2009). "The savant syndrome: an extraordinary condition. A synopsis: past, present, future." <i>Philosophical Transactions of the Royal Society B: Biological Sciences</i>, 364(1522), 1351-1357.</p>
+            <p>7. Rimland, B. (1964). <i>Infantile Autism: The Syndrome and Its Implications for a Neural Theory of Behavior</i>. Appleton-Century-Crofts.</p>
+            <p>8. Folstein, S., & Rutter, M. (1977). "Infantile Autism: A Genetic Study of 21 Twin Pairs." <i>Journal of Child Psychology and Psychiatry</i>, 18(4), 297-321.</p>
           </div>
         </div>
 
