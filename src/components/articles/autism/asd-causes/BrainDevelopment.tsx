@@ -65,73 +65,85 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         <div className="flex flex-col gap-8 mb-8">
           
           {/* Item 1: Synapses */}
-          <div className="flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
             <ImageWithFallback 
               src="/images/autism/autism-causes-Braintab-synapse.png" 
               alt="Synaptic connections"
-              className="w-full max-w-sm rounded-lg shadow-sm object-contain bg-white"
+              className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
-            <div className="text-center max-w-lg mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-2 text-xl">Synapses</h4>
-              <p className="text-base text-gray-700">Altered number, structure, or function of synaptic connections.</p>
+            <div className="w-full mx-auto">
+              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">Synapses</h4>
+              <p className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+                Synapses are the critical junctions where neurons communicate via chemical signals. In autistic brain development, research frequently shows differences in <strong>synaptic pruning</strong>—the process where the brain eliminates extra or unused connections to streamline function. This can result in an altered number (often an overabundance) of connections, or variations in their physical structure, ultimately changing how information is processed and integrated.
+              </p>
             </div>
           </div>
 
           {/* Item 2: Neuronal Migration */}
-          <div className="flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
             <ImageWithFallback 
               src="/images/autism/autism-causes-Braintab-fetus-brain-firings.png" 
               alt="Neuronal migration during fetal development"
-              className="w-full max-w-sm rounded-lg shadow-sm object-contain bg-white"
+              className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
-            <div className="text-center max-w-lg mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-2 text-xl">Neuronal Migration</h4>
-              <p className="text-base text-gray-700">Atypical positioning of neurons during fetal development.</p>
+            <div className="w-full mx-auto">
+              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">Neuronal Migration</h4>
+              <p className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+                During fetal development, neurons must travel from their origin point to highly precise locations within the cortex to form functional circuits. In autism, this complex migration process can be atypical, occasionally leading to patches of disorganized cellular architecture. This foundational difference contributes to the unique structural pathways and the altered balance of local versus long-range neural networking seen in autistic individuals.
+              </p>
             </div>
           </div>
 
           {/* Item 3: E/I Balance */}
-          <div className="flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
             <ImageWithFallback 
               src="/images/autism/autism-cause-Braintab-EI.png" 
               alt="E/I Balance neurotransmission"
-              className="w-full max-w-sm rounded-lg shadow-sm object-contain bg-white"
+              className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
-            <div className="text-center max-w-lg mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-2 text-xl">E/I Balance</h4>
-              <p className="text-base text-gray-700">Imbalance between excitatory and inhibitory neurotransmission.</p>
+            <div className="w-full mx-auto">
+              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">E/I Balance</h4>
+              <div className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+                <p className="mb-3">The brain relies on a delicate, constant balance between excitatory neurotransmitters (which activate cells) and inhibitory neurotransmitters (which calm brain activity). In autism, this ratio is often shifted:</p>
+                <ul className="space-y-2 pl-2">
+                  <li><strong className="text-[#0c264d]">Too Much Excitation:</strong> Driven by neurotransmitters like Glutamate, an overabundance of excitatory signals can lead to sensory overwhelm, racing thoughts, anxiety, and poor sleep.</li>
+                  <li><strong className="text-[#0c264d]">Too Much Inhibition:</strong> Driven by neurotransmitters like GABA and Glycine, excess inhibition can result in low motivation, fatigue, or brain fog.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 4: Mitochondrial Function */}
+          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+            <ImageWithFallback 
+              src="/images/autism/autism-causes-Braintab-mitochondrial.png" 
+              alt="Mitochondrial function and cellular energy"
+              className="w-full rounded-lg shadow-sm object-contain bg-white"
+            />
+            <div className="w-full mx-auto">
+              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">Mitochondrial Function</h4>
+              <p className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+                Mitochondria are the powerhouses of the cell, producing the ATP needed to fuel highly intensive neurological processes. Emerging research indicates that a subset of autistic individuals experience mitochondrial dysfunction. This dysfunction can disrupt essential energy production, impair the regulation of oxidative stress (redox balance), and affect calcium signaling—all of which are vital for healthy, sustained neurodevelopment and daily functioning.
+              </p>
+            </div>
+          </div>
+
+          {/* Item 5: Neuroinflammation */}
+          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+            <ImageWithFallback 
+              src="/images/autism/autism-causes-Braintab-neuroinflammation.png" 
+              alt="Neuroinflammation in the brain"
+              className="w-full rounded-lg shadow-sm object-contain bg-white"
+            />
+            <div className="w-full mx-auto">
+              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">Neuroinflammation</h4>
+              <p className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+                The brain is protected by specialized immune cells called microglia, which guard against harm and respond to threats. In some autistic brains, there is evidence of chronic immune activation, known as neuroinflammation. Instead of returning to a baseline resting state after a threat has passed, these immune cells remain active, releasing inflammatory signals that can interfere with healthy synaptic function, mood regulation, and cognitive processing.
+              </p>
             </div>
           </div>
 
         </div>
-
-         {/* Item 4: Mitochondrial Function */}
-          <div className="flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
-            <ImageWithFallback 
-              src="/images/autism/autism-causes-Braintab-mitochondrial.png" 
-              alt="Mitochondrial function and cellular energy"
-              className="w-full max-w-sm rounded-lg shadow-sm object-contain bg-white"
-            />
-            <div className="text-center max-w-lg mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-2 text-xl">Mitochondrial Function</h4>
-              <p className="text-base text-gray-700">Potential mitochondrial dysfunction in some individuals.</p>
-            </div>
-          </div>
-
-{/* Item 5: Neuroinflammation */}
-          <div className="flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
-            <ImageWithFallback 
-              src="/images/autism/autism-causes-Braintab-neuroinflammation.png" 
-              alt="Neuroinflammation in the brain"
-              className="w-full max-w-sm rounded-lg shadow-sm object-contain bg-white"
-            />
-            <div className="text-center max-w-lg mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-2 text-xl">Neuroinflammation</h4>
-              <p className="text-base text-gray-700">Evidence of immune activation in some autistic brains.</p>
-            </div>
-          </div>
-
- 
 
       {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
@@ -166,6 +178,6 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         </div>
       </div>
     </div>
-   </div>
+  </div>
   );
 }
