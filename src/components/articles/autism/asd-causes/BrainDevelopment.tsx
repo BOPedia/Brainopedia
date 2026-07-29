@@ -72,8 +72,8 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
             <div className="w-full mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">Synapses</h4>
-              <p className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+              <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Synapses</h4>
+              <p className="text-sm text-[#0c264d] leading-relaxed bg-[#79e1fd] p-5 rounded-lg border border-gray-200">
                 Synapses are the critical junctions where neurons communicate via chemical signals. In autistic brain development, research frequently shows differences in <strong>synaptic pruning</strong>—the process where the brain eliminates extra or unused connections to streamline function. This can result in an altered number (often an overabundance) of connections, or variations in their physical structure, ultimately changing how information is processed and integrated.
               </p>
             </div>
@@ -87,8 +87,8 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
             <div className="w-full mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">Neuronal Migration</h4>
-              <p className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+              <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Neuronal Migration</h4>
+              <p className="text-sm text-[#0c264d] leading-relaxed bg-[#79e1fd] p-5 rounded-lg border border-gray-200">
                 During fetal development, neurons must travel from their origin point to highly precise locations within the cortex to form functional circuits. In autism, this complex migration process can be atypical, occasionally leading to patches of disorganized cellular architecture. This foundational difference contributes to the unique structural pathways and the altered balance of local versus long-range neural networking seen in autistic individuals.
               </p>
             </div>
@@ -102,8 +102,8 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
             <div className="w-full mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">E/I Balance</h4>
-              <div className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+              <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">E/I Balance</h4>
+              <div className="text-sm text-[#0c264d] leading-relaxed bg-[#79e1fd] p-5 rounded-lg border border-gray-200">
                 <p className="mb-3">The brain relies on a delicate, constant balance between excitatory neurotransmitters (which activate cells) and inhibitory neurotransmitters (which calm brain activity). In autism, this ratio is often shifted:</p>
                 <ul className="space-y-2 pl-2">
                   <li><strong className="text-[#0c264d]">Too Much Excitation:</strong> Driven by neurotransmitters like Glutamate, an overabundance of excitatory signals can lead to sensory overwhelm, racing thoughts, anxiety, and poor sleep.</li>
@@ -121,8 +121,8 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
             <div className="w-full mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">Mitochondrial Function</h4>
-              <p className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+              <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Mitochondrial Function</h4>
+              <p className="text-sm text-[#0c264d] leading-relaxed bg-[#79e1fd] p-5 rounded-lg border border-gray-200">
                 Mitochondria are the powerhouses of the cell, producing the ATP needed to fuel highly intensive neurological processes. Emerging research indicates that a subset of autistic individuals experience mitochondrial dysfunction. This dysfunction can disrupt essential energy production, impair the regulation of oxidative stress (redox balance), and affect calcium signaling—all of which are vital for healthy, sustained neurodevelopment and daily functioning.
               </p>
             </div>
@@ -136,8 +136,8 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
             <div className="w-full mx-auto">
-              <h4 className="font-bold text-[#2abcd4] mb-3 text-xl text-center">Neuroinflammation</h4>
-              <p className="text-sm text-gray-700 leading-relaxed bg-white p-5 rounded-lg border border-gray-200">
+              <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Neuroinflammation</h4>
+              <p className="text-sm text-[#0c264d] leading-relaxed bg-[#79e1fd] p-5 rounded-lg border border-gray-200">
                 The brain is protected by specialized immune cells called microglia, which guard against harm and respond to threats. In some autistic brains, there is evidence of chronic immune activation, known as neuroinflammation. Instead of returning to a baseline resting state after a threat has passed, these immune cells remain active, releasing inflammatory signals that can interfere with healthy synaptic function, mood regulation, and cognitive processing.
               </p>
             </div>

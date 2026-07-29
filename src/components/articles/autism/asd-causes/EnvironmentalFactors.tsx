@@ -72,7 +72,7 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
       </div>
 
       {/* Gene-Environment Interactions Box */}
-      <div className="bg-[#2abcd4] bg-opacity-20 p-5 rounded-lg border-2 border-dashed border-[#0c264d] border-opacity-30 mb-10">
+      <div className="bg-green-100 bg-opacity-20 p-5 rounded-lg border-2 border-dashed border-[#0c264d] border-opacity-30 mb-10">
         <h3 className="font-bold mb-2 text-lg font-spartan text-[#0c264d]">Gene-Environment Interactions</h3>
         <p className="text-sm leading-relaxed text-[#0c264d]">
           Environmental factors likely don't act alone but interact with genetic susceptibility. Genetic vulnerability may determine which environmental factors affect a child, or environmental factors may "trigger" a genetic risk in susceptible individuals.<sup className="text-[#0c264d] font-extrabold ml-0.5">2</sup>
@@ -80,7 +80,7 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
       </div>
 
       {/* The Big Vaccine Feature Section */}
-      <div className="bg-white p-6 md:p-8 rounded-xl shadow-md border-l-4 border-[#0c264d] mb-10">
+      <div className="bg-yellow-100 p-6 md:p-8 rounded-xl shadow-md border-l-4 border-[#0c264d] mb-10">
         <h3 className="font-bold mb-4 text-xl font-spartan text-[#0c264d]">Vaccines, The Schedule & The Immune System</h3>
         
         <ImageWithFallback 

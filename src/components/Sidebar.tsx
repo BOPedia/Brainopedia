@@ -124,8 +124,8 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
           {/* Mobile close button */}
           <div className="xl:hidden flex items-center justify-between p-4 border-b border-[#0c264d]">
             <span className="text-[#0c264d] font-bold">Navigation</span>
-            <button onClick={closeSidebar} className="p-2 hover:bg-[#ffcc00]/30 rounded-md">
-              <X className="w-5 h-5" />
+            <button onClick={closeSidebar} className="p-2 hover:bg-white/40 rounded-md">
+              <X className="w-5 h-5 text-[#0c264d]" />
             </button>
           </div>
           
@@ -135,7 +135,9 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
               <button
                 onClick={() => handleArticleClick('home')}
                 className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left ${
-                  currentArticle === 'home' ? 'bg-[#0A9DC4] text-white' : 'text-[#0c264d] hover:bg-white/50'
+                  currentArticle === 'home' 
+                    ? 'bg-[#0A9DC4] text-white shadow-sm' 
+                    : 'text-[#0c264d] hover:bg-white/40 font-medium'
                 }`}
               >
                 <Brain className="w-5 h-5" />
@@ -145,7 +147,9 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
               <button
                 onClick={() => handleArticleClick('about')}
                 className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left ${
-                  currentArticle === 'about' ? 'bg-[#0A9DC4] text-white' : 'text-[#0c264d] hover:bg-white/50'
+                  currentArticle === 'about' 
+                    ? 'bg-[#0A9DC4] text-white shadow-sm' 
+                    : 'text-[#0c264d] hover:bg-white/40 font-medium'
                 }`}
               >
                 <Info className="w-5 h-5" />
@@ -163,7 +167,7 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
                 <div key={category.name} className="mb-2">
                   <button
                     onClick={() => toggleCategory(category.name)}
-                    className="w-full flex items-center justify-between px-3 py-2 text-sm font-bold text-[#0c264d] hover:bg-white/40 rounded-md transition-colors"
+                    className="w-full flex items-center justify-between px-3 py-2 text-base font-bold text-[#0c264d] hover:bg-white/40 rounded-md transition-colors"
                   >
                     <span>{category.name}</span>
                     {expandedCategories[category.name] ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
@@ -176,7 +180,7 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
                           <div key={sub.name} className="mb-1">
                             <button
                               onClick={() => toggleCategory(`${category.name}-${sub.name}`)}
-                              className="w-full flex items-center justify-between px-2 py-1 text-xs font-bold text-[#0c264d]/80 hover:bg-white/30 rounded-md"
+                              className="w-full flex items-center justify-between px-2 py-1 text-xs font-bold text-[#0c264d] hover:bg-white/40 rounded-md transition-colors"
                             >
                               <span>{sub.name}</span>
                               {expandedCategories[`${category.name}-${sub.name}`] ? <ChevronDown className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />}
@@ -190,8 +194,8 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
                                       className={`
                                         w-full flex items-center justify-start gap-3 px-3 py-2 rounded-md transition-colors text-left
                                         ${currentArticle === art.id 
-                                          ? 'bg-[#0A9DC4] text-white' 
-                                          : 'text-gray-700 hover:bg-gray-100'
+                                          ? 'bg-[#0A9DC4] text-white shadow-sm font-semibold' 
+                                          : 'text-[#0c264d] hover:bg-white/40 font-medium'
                                         }
                                       `}
                                     >
@@ -213,8 +217,8 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
                                 className={`
                                   w-full flex items-center justify-start gap-3 px-3 py-2 rounded-md transition-colors text-left
                                   ${currentArticle === art.id 
-                                    ? 'bg-[#0A9DC4] text-white' 
-                                    : 'text-gray-700 hover:bg-gray-100'
+                                    ? 'bg-[#0A9DC4] text-white shadow-sm font-semibold' 
+                                    : 'text-[#0c264d] hover:bg-white/40 font-medium'
                                   }
                                 `}
                               >
@@ -239,22 +243,26 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
               <button
                 onClick={() => handleArticleClick('blog')}
                 className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left ${
-                  currentArticle === 'blog' ? 'bg-[#0A9DC4] text-white' : 'text-gray-700 hover:bg-white'
+                  currentArticle === 'blog' 
+                    ? 'bg-[#0A9DC4] text-white shadow-sm font-semibold' 
+                    : 'text-[#0c264d] hover:bg-white/40 font-medium'
                 }`}
               >
                 <Newspaper className="w-5 h-5" />
-                <span className="text-sm font-bold">Blog & Updates</span>
+                <span className="text-sm">Blog & Updates</span>
               </button>
 
               {/* Enhanced Donate Button */}
               <button
                 onClick={() => handleArticleClick('donate')}
                 className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-colors text-left mt-4 border border-red-200 ${
-                  currentArticle === 'donate' ? 'bg-red-500 text-white' : 'bg-red-50 text-red-600 hover:bg-red-100'
+                  currentArticle === 'donate' 
+                    ? 'bg-red-500 text-white shadow-sm font-semibold' 
+                    : 'bg-red-50 text-red-600 hover:bg-red-100 font-medium'
                 }`}
               >
                 <Heart className="w-5 h-5" />
-                <span className="font-bold">Support Our Mission</span>
+                <span>Support Our Mission</span>
               </button>
             </div>
           </nav>
