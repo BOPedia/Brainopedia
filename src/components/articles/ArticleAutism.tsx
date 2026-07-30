@@ -102,7 +102,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
             <ImageWithFallback
               src="/images/autism/autism-main-overview.png"
               alt="Autism Overview"
-              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
+              className="w-32 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             Autism is a lifelong neurodevelopmental condition that affects how people perceive the world. Affecting approximately 1 in 36 children in the United States,<sup className="text-green-600 font-bold ml-0.5">1</sup> it is viewed through the neurodiversity paradigm as a natural human variation to be accepted and accommodated, rather than a disease to be "cured."
           </p>
@@ -123,7 +123,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
             <ImageWithFallback
               src="/images/autism/autism-main-symptoms.png"
               alt="Autism Symptoms and Characteristics"
-              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
+              className="w-32 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             Autism involves differences in social communication, sensory processing, and a preference for predictable routines. Because it is a spectrum, every individual has a unique profile of challenges and remarkable strengths, such as deep focus, creative thinking, and advanced pattern recognition.
           </p>
@@ -144,7 +144,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
             <ImageWithFallback
               src="/images/autism/autism-main-causes.png"
               alt="Autism Causes and Origins"
-              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
+              className="w-32 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             Arising from differences in early brain development, autism's exact causes involve complex genetic and environmental factors.<sup className="text-green-600 font-bold ml-0.5">2, 3</sup> Brain imaging shows variations in neurological connectivity that help explain these differences in social cognition and sensory processing.<sup className="text-green-600 font-bold ml-0.5">4</sup>
           </p>
@@ -165,7 +165,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
             <ImageWithFallback
               src="/images/autism/autism-main-diagnosis.png"
               alt="Autism Testing and Diagnosis"
-              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
+              className="w-32 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             There is no medical test for autism. It is diagnosed through comprehensive behavioral evaluations by professionals using standardized criteria, such as the DSM-5-TR.<sup className="text-green-600 font-bold ml-0.5">5</sup> While often identified in early childhood, many individuals are diagnosed later in life after years of unrecognized struggles.
           </p>
@@ -186,7 +186,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
             <ImageWithFallback
               src="/images/autism/autism-main-support.png"
               alt="Autism Support and Management"
-              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
+              className="w-32 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             Effective support is highly individualized, focusing on tools that help a person thrive—like sensory accommodations, speech therapy, and occupational therapy. Affirming care prioritizes well-being, autonomy, and skill-building without trying to erase a person's core autistic traits.
           </p>
@@ -207,7 +207,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
             <ImageWithFallback
               src="/images/autism/autism-main-living.png"
               alt="Living with Autism"
-              className="w-64 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
+              className="w-32 h-auto float-right ml-6 mb-4 rounded-md shadow-sm"
             />
             Autistic individuals lead meaningful lives across all areas of society. Topics in this section cover navigating daily accommodations, fostering a positive autistic identity, building self-advocacy skills, understanding legal protections, and connecting with the broader autistic community.
           </p>

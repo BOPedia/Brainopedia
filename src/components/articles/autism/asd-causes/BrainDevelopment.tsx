@@ -36,9 +36,10 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
         {/* Structural Differences */}
-        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
+        <div className="bg-pink-50 p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
           <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Structural Brain Differences</h3>
           <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
+            <p>Specific brain parts are observed in individuals with autism.</p>
             <li><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in the frontal cortex.</li>
             <li><strong>Altered connectivity:</strong> Differences in how brain regions connect and structurally communicate.</li>
             <li><strong>Regional differences:</strong> Variations in size and structure of specific brain areas including the amygdala, cerebellum, and corpus callosum.</li>
@@ -47,9 +48,10 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         </div>
 
         {/* Functional Differences */}
-        <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
+        <div className="bg-purple-50 p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
           <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Functional Brain Differences</h3>
           <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
+            <p>Functional differences in the autistic brain involve how different regions work together and process information.</p>
             <li><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions.</li>
             <li><strong>Social brain networks:</strong> Differences in activation of brain regions involved in social cognition.</li>
             <li><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli.</li>
@@ -57,6 +59,22 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           </ul>
         </div>
       </div>
+ 
+
+        <ImageWithFallback 
+          src="/images/autism/autism-causes-Braintab-brain-structure.png" 
+          alt="Brain connectivity and neural networks in autism"
+          className="w-96 h-auto float-left mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
+        />
+
+      
+       <ImageWithFallback 
+          src="/images/autism/autism-causes-Braintab-fxn-structure.png" 
+          alt="Brain connectivity and neural networks in autism"
+          className="w-96 h-auto float-right mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
+        />
+
+        <div className="clear-both"></div>
 
       {/* Cellular and Molecular Level Section */}
       <div className="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#2abcd4] mb-10">

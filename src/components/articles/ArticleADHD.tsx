@@ -96,22 +96,18 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
 
       <div className="space-y-8 mt-20 clear-both">
         {/* SECTION: OVERVIEW */}
-        <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
+        <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
             src="/images/adhd/adhd-main-overview.png"
             alt="ADHD Overview"
-            className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
           <p className="mb-4">
-            ADHD involves more severe and frequent inattention, hyperactivity, and impulsivity that disrupt daily life, relationships, and work or school.
+            ADHD is a lifelong neurodevelopmental condition involving severe inattention, hyperactivity, and impulsivity that disrupts daily life. It affects 11.3% of U.S. children (more common in boys at 14.5% than girls at 8.0%)<sup className="text-green-600 font-bold ml-0.5">1</sup> and approximately 3.1% of adults.<sup className="text-green-600 font-bold ml-0.5">2</sup> Recognizing ADHD as a neurological difference rather than a behavioral flaw helps reduce stigma and encourages effective support.
           </p>
           
-          <p className="mb-4">
-            It is a persistent neurodevelopmental condition affecting 11.3% of children ages 5–17 in the United States, with prevalence higher in boys (14.5%) than girls (8.0%).<sup className="text-green-600 font-bold ml-0.5">1</sup> Among adults, the prevalence is approximately 3.1%,<sup className="text-green-600 font-bold ml-0.5">2</sup> often lifelong and needing ongoing support. ADHD impacts academics, work, and social relationships, with many individuals experiencing significant symptoms and functional impairment into adulthood. Viewing ADHD as neurodevelopmental helps reduce stigma and promotes evidence-based intervention.
-          </p>
           <button
             onClick={(e) => {
               e.preventDefault();
@@ -124,17 +120,16 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         </section>
 
         {/* SECTION: CHARACTERISTICS */}
-        <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
-          
+        <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
             src="/images/adhd/adhd-main-symptoms.png"
             alt="ADHD Symptoms"
-            className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
           <p className="mb-4">
-            ADHD has three patterns: inattentive, hyperactive-impulsive, and combined. Inattentive symptoms: trouble sustaining attention, distractibility, forgetfulness, disorganization. Hyperactive-impulsive symptoms: restlessness, fidgeting, excessive talking, interrupting, impulsive actions. Many show both types, and presentation can evolve from childhood to adulthood. Executive function deficits (working memory, planning, organization, emotional regulation) are core features.
+            ADHD presents in three main patterns: inattentive, hyperactive-impulsive, or a combination of both. Core challenges include executive function deficits, such as difficulties with working memory, emotional regulation, and organization. Because the brain matures over time, these symptoms often shift and evolve as a person grows from childhood into adulthood.
           </p>
           <button
             onClick={(e) => {
@@ -148,17 +143,16 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         </section>
 
         {/* SECTION: CAUSES */}
-        <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
-          
+        <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
             src="/images/adhd/adhd-main-causes.png"
             alt="ADHD Causes"
-            className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
           <p className="mb-4">
-            ADHD likely results from a mix of genetic, neurological, and environmental factors. It has a strong hereditary component (heritability 70–80%).<sup className="text-green-600 font-bold ml-0.5">3</sup> Brain imaging shows differences in regions for attention, impulse control, and executive function (notably prefrontal cortex) and in dopamine/norepinephrine systems; smaller overall brain volume and gray matter differences in the prefrontal cortex and basal ganglia have been observed. Environmental risks—premature birth, low birth weight, prenatal tobacco/alcohol exposure, and early adversity—contribute but explain less variance than genetics.
+            ADHD stems from a mix of genetic, neurological, and environmental factors, though it is highly hereditary (70–80% heritability).<sup className="text-green-600 font-bold ml-0.5">3</sup> Brain imaging shows physical differences in regions responsible for attention and impulse control, alongside variations in the dopamine and norepinephrine systems. While environmental factors like premature birth can contribute, genetics play the largest role.
           </p>
           <button
             onClick={(e) => {
@@ -172,17 +166,16 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         </section>
 
         {/* SECTION: DIAGNOSIS */}
-        <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
-          
+        <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
             src="/images/adhd/adhd-main-diagnosis.png"
             alt="ADHD Diagnosis"
-            className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
           <p className="mb-4">
-            ADHD diagnosis requires a comprehensive evaluation by a qualified professional. The process includes medical/developmental history, behavioral assessments and rating scales, observations across settings, and input from parents/teachers/partners. Symptoms start before age 12, occur in multiple settings, and impair functioning. Diagnosis can occur at any age. Evaluations typically include clinical interviews, standardized rating scales behavioral observations, and reviews of academic or occupational performance, with ruling out other conditions like anxiety, depression, learning disabilities, or sleep disorders.
+            A formal diagnosis requires a comprehensive evaluation by a qualified professional, which can occur at any age. To meet the criteria, symptoms must have started before age 12, appear in multiple settings (like home and work), and significantly impair daily functioning. The process relies on clinical interviews, rating scales, and ruling out other overlapping conditions like anxiety or sleep disorders.
           </p>
           <button
             onClick={(e) => {
@@ -196,17 +189,16 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         </section>
 
         {/* SECTION: SUPPORT */}
-        <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
-          
+        <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
             src="/images/adhd/adhd-main-support.png"
             alt="ADHD Support"
-            className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
           <p className="mb-4">
-            ADHD is managed with a multimodal, individualized plan. Options include behavioral interventions (CBT, coaching, and skills training for organization, time management, and emotional regulation), educational accommodations, organizational skills training, and lifestyle factors (exercise, sleep, routines). Medications are often helpful: stimulant medications are highly effective in reducing core ADHD symptoms and improving quality of life in 70-80% of children and adults;<sup className="text-green-600 font-bold ml-0.5">4</sup> non-stimulants (atomoxetine, guanfacine, clonidine) are moderately effective alternatives, with atomoxetine showing benefit in approximately 50-60% of individuals.<sup className="text-green-600 font-bold ml-0.5">5</sup> The aim is to develop strategies that fit brain differences, build strengths, and reduce daily impairment.
+            Managing ADHD requires a highly individualized approach using a mix of behavioral therapies, educational accommodations, and lifestyle adjustments. Medications are also highly effective: stimulants improve symptoms for 70-80% of individuals,<sup className="text-green-600 font-bold ml-0.5">4</sup> while non-stimulants offer a beneficial alternative for 50-60% of people.<sup className="text-green-600 font-bold ml-0.5">5</sup> The goal is to build strategies that fit the neurodivergent brain rather than trying to force it to act neurotypical.
           </p>
           <button
             onClick={(e) => {
@@ -220,27 +212,16 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         </section>
 
         {/* SECTION: LIVING */}
-        <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with ADHD</h2>
-          
+        <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
             src="/images/adhd/adhd-main-living.png"
             alt="Living with ADHD"
-            className="w-48 h-auto float-right ml-4 mb-4 rounded"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with ADHD</h2>
           
           <p className="mb-4">
-            People with ADHD can lead full and meaningful lives across all areas of society. While ADHD presents 
-            challenges, many people with ADHD also describe unique strengths and perspectives that enrich their lives 
-            and communities. These may include exceptional capacity for hyperfocus, deep knowledge in areas of interest, 
-            creative and innovative problem-solving, rapid adaptability, and high energy.
-          </p>
-          
-          <p className="mb-4">
-            Topics related to living with ADHD include recognizing and celebrating ADHD strengths, navigating 
-            daily life with appropriate accommodations, connecting with the ADHD community and finding peer support, 
-            fostering positive identity, developing self-advocacy skills, and understanding legal protections 
-            like the Americans with Disabilities Act (ADA).
+            With the right support and accommodations, individuals with ADHD lead incredibly fulfilling lives. The ADHD brain offers unique strengths, including the capacity for hyperfocus, rapid adaptability, high energy, and innovative problem-solving. Thriving with ADHD involves celebrating these strengths, building self-advocacy skills, and connecting with community support.
           </p>
           <button
             onClick={(e) => {
@@ -265,23 +246,13 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-4 text-slate-700">
-            <li>
-              Centers for Disease Control and Prevention. (2022). "Data and Statistics About ADHD." U.S. Department of Health and Human Services.
-            </li>
-            <li>
-              Kessler, R. C., Adler, L., Barkley, R., et al. (2006). "The prevalence and correlates of adult ADHD in the United States: Results from the National Comorbidity Survey Replication." <i>American Journal of Psychiatry</i>, 163(4), 716-723.
-            </li>
-            <li>
-              Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <i>Molecular Psychiatry</i>, 24(4), 562-575.
-            </li>
-            <li>
-              Cortese, S., Adamo, N., Del Giovane, C., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis." <i>The Lancet Psychiatry</i>, 5(9), 727-738.
-            </li>
-            <li>
-              Michelkoetter, U., & Brams, M. (2010). "Atomoxetine in the treatment of children and adolescents with ADHD." <i>Neuropsychiatric Disease and Treatment</i>, 6, 401–413.
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Centers for Disease Control and Prevention. (2022). "Data and Statistics About ADHD." U.S. Department of Health and Human Services. https://www.cdc.gov/ncbddd/adhd/data.html</p>
+            <p>2. Kessler, R. C., Adler, L., Barkley, R., et al. (2006). "The prevalence and correlates of adult ADHD in the United States: Results from the National Comorbidity Survey Replication." <i>American Journal of Psychiatry</i>. https://doi.org/10.1176/ajp.2006.163.4.716</p>
+            <p>3. Faraone, S. V., & Larsson, H. (2019). "Genetics of attention deficit hyperactivity disorder." <i>Molecular Psychiatry</i>. https://doi.org/10.1038/s41380-018-0070-0</p>
+            <p>4. Cortese, S., Adamo, N., Del Giovane, C., et al. (2018). "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis." <i>The Lancet Psychiatry</i>. https://doi.org/10.1016/S2215-0366(18)30269-4</p>
+            <p>5. Michelkoetter, U., & Brams, M. (2010). "Atomoxetine in the treatment of children and adolescents with ADHD." <i>Neuropsychiatric Disease and Treatment</i>. https://doi.org/10.2147/ndt.s6233</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
@@ -289,17 +260,11 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
           <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-4 text-slate-700 p-0 m-0">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-            <li>
-              Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD). "About ADHD." National Resource Center on ADHD.
-            </li>
-            <li>
-              Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425596</p>
+            <p>Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD). "About ADHD." National Resource Center on ADHD. https://chadd.org/about-adhd/</p>
+            <p>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</p>
+          </div>
         </div>
       </div>
     </article>
