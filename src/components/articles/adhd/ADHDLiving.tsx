@@ -83,25 +83,25 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
               Cited Studies & Statistics
             </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-              <p>1. White, H. A., & Shah, P. (2006). "Uninhibited imaginations: Creativity in adults with attention-deficit/hyperactivity disorder." <em>Personality and Individual Differences</em>, 40(6), 1121-1131.</p>
-              <p>2. White, H. A., & Shah, P. (2011). "Creative style and achievement in adults with attention-deficit/hyperactivity disorder." <em>Personality and Individual Differences</em>, 50(5), 673-677.</p>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>1. White, H. A., & Shah, P. (2006). "Uninhibited imaginations: Creativity in adults with attention-deficit/hyperactivity disorder." <i>Personality and Individual Differences</i>. https://doi.org/10.1016/j.paid.2005.11.007</p>
+              <p>2. White, H. A., & Shah, P. (2011). "Creative style and achievement in adults with attention-deficit/hyperactivity disorder." <i>Personality and Individual Differences</i>. https://doi.org/10.1016/j.paid.2010.12.015</p>
             </div>
           </div>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-              <li>Sedgwick, J. A., Merwood, A., & Asherson, P. (2019). "The positive aspects of attention deficit hyperactivity disorder: A qualitative investigation of successful adults with ADHD." <em>ADHD Attention Deficit and Hyperactivity Disorders</em>, 11(3), 241-253.</li>
-              <li>Antshel, K. M. (2018). "Attention-deficit/hyperactivity disorder (ADHD) and entrepreneurship." <em>Academy of Management Perspectives</em>, 32(2), 243-265.</li>
-              <li>Archer, D. (2014). <em>The ADHD Advantage: What You Thought Was a Diagnosis May Be Your Greatest Strength</em>. Avery.</li>
-              <li>Brown, T. E. (2013). <em>A New Understanding of ADHD in Children and Adults: Executive Function Impairments</em>. Routledge.</li>
-            </ul>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>Sedgwick, J. A., et al. (2019). "The positive aspects of attention deficit hyperactivity disorder: A qualitative investigation of successful adults with ADHD." <i>ADHD Attention Deficit and Hyperactivity Disorders</i>. https://doi.org/10.1007/s12402-018-0277-6</p>
+              <p>Antshel, K. M. (2018). "Attention-deficit/hyperactivity disorder (ADHD) and entrepreneurship." <i>Academy of Management Perspectives</i>. https://doi.org/10.5465/amp.2016.0144</p>
+              <p>Archer, D. (2014). <i>The ADHD Advantage: What You Thought Was a Diagnosis May Be Your Greatest Strength</i>. Avery. https://www.penguinrandomhouse.com/books/318042/the-adhd-advantage-by-dale-archer-md/</p>
+              <p>Brown, T. E. (2013). <i>A New Understanding of ADHD in Children and Adults: Executive Function Impairments</i>. Routledge. https://doi.org/10.4324/9780203067536</p>
+            </div>
           </div>
         </div>
       </>
@@ -170,16 +170,16 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-              <li>Dawson, P., & Guare, R. (2009). <em>Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential</em>. Guilford Press.</li>
-              <li>Ratey, N. (2008). <em>The Disorganized Mind: Coaching Your ADHD Brain to Take Control of Your Time, Tasks, and Talents</em>. St. Martin's Press.</li>
-              <li>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</li>
-              <li>Barkley, R. A., & Murphy, K. R. (2006). <em>Attention-Deficit Hyperactivity Disorder: A Clinical Workbook</em> (3rd ed.). Guilford Press.</li>
-              <li>Biederman, J., et al. (2012). "Adult outcome of attention-deficit/hyperactivity disorder: A controlled 16-year follow-up study." <em>Journal of Clinical Psychiatry</em>, 73(7), 941-950.</li>
-            </ul>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>Dawson, P., & Guare, R. (2009). <i>Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential</i>. Guilford Press. https://www.guilford.com/books/Smart-but-Scattered/Dawson-Guare/9781593854454</p>
+              <p>Ratey, N. (2008). <i>The Disorganized Mind: Coaching Your ADHD Brain to Take Control of Your Time, Tasks, and Talents</i>. St. Martin's Press. https://us.macmillan.com/books/9780312355340/thedisorganizedmind</p>
+              <p>Ramsay, J. R., & Rostain, A. L. (2015). <i>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</i>. Routledge. https://doi.org/10.4324/9780203068526</p>
+              <p>Barkley, R. A., & Murphy, K. R. (2006). <i>Attention-Deficit Hyperactivity Disorder: A Clinical Workbook</i> (3rd ed.). Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Barkley-Murphy/9781593852276</p>
+              <p>Biederman, J., et al. (2012). "Adult outcome of attention-deficit/hyperactivity disorder: A controlled 16-year follow-up study." <i>Journal of Clinical Psychiatry</i>. https://doi.org/10.4088/JCP.11m07529</p>
+            </div>
           </div>
         </div>
       </div>
@@ -261,25 +261,25 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
               Cited Studies & Statistics
             </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-              <p>1. Hoza, B. (2007). "Peer functioning in children with ADHD." <em>Journal of Pediatric Psychology</em>, 32(6), 655-663.</p>
-              <p>2. Johnston, C., Mash, E. J., Miller, N., & Ninowski, J. E. (2012). "Parenting in adults with attention-deficit/hyperactivity disorder (ADHD)." <em>Clinical Psychology Review</em>, 32(4), 215-228.</p>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>1. Hoza, B. (2007). "Peer functioning in children with ADHD." <i>Journal of Pediatric Psychology</i>. https://doi.org/10.1093/jpepsy/jsm024</p>
+              <p>2. Johnston, C., et al. (2012). "Parenting in adults with attention-deficit/hyperactivity disorder (ADHD)." <i>Clinical Psychology Review</i>. https://doi.org/10.1016/j.cpr.2012.01.007</p>
             </div>
           </div>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
-              <li>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</li>
-              <li>Orlov, M. (2010). <em>The ADHD Effect on Marriage: Understand and Rebuild Your Relationship in Six Steps</em>. Specialty Press.</li>
-              <li>Chronis-Tuscano, A., et al. (2011). "Very early predictors of adolescent depression and suicide attempts in children with attention-deficit/hyperactivity disorder." <em>Archives of General Psychiatry</em>, 68(12), 1267-1275.</li>
-            </ul>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</p>
+              <p>Ramsay, J. R., & Rostain, A. L. (2015). <i>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</i>. Routledge. https://doi.org/10.4324/9780203068526</p>
+              <p>Orlov, M. (2010). <i>The ADHD Effect on Marriage: Understand and Rebuild Your Relationship in Six Steps</i>. Specialty Press. https://www.adhdmarriage.com/</p>
+              <p>Chronis-Tuscano, A., et al. (2011). "Very early predictors of adolescent depression and suicide attempts in children with attention-deficit/hyperactivity disorder." <i>Archives of General Psychiatry</i>. https://doi.org/10.1001/archgenpsychiatry.2011.127</p>
+            </div>
           </div>
         </div>
       </div>
@@ -334,16 +334,16 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
-              <li>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</em>. Routledge.</li>
-              <li>Nadeau, K. G. (2005). "Career choices and workplace challenges for individuals with ADHD." <em>Journal of Clinical Psychology</em>, 61(5), 549-563.</li>
-              <li>DuPaul, G. J., & Stoner, G. (2014). <em>ADHD in the Schools: Assessment and Intervention Strategies</em> (3rd ed.). Guilford Press.</li>
-              <li>Biederman, J., et al. (2005). "Functional impairments in adults with self-reports of diagnosed ADHD: A controlled study of 1001 adults in the community." <em>The Journal of Clinical Psychiatry</em>, 67(4), 524-540.</li>
-            </ul>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</p>
+              <p>Ramsay, J. R., & Rostain, A. L. (2015). <i>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</i>. Routledge. https://doi.org/10.4324/9780203068526</p>
+              <p>Nadeau, K. G. (2005). "Career choices and workplace challenges for individuals with ADHD." <i>Journal of Clinical Psychology</i>. https://doi.org/10.1002/jclp.20119</p>
+              <p>DuPaul, G. J., & Stoner, G. (2014). <i>ADHD in the Schools: Assessment and Intervention Strategies</i> (3rd ed.). Guilford Press. https://www.guilford.com/books/ADHD-in-the-Schools/DuPaul-Stoner/9781462517442</p>
+              <p>Biederman, J., et al. (2005). "Functional impairments in adults with self-reports of diagnosed ADHD: A controlled study of 1001 adults in the community." <i>The Journal of Clinical Psychiatry</i>. https://doi.org/10.4088/JCP.v67n0403</p>
+            </div>
           </div>
         </div>
       </div>
@@ -437,24 +437,24 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
               Cited Studies & Statistics
             </h4>
-            <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-              <p>1. Kessler, R. C., Adler, L., Barkley, R., et al. (2006). "The prevalence and correlates of adult ADHD in the United States: Results from the National Comorbidity Survey Replication." <em>American Journal of Psychiatry</em>, 163(4), 716-723.</p>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>1. Kessler, R. C., et al. (2006). "The prevalence and correlates of adult ADHD in the United States: Results from the National Comorbidity Survey Replication." <i>American Journal of Psychiatry</i>. https://doi.org/10.1176/ajp.2006.163.4.716</p>
             </div>
           </div>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
-              <li>Hinshaw, S. P. (2018). "Attention deficit hyperactivity disorder (ADHD): Controversy, developmental mechanisms, and multiple levels of analysis." <em>Annual Review of Clinical Psychology</em>, 14, 291-316.</li>
-              <li>Safren, S. A., et al. (2005). "Cognitive-behavioral therapy for ADHD in medication-treated adults with continued symptoms." <em>Behaviour Research and Therapy</em>, 43(7), 831-842.</li>
-              <li>Ramsay, J. R., & Rostain, A. L. (2008). <em>Cognitive-Behavioral Therapy for Adult ADHD: An Integrative Psychosocial and Medical Approach</em>. Routledge.</li>
-            </ul>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</p>
+              <p>Hinshaw, S. P. (2018). "Attention deficit hyperactivity disorder (ADHD): Controversy, developmental mechanisms, and multiple levels of analysis." <i>Annual Review of Clinical Psychology</i>. https://doi.org/10.1146/annurev-clinpsy-050817-084917</p>
+              <p>Safren, S. A., et al. (2005). "Cognitive-behavioral therapy for ADHD in medication-treated adults with continued symptoms." <i>Behaviour Research and Therapy</i>. https://doi.org/10.1016/j.brat.2004.07.001</p>
+              <p>Ramsay, J. R., & Rostain, A. L. (2008). <i>Cognitive-Behavioral Therapy for Adult ADHD: An Integrative Psychosocial and Medical Approach</i>. Routledge. https://doi.org/10.4324/9780203068526</p>
+            </div>
           </div>
         </div>
       </div>
@@ -530,15 +530,15 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-              <li>Hallowell, E. M., & Ratey, J. J. (2011). <em>Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder</em> (Rev. ed.). Anchor Books.</li>
-              <li>Barkley, R. A. (2015). <em>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</em> (4th ed.). Guilford Press.</li>
-              <li>CHADD (Children and Adults with Attention-Deficit/Hyperactivity Disorder). <em>National Resource Center on ADHD</em>. https://chadd.org</li>
-              <li>Armstrong, T. (2010). <em>Neurodiversity: Discovering the Extraordinary Gifts of Autism, ADHD, Dyslexia, and Other Brain Differences</em>. Da Capo Lifelong Books.</li>
-            </ul>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>Hallowell, E. M., & Ratey, J. J. (2011). <i>Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder</i> (Rev. ed.). Anchor Books. https://www.penguinrandomhouse.com/books/74211/driven-to-distraction-revised-by-edward-m-hallowell-md-and-john-j-ratey-md/</p>
+              <p>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</p>
+              <p>CHADD (Children and Adults with Attention-Deficit/Hyperactivity Disorder). <i>National Resource Center on ADHD</i>. https://chadd.org</p>
+              <p>Armstrong, T. (2010). <i>Neurodiversity: Discovering the Extraordinary Gifts of Autism, ADHD, Dyslexia, and Other Brain Differences</i>. Da Capo Lifelong Books. https://www.hachettebookgroup.com/titles/thomas-armstrong/neurodiversity/9780738214247/</p>
+            </div>
           </div>
         </div>
       </div>

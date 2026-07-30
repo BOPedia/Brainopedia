@@ -179,15 +179,16 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </button>
             </div>
 
+            {/* ===== REFERENCES SECTION ===== */}
             <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
             <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
               <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
               <div className="mb-6">
-                <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+                <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
                   Cited Studies & Statistics
                 </h4>
-                <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-                  <p>1. American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</p>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>1. American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
                 </div>
               </div>
             </div>
@@ -226,7 +227,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
 
               <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-200 border-t-4 border-[#0A9DC4] flex flex-col">
                 <div className="font-bold text-[#0c264d] mb-2">ADHD Rating Scale-5 (ADHD-RS-5)</div>
-                <div className="text-sm text-slate-700">Brief questionnaire (18 items matching the 18 DSM symptoms) with versions for home and school settings.<sup className="text-green-600 font-bold ml-0.5">2</sup></div>
+                <div className="text-sm text-slate-700">Brief questionnaire (18 items matching the 18 DSM symptoms) with versions for home and school settings.<sup className="text-green-600 font-bold ml-0.5">1</sup></div>
               </div>
 
               <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-200 border-t-4 border-[#0A9DC4] flex flex-col">
@@ -246,7 +247,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
 
               <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-200 border-t-4 border-[#0A9DC4] flex flex-col">
                 <div className="font-bold text-[#0c264d] mb-2">Adult ADHD Self-Report (ASRS)</div>
-                <div className="text-sm text-slate-700">WHO-developed screening tool specifically for adults.<sup className="text-green-600 font-bold ml-0.5">3</sup> Brief version available for quick screening.</div>
+                <div className="text-sm text-slate-700">WHO-developed screening tool specifically for adults.<sup className="text-green-600 font-bold ml-0.5">2</sup> Brief version available for quick screening.</div>
               </div>
             </div>
 
@@ -339,17 +340,17 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </button>
             </div>
 
+            {/* ===== REFERENCES SECTION ===== */}
             <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
             <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
               <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
               <div className="mb-6">
-                <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+                <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
                   Cited Studies & Statistics
                 </h4>
-                <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-                  <p>1. DuPaul, G. J., Power, T. J., Anastopoulos, A. D., & Reid, R. (2016). <em>ADHD Rating Scale-5 for Children and Adolescents: Checklists, Norms, and Clinical Interpretation</em>. Guilford Press.</p>
-                  <p>2. American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</p>
-                  <p>3. Kessler, R. C., et al. (2005). "The World Health Organization Adult ADHD Self-Report Scale (ASRS): A short screening scale for use in the general population." <em>Psychological Medicine</em>, 35(2), 245-256.</p>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>1. DuPaul, G. J., et al. (2016). <i>ADHD Rating Scale-5 for Children and Adolescents: Checklists, Norms, and Clinical Interpretation</i>. Guilford Press. https://www.guilford.com/books/ADHD-Rating-Scale-5-for-Children-and-Adolescents/DuPaul-Power-Anastopoulos-Reid/9781462524877</p>
+                  <p>2. Kessler, R. C., et al. (2005). "The World Health Organization Adult ADHD Self-Report Scale (ASRS): A short screening scale for use in the general population." <i>Psychological Medicine</i>. https://doi.org/10.1017/s0033291704002892</p>
                 </div>
               </div>
             </div>
@@ -486,20 +487,21 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </button>
             </div>
 
+            {/* ===== REFERENCES SECTION ===== */}
             <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
             <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
               <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
               <div>
-                <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
                   Background Sources
                 </h4>
-                <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-                  <li>Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD). "Professional Directory." Retrieved from chadd.org</li>
-                  <li>American Academy of Pediatrics. "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of ADHD in Children and Adolescents." Pediatrics.</li>
-                  <li>American Psychological Association. "Understanding ADHD: Information for Psychologists." Retrieved from apa.org</li>
-                  <li>American Academy of Child and Adolescent Psychiatry. "ADHD Resource Center." Retrieved from aacap.org</li>
-                  <li>Psychology Today. "Find a Therapist Directory - ADHD Specialists." Retrieved from psychologytoday.com</li>
-                </ul>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD). "Professional Directory." https://chadd.org/professional-directory/</p>
+                  <p>American Academy of Pediatrics. "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of ADHD in Children and Adolescents." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2019-2528</p>
+                  <p>American Psychological Association. "Understanding ADHD: Information for Psychologists." https://www.apa.org/topics/adhd</p>
+                  <p>American Academy of Child and Adolescent Psychiatry. "ADHD Resource Center." https://www.aacap.org/AACAP/Families_and_Youth/Resource_Centers/ADHD_Resource_Center/Home.aspx</p>
+                  <p>Psychology Today. "Find a Therapist Directory - ADHD Specialists." https://www.psychologytoday.com/us/therapists/adhd</p>
+                </div>
               </div>
             </div>
           </div>
@@ -645,26 +647,27 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </button>
             </div>
 
+            {/* ===== REFERENCES SECTION ===== */}
             <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
             <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
               <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
               <div className="mb-6">
-                <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+                <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
                   Cited Studies & Statistics
                 </h4>
-                <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-                  <p>1. American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</p>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>1. American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
                 </div>
               </div>
               <div>
-                <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
                   Background Sources
                 </h4>
-                <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-                  <li>Kessler, R. C., Adler, L., Barkley, R., Biederman, J., Conners, C. K., Demler, O., ... & Zaslavsky, A. M. (2006). "The prevalence and correlates of adult ADHD in the United States: Results from the National Comorbidity Survey Replication." <em>American Journal Psychiatry</em>, 163(4), 716-723.</li>
-                  <li>Ramsay, J. R., & Rostain, A. L. (2015). <em>The Adult ADHD Tool Kit</em>. Routledge.</li>
-                  <li>Barkley, R. A., Murphy, K. R., & Fischer, M. (2008). <em>ADHD in Adults: What the Science Says</em>. Guilford Press.</li>
-                </ul>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>Kessler, R. C., et al. (2006). "The prevalence and correlates of adult ADHD in the United States: Results from the National Comorbidity Survey Replication." <i>American Journal of Psychiatry</i>. https://doi.org/10.1176/ajp.2006.163.4.716</p>
+                  <p>Ramsay, J. R., & Rostain, A. L. (2015). <i>The Adult ADHD Tool Kit</i>. Routledge. https://doi.org/10.4324/9780203068526</p>
+                  <p>Barkley, R. A., Murphy, K. R., & Fischer, M. (2008). <i>ADHD in Adults: What the Science Says</i>. Guilford Press. https://www.guilford.com/books/ADHD-in-Adults/Barkley-Murphy-Fischer/9781593855864</p>
+                </div>
               </div>
             </div>
           </div>
@@ -752,7 +755,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               Common Co-occurring Conditions
             </h3>
             <p className="text-slate-700 text-center mb-8 max-w-3xl mx-auto">
-              ADHD rarely travels alone. About two-thirds of individuals with ADHD have at least one other condition.
+              ADHD rarely travels alone. About two-thirds of individuals with ADHD have at least one other condition.<sup className="text-green-600 font-bold ml-0.5">1</sup>
             </p>
             
             <div className="flex justify-center mb-10">
@@ -764,15 +767,15 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
               <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-200 border-t-4 border-[#ffd166]">
                 <div className="font-bold text-[#0c264d] mb-1">Oppositional Defiant (ODD)</div>
-                <div className="text-sm text-slate-700">Occurs in ~40% of children with ADHD. Characterized by defiance and irritability.</div>
+                <div className="text-sm text-slate-700">Occurs in ~40% of children with ADHD.<sup className="text-green-600 font-bold ml-0.5">1</sup> Characterized by defiance and irritability.</div>
               </div>
               <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-200 border-t-4 border-[#ffd166]">
                 <div className="font-bold text-[#0c264d] mb-1">Anxiety Disorders</div>
-                <div className="text-sm text-slate-700">Occurs in ~30% of individuals. Excessive worry, nervousness, or phobias.</div>
+                <div className="text-sm text-slate-700">Occurs in ~30% of individuals.<sup className="text-green-600 font-bold ml-0.5">1</sup> Excessive worry, nervousness, or phobias.</div>
               </div>
               <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-200 border-t-4 border-[#ffd166]">
                 <div className="font-bold text-[#0c264d] mb-1">Learning Disabilities</div>
-                <div className="text-sm text-slate-700">Occurs in ~30-50%. Includes dyslexia, dyscalculia, or dysgraphia.</div>
+                <div className="text-sm text-slate-700">Occurs in ~30-50%.<sup className="text-green-600 font-bold ml-0.5">2</sup> Includes dyslexia, dyscalculia, or dysgraphia.</div>
               </div>
               <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-200 border-t-4 border-[#ffd166]">
                 <div className="font-bold text-[#0c264d] mb-1">Autism Spectrum (ASD)</div>
@@ -780,7 +783,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </div>
               <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-200 border-t-4 border-[#ffd166] md:col-span-2 lg:col-span-1">
                 <div className="font-bold text-[#0c264d] mb-1">Mood Disorders</div>
-                <div className="text-sm text-slate-700">Depression and bipolar disorder co-occur more frequently with ADHD.</div>
+                <div className="text-sm text-slate-700">Depression and bipolar disorder co-occur more frequently with ADHD.<sup className="text-green-600 font-bold ml-0.5">1</sup></div>
               </div>
             </div>
 
@@ -793,6 +796,22 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 All About ADHD
               </button>
             </div>
+
+            {/* ===== REFERENCES SECTION ===== */}
+            <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+            <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+              <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+              <div className="mb-6">
+                <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+                  Cited Studies & Statistics
+                </h4>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>1. Faraone, S. V., et al. (2021). "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder." <i>Neuroscience & Biobehavioral Reviews</i>. https://doi.org/10.1016/j.neubiorev.2021.01.022</p>
+                  <p>2. Reale, L., et al. (2017). "Comorbidity prevalence and treatment outcome in children and adolescents with ADHD." <i>European Child & Adolescent Psychiatry</i>. https://doi.org/10.1007/s00787-017-1014-4</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </TabsContent>
 
@@ -878,6 +897,22 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 All About ADHD
               </button>
             </div>
+
+            {/* ===== REFERENCES SECTION ===== */}
+            <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+            <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+              <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+              <div>
+                <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+                  Background Sources
+                </h4>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>Ramsay, J. R., & Rostain, A. L. (2015). <i>The Adult ADHD Tool Kit: Using CBT to Facilitate Coping Inside and Out</i>. Routledge. https://doi.org/10.4324/9780203068526</p>
+                  <p>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </TabsContent>
 
@@ -899,7 +934,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 </div>
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Objective Markers</h3>
                 <p className="text-sm text-slate-700 flex-grow">
-                  Researchers are exploring eye-tracking, actigraphy (movement), and EEG patterns to supplement diagnosis. While not ready for standalone use, they show high promise for improving diagnostic accuracy.
+                  Researchers are exploring eye-tracking, actigraphy (movement), and EEG patterns to supplement diagnosis.<sup className="text-green-600 font-bold ml-0.5">1</sup> While not ready for standalone use, they show high promise for improving diagnostic accuracy.
                 </p>
               </div>
 
@@ -909,7 +944,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 </div>
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Machine Learning (AI)</h3>
                 <p className="text-sm text-slate-700 flex-grow">
-                  Studies are investigating how artificial intelligence can analyze patterns in behavioral data, neuroimaging, and genetics to identify specific ADHD subtypes and predict treatment responses.
+                  Studies are investigating how artificial intelligence can analyze patterns in behavioral data, neuroimaging, and genetics to identify specific ADHD subtypes and predict treatment responses.<sup className="text-green-600 font-bold ml-0.5">1</sup>
                 </p>
               </div>
 
@@ -919,7 +954,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 </div>
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Adult-Onset Debate</h3>
                 <p className="text-sm text-slate-700 flex-grow">
-                  Longitudinal studies have sparked debate about "adult-onset" ADHD. While some argue it emerges later, the consensus remains that it is a childhood neurodevelopmental condition that was simply missed or sub-threshold.
+                  Longitudinal studies have sparked debate about "adult-onset" ADHD. While some argue it emerges later, the consensus remains that it is a childhood neurodevelopmental condition that was simply missed or sub-threshold.<sup className="text-green-600 font-bold ml-0.5">2</sup>
                 </p>
               </div>
 
@@ -929,7 +964,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 </div>
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Sluggish Cognitive Tempo</h3>
                 <p className="text-sm text-slate-700 flex-grow">
-                  Research continues into SCT (Cognitive Disengagement Syndrome), characterized by daydreaming and slow processing. It is considered distinct from but related to ADHD Inattentive, though not an official DSM diagnosis yet.
+                  Research continues into SCT (Cognitive Disengagement Syndrome), characterized by daydreaming and slow processing.<sup className="text-green-600 font-bold ml-0.5">3</sup> It is considered distinct from but related to ADHD Inattentive, though not an official DSM diagnosis yet.
                 </p>
               </div>
             </div>
@@ -943,6 +978,23 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                 All About ADHD
               </button>
             </div>
+
+            {/* ===== REFERENCES SECTION ===== */}
+            <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+            <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+              <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+              <div className="mb-6">
+                <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+                  Cited Studies & Statistics
+                </h4>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>1. Chen, J., et al. (2025). "Artificial intelligence in ADHD assessment: a comprehensive review of research progress from early screening to precise differential diagnosis." <i>Frontiers in Artificial Intelligence</i>. https://doi.org/10.3389/frai.2025.1624485</p>
+                  <p>2. Faraone, S. V., & Biederman, J. (2016). "Can Attention-Deficit/Hyperactivity Disorder Onset Occur in Adulthood?" <i>JAMA Psychiatry</i>. https://doi.org/10.1001/jamapsychiatry.2016.0400</p>
+                  <p>3. Becker, S. P., et al. (2023). "Cognitive Disengagement Syndrome (Sluggish Cognitive Tempo)." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/jcpp.13691</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </TabsContent>
 
@@ -1201,30 +1253,31 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
               </button>
             </div>
 
+            {/* ===== REFERENCES SECTION ===== */}
             <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
             <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
               <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
               
               <div className="mb-6">
-                <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-                  Cited Studies
+                <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+                  Cited Studies & Statistics
                 </h4>
-                <div className="text-xs space-y-3 text-slate-600 leading-relaxed">
-                  <p>1. Rommelse, N. N. J., Franke, B., Geurts, H. M., Hartman, C. A., & Buitelaar, J. K. (2010). "Shared heritability of attention-deficit/hyperactivity disorder and autism spectrum disorder." <em>European Child & Adolescent Psychiatry</em>, 19(3), 281-295.</p>
-                  <p>2. Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children — what do we know?" <em>Frontiers in Human Neuroscience</em>, 8, 268.</p>
-                  <p>3. Antshel, K. M., Zhang-James, Y., Wagner, K. E., Ledesma, A., & Faraone, S. V. (2016). "An update on the comorbidity of ADHD and ASD: A focus on clinical management." <em>Expert Review of Neurotherapeutics</em>, 16(3), 279-293.</p>
-                  <p>4. Joshi, G., et al. (2017). "Symptom profile of ADHD in youth with high-functioning autism spectrum disorder." <em>Journal of Attention Disorders</em>, 21(10), 846-855.</p>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>1. Rommelse, N. N. J., et al. (2010). "Shared heritability of attention-deficit/hyperactivity disorder and autism spectrum disorder." <i>European Child & Adolescent Psychiatry</i>. https://doi.org/10.1007/s00787-010-0092-x</p>
+                  <p>2. Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children — what do we know?" <i>Frontiers in Human Neuroscience</i>. https://doi.org/10.3389/fnhum.2014.00268</p>
+                  <p>3. Antshel, K. M., et al. (2016). "An update on the comorbidity of ADHD and ASD: A focus on clinical management." <i>Expert Review of Neurotherapeutics</i>. https://doi.org/10.1586/14737175.2016.1146591</p>
+                  <p>4. Joshi, G., et al. (2017). "Symptom profile of ADHD in youth with high-functioning autism spectrum disorder." <i>Journal of Attention Disorders</i>. https://doi.org/10.1177/1087054714543368</p>
                 </div>
               </div>
 
               <div>
-                <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+                <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
                   Background Sources
                 </h4>
-                <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-                  <li>American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</li>
-                  <li>Hollingdale, J., Woodhouse, E., Young, S., & Fridman, A. (2023). "Understanding comorbid autism and ADHD (AuDHD) in adults." <em>Frontiers in Psychiatry</em>, 14, 1258455.</li>
-                </ul>
+                <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                  <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+                  <p>Hollingdale, J., et al. (2023). "Understanding comorbid autism and ADHD (AuDHD) in adults." <i>Frontiers in Psychiatry</i>. https://doi.org/10.3389/fpsyt.2023.1258455</p>
+                </div>
               </div>
             </div>
           </div>

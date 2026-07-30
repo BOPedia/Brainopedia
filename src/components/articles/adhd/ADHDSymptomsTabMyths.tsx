@@ -261,27 +261,28 @@ export function ADHDSymptomsTabMyths() {
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h2 className="text-[#0c264d] font-bold mb-5 text-xl font-spartan">References</h2>
             
- {/* CITED STUDIES: GREEN */}
+            {/* CITED STUDIES: GREEN */}
             <div className="mb-6">
-              <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-                <p>1. Shaw, P., Stringaris, A., Nigg, J., & Leibenluft, E. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <em>American Journal of Psychiatry</em>, 171(3), 276-293.</p>
-                <p>2. American Psychiatric Association. (2022). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed., text rev.).</p>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>1. Shaw, P., et al. (2014). "Emotion dysregulation in attention deficit hyperactivity disorder." <i>American Journal of Psychiatry</i>. https://doi.org/10.1176/appi.ajp.2013.13070966</p>
+                <p>2. American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
               </div>
             </div>       
+            
             {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
             <div>
-              <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
                 Background Sources
               </h4>
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-                <li>Barkley, R. A. (2015). <em>Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment</em> (4th ed.). Guilford Press.</li>
-                <li>Nigg, J. T., et al. (2020). "Annual Research Review: On the relations among self-regulation, self-control, executive functioning, effortful control, cognitive control, impulsivity, risk-taking, and inhibition for developmental psychopathology." <em>Journal of Child Psychology and Psychiatry</em>, 61(3), 356-384.</li>
-                <li>Faraone, S. V., et al. (2021). "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder." <em>Neuroscience & Biobehavioral Reviews</em>, 128, 789-818.</li>
-                <li>Sedgwick, J. A., et al. (2019). "Social cognition in attention-deficit hyperactivity disorder (ADHD)." <em>Neuroscience & Biobehavioral Reviews</em>, 100, 252-271.</li>
-              </ul>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>Barkley, R. A. (2015). <i>Attention-deficit hyperactivity disorder: A handbook for diagnosis and treatment</i> (4th ed.). Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</p>
+                <p>Nigg, J. T., et al. (2020). "Annual Research Review: On the relations among self-regulation, self-control, executive functioning, effortful control, cognitive control, impulsivity, risk-taking, and inhibition for developmental psychopathology." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/jcpp.12675</p>
+                <p>Faraone, S. V., et al. (2021). "The World Federation of ADHD International Consensus Statement: 208 Evidence-based conclusions about the disorder." <i>Neuroscience & Biobehavioral Reviews</i>. https://doi.org/10.1016/j.neubiorev.2021.01.022</p>
+                <p>Sedgwick, J. A., et al. (2019). "Social cognition in attention-deficit hyperactivity disorder (ADHD)." <i>Neuroscience & Biobehavioral Reviews</i>. https://doi.org/10.1016/j.neubiorev.2019.04.015</p>
+              </div>
             </div>
           </div>
     </>

@@ -223,35 +223,35 @@ export function ADHDSymptomsTabFemales() {
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-{/* CITED STUDIES: GREEN */}
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</p>
-            <p>2. Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</p>
-            <p>3. Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</p>
-            <p>4. Dorani, F., et al. (2025). "Research advances and future directions in female ADHD." <em>Frontiers in Psychiatry</em>. Frontiers.</p>
-            <p>5. Smith, A., et al. (2025). "Adverse experiences of women with undiagnosed ADHD and the consequences of late diagnosis." <em>Nature Scientific Reports</em>. Nature.</p>
-            <p>6. Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <em>Journal of Attention Disorders</em>. Sage Journals.</p>
-            <p>7. Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <em>Journal of Clinical Psychiatry</em>, 69(2), 213-221. PubMed.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <i>Journal of Clinical Psychiatry</i>. https://doi.org/10.4088/jcp.v69n0207</p>
+            <p>2. Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <i>Journal of Attention Disorders</i>. https://doi.org/10.1177/10870547231161533</p>
+            <p>3. Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <i>Journal of Clinical Psychiatry</i>. https://doi.org/10.4088/jcp.v69n0207</p>
+            <p>4. Dorani, F., et al. (2021). "Prevalence of hormone-related mood disorder symptoms in women with ADHD." <i>Journal of Psychiatric Research</i>. https://doi.org/10.1016/j.jpsychires.2020.12.005</p>
+            <p>5. Smith, A., et al. (2025). "Adverse experiences of women with undiagnosed ADHD and the consequences of late diagnosis." <i>Nature Scientific Reports</i>. https://www.nature.com/srep/</p>
+            <p>6. Young, J. L., et al. (2023). "Miss. Diagnosis: A Systematic Review of ADHD in Adult Women." <i>Journal of Attention Disorders</i>. https://doi.org/10.1177/10870547231161533</p>
+            <p>7. Rucklidge, J. J. (2008). "Gender differences in 2 clinical trials of adults with attention-deficit/hyperactivity disorder: A retrospective data analysis." <i>Journal of Clinical Psychiatry</i>. https://doi.org/10.4088/jcp.v69n0207</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>Quinn, P. O., & Madhoo, M. (2014). "A review of attention-deficit/hyperactivity disorder in women and girls: Uncovering this hidden diagnosis." <em>The Primary Care Companion for CNS Disorders</em>, 16(3).</li>
-            <li>Hinshaw, S. P., et al. (2012). "Prospective follow-up of girls with attention-deficit/hyperactivity disorder into early adulthood: Continuing impairment includes elevated risk for suicide attempts and self-injury." <em>Journal of Consulting and Clinical Psychology</em>, 80(6), 1041-1051.</li>
-            <li>Nadeau, K. G., Littman, E. B., & Quinn, P. O. (2015). <em>Understanding girls with ADHD: How they feel and why they do what they do</em> (Updated ed.). Advantage Books.</li>
-            <li>Young, S., Adamo, N., Ásgeirsdóttir, B. B., et al. (2020). "Females with ADHD: An expert consensus statement taking a lifespan approach providing guidance for the identification and treatment of attention-deficit/hyperactivity disorder in girls and women." <em>BMC Psychiatry</em>, 20, 404.</li>
-            <li>Skogli, E. W., et al. (2013). "ADHD in girls and boys—gender differences in co-existing symptoms and executive function measures." <em>BMC Psychiatry</em>, 13, 298.</li>
-            <li>Dorani, F., et al. (2021). "Prevalence of hormone-related mood disorder symptoms in women with ADHD." <em>Journal of Psychiatric Research</em>, 133, 10-15.</li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Quinn, P. O., & Madhoo, M. (2014). "A review of attention-deficit/hyperactivity disorder in women and girls: Uncovering this hidden diagnosis." <i>The Primary Care Companion for CNS Disorders</i>. https://doi.org/10.4088/PCC.13r01596</p>
+            <p>Hinshaw, S. P., et al. (2012). "Prospective follow-up of girls with attention-deficit/hyperactivity disorder into early adulthood: Continuing impairment includes elevated risk for suicide attempts and self-injury." <i>Journal of Consulting and Clinical Psychology</i>. https://doi.org/10.1037/a0027981</p>
+            <p>Nadeau, K. G., Littman, E. B., & Quinn, P. O. (2015). <i>Understanding girls with ADHD: How they feel and why they do what they do</i> (Updated ed.). Advantage Books.</p>
+            <p>Young, S., et al. (2020). "Females with ADHD: An expert consensus statement taking a lifespan approach providing guidance for the identification and treatment of attention-deficit/hyperactivity disorder in girls and women." <i>BMC Psychiatry</i>. https://doi.org/10.1186/s12888-020-02707-9</p>
+            <p>Skogli, E. W., et al. (2013). "ADHD in girls and boys—gender differences in co-existing symptoms and executive function measures." <i>BMC Psychiatry</i>. https://doi.org/10.1186/1471-244X-13-298</p>
+            <p>Dorani, F., et al. (2021). "Prevalence of hormone-related mood disorder symptoms in women with ADHD." <i>Journal of Psychiatric Research</i>. https://doi.org/10.1016/j.jpsychires.2020.12.005</p>
+          </div>
         </div>
       </div>
       
