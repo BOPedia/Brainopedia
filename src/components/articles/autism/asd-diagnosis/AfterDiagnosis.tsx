@@ -233,7 +233,7 @@ export function AfterDiagnosis({ setCurrentArticle }: AfterDiagnosisProps) {
         </p>
       </div>
 
-{/* ===== REFERENCES SECTION ===== */}
+      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
 
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
@@ -241,36 +241,30 @@ export function AfterDiagnosis({ setCurrentArticle }: AfterDiagnosisProps) {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
           
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Reuben, C., & Elgaddal, N. (2024). "ADHD in Children Ages 5–17 Years: US, 2020–2022." <i>NCHS Data Brief</i>, No. 499.</p>
-            <p>2. Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>, 328, 115449.</p>
-            <p>3. American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</p>
-            <p>4. Willcutt, E. G. (2012). "The prevalence of DSM-IV attention-deficit/hyperactivity disorder: a meta-analytic review." <i>Neurotherapeutics</i>, 9(3).</p>
-            <p>5. Song, P., et al. (2021). "The global prevalence of adult attention-deficit hyperactivity disorder: A systematic review and meta-analysis." <i>Journal of Global Health</i>, 11.</p>
-            <p>6. Larsson, H., et al. (2024). "The psychiatric comorbidity of ADHD." <i>Molecular Psychiatry</i>.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Reuben, C., & Elgaddal, N. (2024). "ADHD in Children Ages 5–17 Years: US, 2020–2022." <i>NCHS Data Brief</i>. https://www.cdc.gov/nchs/products/databriefs.htm</p>
+            <p>2. Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>. https://doi.org/10.1016/j.psychres.2023.115449</p>
+            <p>3. American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+            <p>4. Willcutt, E. G. (2012). "The prevalence of DSM-IV attention-deficit/hyperactivity disorder: a meta-analytic review." <i>Neurotherapeutics</i>. https://doi.org/10.1007/s13311-012-0135-8</p>
+            <p>5. Song, P., et al. (2021). "The global prevalence of adult attention-deficit hyperactivity disorder: A systematic review and meta-analysis." <i>Journal of Global Health</i>. https://doi.org/10.7189/jogh.11.04009</p>
+            <p>6. Larsson, H., et al. (2024). "The psychiatric comorbidity of ADHD." <i>Molecular Psychiatry</i>. https://doi.org/10.1038/s41380-024-02434-6</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-        <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+        <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
         </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC.
-            </li>
-            <li>
-              National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH.
-            </li>
-            <li>
-              Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.).
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC. https://www.cdc.gov/ncbddd/adhd/data.html</p>
+            <p>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH. https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd</p>
+            <p>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i> (4th ed.). Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</p>
+          </div>
         </div>
       </div>
     </div>

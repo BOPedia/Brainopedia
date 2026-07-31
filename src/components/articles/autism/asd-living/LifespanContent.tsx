@@ -158,41 +158,27 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <i>Pediatrics</i>, 136(Supplement 1), S1-S9.
-            </li>
-            <li>
-              Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <i>Journal of Autism and Developmental Disorders</i>, 47(8), 2519-2534.
-            </li>
-            <li>
-              Simonoff, E., Pickles, A., Charman, T., et al. (2008). "Psychiatric disorders in children with autism spectrum disorders: Prevalence, comorbidity, and associated factors in a population-derived sample." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 47(8), 921-929.
-            </li>
-            <li>
-              Howlin, P., Goode, S., Hutton, J., & Rutter, M. (2004). "Adult outcome for children with autism." <i>Journal of Child Psychology and Psychiatry</i>, 45(2), 212-229.
-            </li>
-            <li>
-              Happé, F., & Charlton, R. A. (2012). "Aging in autism spectrum disorders: A mini-review." <i>Gerontology</i>, 58(1), 70-78.
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Zwaigenbaum, L., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2014-3667B</p>
+            <p>2. Hull, L., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-017-3166-5</p>
+            <p>3. Simonoff, E., et al. (2008). "Psychiatric disorders in children with autism spectrum disorders: Prevalence, comorbidity, and associated factors in a population-derived sample." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>. https://doi.org/10.1097/CHI.0b013e318179964f</p>
+            <p>4. Howlin, P., et al. (2004). "Adult outcome for children with autism." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/j.1469-7610.2004.00215.x</p>
+            <p>5. Happé, F., & Charlton, R. A. (2012). "Aging in autism spectrum disorders: A mini-review." <i>Gerontology</i>. https://doi.org/10.1159/000329720</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-            <li>
-              National Institute of Mental Health. (2023). <i>Autism Spectrum Disorder Throughout the Life Course</i>.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425787</p>
+            <p>National Institute of Mental Health. (2023). <i>Autism Spectrum Disorder Throughout the Life Course</i>. https://www.nimh.nih.gov/health/topics/autism-spectrum-disorder-asd</p>
+          </div>
         </div>
       </div>
     </div>

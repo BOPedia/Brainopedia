@@ -330,50 +330,30 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Kapp, S. K. (Ed.). (2020). <i>Autistic community and the neurodiversity movement: Stories from the frontline</i>. Palgrave Macmillan.
-            </li>
-            <li>
-              Pellicano, E., & den Houting, J. (2022). "Annual research review: Shifting from 'normal science' to neurodiversity in autism science." <i>Journal of Child Psychology and Psychiatry</i>, 63(4), 381-396.
-            </li>
-            <li>
-              Milton, D. E. (2012). "On the ontological status of autism: the 'double empathy problem'." <i>Disability & Society</i>, 27(6), 883-887.
-            </li>
-            <li>
-              Kupferstein, H. (2018). "Evidence of increased PTSD symptoms in autistics exposed to applied behavior analysis." <i>Advances in Autism</i>, 4(1), 19-29.
-            </li>
-            <li>
-              Bal, V. H., et al. (2015). "Daily living skills in individuals with autism spectrum disorder from 2 to 21 years of age." <i>Autism</i>, 19(7), 774-784.
-            </li>
-            <li>
-              Baranek, G. T., et al. (2006). "Sensory experiences questionnaire: discriminating sensory features in young children with autism, developmental delays, and typical development." <i>Journal of Child Psychology and Psychiatry</i>, 47(6), 591-601.
-            </li>
-            <li>
-              Wood, J. J., et al. (2009). "Cognitive behavioral therapy for anxiety in children with autism spectrum disorders: a randomized, controlled trial." <i>Journal of Child Psychology and Psychiatry</i>, 50(2), 224-234.
-            </li>
-            <li>
-              Gowen, E., & Hamilton, A. (2013). "Motor abilities in autism: A review using a computational context." <i>Journal of Autism and Developmental Disorders</i>, 43(2), 323-344.
-            </li>
-            <li>
-              American Speech-Language-Hearing Association (ASHA). (2023). <a href="https://www.asha.org/public/speech/disorders/Autism/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline"><i>Augmentative and Alternative Communication (AAC) Practice Portal</i></a>.
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Kapp, S. K. (Ed.). (2020). <i>Autistic community and the neurodiversity movement: Stories from the frontline</i>. Palgrave Macmillan. https://doi.org/10.1007/978-981-13-8437-0</p>
+            <p>2. Pellicano, E., & den Houting, J. (2022). "Annual research review: Shifting from 'normal science' to neurodiversity in autism science." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/jcpp.13534</p>
+            <p>3. Milton, D. E. (2012). "On the ontological status of autism: the 'double empathy problem'." <i>Disability & Society</i>. https://doi.org/10.1080/09687599.2012.710008</p>
+            <p>4. Kupferstein, H. (2018). "Evidence of increased PTSD symptoms in autistics exposed to applied behavior analysis." <i>Advances in Autism</i>. https://doi.org/10.1108/AIA-08-2017-0016</p>
+            <p>5. Bal, V. H., et al. (2015). "Daily living skills in individuals with autism spectrum disorder from 2 to 21 years of age." <i>Autism</i>. https://doi.org/10.1177/1362361314543521</p>
+            <p>6. Baranek, G. T., et al. (2006). "Sensory experiences questionnaire: discriminating sensory features in young children with autism, developmental delays, and typical development." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/j.1469-7610.2005.01546.x</p>
+            <p>7. Wood, J. J., et al. (2009). "Cognitive behavioral therapy for anxiety in children with autism spectrum disorders: a randomized, controlled trial." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/j.1469-7610.2008.01948.x</p>
+            <p>8. Gowen, E., & Hamilton, A. (2013). "Motor abilities in autism: A review using a computational context." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-012-1574-0</p>
+            <p>9. American Speech-Language-Hearing Association (ASHA). (2023). <i>Augmentative and Alternative Communication (AAC) Practice Portal</i>. https://www.asha.org/practice-portal/professional-issues/augmentative-and-alternative-communication/</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Autistic Self Advocacy Network (ASAN). "Navigating Healthcare and Therapy Options."
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Autistic Self Advocacy Network (ASAN). "Navigating Healthcare and Therapy Options." https://autisticadvocacy.org/policy/briefs/interventions/</p>
+          </div>
         </div>
       </div>
 

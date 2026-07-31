@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldAlert, Map, AlertTriangle, MessageCircle, Activity, Heart, ArrowRight, Sparkles } from 'lucide-react';
+import { ShieldAlert, Map, AlertTriangle, Activity, Sparkles } from 'lucide-react';
 import { SectionActions } from '../../../SectionActions';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
@@ -31,53 +31,53 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         sectionId="full-dysregulation-article" 
         sectionTitle="Guide to Dysregulation and Aggression" 
       />
-{/* ===== INTRODUCTION: A SHARED EXPERIENCE ===== */}
-<div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
-  <ImageWithFallback 
-    src="/images/autism/autism-support-TTtab-speech-dysreg-intro.png"
-    alt="Caregiver and individual co-regulation"
-    className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-  />
-  <p className="text-base leading-relaxed text-gray-700">
-    Navigating dysregulation is a profoundly shared experience between the autistic individual and their support team. When the nervous system is pushed to its limits—often due to overwhelming sensory input or a lack of accessible communication tools—it creates intense distress for the individual and a parallel layer of stress for the caregiver. True support is never about compliance or controlling behavior; it is about building a co-regulated partnership where the individual’s urgent need for physical and emotional safety, and the caregiver’s need for sustainable, compassionate strategies, are equally prioritized and deeply honored.
-  </p>
-  {/* The Clearing Rule: ensures the background box stretches to fit the floated image if the text is short */}
-  <div className="clear-both"></div>
-</div>
+      
+      {/* ===== INTRODUCTION: A SHARED EXPERIENCE ===== */}
+      <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
+        <ImageWithFallback 
+          src="/images/autism/autism-support-TTtab-speech-dysreg-intro.png"
+          alt="Caregiver and individual co-regulation"
+          className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+        />
+        <p className="text-base leading-relaxed text-gray-700">
+          Navigating dysregulation is a profoundly shared experience between the autistic individual and their support team. When the nervous system is pushed to its limits—often due to overwhelming sensory input or a lack of accessible communication tools—it creates intense distress for the individual and a parallel layer of stress for the caregiver. True support is never about compliance or controlling behavior; it is about building a co-regulated partnership where the individual’s urgent need for physical and emotional safety, and the caregiver’s need for sustainable, compassionate strategies, are equally prioritized and deeply honored.
+        </p>
+        <div className="clear-both"></div>
+      </div>
 
-{/* ===== THE SPIKY PROFILE: STRENGTHS & VULNERABILITIES ===== */}
-<div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffd166] mb-8">
-  <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
-    <Sparkles className="text-[#ffd166]" size={24} /> 
-    The Spiky Cognitive Profile: Understanding Asynchronous Development
-  </h2>
-  <p className="text-sm leading-relaxed mb-4 text-gray-700">
-    To support a dysregulated individual effectively, we must first presume competence. Many autistic individuals possess a "spiky" cognitive profile, where extraordinary strengths—such as deep focus, remarkable memory, or immense empathy—exist alongside significant vulnerabilities in sensory processing and internal regulation.
-  </p>
-  <p className="text-sm leading-relaxed text-gray-700">
-    When staff understand that this individual is not "acting out," but rather navigating a brain that processes information with different intensity, the training shifts from "control" to "attunement." By respecting and leveraging their unique strengths, we create a sense of safety that is the most effective tool for preventing escalation. When the individual feels understood, the need for reactive aggression diminishes significantly.
-  </p>
-</div>
+      {/* ===== THE SPIKY PROFILE: STRENGTHS & VULNERABILITIES ===== */}
+      <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffd166] mb-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+          <Sparkles className="text-[#ffd166]" size={24} /> 
+          The Spiky Cognitive Profile: Understanding Asynchronous Development
+        </h2>
+        <p className="text-sm leading-relaxed mb-4 text-gray-700">
+          To support a dysregulated individual effectively, we must first presume competence. Many autistic individuals possess a "spiky" cognitive profile, where extraordinary strengths—such as deep focus, remarkable memory, or immense empathy—exist alongside significant vulnerabilities in sensory processing and internal regulation.<sup className="text-green-600 font-bold ml-0.5">5</sup>
+        </p>
+        <p className="text-sm leading-relaxed text-gray-700">
+          When staff understand that this individual is not "acting out," but rather navigating a brain that processes information with different intensity, the training shifts from "control" to "attunement." By respecting and leveraging their unique strengths, we create a sense of safety that is the most effective tool for preventing escalation. When the individual feels understood, the need for reactive aggression diminishes significantly.
+        </p>
+      </div>
 
-{/* ===== HIDDEN PAIN: MEDICAL & TRAUMA TRIGGERS ===== */}
-<div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ff6b6b] mb-8">
-  <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
-    <Activity className="text-[#ff6b6b]" size={24} /> 
-    Hidden Pain: Medical Comorbidities & Trauma
-  </h2>
-  
-  <p className="text-base leading-relaxed mb-4 text-gray-700">
-    When evaluating dysregulation, it is critical to look beyond the surface behavior and audit for hidden pain, unmet physical needs, or underlying trauma. Because many autistic individuals experience differences in interoception—the ability to recognize internal bodily signals—or face significant communication barriers, what appears to be an aggressive outburst is frequently an urgent, desperate communication of acute physical distress.
-  </p>
-  
-  <p className="text-base leading-relaxed mb-4 text-gray-700">
-    Research indicates that medical comorbidities are highly prevalent in the autistic community; for instance, gastrointestinal (GI) disorders affect between 46% and 84% of autistic children<sup className="text-green-600 font-bold ml-0.5">6</sup>, while migraine prevalence in autistic adults is estimated at over 42%, more than double the rate of the general population<sup className="text-green-600 font-bold ml-0.5">7</sup>.
-  </p>
-  
-  <p className="text-base leading-relaxed text-gray-700">
-    When an individual cannot verbally articulate that they are experiencing debilitating acid reflux, severe constipation, a blinding headache, a blood-sugar crash from hunger, or a nervous system flashback triggered by past trauma, their biological fight-or-flight system naturally takes over. Reframing reactive behavior as a distress signal for hidden physical pain allows support teams to shift away from behavioral management and toward compassionate medical and emotional attunement.
-  </p>
-</div>
+      {/* ===== HIDDEN PAIN: MEDICAL & TRAUMA TRIGGERS ===== */}
+      <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ff6b6b] mb-8">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+          <Activity className="text-[#ff6b6b]" size={24} /> 
+          Hidden Pain: Medical Comorbidities & Trauma
+        </h2>
+        
+        <p className="text-base leading-relaxed mb-4 text-gray-700">
+          When evaluating dysregulation, it is critical to look beyond the surface behavior and audit for hidden pain, unmet physical needs, or underlying trauma. Because many autistic individuals experience differences in interoception—the ability to recognize internal bodily signals—or face significant communication barriers, what appears to be an aggressive outburst is frequently an urgent, desperate communication of acute physical distress.
+        </p>
+        
+        <p className="text-base leading-relaxed mb-4 text-gray-700">
+          Research indicates that medical comorbidities are highly prevalent in the autistic community; for instance, gastrointestinal (GI) disorders affect between 46% and 84% of autistic children<sup className="text-green-600 font-bold ml-0.5">6</sup>, while migraine prevalence in autistic adults is estimated at over 42%, more than double the rate of the general population<sup className="text-green-600 font-bold ml-0.5">7</sup>.
+        </p>
+        
+        <p className="text-base leading-relaxed text-gray-700">
+          When an individual cannot verbally articulate that they are experiencing debilitating acid reflux, severe constipation, a blinding headache, a blood-sugar crash from hunger, or a nervous system flashback triggered by past trauma, their biological fight-or-flight system naturally takes over. Reframing reactive behavior as a distress signal for hidden physical pain allows support teams to shift away from behavioral management and toward compassionate medical and emotional attunement.
+        </p>
+      </div>
 
       {/* ===== REFRAMING DYSREGULATION & AGGRESSION ===== */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
@@ -85,10 +85,10 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           <ShieldAlert className="text-[#0A9DC4]" size={24} /> 
           Reframing the Stress Response
         </h2>
-        <p className="text-sm leading-relaxed mb-4">
+        <p className="text-sm leading-relaxed mb-4 text-gray-700">
           Dysregulation escalating into aggression is often a profound stress response to unmet communication needs<sup className="text-green-600 font-bold ml-0.5">1</sup>. Individuals with communication barriers frequently resort to reactive aggression because they lack the necessary tools or accommodations to verbally articulate frustration, sensory overload, or physical pain.
         </p>
-        <p className="text-sm leading-relaxed">
+        <p className="text-sm leading-relaxed text-gray-700">
           Systemic reviews confirm that individuals experiencing emotion dysregulation are significantly more likely to engage in physical aggression, especially when feeling trapped, misunderstood, or unable to self-soothe<sup className="text-green-600 font-bold ml-0.5">2</sup>. By providing robust, alternative communication methods, aggressive behavior naturally decreases as autonomy increases.
         </p>
       </div>
@@ -177,6 +177,17 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         </div>
       </div>
 
+      {/* Back Button Bottom */}
+      <div className="flex justify-end mt-8 mb-6">
+        <button 
+          onClick={() => setCurrentArticle?.('autism-support-therapies')}
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+        >
+          <span className="text-xl">&larr;</span>
+          Back to Therapies
+        </button>
+      </div>
+
       {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
 
@@ -185,31 +196,29 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. National Institutes of Health (NIH). (2020). "Mechanisms of Aggression in ASD." <em>Journal of Autism Research</em>.</p>
-            <p>2. Behavior Frontiers. (2021). "Emotion Regulation and Aggression: A Systematic Review." <em>Behavioral Intervention Studies</em>.</p>
-            <p>3. Autism Communication Network. (2019). "Generalization Gaps in AAC and Environmental Prompts." <em>Journal of Developmental Disabilities</em>.</p>
-            <p>4. Crisis Prevention Institute (CPI). (2022). "De-escalation and Micro-Expressions in Care Settings." <em>Safety Protocols in Practice</em>.</p>
-            <p>5. Smith, J., & Doe, A. (2020). "The Spiky Cognitive Profile in Autism: Strengths and Vulnerabilities." <em>Neurodevelopmental Studies</em>.</p>
-            <p>6. McElhanon, B. O., et al. (2014). "Gastrointestinal symptoms in autism spectrum disorder: a meta-analysis." <em>Pediatrics</em>, 133(5), 872-883.</p>
-            <p>7. Croen, L. A., et al. (2015). "The health status of adults on the autism spectrum." <em>Autism</em>, 19(7), 814-823.</p>
-          
-                    </div>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Purba, C. A. P., et al. (2024). "Managing Aggressive Behavior in Adolescents With Autism Spectrum Disorder: Pharmacological and Non-Pharmacological Approaches." <i>Journal of the Korean Academy of Child and Adolescent Psychiatry</i>. https://doi.org/10.5765/jkacap.240026</p>
+            <p>2. Smith, K., et al. (2026). "Emotion Regulation and Aggression: A Systematic Review and Meta-Analysis." <i>Aggressive Behavior</i>. https://doi.org/10.1002/ab.70055</p>
+            <p>3. Fahmie, T. A., et al. (2020). "Topographies and functions of emerging problem behavior and appropriate requests in neurotypical preschoolers." <i>Journal of Applied Behavior Analysis</i>. https://doi.org/10.1002/jaba.741</p>
+            <p>4. Ibrahim, K., et al. (2019). "Reduced Amygdala–Prefrontal Functional Connectivity in Children With Autism Spectrum Disorder and Co-occurring Disruptive Behavior." <i>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</i>. https://doi.org/10.1016/j.bpsc.2019.01.009</p>
+            <p>5. Hughes, J. E. A., et al. (2018). "Savant syndrome has a distinct psychological profile in autism." <i>Molecular Autism</i>. https://doi.org/10.1186/s13229-018-0237-1</p>
+            <p>6. McElhanon, B. O., et al. (2014). "Gastrointestinal Symptoms in Autism Spectrum Disorder: A Meta-analysis." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2013-3995</p>
+            <p>7. Croen, L. A., et al. (2015). "The health status of adults on the autism spectrum." <i>Autism</i>. https://doi.org/10.1177/1362361315577517</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Every Moment Counts. (2023). "Embedded Strategies for Environmental Modification & Safety." Occupational Therapy Field Resources.</li>
-            <li>Teaching Autism: Supporting Students with Aggression or Meltdowns (Video Curriculum).</li>
-            <li>Ordinarily Available Inclusive Provision Guidelines.</li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Crisis Prevention Institute (CPI). (n.d.). "De-escalation & Crisis Prevention Training for Health Care." https://www.crisisprevention.com/industries/health-care/</p>
+            <p>Kimberly's Educational Resources. (n.d.). "Alternative Communication Options: Evaluating AAC, Independence, and Expression." https://www.kimberlyedu.org/alternative-communication-options</p>
+          </div>
         </div>
       </div>
 

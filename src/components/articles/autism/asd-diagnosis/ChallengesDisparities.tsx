@@ -22,7 +22,7 @@ export function ChallengesDisparities({ setCurrentArticle }: ChallengesDispariti
         
         <div className="bg-[#ffd166] border-l-4 border-[#0c264d] p-3 rounded mb-4">
           <p className="text-sm">
-            <strong>The Ratio:</strong> Approximately 3-4 males are diagnosed for every 1 female.<sup>1</sup> 
+            <strong>The Ratio:</strong> Approximately 3-4 males are diagnosed for every 1 female.<sup className="text-green-600 font-bold ml-0.5">1</sup> 
             However, this likely reflects diagnostic bias rather than true prevalence differences.
           </p>
         </div>
@@ -35,7 +35,7 @@ export function ChallengesDisparities({ setCurrentArticle }: ChallengesDispariti
             </div>
             <div className="text-sm">
               Girls and women often mask or camouflage autistic traits more effectively than boys, leading to missed 
-              or delayed diagnosis.<sup>2</sup> This masking is exhausting and can lead to burnout, anxiety, 
+              or delayed diagnosis.<sup className="text-green-600 font-bold ml-0.5">2</sup> This masking is exhausting and can lead to burnout, anxiety, 
               and depression.
             </div>
           </div>
@@ -397,28 +397,24 @@ export function ChallengesDisparities({ setCurrentArticle }: ChallengesDispariti
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.</p>
-            <p>2. Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <i>Journal of Autism and Developmental Disorders</i>, 47(8), 2519-2534.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Loomes, R., et al. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>. https://doi.org/10.1016/j.jaac.2017.03.013</p>
+            <p>2. Hull, L., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-017-3166-5</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <i>The Lancet</i>, 383(9920), 896-910.
-            </li>
-            <li>
-              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Lai, M. C., et al. (2014). "Autism." <i>The Lancet</i>. https://doi.org/10.1016/S0140-6736(13)61539-1</p>
+            <p>Lord, C., et al. (2018). "Autism spectrum disorder." <i>The Lancet</i>. https://doi.org/10.1016/S0140-6736(18)31129-2</p>
+          </div>
         </div>
       </div>
     </div>

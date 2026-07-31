@@ -9,7 +9,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetic Factors</h2>
       
       <p className="mb-6 leading-relaxed text-[#0c264d]">
-        Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup className="text-green-600 font-bold ml-0.5">1</sup> However, autism genetics are extraordinarily complex and involve many different genes rather than a single "autism gene."
+        Genetics play a substantial role in autism, with heritability estimates ranging from 70-90%.<sup className="text-green-600 font-bold ml-0.5">1,2</sup> However, autism genetics are extraordinarily complex and involve many different genes rather than a single "autism gene."
       </p>
 
       <ImageWithFallback 
@@ -220,56 +220,32 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-20 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-[#0c264d] opacity-90 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>
-              1. Genovese, A., & Butler, M. G. (2023). "The Autism Spectrum: Behavioral, Psychiatric and Genetic Associations." <i>Genes</i>, 14(3), 637. (PMCID: PMC10048473).
-            </p>
-            <p>
-              2. Tick, B., Bolton, P., Happé, F., Rutter, M., & Rijsdijk, F. (2016). "Heritability of autism spectrum disorders: A meta-analysis of twin studies." <i>Journal of Child Psychology and Psychiatry</i>, 57(5), 585-595. (PMCID: PMC4996332).
-            </p>
-            <p>
-              3. Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.
-            </p>
-            <p>
-              4. Yoon, S., et al. (2021). "Rates of contributory de novo mutation in high and low-risk autism families." <i>Communications Biology</i>, 4(1), 1026. (PMCID: PMC8410909).
-            </p>
-            <p>
-              5. Haebig, E., et al. (2020). "Rates and predictors of co-occurring autism spectrum disorder in boys with fragile X syndrome." <i>Research in Developmental Disabilities</i>, 107, 103783. (PMCID: PMC9281610).
-            </p>
-            <p>
-              6. Vignoli, A., et al. (2015). "Autism spectrum disorder in tuberous sclerosis complex: searching for risk markers." <i>Orphanet Journal of Rare Diseases</i>, 10, 154. (PMCID: PMC4668631).
-            </p>
-            <p>
-              7. Ozonoff, S., et al. (2024). "Familial recurrence of autism: Updates from the Baby Siblings Research Consortium." <i>Pediatrics</i>, 154(2), e2023065297. (PMCID: PMC11291960).
-            </p>
-            <p>
-              8. Cirnigliaro, M., et al. (2023). "The contributions of rare inherited and polygenic risk to ASD in multiplex families." <i>Proceedings of the National Academy of Sciences</i>, 120(31), e2215632120. (PMCID: PMC10400943).
-            </p>
-            <p>
-              9. Loke, Y. J., Hannan, A. J., & Craig, J. M. (2015). "The Role of Epigenetics in Autism Spectrum Disorders." <i>Neural Plasticity</i>, 2015, 502812. (PMCID: PMC4538466).
-            </p>
+          <div className="text-xs space-y-4 text-[#0c264d] opacity-90 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Genovese, A., & Butler, M. G. (2023). "The Autism Spectrum: Behavioral, Psychiatric and Genetic Associations." <i>Genes</i>. https://doi.org/10.3390/genes14030677</p>
+            <p>2. Tick, B., et al. (2015). "Heritability of autism spectrum disorders: a meta-analysis of twin studies." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/jcpp.12499</p>
+            <p>3. Loomes, R., et al. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>. https://doi.org/10.1016/j.jaac.2017.03.013</p>
+            <p>4. Yoon, S., et al. (2021). "Rates of contributory de novo mutation in high and low-risk autism families." <i>Communications Biology</i>. https://doi.org/10.1038/s42003-021-02533-z</p>
+            <p>5. Haebig, E., et al. (2020). "Rates and predictors of co-occurring autism spectrum disorder in boys with fragile X syndrome." <i>Research in Developmental Disabilities</i>. https://doi.org/10.1016/j.ridd.2020.103783</p>
+            <p>6. Vignoli, A., et al. (2015). "Autism spectrum disorder in tuberous sclerosis complex: searching for risk markers." <i>Orphanet Journal of Rare Diseases</i>. https://doi.org/10.1186/s13023-015-0371-x</p>
+            <p>7. Ozonoff, S., et al. (2024). "Familial recurrence of autism: Updates from the Baby Siblings Research Consortium." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2023-065297</p>
+            <p>8. Cirnigliaro, M., et al. (2023). "The contributions of rare inherited and polygenic risk to ASD in multiplex families." <i>Proceedings of the National Academy of Sciences</i>. https://doi.org/10.1073/pnas.2215632120</p>
+            <p>9. Loke, Y. J., et al. (2015). "The Role of Epigenetics in Autism Spectrum Disorders." <i>Neural Plasticity</i>. https://doi.org/10.1155/2015/502812</p>
           </div>
         </div>
 
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-20 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>
-              National Institute of Mental Health (NIMH) - <i>Autism Genetics Overview</i>.
-            </li>
-            <li>
-              Centers for Disease Control and Prevention (CDC) - <i>Autism Spectrum Disorder (ASD) Data and Statistics</i>.
-            </li>
-            <li>
-              Baby Siblings Research Consortium Database.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+            <p>National Institute of Mental Health (NIMH). "Autism Spectrum Disorder." https://www.nimh.nih.gov/health/topics/autism-spectrum-disorder-asd</p>
+            <p>Centers for Disease Control and Prevention (CDC). "Data & Statistics on Autism Spectrum Disorder." https://www.cdc.gov/ncbddd/autism/data.html</p>
+          </div>
         </div>
       </div>
     </div>

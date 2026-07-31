@@ -95,30 +95,33 @@ export function AdultDiagnosis({ setCurrentArticle }: AdultDiagnosisProps) {
         </div>
       </div>
 
+      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
 
-      <div className="pt-2">
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-    {/* CITED STUDIES: GREEN */}
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Ritvo, R. A., Ritvo, E. R., Guthrie, D., et al. (2011). "The Ritvo Autism Asperger Diagnostic Scale-Revised (RAADS-R)." <i>Journal of Autism and Developmental Disorders</i>, 41(8), 1076-1089.</p>
-            <p>2. Hull, L., Mandy, W., Lai, M. C., et al. (2019). "Development and Validation of the Camouflaging Autistic Traits Questionnaire (CAT-Q)." <i>Journal of Autism and Developmental Disorders</i>, 49(3), 819-833.</p>
-            <p>3. Baron-Cohen, S., et al. (2001). "The Autism-Spectrum Quotient (AQ)." <i>Journal of Autism and Developmental Disorders</i>, 31(1), 5-17.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Ritvo, R. A., et al. (2011). "The Ritvo Autism Asperger Diagnostic Scale-Revised (RAADS-R)." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-010-1133-5</p>
+            <p>2. Hull, L., et al. (2019). "Development and Validation of the Camouflaging Autistic Traits Questionnaire (CAT-Q)." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-018-3792-6</p>
+            <p>3. Baron-Cohen, S., et al. (2001). "The Autism-Spectrum Quotient (AQ)." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1023/a:1005653411471</p>
           </div>
         </div>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Monteiro, S. A. (2018). <i>MIGDAS-2: Monteiro Interview Guidelines for Diagnosing the Autism Spectrum, Second Edition</i>. Western Psychological Services.</li>
-            <li>Fusar-Poli, L., Brondino, N., Politi, P., & Aguglia, E. (2020). "Missed diagnoses and misdiagnoses of adults with autism spectrum disorder." <i>European Archives of Psychiatry and Clinical Neuroscience</i>.</li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Monteiro, S. A. (2018). <i>MIGDAS-2: Monteiro Interview Guidelines for Diagnosing the Autism Spectrum, Second Edition</i>. Western Psychological Services. https://www.wpspublish.com/migdas-2-monteiro-interview-guidelines-for-diagnosing-the-autism-spectrum-second-edition</p>
+            <p>Fusar-Poli, L., et al. (2020). "Missed diagnoses and misdiagnoses of adults with autism spectrum disorder." <i>European Archives of Psychiatry and Clinical Neuroscience</i>. https://doi.org/10.1007/s00406-020-01189-w</p>
+          </div>
         </div>
       </div>
     </div>

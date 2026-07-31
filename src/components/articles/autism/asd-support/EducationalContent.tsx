@@ -225,44 +225,28 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              U.S. Department of Education. (2023). "Sec. 300.101 Free appropriate public education (FAPE)." <i>Individuals with Disabilities Education Act (IDEA)</i>.
-            </li>
-            <li>
-              U.S. Department of Education. (2023). "Sec. 300.320 Definition of individualized education program." <i>Individuals with Disabilities Education Act (IDEA)</i>.
-            </li>
-            <li>
-              U.S. Department of Education, Office for Civil Rights. (2023). "Protecting Students With Disabilities." <i>Section 504 of the Rehabilitation Act of 1973</i>.
-            </li>
-            <li>
-              U.S. Department of Education. (2023). "Sec. 300.114 LRE requirements." <i>Individuals with Disabilities Education Act (IDEA)</i>.
-            </li>
-            <li>
-              U.S. Department of Education. (2023). "Sec. 300.320(b) Transition services." <i>Individuals with Disabilities Education Act (IDEA)</i>.
-            </li>
-            <li>
-              Hume, K., et al. (2021). "Evidence-based practices for children, youth, and young adults with autism spectrum disorder: A comprehensive review." <i>Journal of Autism and Developmental Disorders</i>, 51(11), 4013-4032.
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. U.S. Department of Education. (2023). "Sec. 300.101 Free appropriate public education (FAPE)." <i>Individuals with Disabilities Education Act (IDEA)</i>. https://sites.ed.gov/idea/regs/b/b/300.101</p>
+            <p>2. U.S. Department of Education. (2023). "Sec. 300.320 Definition of individualized education program." <i>Individuals with Disabilities Education Act (IDEA)</i>. https://sites.ed.gov/idea/regs/b/d/300.320</p>
+            <p>3. U.S. Department of Education, Office for Civil Rights. (2023). "Protecting Students With Disabilities." <i>Section 504 of the Rehabilitation Act of 1973</i>. https://www2.ed.gov/about/offices/list/ocr/504faq.html</p>
+            <p>4. U.S. Department of Education. (2023). "Sec. 300.114 LRE requirements." <i>Individuals with Disabilities Education Act (IDEA)</i>. https://sites.ed.gov/idea/regs/b/b/300.114</p>
+            <p>5. U.S. Department of Education. (2023). "Sec. 300.320(b) Transition services." <i>Individuals with Disabilities Education Act (IDEA)</i>. https://sites.ed.gov/idea/regs/b/d/300.320</p>
+            <p>6. Hume, K., et al. (2021). "Evidence-based practices for children, youth, and young adults with autism spectrum disorder: A comprehensive review." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-020-04844-2</p>
+          </div>
         </div>
         
-        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Organization for Autism Research (OAR). "Navigating the Special Education System."
-            </li>
-            <li>
-              Wrightslaw. "Special Education Law and Advocacy for Parents."
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Organization for Autism Research (OAR). "Navigating the Special Education System." https://researchautism.org/parents-and-families/navigating-the-special-education-system/</p>
+            <p>Wrightslaw. "Special Education Law and Advocacy for Parents." https://www.wrightslaw.com/</p>
+          </div>
         </div>
       </div>
     </>

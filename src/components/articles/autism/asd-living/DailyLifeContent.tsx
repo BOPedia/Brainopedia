@@ -146,32 +146,24 @@ export function DailyLifeContent({ setCurrentArticle }: DailyLifeContentProps) {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Tager-Flusberg, H., & Kasari, C. (2013). "Minimally verbal school-aged children with autism spectrum disorder: The neglected end of the spectrum." <i>Autism Research</i>, 6(6), 468-478.
-            </li>
-            <li>
-              Belek, B. (2019). "Articulating sensory experience: What properties of the world matter to autistic people?" <i>Ethos</i>, 47(2), 220-244.
-            </li>
-            <li>
-              Raymaker, D. M., Teo, A. R., Steckler, N. A., et al. (2020). "'Having All of Your Internal Resources Exhausted Beyond Measure': An Exploratory Study of Autistic Burnout." <i>Autism in Adulthood</i>, 2(2), 132-143.
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Tager-Flusberg, H., & Kasari, C. (2013). "Minimally verbal school-aged children with autism spectrum disorder: The neglected end of the spectrum." <i>Autism Research</i>. https://doi.org/10.1002/aur.1329</p>
+            <p>2. Belek, B. (2019). "Articulating sensory experience: What properties of the world matter to autistic people?" <i>Ethos</i>. https://doi.org/10.1111/etho.12233</p>
+            <p>3. Raymaker, D. M., et al. (2020). "'Having All of Your Internal Resources Exhausted Beyond Measure': An Exploratory Study of Autistic Burnout." <i>Autism in Adulthood</i>. https://doi.org/10.1089/aut.2019.0079</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425787</p>
+          </div>
         </div>
       </div>
     </div>

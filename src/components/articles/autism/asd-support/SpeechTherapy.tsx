@@ -286,7 +286,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         />
 
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
-          Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup>1</sup> This approach emphasizes the emotional and relational aspects of communication.
+          Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup className="text-green-600 font-bold ml-0.5">1</sup> This approach emphasizes the emotional and relational aspects of communication.
         </p>
 
         <ImageWithFallback 
@@ -546,24 +546,24 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Blanc, M. (2012). <i>Natural Language Acquisition on the Autism Spectrum: The Journey from Echolalia to Self-Generated Language</i>. Communication Development Center.</p>
-            <p>2. Prizant, B. M. (1983). "Language acquisition and communicative behavior in autism: Toward an understanding of the 'whole' of it." <i>Journal of Speech and Hearing Disorders</i>, 48(3), 296-307.</p>
-            <p>3. Stiegler, L. N. (2015). "Examining the echolalia literature: Where do we go from here?" <i>American Journal of Speech-Language Pathology</i>, 24(4), 726-738.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Blanc, M. (2012). <i>Natural Language Acquisition on the Autism Spectrum: The Journey from Echolalia to Self-Generated Language</i>. Communication Development Center. https://communicationdevelopmentcenter.com/</p>
+            <p>2. Prizant, B. M. (1983). "Language acquisition and communicative behavior in autism: Toward an understanding of the 'whole' of it." <i>Journal of Speech and Hearing Disorders</i>. https://doi.org/10.1044/jshd.4803.296</p>
+            <p>3. Stiegler, L. N. (2015). "Examining the echolalia literature: Where do we go from here?" <i>American Journal of Speech-Language Pathology</i>. https://doi.org/10.1044/2015_AJSLP-14-0166</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>Beukelman, D. R., & Light, J. C. (2020). <i>Augmentative & Alternative Communication: Supporting Children and Adults with Complex Communication Needs</i> (5th ed.). Brookes Publishing.</p>
-            <p>Zisk, A. H., & Dalton, E. (2019). "Augmentative and Alternative Communication for Speaking Autistic Adults: Overview and Recommendations." <i>Autism in Adulthood</i>, 1(2), 93-100.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Beukelman, D. R., & Light, J. C. (2020). <i>Augmentative & Alternative Communication: Supporting Children and Adults with Complex Communication Needs</i> (5th ed.). Brookes Publishing. https://brookespublishing.com/product/augmentative-and-alternative-communication/</p>
+            <p>Zisk, A. H., & Dalton, E. (2019). "Augmentative and Alternative Communication for Speaking Autistic Adults: Overview and Recommendations." <i>Autism in Adulthood</i>. https://doi.org/10.1089/aut.2018.0007</p>
           </div>
         </div>
       </div>

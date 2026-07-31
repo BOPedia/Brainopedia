@@ -289,68 +289,36 @@ export function MedicalContent({ setCurrentArticle }: MedicalContentProps) {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Lai, M. C., et al. (2019). "Evidence-based support for autistic people across the lifespan." <i>The Lancet</i>, 394(10204).
-            </li>
-            <li>
-              Fung, L. K., et al. (2016). "Pharmacologic treatment of severe irritability and problem behaviors in autism: A systematic review and meta-analysis." <i>Pediatrics</i>, 137(Supplement_2).
-            </li>
-            <li>
-              Cortese, S., et al. (2020). "Pharmacological treatment of attention deficit hyperactivity disorder in children and adolescents with autism spectrum disorder: A systematic review." <i>Autism</i>, 24(7).
-            </li>
-            <li>
-              Williams, K., et al. (2013). "Selective serotonin reuptake inhibitors (SSRIs) for autism spectrum disorders (ASD)." <i>Cochrane Database of Systematic Reviews</i>, (8).
-            </li>
-            <li>
-              Rossignol, D. A., & Frye, R. E. (2011). "Melatonin in autism spectrum disorders: a systematic review and meta-analysis." <i>Developmental Medicine & Child Neurology</i>, 53(9).
-            </li>
-            <li>
-              Besag, F. M. C. (2018). "Epilepsy in patients with autism: links, risks and treatment challenges." <i>Neuropsychiatric Disease and Treatment</i>, 14, 1-10.
-            </li>
-            <li>
-              Volkmar, F., et al. (2014). "Practice parameter for the assessment and treatment of children and adolescents with autism spectrum disorder." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 53(2).
-            </li>
-            <li>
-              McElhanon, B. O., et al. (2014). "Gastrointestinal symptoms in autism spectrum disorder: a meta-analysis." <i>Pediatrics</i>, 133(5).
-            </li>
-            <li>
-              Buie, T., et al. (2010). "Evaluation, diagnosis, and treatment of gastrointestinal disorders in individuals with ASDs: a consensus report." <i>Pediatrics</i>, 125(Supplement_1).
-            </li>
-            <li>
-              Devnani, P. A., & Hegde, A. U. (2015). "Autism and sleep disorders." <i>Journal of Pediatric Neurosciences</i>, 10(4).
-            </li>
-            <li>
-              Tuchman, R., & Rapin, I. (2002). "Epilepsy in autism." <i>The Lancet Neurology</i>, 1(6).
-            </li>
-            <li>
-              Hughes, H. K., et al. (2018). "Immune dysfunction and autoimmunity as pathological mechanisms in autism spectrum disorders." <i>Frontiers in Cellular Neuroscience</i>, 12.
-            </li>
-            <li>
-              Nicolaidis, C., et al. (2014). "Healthcare experiences of autistic adults." <i>Journal of General Internal Medicine</i>, 29(6).
-            </li>
-            <li>
-              Cheak-Zamora, N. C., et al. (2015). "Health care transition in youth with autism spectrum disorder." <i>Pediatrics</i>, 135(3).
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Lai, M. C., et al. (2019). "Evidence-based support for autistic people across the lifespan." <i>The Lancet</i>. https://doi.org/10.1016/S0140-6736(19)31887-1</p>
+            <p>2. Fung, L. K., et al. (2016). "Pharmacologic treatment of severe irritability and problem behaviors in autism: A systematic review and meta-analysis." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2015-2851L</p>
+            <p>3. Cortese, S., et al. (2020). "Pharmacological treatment of attention deficit hyperactivity disorder in children and adolescents with autism spectrum disorder: A systematic review." <i>Autism</i>. https://doi.org/10.1177/1362361320914041</p>
+            <p>4. Williams, K., et al. (2013). "Selective serotonin reuptake inhibitors (SSRIs) for autism spectrum disorders (ASD)." <i>Cochrane Database of Systematic Reviews</i>. https://doi.org/10.1002/14651858.CD004677.pub3</p>
+            <p>5. Rossignol, D. A., & Frye, R. E. (2011). "Melatonin in autism spectrum disorders: a systematic review and meta-analysis." <i>Developmental Medicine & Child Neurology</i>. https://doi.org/10.1111/j.1469-8749.2011.03980.x</p>
+            <p>6. Besag, F. M. C. (2018). "Epilepsy in patients with autism: links, risks and treatment challenges." <i>Neuropsychiatric Disease and Treatment</i>. https://doi.org/10.2147/NDT.S120509</p>
+            <p>7. Volkmar, F., et al. (2014). "Practice parameter for the assessment and treatment of children and adolescents with autism spectrum disorder." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>. https://doi.org/10.1016/j.jaac.2013.10.013</p>
+            <p>8. McElhanon, B. O., et al. (2014). "Gastrointestinal symptoms in autism spectrum disorder: a meta-analysis." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2013-3995</p>
+            <p>9. Buie, T., et al. (2010). "Evaluation, diagnosis, and treatment of gastrointestinal disorders in individuals with ASDs: a consensus report." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2009-1878C</p>
+            <p>10. Devnani, P. A., & Hegde, A. U. (2015). "Autism and sleep disorders." <i>Journal of Pediatric Neurosciences</i>. https://doi.org/10.4103/1817-1745.174438</p>
+            <p>11. Tuchman, R., & Rapin, I. (2002). "Epilepsy in autism." <i>The Lancet Neurology</i>. https://doi.org/10.1016/S1474-4422(02)00160-6</p>
+            <p>12. Hughes, H. K., et al. (2018). "Immune dysfunction and autoimmunity as pathological mechanisms in autism spectrum disorders." <i>Frontiers in Cellular Neuroscience</i>. https://doi.org/10.3389/fncel.2018.00405</p>
+            <p>13. Nicolaidis, C., et al. (2014). "Healthcare experiences of autistic adults." <i>Journal of General Internal Medicine</i>. https://doi.org/10.1007/s11606-013-2708-4</p>
+            <p>14. Cheak-Zamora, N. C., et al. (2015). "Health care transition in youth with autism spectrum disorder." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2014-2741</p>
+          </div>
         </div>
         
-        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Academic Autism Spectrum Partnership in Research and Education (AASPIRE). "Healthcare Toolkit for Patients and Providers."
-            </li>
-            <li>
-              Autistic Self Advocacy Network (ASAN). "Navigating Healthcare: A Guide for Autistic Adults."
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Academic Autism Spectrum Partnership in Research and Education (AASPIRE). "Healthcare Toolkit for Patients and Providers." https://aaspire.org/</p>
+            <p>Autistic Self Advocacy Network (ASAN). "Navigating Healthcare: A Guide for Autistic Adults." https://autisticadvocacy.org/policy/toolkits/healthcare/</p>
+          </div>
         </div>
       </div>
     </>

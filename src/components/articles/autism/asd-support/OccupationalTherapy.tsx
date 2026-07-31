@@ -345,29 +345,29 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Case-Smith, J., & Arbesman, M. (2008). "Evidence-based review of interventions for autism used in or of relevance to occupational therapy." <em>American Journal of Occupational Therapy</em>, 62(4), 416-429.</p>
-            <p>2. Schaaf, R. C., et al. (2014). "An intervention for sensory difficulties in children with autism: A randomized trial." <em>Journal of Autism and Developmental Disorders</em>, 44(7), 1493-1506.</p>
-            <p>3. Dallman, A. R., et al. (2022). "Neurodiversity-Affirming Practices in Occupational Therapy." <em>American Journal of Occupational Therapy</em>, 76(Supplement_1).</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Case-Smith, J., & Arbesman, M. (2008). "Evidence-based review of interventions for autism used in or of relevance to occupational therapy." <i>American Journal of Occupational Therapy</i>. https://doi.org/10.5014/ajot.62.4.416</p>
+            <p>2. Schaaf, R. C., et al. (2014). "An intervention for sensory difficulties in children with autism: A randomized trial." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-013-1983-8</p>
+            <p>3. Dallman, A. R., et al. (2022). "Neurodiversity-Affirming Practices are a Moral Imperative for Occupational Therapy." <i>The Open Journal of Occupational Therapy</i>. https://doi.org/10.15453/2168-6408.1937</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Ayres, A. J. (2005). Sensory Integration and the Child: Understanding Hidden Sensory Challenges. Western Psychological Services.</li>
-            <li>Dunn, W. (2014). Sensory Profile 2: User's Manual and Assessing Sensory Processing. Pearson Clinical Assessment.</li>
-            <li>Kramer, P., Hinojosa, J., & Royeen, C. B. (2020). Perspectives in Human Occupation: Participation in Life. F.A. Davis Company.</li>
-            <li>Mahler, K. (2015). Interoception: The Eighth Sensory System. AAPC Publishing.</li>
-            <li>Polatajko, H. J., & Mandich, A. (2004). Enabling occupation in children: The cognitive orientation to daily occupational performance (CO-OP) approach. CAOT Publications ACE.</li>
-            <li>Roley, S. S., et al. (2008). "Understanding occupational therapy using the AOTA Practice Framework." American Journal of Occupational Therapy.</li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Ayres, A. J. (2005). <i>Sensory Integration and the Child: Understanding Hidden Sensory Challenges</i>. Western Psychological Services. https://www.wpspublish.com/sensory-integration-and-the-child-25th-anniversary-edition</p>
+            <p>Dunn, W. (2014). <i>Sensory Profile 2: User's Manual and Assessing Sensory Processing</i>. Pearson Clinical Assessment. https://www.pearsonassessments.com/store/usassessments/en/Store/Professional-Assessments/Motor-Sensory/Sensory-Profile-2/p/100000822.html</p>
+            <p>Kramer, P., Hinojosa, J., & Royeen, C. B. (2020). <i>Perspectives in Human Occupation: Participation in Life</i>. F.A. Davis Company. https://fadavis.com/product/occupational-therapy-perspectives-human-occupation-kramer-hinojosa-2</p>
+            <p>Mahler, K. (2015). <i>Interoception: The Eighth Sensory System</i>. AAPC Publishing. https://www.kelly-mahler.com/what-is-interoception/</p>
+            <p>Polatajko, H. J., & Mandich, A. (2004). <i>Enabling occupation in children: The cognitive orientation to daily occupational performance (CO-OP) approach</i>. CAOT Publications ACE. https://caot.ca/document/3655/Enabling%20Occupation%20in%20Children.pdf</p>
+            <p>Roley, S. S., et al. (2008). "Understanding occupational therapy using the AOTA Practice Framework." <i>American Journal of Occupational Therapy</i>. https://doi.org/10.5014/ajot.62.6.625</p>
+          </div>
         </div>
       </div>
 

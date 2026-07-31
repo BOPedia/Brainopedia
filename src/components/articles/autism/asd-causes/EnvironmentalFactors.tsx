@@ -133,31 +133,31 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Centers for Disease Control and Prevention. (2023). "Autism Spectrum Disorder (ASD): Data and Statistics." <i>CDC</i>.</p>
-            <p>2. Bai, D., Yip, B. H., Windham, G. C., et al. (2019). "Association of genetic and environmental factors with autism in a 5-country cohort." <i>JAMA Psychiatry</i>, 76(10), 1035-1043.</p>
-            <p>3. Modabbernia, A., Velthorst, E., & Reichenberg, A. (2017). "Environmental risk factors for autism: An evidence-based review of systematic reviews and meta-analyses." <i>Molecular Autism</i>, 8(1), 13.</p>
-            <p>4. Lyall, K., Croen, L., Daniels, J., et al. (2017). "The changing epidemiology of autism spectrum disorders." <i>Annual Review of Public Health</i>, 38, 81-102.</p>
-            <p>5. Brown, H. K., Ray, J. G., Wilton, A. S., et al. (2017). "Association Between Maternal Antidepressant Use During Pregnancy and Autism Spectrum Disorder: An Analysis of Sibling Subsets." <i>JAMA</i>, 317(15), 1544-1552.</p>
-            <p>6. DeStefano, F., Price, C. S., & Weintraub, E. S. (2013). "Increasing exposure to antibody-stimulating proteins and polysaccharides in vaccines is not associated with risk of autism." <i>The Journal of Pediatrics</i>, 163(2), 561-567.</p>
-            <p>7. Institute of Medicine (US) Committee on the Assessment of Studies of Health Outcomes Related to the Recommended Childhood Immunization Schedule. (2013). <i>The Childhood Immunization Schedule and Safety: Stakeholder Concerns, Scientific Evidence, and Future Studies</i>. National Academies Press.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Centers for Disease Control and Prevention. (2023). "Autism Spectrum Disorder (ASD): Data and Statistics." <i>CDC</i>. https://www.cdc.gov/ncbddd/autism/data.html</p>
+            <p>2. Bai, D., et al. (2019). "Association of genetic and environmental factors with autism in a 5-country cohort." <i>JAMA Psychiatry</i>. https://doi.org/10.1001/jamapsychiatry.2019.1411</p>
+            <p>3. Modabbernia, A., et al. (2017). "Environmental risk factors for autism: An evidence-based review of systematic reviews and meta-analyses." <i>Molecular Autism</i>. https://doi.org/10.1186/s13229-017-0121-4</p>
+            <p>4. Lyall, K., et al. (2017). "The changing epidemiology of autism spectrum disorders." <i>Annual Review of Public Health</i>. https://doi.org/10.1146/annurev-publhealth-031816-044318</p>
+            <p>5. Brown, H. K., et al. (2017). "Association Between Maternal Antidepressant Use During Pregnancy and Autism Spectrum Disorder: An Analysis of Sibling Subsets." <i>JAMA</i>. https://doi.org/10.1001/jama.2017.3415</p>
+            <p>6. DeStefano, F., et al. (2013). "Increasing exposure to antibody-stimulating proteins and polysaccharides in vaccines is not associated with risk of autism." <i>The Journal of Pediatrics</i>. https://doi.org/10.1016/j.jpeds.2013.02.001</p>
+            <p>7. Institute of Medicine (US) Committee on the Assessment of Studies of Health Outcomes Related to the Recommended Childhood Immunization Schedule. (2013). <i>The Childhood Immunization Schedule and Safety: Stakeholder Concerns, Scientific Evidence, and Future Studies</i>. National Academies Press. https://doi.org/10.17226/13563</p>
           </div>
         </div>
 
-        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.).</li>
-            <li>Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.</li>
-            <li>Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.</li>
-            <li>American Academy of Pediatrics (AAP). (2022). "Vaccine Safety: Get the Facts." HealthyChildren.org.</li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+            <p>Lord, C., et al. (2018). "Autism spectrum disorder." <i>The Lancet</i>. https://doi.org/10.1016/S0140-6736(18)31129-2</p>
+            <p>Taylor, L. E., et al. (2014). "Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>. https://doi.org/10.1016/j.vaccine.2014.04.085</p>
+            <p>American Academy of Pediatrics (AAP). (2022). "Vaccine Safety: Get the Facts." HealthyChildren.org. https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Vaccine-Safety-The-Facts.aspx</p>
+          </div>
         </div>
       </div>
     </div>

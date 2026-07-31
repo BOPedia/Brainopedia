@@ -102,32 +102,24 @@ export function EducationEmploymentContent({ setCurrentArticle }: EducationEmplo
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Van Hees, V., Moyson, T., & Roeyers, H. (2015). "Higher education experiences of students with autism spectrum disorder: Challenges, benefits and support needs." <i>Journal of Autism and Developmental Disorders</i>, 45(6), 1673-1688.
-            </li>
-            <li>
-              Hurley-Hanson, A. E., Giannantonio, C. M., & Griffiths, A. J. (2020). "Extreme loneliness: The status of the autistic workforce." <i>Journal of Business and Management</i>, 26(1), 1-25.
-            </li>
-            <li>
-              Gurbuz, N., Hanley, M., & Riby, D. M. (2019). "Employment outcomes for autistic adults: Enablers and barriers to employment." <i>Autism</i>, 23(3), 617-631.
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Van Hees, V., et al. (2015). "Higher education experiences of students with autism spectrum disorder: Challenges, benefits and support needs." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-014-2324-2</p>
+            <p>2. Hurley-Hanson, A. E., et al. (2020). "Extreme loneliness: The status of the autistic workforce." <i>Journal of Business and Management</i>.</p>
+            <p>3. Gurbuz, N., et al. (2019). "Employment outcomes for autistic adults: Enablers and barriers to employment." <i>Autism</i>. https://doi.org/10.1177/1362361318760086</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425787</p>
+          </div>
         </div>
       </div>
     </div>

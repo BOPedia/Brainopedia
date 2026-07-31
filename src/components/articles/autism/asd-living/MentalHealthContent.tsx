@@ -105,38 +105,26 @@ export function MentalHealthContent({ setCurrentArticle }: MentalHealthContentPr
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Hollocks, M. J., Lerh, J. W., Magiati, I., Meiser-Stedman, R., & Brugha, T. S. (2019). "Anxiety and depression in adults with autism spectrum disorder: a systematic review and meta-analysis." <i>Psychological Medicine</i>, 49(4), 559-572.
-            </li>
-            <li>
-              Hudson, C. C., Hall, L., & Harkness, K. L. (2019). "Prevalence of depressive disorders in individuals with autism spectrum disorder: a meta-analysis." <i>Journal of Abnormal Child Psychology</i>, 47(1), 165-175.
-            </li>
-            <li>
-              Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <i>Frontiers in Human Neuroscience</i>, 8, 268.
-            </li>
-            <li>
-              Meier, S. M., Petersen, L., Schendel, D. E., et al. (2015). "Obsessive-compulsive disorder and autism spectrum disorders: longitudinal and offspring risk." <i>PLoS One</i>, 10(11).
-            </li>
-            <li>
-              Carmassi, C., Palagini, L., Caruso, D., et al. (2019). "Systematic review of sleep disturbances and circadian sleep desynchronization in autism spectrum disorder: Toward an integrative and comprehensive model." <i>Frontiers in Psychiatry</i>, 10, 366. <i>(Note: Replaces Schwichtenberg as standard representative study)</i>
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Hollocks, M. J., et al. (2019). "Anxiety and depression in adults with autism spectrum disorder: a systematic review and meta-analysis." <i>Psychological Medicine</i>. https://doi.org/10.1017/S003329171800228X</p>
+            <p>2. Hudson, C. C., et al. (2019). "Prevalence of depressive disorders in individuals with autism spectrum disorder: a meta-analysis." <i>Journal of Abnormal Child Psychology</i>. https://doi.org/10.1007/s10802-018-0402-1</p>
+            <p>3. Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <i>Frontiers in Human Neuroscience</i>. https://doi.org/10.3389/fnhum.2014.00268</p>
+            <p>4. Meier, S. M., et al. (2015). "Obsessive-compulsive disorder and autism spectrum disorders: longitudinal and offspring risk." <i>PLoS One</i>. https://doi.org/10.1371/journal.pone.0141703</p>
+            <p>5. Carmassi, C., et al. (2019). "Systematic review of sleep disturbances and circadian sleep desynchronization in autism spectrum disorder: Toward an integrative and comprehensive model." <i>Frontiers in Psychiatry</i>. https://doi.org/10.3389/fpsyt.2019.00366</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425787</p>
+          </div>
         </div>
       </div>
     </div>

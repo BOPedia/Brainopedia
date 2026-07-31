@@ -106,32 +106,24 @@ export function RelationshipsContent({ setCurrentArticle }: RelationshipsContent
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Crompton, C. J., Ropar, D., Evans-Williams, C. V., Flynn, E. G., & Fletcher-Watson, S. (2020). "Autistic peer-to-peer information transfer is highly effective." <i>Autism</i>, 24(7), 1704-1712.
-            </li>
-            <li>
-              Milton, D. E. (2012). "On the ontological status of autism: the 'double empathy problem'." <i>Disability & Society</i>, 27(6), 883-887.
-            </li>
-            <li>
-              Lewis, L. F. (2017). "Realizing a diagnosis of autism spectrum disorder as an adult." <i>International Journal of Mental Health Nursing</i>, 26(4), 346-354.
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Crompton, C. J., et al. (2020). "Autistic peer-to-peer information transfer is highly effective." <i>Autism</i>. https://doi.org/10.1177/1362361320919286</p>
+            <p>2. Milton, D. E. (2012). "On the ontological status of autism: the 'double empathy problem'." <i>Disability & Society</i>. https://doi.org/10.1080/09687599.2012.710008</p>
+            <p>3. Lewis, L. F. (2017). "Realizing a diagnosis of autism spectrum disorder as an adult." <i>International Journal of Mental Health Nursing</i>. https://doi.org/10.1111/inm.12350</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425787</p>
+          </div>
         </div>
       </div>
     </div>

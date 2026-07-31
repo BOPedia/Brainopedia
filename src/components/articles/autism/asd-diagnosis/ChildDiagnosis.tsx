@@ -147,22 +147,33 @@ export function ChildDiagnosis({ setCurrentArticle }: ChildDiagnosisProps) {
         </div>
       </div>
 
+      {/* ===== REFERENCES SECTION ===== */}
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-  {/* CITED STUDIES: GREEN */}
-        <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). Early identification and interventions for autism spectrum disorder. <i>Pediatrics</i>, 136(Supplement 1), S1-S9.</p>
-            <p>2. Lord, C., Rutter, M., DiLavore, P. C., et al. (2012). <i>Autism diagnostic observation schedule, second edition (ADOS-2)</i>. Western Psychological Services.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Zwaigenbaum, L., et al. (2015). "Early identification and interventions for autism spectrum disorder." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2014-3667C</p>
+            <p>2. Lord, C., et al. (2012). <i>Autism Diagnostic Observation Schedule, Second Edition (ADOS-2)</i>. Western Psychological Services. https://www.wpspublish.com/ados-2-autism-diagnostic-observation-schedule-second-edition</p>
           </div>
         </div>
+
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+            Background Sources
+          </h4>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
   );
 }

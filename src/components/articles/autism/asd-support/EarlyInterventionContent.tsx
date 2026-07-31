@@ -458,47 +458,29 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Whitehouse, A., et al. (2021). "A randomized controlled trial of a pre-emptive intervention for infants at high clinical risk for autism." <i>JAMA Pediatrics</i>, 175(11).
-            </li>
-            <li>
-              U.S. Department of Education. (2023). "Individuals with Disabilities Education Act (IDEA) Part C: Infants and Toddlers with Disabilities." <i>ED.gov</i>.
-            </li>
-            <li>
-              Oono, I. P., Honey, E. J., & McConachie, H. (2013). "Parent-mediated early intervention for young children with autism spectrum disorders (ASD)." <i>Cochrane Database of Systematic Reviews</i>, (4).
-            </li>
-            <li>
-              Schreibman, L., et al. (2015). "Naturalistic Developmental Behavioral Interventions: Empirically Validated Treatments for Autism Spectrum Disorder." <i>Journal of Autism and Developmental Disorders</i>, 45(8), 2411-2428.
-            </li>
-            <li>
-              Ingersoll, B., & Wainer, A. (2013). "Initial efficacy of Project ImPACT: A parent-mediated social communication intervention for young children with ASD." <i>Journal of Autism and Developmental Disorders</i>, 43(12), 2943-2952.
-            </li>
-            <li>
-              Dawson, G., et al. (2010). "Randomized, controlled trial of an intervention for toddlers with autism: the Early Start Denver Model." <i>Pediatrics</i>, 125(1), e17-e23.
-            </li>
-            <li>
-              U.S. Department of Education. (2023). "Individuals with Disabilities Education Act (IDEA) Part B: Assistance for All Children with Disabilities." <i>ED.gov</i>.
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Whitehouse, A., et al. (2021). "A randomized controlled trial of a pre-emptive intervention for infants at high clinical risk for autism." <i>JAMA Pediatrics</i>. https://doi.org/10.1001/jamapediatrics.2021.3298</p>
+            <p>2. U.S. Department of Education. (2023). "Individuals with Disabilities Education Act (IDEA) Part C: Infants and Toddlers with Disabilities." <i>ED.gov</i>. https://sites.ed.gov/idea/statuteregulations/</p>
+            <p>3. Oono, I. P., et al. (2013). "Parent-mediated early intervention for young children with autism spectrum disorders (ASD)." <i>Cochrane Database of Systematic Reviews</i>. https://doi.org/10.1002/14651858.CD009774.pub2</p>
+            <p>4. Schreibman, L., et al. (2015). "Naturalistic Developmental Behavioral Interventions: Empirically Validated Treatments for Autism Spectrum Disorder." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-015-2407-8</p>
+            <p>5. Ingersoll, B., & Wainer, A. (2013). "Initial efficacy of Project ImPACT: A parent-mediated social communication intervention for young children with ASD." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-013-1840-9</p>
+            <p>6. Dawson, G., et al. (2010). "Randomized, controlled trial of an intervention for toddlers with autism: the Early Start Denver Model." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2009-0958</p>
+            <p>7. U.S. Department of Education. (2023). "Individuals with Disabilities Education Act (IDEA) Part B: Assistance for All Children with Disabilities." <i>ED.gov</i>. https://sites.ed.gov/idea/statuteregulations/</p>
+          </div>
         </div>
         
-        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Academy of Pediatrics (AAP). "Autism Spectrum Disorder: Early Intervention."
-            </li>
-            <li>
-              Zero to Three. "Early Intervention for Infants and Toddlers."
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Academy of Pediatrics (AAP). "Autism Spectrum Disorder: Early Intervention." https://www.healthychildren.org/English/health-issues/conditions/Autism/Pages/Early-Intervention.aspx</p>
+            <p>Zero to Three. "Early Intervention for Infants and Toddlers." https://www.zerotothree.org/</p>
+          </div>
         </div>
       </div>
     </>

@@ -12,7 +12,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
 
         <p className="mb-6">
           Creating supportive environments reduces barriers and allows autistic individuals to thrive by addressing 
-          sensory needs, providing clear communication, and establishing predictable structures.<sup>1</sup>
+          sensory needs, providing clear communication, and establishing predictable structures.<sup className="text-green-600 font-bold ml-0.5">1</sup>
         </p>
 
         {/* Sensory Accommodations */}
@@ -105,7 +105,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
           
           <p className="mb-4 text-sm">
             Many autistic individuals experience less anxiety when the environment is predictable and expectations are clear. 
-            Visual supports and structured routines help individuals understand expectations, navigate transitions, and manage anxiety.<sup>3</sup>
+            Visual supports and structured routines help individuals understand expectations, navigate transitions, and manage anxiety.<sup className="text-green-600 font-bold ml-0.5">3</sup>
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -171,32 +171,24 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
           
           {/* CITED STUDIES: GREEN */}
           <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
               Cited Studies & Statistics
             </h4>
-            <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-              <li>
-                Martin, C. S. (2014). "Exploring the impact of the design of the physical environment on children with autism spectrum disorders." <i>Journal of Child and Family Studies</i>, 23(4), 746-754.
-              </li>
-              <li>
-                Tomchek, S. D., & Dunn, W. (2007). "Sensory processing in children with and without autism: A comparative study using the short sensory profile." <i>The American Journal of Occupational Therapy</i>, 61(2), 190-200.
-              </li>
-              <li>
-                Mesibov, G. B., & Shea, V. (2010). "The TEACCH program in the era of evidence-based practice." <i>Journal of Autism and Developmental Disorders</i>, 40(5), 570-579.
-              </li>
-            </ol>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>1. Martin, C. S. (2014). "Exploring the impact of the design of the physical environment on children with autism spectrum disorders." <i>Journal of Child and Family Studies</i>. https://doi.org/10.1007/s10826-013-9726-7</p>
+              <p>2. Tomchek, S. D., & Dunn, W. (2007). "Sensory processing in children with and without autism: A comparative study using the short sensory profile." <i>The American Journal of Occupational Therapy</i>. https://doi.org/10.5014/ajot.61.2.190</p>
+              <p>3. Mesibov, G. B., & Shea, V. (2010). "The TEACCH program in the era of evidence-based practice." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-009-0901-6</p>
+            </div>
           </div>
           
           {/* BACKGROUND SOURCES: CYAN */}
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
               Background Sources
             </h4>
-            <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed pl-2">
-              <li>
-                American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-              </li>
-            </ul>
+            <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+              <p>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425596</p>
+            </div>
           </div>
         </div>
 

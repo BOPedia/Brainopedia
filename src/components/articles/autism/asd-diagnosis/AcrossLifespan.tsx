@@ -182,7 +182,7 @@ export function AcrossLifespan({ setCurrentArticle }: AcrossLifespanProps) {
 
           <SubCard icon={EyeOff} title="Important Considerations" accentColor="#f59e0b" bgColor="#fffbeb">
             Some children, particularly girls, may have developed coping strategies or "masking"
-            that hide autistic traits.<sup>1</sup> This can delay
+            that hide autistic traits.<sup className="text-green-600 font-bold ml-0.5">1</sup> This can delay
             diagnosis despite genuine struggles. Burnout from masking often becomes apparent in
             middle school or high school.
           </SubCard>
@@ -223,7 +223,7 @@ export function AcrossLifespan({ setCurrentArticle }: AcrossLifespanProps) {
           <SubCard icon={EyeOff} title="Challenges in Adult Assessment" accentColor="#f59e0b" bgColor="#fffbeb">
             <ul className="space-y-0.5 mt-1">
               <li>• Retrospective developmental history (parents may not be available or remember details)</li>
-              <li>• Learned compensation strategies mask traits<sup>1</sup></li>
+              <li>• Learned compensation strategies mask traits<sup className="text-green-600 font-bold ml-0.5">1</sup></li>
               <li>• Co-occurring conditions (anxiety, depression) developed over years of struggling</li>
               <li>• Adult life demands differ from childhood contexts</li>
             </ul>
@@ -270,32 +270,26 @@ export function AcrossLifespan({ setCurrentArticle }: AcrossLifespanProps) {
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-{/* CITED STUDIES: GREEN */}
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Hull, L., Petrides, K. V., Allison, C., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <i>Journal of Autism and Developmental Disorders</i>, 47(8), 2519–2534.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Hull, L., et al. (2017). "'Putting on my best normal': Social camouflaging in adults with autism spectrum conditions." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-017-3166-5</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Zwaigenbaum, L., Bauman, M. L., Choueiri, R., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <i>Pediatrics</i>, 136(Supplement 1), S1–S9.
-            </li>
-            <li>
-              Howlin, P., Goode, S., Hutton, J., & Rutter, M. (2004). "Adult outcome for children with autism." <i>Journal of Child Psychology and Psychiatry</i>, 45(2), 212–229.
-            </li>
-            <li>
-              Lai, M. C., Lombardo, M. V., & Baron-Cohen, S. (2014). "Autism." <i>The Lancet</i>, 383(9920), 896–910.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Zwaigenbaum, L., et al. (2015). "Early identification and interventions for autism spectrum disorder: Executive summary." <i>Pediatrics</i>. https://doi.org/10.1542/peds.2014-3667B</p>
+            <p>Howlin, P., et al. (2004). "Adult outcome for children with autism." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/j.1469-7610.2004.00215.x</p>
+            <p>Lai, M. C., et al. (2014). "Autism." <i>The Lancet</i>. https://doi.org/10.1016/S0140-6736(13)61539-1</p>
+          </div>
         </div>
       </div>
       

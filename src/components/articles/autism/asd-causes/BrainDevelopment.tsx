@@ -171,28 +171,28 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed italic" style={{ textIndent: 0 }}>
             <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Belmonte, M. K., et al. (2004). "Autism and abnormal development of brain connectivity." <i>Journal of Neuroscience</i>.</li>
-            <li>Courchesne, E., et al. (2011). "Brain growth across the life span in autism: age-specific changes in anatomical pathology." <i>Brain Research</i>.</li>
-            <li>Hazlett, H. C., et al. (2017). "Early brain development in infants at high risk for autism spectrum disorder." <i>Nature</i>.</li>
-            <li>Robertson, C. E., & Baron-Cohen, S. (2017). "Sensory perception in autism." <i>Nature Reviews Neuroscience</i>.</li>
-            <li>Rubenstein, J. L., & Merzenich, M. M. (2003). "Model of autism: increased ratio of excitation/inhibition in key neural systems." <i>Genes, Brain and Behavior</i>.</li>
-            <li>Vargas, D. L., et al. (2005). "Neuroinflammation in Autism." <i>Annals of Neurology</i>.</li>
-            <li>Zoghbi, H. Y., & Bear, M. F. (2012). "Synaptic Dysfunction in Neurodevelopmental Disorders." <i>Cold Spring Harbor Perspectives in Biology</i>.</li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Belmonte, M. K., et al. (2004). "Autism and abnormal development of brain connectivity." <i>Journal of Neuroscience</i>. https://doi.org/10.1523/JNEUROSCI.4346-04.2004</p>
+            <p>Courchesne, E., et al. (2011). "Brain growth across the life span in autism: age-specific changes in anatomical pathology." <i>Brain Research</i>. https://doi.org/10.1016/j.brainres.2010.11.043</p>
+            <p>Hazlett, H. C., et al. (2017). "Early brain development in infants at high risk for autism spectrum disorder." <i>Nature</i>. https://doi.org/10.1038/nature21369</p>
+            <p>Robertson, C. E., & Baron-Cohen, S. (2017). "Sensory perception in autism." <i>Nature Reviews Neuroscience</i>. https://doi.org/10.1038/nrn.2017.112</p>
+            <p>Rubenstein, J. L., & Merzenich, M. M. (2003). "Model of autism: increased ratio of excitation/inhibition in key neural systems." <i>Genes, Brain and Behavior</i>. https://doi.org/10.1034/j.1601-183X.2003.00037.x</p>
+            <p>Vargas, D. L., et al. (2005). "Neuroglial activation and neuroinflammation in the brain of patients with autism." <i>Annals of Neurology</i>. https://doi.org/10.1002/ana.20315</p>
+            <p>Zoghbi, H. Y., & Bear, M. F. (2012). "Synaptic Dysfunction in Neurodevelopmental Disorders Associated with Autism and Intellectual Disabilities." <i>Cold Spring Harbor Perspectives in Biology</i>. https://doi.org/10.1101/cshperspect.a009886</p>
+          </div>
         </div>
       </div>
     </div>

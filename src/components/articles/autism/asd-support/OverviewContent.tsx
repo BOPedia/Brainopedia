@@ -93,62 +93,34 @@ export function OverviewContent({ setCurrentArticle }: OverviewContentProps) {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Leadbitter, K., Buckle, K. L., Ellis, C., & Dekker, M. (2021). "Autistic Self-Advocacy and the Neurodiversity Movement: Implications for Autism Early Intervention Research and Practice." <i>Frontiers in Psychology</i>, 12, 635690. https://doi.org/10.3389/fpsyg.2021.635690
-            </li>
-            <li>
-              Biklen, D., & Burke, J. (2006). "Presuming Competence." <i>Equity & Excellence in Education</i>, 39(2), 166-175.
-            </li>
-            <li>
-              Wehmeyer, M. L., et al. (2010). "Self-Determination and Individuals with Severe Disabilities: Re-evaluating Meanings and Misinterpretations." <i>Research and Practice for Persons with Severe Disabilities</i>, 35(1-2).
-            </li>
-            <li>
-              Fletcher-Watson, S., et al. (2019). "Making the future together: Shaping autism research through meaningful participation." <i>Autism</i>, 23(4), 943-953.
-            </li>
-            <li>
-              U.S. Food and Drug Administration. (2019). "FDA warns consumers about the dangerous and potentially life threatening side effects of Miracle Mineral Solution." <i>FDA Safety Alert</i>.
-            </li>
-            <li>
-              James, S., et al. (2015). "Chelation for autism spectrum disorder (ASD)." <i>Cochrane Database of Systematic Reviews</i>, (5).
-            </li>
-            <li>
-              Xiong, T., et al. (2016). "Hyperbaric oxygen therapy for people with autism spectrum disorder (ASD)." <i>Cochrane Database of Systematic Reviews</i>, (10).
-            </li>
-            <li>
-              Williams, K., et al. (2012). "Intravenous secretin for autism spectrum disorder (ASD)." <i>Cochrane Database of Systematic Reviews</i>, (4).
-            </li>
-            <li>
-              Hemsley, B., et al. (2018). "Systematic review of facilitated communication 2014-2018 finds no new evidence that messages delivered using facilitated communication are authored by the person with disability." <i>Autism & Developmental Language Impairments</i>, 3.
-            </li>
-            <li>
-              Kupferstein, H. (2018). "Evidence of increased PTSD symptoms in autistics exposed to applied behavior analysis." <i>Advances in Autism</i>, 4(1), 19-29.
-            </li>
-            <li>
-              Piwowarczyk, A., et al. (2018). "Gluten- and casein-free diet and autism spectrum disorders in children: a systematic review." <i>European Journal of Nutrition</i>, 57(2), 433-440.
-            </li>
-            <li>
-              Levy, S. E., & Hyman, S. L. (2015). "Complementary and Alternative Medicine Treatments for Children with Autism Spectrum Disorders." <i>Child and Adolescent Psychiatric Clinics of North America</i>, 24(1), 117-143.
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Leadbitter, K., et al. (2021). "Autistic Self-Advocacy and the Neurodiversity Movement: Implications for Autism Early Intervention Research and Practice." <i>Frontiers in Psychology</i>. https://doi.org/10.3389/fpsyg.2021.635690</p>
+            <p>2. Biklen, D., & Burke, J. (2006). "Presuming Competence." <i>Equity & Excellence in Education</i>. https://doi.org/10.1080/10665680600592536</p>
+            <p>3. Wehmeyer, M. L., et al. (2010). "Self-Determination and Individuals with Severe Disabilities: Re-evaluating Meanings and Misinterpretations." <i>Research and Practice for Persons with Severe Disabilities</i>. https://doi.org/10.2511/rpsd.35.1-2.29</p>
+            <p>4. Fletcher-Watson, S., et al. (2019). "Making the future together: Shaping autism research through meaningful participation." <i>Autism</i>. https://doi.org/10.1177/1362361318786721</p>
+            <p>5. U.S. Food and Drug Administration. (2019). "FDA warns consumers about the dangerous and potentially life threatening side effects of Miracle Mineral Solution." <i>FDA Safety Alert</i>. https://www.fda.gov/news-events/press-announcements/fda-warns-consumers-about-dangerous-and-potentially-life-threatening-side-effects-miracle-mineral</p>
+            <p>6. James, S., et al. (2015). "Chelation for autism spectrum disorder (ASD)." <i>Cochrane Database of Systematic Reviews</i>. https://doi.org/10.1002/14651858.CD005398.pub3</p>
+            <p>7. Xiong, T., et al. (2016). "Hyperbaric oxygen therapy for people with autism spectrum disorder (ASD)." <i>Cochrane Database of Systematic Reviews</i>. https://doi.org/10.1002/14651858.CD010922.pub2</p>
+            <p>8. Williams, K., et al. (2012). "Intravenous secretin for autism spectrum disorder (ASD)." <i>Cochrane Database of Systematic Reviews</i>. https://doi.org/10.1002/14651858.CD003495.pub3</p>
+            <p>9. Hemsley, B., et al. (2018). "Systematic review of facilitated communication 2014-2018 finds no new evidence that messages delivered using facilitated communication are authored by the person with disability." <i>Autism & Developmental Language Impairments</i>. https://doi.org/10.1177/2396941518821570</p>
+            <p>10. Kupferstein, H. (2018). "Evidence of increased PTSD symptoms in autistics exposed to applied behavior analysis." <i>Advances in Autism</i>. https://doi.org/10.1108/AIA-08-2017-0016</p>
+            <p>11. Piwowarczyk, A., et al. (2018). "Gluten- and casein-free diet and autism spectrum disorders in children: a systematic review." <i>European Journal of Nutrition</i>. https://doi.org/10.1007/s00394-017-1483-2</p>
+            <p>12. Levy, S. E., & Hyman, S. L. (2015). "Complementary and Alternative Medicine Treatments for Children with Autism Spectrum Disorders." <i>Child and Adolescent Psychiatric Clinics of North America</i>. https://doi.org/10.1016/j.chc.2014.09.004</p>
+          </div>
         </div>
         
-        {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Autistic Self Advocacy Network (ASAN). "Position Statements on Support and Treatments."
-            </li>
-            <li>
-              AANE (Asperger/Autism Network). "Navigating Autism Therapies and Interventions."
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Autistic Self Advocacy Network (ASAN). "Position Statements on Support and Treatments." https://autisticadvocacy.org/policy/briefs/interventions/</p>
+            <p>AANE (Asperger/Autism Network). "Navigating Autism Therapies and Interventions." https://www.aane.org/resources/therapies-interventions/</p>
+          </div>
         </div>
       </div>
     </>

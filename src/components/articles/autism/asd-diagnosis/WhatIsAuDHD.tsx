@@ -40,10 +40,10 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         </p>
         
         <ul className="text-sm space-y-2 ml-6 mb-4">
-          <li className="mb-2">• <strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup>1</sup></li>
-          <li className="mb-2">• <strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup>2</sup></li>
+          <li className="mb-2">• <strong>50-70%</strong> of autistic individuals meet criteria for ADHD<sup className="text-green-600 font-bold ml-0.5">1</sup></li>
+          <li className="mb-2">• <strong>30-50%</strong> of individuals with ADHD meet criteria for autism<sup className="text-green-600 font-bold ml-0.5">2</sup></li>
           <li className="mb-2">• Until the DSM-5 (2013), dual diagnosis was not officially permitted, leading to historical underdiagnosis</li>
-          <li className="mb-2">• Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup>3</sup></li>
+          <li className="mb-2">• Studies indicate AuDHD may represent one of the most common forms of neurodevelopmental comorbidity<sup className="text-green-600 font-bold ml-0.5">3</sup></li>
         </ul>
 
         <div className="bg-[#f0f9ff] p-4 rounded-md border border-[#2abcd4]">
@@ -259,7 +259,7 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
           <strong>Best Practice:</strong> Comprehensive evaluation should systematically assess for both conditions, 
           especially when initial interventions for one diagnosis don't fully address the individual's challenges. 
           Studies show that many autistic individuals benefit from ADHD-specific interventions once ADHD is 
-          properly identified.<sup>4</sup>
+          properly identified.<sup className="text-green-600 font-bold ml-0.5">4</sup>
         </p>
       </div>
 
@@ -357,30 +357,26 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Antshel, K. M., & Russo, N. (2019). "Autism spectrum disorders and ADHD: Overlapping phenomenology, diagnostic issues, and treatment considerations." <i>Current Psychiatry Reports</i>, 21(5), 34.</p>
-            <p>2. Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <i>Frontiers in Human Neuroscience</i>, 8, 268.</p>
-            <p>3. Jang, J., Matson, J. L., Williams, L. W., et al. (2013). "Rates of comorbid symptoms in children with ASD, ADHD, and comorbid ASD and ADHD." <i>Research in Developmental Disabilities</i>, 34(8), 2369-2378.</p>
-            <p>4. Mulligan, A., Anney, R. J., O'Regan, M., et al. (2009). "Autism symptoms in attention-deficit/hyperactivity disorder: A familial trait which correlates with conduct, oppositional defiant, language and motor disorders." <i>Journal of Autism and Developmental Disorders</i>, 39(2), 197-209.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Antshel, K. M., & Russo, N. (2019). "Autism spectrum disorders and ADHD: Overlapping phenomenology, diagnostic issues, and treatment considerations." <i>Current Psychiatry Reports</i>. https://doi.org/10.1007/s11920-019-1020-5</p>
+            <p>2. Leitner, Y. (2014). "The co-occurrence of autism and attention deficit hyperactivity disorder in children–what do we know?" <i>Frontiers in Human Neuroscience</i>. https://doi.org/10.3389/fnhum.2014.00268</p>
+            <p>3. Jang, J., et al. (2013). "Rates of comorbid symptoms in children with ASD, ADHD, and comorbid ASD and ADHD." <i>Research in Developmental Disabilities</i>. https://doi.org/10.1016/j.ridd.2013.04.021</p>
+            <p>4. Mulligan, A., et al. (2009). "Autism symptoms in attention-deficit/hyperactivity disorder: A familial trait which correlates with conduct, oppositional defiant, language and motor disorders." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-008-0621-3</p>
           </div>
         </div>
 
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0"> 
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-            <li>
-              Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}> 
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+            <p>Lord, C., et al. (2018). "Autism spectrum disorder." <i>The Lancet</i>. https://doi.org/10.1016/S0140-6736(18)31129-2</p>
+          </div>
         </div>
       </div>
     </div>

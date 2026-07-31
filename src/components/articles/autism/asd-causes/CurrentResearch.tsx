@@ -93,29 +93,28 @@ export function CurrentResearch({ setCurrentArticle }: CurrentResearchProps) {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Lord, C., Elsabbagh, M., Baird, G., & Veenstra-Vanderweele, J. (2018). "Autism spectrum disorder." <i>The Lancet</i>, 392(10146), 508-520.</p>
-            <p>2. Pellicano, E., & den Houting, J. (2022). "Annual Research Review: Shifting from 'normal science' to neurodiversity in autism science." <i>Journal of Child Psychology and Psychiatry</i>, 63(4), 381-396.</p>
-            <p>3. Lyall, K., Croen, L., Daniels, J., et al. (2017). "The changing epidemiology of autism spectrum disorders." <i>Annual Review of Public Health</i>, 38, 81-102.</p>
+          <div className="text-xs space-y-4 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Lord, C., et al. (2018). "Autism spectrum disorder." <i>The Lancet</i>. https://doi.org/10.1016/S0140-6736(18)31129-2</p>
+            <p>2. Pellicano, E., & den Houting, J. (2022). "Annual Research Review: Shifting from 'normal science' to neurodiversity in autism science." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/jcpp.13534</p>
+            <p>3. Lyall, K., et al. (2017). "The changing epidemiology of autism spectrum disorders." <i>Annual Review of Public Health</i>. https://doi.org/10.1146/annurev-publhealth-031816-044318</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Kapp, S. K. (Ed.). (2020). <i>Autistic Community and the Neurodiversity Movement: Stories from the Frontline</i>. Palgrave Macmillan.</li>
-            <li>Chapman, R., & Carel, H. (2022). "Neurodiversity, epistemic injustice, and the good human life." <i>Journal of Social Philosophy</i>, 53(4), 614-631.</li>
-            <li>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.).</li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Kapp, S. K. (Ed.). (2020). <i>Autistic Community and the Neurodiversity Movement: Stories from the Frontline</i>. Palgrave Macmillan. https://doi.org/10.1007/978-981-13-8437-0</p>
+            <p>Chapman, R., & Carel, H. (2022). "Neurodiversity, epistemic injustice, and the good human life." <i>Journal of Social Philosophy</i>. https://doi.org/10.1111/josp.12466</p>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+          </div>
         </div>
       </div>
      </div>
-  
   );
 }
