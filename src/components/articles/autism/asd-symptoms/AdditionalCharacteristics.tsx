@@ -182,7 +182,7 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
           
           {expandedSection === 'exec' && (
             <div className="px-5 pb-5 pt-2 border-t border-gray-50">
-              <p className="mb-4 text-sm text-slate-700">Challenges in cognitive management and self-regulation.<sup>1</sup></p>
+              <p className="mb-4 text-sm text-slate-700">Challenges in cognitive management and self-regulation.<sup className="text-green-600 font-bold ml-0.5">1</sup></p>
               <div className="space-y-3">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="border-l-2 border-[#2abcd4] pl-3">
@@ -252,7 +252,7 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
           
           {expandedSection === 'motor' && (
             <div className="px-5 pb-5 pt-2 border-t border-gray-50">
-              <p className="mb-4 text-sm text-slate-700">Challenges related to the physical body and spatial coordination.<sup>3</sup></p>
+              <p className="mb-4 text-sm text-slate-700">Challenges related to the physical body and spatial coordination.<sup className="text-green-600 font-bold ml-0.5">3</sup></p>
               <div className="space-y-3">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="border-l-2 border-[#2abcd4] pl-3">
@@ -348,25 +348,25 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Demetriou, E. A., Lampit, A., Quintana, D. S., et al. (2018). "Autism spectrum disorder: An executive function meta-analysis." <i>Neuroscience & Biobehavioral Reviews</i>, 84, 213-221.</p>
-            <p>2. Kinnaird, E., Stewart, C., & Tchanturia, K. (2019). "Investigating alexithymia in autism: A systematic review and meta-analysis." <i>European Psychiatry</i>, 55, 80-89.</p>
-            <p>3. Fournier, K. A., Hass, C. J., Naik, S. K., et al. (2010). "Motor coordination in autism spectrum disorders: A synthesis and meta-analysis." <i>Journal of Autism and Developmental Disorders</i>, 40(10), 1227-1240.</p>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Demetriou, E. A., et al. (2018). "Autism spectrum disorder: An executive function meta-analysis." <i>Neuroscience & Biobehavioral Reviews</i>. https://doi.org/10.1016/j.neubiorev.2017.11.020</p>
+            <p>2. Kinnaird, E., et al. (2019). "Investigating alexithymia in autism: A systematic review and meta-analysis." <i>European Psychiatry</i>. https://doi.org/10.1016/j.eurpsy.2018.09.004</p>
+            <p>3. Fournier, K. A., et al. (2010). "Motor coordination in autism spectrum disorders: A synthesis and meta-analysis." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-010-0981-3</p>
           </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
-            <li>Fletcher-Watson, S., & Happé, F. (2019). <i>Autism: A new introduction to psychological theory and current debate</i>. Routledge.</li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+            <p>Fletcher-Watson, S., & Happé, F. (2019). <i>Autism: A new introduction to psychological theory and current debate</i>. Routledge. https://doi.org/10.4324/9781315101699</p>
+          </div>
         </div>
       </div>
       

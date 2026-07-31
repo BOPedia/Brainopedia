@@ -508,27 +508,27 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
       
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal list-inside m-0 p-0 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>Centers for Disease Control and Prevention. (2023). "Data & Statistics on Autism Spectrum Disorder." U.S. Department of Health and Human Services.</li>
-            <li>Loomes, R., Hull, L., & Mandy, W. P. L. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>, 56(6), 466-474.</li>
-            <li>Taylor, L. E., Swerdfeger, A. L., & Eslick, G. D. (2014). "Vaccines are not associated with autism: an evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>, 32(29), 3623-3629.</li>
-            <li>Kanner, L. (1943). "Autistic disturbances of affective contact." <i>Nervous Child</i>, 2, 217-250.</li>
-            <li>Asperger, H. (1944). "Die 'Autistischen Psychopathen' im Kindesalter." <i>Archiv für Psychiatrie und Nervenkrankheiten</i>, 117(1), 76-136.</li>
-            <li>Silverman, C. (2012). <i>Understanding Autism: Parents, Doctors, and the History of a Disorder</i>. Princeton University Press.</li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Centers for Disease Control and Prevention. (2023). "Data & Statistics on Autism Spectrum Disorder." U.S. Department of Health and Human Services. https://www.cdc.gov/ncbddd/autism/data.html</p>
+            <p>2. Loomes, R., et al. (2017). "What Is the Male-to-Female Ratio in Autism Spectrum Disorder? A Systematic Review and Meta-Analysis." <i>Journal of the American Academy of Child & Adolescent Psychiatry</i>. https://doi.org/10.1016/j.jaac.2017.03.013</p>
+            <p>3. Taylor, L. E., et al. (2014). "Vaccines are not associated with autism: an evidence-based meta-analysis of case-control and cohort studies." <i>Vaccine</i>. https://doi.org/10.1016/j.vaccine.2014.04.085</p>
+            <p>4. Kanner, L. (1943). "Autistic disturbances of affective contact." <i>Nervous Child</i>. https://neurodiversity.com/library_kanner_1943.pdf</p>
+            <p>5. Asperger, H. (1944). "Die 'Autistischen Psychopathen' im Kindesalter." <i>Archiv für Psychiatrie und Nervenkrankheiten</i>. https://doi.org/10.1007/BF01837709</p>
+            <p>6. Silverman, C. (2012). <i>Understanding Autism: Parents, Doctors, and the History of a Disorder</i>. Princeton University Press. https://press.princeton.edu/books/paperback/9780691155998/understanding-autism</p>
+          </div>
         </div>
         
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none m-0 p-0 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>Autistic Self Advocacy Network (ASAN). "About Autism." National advocacy organization run by and for autistic individuals.</li>
-            <li>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.).</li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Autistic Self Advocacy Network (ASAN). "About Autism." National advocacy organization run by and for autistic individuals. https://autisticadvocacy.org/about-asan/about-autism/</p>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+          </div>
         </div>
       </div>
     </article>

@@ -26,7 +26,7 @@ export function CoreSymptoms() {
           <h2 className="font-bold mb-4 text-2xl">Understanding Core Characteristics</h2>
           <p className="mb-4 leading-relaxed">
             The characteristics of autism spectrum disorder are highly variable, but they fall into two main 
-            categories as defined by the DSM-5: persistent differences in social communication and interaction, 
+            categories as defined by the DSM-5-TR:<sup className="text-green-600 font-bold ml-0.5">1</sup> persistent differences in social communication and interaction, 
             and restricted, repetitive patterns of behavior, interests, or activities.
           </p>
         </div>
@@ -40,9 +40,9 @@ export function CoreSymptoms() {
         </div>
       </div>
 
-      {/* DSM-5 Symptom Chart */}
+      {/* DSM-5-TR Symptom Chart */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
-        <h2 className="font-bold mb-6 text-2xl text-center">DSM-5 Diagnostic Categories</h2>
+        <h2 className="font-bold mb-6 text-2xl text-center">DSM-5-TR Diagnostic Categories</h2>
 
         <div className="flex justify-center mb-8">
           <ImageWithFallback 
@@ -120,6 +120,35 @@ export function CoreSymptoms() {
               <p className="text-xs">{item.desc}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+            Cited Studies & Statistics
+          </h4>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+          </div>
+        </div>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+            Background Sources
+          </h4>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Lord, C., et al. (2020). "Autism spectrum disorder." <i>Nature Reviews Disease Primers</i>. https://doi.org/10.1038/s41572-019-0138-4</p>
+            <p>Constantino, J. N., & Charman, T. (2016). "Diagnosis of autism spectrum disorder: reconciling the syndrome, its diverse etiology, and variation in expression." <i>The Lancet Neurology</i>. https://doi.org/10.1016/S1474-4422(16)00033-1</p>
+            <p>Hull, L., et al. (2017). "Putting on My Best Normal: Social Camouflaging in Adults with Autism Spectrum Conditions." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-017-3166-5</p>
+          </div>
         </div>
       </div>
     </div>

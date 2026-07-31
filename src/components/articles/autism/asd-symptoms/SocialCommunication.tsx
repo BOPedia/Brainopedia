@@ -148,7 +148,7 @@ export function SocialCommunication({ setCurrentArticle }: SocialCommunicationPr
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
           <p className="text-xs text-slate-600 italic pl-2">
@@ -158,23 +158,15 @@ export function SocialCommunication({ setCurrentArticle }: SocialCommunicationPr
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.
-            </li>
-            <li>
-              Chevallier, C., Kohls, G., Troiani, V., Brodkin, E. S., & Schultz, R. T. (2012). "The social motivation theory of autism." <i>Trends in Cognitive Sciences</i>, 16(4), 231-239.
-            </li>
-            <li>
-              Milton, D. E. M. (2012). "On the ontological status of autism: The 'double empathy problem.'" <i>Disability & Society</i>, 27(6), 883-887.
-            </li>
-            <li>
-              Scheeren, A. M., Koot, H. M., & Begeer, S. (2012). "Social interaction style of children and adolescents with high-functioning autism spectrum disorder." <i>Journal of Autism and Developmental Disorders</i>, 42(10), 2092-2107.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+            <p>Chevallier, C., et al. (2012). "The social motivation theory of autism." <i>Trends in Cognitive Sciences</i>. https://doi.org/10.1016/j.tics.2012.02.007</p>
+            <p>Milton, D. E. M. (2012). "On the ontological status of autism: The 'double empathy problem'." <i>Disability & Society</i>. https://doi.org/10.1080/09687599.2012.710008</p>
+            <p>Scheeren, A. M., et al. (2012). "Social interaction style of children and adolescents with high-functioning autism spectrum disorder." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-012-1456-3</p>
+          </div>
         </div>
       </div>
       

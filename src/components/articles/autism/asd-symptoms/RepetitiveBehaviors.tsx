@@ -233,31 +233,23 @@ export function RepetitiveBehaviors() {
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
-          <ol className="list-decimal ml-5 text-xs space-y-3 text-slate-600 leading-relaxed">
-            <li>
-              Petty, S., Trickett, A., Thompson, K., Garbutt, R., & Saunders, M. (2022). Revising our understanding of emotional distress for autistic adults; call for research. <i>Current Psychology</i>, <i>42</i>, 21518-21521. https://doi.org/10.1007/s12144-022-03254-0
-              <br />Cited by: 8
-            </li>
-            <li>
-              MacLennan, K., O’Brien, S., & Tavassoli, T. (2021). In Our Own Words: The Complex Sensory Experiences of Autistic Adults. <i>Journal of Autism and Developmental Disorders</i>, <i>52</i>, 3061-3075. https://doi.org/10.1007/s10803-021-05186-3
-              <br />Cited by: 236
-            </li>
-          </ol>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Petty, S., et al. (2022). "Revising our understanding of emotional distress for autistic adults; call for research." <i>Current Psychology</i>. https://doi.org/10.1007/s12144-022-03254-0</p>
+            <p>2. MacLennan, K., et al. (2021). "In Our Own Words: The Complex Sensory Experiences of Autistic Adults." <i>Journal of Autism and Developmental Disorders</i>. https://doi.org/10.1007/s10803-021-05186-3</p>
+          </div>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN (No Indentation) */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.).
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+          </div>
         </div>
       </div>
 

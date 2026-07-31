@@ -174,33 +174,26 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
             Cited Studies & Statistics
           </h4>
-          <p className="text-xs text-slate-600 italic pl-2">
+          <p className="text-xs text-slate-600 italic">
             No specific inline citations for this tab. Strengths profiles are derived from the foundational literature below.
           </p>
         </div>
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0">
-            <li>
-              Baron-Cohen, S., Ashwin, E., Ashwin, C., Tavassoli, T., & Chakrabarti, B. (2009). "Talent in autism: hyper-systemizing, hyper-attention to detail and sensory hypersensitivity." <i>Philosophical Transactions of the Royal Society B: Biological Sciences</i>, 364(1522), 1377-1383.
-            </li>
-            <li>
-              Grandin, T. (2006). "Thinking in pictures: And other reports from my life with autism." <i>Vintage Books</i>.
-            </li>
-            <li>
-              Mottron, L. (2011). "Changing perceptions: The power of autism." <i>Nature</i>, 479(7371), 33-35.
-            </li>
-            <li>
-              Russell, G., Kapp, S. K., Elliott, D., Elphick, C., Gwernan-Jones, R., & Kelly, C. (2019). "Mapping the autistic advantage from the accounts of adults diagnosed with autism: A qualitative study." <i>Autism in Adulthood</i>, 1(2), 124-133.
-            </li>
-          </ul>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
+            <p>Baron-Cohen, S., et al. (2009). "Talent in autism: hyper-systemizing, hyper-attention to detail and sensory hypersensitivity." <i>Philosophical Transactions of the Royal Society B: Biological Sciences</i>. https://doi.org/10.1098/rstb.2008.0337</p>
+            <p>Grandin, T. (2006). <i>Thinking in Pictures: And Other Reports from My Life with Autism</i>. Vintage Books. https://www.penguinrandomhouse.com/books/60259/thinking-in-pictures-expanded-edition-by-temple-grandin/</p>
+            <p>Mottron, L. (2011). "Changing perceptions: The power of autism." <i>Nature</i>. https://doi.org/10.1038/479033a</p>
+            <p>Russell, G., et al. (2019). "Mapping the autistic advantage from the accounts of adults diagnosed with autism: A qualitative study." <i>Autism in Adulthood</i>. https://doi.org/10.1089/aut.2018.0035</p>
+          </div>
         </div>
       </div>
 
