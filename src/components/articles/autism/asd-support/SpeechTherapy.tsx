@@ -1,7 +1,6 @@
 import React from 'react';
-import { MessageSquare, Repeat, MonitorSmartphone, HandMetal, Eye, Heart, Volume2, LayoutGrid, Users } from 'lucide-react';
+import { MessageSquare, Repeat, MonitorSmartphone, HandMetal, Eye, Heart, Volume2, LayoutGrid, Users, Activity, CheckCircle, XCircle, ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
-import { SectionActions } from '../../../SectionActions';
 
 /* ─── INTERFACE ─── */
 interface SpeechTherapyProps {
@@ -12,39 +11,37 @@ interface SpeechTherapyProps {
 export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
   
   const responsiveImageClass = "w-full sm:w-96 md:w-[28rem] h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm";
+  const centeredSmallImageClass = "w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm";
+  const floatedCardContainer = "float-right ml-6 mb-4 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-64 shrink-0";
+  const floatedImageClass = "w-full h-auto rounded-md block";
   
   return (
-    <div id="full-speech-article" className="space-y-6 text-[#0c264d] font-spartan animate-in fade-in duration-300">
-      {/* 1. I added the id directly to your existing main wrapper ABOVE! */}
+    <div id="full-speech-article" className="space-y-6 text-[#0c264d] font-spartan animate-in fade-in duration-300 w-full min-w-0">
       
-      {/* Header with Back Button */}
+      {/* ===== HEADER ROW ===== */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <h1 className="text-3xl text-[#0c264d] font-bold">
+        <h1 className="text-3xl text-[#0c264d] font-normal">
           Speech and Language Therapy
         </h1>
 
         <button 
           onClick={() => setCurrentArticle?.('autism-support-therapies')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shrink-0"
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
         >
-          <span className="text-xl">&larr;</span>
-          Back to Therapies
+          <span className="text-lg">&larr;</span>
+          All About Autism
         </button>
       </div>
 
-      {/* 2. Here is the Master Action Bar for the whole page */}
-      <SectionActions 
-        sectionId="full-speech-article" 
-        sectionTitle="Complete Guide to Speech Therapy" 
-      />
-
       {/* Introduction (Floated Image) */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8 flow-root">
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-intro.png"
-          alt="Speech Therapy Intro"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4 shadow-sm"
-        />
+        <div className={floatedCardContainer}>
+          <ImageWithFallback 
+            src="/images/autism/autism-support-TTtab-speech-intro.png"
+            alt="Speech Therapy Intro"
+            className={floatedImageClass}
+          />
+        </div>
         <p className="text-sm leading-relaxed mb-4">
           With an autism diagnosis, selecting communication strategies is a crucial step to empower the individual. Approaches range from high-tech AAC devices and structured language programs to naturalistic, everyday strategies that integrate seamlessly into a person's life.
         </p>
@@ -66,26 +63,38 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           className={responsiveImageClass}
         />
 
-        <p className="text-sm mb-4 text-gray-700 leading-relaxed">
+        <p className="text-sm mb-6 text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
           Communication isn't just about the tools an individual uses; it is heavily dependent on how we set up the physical space and how we act as communication partners.
         </p>
 
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Wait Time</div>
-            <div className="text-sm text-gray-700">After asking a question or making a statement, wait at least 10-15 seconds. Processing language and formulating a response can take much longer for autistic individuals.</div>
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
+            <div className="font-bold text-[#0c264d] mb-1 text-sm uppercase tracking-wider flex items-center gap-2">
+              <span className="w-6 h-6 rounded-full bg-[#10b981] text-white flex items-center justify-center text-xs">1</span>
+              Wait Time (10-15 Sec)
+            </div>
+            <div className="text-sm text-gray-700 ml-8">After asking a question or making a statement, wait at least 10-15 seconds. Processing language and formulating a response can take much longer for autistic individuals.</div>
           </div>
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Reduce Verbal Demands</div>
-            <div className="text-sm text-gray-700">Avoid firing rapid questions. Use more declarative comments (e.g., <em>"I see you're looking at the car"</em>) rather than constant demands (e.g., <em>"What is that?"</em>).</div>
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
+            <div className="font-bold text-[#0c264d] mb-1 text-sm uppercase tracking-wider flex items-center gap-2">
+              <span className="w-6 h-6 rounded-full bg-[#ffd166] text-[#0c264d] flex items-center justify-center text-xs">2</span>
+              Reduce Verbal Demands
+            </div>
+            <div className="text-sm text-gray-700 ml-8">Avoid firing rapid questions. Use more declarative comments (e.g., <em>"I see you're looking at the car"</em>) rather than constant demands (e.g., <em>"What is that?"</em>).</div>
           </div>
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Accept All Communication</div>
-            <div className="text-sm text-gray-700">Treat any attempt to communicate—a gesture, a sound, leading you by the hand, or looking at an object—as entirely valid and respond to it naturally.</div>
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
+            <div className="font-bold text-[#0c264d] mb-1 text-sm uppercase tracking-wider flex items-center gap-2">
+              <span className="w-6 h-6 rounded-full bg-[#2abcd4] text-white flex items-center justify-center text-xs">3</span>
+              Accept All Communication
+            </div>
+            <div className="text-sm text-gray-700 ml-8">Treat any attempt to communicate—a gesture, a sound, leading you by the hand, or looking at an object—as entirely valid and respond to it naturally.</div>
           </div>
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Model the Tools</div>
-            <div className="text-sm text-gray-700">Use the person's AAC system yourself to show them how it works without demanding they use it (e.g., press "I want drink" on their board when offering them water).</div>
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
+            <div className="font-bold text-[#0c264d] mb-1 text-sm uppercase tracking-wider flex items-center gap-2">
+              <span className="w-6 h-6 rounded-full bg-[#0c264d] text-white flex items-center justify-center text-xs">4</span>
+              Model the Tools
+            </div>
+            <div className="text-sm text-gray-700 ml-8">Use the person's AAC system yourself to show them how it works without demanding they use it (e.g., press "I want drink" on their board when offering them water).</div>
           </div>
         </div>
       </div>
@@ -134,11 +143,11 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           AAC: Augmentative & Alternative Communication
         </h2>
         
-        <p className="text-sm mb-4 text-gray-700 leading-relaxed">
+        <p className="text-sm mb-6 text-gray-700 leading-relaxed">
           AAC methods supplement or replace speech. It is critical to understand that <strong>AAC does not hinder verbal speech development</strong>. The golden rule of AAC is to presume competence and provide a robust vocabulary so the individual can complain, tell jokes, and express complex feelings, not just request items.
         </p>
 
-        <div className="space-y-6">
+        <div className="space-y-8">
           <div>
             <h4 className="font-bold text-[#0c264d] mb-3 flex items-center gap-2 border-b border-[#ffd166]/50 pb-1">
               <HandMetal className="text-[#d97706]" size={18} /> No-Tech / Low-Tech AAC
@@ -170,13 +179,13 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
               <LayoutGrid className="text-[#d97706]" size={18} /> High-Tech AAC & Devices
             </h4>
             <div className="grid md:grid-cols-2 gap-3 mb-4">
-              <div className="bg-[#fff9e6] p-3 rounded border border-[#ffd166]/30">
+              <div className="bg-[#fff9e6] p-4 rounded border border-[#ffd166]/30">
                 <div className="font-bold text-[#0c264d] text-sm mb-1">Robust iOS Apps</div>
                 <div className="text-sm text-gray-700">Apps like <em>ProLoQuo2Go, TouchChat</em>, and <em>LAMP Words for Life</em> allow users to build complete sentences via symbols on a tablet.</div>
               </div>
-              <div className="bg-[#fff9e6] p-3 rounded border border-[#ffd166]/30">
+              <div className="bg-[#fff9e6] p-4 rounded border border-[#ffd166]/30">
                 <div className="font-bold text-[#0c264d] text-sm mb-1">Dedicated Devices</div>
-                <div className="text-sm text-gray-700">Medical-grade speech-generating devices (from companies like Tobii Dynavox or PRC), often featuring eye-gaze technology for limited motor skills.</div>
+                <div className="text-sm text-gray-700">Medical-grade speech-generating devices (often featuring eye-gaze technology for limited motor skills).</div>
               </div>
             </div>
             
@@ -191,14 +200,24 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
             <h4 className="font-bold text-[#0c264d] mb-3 flex items-center gap-2 border-b border-[#ffd166]/50 pb-1">
               <Volume2 className="text-[#d97706]" size={18} /> Technology-Assisted Tools
             </h4>
-            <div className="grid md:grid-cols-2 gap-3">
-              <div className="bg-[#fff9e6] p-3 rounded border border-[#ffd166]/30">
-                <div className="font-bold text-[#0c264d] text-sm mb-1">Text-to-Speech</div>
-                <div className="text-sm text-gray-700">For individuals who can spell, apps like <em>Predictable</em> (or simple Notes apps) offer powerful on-the-fly communication.</div>
+            
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20 shadow-sm">
+                <div className="font-bold text-[#0c264d] text-sm mb-2 uppercase tracking-wider">Text-to-Speech</div>
+                <div className="text-sm text-gray-700">For individuals who can spell, apps like <em>Predictable</em> (or simple Notes apps) offer powerful on-the-fly communication by reading typed words out loud.</div>
               </div>
-              <div className="bg-[#fff9e6] p-3 rounded border border-[#ffd166]/30">
-                <div className="font-bold text-[#0c264d] text-sm mb-1">Voice Banking</div>
-                <div className="text-sm text-gray-700">A proactive process of recording an individual's natural voice for future use in a high-tech device if speech loss is anticipated.</div>
+              
+              <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                <div className="font-bold text-[#0c264d] text-sm mb-2 uppercase tracking-wider">Voice Banking</div>
+                <div className="text-sm text-gray-700 mb-3">A proactive process of recording natural voice for future use.</div>
+                
+                <div className="flex flex-wrap justify-between items-center bg-[#fff9e6] p-2 rounded-lg border border-[#ffd166]/50">
+                  <div className="text-center px-1"><div className="font-bold text-[#0c264d] text-[10px] md:text-xs uppercase">1. Record</div></div>
+                  <ArrowRight className="text-[#d97706]" size={14} />
+                  <div className="text-center px-1"><div className="font-bold text-[#0c264d] text-[10px] md:text-xs uppercase">2. Store</div></div>
+                  <ArrowRight className="text-[#d97706]" size={14} />
+                  <div className="text-center px-1"><div className="font-bold text-[#0c264d] text-[10px] md:text-xs uppercase">3. Use</div></div>
+                </div>
               </div>
             </div>
           </div>
@@ -229,6 +248,30 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           className={responsiveImageClass}
         />
 
+        {/* Echolalia Processing Steps */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+          <div className="bg-[#f0f9ff] p-3 rounded-lg border border-[#0A9DC4]/20 text-center shadow-sm">
+            <div className="w-8 h-8 rounded-full bg-[#0c264d] text-white flex items-center justify-center font-bold mx-auto mb-2 text-sm">1</div>
+            <h4 className="font-bold text-[#0c264d] text-xs mb-1 uppercase tracking-wider">Hearing</h4>
+            <p className="text-[11px] text-gray-600 leading-tight">A sound or words are heard by the individual.</p>
+          </div>
+          <div className="bg-[#f0f9ff] p-3 rounded-lg border border-[#0A9DC4]/20 text-center shadow-sm">
+            <div className="w-8 h-8 rounded-full bg-[#2abcd4] text-white flex items-center justify-center font-bold mx-auto mb-2 text-sm">2</div>
+            <h4 className="font-bold text-[#0c264d] text-xs mb-1 uppercase tracking-wider">Processing</h4>
+            <p className="text-[11px] text-gray-600 leading-tight">The brain takes in the sound and makes meaning.</p>
+          </div>
+          <div className="bg-[#f0f9ff] p-3 rounded-lg border border-[#0A9DC4]/20 text-center shadow-sm">
+            <div className="w-8 h-8 rounded-full bg-[#ffd166] text-[#0c264d] flex items-center justify-center font-bold mx-auto mb-2 text-sm">3</div>
+            <h4 className="font-bold text-[#0c264d] text-xs mb-1 uppercase tracking-wider">Repeating</h4>
+            <p className="text-[11px] text-gray-600 leading-tight">The sound or words are repeated out loud.</p>
+          </div>
+          <div className="bg-[#f0f9ff] p-3 rounded-lg border border-[#0A9DC4]/20 text-center shadow-sm">
+            <div className="w-8 h-8 rounded-full bg-[#10b981] text-white flex items-center justify-center font-bold mx-auto mb-2 text-sm">4</div>
+            <h4 className="font-bold text-[#0c264d] text-xs mb-1 uppercase tracking-wider">Connecting</h4>
+            <p className="text-[11px] text-gray-600 leading-tight">It becomes a way to communicate and feel connected.</p>
+          </div>
+        </div>
+
         <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
           <h4 className="font-bold text-[#0c264d] mb-3 text-center border-b border-[#0A9DC4]/20 pb-2">10 Strategies for Supporting Echolalia</h4>
           <div className="grid md:grid-cols-2 gap-x-4 gap-y-3 text-sm text-gray-700">
@@ -246,54 +289,114 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </div>
       </div>
 
-      {/* SCRIPTING BLOCK */}
-      <div className="bg-white p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
+      {/* ===== SCRIPTING BLOCK ===== */}
+      <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#0c264d] mb-6">
+        <h2 className="text-[#0c264d] font-bold mb-6 text-xl flex items-center justify-center gap-2">
           <Repeat className="text-[#0A9DC4]" size={24} /> 
-          Scripting
+          Scripting & Navigating Social Landscapes
         </h2>
-       
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-scripting-understand-children.png"
-          alt="Scripting"
-          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
-        />
-        
-        <div className="border-l-2 border-[#2abcd4] pl-4 mb-6">
-            <div className="font-bold text-[#0c264d] mb-1">Scripting</div>
-            <p className="text-sm text-gray-700">Using memorized phrases or sequences intentionally to navigate social situations. It reflects a purposeful behavior where familiar, internalized lines are adapted to fit a current context.</p>
+
+        <div className="bg-[#f0f9ff] p-5 rounded-md border border-[#0A9DC4]/20 mb-6 flow-root">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-speech-scripting-support-children.png"
+              alt="Understanding Scripting"
+              className={floatedImageClass}
+            />
+          </div>
+          <h4 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">What is Scripting?</h4>
+          <p className="text-sm text-gray-700 leading-relaxed mb-4">
+            Scripting is the intentional use of memorized phrases, sentences, or entire conversations to navigate social situations. Unlike immediate echolalia (which is often a real-time processing tool), scripting reflects purposeful preparation. Autistic individuals frequently build mental "libraries" of dialogue from movies, books, or past successful interactions to use when a similar context arises.
+          </p>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            Rather than trying to generate spontaneous language in real-time—which requires immense cognitive and social energy—an individual can pull a pre-planned script to participate safely in a conversation.
+          </p>
         </div>
 
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-scripting-support-children.png"
-          alt="Scripting"
-          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
-        />
-
+        <div className="grid md:grid-cols-2 gap-4 mb-6">
+          <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">Why Do We Script?</h4>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li className="flex gap-2 items-start">
+                <span className="text-[#2abcd4] font-bold mt-0.5">•</span> 
+                <span><strong>Reduces Cognitive Load:</strong> Frees up brain space to focus on the sensory and social demands of the environment.</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="text-[#2abcd4] font-bold mt-0.5">•</span> 
+                <span><strong>Provides Predictability:</strong> Knowing exactly what to say (and expecting a specific response) drastically lowers social anxiety.</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="text-[#2abcd4] font-bold mt-0.5">•</span> 
+                <span><strong>Fosters Connection:</strong> Allows participation in group dynamics and neurotypical social rituals without the exhaustion of masking.</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-2 border-b border-gray-100 pb-1">How to Support Scripting</h4>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li className="flex gap-2 items-start">
+                <span className="text-[#ffd166] font-bold mt-0.5">•</span> 
+                <span><strong>Validate It:</strong> Never discourage a script. Recognize it as valid, intentional, and resourceful communication.</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="text-[#ffd166] font-bold mt-0.5">•</span> 
+                <span><strong>Learn Their Scripts:</strong> Figure out the source of the script. Replying with the "next line" of their script is a powerful way to build trust.</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="text-[#ffd166] font-bold mt-0.5">•</span> 
+                <span><strong>Expand Gently:</strong> If they script <em>"To infinity and beyond"</em> when leaving, you can affirm it and gently add, <em>"Yes, to infinity! We are going to the car."</em></span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       {/* GESTALT LANGUAGE PROCESSING BLOCK */}
-      <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6">
+      <div className="bg-[#f0f9ff] p-5 rounded-md border-l-4 border-[#0c264d] shadow-sm mb-6 flow-root">
         <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center justify-center gap-2">
           <HandMetal className="text-[#0c264d]" size={24} /> 
           Gestalt Language Processing
         </h2>              
         
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-gestalt-children.png"
-          alt="Children Gestalt Language Processing"
-          className={responsiveImageClass}
-        />
 
-        <p className="text-sm mb-4 text-gray-700 leading-relaxed">
-          Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup className="text-green-600 font-bold ml-0.5">1</sup> This approach emphasizes the emotional and relational aspects of communication.
+
+        <p className="text-sm mb-6 text-gray-700 leading-relaxed text-left">
+          Many autistic individuals are <strong>Gestalt Language Processors (GLP)</strong>. They acquire language "top-down," understanding and using language as whole units or phrases (often learned from movies or conversations) rather than breaking down individual words or grammar.<sup className="text-[#10b981] font-bold ml-0.5">1</sup> This approach emphasizes the emotional and relational aspects of communication.
         </p>
 
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-gestalt-adults.png"
-          alt="Adult Gestalt Language Processing"
-          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
-        />
+        {/* Gestalts in Action (Children) */}
+        <div className="bg-white p-5 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
+          <h4 className="font-bold text-[#0c264d] mb-3 text-center text-sm uppercase tracking-wider border-b pb-2">Gestalts in Action</h4>
+          <div className="flex flex-wrap justify-center gap-3 text-sm font-bold text-gray-800">
+            <div className="bg-[#f0f9ff] p-2 rounded border border-[#2abcd4]">I can do it myself!</div>
+            <ArrowRight className="text-gray-400 self-center" size={16} />
+            <div className="bg-[#fff9e6] p-2 rounded border border-[#ffd166]">What's that?</div>
+            <ArrowRight className="text-gray-400 self-center" size={16} />
+            <div className="bg-green-50 p-2 rounded border border-green-200">Here you go!</div>
+          </div>
+        </div>
+
+
+        {/* Gestalt Processing for Adults Pillars */}
+        <div className="grid md:grid-cols-2 gap-4 mt-6">
+          <div className="bg-white p-4 rounded-lg border-l-4 border-[#ff6b6b] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] text-sm mb-1 uppercase tracking-wider">Context is Key</h4>
+            <p className="text-xs text-gray-700 leading-relaxed">Language is learned from real-life situations, stories, and meaningful connections.</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg border-l-4 border-[#2abcd4] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] text-sm mb-1 uppercase tracking-wider">Whole Units First</h4>
+            <p className="text-xs text-gray-700 leading-relaxed">Phrases and lines (often called echolalia) are used to communicate thoughts, needs, and feelings.</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg border-l-4 border-[#0c264d] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] text-sm mb-1 uppercase tracking-wider">Emotional & Relational</h4>
+            <p className="text-xs text-gray-700 leading-relaxed">Communication is deeply tied to connection, expression, and shared understanding.</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg border-l-4 border-[#ffd166] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] text-sm mb-1 uppercase tracking-wider">Growth Over Time</h4>
+            <p className="text-xs text-gray-700 leading-relaxed">With time and support, gestalt processors may segment and recombine language to create their own original expressions.</p>
+          </div>
+        </div>
       </div>
 
       {/* ===== SUPPORTING PROFOUND AUTISM & ATTUNEMENT ===== */}
@@ -303,11 +406,6 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           Supporting Profound Autism: The Shift to Attunement
         </h2>
 
-        <SectionActions 
-          sectionId="attunement" 
-          sectionTitle="Supporting Profound Autism: The Shift to Attunement" 
-        />
-
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
           When supporting individuals with level 3 or profound autism—especially teens and young adults who script, are echolalic, or speak in gestalts—the foundational rule is to <strong>presume competence</strong>. There is always profound potential for connection. Traditional active listening (like expecting eye contact, verbal affirmations, or paraphrasing) is often developmentally inappropriate. Instead, the focus shifts to a multimodal process called <strong>Attunement</strong>.
         </p>
@@ -315,7 +413,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-teens-young-adults-level3.WebP"
           alt="Attunement for Profound Autism"
-          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+          className={responsiveImageClass}
         />
 
         <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -363,7 +461,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           </div>
         </div>
 
-        <div className="bg-cyan-400 p-5 rounded-lg border border-[#0A9DC4]/20 text-center shadow-inner">
+        <div className="bg-[#ffd166] p-5 rounded-lg border border-[#0A9DC4]/20 text-center shadow-inner">
           <p className="text-[#0c264d] font-bold text-xl mb-2 font-spartan">Connection comes before comprehension.</p>
         </div>
         
@@ -418,22 +516,26 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           className={responsiveImageClass}
         />
 
-        <p className="text-sm mb-4 text-gray-700 leading-relaxed">
+        <p className="text-sm mb-6 text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
           Some autistic individuals may struggle to modulate their tone or volume, leading to speech patterns that sound unique. Therapy can help individuals self-monitor these traits if desired.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Prosody & Fluency</div>
-            <div className="text-sm text-gray-700">The tone, pitch, smoothness, and rhythm of speech.</div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20 text-center shadow-sm">
+            <div className="font-bold text-[#0c264d] mb-1 text-xs uppercase tracking-wider">Prosody & Fluency</div>
+            <div className="text-[11px] text-gray-600 leading-tight">The natural tone, pitch, smoothness, and rhythm of speech.</div>
           </div>
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Uptalk</div>
-            <div className="text-sm text-gray-700">A speech pattern where statements are delivered with an upward inflection, making them sound like questions.</div>
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20 text-center shadow-sm">
+            <div className="font-bold text-[#0c264d] mb-1 text-xs uppercase tracking-wider">Uptalk</div>
+            <div className="text-[11px] text-gray-600 leading-tight">A speech pattern where statements are delivered with an upward inflection like questions.</div>
           </div>
-          <div className="border-l-2 border-[#2abcd4] pl-3">
-            <div className="font-bold text-[#0c264d] mb-1">Unique Vocalizations</div>
-            <div className="text-sm text-gray-700">Producing sounds or words that serve as vocal stims or unique communication patterns.</div>
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20 text-center shadow-sm">
+            <div className="font-bold text-[#0c264d] mb-1 text-xs uppercase tracking-wider">Unique Vocalizations</div>
+            <div className="text-[11px] text-gray-600 leading-tight">Producing sounds or words that serve as vocal stims or unique communication.</div>
+          </div>
+          <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20 text-center shadow-sm">
+            <div className="font-bold text-[#0c264d] mb-1 text-xs uppercase tracking-wider">Tone, Volume & Pace</div>
+            <div className="text-[11px] text-gray-600 leading-tight">Differences in the loudness or speed of speech based on excitement or overload.</div>
           </div>
         </div>
       </div>
@@ -448,7 +550,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         <ImageWithFallback 
           src="/images/autism/autism-support-TTtab-speech-self-advo.png"
           alt="Prioritizing Self Advocacy"
-          className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+          className={responsiveImageClass}
         />
 
         <p className="text-sm mb-4 text-gray-700 leading-relaxed">
@@ -483,46 +585,88 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           <ImageWithFallback 
             src="/images/autism/autism-support-TTtab-speech-alex-intero.png"
             alt="Alexithymia and Interoception"
-            className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+            className={responsiveImageClass}
           />
           
-          <p className="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">
-            <strong>Alexithymia</strong> is the difficulty in identifying and describing one's own emotions. This is closely tied to <strong>Interoception</strong>, the hidden sense that allows us to feel our internal body signals (like hunger, heart rate, or a full bladder). 
+          <p className="text-sm text-gray-700 leading-relaxed mb-4 flex-grow text-center">
+            <strong>Alexithymia</strong> is the difficulty in identifying and describing one's own emotions. This is closely tied to <strong>Interoception</strong>, the hidden sense that allows us to feel our internal body signals. 
           </p>
-          <p className="text-sm text-gray-700 leading-relaxed bg-[#f0f9ff] p-3 rounded border border-[#0A9DC4]/20">
-            A speech therapist cannot simply ask, <em>"How do you feel?"</em> if the individual cannot interpret their body's signals. Therapy often involves bridging this gap—using body mapping and visual scales to connect physical sensations (e.g., a tight chest) to vocabulary (e.g., anxiety).
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+            <div className="bg-[#fff9e6] p-3 rounded-lg border border-[#ffd166]/50 text-center shadow-sm">
+              <Activity className="text-[#d97706] mx-auto mb-2" size={20} />
+              <div className="font-bold text-[#0c264d] text-xs uppercase tracking-wider">Heart Rate</div>
+            </div>
+            <div className="bg-[#fff9e6] p-3 rounded-lg border border-[#ffd166]/50 text-center shadow-sm">
+              <Activity className="text-[#d97706] mx-auto mb-2" size={20} />
+              <div className="font-bold text-[#0c264d] text-xs uppercase tracking-wider">Hunger</div>
+            </div>
+            <div className="bg-[#fff9e6] p-3 rounded-lg border border-[#ffd166]/50 text-center shadow-sm">
+              <Activity className="text-[#d97706] mx-auto mb-2" size={20} />
+              <div className="font-bold text-[#0c264d] text-xs uppercase tracking-wider">Full Bladder</div>
+            </div>
+            <div className="bg-[#fff9e6] p-3 rounded-lg border border-[#ffd166]/50 text-center shadow-sm">
+              <Activity className="text-[#d97706] mx-auto mb-2" size={20} />
+              <div className="font-bold text-[#0c264d] text-xs uppercase tracking-wider">Need to Breathe</div>
+            </div>
+          </div>
+
+          <p className="text-sm text-gray-700 leading-relaxed bg-[#f0f9ff] p-4 rounded border border-[#0A9DC4]/20 text-center">
+            A speech therapist cannot simply ask, <em>"How do you feel?"</em> if the individual cannot interpret their body's signals because <strong>messages from the body often go unnoticed.</strong> Therapy often involves bridging this gap—using body mapping and visual scales to connect physical sensations (e.g., a tight chest) to vocabulary (e.g., anxiety).
           </p>
         </div>
         
-{/* ===== LINK TO DYSREGULATION PAGE ===== */}
-<div className="mt-6 flex justify-center print:hidden">
-  <button 
-    onClick={() => setCurrentArticle?.('autism-dysregulation')}
-    className="bg-[#0A9DC4] hover:bg-[#0c264d] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md"
-  >
-    For more information on supporting dysregulation in autism - which can lead to aggression - click here.
-    <span className="text-xl">&rarr;</span>
-  </button>
-</div>
+        {/* ===== LINK TO DYSREGULATION PAGE ===== */}
+        <div className="mt-6 flex justify-center print:hidden">
+          <button 
+            onClick={() => setCurrentArticle?.('autism-dysregulation')}
+            className="bg-[#0A9DC4] hover:bg-[#0c264d] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md"
+          >
+            For more information on supporting dysregulation in autism - which can lead to aggression - click here.
+            <span className="text-xl">&rarr;</span>
+          </button>
+        </div>
 
-        {/* Social Pragmatics */}
+        {/* Social Pragmatics / Double Empathy */}
         <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm flex flex-col">
           <h2 className="text-[#0c264d] font-bold mb-3 text-xl text-center">
-            Social Pragmatics
+            Social Pragmatics & The Double Empathy Problem
           </h2>
           
           <ImageWithFallback 
             src="/images/autism/autism-support-TTtab-speech-double-empath.png"
             alt="Social Pragmatics and Double Empathy"
-            className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+            className={responsiveImageClass}
           />
           
-          <p className="text-sm text-gray-700 leading-relaxed mb-4 flex-grow">
-            Historically, "social skills training" forced autistic individuals to mimic neurotypical behaviors (like forcing eye contact), which leads to exhausting masking. Modern therapy focuses on the <strong>Double Empathy Problem</strong>—the idea that communication breakdowns happen because autistic and neurotypical people have different, equally valid social languages.
+          <p className="text-sm text-gray-700 leading-relaxed mb-6 flex-grow text-center">
+            Historically, "social skills training" forced autistic individuals to mimic neurotypical behaviors, leading to exhausting masking. Modern therapy focuses on the <strong>Double Empathy Problem</strong>—the idea that communication breakdowns happen because autistic and neurotypical people have different, equally valid social languages.
           </p>
-          <p className="text-sm text-gray-700 leading-relaxed bg-[#fff9e6] p-3 rounded border border-[#ffd166]/30">
-            Affirming pragmatics helps individuals understand neurotypical expectations without forcing them to change who they are, while simultaneously teaching self-advocacy (e.g., <em>"I am listening to you, but making eye contact hurts my brain."</em>).
-          </p>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-4">
+            <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+              <h4 className="font-bold text-gray-500 mb-4 text-sm uppercase tracking-wider border-b pb-2">The Old Approach: Social Skills Training</h4>
+              <ul className="space-y-3 text-sm text-gray-600">
+                <li className="flex items-center gap-2"><XCircle size={16} className="text-red-400" /> <strong className="text-gray-800">Force eye contact</strong></li>
+                <li className="flex items-center gap-2"><XCircle size={16} className="text-red-400" /> <strong className="text-gray-800">Mask natural expressions</strong></li>
+                <li className="flex items-center gap-2"><XCircle size={16} className="text-red-400" /> <strong className="text-gray-800">Use scripted small talk</strong></li>
+              </ul>
+              <div className="mt-5 text-xs font-bold text-red-500 bg-red-50 p-3 rounded text-center border border-red-100">
+                Leads to exhausting masking
+              </div>
+            </div>
+            
+            <div className="bg-[#f0f9ff] p-5 rounded-lg border-2 border-[#2abcd4]">
+              <h4 className="font-bold text-[#0c264d] mb-4 text-sm uppercase tracking-wider border-b border-[#2abcd4]/30 pb-2">The Modern Approach: Social Pragmatics</h4>
+              <ul className="space-y-3 text-sm text-[#0c264d]">
+                <li className="flex gap-2 items-start"><CheckCircle size={16} className="text-[#10b981] shrink-0 mt-0.5" /> <span><strong>Listen</strong> without judgment</span></li>
+                <li className="flex gap-2 items-start"><CheckCircle size={16} className="text-[#10b981] shrink-0 mt-0.5" /> <span><strong>Translate</strong> across differences</span></li>
+                <li className="flex gap-2 items-start"><CheckCircle size={16} className="text-[#10b981] shrink-0 mt-0.5" /> <span><strong>Respect</strong> neurodivergent communication</span></li>
+                <li className="flex gap-2 items-start"><CheckCircle size={16} className="text-[#10b981] shrink-0 mt-0.5" /> <span><strong>Support</strong> authentic expression</span></li>
+                <li className="flex gap-2 items-start"><CheckCircle size={16} className="text-[#10b981] shrink-0 mt-0.5" /> <span><strong>Build bridges</strong>, not expectations</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -531,10 +675,10 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
       <div className="flex justify-end mt-8 mb-6">
         <button 
           onClick={() => setCurrentArticle?.('autism-support-therapies')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0"
         >
-          <span className="text-xl">&larr;</span>
-          Back to Therapies
+          <span className="text-lg">&larr;</span>
+          All About Autism
         </button>
       </div>
 
