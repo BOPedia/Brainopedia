@@ -160,33 +160,35 @@ export function SupportExecutive({ setCurrentArticle }: SupportExecutiveProps) {
             </button>
           </div>
 
-{/* REFERENCES SECTION */}
+          {/* REFERENCES SECTION */}
           <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
           
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             
+            {/* CITED STUDIES: GREEN */}
             <div className="mb-6">
-              <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-                <p>1. Reiter, A., Tucha, O., & Lange, K. W. (2005). "Executive functions in children with dyslexia." <em>Dyslexia</em>. https://doi.org/10.1002/dys.289</p>
-                <p>2. Hughes, C. A., & Suritsky, S. K. (1994). "Note-taking skills of university students with and without learning disabilities." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/002221949402700104</p>
-                <p>3. Gureasko-Moore, S., DuPaul, G. J., & White, G. P. (2007). "Self-management of classroom preparedness and homework." <em>School Psychology Review</em>. https://doi.org/10.1080/02796015.2007.12087923</p>
-                <p>4. Barkley, R. A. (1997). "Behavioral inhibition, sustained attention, and executive functions." <em>Psychological Bulletin</em>. https://doi.org/10.1037/0033-2909.121.1.65</p>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>1. Reiter, A., et al. (2005). "Executive functions in children with dyslexia." <i>Dyslexia</i>. https://doi.org/10.1002/dys.289</p>
+                <p>2. Hughes, C. A., & Suritsky, S. K. (1994). "Note-taking skills of university students with and without learning disabilities." <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/002221949402700104</p>
+                <p>3. Gureasko-Moore, S., et al. (2007). "Self-management of classroom preparedness and homework." <i>School Psychology Review</i>. https://doi.org/10.1080/02796015.2007.12087923</p>
+                <p>4. Barkley, R. A. (1997). "Behavioral inhibition, sustained attention, and executive functions: constructing a unifying theory of ADHD." <i>Psychological Bulletin</i>. https://doi.org/10.1037/0033-2909.121.1.65</p>
               </div>
             </div>
 
+            {/* BACKGROUND SOURCES: CYAN */}
             <div>
-              <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b-2 border-[#2abcd4] pb-2">
                 Background Sources
               </h4>
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>Dawson, P., & Guare, R. (2010). <em>Executive skills in children and adolescents</em>. Guilford Press.</li>
-                <li>Novak, J. D., & Gowin, D. B. (1984). <em>Learning how to learn</em>. Cambridge University Press.</li>
-                <li>Robinson, F. P. (1970). <em>Effective study</em>. Harper & Row.</li>
-              </ul>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>Dawson, P., & Guare, R. (2010). <i>Executive skills in children and adolescents: A practical guide to assessment and intervention</i>. Guilford Press. https://www.guilford.com/books/Executive-Skills-in-Children-and-Adolescents/Dawson-Guare/9781462535316</p>
+                <p>Novak, J. D., & Gowin, D. B. (1984). <i>Learning how to learn</i>. Cambridge University Press. https://doi.org/10.1017/CBO9781139173469</p>
+                <p>Robinson, F. P. (1970). <i>Effective study</i>. Harper & Row.</p>
+              </div>
             </div>
           </div>
         </TabsContent>

@@ -199,26 +199,27 @@ export function SupportSocialEmotional({ setCurrentArticle }: SupportSocialEmoti
             
             {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
-              <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed italic" style={{ textIndent: 0 }}>
                 <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
               </div>
             </div>
 
+            {/* BACKGROUND SOURCES: CYAN */}
             <div>
-              <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b-2 border-[#2abcd4] pb-2">
                 Background Sources
               </h4>
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>Boetsch, E. A., Green, P. A., & Pennington, B. F. (1996). "Psychosocial correlates of dyslexia across the life span." <em>Development and Psychopathology</em>. https://doi.org/10.1017/S095457940000724X</li>
-                <li>Daly, C., Kelley, K., & Krauss, A. (2003). <em>Self-advocacy: A valuable skill for your teenager with LD</em>. National Center for Learning Disabilities.</li>
-                <li>Gerber, P. J. (2012). "The impact of learning disabilities on adulthood: A review of the evidenced-based literature for research and practice in adult education." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/0022219411426858</li>
-                <li>Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). "Identifying alterable patterns in employment success for highly successful adults with learning disabilities." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/002221949202500802</li>
-                <li>Grills-Taquechel, A. E., Fletcher, J. M., Vaughn, S. R., & Stuebing, K. K. (2012). "Anxiety and reading difficulties in early elementary school: Evidence for unidirectional- or bi-directional relations?" <em>Child Psychiatry & Human Development</em>. https://doi.org/10.1007/s10578-011-0253-x</li>
-                <li>Humphrey, N., & Mullins, P. M. (2002). "Self-concept and self-esteem in developmental dyslexia." <em>Journal of Research in Special Educational Needs</em>. https://doi.org/10.1111/j.1471-3802.2002.00163.x</li>
-              </ul>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>Boetsch, E. A., et al. (1996). "Psychosocial correlates of dyslexia across the life span." <i>Development and Psychopathology</i>. https://doi.org/10.1017/S095457940000724X</p>
+                <p>Daly, C., et al. (2003). <i>Self-advocacy: A valuable skill for your teenager with LD</i>. National Center for Learning Disabilities. https://www.ncld.org/</p>
+                <p>Gerber, P. J. (2012). "The impact of learning disabilities on adulthood: A review of the evidenced-based literature for research and practice in adult education." <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219411426858</p>
+                <p>Gerber, P. J., et al. (1992). "Identifying alterable patterns in employment success for highly successful adults with learning disabilities." <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/002221949202500802</p>
+                <p>Grills-Taquechel, A. E., et al. (2012). "Anxiety and reading difficulties in early elementary school: Evidence for unidirectional- or bi-directional relations?" <i>Child Psychiatry & Human Development</i>. https://doi.org/10.1007/s10578-011-0253-x</p>
+                <p>Humphrey, N., & Mullins, P. M. (2002). "Self-concept and self-esteem in developmental dyslexia." <i>Journal of Research in Special Educational Needs</i>. https://doi.org/10.1111/j.1471-3802.2002.00163.x</p>
+              </div>
             </div>
           </div>
         </TabsContent>

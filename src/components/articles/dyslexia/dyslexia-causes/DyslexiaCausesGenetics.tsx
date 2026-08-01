@@ -223,35 +223,35 @@ export function DyslexiaCausesGenetics({ setCurrentArticle }: DyslexiaCausesGene
             
             {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
-              <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed italic" style={{ textIndent: 0 }}>
                 <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
               </div>
             </div>
 
             <div>
-              <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b-2 border-[#2abcd4] pb-2">
                 Background Sources
               </h4>
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
-                <li>Byrne, B., Wadsworth, S., Corley, R., et al. (2005). "Longitudinal twin study of early literacy development: Preschool and kindergarten phases." <em>Scientific Studies of Reading</em>.</li>
-                <li>Carrion-Castillo, A., Franke, B., & Fisher, S. E. (2013). "Molecular genetics of dyslexia: An overview." <em>Dyslexia</em>.</li>
-                <li>DeFries, J. C., & Alarcón, M. (1996). "Genetics of specific reading disability." <em>Mental Retardation and Developmental Disabilities Research Reviews</em>.</li>
-                <li>Fisher, S. E., & DeFries, J. C. (2002). "Developmental dyslexia: Genetic dissection of a complex cognitive trait." <em>Nature Reviews Neuroscience</em>.</li>
-                <li>Galaburda, A. M., LoTurco, J., Ramus, F., Fitch, R. H., & Rosen, G. D. (2006). "From genes to behavior in developmental dyslexia." <em>Nature Neuroscience</em>.</li>
-                <li>Hannula-Jouppi, K., Kaminen-Ahola, N., Taipale, M., et al. (2005). "The axon guidance receptor gene ROBO1 is a candidate gene for developmental dyslexia." <em>PLoS Genetics</em>.</li>
-                <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.</li>
-                <li>Meng, H., Smith, S. D., Hager, K., et al. (2005). "DCDC2 is associated with reading disability and modulates neuronal development in the brain." <em>Proceedings of the National Academy of Sciences</em>.</li>
-                <li>Paracchini, S., Steer, C. D., Buckingham, L. L., et al. (2008). "Association of the KIAA0319 dyslexia susceptibility gene with reading skills in the general population." <em>American Journal Psychiatry</em>.</li>
-                <li>Pennington, B. F., & Bishop, D. V. (2009). "Relations among speech, language, and reading disorders." <em>Annual Review of Psychology</em>.</li>
-                <li>Pennington, B. F., & Lefly, D. L. (2001). "Early reading development in children at family risk for dyslexia." <em>Child Development</em>.</li>
-                <li>Scerri, T. S., & Schulte-Körne, G. (2010). "Genetics of developmental dyslexia." <em>European Child & Adolescent Psychiatry</em>.</li>
-                <li>Shaywitz, S. E., Escobar, M. D., Shaywitz, B. A., Fletcher, J. M., & Makuch, R. (1992). "Evidence that dyslexia may represent the lower tail of a normal distribution of reading ability." <em>New England Journal of Medicine</em>.</li>
-                <li>Taipale, M., Kaminen, N., Nopola-Hemmi, J., et al. (2003). "A candidate gene for developmental dyslexia encodes a nuclear tetratricopeptide repeat domain protein dynamically regulated in brain." <em>Proceedings of the National Academy of Sciences</em>.</li>
-              </ul>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425787</p>
+                <p>Byrne, B., et al. (2005). "Longitudinal twin study of early literacy development: Preschool and kindergarten phases." <i>Scientific Studies of Reading</i>. https://doi.org/10.1207/s1532799xssr0903_3</p>
+                <p>Carrion-Castillo, A., et al. (2013). "Molecular genetics of dyslexia: An overview." <i>Dyslexia</i>. https://doi.org/10.1002/dys.1464</p>
+                <p>DeFries, J. C., & Alarcón, M. (1996). "Genetics of specific reading disability." <i>Mental Retardation and Developmental Disabilities Research Reviews</i>. https://doi.org/10.1002/(SICI)1098-2779(1996)2:1%3C39::AID-MRDD8%3E3.0.CO;2-H</p>
+                <p>Fisher, S. E., & DeFries, J. C. (2002). "Developmental dyslexia: Genetic dissection of a complex cognitive trait." <i>Nature Reviews Neuroscience</i>. https://doi.org/10.1038/nrn936</p>
+                <p>Galaburda, A. M., et al. (2006). "From genes to behavior in developmental dyslexia." <i>Nature Neuroscience</i>. https://doi.org/10.1038/nn1772</p>
+                <p>Hannula-Jouppi, K., et al. (2005). "The axon guidance receptor gene ROBO1 is a candidate gene for developmental dyslexia." <i>PLoS Genetics</i>. https://doi.org/10.1371/journal.pgen.0010050</p>
+                <p>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>. https://dyslexiaida.org/dyslexia-in-the-classroom/</p>
+                <p>Meng, H., et al. (2005). "DCDC2 is associated with reading disability and modulates neuronal development in the brain." <i>Proceedings of the National Academy of Sciences</i>. https://doi.org/10.1073/pnas.0508591102</p>
+                <p>Paracchini, S., et al. (2008). "Association of the KIAA0319 dyslexia susceptibility gene with reading skills in the general population." <i>American Journal of Psychiatry</i>. https://doi.org/10.1176/appi.ajp.2008.07121872</p>
+                <p>Pennington, B. F., & Bishop, D. V. (2009). "Relations among speech, language, and reading disorders." <i>Annual Review of Psychology</i>. https://doi.org/10.1146/annurev.psych.60.110707.163548</p>
+                <p>Pennington, B. F., & Lefly, D. L. (2001). "Early reading development in children at family risk for dyslexia." <i>Child Development</i>. https://doi.org/10.1111/1467-8624.00317</p>
+                <p>Scerri, T. S., & Schulte-Körne, G. (2010). "Genetics of developmental dyslexia." <i>European Child & Adolescent Psychiatry</i>. https://doi.org/10.1007/s00787-009-0081-0</p>
+                <p>Shaywitz, S. E., et al. (1992). "Evidence that dyslexia may represent the lower tail of a normal distribution of reading ability." <i>New England Journal of Medicine</i>. https://doi.org/10.1056/NEJM199201163260303</p>
+                <p>Taipale, M., et al. (2003). "A candidate gene for developmental dyslexia encodes a nuclear tetratricopeptide repeat domain protein dynamically regulated in brain." <i>Proceedings of the National Academy of Sciences</i>. https://doi.org/10.1073/pnas.1833911100</p>
+              </div>
             </div>
           </div>
         </TabsContent>

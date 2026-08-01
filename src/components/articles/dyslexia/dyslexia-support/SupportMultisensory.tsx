@@ -134,35 +134,36 @@ export function SupportMultisensory({ setCurrentArticle }: SupportMultisensoryPr
               All About Dyslexia
             </button>
           </div>
-      {/* REFERENCES SECTION */}
+          
+          {/* REFERENCES SECTION */}
           <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
           
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             
             <div className="mb-6">
-              <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-                <p>1. Shams, L., & Seitz, A. R. (2008). "Benefits of multisensory learning." <em>Trends in Cognitive Sciences</em>. https://doi.org/10.1016/j.tics.2008.07.006</p>
-                <p>2. Dexter, D. D., & Hughes, C. A. (2011). "Graphic organizers and students with learning disabilities: A meta-analysis." <em>Learning Disability Quarterly</em>. https://doi.org/10.1177/073194871103400104</p>
-                <p>3. Ehri, L. C., & Wilce, L. S. (1980). "The influence of orthography on readers' conceptualization of the phonemic structure of words." <em>Applied Psycholinguistics</em>. https://doi.org/10.1017/S0142716400009802</p>
-                <p>4. Whittingham, J., Huffman, S., Christensen, R., & McAllister, T. (2013). "Use of audiobooks in a school library and positive effects of struggling readers' participation in a library-sponsored audiobook club." <em>School Library Research</em>.</p>
-                <p>5. Boyer-Crane, C., Snowling, M. J., Duff, F. J., et al. (2008). "Improving early language and literacy skills: Differential effects of an oral language versus a phonology with reading intervention." <em>Journal of Child Psychology and Psychiatry</em>. https://doi.org/10.1111/j.1469-7610.2007.01849.x</p>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>1. Shams, L., & Seitz, A. R. (2008). "Benefits of multisensory learning." <i>Trends in Cognitive Sciences</i>. https://doi.org/10.1016/j.tics.2008.07.006</p>
+                <p>2. Dexter, D. D., & Hughes, C. A. (2011). "Graphic organizers and students with learning disabilities: A meta-analysis." <i>Learning Disability Quarterly</i>. https://doi.org/10.1177/073194871103400104</p>
+                <p>3. Ehri, L. C., & Wilce, L. S. (1980). "The influence of orthography on readers' conceptualization of the phonemic structure of words." <i>Applied Psycholinguistics</i>. https://doi.org/10.1017/S0142716400009802</p>
+                <p>4. Whittingham, J., et al. (2013). "Use of audiobooks in a school library and positive effects of struggling readers' participation in a library-sponsored audiobook club." <i>School Library Research</i>. https://www.ala.org/aasl/pubs/slr/vol16</p>
+                <p>5. Boyer-Crane, C., et al. (2008). "Improving early language and literacy skills: Differential effects of an oral language versus a phonology with reading intervention." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/j.1469-7610.2007.01849.x</p>
               </div>
             </div>
 
             <div>
-              <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b-2 border-[#2abcd4] pb-2">
                 Background Sources
               </h4>
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
-                <li>Fernald, G. M. (1943). <em>Remedial techniques in basic school subjects</em>. McGraw-Hill.</li>
-                <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>. https://dyslexiaida.org</li>
-                <li>Moats, L., & Tolman, C. (2009). <em>Language essentials for teachers of reading and spelling (LETRS): The challenge of learning to read</em>. Sopris West Educational Services.</li>
-              </ul>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425787</p>
+                <p>Fernald, G. M. (1943). <i>Remedial techniques in basic school subjects</i>. McGraw-Hill. https://archive.org/details/remedialtechniqu0000fern</p>
+                <p>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>. https://dyslexiaida.org/dyslexia-in-the-classroom/</p>
+                <p>Moats, L., & Tolman, C. (2009). <i>Language essentials for teachers of reading and spelling (LETRS): The challenge of learning to read</i>. Sopris West Educational Services. https://www.lexialearning.com/letrs</p>
+              </div>
             </div>
           </div>
         </TabsContent>

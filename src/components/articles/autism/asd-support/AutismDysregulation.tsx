@@ -10,39 +10,57 @@ interface AutismDysregulationProps {
 export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationProps) {
   
   return (
-    <div id="full-dysregulation-article" className="space-y-6 text-[#0c264d] font-spartan animate-in fade-in duration-300">
+    <div id="full-dysregulation-article" className="space-y-6 text-[#0c264d] font-spartan animate-in fade-in duration-300 w-full min-w-0">
       
-      {/* Header with Back Button */}
-      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <h1 className="text-3xl text-[#0c264d] font-bold">
+      {/* ===== HEADER ROW ===== */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-2 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <h1 className="text-3xl text-[#0c264d] font-normal">
           Dysregulation & Reactive Aggression
         </h1>
 
         <button 
           onClick={() => setCurrentArticle?.('autism-support-therapies')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shrink-0"
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
         >
-          <span className="text-xl">&larr;</span>
-          Back to Therapies
+          <span className="text-lg">&larr;</span>
+          All About Autism
         </button>
       </div>
 
-      <SectionActions 
-        sectionId="full-dysregulation-article" 
-        sectionTitle="Guide to Dysregulation and Aggression" 
-      />
-      
-      {/* ===== INTRODUCTION: A SHARED EXPERIENCE ===== */}
-      <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8">
-        <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-dysreg-intro.png"
-          alt="Caregiver and individual co-regulation"
-          className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-        />
-        <p className="text-base leading-relaxed text-gray-700">
-          Navigating dysregulation is a profoundly shared experience between the autistic individual and their support team. When the nervous system is pushed to its limits—often due to overwhelming sensory input or a lack of accessible communication tools—it creates intense distress for the individual and a parallel layer of stress for the caregiver. True support is never about compliance or controlling behavior; it is about building a co-regulated partnership where the individual’s urgent need for physical and emotional safety, and the caregiver’s need for sustainable, compassionate strategies, are equally prioritized and deeply honored.
-        </p>
-        <div className="clear-both"></div>
+
+      {/* ===== INTRODUCTION CARDS SECTION ===== */}
+      <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8 space-y-6">
+        
+        {/* Card 1: Physiological Attunement (Image on Left, w-64) */}
+        <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm flow-root">
+          <div className="float-left mr-6 mb-2 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-64 shrink-0">
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-speech-dysreg-intro.png"
+              alt="Physiological attunement and co-regulation"
+              className="w-full h-auto rounded-md block"
+            />
+          </div>
+          <h3 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">Physiological Attunement</h3>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            Navigating dysregulation is a profoundly shared experience between the autistic individual and their support team, rooted deeply in mutual nervous system physiology. When an individual's nervous system is pushed to its limits—frequently driven by relentless sensory overload or an absence of accessible communication tools—it generates acute distress for the person, while simultaneously triggering a parallel layer of vicarious stress for the caregiver. Because human nervous systems are biologically wired to attune to one another, an escalating crisis can rapidly transform into a shared state of high alert if not met with grounded presence.
+          </p>
+        </div>
+
+        {/* Card 2: Co-Regulated Partnership (Image on Left, w-64) */}
+        <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm flow-root">
+          <div className="float-left mr-6 mb-2 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-64 shrink-0">
+            <ImageWithFallback 
+              src="/images/autism/autism-support-TTtab-speech-dysreg-partnership.png"
+              alt="Co-regulated partnership"
+              className="w-full h-auto rounded-md block"
+            />
+          </div>
+          <h3 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">Co-Regulated Partnership</h3>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            True, neurodiversity-affirming support moves fundamentally away from outdated paradigms focused on compliance and behavioral control. Instead, it anchors itself in building a genuine, co-regulated partnership. In this model, the individual’s urgent plea for physical and emotional safety is met not with demands for behavioral suppression, but with steady, non-judgmental stability. Simultaneously, the caregiver’s need for sustainable, compassionate, and trauma-informed strategies is equally prioritized—recognizing that meaningful caregiving cannot occur in chronic exhaustion.
+          </p>
+        </div>
+
       </div>
 
       {/* ===== THE SPIKY PROFILE: STRENGTHS & VULNERABILITIES ===== */}
@@ -51,10 +69,10 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           <Sparkles className="text-[#ffd166]" size={24} /> 
           The Spiky Cognitive Profile: Understanding Asynchronous Development
         </h2>
-        <p className="text-sm leading-relaxed mb-4 text-gray-700">
-          To support a dysregulated individual effectively, we must first presume competence. Many autistic individuals possess a "spiky" cognitive profile, where extraordinary strengths—such as deep focus, remarkable memory, or immense empathy—exist alongside significant vulnerabilities in sensory processing and internal regulation.<sup className="text-green-600 font-bold ml-0.5">5</sup>
+        <p className="mb-4">
+          To support a dysregulated individual effectively, we must first presume competence. Many autistic individuals possess a "spiky" cognitive profile, where extraordinary strengths—such as deep focus, remarkable memory, or immense empathy—exist alongside significant vulnerabilities in sensory processing and internal regulation<sup className="text-[#10b981] font-bold ml-0.5">5</sup>.
         </p>
-        <p className="text-sm leading-relaxed text-gray-700">
+        <p>
           When staff understand that this individual is not "acting out," but rather navigating a brain that processes information with different intensity, the training shifts from "control" to "attunement." By respecting and leveraging their unique strengths, we create a sense of safety that is the most effective tool for preventing escalation. When the individual feels understood, the need for reactive aggression diminishes significantly.
         </p>
       </div>
@@ -66,15 +84,15 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           Hidden Pain: Medical Comorbidities & Trauma
         </h2>
         
-        <p className="text-base leading-relaxed mb-4 text-gray-700">
+        <p className="mb-4">
           When evaluating dysregulation, it is critical to look beyond the surface behavior and audit for hidden pain, unmet physical needs, or underlying trauma. Because many autistic individuals experience differences in interoception—the ability to recognize internal bodily signals—or face significant communication barriers, what appears to be an aggressive outburst is frequently an urgent, desperate communication of acute physical distress.
         </p>
         
-        <p className="text-base leading-relaxed mb-4 text-gray-700">
-          Research indicates that medical comorbidities are highly prevalent in the autistic community; for instance, gastrointestinal (GI) disorders affect between 46% and 84% of autistic children<sup className="text-green-600 font-bold ml-0.5">6</sup>, while migraine prevalence in autistic adults is estimated at over 42%, more than double the rate of the general population<sup className="text-green-600 font-bold ml-0.5">7</sup>.
+        <p className="mb-4">
+          Research indicates that medical comorbidities are highly prevalent in the autistic community; for instance, gastrointestinal (GI) disorders affect between 46% and 84% of autistic children<sup className="text-[#10b981] font-bold ml-0.5">6</sup>, while migraine prevalence in autistic adults is estimated at over 42%, more than double the rate of the general population<sup className="text-[#10b981] font-bold ml-0.5">7</sup>.
         </p>
         
-        <p className="text-base leading-relaxed text-gray-700">
+        <p>
           When an individual cannot verbally articulate that they are experiencing debilitating acid reflux, severe constipation, a blinding headache, a blood-sugar crash from hunger, or a nervous system flashback triggered by past trauma, their biological fight-or-flight system naturally takes over. Reframing reactive behavior as a distress signal for hidden physical pain allows support teams to shift away from behavioral management and toward compassionate medical and emotional attunement.
         </p>
       </div>
@@ -85,11 +103,11 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           <ShieldAlert className="text-[#0A9DC4]" size={24} /> 
           Reframing the Stress Response
         </h2>
-        <p className="text-sm leading-relaxed mb-4 text-gray-700">
-          Dysregulation escalating into aggression is often a profound stress response to unmet communication needs<sup className="text-green-600 font-bold ml-0.5">1</sup>. Individuals with communication barriers frequently resort to reactive aggression because they lack the necessary tools or accommodations to verbally articulate frustration, sensory overload, or physical pain.
+        <p className="mb-4">
+          Dysregulation escalating into aggression is often a profound stress response to unmet communication needs<sup className="text-[#10b981] font-bold ml-0.5">1</sup>. Individuals with communication barriers frequently resort to reactive aggression because they lack the necessary tools or accommodations to verbally articulate frustration, sensory overload, or physical pain.
         </p>
-        <p className="text-sm leading-relaxed text-gray-700">
-          Systemic reviews confirm that individuals experiencing emotion dysregulation are significantly more likely to engage in physical aggression, especially when feeling trapped, misunderstood, or unable to self-soothe<sup className="text-green-600 font-bold ml-0.5">2</sup>. By providing robust, alternative communication methods, aggressive behavior naturally decreases as autonomy increases.
+        <p>
+          Systemic reviews confirm that individuals experiencing emotion dysregulation are significantly more likely to engage in physical aggression, especially when feeling trapped, misunderstood, or unable to self-soothe<sup className="text-[#10b981] font-bold ml-0.5">2</sup>. By providing robust, alternative communication methods, aggressive behavior naturally decreases as autonomy increases.
         </p>
       </div>
 
@@ -100,14 +118,14 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           Bridging the Generalization Gap Across Environments
         </h2>
 
-        <p className="text-sm text-gray-700 mb-6 leading-relaxed">
-          A major finding in developmental disability research is that learned communication skills do not naturally transfer across different settings<sup className="text-green-600 font-bold ml-0.5">3</sup>. A young adult might successfully use an electronic communication tablet at day support, but resort to physical aggression at home or in a grocery store if the environments or staff prompts are inconsistent.
+        <p className="mb-6">
+          A major finding in developmental disability research is that learned communication skills do not naturally transfer across different settings<sup className="text-[#10b981] font-bold ml-0.5">3</sup>. A young adult might successfully use an electronic communication tablet at day support, but resort to physical aggression at home or in a grocery store if the environments or staff prompts are inconsistent.
         </p>
 
         <div className="grid md:grid-cols-2 gap-4 mb-4">
           <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
             <h4 className="font-bold text-[#0c264d] mb-2 border-b border-[#0A9DC4]/20 pb-1">School & Day Support</h4>
-            <ul className="text-sm text-gray-700 space-y-2">
+            <ul className="space-y-2">
               <li><strong className="text-[#0c264d]">Mitigate the Audience Effect:</strong> Having a crowd of peers watching an individual escalate increases shame and defensive aggression. Remove the audience by moving the other participants out of the room rather than forcing the dysregulated individual to move.</li>
               <li><strong className="text-[#0c264d]">Proactive Intermittent Access:</strong> Schedule proactive "sensory resets" in a low-stimulus area to keep their nervous system baseline stable before dysregulation occurs.</li>
             </ul>
@@ -115,7 +133,7 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           
           <div className="bg-[#f0f9ff] p-4 rounded-lg border border-[#0A9DC4]/20">
             <h4 className="font-bold text-[#0c264d] mb-2 border-b border-[#0A9DC4]/20 pb-1">Community Outings</h4>
-            <ul className="text-sm text-gray-700 space-y-2">
+            <ul className="space-y-2">
               <li><strong className="text-[#0c264d]">Portable Micro-Schedules:</strong> Outings fail when the timeline becomes ambiguous. Staff should carry a highly visual, 3-step portable schedule to anchor the individual.</li>
               <li><strong className="text-[#0c264d]">Environmental Reconnaissance:</strong> Map out "escape hatches" (quiet aisles, park benches, service vehicles) before arriving where co-regulation can happen privately.</li>
             </ul>
@@ -124,8 +142,8 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
 
         <div className="bg-white p-4 rounded border-l-2 border-[#2abcd4]">
           <h4 className="font-bold text-[#0c264d] mb-2">Home Environments</h4>
-          <ul className="text-sm text-gray-700 space-y-2">
-            <li><strong className="text-[#0c264d]">Communication Continuity:</strong> Ensure the exact same visual icons, phrase structures, and AAC setups used at day support are physically present and utilized at home<sup className="text-green-600 font-bold ml-0.5">3</sup>.</li>
+          <ul className="space-y-2">
+            <li><strong className="text-[#0c264d]">Communication Continuity:</strong> Ensure the exact same visual icons, phrase structures, and AAC setups used at day support are physically present and utilized at home<sup className="text-[#10b981] font-bold ml-0.5">3</sup>.</li>
             <li><strong className="text-[#0c264d]">Physical De-escalation Zones:</strong> Establish a designated, permanent "safe space" at home that is purely associated with comfort, never punishment.</li>
           </ul>
         </div>
@@ -138,27 +156,27 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
           Advanced Safety & Crisis Protocols for Staff
         </h2>
 
-        <p className="text-sm text-gray-700 mb-6 leading-relaxed">
-          When working one-on-one across fluid environments, staff safety requires tactical, non-physical positioning. Avoiding raised voices and keeping sentences short prevents the escalation of the fight-or-flight response<sup className="text-green-600 font-bold ml-0.5">4</sup>.
+        <p className="mb-6">
+          When working one-on-one across fluid environments, staff safety requires tactical, non-physical positioning. Avoiding raised voices and keeping sentences short prevents the escalation of the fight-or-flight response<sup className="text-[#10b981] font-bold ml-0.5">4</sup>.
         </p>
 
         <div className="grid md:grid-cols-3 gap-4 mb-6">
           <div className="bg-red-50 p-4 rounded border border-red-100 shadow-sm">
             <div className="font-bold text-[#0c264d] text-sm mb-2 pb-1 border-b border-red-200">The L-Position</div>
-            <p className="text-sm text-gray-700">
+            <p>
               Stand at a 90-degree angle relative to the individual's hip, rather than square-front. This eliminates a direct line of sight for strikes and removes the confrontational "standoff" posture.
             </p>
           </div>
           <div className="bg-red-50 p-4 rounded border border-red-100 shadow-sm">
             <div className="font-bold text-[#0c264d] text-sm mb-2 pb-1 border-b border-red-200">Environmental Triangulation</div>
-            <p className="text-sm text-gray-700">
+            <p>
               In any room or public venue, always position yourself so the individual is never between you and the exit. This prevents staff from being backed into corners during a sudden escalation.
             </p>
           </div>
           <div className="bg-red-50 p-4 rounded border border-red-100 shadow-sm">
             <div className="font-bold text-[#0c264d] text-sm mb-2 pb-1 border-b border-red-200">Visual Loading Reduction</div>
-            <p className="text-sm text-gray-700">
-              Lower your hands below your chest, keep palms open, and avoid direct, prolonged eye contact during high agitation. Raised hands or intense staring are biologically interpreted as aggressive challenges<sup className="text-green-600 font-bold ml-0.5">4</sup>.
+            <p>
+              Lower your hands below your chest, keep palms open, and avoid direct, prolonged eye contact during high agitation. Raised hands or intense staring are biologically interpreted as aggressive challenges<sup className="text-[#10b981] font-bold ml-0.5">4</sup>.
             </p>
           </div>
         </div>
@@ -168,10 +186,10 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
             <Activity className="text-[#d97706]" size={20} />
             Staff Trauma & The Symptom-Interaction Cycle
           </h4>
-          <p className="text-sm text-gray-700 mb-3 leading-relaxed">
+          <p className="mb-3">
             Working one-on-one with aggressive behavior causes cumulative nervous system trauma for staff. When a worker experiences chronic stress or hypervigilance, their micro-expressions change. They may display rigid posture, a sharper tone, or defensive pacing.
           </p>
-          <p className="text-sm text-gray-700 leading-relaxed">
+          <p>
             The dysregulated individual immediately detects these subtle threat signals, which heightens their own panic and increases the likelihood of an aggressive outburst. Breaking this cycle requires a heavy emphasis on post-crisis staff debriefing and operational safety nets, rather than relying solely on individual worker stamina.
           </p>
         </div>
@@ -181,10 +199,10 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
       <div className="flex justify-end mt-8 mb-6">
         <button 
           onClick={() => setCurrentArticle?.('autism-support-therapies')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2"
         >
-          <span className="text-xl">&larr;</span>
-          Back to Therapies
+          <span className="text-lg">&larr;</span>
+          All About Autism
         </button>
       </div>
 
@@ -196,7 +214,7 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
+          <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-1">
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -212,7 +230,7 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
+          <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b-2 border-[#2abcd4] pb-1">
             Background Sources
           </h4>
           <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>

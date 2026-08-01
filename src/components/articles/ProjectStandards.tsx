@@ -93,6 +93,13 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <FileText className="text-[#2abcd4]" /> CITATION SYSTEM
         </h2>
         
+        <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-5 rounded-r-lg mb-6">
+          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">The Self-Contained Reference Rule</h3>
+          <p className="text-sm text-gray-800">
+            <strong>There are no master reference lists on Brainopedia.</strong> Every single page and subpage must contain its own self-contained, context-specific reference section at the bottom. Do not omit the reference section assuming it exists elsewhere.
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-4 mb-6">
            <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-4 text-sm">
             <p className="font-bold mb-2 uppercase text-[#0c264d]">ONLY Use Inline Citations When:</p>
@@ -303,10 +310,11 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <ul className="list-disc ml-5 text-sm text-gray-700 space-y-2 mb-4">
             <li><strong>Weight:</strong> Normal (<code className="bg-gray-100 px-1 rounded break-words">font-normal</code>).</li>
             <li className="text-red-600 font-bold">STRICT RULE: NO bolding (<code className="bg-red-50 px-1 rounded break-words">font-bold</code> or <code className="bg-red-50 px-1 rounded break-words">font-semibold</code>) is allowed on tabs, standard navigation buttons, or "About" buttons. Text must be <code className="bg-red-50 px-1 rounded break-words">font-normal</code>.</li>
+            <li><strong>Exception:</strong> "Read more →" buttons at the bottom of main overview sections <strong>MUST</strong> use <code className="bg-gray-100 px-1 rounded break-words">font-bold</code> styling.</li>
           </ul>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">Resting State</h3>
             <p className="text-xs mb-3 text-gray-600">Yellow background with Navy text.</p>
@@ -330,6 +338,13 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
               bg-[#0A9DC4] text-white
             </code>
           </div>
+        </div>
+
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg shadow-sm">
+          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">Standard "Read More" Button Class</h3>
+          <code className="text-sm font-bold bg-white text-blue-600 p-3 rounded border border-blue-200 block w-full break-all">
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+          </code>
         </div>
       </section>
 

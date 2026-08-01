@@ -251,41 +251,41 @@ export function DyslexiaCausesRisk({ setCurrentArticle }: DyslexiaCausesRiskProp
             
             {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
-              <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed italic" style={{ textIndent: 0 }}>
                 <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
               </div>
             </div>
 
             <div>
-              <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b-2 border-[#2abcd4] pb-2">
                 Background Sources
               </h4>
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
-                <li>Espy, K. A., Molfese, D. L., Molfese, V. J., & Modglin, A. (2004). "Development of auditory event-related potentials in young children and relations to word-level reading abilities at age 8 years." <em>Annals of Dyslexia</em>. https://doi.org/10.1007/s11881-004-0002-3</li>
-                <li>Ferrer, E., Shaywitz, B. A., Holahan, J. M., Marchione, K., & Shaywitz, S. E. (2010). "Uncoupling of reading and IQ over time: Empirical evidence for a definition of dyslexia." <em>Psychological Science</em>. https://doi.org/10.1177/0956797609354084</li>
-                <li>Fischer, F. W., Liberman, I. Y., & Shankweiler, D. (1978). "Reading reversals and developmental dyslexia: A further study." <em>Cortex</em>. https://doi.org/10.1016/S0010-9452(78)80026-X</li>
-                <li>Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2018). <em>Learning disabilities: From identification to intervention</em> (2nd ed.). Guilford Publications.</li>
-                <li>Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <em>Science</em>. https://doi.org/10.1126/science.1171999</li>
-                <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.</li>
-                <li>Litt, J., Taylor, H. G., Klein, N., & Hack, M. (2005). "Learning disabilities in children with very low birthweight: Prevalence, neuropsychological correlates, and educational interventions." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/00222194050380020301</li>
-                <li>McNulty, M. A. (2003). "Dyslexia and the life course." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/00222194030360040701</li>
-                <li>Noble, K. G., Wolmetz, M. E., Ochs, L. G., Farah, M. J., & McCandliss, B. D. (2006). "Brain–behavior relationships in reading acquisition are modulated by socioeconomic factors." <em>Developmental Science</em>. https://doi.org/10.1111/j.1467-7687.2006.00542.x</li>
-                <li>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>. https://doi.org/10.1146/annurev-psych-120710-100431</li>
-                <li>Paulesu, E., Démonet, J. F., Fazio, F., et al. (2001). "Dyslexia: Cultural diversity and biological unity." <em>Science</em>. https://doi.org/10.1126/science.1057179</li>
-                <li>Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <em>Annual Review of Clinical Psychology</em>. https://doi.org/10.1146/annurev-clinpsy-032814-112842</li>
-                <li>Share, D. L. (2008). "On the Anglocentricities of current reading research and practice: The perils of overreliance on an outlier orthography." <em>Psychological Bulletin</em>. https://doi.org/10.1037/a0013066</li>
-                <li>Shaywitz, S. (2003). <em>Overcoming dyslexia</em>. Knopf.</li>
-                <li>Snowling, M. J., & Hulme, C. (2011). "Evidence‐based interventions for reading and language difficulties: Creating a virtuous circle." <em>British Journal of Educational Psychology</em>. https://doi.org/10.1111/j.2044-8279.2010.02014.x</li>
-                <li>Snowling, M. J., & Hulme, C. (2012). "Annual research review: The nature and classification of reading disorders–a commentary on proposals for DSM‐5." <em>Journal of Child Psychology and Psychiatry</em>. https://doi.org/10.1111/j.1469-7610.2011.02495.x</li>
-                <li>Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia: A meta-analysis and review." <em>Psychological Bulletin</em>. https://doi.org/10.1037/bul0000037</li>
-                <li>Torgesen, J. K. (2004). "Lessons learned from research on interventions for students who have difficulty learning to read." In <em>The voice of evidence in reading research</em>. Paul H. Brookes.</li>
-                <li>Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). "Specific reading disability (dyslexia): What have we learned in the past four decades?" <em>Journal of Child Psychology and Psychiatry</em>. https://doi.org/10.1046/j.0021-9630.2003.00305.x</li>
-                <li>Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages: A psycholinguistic grain size theory." <em>Psychological Bulletin</em>. https://doi.org/10.1037/0033-2909.131.1.3</li>
-              </ul>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425787</p>
+                <p>Espy, K. A., et al. (2004). "Development of auditory event-related potentials in young children and relations to word-level reading abilities at age 8 years." <em>Annals of Dyslexia</em>. https://doi.org/10.1007/s11881-004-0002-3</p>
+                <p>Ferrer, E., et al. (2010). "Uncoupling of reading and IQ over time: Empirical evidence for a definition of dyslexia." <em>Psychological Science</em>. https://doi.org/10.1177/0956797609354084</p>
+                <p>Fischer, F. W., et al. (1978). "Reading reversals and developmental dyslexia: A further study." <em>Cortex</em>. https://doi.org/10.1016/S0010-9452(78)80026-X</p>
+                <p>Fletcher, J. M., et al. (2018). <em>Learning disabilities: From identification to intervention</em> (2nd ed.). Guilford Publications. https://www.guilford.com/books/Learning-Disabilities/Fletcher-Lyon-Fuchs-Barnes/9781462536375</p>
+                <p>Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <em>Science</em>. https://doi.org/10.1126/science.1171999</p>
+                <p>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>. https://dyslexiaida.org/dyslexia-in-the-classroom/</p>
+                <p>Litt, J., et al. (2005). "Learning disabilities in children with very low birthweight: Prevalence, neuropsychological correlates, and educational interventions." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/00222194050380020301</p>
+                <p>McNulty, M. A. (2003). "Dyslexia and the life course." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/00222194030360040701</p>
+                <p>Noble, K. G., et al. (2006). "Brain–behavior relationships in reading acquisition are modulated by socioeconomic factors." <em>Developmental Science</em>. https://doi.org/10.1111/j.1467-7687.2006.00542.x</p>
+                <p>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>. https://doi.org/10.1146/annurev-psych-120710-100431</p>
+                <p>Paulesu, E., et al. (2001). "Dyslexia: Cultural diversity and biological unity." <em>Science</em>. https://doi.org/10.1126/science.1057179</p>
+                <p>Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <em>Annual Review of Clinical Psychology</em>. https://doi.org/10.1146/annurev-clinpsy-032814-112842</p>
+                <p>Share, D. L. (2008). "On the Anglocentricities of current reading research and practice: The perils of overreliance on an outlier orthography." <em>Psychological Bulletin</em>. https://doi.org/10.1037/a0013066</p>
+                <p>Shaywitz, S. (2003). <em>Overcoming dyslexia</em>. Knopf. https://www.penguinrandomhouse.com/books/165181/overcoming-dyslexia-by-sally-shaywitz-md/</p>
+                <p>Snowling, M. J., & Hulme, C. (2011). "Evidence‐based interventions for reading and language difficulties: Creating a virtuous circle." <em>British Journal of Educational Psychology</em>. https://doi.org/10.1111/j.2044-8279.2010.02014.x</p>
+                <p>Snowling, M. J., & Hulme, C. (2012). "Annual research review: The nature and classification of reading disorders–a commentary on proposals for DSM‐5." <em>Journal of Child Psychology and Psychiatry</em>. https://doi.org/10.1111/j.1469-7610.2011.02495.x</p>
+                <p>Snowling, M. J., & Melby-Lervåg, M. (2016). "Oral language deficits in familial dyslexia: A meta-analysis and review." <em>Psychological Bulletin</em>. https://doi.org/10.1037/bul0000037</p>
+                <p>Torgesen, J. K. (2004). "Lessons learned from research on interventions for students who have difficulty learning to read." In <em>The voice of evidence in reading research</em>. Paul H. Brookes. https://brookespublishing.com/product/the-voice-of-evidence-in-reading-research/</p>
+                <p>Vellutino, F. R., et al. (2004). "Specific reading disability (dyslexia): What have we learned in the past four decades?" <em>Journal of Child Psychology and Psychiatry</em>. https://doi.org/10.1046/j.0021-9630.2003.00305.x</p>
+                <p>Ziegler, J. C., & Goswami, U. (2005). "Reading acquisition, developmental dyslexia, and skilled reading across languages: A psycholinguistic grain size theory." <em>Psychological Bulletin</em>. https://doi.org/10.1037/0033-2909.131.1.3</p>
+              </div>
             </div>
           </div>
         </TabsContent>

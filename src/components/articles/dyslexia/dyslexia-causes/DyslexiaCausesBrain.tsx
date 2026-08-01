@@ -299,49 +299,49 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
             
             {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
-              <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed italic" style={{ textIndent: 0 }}>
                 <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
               </div>
             </div>
 
             <div>
-              <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b-2 border-[#2abcd4] pb-2">
                 Background Sources
               </h4>
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>American Psychiatric Association. (2013). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed.). American Psychiatric Publishing.</li>
-                <li>Bosse, M. L., Tainturier, M. J., & Valdois, S. (2007). "Developmental dyslexia: The visual attention span deficit hypothesis." <em>Cognition</em>.</li>
-                <li>Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <em>Science</em>.</li>
-                <li>Galaburda, A. M. (1993). "Neurology of developmental dyslexia." <em>Current Opinion in Neurobiology</em>.</li>
-                <li>Galaburda, A. M., & Cestnick, L. (2003). "Dislexia del desarrollo." <em>Revista de Neurología</em>.</li>
-                <li>Galaburda, A. M., Sherman, G. F., Rosen, G. D., Aboitiz, F., & Geschwind, N. (1985). "Developmental dyslexia: Four consecutive patients with cortical anomalies." <em>Annals of Neurology</em>.</li>
-                <li>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>.</li>
-                <li>McCandliss, B. D., Cohen, L., & Dehaene, S. (2003). "The visual word form area: Expertise for reading in the fusiform gyrus." <em>Trends in Cognitive Sciences</em>.</li>
-                <li>Nicolson, R. I., Fawcett, A. J., & Dean, P. (2001). "Developmental dyslexia: The cerebellar deficit hypothesis." <em>Trends in Neurosciences</em>.</li>
-                <li>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <em>Annual Review of Psychology</em>.</li>
-                <li>Norton, E. S., Beach, S. D., & Gabrieli, J. D. (2015). "Neurobiology of dyslexia." <em>Current Opinion in Neurobiology</em>.</li>
-                <li>Pennington, B. F. (2006). "From single to multiple deficit models of developmental disorders." <em>Cognition</em>.</li>
-                <li>Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <em>Annual Review of Clinical Psychology</em>.</li>
-                <li>Pugh, K. R., Mencl, W. E., Jenner, A. R., et al. (2001). "Neurobiological studies of reading and reading disability." <em>Journal of Communication Disorders</em>.</li>
-                <li>Ramus, F. (2003). "Developmental dyslexia: Specific phonological deficit or general sensorimotor dysfunction?" <em>Current Opinion in Neurobiology</em>.</li>
-                <li>Ramus, F., & Szenkovits, G. (2008). "What phonological deficit?" <em>Quarterly Journal of Experimental Psychology</em>.</li>
-                <li>Ramus, F., Pidgeon, E., & Frith, U. (2003). "The relationship between motor control and phonology in dyslexic children." <em>Journal of Child Psychology and Psychiatry</em>.</li>
-                <li>Richards, T. L., & Berninger, V. W. (2008). "Abnormal fMRI connectivity in children with dyslexia during a phoneme task: Before but not after treatment." <em>Journal of Neurolinguistics</em>.</li>
-                <li>Richlan, F., Kronbichler, M., & Wimmer, H. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <em>NeuroImage</em>.</li>
-                <li>Shaywitz, B. A., Shaywitz, S. E., Pugh, K. R., et al. (2002). "Disruption of posterior brain systems for reading in children with developmental dyslexia." <em>Biological Psychiatry</em>.</li>
-                <li>Shaywitz, S. E., Shaywitz, B. A., Fulbright, R. K., et al. (2003). "Neural systems for compensation and persistence: Young adult outcome of childhood reading disability." <em>Biological Psychiatry</em>.</li>
-                <li>Silani, G., Frith, U., Demonet, J. F., et al. (2005). "Brain abnormalities underlying altered activation in dyslexia: A voxel based morphometry study." <em>Brain</em>.</li>
-                <li>Snowling, M. J. (2000). <em>Dyslexia</em> (2nd ed.). Blackwell Publishing.</li>
-                <li>Stein, J., & Walsh, V. (1997). "To see but not to read; the magnocellular theory of dyslexia." <em>Trends in Neurosciences</em>.</li>
-                <li>Swan, D., & Goswami, U. (1997). "Phonological awareness deficits in developmental dyslexia and the phonological representations hypothesis." <em>Journal of Experimental Child Psychology</em>.</li>
-                <li>Vandermosten, M., Boets, B., Wouters, J., & Ghesquière, P. (2012). "A qualitative and quantitative review of diffusion tensor imaging studies in reading and dyslexia." <em>Neuroscience & Biobehavioral Reviews</em>.</li>
-                <li>Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). "Specific reading disability (dyslexia): What have we learned in the past four decades?" <em>Journal of Child Psychology and Psychiatry</em>.</li>
-                <li>Wagner, R. K., & Torgesen, J. K. (1987). "The nature of phonological processing and its causal role in the acquisition of reading skills." <em>Psychological Bulletin</em>.</li>
-                <li>Wolf, M., & Bowers, P. G. (1999). "The double-deficit hypothesis for the developmental dyslexias." <em>Journal of Educational Psychology</em>.</li>
-              </ul>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425787</p>
+                <p>Bosse, M. L., et al. (2007). "Developmental dyslexia: The visual attention span deficit hypothesis." <i>Cognition</i>. https://doi.org/10.1016/j.cognition.2006.05.004</p>
+                <p>Gabrieli, J. D. (2009). "Dyslexia: A new synergy between education and cognitive neuroscience." <i>Science</i>. https://doi.org/10.1126/science.1171999</p>
+                <p>Galaburda, A. M. (1993). "Neurology of developmental dyslexia." <i>Current Opinion in Neurobiology</i>. https://doi.org/10.1016/0959-4388(93)90117-X</p>
+                <p>Galaburda, A. M., & Cestnick, L. (2003). "Dislexia del desarrollo." <i>Revista de Neurología</i>. https://doi.org/10.33588/rn.36s1.2003024</p>
+                <p>Galaburda, A. M., et al. (1985). "Developmental dyslexia: Four consecutive patients with cortical anomalies." <i>Annals of Neurology</i>. https://doi.org/10.1002/ana.410180210</p>
+                <p>International Dyslexia Association. (2017). <i>Dyslexia in the Classroom: What Every Teacher Needs to Know</i>. https://dyslexiaida.org/dyslexia-in-the-classroom/</p>
+                <p>McCandliss, B. D., et al. (2003). "The visual word form area: Expertise for reading in the fusiform gyrus." <i>Trends in Cognitive Sciences</i>. https://doi.org/10.1016/S1364-6613(03)00134-7</p>
+                <p>Nicolson, R. I., et al. (2001). "Developmental dyslexia: The cerebellar deficit hypothesis." <i>Trends in Neurosciences</i>. https://doi.org/10.1016/S0166-2236(00)01896-8</p>
+                <p>Norton, E. S., & Wolf, M. (2012). "Rapid automatized naming (RAN) and reading fluency: Implications for understanding and treatment of reading disabilities." <i>Annual Review of Psychology</i>. https://doi.org/10.1146/annurev-psych-120710-100431</p>
+                <p>Norton, E. S., et al. (2015). "Neurobiology of dyslexia." <i>Current Opinion in Neurobiology</i>. https://doi.org/10.1016/j.conb.2014.09.007</p>
+                <p>Pennington, B. F. (2006). "From single to multiple deficit models of developmental disorders." <i>Cognition</i>. https://doi.org/10.1016/j.cognition.2006.04.008</p>
+                <p>Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <i>Annual Review of Clinical Psychology</i>. https://doi.org/10.1146/annurev-clinpsy-032814-112842</p>
+                <p>Pugh, K. R., et al. (2001). "Neurobiological studies of reading and reading disability." <i>Journal of Communication Disorders</i>. https://doi.org/10.1016/S0021-9924(01)00060-0</p>
+                <p>Ramus, F. (2003). "Developmental dyslexia: Specific phonological deficit or general sensorimotor dysfunction?" <i>Current Opinion in Neurobiology</i>. https://doi.org/10.1016/S0959-4388(03)00035-7</p>
+                <p>Ramus, F., & Szenkovits, G. (2008). "What phonological deficit?" <i>Quarterly Journal of Experimental Psychology</i>. https://doi.org/10.1080/17470210701508822</p>
+                <p>Ramus, F., et al. (2003). "The relationship between motor control and phonology in dyslexic children." <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/1469-7610.00157</p>
+                <p>Richards, T. L., & Berninger, V. W. (2008). "Abnormal fMRI connectivity in children with dyslexia during a phoneme task: Before but not after treatment." <i>Journal of Neurolinguistics</i>. https://doi.org/10.1016/j.jneuroling.2007.07.002</p>
+                <p>Richlan, F., et al. (2011). "Meta-analyzing brain dysfunctions in dyslexic children and adults." <i>NeuroImage</i>. https://doi.org/10.1016/j.neuroimage.2011.02.040</p>
+                <p>Shaywitz, B. A., et al. (2002). "Disruption of posterior brain systems for reading in children with developmental dyslexia." <i>Biological Psychiatry</i>. https://doi.org/10.1016/S0006-3223(02)01365-3</p>
+                <p>Shaywitz, S. E., et al. (2003). "Neural systems for compensation and persistence: Young adult outcome of childhood reading disability." <i>Biological Psychiatry</i>. https://doi.org/10.1016/S0006-3223(02)01820-6</p>
+                <p>Silani, G., et al. (2005). "Brain abnormalities underlying altered activation in dyslexia: A voxel based morphometry study." <i>Brain</i>. https://doi.org/10.1093/brain/awh579</p>
+                <p>Snowling, M. J. (2000). <i>Dyslexia</i> (2nd ed.). Blackwell Publishing. https://www.wiley.com/en-us/Dyslexia%2C+2nd+Edition-p-9780631220004</p>
+                <p>Stein, J., & Walsh, V. (1997). "To see but not to read; the magnocellular theory of dyslexia." <i>Trends in Neurosciences</i>. https://doi.org/10.1016/S0166-2236(96)01005-3</p>
+                <p>Swan, D., & Goswami, U. (1997). "Phonological awareness deficits in developmental dyslexia and the phonological representations hypothesis." <i>Journal of Experimental Child Psychology</i>. https://doi.org/10.1006/jecp.1997.2375</p>
+                <p>Vandermosten, M., et al. (2012). "A qualitative and quantitative review of diffusion tensor imaging studies in reading and dyslexia." <i>Neuroscience & Biobehavioral Reviews</i>. https://doi.org/10.1016/j.neubiorev.2012.04.002</p>
+                <p>Vellutino, F. R., et al. (2004). "Specific reading disability (dyslexia): What have we learned in the past four decades?" <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1046/j.0021-9630.2003.00305.x</p>
+                <p>Wagner, R. K., & Torgesen, J. K. (1987). "The nature of phonological processing and its causal role in the acquisition of reading skills." <i>Psychological Bulletin</i>. https://doi.org/10.1037/0033-2909.101.2.192</p>
+                <p>Wolf, M., & Bowers, P. G. (1999). "The double-deficit hypothesis for the developmental dyslexias." <i>Journal of Educational Psychology</i>. https://doi.org/10.1037/0022-0663.91.3.415</p>
+              </div>
             </div>
           </div>
         </TabsContent>

@@ -141,26 +141,26 @@ export function DyslexiaSymptomsStrengths({ setCurrentArticle }: DyslexiaSymptom
             
             {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
-              <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed italic" style={{ textIndent: 0 }}>
                 <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
               </div>
             </div>
 
             <div>
-              <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b-2 border-[#2abcd4] pb-2">
                 Background Sources
               </h4>
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>Eide, B. L., & Eide, F. F. (2011). <em>The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain</em>. Hudson Street Press.</li>
-                <li>Everatt, J., et al. (1999). "Dyslexia, spatial ability, and creative thinking." <em>Dyslexia</em>.</li>
-                <li>Goldberg, R. J., Higgins, E. L., Raskind, M. H., & Herman, K. L. (2003). "Predictors of success in individuals with learning disabilities: A qualitative analysis of a 20-year longitudinal study." <em>Learning Disabilities Research & Practice</em>.</li>
-                <li>Schneps, M. H., et al. (2012). "Dyslexia favors visual thinking." <em>Psychological Science</em>.</li>
-                <li>Von Karolyi, C. (2001). "Visual-spatial strength in dyslexia: Rapid discrimination of impossible figures." <em>Journal of Experimental Child Psychology</em>.</li>
-                <li>West, T. G. (2009). <em>In the Mind's Eye: Creative Visual Thinkers, Gifted Dyslexics, and the Rise of Visual Technologies</em>. Prometheus Books.</li>
-              </ul>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>Eide, B. L., & Eide, F. F. (2011). <i>The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain</i>. Hudson Street Press. https://www.penguinrandomhouse.com/books/308960/the-dyslexic-advantage-revised-and-updated-by-brock-l-eide-md-ma-and-fernette-f-eide-md/</p>
+                <p>Everatt, J., et al. (1999). "Dyslexia, spatial ability, and creative thinking." <i>Dyslexia</i>. https://doi.org/10.1002/(SICI)1099-0909(199903)5:1%3C28::AID-DYS128%3E3.0.CO;2-H</p>
+                <p>Goldberg, R. J., et al. (2003). "Predictors of success in individuals with learning disabilities: A qualitative analysis of a 20-year longitudinal study." <i>Learning Disabilities Research & Practice</i>. https://doi.org/10.1111/1540-5826.00077</p>
+                <p>Schneps, M. H., et al. (2012). "Dyslexia favors visual thinking." <i>Psychological Science</i>. https://doi.org/10.1177/0956797611434914</p>
+                <p>Von Karolyi, C. (2001). "Visual-spatial strength in dyslexia: Rapid discrimination of impossible figures." <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/002221940103400412</p>
+                <p>West, T. G. (2009). <i>In the Mind's Eye: Creative Visual Thinkers, Gifted Dyslexics, and the Rise of Visual Technologies</i>. Prometheus Books. https://rowman.com/ISBN/9781615926510/In-the-Minds-Eye-Creative-Visual-Thinkers-Gifted-Dyslexics-and-the-Rise-of-Visual-Technologies</p>
+              </div>
             </div>
           </div>
         </TabsContent>

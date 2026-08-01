@@ -174,27 +174,27 @@ export function DyslexiaSymptomsImpact({ setCurrentArticle }: DyslexiaSymptomsIm
             
             {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
-              <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-3 border-b border-green-700 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics
               </h4>
-              <div className="text-xs space-y-3 text-slate-600 leading-relaxed italic" style={{ textIndent: 0 }}>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed italic" style={{ textIndent: 0 }}>
                 <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
               </div>
             </div>
 
             <div>
-              <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+              <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b-2 border-[#2abcd4] pb-2">
                 Background Sources
               </h4>
-              <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-                <li>Boetsch, E. A., Green, P. A., & Pennington, B. F. (1996). "Psychosocial correlates of dyslexia across the life span." <em>Development and Psychopathology</em>.</li>
-                <li>Carroll, J. M., & Iles, J. E. (2006). "An assessment of anxiety levels in dyslexic students in higher education." <em>British Journal of Educational Psychology</em>. https://doi.org/10.1348/000709905X66233</li>
-                <li>Gerber, P. J. (2012). "The impact of learning disabilities on adulthood: A review." <em>Journal of Learning Disabilities</em>.</li>
-                <li>Grills-Taquechel, A. E., Fletcher, J. M., Vaughn, S. R., & Stuebing, K. K. (2012). "Anxiety and reading difficulties in early elementary school." <em>Child Psychiatry & Human Development</em>. https://doi.org/10.1007/s10578-011-0246-y</li>
-                <li>Humphrey, N., & Mullins, P. M. (2002). "Self-concept and self-esteem in developmental dyslexia." <em>Journal of Research in Special Educational Needs</em>.</li>
-                <li>Lewandowski, L. J., et al. (2008). "Symptoms of ADHD and academic concerns in college students with and without ADHD diagnoses." <em>Journal of Attention Disorders</em>. https://doi.org/10.1177/1087054707304694</li>
-                <li>Meltzer, L. J. (2007). <em>Executive function in education: From theory to practice</em>. Guilford Press.</li>
-              </ul>
+              <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>Boetsch, E. A., et al. (1996). "Psychosocial correlates of dyslexia across the life span." <i>Development and Psychopathology</i>. https://doi.org/10.1017/s0954579400007253</p>
+                <p>Carroll, J. M., & Iles, J. E. (2006). "An assessment of anxiety levels in dyslexic students in higher education." <i>British Journal of Educational Psychology</i>. https://doi.org/10.1348/000709905X66233</p>
+                <p>Gerber, P. J. (2012). "The impact of learning disabilities on adulthood: A review." <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219411426858</p>
+                <p>Grills-Taquechel, A. E., et al. (2012). "Anxiety and reading difficulties in early elementary school." <i>Child Psychiatry & Human Development</i>. https://doi.org/10.1007/s10578-011-0246-y</p>
+                <p>Humphrey, N., & Mullins, P. M. (2002). "Self-concept and self-esteem in developmental dyslexia." <i>Journal of Research in Special Educational Needs</i>. https://doi.org/10.1111/j.1471-3802.2002.00163.x</p>
+                <p>Lewandowski, L. J., et al. (2008). "Symptoms of ADHD and academic concerns in college students with and without ADHD diagnoses." <i>Journal of Attention Disorders</i>. https://doi.org/10.1177/1087054707304694</p>
+                <p>Meltzer, L. J. (2007). <i>Executive function in education: From theory to practice</i>. Guilford Press. https://www.guilford.com/books/Executive-Function-in-Education/Lynn-Meltzer/9781593854282</p>
+              </div>
             </div>
           </div>
         </TabsContent>

@@ -1,3 +1,4 @@
+import React from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 interface TouretteCausesProps {
@@ -6,43 +7,90 @@ interface TouretteCausesProps {
 
 export function TouretteCauses({ setCurrentArticle }: TouretteCausesProps) {
   return (
-    <article className="max-w-6xl">
-      <style>{`sup { color: #10b981; }`}</style>
-      <div className="mb-6">
-        <a href="#" onClick={(e) => { e.preventDefault(); setCurrentArticle?.('tourette'); }} className="text-[#2abcd4] hover:underline cursor-pointer">← Back to Tourette Syndrome</a>
+    <article className="max-w-6xl font-spartan animate-fadeIn">
+      
+      {/* Header and Desktop Back Button */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl font-spartan text-[#0c264d] font-normal">
+          TS: Causes & Origins
+        </h1>
+        <button 
+          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('tourette'); }}
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0 md:flex hidden"
+        >
+          <span className="text-lg">←</span>
+          All About TS
+        </button>
       </div>
 
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">Tourette Syndrome: Causes & Origins</h1>
+      {/* Mobile Back Button */}
+      <button 
+        onClick={(e) => { e.preventDefault(); setCurrentArticle?.('tourette'); }}
+        className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0 md:hidden mb-6"
+      >
+        <span className="text-lg">←</span>
+        All About TS
+      </button>
 
       <div className="space-y-8">
-        <section>
+        <section className="flow-root">
           <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1714939722610-9169e8883bf8?w=1080&q=80"
+            src="/images/tourette/tourette-causes-main.png"
             alt="Brain basal ganglia - neurological basis of Tourette syndrome"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
-          <p className="mb-4">Tourette syndrome has a strong genetic component, with studies showing increased risk in family members of individuals with TS.<sup>[17][18]</sup> However, the genetics are complex, likely involving multiple genes interacting with environmental factors.<sup>[19]</sup> Neurologically, TS involves differences in brain circuits connecting the basal ganglia, thalamus, and frontal cortex—areas involved in movement control and habit formation.<sup>[20]</sup></p>
-          <p className="mb-4">Research suggests differences in neurotransmitter systems, particularly dopamine, serotonin, and GABA.<sup>[21][22]</sup> Brain imaging studies have revealed structural and functional differences in people with TS, particularly in the circuits that regulate voluntary movements and inhibit unwanted actions.<sup>[23]</sup> These neurological differences help explain why individuals with TS experience difficulty suppressing tics and experience premonitory urges.<sup>[24]</sup> Environmental factors such as prenatal complications and autoimmune responses may also contribute to tic expression.<sup>[25]</sup></p>
+          <p className="mb-4">
+            Tourette syndrome has a strong genetic component, with studies showing increased risk in family members of individuals with TS.<sup className="text-[#10b981] font-bold ml-0.5">1, 2</sup> However, the genetics are complex, likely involving multiple genes interacting with environmental factors. Neurologically, TS involves differences in brain circuits connecting the basal ganglia, thalamus, and frontal cortex—areas involved in movement control and habit formation.
+          </p>
+          <p className="mb-4">
+            Research suggests differences in neurotransmitter systems, particularly dopamine, serotonin, and GABA.<sup className="text-[#10b981] font-bold ml-0.5">3, 4</sup> Brain imaging studies have revealed structural and functional differences in people with TS, particularly in the circuits that regulate voluntary movements and inhibit unwanted actions.<sup className="text-[#10b981] font-bold ml-0.5">5</sup> These neurological differences help explain why individuals with TS experience difficulty suppressing tics and experience premonitory urges. Environmental factors such as prenatal complications and autoimmune responses may also contribute to tic expression.
+          </p>
         </section>
       </div>
 
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <p>[17] O'Rourke, J. A., Scharf, J. M., Yu, D., & Pauls, D. L. (2009). "The genetics of Tourette syndrome: A review." <em>Journal of Psychosomatic Research</em>, 67(6), 533-545.</p>
-          <p>[18] Pauls, D. L., Fernandez, T. V., Mathews, C. A., State, M. W., & Scharf, J. M. (2014). "The inheritance of Tourette disorder: A review." <em>Journal of Obsessive-Compulsive and Related Disorders</em>, 3(4), 380-385.</p>
-          <p>[19] Mataix-Cols, D., Isomura, K., Pérez-Vigil, A., et al. (2015). "Familial risks of Tourette syndrome and chronic tic disorders: A population-based cohort study." <em>JAMA Psychiatry</em>, 72(8), 787-793.</p>
-          <p>[20] Mink, J. W. (2001). "Basal ganglia dysfunction in Tourette's syndrome: A new hypothesis." <em>Pediatric Neurology</em>, 25(3), 190-198.</p>
-          <p>[21] Singer, H. S., & Minzer, K. (2003). "Neurobiology of Tourette's syndrome: Concepts of neuroanatomic localization and neurochemical abnormalities." <em>Brain and Development</em>, 25, S70-S84.</p>
-          <p>[22] Buse, J., Schoenefeld, K., Münchau, A., & Roessner, V. (2013). "Neuromodulation in Tourette syndrome: Dopamine and beyond." <em>Neuroscience & Biobehavioral Reviews</em>, 37(6), 1069-1084.</p>
-          <p>[23] Peterson, B. S., Thomas, P., Kane, M. J., et al. (2003). "Basal ganglia volumes in patients with Gilles de la Tourette syndrome." <em>Archives of General Psychiatry</em>, 60(4), 415-424.</p>
-          <p>[24] Jackson, G. M., Draper, A., Dyke, K., Pépés, S. E., & Jackson, S. R. (2015). "Inhibition, disinhibition, and the control of action in Tourette syndrome." <em>Trends in Cognitive Sciences</em>, 19(11), 655-665.</p>
-          <p>[25] Martino, D., Zis, P., & Buttiglione, M. (2015). "The role of immune mechanisms in Tourette syndrome." <em>Brain Research</em>, 1617, 126-143.</p>
+      {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+      
+      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner mb-10 font-spartan">
+        <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. O'Rourke, J. A., et al. (2009). "The genetics of Tourette syndrome: A review." <i>Journal of Psychosomatic Research</i>. https://doi.org/10.1016/j.jpsychores.2009.06.008</p>
+            <p>2. Pauls, D. L., et al. (2014). "The inheritance of Tourette disorder: A review." <i>Journal of Obsessive-Compulsive and Related Disorders</i>. https://doi.org/10.1016/j.jocrd.2014.03.007</p>
+            <p>3. Singer, H. S., & Minzer, K. (2003). "Neurobiology of Tourette's syndrome: Concepts of neuroanatomic localization and neurochemical abnormalities." <i>Brain and Development</i>. https://doi.org/10.1016/S0387-7604(03)00074-1</p>
+            <p>4. Buse, J., et al. (2013). "Neuromodulation in Tourette syndrome: Dopamine and beyond." <i>Neuroscience & Biobehavioral Reviews</i>. https://doi.org/10.1016/j.neubiorev.2013.02.008</p>
+            <p>5. Peterson, B. S., et al. (2003). "Basal ganglia volumes in patients with Gilles de la Tourette syndrome." <i>Archives of General Psychiatry</i>. https://doi.org/10.1001/archpsyc.60.4.415</p>
+          </div>
         </div>
-      </section>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Jackson, G. M., et al. (2015). "Inhibition, disinhibition, and the control of action in Tourette syndrome." <i>Trends in Cognitive Sciences</i>. https://doi.org/10.1016/j.tics.2015.08.006</p>
+            <p>Martino, D., et al. (2015). "The role of immune mechanisms in Tourette syndrome." <i>Brain Research</i>. https://doi.org/10.1016/j.brainres.2014.10.043</p>
+            <p>Mataix-Cols, D., et al. (2015). "Familial risks of Tourette syndrome and chronic tic disorders: A population-based cohort study." <i>JAMA Psychiatry</i>. https://doi.org/10.1001/jamapsychiatry.2015.0627</p>
+            <p>Mink, J. W. (2001). "Basal ganglia dysfunction in Tourette's syndrome: A new hypothesis." <i>Pediatric Neurology</i>. https://doi.org/10.1016/S0887-8994(01)00262-4</p>
+          </div>
+        </div>
+      </div>
 
-      <div className="mt-8">
-        <a href="#" onClick={(e) => { e.preventDefault(); setCurrentArticle?.('tourette'); }} className="text-[#2abcd4] hover:underline cursor-pointer">← Back to Tourette Syndrome</a>
+      {/* Bottom Back Button */}
+      <div className="mt-8 clear-both">
+        <button 
+          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('tourette'); }} 
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal text-sm font-spartan py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0 inline-flex"
+        >
+          <span className="text-lg">←</span>
+          All About TS
+        </button>
       </div>
     </article>
   );
