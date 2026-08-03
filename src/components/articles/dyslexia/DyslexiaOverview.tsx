@@ -251,51 +251,103 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
   function ReadingBrainContent() {
     return (
-      <div className="animate-fadeIn">
+      <div className="animate-fadeIn space-y-8">
         {/* SECTION 3: THE READING BRAIN */}
-        <section className="space-y-6 clear-both">
-          <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2">Understanding the Reading Brain</h2>
+        <section className="clear-both">
+          <h2 className="text-[#0c264d] font-bold text-2xl border-b border-[#ffd166] pb-2 mb-6">Understanding the Reading Brain</h2>
           
-          {/* Floated Video */}
-          <div className="w-48 md:w-64 rounded-xl overflow-hidden shadow-sm float-right ml-6 mb-4">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              poster="/images/dyslexia/dyslexia-overview-books-fly.png"
-              className="w-full h-auto object-contain"
-              aria-label="Books flying out of a swirl, representing the challenges of reading with dyslexia"
-            >
-              <source 
-                src="/images/dyslexia/dyslexia-overview-books-fly.mp4" 
-                type="video/mp4" 
-              />
-            </video>
+          <div className="bg-[#f0f9ff] p-6 rounded-lg border border-[#0A9DC4]/20 shadow-sm mb-8 flow-root">
+            {/* Floated Video */}
+            <div className="w-48 md:w-64 rounded-xl overflow-hidden shadow-sm float-right ml-6 mb-4">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                poster="/images/dyslexia/dyslexia-overview-books-fly.png"
+                className="w-full h-auto object-contain"
+                aria-label="Books flying out of a swirl, representing the challenges of reading with dyslexia"
+              >
+                <source 
+                  src="/images/dyslexia/dyslexia-overview-books-fly.mp4" 
+                  type="video/mp4" 
+                />
+              </video>
+            </div>
+
+            <h3 className="text-[#0c264d] font-bold text-xl mb-3">A Culturally Acquired Skill</h3>
+            <p className="leading-relaxed text-slate-700 mb-4">
+              Research into the "reading brain" has revealed a fascinating truth: reading is not an innate, evolutionary survival skill like breathing or speaking. Instead, it is a culturally acquired skill that requires the brain to structurally repurpose existing neural circuits. 
+            </p>
+            <p className="leading-relaxed text-slate-700">
+              According to the <strong>Neuronal Recycling Hypothesis</strong> (proposed by cognitive neuroscientist Stanislas Dehaene), humans must "recycle" neurons originally evolved for object and face recognition to recognize letters and words instead. In dyslexia, these repurposed circuits function and connect differently.
+            </p>
           </div>
 
-          <p className="leading-relaxed text-slate-700">
-            Reading is not a natural process for the human brain—it must be taught and learned. Proficient 
-            reading requires several brain systems working together seamlessly, including visual processing (recognizing letters), 
-            phonological processing (connecting letters to sounds), orthographic processing, semantic processing, and working memory.
-          </p>
+          <h3 className="text-[#0c264d] font-bold text-xl mb-4">The Dual-Route Model of Reading</h3>
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
+            <div className="bg-white p-5 rounded-lg border-t-4 border-[#2abcd4] shadow-sm">
+              <h4 className="font-bold text-[#0c264d] text-lg mb-2">1. The Ventral Route (Fast)</h4>
+              <p className="text-sm text-slate-700">Also known as the lexical route, this pathway instantly recognizes familiar words visually as whole units. It relies heavily on the Visual Word Form Area.</p>
+            </div>
+            <div className="bg-white p-5 rounded-lg border-t-4 border-[#ffd166] shadow-sm">
+              <h4 className="font-bold text-[#0c264d] text-lg mb-2">2. The Dorsal Route (Slow)</h4>
+              <p className="text-sm text-slate-700">Also known as the sub-lexical route, this pathway is used for "sounding out" new or unfamiliar words phonologically. Dyslexia is often characterized by a deficit in this route.</p>
+            </div>
+          </div>
 
-          <h3 className="text-[#0c264d] font-bold text-xl mt-4 mb-2">Differences in the Dyslexic Brain</h3>
-          <p className="leading-relaxed mb-3 text-slate-700">
-            Brain imaging studies show that individuals with dyslexia show different patterns of brain activation during reading tasks:<sup className="text-green-600 font-bold ml-0.5">5</sup>
+          <h3 className="text-[#0c264d] font-bold text-xl mb-4">Differences in the Dyslexic Brain</h3>
+          <p className="leading-relaxed mb-6 text-slate-700">
+            Neuroimaging studies (fMRI and DTI) show that individuals with dyslexia display specific functional and structural differences during reading tasks:<sup className="text-[#10b981] font-bold ml-0.5">5</sup>
           </p>
-          <ul className="list-disc ml-6 text-sm text-slate-700 space-y-2 mb-6">
-            <li><strong>Underactivation:</strong> Reduced activity in left hemisphere regions typically involved in reading.</li>
-            <li><strong>Compensatory activation:</strong> Increased reliance on other brain regions, such as frontal areas and right hemisphere regions.</li>
-            <li><strong>White matter differences:</strong> Atypical connectivity in neural pathways supporting reading.</li>
-          </ul>
+          
+          <div className="space-y-4 mb-8">
+            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex flex-col sm:flex-row gap-4 items-start">
+              <div className="bg-[#f0f9ff] text-[#0c264d] font-bold p-3 rounded-md w-full sm:w-1/3 shrink-0">
+                Visual Word Form Area (VWFA)
+              </div>
+              <div className="text-sm text-slate-700 pt-1">
+                Often called the "brain's letterbox," this left-hemisphere region is specialized for rapid word recognition. In dyslexic brains, it is frequently <strong>hypoactive (under-activated)</strong>, making fluent reading difficult.
+              </div>
+            </div>
 
-          <h3 className="text-[#0c264d] font-bold text-xl mt-4 mb-2">The Phonological Core Deficit</h3>
-          <p className="leading-relaxed text-slate-700">
-            The most well-established explanation for dyslexia is the <strong>phonological deficit hypothesis</strong>. 
-            This theory proposes that dyslexia stems from a specific impairment in the representation, storage, and/or retrieval of speech sounds. 
-            When phonological processing is impaired, learning letter-sound correspondences is difficult, sounding out words is challenging, and reading remains effortful rather than automatic.
-          </p>
+            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex flex-col sm:flex-row gap-4 items-start">
+              <div className="bg-[#f0f9ff] text-[#0c264d] font-bold p-3 rounded-md w-full sm:w-1/3 shrink-0">
+                Temporo-Parietal Cortex
+              </div>
+              <div className="text-sm text-slate-700 pt-1">
+                Responsible for phonological processing (mapping sounds to letters). Reduced activity here directly correlates with difficulties decoding and sounding out words.
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex flex-col sm:flex-row gap-4 items-start">
+              <div className="bg-[#fff9e6] text-[#d97706] font-bold p-3 rounded-md w-full sm:w-1/3 shrink-0">
+                Compensatory Detours
+              </div>
+              <div className="text-sm text-slate-700 pt-1">
+                To make up for under-active left hemisphere regions, the dyslexic brain recruits the <strong>right hemisphere</strong> and relies heavily on the <strong>frontal lobe</strong> (memory/attention). This works, but is much more cognitively demanding and slower.
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-[#ffd166]/10 border-l-4 border-[#ffd166] p-5 rounded-lg mb-6 shadow-sm">
+            <h3 className="text-[#0c264d] font-bold text-lg mb-2">The Phonological Core Deficit</h3>
+            <p className="text-sm leading-relaxed text-slate-700">
+              The most well-established explanation for dyslexia is the <strong>phonological deficit hypothesis</strong>. 
+              This theory proposes that dyslexia stems from a specific impairment in the representation, storage, and/or retrieval of speech sounds. 
+              When phonological processing is impaired in the dorsal route, learning letter-sound correspondences is difficult, and reading remains effortful rather than automatic.
+            </p>
+          </div>
+          
+          <div className="bg-white p-5 rounded-lg border border-[#10b981]/30 shadow-sm">
+            <h3 className="text-[#0c264d] font-bold text-lg mb-2 flex items-center gap-2">
+              <svg className="w-5 h-5 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+              The Promise of Neuroplasticity
+            </h3>
+            <p className="text-sm leading-relaxed text-slate-700">
+              Crucially, the brain is plastic. Intense, targeted reading intervention (specifically structured phonological and orthographic training) has been shown to physically increase gray matter, strengthen white matter tracts, and normalize brain activation patterns.
+            </p>
+          </div>
         </section>
       </div>
     );
