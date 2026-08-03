@@ -93,7 +93,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
               </p>
             </div>
 
-            <div className="bg-[#fff9e6] p-4 rounded-lg border-t-4 border-[#ff6b6b] shadow-sm">
+            <div className="bg-[#fff9e6] p-4 rounded-lg border-t-4 border-[#ffcc00] shadow-sm">
               <h3 className="text-[#0c264d] font-bold mb-2 text-sm uppercase tracking-wider">Hyperactive-Impulsive</h3>
               <p className="text-xs text-gray-700 leading-relaxed">
                 Individuals primarily experience restlessness, excessive energy, difficulty sitting still, and 
