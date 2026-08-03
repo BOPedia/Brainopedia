@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { useState } from 'react';
+import { Sparkles, Home, Heart, Briefcase, Shield, Users, CheckCircle, TrendingUp } from 'lucide-react';
 
 interface ADHDLivingProps {
   setCurrentArticle?: (article: string) => void;
@@ -10,80 +11,103 @@ interface ADHDLivingProps {
 export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
   
+  // Reusable styling variables
+  const centeredMediumImageClass = "w-full sm:w-96 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm";
+  const responsiveImageClass = "w-full sm:w-96 md:w-[28rem] h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm";
+  const floatedCardContainer = "float-right ml-6 mb-4 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-64 shrink-0";
+  const floatedImageClass = "w-full h-auto rounded-md block";
+
   function OverviewContent() {
     return (
-      <>
-        <div>
-          <h2 className="text-[#0c264d] mb-4 text-2xl font-bold clear-both">Thriving with ADHD</h2>
+      <div className="animate-in fade-in duration-300 space-y-6">
+        
+        {/* Intro Section */}
+        <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 flow-root mb-8">
+          <h2 className="text-[#0c264d] mb-4 text-2xl font-bold flex items-center gap-2">
+            <TrendingUp className="text-[#0A9DC4]" size={28} />
+            Thriving with ADHD
+          </h2>
           
-          <ImageWithFallback 
-            src="/images/adhd/adhd-living-overview-pathway.png"
-            alt="Thriving with ADHD - living a full life"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-overview-pathway.png"
+              alt="Thriving with ADHD - living a full life"
+              className={floatedImageClass}
+            />
+          </div>
 
-          <p className="mb-4">
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
             Individuals with ADHD lead full and successful lives across all areas of society. While ADHD 
             presents challenges, many people with ADHD also describe unique strengths and appreciate aspects 
             of how their brain works. Living well with ADHD involves understanding one's unique pattern of 
             symptoms, developing personalized coping strategies, accessing appropriate accommodations in work 
             and education, and connecting with supportive communities.
           </p>
-          <p className="mb-4">
+          <p className="text-sm text-gray-700 leading-relaxed">
             The experience of having ADHD is deeply personal and varies widely from person to person. This 
             section explores what daily life with ADHD can look like and strategies for building a fulfilling 
             life that honors both challenges and strengths.
           </p>
         </div>
 
-        <div className="clear-both pt-6">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Recognizing Strengths in ADHD</h2>
-          
+        {/* Strengths Section */}
+        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffd166] mb-8">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center justify-center gap-2">
+            <Sparkles className="text-[#ffd166]" size={28} />
+            Recognizing Strengths in ADHD
+          </h2>
+
           <ImageWithFallback 
             src="/images/adhd/adhd-living-overview-strong-arms.png"
             alt="ADHD strengths - resilience and determination"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
+            className={centeredMediumImageClass}
+          />         
 
-          <p className="mb-4">
+          <p className="mb-6 text-sm text-gray-700 leading-relaxed text-center">
             While discussions of ADHD often focus on challenges, many individuals with ADHD describe genuine 
             strengths associated with their neurodivergence:
           </p>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Creativity and Innovation</h3>
-          <p className="mb-4">
-            Many people with ADHD excel at creative thinking, making unexpected connections, and approaching 
-            problems from novel angles. Research demonstrates that individuals with ADHD show enhanced 
-            divergent thinking and generate more original ideas in creative tasks.<sup className="text-green-600 font-bold ml-0.5">1</sup> This can be a significant 
-            asset in creative fields and entrepreneurship. Studies suggest that the disinhibition and cognitive 
-            flexibility associated with ADHD may contribute to creative achievement.<sup className="text-green-600 font-bold ml-0.5">2</sup>
-          </p>
+          <div className="grid md:grid-cols-2 gap-4 mt-4">
+            <div className="bg-[#f0f9ff] p-4 rounded-lg border-t-4 border-[#2abcd4] shadow-sm">
+              <h3 className="text-[#0c264d] font-bold mb-2 text-sm uppercase tracking-wider">Creativity and Innovation</h3>
+              <p className="text-xs text-gray-700 leading-relaxed">
+                Many people with ADHD excel at creative thinking, making unexpected connections, and approaching 
+                problems from novel angles. Research demonstrates that individuals with ADHD show enhanced 
+                divergent thinking and generate more original ideas in creative tasks.<sup className="text-[#10b981] font-bold ml-0.5">1</sup> This can be a significant 
+                asset in creative fields and entrepreneurship.<sup className="text-[#10b981] font-bold ml-0.5">2</sup>
+              </p>
+            </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Hyperfocus</h3>
-          <p className="mb-4">
-            While sustaining attention on boring tasks can be difficult, many individuals with ADHD experience 
-            intense, prolonged concentration on activities that capture their interest, leading to intense 
-            productivity and skill development. This state of hyperfocus allows for deep dives into subjects 
-            and can result in exceptional expertise in specific areas of interest.
-          </p>
+            <div className="bg-[#fff9e6] p-4 rounded-lg border-t-4 border-[#ffd166] shadow-sm">
+              <h3 className="text-[#0c264d] font-bold mb-2 text-sm uppercase tracking-wider">Hyperfocus</h3>
+              <p className="text-xs text-gray-700 leading-relaxed">
+                While sustaining attention on boring tasks can be difficult, many individuals experience 
+                intense, prolonged concentration on activities that capture their interest. This state of hyperfocus 
+                allows for deep dives into subjects and can result in exceptional expertise and intense productivity.
+              </p>
+            </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Resilience</h3>
-          <p className="mb-4">
-            Navigating a world not built for an ADHD brain requires tremendous resilience. Many individuals 
-            with ADHD develop strong problem-solving skills, adaptability, and the ability to persevere 
-            through setbacks. This resilience often translates into a strong capacity to handle crises and 
-            adapt quickly to change.
-          </p>
+            <div className="bg-green-50 p-4 rounded-lg border-t-4 border-[#10b981] shadow-sm md:col-span-2">
+              <h3 className="text-[#0c264d] font-bold mb-2 text-sm uppercase tracking-wider">Resilience</h3>
+              <p className="text-xs text-gray-700 leading-relaxed">
+                Navigating a world not built for an ADHD brain requires tremendous resilience. Many individuals 
+                with ADHD develop strong problem-solving skills, adaptability, and the ability to persevere 
+                through setbacks. This resilience often translates into a strong capacity to handle crises and 
+                adapt quickly to sudden changes.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Overview Tab References */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
         
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
               Cited Studies & Statistics
             </h4>
             <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -93,7 +117,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           </div>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
               Background Sources
             </h4>
             <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -104,73 +128,84 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 
   function DailyLifeContent() {
     return (
-      <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Daily Life and Practical Considerations</h2>
+      <div className="animate-in fade-in duration-300 space-y-6">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center gap-2">
+          <Home className="text-[#0A9DC4]" size={28} />
+          Daily Life and Practical Considerations
+        </h2>
         
-        <ImageWithFallback 
-          src="/images/adhd/adhd-living-routines-checkmark.png"
-          alt="Daily routines and practical strategies for ADHD"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
+        <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 flow-root mb-8">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-routines-checkmark.png"
+              alt="Daily routines and practical strategies for ADHD"
+              className={floatedImageClass}
+            />
+          </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Morning and Evening Routines</h3>
-        <p className="mb-4">
-          Establishing consistent routines can significantly reduce daily stress and improve functioning for individuals with ADHD. Strategies that help:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Prepare the night before (lay out clothes, pack bags)</li>
-          <li className="mb-2">Use multiple alarms with different sounds</li>
-          <li className="mb-2">Create visible checklists for tasks</li>
-          <li className="mb-2">Build in extra time for transitions</li>
-        </ul>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Morning and Evening Routines</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            Establishing consistent routines can significantly reduce daily stress and improve functioning for individuals with ADHD.
+          </p>
+          <ul className="space-y-2 mb-6">
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#10b981] shrink-0" /> <span>Prepare the night before (lay out clothes, pack bags)</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#10b981] shrink-0" /> <span>Use multiple alarms with different sounds</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#10b981] shrink-0" /> <span>Create visible checklists for tasks</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#10b981] shrink-0" /> <span>Build in extra time for transitions</span></li>
+          </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Household Management</h3>
-        <p className="mb-4">
-          Executive function deficits in ADHD can make household organization challenging. Practical strategies include:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Simplify systems—fewer possessions mean less to organize</li>
-          <li className="mb-2">Use timers for cleaning tasks</li>
-          <li className="mb-2">Create designated homes for frequently lost items</li>
-          <li className="mb-2">Use automatic bill pay to avoid late fees</li>
-        </ul>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Household Management</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            Executive function deficits in ADHD can make household organization challenging. Practical strategies include:
+          </p>
+          <ul className="space-y-2">
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#2abcd4] shrink-0" /> <span>Simplify systems—fewer possessions mean less to organize</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#2abcd4] shrink-0" /> <span>Use timers for cleaning tasks</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#2abcd4] shrink-0" /> <span>Create designated homes for frequently lost items</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#2abcd4] shrink-0" /> <span>Use automatic bill pay to avoid late fees</span></li>
+          </ul>
+        </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Managing Finances</h3>
-
-        <ImageWithFallback 
-          src="/images/adhd/adhd-living-table-calculator-finances.png"
-          alt="Financial management tools and strategies"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
-
-        <p className="mb-4">
-          Impulsivity and difficulty with planning can significantly affect financial management. Adults with ADHD 
-          are more likely to experience financial difficulties, including impulsive spending, difficulty saving, and 
-          problems managing bills and debt. Protective strategies include:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Use automatic transfers to savings accounts</li>
-          <li className="mb-2">Set up all bills on autopay to avoid late fees</li>
-          <li className="mb-2">Build in waiting periods (24-48 hours) before making large purchases</li>
-          <li className="mb-2">Use apps that track spending automatically</li>
-          <li className="mb-2">Work with a financial advisor or accountability partner</li>
-          <li className="mb-2">Delete shopping apps to add friction to impulse purchases</li>
-        </ul>
+        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#10b981] mb-8 flow-root">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-table-calculator-finances.png"
+              alt="Financial management tools and strategies"
+              className={floatedImageClass}
+            />
+          </div>
+          
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Managing Finances</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            Impulsivity and difficulty with planning can significantly affect financial management. Adults with ADHD 
+            are more likely to experience financial difficulties, including impulsive spending, difficulty saving, and 
+            problems managing bills and debt. Protective strategies include:
+          </p>
+          
+          <div className="grid sm:grid-cols-2 gap-3 mt-4">
+            <div className="bg-gray-50 p-3 rounded border border-gray-200 text-xs text-gray-700 shadow-sm">Use automatic transfers to savings accounts</div>
+            <div className="bg-gray-50 p-3 rounded border border-gray-200 text-xs text-gray-700 shadow-sm">Set up all bills on autopay to avoid late fees</div>
+            <div className="bg-gray-50 p-3 rounded border border-gray-200 text-xs text-gray-700 shadow-sm">Build in waiting periods (24-48 hours) before large purchases</div>
+            <div className="bg-gray-50 p-3 rounded border border-gray-200 text-xs text-gray-700 shadow-sm">Use apps that track spending automatically</div>
+            <div className="bg-gray-50 p-3 rounded border border-gray-200 text-xs text-gray-700 shadow-sm">Work with a financial advisor or accountability partner</div>
+            <div className="bg-gray-50 p-3 rounded border border-gray-200 text-xs text-gray-700 shadow-sm">Delete shopping apps to add friction to impulse purchases</div>
+          </div>
+        </div>
 
         {/* Daily Life Tab References */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
         
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
               Background Sources
             </h4>
             <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -188,80 +223,89 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
 
   function RelationshipsContent() {
     return (
-      <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left clear-both">Relationships and Social Life</h2>
+      <div className="animate-in fade-in duration-300 space-y-6">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center gap-2">
+          <Heart className="text-[#ff6b6b]" size={28} />
+          Relationships and Social Life
+        </h2>
         
-        <ImageWithFallback 
-          src="/images/adhd/adhd-living-relationships-heart-connections.png"
-          alt="Relationships and social life with ADHD"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
+        <div className="bg-[#fff9e6] p-6 rounded-lg shadow-sm border border-[#ffd166]/30 flow-root mb-6">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-relationships-heart-connections.png"
+              alt="Relationships and social life with ADHD"
+              className={floatedImageClass}
+            />
+          </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Romantic Relationships</h3>
-        <p className="mb-4">
-          Navigating romantic relationships with ADHD can present unique challenges. ADHD symptoms can 
-          affect relationship satisfaction, with partners of individuals with ADHD reporting higher levels of 
-          relationship distress. However, many couples successfully navigate these challenges with awareness, 
-          communication, and targeted strategies:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Communication:</strong> Be open about ADHD and educate partners about how it affects you</li>
-          <li className="mb-2"><strong>Listening:</strong> Develop strategies like taking notes during important conversations</li>
-          <li className="mb-2"><strong>Forgetfulness:</strong> Use shared calendars and reminders for important dates and commitments</li>
-          <li className="mb-2"><strong>Division of labor:</strong> Play to each partner's strengths in household tasks</li>
-          <li className="mb-2"><strong>Couples therapy:</strong> Consider working with a therapist who understands ADHD</li>
-        </ul>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Romantic Relationships</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            Navigating romantic relationships with ADHD can present unique challenges. ADHD symptoms can 
+            affect relationship satisfaction, with partners of individuals with ADHD reporting higher levels of 
+            relationship distress. However, many couples successfully navigate these challenges with awareness, 
+            communication, and targeted strategies:
+          </p>
+          <ul className="space-y-2 mb-6">
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span><strong>Communication:</strong> Be open about ADHD and educate partners about how it affects you</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span><strong>Listening:</strong> Develop strategies like taking notes during important conversations</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span><strong>Forgetfulness:</strong> Use shared calendars and reminders for important dates and commitments</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span><strong>Division of labor:</strong> Play to each partner's strengths in household tasks</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span><strong>Couples therapy:</strong> Consider working with a therapist who understands ADHD</span></li>
+          </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Friendships</h3>
-        <p className="mb-4">
-          Social relationships can be challenging for individuals with ADHD due to difficulties with social cues, 
-          impulsivity, and maintaining contact. Research shows that children and adults with ADHD often 
-          experience social rejection and have fewer close friendships.<sup className="text-green-600 font-bold ml-0.5">1</sup> Strategies for maintaining friendships include:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Set reminders to reach out to friends regularly</li>
-          <li className="mb-2">Be upfront about ADHD-related challenges (if comfortable)</li>
-          <li className="mb-2">Choose understanding friends who accept you as you are</li>
-          <li className="mb-2">Practice active listening and turn-taking in conversations</li>
-          <li className="mb-2">Be patient with yourself when social mistakes happen</li>
-        </ul>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Friendships</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            Social relationships can be challenging due to difficulties with social cues, 
+            impulsivity, and maintaining contact. Research shows that individuals with ADHD often 
+            experience social rejection and have fewer close friendships.<sup className="text-[#10b981] font-bold ml-0.5">1</sup> Strategies include:
+          </p>
+          <ul className="space-y-2">
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span>Set reminders to reach out to friends regularly</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span>Be upfront about ADHD-related challenges (if comfortable)</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span>Choose understanding friends who accept you as you are</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span>Practice active listening and turn-taking in conversations</span></li>
+          </ul>
+        </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Parenting with ADHD</h3>
+        <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 flow-root">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-relationships-read-kids-books.png"
+              alt="Parent reading to children - parenting with ADHD"
+              className={floatedImageClass}
+            />
+          </div>
 
-        <ImageWithFallback 
-          src="/images/adhd/adhd-living-relationships-read-kids-books.png"
-          alt="Parent reading to children - parenting with ADHD"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
-
-        <p className="mb-4">
-          Parents with ADHD face unique challenges and bring unique strengths to parenting. 
-          Research shows that parental ADHD symptoms are associated with differences in parenting 
-          behaviors, including more harsh and lax parenting and slightly less positive parenting.<sup className="text-green-600 font-bold ml-0.5">2</sup> However, 
-          these associations are relatively small, and many parents with ADHD successfully raise healthy, 
-          well-adjusted children with the right strategies and support.
-        </p>
-        <p className="mb-4">
-          Parenting stress is often higher for parents with ADHD, but treatment of parental ADHD can 
-          improve both parent and child outcomes. Effective strategies include:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Use visual schedules and routines for the whole family</li>
-          <li className="mb-2">Build in flexibility and practice self-compassion</li>
-          <li className="mb-2">Partner with other adults (co-parent, family, friends) for support</li>
-          <li className="mb-2">Model self-advocacy and self-acceptance for your children</li>
-          <li className="mb-2">Bring creativity, playfulness, and energy to parenting</li>
-          <li className="mb-2">Seek treatment for your own ADHD to be at your best</li>
-        </ul>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Parenting with ADHD</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            Parents with ADHD face unique challenges and bring unique strengths to parenting. 
+            Research shows that parental ADHD symptoms are associated with differences in parenting 
+            behaviors, including more harsh and lax parenting and slightly less positive parenting.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> However, 
+            these associations are relatively small, and many parents with ADHD successfully raise healthy, 
+            well-adjusted children with the right strategies and support.
+          </p>
+          
+          <div className="bg-white p-4 rounded-lg shadow-sm border border-[#2abcd4]/30 mt-4">
+            <h4 className="font-bold text-[#0c264d] mb-2 text-sm uppercase tracking-wider">Effective Parenting Strategies</h4>
+            <div className="grid sm:grid-cols-2 gap-2">
+              <div className="flex gap-2 text-xs text-gray-700"><CheckCircle size={14} className="text-[#2abcd4] shrink-0" /> <span>Use visual schedules for the family</span></div>
+              <div className="flex gap-2 text-xs text-gray-700"><CheckCircle size={14} className="text-[#2abcd4] shrink-0" /> <span>Build in flexibility & self-compassion</span></div>
+              <div className="flex gap-2 text-xs text-gray-700"><CheckCircle size={14} className="text-[#2abcd4] shrink-0" /> <span>Partner with other supportive adults</span></div>
+              <div className="flex gap-2 text-xs text-gray-700"><CheckCircle size={14} className="text-[#2abcd4] shrink-0" /> <span>Model self-advocacy for children</span></div>
+              <div className="flex gap-2 text-xs text-gray-700"><CheckCircle size={14} className="text-[#2abcd4] shrink-0" /> <span>Bring creativity & energy to play</span></div>
+              <div className="flex gap-2 text-xs text-gray-700"><CheckCircle size={14} className="text-[#2abcd4] shrink-0" /> <span>Seek your own ADHD treatment</span></div>
+            </div>
+          </div>
+        </div>
 
         {/* Relationships Tab References */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
         
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
               Cited Studies & Statistics
             </h4>
             <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -271,7 +315,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           </div>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
               Background Sources
             </h4>
             <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -288,53 +332,61 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
 
   function CareerContent() {
     return (
-      <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl text-left clear-both">Education and Career</h2>
+      <div className="animate-in fade-in duration-300 space-y-6">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center gap-2">
+          <Briefcase className="text-[#0c264d]" size={28} />
+          Education and Career
+        </h2>
         
-        <ImageWithFallback 
-          src="/images/adhd/adhd-living-educ-career-paths.png"
-          alt="Education and career paths with ADHD"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
+        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#2abcd4] mb-8 flow-root">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-educ-career-paths.png"
+              alt="Education and career paths with ADHD"
+              className={floatedImageClass}
+            />
+          </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Choosing Career Paths</h3>
-        <p className="mb-4">
-          ADHD can significantly impact occupational functioning and career success. However, choosing 
-          careers that align with ADHD strengths and interests can lead to high levels of success and satisfaction. 
-          Consider careers that:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Provide variety and novelty rather than repetitive tasks</li>
-          <li className="mb-2">Allow movement and hands-on work</li>
-          <li className="mb-2">Engage creative abilities (art, design, writing, music)</li>
-          <li className="mb-2">Offer high-stimulation environments (emergency services, journalism)</li>
-          <li className="mb-2">Support entrepreneurship (with strong support systems in place)</li>
-          <li className="mb-2">Provide clear deadlines and external accountability</li>
-        </ul>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Choosing Career Paths</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            ADHD can significantly impact occupational functioning and career success. However, choosing 
+            careers that align with ADHD strengths and interests can lead to high levels of success and satisfaction. 
+            Consider careers that:
+          </p>
+          
+          <div className="grid sm:grid-cols-2 gap-3 mb-6">
+            <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]/30 text-xs text-gray-700 shadow-sm">Provide variety and novelty rather than repetitive tasks</div>
+            <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]/30 text-xs text-gray-700 shadow-sm">Allow movement and hands-on work</div>
+            <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]/30 text-xs text-gray-700 shadow-sm">Engage creative abilities (art, design, writing, music)</div>
+            <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]/30 text-xs text-gray-700 shadow-sm">Offer high-stimulation environments (emergency services, journalism)</div>
+            <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]/30 text-xs text-gray-700 shadow-sm">Support entrepreneurship (with strong support systems in place)</div>
+            <div className="bg-[#f0f9ff] p-3 rounded border border-[#2abcd4]/30 text-xs text-gray-700 shadow-sm">Provide clear deadlines and external accountability</div>
+          </div>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Workplace Strategies</h3>
-        <p className="mb-4">
-          Adults with ADHD often experience workplace difficulties including problems with time management, 
-          organization, and interpersonal relationships. However, targeted strategies and accommodations 
-          can significantly improve functioning:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Request reasonable accommodations through HR if needed</li>
-          <li className="mb-2">Use productivity techniques (Pomodoro, time blocking)</li>
-          <li className="mb-2">Create an environment that minimizes distractions</li>
-          <li className="mb-2">Build in accountability through regular check-ins</li>
-          <li className="mb-2">Play to your strengths and delegate or outsource weaker areas</li>
-          <li className="mb-2">Consider disclosing ADHD to access formal supports</li>
-        </ul>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg pt-4 border-t border-gray-100">Workplace Strategies</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            Adults with ADHD often experience workplace difficulties including problems with time management, 
+            organization, and interpersonal relationships. However, targeted strategies and accommodations 
+            can significantly improve functioning:
+          </p>
+          <ul className="space-y-2">
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Request reasonable accommodations through HR if needed</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Use productivity techniques (Pomodoro, time blocking)</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Create an environment that minimizes distractions</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Build in accountability through regular check-ins</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Play to your strengths and delegate or outsource weaker areas</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Consider disclosing ADHD to access formal supports</span></li>
+          </ul>
+        </div>
 
         {/* Education & Career Tab References */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
         
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
               Background Sources
             </h4>
             <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -352,92 +404,92 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
 
   function MentalHealthContent() {
     return (
-      <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Managing Stigma and Misconceptions</h2>
+      <div className="animate-in fade-in duration-300 space-y-6">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center gap-2">
+          <Shield className="text-[#ff6b6b]" size={28} />
+          Managing Stigma and Mental Health
+        </h2>
         
-        <ImageWithFallback 
-          src="/images/adhd/adhd-living-stigma-four-faces.png"
-          alt="Managing stigma and advocating for ADHD awareness"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
+        <div className="bg-[#fff9e6] p-6 rounded-lg shadow-sm border border-[#ffd166]/30 flow-root mb-8">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-stigma-four-faces.png"
+              alt="Managing stigma and advocating for ADHD awareness"
+              className={floatedImageClass}
+            />
+          </div>
 
-        <p className="mb-4">
-          Stigma surrounding ADHD remains a significant barrier to diagnosis, treatment, and self-acceptance. 
-          Public misconceptions about ADHD are common and can lead to internalized shame and reluctance to seek help.
-        </p>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Myths</h3>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">"ADHD isn't real" — ADHD is a well-researched neurological condition with extensive scientific support</li>
-          <li className="mb-2">"ADHD is just laziness" — ADHD involves genuine neurobiological differences affecting executive function</li>
-          <li className="mb-2">"Only children have ADHD" — ADHD is a lifelong condition affecting millions of adults</li>
-          <li className="mb-2">"Medications are dangerous" — Properly prescribed ADHD medication is safe and effective</li>
-          <li className="mb-2">"People with ADHD just need to try harder" — Effort alone cannot overcome neurobiological differences</li>
-        </ul>
-
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Self-Advocacy</h3>
-        <p className="mb-4">
-          Effective self-advocacy is crucial for accessing appropriate supports and accommodations. Key strategies include:
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2">Educate yourself about ADHD and your legal rights</li>
-          <li className="mb-2">Decide when and how to disclose your diagnosis</li>
-          <li className="mb-2">Request accommodations when needed in education and employment</li>
-          <li className="mb-2">Connect with ADHD communities for support and validation</li>
-          <li className="mb-2">Challenge stigma and educate others when appropriate</li>
-        </ul>
-
-        <div className="clear-both pt-6">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Mental Health and Self-Care</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Co-occurring Mental Health Conditions</h3>
-          <p className="mb-4">
-            ADHD frequently co-occurs with other mental health conditions, with research showing that approximately 
-            two-thirds of individuals with ADHD have at least one comorbid psychiatric disorder:<sup className="text-green-600 font-bold ml-0.5">1</sup>
+          <p className="mb-6 text-sm text-gray-700 leading-relaxed">
+            Stigma surrounding ADHD remains a significant barrier to diagnosis, treatment, and self-acceptance. 
+            Public misconceptions about ADHD are common and can lead to internalized shame and reluctance to seek help.
           </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Anxiety disorders (25-40% of individuals with ADHD)</li>
-            <li className="mb-2">Depression (18-30%)</li>
-            <li className="mb-2">Substance use disorders (15-20% in adults)</li>
-            <li className="mb-2">Sleep disorders (25-55%)</li>
-            <li className="mb-2">Emotional dysregulation and rejection sensitive dysphoria</li>
+
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Myths</h3>
+          <ul className="space-y-2 mb-6">
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span>"ADHD isn't real" — ADHD is a well-researched neurological condition with extensive scientific support</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span>"ADHD is just laziness" — ADHD involves genuine neurobiological differences affecting executive function</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span>"Only children have ADHD" — ADHD is a lifelong condition affecting millions of adults</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span>"Medications are dangerous" — Properly prescribed ADHD medication is safe and effective</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#d97706] font-bold mt-0.5">•</span> <span>"People with ADHD just need to try harder" — Effort alone cannot overcome neurobiological differences</span></li>
           </ul>
-          <p className="mb-4">
-            It's essential to seek professional help if you experience symptoms of co-occurring conditions, as treating 
-            both ADHD and comorbid disorders leads to better outcomes.
+
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg pt-4 border-t border-[#ffd166]/50">Self-Advocacy</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            Effective self-advocacy is crucial for accessing appropriate supports and accommodations.
           </p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            <div className="bg-white p-3 rounded border border-[#ffd166]/50 text-xs text-gray-700 shadow-sm">Educate yourself about ADHD and your legal rights</div>
+            <div className="bg-white p-3 rounded border border-[#ffd166]/50 text-xs text-gray-700 shadow-sm">Decide when and how to disclose your diagnosis</div>
+            <div className="bg-white p-3 rounded border border-[#ffd166]/50 text-xs text-gray-700 shadow-sm">Request accommodations when needed in education and employment</div>
+            <div className="bg-white p-3 rounded border border-[#ffd166]/50 text-xs text-gray-700 shadow-sm">Connect with ADHD communities for support and validation</div>
+            <div className="bg-white p-3 rounded border border-[#ffd166]/50 text-xs text-gray-700 shadow-sm">Challenge stigma and educate others when appropriate</div>
+          </div>
+        </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Building Self-Esteem</h3>
+        <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 flow-root">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-stigma-self-esteem.png"
+              alt="Building self-esteem with ADHD"
+              className={floatedImageClass}
+            />
+          </div>
 
-          <ImageWithFallback 
-            src="/images/adhd/adhd-living-stigma-self-esteem.png"
-            alt="Building self-esteem with ADHD"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Co-occurring Conditions</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            ADHD frequently co-occurs with other mental health conditions, with research showing that approximately 
+            two-thirds of individuals with ADHD have at least one comorbid psychiatric disorder:<sup className="text-[#10b981] font-bold ml-0.5">1</sup>
+          </p>
+          <div className="flex flex-wrap gap-2 mb-6">
+            <span className="bg-white px-3 py-1.5 rounded-full border border-[#2abcd4] text-xs font-bold text-[#0c264d] shadow-sm">Anxiety (25-40%)</span>
+            <span className="bg-white px-3 py-1.5 rounded-full border border-[#2abcd4] text-xs font-bold text-[#0c264d] shadow-sm">Depression (18-30%)</span>
+            <span className="bg-white px-3 py-1.5 rounded-full border border-[#2abcd4] text-xs font-bold text-[#0c264d] shadow-sm">Substance Use (15-20%)</span>
+            <span className="bg-white px-3 py-1.5 rounded-full border border-[#2abcd4] text-xs font-bold text-[#0c264d] shadow-sm">Sleep Disorders (25-55%)</span>
+            <span className="bg-white px-3 py-1.5 rounded-full border border-[#2abcd4] text-xs font-bold text-[#0c264d] shadow-sm">Emotional Dysregulation</span>
+          </div>
 
-          <p className="mb-4">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg pt-4 border-t border-[#0A9DC4]/20">Building Self-Esteem</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
             Growing up with ADHD often involves repeated experiences of failure, criticism, and negative feedback, which 
-            can significantly impact self-esteem. Adults with ADHD frequently report lower self-esteem and higher 
-            levels of shame compared to neurotypical peers. Cognitive strategies can help manage ADHD-related challenges:
+            can significantly impact self-esteem. Cognitive strategies can help manage ADHD-related challenges:
           </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Recognize and celebrate your accomplishments, both large and small</li>
-            <li className="mb-2">Reframe ADHD as a difference rather than a deficit</li>
-            <li className="mb-2">Challenge negative self-talk and internalized shame</li>
-            <li className="mb-2">Remember that your worth is not determined by productivity</li>
-            <li className="mb-2">Practice self-compassion and acknowledge the effort you put in</li>
-            <li className="mb-2">Seek therapy to address trauma from past negative experiences</li>
+          <ul className="space-y-2">
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Recognize and celebrate your accomplishments, both large and small</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Reframe ADHD as a difference rather than a deficit</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Challenge negative self-talk and internalized shame</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Remember that your worth is not determined by productivity</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><CheckCircle size={18} className="text-[#0A9DC4] shrink-0" /> <span>Practice self-compassion and acknowledge the effort you put in</span></li>
           </ul>
         </div>
 
         {/* Mental Health Tab References */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
         
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div className="mb-6">
-            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-4 border-b-2 border-[#10b981] pb-2">
+            <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b-2 border-[#10b981] pb-1">
               Cited Studies & Statistics
             </h4>
             <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -446,7 +498,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           </div>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
               Background Sources
             </h4>
             <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -463,60 +515,66 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
 
   function CommunityContent() {
     return (
-      <div>
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Finding Community and Support</h2>
+      <div className="animate-in fade-in duration-300 space-y-6">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center gap-2">
+          <Users className="text-[#10b981]" size={28} />
+          Community and Future
+        </h2>
         
-        <ImageWithFallback 
-          src="/images/adhd/adhd-living-community-hands.png"
-          alt="Community support and connection - hands together"
-          className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
+        <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#10b981] mb-8 flow-root">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-community-hands.png"
+              alt="Community support and connection - hands together"
+              className={floatedImageClass}
+            />
+          </div>
 
-        <p className="mb-4">
-          Connecting with others who understand ADHD can be invaluable for reducing isolation, gaining practical strategies, 
-          and building self-acceptance. Social support is associated with better outcomes and quality of life 
-          for individuals with ADHD.
-        </p>
-        <ul className="list-disc ml-6 mb-4">
-          <li className="mb-2"><strong>Support groups:</strong> Local or online ADHD support groups provide connection and shared experiences</li>
-          <li className="mb-2"><strong>Online communities:</strong> Forums, social media groups (e.g., r/ADHD, ADDitude community)</li>
-          <li className="mb-2"><strong>Organizations:</strong> CHADD (Children and Adults with Attention-Deficit/Hyperactivity Disorder), ADDA (Attention Deficit Disorder Association)</li>
-          <li className="mb-2"><strong>Coaching:</strong> ADHD coaches provide accountability and strategy development</li>
-        </ul>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Finding Community and Support</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
+            Connecting with others who understand ADHD can be invaluable for reducing isolation, gaining practical strategies, 
+            and building self-acceptance. Social support is associated with better outcomes and quality of life.
+          </p>
+          <ul className="space-y-2 mb-6">
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#10b981] font-bold mt-0.5">•</span> <span><strong>Support groups:</strong> Local or online ADHD support groups provide connection</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#10b981] font-bold mt-0.5">•</span> <span><strong>Online communities:</strong> Forums, social media groups (e.g., r/ADHD, ADDitude)</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#10b981] font-bold mt-0.5">•</span> <span><strong>Organizations:</strong> CHADD, ADDA (Attention Deficit Disorder Association)</span></li>
+            <li className="flex gap-2 text-sm text-gray-700"><span className="text-[#10b981] font-bold mt-0.5">•</span> <span><strong>Coaching:</strong> ADHD coaches provide accountability and strategy development</span></li>
+          </ul>
 
-        <h3 className="text-[#0c264d] font-bold mb-3 text-lg clear-both">Celebrating Neurodiversity</h3>
-        <p className="mb-4">
-          Many individuals embrace the neurodiversity paradigm, which views ADHD as a natural variation 
-          in human neurology rather than purely a disorder or deficit. This perspective honors both challenges and 
-          strengths while advocating for acceptance, accommodation, and celebrating diverse ways of thinking. 
-          The neurodiversity movement emphasizes that neurological differences like ADHD are a valuable part of human 
-          diversity and should be respected and valued.
-        </p>
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg pt-4 border-t border-gray-100">Celebrating Neurodiversity</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed bg-green-50 p-4 rounded border border-green-100">
+            Many individuals embrace the neurodiversity paradigm, which views ADHD as a natural variation 
+            in human neurology rather than purely a disorder or deficit. This perspective honors both challenges and 
+            strengths while advocating for acceptance, accommodation, and celebrating diverse ways of thinking. 
+          </p>
+        </div>
 
-        <div className="clear-both pt-6">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both">Looking Forward</h2>
-          
-          <ImageWithFallback 
-            src="/images/adhd/adhd-living-future-girl-cheers.png"
-            alt="Looking forward with optimism - celebrating ADHD journey"
-            className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
+        <div className="bg-[#fff9e6] p-6 rounded-lg shadow-sm border border-[#ffd166]/30 flow-root">
+          <div className={floatedCardContainer}>
+            <ImageWithFallback 
+              src="/images/adhd/adhd-living-future-girl-cheers.png"
+              alt="Looking forward with optimism - celebrating ADHD journey"
+              className={floatedImageClass}
+            />
+          </div>
 
-          <p className="mb-4">
+          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Looking Forward</h3>
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
             Living with ADHD is a journey of self-discovery, learning, and growth. As understanding of your 
             own ADHD deepens and you develop systems that work for you, life often becomes more manageable 
             and fulfilling. Many people with ADHD report that while they wouldn't necessarily choose to have 
             ADHD, they also wouldn't want to give up the unique perspective and strengths it brings.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
             Remember that you are not alone. Millions of people live successful, meaningful lives with ADHD. 
             With the right support, strategies, and self-understanding, you can build a life that works for 
-            your unique brain and honors both your challenges and your considerable strengths.
+            your unique brain.
           </p>
         </div>
 
-        <div className="clear-both mt-8 p-4 bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] rounded">
-          <p className="text-sm">
+        <div className="mt-8 p-5 bg-[#ffd166]/20 border-l-4 border-[#ffd166] rounded-lg shadow-sm">
+          <p className="text-sm text-[#0c264d] leading-relaxed">
             <strong>Remember:</strong> Living well with ADHD looks different for everyone. Be patient with 
             yourself as you discover what works for you, and don't hesitate to seek support from healthcare 
             providers, coaches, therapists, and community when you need it.
@@ -524,13 +582,13 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         </div>
 
         {/* Community Tab References */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
         
-        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
+        <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
           
           <div>
-            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-4 border-b-2 border-[#2abcd4] pb-2">
+            <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b-2 border-[#2abcd4] pb-1">
               Background Sources
             </h4>
             <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>

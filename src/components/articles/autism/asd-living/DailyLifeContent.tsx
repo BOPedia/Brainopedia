@@ -1,4 +1,5 @@
 import React from 'react';
+import { Home } from 'lucide-react';
 import { ImageWithFallback } from "../../../figma/ImageWithFallback";
 
 /* ─── THE GUEST LIST (Interface) ─── */
@@ -123,18 +124,50 @@ export function DailyLifeContent({ setCurrentArticle }: DailyLifeContentProps) {
         </div>
       </section>
 
-      {/* Independent Living Section */}
-      <section className="bg-[#e0f7fa] p-6 rounded-xl mb-10 border-l-4 border-[#0c264d]">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-xl">Independent Living Arrangements</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-gray-700">
-          <ul className="space-y-2 bg-white p-4 rounded shadow-sm">
-            <li><strong>Independent:</strong> Living alone or with partners.</li>
-            <li><strong>Supported:</strong> Living independently with visiting staff or support workers.</li>
-          </ul>
-          <ul className="space-y-2 bg-white p-4 rounded shadow-sm">
-            <li><strong>With Family:</strong> Living with parents or relatives by choice or necessity.</li>
-            <li><strong>Group Homes:</strong> Shared living environments with structured 24-hour support.</li>
-          </ul>
+{/* ===== INDEPENDENT LIVING ARRANGEMENTS ===== */}
+      <section className="bg-[#e0f7fa] p-6 rounded-xl mb-10 border-l-4 border-[#0c264d] shadow-sm flow-root">
+        <h2 className="text-[#0c264d] font-bold mb-4 text-xl flex items-center gap-2">
+          <Home className="text-[#0A9DC4]" size={24} /> 
+          Living Arrangements & Housing
+        </h2>
+
+        {/* Floated Image Container */}
+        <div className="float-right ml-6 mb-4 bg-white p-2 rounded-lg shadow-sm border border-[#0A9DC4]/20 w-64 shrink-0">
+          <ImageWithFallback 
+            src="/images/autism/autism-living-Dailytab-housing-options.png"
+            alt="Various housing options and living arrangements"
+            className="w-full h-auto rounded-md block"
+          />
+        </div>
+
+        <p className="text-sm text-gray-700 leading-relaxed mb-6">
+          Autistic adults live in a wide variety of settings. The right environment depends entirely on an individual's support needs, financial resources, and personal preferences. There is no single "correct" way to live.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Card 1: Independent */}
+          <div className="bg-white p-4 rounded-lg border-t-4 border-[#10b981] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-1 text-sm uppercase tracking-wider">Independent</h4>
+            <p className="text-xs text-gray-700 leading-relaxed">Living alone, with roommates, or with a partner without formal support services. This relies heavily on strong executive functioning and self-advocacy skills.</p>
+          </div>
+
+          {/* Card 2: Supported */}
+          <div className="bg-white p-4 rounded-lg border-t-4 border-[#2abcd4] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-1 text-sm uppercase tracking-wider">Supported Living</h4>
+            <p className="text-xs text-gray-700 leading-relaxed">Living independently in a private residence, but receiving scheduled visits from support workers to assist with tasks like budgeting, meal prep, or cleaning.</p>
+          </div>
+
+          {/* Card 3: With Family */}
+          <div className="bg-white p-4 rounded-lg border-t-4 border-[#ffd166] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-1 text-sm uppercase tracking-wider">With Family</h4>
+            <p className="text-xs text-gray-700 leading-relaxed">Remaining in the family home. This can be a purposeful choice for connection and safety, or a necessity due to a lack of affordable housing or high support needs.</p>
+          </div>
+
+          {/* Card 4: Group Homes */}
+          <div className="bg-white p-4 rounded-lg border-t-4 border-[#0c264d] shadow-sm">
+            <h4 className="font-bold text-[#0c264d] mb-1 text-sm uppercase tracking-wider">Residential Options</h4>
+            <p className="text-xs text-gray-700 leading-relaxed">Shared living environments or group homes designed for individuals with higher support needs, offering structured routines and 24-hour staff assistance.</p>
+          </div>
         </div>
       </section>
 
