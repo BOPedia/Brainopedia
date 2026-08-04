@@ -285,6 +285,94 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
 
           </div>
 
+          <div className="clear-both mt-10">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center border-b border-gray-200 pb-2">
+              Comparing Two Major Federal Plans
+            </h2>
+          </div>
+              <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-IEP504.png"
+                alt="tech organization tools"
+                className="block mx-auto w-full max-w-xl rounded-lg shadow-sm border border-slate-200 bg-white"
+              />     
+           <div className="flex justify-end my-8 clear-both"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {/* IEP Card */}
+            <div className="bg-gray-300 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3">IEP (Individualized Education Program)</h4>
+              <p className="text-sm text-slate-800 mb-5 leading-relaxed font-medium">
+                Governed by the Individuals with Disabilities Education Act (IDEA), an IEP is designed for students whose dyslexia requires specialized, direct instruction to make academic progress.
+              </p>
+              <div className="space-y-3">
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Core Focus:</strong> Provides specialized, individualized instruction (such as resource room support or evidence-based reading interventions).
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Eligibility:</strong> Must meet specific criteria for 1 of 13 federal categories (like Specific Learning Disability) and require special education.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Technology Requests:</strong> The IEP team is legally required to consider Assistive Technology (AT). You can request an <strong>AT Evaluation</strong> to have specific tools (like C-Pens or text-to-speech software) mandated and funded by the plan.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Legal Structure:</strong> Highly regulated, legally binding document with strictly mandated evaluation and meeting timelines.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Annual Goals:</strong> Requires specific, measurable academic and functional goals with mandatory progress monitoring.
+                </div>
+              </div>
+            </div>
+
+            {/* 504 Card */}
+            <div className="bg-gray-300 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-md">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3">504 Plan</h4>
+              <p className="text-sm text-slate-800 mb-5 leading-relaxed font-medium">
+                Covered under Section 504 of the Rehabilitation Act, this civil rights plan is for students who do not necessarily require specialized instruction, but need specific accommodations to ensure equal access to learning.
+              </p>
+              <div className="space-y-3">
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Core Focus:</strong> Removes barriers through environmental, instructional, and testing accommodations.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Eligibility:</strong> Broader criteria; any disability that substantially limits a major life activity (such as reading, concentrating, or learning).
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Technology Requests:</strong> You can explicitly request access to everyday tech tools (such as audiobooks, speech-to-text dictation, or the use of a laptop for taking notes) as reasonable accommodations to remove barriers.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Legal Structure:</strong> A more flexible civil rights statute focused on preventing discrimination, with fewer procedural requirements than IDEA.
+                </div>
+                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                  <strong className="text-[#0A9DC4]">Annual Goals:</strong> No formal goals required; the plan focuses entirely on effectively implementing the listed accommodations.
+                </div>
+              </div>
+            </div>
+          </div>
+                       <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-IEP504-schoolsuccess.png"
+                alt="tech organization tools"
+                className="block mx-auto w-full max-w-xl rounded-lg shadow-sm border border-slate-200 bg-white"
+              /> 
+          {/* Policy Alert Pop-out */}
+          <div className="bg-[#0A9DC4] border-l-4 border-[#ffd166] p-6 mb-10 rounded-r-lg shadow-sm">
+            <h4 className="font-bold text-[#ffd166] mb-3 uppercase text-xs tracking-wider">
+              Policy Alert: Federal Oversight Changes
+            </h4>
+            <p className="text-sm text-white mb-4 leading-relaxed font-medium">
+              In June 2026, the U.S. Department of Education announced interagency agreements shifting the administration of IDEA to the Department of Health and Human Services (HHS) and Section 504 enforcement to the Department of Justice (DOJ).
+            </p>
+            <div className="space-y-3">
+              <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                <strong className="text-[#0A9DC4]">Shift to a Medical Model:</strong> Advocacy groups warn that moving IDEA oversight to HHS may push students toward a medical model that treats disability as a diagnosis to be managed rather than focusing on educational inclusion.
+              </div>
+              <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                <strong className="text-[#0A9DC4]">Fragmented Enforcement:</strong> Splitting special education management and civil rights enforcement across separate departments risks creating confusion, longer delays, and less accountability for families.
+              </div>
+              <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
+                <strong className="text-[#0A9DC4]">Unchanged Legal Rights:</strong> Despite these administrative shifts, federal officials maintain that a student's statutory rights, IEP requirements, and Section 504 accommodations have not changed.
+              </div>
+            </div>
+          </div>  
+
           {/* References for Tab 2 */}
           <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
@@ -302,15 +390,20 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
                 Background Sources
               </h4>
               <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+                <p>Drasgow, E., et al. (2001). "Developing legally correct and educationally appropriate IEPs." <i>Remedial and Special Education</i>. https://doi.org/10.1177/074193250102200604</p>
                 <p>Ehri, L. C. (2000). "Learning to read and learning to spell: Two sides of a coin." <i>Topics in Language Disorders</i>. https://doi.org/10.1097/00011363-200020030-00005</p>
                 <p>Graham, S., & Harris, K. R. (2000). "The role of self-regulation and transcription skills in writing and writing development." <i>Educational Psychologist</i>. https://doi.org/10.1207/S15326985EP3501_2</p>
                 <p>Hatcher, J., et al. (2002). "Cognitive assessment of dyslexic students in higher education." <i>British Journal of Educational Psychology</i>. https://doi.org/10.1348/000709902158793</p>
+                <p>Individuals with Disabilities Education Act, 20 U.S.C. § 1400 (2004). https://sites.ed.gov/idea/statuteregulations/</p>
                 <p>Madaus, J. W. (2008). "Employment self-disclosure rates and rationales of university graduates with learning disabilities." <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219407313804</p>
+                <p>Section 504 of the Rehabilitation Act of 1973, 29 U.S.C. § 794. https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/statutes/section-504-rehabilitation-act-of-1973</p>
                 <p>Shaywitz, S. E., & Shaywitz, B. A. (2005). "Dyslexia (specific reading disability)." <i>Biological Psychiatry</i>. https://doi.org/10.1016/j.biopsych.2005.01.043</p>
                 <p>Shaywitz, S. E., et al. (2008). "The education of dyslexic children from childhood to young adulthood." <i>Annual Review of Psychology</i>. https://doi.org/10.1146/annurev.psych.59.103006.093633</p>
                 <p>Sparks, R. L., et al. (2008). "Early first-language reading and spelling skills predict later second-language reading and spelling skills." <i>Journal of Educational Psychology</i>. https://doi.org/10.1037/0022-0663.100.1.162</p>
                 <p>Trainin, G., & Swanson, H. L. (2005). "Cognition, metacognition, and achievement of college students with learning disabilities." <i>Learning Disability Quarterly</i>. https://doi.org/10.2307/1593622</p>
                 <p>Vogel, S. A., & Adelman, P. B. (1992). "The success of college students with learning disabilities: Factors related to educational attainment." <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/002221949202500703</p>
+                <p>Yell, M. L., & Bateman, D. F. (2017). "Endrew F. v. Douglas County School District (2017): FAPE and the U.S. Supreme Court." <i>Teaching Exceptional Children</i>. https://doi.org/10.1177/0040059917721116</p>
+                <p>Zirkel, P. A. (2009). "What does the law say? Section 504, the ADA, and the schools." <i>Teaching Exceptional Children</i>. https://doi.org/10.1177/004005990904100509</p>
               </div>
             </div>
           </div>

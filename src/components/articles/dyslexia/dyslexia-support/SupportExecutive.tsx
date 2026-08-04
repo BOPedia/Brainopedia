@@ -319,58 +319,6 @@ export function SupportExecutive({ setCurrentArticle }: SupportExecutiveProps) {
             </div>
           </div>
 
-          {/* Digital & PKM Systems Section */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-6 text-[#0c264d] border-b border-gray-200 pb-2 text-center">
-              Digital "Second Brain" Systems
-            </h3>
-            <p className="mb-6 text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
-              These digital Personal Knowledge Management (PKM) systems move away from rigid folders. By treating notes like a visual, connected web, they perfectly match the dyslexic brain's associative, "big picture" thinking style.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-              
-              {/* Zettelkasten Method */}
-              <div className="bg-white p-6 rounded-xl border-l-4 border-[#8b5cf6] shadow-sm flex flex-col h-full">
-                <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
-                  <Link className="w-6 h-6 text-[#8b5cf6]" />
-                  Zettelkasten (The "Slip-Box")
-                </h4>
-                <p className="text-sm text-slate-700 mb-4 leading-relaxed">
-                  Focuses on creating "atomic" (single-idea), deeply interconnected notes. Instead of putting a note in one specific folder, you link it directly to other related ideas, building a massive web of knowledge.
-                </p>
-                <div className="bg-[#8b5cf6]/10 p-4 rounded-lg border border-[#8b5cf6]/20 flex-grow">
-                  <strong className="text-[#0c264d] text-sm block mb-2">How it works & where to build:</strong>
-                  <ul className="text-sm text-slate-700 space-y-2">
-                    <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Atomic Notes:</strong> Keep each note strictly to one single concept or thought.</div></li>
-                    <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Link Everything:</strong> Use tags and bi-directional links (like <code className="bg-white px-1 rounded text-[#8b5cf6]">[[topic]]</code>) to connect ideas instead of sorting them into folders.</div></li>
-                    <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Best Apps:</strong> <em>Obsidian</em>, <em>Roam Research</em>, and <em>Logseq</em> automatically generate a visual "graph view" of your links.</div></li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Evergreen Notes */}
-              <div className="bg-white p-6 rounded-xl border-l-4 border-[#14b8a6] shadow-sm flex flex-col h-full">
-                <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
-                  <Leaf className="w-6 h-6 text-[#14b8a6]" />
-                  Evergreen Notes
-                </h4>
-                <p className="text-sm text-slate-700 mb-4 leading-relaxed">
-                  Treats notes as a living, evolving web of personal knowledge that grows and matures over months. Rather than taking notes once and abandoning them, you continuously revisit and refine them.
-                </p>
-                <div className="bg-[#14b8a6]/10 p-4 rounded-lg border border-[#14b8a6]/20 flex-grow">
-                  <strong className="text-[#0c264d] text-sm block mb-2">How it works & where to build:</strong>
-                  <ul className="text-sm text-slate-700 space-y-2">
-                    <li className="flex gap-2"><span className="text-[#14b8a6] font-bold">•</span> <div><strong>Concept-Oriented:</strong> Title notes as full ideas (e.g., "Visual notes reduce working memory load") rather than generic topics.</div></li>
-                    <li className="flex gap-2"><span className="text-[#14b8a6] font-bold">•</span> <div><strong>Continuous Cultivation:</strong> Regularly update old notes as you learn new information, changing your mind and adding context.</div></li>
-                    <li className="flex gap-2"><span className="text-[#14b8a6] font-bold">•</span> <div><strong>Best Apps:</strong> Works beautifully in <em>Obsidian</em>, <em>Notion</em>, or <em>Bear</em> where you can easily edit and re-link over time.</div></li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
           {/* Bottom Back Button */}
           <div className="flex justify-end my-8 clear-both">
             <button 

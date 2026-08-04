@@ -246,14 +246,14 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
           {/* DIGITAL SECOND BRAIN SECTION */}
           <div className="clear-both mt-16">
             <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center border-b border-gray-200 pb-2">
-              Digital "Second Brain" Systems
+              Digital Personal Knowledge Management Systems 
+            
             </h2>
             <p className="mb-10 text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
               These digital Personal Knowledge Management (PKM) systems move away from rigid folders. By treating notes like a visual, connected web, they perfectly match the dyslexic brain's associative, "big picture" thinking style.
             </p>
           </div>
-
-          {/* Second Brain Graphic */}
+                   {/* Second Brain Graphic */}
           <div className="max-w-4xl mx-auto mb-12">
             <ImageWithFallback 
               src="/images/dyslexia/dyslexia-support-homesupportTAB-second-brain.png"
@@ -261,7 +261,6 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
               className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
             />
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 items-stretch max-w-5xl mx-auto">
             
             {/* Zettelkasten Method */}
@@ -302,91 +301,7 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
               </div>
             </div>
           </div>
-          
-          <div className="clear-both mt-10">
-            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center border-b border-gray-200 pb-2">
-              Comparing Two Major Federal Plans
-            </h2>
-          </div>
-                        <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-support-techtools-TAB-IEP504.png"
-                alt="tech organization tools"
-                className="block mx-auto w-full max-w-xl rounded-lg shadow-sm border border-slate-200 bg-white"
-              />     
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            {/* IEP Card */}
-            <div className="bg-gray-300 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md">
-              <h4 className="font-bold text-[#0c264d] text-xl mb-3">IEP (Individualized Education Program)</h4>
-              <p className="text-sm text-slate-800 mb-5 leading-relaxed font-medium">
-                Governed by the Individuals with Disabilities Education Act (IDEA), an IEP is designed for students whose dyslexia requires specialized, direct instruction to make academic progress.
-              </p>
-              <div className="space-y-3">
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Core Focus:</strong> Provides specialized, individualized instruction (such as resource room support or evidence-based reading interventions).
-                </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Eligibility:</strong> Must meet specific criteria for 1 of 13 federal categories (like Specific Learning Disability) and require special education.
-                </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Technology Requests:</strong> The IEP team is legally required to consider Assistive Technology (AT). You can request an <strong>AT Evaluation</strong> to have specific tools (like C-Pens or text-to-speech software) mandated and funded by the plan.
-                </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Legal Structure:</strong> Highly regulated, legally binding document with strictly mandated evaluation and meeting timelines.
-                </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Annual Goals:</strong> Requires specific, measurable academic and functional goals with mandatory progress monitoring.
-                </div>
-              </div>
-            </div>
 
-            {/* 504 Card */}
-            <div className="bg-gray-300 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-md">
-              <h4 className="font-bold text-[#0c264d] text-xl mb-3">504 Plan</h4>
-              <p className="text-sm text-slate-800 mb-5 leading-relaxed font-medium">
-                Covered under Section 504 of the Rehabilitation Act, this civil rights plan is for students who do not necessarily require specialized instruction, but need specific accommodations to ensure equal access to learning.
-              </p>
-              <div className="space-y-3">
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Core Focus:</strong> Removes barriers through environmental, instructional, and testing accommodations.
-                </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Eligibility:</strong> Broader criteria; any disability that substantially limits a major life activity (such as reading, concentrating, or learning).
-                </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Technology Requests:</strong> You can explicitly request access to everyday tech tools (such as audiobooks, speech-to-text dictation, or the use of a laptop for taking notes) as reasonable accommodations to remove barriers.
-                </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Legal Structure:</strong> A more flexible civil rights statute focused on preventing discrimination, with fewer procedural requirements than IDEA.
-                </div>
-                <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4]">Annual Goals:</strong> No formal goals required; the plan focuses entirely on effectively implementing the listed accommodations.
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Policy Alert Pop-out */}
-          <div className="bg-[#576d8e] border-l-4 border-[#ffd166] p-6 mb-10 rounded-r-lg shadow-sm">
-            <h4 className="font-bold text-[#ffd166] mb-3 uppercase text-xs tracking-wider">
-              Policy Alert: Federal Oversight Changes
-            </h4>
-            <p className="text-sm text-white mb-4 leading-relaxed font-medium">
-              In June 2026, the U.S. Department of Education announced interagency agreements shifting the administration of IDEA to the Department of Health and Human Services (HHS) and Section 504 enforcement to the Department of Justice (DOJ).
-            </p>
-            <div className="space-y-3">
-              <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                <strong className="text-[#0A9DC4]">Shift to a Medical Model:</strong> Advocacy groups warn that moving IDEA oversight to HHS may push students toward a medical model that treats disability as a diagnosis to be managed rather than focusing on educational inclusion.
-              </div>
-              <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                <strong className="text-[#0A9DC4]">Fragmented Enforcement:</strong> Splitting special education management and civil rights enforcement across separate departments risks creating confusion, longer delays, and less accountability for families.
-              </div>
-              <div className="bg-white p-3 rounded-lg shadow-sm text-sm text-slate-700">
-                <strong className="text-[#0A9DC4]">Unchanged Legal Rights:</strong> Despite these administrative shifts, federal officials maintain that a student's statutory rights, IEP requirements, and Section 504 accommodations have not changed.
-              </div>
-            </div>
-          </div>  
-          
           <div className="flex justify-end my-8 clear-both">
             <button 
               onClick={() => setCurrentArticle?.('dyslexia')}
