@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
-
+import { HeartHandshake, Timer, Monitor, BookHeart, Clock, Home } from 'lucide-react';
 interface SupportHomeProps {
   setCurrentArticle?: (article: string) => void;
 }
@@ -104,26 +104,157 @@ export function SupportHome({ setCurrentArticle }: SupportHomeProps) {
             </p>
           </div>
 
-          {/* Supportive Environment (Float Right) */}
-          <h3 className="text-2xl font-bold mt-2 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Creating a Supportive Environment</h3>
-          
-          <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-home-TAB-environment.png"
-            alt="Creating a structured homework space"
-            className="w-56 h-auto rounded-md border border-gray-300 shadow-sm float-right ml-6 mb-4"
-          />
-
-          <div className="space-y-4 mb-10">
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
-              <div className="font-bold text-[#0A9DC4] md:w-1/4">Dedicated Workspace</div>
-              <div className="text-sm text-slate-700 md:w-3/4">Designate a specific, quiet, and well-lit area for homework that is free from high-traffic household distractions.</div>
-            </div>
-            
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
-              <div className="font-bold text-[#0A9DC4] md:w-1/4">Consistent Routines</div>
-              <div className="text-sm text-slate-700 md:w-3/4">Establish predictable daily schedules. Knowing exactly when homework time begins and ends helps reduce anxiety and task avoidance.</div>
-            </div>
+   {/* GRADE SCHOOL ENVIRONMENT SECTION */}
+          <div className="clear-both mt-16">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center border-b border-gray-200 pb-2">
+              Grade School: Foundational Environments
+            </h2>
+            <p className="mb-8 text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
+              For elementary and middle school students, the home environment needs to provide strong scaffolding. The goal is to make routines visible, reduce frustration, and separate the "work" zone from the "rest" zone.
+            </p>
           </div>
+
+          {/* Grade School Graphic - Slightly bigger, max-w-4xl, centered */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <ImageWithFallback 
+              src="/images/dyslexia/dyslexia-support-home-gradeschool.png"
+              alt="Grade School Home Support Environment"
+              className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+            />
+          </div>
+
+          {/* Grade School Strategy Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 items-stretch max-w-6xl mx-auto">
+            
+            {/* The Focus Zone */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#ff6b6b] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                <Home className="w-6 h-6 text-[#ff6b6b] flex-shrink-0" />
+                The "Focus Zone"
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Younger children with dyslexia often need active scaffolding and emotional support while working through difficult tasks.
+              </p>
+              <div className="bg-[#ff6b6b]/10 p-5 rounded-lg border border-[#ff6b6b]/20 flex-grow">
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#ff6b6b] font-bold">•</span> <div><strong>Common Areas:</strong> Set up the workspace in a shared area (like the dining room) rather than an isolated bedroom so parents can monitor frustration levels.</div></li>
+                  <li className="flex gap-2"><span className="text-[#ff6b6b] font-bold">•</span> <div><strong>Clutter-Free:</strong> Keep only the exact materials needed for the current assignment on the table.</div></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Visual Routines */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#f59e0b] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                <Clock className="w-6 h-6 text-[#f59e0b] flex-shrink-0" />
+                Visual Routines
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Children with executive function challenges struggle with abstract concepts like time and multi-step directions.
+              </p>
+              <div className="bg-[#f59e0b]/10 p-5 rounded-lg border border-[#f59e0b]/20 flex-grow">
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#f59e0b] font-bold">•</span> <div><strong>Picture Schedules:</strong> Use a magnetic board or chart with physical pictures showing the daily after-school routine (Snack, Homework, Play).</div></li>
+                  <li className="flex gap-2"><span className="text-[#f59e0b] font-bold">•</span> <div><strong>Time Timers:</strong> Use visual clocks (where a red disk slowly disappears) to make the passing of time concrete and predictable.</div></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* The Reading Nook */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#3b82f6] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                <BookHeart className="w-6 h-6 text-[#3b82f6] flex-shrink-0" />
+                The Reading Nook
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Separating "reading for pleasure" from "homework" is crucial to prevent early burnout and resentment toward books.
+              </p>
+              <div className="bg-[#3b82f6]/10 p-5 rounded-lg border border-[#3b82f6]/20 flex-grow">
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#3b82f6] font-bold">•</span> <div><strong>Low-Pressure Space:</strong> Create a cozy, highly preferred spot (beanbags, tents) dedicated strictly to enjoyable reading.</div></li>
+                  <li className="flex gap-2"><span className="text-[#3b82f6] font-bold">•</span> <div><strong>Audio-Rich:</strong> Stock the nook with audiobooks and graphic novels. Reading with ears counts as reading!</div></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+{/* HIGH SCHOOL & COLLEGE ENVIRONMENT SECTION */}
+          <div className="clear-both mt-16">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center border-b border-gray-200 pb-2">
+              High School & College: Advanced Environments
+            </h2>
+            <p className="mb-10 text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
+              As students transition into higher education, a supportive environment must go beyond just a quiet desk. The focus shifts toward building autonomy, managing complex workflows, and drastically reducing cognitive fatigue.
+            </p>
+          </div>
+          {/* High School & College Environment Graphic */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <ImageWithFallback 
+              src="/images/dyslexia/dyslexia-support-home-HS-college-years.png"
+              alt="High School and College Home Support Environment"
+              className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 items-stretch max-w-6xl mx-auto">
+            
+            {/* Sensory & Ergonomics */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#0A9DC4] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                <Monitor className="w-6 h-6 text-[#0A9DC4] flex-shrink-0" />
+                Sensory & Ergonomics
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Older students often hit a wall not because they don't understand the material, but because their physical environment drains their processing power.
+              </p>
+              <div className="bg-[#f0f9ff] p-5 rounded-lg border border-[#0A9DC4]/20 flex-grow">
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#0A9DC4] font-bold">•</span> <div><strong>Dual-Monitor Setups:</strong> Having research open on one screen while typing on the other completely eliminates the cognitive load of constantly minimizing tabs.</div></li>
+                  <li className="flex gap-2"><span className="text-[#0A9DC4] font-bold">•</span> <div><strong>Sensory Boundaries:</strong> Utilize active noise-canceling headphones, brown noise, and adjustable warm lighting to prevent sensory fatigue.</div></li>
+                  <li className="flex gap-2"><span className="text-[#0A9DC4] font-bold">•</span> <div><strong>Frictionless Tech:</strong> Dictation mics and text-to-speech tools should be permanently plugged in and ready to use without feeling "stigmatized."</div></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Workflow Systems */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#8b5cf6] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                <Timer className="w-6 h-6 text-[#8b5cf6] flex-shrink-0" />
+                Workflow Systems
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Instead of just dictating <em>when</em> to work, the environment needs to help neurodivergent students visualize <em>how</em> to execute the work.
+              </p>
+              <div className="bg-[#8b5cf6]/10 p-5 rounded-lg border border-[#8b5cf6]/20 flex-grow">
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Body Doubling:</strong> Having another person working quietly in the same room provides passive accountability and breaks task paralysis.</div></li>
+                  <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Visualizing Time:</strong> Use physical visual timers (Pomodoro method) to enforce 25-minute work sprints, turning massive papers into manageable chunks.</div></li>
+                  <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>The Launch Pad:</strong> Designate a specific spot by the door where the backpack, laptop, and keys live, paired with a 5-minute nightly reset ritual.</div></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Autonomy & Scaffolding */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#10b981] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                <HeartHandshake className="w-6 h-6 text-[#10b981] flex-shrink-0" />
+                Autonomy & Support
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                High school and college are about transitioning the responsibility from the parent/teacher directly to the student.
+              </p>
+              <div className="bg-[#10b981]/10 p-5 rounded-lg border border-[#10b981]/20 flex-grow">
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#10b981] font-bold">•</span> <div><strong>The "Consultant" Approach:</strong> Parents should shift from managers to consultants, asking: <em>"What does your workload look like, and how can I support you?"</em></div></li>
+                  <li className="flex gap-2"><span className="text-[#10b981] font-bold">•</span> <div><strong>De-stigmatizing Struggle:</strong> Openly discuss that feeling overwhelmed is normal, and that iterating on study habits is a sign of growth.</div></li>
+                  <li className="flex gap-2"><span className="text-[#10b981] font-bold">•</span> <div><strong>Utilizing Campus DSS:</strong> Normalize the use of collegiate Disability Support Services as a strategic, highly intelligent move—not a weakness.</div></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
 
           {/* Reading at Home (Big Full Pic) */}
           <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Reading at Home</h3>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BookOpen, PenTool, Calendar, Mic, Headphones, Sparkles, Network, Leaf } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
@@ -34,7 +35,7 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
       </button>
 
       <Tabs defaultValue="technology" className="w-full">
-<TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-12 bg-transparent h-auto p-0">
+        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-12 bg-transparent h-auto p-0">
           <TabsTrigger 
             value="interventions" 
             onClick={() => setCurrentArticle?.('dyslexia-support-interventions')} 
@@ -94,83 +95,224 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
             </h2>
           </div>
 
-          {/* READING TECHNOLOGY */}
-          <div className="mb-16">
-            <div className="max-w-2xl mx-auto bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm mb-6 text-center">
-              <h4 className="font-bold text-[#0c264d] text-xl mb-4">Reading Technology</h4>
-              <div className="flex flex-col gap-3 text-sm text-slate-700 text-left">
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>Text-to-speech:</strong> NaturalReader, Voice Dream Reader, Kurzweil 3000.
-                </div>
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>OCR:</strong> Converts images/PDFs to readable text.
-                </div>
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>Electronic books:</strong> Kindle, iPad with accessibility features.
-                </div>
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>Reading pens:</strong> C-Pen Reader scans/reads text aloud.
-                </div>
+          <div className="grid grid-cols-1 gap-8 mb-16 max-w-3xl mx-auto">
+            
+            {/* READING TECHNOLOGY */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#0A9DC4] shadow-sm flex flex-col">
+              <h4 className="font-bold text-[#0c264d] text-2xl mb-3 flex items-center gap-2">
+                <BookOpen className="w-7 h-7 text-[#0A9DC4]" />
+                Reading Technology
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Assistive tools designed to bypass visual decoding, allowing users to comprehend complex text through audio or enhanced formatting.
+              </p>
+              <div className="bg-[#f0f9ff] p-5 rounded-lg border border-[#0A9DC4]/20 mb-6">
+                <strong className="text-[#0c264d] text-sm block mb-3">Core Tools:</strong>
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#0A9DC4] font-bold">•</span> <div><strong>Text-to-speech:</strong> NaturalReader, Voice Dream Reader, Kurzweil 3000.</div></li>
+                  <li className="flex gap-2"><span className="text-[#0A9DC4] font-bold">•</span> <div><strong>OCR:</strong> Converts images and physical PDFs into readable, spoken text.</div></li>
+                  <li className="flex gap-2"><span className="text-[#0A9DC4] font-bold">•</span> <div><strong>E-books:</strong> Kindle or iPad with customized accessibility fonts and spacing.</div></li>
+                  <li className="flex gap-2"><span className="text-[#0A9DC4] font-bold">•</span> <div><strong>Reading pens:</strong> C-Pen Reader physically scans and reads text aloud.</div></li>
+                </ul>
               </div>
+              
+              <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-reading.png"
+                alt="tech reading tools"
+                className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
+              /> 
             </div>
-            <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-techtools-TAB-reading.png"
-              alt="tech reading tools"
-              className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
-            /> 
+
+            {/* WRITING TECHNOLOGY */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#8b5cf6] shadow-sm flex flex-col">
+              <h4 className="font-bold text-[#0c264d] text-2xl mb-3 flex items-center gap-2">
+                <PenTool className="w-7 h-7 text-[#8b5cf6]" />
+                Writing Technology
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Tools that remove the friction of spelling and grammar mechanics, enabling users to get their ideas onto the page quickly and accurately.
+              </p>
+              <div className="bg-[#8b5cf6]/10 p-5 rounded-lg border border-[#8b5cf6]/20 mb-6">
+                <strong className="text-[#0c264d] text-sm block mb-3">Core Tools:</strong>
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Speech-to-text:</strong> Google Docs voice typing, built-in Windows/Mac dictation.</div></li>
+                  <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Word prediction:</strong> Co:Writer, Read&Write (anticipates words to reduce keystrokes).</div></li>
+                  <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Grammar checkers:</strong> Grammarly, ProWritingAid (catches contextual errors).</div></li>
+                </ul>
+              </div>
+              
+              <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-writing.png"
+                alt="tech writing tools"
+                className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
+              />
+            </div>
+
+            {/* ORGANIZATION TOOLS */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#10b981] shadow-sm flex flex-col">
+              <h4 className="font-bold text-[#0c264d] text-2xl mb-3 flex items-center gap-2">
+                <Calendar className="w-7 h-7 text-[#10b981]" />
+                Organization Tools
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Digital systems designed to support executive function, helping users centralize schedules, tasks, and reference materials.
+              </p>
+              <div className="bg-[#10b981]/10 p-5 rounded-lg border border-[#10b981]/20 mb-6">
+                <strong className="text-[#0c264d] text-sm block mb-3">Core Tools:</strong>
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#10b981] font-bold">•</span> <div><strong>Organizers:</strong> Google Calendar, Trello, Notion for visual task management.</div></li>
+                  <li className="flex gap-2"><span className="text-[#10b981] font-bold">•</span> <div><strong>Note-taking:</strong> OneNote, Notability (syncs audio recordings with written notes).</div></li>
+                  <li className="flex gap-2"><span className="text-[#10b981] font-bold">•</span> <div><strong>Study apps:</strong> Quizlet, Evernote for spaced repetition and file storage.</div></li>
+                </ul>
+              </div>
+              
+              <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-organize-tools.png"
+                alt="tech organization tools"
+                className="block mx-auto w-full max-w-xl rounded-lg shadow-sm border border-slate-200 bg-white"
+              />     
+            </div>
+
           </div>
 
-          {/* WRITING TECHNOLOGY */}
-          <div className="mb-16">
-            <div className="max-w-2xl mx-auto bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm mb-6 text-center">
-              <h4 className="font-bold text-[#0c264d] text-xl mb-4">Writing Technology</h4>
-              <div className="flex flex-col gap-3 text-sm text-slate-700 text-left">
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>Word prediction:</strong> Co:Writer, Read&Write.
-                </div>
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>Speech-to-text:</strong> Google Docs voice typing, Windows dictation.
-                </div>
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>Grammar checkers:</strong> Grammarly, ProWritingAid.
-                </div>
+          {/* AI AND SMART ASSISTANTS SECTION */}
+          <div className="clear-both mt-16">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center border-b border-gray-200 pb-2">
+              AI & Smart Assistants
+            </h2>
+            <p className="mb-10 text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
+              Because the dyslexic brain excels at big-picture thinking but gets bogged down by spelling and working memory, building a modern AI workflow can completely remove the friction of traditional reading and writing.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 items-stretch">
+            
+            {/* Audio-First Capture */}
+            <div className="bg-white p-6 rounded-xl border-l-4 border-[#ff6b6b] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-lg mb-3 flex items-center gap-2">
+                <Mic className="w-5 h-5 text-[#ff6b6b] flex-shrink-0" />
+                1. Audio-First Capture
+              </h4>
+              <p className="text-sm text-slate-700 mb-4 leading-relaxed">
+                Bypass the "blank page" entirely. These tools let you think out loud, ramble, and lose your train of thought, then automatically rewrite your audio into clear, structured text.
+              </p>
+              <div className="bg-[#ff6b6b]/10 p-4 rounded-lg border border-[#ff6b6b]/20 flex-grow">
+                <strong className="text-[#0c264d] text-xs block mb-2 uppercase tracking-wider">Top Tools:</strong>
+                <ul className="text-sm text-slate-700 space-y-2">
+                  <li className="flex gap-2"><span className="text-[#ff6b6b] font-bold">•</span> <div><strong>AudioPen:</strong> Strips out filler words and structures messy thoughts. Works flawlessly in the browser or via dedicated apps on macOS Tahoe.</div></li>
+                  <li className="flex gap-2"><span className="text-[#ff6b6b] font-bold">•</span> <div><strong>VoiceDash:</strong> Instant formatting for emails and essays without touching a keyboard.</div></li>
+                </ul>
               </div>
             </div>
+
+            {/* Lecture Recorders */}
+            <div className="bg-white p-6 rounded-xl border-l-4 border-[#f59e0b] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-lg mb-3 flex items-center gap-2">
+                <Headphones className="w-5 h-5 text-[#f59e0b] flex-shrink-0" />
+                2. Live Processing
+              </h4>
+              <p className="text-sm text-slate-700 mb-4 leading-relaxed">
+                Trying to listen and write simultaneously taxes working memory. These tools handle the transcription so the brain can focus purely on understanding concepts in real-time.
+              </p>
+              <div className="bg-[#f59e0b]/10 p-4 rounded-lg border border-[#f59e0b]/20 flex-grow">
+                <strong className="text-[#0c264d] text-xs block mb-2 uppercase tracking-wider">Top Tools:</strong>
+                <ul className="text-sm text-slate-700 space-y-2">
+                  <li className="flex gap-2"><span className="text-[#f59e0b] font-bold">•</span> <div><strong>Otter.ai:</strong> Live transcription that highlights text as it speaks (great multisensory support).</div></li>
+                  <li className="flex gap-2"><span className="text-[#f59e0b] font-bold">•</span> <div><strong>Glean:</strong> Syncs audio with slides. You just hit a "highlight" button when something important is said instead of typing.</div></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Synthesis AI */}
+            <div className="bg-white p-6 rounded-xl border-l-4 border-[#3b82f6] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-lg mb-3 flex items-center gap-2">
+                <Sparkles className="w-5 h-5 text-[#3b82f6] flex-shrink-0" />
+                3. Synthesis & Cleanup
+              </h4>
+              <p className="text-sm text-slate-700 mb-4 leading-relaxed">
+                Your personal research and editing crew. Use these tools to organize massive amounts of information without being forced to read walls of text.
+              </p>
+              <div className="bg-[#3b82f6]/10 p-4 rounded-lg border border-[#3b82f6]/20 flex-grow">
+                <strong className="text-[#0c264d] text-xs block mb-2 uppercase tracking-wider">Top Tools:</strong>
+                <ul className="text-sm text-slate-700 space-y-2">
+                  <li className="flex gap-2"><span className="text-[#3b82f6] font-bold">•</span> <div><strong>NotebookLM:</strong> Upload PDFs and it generates study guides, mind maps, or even podcast-style audio summaries.</div></li>
+                  <li className="flex gap-2"><span className="text-[#3b82f6] font-bold">•</span> <div><strong>Claude/ChatGPT:</strong> Drop in disorganized notes and prompt it to "rewrite into a clear, hierarchical summary."</div></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          {/* DIGITAL SECOND BRAIN SECTION */}
+          <div className="clear-both mt-16">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center border-b border-gray-200 pb-2">
+              Digital "Second Brain" Systems
+            </h2>
+            <p className="mb-10 text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
+              These digital Personal Knowledge Management (PKM) systems move away from rigid folders. By treating notes like a visual, connected web, they perfectly match the dyslexic brain's associative, "big picture" thinking style.
+            </p>
+          </div>
+
+          {/* Second Brain Graphic */}
+          <div className="max-w-4xl mx-auto mb-12">
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-techtools-TAB-writing.png"
-              alt="tech writing tools"
+              src="/images/dyslexia/dyslexia-support-homesupportTAB-second-brain.png"
+              alt="Digital Second Brain Systems"
               className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
             />
           </div>
 
-          {/* ORGANIZATION TOOLS */}
-          <div className="mb-16">
-            <div className="max-w-2xl mx-auto bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm mb-6 text-center">
-              <h4 className="font-bold text-[#0c264d] text-xl mb-4">Organization Tools</h4>
-              <div className="flex flex-col gap-3 text-sm text-slate-700 text-left">
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>Organizers:</strong> Google Calendar, Trello, Notion.
-                </div>
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>Note-taking:</strong> OneNote, Notability (with audio).
-                </div>
-                <div className="bg-gray-300 p-3 rounded-lg border border-gray-100">
-                  <strong>Study apps:</strong> Quizlet, Evernote.
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 items-stretch max-w-5xl mx-auto">
+            
+            {/* Zettelkasten Method */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#8b5cf6] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                <Network className="w-6 h-6 text-[#8b5cf6]" />
+                Zettelkasten (The "Slip-Box")
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Focuses on creating "atomic" (single-idea), deeply interconnected notes. Instead of putting a note in one specific folder, you link it directly to other related ideas, building a massive web of knowledge.
+              </p>
+              <div className="bg-[#8b5cf6]/10 p-5 rounded-lg border border-[#8b5cf6]/20 flex-grow">
+                <strong className="text-[#0c264d] text-sm block mb-3">How it works & where to build:</strong>
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Atomic Notes:</strong> Keep each note strictly to one single concept or thought.</div></li>
+                  <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Link Everything:</strong> Use tags and bi-directional links (like <code className="bg-white px-1 rounded text-[#8b5cf6]">[[topic]]</code>) to connect ideas instead of sorting them into folders.</div></li>
+                  <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold">•</span> <div><strong>Best Apps:</strong> <em>Obsidian</em>, <em>Roam Research</em>, and <em>Logseq</em> automatically generate a visual "graph view" of your links.</div></li>
+                </ul>
               </div>
             </div>
-            <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-techtools-TAB-organize-tools.png"
-              alt="tech organization tools"
-              className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
-            />     
+
+            {/* Evergreen Notes */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#14b8a6] shadow-sm flex flex-col h-full">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                <Leaf className="w-6 h-6 text-[#14b8a6]" />
+                Evergreen Notes
+              </h4>
+              <p className="text-sm text-slate-700 mb-6 leading-relaxed">
+                Treats notes as a living, evolving web of personal knowledge that grows and matures over months. Rather than taking notes once and abandoning them, you continuously revisit and refine them.
+              </p>
+              <div className="bg-[#14b8a6]/10 p-5 rounded-lg border border-[#14b8a6]/20 flex-grow">
+                <strong className="text-[#0c264d] text-sm block mb-3">How it works & where to build:</strong>
+                <ul className="text-sm text-slate-700 space-y-3">
+                  <li className="flex gap-2"><span className="text-[#14b8a6] font-bold">•</span> <div><strong>Concept-Oriented:</strong> Title notes as full ideas (e.g., "Visual notes reduce working memory load") rather than generic topics.</div></li>
+                  <li className="flex gap-2"><span className="text-[#14b8a6] font-bold">•</span> <div><strong>Continuous Cultivation:</strong> Regularly update old notes as you learn new information, changing your mind and adding context.</div></li>
+                  <li className="flex gap-2"><span className="text-[#14b8a6] font-bold">•</span> <div><strong>Best Apps:</strong> Works beautifully in <em>Obsidian</em>, <em>Notion</em>, or <em>Bear</em> where you can easily edit and re-link over time.</div></li>
+                </ul>
+              </div>
+            </div>
           </div>
           
           <div className="clear-both mt-10">
             <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center border-b border-gray-200 pb-2">
-              Educational Frameworks
+              Comparing Two Major Federal Plans
             </h2>
           </div>
+                        <ImageWithFallback 
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-IEP504.png"
+                alt="tech organization tools"
+                className="block mx-auto w-full max-w-xl rounded-lg shadow-sm border border-slate-200 bg-white"
+              />     
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {/* IEP Card */}
