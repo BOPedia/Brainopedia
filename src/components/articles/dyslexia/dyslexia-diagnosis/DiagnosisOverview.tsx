@@ -1,4 +1,5 @@
 import React from 'react';
+import { Scale, AlertCircle, CheckCircle } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
 import { ImageWithFallback } from '../../../figma/ImageWithFallback';
 
@@ -126,16 +127,16 @@ export function DiagnosisOverview({ setCurrentArticle }: DiagnosisOverviewProps)
               </p>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4] mr-2">•</strong> Difficulties learning and using academic skills for at least 6 months despite interventions.
+                  <strong className="text-[#0A9DC4] mr-2">•</strong> Persistent difficulties learning and using academic skills for at least 6 months despite targeted intervention.
                 </div>
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4] mr-2">•</strong> Academic skills substantially below expected for age.
+                  <strong className="text-[#0A9DC4] mr-2">•</strong> Academic skills substantially and measurably below expected for age - though this was later changed.
                 </div>
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4] mr-2">•</strong> Difficulties begin during school years.
+                  <strong className="text-[#0A9DC4] mr-2">•</strong> Learning difficulties begin during formal school years.
                 </div>
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4] mr-2">•</strong> Not better explained by other conditions.
+                  <strong className="text-[#0A9DC4] mr-2">•</strong> Not better explained by intellectual disability, uncorrected vision/hearing, or lack of instruction.
                 </div>
               </div>
             </div>
@@ -149,20 +150,121 @@ export function DiagnosisOverview({ setCurrentArticle }: DiagnosisOverviewProps)
                 className="w-full h-auto rounded-md border border-gray-200 mb-5 bg-white"
               />
               <p className="text-sm text-slate-800 mb-4 font-medium text-center">
-                Evaluators look for specific profiles and discrepancies:
+                Evaluators look for specific profiles and cognitive patterns:
               </p>
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
                   <strong className="text-[#0A9DC4] mr-2">•</strong> Discrepancy between listening comprehension and reading comprehension.
                 </div>
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4] mr-2">•</strong> Evident phonological processing deficits.
+                  <strong className="text-[#0A9DC4] mr-2">•</strong> Evident phonological processing and decoding deficits.
                 </div>
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4] mr-2">•</strong> Slow, effortful reading despite adequate instruction.
+                  <strong className="text-[#0A9DC4] mr-2">•</strong> Slow, effortful reading despite adequate educational instruction.
                 </div>
                 <div className="bg-white p-3 rounded-lg border border-gray-100 text-sm text-slate-700">
-                  <strong className="text-[#0A9DC4] mr-2">•</strong> Unexpected difficulty relative to other abilities.
+                  <strong className="text-[#0A9DC4] mr-2">•</strong> Unexpected reading difficulty relative to general cognitive abilities.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* DSM-5 & THE IQ DISCREPANCY MODEL SECTION */}
+          <div className="clear-both mt-12 mb-12">
+            <h3 className="text-2xl font-bold mb-6 text-[#0c264d] border-b border-gray-200 pb-2 text-center">
+              DSM-5 & The Shift Away From the "IQ Gap"
+            </h3>
+            
+            <p className="mb-8 text-slate-700 leading-relaxed text-center max-w-3xl mx-auto">
+              In the DSM-5, dyslexia is formally classified under the overarching category of a <strong>Specific Learning Disorder with impairment in reading</strong> rather than as a standalone diagnosis. However, clinicians can still use "dyslexia" as an alternative descriptive term. One of the most critical changes in the DSM-5 was eliminating the requirement for an "IQ gap."
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-stretch">
+              
+              {/* What Was the IQ Gap? */}
+              <div className="bg-white p-6 rounded-xl border-l-4 border-[#8b5cf6] shadow-sm flex flex-col justify-between">
+                <div>
+                  <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                    <Scale className="w-6 h-6 text-[#8b5cf6] flex-shrink-0" />
+                    The Historical "IQ Gap" Model
+                  </h4>
+                  <p className="text-sm text-slate-700 mb-4 leading-relaxed">
+                    Historically known as the <em>cognitive discrepancy model</em>, this traditional formula required a severe statistical gap (typically 1.5 to 2 standard deviations, or 15–22 points) between an individual's overall intelligence (IQ score) and their academic achievement scores.
+                  </p>
+                  
+                  <div className="bg-[#8b5cf6]/10 p-4 rounded-lg border border-[#8b5cf6]/20 mb-4 text-center">
+                    <span className="text-xs uppercase tracking-wider text-[#8b5cf6] font-bold block mb-1">Discrepancy Formula</span>
+                    <div className="text-sm font-semibold text-[#0c264d] py-1">
+                      Discrepancy = Full Scale IQ Score - Standardized Achievement Score
+                    </div>
+                  </div>
+
+                  <ul className="text-sm text-slate-700 space-y-2 mb-4">
+                    <li className="flex gap-2">
+                      <span className="text-[#8b5cf6] font-bold">•</span>
+                      <div><strong>Expected Reading Ability:</strong> Predicted directly by standardized intelligence tests like the WISC.</div>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-[#8b5cf6] font-bold">•</span>
+                      <div><strong>Actual Reading Performance:</strong> Measured using academic achievement tests like the Woodcock-Johnson.</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Why DSM-5 Eliminated It */}
+              <div className="bg-white p-6 rounded-xl border-l-4 border-[#ff6b6b] shadow-sm flex flex-col justify-between">
+                <div>
+                  <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                    <AlertCircle className="w-6 h-6 text-[#ff6b6b] flex-shrink-0" />
+                    Why the Discrepancy Model Was Removed
+                  </h4>
+                  <p className="text-sm text-slate-700 mb-4 leading-relaxed">
+                    Decades of educational research revealed fundamental flaws in requiring an IQ-achievement gap:
+                  </p>
+                  <div className="bg-[#ff6b6b]/10 p-4 rounded-lg border border-[#ff6b6b]/20 mb-4">
+                    <ul className="text-sm text-slate-700 space-y-3">
+                      <li className="flex gap-2">
+                        <span className="text-[#ff6b6b] font-bold">•</span>
+                        <div><strong>The "Wait to Fail" Trap:</strong> Children with dyslexia rarely show a massive gap in early childhood. Clinicians had to wait until 3rd or 4th grade for academic deficits to widen, missing critical early intervention windows.</div>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-[#ff6b6b] font-bold">•</span>
+                        <div><strong>Flawed Neurological Logic:</strong> Research proved the brain mechanisms causing reading difficulties are identical regardless of whether a person has a high, average, or below-average IQ score.</div>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-[#ff6b6b] font-bold">•</span>
+                        <div><strong>Socioeconomic & Cultural Inequity:</strong> IQ tests can carry cultural, linguistic, and economic biases, leading to inaccurate predictions of true reading potential.</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Modern Diagnostic Alternative: Response to Intervention (RTI) */}
+            <div className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-[#10b981] shadow-sm">
+              <h4 className="font-bold text-[#0c264d] text-xl mb-3 flex items-center gap-2">
+                <CheckCircle className="w-6 h-6 text-[#10b981] flex-shrink-0" />
+                Modern Diagnostic Alternative: Response to Intervention (RTI)
+              </h4>
+              <p className="text-sm text-slate-700 mb-4 leading-relaxed">
+                Instead of searching for a statistical gap, DSM-5 and modern educational systems evaluate reading difficulties based on <strong>low absolute performance</strong> relative to age peers and <strong>lack of progress</strong> following targeted help:
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="bg-[#10b981]/10 p-4 rounded-lg border border-[#10b981]/20">
+                  <strong className="text-[#0c264d] text-sm block mb-1">1. Inadequate Response to Intervention:</strong>
+                  <p className="text-xs text-slate-700">
+                    The individual fails to make expected progress despite receiving targeted, evidence-based reading instruction for at least 6 months.
+                  </p>
+                </div>
+                <div className="bg-[#10b981]/10 p-4 rounded-lg border border-[#10b981]/20">
+                  <strong className="text-[#0c264d] text-sm block mb-1">2. Low Absolute Performance:</strong>
+                  <p className="text-xs text-slate-700">
+                    Academic skills are simply low relative to age-matched peers, regardless of how high or average the individual's IQ score is.
+                  </p>
                 </div>
               </div>
             </div>

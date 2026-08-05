@@ -347,11 +347,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
               </div>
             </div>
           </div>
-                       <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-support-techtools-TAB-IEP504-schoolsuccess.png"
-                alt="tech organization tools"
-                className="block mx-auto w-full max-w-xl rounded-lg shadow-sm border border-slate-200 bg-white"
-              /> 
+
           {/* Policy Alert Pop-out */}
           <div className="bg-[#0A9DC4] border-l-4 border-[#ffd166] p-6 mb-10 rounded-r-lg shadow-sm">
             <h4 className="font-bold text-[#ffd166] mb-3 uppercase text-xs tracking-wider">
