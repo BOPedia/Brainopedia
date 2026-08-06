@@ -125,7 +125,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground font-normal text-sm;
+    @apply bg-background text-[#0c264d] font-normal text-sm;
     /* This magic line pulls San Francisco on Apple devices */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
