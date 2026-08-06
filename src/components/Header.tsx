@@ -50,7 +50,7 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar, onSearchSel
   };
 
   return (
-    <header className="bg-[#0c264d] text-white sticky top-0 z-50 shadow-md w-full">
+    <header className="bg-[#0c264d] text-[#f4f4f4] sticky top-0 z-50 shadow-md w-full">
       {/* CHANGED: flex-col on mobile, flex-row on desktop (md:) */}
       <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 px-4 md:px-6 py-3 w-full max-w-full">
         

@@ -4,7 +4,7 @@ import { BookOpen, List, Users, FileText, Target } from 'lucide-react';
 export function ArticleAbout() {
   return (
     <article className="bg-[#f0f9ff] -m-8 p-4 sm:p-8 rounded-lg font-spartan text-[#0c264d]">
-      <h1 className="pb-4 border-b-2 border-[#0c264d] mb-12 text-3xl font-bold">
+      <h1 className="pb-4 border-b-2 border-[#0c264d] mb-12 text-3xl font-normal">
         About Brainopedia
       </h1>
 

@@ -6,14 +6,17 @@ interface HomeProps {
 
 export function Home({ setCurrentArticle }: HomeProps) {
   return (
-    <article className="bg-[#ffffff] -m-8 p-4 sm:p-8 rounded-lg font-spartan">
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl font-bold">
-        Welcome to Brainopedia
-      </h1>
+<article 
+  className="bg-[#f4f4f4] bg-cover bg-center -m-8 p-4 sm:p-8 rounded-lg font-spartan"
+  style={{ backgroundImage: "url('/images/home-beige-background.png')" }}
+>
+  <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-2xl sm:text-3xl font-normal text-[#0c264d]">
+    Welcome to Brainopedia
+  </h1>
 
-      <div className="space-y-12">
+      <div className="space-y-10">
         {/* Banner Video */}
-        <div className="mb-8">
+        <div className="mb-6">
           <video 
             autoPlay 
             loop 
@@ -28,121 +31,232 @@ export function Home({ setCurrentArticle }: HomeProps) {
         </div>
 
         {/* Introduction */}
-        <section className="max-w-3xl">
-          <p className="text-base leading-relaxed text-gray-700">
-            Explore our comprehensive volumes of neurodivergent conditions shown below in seven clusters distinctly named. 
-            Select a category below to begin your journey through the encyclopedia of the mind.
+        <section className="max-w-2xl mx-auto text-center">
+          <p className="text-sm leading-relaxed text-gray-700">
+            Browse our comprehensive collection of neurodevelopmental conditions and cognitive profiles. Choose a volume below to find detailed insights and targeted resources.
           </p>
         </section>
 
-        {/* Encyclopedia Volumes - SINGLE COLUMN, CENTERED CARDS */}
+        {/* Encyclopedia Volumes - 1 COLUMN (Compact Rows) */}
         <section>
-          <h2 className="text-[#0c264d] font-bold mb-8 text-2xl">Encyclopedia Volumes</h2>
+          <h2 className="text-[#0c264d] font-normal mb-6 text-xl sm:text-2xl text-center">Encyclopedia Volumes</h2>
 
-          <div className="flex flex-col gap-8 items-center w-full">
+          <div className="grid grid-cols-1 gap-6 w-full max-w-3xl mx-auto">
             
-            {/* Volume 1: Core Neurodevelopmental */}
-            <div className="w-full max-w-2xl bg-gradient-to-br from-[#2abcd4]/20 to-[#2abcd4]/5 p-6 sm:p-8 rounded-xl border-2 border-[#2abcd4] shadow-sm flex flex-col items-center text-center">
-              <img src="/images/home-apple-core-neurodev.png" alt="Neural apple" className="w-28 sm:w-32 h-auto rounded-lg shadow-md mb-5" />
-              <div className="flex flex-col flex-1 w-full items-center">
-                <h3 className="text-[#0c264d] text-xl font-bold mb-3">Core Neurodevelopmental</h3>
-                <p className="mb-5 text-base leading-relaxed text-gray-700 max-w-lg">Fundamental neurodevelopmental conditions affecting attention, social communication, and sensory processing from early childhood.</p>
-                <div className="flex flex-wrap gap-2 justify-center mt-auto">
-                  <button onClick={() => setCurrentArticle?.('adhd')} className="px-4 py-2 bg-white border-2 border-[#2abcd4] rounded-full text-sm hover:bg-[#2abcd4] hover:text-white transition-all font-bold">ADHD</button>
-                  <button onClick={() => setCurrentArticle?.('autism')} className="px-4 py-2 bg-white border-2 border-[#2abcd4] rounded-full text-sm hover:bg-[#2abcd4] hover:text-white transition-all font-bold">Autism or "ASD"</button>
+            {/* Volume I: Core Neurodevelopmental */}
+            <div className="group relative bg-white rounded-r-2xl rounded-l-sm border-l-[12px] border-[#2abcd4] shadow-[3px_3px_0px_#f8fafc,6px_6px_12px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-1 duration-300 flex flex-col">
+              <div className="absolute top-0 left-0 bottom-0 w-2 bg-gradient-to-r from-black/15 to-transparent pointer-events-none rounded-l-sm z-10"></div>
+              
+              <div className="p-6 flex flex-col items-center text-center z-20">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#2abcd4] mb-3 block">
+                  Volume I
+                </span>
+                
+                <img src="/images/home-apple-core-neurodev.png" alt="Neural apple" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
+                  Core Neurodevelopmental
+                </h3>
+                
+                <p className="text-xs sm:text-sm text-slate-700 max-w-lg mb-5">
+                  Fundamental neurodevelopmental conditions affecting attention, social communication, and sensory processing from early childhood.
+                </p>
+                
+                <div className="w-full border-t border-gray-100 pt-4">
+                  <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <button onClick={() => setCurrentArticle?.('adhd')} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#2abcd4] hover:border-[#2abcd4] hover:text-white transition-all font-normal text-slate-700">ADHD</button>
+                    <button onClick={() => setCurrentArticle?.('autism')} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#2abcd4] hover:border-[#2abcd4] hover:text-white transition-all font-normal text-slate-700">Autism or "ASD"</button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Volume 2: Learning Differences */}
-            <div className="w-full max-w-2xl bg-gradient-to-br from-[#ffd166]/30 to-[#ffd166]/5 p-6 sm:p-8 rounded-xl border-2 border-[#ffd166] shadow-sm flex flex-col items-center text-center">
-              <img src="/images/home-learning-diff.png" alt="Gears" className="w-28 sm:w-32 h-auto rounded-lg shadow-md mb-5" />
-              <div className="flex flex-col flex-1 w-full items-center">
-                <h3 className="text-[#0c264d] text-xl font-bold mb-3">Learning Differences & Profiles</h3>
-                <p className="mb-5 text-base leading-relaxed text-gray-700 max-w-lg">Distinct cognitive profiles affecting how individuals process, retain, and express information beyond traditional academics, including language, reasoning, and accelerated learning.</p>
-                <div className="flex flex-wrap gap-2 justify-center mt-auto">
-                  {['dyslexia', 'dyscalculia', 'dysgraphia', 'nvld', 'dld', 'hyperlexia', 'giftedness', 'twice-exceptional'].map(id => (
-                    <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-2 bg-white border-2 border-[#ffd166] rounded-full text-sm hover:bg-[#ffd166] hover:text-[#0c264d] transition-all font-bold uppercase">
-                      {id.replace('-', ' ')}
-                    </button>
-                  ))}
+            {/* Volume II: Learning Differences */}
+            <div className="group relative bg-white rounded-r-2xl rounded-l-sm border-l-[12px] border-[#ffd166] shadow-[3px_3px_0px_#f8fafc,6px_6px_12px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-1 duration-300 flex flex-col">
+              <div className="absolute top-0 left-0 bottom-0 w-2 bg-gradient-to-r from-black/15 to-transparent pointer-events-none rounded-l-sm z-10"></div>
+              
+              <div className="p-6 flex flex-col items-center text-center z-20">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#d4a017] mb-3 block">
+                  Volume II
+                </span>
+                
+                <img src="/images/home-learning-diff.png" alt="Gears" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
+                  Learning Differences & Profiles
+                </h3>
+                
+                <p className="text-xs sm:text-sm text-slate-700 max-w-lg mb-5">
+                  Distinct cognitive profiles affecting how individuals process, retain, and express information beyond traditional academics.
+                </p>
+                
+                <div className="w-full border-t border-gray-100 pt-4">
+                  <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {['dyslexia', 'dyscalculia', 'dysgraphia', 'NVLD', 'DLD', 'hyperlexia', 'giftedness', 'twice-exceptional or 2E'].map(id => (
+                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#ffd166] hover:border-[#ffd166] hover:text-[#0c264d] transition-all font-normal text-slate-700 capitalize">
+                        {id.replace('-', ' ')}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Volume 3: Processing & Sensory */}
-            <div className="w-full max-w-2xl bg-gradient-to-br from-[#ec4899]/20 to-[#ec4899]/5 p-6 sm:p-8 rounded-xl border-2 border-[#ec4899] shadow-sm flex flex-col items-center text-center">
-              <img src="/images/home-math-sensory-brain.png" alt="Sensory" className="w-28 sm:w-32 h-auto rounded-lg shadow-md mb-5" />
-              <div className="flex flex-col flex-1 w-full items-center">
-                <h3 className="text-[#0c264d] text-xl font-bold mb-3">Processing & Sensory</h3>
-                <p className="mb-5 text-base leading-relaxed text-gray-700 max-w-lg">Atypical ways of interpreting sensory information like auditory, visual, and tactile inputs.</p>
-                <div className="flex flex-wrap gap-2 justify-center mt-auto">
-                  {['apd', 'visual-processing', 'spd', 'misophonia', 'synesthesia'].map(id => (
-                    <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-2 bg-white border-2 border-[#ec4899] rounded-full text-sm hover:bg-[#ec4899] hover:text-white transition-all font-bold uppercase">
-                      {id.replace('-', ' ')}
-                    </button>
-                  ))}
+            {/* Volume III: Processing & Sensory */}
+            <div className="group relative bg-white rounded-r-2xl rounded-l-sm border-l-[12px] border-[#0A9DC4] shadow-[3px_3px_0px_#f8fafc,6px_6px_12px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-1 duration-300 flex flex-col">
+              <div className="absolute top-0 left-0 bottom-0 w-2 bg-gradient-to-r from-black/15 to-transparent pointer-events-none rounded-l-sm z-10"></div>
+              
+              <div className="p-6 flex flex-col items-center text-center z-20">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#0A9DC4] mb-3 block">
+                  Volume III
+                </span>
+                
+                <img src="/images/home-math-sensory-brain.png" alt="Sensory" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
+                  Processing & Sensory
+                </h3>
+                
+                <p className="text-xs sm:text-sm text-slate-700 max-w-lg mb-5">
+                  Atypical ways of interpreting sensory information like auditory, visual, and tactile inputs from the environment.
+                </p>
+                
+                <div className="w-full border-t border-gray-100 pt-4">
+                  <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {['APD', 'Visual Processing', 'SPD', 'Misophonia', 'Synesthesia'].map(id => (
+                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#0A9DC4] hover:border-[#0A9DC4] hover:text-white transition-all font-normal text-slate-700 capitalize">
+                        {id.replace('-', ' ')}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Volume 4: Movement & Motor */}
-            <div className="w-full max-w-2xl bg-gradient-to-br from-[#ffd700]/30 to-[#ffd700]/5 p-6 sm:p-8 rounded-xl border-2 border-[#ffd700] shadow-sm flex flex-col items-center text-center">
-              <img src="/images/home-movement-motor.png" alt="Motor" className="w-28 sm:w-32 h-auto rounded-lg shadow-md mb-5" />
-              <div className="flex flex-col flex-1 w-full items-center">
-                <h3 className="text-[#0c264d] text-xl font-bold mb-3">Movement & Motor</h3>
-                <p className="mb-5 text-base leading-relaxed text-gray-700 max-w-lg">Conditions affecting the brain's ability to plan, coordinate, and execute physical movements.</p>
-                <div className="flex flex-wrap gap-2 justify-center mt-auto">
-                  <button onClick={() => setCurrentArticle?.('dyspraxia')} className="px-4 py-2 bg-white border-2 border-[#ffd700] rounded-full text-sm hover:bg-[#ffd700] hover:text-[#0c264d] transition-all font-bold uppercase">Dyspraxia</button>
-                  <button onClick={() => setCurrentArticle?.('tourette')} className="px-4 py-2 bg-white border-2 border-[#ffd700] rounded-full text-sm hover:bg-[#ffd700] hover:text-[#0c264d] transition-all font-bold uppercase">Tourette</button>
+            {/* Volume IV: Movement & Motor */}
+            <div className="group relative bg-white rounded-r-2xl rounded-l-sm border-l-[12px] border-[#0c264d] shadow-[3px_3px_0px_#f8fafc,6px_6px_12px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-1 duration-300 flex flex-col">
+              <div className="absolute top-0 left-0 bottom-0 w-2 bg-gradient-to-r from-black/15 to-transparent pointer-events-none rounded-l-sm z-10"></div>
+              
+              <div className="p-6 flex flex-col items-center text-center z-20">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#0c264d] mb-3 block">
+                  Volume IV
+                </span>
+                
+                <img src="/images/home-movement-motor.png" alt="Motor" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
+                  Movement & Motor
+                </h3>
+                
+                <p className="text-xs sm:text-sm text-slate-700 max-w-lg mb-5">
+                  Conditions affecting the brain's ability to plan, coordinate, and execute physical movements seamlessly.
+                </p>
+                
+                <div className="w-full border-t border-gray-100 pt-4">
+                  <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <button onClick={() => setCurrentArticle?.('dyspraxia')} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#0c264d] hover:border-[#0c264d] hover:text-white transition-all font-normal text-slate-700">Dyspraxia</button>
+                    <button onClick={() => setCurrentArticle?.('tourette')} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#0c264d] hover:border-[#0c264d] hover:text-white transition-all font-normal text-slate-700">Tourette Syndrome</button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Volume 5: Mental Health Crossovers */}
-            <div className="w-full max-w-2xl bg-gradient-to-br from-[#0a9dc4]/20 to-[#0a9dc4]/5 p-6 sm:p-8 rounded-xl border-2 border-[#0a9dc4] shadow-sm flex flex-col items-center text-center">
-              <img src="/images/home-mental-health-fire-brain-bright.png" alt="Brain" className="w-28 sm:w-32 h-auto rounded-lg shadow-md mb-5" />
-              <div className="flex flex-col flex-1 w-full items-center">
-                <h3 className="text-[#0c264d] text-xl font-bold mb-3">Mental Health Crossovers</h3>
-                <p className="mb-5 text-base leading-relaxed text-gray-700 max-w-lg">Distinctive neurological patterns at the intersection of neurodivergence and mental health.</p>
-                <div className="flex flex-wrap gap-2 justify-center mt-auto">
-                  {['ocd', 'bipolar', 'schizophrenia'].map(id => (
-                    <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-2 bg-white border-2 border-[#0a9dc4] rounded-full text-sm hover:bg-[#0a9dc4] hover:text-white transition-all font-bold uppercase">
-                      {id}
-                    </button>
-                  ))}
+            {/* Volume V: Mental Health Crossovers */}
+            <div className="group relative bg-white rounded-r-2xl rounded-l-sm border-l-[12px] border-[#2abcd4] shadow-[3px_3px_0px_#f8fafc,6px_6px_12px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-1 duration-300 flex flex-col">
+              <div className="absolute top-0 left-0 bottom-0 w-2 bg-gradient-to-r from-black/15 to-transparent pointer-events-none rounded-l-sm z-10"></div>
+              
+              <div className="p-6 flex flex-col items-center text-center z-20">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#2abcd4] mb-3 block">
+                  Volume V
+                </span>
+                
+                <img src="/images/home-mental-health-fire-brain-bright.png" alt="Brain" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
+                  Mental Health Crossovers
+                </h3>
+                
+                <p className="text-xs sm:text-sm text-slate-700 max-w-lg mb-5">
+                  Distinctive neurological patterns found at the complex intersection of neurodivergence and mental health.
+                </p>
+                
+                <div className="w-full border-t border-gray-100 pt-4">
+                  <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {['OCD', 'Bipolar', 'Schizophrenia'].map(id => (
+                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#2abcd4] hover:border-[#2abcd4] hover:text-white transition-all font-normal text-slate-700 capitalize">
+                        {id}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Volume 6: Genetic or Environmental */}
-            <div className="w-full max-w-2xl bg-gradient-to-br from-[#8b5cf6]/20 to-[#8b5cf6]/5 p-6 sm:p-8 rounded-xl border-2 border-[#8b5cf6] shadow-sm flex flex-col items-center text-center">
-              <img src="/images/home-genetics-or-enviro.png" alt="DNA" className="w-28 sm:w-32 h-auto rounded-lg shadow-md mb-5" />
-              <div className="flex flex-col flex-1 w-full items-center">
-                <h3 className="text-[#0c264d] text-xl font-bold mb-3">Genetic or Environmental</h3>
-                <p className="mb-5 text-base leading-relaxed text-gray-700 max-w-lg">Conditions arising from genetic variations or environmental factors during early development.</p>
-                <div className="flex flex-wrap gap-2 justify-center mt-auto">
-                  {['down-syndrome', 'intellectual-disability', 'fasd', 'epilepsy'].map(id => (
-                    <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-2 bg-white border-2 border-[#8b5cf6] rounded-full text-sm hover:bg-[#8b5cf6] hover:text-white transition-all font-bold uppercase">
-                      {id.replace('-', ' ')}
-                    </button>
-                  ))}
+            {/* Volume VI: Genetic or Environmental */}
+            <div className="group relative bg-white rounded-r-2xl rounded-l-sm border-l-[12px] border-[#ffd166] shadow-[3px_3px_0px_#f8fafc,6px_6px_12px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-1 duration-300 flex flex-col">
+              <div className="absolute top-0 left-0 bottom-0 w-2 bg-gradient-to-r from-black/15 to-transparent pointer-events-none rounded-l-sm z-10"></div>
+              
+              <div className="p-6 flex flex-col items-center text-center z-20">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#d4a017] mb-3 block">
+                  Volume VI
+                </span>
+                
+                <img src="/images/home-genetics-or-enviro.png" alt="DNA" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
+                  Genetic or Environmental
+                </h3>
+                
+                <p className="text-xs sm:text-sm text-slate-700 max-w-lg mb-5">
+                  Conditions arising from specific genetic variations or environmental factors during early development.
+                </p>
+                
+                <div className="w-full border-t border-gray-100 pt-4">
+                  <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {['Down Syndrome', 'Intellectual Disability', 'FASD', 'Epilepsy'].map(id => (
+                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#ffd166] hover:border-[#ffd166] hover:text-[#0c264d] transition-all font-normal text-slate-700 capitalize">
+                        {id.replace('-', ' ')}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Volume 7: Acquired Neurodivergence */}
-            <div className="w-full max-w-2xl bg-gradient-to-br from-[#ffcc00]/25 to-[#ffcc00]/5 p-6 sm:p-8 rounded-xl border-2 border-[#ffcc00] shadow-sm flex flex-col items-center text-center">
-              <img src="/images/home-acquired-brain.png" alt="Injury" className="w-28 sm:w-32 h-auto rounded-lg shadow-md mb-5" />
-              <div className="flex flex-col flex-1 w-full items-center">
-                <h3 className="text-[#0c264d] text-xl font-bold mb-3">Acquired Neurodivergence</h3>
-                <p className="mb-5 text-base leading-relaxed text-gray-700 max-w-lg">Neurological differences that can develop at any point across the lifespan due to injury, illness, or environmental factors.</p>
-                <div className="flex flex-wrap gap-2 justify-center mt-auto">
-                  {['tbi', 'cte', 'pandas'].map(id => (
-                    <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-2 bg-white border-2 border-[#ffcc00] rounded-full text-sm hover:bg-[#ffcc00] hover:text-[#0c264d] transition-all font-bold uppercase">
-                      {id}
-                    </button>
-                  ))}
+            {/* Volume VII: Acquired Neurodivergence */}
+            <div className="group relative bg-white rounded-r-2xl rounded-l-sm border-l-[12px] border-[#0A9DC4] shadow-[3px_3px_0px_#f8fafc,6px_6px_12px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-1 duration-300 flex flex-col">
+              <div className="absolute top-0 left-0 bottom-0 w-2 bg-gradient-to-r from-black/15 to-transparent pointer-events-none rounded-l-sm z-10"></div>
+              
+              <div className="p-6 flex flex-col items-center text-center z-20">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#0A9DC4] mb-3 block">
+                  Volume VII
+                </span>
+                
+                <img src="/images/home-acquired-brain.png" alt="Injury" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
+                  Acquired Neurodivergence
+                </h3>
+                
+                <p className="text-xs sm:text-sm text-slate-700 max-w-lg mb-5">
+                  Neurological differences that can develop at any point across the lifespan due to injury, illness, or external factors.
+                </p>
+                
+                <div className="w-full border-t border-gray-100 pt-4">
+                  <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {['tbi', 'cte', 'pandas'].map(id => (
+                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#0A9DC4] hover:border-[#0A9DC4] hover:text-white transition-all font-normal text-slate-700 uppercase">
+                        {id}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
