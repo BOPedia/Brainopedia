@@ -32,7 +32,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
 
         {/* Introduction */}
         <section className="max-w-2xl mx-auto text-center">
-          <p className="text-sm leading-relaxed text-gray-700">
+          <p className="text-base leading-relaxed text-gray-700">
             Browse our comprehensive collection of neurodevelopmental conditions and cognitive profiles. Choose a volume below to find detailed insights and targeted resources.
           </p>
         </section>

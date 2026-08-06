@@ -1,7 +1,7 @@
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
-// import { ImageWithFallback } from '../figma/ImageWithFallback';
+import { ImageWithFallback } from '../figma/ImageWithFallback';
 
 interface ArticleDyscalculiaProps {
   setCurrentArticle?: (article: string) => void;
@@ -65,21 +65,22 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         {`
           sup {
             color: #10b981;
+            font-weight: 600;
           }
         `}
       </style>
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
+      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl font-spartan text-[#0c264d]">
         Dyscalculia
       </h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
-          <p>
-            <strong>Dyscalculia</strong> is a specific learning difference that affects a person's ability to 
-            understand and work with numbers and mathematical concepts.<sup>1</sup> Often called "math dyslexia," dyscalculia 
+          <p className="text-slate-700 leading-relaxed">
+            <strong className="text-[#0c264d]">Dyscalculia</strong> is a specific learning difference that affects a person's ability to 
+            understand and work with numbers and mathematical concepts. Often called "math dyslexia," dyscalculia 
             is characterized by difficulties with number sense, mathematical reasoning, and performing mathematical 
-            calculations that are inconsistent with overall cognitive abilities.<sup>2</sup>
+            calculations that are inconsistent with overall cognitive abilities.
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -102,122 +103,182 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         </div>
       </div>
 
-      <div className="space-y-8 mt-20 clear-both">
-        <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+      <div className="space-y-8 mt-12 clear-both">
+        
+        {/* SECTION: OVERVIEW */}
+        <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <ImageWithFallback 
+            src="/images/dyscalculia/dyscalculia-overview-intro.png"
+            alt="Overview of dyscalculia"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+          />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
-          <p className="mb-4">
-            Dyscalculia affects approximately 3-7% of the population and is thought to have a neurological basis.<sup>3</sup> 
-            Like dyslexia, dyscalculia is not related to intelligence—individuals with dyscalculia can have average 
-            or above-average intelligence and may excel in other academic areas such as reading, writing, or the arts.<sup>4</sup> 
-            The condition involves difficulties with understanding numerical quantities, number symbols, and the 
-            relationships between them.
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            Dyscalculia affects approximately 3-7% of the population and is thought to have a neurological basis.<sup>1</sup> Like dyslexia, it is entirely unrelated to intelligence—individuals with dyscalculia can have average or above-average intelligence and often excel in reading, writing, or the arts. It specifically impacts the ability to understand numerical quantities, symbols, and their relationships.
           </p>
           
-          <p className="mb-4">
-            This can make everyday tasks involving numbers—such as telling time, managing money, measuring ingredients, 
-            or understanding schedules—challenging. With appropriate support and accommodations, individuals with dyscalculia 
-            can be successful in both academic and professional settings.<sup>5</sup>
-          </p>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentArticle?.('dyscalculia-overview');
+            }}
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+          >
+            Read more →
+          </button>
         </section>
 
-        <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        {/* SECTION: CHARACTERISTICS */}
+        <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <ImageWithFallback 
+            src="/images/dyscalculia/dyscalculia-symptoms-intro.png"
+            alt="Symptoms of dyscalculia"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+          />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
-          <p className="mb-4">
-            Dyscalculia is characterized by difficulties with understanding quantities and the concept of "more" or "less," 
-            recognizing numbers and number symbols, counting accurately, performing mental math calculations, memorizing math 
-            facts, understanding mathematical concepts and operations, and estimating amounts or distances.<sup>6</sup> Beyond academic 
-            mathematics, dyscalculia can affect financial management and budgeting, cooking and following recipes, navigation 
-            and direction-finding, time management and scheduling, and understanding statistics and probabilities.<sup>7</sup> These 
-            difficulties stem from underlying deficits in number sense and numerical processing.<sup>8</sup>
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            Dyscalculia goes far beyond struggling with algebra. It is characterized by core deficits in "number sense"—struggling to understand quantities, estimating distances, or counting accurately. Beyond the classroom, these hurdles often impact daily living tasks like financial budgeting, measuring ingredients, reading analog clocks, and navigating directions.
           </p>
+
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentArticle?.('dyscalculia-symptoms');
+            }}
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+          >
+            Read more →
+          </button>
         </section>
 
-        <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        {/* SECTION: CAUSES */}
+        <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <ImageWithFallback 
+            src="/images/dyscalculia/dyscalculia-causes-intro.png"
+            alt="Causes of dyscalculia"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+          />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
-          <p className="mb-4">
-            Research suggests that dyscalculia involves differences in brain areas responsible for numerical processing, 
-            particularly the intraparietal sulcus and surrounding regions in the parietal lobe.<sup>9</sup> These areas are involved in 
-            our basic "number sense"—the intuitive understanding of quantities and their relationships. Like other learning 
-            differences, dyscalculia has a neurological basis and tends to run in families, suggesting a genetic component.<sup>1</sup> 
-            Brain imaging studies have revealed differences in how individuals with dyscalculia process numerical information, 
-            which helps explain why mathematical tasks that seem intuitive to others can be particularly challenging for people 
-            with this condition.<sup>1</sup>
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            Brain imaging studies suggest that dyscalculia involves differences in the areas responsible for numerical processing, particularly the intraparietal sulcus located in the parietal lobe.<sup>2</sup> This neurological difference tends to run in families, strongly pointing toward a genetic component that affects how basic mathematical relationships are intuitively processed.
           </p>
+
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentArticle?.('dyscalculia-causes');
+            }}
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+          >
+            Read more →
+          </button>
         </section>
 
-        <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        {/* SECTION: DIAGNOSIS */}
+        <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <ImageWithFallback 
+            src="/images/dyscalculia/dyscalculia-diagnosis-intro.png"
+            alt="Diagnosing dyscalculia"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+          />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
-          <p className="mb-4">
-            Dyscalculia is diagnosed through comprehensive evaluation by qualified professionals such as educational 
-            psychologists or neuropsychologists.<sup>2</sup> The assessment process includes standardized tests of mathematical ability, 
-            assessment of number sense and numerical reasoning, evaluation of cognitive abilities and processing, review of 
-            educational history and performance, interviews with the individual, parents, and teachers, and screening for 
-            co-occurring conditions.<sup>3</sup> Because dyscalculia is less well-known than dyslexia, it may go undiagnosed, particularly 
-            if the individual performs well in other academic areas. Some people are not diagnosed until adulthood when they 
-            encounter specific challenges in work or daily life involving numbers.<sup>4</sup>
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            A formal diagnosis requires a comprehensive evaluation by an educational or neuropsychologist. The assessment measures mathematical ability, numerical reasoning, and working memory to rule out other factors. Because dyscalculia is less recognized than dyslexia, many individuals aren't diagnosed until adulthood when numerical demands increase at work or in daily life.
           </p>
+
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentArticle?.('dyscalculia-diagnosis');
+            }}
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+          >
+            Read more →
+          </button>
         </section>
 
-        <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        {/* SECTION: SUPPORT */}
+        <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <ImageWithFallback 
+            src="/images/dyscalculia/dyscalculia-support-intro.png"
+            alt="Support for dyscalculia"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+          />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
-          <p className="mb-4">
-            Support for dyscalculia includes multi-sensory instruction using concrete manipulatives, visual representations of 
-            mathematical concepts, breaking down complex problems into smaller steps, explicit teaching of mathematical language 
-            and symbols, and building number sense through games and activities.<sup>5</sup> Accommodations and tools include calculator 
-            use when appropriate, extended time on tests and assignments, access to formula sheets and number lines, graph paper 
-            for organizing work, digital tools and apps for math support, and alternative assessment methods.<sup>6</sup> Technology such 
-            as smartphone calculators, money management apps, digital calendars, and GPS navigation can be particularly helpful 
-            for managing daily life tasks.<sup>[17]</sup>
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            Effective support relies on multi-sensory instruction, breaking complex problems down into smaller steps, and physically using concrete manipulatives to build a visual understanding of math concepts. Classroom accommodations often include calculator use, access to formula sheets, and extended testing time, while adults benefit heavily from digital tools and financial management apps.
           </p>
+
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentArticle?.('dyscalculia-support');
+            }}
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+          >
+            Read more →
+          </button>
         </section>
 
-        <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm">
+        {/* SECTION: LIVING */}
+        <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <ImageWithFallback 
+            src="/images/dyscalculia/dyscalculia-living-intro.png"
+            alt="Living with dyscalculia"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+          />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyscalculia</h2>
           
-          <p className="mb-4">
-            Individuals with dyscalculia lead successful and fulfilling lives across all areas of society. With appropriate 
-            support and accommodations, people with dyscalculia can be successful in both academic and professional settings.<sup>[18]</sup> 
-            Many careers don't require advanced mathematics, and modern technology can help compensate for calculation difficulties 
-            in both professional and personal contexts. Living well with dyscalculia involves understanding one's learning profile, 
-            developing personalized strategies and using assistive technology, accessing appropriate accommodations in education 
-            and employment, and building confidence through areas of strength.<sup>[19]</sup> Topics include recognizing strengths beyond 
-            mathematics, navigating academic and professional environments, using technology to support daily tasks, self-advocacy, 
-            and understanding legal protections for educational and workplace accommodations.<sup>[20]</sup>
+          <p className="mb-4 text-slate-700 leading-relaxed">
+            With appropriate strategies, individuals with dyscalculia can pursue highly successful academic and professional careers. Thriving involves understanding your unique learning profile, leaning heavily into strengths outside of mathematics, utilizing modern technology to bypass calculation hurdles, and knowing your legal rights to educational and workplace accommodations.
           </p>
+
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentArticle?.('dyscalculia-living');
+            }}
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+          >
+            Read more →
+          </button>
         </section>
       </div>
-
-      {/* References Section */}
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <p>[1] Butterworth, B. (2005). "The development of arithmetical abilities." <em>Journal of Child Psychology and Psychiatry</em>, 46(1), 3-18.</p>
-          <p>[2] Shalev, R. S. (2004). "Developmental dyscalculia." <em>Journal of Child Neurology</em>, 19(10), 765-771.</p>
-          <p>[3] Gross-Tsur, V., Manor, O., & Shalev, R. S. (1996). "Developmental dyscalculia: Prevalence and demographic features." <em>Developmental Medicine & Child Neurology</em>, 38(1), 25-33.</p>
-          <p>[4] Geary, D. C. (2004). "Mathematics and learning disabilities." <em>Journal of Learning Disabilities</em>, 37(1), 4-15.</p>
-          <p>[5] Mazzocco, M. M., & Myers, G. F. (2003). "Complexities in identifying and defining mathematics learning disability in the primary school-age years." <em>Annals of Dyslexia</em>, 53(1), 218-253.</p>
-          <p>[6] Dehaene, S. (1997). <em>The Number Sense: How the Mind Creates Mathematics</em>. Oxford University Press.</p>
-          <p>[7] Parsons, S., & Bynner, J. (2005). "Does numeracy matter more?" <em>National Research and Development Centre for Adult Literacy and Numeracy</em>, London.</p>
-          <p>[8] Wilson, A. J., & Dehaene, S. (2007). "Number sense and developmental dyscalculia." In D. Coch, G. Dawson, & K. Fischer (Eds.), <em>Human Behavior, Learning, and the Developing Brain: Atypical Development</em> (pp. 212-238). Guilford Press.</p>
-          <p>[9] Butterworth, B., Varma, S., & Laurillard, D. (2011). "Dyscalculia: From brain to education." <em>Science</em>, 332(6033), 1049-1053.</p>
-          <p>[10] Shalev, R. S., Manor, O., Kerem, B., et al. (2001). "Developmental dyscalculia is a familial learning disability." <em>Journal of Learning Disabilities</em>, 34(1), 59-65.</p>
-          <p>[11] Kaufmann, L., & von Aster, M. (2012). "The diagnosis and management of dyscalculia." <em>Deutsches Ärzteblatt International</em>, 109(45), 767-778.</p>
-          <p>[12] Dowker, A. (2005). <em>Individual Differences in Arithmetic: Implications for Psychology, Neuroscience and Education</em>. Psychology Press.</p>
-          <p>[13] Mazzocco, M. M. (2007). "Defining and differentiating mathematical learning disabilities and difficulties." In D. B. Berch & M. M. Mazzocco (Eds.), <em>Why Is Math So Hard for Some Children?</em> (pp. 29-47). Paul H. Brookes Publishing.</p>
-          <p>[14] Shalev, R. S., & Gross-Tsur, V. (2001). "Developmental dyscalculia." <em>Pediatric Neurology</em>, 24(5), 337-342.</p>
-          <p>[15] Gersten, R., Chard, D. J., Jayanthi, M., et al. (2009). "Mathematics instruction for students with learning disabilities: A meta-analysis of instructional components." <em>Review of Educational Research</em>, 79(3), 1202-1242.</p>
-          <p>[16] Bryant, D. P., Bryant, B. R., Gersten, R., et al. (2008). "Mathematics intervention for first- and second-grade students with mathematics difficulties: The effects of tier 2 intervention delivered as booster lessons." <em>Remedial and Special Education</em>, 29(1), 20-32.</p>
-          <p>[17] Moyer-Packenham, P. S., & Westenskow, A. (2013). "Effects of virtual manipulatives on student achievement and mathematics learning." <em>International Journal of Virtual and Personal Learning Environments</em>, 4(3), 35-50.</p>
-          <p>[18] Geary, D. C., Hoard, M. K., Nugent, L., & Bailey, D. H. (2012). "Mathematical cognition deficits in children with learning disabilities and persistent low achievement: A five-year prospective study." <em>Journal of Educational Psychology</em>, 104(1), 206-223.</p>
-          <p>[19] Butterworth, B., & Laurillard, D. (2010). "Low numeracy and dyscalculia: Identification and intervention." <em>ZDM Mathematics Education</em>, 42(6), 527-539.</p>
-          <p>[20] Iuculano, T., Moro, R., & Butterworth, B. (2011). "Updating working memory and arithmetical attainment in school." <em>Learning and Individual Differences</em>, 21(6), 655-661.</p>
+{/* REFERENCES SECTION */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-10 clear-both" />
+      
+      <div className="bg-white bg-opacity-50 p-6 md:p-8 rounded-xl shadow-inner">
+        <h3 className="font-bold font-spartan mb-6 text-xl text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES */}
+        <div className="mb-8">
+          <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-4 border-b-2 border-[#10b981] pb-2">
+            Cited Studies & Statistics
+          </h4>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Gross-Tsur, V., Manor, O., & Shalev, R. S. (1996). "Developmental dyscalculia: Prevalence and demographic features." <i>Developmental Medicine & Child Neurology</i>, 38(1), 25-33. https://doi.org/10.1111/j.1469-8749.1996.tb15029.x</p>
+            <p>2. Butterworth, B., Varma, S., & Laurillard, D. (2011). "Dyscalculia: From brain to education." <i>Science</i>, 332(6033), 1049-1053. https://doi.org/10.1126/science.1193609</p>
+          </div>
         </div>
-      </section>
+
+        {/* BACKGROUND SOURCES */}
+        <div>
+          <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-4 border-b-2 border-[#2abcd4] pb-2">
+            Background Sources
+          </h4>
+          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>Dehaene, S. (1997). <i>The Number Sense: How the Mind Creates Mathematics</i>. Oxford University Press.</p>
+            <p>Geary, D. C. (2004). "Mathematics and learning disabilities." <i>Journal of Learning Disabilities</i>, 37(1), 4-15. https://doi.org/10.1177/00222194040370010201</p>
+            <p>Kaufmann, L., & von Aster, M. (2012). "The diagnosis and management of dyscalculia." <i>Deutsches Ärzteblatt International</i>, 109(45), 767-778. https://doi.org/10.3238/arztebl.2012.0767</p>
+            <p>Shalev, R. S. (2004). "Developmental dyscalculia." <i>Journal of Child Neurology</i>, 19(10), 765-771. https://doi.org/10.1177/08830738040190100601</p>
+          </div>
+        </div>
+      </div>
     </article>
   );
 }
