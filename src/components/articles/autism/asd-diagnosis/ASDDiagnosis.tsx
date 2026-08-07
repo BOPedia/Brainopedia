@@ -26,7 +26,7 @@ export function ASDDiagnosis({ setCurrentArticle, initialTab }: ASDDiagnosisProp
     { id: 'adult', label: 'Adult Diagnosis' },
     { id: 'professionals', label: 'Who Can Diagnose' },
     { id: 'lifespan', label: 'Across the Lifespan' },
-    { id: 'challenges', label: 'Challenges & Disparities' },
+    { id: 'challenges', label: 'Challenges' },
     { id: 'after', label: 'After Diagnosis' },
     { id: 'audhd', label: 'What is AuDHD?' }
   ];

@@ -52,7 +52,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             Adult Diagnosis
           </TabsTrigger>
           <TabsTrigger value="challenges" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
-            Challenges & Comorbidities
+            Challenges
           </TabsTrigger>
           <TabsTrigger value="after" className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white data-[state=active]:bg-[#0A9DC4] data-[state=active]:text-white data-[state=active]:shadow-md font-normal text-sm transition-all duration-200 shadow-sm rounded-lg !px-6 !py-3 md:!py-2 !h-auto">
             After Diagnosis
@@ -674,11 +674,11 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
         </TabsContent>
 
         {/* =========================================
-            TAB 5: CHALLENGES & COMORBIDITIES
+            TAB 5:  CHALLENGES
             ========================================= */}
         <TabsContent value="challenges" className="animate-fadeIn">
           <div className="clear-both">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Diagnostic Challenges & Comorbidities</h2>
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Challenges</h2>
             
             <ImageWithFallback 
               src="/images/adhd/adhd-challenges-question-mark-maze.webp"
