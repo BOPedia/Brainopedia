@@ -60,16 +60,8 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
   ];
 
   return (
-    <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-            font-weight: 600;
-          }
-        `}
-      </style>
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl font-spartan text-[#0c264d]">
+    <article className="max-w-6xl font-spartan">
+      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl text-[#0c264d] font-normal">
         Giftedness
       </h1>
       
@@ -111,12 +103,12 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           <ImageWithFallback 
             src="/images/giftedness/giftedness-overview-intro.png"
             alt="Overview of giftedness"
-            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            Giftedness affects approximately 2-10% of the population, depending on how it's defined.<sup>1</sup> Research using neuroimaging has identified structural and functional differences in the brains of gifted individuals, including enhanced neural connectivity, increased synaptic efficiency, and differences in brain metabolism.<sup>2, 3</sup> It is not just high achievement; it is a distinct neurotype that comes with unique social, emotional, and existential experiences.
+            Giftedness affects approximately 2-10% of the population and involves structural and functional brain differences like enhanced neural connectivity and increased synaptic efficiency.<sup className="text-[#10b981] font-bold ml-0.5">1, 2, 3</sup> Far more than just high achievement, it is a distinct neurotype that comes with unique cognitive, social, emotional, and existential experiences that require specialized understanding.
           </p>
           
           <button
@@ -124,7 +116,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
               e.preventDefault();
               setCurrentArticle?.('giftedness-overview');
             }}
-            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold clear-both"
           >
             Read more →
           </button>
@@ -135,12 +127,12 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           <ImageWithFallback 
             src="/images/giftedness/giftedness-symptoms-intro.png"
             alt="Symptoms of giftedness"
-            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            Gifted individuals demonstrate rapid learning, abstract thinking from a very young age, exceptional memory, and an intense preference for complexity. A hallmark of this neurotype is asynchronous development, where intellectual abilities far outpace emotional or physical development. Psychologist Kazimierz Dąbrowski also identified "overexcitabilities" in the gifted—heightened neurological intensities spanning emotional, imaginational, sensual, psychomotor, and intellectual domains.
+            Gifted individuals demonstrate rapid learning, abstract thinking from a very young age, exceptional memory, and an intense preference for complexity. A hallmark of this neurotype is asynchronous development, where intellectual abilities far outpace emotional or physical development, often accompanied by heightened neurological "overexcitabilities."
           </p>
 
           <button
@@ -148,7 +140,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
               e.preventDefault();
               setCurrentArticle?.('giftedness-symptoms');
             }}
-            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold clear-both"
           >
             Read more →
           </button>
@@ -159,12 +151,12 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           <ImageWithFallback 
             src="/images/giftedness/giftedness-causes-intro.png"
             alt="Causes of giftedness"
-            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            Giftedness has a strong genetic component and represents a natural variation in human neurology that is present from birth. The differences in white matter development, neural efficiency, and neurotransmitter function create a fundamentally different way of experiencing consciousness. The overexcitabilities commonly seen in the gifted are neurological responses, not behavioral choices.
+            Giftedness has a strong genetic component and represents a natural variation in human neurology that is present from birth, altering how the brain processes information and responds to stimuli. The characteristic intensities and overexcitabilities commonly seen in the gifted are neurological responses rooted in differences in white matter development and neural efficiency, not behavioral choices.
           </p>
 
           <button
@@ -172,7 +164,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
               e.preventDefault();
               setCurrentArticle?.('giftedness-causes');
             }}
-            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold clear-both"
           >
             Read more →
           </button>
@@ -183,12 +175,12 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           <ImageWithFallback 
             src="/images/giftedness/giftedness-diagnosis-intro.png"
             alt="Diagnosing giftedness"
-            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            Identification traditionally involves IQ testing (scoring in the top 2-10%), academic achievement markers, and creativity assessments. However, modern practices emphasize looking beyond just academic achievement to evaluate raw potential. Culturally sensitive identification is heavily required, as giftedness in girls, children of color, and twice-exceptional individuals is frequently overlooked or misdiagnosed.
+            Identification traditionally involves IQ testing, academic achievement markers, and creativity assessments to evaluate raw cognitive potential rather than just academic performance. Culturally sensitive identification practices are heavily required, as giftedness in girls, children of color, and twice-exceptional individuals is frequently overlooked or misdiagnosed.
           </p>
 
           <button
@@ -196,7 +188,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
               e.preventDefault();
               setCurrentArticle?.('giftedness-diagnosis');
             }}
-            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold clear-both"
           >
             Read more →
           </button>
@@ -207,12 +199,12 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           <ImageWithFallback 
             src="/images/giftedness/giftedness-support-intro.png"
             alt="Support for giftedness"
-            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            Educational support must provide appropriately challenging curriculums, independent projects, and clustering with intellectual peers to prevent burnout or apathy. Social and emotional support is equally vital. Gifted individuals benefit immensely from connections with true peer groups, validation of their intense feelings, and counseling strategies aimed at managing perfectionism and existential anxiety.
+            Educational support must provide appropriately challenging curriculums, independent projects, and clustering with intellectual peers to prevent burnout, apathy, or underachievement. Social and emotional support is equally vital, as gifted individuals benefit immensely from connections with true peer groups, validation of their intense feelings, and strategies to manage perfectionism.
           </p>
 
           <button
@@ -220,7 +212,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
               e.preventDefault();
               setCurrentArticle?.('giftedness-support');
             }}
-            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold clear-both"
           >
             Read more →
           </button>
@@ -231,12 +223,12 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
           <ImageWithFallback 
             src="/images/giftedness/giftedness-living-intro.png"
             alt="Living with giftedness"
-            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Giftedness</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            Gifted individuals lead deeply fulfilling lives when they are able to embrace their neurotype. Living well involves understanding asynchronous development, accepting internal overexcitabilities, finding intellectual community, and developing strong self-acceptance. With proper support, gifted individuals can successfully navigate their unique challenges—such as multipotentiality or feeling "different"—and utilize their intensity as an asset.
+            Gifted individuals lead deeply fulfilling lives when they are able to embrace their neurotype, understand their asynchronous development, and find an intellectual community. With proper support and self-acceptance, they can successfully navigate unique challenges like multipotentiality or existential anxiety and utilize their intensity as a profound asset.
           </p>
 
           <button
@@ -244,7 +236,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
               e.preventDefault();
               setCurrentArticle?.('giftedness-living');
             }}
-            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
+            className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold clear-both"
           >
             Read more →
           </button>
@@ -255,31 +247,31 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
       <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-10 clear-both" />
       
       <div className="bg-white bg-opacity-50 p-6 md:p-8 rounded-xl shadow-inner">
-        <h3 className="font-bold font-spartan mb-6 text-xl text-[#0c264d]">References</h3>
+        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
         
-        {/* CITED STUDIES */}
-        <div className="mb-8">
-          <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-4 border-b-2 border-[#10b981] pb-2">
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Pfeiffer, S. I. (2015). <i>Essentials of gifted assessment</i>. Hoboken, NJ: John Wiley & Sons.</p>
-            <p>2. Geake, J. G., & Hansen, P. C. (2005). "Neural correlates of intelligence as revealed by fMRI of fluid analogies." <i>NeuroImage</i>, 26(2), 555-564.</p>
-            <p>3. Shaw, P., Greenstein, D., Lerch, J., et al. (2006). "Intellectual ability and cortical development in children and adolescents." <i>Nature</i>, 440(7084), 676-679.</p>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Pfeiffer, S. I. (2015). <em>Essentials of gifted assessment</em>. John Wiley & Sons.</p>
+            <p>2. Geake, J. G., & Hansen, P. C. (2005). "Neural correlates of intelligence as revealed by fMRI of fluid analogies." <em>NeuroImage</em>. https://doi.org/10.1016/j.neuroimage.2005.01.046</p>
+            <p>3. Shaw, P., Greenstein, D., Lerch, J., et al. (2006). "Intellectual ability and cortical development in children and adolescents." <em>Nature</em>. https://doi.org/10.1038/nature04513</p>
           </div>
         </div>
 
-        {/* BACKGROUND SOURCES */}
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-4 border-b-2 border-[#2abcd4] pb-2">
+          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b border-[#2abcd4] border-opacity-20 pb-1">
             Background Sources
           </h4>
-          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>Dąbrowski, K. (1964). <i>Positive disintegration</i>. Boston: Little, Brown.</p>
-            <p>Silverman, L. K. (2013). <i>Giftedness 101</i>. New York: Springer Publishing Company.</p>
-            <p>Webb, J. T., Amend, E. R., Webb, N. E., Goerss, J., Beljan, P., & Olenchak, F. R. (2005). <i>Misdiagnosis and dual diagnoses of gifted children and adults: ADHD, bipolar, OCD, Asperger's, depression, and other disorders</i>. Scottsdale, AZ: Great Potential Press.</p>
-            <p>Winner, E. (1996). <i>Gifted children: Myths and realities</i>. New York: Basic Books.</p>
-          </div>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+            <li>Dąbrowski, K. (1964). <em>Positive disintegration</em>. Little, Brown.</li>
+            <li>Silverman, L. K. (2013). <em>Giftedness 101</em>. Springer Publishing Company.</li>
+            <li>Webb, J. T., Amend, E. R., Webb, N. E., Goerss, J., Beljan, P., & Olenchak, F. R. (2005). <em>Misdiagnosis and dual diagnoses of gifted children and adults: ADHD, bipolar, OCD, Asperger's, depression, and other disorders</em>. Great Potential Press.</li>
+            <li>Winner, E. (1996). <em>Gifted children: Myths and realities</em>. Basic Books.</li>
+          </ul>
         </div>
       </div>
     </article>
