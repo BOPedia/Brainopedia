@@ -1,6 +1,6 @@
 export function ASDComorbidities() {
   return (
-    <svg width="500" height="620" viewBox="0 0 500 620" xmlns="http://www.w3.org/2000/svg">
+    <svg width="500" height="620" viewBox="0 0 500 620" xmlns="https://www.w3.org/2000/svg">
       {/* Background */}
       <rect width="500" height="620" fill="#ffd166"/>
       

@@ -1,6 +1,6 @@
 export function ADHDComorbidities() {
   return (
-    <svg width="450" height="600" viewBox="0 0 450 600" xmlns="http://www.w3.org/2000/svg">
+    <svg width="450" height="600" viewBox="0 0 450 600" xmlns="https://www.w3.org/2000/svg">
       {/* Background */}
       <rect width="450" height="600" fill="#ffd166"/>
       

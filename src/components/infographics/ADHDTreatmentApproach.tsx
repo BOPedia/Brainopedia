@@ -2,7 +2,7 @@ import React from 'react';
 
 export function ADHDTreatmentApproach() {
   return (
-    <svg width="600" height="367" viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg">
+    <svg width="600" height="367" viewBox="0 0 900 550" xmlns="https://www.w3.org/2000/svg">
       {/* Background */}
       <rect width="900" height="550" fill="#ffffff"/>
       

@@ -8,3 +8,26 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Otherwise, rewrite all requests to index.html for SPA routing
 RewriteRule ^ index.html [QSA,L]
+
+ExpiresActive On
+
+  # Images and Media (Cache for 1 year)
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # CSS and JavaScript (Cache for 1 year)
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+
+  # Fonts (Cache for 1 year)
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+
+  # HTML (Do not cache - ensures users always see your latest content updates)
+  ExpiresByType text/html "access plus 0 seconds"

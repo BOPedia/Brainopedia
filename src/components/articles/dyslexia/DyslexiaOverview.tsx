@@ -73,7 +73,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Phonological Processing</h4>
               <p className="text-sm text-gray-700 leading-relaxed">Trouble with the sound structure of language.</p>
@@ -81,7 +81,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Word Decoding</h4>
               <p className="text-sm text-gray-700 leading-relaxed">Difficulty sounding out written words.</p>
@@ -89,7 +89,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Reading Fluency</h4>
               <p className="text-sm text-gray-700 leading-relaxed">Slow, effortful reading even of familiar text.</p>
@@ -97,7 +97,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Spelling Difficulties</h4>
               <p className="text-sm text-gray-700 leading-relaxed">Persistent spelling errors despite instruction.</p>
@@ -105,7 +105,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Neurobiological Basis</h4>
               <p className="text-sm text-gray-700 leading-relaxed">Differences in brain structure/function related to reading.</p>
@@ -113,7 +113,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <h4 className="font-bold text-[#0c264d] mb-2 text-md">Unexpected Difficulty</h4>
               <p className="text-sm text-gray-700 leading-relaxed">Challenges not explained by intelligence or instruction.</p>
@@ -196,7 +196,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -206,7 +206,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                 </svg>
               </div>
@@ -216,7 +216,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2v14a2 2 0 002 2v14a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -226,7 +226,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
@@ -236,7 +236,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
 
             <div className="bg-white rounded-xl border-2 border-[#2abcd4] p-5 shadow-sm flex flex-col items-center text-center transition-transform hover:-translate-y-1">
               <div className="w-14 h-14 bg-[#f0f9ff] rounded-full flex items-center justify-center mb-3 text-[#0A9DC4]">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>

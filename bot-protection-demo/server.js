@@ -60,5 +60,5 @@ app.post('/submit', (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server is running! Open http://localhost:${PORT} in your browser.`);
+  console.log(`Server is running! Open https://localhost:${PORT} in your browser.`);
 });

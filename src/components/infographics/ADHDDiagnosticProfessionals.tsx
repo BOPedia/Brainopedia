@@ -1,6 +1,6 @@
 export function ADHDDiagnosticProfessionals() {
   return (
-    <svg width="480" height="620" viewBox="0 0 480 620" xmlns="http://www.w3.org/2000/svg">
+    <svg width="480" height="620" viewBox="0 0 480 620" xmlns="https://www.w3.org/2000/svg">
       {/* Background */}
       <rect width="480" height="620" fill="#ffd166"/>
       

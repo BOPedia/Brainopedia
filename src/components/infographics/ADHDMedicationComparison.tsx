@@ -1,6 +1,6 @@
 export function ADHDMedicationComparison() {
   return (
-    <svg width="800" height="900" viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+    <svg width="800" height="900" viewBox="0 0 800 900" xmlns="https://www.w3.org/2000/svg">
       {/* Background */}
       <rect width="800" height="900" fill="#ffffff"/>
       
