@@ -33,7 +33,7 @@ export function ArticleSchizophrenia({ setCurrentArticle }: ArticleSchizophrenia
         </div>
         <div className="w-full">
           <InfoBox title="Schizophrenia" 
-          image="/images/schizophrenia/schizophrenia-main-infobox.png"
+          image="/images/schizophrenia/schizophrenia-main-infobox.webp"
           data={[
             { label: 'Specialty', value: 'Psychiatry, Psychology, Neurology' },
             { label: 'Symptoms', value: 'Altered perception, different thought patterns, varied experiences' },

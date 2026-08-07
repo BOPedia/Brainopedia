@@ -118,7 +118,7 @@ export function StrengthsAbilities({ setCurrentArticle }: StrengthsAbilitiesProp
         {/* --- CENTERED GRAPHIC SECTION --- */}
         <div className="mx-auto w-48 mb-8 mt-4 p-3 rounded-2xl border-4 border-[#0A9DC4] shadow-md bg-white">
           <ImageWithFallback 
-            src="/images/autism/autism-symptoms-Strengthstab-gears.png" 
+            src="/images/autism/autism-symptoms-Strengthstab-gears.webp" 
             alt="Gears illustrating the interconnected nature of autistic strengths"
             className="w-full h-auto rounded-lg object-contain"
           />

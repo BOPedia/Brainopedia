@@ -21,7 +21,7 @@ export function ADHDSymptomsTabMyths() {
               
               {/* Floated Graphic */}
               <ImageWithFallback
-                src="/images/adhd/adhd-myths-social-media.png"
+                src="/images/adhd/adhd-myths-social-media.webp"
                 alt="Social media and ADHD misinformation"
                 className="w-48 float-right ml-6 mb-4 rounded-lg shadow-sm"
               />
@@ -87,7 +87,7 @@ export function ADHDSymptomsTabMyths() {
               
               {/* Floated Graphic */}
               <ImageWithFallback
-                src="/images/adhd/adhd-myths-daydreaming.png"
+                src="/images/adhd/adhd-myths-daydreaming.webp"
                 alt="Daydreaming - misattributed ADHD myths"
                 className="w-48 float-right ml-6 mb-4 rounded-lg shadow-sm"
               />
@@ -163,7 +163,7 @@ export function ADHDSymptomsTabMyths() {
                 <div className="border-l-2 border-[#2abcd4] pl-3">
                   <div className="flex flex-col sm:flex-row gap-5 mt-2">
                     <ImageWithFallback
-                      src="/images/adhd/adhd-myths-justice.png"
+                      src="/images/adhd/adhd-myths-justice.webp"
                       alt="Lady Justice statue"
                       className="w-48 h-auto rounded-lg shadow-sm shrink-0"
                     />

@@ -30,7 +30,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">File Naming Convention:</h3>
           <p className="text-sm text-gray-700 mb-2">All graphics must follow this exact naming structure to maintain consistency across the platform:</p>
           <code className="text-sm font-bold bg-white text-[#2abcd4] p-3 rounded border border-[#2abcd4] border-opacity-20 block w-full break-all">
-            neurodivergence-section-tab-detail-about-pic.png
+            neurodivergence-section-tab-detail-about-pic.webp
           </code>
         </div>
 
@@ -72,7 +72,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
         <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6">
           <h3 className="font-bold text-[#0c264d] text-sm mb-2">5. Centered Image Headings</h3>
-          <p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered PNG, it must be centered and clear any previous floats.</p>
+          <p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered.WEBP, it must be centered and clear any previous floats.</p>
           <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
             className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
           </code>

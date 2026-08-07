@@ -73,7 +73,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">The ADHD Diagnostic Process</h2>
             
             <ImageWithFallback 
-              src="/images/adhd/adhd-diag-proc-ball-over-head-boy.png"
+              src="/images/adhd/adhd-diag-proc-ball-over-head-boy.webp"
               alt="The ADHD diagnostic process - clinical evaluation"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
             />
@@ -515,7 +515,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Diagnosing ADHD in Adults</h2>
             
             <ImageWithFallback 
-              src="/images/adhd/adhd-adult-dx-adult-male.png"
+              src="/images/adhd/adhd-adult-dx-adult-male.webp"
               alt="Adult ADHD diagnosis - recognizing symptoms in adulthood"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />
@@ -681,7 +681,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Diagnostic Challenges & Comorbidities</h2>
             
             <ImageWithFallback 
-              src="/images/adhd/adhd-challenges-question-mark-maze.png"
+              src="/images/adhd/adhd-challenges-question-mark-maze.webp"
               alt="Diagnostic challenges and comorbidities in ADHD"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-10 shadow-sm"
             />
@@ -823,7 +823,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">What Comes After Diagnosis?</h2>
             
             <ImageWithFallback 
-              src="/images/adhd/adhd-after-dx-treatment-roadmap.png"
+              src="/images/adhd/adhd-after-dx-treatment-roadmap.webp"
               alt="After ADHD diagnosis - next steps and planning"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-10 shadow-sm"
             />
@@ -1012,7 +1012,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
                   loop 
                   muted 
                   playsInline
-                  poster="/images/adhd/adhd-audhd-bolt-gold-infinity.png"
+                  poster="/images/adhd/adhd-audhd-bolt-gold-infinity.webp"
                   className="w-full h-auto rounded-xl object-contain"
                   aria-label="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
                 >
@@ -1051,7 +1051,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
 
             <div className="mx-auto w-64 mb-10 rounded-xl overflow-hidden shadow-sm"> 
               <ImageWithFallback 
-                src="/images/adhd/adhd-audhd-opposing-forces.png" 
+                src="/images/adhd/adhd-audhd-opposing-forces.webp" 
                 alt="abstract art showing a gap in the swirly design for oppsoing forces of AuDHD" 
               /> 
             </div>
@@ -1113,7 +1113,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
      
             <div className="mx-auto w-64 mb-8 rounded-xl overflow-hidden shadow-sm"> 
               <ImageWithFallback 
-                src="/images/adhd/adhd-audhd-split-face.png" 
+                src="/images/adhd/adhd-audhd-split-face.webp" 
                 alt="Split face illustration representing the internal tug-of-war of AuDHD" 
               /> 
             </div>
@@ -1183,7 +1183,7 @@ export function ADHDDiagnosis({ setCurrentArticle, initialTab }: ADHDDiagnosisPr
             </h3>
             
             <ImageWithFallback 
-              src="/images/adhd/adhd-audhd-med-edu-symbol.png" 
+              src="/images/adhd/adhd-audhd-med-edu-symbol.webp" 
               alt="medical type symbol for education and medical support for autism and ADHD" 
               className="w-full max-w-sm mx-auto rounded-lg mb-8 shadow-sm" 
             />

@@ -65,7 +65,7 @@ export function DyslexiaCausesRisk({ setCurrentArticle }: DyslexiaCausesRiskProp
               Risk Factors & Environment
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-causes-Risk-TAB-chart.png"
+              src="/images/dyslexia/dyslexia-causes-Risk-TAB-chart.webp"
               alt="Structural differences and risk factors in the dyslexic brain"
               className="block mx-auto w-full max-w-3xl mb-6 rounded-lg shadow-sm border border-slate-200 bg-white"
             />

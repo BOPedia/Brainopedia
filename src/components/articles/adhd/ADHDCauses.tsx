@@ -17,7 +17,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <h2 className="text-[#0c264d] mb-4 text-2xl font-bold">Understanding ADHD Causes</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-overview-dna.png"
+            src="/images/adhd/adhd-overview-dna.webp"
             alt="Brain illustration - understanding ADHD causes"
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
@@ -40,7 +40,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Gene-Environment Interactions</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-overview-dna-treetrunk.png"
+            src="/images/adhd/adhd-overview-dna-treetrunk.webp"
             alt="Gene-environment interaction in ADHD"
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
@@ -61,7 +61,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             <h3 className="text-[#0c264d] font-bold mb-6 text-xl">The Genetic Blueprint</h3>
             
             <ImageWithFallback 
-              src="/images/adhd/adhd-causes-overview-analogies.png"
+              src="/images/adhd/adhd-causes-overview-analogies.webp"
               alt="Genetic nesting analogies"
               className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
             />
@@ -122,7 +122,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetics and Heredity</h2>
         
         <ImageWithFallback 
-          src="/images/adhd/adhd-heredity-tree.png"
+          src="/images/adhd/adhd-heredity-tree.webp"
           alt="DNA and genetics - hereditary factors in ADHD"
           className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
         />
@@ -160,7 +160,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-6 text-xl text-center">Multiple Genes Involved</h3>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-causes-genetics-polygenic.png"
+            src="/images/adhd/adhd-causes-genetics-polygenic.webp"
             alt="Multiple genes involved in ADHD"
             className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
@@ -201,7 +201,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-6 text-xl text-center">Gene-Environment Interactions</h3>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-causes-genetics-environment.png"
+            src="/images/adhd/adhd-causes-genetics-environment.webp"
             alt="Gene-environment interactions"
             className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
@@ -286,7 +286,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <h2 className="text-[#0c264d] font-bold mb-6 text-3xl">Brain Structure and Function</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-causes-brain-structure-main-anatomy.png"
+            src="/images/adhd/adhd-causes-brain-structure-main-anatomy.webp"
             alt="Overview of brain regions affected by ADHD"
             className="block mx-auto w-64 h-auto rounded-xl shadow-md border-4 border-[#2abcd4] object-contain mb-6 bg-white"
           />
@@ -307,7 +307,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             {/* Frontal Cortex */}
             <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0c264d] flex flex-col h-full">
               <ImageWithFallback 
-                src="/images/adhd/adhd-causes-brain-structure-frontal-cortex.png"
+                src="/images/adhd/adhd-causes-brain-structure-frontal-cortex.webp"
                 alt="Frontal cortex highlighted in neuroanatomy"
                 className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
               />
@@ -322,7 +322,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             {/* Limbic System */}
             <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#2abcd4] flex flex-col h-full">
               <ImageWithFallback 
-                src="/images/adhd/adhd-causes-brain-structure-limbic-system.png"
+                src="/images/adhd/adhd-causes-brain-structure-limbic-system.webp"
                 alt="Limbic system highlighted in neuroanatomy"
                 className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
               />
@@ -337,7 +337,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             {/* Basal Ganglia */}
             <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#ffd166] flex flex-col h-full">
               <ImageWithFallback 
-                src="/images/adhd/adhd-causes-brain-structure-basal-ganglia.png"
+                src="/images/adhd/adhd-causes-brain-structure-basal-ganglia.webp"
                 alt="Basal ganglia highlighted in neuroanatomy"
                 className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
               />
@@ -352,7 +352,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
             {/* Reticular Activating System */}
             <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-[#0A9DC4] flex flex-col h-full">
               <ImageWithFallback 
-                src="/images/adhd/adhd-causes-brain-structure-ras.png"
+                src="/images/adhd/adhd-causes-brain-structure-ras.webp"
                 alt="Reticular activating system highlighted in neuroanatomy"
                 className="w-80 h-80 mx-auto object-contain rounded-md mb-4 bg-slate-100 flex-shrink-0 p-2"
               />
@@ -392,7 +392,7 @@ export function ADHDCauses({ setCurrentArticle, initialTab }: ADHDCausesProps) {
           <h3 className="text-[#0c264d] font-bold mb-6 text-2xl px-2">Structural Differences</h3>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-causes-brain-structure-differences.png"
+            src="/images/adhd/adhd-causes-brain-structure-differences.webp"
             alt="Structural brain differences in ADHD"
             className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />

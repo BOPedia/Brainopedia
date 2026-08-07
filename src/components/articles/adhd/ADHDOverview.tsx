@@ -45,7 +45,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <div className={floatedCardContainer}>
             <video 
               src="/images/adhd/adhd-overview-squirrel.mp4" 
-              poster="/images/adhd/adhd-overview-squirrel.png"
+              poster="/images/adhd/adhd-overview-squirrel.webp"
               autoPlay 
               loop 
               muted 
@@ -77,7 +77,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           </p>
 
           <ImageWithFallback 
-            src="/images/adhd/adhd-overview-venn.png"
+            src="/images/adhd/adhd-overview-venn.webp"
             alt="ADHD Three Presentations Venn Diagram"
             className={centeredMediumImageClass}
           />
@@ -128,7 +128,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           </p>
 
           <ImageWithFallback 
-            src="/images/adhd/adhd-overview-executive-function.png"
+            src="/images/adhd/adhd-overview-executive-function.webp"
             alt="ADHD Executive Function"
             className={centeredSmallImageClass}
           />

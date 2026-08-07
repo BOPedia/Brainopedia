@@ -21,7 +21,7 @@ export function Epigenetics({ setCurrentArticle }: EpigeneticsProps) {
           </p>
           <div className="mx-auto border border-[#0c264d]/10 rounded-lg shadow-sm bg-white p-1">
             <ImageWithFallback 
-              src="/images/autism/autism-causes-epigenetics.png" 
+              src="/images/autism/autism-causes-epigenetics.webp" 
               alt="Epigenetic mechanisms in autism"
               className="w-full h-auto rounded-md"
             />

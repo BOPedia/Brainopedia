@@ -13,7 +13,7 @@ export function CurrentResearch({ setCurrentArticle }: CurrentResearchProps) {
       <h2 className="font-bold mb-6 text-2xl text-center clear-both text-[#0c264d]">Current Understanding & Future Research</h2>
       
       <ImageWithFallback
-        src="/images/autism/autism-causes-CurrentRestab-female-researcher.png"
+        src="/images/autism/autism-causes-CurrentRestab-female-researcher.webp"
         alt="Female researching"
         className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
       />      
@@ -66,7 +66,7 @@ export function CurrentResearch({ setCurrentArticle }: CurrentResearchProps) {
           <div className="p-4 bg-[#f0f9ff] rounded-lg md:col-span-2 text-center">
             <h4 className="font-bold text-medium mb-3 text-[#0c264d]">Neurodiversity-Led Research</h4>
             <ImageWithFallback 
-              src="/images/autism/autism-causes-CurrentRestab-neurodiversitysymbol.png"
+              src="/images/autism/autism-causes-CurrentRestab-neurodiversitysymbol.webp"
               alt="Neurodiversity Symbol"
               className="w-32 h-auto block mx-auto mb-3"
             />

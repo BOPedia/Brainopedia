@@ -51,7 +51,7 @@ export function MentalHealthContent({ setCurrentArticle }: MentalHealthContentPr
                 <div className="mx-auto w-40 mb-4">
                   <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                     <ImageWithFallback 
-                      src="/images/autism/autism-living-MHandWtab-head-sideview.png" 
+                      src="/images/autism/autism-living-MHandWtab-head-sideview.webp" 
                       alt="Side profile of a head representing mental health threats"
                     />
                   </div>
@@ -74,7 +74,7 @@ export function MentalHealthContent({ setCurrentArticle }: MentalHealthContentPr
                   <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                     <video 
                       src="/images/autism/autism-living-MHandWtab-female-motion.mp4" 
-                      poster="/images/autism/autism-living-MHandWtab-female-motion.png"
+                      poster="/images/autism/autism-living-MHandWtab-female-motion.webp"
                       autoPlay 
                       loop 
                       muted 

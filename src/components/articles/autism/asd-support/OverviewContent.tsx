@@ -25,7 +25,7 @@ export function OverviewContent({ setCurrentArticle }: OverviewContentProps) {
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
-            src="/images/autism/autism-support-Overvtab-philosph.png" 
+            src="/images/autism/autism-support-Overvtab-philosph.webp" 
             alt="abstract painting of philosophy and support"
           /> 
         </div> 
@@ -77,7 +77,7 @@ export function OverviewContent({ setCurrentArticle }: OverviewContentProps) {
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
-            src="/images/autism/autism-support-Overvtab-harmful.png" 
+            src="/images/autism/autism-support-Overvtab-harmful.webp" 
             alt="doctor explaining approaches photo"
           /> 
         </div> 

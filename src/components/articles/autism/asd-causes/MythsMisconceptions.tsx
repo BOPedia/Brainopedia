@@ -21,7 +21,7 @@ export function MythsMisconceptions({ setCurrentArticle }: MythsMisconceptionsPr
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/3">
             <ImageWithFallback 
-              src="/images/autism/autism-causes-Mythstab-vax.png" 
+              src="/images/autism/autism-causes-Mythstab-vax.webp" 
               alt="Scientific debunking of vaccine myths"
               className="w-full rounded-xl shadow-sm border-2 border-gray-100"
             />

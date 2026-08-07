@@ -18,7 +18,7 @@ export function SocialCommunication({ setCurrentArticle }: SocialCommunicationPr
           autoPlay 
           muted 
           playsInline
-          poster="/images/autism/autism-symptoms-SCtab-social-video.png"
+          poster="/images/autism/autism-symptoms-SCtab-social-video.webp"
           className="block mx-auto mb-8 w-56 sm:w-64 h-auto rounded-xl shadow-lg border-4 border-[#2abcd4] object-cover"
           aria-label="Three people sitting on a bench interacting"
         >
@@ -73,7 +73,7 @@ export function SocialCommunication({ setCurrentArticle }: SocialCommunicationPr
         {/* --- EXISTING GRAPHIC CENTERED HERE --- */}
         <div className="my-10">
           <ImageWithFallback
-            src="/images/autism/autism-symptoms-SCtab-2facingfaces.png"
+            src="/images/autism/autism-symptoms-SCtab-2facingfaces.webp"
             alt="Two faces facing each other representing social communication"
             className="block mx-auto w-48 h-auto rounded-full shadow-md border-4 border-[#ffd166] object-contain"
           />

@@ -42,7 +42,7 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Genetic Factors</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-causes-genetics.png"
+            src="/images/dyscalculia-causes-genetics.webp"
             alt="DNA helix and brain imagery showing genetic basis of dyscalculia and hereditary factors"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
@@ -144,7 +144,7 @@ export function DyscalculiaCauses({ setCurrentArticle }: DyscalculiaCausesProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Developmental Factors</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-causes-development.png"
+            src="/images/dyscalculia-causes-development.webp"
             alt="Young child developing early number sense and counting skills showing developmental progression"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />

@@ -82,7 +82,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
         <div className="w-full">
           <InfoBox
             title="Hyperlexia"
-            image="/images/hyperlexia/hyperlexia-main-infobox.png"
+            image="/images/hyperlexia/hyperlexia-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Precocious Reading Syndrome' },
               { label: 'Specialty', value: 'Developmental Pediatrics, Speech-Language Pathology' },
@@ -100,7 +100,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/hyperlexia/hyperlexia-overview-intro.png"
+            src="/images/hyperlexia/hyperlexia-overview-intro.webp"
             alt="Overview of hyperlexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -124,7 +124,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/hyperlexia/hyperlexia-symptoms-intro.png"
+            src="/images/hyperlexia/hyperlexia-symptoms-intro.webp"
             alt="Symptoms of hyperlexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -148,7 +148,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/hyperlexia/hyperlexia-causes-intro.png"
+            src="/images/hyperlexia/hyperlexia-causes-intro.webp"
             alt="Causes of hyperlexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -172,7 +172,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/hyperlexia/hyperlexia-diagnosis-intro.png"
+            src="/images/hyperlexia/hyperlexia-diagnosis-intro.webp"
             alt="Diagnosing hyperlexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -196,7 +196,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/hyperlexia/hyperlexia-support-intro.png"
+            src="/images/hyperlexia/hyperlexia-support-intro.webp"
             alt="Support for hyperlexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -220,7 +220,7 @@ export function ArticleHyperlexia({ setCurrentArticle }: ArticleHyperlexiaProps)
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/hyperlexia/hyperlexia-living-intro.png"
+            src="/images/hyperlexia/hyperlexia-living-intro.webp"
             alt="Living with hyperlexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />

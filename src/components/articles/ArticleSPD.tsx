@@ -87,7 +87,7 @@ export function ArticleSPD({ setCurrentArticle }: ArticleSPDProps) {
         <div className="w-full">
           <InfoBox
             title="Sensory Processing Disorder"
-            image="/images/spd/spd-main-infobox.png"
+            image="/images/spd/spd-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'SPD, Sensory Integration Dysfunction' },
               { label: 'Specialty', value: 'Occupational Therapy, Neurology' },

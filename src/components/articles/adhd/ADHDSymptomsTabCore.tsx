@@ -65,7 +65,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
         
         <div className="lg:col-span-4 flex justify-center lg:pt-10">
           <ImageWithFallback 
-            src="/images/adhd/adhd-core-symptoms-apple.png"
+            src="/images/adhd/adhd-core-symptoms-apple.webp"
             alt="ADHD Core Symptoms"
             className="w-52 h-auto rounded shadow-sm"
           />

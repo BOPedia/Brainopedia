@@ -23,7 +23,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
                     <div className="mx-auto w-64 md:w-96"> {/* Fixed width classes here! */}
                       <div className="rounded-lg shadow-md overflow-hidden bg-white">
                         <ImageWithFallback 
-                          src="/images/autism/autism-support-EnviroSupptab-5things.png" 
+                          src="/images/autism/autism-support-EnviroSupptab-5things.webp" 
                           alt="5 sensory supports"
                         /> 
                       </div>
@@ -85,7 +85,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
             <div className="mx-auto w-64">
               <div className="rounded-lg shadow-md overflow-hidden bg-white">
                 <ImageWithFallback 
-                  src="/images/autism/autism-support-EnviroSupptab-VisualSupports.png" 
+                  src="/images/autism/autism-support-EnviroSupptab-VisualSupports.webp" 
                   alt="eyeball to signify visual supports"
                 /> 
               </div>
@@ -145,7 +145,7 @@ export function EnvironmentalContent({ setCurrentArticle }: EnvironmentalContent
           <div className="mx-auto w-64">
                       <div className="rounded-lg shadow-md overflow-hidden bg-white">
                         <ImageWithFallback 
-                          src="/images/autism/autism-support-EnviroSupptab-communication-bubbles.png" 
+                          src="/images/autism/autism-support-EnviroSupptab-communication-bubbles.webp" 
                           alt="Communication bubbles to signify communication supports"
                         /> 
                       </div>

@@ -83,7 +83,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         <div className="w-full">
           <InfoBox
             title="Giftedness"
-            image="/images/giftedness/giftedness-main-infobox.png"
+            image="/images/giftedness/giftedness-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Intellectually gifted, high ability' },
               { label: 'Specialty', value: 'Gifted Education, Psychology' },
@@ -101,7 +101,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/giftedness/giftedness-overview-intro.png"
+            src="/images/giftedness/giftedness-overview-intro.webp"
             alt="Overview of giftedness"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -125,7 +125,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/giftedness/giftedness-symptoms-intro.png"
+            src="/images/giftedness/giftedness-symptoms-intro.webp"
             alt="Symptoms of giftedness"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -149,7 +149,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/giftedness/giftedness-causes-intro.png"
+            src="/images/giftedness/giftedness-causes-intro.webp"
             alt="Causes of giftedness"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -173,7 +173,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/giftedness/giftedness-diagnosis-intro.png"
+            src="/images/giftedness/giftedness-diagnosis-intro.webp"
             alt="Diagnosing giftedness"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -197,7 +197,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/giftedness/giftedness-support-intro.png"
+            src="/images/giftedness/giftedness-support-intro.webp"
             alt="Support for giftedness"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -221,7 +221,7 @@ export function ArticleGiftedness({ setCurrentArticle }: ArticleGiftednessProps)
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/giftedness/giftedness-living-intro.png"
+            src="/images/giftedness/giftedness-living-intro.webp"
             alt="Living with giftedness"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />

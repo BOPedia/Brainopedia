@@ -90,7 +90,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
         <div className="w-full">
           <InfoBox
             title="Dysgraphia"
-            image="/images/dysgraphia/dysgraphia-main-infobox.png"
+            image="/images/dysgraphia/dysgraphia-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Writing Learning Disorder, Disorder of Written Expression' },
               { label: 'Specialty', value: 'Educational psychology, Occupational therapy' },
@@ -108,7 +108,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dysgraphia/dysgraphia-overview-intro.png"
+            src="/images/dysgraphia/dysgraphia-overview-intro.webp"
             alt="Overview of dysgraphia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -132,7 +132,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dysgraphia/dysgraphia-symptoms-intro.png"
+            src="/images/dysgraphia/dysgraphia-symptoms-intro.webp"
             alt="Symptoms of dysgraphia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -156,7 +156,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dysgraphia/dysgraphia-causes-intro.png"
+            src="/images/dysgraphia/dysgraphia-causes-intro.webp"
             alt="Causes of dysgraphia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -180,7 +180,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dysgraphia/dysgraphia-diagnosis-intro.png"
+            src="/images/dysgraphia/dysgraphia-diagnosis-intro.webp"
             alt="Diagnosing dysgraphia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -204,7 +204,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dysgraphia/dysgraphia-support-intro.png"
+            src="/images/dysgraphia/dysgraphia-support-intro.webp"
             alt="Support for dysgraphia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -228,7 +228,7 @@ export function ArticleDysgraphia({ setCurrentArticle }: ArticleDysgraphiaProps)
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dysgraphia/dysgraphia-living-intro.png"
+            src="/images/dysgraphia/dysgraphia-living-intro.webp"
             alt="Living with dysgraphia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />

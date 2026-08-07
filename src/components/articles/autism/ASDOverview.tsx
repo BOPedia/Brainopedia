@@ -64,7 +64,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             
             <div className="mb-4 block flow-root"> 
               <ImageWithFallback
-                src="/images/autism/autism-overview-pattern-brain.png"
+                src="/images/autism/autism-overview-pattern-brain.webp"
                 alt="Colorful patterned brain illustration representing autism spectrum diversity"
                 className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm" 
               />
@@ -115,7 +115,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             </p>
 
             <ImageWithFallback
-              src="/images/autism/autism-overview-venn.png"
+              src="/images/autism/autism-overview-venn.webp"
               alt="Autism core features Venn diagram"
               className="w-full sm:w-80 h-auto float-right sm:ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
             />
@@ -142,7 +142,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             
             <div className="flex flex-col md:flex-row gap-6 items-start mb-6">
               <ImageWithFallback
-                src="/images/autism/autism-overview-rainbowgoldinfinity.png"
+                src="/images/autism/autism-overview-rainbowgoldinfinity.webp"
                 alt="Rainbow and gold infinity symbol representing autism spectrum diversity"
                 className="w-32 h-auto flex-shrink-0 rounded shadow-sm"
               />
@@ -258,7 +258,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             
             <div className="mb-6 flow-root">
               <ImageWithFallback
-                src="/images/autism/autism-overview-NDparadigm.png"
+                src="/images/autism/autism-overview-NDparadigm.webp"
                 alt="Neurodiversity paradigm concept"
                 className="w-32 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4 shadow-sm"
               />
@@ -300,7 +300,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             
             <div className="mb-6 flow-root">
               <ImageWithFallback
-                src="/images/autism/autism-overview-NDlabels.png"
+                src="/images/autism/autism-overview-NDlabels.webp"
                 alt="Neurodivergent Labels tag graphic"
                 className="w-40 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4 shadow-sm"
               />
@@ -440,7 +440,7 @@ export function ASDOverview({ setCurrentArticle }: ASDOverviewProps) {
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What Causes Autism?</h2>
             
             <ImageWithFallback
-              src="/images/autism/autism-overview-genetics.png"
+              src="/images/autism/autism-overview-genetics.webp"
               alt="Genetics and autism chromosomes illustration"
               className="w-32 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4 shadow-sm"
             />

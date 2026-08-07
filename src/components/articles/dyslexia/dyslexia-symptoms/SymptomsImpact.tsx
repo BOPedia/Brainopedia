@@ -65,7 +65,7 @@ export function DyslexiaSymptomsImpact({ setCurrentArticle }: DyslexiaSymptomsIm
               The Broader Impact
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-symptoms-impact-TAB-intro.png"
+              src="/images/dyslexia/dyslexia-symptoms-impact-TAB-intro.webp"
               alt="Broader impacts of dyslexia"
               className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />

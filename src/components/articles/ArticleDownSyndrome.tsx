@@ -65,7 +65,7 @@ export function ArticleDownSyndrome({ setCurrentArticle }: ArticleDownSyndromePr
         <div className="w-full">
           <InfoBox
             title="Down Syndrome"
-            image="/images/downsyndrome/downsyndrome-main-infobox.png"
+            image="/images/downsyndrome/downsyndrome-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Trisomy 21' },
               { label: 'Specialty', value: 'Medical Genetics, Developmental Medicine' },

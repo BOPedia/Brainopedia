@@ -78,7 +78,7 @@ export function ArticleTwiceExceptional({ setCurrentArticle }: ArticleTwiceExcep
         <div className="w-full">
           <InfoBox 
             title="Twice Exceptional (2e)" 
-            image="/images/twoE/twoE-main-infobox.png"
+            image="/images/twoE/twoE-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Gifted with Learning Disabilities, Gifted/LD, 2e' },
               { label: 'Specialty', value: 'Gifted Education, Educational Psychology' },
@@ -96,7 +96,7 @@ export function ArticleTwiceExceptional({ setCurrentArticle }: ArticleTwiceExcep
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/twoE/twoE-overview-intro.png"
+            src="/images/twoE/twoE-overview-intro.webp"
             alt="Overview of Twice Exceptionality"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -120,7 +120,7 @@ export function ArticleTwiceExceptional({ setCurrentArticle }: ArticleTwiceExcep
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/twoE/twoE-symptoms-intro.png"
+            src="/images/twoE/twoE-symptoms-intro.webp"
             alt="Symptoms of Twice Exceptionality"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -144,7 +144,7 @@ export function ArticleTwiceExceptional({ setCurrentArticle }: ArticleTwiceExcep
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/twoE/twoE-causes-intro.png"
+            src="/images/twoE/twoE-causes-intro.webp"
             alt="Causes of Twice Exceptionality"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -168,7 +168,7 @@ export function ArticleTwiceExceptional({ setCurrentArticle }: ArticleTwiceExcep
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/twoE/twoE-diagnosis-intro.png"
+            src="/images/twoE/twoE-diagnosis-intro.webp"
             alt="Diagnosing Twice Exceptionality"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -192,7 +192,7 @@ export function ArticleTwiceExceptional({ setCurrentArticle }: ArticleTwiceExcep
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/twoE/twoE-support-intro.png"
+            src="/images/twoE/twoE-support-intro.webp"
             alt="Support for Twice Exceptionality"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -216,7 +216,7 @@ export function ArticleTwiceExceptional({ setCurrentArticle }: ArticleTwiceExcep
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/twoE/twoE-living-intro.png"
+            src="/images/twoE/twoE-living-intro.webp"
             alt="Living with Twice Exceptionality"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />

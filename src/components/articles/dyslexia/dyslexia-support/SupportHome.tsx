@@ -95,7 +95,7 @@ export function SupportHome({ setCurrentArticle }: SupportHomeProps) {
               Home Support Strategies
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-home-TAB-intro.png"
+              src="/images/dyslexia/dyslexia-support-home-TAB-intro.webp"
               alt="Home support strategies for dyslexia"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />
@@ -117,7 +117,7 @@ export function SupportHome({ setCurrentArticle }: SupportHomeProps) {
           {/* Grade School Graphic - Slightly bigger, max-w-4xl, centered */}
           <div className="max-w-4xl mx-auto mb-12">
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-home-gradeschool.png"
+              src="/images/dyslexia/dyslexia-support-home-gradeschool.webp"
               alt="Grade School Home Support Environment"
               className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
             />
@@ -191,7 +191,7 @@ export function SupportHome({ setCurrentArticle }: SupportHomeProps) {
           {/* High School & College Environment Graphic */}
           <div className="max-w-4xl mx-auto mb-16">
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-home-HS-college-years.png"
+              src="/images/dyslexia/dyslexia-support-home-HS-college-years.webp"
               alt="High School and College Home Support Environment"
               className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
             />
@@ -260,7 +260,7 @@ export function SupportHome({ setCurrentArticle }: SupportHomeProps) {
           <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Reading at Home</h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-home-TAB-reading.png"
+            src="/images/dyslexia/dyslexia-support-home-TAB-reading.webp"
             alt="Strategies for reading at home"
             className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
@@ -382,7 +382,7 @@ export function SupportHome({ setCurrentArticle }: SupportHomeProps) {
           </div>
                   
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-home-TAB-school.png"
+            src="/images/dyslexia/dyslexia-support-home-TAB-school.webp"
             alt="School communication and advocacy strategies"
             className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />

@@ -41,7 +41,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-Acrosstab-early-childhood.png" 
+                    src="/images/autism/autism-living-Acrosstab-early-childhood.webp" 
                     alt="Graphic representing early childhood stage"
                   />
                 </div>
@@ -66,7 +66,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-Acrosstab-school-years.png" 
+                    src="/images/autism/autism-living-Acrosstab-school-years.webp" 
                     alt="Graphic representing school years stage"
                   />
                 </div>
@@ -91,7 +91,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-Acrosstab-adolescence.png" 
+                    src="/images/autism/autism-living-Acrosstab-adolescence.webp" 
                     alt="Graphic representing adolescence and transition stage"
                   />
                 </div>
@@ -117,7 +117,7 @@ export function LifespanContent({ setCurrentArticle }: LifespanContentProps) {
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-Acrosstab-adulthood.png" 
+                    src="/images/autism/autism-living-Acrosstab-adulthood.webp" 
                     alt="Graphic representing adulthood stage"
                   />
                 </div>

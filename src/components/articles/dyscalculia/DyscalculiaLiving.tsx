@@ -42,7 +42,7 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life with Dyscalculia</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-living-daily-life.png"
+            src="/images/dyscalculia-living-daily-life.webp"
             alt="Confident individual managing daily tasks like shopping, cooking, and time management with dyscalculia"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
@@ -156,7 +156,7 @@ export function DyscalculiaLiving({ setCurrentArticle }: DyscalculiaLivingProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Career and Employment</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-living-career.png"
+            src="/images/dyscalculia-living-career.webp"
             alt="Successful professional working in fulfilling career with dyscalculia accommodations and support"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />

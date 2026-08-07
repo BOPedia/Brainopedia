@@ -66,7 +66,7 @@ export function DiagnosisOverview({ setCurrentArticle }: DiagnosisOverviewProps)
               Testing & Diagnosis Overview
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-diagnosis-overview-TAB-intro.png"
+              src="/images/dyslexia/dyslexia-diagnosis-overview-TAB-intro.webp"
               alt="Overview of dyslexia diagnosis process"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />
@@ -98,7 +98,7 @@ export function DiagnosisOverview({ setCurrentArticle }: DiagnosisOverviewProps)
 
             <div className="bg-white p-5 rounded-xl border-t-4 border-[#0c264d] shadow-sm flex flex-col justify-center items-center">
                <ImageWithFallback 
-                 src="/images/dyslexia/dyslexia-diagnosis-overview-TAB-professionals.png"
+                 src="/images/dyslexia/dyslexia-diagnosis-overview-TAB-professionals.webp"
                  alt="Diagnostic professionals"
                  className="w-full h-auto rounded-md"
                />
@@ -118,7 +118,7 @@ export function DiagnosisOverview({ setCurrentArticle }: DiagnosisOverviewProps)
             <div className="bg-gray-300 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Diagnostic Criteria</h4>
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-diagnosis-overview-TAB-criteria.png"
+                src="/images/dyslexia/dyslexia-diagnosis-overview-TAB-criteria.webp"
                 alt="DSM-5 Diagnostic Criteria"
                 className="w-full h-auto rounded-md border border-gray-200 mb-5 bg-white"
               />
@@ -145,7 +145,7 @@ export function DiagnosisOverview({ setCurrentArticle }: DiagnosisOverviewProps)
             <div className="bg-gray-300 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-md flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Pattern Recognition</h4>
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-diagnosis-overview-TAB-patterns.png"
+                src="/images/dyslexia/dyslexia-diagnosis-overview-TAB-patterns.webp"
                 alt="Pattern Recognition in Dyslexia"
                 className="w-full h-auto rounded-md border border-gray-200 mb-5 bg-white"
               />

@@ -27,7 +27,7 @@ export function RelationshipsContent({ setCurrentArticle }: RelationshipsContent
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-RStab-friends.png" 
+                    src="/images/autism/autism-living-RStab-friends.webp" 
                     alt="Graphic representing autistic friendships"
                   />
                 </div>
@@ -53,7 +53,7 @@ export function RelationshipsContent({ setCurrentArticle }: RelationshipsContent
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-RStab-romance.png" 
+                    src="/images/autism/autism-living-RStab-romance.webp" 
                     alt="Graphic representing romantic relationships"
                   />
                 </div>
@@ -78,7 +78,7 @@ export function RelationshipsContent({ setCurrentArticle }: RelationshipsContent
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-RStab-family.png" 
+                    src="/images/autism/autism-living-RStab-family.webp" 
                     alt="Graphic representing family relationships and dynamics"
                   />
                 </div>

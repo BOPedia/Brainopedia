@@ -65,7 +65,7 @@ export function DyslexiaCausesGenetics({ setCurrentArticle }: DyslexiaCausesGene
               Genetic Foundations
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-causes-geneticsTAB-Intro-gen.png"
+              src="/images/dyslexia/dyslexia-causes-geneticsTAB-Intro-gen.webp"
               alt="Child Reading under Genetics tab"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />

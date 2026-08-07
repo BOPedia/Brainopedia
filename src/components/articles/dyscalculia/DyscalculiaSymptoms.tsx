@@ -41,7 +41,7 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Mathematical Symptoms</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-symptoms-core-math.png"
+            src="/images/dyscalculia-symptoms-core-math.webp"
             alt="Student struggling with calculator and mathematical calculations showing core dyscalculia symptoms"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
@@ -168,7 +168,7 @@ export function DyscalculiaSymptoms({ setCurrentArticle }: DyscalculiaSymptomsPr
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life Symptoms</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-symptoms-daily-life.png"
+            src="/images/dyscalculia-symptoms-daily-life.webp"
             alt="Everyday situations showing time management and money handling challenges in dyscalculia"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />

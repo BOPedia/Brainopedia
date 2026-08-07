@@ -18,7 +18,7 @@ export function CoreSymptoms() {
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <div className="block">
           <ImageWithFallback 
-            src="/images/autism/autism-symptoms-Coretab-manuals.png" 
+            src="/images/autism/autism-symptoms-Coretab-manuals.webp" 
             alt="Colorful patterned brain representing autism diversity"
             className="w-48 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
           />
@@ -46,7 +46,7 @@ export function CoreSymptoms() {
 
         <div className="flex justify-center mb-8">
           <ImageWithFallback 
-            src="/images/autism/autism-symptoms-Coretab-2core-venn.png"
+            src="/images/autism/autism-symptoms-Coretab-2core-venn.webp"
             alt="AUTISM Diagnostic Criteria Venn Diagram"
             className="w-full max-w-2xl rounded shadow-md"
           />

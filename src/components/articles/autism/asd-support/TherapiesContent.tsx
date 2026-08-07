@@ -17,7 +17,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         <div className="mx-auto w-64">
           <div className="rounded-lg shadow-md overflow-hidden bg-white">
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-acronyms.png" 
+              src="/images/autism/autism-support-TTtab-acronyms.webp" 
               alt="4 examples of therapies with acronyms"
             /> 
           </div>
@@ -29,7 +29,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         <div className="w-64 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-SLP.png" 
+              src="/images/autism/autism-support-TTtab-SLP.webp" 
               alt="Speech and Language Therapy graphic"
             />
           </div>
@@ -53,7 +53,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         <div className="w-64 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-OT.png" 
+              src="/images/autism/autism-support-TTtab-OT.webp" 
               alt="Occupational Therapy graphic"
             />
           </div>
@@ -77,7 +77,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         <div className="w-64 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-ABA.png" 
+              src="/images/autism/autism-support-TTtab-ABA.webp" 
               alt="Applied Behavior Analysis graphic"
             />
           </div>
@@ -101,7 +101,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         <div className="w-64 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-SS.png" 
+              src="/images/autism/autism-support-TTtab-SS.webp" 
               alt="Social Skills Support graphic"
             />
           </div>
@@ -125,7 +125,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         <div className="w-64 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-MH.png" 
+              src="/images/autism/autism-support-TTtab-MH.webp" 
               alt="Mental Health Support graphic"
             />
           </div>
@@ -149,7 +149,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
         <div className="w-64 flex-shrink-0">
           <div className="rounded-lg shadow-sm overflow-hidden bg-white">
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-PT.png" 
+              src="/images/autism/autism-support-TTtab-PT.webp" 
               alt="Physical Therapy graphic"
             />
           </div>
@@ -182,7 +182,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
           <div className="mx-auto w-64">
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
               <ImageWithFallback 
-                src="/images/autism/autism-support-TTtab-decisions.png" 
+                src="/images/autism/autism-support-TTtab-decisions.webp" 
                 alt="decisions arrows pic - different directions"
               /> 
             </div>
@@ -266,7 +266,7 @@ export function TherapiesContent({ setCurrentArticle }: { setCurrentArticle?: (a
           <div className="mx-auto w-64">
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
               <ImageWithFallback 
-                src="/images/autism/autism-support-TTtab-redflags.png" 
+                src="/images/autism/autism-support-TTtab-redflags.webp" 
                 alt="red flags flying outside symbolizing the idea of be wary when needed"
               /> 
             </div>

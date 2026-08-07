@@ -11,7 +11,7 @@ export function ADHDSymptomsTabFemales() {
         
         {/* Shrunk to w-56, centered, and framed with a gold border */}
         <ImageWithFallback 
-          src="/images/adhd/adhd-females-diversity-faces.png" 
+          src="/images/adhd/adhd-females-diversity-faces.webp" 
           alt="Diverse female faces representing ADHD in females" 
           className="block mx-auto w-56 h-auto rounded-xl shadow-md border-4 border-[#ffd166] object-contain mb-6" 
         />
@@ -94,7 +94,7 @@ export function ADHDSymptomsTabFemales() {
       <div className="bg-white p-6 rounded-xl border-t-4 border-[#ec4899] shadow-sm">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
           <ImageWithFallback 
-            src="/images/adhd/adhd-females-girl-studying.png" 
+            src="/images/adhd/adhd-females-girl-studying.webp" 
             alt="Girl studying representing ADHD presentation in girls" 
             className="w-48 shrink-0 rounded-xl shadow-md border-4 border-[#ec4899] object-contain" 
           />
@@ -145,7 +145,7 @@ export function ADHDSymptomsTabFemales() {
       <div className="bg-white p-6 rounded-xl border-t-4 border-[#2abcd4] shadow-sm">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
           <ImageWithFallback 
-            src="/images/adhd/adhd-females-woman-working.png" 
+            src="/images/adhd/adhd-females-woman-working.webp" 
             alt="Woman working representing ADHD presentation in adult women" 
             className="w-48 shrink-0 rounded-xl shadow-md border-4 border-[#2abcd4] object-contain" 
           />

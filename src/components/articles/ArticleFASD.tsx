@@ -65,7 +65,7 @@ export function ArticleFASD({ setCurrentArticle }: ArticleFASDProps) {
         <div className="w-full">
           <InfoBox
             title="Fetal Alcohol Spectrum Disorder"
-            image="/images/fasd/fasd-main-infobox.png"
+            image="/images/fasd/fasd-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'FASD, includes FAS, pFAS, ARND, ARBD' },
               { label: 'Specialty', value: 'Developmental Medicine, Neuropsychology' },

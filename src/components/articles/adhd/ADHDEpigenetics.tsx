@@ -36,7 +36,7 @@ export function ADHDEpigenetics({ setCurrentArticle }: ADHDEpigeneticsProps) {
           </p>
           <div className="mx-auto border border-[#0c264d]/10 rounded-lg shadow-sm bg-white p-1">
             <ImageWithFallback 
-              src="/images/adhd/adhd-epigenetics-main-brain-dna.png" 
+              src="/images/adhd/adhd-epigenetics-main-brain-dna.webp" 
               alt="Epigenetic mechanisms in ADHD"
               className="w-full h-auto rounded-md"
             />

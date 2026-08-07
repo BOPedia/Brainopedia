@@ -34,7 +34,7 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
         </div>
         <div className="w-full">
           <InfoBox title="Traumatic Brain Injury" 
-          image="/images/tbi/tbi-main-infobox.png"
+          image="/images/tbi/tbi-main-infobox.webp"
           data={[
             { label: 'Other names', value: 'TBI, acquired brain injury' },
             { label: 'Specialty', value: 'Neurology, Rehabilitation Medicine' },

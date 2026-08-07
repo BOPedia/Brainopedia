@@ -41,7 +41,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">When to Seek Evaluation</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-diagnosis-evaluation.png"
+            src="/images/dyscalculia-diagnosis-evaluation.webp"
             alt="Educational psychologist conducting math assessment with student to identify dyscalculia"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
@@ -215,7 +215,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle }: DyscalculiaDiagnosis
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Assessment Report</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-diagnosis-report.png"
+            src="/images/dyscalculia-diagnosis-report.webp"
             alt="Comprehensive assessment report showing numerical testing results and diagnostic findings"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />

@@ -35,7 +35,7 @@ export function TouretteOverview({ setCurrentArticle }: TouretteOverviewProps) {
       <div className="space-y-8">
         <section className="flow-root">
           <ImageWithFallback 
-            src="/images/tourette/tourette-overview-main.png"
+            src="/images/tourette/tourette-overview-main.webp"
             alt="Child with neurological condition - understanding Tourette syndrome"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />

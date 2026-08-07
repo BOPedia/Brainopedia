@@ -91,7 +91,7 @@ export function SupportMultisensory({ setCurrentArticle }: SupportMultisensoryPr
           </p>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-multisens-TAB-chart.png"
+            src="/images/dyslexia/dyslexia-support-multisens-TAB-chart.webp"
             alt="Timeline and intensity of dyslexia intervention"
             className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />

@@ -93,7 +93,7 @@ export function SupportTutoring({ setCurrentArticle }: SupportTutoringProps) {
               Tutoring & Specialized Instruction
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-tutoringTAB-intro.png"
+              src="/images/dyslexia/dyslexia-support-tutoringTAB-intro.webp"
               alt="Dyslexia tutoring and specialized instruction overview"
               className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm"
             />
@@ -105,7 +105,7 @@ export function SupportTutoring({ setCurrentArticle }: SupportTutoringProps) {
           <h3 className="text-2xl font-bold mt-2 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Finding a Qualified Tutor</h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-tutoringTAB-credentials.png"
+            src="/images/dyslexia/dyslexia-support-tutoringTAB-credentials.webp"
             alt="Tutor credentials and certifications"
             className="w-32 h-auto rounded-md border border-gray-300 shadow-sm float-right ml-6 mb-4"
           />
@@ -133,7 +133,7 @@ export function SupportTutoring({ setCurrentArticle }: SupportTutoringProps) {
           <h3 className="text-2xl font-bold mt-8 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both text-center">Quantity of Tutoring?</h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-tutoringTAB-timeline.png"
+            src="/images/dyslexia/dyslexia-support-tutoringTAB-timeline.webp"
             alt="Timeline and intensity of dyslexia intervention"
             className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />

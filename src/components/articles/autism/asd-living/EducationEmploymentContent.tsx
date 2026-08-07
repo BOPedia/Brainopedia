@@ -27,7 +27,7 @@ export function EducationEmploymentContent({ setCurrentArticle }: EducationEmplo
               <div className="mx-auto w-32 md:w-64 mb-4">
               <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-EEtab-college.png" 
+                    src="/images/autism/autism-living-EEtab-college.webp" 
                     alt="Graphic representing higher education and college life"
                   />
                 </div>
@@ -52,7 +52,7 @@ export function EducationEmploymentContent({ setCurrentArticle }: EducationEmplo
               <div className="mx-auto w-32 md:w-64 mb-4">
   <           div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-EEtab-workplace.png" 
+                    src="/images/autism/autism-living-EEtab-workplace.webp" 
                     alt="Graphic representing employment and the workplace"
                   />
                 </div>

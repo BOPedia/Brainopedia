@@ -93,7 +93,7 @@ export function SupportExecutive({ setCurrentArticle }: SupportExecutiveProps) {
           </h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-execdys-TAB-tools.png"
+            src="/images/dyslexia/dyslexia-support-execdys-TAB-tools.webp"
             alt="Executive dysfunction support tools"
             className="block mx-auto w-full max-w-2xl mb-10 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
@@ -215,12 +215,12 @@ export function SupportExecutive({ setCurrentArticle }: SupportExecutiveProps) {
                 {/* Mind Mapping Graphics */}
                 <div className="mt-auto flex flex-col gap-4">
                   <ImageWithFallback 
-                    src="/images/dyslexia/dyslexia-support-executiveTAB-mind-mapping-process.png" 
+                    src="/images/dyslexia/dyslexia-support-executiveTAB-mind-mapping-process.webp" 
                     alt="Mind Mapping Process" 
                     className="w-full h-auto rounded-lg shadow-sm border border-gray-200 block" 
                   />
                   <ImageWithFallback 
-                    src="/images/dyslexia/dyslexia-support-executiveTAB-mind-mapping-example.png" 
+                    src="/images/dyslexia/dyslexia-support-executiveTAB-mind-mapping-example.webp" 
                     alt="Mind Mapping Example - Sustainable Living" 
                     className="w-full h-auto rounded-lg shadow-sm border border-gray-200 block" 
                   />
@@ -249,12 +249,12 @@ export function SupportExecutive({ setCurrentArticle }: SupportExecutiveProps) {
                 {/* Sketchnoting Graphics */}
                 <div className="mt-auto flex flex-col gap-4">
                   <ImageWithFallback 
-                    src="/images/dyslexia/dyslexia-support-executiveTAB-sketchnoting-explained.png" 
+                    src="/images/dyslexia/dyslexia-support-executiveTAB-sketchnoting-explained.webp" 
                     alt="Sketchnoting Process Explained" 
                     className="w-full h-auto rounded-lg shadow-sm border border-gray-200 block" 
                   />
                   <ImageWithFallback 
-                    src="/images/dyslexia/dyslexia-support-executiveTAB-sketchnoting-example-Sustain.png" 
+                    src="/images/dyslexia/dyslexia-support-executiveTAB-sketchnoting-example-Sustain.webp" 
                     alt="Sketchnoting Example - Sustainability" 
                     className="w-full h-auto rounded-lg shadow-sm border border-gray-200 block" 
                   />
@@ -282,7 +282,7 @@ export function SupportExecutive({ setCurrentArticle }: SupportExecutiveProps) {
                 {/* Boxing Method Graphics */}
                 <div className="mt-auto flex flex-col gap-4">
                   <ImageWithFallback 
-                    src="/images/dyslexia/dyslexia-support-executiveTAB-boxing-method.png" 
+                    src="/images/dyslexia/dyslexia-support-executiveTAB-boxing-method.webp" 
                     alt="Boxing Method Process and Example" 
                     className="w-full h-auto rounded-lg shadow-sm border border-gray-200 block" 
                   />
@@ -310,7 +310,7 @@ export function SupportExecutive({ setCurrentArticle }: SupportExecutiveProps) {
                 {/* Charting Method Graphics */}
                 <div className="mt-auto flex flex-col gap-4">
                   <ImageWithFallback 
-                    src="/images/dyslexia/dyslexia-support-executiveTAB-charting-method.png" 
+                    src="/images/dyslexia/dyslexia-support-executiveTAB-charting-method.webp" 
                     alt="Charting Method Process and Example" 
                     className="w-full h-auto rounded-lg shadow-sm border border-gray-200 block" 
                   />

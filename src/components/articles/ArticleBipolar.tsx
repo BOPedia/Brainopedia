@@ -64,7 +64,7 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
         <div className="w-full">
           <InfoBox
             title="Bipolar Disorder"
-            image="/images/bipolar/bipolar-main-infobox.png"
+            image="/images/bipolar/bipolar-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Manic-depressive illness' },
               { label: 'Specialty', value: 'Psychiatry, Psychology' },

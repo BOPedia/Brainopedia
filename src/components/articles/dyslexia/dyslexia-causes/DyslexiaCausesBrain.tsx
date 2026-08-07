@@ -106,7 +106,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
             </div>
           </div>
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Functional Diff.png"
+            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Functional Diff.webp"
             alt="Functional differences in the dyslexic brain"
             className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
@@ -136,7 +136,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
             </div>
           </div>
  <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Structural.png"
+            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Structural.webp"
             alt="Structural differences in the dyslexic brain"
             className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
@@ -165,7 +165,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
             </div>
           </div>
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Neural-Mig.png"
+            src="/images/dyslexia/dyslexia-causes-BrainNeuroTAB-Neural-Mig.webp"
             alt="Neural migration and development differences in dyslexia"
             className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />

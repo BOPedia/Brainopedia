@@ -35,7 +35,7 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         <div className="bg-white p-5 rounded-md border-l-4 border-[#2abcd4] shadow-sm flow-root">
           <div className="float-left mr-6 mb-2 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-64 shrink-0">
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-speech-dysreg-intro.png"
+              src="/images/autism/autism-support-TTtab-speech-dysreg-intro.webp"
               alt="Physiological attunement and co-regulation"
               className="w-full h-auto rounded-md block"
             />
@@ -50,7 +50,7 @@ export function AutismDysregulation({ setCurrentArticle }: AutismDysregulationPr
         <div className="bg-white p-5 rounded-md border-l-4 border-[#ffd166] shadow-sm flow-root">
           <div className="float-left mr-6 mb-2 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-64 shrink-0">
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-speech-dysreg-partnership.png"
+              src="/images/autism/autism-support-TTtab-speech-dysreg-partnership.webp"
               alt="Co-regulated partnership"
               className="w-full h-auto rounded-md block"
             />

@@ -90,7 +90,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         <div className="w-full">
           <InfoBox
             title="Dyscalculia"
-            image="/images/dyscalculia/dyscalculia-main-infobox.png"
+            image="/images/dyscalculia/dyscalculia-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Math learning disability, number blindness' },
               { label: 'Specialty', value: 'Educational psychology, Neurology' },
@@ -108,7 +108,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyscalculia/dyscalculia-overview-intro.png"
+            src="/images/dyscalculia/dyscalculia-overview-intro.webp"
             alt="Overview of dyscalculia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -132,7 +132,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyscalculia/dyscalculia-symptoms-intro.png"
+            src="/images/dyscalculia/dyscalculia-symptoms-intro.webp"
             alt="Symptoms of dyscalculia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -156,7 +156,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyscalculia/dyscalculia-causes-intro.png"
+            src="/images/dyscalculia/dyscalculia-causes-intro.webp"
             alt="Causes of dyscalculia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -180,7 +180,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyscalculia/dyscalculia-diagnosis-intro.png"
+            src="/images/dyscalculia/dyscalculia-diagnosis-intro.webp"
             alt="Diagnosing dyscalculia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -204,7 +204,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyscalculia/dyscalculia-support-intro.png"
+            src="/images/dyscalculia/dyscalculia-support-intro.webp"
             alt="Support for dyscalculia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -228,7 +228,7 @@ export function ArticleDyscalculia({ setCurrentArticle }: ArticleDyscalculiaProp
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyscalculia/dyscalculia-living-intro.png"
+            src="/images/dyscalculia/dyscalculia-living-intro.webp"
             alt="Living with dyscalculia"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />

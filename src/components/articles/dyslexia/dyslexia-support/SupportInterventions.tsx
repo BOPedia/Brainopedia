@@ -92,7 +92,7 @@ export function SupportInterventions({ setCurrentArticle }: SupportInterventions
               Evidence-Based Interventions
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-INTERV-TAB-intro.png"
+              src="/images/dyslexia/dyslexia-support-INTERV-TAB-intro.webp"
               alt="Evidence-based dyslexia interventions overview"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />
@@ -105,7 +105,7 @@ export function SupportInterventions({ setCurrentArticle }: SupportInterventions
           <p className="mb-6 text-slate-700">Structured literacy is an explicit, systematic approach to teaching reading that encompasses several core components:</p>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-INTERV-TAB-structured-literacy.png"
+            src="/images/dyslexia/dyslexia-support-INTERV-TAB-structured-literacy.webp"
             alt="Components of Structured Literacy"
             className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
@@ -140,7 +140,7 @@ export function SupportInterventions({ setCurrentArticle }: SupportInterventions
           <h3 className="text-2xl font-bold mt-8 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Orton-Gillingham-Based Programs</h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-INTERV-TAB-orton-gillingham.png"
+            src="/images/dyslexia/dyslexia-support-INTERV-TAB-orton-gillingham.webp"
             alt="Orton-Gillingham multisensory approach"
             className="w-56 h-auto rounded-md border border-gray-300 shadow-sm float-right ml-6 mb-4"
           />

@@ -19,7 +19,7 @@ export function ADHDSymptomsTabInattention() {
       </div>
 
       <ImageWithFallback 
-                src="/images/adhd/adhd-inattention-across-ages.png"
+                src="/images/adhd/adhd-inattention-across-ages.webp"
                 alt="ADHD Inattention Across Different Life Stages"
                 className="w-full max-w-[16rem] mx-auto mb-4 rounded"
               />
@@ -85,7 +85,7 @@ export function ADHDSymptomsTabInattention() {
               
               <div className="w-full sm:w-64 mx-auto mb-6 bg-white p-2 rounded-lg shadow-sm border border-gray-200">
                 <ImageWithFallback 
-                  src="/images/adhd/adhd-inattention-boy-looks-out-window.png"
+                  src="/images/adhd/adhd-inattention-boy-looks-out-window.webp"
                   alt="ADHD Inattention"
                   className="w-full h-auto rounded-md block"
                 />

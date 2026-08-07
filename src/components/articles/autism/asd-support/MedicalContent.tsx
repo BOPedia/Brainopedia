@@ -22,7 +22,7 @@ export function MedicalContent({ setCurrentArticle }: MedicalContentProps) {
           <div className="mx-auto w-64 md:w-96"> {/* Fixed width classes here! */}
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
               <ImageWithFallback 
-                src="/images/autism/autism-support-MMtab-5guys.png" 
+                src="/images/autism/autism-support-MMtab-5guys.webp" 
                 alt="5 stick figures representing support of 5 different co-occurring conditions"
               /> 
             </div>

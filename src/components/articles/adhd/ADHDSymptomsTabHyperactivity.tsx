@@ -26,7 +26,7 @@ export function ADHDSymptomsTabHyperactivity() {
         
         <div className="w-full sm:w-64 mx-auto mb-8 bg-white p-2 rounded-lg shadow-sm border border-gray-200">
           <ImageWithFallback 
-            src="/images/adhd/adhd-hyperactivity-lifespan.png"
+            src="/images/adhd/adhd-hyperactivity-lifespan.webp"
             alt="Hyperactivity changes across the lifespan"
             className="w-full h-auto rounded-md block" 
           />
@@ -93,7 +93,7 @@ export function ADHDSymptomsTabHyperactivity() {
         
         <div className="w-full sm:w-64 mx-auto mb-6 bg-white p-2 rounded-lg shadow-sm border border-gray-200">
           <ImageWithFallback 
-            src="/images/adhd/adhd-hyperactivity-street-view.png"
+            src="/images/adhd/adhd-hyperactivity-street-view.webp"
             alt="Hyperactivity in everyday life - street view"
             className="w-full h-auto rounded-md block"
           />

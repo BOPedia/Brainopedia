@@ -37,7 +37,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
       <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8 flow-root">
         <div className={floatedCardContainer}>
           <ImageWithFallback 
-            src="/images/autism/autism-support-TTtab-speech-intro.png"
+            src="/images/autism/autism-support-TTtab-speech-intro.webp"
             alt="Speech Therapy Intro"
             className={floatedImageClass}
           />
@@ -58,7 +58,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </h2>
         
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-comm-enviro.png"
+          src="/images/autism/autism-support-TTtab-speech-comm-enviro.webp"
           alt="Communication Environment"
           className={responsiveImageClass}
         />
@@ -107,7 +107,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </h2>
         
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-visuals.png"
+          src="/images/autism/autism-support-TTtab-speech-visuals.webp"
           alt="Visual Supports"
           className={responsiveImageClass}
         />
@@ -168,7 +168,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
             </div>
             
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-speech-lo-tech-choices.png"
+              src="/images/autism/autism-support-TTtab-speech-lo-tech-choices.webp"
               alt="Low-Tech AAC Examples"
               className={responsiveImageClass}
             />
@@ -190,7 +190,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
             </div>
             
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-speech-hi-tech-choices.png"
+              src="/images/autism/autism-support-TTtab-speech-hi-tech-choices.webp"
               alt="High-Tech AAC Examples"
               className={responsiveImageClass}
             />
@@ -243,7 +243,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </div>
 
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-echolalia.png"
+          src="/images/autism/autism-support-TTtab-speech-echolalia.webp"
           alt="Children Echolalia"
           className={responsiveImageClass}
         />
@@ -299,7 +299,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         <div className="bg-[#f0f9ff] p-5 rounded-md border border-[#0A9DC4]/20 mb-6 flow-root">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/autism/autism-support-TTtab-speech-scripting-support-children.png"
+              src="/images/autism/autism-support-TTtab-speech-scripting-support-children.webp"
               alt="Understanding Scripting"
               className={floatedImageClass}
             />
@@ -511,7 +511,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </h2>
         
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-diff-charcteristics.png"
+          src="/images/autism/autism-support-TTtab-speech-diff-charcteristics.webp"
           alt="Speech Differences"
           className={responsiveImageClass}
         />
@@ -548,7 +548,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
         </h2>
         
         <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-speech-self-advo.png"
+          src="/images/autism/autism-support-TTtab-speech-self-advo.webp"
           alt="Prioritizing Self Advocacy"
           className={responsiveImageClass}
         />
@@ -583,7 +583,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           </h2>
           
           <ImageWithFallback 
-            src="/images/autism/autism-support-TTtab-speech-alex-intero.png"
+            src="/images/autism/autism-support-TTtab-speech-alex-intero.webp"
             alt="Alexithymia and Interoception"
             className={responsiveImageClass}
           />
@@ -634,7 +634,7 @@ export function SpeechTherapy({ setCurrentArticle }: SpeechTherapyProps) {
           </h2>
           
           <ImageWithFallback 
-            src="/images/autism/autism-support-TTtab-speech-double-empath.png"
+            src="/images/autism/autism-support-TTtab-speech-double-empath.webp"
             alt="Social Pragmatics and Double Empathy"
             className={responsiveImageClass}
           />

@@ -24,7 +24,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
           <div className="rounded-lg shadow-md overflow-hidden bg-white">
             <video 
               src="/images/autism/autism-support-EarlyIntervtab-ages0to3.mp4" 
-              poster="/images/autism/autism-support-EarlyIntervtab-ages0to3.png"
+              poster="/images/autism/autism-support-EarlyIntervtab-ages0to3.webp"
               autoPlay 
               loop 
               muted 
@@ -127,7 +127,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
               <span className="text-[#2abcd4] font-bold text-lg mt-0.5">→</span>
               <div>
                 <a 
-                  href="https://www.zerotothree.org/wp-content/uploads/2010/02/Georgetown-States-Early-Intervention.png" 
+                  href="https://www.zerotothree.org/wp-content/uploads/2010/02/Georgetown-States-Early-Intervention.webp" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="font-bold text-[#0c264d] underline hover:text-[#2abcd4] transition-colors text-base"
@@ -220,7 +220,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
         {/* The Wrapper: Scaled to max-w-lg for a "bigger" but controlled presence */} 
         <div className="mx-auto w-full max-w-lg px-4"> 
           <ImageWithFallback 
-            src="/images/autism/autism-support-EarlyIntervtab-ResStartegies.png" 
+            src="/images/autism/autism-support-EarlyIntervtab-ResStartegies.webp" 
             alt="Brainopedia roadmap showing path of EI"
           /> 
         </div> 
@@ -373,7 +373,7 @@ export function EarlyInterventionContent({ setCurrentArticle }: EarlyInterventio
         {/* The Wrapper: Shrunk back down to match Graphic 1 */} 
         <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
-            src="/images/autism/autism-support-EarlyIntervtab-road-thru-the-years.png" 
+            src="/images/autism/autism-support-EarlyIntervtab-road-thru-the-years.webp" 
             alt="road symbolizing autism journey"
           /> 
         </div> 

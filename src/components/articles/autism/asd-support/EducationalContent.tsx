@@ -22,7 +22,7 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
               <video 
                 src="/images/autism/autism-support-EduSuptab-scales.mp4" 
-                poster="/images/autism/autism-support-EduSuptab-scales.png"
+                poster="/images/autism/autism-support-EduSuptab-scales.webp"
                 autoPlay 
                 loop 
                 muted 
@@ -113,7 +113,7 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
               <video 
                 src="/images/autism/autism-support-EduSuptab-Accommodations.mp4" 
-                poster="/images/autism/autism-support-EduSuptab-Accommodations.png"
+                poster="/images/autism/autism-support-EduSuptab-Accommodations.webp"
                 autoPlay 
                 loop 
                 muted 

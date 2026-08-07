@@ -25,7 +25,7 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
-            src="/images/autism/autism-diagnosis-WhatAuDHDtab-Lightning-Gold Infinity.png" 
+            src="/images/autism/autism-diagnosis-WhatAuDHDtab-Lightning-Gold Infinity.webp" 
             alt="lightning with gold infinity in it symbolizing autism and ADHD combined or AuDHD"
           /> 
         </div> 
@@ -101,7 +101,7 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
-            src="/images/autism/autism-diagnosis-WhatAuDHDtab-gold-blue-splitface.png" 
+            src="/images/autism/autism-diagnosis-WhatAuDHDtab-gold-blue-splitface.webp" 
             alt="split face - AuDHD"
           /> 
         </div> 
@@ -291,7 +291,7 @@ export function WhatIsAuDHD({ setCurrentArticle }: WhatIsAuDHDProps) {
        {/* The Wrapper: Centers the image and restricts its width */}
        <div className="mx-auto w-48 md:w-64">
          <ImageWithFallback
-           src="/images/autism/autism-diagnosis-WhatAuDHDtab-silhouette-splatter.png"
+           src="/images/autism/autism-diagnosis-WhatAuDHDtab-silhouette-splatter.webp"
            alt="AuDHD silhouette with splatter effect"
          />
        </div>

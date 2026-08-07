@@ -11,7 +11,7 @@ export function ChildDiagnosis({ setCurrentArticle }: ChildDiagnosisProps) {
     <div className="space-y-6 text-[#0c264d] font-spartan">
       <div className="bg-[#f0f9ff] p-6 rounded-lg">
         <ImageWithFallback 
-          src="/images/autism/autism-diagnosis-DiagProctab-checkmark-gold.png" 
+          src="/images/autism/autism-diagnosis-DiagProctab-checkmark-gold.webp" 
           alt="Diagnostic Process Graphic with gold infinity and clipboard"
           className="w-36 h-auto float-right ml-6 mb-4 rounded-md border border-gray-300 shadow-sm"
         />

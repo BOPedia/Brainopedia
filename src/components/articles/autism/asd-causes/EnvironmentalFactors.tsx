@@ -13,7 +13,7 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
       <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Environmental Factors</h2>
       
       <ImageWithFallback 
-        src="/images/autism/autism-causes-Envirotab-pregnant.png" 
+        src="/images/autism/autism-causes-Envirotab-pregnant.webp" 
         alt="Pregnant woman representing environmental factors"
         className="w-48 h-auto float-left mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
       />
@@ -84,7 +84,7 @@ export function EnvironmentalFactors({ setCurrentArticle }: EnvironmentalFactors
         <h3 className="font-bold mb-4 text-xl font-spartan text-[#0c264d]">Vaccines, The Schedule & The Immune System</h3>
         
         <ImageWithFallback 
-          src="/images/autism/autism-causes-Envirotab-toddler-in-nature.png" 
+          src="/images/autism/autism-causes-Envirotab-toddler-in-nature.webp" 
           alt="Toddler in nature"
           className="w-40 md:w-56 h-auto float-right ml-6 mb-4 rounded-xl shadow-sm border border-gray-200"
         />

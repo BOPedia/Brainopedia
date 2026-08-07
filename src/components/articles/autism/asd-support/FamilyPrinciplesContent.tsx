@@ -20,7 +20,7 @@ export function FamilyPrinciplesContent({ setCurrentArticle }: FamilyPrinciplesC
           <div className="mx-auto w-64">
                       <div className="rounded-lg shadow-md overflow-hidden bg-white">
                         <ImageWithFallback 
-                          src="/images/autism/autism-support-FPtab-3shoulders.png" 
+                          src="/images/autism/autism-support-FPtab-3shoulders.webp" 
                           alt="Three family members with arms around shoulders showing family support"
                         /> 
                       </div>

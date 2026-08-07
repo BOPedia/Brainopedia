@@ -169,7 +169,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
           </h3>
           
           <ImageWithFallback
-            src="/images/autism/autism-diagnosis-WhoCantab-doctor-plays.png"
+            src="/images/autism/autism-diagnosis-WhoCantab-doctor-plays.webp"
             alt="Doctor playing with child during assessment"
             className="w-48 h-auto mb-4 rounded-md border border-gray-300 shadow-sm" 
           />
@@ -206,7 +206,7 @@ export function WhoCanDiagnose({ setCurrentArticle }: WhoCanDiagnoseProps) {
           </h3>
           
           <ImageWithFallback
-            src="/images/autism/autism-diagnosis-WhoCantab-adult-dx.png"
+            src="/images/autism/autism-diagnosis-WhoCantab-adult-dx.webp"
             alt="Adult in a clinical evaluation setting"
             className="w-48 h-auto mb-4 rounded-md border border-gray-300 shadow-sm" 
           />

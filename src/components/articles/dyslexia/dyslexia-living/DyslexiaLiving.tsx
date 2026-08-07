@@ -79,7 +79,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
               Navigating Daily Life
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-living-daily-TAB-intro.png" 
+              src="/images/dyslexia/dyslexia-living-daily-TAB-intro.webp" 
               alt="Navigating daily life with dyslexia"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />
@@ -224,7 +224,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
               Dyslexia in School Settings
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-living-school-TAB-intro.png" 
+              src="/images/dyslexia/dyslexia-living-school-TAB-intro.webp" 
               alt="School settings and dyslexia"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />
@@ -291,7 +291,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
             </h2>
           </div>
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-support-techtools-TAB-IEP504.png"
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-IEP504.webp"
                 alt="tech organization tools"
                 className="block mx-auto w-full max-w-xl rounded-lg shadow-sm border border-slate-200 bg-white"
               />     
@@ -416,7 +416,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
               Dyslexia in the Workplace
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-living-work-TAB-intro.png" 
+              src="/images/dyslexia/dyslexia-living-work-TAB-intro.webp" 
               alt="Workplace strategies for adults with dyslexia"
               className="block mx-auto w-96 max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
             />
@@ -551,7 +551,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
               Strengths & Success
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-living-strengths-TAB-intro.png" 
+              src="/images/dyslexia/dyslexia-living-strengths-TAB-intro.webp" 
               alt="Strengths associated with dyslexia"
               className="block mx-auto w-64 max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
             />

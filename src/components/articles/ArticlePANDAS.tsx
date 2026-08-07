@@ -34,7 +34,7 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
         </div>
         <div className="w-full">
           <InfoBox title="PANDAS" 
-          image="/images/pandas/pandas-main-infobox.png"
+          image="/images/pandas/pandas-main-infobox.webp"
           data={[
             { label: 'Full name', value: 'Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptococcal Infections' },
             { label: 'Specialty', value: 'Pediatric Neurology, Immunology, Psychiatry' },

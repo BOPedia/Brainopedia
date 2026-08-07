@@ -26,7 +26,7 @@ export function ADHDSymptomsTabImpulsivity() {
         
         <div className="w-full sm:w-64 mx-auto mb-8 bg-white p-2 rounded-lg shadow-sm border border-gray-200">
           <ImageWithFallback 
-            src="/images/adhd/adhd-impulsivity-shopping.png"
+            src="/images/adhd/adhd-impulsivity-shopping.webp"
             alt="Impulse shopping - impulsivity in daily life"
             className="w-full h-auto rounded-md block"
           />
@@ -93,7 +93,7 @@ export function ADHDSymptomsTabImpulsivity() {
         
         <div className="w-full sm:w-64 mx-auto mb-6 bg-white p-2 rounded-lg shadow-sm border border-gray-200">
           <ImageWithFallback 
-            src="/images/adhd/adhd-impulsivity-purple-wires.png"
+            src="/images/adhd/adhd-impulsivity-purple-wires.webp"
             alt="Impulsivity and neural connections"
             className="w-full h-auto rounded-md block"
           />

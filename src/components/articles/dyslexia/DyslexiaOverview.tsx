@@ -22,7 +22,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
               loop 
               muted 
               playsInline
-              poster="/images/dyslexia/dyslexia-overview-intro.png"
+              poster="/images/dyslexia/dyslexia-overview-intro.webp"
               className="w-full h-auto object-contain"
               aria-label="word salad with dyslexia in the middle"
             >
@@ -31,7 +31,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
                 type="video/mp4" 
               />
               <img 
-                src="/images/dyslexia/dyslexia-overview-intro.png" 
+                src="/images/dyslexia/dyslexia-overview-intro.webp" 
                 alt="word salad with dyslexia in the middle"
                 className="w-full h-auto object-contain"
               />
@@ -125,7 +125,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
         </h2>
         
         <ImageWithFallback 
-          src="/images/dyslexia/dyslexia-overview-What-IsTAB-lg-circle.png"
+          src="/images/dyslexia/dyslexia-overview-What-IsTAB-lg-circle.webp"
           alt="Key POints to be made about Dyslexia"
           className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
         />
@@ -264,7 +264,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
                 loop 
                 muted 
                 playsInline
-                poster="/images/dyslexia/dyslexia-overview-books-fly.png"
+                poster="/images/dyslexia/dyslexia-overview-books-fly.webp"
                 className="w-full h-auto object-contain"
                 aria-label="Books flying out of a swirl, representing the challenges of reading with dyslexia"
               >
@@ -362,7 +362,7 @@ export function DyslexiaOverview({ setCurrentArticle }: DyslexiaOverviewProps) {
           
           {/* Floated Image - Moved precisely into Tab 3 as requested */}
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-overview-strengths.png" 
+            src="/images/dyslexia/dyslexia-overview-strengths.webp" 
             alt="show a colorful brain with different areas highlighted to represent the creative strengths of many individuals with dyslexia"
             className="w-32 md:w-48 h-auto rounded-lg shadow-sm float-right ml-6 mb-4"
           />

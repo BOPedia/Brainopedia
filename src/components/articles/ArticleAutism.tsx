@@ -82,7 +82,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
         <div className="w-full">
           <InfoBox
             title="Autism Spectrum Disorder"
-            image="/images/autism/autism-main-infobox.png"
+            image="/images/autism/autism-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Autism, ASD' },
               { label: 'Specialty', value: 'Psychiatry, Pediatrics, Neurology' },
@@ -98,7 +98,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
       <div className="space-y-8 mt-20 clear-both">
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback
-            src="/images/autism/autism-main-overview.png"
+            src="/images/autism/autism-main-overview.webp"
             alt="Autism Overview"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -119,7 +119,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
 
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback
-            src="/images/autism/autism-main-symptoms.png"
+            src="/images/autism/autism-main-symptoms.webp"
             alt="Autism Symptoms and Characteristics"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -140,7 +140,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
 
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback
-            src="/images/autism/autism-main-causes.png"
+            src="/images/autism/autism-main-causes.webp"
             alt="Autism Causes and Origins"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -161,7 +161,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
 
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback
-            src="/images/autism/autism-main-diagnosis.png"
+            src="/images/autism/autism-main-diagnosis.webp"
             alt="Autism Testing and Diagnosis"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -182,7 +182,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
 
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback
-            src="/images/autism/autism-main-support.png"
+            src="/images/autism/autism-main-support.webp"
             alt="Autism Support and Management"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -203,7 +203,7 @@ export function ArticleAutism({ setCurrentArticle }: ArticleAutismProps) {
 
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback
-            src="/images/autism/autism-main-living.png"
+            src="/images/autism/autism-main-living.webp"
             alt="Living with Autism"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />

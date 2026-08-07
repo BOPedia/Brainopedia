@@ -35,7 +35,7 @@ export function TouretteCauses({ setCurrentArticle }: TouretteCausesProps) {
       <div className="space-y-8">
         <section className="flow-root">
           <ImageWithFallback 
-            src="/images/tourette/tourette-causes-main.png"
+            src="/images/tourette/tourette-causes-main.webp"
             alt="Brain basal ganglia - neurological basis of Tourette syndrome"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />

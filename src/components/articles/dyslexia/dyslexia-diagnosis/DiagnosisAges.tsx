@@ -65,7 +65,7 @@ export function DiagnosisAges({ setCurrentArticle }: DiagnosisAgesProps) {
               Assessment Across Ages
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-diagnosis-ages-TAB-intro.png"
+              src="/images/dyslexia/dyslexia-diagnosis-ages-TAB-intro.webp"
               alt="Assessment across different age groups"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />
@@ -135,7 +135,7 @@ export function DiagnosisAges({ setCurrentArticle }: DiagnosisAgesProps) {
           <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 clear-both text-center">School-Based vs. Private Evaluation</h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-diagnosis-ages-TAB-compare.png"
+            src="/images/dyslexia/dyslexia-diagnosis-ages-TAB-compare.webp"
             alt="Comparing school and private evaluations"
             className="block mx-auto w-64 max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />
@@ -186,7 +186,7 @@ export function DiagnosisAges({ setCurrentArticle }: DiagnosisAgesProps) {
           <h3 className="text-2xl font-bold mt-8 mb-6 text-[#0c264d] border-b border-gray-200 pb-2 text-center">After Diagnosis</h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-diagnosis-ages-TAB-after.png"
+            src="/images/dyslexia/dyslexia-diagnosis-ages-TAB-after.webp"
             alt="Next steps after diagnosis"
             className="block mx-auto w-full max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />

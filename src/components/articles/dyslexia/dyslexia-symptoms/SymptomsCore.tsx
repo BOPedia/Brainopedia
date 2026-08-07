@@ -65,7 +65,7 @@ export function DyslexiaSymptomsCore({ setCurrentArticle }: SymptomsCoreProps) {
               Core Characteristics
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-symptoms-core-TAB-intro.png"
+              src="/images/dyslexia/dyslexia-symptoms-core-TAB-intro.webp"
               alt="Core characteristics of dyslexia"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />
@@ -133,7 +133,7 @@ export function DyslexiaSymptomsCore({ setCurrentArticle }: SymptomsCoreProps) {
           </h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-symptoms-core-TAB-writing.png"
+            src="/images/dyslexia/dyslexia-symptoms-core-TAB-writing.webp"
             alt="Spelling and writing challenges"
             className="block mx-auto w-64 max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
           />

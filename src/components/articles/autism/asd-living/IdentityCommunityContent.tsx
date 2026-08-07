@@ -28,7 +28,7 @@ export function IdentityCommunityContent({ setCurrentArticle }: IdentityCommunit
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-ICtab-acceptance.png" 
+                    src="/images/autism/autism-living-ICtab-acceptance.webp" 
                     alt="Brain with infinity symbol representing all neurodiversity"
                   />
                 </div>
@@ -54,7 +54,7 @@ export function IdentityCommunityContent({ setCurrentArticle }: IdentityCommunit
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <video 
                     src="/images/autism/autism-living-ICtab-legal-rights-autism.mp4" 
-                    poster="/images/autism/autism-living-ICtab-legal-rights-autism.png"
+                    poster="/images/autism/autism-living-ICtab-legal-rights-autism.webp"
                     autoPlay 
                     loop 
                     muted 

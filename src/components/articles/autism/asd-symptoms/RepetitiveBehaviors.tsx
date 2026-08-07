@@ -28,7 +28,7 @@ export function RepetitiveBehaviors() {
            loop
            muted
            playsInline
-           poster="/images/autism/autism-symptoms-Reptab-pattern.png"
+           poster="/images/autism/autism-symptoms-Reptab-pattern.webp"
            className="w-full h-auto object-contain"
            aria-label="kaleidoscope type video showing repetitive patterns in motion"
          >
@@ -63,7 +63,7 @@ export function RepetitiveBehaviors() {
         {/* GRAPHIC PLACEHOLDER 1 */}
         <div className="mb-6 mt-4">
           <ImageWithFallback
-            src="/images/autism/autism-symptoms-Reptab-movements.png"
+            src="/images/autism/autism-symptoms-Reptab-movements.webp"
             alt="Placeholder for stereotyped movements graphic"
             className="block mx-auto w-40 h-auto rounded-lg shadow-sm border-2 border-[#2abcd4] object-contain mb-3 bg-slate-50"
           />
@@ -120,7 +120,7 @@ export function RepetitiveBehaviors() {
         {/* GRAPHIC PLACEHOLDER 2 */}
         <div className="mb-6 mt-4">
           <ImageWithFallback
-            src="/images/autism/autism-symptoms-Reptab-sameness.png"
+            src="/images/autism/autism-symptoms-Reptab-sameness.webp"
             alt="Placeholder for sameness and routines graphic"
             className="block mx-auto w-40 h-auto rounded-lg shadow-sm border-2 border-[#2abcd4] object-contain mb-3 bg-slate-50"
           />
@@ -159,7 +159,7 @@ export function RepetitiveBehaviors() {
         {/* GRAPHIC PLACEHOLDER 3 */}
         <div className="mb-6 mt-4">
           <ImageWithFallback
-            src="/images/autism/autism-symptoms-Reptab-interests.png"
+            src="/images/autism/autism-symptoms-Reptab-interests.webp"
             alt="Placeholder for fixated interests graphic"
             className="block mx-auto w-40 h-auto rounded-lg shadow-sm border-2 border-[#2abcd4] object-contain mb-3 bg-slate-50"
           />
@@ -198,7 +198,7 @@ export function RepetitiveBehaviors() {
         {/* GRAPHIC PLACEHOLDER 4 */}
         <div className="mb-6 mt-4">
           <ImageWithFallback
-            src="/images/autism/autism-symptoms-Reptab-sensory.png"
+            src="/images/autism/autism-symptoms-Reptab-sensory.webp"
             alt="Placeholder for sensory reactivity graphic"
             className="block mx-auto w-40 h-auto rounded-lg shadow-sm border-2 border-[#2abcd4] object-contain mb-3 bg-slate-50"
           />

@@ -28,7 +28,7 @@ export function DailyLifeContent({ setCurrentArticle }: DailyLifeContentProps) {
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-Dailytab-AAC-device.png" 
+                    src="/images/autism/autism-living-Dailytab-AAC-device.webp" 
                     alt="Graphic representing an AAC device for communication"
                   />
                 </div>
@@ -54,7 +54,7 @@ export function DailyLifeContent({ setCurrentArticle }: DailyLifeContentProps) {
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-Dailytab-comfy-room.png" 
+                    src="/images/autism/autism-living-Dailytab-comfy-room.webp" 
                     alt="Graphic representing a comfortable, sensory-friendly room"
                   />
                 </div>
@@ -79,7 +79,7 @@ export function DailyLifeContent({ setCurrentArticle }: DailyLifeContentProps) {
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-Dailytab-ex-fxn-mngt.png" 
+                    src="/images/autism/autism-living-Dailytab-ex-fxn-mngt.webp" 
                     alt="Graphic representing executive function management"
                   />
                 </div>
@@ -104,7 +104,7 @@ export function DailyLifeContent({ setCurrentArticle }: DailyLifeContentProps) {
               <div className="mx-auto w-40 mb-4">
                 <div className="rounded-lg shadow-sm overflow-hidden bg-white">
                   <ImageWithFallback 
-                    src="/images/autism/autism-living-Dailytab-exhausted-girl.png" 
+                    src="/images/autism/autism-living-Dailytab-exhausted-girl.webp" 
                     alt="Graphic representing an exhausted individual experiencing autistic burnout"
                   />
                 </div>
@@ -134,7 +134,7 @@ export function DailyLifeContent({ setCurrentArticle }: DailyLifeContentProps) {
         {/* Floated Image Container */}
         <div className="float-right ml-6 mb-4 bg-white p-2 rounded-lg shadow-sm border border-[#0A9DC4]/20 w-64 shrink-0">
           <ImageWithFallback 
-            src="/images/autism/autism-living-Dailytab-housing-options.png"
+            src="/images/autism/autism-living-Dailytab-housing-options.webp"
             alt="Various housing options and living arrangements"
             className="w-full h-auto rounded-md block"
           />

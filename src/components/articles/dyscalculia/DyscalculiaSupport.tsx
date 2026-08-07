@@ -41,7 +41,7 @@ export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProp
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Evidence-Based Interventions</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-support-interventions.png"
+            src="/images/dyscalculia-support-interventions.webp"
             alt="Teacher using multi-sensory math instruction with manipulatives and visual aids for dyscalculia support"
             className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
           />
@@ -160,7 +160,7 @@ export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProp
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Assistive Technology</h2>
           
           <ImageWithFallback 
-            src="/images/dyscalculia-support-technology.png"
+            src="/images/dyscalculia-support-technology.webp"
             alt="Digital calculator, educational apps, and assistive technology tools for math support"
             className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
           />

@@ -42,7 +42,7 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
         
  {/* Intro Graphic */}
         <img 
-          src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.png" 
+          src="/images/autism/autism-symptoms-AddChartab-rainbowcircle.webp" 
           alt="Rainbow circle graphic showing additional autistic characteristics"
           className="block mx-auto mb-6 w-48 h-auto rounded-xl shadow-md border-4 border-[#ffd166] object-contain"
         />
@@ -59,7 +59,7 @@ export function AdditionalCharacteristics({ setCurrentArticle }: AdditionalChara
             Before diving into the specific traits below, here is a visual example of how an individual's symptom profile might look. Each slice represents a distinct characteristic category scored on a spectrum.
           </p>
           <ImageWithFallback 
-            src="/images/autism/autism-symptoms-AddChartab-numberswheel.png" 
+            src="/images/autism/autism-symptoms-AddChartab-numberswheel.webp" 
             alt="Symptom profile wheel showing various trait scores"
             className="w-full max-w-md mx-auto mt-4 rounded shadow-sm"
           />

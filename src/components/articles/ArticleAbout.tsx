@@ -20,7 +20,7 @@ export function ArticleAbout() {
         </div>
         <div className="shrink-0 flex justify-center mt-4 md:mt-0">
           <img 
-            src="/images/home-brain-on-book.png" 
+            src="/images/home-brain-on-book.webp" 
             alt="Brainopedia Concept"
             className="w-48 md:w-56 h-auto rounded-2xl shadow-xl rotate-2 hover:rotate-0 transition-transform duration-500"
           />

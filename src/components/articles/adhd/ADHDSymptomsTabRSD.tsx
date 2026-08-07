@@ -37,7 +37,7 @@ export function ADHDSymptomsTabRSD({ setCurrentArticle }: ADHDSymptomsTabRSDProp
           </div>          
         
           <ImageWithFallback 
-            src="/images/adhd/adhd-rsd-red-crossout.png" 
+            src="/images/adhd/adhd-rsd-red-crossout.webp" 
             alt="Red crossout symbol representing rejection sensitive dysphoria" 
             className="w-48 float-right ml-6 mb-4 rounded-lg" 
           />
@@ -94,7 +94,7 @@ export function ADHDSymptomsTabRSD({ setCurrentArticle }: ADHDSymptomsTabRSDProp
           <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center">What RSD Looks Like</h3>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-rsd-heart.png" 
+            src="/images/adhd/adhd-rsd-heart.webp" 
             alt="Heart illustration representing emotional sensitivity in RSD" 
             className="w-48 mx-auto rounded-lg mb-8" 
           />
@@ -170,7 +170,7 @@ export function ADHDSymptomsTabRSD({ setCurrentArticle }: ADHDSymptomsTabRSDProp
           <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Why RSD Sometimes Happens with ADHD</h3>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-rsd-rejected-typewriter.png" 
+            src="/images/adhd/adhd-rsd-rejected-typewriter.webp" 
             alt="Typewriter with rejected text representing why RSD occurs in ADHD" 
             className="w-48 float-right ml-6 mb-4 rounded-lg shadow-sm" 
           />
@@ -251,7 +251,7 @@ export function ADHDSymptomsTabRSD({ setCurrentArticle }: ADHDSymptomsTabRSDProp
           <h3 className="text-[#0c264d] font-bold mb-4 text-xl text-center">Coping Strategies for RSD</h3>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-rsd-artistic-explosion.png" 
+            src="/images/adhd/adhd-rsd-artistic-explosion.webp" 
             alt="Positive self-talk illustration for RSD coping strategies" 
             className="w-48 mx-auto rounded-lg mb-8 shadow-sm" 
           />

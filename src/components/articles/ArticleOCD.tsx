@@ -64,7 +64,7 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
         <div className="w-full">
           <InfoBox
             title="OCD"
-            image="/images/ocd/ocd-main-infobox.png"
+            image="/images/ocd/ocd-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Obsessive-Compulsive Disorder' },
               { label: 'Specialty', value: 'Psychiatry, Psychology, Neurology' },

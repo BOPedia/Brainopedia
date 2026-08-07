@@ -117,7 +117,7 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
               </div>
               
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-support-techtools-TAB-reading.png"
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-reading.webp"
                 alt="tech reading tools"
                 className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
               /> 
@@ -142,7 +142,7 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
               </div>
               
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-support-techtools-TAB-writing.png"
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-writing.webp"
                 alt="tech writing tools"
                 className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
               />
@@ -167,7 +167,7 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
               </div>
               
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-support-techtools-TAB-organize-tools.png"
+                src="/images/dyslexia/dyslexia-support-techtools-TAB-organize-tools.webp"
                 alt="tech organization tools"
                 className="block mx-auto w-full max-w-xl rounded-lg shadow-sm border border-slate-200 bg-white"
               />     
@@ -256,7 +256,7 @@ export function SupportTechnology({ setCurrentArticle }: SupportTechnologyProps)
                    {/* Second Brain Graphic */}
           <div className="max-w-4xl mx-auto mb-12">
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-homesupportTAB-second-brain.png"
+              src="/images/dyslexia/dyslexia-support-homesupportTAB-second-brain.webp"
               alt="Digital Second Brain Systems"
               className="block mx-auto w-full max-w-2xl rounded-lg shadow-sm border border-slate-200 bg-white"
             />

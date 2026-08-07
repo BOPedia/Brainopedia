@@ -65,7 +65,7 @@ export function DyslexiaSymptomsStrengths({ setCurrentArticle }: DyslexiaSymptom
               Strengths & Advantages
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-symptoms-strengths-TAB-intro.png"
+              src="/images/dyslexia/dyslexia-symptoms-strengths-TAB-intro.webp"
               alt="Strengths and advantages of dyslexia"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             />

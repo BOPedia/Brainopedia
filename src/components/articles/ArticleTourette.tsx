@@ -77,7 +77,7 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         </div>
         <div className="w-full">
           <InfoBox title="Tourette Syndrome" 
-          image="/images/tourette/tourette-main-infobox.png"
+          image="/images/tourette/tourette-main-infobox.webp"
           data={[
             { label: 'Other names', value: 'Tourette disorder, TS, Gilles de la Tourette syndrome' },
             { label: 'Specialty', value: 'Neurology, Psychiatry' },
@@ -94,7 +94,7 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         {/* OVERVIEW SECTION */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/tourette/tourette-main-overview.png"
+            src="/images/tourette/tourette-main-overview.webp"
             alt="Overview of Tourette syndrome"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -117,7 +117,7 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         {/* CHARACTERISTICS SECTION */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/tourette/tourette-main-characteristics.png"
+            src="/images/tourette/tourette-main-characteristics.webp"
             alt="Tourette Symptoms and Characteristics"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -140,7 +140,7 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         {/* CAUSES SECTION */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/tourette/tourette-main-causes.png"
+            src="/images/tourette/tourette-main-causes.webp"
             alt="Tourette Causes and Origins"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -163,7 +163,7 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         {/* DIAGNOSIS SECTION */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/tourette/tourette-main-diagnosis.png"
+            src="/images/tourette/tourette-main-diagnosis.webp"
             alt="Tourette Testing and Diagnosis"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -186,7 +186,7 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         {/* SUPPORT SECTION */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/tourette/tourette-main-support.png"
+            src="/images/tourette/tourette-main-support.webp"
             alt="Tourette Support and Management"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -209,7 +209,7 @@ export function ArticleTourette({ setCurrentArticle }: ArticleTouretteProps) {
         {/* LIVING SECTION */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/tourette/tourette-main-living.png"
+            src="/images/tourette/tourette-main-living.webp"
             alt="Living with Tourette Syndrome"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />

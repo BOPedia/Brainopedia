@@ -91,7 +91,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
         <div className="w-full">
           <InfoBox
             title="Developmental Language Disorder"
-            image="/images/dld/dld-main-infobox.png"
+            image="/images/dld/dld-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'DLD, formerly Specific Language Impairment (SLI)' },
               { label: 'Specialty', value: 'Speech-Language Pathology' },
@@ -109,7 +109,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dld/dld-overview-intro.png"
+            src="/images/dld/dld-overview-intro.webp"
             alt="Overview of DLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -133,7 +133,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dld/dld-symptoms-intro.png"
+            src="/images/dld/dld-symptoms-intro.webp"
             alt="Symptoms of DLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -157,7 +157,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dld/dld-causes-intro.png"
+            src="/images/dld/dld-causes-intro.webp"
             alt="Causes of DLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -181,7 +181,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dld/dld-diagnosis-intro.png"
+            src="/images/dld/dld-diagnosis-intro.webp"
             alt="Diagnosing DLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -205,7 +205,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dld/dld-support-intro.png"
+            src="/images/dld/dld-support-intro.webp"
             alt="Support for DLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -229,7 +229,7 @@ export function ArticleDLD({ setCurrentArticle }: ArticleDLDProps) {
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dld/dld-living-intro.png"
+            src="/images/dld/dld-living-intro.webp"
             alt="Living with DLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />

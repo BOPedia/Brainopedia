@@ -81,7 +81,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         <div className="w-full">
           <InfoBox
             title="ADHD"
-            image="/images/adhd/adhd-main-infobox.png"
+            image="/images/adhd/adhd-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Attention deficit disorder (ADD), Hyperkinetic disorder' },
               { label: 'Specialty', value: 'Psychiatry, Pediatrics' },
@@ -98,7 +98,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/adhd/adhd-main-overview.png"
+            src="/images/adhd/adhd-main-overview.webp"
             alt="ADHD Overview"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
@@ -122,7 +122,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/adhd/adhd-main-symptoms.png"
+            src="/images/adhd/adhd-main-symptoms.webp"
             alt="ADHD Symptoms"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
@@ -145,7 +145,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/adhd/adhd-main-causes.png"
+            src="/images/adhd/adhd-main-causes.webp"
             alt="ADHD Causes"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
@@ -168,7 +168,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/adhd/adhd-main-diagnosis.png"
+            src="/images/adhd/adhd-main-diagnosis.webp"
             alt="ADHD Diagnosis"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
@@ -191,7 +191,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/adhd/adhd-main-support.png"
+            src="/images/adhd/adhd-main-support.webp"
             alt="ADHD Support"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />
@@ -214,7 +214,7 @@ export function ArticleADHD({ setCurrentArticle }: ArticleADHDProps) {
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/adhd/adhd-main-living.png"
+            src="/images/adhd/adhd-main-living.webp"
             alt="Living with ADHD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg"
           />

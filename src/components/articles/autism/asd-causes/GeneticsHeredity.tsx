@@ -13,7 +13,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
       </p>
 
       <ImageWithFallback 
-        src="/images/autism/autism-causes-Geneticstab-dna.png" 
+        src="/images/autism/autism-causes-Geneticstab-dna.webp" 
         alt="Genetic representation of autism"
         className="w-full max-w-md mx-auto mb-8 rounded-xl shadow-md border border-gray-200"
       />
@@ -45,7 +45,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
           loop 
           muted 
           playsInline
-          poster="/images/autism/autism-causes-genetics-polygenic.png"
+          poster="/images/autism/autism-causes-genetics-polygenic.webp"
           className="w-full h-auto object-contain rounded-md"
           aria-label="Animation illustrating multiple genes involved in autism"
         >
@@ -55,7 +55,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
           />
           {/* Fallback image for older browsers or failed video loads */}
           <img 
-            src="/images/autism/autism-causes-genetics-polygenic.png" 
+            src="/images/autism/autism-causes-genetics-polygenic.webp" 
             alt="Multiple genes involved in autism"
             className="w-full h-auto object-contain rounded-md"
           />
@@ -77,7 +77,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
           </p>
           
           <ImageWithFallback 
-            src="/images/autism/autism-causes-genetics-soundboard.png"
+            src="/images/autism/autism-causes-genetics-soundboard.webp"
             alt="Light switch versus audio soundboard analogy for genetics"
             className="w-full max-w-md mx-auto mb-5 rounded-lg shadow-sm border border-gray-200"
           />
@@ -121,7 +121,7 @@ export function GeneticsHeredity({ setCurrentArticle }: { setCurrentArticle?: (i
         </p>
 
         <ImageWithFallback 
-          src="/images/autism/autism-causes-DNAhelixGenetics.png" 
+          src="/images/autism/autism-causes-DNAhelixGenetics.webp" 
           alt="DNA Helix illustrating spontaneous mutations"
           className="w-full max-w-sm mx-auto mb-6 rounded-xl shadow-sm"
         />

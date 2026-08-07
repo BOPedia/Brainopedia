@@ -22,7 +22,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Comprehensive Treatment Approaches</h2>
    
           <ImageWithFallback 
-            src="/images/adhd/adhd-support-overview-gray-happy-sad-brain.png"
+            src="/images/adhd/adhd-support-overview-gray-happy-sad-brain.webp"
             alt="ADHD treatment and support overview"
             className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />       
@@ -39,7 +39,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           </p>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-support-overview-charts-running.png"
+            src="/images/adhd/adhd-support-overview-charts-running.webp"
             alt="Treatment approach charts and outcomes"
             className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
@@ -54,7 +54,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           </p>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-support-overview-pills-scattered.png"
+            src="/images/adhd/adhd-support-overview-pills-scattered.webp"
             alt="Overview of medication and treatment options"
             className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
@@ -217,7 +217,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Medication</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-medical-pills-packaged.png"
+            src="/images/adhd/adhd-medical-pills-packaged.webp"
             alt="ADHD medication - packaged pills"
             className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
@@ -323,7 +323,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Behavioral Interventions and Therapy</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-behavioral-family-therapy.png"
+            src="/images/adhd/adhd-behavioral-family-therapy.webp"
             alt="Behavioral therapy and interventions for ADHD"
             className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
@@ -463,7 +463,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Educational Accommodations and Support</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-work-overhead-organized.png"
+            src="/images/adhd/adhd-work-overhead-organized.webp"
             alt="Educational and workplace accommodations for ADHD"
             className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
@@ -581,7 +581,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Lifestyle Modifications</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-support-lifestyle-kids-yoga.png"
+            src="/images/adhd/adhd-support-lifestyle-kids-yoga.webp"
             alt="Kids doing yoga - lifestyle modifications for ADHD"
             className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />
@@ -754,7 +754,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center">Self-Management Strategies and Tools</h2>
           
           <ImageWithFallback 
-            src="/images/adhd/adhd-tools-organizing-at-work.png"
+            src="/images/adhd/adhd-tools-organizing-at-work.webp"
             alt="Self-management tools and apps for ADHD"
             className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
           />

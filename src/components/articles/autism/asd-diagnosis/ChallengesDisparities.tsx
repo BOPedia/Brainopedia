@@ -76,7 +76,7 @@ export function ChallengesDisparities({ setCurrentArticle }: ChallengesDispariti
 
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
-        <ImageWithFallback src="/images/autism/autism-diagnosis-ChallDisptab-genderracial.png" alt="side views of variety of females" 
+        <ImageWithFallback src="/images/autism/autism-diagnosis-ChallDisptab-genderracial.webp" alt="side views of variety of females" 
         /> 
         </div> 
         </div>

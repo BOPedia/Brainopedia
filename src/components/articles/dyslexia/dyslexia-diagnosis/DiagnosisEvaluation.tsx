@@ -65,7 +65,7 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
               Comprehensive Evaluation
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-intro.png"
+              src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-intro.webp"
               alt="Comprehensive dyslexia evaluation process"
               className="block mx-auto w-64 max-w-2xl mb-8 rounded-lg shadow-sm border border-slate-200 bg-white"
             />
@@ -81,7 +81,7 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
             <div className="bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Developmental & Educational History</h4>
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-history.png"
+                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-history.webp"
                 alt="Developmental history assessment"
                 className="w-full h-auto rounded-md border border-gray-200 mb-5"
               />
@@ -102,7 +102,7 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
             <div className="bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Cognitive Assessment</h4>
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-cognitive.png"
+                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-cognitive.webp"
                 alt="Cognitive assessment tools"
                 className="w-full h-auto rounded-md border border-gray-200 mb-5"
               />
@@ -123,7 +123,7 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
             <div className="bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Reading & Academic Achievement</h4>
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-reading.png"
+                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-reading.webp"
                 alt="Reading achievement testing"
                 className="w-full h-auto rounded-md border border-gray-200 mb-5"
               />
@@ -144,7 +144,7 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
             <div className="bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Phonological Processing</h4>
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-phonological.png"
+                src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-phonological.webp"
                 alt="Phonological processing evaluation"
                 className="w-full h-auto rounded-md border border-gray-200 mb-5"
               />
@@ -166,7 +166,7 @@ export function DiagnosisEvaluation({ setCurrentArticle }: DiagnosisEvaluationPr
               <h4 className="font-bold text-[#0c264d] text-xl mb-4 text-center">Oral Language</h4>
               <div className="flex flex-col md:flex-row gap-6 items-center">
                 <ImageWithFallback 
-                  src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-oral.png"
+                  src="/images/dyslexia/dyslexia-diagnosis-eval-TAB-oral.webp"
                   alt="Oral language assessment"
                   className="w-full md:w-1/3 h-auto rounded-md border border-gray-200"
                 />

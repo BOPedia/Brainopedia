@@ -66,7 +66,7 @@ export function Header({ searchQuery, setSearchQuery, toggleSidebar, onSearchSel
           
           <div className="flex items-center gap-2 md:gap-3">
             {/* Logo scales down on mobile */}
-            <img src="/images/brainopedia-logo.png" alt="Brainopedia Logo" className="w-10 h-10 md:w-16 md:h-16 object-contain" />
+            <img src="/images/brainopedia-logo.webp" alt="Brainopedia Logo" className="w-10 h-10 md:w-16 md:h-16 object-contain" />
             <div>
               <h1 className="text-[#f4f4f4] text-xl md:text-2xl font-bold" style={{ fontFamily: 'Avenir, Nunito, sans-serif', fontWeight: 800 }}>Brainopedia</h1>
               {/* Subtitle hidden on mobile, visible on desktop */}

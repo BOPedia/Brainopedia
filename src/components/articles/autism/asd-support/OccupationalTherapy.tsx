@@ -36,7 +36,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
           {/* Introduction (Floated Image) */}
           <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 mb-8 flow-root">
           <ImageWithFallback 
-            src="/images/autism/autism-support-TTtab-OT-intro.png"
+            src="/images/autism/autism-support-TTtab-OT-intro.webp"
             alt="Occupational Therapy Intro"
             className="w-64 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4 shadow-sm"
           />
@@ -55,7 +55,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
           Core Intervention Areas
         </h2>
               <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-OT-core-areas.png"
+          src="/images/autism/autism-support-TTtab-OT-core-areas.webp"
           alt="OT Core Intervention Areas"
           className={responsiveImageClass}
       />
@@ -125,7 +125,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
         </div>
 
       <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-OT-sensory-diet.png"
+          src="/images/autism/autism-support-TTtab-OT-sensory-diet.webp"
           alt="Communication Environment"
           className={responsiveImageClass}
       />
@@ -176,7 +176,7 @@ export function OccupationalTherapy({ setCurrentArticle }: OccupationalTherapyPr
       </div>
 
       <ImageWithFallback 
-          src="/images/autism/autism-support-TTtab-OT-2nd.png"
+          src="/images/autism/autism-support-TTtab-OT-2nd.webp"
           alt="Communication Environment"
           className={responsiveImageClass}
       />

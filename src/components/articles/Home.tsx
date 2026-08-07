@@ -8,7 +8,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
   return (
 <article 
   className="bg-[#f4f4f4] bg-cover bg-center -m-8 p-4 sm:p-8 rounded-lg font-spartan"
-  style={{ backgroundImage: "url('/images/home-beige-background.png')" }}
+  style={{ backgroundImage: "url('/images/home-beige-background.webp')" }}
 >
   <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-2xl sm:text-3xl font-normal text-[#0c264d]">
     Welcome to Brainopedia
@@ -22,7 +22,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
             loop 
             muted 
             playsInline
-            poster="/images/brainopedia-banner.png"
+            poster="/images/brainopedia-banner.webp"
             className="w-full h-auto rounded-xl shadow-lg border border-gray-100 object-cover"
           >
             <source src="/images/brainopedia-banner.mp4" type="video/mp4" />
@@ -52,7 +52,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   Volume I
                 </span>
                 
-                <img src="/images/home-apple-core-neurodev.png" alt="Neural apple" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                <img src="/images/home-apple-core-neurodev.webp" alt="Neural apple" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
                 
                 <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
                   Core Neurodevelopmental
@@ -81,7 +81,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   Volume II
                 </span>
                 
-                <img src="/images/home-learning-diff.png" alt="Gears" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                <img src="/images/home-learning-diff.webp" alt="Gears" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
                 
                 <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
                   Learning Differences & Profiles
@@ -113,7 +113,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   Volume III
                 </span>
                 
-                <img src="/images/home-math-sensory-brain.png" alt="Sensory" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                <img src="/images/home-math-sensory-brain.webp" alt="Sensory" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
                 
                 <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
                   Processing & Sensory
@@ -145,7 +145,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   Volume IV
                 </span>
                 
-                <img src="/images/home-movement-motor.png" alt="Motor" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                <img src="/images/home-movement-motor.webp" alt="Motor" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
                 
                 <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
                   Movement & Motor
@@ -174,7 +174,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   Volume V
                 </span>
                 
-                <img src="/images/home-mental-health-fire-brain-bright.png" alt="Brain" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                <img src="/images/home-mental-health-fire-brain-bright.webp" alt="Brain" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
                 
                 <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
                   Mental Health Crossovers
@@ -206,7 +206,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   Volume VI
                 </span>
                 
-                <img src="/images/home-genetics-or-enviro.png" alt="DNA" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                <img src="/images/home-genetics-or-enviro.webp" alt="DNA" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
                 
                 <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
                   Genetic or Environmental
@@ -238,7 +238,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   Volume VII
                 </span>
                 
-                <img src="/images/home-acquired-brain.png" alt="Injury" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
+                <img src="/images/home-acquired-brain.webp" alt="Injury" className="w-20 sm:w-24 h-auto rounded-lg shadow-sm mb-4" />
                 
                 <h3 className="text-xl sm:text-2xl font-bold text-[#0c264d] mb-2 leading-tight">
                   Acquired Neurodivergence

@@ -14,7 +14,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Brain Development</h2>
         
         <ImageWithFallback 
-          src="/images/autism/autism-causes-Braintab-development.png" 
+          src="/images/autism/autism-causes-Braintab-development.webp" 
           alt="Brain connectivity and neural networks in autism"
           className="w-48 h-auto float-left mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
         />
@@ -62,14 +62,14 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
  
 
         <ImageWithFallback 
-          src="/images/autism/autism-causes-Braintab-brain-structure.png" 
+          src="/images/autism/autism-causes-Braintab-brain-structure.webp" 
           alt="Brain connectivity and neural networks in autism"
           className="w-96 h-auto float-left mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
         />
 
       
        <ImageWithFallback 
-          src="/images/autism/autism-causes-Braintab-fxn-structure.png" 
+          src="/images/autism/autism-causes-Braintab-fxn-structure.webp" 
           alt="Brain connectivity and neural networks in autism"
           className="w-96 h-auto float-right mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
         />
@@ -85,7 +85,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           {/* Item 1: Synapses */}
           <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
             <ImageWithFallback 
-              src="/images/autism/autism-causes-Braintab-synapse.png" 
+              src="/images/autism/autism-causes-Braintab-synapse.webp" 
               alt="Synaptic connections"
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
@@ -100,7 +100,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           {/* Item 2: Neuronal Migration */}
           <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
             <ImageWithFallback 
-              src="/images/autism/autism-causes-Braintab-fetus-brain-firings.png" 
+              src="/images/autism/autism-causes-Braintab-fetus-brain-firings.webp" 
               alt="Neuronal migration during fetal development"
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
@@ -115,7 +115,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           {/* Item 3: E/I Balance */}
           <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
             <ImageWithFallback 
-              src="/images/autism/autism-cause-Braintab-EI.png" 
+              src="/images/autism/autism-cause-Braintab-EI.webp" 
               alt="E/I Balance neurotransmission"
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
@@ -134,7 +134,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           {/* Item 4: Mitochondrial Function */}
           <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
             <ImageWithFallback 
-              src="/images/autism/autism-causes-Braintab-mitochondrial.png" 
+              src="/images/autism/autism-causes-Braintab-mitochondrial.webp" 
               alt="Mitochondrial function and cellular energy"
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
@@ -149,7 +149,7 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           {/* Item 5: Neuroinflammation */}
           <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
             <ImageWithFallback 
-              src="/images/autism/autism-causes-Braintab-neuroinflammation.png" 
+              src="/images/autism/autism-causes-Braintab-neuroinflammation.webp" 
               alt="Neuroinflammation in the brain"
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />

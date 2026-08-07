@@ -78,7 +78,7 @@ export function AfterDiagnosis({ setCurrentArticle }: AfterDiagnosisProps) {
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
-            src="/images/autism/autism-diagnosis-AfterDxtab-GoldInfinity-LightBulb.png" 
+            src="/images/autism/autism-diagnosis-AfterDxtab-GoldInfinity-LightBulb.webp" 
             alt="lightbulb with gold infinity in it symbolizing autism"
           /> 
         </div> 
@@ -149,7 +149,7 @@ export function AfterDiagnosis({ setCurrentArticle }: AfterDiagnosisProps) {
         {/* The Wrapper: Centers the image and restricts its width */} 
         <div className="mx-auto w-48 md:w-64"> 
           <ImageWithFallback 
-            src="/images/autism/autism-diagnosis-AfterDxtab-EducPlan.png" 
+            src="/images/autism/autism-diagnosis-AfterDxtab-EducPlan.webp" 
             alt="kid frustrated by schoolwork" 
           /> 
         </div> 

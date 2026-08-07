@@ -65,7 +65,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
         <div className="w-full">
           <InfoBox
             title="Intellectual Disability"
-            image="/images/id/id-main-infobox.png"
+            image="/images/id/id-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'ID, Intellectual developmental disorder' },
               { label: 'Specialty', value: 'Developmental Medicine, Psychology' },

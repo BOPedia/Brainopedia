@@ -94,7 +94,7 @@ export function SupportSocialEmotional({ setCurrentArticle }: SupportSocialEmoti
               Social-Emotional Well-Being
             </h2>
             <ImageWithFallback 
-              src="/images/dyslexia/dyslexia-support-social-TAB-intro.png"
+              src="/images/dyslexia/dyslexia-support-social-TAB-intro.webp"
               alt="Social and emotional support for dyslexia"
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
             />
@@ -107,7 +107,7 @@ export function SupportSocialEmotional({ setCurrentArticle }: SupportSocialEmoti
           <h3 className="text-2xl font-bold mt-8 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Building Self-Esteem & Resilience</h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-social-TAB-esteem.png"
+            src="/images/dyslexia/dyslexia-support-social-TAB-esteem.webp"
             alt="Building self-esteem and resilience"
             className="w-64 h-auto rounded-md border border-gray-300 shadow-sm float-right ml-6 mb-4"
           />
@@ -133,7 +133,7 @@ export function SupportSocialEmotional({ setCurrentArticle }: SupportSocialEmoti
           <h3 className="text-2xl font-bold mt-10 mb-4 text-[#0c264d] border-b border-gray-200 pb-2 clear-both">Managing Anxiety</h3>
           
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-support-social-TAB-anxiety.png"
+            src="/images/dyslexia/dyslexia-support-social-TAB-anxiety.webp"
             alt="Strategies for managing anxiety"
             className="w-64 h-auto rounded-md border border-gray-300 shadow-sm float-right ml-6 mb-4"
           />
@@ -159,7 +159,7 @@ export function SupportSocialEmotional({ setCurrentArticle }: SupportSocialEmoti
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 items-start">
             <div className="bg-white border-t-4 border-[#0A9DC4] rounded-xl p-4 shadow-sm">
               <ImageWithFallback 
-                src="/images/dyslexia/dyslexia-support-social-TAB-advocacy.png" 
+                src="/images/dyslexia/dyslexia-support-social-TAB-advocacy.webp" 
                 alt="Self-advocacy for individuals with dyslexia" 
                 className="w-full h-auto rounded-md border border-gray-200 block mx-auto" 
               />

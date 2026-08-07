@@ -63,7 +63,7 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
         <div className="w-full">
           <InfoBox
             title="Dyspraxia (Developmental Coordination Disorder)"
-            image="/images/dyspraxia/dyspraxia-main-infobox.png"
+            image="/images/dyspraxia/dyspraxia-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Developmental Coordination Disorder (DCD), Motor Learning Difficulties' },
               { label: 'Specialty', value: 'Occupational therapy, Neurology, Pediatrics' },

@@ -67,8 +67,8 @@ function AppContent(): import("react/jsx-runtime").JSX.Element {
       link.rel = 'icon';
       document.head.appendChild(link);
     }
-    link.type = 'image/png';
-    link.href = '/images/favicon.png';
+    link.type = 'image.webp';
+    link.href = '/images/favicon.webp';
     document.title = 'Brainopedia - Encyclopedia of Neurodivergent Minds';
   }, []);
 

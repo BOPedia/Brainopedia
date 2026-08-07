@@ -25,7 +25,7 @@ export function SafetyContent({ setCurrentArticle }: SafetyContentProps) {
             <div className="rounded-lg shadow-md overflow-hidden bg-white">
               <video 
                 src="/images/autism/autism-support-safetytab-prism.mp4" 
-                poster="/images/autism/autism-support-safetytab-prism.png"
+                poster="/images/autism/autism-support-safetytab-prism.webp"
                 autoPlay 
                 loop 
                 muted 
@@ -123,7 +123,7 @@ export function SafetyContent({ setCurrentArticle }: SafetyContentProps) {
         <div className="text-center w-full mb-10 mt-6"> 
           <div className="mx-auto w-64 rounded-lg shadow-md overflow-hidden"> 
             <ImageWithFallback 
-              src="/images/autism/autism-support-safetytab-3gens.png" 
+              src="/images/autism/autism-support-safetytab-3gens.webp" 
               alt="abstract painting signifyingchildhood, adolescence, and adulthood"
             /> 
           </div> 

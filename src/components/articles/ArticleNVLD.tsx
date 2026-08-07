@@ -91,7 +91,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
         <div className="w-full">
           <InfoBox
             title="Non-Verbal Learning Disability"
-            image="/images/nvld/nvld-main-infobox.png"
+            image="/images/nvld/nvld-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'NVLD, NLD' },
               { label: 'Specialty', value: 'Neuropsychology, Educational Psychology' },
@@ -109,7 +109,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/nvld/nvld-overview-intro.png"
+            src="/images/nvld/nvld-overview-intro.webp"
             alt="Overview of NVLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -133,7 +133,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/nvld/nvld-symptoms-intro.png"
+            src="/images/nvld/nvld-symptoms-intro.webp"
             alt="Symptoms of NVLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -157,7 +157,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/nvld/nvld-causes-intro.png"
+            src="/images/nvld/nvld-causes-intro.webp"
             alt="Causes of NVLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -181,7 +181,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/nvld/nvld-diagnosis-intro.png"
+            src="/images/nvld/nvld-diagnosis-intro.webp"
             alt="Diagnosing NVLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -205,7 +205,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/nvld/nvld-support-intro.png"
+            src="/images/nvld/nvld-support-intro.webp"
             alt="Support for NVLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
@@ -229,7 +229,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/nvld/nvld-living-intro.png"
+            src="/images/nvld/nvld-living-intro.webp"
             alt="Living with NVLD"
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />

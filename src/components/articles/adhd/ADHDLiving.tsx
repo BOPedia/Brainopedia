@@ -30,7 +30,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-overview-pathway.png"
+              src="/images/adhd/adhd-living-overview-pathway.webp"
               alt="Thriving with ADHD - living a full life"
               className={floatedImageClass}
             />
@@ -58,7 +58,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
           </h2>
 
           <ImageWithFallback 
-            src="/images/adhd/adhd-living-overview-strong-arms.png"
+            src="/images/adhd/adhd-living-overview-strong-arms.webp"
             alt="ADHD strengths - resilience and determination"
             className={centeredMediumImageClass}
           />         
@@ -143,7 +143,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 flow-root mb-8">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-routines-checkmark.png"
+              src="/images/adhd/adhd-living-routines-checkmark.webp"
               alt="Daily routines and practical strategies for ADHD"
               className={floatedImageClass}
             />
@@ -175,7 +175,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#10b981] mb-8 flow-root">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-table-calculator-finances.png"
+              src="/images/adhd/adhd-living-table-calculator-finances.webp"
               alt="Financial management tools and strategies"
               className={floatedImageClass}
             />
@@ -232,7 +232,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <div className="bg-[#fff9e6] p-6 rounded-lg shadow-sm border border-[#ffd166]/30 flow-root mb-6">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-relationships-heart-connections.png"
+              src="/images/adhd/adhd-living-relationships-heart-connections.webp"
               alt="Relationships and social life with ADHD"
               className={floatedImageClass}
             />
@@ -270,7 +270,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 flow-root">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-relationships-read-kids-books.png"
+              src="/images/adhd/adhd-living-relationships-read-kids-books.webp"
               alt="Parent reading to children - parenting with ADHD"
               className={floatedImageClass}
             />
@@ -341,7 +341,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#2abcd4] mb-8 flow-root">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-educ-career-paths.png"
+              src="/images/adhd/adhd-living-educ-career-paths.webp"
               alt="Education and career paths with ADHD"
               className={floatedImageClass}
             />
@@ -413,7 +413,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <div className="bg-[#fff9e6] p-6 rounded-lg shadow-sm border border-[#ffd166]/30 flow-root mb-8">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-stigma-four-faces.png"
+              src="/images/adhd/adhd-living-stigma-four-faces.webp"
               alt="Managing stigma and advocating for ADHD awareness"
               className={floatedImageClass}
             />
@@ -449,7 +449,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <div className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20 flow-root">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-stigma-self-esteem.png"
+              src="/images/adhd/adhd-living-stigma-self-esteem.webp"
               alt="Building self-esteem with ADHD"
               className={floatedImageClass}
             />
@@ -524,7 +524,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#10b981] mb-8 flow-root">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-community-hands.png"
+              src="/images/adhd/adhd-living-community-hands.webp"
               alt="Community support and connection - hands together"
               className={floatedImageClass}
             />
@@ -553,7 +553,7 @@ export function ADHDLiving({ setCurrentArticle, initialTab }: ADHDLivingProps) {
         <div className="bg-[#fff9e6] p-6 rounded-lg shadow-sm border border-[#ffd166]/30 flow-root">
           <div className={floatedCardContainer}>
             <ImageWithFallback 
-              src="/images/adhd/adhd-living-future-girl-cheers.png"
+              src="/images/adhd/adhd-living-future-girl-cheers.webp"
               alt="Looking forward with optimism - celebrating ADHD journey"
               className={floatedImageClass}
             />

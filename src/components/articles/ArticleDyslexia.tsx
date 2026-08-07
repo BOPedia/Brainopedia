@@ -82,7 +82,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         <div className="w-full">
           <InfoBox
             title="Dyslexia"
-            image="/images/dyslexia/dyslexia-main-infobox.png"
+            image="/images/dyslexia/dyslexia-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'Reading disorder, specific learning disorder with impairment in reading' },
               { label: 'Specialty', value: 'Educational psychology, Neurology' },
@@ -100,7 +100,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-main-overview.png"
+            src="/images/dyslexia/dyslexia-main-overview.webp"
             alt="Overview of dyslexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -124,7 +124,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-main-symptoms.png"
+            src="/images/dyslexia/dyslexia-main-symptoms.webp"
             alt="Symptoms of dyslexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -148,7 +148,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-main-causes.png"
+            src="/images/dyslexia/dyslexia-main-causes.webp"
             alt="Causes of dyslexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -172,7 +172,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-main-diagnosis.png"
+            src="/images/dyslexia/dyslexia-main-diagnosis.webp"
             alt="Diagnosing dyslexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -196,7 +196,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-main-support.png"
+            src="/images/dyslexia/dyslexia-main-support.webp"
             alt="Support for dyslexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
@@ -220,7 +220,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
           <ImageWithFallback 
-            src="/images/dyslexia/dyslexia-main-living.png"
+            src="/images/dyslexia/dyslexia-main-living.webp"
             alt="Living with dyslexia"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />

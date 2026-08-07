@@ -69,7 +69,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
       <div className="mb-10">
         <h3 className="text-[#0c264d] font-bold mb-4 text-xl">Associated Risks and Broader Impacts of ADHD</h3>
                     <ImageWithFallback 
-                      src="/images/adhd/adhd-support-more-TAB-unmanaged.png"
+                      src="/images/adhd/adhd-support-more-TAB-unmanaged.webp"
                       alt="Structural differences and risk factors in the dyslexic brain"
                       className="block mx-auto w-full max-w-3xl mb-6 rounded-lg shadow-sm border border-slate-200 bg-white"
                     />            
@@ -141,7 +141,7 @@ export function ADHDSymptomsTabMore({ setCurrentArticle }: TabMoreProps) {
       <h3 className="text-[#0c264d] font-bold mb-4 text-xl mt-8">Examining Additional Unofficial Symptoms of ADHD</h3>
       
       <ImageWithFallback 
-        src="/images/adhd/adhd-more-symptoms-wheel.png"
+        src="/images/adhd/adhd-more-symptoms-wheel.webp"
         alt="ADHD symptom wheel showing additional symptoms beyond DSM-5 criteria"
         className="w-full max-w-md mx-auto mb-4 rounded"
       />
