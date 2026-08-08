@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
 import { AlertTriangle, Eye, EarOff, ListX, FolderOpen, BrainCog, Search, Sparkles, CalendarX, Hand, ArrowUpFromLine, Mountain, VolumeX, Zap, MessageSquare, MessageCircle, Hourglass, UserMinus, ChevronDown, ChevronUp } from 'lucide-react';
 
+// Reusable styling variables
+const floatedCardContainer = "float-right ml-6 mb-4 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-64 shrink-0";
+const floatedImageClass = "w-full h-auto rounded-md block";
+
 // --- ACCORDION COMPONENT ---
-// Placed outside the main export function so it doesn't re-render unnecessarily
 const Accordion = ({ title, children }: { title: string, children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
   
@@ -93,8 +96,23 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
         </div>
       </div>
 
+{/* Centered, Larger Video Block */}
+      <div className="block mx-auto w-full max-w-md mb-8 bg-white p-3 rounded-xl shadow-sm border border-gray-200 clear-both">
+        <video 
+          src="/images/adhd/adhd-symptoms-core-symptoms-venn.mp4" 
+          poster="/images/adhd/adhd-symptoms-core-symptoms-venn.webp"
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-auto rounded-lg block"
+          aria-label="video of adhd venn"
+        />
+      </div>
+      
+
       {/* 18 DSM-5 Criteria Section */}
-      <div className="bg-[#f0f9ff] p-6 rounded-lg space-y-6 mt-8">
+      <div className="bg-[#f0f9ff] p-6 rounded-lg space-y-6 mt-8 clear-both">
         <h2 className="text-[#0c264d] font-bold text-2xl mb-2">The 18 DSM-5 Diagnostic Criteria</h2>
         <p className="text-slate-700 mb-6 text-sm">
           Expand the sections below to read the exact clinical criteria used by medical professionals to diagnose ADHD. 
@@ -223,7 +241,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
       </div>
 
       {/* Main Back Button */}
-      <div className="flex justify-end my-8 w-full">
+      <div className="flex justify-end my-8 w-full clear-both">
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
           className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md"
@@ -234,12 +252,13 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      {/* ⚠️ Fixed: Cleaned up the messy fragment and stray divs here */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
         <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
-        
-{/* CITED STUDIES: GREEN */}
+
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-6">
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
@@ -250,7 +269,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
             </p>
           </div>
         </div>
- 
+
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
