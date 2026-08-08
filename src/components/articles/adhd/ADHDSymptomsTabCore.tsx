@@ -87,8 +87,8 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
           for the person's developmental level.
         </p>
         
-        <div className="bg-[#ffe8d6] border-l-4 border-[#0c264d] p-4 rounded">
-          <p className="text-sm">
+        <div className="bg-[#0c264d] font-white border-l-4 border-[#ffd166] p-4 rounded">
+          <p className="text-xs text-yellow-100">
             <strong>Clinical Requirement:</strong> A comprehensive ADHD evaluation should include multiple sources of 
             information (self-report, parent/partner input, school/work records) and rule out other conditions that may 
             present similarly.
@@ -224,8 +224,8 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
         </div>
 
         {/* Bottom Callout */}
-        <div className="bg-[#f0e6ff] border-l-4 border-[#0c264d] p-4 rounded space-y-3 mt-6">
-          <p className="text-sm font-bold text-[#0c264d]">
+        <div className="bg-green-100 border-l-4 border-[#0c264d] p-4 rounded space-y-3 mt-6">
+          <p className="text-sm font-bold text-[#]">
             Important Note: Having some of these symptoms occasionally is normal. ADHD is diagnosed when:
           </p>
           <ul className="text-sm space-y-1 list-disc ml-5 text-slate-800">
