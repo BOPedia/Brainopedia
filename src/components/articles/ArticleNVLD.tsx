@@ -60,16 +60,8 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
   ];
 
   return (
-    <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-            font-weight: 600;
-          }
-        `}
-      </style>
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl font-spartan text-[#0c264d]">
+    <article className="max-w-6xl font-spartan">
+      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl text-[#0c264d] font-normal">
         Non-Verbal Learning Disability (NVLD)
       </h1>
       
@@ -116,7 +108,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            NVLD represents a distinct pattern of brain organization where the right hemisphere functions differently than typical, while left hemisphere functions (like language and verbal reasoning) often exceed typical development. This neurological profile affects approximately 3-4% of the population.<sup>1</sup> While it shares some social perception challenges with autism, NVLD is a distinct condition with its own unique neurological signature.
+            NVLD represents a distinct pattern of brain organization—affecting approximately 3-4% of the population<sup className="text-[#10b981] font-bold ml-0.5">1</sup>—where right hemisphere processing differs while left hemisphere language skills often exceed typical development. Although it shares some social perception challenges with autism, NVLD is a distinctly separate neurological condition.
           </p>
           
           <button
@@ -140,7 +132,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            NVLD presents across three primary domains: visual-spatial (trouble with maps, puzzles, and spatial relationships), motor coordination (fine and gross motor clumsiness), and social perception (difficulty reading facial expressions and non-verbal cues). In stark contrast, individuals usually demonstrate remarkable strengths in vocabulary, verbal memory, and advanced reasoning.
+            NVLD presents across three primary domains: visual-spatial processing (trouble with maps and spatial relationships), motor coordination (clumsiness), and social perception (difficulty reading non-verbal cues). In stark contrast to these challenges, individuals usually demonstrate remarkable strengths in vocabulary, verbal memory, and advanced auditory reasoning.
           </p>
 
           <button
@@ -164,7 +156,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            Research suggests NVLD involves differences in how the right hemisphere processes information, particularly affecting visual-spatial tasks, pattern recognition, and holistic thinking.<sup>2</sup> Brain imaging reveals variations in white matter development and inter-hemispheric communication. While the specific causes aren't fully mapped, it is present from birth and tends to run in families.
+            Research suggests NVLD stems from differences in right hemisphere information processing and white matter development, particularly affecting pattern recognition and holistic thinking.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> While the specific genetic markers are still being mapped, this distinct neurological profile is present from birth and tends to run in families.
           </p>
 
           <button
@@ -188,7 +180,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            Diagnosis requires a comprehensive neuropsychological evaluation. Assessments look for the characteristic pattern: high verbal abilities contrasting sharply with lower visual-spatial and motor skills. It is often identified in elementary school when visual-spatial and social demands increase, though some are not diagnosed until much later.
+            Diagnosis requires a comprehensive neuropsychological evaluation to identify the characteristic pattern of exceptionally high verbal abilities contrasting sharply with lower visual-spatial and motor skills. While often first noticed in elementary school when social and spatial demands increase, many individuals are not formally diagnosed until adulthood.
           </p>
 
           <button
@@ -212,7 +204,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            Effective support builds on verbal strengths while accommodating challenges. Strategies include verbally explaining visual information, breaking complex tasks into sequential steps, and explicitly teaching social rules. Occupational therapy and technology, such as navigation and organizational apps, can also be highly beneficial.
+            Effective support leans heavily on an individual's verbal strengths, utilizing strategies like explicitly narrating visual information and breaking complex tasks into verbal sequential steps. Occupational therapy and assistive technology, such as digital navigation and organizational apps, can also be highly beneficial in managing daily spatial challenges.
           </p>
 
           <button
@@ -236,7 +228,7 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with NVLD</h2>
           
           <p className="mb-4 text-slate-700 leading-relaxed">
-            With appropriate support, individuals with NVLD lead highly successful lives, often excelling in language-heavy careers like writing, law, or counseling. Thriving involves leveraging these exceptional verbal abilities, utilizing compensatory technology for spatial challenges, and developing explicit strategies for social navigation and self-advocacy.
+            With appropriate support, individuals with NVLD lead highly successful lives and frequently excel in language-heavy careers such as writing, law, or counseling. Thriving involves intentionally leveraging these exceptional verbal abilities, utilizing compensatory technology for spatial demands, and developing explicit self-advocacy strategies.
           </p>
 
           <button
@@ -257,9 +249,9 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
       <div className="bg-white bg-opacity-50 p-6 md:p-8 rounded-xl shadow-inner">
         <h3 className="font-bold font-spartan mb-6 text-xl text-[#0c264d]">References</h3>
         
-        {/* CITED STUDIES */}
+        {/* CITED STUDIES: GREEN */}
         <div className="mb-8">
-          <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-4 border-b-2 border-[#10b981] pb-2">
+          <h4 className="font-bold text-sm uppercase tracking-wider text-green-700 mb-4 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
@@ -268,31 +260,16 @@ export function ArticleNVLD({ setCurrentArticle }: ArticleNVLDProps) {
           </div>
         </div>
 
-        {/* BACKGROUND SOURCES */}
+        {/* BACKGROUND SOURCES: CYAN */}
         <div>
-          <h4 className="font-bold text-sm uppercase tracking-wider text-[#2abcd4] mb-4 border-b-2 border-[#2abcd4] pb-2">
+          <h4 className="font-bold text-sm uppercase tracking-wider text-cyan-500 mb-4 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <div className="text-xs space-y-4 text-slate-700 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>Bloom, E., & Heath, N. (2010). "Recognition, expression, and understanding facial expressions of emotion in adolescents with nonverbal and general learning disabilities." <i>Journal of Learning Disabilities</i>, 43(2), 180-192.</p>
-            <p>Cornoldi, C., Rigoni, F., Tressoldi, P. E., & Vio, C. (1999). "Imagery deficits in nonverbal learning disabilities." <i>Journal of Learning Disabilities</i>, 32(1), 48-57.</p>
-            <p>Davis, J. M., & Broitman, J. (2011). "Nonverbal learning disabilities in children: Bridging the gap between science and practice." <i>Springer Science & Business Media</i>.</p>
-            <p>Drummond, C. R., Ahmad, S. A., & Rourke, B. P. (2005). "Rules for the classification of younger children with nonverbal learning disabilities and basic phonological processing disabilities." <i>Archives of Clinical Neuropsychology</i>, 20(2), 171-182.</p>
-            <p>Fine, J. G., Semrud-Clikeman, M., Bledsoe, J. C., & Musielak, K. A. (2013). "A critical review of the literature on NLD as a developmental disorder." <i>Child Neuropsychology</i>, 19(2), 190-223.</p>
-            <p>Forrest, B. J. (2004). "The utility of math difficulties, internalized psychopathology, and visual-spatial deficits to identify children with the nonverbal learning disability syndrome: Evidence for a visual-spatial disability." <i>Child Neuropsychology</i>, 10(2), 129-146.</p>
-            <p>Klin, A., Volkmar, F. R., Sparrow, S. S., et al. (1995). "Validity and neuropsychological characterization of Asperger syndrome: Convergence with nonverbal learning disabilities syndrome." <i>Journal of Child Psychology and Psychiatry</i>, 36(7), 1127-1140.</p>
-            <p>Mamen, M. (2007). <i>Understanding Nonverbal Learning Disabilities: A Common-Sense Guide for Parents and Professionals</i>. Jessica Kingsley Publishers.</p>
-            <p>Palombo, J. (2006). <i>Nonverbal Learning Disabilities: A Clinical Perspective</i>. W. W. Norton & Company.</p>
-            <p>Rourke, B. P., Ahmad, S. A., Collins, D. W., et al. (2002). "Child clinical/pediatric neuropsychology: Some recent advances." <i>Annual Review of Psychology</i>, 53, 309-339.</p>
-            <p>Rourke, B. P., & Tsatsanis, K. D. (2000). "Nonverbal learning disabilities and Asperger syndrome." In A. Klin et al. (Eds.), <i>Asperger Syndrome</i> (pp. 231-253). Guilford Press.</p>
-            <p>Semrud-Clikeman, M., & Glass, K. (2010). "The relation of humor and child development: Social, adaptive, and emotional aspects." <i>Journal of Child Neurology</i>, 25(10), 1248-1260.</p>
-            <p>Semrud-Clikeman, M., & Hynd, G. W. (1990). "Right hemispheric dysfunction in nonverbal learning disabilities: Social, academic, and adaptive functioning in adults and children." <i>Psychological Bulletin</i>, 107(2), 196-209.</p>
-            <p>Stewart, K. (2002). <i>Helping a Child with Nonverbal Learning Disorder or Asperger's Disorder</i>. New Harbinger Publications.</p>
-            <p>Tanguay, P. B. (2002). <i>Nonverbal Learning Disabilities at School: Educating Students with NLD, Asperger Syndrome and Related Conditions</i>. Jessica Kingsley Publishers.</p>
-            <p>Thompson, S. (1997). <i>The Source for Nonverbal Learning Disorders</i>. LinguiSystems.</p>
-            <p>Weintraub, S., & Mesulam, M. M. (1983). "Developmental learning disabilities of the right hemisphere: Emotional, interpersonal, and cognitive components." <i>Archives of Neurology</i>, 40(8), 463-468.</p>
-            <p>Whitney, R. V. (2002). <i>Bridging the Gap: Raising a Child with Nonverbal Learning Disorder</i>. Perigee Books.</p>
-          </div>
+          <ul className="list-none text-xs space-y-4 text-slate-700 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+            <li>Davis, J. M., & Broitman, J. (2011). <i>Nonverbal learning disabilities in children: Bridging the gap between science and practice</i>. Springer Science & Business Media.</li>
+            <li>Fine, J. G., Semrud-Clikeman, M., Bledsoe, J. C., & Musielak, K. A. (2013). "A critical review of the literature on NLD as a developmental disorder." <i>Child Neuropsychology</i>, 19(2), 190-223.</li>
+            <li>Semrud-Clikeman, M., & Hynd, G. W. (1990). "Right hemispheric dysfunction in nonverbal learning disabilities: Social, academic, and adaptive functioning in adults and children." <i>Psychological Bulletin</i>, 107(2), 196-209.</li>
+          </ul>
         </div>
       </div>
     </article>
