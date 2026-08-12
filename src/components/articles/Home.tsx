@@ -94,9 +94,18 @@ export function Home({ setCurrentArticle }: HomeProps) {
                 <div className="w-full border-t border-gray-100 pt-4">
                   <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
                   <div className="flex flex-wrap gap-2 justify-center">
-                    {['dyslexia', 'dyscalculia', 'dysgraphia', 'NVLD', 'DLD', 'hyperlexia', 'giftedness', 'twice-exceptional or 2E'].map(id => (
-                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#ffd166] hover:border-[#ffd166] hover:text-[#0c264d] transition-all font-normal text-slate-700 capitalize">
-                        {id.replace('-', ' ')}
+                    {[
+                      { id: 'dyslexia', label: 'Dyslexia' },
+                      { id: 'dyscalculia', label: 'Dyscalculia' },
+                      { id: 'dysgraphia', label: 'Dysgraphia' },
+                      { id: 'nvld', label: 'NVLD' },
+                      { id: 'dld', label: 'DLD' },
+                      { id: 'hyperlexia', label: 'Hyperlexia' },
+                      { id: 'giftedness', label: 'Giftedness' },
+                      { id: 'twice-exceptional', label: 'Twice-Exceptional or 2E' }
+                    ].map(item => (
+                      <button key={item.id} onClick={() => setCurrentArticle?.(item.id)} className="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#ffd166] hover:border-[#ffd166] hover:text-[#0c264d] transition-all font-normal text-slate-700">
+                        {item.label}
                       </button>
                     ))}
                   </div>
@@ -126,9 +135,15 @@ export function Home({ setCurrentArticle }: HomeProps) {
                 <div className="w-full border-t border-gray-100 pt-4">
                   <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
                   <div className="flex flex-wrap gap-2 justify-center">
-                    {['APD', 'Visual Processing', 'SPD', 'Misophonia', 'Synesthesia'].map(id => (
-                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#0A9DC4] hover:border-[#0A9DC4] hover:text-white transition-all font-normal text-slate-700 capitalize">
-                        {id.replace('-', ' ')}
+                    {[
+                      { id: 'apd', label: 'APD' },
+                      { id: 'visual-processing', label: 'Visual Processing' },
+                      { id: 'spd', label: 'SPD' },
+                      { id: 'misophonia', label: 'Misophonia' },
+                      { id: 'synesthesia', label: 'Synesthesia' }
+                    ].map(item => (
+                      <button key={item.id} onClick={() => setCurrentArticle?.(item.id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#0A9DC4] hover:border-[#0A9DC4] hover:text-white transition-all font-normal text-slate-700">
+                        {item.label}
                       </button>
                     ))}
                   </div>
@@ -187,9 +202,13 @@ export function Home({ setCurrentArticle }: HomeProps) {
                 <div className="w-full border-t border-gray-100 pt-4">
                   <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
                   <div className="flex flex-wrap gap-2 justify-center">
-                    {['OCD', 'Bipolar', 'Schizophrenia'].map(id => (
-                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#2abcd4] hover:border-[#2abcd4] hover:text-white transition-all font-normal text-slate-700 capitalize">
-                        {id}
+                    {[
+                      { id: 'ocd', label: 'OCD' },
+                      { id: 'bipolar', label: 'Bipolar' },
+                      { id: 'schizophrenia', label: 'Schizophrenia' }
+                    ].map(item => (
+                      <button key={item.id} onClick={() => setCurrentArticle?.(item.id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#2abcd4] hover:border-[#2abcd4] hover:text-white transition-all font-normal text-slate-700">
+                        {item.label}
                       </button>
                     ))}
                   </div>
@@ -219,9 +238,14 @@ export function Home({ setCurrentArticle }: HomeProps) {
                 <div className="w-full border-t border-gray-100 pt-4">
                   <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
                   <div className="flex flex-wrap gap-2 justify-center">
-                    {['Down Syndrome', 'Intellectual Disability', 'FASD', 'Epilepsy'].map(id => (
-                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#ffd166] hover:border-[#ffd166] hover:text-[#0c264d] transition-all font-normal text-slate-700 capitalize">
-                        {id.replace('-', ' ')}
+                    {[
+                      { id: 'down-syndrome', label: 'Down Syndrome' },
+                      { id: 'intellectual-disability', label: 'Intellectual Disability' },
+                      { id: 'fasd', label: 'FASD' },
+                      { id: 'epilepsy', label: 'Epilepsy' }
+                    ].map(item => (
+                      <button key={item.id} onClick={() => setCurrentArticle?.(item.id)} className="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#ffd166] hover:border-[#ffd166] hover:text-[#0c264d] transition-all font-normal text-slate-700">
+                        {item.label}
                       </button>
                     ))}
                   </div>
@@ -251,9 +275,13 @@ export function Home({ setCurrentArticle }: HomeProps) {
                 <div className="w-full border-t border-gray-100 pt-4">
                   <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
                   <div className="flex flex-wrap gap-2 justify-center">
-                    {['tbi', 'cte', 'pandas'].map(id => (
-                      <button key={id} onClick={() => setCurrentArticle?.(id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#0A9DC4] hover:border-[#0A9DC4] hover:text-white transition-all font-normal text-slate-700 uppercase">
-                        {id}
+                    {[
+                      { id: 'tbi', label: 'TBI' },
+                      { id: 'cte', label: 'CTE' },
+                      { id: 'pandas', label: 'PANDAS' }
+                    ].map(item => (
+                      <button key={item.id} onClick={() => setCurrentArticle?.(item.id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#0A9DC4] hover:border-[#0A9DC4] hover:text-white transition-all font-normal text-slate-700">
+                        {item.label}
                       </button>
                     ))}
                   </div>
