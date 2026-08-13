@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 // 1. Import from the articles/routes folder
 import { RouteMap } from './articles/routes/routeTypes';
@@ -10,22 +11,174 @@ import { mentalHealthRoutes } from './articles/routes/mentalHealthRoutes';
 import { geneticEnvironmentalRoutes } from './articles/routes/geneticEnvironmentalRoutes';
 import { acquiredNeurodivergenceRoutes } from './articles/routes/acquiredNeurodivergenceRoutes';
 
+// --- THE SEO MASTER DICTIONARY ---
+const seoMap: Record<string, { title: string; description: string }> = {
+  // Core Site Pages
+  'home': { 
+    title: 'Brainopedia | The Neurodivergence Encyclopedia', 
+    description: 'Explore Brainopedia, the definitive digital encyclopedia for neurodevelopmental conditions, learning differences, and cognitive profiles.' 
+  },
+  'about': { 
+    title: 'About Brainopedia | Our Mission', 
+    description: 'Learn about Brainopedia\'s mission to provide comprehensive, neurodivergent-affirming resources and education for individuals, families, and professionals.' 
+  },
+  'donate': { 
+    title: 'Support Brainopedia | Donate Today', 
+    description: 'Help support Brainopedia\'s mission to provide free, accessible, and affirming education about neurodivergence and cognitive profiles by making a donation.' 
+  },
+  'blog': { 
+    title: 'Brainopedia Blog | Neurodiversity Updates', 
+    description: 'Stay informed with the latest research, insights, and stories from the neurodiversity community on the official Brainopedia blog.' 
+  },
+  
+  // Volume I: Core Neurodevelopmental
+  'adhd': { 
+    title: 'ADHD (Attention-Deficit/Hyperactivity) | Brainopedia', 
+    description: 'Discover the symptoms, causes, and neurodivergent-affirming management strategies for ADHD, including impacts on executive function and emotional regulation.' 
+  },
+  'autism': { 
+    title: 'Autism Spectrum (ASD) | Brainopedia', 
+    description: 'Explore the characteristics, sensory processing differences, and neurobiology of Autism Spectrum Disorder from a neurodivergent-affirming perspective.' 
+  },
+
+  // Volume II: Learning Differences & Profiles
+  'dyslexia': { 
+    title: 'Dyslexia | Brainopedia', 
+    description: 'Learn about Dyslexia, a neurological learning difference affecting reading and language processing, along with effective support and management strategies.' 
+  },
+  'dyscalculia': { 
+    title: 'Dyscalculia | Brainopedia', 
+    description: 'Understand Dyscalculia, a specific learning difference affecting mathematical processing and number sense, including diagnostic tools and accommodations.' 
+  },
+  'dysgraphia': { 
+    title: 'Dysgraphia | Brainopedia', 
+    description: 'Explore Dysgraphia, a neurological condition impacting written expression and fine motor skills, along with supportive strategies for school and work.' 
+  },
+  'nvld': { 
+    title: 'Non-Verbal Learning Disability (NVLD) | Brainopedia', 
+    description: 'Discover the symptoms and characteristics of Non-Verbal Learning Disability (NVLD), a unique cognitive profile affecting spatial and social processing.' 
+  },
+  'dld': { 
+    title: 'Developmental Language Disorder (DLD) | Brainopedia', 
+    description: 'Learn about Developmental Language Disorder (DLD), a neurodevelopmental condition affecting how individuals understand and use spoken language.' 
+  },
+  'hyperlexia': { 
+    title: 'Hyperlexia | Brainopedia', 
+    description: 'Understand Hyperlexia, a unique cognitive profile characterized by an intense early fascination with letters, numbers, and advanced reading abilities.' 
+  },
+  'giftedness': { 
+    title: 'Giftedness & Cognitive Profiles | Brainopedia', 
+    description: 'Explore the asynchronous development, emotional intensities, and cognitive characteristics associated with giftedness and exceptional intellectual ability.' 
+  },
+  'twice-exceptional': { 
+    title: 'Twice-Exceptional (2e) | Brainopedia', 
+    description: 'Discover the unique intersection of giftedness and neurodivergence, known as Twice-Exceptional (2e), including tailored support and educational strategies.' 
+  },
+
+  // Volume III: Processing & Sensory
+  'apd': { 
+    title: 'Auditory Processing Disorder (APD) | Brainopedia', 
+    description: 'Learn how Auditory Processing Disorder (APD) affects how the brain interprets sound, along with environmental accommodations and management strategies.' 
+  },
+  'visual-processing': { 
+    title: 'Visual Processing Disorder | Brainopedia', 
+    description: 'Understand Visual Processing Disorder, a condition affecting how the brain interprets visual information, and discover effective support strategies.' 
+  },
+  'spd': { 
+    title: 'Sensory Processing Disorder (SPD) | Brainopedia', 
+    description: 'Explore Sensory Processing Disorder (SPD) and learn how differences in interpreting sensory input can impact daily life, regulation, and behavior.' 
+  },
+  'misophonia': { 
+    title: 'Misophonia | Brainopedia', 
+    description: 'Discover the neurological roots of Misophonia, a condition characterized by intense emotional and physiological reactions to specific trigger sounds.' 
+  },
+  'synesthesia': { 
+    title: 'Synesthesia | Brainopedia', 
+    description: 'Learn about Synesthesia, a lifelong neurological phenomenon where stimulation of one sensory pathway leads to automatic experiences in a second pathway.' 
+  },
+
+  // Volume IV: Movement & Motor
+  'dyspraxia': { 
+    title: 'Dyspraxia (DCD) | Brainopedia', 
+    description: 'Explore the symptoms, causes, and supportive management strategies for Dyspraxia and Developmental Coordination Disorder (DCD).' 
+  },
+  'tourette': { 
+    title: 'Tourette Syndrome | Brainopedia', 
+    description: 'Understand Tourette Syndrome, a neurological condition characterized by involuntary motor and vocal tics, along with affirming support strategies.' 
+  },
+
+  // Volume V: Mental Health Crossovers
+  'ocd': { 
+    title: 'Obsessive-Compulsive Disorder (OCD) | Brainopedia', 
+    description: 'Learn about the characteristics, neural pathways, and affirming support strategies for the Obsessive-Compulsive Disorder (OCD) neurotype.' 
+  },
+  'bipolar': { 
+    title: 'Bipolar Disorder | Brainopedia', 
+    description: 'Explore Bipolar Disorder from a neurodivergent perspective, understanding the neurological basis for natural cycles of varying energy and emotional intensity.' 
+  },
+  'schizophrenia': { 
+    title: 'Schizophrenia | Brainopedia', 
+    description: 'Learn about Schizophrenia, a complex neurological condition affecting perception and thought processes, along with evidence-based management strategies.' 
+  },
+
+  // Volume VI: Genetic or Environmental
+  'down-syndrome': { 
+    title: 'Down Syndrome | Brainopedia', 
+    description: 'Discover the genetic origins, developmental characteristics, and supportive care strategies for individuals living with Down Syndrome.' 
+  },
+  'intellectual-disability': { 
+    title: 'Intellectual Disability | Brainopedia', 
+    description: 'Understand Intellectual Disability (ID), exploring cognitive development, adaptive functioning, and strategies for promoting independence and quality of life.' 
+  },
+  'fasd': { 
+    title: 'Fetal Alcohol Spectrum Disorder (FASD) | Brainopedia', 
+    description: 'Learn about the neurodevelopmental impacts of Fetal Alcohol Spectrum Disorder (FASD), including cognitive characteristics and essential support systems.' 
+  },
+  'epilepsy': { 
+    title: 'Epilepsy & Seizure Disorders | Brainopedia', 
+    description: 'Explore the neurological origins of Epilepsy, different types of seizures, and modern approaches to treatment and daily management.' 
+  },
+
+  // Volume VII: Acquired Neurodivergence
+  'tbi': { 
+    title: 'Traumatic Brain Injury (TBI) | Brainopedia', 
+    description: 'Understand the acute and long-term cognitive, emotional, and physical impacts of Traumatic Brain Injury (TBI) and post-concussion recovery.' 
+  },
+  'cte': { 
+    title: 'Chronic Traumatic Encephalopathy (CTE) | Brainopedia', 
+    description: 'Learn about Chronic Traumatic Encephalopathy (CTE), a progressive brain condition linked to repeated head trauma, its symptoms, and ongoing research.' 
+  },
+  'pandas': { 
+    title: 'PANDAS & PANS | Brainopedia', 
+    description: 'Discover the characteristics of PANDAS and PANS, autoimmune conditions triggered by infections that cause sudden-onset neuropsychiatric symptoms.' 
+  },
+
+  // Custom Deep Dives & Tools
+  'rsd-deep-dive': { 
+    title: 'Rejection Sensitive Dysphoria (RSD) | Brainopedia', 
+    description: 'Take a deep dive into Rejection Sensitive Dysphoria (RSD), exploring its connection to ADHD, emotional regulation, and effective coping strategies.' 
+  },
+  'symptom-wheel-demo': { 
+    title: 'Interactive Symptom Wheel | Brainopedia', 
+    description: 'Visualize complex neurodivergent traits and intersecting cognitive profiles with the interactive Brainopedia Symptom Wheel tool.' 
+  },
+  'project-standards': { 
+    title: 'Project Standards & Guidelines | Brainopedia', 
+    description: 'Review the technical and editorial guidelines used to build and maintain the Brainopedia digital encyclopedia.' 
+  }
+};
+
 // --- THE DELAYED LOADER ---
-// A smart loader that waits 250ms before showing up!
 const DelayedFallback = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // Start a 250ms stopwatch
     const timer = setTimeout(() => setShow(true), 250);
-    // If the page loads before 250ms, cancel the stopwatch
     return () => clearTimeout(timer);
   }, []);
 
-  // Show absolutely nothing for the first fraction of a second
   if (!show) return null; 
 
-  // If we are still waiting, show a clean, subtle spinner
   return (
     <div className="flex justify-center items-center py-20 opacity-0 animate-fadeIn">
       <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#0c264d]"></div>
@@ -36,7 +189,6 @@ const DelayedFallback = () => {
 
 // 2. The Master Map
 const articleMap: RouteMap = {
-  // All 7 Volumes seamlessly combined!
   ...coreNeurodevelopmentalRoutes,
   ...learningDifferencesRoutes,
   ...processingSensoryRoutes,
@@ -45,17 +197,13 @@ const articleMap: RouteMap = {
   ...geneticEnvironmentalRoutes,
   ...acquiredNeurodivergenceRoutes,
 
-  // --- Misc & Site Pages ---
   'home': lazy(() => import('./articles/Home').then(m => ({ default: m.Home }))),
   'symptom-wheel-demo': lazy(() => import('./SymptomWheelDemo').then(m => ({ default: m.SymptomWheelDemo }))),
   'project-standards': lazy(() => import('./articles/ProjectStandards')),
   'about': lazy(() => import('./articles/ArticleAbout').then(m => ({ default: m.ArticleAbout }))),
   'donate': lazy(() => import('./articles/ArticleDonate').then(m => ({ default: m.ArticleDonate }))),
   'blog': lazy(() => import('./articles/ArticleBlog').then(m => ({ default: m.ArticleBlog }))),
-  
-  // --- NEW ROUTE ADDED HERE ---
-  // Ensure the path './articles/ADHDSymptomsTabRSD' matches your actual folder structure
- 'rsd-deep-dive': lazy(() => import('./articles/adhd/ADHDSymptomsTabRSD').then(m => ({ default: m.ADHDSymptomsTabRSD }))),
+  'rsd-deep-dive': lazy(() => import('./articles/adhd/ADHDSymptomsTabRSD').then(m => ({ default: m.ADHDSymptomsTabRSD }))),
 };
 
 interface ArticleContentProps {
@@ -65,6 +213,12 @@ interface ArticleContentProps {
 
 export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentProps) {
   const SelectedComponent = articleMap[articleId];
+  
+  // Look up the SEO data for the current tab, or use a generic fallback
+  const seoData = seoMap[articleId] || { 
+    title: 'Brainopedia | The Neurodivergence Encyclopedia', 
+    description: 'Explore Brainopedia, the definitive digital encyclopedia for neurodevelopmental conditions, learning differences, and cognitive profiles.' 
+  };
 
   // IF THE LINK IS BROKEN OR MISSING
   if (!SelectedComponent) {
@@ -89,11 +243,17 @@ export function ArticleContent({ articleId, setCurrentArticle }: ArticleContentP
 
   // IF THE LINK IS GOOD
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
-      {/* CHANGED: Replaced the hardcoded div with our smart DelayedFallback */}
-      <Suspense fallback={<DelayedFallback />}>
-        <SelectedComponent setCurrentArticle={setCurrentArticle} />
-      </Suspense>
-    </div>
+    <>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+      </Helmet>
+
+      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+        <Suspense fallback={<DelayedFallback />}>
+          <SelectedComponent setCurrentArticle={setCurrentArticle} />
+        </Suspense>
+      </div>
+    </>
   );
 }

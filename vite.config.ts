@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { visualizer } from 'rollup-plugin-visualizer'; // <-- 1. Import the visualizer
 
 export default defineConfig({
   plugins: [
@@ -20,5 +21,19 @@ export default defineConfig({
         lossless: true,
       },
     }),
+    visualizer({ open: true }), // <-- 2. Add the visualizer to your plugins array
   ],
+  // 3. Add the build chunking rules right below your plugins
+build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          icons: ['lucide-react'],
+          // Isolate the massive charting library so it doesn't block mobile loads!
+          charts: ['recharts'] 
+        }
+      }
+    }
+  }
 });

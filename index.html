@@ -2,13 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/neurodivergence-senses-brain.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brainopedia</title>
     
+    <link rel="icon" type="image/svg+xml" href="/neurodivergence-senses-brain.svg" />
+    
+    <!--LCP VIP PASS: Preload the critical Home page images -->
+    <link rel="preload" as="image" href="/images/home-beige-background.webp" />
+    <link rel="preload" as="image" href="/images/brainopedia-banner.webp" fetchpriority="high" />
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Just keeping Poppins for your crisp headers! -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
