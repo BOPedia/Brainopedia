@@ -11,6 +11,7 @@ interface SidebarProps {
 const categories = [
   {
     name: 'Core Neurodevelopmental',
+    bgStyle: 'bg-[#dff3f8] border-[#0A9DC4]/30', // Solid Pale Light Cyan
     articles: [
       { id: 'adhd', label: 'ADHD', icon: Zap },
       { id: 'autism', label: 'Autism or "ASD"', icon: Infinity },
@@ -18,6 +19,7 @@ const categories = [
   },
   {
     name: 'Learning Differences & Profiles',
+    bgStyle: 'bg-white border-white', // Solid White
     articles: [
       { id: 'dyslexia', label: 'Dyslexia', icon: BookOpen },
       { id: 'dyscalculia', label: 'Dyscalculia', icon: Calculator },
@@ -31,6 +33,7 @@ const categories = [
   },
   {
     name: 'Processing & Sensory',
+    bgStyle: 'bg-cyan-50 border-cyan-800/20', // Solid Pale Dark Cyan
     articles: [
       { id: 'apd', label: 'Auditory Processing Disorder or "APD"', icon: Headphones },
       { id: 'visual-processing', label: 'Visual Processing Disorder', icon: ScanEye },
@@ -41,6 +44,7 @@ const categories = [
   },
   {
     name: 'Movement & Motor',
+    bgStyle: 'bg-[#e6e9ef] border-[#0c264d]/20', // Solid Pale Navy
     articles: [
       { id: 'dyspraxia', label: 'Dyspraxia or "DCD"', icon: Focus },
       { id: 'tourette', label: 'Tourette Syndrome', icon: Users },
@@ -48,6 +52,7 @@ const categories = [
   },
   {
     name: 'Mental Health Crossovers',
+    bgStyle: 'bg-[#dff3f8] border-[#0A9DC4]/30', // Solid Pale Light Cyan
     articles: [
       { id: 'ocd', label: 'Obsessive-Compulsive Disorder or "OCD"', icon: RefreshCw },
       { id: 'bipolar', label: 'Bipolar Disorder', icon: Activity },
@@ -56,6 +61,7 @@ const categories = [
   },
   {
     name: 'Genetic or Environmental',
+    bgStyle: 'bg-white border-white', // Solid White
     articles: [
       { id: 'down-syndrome', label: 'Down Syndrome', icon: Dna },
       { id: 'intellectual-disability', label: 'Intellectual Disability', icon: Brain },
@@ -65,6 +71,7 @@ const categories = [
   },
   {
     name: 'Acquired Neurodivergence',
+    bgStyle: 'bg-cyan-50 border-cyan-800/20', // Solid Pale Dark Cyan
     subcategories: [
       {
         name: 'Traumatic Injuries',
@@ -164,13 +171,17 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
               </h2>
               
               {categories.map((category) => (
-                <div key={category.name} className="mb-2">
-                  <button
+                <div 
+                  key={category.name} 
+                  className={`mb-3 rounded-xl p-2 border shadow-sm transition-all ${category.bgStyle}`}
+                >
+<button
                     onClick={() => toggleCategory(category.name)}
-                    className="w-full flex items-center justify-between px-3 py-2 text-base font-bold text-[#0c264d] hover:bg-white/40 rounded-md transition-colors"
+                    className="w-full flex items-center justify-between px-3 py-2 text-base font-bold text-[#0c264d] hover:bg-white/30 rounded-md transition-colors text-left"
+                    style={{ fontFamily: 'Avenir Next, Avenir, sans-serif' }}
                   >
-                    <span>{category.name}</span>
-                    {expandedCategories[category.name] ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
+                    <span className="flex-1 pr-2">{category.name}</span>
+                    {expandedCategories[category.name] ? <ChevronDown className="w-4 h-4 shrink-0" /> : <ChevronRight className="w-4 h-4 shrink-0" />}
                   </button>
                   
                   {expandedCategories[category.name] && (
