@@ -130,7 +130,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <ImageWithFallback 
             src="/images/adhd/adhd-overview-executive-function.webp"
             alt="ADHD Executive Function"
-            className={centeredSmallImageClass}
+            className={floatedImageClass}
           />
           
           <p className="mb-6 text-sm text-gray-700 leading-relaxed text-center">

@@ -139,11 +139,11 @@
  */
 @layer base {
   :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
-    h1 {
+h1 {
       font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Avenir Next", Avenir, sans-serif; /* 👈 The new rule! */
       font-weight: 700;
     }
 
@@ -151,7 +151,7 @@
       font-size: var(--text-xl);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Avenir Next", Avenir, sans-serif;
       font-weight: 700;
     }
 
@@ -159,7 +159,7 @@
       font-size: var(--text-lg);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Avenir Next", Avenir, sans-serif;
       font-weight: 700;
     }
 
@@ -167,7 +167,7 @@
       font-size: var(--text-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Avenir Next", Avenir, sans-serif;
       font-weight: 700;
     }
 
