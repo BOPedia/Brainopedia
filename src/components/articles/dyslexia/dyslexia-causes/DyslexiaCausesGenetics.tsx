@@ -130,19 +130,19 @@ export function DyslexiaCausesGenetics({ setCurrentArticle }: DyslexiaCausesGene
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-gray-300 border-t-4 border-[#0c264d] rounded-xl p-5 shadow-sm">
+            <div className="bg-gray-200 border-t-4 border-[#0c264d] rounded-xl p-5 shadow-sm">
               <strong className="text-[#0c264d] text-lg block mb-2">DYX1C1</strong>
               <p className="text-sm text-slate-700">Heavily involved in neuronal migration during early brain development.</p>
             </div>
-            <div className="bg-gray-300 border-t-4 border-[#ffd166] rounded-xl p-5 shadow-sm">
+            <div className="bg-gray-200 border-t-4 border-[#ffd166] rounded-xl p-5 shadow-sm">
               <strong className="text-[#0c264d] text-lg block mb-2">DCDC2</strong>
               <p className="text-sm text-slate-700">Affects neuronal migration and brain structure; variants are highly associated with reading and spelling outcomes.</p>
             </div>
-            <div className="bg-gray-300 border-t-4 border-[#0A9DC4] rounded-xl p-5 shadow-sm">
+            <div className="bg-gray-200 border-t-4 border-[#0A9DC4] rounded-xl p-5 shadow-sm">
               <strong className="text-[#0c264d] text-lg block mb-2">KIAA0319</strong>
               <p className="text-sm text-slate-700">Plays a critical role in neuronal migration and directly influences brain organization for reading.</p>
             </div>
-            <div className="bg-gray-300 border-t-4 border-[#2abcd4] rounded-xl p-5 shadow-sm">
+            <div className="bg-gray-200 border-t-4 border-[#2abcd4] rounded-xl p-5 shadow-sm">
               <strong className="text-[#0c264d] text-lg block mb-2">ROBO1</strong>
               <p className="text-sm text-slate-700">Involved in axon guidance and overarching brain connectivity.</p>
             </div>
