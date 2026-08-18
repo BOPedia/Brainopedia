@@ -6,7 +6,7 @@
 /* ... your root variables stay exactly the same ... */
 :root {
   --font-size: 19px;
-  --background: #ffffff;
+  --background: #F5E6D3;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
   --card-foreground: oklch(0.145 0 0);
