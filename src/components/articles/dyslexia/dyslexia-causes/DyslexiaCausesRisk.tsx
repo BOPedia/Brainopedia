@@ -85,7 +85,7 @@ export function DyslexiaCausesRisk({ setCurrentArticle }: DyslexiaCausesRiskProp
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             
             {/* Quality of Instruction */}
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+            <div className="bg-[#ffd166]/20 p-6 rounded-xl border border-[#ffd166]/30 shadow-sm flex flex-col items-center text-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#0c264d] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-[#ffd166]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
               </div>
@@ -98,7 +98,7 @@ export function DyslexiaCausesRisk({ setCurrentArticle }: DyslexiaCausesRiskProp
             </div>
 
             {/* Language Environment */}
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+            <div className="bg-[#ffd166]/20 p-6 rounded-xl border border-[#ffd166]/30 shadow-sm flex flex-col items-center text-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#ffd166] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-[#0c264d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
               </div>
@@ -111,7 +111,7 @@ export function DyslexiaCausesRisk({ setCurrentArticle }: DyslexiaCausesRiskProp
             </div>
 
             {/* Language Orthography */}
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+            <div className="bg-[#ffd166]/20 p-6 rounded-xl border border-[#ffd166]/30 shadow-sm flex flex-col items-center text-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#0A9DC4] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
               </div>
@@ -124,7 +124,7 @@ export function DyslexiaCausesRisk({ setCurrentArticle }: DyslexiaCausesRiskProp
             </div>
 
             {/* Prenatal and Perinatal Factors */}
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+            <div className="bg-[#ffd166]/20 p-6 rounded-xl border border-[#ffd166]/30 shadow-sm flex flex-col items-center text-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#2abcd4] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
               </div>
@@ -207,7 +207,7 @@ export function DyslexiaCausesRisk({ setCurrentArticle }: DyslexiaCausesRiskProp
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
             
             {/* Implications */}
-            <div className="bg-white border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-sm flex flex-col">
+            <div className="bg-[#ffd166]/20 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-sm flex flex-col">
               <h3 className="text-xl font-bold mb-4 text-[#0c264d] text-center">Implications for Intervention</h3>
               <p className="text-sm text-slate-700 mb-4 text-center">Understanding dyslexia's causes informs treatment:</p>
               <ul className="space-y-3 text-sm text-slate-700 flex-grow">
@@ -220,7 +220,7 @@ export function DyslexiaCausesRisk({ setCurrentArticle }: DyslexiaCausesRiskProp
             </div>
 
             {/* Research */}
-            <div className="bg-white border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
+            <div className="bg-[#ffd166]/20 border-t-4 border-[#2abcd4] rounded-xl p-6 shadow-sm flex flex-col">
               <h3 className="text-xl font-bold mb-4 text-[#0c264d] text-center">Ongoing Research</h3>
               <p className="text-sm text-slate-700 mb-4 text-center">Dyslexia research continues to rapidly evolve:</p>
               <ul className="space-y-3 text-sm text-slate-700 flex-grow">
@@ -249,7 +249,6 @@ export function DyslexiaCausesRisk({ setCurrentArticle }: DyslexiaCausesRiskProp
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             
-            {/* Empty Cited Studies Section left as a structural placeholder per standard */}
             <div className="mb-6">
               <h4 className="font-bold text-sm uppercase tracking-wider text-[#10b981] mb-3 border-b-2 border-[#10b981] pb-2">
                 Cited Studies & Statistics

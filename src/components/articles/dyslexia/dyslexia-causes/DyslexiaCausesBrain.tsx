@@ -73,7 +73,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
 
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+            <div className="bg-[#ffd166]/20 p-6 rounded-xl border border-[#ffd166]/30 shadow-sm flex flex-col items-center text-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#0c264d] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-[#ffd166]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
               </div>
@@ -81,7 +81,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
               <p className="text-sm text-slate-700 flex-grow">Reduced neural activity is observed in the left-hemisphere reading regions during active reading tasks.</p>
             </div>
             
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+            <div className="bg-[#ffd166]/20 p-6 rounded-xl border border-[#ffd166]/30 shadow-sm flex flex-col items-center text-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#ffd166] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-[#0c264d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
               </div>
@@ -89,7 +89,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
               <p className="text-sm text-slate-700 flex-grow">Decreased activation in inferior frontal and temporo-parietal regions involved in crucial sound-to-letter mapping.</p>
             </div>
             
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+            <div className="bg-[#ffd166]/20 p-6 rounded-xl border border-[#ffd166]/30 shadow-sm flex flex-col items-center text-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#0A9DC4] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
               </div>
@@ -97,7 +97,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
               <p className="text-sm text-slate-700 flex-grow">Reduced activation in the occipito-temporal region responsible for recognizing written words.</p>
             </div>
             
-            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center text-center">
+            <div className="bg-[#ffd166]/20 p-6 rounded-xl border border-[#ffd166]/30 shadow-sm flex flex-col items-center text-center">
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#2abcd4] flex items-center justify-center shadow-sm mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
               </div>
@@ -118,19 +118,19 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
          
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
-            <div className="bg-gray-50 border-l-4 border-[#0c264d] p-5 rounded-r-lg shadow-sm">
+            <div className="bg-[#ffd166]/20 border-l-4 border-[#0c264d] p-5 rounded-r-lg shadow-sm">
               <h4 className="font-bold text-[#0c264d] text-lg mb-1">Gray Matter</h4>
               <p className="text-sm text-slate-700">Differences in cortical thickness and volume in reading-related regions.</p>
             </div>
-            <div className="bg-gray-50 border-l-4 border-[#ffd166] p-5 rounded-r-lg shadow-sm">
+            <div className="bg-[#ffd166]/20 border-l-4 border-[#ffd166] p-5 rounded-r-lg shadow-sm">
               <h4 className="font-bold text-[#0c264d] text-lg mb-1">White Matter</h4>
               <p className="text-sm text-slate-700">Reduced white matter integrity in pathways connecting language and reading areas.</p>
             </div>
-            <div className="bg-gray-50 border-l-4 border-[#0A9DC4] p-5 rounded-r-lg shadow-sm">
+            <div className="bg-[#ffd166]/20 border-l-4 border-[#0A9DC4] p-5 rounded-r-lg shadow-sm">
               <h4 className="font-bold text-[#0c264d] text-lg mb-1">Connectivity</h4>
               <p className="text-sm text-slate-700">Atypical connectivity patterns between brain regions involved in reading.</p>
             </div>
-            <div className="bg-gray-50 border-l-4 border-[#2abcd4] p-5 rounded-r-lg shadow-sm">
+            <div className="bg-[#ffd166]/20 border-l-4 border-[#2abcd4] p-5 rounded-r-lg shadow-sm">
               <h4 className="font-bold text-[#0c264d] text-lg mb-1">Symmetry Differences</h4>
               <p className="text-sm text-slate-700">Less asymmetry typically found in language-related brain regions.</p>
             </div>
@@ -147,19 +147,19 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
           
           <p className="mb-6 text-slate-700 text-center">Early brain development differences may underlie dyslexia:</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-            <div className="bg-white p-5 rounded-lg border-t-4 border-[#0A9DC4] shadow-sm flex items-start gap-3">
+            <div className="bg-[#ffd166]/20 p-5 rounded-lg border-t-4 border-[#0A9DC4] shadow-sm flex items-start gap-3">
                <svg className="w-5 h-5 text-[#0A9DC4] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <span className="text-sm text-slate-700 font-medium">Atypical neuronal migration during fetal development.</span>
             </div>
-            <div className="bg-white p-5 rounded-lg border-t-4 border-[#0A9DC4] shadow-sm flex items-start gap-3">
+            <div className="bg-[#ffd166]/20 p-5 rounded-lg border-t-4 border-[#0A9DC4] shadow-sm flex items-start gap-3">
                <svg className="w-5 h-5 text-[#0A9DC4] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <span className="text-sm text-slate-700 font-medium">Ectopias (clusters of neurons in unusual locations).</span>
             </div>
-            <div className="bg-white p-5 rounded-lg border-t-4 border-[#0A9DC4] shadow-sm flex items-start gap-3">
+            <div className="bg-[#ffd166]/20 p-5 rounded-lg border-t-4 border-[#0A9DC4] shadow-sm flex items-start gap-3">
                <svg className="w-5 h-5 text-[#0A9DC4] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <span className="text-sm text-slate-700 font-medium">Differences in cortical organization and layering.</span>
             </div>
-            <div className="bg-white p-5 rounded-lg border-t-4 border-[#0A9DC4] shadow-sm flex items-start gap-3">
+            <div className="bg-[#ffd166]/20 p-5 rounded-lg border-t-4 border-[#0A9DC4] shadow-sm flex items-start gap-3">
                <svg className="w-5 h-5 text-[#0A9DC4] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <span className="text-sm text-slate-700 font-medium">Altered development of reading-specialized brain circuits.</span>
             </div>
@@ -179,7 +179,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
 
           <div className="flex flex-col gap-6 mb-12">
             {/* Split Card 1 */}
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row overflow-hidden">
+            <div className="bg-[#ffd166]/20 rounded-xl shadow-sm border border-[#ffd166]/30 flex flex-col md:flex-row overflow-hidden">
               <div className="bg-[#0c264d] p-6 md:w-1/3 flex flex-col justify-center items-center text-center">
                 <svg className="w-10 h-10 text-[#ffd166] mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 <h4 className="font-bold text-white text-xl">Core Mechanism</h4>
@@ -207,7 +207,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
             </div>
 
             {/* Split Card 2 */}
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row overflow-hidden">
+            <div className="bg-[#ffd166]/20 rounded-xl shadow-sm border border-[#ffd166]/30 flex flex-col md:flex-row overflow-hidden">
               <div className="bg-[#0A9DC4] p-6 md:w-1/3 flex flex-col justify-center items-center text-center">
                 <svg className="w-10 h-10 text-white mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                 <h4 className="font-bold text-white text-xl">Neural Basis</h4>
@@ -244,7 +244,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            <div className="bg-white border-t-4 border-[#0c264d] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-[#ffd166]/20 border-t-4 border-[#0c264d] rounded-xl p-6 shadow-md flex flex-col">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 mb-4 mx-auto">
                 <svg className="w-6 h-6 text-[#0c264d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
               </div>
@@ -256,7 +256,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
               </ul>
             </div>
 
-            <div className="bg-white border-t-4 border-[#ffd166] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-[#ffd166]/20 border-t-4 border-[#ffd166] rounded-xl p-6 shadow-md flex flex-col">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 mb-4 mx-auto">
                 <svg className="w-6 h-6 text-[#ffd166]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
               </div>
@@ -268,7 +268,7 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
               </ul>
             </div>
 
-            <div className="bg-white border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
+            <div className="bg-[#ffd166]/20 border-t-4 border-[#0A9DC4] rounded-xl p-6 shadow-md flex flex-col">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 mb-4 mx-auto">
                 <svg className="w-6 h-6 text-[#0A9DC4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               </div>
@@ -293,7 +293,6 @@ export function DyslexiaCausesBrain({ setCurrentArticle }: DyslexiaCausesBrainPr
 
           {/* REFERENCES SECTION */}
           <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
-          
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             
