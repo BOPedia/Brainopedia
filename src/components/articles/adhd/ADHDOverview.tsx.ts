@@ -76,15 +76,10 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-[#10b981] font-bold ml-0.5">3</sup>
           </p>
 
-          <video 
-            src="/images/adhd/adhd-overview-venn.mp4" 
-            poster="/images/adhd/adhd-overview-venn.webp"
-            autoPlay 
-            loop 
-            muted 
-            playsInline
+          <ImageWithFallback 
+            src="/images/adhd/adhd-overview-venn.webp"
+            alt="ADHD Three Presentations Venn Diagram"
             className={centeredMediumImageClass}
-            aria-label="ADHD Three Presentations Venn Diagram"
           />
           
           <div className="grid sm:grid-cols-3 gap-4 mt-8">
@@ -263,15 +258,15 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
                 </div>
               </div>
 
-              {/* Column 2: Persistence & Comorbidities (Uniform text sizing & box padding) */}
+              {/* Column 2: Persistence & Comorbidities (Clean, balanced layout with uniform text sizes) */}
               <div className="flex flex-col justify-center gap-3 border-b-2 md:border-b-0 md:border-r-2 border-gray-200 pb-4 md:pb-0 md:pr-4">
-                <div className="bg-[#0c264d] text-white rounded p-3 flex items-center justify-center gap-2">
+                <div className="bg-[#0c264d] text-white rounded p-3.5 grid grid-cols-[auto_1fr] gap-3 items-center shadow-sm">
                   <div className="text-xs font-bold whitespace-nowrap">50-70%</div>
-                  <div className="text-xs text-left leading-tight">of childhood cases persist into adulthood</div>
+                  <div className="text-xs leading-tight">of childhood cases persist into adulthood</div>
                 </div>
-                <div className="bg-[#0c264d] text-white rounded p-3 flex items-center justify-center gap-2">
+                <div className="bg-[#0c264d] text-white rounded p-3.5 grid grid-cols-[auto_1fr] gap-3 items-center shadow-sm">
                   <div className="text-xs font-bold whitespace-nowrap">~70%</div>
-                  <div className="text-xs text-left leading-tight">have ≥1 comorbid mental health condition</div>
+                  <div className="text-xs leading-tight">have ≥1 comorbid mental health condition</div>
                 </div>
               </div>
 
@@ -281,22 +276,22 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
                 <div className="grid grid-cols-2 gap-3">
                   <div>
                     <div className="text-center mb-2 text-xs font-bold text-[#ffd166]">Females: Higher In</div>
-                    <div className="space-y-1">
-                      <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-1.5 text-center text-[11px] leading-tight">
+                    <div className="space-y-1.5">
+                      <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
                         <span className="font-bold text-[#0c264d]">47-50%</span> Anxiety
                       </div>
-                      <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-1.5 text-center text-[11px] leading-tight">
+                      <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
                         <span className="font-bold text-[#0c264d]">19-53%</span> Depression
                       </div>
                     </div>
                   </div>
                   <div>
                     <div className="text-center mb-2 text-xs font-bold text-[#0A9DC4]">Males: Higher In</div>
-                    <div className="space-y-1">
-                      <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-1.5 text-center text-[11px] leading-tight text-gray-700 flex items-center justify-center min-h-[30px]">
+                    <div className="space-y-1.5">
+                      <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs text-gray-700 flex items-center justify-center min-h-[34px]">
                         Substance Use
                       </div>
-                      <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-1.5 text-center text-[11px] leading-tight text-gray-700 flex items-center justify-center min-h-[30px]">
+                      <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs text-gray-700 flex items-center justify-center min-h-[34px]">
                         Schizophrenia
                       </div>
                     </div>
