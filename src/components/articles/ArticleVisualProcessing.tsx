@@ -101,7 +101,7 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           <ImageWithFallback 
             src="/images/vpd/vpd-overview-intro.webp"
             alt="Overview of VPD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
@@ -125,7 +125,7 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           <ImageWithFallback 
             src="/images/vpd/vpd-symptoms-intro.webp"
             alt="Symptoms of VPD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
@@ -149,7 +149,7 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           <ImageWithFallback 
             src="/images/vpd/vpd-causes-intro.webp"
             alt="Causes of VPD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
@@ -173,7 +173,7 @@ export function ArticleVisualProcessing({ setCurrentArticle }: ArticleVisualProc
           <ImageWithFallback 
             src="/images/vpd/vpd-diagnosis-intro.webp"
             alt="Diagnosing VPD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           

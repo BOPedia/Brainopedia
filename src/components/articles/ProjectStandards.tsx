@@ -34,7 +34,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </code>
         </div>
 
-        <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these four patterns for consistency:</p>
+        <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these patterns for consistency:</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
@@ -83,6 +83,14 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <p className="text-xs mb-3 text-gray-600">For diagrams or graphics that need to stretch to 100% of their container's width (overriding the standard max-width).</p>
           <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
             className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+          </code>
+        </div>
+
+        <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6 border-l-4 border-l-[#ffd166]">
+          <h3 className="font-bold text-[#0c264d] text-sm mb-2">7. The Main Page Insert</h3>
+          <p className="text-xs mb-3 text-gray-600">For standard ImageWithFallback graphics on the main neurodivergence overview pages (centers on mobile screens, floats right on desktop layouts).</p>
+          <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
           </code>
         </div>
       </section>

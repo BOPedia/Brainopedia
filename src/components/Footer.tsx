@@ -32,15 +32,7 @@ export function Footer({ setCurrentArticle }: FooterProps) {
             <a href="#" className="text-gray-300 hover:text-[#ffd166] transition-colors">
               Contact
             </a>
-            {setCurrentArticle && (
-              <button 
-                onClick={() => setCurrentArticle('project-standards')}
-                className="text-gray-300 hover:text-[#ffd166] transition-colors text-xs opacity-50 hover:opacity-100"
-                title="View Project Standards (Admin)"
-              >
-                📋
-              </button>
-            )}
+
           </div>
         </div>
         
