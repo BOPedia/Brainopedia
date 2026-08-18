@@ -113,7 +113,7 @@ export function ADHDSymptomsTabCore({ setCurrentArticle }: TabCoreProps) {
 
       {/* 18 DSM-5 Criteria Section */}
       <div className="bg-[#f0f9ff] p-6 rounded-lg space-y-6 mt-8 clear-both">
-        <h2 className="text-[#0c264d] font-bold text-2xl mb-2">The 18 DSM-5 Diagnostic Criteria</h2>
+        <h2 className="text-[#0c264d] font-bold text-2xl mb-2">The DSM-5 Diagnostic Framework: 18 Criteria, 3 Presentations</h2>
         <p className="text-slate-700 mb-6 text-sm">
           Expand the sections below to read the exact clinical criteria used by medical professionals to diagnose ADHD. 
           For a deeper dive into what these symptoms look like in daily life, explore the specific tabs above.

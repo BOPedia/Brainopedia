@@ -132,12 +132,13 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             functions are controlled primarily by the prefrontal cortex of the brain.
           </p>
 
-          <ImageWithFallback 
+          <ImageWithFallback
             src="/images/adhd/adhd-overview-executive-function.webp"
             alt="ADHD Executive Function"
-            className={floatedImageClass}
-          />
-          
+            className={largeCenteredImageClass}
+          /> 
+
+
           <p className="mb-6 text-sm text-gray-700 leading-relaxed text-center">
             People with ADHD often struggle with several key executive functions:
           </p>
