@@ -14,7 +14,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         <h1 className="text-4xl text-[#0c264d] font-normal mb-2">
           Brainopedia Project Standards & Design System
         </h1>
-        <p className="text-sm text-gray-500 font-bold uppercase tracking-widest">Last Updated: July 2026</p>
+        <p className="text-sm text-gray-500 font-bold uppercase tracking-widest">Last Updated: August 2026</p>
         <p className="mt-4 text-[#0c264d]">
           The definitive technical and editorial manual for the Brainopedia digital encyclopedia.
         </p>
@@ -151,6 +151,10 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
           <CheckCircle className="text-[#2abcd4]" /> REFERENCE SECTION CODE
         </h2>
+
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4 text-sm text-gray-800">
+          <strong>Mandatory Layout Rule:</strong> References must <strong>NOT</strong> be contained within a box, card, or styled background container. They sit flush on the page. Always use a <code className="bg-white px-1 rounded text-xs break-words">clear-both</code> div directly before the References header to ensure no floated images overlap.
+        </div>
         
         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4 text-sm text-gray-800">
           <strong>Mandatory Header Styling:</strong> Reference sub-headers must always include the subtle bottom border line using the exact classes: <code className="bg-white px-1 rounded text-xs break-words">border-b border-green-700 border-opacity-10 pb-1</code> (or cyan for Background Sources).
@@ -158,7 +162,10 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
         <div className="bg-red-100 border-4 border-red-600 p-6 rounded-xl">
           <pre className="bg-white p-4 rounded text-xs overflow-x-auto border border-red-200">
-{`<h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+{`{/* CLEAR FLOATS BEFORE REFERENCES */}
+<div className="clear-both"></div>
+
+<h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
 
 {/* CITED STUDIES: GREEN */}
 <div className="mb-6">
