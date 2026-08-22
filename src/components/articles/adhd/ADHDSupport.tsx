@@ -176,7 +176,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* References Section */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <div className="clear-both"></div>
         
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -282,7 +282,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* References Section */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <div className="clear-both"></div>
         
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -408,7 +408,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* References Section */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <div className="clear-both"></div>
         
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -542,7 +542,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* References Section */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <div className="clear-both"></div>
         
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -700,7 +700,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Lifestyle Tab References */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <div className="clear-both"></div>
         
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
@@ -988,7 +988,7 @@ export function ADHDSupport({ setCurrentArticle, initialTab }: ADHDSupportProps)
         </div>
 
         {/* Self-Management Tab References */}
-        <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+        <div className="clear-both"></div>
         
         <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner clear-both">
           <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>

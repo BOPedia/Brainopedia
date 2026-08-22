@@ -185,7 +185,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
           </div>
 
           {/* References for Tab 1 */}
-          <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+          <div className="clear-both"></div>
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             <div className="mb-6">
@@ -370,7 +370,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
           </div>  
 
           {/* References for Tab 2 */}
-          <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+          <div className="clear-both"></div>
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             <div className="mb-6">
@@ -499,7 +499,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
           </div>
 
           {/* References for Tab 3 */}
-          <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+          <div className="clear-both"></div>
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             <div className="mb-6">
@@ -613,7 +613,7 @@ export function DyslexiaLiving({ setCurrentArticle, initialTab }: DyslexiaLiving
           </div>
 
           {/* References for Tab 4 */}
-          <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+          <div className="clear-both"></div>
           <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
             <h3 className="font-bold font-spartan mb-5 text-xl text-[#0c264d]">References</h3>
             <div className="mb-6">

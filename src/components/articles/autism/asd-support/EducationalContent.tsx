@@ -218,10 +218,10 @@ export function EducationalContent({ setCurrentArticle }: EducationalContentProp
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+      <div className="clear-both"></div>
 
-      <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner">
-        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
+      <div className="clear-both mt-16 font-spartan">
+        <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
         
         {/* CITED STUDIES: GREEN */}
         <div className="mb-6">

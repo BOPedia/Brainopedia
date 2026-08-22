@@ -49,7 +49,7 @@ export function TouretteDiagnosis({ setCurrentArticle }: TouretteDiagnosisProps)
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8 clear-both" />
+      <div className="clear-both"></div>
       
       <div className="bg-white bg-opacity-50 p-6 rounded-lg shadow-inner mb-10 font-spartan">
         <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>

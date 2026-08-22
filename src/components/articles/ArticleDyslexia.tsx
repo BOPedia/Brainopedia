@@ -68,11 +68,8 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         {/* Left column - Intro paragraph and Quick Links stacked */}
         <div className="space-y-6">
-          <p className="text-slate-700 leading-relaxed">
-            <strong className="text-[#0c264d]">Dyslexia</strong> is a specific learning difference that primarily affects reading and language 
-            processing. It is characterized by difficulties with accurate and/or fluent word recognition, poor 
-            spelling, and decoding abilities. These difficulties typically result from a deficit in the phonological 
-            component of language that is unexpected in relation to other cognitive abilities and the provision of effective classroom instruction.
+          <p className="text-sm text-slate-700 leading-relaxed">
+            <strong className="text-[#0c264d]">Dyslexia</strong> is a specific learning difference that primarily affects reading and language processing, characterized by difficulties with accurate word recognition, decoding, and spelling. These challenges typically stem from unexpected deficits in the phonological component of language, completely unrelated to a person's overall cognitive abilities or intellect.
           </p>
           
           <TableOfContents sections={sections} subtitle="QUICK LINKS" variant="navy" />
@@ -106,8 +103,8 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            Dyslexia is widely recognized as the most common specific learning difference, representing 80-90% of all those with learning disabilities, and affecting up to 20% of the population to some degree.<sup className="text-[#10b981] font-bold ml-0.5">1</sup> It is a neurologically based condition that occurs across all intelligence levels and is entirely unrelated to a person's overall cognitive capacity. Individuals with dyslexia often excel in areas requiring broad, big-picture thinking, 3D spatial reasoning, and creative problem-solving, making this neurotype a unique mix of distinct challenges and remarkable cognitive strengths.
+          <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+            Dyslexia is widely recognized as the most common specific learning difference, representing 80-90% of all those with learning disabilities and affecting up to 20% of the population.<sup className="text-green-600 font-bold ml-0.5">1</sup> Because individuals with dyslexia often excel in areas requiring broad, big-picture thinking and 3D spatial reasoning, this neurotype is a unique mix of distinct challenges and remarkable cognitive strengths.
           </p>
           
           <button
@@ -130,8 +127,8 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            The core characteristics of dyslexia revolve around the mechanics of language. Symptoms typically manifest as persistent challenges with phonological awareness (manipulating the sounds of language), rapid automatized naming, and working memory.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> In practical terms, this translates to labored reading, frequent spelling errors, mixing up the order of letters (like 'b' and 'd'), and difficulty retrieving specific words during conversation. The severity of these symptoms exists on a spectrum and can change as academic reading demands increase.
+          <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+            Symptoms typically manifest as persistent challenges with phonological awareness, rapid automatized naming, and working memory, which can cause labored reading and frequent spelling errors.<sup className="text-green-600 font-bold ml-0.5">2</sup> The severity of these characteristics exists on a spectrum and often fluctuates as academic reading and language demands increase over time.
           </p>
 
           <button
@@ -154,8 +151,8 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            Dyslexia is highly heritable; studies indicate a genetic component with a heritability estimate between 40% and 60%.<sup className="text-[#10b981] font-bold ml-0.5">3</sup> Brain imaging research has consistently shown that dyslexic brains process written language differently, often displaying underactivation in the left posterior temporal systems used for highly automated reading, and overactivation in right-hemisphere systems as the brain attempts to compensate.<sup className="text-[#10b981] font-bold ml-0.5">4</sup> This confirms that dyslexia is a physical, neurological difference, not a result of poor teaching or lack of effort.
+          <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+            Dyslexia is highly heritable, with studies indicating a strong genetic component and a heritability estimate between 40% and 60%.<sup className="text-green-600 font-bold ml-0.5">3</sup> Brain imaging confirms this is a physical, neurological difference, showing that dyslexic brains process written language differently by relying on distinct activation patterns in the right hemisphere to compensate for reading tasks.<sup className="text-green-600 font-bold ml-0.5">4</sup>
           </p>
 
           <button
@@ -178,8 +175,8 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            A reliable diagnosis requires a comprehensive psychoeducational evaluation administered by a qualified psychologist, neuropsychologist, or specialized educational diagnostician. This testing typically assesses cognitive processing, phonological memory, reading fluency, and spelling accuracy. It is crucial to rule out other variables such as vision or hearing impairments, and to secure official diagnoses to access necessary educational accommodations.
+          <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+            A reliable diagnosis requires a comprehensive psychoeducational evaluation—administered by a qualified psychologist or educational diagnostician—to assess cognitive processing, phonological memory, and reading fluency. Securing this official diagnosis is crucial for ruling out other variables like vision impairments and ensuring the individual can access necessary educational accommodations.
           </p>
 
           <button
@@ -202,8 +199,8 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            The gold standard for dyslexia intervention is Structured Literacy, which involves explicit, systematic, and cumulative instruction in phonics and morphology (e.g., the Orton-Gillingham approach).<sup className="text-[#10b981] font-bold ml-0.5">5</sup> Alongside direct instruction, environmental accommodations are essential. Providing extra time on exams, removing penalties for spelling errors on unedited work, and utilizing text-to-speech or audiobooks allows dyslexic individuals to demonstrate their true intellect without being bottlenecked by decoding struggles.
+          <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+            The gold standard for dyslexia intervention is Structured Literacy, which involves explicit, systematic, and cumulative instruction in phonics and morphology.<sup className="text-green-600 font-bold ml-0.5">5</sup> Alongside this direct instruction, environmental accommodations like text-to-speech tools and extra exam time allow dyslexic individuals to demonstrate their true intellect without being bottlenecked by decoding struggles.
           </p>
 
           <button
@@ -226,8 +223,8 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           />
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyslexia</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
-            Because dyslexia is a lifelong neurodivergence, thriving involves embracing a strengths-based identity and developing strong self-advocacy skills. Dyslexic individuals are highly overrepresented in fields like engineering, architecture, arts, and entrepreneurship, highlighting the immense value of their unique spatial and interconnected thinking patterns. With proper technological tools and supportive environments, the dyslexic mind is a profound asset.
+          <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+            Because dyslexia is a lifelong neurodivergence, thriving involves embracing a strengths-based identity and developing strong self-advocacy skills. Dyslexic individuals are highly overrepresented in fields like engineering, architecture, and entrepreneurship, highlighting the immense value of their unique spatial and interconnected thinking patterns.
           </p>
 
           <button
@@ -242,38 +239,38 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
         </section>
       </div>
 
-      {/* REFERENCES SECTION */}
-      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-10 clear-both" />
+{/* ===== REFERENCES SECTION ===== */}
       
-      <div className="bg-white bg-opacity-50 p-6 md:p-8 rounded-xl shadow-inner">
-        <h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
-        
-        {/* CITED STUDIES: GREEN */}
-        <div className="mb-6">
-          <h4 className="text-sm uppercase tracking-wider text-[#10b981] font-bold mb-3 border-b border-[#10b981] border-opacity-20 pb-1">
-            Cited Studies & Statistics
-          </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Shaywitz, S. E. (1998). "Dyslexia." <em>New England Journal of Medicine</em>. https://doi.org/10.1056/NEJM199801293380507</p>
-            <p>2. Norton, E. S., Beach, S. D., & Gabrieli, J. D. (2015). "Neurobiology of dyslexia." <em>Current Opinion in Neurobiology</em>. https://doi.org/10.1016/j.conb.2014.09.007</p>
-            <p>3. Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <em>The Lancet</em>. https://doi.org/10.1016/S0140-6736(12)60198-6</p>
-            <p>4. Shaywitz, B. A., Shaywitz, S. E., Pugh, K. R., et al. (2002). "Disruption of system for reading in dyslexic children." <em>Biological Psychiatry</em>. https://doi.org/10.1016/S0006-3223(02)01365-3</p>
-            <p>5. Moats, L. C. (2020). "Speech to print: Language essentials for teachers." <em>Paul H. Brookes Publishing Co</em>.</p>
-          </div>
-        </div>
-
-        {/* BACKGROUND SOURCES: CYAN */}
-        <div>
-          <h4 className="text-sm uppercase tracking-wider text-[#2abcd4] font-bold mb-3 border-b border-[#2abcd4] border-opacity-20 pb-1">
-            Background Sources
-          </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Eide, B. L., & Eide, F. F. (2011). The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain. Hudson Street Press.</li>
-            <li>International Dyslexia Association. (2002). Definition of Dyslexia. https://dyslexiaida.org/definition-of-dyslexia/</li>
-            <li>Wolf, M. (2007). Proust and the Squid: The Story and Science of the Reading Brain. Harper Perennial.</li>
-          </ul>
+      {/* CLEAR FLOATS AND ADD SPACING BEFORE REFERENCES */}
+      <div className="clear-both mt-16 font-spartan">
+        <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
+      
+      {/* CITED STUDIES: GREEN */}
+      <div className="mb-6">
+        <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+          Cited Studies & Statistics
+        </h4>
+        <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+          <p>1. Shaywitz, S. E. (1998). "Dyslexia." <i>New England Journal of Medicine</i>. https://doi.org/10.1056/NEJM199801293380507</p>
+          <p>2. Norton, E. S., Beach, S. D., & Gabrieli, J. D. (2015). "Neurobiology of dyslexia." <i>Current Opinion in Neurobiology</i>. https://doi.org/10.1016/j.conb.2014.09.007</p>
+          <p>3. Peterson, R. L., & Pennington, B. F. (2015). "Developmental dyslexia." <i>The Lancet</i>. https://doi.org/10.1016/S0140-6736(12)60198-6</p>
+          <p>4. Shaywitz, B. A., Shaywitz, S. E., Pugh, K. R., et al. (2002). "Disruption of system for reading in dyslexic children." <i>Biological Psychiatry</i>. https://doi.org/10.1016/S0006-3223(02)01365-3</p>
+          <p>5. Moats, L. C. (2020). "Speech to print: Language essentials for teachers." <i>Paul H. Brookes Publishing Co</i>.</p>
         </div>
       </div>
+
+      {/* BACKGROUND SOURCES: CYAN */}
+      <div>
+        <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+          Background Sources
+        </h4>
+        <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+          <li>Eide, B. L., & Eide, F. F. (2011). <i>The Dyslexic Advantage: Unlocking the Hidden Potential of the Dyslexic Brain</i>. Hudson Street Press.</li>
+          <li>International Dyslexia Association. (2002). "Definition of Dyslexia." https://dyslexiaida.org/definition-of-dyslexia/</li>
+          <li>Wolf, M. (2007). <i>Proust and the Squid: The Story and Science of the Reading Brain</i>. Harper Perennial.</li>
+        </ul>
+      </div>
+      
     </article>
   );
 }
