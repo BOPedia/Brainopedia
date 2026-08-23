@@ -97,13 +97,13 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
         
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           <ImageWithFallback 
             src="/images/dyspraxia/dyspraxia-overview-intro.webp"
             alt="Overview of Dyspraxia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
           <p className="mb-4 text-slate-700 leading-relaxed">
             Affecting approximately 5-6% of children, dyspraxia is a lifelong neurological condition that impairs the brain's ability to plan, sequence, and execute physical movements.<sup className="text-[#10b981] font-bold ml-0.5">1</sup> While it frequently co-occurs with other neurodivergent profiles like ADHD or dyslexia, it represents a distinct diagnosis that impacts fine and gross motor coordination, speech, and spatial organization.
           </p>
@@ -121,13 +121,13 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
 
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           <ImageWithFallback 
             src="/images/dyspraxia/dyspraxia-symptoms-intro.webp"
             alt="Symptoms of Dyspraxia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
-          
           <p className="mb-4 text-slate-700 leading-relaxed">
             Individuals with dyspraxia typically experience significant challenges with motor coordination, manifesting as poor balance, an awkward gait, and intense difficulty with fine motor tasks like handwriting or tying shoelaces. Beyond physical movement, this neurological difference often affects cognitive and perceptual skills, leading to challenges with short-term memory, time management, and following multi-step instructions.
           </p>
@@ -145,13 +145,13 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
 
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
-          <ImageWithFallback 
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
+           <ImageWithFallback 
             src="/images/dyspraxia/dyspraxia-causes-intro.webp"
             alt="Causes of Dyspraxia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />         
           <p className="mb-4 text-slate-700 leading-relaxed">
             Brain imaging studies have revealed that dyspraxia stems from neurological differences in how the motor cortex, cerebellum, and basal ganglia process the information required for movement planning and coordination.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> Although the precise genetic markers are still being investigated, this lifelong condition is present from birth and reflects a fundamental disruption in the neural pathways that govern motor control systems.
           </p>
@@ -169,13 +169,13 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
 
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           <ImageWithFallback 
             src="/images/dyspraxia/dyspraxia-diagnosis-intro.webp"
             alt="Diagnosing Dyspraxia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
-          
           <p className="mb-4 text-slate-700 leading-relaxed">
             Diagnosis requires a comprehensive evaluation by specialized healthcare professionals, such as occupational therapists or developmental pediatricians, to assess both fine and gross motor skills. This multidisciplinary assessment explicitly rules out other medical conditions or intellectual disabilities, confirming that the motor coordination difficulties significantly interfere with daily activities and academic performance.
           </p>
@@ -193,13 +193,13 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
 
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           <ImageWithFallback 
             src="/images/dyspraxia/dyspraxia-support-intro.webp"
             alt="Support for Dyspraxia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
-          
           <p className="mb-4 text-slate-700 leading-relaxed">
             Effective support relies heavily on targeted occupational and physical therapy to improve motor skills, balance, and coordination through task-specific training. Individuals also benefit significantly from practical environmental accommodations, such as utilizing speech-to-text software, modifying physical education activities, and implementing visual schedules to support organizational challenges.
           </p>
@@ -217,13 +217,13 @@ export function ArticleDyspraxia({ setCurrentArticle }: ArticleDyspraxiaProps) {
 
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyspraxia</h2>
           <ImageWithFallback 
             src="/images/dyspraxia/dyspraxia-living-intro.webp"
             alt="Living with Dyspraxia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Dyspraxia</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          /> 
           <p className="mb-4 text-slate-700 leading-relaxed">
             With self-understanding and appropriate accommodations, individuals with dyspraxia successfully navigate their environments and frequently excel in fields that leverage their strong verbal skills, creativity, and strategic thinking. Long-term thriving involves mastering self-advocacy, utilizing compensatory technologies to reduce motor fatigue, and building confidence through personalized daily living strategies.
           </p>

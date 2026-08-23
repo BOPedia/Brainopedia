@@ -67,7 +67,7 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div className="space-y-6">
-          <p className="text-slate-700 leading-relaxed">
+          <p className="text-slate-700 leading-relaxed text-sm">
             <strong className="text-[#0c264d]">Bipolar disorder</strong> is a neurological condition characterized by significant shifts 
             in mood, energy, and activity levels. Increasingly viewed through a neurodivergent lens, bipolar 
             disorder represents a distinct pattern of energy cycles, creativity, and emotional intensity rooted 
@@ -98,14 +98,15 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
         
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
+          
           <ImageWithFallback 
             src="/images/bipolar/bipolar-overview-intro.webp"
             alt="Overview of Bipolar Disorder"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             Bipolar disorder affects approximately 2.8% of adults in the United States, representing a distinct neurotype characterized by profound shifts in mood, energy, and activity levels.<sup className="text-[#10b981] font-bold ml-0.5">1</sup> Rather than simply being viewed as a mood deficit, the neurodivergent perspective recognizes these cyclical variations as a fundamental difference in brain chemistry that often brings periods of exceptional creativity alongside significant regulatory challenges.
           </p>
           
@@ -122,14 +123,15 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
 
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
+          
           <ImageWithFallback 
             src="/images/bipolar/bipolar-symptoms-intro.webp"
             alt="Symptoms of Bipolar Disorder"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             Individuals with bipolar disorder experience distinct cycles between depressive episodes of low energy and manic or hypomanic periods marked by elevated mood, racing thoughts, and highly intensive productivity. While these natural cycles can foster deep emotional sensitivity and innovative thinking, the unpredictability of these extreme mood shifts often requires careful management to prevent impulsivity and severe sleep disruption.
           </p>
 
@@ -146,14 +148,15 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
 
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
+          
           <ImageWithFallback 
             src="/images/bipolar/bipolar-causes-intro.webp"
             alt="Causes of Bipolar Disorder"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             Brain imaging studies demonstrate that bipolar disorder involves structural and functional differences in the brain circuits responsible for emotion regulation, reward processing, and circadian rhythms.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> While environmental factors and trauma can trigger episodes, the condition is rooted in a strong genetic vulnerability that alters how the brain's dopamine and serotonin neurotransmitter systems operate.
           </p>
 
@@ -170,14 +173,15 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
 
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
+          
           <ImageWithFallback 
             src="/images/bipolar/bipolar-diagnosis-intro.webp"
             alt="Diagnosing Bipolar Disorder"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             Clinical diagnosis requires a comprehensive evaluation by mental health professionals to identify a historical pattern of mood episodes, specifically distinguishing between Bipolar I (full manic episodes) and Bipolar II (hypomanic and major depressive episodes). Because the condition is characterized by cycles that must be observed over time, accurate diagnosis often requires extensive mood tracking and careful screening to rule out overlapping neurodivergent profiles like ADHD.
           </p>
 
@@ -194,14 +198,15 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
 
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
+          
           <ImageWithFallback 
             src="/images/bipolar/bipolar-support-intro.webp"
             alt="Support for Bipolar Disorder"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             A neurodivergent-affirming approach to management balances symptom stability with self-acceptance, typically utilizing a combination of mood-stabilizing medications and targeted therapies like Cognitive-Behavioral Therapy (CBT). Because bipolar brains are highly sensitive to circadian rhythm disruptions, implementing rigorous lifestyle practices—especially maintaining a strict sleep schedule and managing environmental stress—is absolutely critical for long-term stability.
           </p>
 
@@ -218,14 +223,15 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
 
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Bipolar Disorder</h2>
+          
           <ImageWithFallback 
             src="/images/bipolar/bipolar-living-intro.webp"
             alt="Living with Bipolar Disorder"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Bipolar Disorder</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             With dedicated treatment and strong self-awareness, individuals with bipolar disorder successfully navigate their natural energy cycles to lead highly fulfilling lives and excel in their careers. Long-term thriving involves diligently tracking mood triggers, leveraging the intense focus of hypomanic periods strategically, and viewing the condition as a unique neurological rhythm rather than a personal failing.
           </p>
 
@@ -242,8 +248,6 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <div className="clear-both"></div>
-      
       <div className="clear-both mt-16 font-spartan">
         <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
         

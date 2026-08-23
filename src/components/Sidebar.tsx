@@ -11,7 +11,8 @@ interface SidebarProps {
 const categories = [
   {
     name: 'Core Neurodevelopmental',
-    bgStyle: 'bg-[#dff3f8] border-[#0A9DC4]/30', // Solid Pale Light Cyan
+    // Lightened version of Dark Cyan (#0A9DC4)
+    bgStyle: 'bg-sky-100 border-sky-200 text-[#0c264d]', 
     articles: [
       { id: 'adhd', label: 'ADHD', icon: Zap },
       { id: 'autism', label: 'Autism or "ASD"', icon: Infinity },
@@ -19,7 +20,8 @@ const categories = [
   },
   {
     name: 'Learning Differences & Profiles',
-    bgStyle: 'bg-white border-white', // Solid White
+    // Lightened version of White/Neutral
+    bgStyle: 'bg-[#f4f4f4] border-slate-200 text-[#0c264d]', 
     articles: [
       { id: 'dyslexia', label: 'Dyslexia', icon: BookOpen },
       { id: 'dyscalculia', label: 'Dyscalculia', icon: Calculator },
@@ -33,7 +35,8 @@ const categories = [
   },
   {
     name: 'Processing & Sensory',
-    bgStyle: 'bg-cyan-50 border-cyan-800/20', // Solid Pale Dark Cyan
+    // Lightened version of Navy (#0c264d)
+    bgStyle: 'bg-blue-100 border-blue-200 text-[#0c264d]', 
     articles: [
       { id: 'apd', label: 'Auditory Processing Disorder or "APD"', icon: Headphones },
       { id: 'visual-processing', label: 'Visual Processing Disorder', icon: ScanEye },
@@ -44,7 +47,8 @@ const categories = [
   },
   {
     name: 'Movement & Motor',
-    bgStyle: 'bg-[#e6e9ef] border-[#0c264d]/20', // Solid Pale Navy
+    // Lightened version of Bright Green (#10b981)
+    bgStyle: 'bg-emerald-100 border-emerald-200 text-[#0c264d]', 
     articles: [
       { id: 'dyspraxia', label: 'Dyspraxia or "DCD"', icon: Focus },
       { id: 'tourette', label: 'Tourette Syndrome', icon: Users },
@@ -52,7 +56,8 @@ const categories = [
   },
   {
     name: 'Mental Health Crossovers',
-    bgStyle: 'bg-[#dff3f8] border-[#0A9DC4]/30', // Solid Pale Light Cyan
+    // Lightened version of Accent Cyan (#2abcd4)
+    bgStyle: 'bg-cyan-100 border-cyan-200 text-[#0c264d]', 
     articles: [
       { id: 'ocd', label: 'Obsessive-Compulsive Disorder or "OCD"', icon: RefreshCw },
       { id: 'bipolar', label: 'Bipolar Disorder', icon: Activity },
@@ -61,7 +66,8 @@ const categories = [
   },
   {
     name: 'Genetic or Environmental',
-    bgStyle: 'bg-white border-white', // Solid White
+    // Lightened version of Bright Gold (#ffcc00)
+    bgStyle: 'bg-yellow-100 border-yellow-200 text-[#0c264d]', 
     articles: [
       { id: 'down-syndrome', label: 'Down Syndrome', icon: Dna },
       { id: 'intellectual-disability', label: 'Intellectual Disability', icon: Brain },
@@ -71,7 +77,8 @@ const categories = [
   },
   {
     name: 'Acquired Neurodivergence',
-    bgStyle: 'bg-cyan-50 border-cyan-800/20', // Solid Pale Dark Cyan
+    // Solid Light Blue Background (#f0f9ff)
+    bgStyle: 'bg-[#f0f9ff] border-blue-100 text-[#0c264d]', 
     subcategories: [
       {
         name: 'Traumatic Injuries',
@@ -175,7 +182,7 @@ export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSideba
                   key={category.name} 
                   className={`mb-3 rounded-xl p-2 border shadow-sm transition-all ${category.bgStyle}`}
                 >
-<button
+                  <button
                     onClick={() => toggleCategory(category.name)}
                     className="w-full flex items-center justify-between px-3 py-2 text-base font-bold text-[#0c264d] hover:bg-white/30 rounded-md transition-colors text-left"
                     style={{ fontFamily: 'Avenir Next, Avenir, sans-serif' }}

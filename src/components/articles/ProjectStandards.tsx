@@ -90,7 +90,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <h3 className="font-bold text-[#0c264d] text-sm mb-2">7. The Main Page Insert</h3>
           <p className="text-xs mb-3 text-gray-600">For standard ImageWithFallback graphics on the main neurodivergence overview pages (centers on mobile screens, floats right on desktop layouts).</p>
           <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
-            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 rounded-lg shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           </code>
         </div>
       </section>
@@ -132,7 +132,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <h3 className="text-white font-bold mb-2 text-sm">The "Naked" Superscript Standard</h3>
           <p className="text-xs text-gray-400 mb-3">All inline citations must be flush with the text, using strictly this class string:</p>
           <code className="block bg-black p-3 rounded text-xs whitespace-nowrap">
-            {`Statistics show 10%<sup className="text-green-600 font-bold ml-0.5">1</sup>`}
+            {`Statistics show 10%<sup className="text-[#10b981] font-bold ml-0.5">1</sup>`}
           </code>
         </div>
 
@@ -153,7 +153,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         </h2>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4 text-sm text-gray-800">
-          <strong>Mandatory Layout Rule:</strong> References must <strong>NOT</strong> be contained within a box, card, or styled background container. They sit flush on the page. Always use a <code className="bg-white px-1 rounded text-xs break-words">clear-both</code> div directly before the References header to ensure no floated images overlap.
+          <strong>Mandatory Layout Rule:</strong> References must <strong>NOT</strong> be contained within a box, card, or styled background container. They sit flush on the page. Always use <code className="bg-white px-1 rounded text-xs break-words">{`<div className="clear-both mt-16 font-spartan">`}</code> as the main wrapper to clear floated images and provide exactly 64px of top margin spacing.
         </div>
         
         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4 text-sm text-gray-800">
@@ -162,31 +162,31 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
         <div className="bg-red-100 border-4 border-red-600 p-6 rounded-xl">
           <pre className="bg-white p-4 rounded text-xs overflow-x-auto border border-red-200">
-{`{/* CLEAR FLOATS BEFORE REFERENCES */}
-<div className="clear-both"></div>
-
-<h3 className="font-bold mb-5 text-xl font-spartan text-[#0c264d]">References</h3>
-
-{/* CITED STUDIES: GREEN */}
-<div className="mb-6">
-  <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
-    Cited Studies & Statistics
-  </h4>
-  {/* NOTE: Zero text indent rule applied to paragraphs */}
-  <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-    <p>1. Author. (Year). "Title." <em>Journal</em>. https://doi.org/10.xxxx/xxxxx</p>
+{`{/* ===== REFERENCES SECTION ===== */}
+<div className="clear-both mt-16 font-spartan">
+  <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
+  
+  {/* CITED STUDIES: GREEN */}
+  <div className="mb-6">
+    <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+      Cited Studies & Statistics
+    </h4>
+    {/* NOTE: Zero text indent rule applied to paragraphs */}
+    <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+      <p>1. Author. (Year). "Title." <i>Journal</i>. https://doi.org/10.xxxx/xxxxx</p>
+    </div>
   </div>
-</div>
-
-{/* BACKGROUND SOURCES: CYAN */}
-<div>
-  <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
-    Background Sources
-  </h4>
-  {/* NOTE: Zero text indent rule applied to lists */}
-  <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-    <li>Source Book/Manual (NO BULLET POINTS, NO NUMBERS, NO INDENTATION)</li>
-  </ul>
+  
+  {/* BACKGROUND SOURCES: CYAN */}
+  <div>
+    <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+      Background Sources
+    </h4>
+    {/* NOTE: Zero text indent rule applied to lists */}
+    <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+      <li>Source Book/Manual (NO BULLET POINTS, NO NUMBERS, NO INDENTATION)</li>
+    </ul>
+  </div>
 </div>`}
           </pre>
         </div>
@@ -201,6 +201,13 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">Strengths-Based Approach:</h3>
           <p className="text-sm text-gray-700">
             All content, definitions, and articles must be presented through a strengths-based model. We prioritize highlighting character-driven excellence, capabilities, and holistic understanding, rather than relying strictly on deficit-based clinical language.
+          </p>
+        </div>
+
+        <div className="bg-white border-2 border-[#2abcd4] p-5 rounded-xl shadow-sm mt-6">
+          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">The Two-Sentence Rule:</h3>
+          <p className="text-sm text-gray-700">
+            To maintain highly scannable, digestible content, every main article section (Overview, Symptoms, Causes, Diagnosis, Support, Living) must strictly be condensed into <strong>one single paragraph containing exactly two sentences</strong>. Avoid massive walls of text or dense medical jargon.
           </p>
         </div>
       </section>

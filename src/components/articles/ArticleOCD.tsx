@@ -67,7 +67,7 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div className="space-y-6">
-          <p className="text-slate-700 leading-relaxed">
+          <p className="text-slate-700 leading-relaxed text-sm">
             <strong className="text-[#0c264d]">Obsessive-compulsive disorder (OCD)</strong> is a neurological condition characterized by 
             persistent, intrusive thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) 
             performed to reduce anxiety. Increasingly understood through a neurodivergent lens, OCD represents 
@@ -98,14 +98,15 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
         
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
+          
           <ImageWithFallback 
             src="/images/ocd/ocd-overview-intro.webp"
             alt="Overview of OCD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             Affecting approximately 2-3% of the population, OCD is increasingly recognized as a distinct neurotype rather than simply an anxiety disorder.<sup className="text-[#10b981] font-bold ml-0.5">1</sup> The OCD brain fundamentally processes threat, certainty, and completion differently, creating neurological "loops" of thought and behavior that manifest in various presentations such as contamination fears or "Pure-O" (primarily obsessional) symptoms.
           </p>
           
@@ -122,14 +123,15 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
 
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
+          
           <ImageWithFallback 
             src="/images/ocd/ocd-symptoms-intro.webp"
             alt="Symptoms of OCD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             OCD is primarily characterized by obsessions—intrusive, unwanted thoughts or images that cause significant distress—followed by compulsions, which are the repetitive physical or mental acts performed in an attempt to neutralize that anxiety. While these compulsions provide temporary relief, they ultimately reinforce the obsessive cycle, trapping the individual in a highly distressing, time-consuming loop of doubt and behavioral checking.
           </p>
 
@@ -146,14 +148,15 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
 
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
+          
           <ImageWithFallback 
             src="/images/ocd/ocd-causes-intro.webp"
             alt="Causes of OCD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             Brain imaging studies reveal that OCD originates from structural and functional differences within the cortico-striato-thalamo-cortical (CSTC) circuit, particularly in regions responsible for error detection and behavioral inhibition.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> These neurological differences, combined with altered serotonin and dopamine systems, cause the brain's "warning system" to misfire, making it incredibly difficult to discard intrusive thoughts or feel a sense of completion.
           </p>
 
@@ -170,14 +173,15 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
 
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
+          
           <ImageWithFallback 
             src="/images/ocd/ocd-diagnosis-intro.webp"
             alt="Diagnosing OCD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             OCD is clinically diagnosed by mental health professionals through detailed clinical interviews and standardized assessment tools like the Yale-Brown Obsessive Compulsive Scale (Y-BOCS). A formal diagnosis requires that the obsessions and compulsions consume significant time (typically an hour or more per day) and cause substantial distress or impairment in daily functioning, rather than simply being a preference for neatness or order.
           </p>
 
@@ -194,14 +198,15 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
 
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
+          
           <ImageWithFallback 
             src="/images/ocd/ocd-support-intro.webp"
             alt="Support for OCD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             A neurodivergent-affirming approach to OCD combines self-acceptance with the gold-standard treatment: Exposure and Response Prevention (ERP) therapy, which involves gradually facing feared situations while actively preventing the compulsive response. This structured therapy is often highly successful when paired with Acceptance and Commitment Therapy (ACT) to help individuals tolerate uncertainty, and potentially SSRI medications to help regulate the underlying neurotransmitter systems.
           </p>
 
@@ -218,14 +223,15 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
 
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with OCD</h2>
+          
           <ImageWithFallback 
             src="/images/ocd/ocd-living-intro.webp"
             alt="Living with OCD"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with OCD</h2>
           
-          <p className="mb-4 text-slate-700 leading-relaxed">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
             With evidence-based treatment and self-understanding, individuals successfully manage this chronic neurotype, thriving in their careers and relationships even as symptoms naturally wax and wane over time. Living well involves untangling one's identity from intrusive thoughts, practicing deep self-compassion, and recognizing the unique strengths—such as high empathy, attention to detail, and conscientiousness—that often accompany the OCD brain.
           </p>
 
@@ -242,8 +248,6 @@ export function ArticleOCD({ setCurrentArticle }: ArticleOCDProps) {
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
-      <div className="clear-both"></div>
-      
       <div className="clear-both mt-16 font-spartan">
         <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
         

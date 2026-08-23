@@ -270,6 +270,8 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <li>Wolf, M. (2007). <i>Proust and the Squid: The Story and Science of the Reading Brain</i>. Harper Perennial.</li>
         </ul>
       </div>
+
+      </div>
       
     </article>
   );
