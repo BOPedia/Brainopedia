@@ -97,13 +97,13 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
         
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
-          <ImageWithFallback 
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
+              <ImageWithFallback 
             src="/images/synesthesia/synesthesia-overview-intro.webp"
             alt="Overview of Synesthesia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />      
           <p className="mb-4 text-slate-700 leading-relaxed">
             Synesthesia is a lifelong neurological phenomenon where stimulation of one sensory or cognitive pathway leads to involuntary, automatic experiences in a second pathway. It is estimated to occur in about 2-4% of the population, though this number may be higher since many individuals do not realize their dual-sensory experiences are unusual.<sup className="text-[#10b981] font-bold ml-0.5">1</sup>
           </p>
@@ -121,13 +121,13 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
 
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           <ImageWithFallback 
             src="/images/synesthesia/synesthesia-symptoms-intro.webp"
             alt="Symptoms of Synesthesia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />    
           <p className="mb-4 text-slate-700 leading-relaxed">
             The condition manifests in numerous forms, such as grapheme-color synesthesia where letters appear inherently colored, or chromesthesia where sounds evoke vivid visual colors. These unique associations remain highly consistent and stable throughout a person's entire life, occurring automatically without any conscious effort.
           </p>
@@ -145,13 +145,13 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
 
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+ 
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           <ImageWithFallback 
             src="/images/synesthesia/synesthesia-causes-intro.webp"
             alt="Causes of Synesthesia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />   
           <p className="mb-4 text-slate-700 leading-relaxed">
             Brain imaging studies reveal that synesthesia results from enhanced structural connectivity and cross-activation between brain regions that are typically separate in neurotypical individuals.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> While the exact genetic markers are still being mapped, the trait has a strong familial link and reflects a fundamental difference in how neural pathways prune and develop during infancy.
           </p>
@@ -169,13 +169,13 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
 
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           <ImageWithFallback 
             src="/images/synesthesia/synesthesia-diagnosis-intro.webp"
             alt="Diagnosing Synesthesia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />       
           <p className="mb-4 text-slate-700 leading-relaxed">
             Because it relies heavily on internal perception, diagnosis involves detailed clinical questionnaires and rigorous consistency testing to verify that a person's sensory associations remain perfectly stable over time. This specialized assessment easily distinguishes true synesthesia from active imagination, hallucinations, or other sensory processing differences.
           </p>
@@ -193,13 +193,13 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
 
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
-          <ImageWithFallback 
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
+           <ImageWithFallback 
             src="/images/synesthesia/synesthesia-support-intro.webp"
             alt="Support for Synesthesia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />         
           <p className="mb-4 text-slate-700 leading-relaxed">
             Synesthesia is not considered a disorder requiring treatment, but rather a unique perceptual gift that often enhances memory, creativity, and problem-solving abilities. Support focuses primarily on education, helping individuals manage occasional sensory overload in highly stimulating environments, and connecting them with broader synesthete communities.
           </p>
@@ -217,13 +217,13 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
 
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Synesthesia</h2>
           <ImageWithFallback 
             src="/images/synesthesia/synesthesia-living-intro.webp"
             alt="Living with Synesthesia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Synesthesia</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />     
           <p className="mb-4 text-slate-700 leading-relaxed">
             Many individuals with synesthesia leverage their rich, multi-sensory perspective to excel in creative fields, the arts, and mathematics. Thriving involves embracing these enhanced perceptual experiences as a core part of their identity while advocating for quiet spaces when intersecting sensory inputs become too overwhelming.
           </p>

@@ -99,13 +99,13 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
         
         {/* SECTION: OVERVIEW */}
         <section id="overview" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           <ImageWithFallback 
             src="/images/misophonia/misophonia-overview-intro.webp"
             alt="Overview of Misophonia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
-          
           <p className="mb-4 text-slate-700 leading-relaxed">
             Misophonia is estimated to affect approximately 6-20% of the population to some degree, typically beginning in late childhood and worsening over time without intervention.<sup className="text-[#10b981] font-bold ml-0.5">1</sup> Unlike general noise sensitivity (hyperacusis), misophonia involves involuntary emotional and physiological reactions triggered by specific sounds—usually eating, breathing, or repetitive noises—regardless of their volume.
           </p>
@@ -123,13 +123,13 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
 
         {/* SECTION: CHARACTERISTICS */}
         <section id="characteristics" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           <ImageWithFallback 
             src="/images/misophonia/misophonia-symptoms-intro.webp"
             alt="Symptoms of Misophonia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />    
           <p className="mb-4 text-slate-700 leading-relaxed">
             When exposed to trigger sounds, individuals experience immediate, involuntary emotional distress—ranging from intense rage to panic—alongside physical "fight-or-flight" symptoms like a racing heart and muscle tension. Because these triggers are often everyday human noises, it frequently leads to severe avoidance of social situations, family meals, and shared workspaces.
           </p>
@@ -147,13 +147,13 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
 
         {/* SECTION: CAUSES */}
         <section id="causes" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           <ImageWithFallback 
             src="/images/misophonia/misophonia-causes-intro.webp"
             alt="Causes of Misophonia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />       
           <p className="mb-4 text-slate-700 leading-relaxed">
             Brain imaging studies have revealed that misophonia stems from atypical connectivity and hyperactivation within the anterior insular cortex, effectively short-circuiting the brain's auditory processing centers directly into its emotional regulation networks.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> While researchers are still mapping the specific genetic markers, it is increasingly understood as a distinct neurobiological difference in sound filtering rather than a psychological disorder.
           </p>
@@ -171,13 +171,13 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
 
         {/* SECTION: DIAGNOSIS */}
         <section id="diagnosis" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           <ImageWithFallback 
             src="/images/misophonia/misophonia-diagnosis-intro.webp"
             alt="Diagnosing Misophonia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
-          />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
-          
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+          />          
           <p className="mb-4 text-slate-700 leading-relaxed">
             Because misophonia is not yet officially listed in standard diagnostic manuals like the DSM-5, formal diagnosis requires careful evaluation by specialized audiologists or psychologists. The assessment process typically involves detailed clinical interviews, audiological testing to rule out other hearing conditions, and the use of specific screening tools like the Misophonia Questionnaire (MQ).
           </p>
@@ -195,13 +195,13 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
 
         {/* SECTION: SUPPORT */}
         <section id="support" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           <ImageWithFallback 
             src="/images/misophonia/misophonia-support-intro.webp"
             alt="Support for Misophonia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
-          
           <p className="mb-4 text-slate-700 leading-relaxed">
             While there is no "cure," individuals often find significant relief through therapeutic approaches like tailored Cognitive Behavioral Therapy (CBT) and specific emotion regulation skills training. Management relies heavily on environmental adaptations, such as utilizing noise-canceling headphones, implementing strategic seating, and communicating clear boundaries with family and colleagues.
           </p>
@@ -219,13 +219,13 @@ export function ArticleMisophonia({ setCurrentArticle }: ArticleMisophoniaProps)
 
         {/* SECTION: LIVING */}
         <section id="living" className="bg-white border-2 border-[#2abcd4] rounded-lg p-6 shadow-sm flow-root">
+
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Misophonia</h2>
           <ImageWithFallback 
             src="/images/misophonia/misophonia-living-intro.webp"
             alt="Living with Misophonia"
-            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Misophonia</h2>
-          
           <p className="mb-4 text-slate-700 leading-relaxed">
             With self-advocacy and robust coping toolkits, individuals with misophonia successfully navigate their triggers and maintain fulfilling personal and professional relationships. Thriving involves balancing the necessary use of sensory protections with intentional social engagement, while recognizing that these intense reactions are rooted in neurobiology, not personal choice.
           </p>
