@@ -222,7 +222,7 @@ export function ArticleSynesthesia({ setCurrentArticle }: ArticleSynesthesiaProp
           <ImageWithFallback 
             src="/images/synesthesia/synesthesia-living-intro.webp"
             alt="Living with Synesthesia"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
+            className="w-64 h-auto rounded-md float-right ml-6 mb-4 shadow-sm"
           />     
           <p className="mb-4 text-slate-700 leading-relaxed">
             Many individuals with synesthesia leverage their rich, multi-sensory perspective to excel in creative fields, the arts, and mathematics. Thriving involves embracing these enhanced perceptual experiences as a core part of their identity while advocating for quiet spaces when intersecting sensory inputs become too overwhelming.
