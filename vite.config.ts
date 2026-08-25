@@ -50,7 +50,6 @@ const encyclopediaRoutes = [
   '/cte', '/cte-overview', '/cte-symptoms', '/cte-causes', '/cte-diagnosis', '/cte-support', '/cte-living',
   '/pandas', '/pandas-overview', '/pandas-symptoms', '/pandas-causes', '/pandas-diagnosis', '/pandas-support', '/pandas-living'
 ];
-
 export default defineConfig({
   plugins: [
     react(),
@@ -65,6 +64,7 @@ export default defineConfig({
     Sitemap({
       hostname: 'https://brainopedia.org',
       dynamicRoutes: encyclopediaRoutes,
+      generateRobotsTxt: false, // <-- This is the only new line!
     })
   ],
   build: {
