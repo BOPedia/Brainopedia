@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
@@ -254,9 +253,9 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Fisher, R. S., van Emde Boas, W., Blume, W., et al. (2005). "Epileptic seizures and epilepsy: Definitions proposed by the International League Against Epilepsy (ILAE) and the International Bureau for Epilepsy (IBE)." <i>Epilepsia</i>, 46(4), 470-472.</p>
-            <p>2. Helmstaedter, C., & Witt, J. A. (2017). "Epilepsy and cognition—A bidirectional relationship?" <i>Seizure</i>, 49, 83-89.</p>
-            <p>3. England, M. J., Liverman, C. T., Schultz, A. M., & Strawbridge, L. M. (Eds.). (2012). <i>Epilepsy across the spectrum: Promoting health and understanding</i>. Washington, DC: National Academies Press.</p>
+            <p>1. Fisher, R. S., van Emde Boas, W., Blume, W., et al. (2005). Epileptic seizures and epilepsy: Definitions proposed by the International League Against Epilepsy (ILAE) and the International Bureau for Epilepsy (IBE). <i>Epilepsia</i>. https://doi.org/10.1111/j.0013-9580.2005.66104.x</p>
+            <p>2. Helmstaedter, C., & Witt, J. A. (2017). Epilepsy and cognition—A bidirectional relationship? <i>Seizure</i>. https://doi.org/10.1016/j.seizure.2017.02.017</p>
+            <p>3. England, M. J., Liverman, C. T., Schultz, A. M., & Strawbridge, L. M. (Eds.). (2012). <i>Epilepsy across the spectrum: Promoting health and understanding</i>. National Academies Press. https://doi.org/10.17226/13379</p>
           </div>
         </div>
         
@@ -266,8 +265,8 @@ export function ArticleEpilepsy({ setCurrentArticle }: ArticleEpilepsyProps) {
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Stafstrom, C. E., & Carmant, L. (2015). "Seizures and epilepsy: An overview for neuroscientists." <i>Cold Spring Harbor Perspectives in Medicine</i>, 5(6), a022426.</li>
-            <li>Rayner, G., Jackson, G. D., & Wilson, S. J. (2016). "Mechanisms of memory impairment in epilepsy depend on age at disease onset." <i>Neurology</i>, 87(16), 1642-1649.</li>
+            <li>Stafstrom, C. E., & Carmant, L. (2015). Seizures and epilepsy: An overview for neuroscientists. <i>Cold Spring Harbor Perspectives in Medicine</i>. https://doi.org/10.1101/cshperspect.a022426</li>
+            <li>Rayner, G., Jackson, G. D., & Wilson, S. J. (2016). Mechanisms of memory impairment in epilepsy depend on age at disease onset. <i>Neurology</i>. https://doi.org/10.1212/wnl.0000000000003231</li>
           </ul>
         </div>
       </div>

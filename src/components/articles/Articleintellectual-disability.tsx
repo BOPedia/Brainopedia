@@ -253,9 +253,9 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. American Psychiatric Association. (2013). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed.). Arlington, VA: American Psychiatric Publishing.</p>
-            <p>2. Schalock, R. L., Borthwick-Duffy, S. A., Bradley, V. J., et al. (2010). <i>Intellectual disability: Definition, classification, and systems of supports</i> (11th ed.). Washington, DC: American Association on Intellectual and Developmental Disabilities.</p>
-            <p>3. Maulik, P. K., Mascarenhas, M. N., Mathers, C. D., Dua, T., & Saxena, S. (2011). "Prevalence of intellectual disability: A meta-analysis of population-based studies." <i>Research in Developmental Disabilities</i>, 32(2), 419-436.</p>
+            <p>1. American Psychiatric Association. (2013). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425596</p>
+            <p>2. Schalock, R. L., Borthwick-Duffy, S. A., Bradley, V. J., et al. (2010). <i>Intellectual disability: Definition, classification, and systems of supports</i> (11th ed.). American Association on Intellectual and Developmental Disabilities. https://www.aaidd.org/publications/bookstore-tags/product/intellectual-disability-definition-classification-and-systems-of-supports-11th-edition</p>
+            <p>3. Maulik, P. K., Mascarenhas, M. N., Mathers, C. D., Dua, T., & Saxena, S. (2011). Prevalence of intellectual disability: A meta-analysis of population-based studies. <i>Research in Developmental Disabilities</i>. https://doi.org/10.1016/j.ridd.2010.12.018</p>
           </div>
         </div>
         
@@ -265,20 +265,11 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Schalock, R. L., Luckasson, R. A., & Shogren, K. A. (2007). "The renaming of mental retardation: Understanding the change to the term intellectual disability." <i>Intellectual and Developmental Disabilities</i>, 45(2), 116-124.</li>
-            <li>Shakespeare, T. (2006). "The social model of disability." In L. J. Davis (Ed.), <i>The disability studies reader</i> (2nd ed., pp. 197-204). New York: Routledge.</li>
+            <li>Schalock, R. L., Luckasson, R. A., & Shogren, K. A. (2007). The renaming of mental retardation: Understanding the change to the term intellectual disability. <i>Intellectual and Developmental Disabilities</i>. https://doi.org/10.1352/1934-9556(2007)45[116:TROMRU]2.0.CO;2</li>
+            <li>Shakespeare, T. (2006). The social model of disability. In L. J. Davis (Ed.), <i>The disability studies reader</i> (2nd ed.). Routledge. https://doi.org/10.4324/9780203955031</li>
           </ul>
         </div>
       </div>
     </article>
   );
-}
-
-function disability(arg0: { setCurrentArticle: any; }, arg1: number) {
-  throw new Error('Function not implemented.');
-}
-
-
-function setCurrentArticle(arg0: string) {
-  throw new Error('Function not implemented.');
 }

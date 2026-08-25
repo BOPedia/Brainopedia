@@ -253,10 +253,10 @@ export function Articledownsyndrome({ setCurrentArticle }: ArticledownsyndromePr
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Lejeune, J., Gautier, M., & Turpin, R. (1959). "Study of somatic chromosomes from 9 mongoloid children." <i>Comptes Rendus Hebdomadaires des Seances de l'Academie des Sciences</i>, 248(11), 1721-1722.</p>
-            <p>2. Antonarakis, S. E., Lyle, R., Dermitzakis, E. T., Reymond, A., & Deutsch, S. (2004). "Chromosome 21 and Down syndrome: From genomics to pathophysiology." <i>Nature Reviews Genetics</i>, 5(10), 725-738.</p>
-            <p>3. Parker, S. E., Mai, C. T., Canfield, M. A., et al. (2010). "Updated national birth prevalence estimates for selected birth defects in the United States, 2004-2006." <i>Birth Defects Research Part A: Clinical and Molecular Teratology</i>, 88(12), 1008-1016.</p>
-            <p>4. Mai, C. T., Isenburg, J. L., Canfield, M. A., et al. (2019). "National population-based estimates for major birth defects, 2010-2014." <i>Birth Defects Research</i>, 111(18), 1420-1435.</p>
+            <p>1. Lejeune, J., Gautier, M., & Turpin, R. (1959). Study of somatic chromosomes from 9 mongoloid children. <i>Comptes Rendus Hebdomadaires des Seances de l'Academie des Sciences</i>. https://pubmed.ncbi.nlm.nih.gov/13639368/</p>
+            <p>2. Antonarakis, S. E., Lyle, R., Dermitzakis, E. T., Reymond, A., & Deutsch, S. (2004). Chromosome 21 and Down syndrome: From genomics to pathophysiology. <i>Nature Reviews Genetics</i>. https://doi.org/10.1038/nrg1448</p>
+            <p>3. Parker, S. E., Mai, C. T., Canfield, M. A., et al. (2010). Updated national birth prevalence estimates for selected birth defects in the United States, 2004-2006. <i>Birth Defects Research Part A: Clinical and Molecular Teratology</i>. https://doi.org/10.1002/bdra.20735</p>
+            <p>4. Mai, C. T., Isenburg, J. L., Canfield, M. A., et al. (2019). National population-based estimates for major birth defects, 2010-2014. <i>Birth Defects Research</i>. https://doi.org/10.1002/bdr2.1589</p>
           </div>
         </div>
         
@@ -266,8 +266,8 @@ export function Articledownsyndrome({ setCurrentArticle }: ArticledownsyndromePr
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Down, J. L. (1866). "Observations on an ethnic classification of idiots." <i>London Hospital Reports</i>, 3, 259-262.</li>
-            <li>Chapman, R. S., & Hesketh, L. J. (2000). "Behavioral phenotype of individuals with Down syndrome." <i>Mental Retardation and Developmental Disabilities Research Reviews</i>, 6(2), 84-95.</li>
+            <li>Down, J. L. (1866). Observations on an ethnic classification of idiots. <i>London Hospital Reports</i>. https://wellcomecollection.org/works/w6k3q77k</li>
+            <li>Chapman, R. S., & Hesketh, L. J. (2000). Behavioral phenotype of individuals with Down syndrome. <i>Mental Retardation and Developmental Disabilities Research Reviews</i>. https://doi.org/10.1002/1098-2779(2000)6:2&lt;84::AID-MRDD2&gt;3.0.CO;2-P</li>
           </ul>
         </div>
       </div>

@@ -5,8 +5,8 @@ export const mentalHealthRoutes: RouteMap = {
   // ==========================================
   // OBSESSIVE-COMPULSIVE DISORDER (OCD)
   // ==========================================
+  // Matches file: ArticleOCD.tsx | Component: ArticleOCD
   'ocd': lazy(() => import('../ArticleOCD').then(m => ({ default: m.ArticleOCD }))),
-
 
   'ocd-overview': lazy(() => import('../ocd/OCDOverview').then(m => ({ default: m.OCDOverview }))),
   'ocd-symptoms': lazy(() => import('../ocd/OCDSymptoms').then(m => ({ default: m.OCDSymptoms }))),
@@ -18,9 +18,9 @@ export const mentalHealthRoutes: RouteMap = {
   // ==========================================
   // BIPOLAR DISORDER
   // ==========================================
+  // Matches file: ArticleBipolar.tsx | Component: ArticleBipolar
   'bipolar': lazy(() => import('../ArticleBipolar').then(m => ({ default: m.ArticleBipolar }))),
 
- 
   'bipolar-overview': lazy(() => import('../bipolar/BipolarOverview').then(m => ({ default: m.BipolarOverview }))),
   'bipolar-symptoms': lazy(() => import('../bipolar/BipolarSymptoms').then(m => ({ default: m.BipolarSymptoms }))),
   'bipolar-causes': lazy(() => import('../bipolar/BipolarCauses').then(m => ({ default: m.BipolarCauses }))),
@@ -31,8 +31,8 @@ export const mentalHealthRoutes: RouteMap = {
   // ==========================================
   // SCHIZOPHRENIA
   // ==========================================
+  // Matches file: ArticleSchizophrenia.tsx | Component: ArticleSchizophrenia
   'schizophrenia': lazy(() => import('../ArticleSchizophrenia').then(m => ({ default: m.ArticleSchizophrenia }))),
-
 
   'schizophrenia-overview': lazy(() => import('../schizophrenia/SchizophreniaOverview').then(m => ({ default: m.SchizophreniaOverview }))),
   'schizophrenia-symptoms': lazy(() => import('../schizophrenia/SchizophreniaSymptoms').then(m => ({ default: m.SchizophreniaSymptoms }))),

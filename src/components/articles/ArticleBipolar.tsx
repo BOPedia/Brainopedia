@@ -257,8 +257,8 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Merikangas, K. R., Jin, R., He, J. P., et al. (2011). "Prevalence and correlates of bipolar spectrum disorder in the World Mental Health Survey Initiative." <i>Archives of General Psychiatry</i>, 68(3), 241-251. https://doi.org/10.1001/archgenpsychiatry.2011.12</p>
-            <p>2. Strakowski, S. M., Adler, C. M., Almeida, J., et al. (2012). "The functional neuroanatomy of bipolar disorder: A consensus model." <i>Bipolar Disorders</i>, 14(4), 313-325. https://doi.org/10.1111/j.1399-5618.2012.01022.x</p>
+            <p>1. Merikangas, K. R., Jin, R., He, J. P., et al. (2011). Prevalence and correlates of bipolar spectrum disorder in the World Mental Health Survey Initiative. <i>Archives of General Psychiatry</i>. https://doi.org/10.1001/archgenpsychiatry.2011.12</p>
+            <p>2. Strakowski, S. M., Adler, C. M., Almeida, J., et al. (2012). The functional neuroanatomy of bipolar disorder: A consensus model. <i>Bipolar Disorders</i>. https://doi.org/10.1111/j.1399-5618.2012.01022.x</p>
           </div>
         </div>
         
@@ -269,7 +269,7 @@ export function ArticleBipolar({ setCurrentArticle }: ArticleBipolarProps) {
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
             <li>American Psychiatric Association. (2013). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425596</li>
-            <li>Jamison, K. R. (1993). <i>Touched with fire: Manic-depressive illness and the artistic temperament</i>. Free Press.</li>
+            <li>Jamison, K. R. (1993). <i>Touched with fire: Manic-depressive illness and the artistic temperament</i>. Free Press. https://www.simonandschuster.com/books/Touched-with-Fire/Kay-Redfield-Jamison/9780684831831</li>
           </ul>
         </div>
       </div>

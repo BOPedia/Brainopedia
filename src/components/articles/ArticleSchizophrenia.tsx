@@ -252,9 +252,9 @@ export function ArticleSchizophrenia({ setCurrentArticle }: ArticleSchizophrenia
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. American Psychiatric Association. (2013). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed.). Arlington, VA: American Psychiatric Publishing.</p>
-            <p>2. Geekie, J., Randal, P., Lampshire, D., & Read, J. (2012). <i>Experiencing psychosis: Personal and professional perspectives</i>. London: Routledge.</p>
-            <p>3. Saha, S., Chant, D., Welham, J., & McGrath, J. (2005). "A systematic review of the prevalence of schizophrenia." <i>PLoS Medicine</i>, 2(5), e141.</p>
+            <p>1. American Psychiatric Association. (2013). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed.). American Psychiatric Publishing. https://doi.org/10.1176/appi.books.9780890425596</p>
+            <p>2. Geekie, J., Randal, P., Lampshire, D., & Read, J. (2012). <i>Experiencing psychosis: Personal and professional perspectives</i>. Routledge. https://doi.org/10.4324/9780203803158</p>
+            <p>3. Saha, S., Chant, D., Welham, J., & McGrath, J. (2005). A systematic review of the prevalence of schizophrenia. <i>PLoS Medicine</i>. https://doi.org/10.1371/journal.pmed.0020141</p>
           </div>
         </div>
         
@@ -264,8 +264,8 @@ export function ArticleSchizophrenia({ setCurrentArticle }: ArticleSchizophrenia
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Karlsgodt, K. H., Sun, D., & Cannon, T. D. (2010). "Structural and functional brain abnormalities in schizophrenia." <i>Current Directions in Psychological Science</i>, 19(4), 226-231.</li>
-            <li>Longden, E., Corstens, D., Escher, S., & Romme, M. (2012). "Voice hearing in a biographical context: A model for formulating the relationship between voices and life history." <i>Psychosis</i>, 4(3), 224-234.</li>
+            <li>Karlsgodt, K. H., Sun, D., & Cannon, T. D. (2010). Structural and functional brain abnormalities in schizophrenia. <i>Current Directions in Psychological Science</i>. https://doi.org/10.1177/0963721410377601</li>
+            <li>Longden, E., Corstens, D., Escher, S., & Romme, M. (2012). Voice hearing in a biographical context: A model for formulating the relationship between voices and life history. <i>Psychosis</i>. https://doi.org/10.1080/17522439.2011.596566</li>
           </ul>
         </div>
       </div>

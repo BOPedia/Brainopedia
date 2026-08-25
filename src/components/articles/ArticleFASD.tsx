@@ -253,10 +253,10 @@ export function ArticleFASD({ setCurrentArticle }: ArticleFASDProps) {
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Jones, K. L., & Smith, D. W. (1973). "Recognition of the fetal alcohol syndrome in early infancy." <i>The Lancet</i>, 302(7836), 999-1001.</p>
-            <p>2. Hoyme, H. E., Kalberg, W. O., Elliott, A. J., et al. (2016). "Updated clinical guidelines for diagnosing fetal alcohol spectrum disorders." <i>Pediatrics</i>, 138(2), e20154256.</p>
-            <p>3. May, P. A., Chambers, C. D., Kalberg, W. O., et al. (2018). "Prevalence of fetal alcohol spectrum disorders in 4 US communities." <i>JAMA</i>, 319(5), 474-482.</p>
-            <p>4. May, P. A., Baete, A., Russo, J., et al. (2014). "Prevalence and characteristics of fetal alcohol spectrum disorders." <i>Pediatrics</i>, 134(5), 855-866.</p>
+            <p>1. Jones, K. L., & Smith, D. W. (1973). Recognition of the fetal alcohol syndrome in early infancy. <i>The Lancet</i>. https://doi.org/10.1016/S0140-6736(73)91092-1</p>
+            <p>2. Hoyme, H. E., Kalberg, W. O., Elliott, A. J., et al. (2016). Updated clinical guidelines for diagnosing fetal alcohol spectrum disorders. <i>Pediatrics</i>. https://doi.org/10.1542/peds.2015-4256</p>
+            <p>3. May, P. A., Chambers, C. D., Kalberg, W. O., et al. (2018). Prevalence of fetal alcohol spectrum disorders in 4 US communities. <i>JAMA</i>. https://doi.org/10.1001/jama.2017.21896</p>
+            <p>4. May, P. A., Baete, A., Russo, J., et al. (2014). Prevalence and characteristics of fetal alcohol spectrum disorders. <i>Pediatrics</i>. https://doi.org/10.1542/peds.2013-3319</p>
           </div>
         </div>
         
@@ -266,8 +266,8 @@ export function ArticleFASD({ setCurrentArticle }: ArticleFASDProps) {
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Burd, L., Roberts, D., Olson, M., & Odendaal, H. (2007). "Ethanol and the placenta: A review." <i>The Journal of Maternal-Fetal & Neonatal Medicine</i>, 20(5), 361-375.</li>
-            <li>American Academy of Pediatrics. (2015). "Fetal alcohol spectrum disorders." <i>Pediatrics</i>, 136(5), e1395-e1406.</li>
+            <li>Burd, L., Roberts, D., Olson, M., & Odendaal, H. (2007). Ethanol and the placenta: A review. <i>The Journal of Maternal-Fetal & Neonatal Medicine</i>. https://doi.org/10.1080/14767050701298365</li>
+            <li>American Academy of Pediatrics. (2015). Fetal alcohol spectrum disorders. <i>Pediatrics</i>. https://doi.org/10.1542/peds.2015-3113</li>
           </ul>
         </div>
       </div>
