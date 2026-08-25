@@ -5,28 +5,28 @@ export const geneticEnvironmentalRoutes: RouteMap = {
   // ==========================================
   // DOWN SYNDROME
   // ==========================================
-  'down-syndrome': lazy(() => import('../ArticleDownSyndrome').then(m => ({ default: m.ArticleDownSyndrome }))),
+  'downsyndrome': lazy(() => import('../Articledownsyndrome').then(m => ({ default: m.Articledownsyndrome }))),
 
 
-  'down-syndrome-overview': lazy(() => import('../downsyndrome/DownSyndromeOverview').then(m => ({ default: m.DownSyndromeOverview }))),
-  'down-syndrome-symptoms': lazy(() => import('../downsyndrome/DownSyndromeSymptoms').then(m => ({ default: m.DownSyndromeSymptoms }))),
-  'down-syndrome-causes': lazy(() => import('../downsyndrome/DownSyndromeCauses').then(m => ({ default: m.DownSyndromeCauses }))),
-  'down-syndrome-diagnosis': lazy(() => import('../downsyndrome/DownSyndromeDiagnosis').then(m => ({ default: m.DownSyndromeDiagnosis }))),
-  'down-syndrome-support': lazy(() => import('../downsyndrome/DownSyndromeSupport').then(m => ({ default: m.DownSyndromeSupport }))),
-  'down-syndrome-living': lazy(() => import('../downsyndrome/DownSyndromeLiving').then(m => ({ default: m.DownSyndromeLiving }))),
+  'downsyndrome-overview': lazy(() => import('../downsyndrome/downsyndrome-overview').then(m => ({ default: m.DownSyndromeOverview }))),
+  'downsyndrome-symptoms': lazy(() => import('../downsyndrome/downsyndrome-symptoms').then(m => ({ default: m.DownSyndromeSymptoms }))),
+  'downsyndrome-causes': lazy(() => import('../downsyndrome/downsyndrome-causes').then(m => ({ default: m.DownSyndromeCauses }))),
+  'downsyndrome-diagnosis': lazy(() => import('../downsyndrome/downsyndrome-diagnosis').then(m => ({ default: m.DownSyndromeDiagnosis }))),
+  'downsyndrome-support': lazy(() => import('../downsyndrome/downsyndrome-support').then(m => ({ default: m.DownSyndromeSupport }))),
+  'downsyndrome-living': lazy(() => import('../downsyndrome/downsyndrome-living').then(m => ({ default: m.DownSyndromeLiving }))),
 
   // ==========================================
   // INTELLECTUAL DISABILITY (ID)
   // ==========================================
-  'intellectual-disability': lazy(() => import('../ArticleIntellectualDisability').then(m => ({ default: m.ArticleIntellectualDisability }))),
+  'intellectual-disability': lazy(() => import('../Articleintellectual-disability').then((m: any) => ({ default: m.ArticleIntellectualDisability ?? m.ArticleintellectualDisability ?? m.default }))),
 
   
-  'intellectual-disability-overview': lazy(() => import('../intellectual-disability/IDOverview').then(m => ({ default: m.IDOverview }))),
-  'intellectual-disability-symptoms': lazy(() => import('../intellectual-disability/IDSymptoms').then(m => ({ default: m.IDSymptoms }))),
-  'intellectual-disability-causes': lazy(() => import('../intellectual-disability/IDCauses').then(m => ({ default: m.IDCauses }))),
-  'intellectual-disability-diagnosis': lazy(() => import('../intellectual-disability/IDDiagnosis').then(m => ({ default: m.IDDiagnosis }))),
-  'intellectual-disability-support': lazy(() => import('../intellectual-disability/IDSupport').then(m => ({ default: m.IDSupport }))),
-  'intellectual-disability-living': lazy(() => import('../intellectual-disability/IDLiving').then(m => ({ default: m.IDLiving }))),
+  'intellectual-disability-overview': lazy(() => import('../intellectual-disability/intellectual-disability-overview').then(m => ({ default: m.IDOverview }))),
+  'intellectual-disability-symptoms': lazy(() => import('../intellectual-disability/intellectual-disability-symptoms').then(m => ({ default: m.IDSymptoms }))),
+  'intellectual-disability-causes': lazy(() => import('../intellectual-disability/intellectual-disability-causes').then(m => ({ default: m.IDCauses }))),
+  'intellectual-disability-diagnosis': lazy(() => import('../intellectual-disability/intellectual-disability-diagnosis').then(m => ({ default: m.IDDiagnosis }))),
+  'intellectual-disability-support': lazy(() => import('../intellectual-disability/intellectual-disability-support').then(m => ({ default: m.IDSupport }))),
+  'intellectual-disability-living': lazy(() => import('../intellectual-disability/intellectual-disability-living').then(m => ({ default: m.IDLiving }))),
 
   // ==========================================
   // FETAL ALCOHOL SPECTRUM DISORDER (FASD)
@@ -34,12 +34,12 @@ export const geneticEnvironmentalRoutes: RouteMap = {
   'fasd': lazy(() => import('../ArticleFASD').then(m => ({ default: m.ArticleFASD }))),
 
 
-    'fasd-overview': lazy(() => import('../fasd/FASDOverview').then(m => ({ default: m.FASDOverview }))),
-    'fasd-symptoms': lazy(() => import('../fasd/FASDSymptoms').then(m => ({ default: m.FASDSymptoms }))),
-    'fasd-causes': lazy(() => import('../fasd/FASDCauses').then(m => ({ default: m.FASDCauses }))),
-    'fasd-diagnosis': lazy(() => import('../fasd/FASDDiagnosis').then(m => ({ default: m.FASDDiagnosis }))),
-    'fasd-support': lazy(() => import('../fasd/FASDSupport').then(m => ({ default: m.FASDSupport }))),
-     'fasd-living': lazy(() => import('../fasd/FASDLiving').then(m => ({ default: m.FASDLiving }))),
+    'fasd-overview': lazy(() => import('../fasd/fasd-overview').then(m => ({ default: m.FASDOverview }))),
+    'fasd-symptoms': lazy(() => import('../fasd/fasd-symptoms').then(m => ({ default: m.FASDSymptoms }))),
+    'fasd-causes': lazy(() => import('../fasd/fasd-causes').then(m => ({ default: m.FASDCauses }))),
+    'fasd-diagnosis': lazy(() => import('../fasd/fasd-diagnosis').then(m => ({ default: m.FASDDiagnosis }))),
+    'fasd-support': lazy(() => import('../fasd/fasd-support').then(m => ({ default: m.FASDSupport }))),
+     'fasd-living': lazy(() => import('../fasd/fasd-living').then(m => ({ default: m.FASDLiving }))),
 
   // ==========================================
   // EPILEPSY

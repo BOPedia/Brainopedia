@@ -40,7 +40,7 @@ const encyclopediaRoutes = [
   '/schizophrenia', '/schizophrenia-overview', '/schizophrenia-symptoms', '/schizophrenia-causes', '/schizophrenia-diagnosis', '/schizophrenia-support', '/schizophrenia-living',
   
   // Genetic or Environmental
-  '/down-syndrome', '/down-syndrome-overview', '/down-syndrome-symptoms', '/down-syndrome-causes', '/down-syndrome-diagnosis', '/down-syndrome-support', '/down-syndrome-living',
+  '/downsyndrome', '/downsyndrome-overview', '/downsyndrome-symptoms', '/downsyndrome-causes', '/downsyndrome-diagnosis', '/downsyndrome-support', '/downsyndrome-living',
   '/intellectual-disability', '/intellectual-disability-overview', '/intellectual-disability-symptoms', '/intellectual-disability-causes', '/intellectual-disability-diagnosis', '/intellectual-disability-support', '/intellectual-disability-living',
   '/fasd', '/fasd-overview', '/fasd-symptoms', '/fasd-causes', '/fasd-diagnosis', '/fasd-support', '/fasd-living',
   '/epilepsy', '/epilepsy-overview', '/epilepsy-symptoms', '/epilepsy-causes', '/epilepsy-diagnosis', '/epilepsy-support', '/epilepsy-living',

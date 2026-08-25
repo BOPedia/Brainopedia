@@ -122,7 +122,7 @@ const seoMap: Record<string, { title: string; description: string }> = {
   },
 
   // Volume VI: Genetic or Environmental
-  'down-syndrome': { 
+  'downsyndrome': { 
     title: 'Down Syndrome | Brainopedia', 
     description: 'Discover the genetic origins, developmental characteristics, and supportive care strategies for individuals living with Down Syndrome.' 
   },

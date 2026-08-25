@@ -239,7 +239,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
                   <div className="flex flex-wrap gap-2 justify-center">
                     {[
-                      { id: 'down-syndrome', label: 'Down Syndrome' },
+                      { id: 'downsyndrome', label: 'Down Syndrome' },
                       { id: 'intellectual-disability', label: 'Intellectual Disability' },
                       { id: 'fasd', label: 'FASD' },
                       { id: 'epilepsy', label: 'Epilepsy' }

@@ -69,7 +69,7 @@ const categories = [
     // Lightened version of Bright Gold (#ffcc00)
     bgStyle: 'bg-yellow-100 border-yellow-200 text-[#0c264d]', 
     articles: [
-      { id: 'down-syndrome', label: 'Down Syndrome', icon: Dna },
+      { id: 'downsyndrome', label: 'Down Syndrome', icon: Dna },
       { id: 'intellectual-disability', label: 'Intellectual Disability', icon: Brain },
       { id: 'fasd', label: 'Fetal Alcohol Spectrum Disorder or "FASD"', icon: Droplets },
       { id: 'epilepsy', label: 'Epilepsy', icon: Waves },

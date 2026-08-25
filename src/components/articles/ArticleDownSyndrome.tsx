@@ -3,11 +3,11 @@ import { InfoBox } from '../InfoBox';
 import { TableOfContents } from '../TableOfContents';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 
-interface ArticleDownSyndromeProps {
+interface ArticledownsyndromeProps {
   setCurrentArticle?: (article: string) => void;
 }
 
-export function ArticleDownSyndrome({ setCurrentArticle }: ArticleDownSyndromeProps) {
+export function Articledownsyndrome({ setCurrentArticle }: ArticledownsyndromeProps) {
   const sections = [
     { 
       id: 'overview', 

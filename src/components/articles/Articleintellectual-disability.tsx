@@ -14,7 +14,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
       title: 'Overview',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('id-overview');
+        setCurrentArticle?.('intellectual-disability-overview');
       }
     },
     { 
@@ -22,7 +22,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
       title: 'Symptoms & Characteristics',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('id-symptoms');
+        setCurrentArticle?.('intellectual-disability-symptoms');
       }
     },
     { 
@@ -30,7 +30,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
       title: 'Causes & Origins',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('id-causes');
+        setCurrentArticle?.('intellectual-disability-causes');
       }
     },
     { 
@@ -38,7 +38,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
       title: 'Testing & Diagnosing',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('id-diagnosis');
+        setCurrentArticle?.('intellectual-disability-diagnosis');
       }
     },
     { 
@@ -46,7 +46,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
       title: 'Support & Management',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('id-support');
+        setCurrentArticle?.('intellectual-disability-support');
       }
     },
     { 
@@ -54,7 +54,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
       title: 'Living with Intellectual Disability',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
-        setCurrentArticle?.('id-living');
+        setCurrentArticle?.('intellectual-disability-living');
       }
     },
   ];
@@ -77,7 +77,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
         <div className="w-full">
           <InfoBox
             title="Intellectual Disability"
-            image="/images/id/id-main-infobox.webp"
+            image="/images/intellectual-disability/intellectual-disability-main-infobox.webp"
             data={[
               { label: 'Other names', value: 'ID, Intellectual developmental disorder' },
               { label: 'Specialty', value: 'Developmental Medicine, Psychology' },
@@ -97,7 +97,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Overview</h2>
           
           <ImageWithFallback 
-            src="/images/id/id-overview-intro.webp"
+            src="/images/intellectual-disability/intellectual-disability-overview-intro.webp"
             alt="Learning and cognitive development - understanding intellectual disability"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
@@ -122,7 +122,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms & Characteristics</h2>
           
           <ImageWithFallback 
-            src="/images/id/id-symptoms-intro.webp"
+            src="/images/intellectual-disability/intellectual-disability-symptoms-intro.webp"
             alt="Adaptive skills and daily living - characteristics of ID"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
@@ -147,7 +147,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Causes & Origins</h2>
           
           <ImageWithFallback 
-            src="/images/id/id-causes-intro.webp"
+            src="/images/intellectual-disability/intellectual-disability-causes-intro.webp"
             alt="Brain development - neurological basis of intellectual disability"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
@@ -172,7 +172,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Testing & Diagnosing</h2>
           
           <ImageWithFallback 
-            src="/images/id/id-diagnosis-intro.webp"
+            src="/images/intellectual-disability/intellectual-disability-diagnosis-intro.webp"
             alt="Psychological assessment - diagnosing intellectual disability"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
@@ -197,7 +197,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support & Management</h2>
           
           <ImageWithFallback 
-            src="/images/id/id-support-intro.webp"
+            src="/images/intellectual-disability/intellectual-disability-support-intro.webp"
             alt="Supported employment and training - supporting individuals with ID"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
@@ -222,7 +222,7 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Living with Intellectual Disability</h2>
           
           <ImageWithFallback 
-            src="/images/id/id-living-intro.webp"
+            src="/images/intellectual-disability/intellectual-disability-living-intro.webp"
             alt="Community inclusion - living with intellectual disability"
             className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
           />
@@ -272,4 +272,13 @@ export function ArticleIntellectualDisability({ setCurrentArticle }: ArticleInte
       </div>
     </article>
   );
+}
+
+function disability(arg0: { setCurrentArticle: any; }, arg1: number) {
+  throw new Error('Function not implemented.');
+}
+
+
+function setCurrentArticle(arg0: string) {
+  throw new Error('Function not implemented.');
 }
