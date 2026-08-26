@@ -98,11 +98,11 @@ export function Home({ setCurrentArticle }: HomeProps) {
                       { id: 'dyslexia', label: 'Dyslexia' },
                       { id: 'dyscalculia', label: 'Dyscalculia' },
                       { id: 'dysgraphia', label: 'Dysgraphia' },
-                      { id: 'nvld', label: 'NVLD' },
-                      { id: 'dld', label: 'DLD' },
+                      { id: 'nvld', label: 'Non-Verbal Learning Disorder or "NVLD"' },
+                      { id: 'dld', label: 'Developmental Language Disorder or "DLD"' },
                       { id: 'hyperlexia', label: 'Hyperlexia' },
                       { id: 'giftedness', label: 'Giftedness' },
-                      { id: 'twice-exceptional', label: 'Twice-Exceptional or 2E' }
+                      { id: 'twice-exceptional', label: 'Twice-Exceptional or "2E"' }
                     ].map(item => (
                       <button key={item.id} onClick={() => setCurrentArticle?.(item.id)} className="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#ffd166] hover:border-[#ffd166] hover:text-[#0c264d] transition-all font-normal text-slate-700">
                         {item.label}
@@ -136,9 +136,9 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
                   <div className="flex flex-wrap gap-2 justify-center">
                     {[
-                      { id: 'apd', label: 'APD' },
-                      { id: 'visual-processing', label: 'Visual Processing' },
-                      { id: 'spd', label: 'SPD' },
+                      { id: 'apd', label: 'Auditory Processing Disorder or "APD"' },
+                      { id: 'visual-processing', label: 'Visual Processing Disorder or "VPD"' },
+                      { id: 'spd', label: 'Sensory Processing Disorder or "SPD"' },
                       { id: 'misophonia', label: 'Misophonia' },
                       { id: 'synesthesia', label: 'Synesthesia' }
                     ].map(item => (
@@ -241,7 +241,7 @@ export function Home({ setCurrentArticle }: HomeProps) {
                     {[
                       { id: 'downsyndrome', label: 'Down Syndrome' },
                       { id: 'intellectual-disability', label: 'Intellectual Disability' },
-                      { id: 'fasd', label: 'FASD' },
+                      { id: 'fasd', label: 'Fetal Alcohol Syndrome Disorder or "FSAD"' },
                       { id: 'epilepsy', label: 'Epilepsy' }
                     ].map(item => (
                       <button key={item.id} onClick={() => setCurrentArticle?.(item.id)} className="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#ffd166] hover:border-[#ffd166] hover:text-[#0c264d] transition-all font-normal text-slate-700">
@@ -276,9 +276,9 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   <span className="text-[10px] uppercase font-bold text-slate-400 mb-3 block tracking-wider">Included Topics</span>
                   <div className="flex flex-wrap gap-2 justify-center">
                     {[
-                      { id: 'tbi', label: 'TBI' },
-                      { id: 'cte', label: 'CTE' },
-                      { id: 'pandas', label: 'PANDAS' }
+                      { id: 'tbi', label: 'Traumatic Brain Injury or "TBI"' },
+                      { id: 'cte', label: 'Chronic Traumatic Encephalopathy or "CTE"' },
+                      { id: 'pans or pandas', label: '"PANS" or "PANDAS"' }
                     ].map(item => (
                       <button key={item.id} onClick={() => setCurrentArticle?.(item.id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#0A9DC4] hover:border-[#0A9DC4] hover:text-white transition-all font-normal text-slate-700">
                         {item.label}
