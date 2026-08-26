@@ -18,7 +18,7 @@ export const geneticEnvironmentalRoutes: RouteMap = {
   // ==========================================
   // INTELLECTUAL DISABILITY (ID)
   // ==========================================
-  // Matches file: Articleintellectual-disability.tsx | Component: ArticleIntellectualDisability
+  // Matches file: Articleintellectual-disability.tsx | Component: Articleintellectual-disability
   'intellectual-disability': lazy(() => import('../Articleintellectual-disability').then(m => ({ default: m.ArticleIntellectualDisability }))),
   
   'intellectual-disability-overview': lazy(() => import('../intellectual-disability/intellectual-disability-overview').then(m => ({ default: m.IDOverview }))),
