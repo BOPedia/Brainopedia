@@ -99,11 +99,11 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
           <ImageWithFallback 
             src="/images/tbi/tbi-overview-intro.webp"
             alt="Brain imaging showing traumatic brain injury"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Approximately 2.8 million traumatic brain injuries occur annually in the United States alone, with an estimated 5.3 million Americans currently living long-term with TBI-related cognitive or physical disabilities.<sup className="text-[#10b981] font-bold ml-0.5">3</sup> By explicitly understanding long-term TBI as an acquired neurodivergence, we can powerfully validate the individual's radically altered lived experience and emphasize the critical necessity for ongoing societal accommodation.
+            Approximately 2.8 million traumatic brain injuries occur annually in the United States alone, with an estimated 5.3 million Americans currently living long-term with TBI-related cognitive or physical disabilities.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> By explicitly understanding long-term TBI as an acquired neurodivergence, we can powerfully validate the individual's radically altered lived experience and emphasize the critical necessity for ongoing societal accommodation.
           </p>
 
           <button
@@ -124,11 +124,11 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
           <ImageWithFallback 
             src="/images/tbi/tbi-symptoms-intro.webp"
             alt="Cognitive and memory challenges following TBI"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            TBI impacts nearly every facet of cognition, frequently resulting in dramatically slowed information processing, highly fragmented short-term memory, intense mental fatigue, and profound executive functioning disruptions.<sup className="text-[#10b981] font-bold ml-0.5">1</sup> Beyond pure cognition, individuals frequently experience intense emotional dysregulation, rapid mood lability, and an inability to filter intense sensory input, requiring extensive patience and targeted therapeutic support to navigate safely.
+            TBI impacts nearly every facet of cognition, frequently resulting in dramatically slowed information processing, highly fragmented short-term memory, intense mental fatigue, and profound executive functioning disruptions.<sup className="text-[#10b981] font-bold ml-0.5">3</sup> Beyond pure cognition, individuals frequently experience intense emotional dysregulation, rapid mood lability, and an inability to filter intense sensory input, requiring extensive patience and targeted therapeutic support to navigate safely.
           </p>
 
           <button
@@ -149,11 +149,11 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
           <ImageWithFallback 
             src="/images/tbi/tbi-causes-intro.webp"
             alt="Emergency trauma - causes of traumatic brain injury"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            TBI occurs when an intense external force physically damages the brain—whether through closed head injuries, penetrating trauma, or blast waves—fundamentally disrupting delicate neural pathways and neurotransmitter systems.<sup className="text-[#10b981] font-bold ml-0.5">20</sup> Whether sustained in a sudden car accident or cumulatively through repeated sports impacts, this physical trauma fundamentally and permanently alters how the brain's circuitry processes information.
+            TBI occurs when an intense external force physically damages the brain—whether through closed head injuries, penetrating trauma, or blast waves—fundamentally disrupting delicate neural pathways and neurotransmitter systems. Whether sustained in a sudden car accident or cumulatively through repeated sports impacts, this physical trauma fundamentally and permanently alters how the brain's circuitry processes information.
           </p>
 
           <button
@@ -174,11 +174,11 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
           <ImageWithFallback 
             src="/images/tbi/tbi-diagnosis-intro.webp"
             alt="Brain imaging and neurological testing for TBI diagnosis"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Initial diagnosis in acute trauma settings relies on assessing consciousness via the Glasgow Coma Scale combined with emergency CT or MRI scans, while long-term management utilizes comprehensive neuropsychological testing to map out new cognitive strengths and deficits.<sup className="text-[#10b981] font-bold ml-0.5">28</sup> Unfortunately, many individuals with "mild" TBIs are clinically dismissed despite enduring severe, lasting symptoms, powerfully highlighting the need to formally recognize chronic post-concussive conditions as an acquired neurodivergence.
+            Initial diagnosis in acute trauma settings relies on assessing consciousness via the Glasgow Coma Scale combined with emergency CT or MRI scans, while long-term management utilizes comprehensive neuropsychological testing to map out new cognitive strengths and deficits. Unfortunately, many individuals with "mild" TBIs are clinically dismissed despite enduring severe, lasting symptoms, powerfully highlighting the need to formally recognize chronic post-concussive conditions as an acquired neurodivergence.
           </p>
 
           <button
@@ -199,11 +199,11 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
           <ImageWithFallback 
             src="/images/tbi/tbi-support-intro.webp"
             alt="Rehabilitation and therapeutic support for TBI recovery"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Successful long-term rehabilitation requires assembling a highly individualized, multidisciplinary team offering cognitive rehabilitation therapy alongside critical daily accommodations like external memory aids and strictly paced activity schedules.<sup className="text-[#10b981] font-bold ml-0.5">35</sup> Because a TBI forces an individual to abandon their pre-injury identity, therapeutic support must actively address immense grief and complex personality adjustments while accepting that some neurological changes are utterly permanent.
+            Successful long-term rehabilitation requires assembling a highly individualized, multidisciplinary team offering cognitive rehabilitation therapy alongside critical daily accommodations like external memory aids and strictly paced activity schedules. Because a TBI forces an individual to abandon their pre-injury identity, therapeutic support must actively address immense grief and complex personality adjustments while accepting that some neurological changes are utterly permanent.
           </p>
 
           <button
@@ -224,11 +224,11 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
           <ImageWithFallback 
             src="/images/tbi/tbi-living-intro.webp"
             alt="Adaptation and quality of life after TBI"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Living long-term with a TBI means relentlessly navigating a world that expects a pre-injury level of functioning while coping with profound diagnostic uncertainty and a highly fragmented sense of self.<sup className="text-[#10b981] font-bold ml-0.5">42</sup> By building unshakeable self-advocacy skills and fiercely managing cognitive stamina, survivors frequently forge entirely new, deeply meaningful paths forward by leaning into resilience and radically redefined capabilities.
+            Living long-term with a TBI means relentlessly navigating a world that expects a pre-injury level of functioning while coping with profound diagnostic uncertainty and a highly fragmented sense of self. By building unshakeable self-advocacy skills and fiercely managing cognitive stamina, survivors frequently forge entirely new, deeply meaningful paths forward by leaning into resilience and radically redefined capabilities.
           </p>
 
           <button
@@ -253,9 +253,9 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Maas, A. I., Stocchetti, N., & Bullock, R. (2008). "Moderate and severe traumatic brain injury in adults." <i>The Lancet Neurology</i>, 7(8), 728-741.</p>
-            <p>2. Rabinowitz, A. R., & Levin, H. S. (2014). "Cognitive sequelae of traumatic brain injury." <i>Psychiatric Clinics</i>, 37(1), 1-11.</p>
-            <p>3. Taylor, C. A., Bell, J. M., Breiding, M. J., & Xu, L. (2017). "Traumatic brain injury-related emergency department visits, hospitalizations, and deaths—United States, 2007 and 2013." <i>MMWR Surveillance Summaries</i>, 66(9), 1-16.</p>
+            <p>1. Maas, A. I., Stocchetti, N., & Bullock, R. (2008). "Moderate and severe traumatic brain injury in adults." <i>The Lancet Neurology</i>. https://doi.org/10.1016/S1474-4422(08)70164-9</p>
+            <p>2. Taylor, C. A., Bell, J. M., Breiding, M. J., & Xu, L. (2017). "Traumatic brain injury-related emergency department visits, hospitalizations, and deaths—United States, 2007 and 2013." <i>MMWR Surveillance Summaries</i>. https://doi.org/10.15585/mmwr.ss6609a1</p>
+            <p>3. Rabinowitz, A. R., & Levin, H. S. (2014). "Cognitive sequelae of traumatic brain injury." <i>Psychiatric Clinics</i>. https://doi.org/10.1016/j.psc.2013.11.004</p>
           </div>
         </div>
         
@@ -265,8 +265,8 @@ export function ArticleTBI({ setCurrentArticle }: ArticleTBIProps) {
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Langlois, J. A., Rutland-Brown, W., & Wald, M. M. (2006). "The epidemiology and impact of traumatic brain injury: A brief overview." <i>The Journal of Head Trauma Rehabilitation</i>, 21(5), 375-378.</li>
-            <li>Dikmen, S. S., Corrigan, J. D., Levin, H. S., Machamer, J., Stiers, W., & Weisskopf, M. G. (2009). "Cognitive outcome following traumatic brain injury." <i>The Journal of Head Trauma Rehabilitation</i>, 24(6), 430-438.</li>
+            <li>Langlois, J. A., Rutland-Brown, W., & Wald, M. M. (2006). "The epidemiology and impact of traumatic brain injury: A brief overview." <i>The Journal of Head Trauma Rehabilitation</i>. https://doi.org/10.1097/00001199-200609000-00001</li>
+            <li>Dikmen, S. S., Corrigan, J. D., Levin, H. S., Machamer, J., Stiers, W., & Weisskopf, M. G. (2009). "Cognitive outcome following traumatic brain injury." <i>The Journal of Head Trauma Rehabilitation</i>. https://doi.org/10.1097/HTR.0b013e3181c133e9</li>
           </ul>
         </div>
       </div>

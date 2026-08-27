@@ -98,11 +98,11 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
           <ImageWithFallback 
             src="/images/pandas/pandas-overview-intro.webp"
             alt="Immune system and autoimmune brain inflammation" 
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm" 
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm" 
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            PANDAS occurs when a child's immune system, after fighting a common streptococcal infection, mistakenly attacks the basal ganglia—a critical brain region responsible for movement control and behavioral regulation.<sup className="text-[#10b981] font-bold ml-0.5">3</sup> This fierce autoimmune inflammation causes a sudden, dramatic onset of severe obsessive-compulsive disorder (OCD) and motor tics, effectively transforming the child's neurological functioning overnight.
+            PANDAS occurs when a child's immune system, after fighting a common streptococcal infection, mistakenly attacks the basal ganglia—a critical brain region responsible for movement control and behavioral regulation.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> This fierce autoimmune inflammation causes a sudden, dramatic onset of severe obsessive-compulsive disorder (OCD) and motor tics, effectively transforming the child's neurological functioning overnight.
           </p>
           
           <button
@@ -123,11 +123,11 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
           <ImageWithFallback 
             src="/images/pandas/pandas-symptoms-intro.webp"
             alt="Child anxiety and behavioral changes in PANDAS" 
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm" 
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm" 
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            The hallmark of PANDAS is the abrupt, explosive onset of severe OCD behaviors and vocal or motor tics that appear within days to weeks of a strep infection.<sup className="text-[#10b981] font-bold ml-0.5">9</sup> Accompanying these core features are often profound personality changes, including intense separation anxiety, extreme emotional lability, age-inappropriate behavioral regression, and heavily disrupted sleep patterns.
+            The hallmark of PANDAS is the abrupt, explosive onset of severe OCD behaviors and vocal or motor tics that appear within days to weeks of a strep infection. Accompanying these core features are often profound personality changes, including intense separation anxiety, extreme emotional lability, age-inappropriate behavioral regression, and heavily disrupted sleep patterns.
           </p>
 
           <button
@@ -148,11 +148,11 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
           <ImageWithFallback 
             src="/images/pandas/pandas-causes-intro.webp"
             alt="Streptococcal infection triggering PANDAS" 
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm" 
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm" 
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            PANDAS represents an acquired brain difference where an environmental trigger—specifically a Group A streptococcal infection—causes a devastatingly misdirected immune response.<sup className="text-[#10b981] font-bold ml-0.5">6</sup> Instead of solely attacking the bacteria, the child's antibodies cross-react and attack their own brain tissue, sparking rapid neuroinflammation that severely disrupts normal psychiatric and neurological functioning.
+            PANDAS represents an acquired brain difference where an environmental trigger—specifically a Group A streptococcal infection—causes a devastatingly misdirected immune response.<sup className="text-[#10b981] font-bold ml-0.5">3</sup> Instead of solely attacking the bacteria, the child's antibodies cross-react and attack their own brain tissue, sparking rapid neuroinflammation that severely disrupts normal psychiatric and neurological functioning.
           </p>
 
           <button
@@ -173,11 +173,11 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
           <ImageWithFallback 
             src="/images/pandas/pandas-diagnosis-intro.webp"
             alt="Medical testing and diagnosis for PANDAS" 
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm" 
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm" 
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Because there is no single definitive lab test for PANDAS, diagnosis heavily relies on clinical evaluation proving the sudden, prepubertal onset of OCD or tics temporally linked to a recent strep infection.<sup className="text-[#10b981] font-bold ml-0.5">23</sup> Evaluations aggressively utilize rapid strep tests, blood antibody titers (ASO and anti-DNase B), and rigorous neuropsychiatric assessments, though diagnosis frequently remains controversial within broader medical communities.
+            Because there is no single definitive lab test for PANDAS, diagnosis heavily relies on clinical evaluation proving the sudden, prepubertal onset of OCD or tics temporally linked to a recent strep infection. Evaluations aggressively utilize rapid strep tests, blood antibody titers (ASO and anti-DNase B), and rigorous neuropsychiatric assessments, though diagnosis frequently remains controversial within broader medical communities.
           </p>
 
           <button
@@ -198,11 +198,11 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
           <ImageWithFallback 
             src="/images/pandas/pandas-support-intro.webp"
             alt="Treatment and therapy for children with PANDAS" 
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm" 
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm" 
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Treatment must aggressively target both the underlying infection through antibiotics and the resulting severe neuroinflammation using immunomodulatory therapies like NSAIDs, corticosteroids, or Intravenous Immunoglobulin (IVIG) for severe cases.<sup className="text-[#10b981] font-bold ml-0.5">30</sup> Simultaneously, families must utilize Cognitive-Behavioral Therapy (CBT), psychiatric medications, and strict school accommodations to help the child physically manage the intense behavioral fallout.
+            Treatment must aggressively target both the underlying infection through antibiotics and the resulting severe neuroinflammation using immunomodulatory therapies like NSAIDs, corticosteroids, or Intravenous Immunoglobulin (IVIG) for severe cases. Simultaneously, families must utilize Cognitive-Behavioral Therapy (CBT), psychiatric medications, and strict school accommodations to help the child physically manage the intense behavioral fallout.
           </p>
 
           <button
@@ -223,11 +223,11 @@ export function ArticlePANDAS({ setCurrentArticle }: ArticlePANDASProps) {
           <ImageWithFallback 
             src="/images/pandas/pandas-living-intro.webp"
             alt="Family support and child recovery from PANDAS" 
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm" 
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm" 
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Living with PANDAS means navigating an incredibly volatile, episodic condition where a child may fully recover with treatment or endure chronic symptom flares following every new immune challenge.<sup className="text-[#10b981] font-bold ml-0.5">38</sup> Families must remain hyper-vigilant for new strep exposures, maintain robust educational accommodations, and relentlessly advocate within medical systems to protect their child's rapidly shifting neurological reality.
+            Living with PANDAS means navigating an incredibly volatile, episodic condition where a child may fully recover with treatment or endure chronic symptom flares following every new immune challenge. Families must remain hyper-vigilant for new strep exposures, maintain robust educational accommodations, and relentlessly advocate within medical systems to protect their child's rapidly shifting neurological reality.
           </p>
 
           <button

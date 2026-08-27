@@ -99,11 +99,11 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <ImageWithFallback 
             src="/images/cte/cte-overview-intro.webp"
             alt="Brain protein accumulation in neurodegenerative disease"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            CTE is an acquired, progressive neurodegenerative disease characterized by the abnormal buildup of tau proteins that clump together and slowly destroy healthy brain cells over time.<sup className="text-[#10b981] font-bold ml-0.5">3</sup> Unlike acute brain injuries, this condition is strictly caused by repeated trauma occurring over months or years, requiring entirely unique diagnostic approaches and long-term care strategies.
+            CTE is an acquired, progressive neurodegenerative disease characterized by the abnormal buildup of tau proteins that clump together and slowly destroy healthy brain cells over time.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> Unlike acute brain injuries, this condition is strictly caused by repeated trauma occurring over months or years, requiring entirely unique diagnostic approaches and long-term care strategies.
           </p>
 
           <button
@@ -124,11 +124,11 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <ImageWithFallback 
             src="/images/cte/cte-symptoms-intro.webp"
             alt="Cognitive decline and memory loss in CTE"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Because CTE is a progressive disease, initial symptoms like impulsivity, depression, and short-term memory problems often do not appear until years or decades after the individual's final head trauma.<sup className="text-[#10b981] font-bold ml-0.5">2</sup> As the abnormal tau protein spreads throughout the brain tissue, individuals typically experience progressively severe executive dysfunction, severe mood changes, and eventually profound cognitive impairment akin to dementia.
+            Because CTE is a progressive disease, initial symptoms like impulsivity, depression, and short-term memory problems often do not appear until years or decades after the individual's final head trauma.<sup className="text-[#10b981] font-bold ml-0.5">3</sup> As the abnormal tau protein spreads throughout the brain tissue, individuals typically experience progressively severe executive dysfunction, severe mood changes, and eventually profound cognitive impairment akin to dementia.
           </p>
 
           <button
@@ -149,11 +149,11 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <ImageWithFallback 
             src="/images/cte/cte-causes-intro.webp"
             alt="Contact sports and repeated head impacts causing CTE"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            The exclusive primary cause of CTE is repeated head impacts sustained over time, which frequently include highly visible concussions alongside thousands of asymptomatic subconcussive hits that occur during routine practice or combat.<sup className="text-[#10b981] font-bold ml-0.5">21</sup> Risk is heavily correlated with the total duration of exposure to these impacts, meaning individuals with long careers in contact sports or military blast exposure carry the highest statistical vulnerability.
+            The exclusive primary cause of CTE is repeated head impacts sustained over time, which frequently include highly visible concussions alongside thousands of asymptomatic subconcussive hits that occur during routine practice or combat. Risk is heavily correlated with the total duration of exposure to these impacts, meaning individuals with long careers in contact sports or military blast exposure carry the highest statistical vulnerability.
           </p>
 
           <button
@@ -174,11 +174,11 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <ImageWithFallback 
             src="/images/cte/cte-diagnosis-intro.webp"
             alt="Brain tissue pathology research and microscopic examination"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Currently, CTE can only be definitively and officially diagnosed post-mortem through highly specialized microscopic examinations identifying the unique pattern of tau protein deposits within the brain tissue.<sup className="text-[#10b981] font-bold ml-0.5">30</sup> However, medical professionals can clinically suspect the condition in living patients by rigorously assessing an individual's trauma history, analyzing cognitive decline patterns, and comprehensively ruling out overlapping neurodegenerative diseases.
+            Currently, CTE can only be definitively and officially diagnosed post-mortem through highly specialized microscopic examinations identifying the unique pattern of tau protein deposits within the brain tissue. However, medical professionals can clinically suspect the condition in living patients by rigorously assessing an individual's trauma history, analyzing cognitive decline patterns, and comprehensively ruling out overlapping neurodegenerative diseases.
           </p>
 
           <button
@@ -199,11 +199,11 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <ImageWithFallback 
             src="/images/cte/cte-support-intro.webp"
             alt="Medical support and healthcare management for CTE"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            While there is no established cure to halt the progression of CTE, individuals benefit immensely from highly targeted medical management focusing on specific symptoms like depression, severe anxiety, and sleep disturbances.<sup className="text-[#10b981] font-bold ml-0.5">37</sup> Comprehensive care requires utilizing cognitive rehabilitation strategies, creating strong family support networks, and engaging in preventative health measures to actively protect the brain from any further traumatic exposure.
+            While there is no established cure to halt the progression of CTE, individuals benefit immensely from highly targeted medical management focusing on specific symptoms like depression, severe anxiety, and sleep disturbances. Comprehensive care requires utilizing cognitive rehabilitation strategies, creating strong family support networks, and engaging in preventative health measures to actively protect the brain from any further traumatic exposure.
           </p>
 
           <button
@@ -224,11 +224,11 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
           <ImageWithFallback 
             src="/images/cte/cte-living-intro.webp"
             alt="Family support and caregiving for individuals with CTE"
-            className="w-56 h-auto rounded-md float-right ml-6 mb-4 mt-1 shadow-sm"
+            className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           />
           
           <p className="mb-4 text-slate-700 leading-relaxed text-sm">
-            Living with suspected CTE involves profoundly challenging emotional hurdles, as individuals must manage progressive behavioral changes and cognitive decline while simultaneously coping with immense diagnostic uncertainty.<sup className="text-[#10b981] font-bold ml-0.5">46</sup> To maximize quality of life, families must prioritize securing comprehensive mental health resources, actively utilizing caregiving networks, and often participating heavily in advocacy to demand better safety protocols in sports.
+            Living with suspected CTE involves profoundly challenging emotional hurdles, as individuals must manage progressive behavioral changes and cognitive decline while simultaneously coping with immense diagnostic uncertainty. To maximize quality of life, families must prioritize securing comprehensive mental health resources, actively utilizing caregiving networks, and often participating heavily in advocacy to demand better safety protocols in sports.
           </p>
 
           <button
@@ -253,9 +253,9 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. McKee, A. C., Cairns, N. J., Dickson, D. W., et al. (2016). "The first NINDS/NIBIB consensus meeting to define neuropathological criteria for the diagnosis of chronic traumatic encephalopathy." <i>Acta Neuropathologica</i>, 131(1), 75-86.</p>
-            <p>2. Mez, J., Daneshvar, D. H., Kiernan, P. T., et al. (2017). "Clinicopathological evaluation of chronic traumatic encephalopathy in players of American football." <i>JAMA</i>, 318(4), 360-370.</p>
-            <p>3. McKee, A. C., Stein, T. D., Nowinski, C. J., et al. (2013). "The spectrum of disease in chronic traumatic encephalopathy." <i>Brain</i>, 136(1), 43-64.</p>
+            <p>1. McKee, A. C., Cairns, N. J., Dickson, D. W., et al. (2016). "The first NINDS/NIBIB consensus meeting to define neuropathological criteria for the diagnosis of chronic traumatic encephalopathy." <i>Acta Neuropathologica</i>. https://doi.org/10.1007/s00401-015-1515-z</p>
+            <p>2. McKee, A. C., Stein, T. D., Nowinski, C. J., et al. (2013). "The spectrum of disease in chronic traumatic encephalopathy." <i>Brain</i>. https://doi.org/10.1093/brain/aws307</p>
+            <p>3. Mez, J., Daneshvar, D. H., Kiernan, P. T., et al. (2017). "Clinicopathological evaluation of chronic traumatic encephalopathy in players of American football." <i>JAMA</i>. https://doi.org/10.1001/jama.2017.8334</p>
           </div>
         </div>
         
@@ -265,8 +265,8 @@ export function ArticleCTE({ setCurrentArticle }: ArticleCTEProps) {
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Stein, T. D., Alvarez, V. E., & McKee, A. C. (2014). "Chronic traumatic encephalopathy: A spectrum of neuropathological changes following repetitive brain trauma in athletes and military personnel." <i>Alzheimer's Research & Therapy</i>, 6(1), 4.</li>
-            <li>Baugh, C. M., Stamm, J. M., Riley, D. O., et al. (2012). "Chronic traumatic encephalopathy: Neurodegeneration following repetitive concussive and subconcussive brain trauma." <i>Brain Imaging and Behavior</i>, 6(2), 244-254.</li>
+            <li>Stein, T. D., Alvarez, V. E., & McKee, A. C. (2014). "Chronic traumatic encephalopathy: A spectrum of neuropathological changes following repetitive brain trauma in athletes and military personnel." <i>Alzheimer's Research & Therapy</i>. https://doi.org/10.1186/alzrt234</li>
+            <li>Baugh, C. M., Stamm, J. M., Riley, D. O., et al. (2012). "Chronic traumatic encephalopathy: Neurodegeneration following repetitive concussive and subconcussive brain trauma." <i>Brain Imaging and Behavior</i>. https://doi.org/10.1007/s11682-012-9164-5</li>
           </ul>
         </div>
       </div>
