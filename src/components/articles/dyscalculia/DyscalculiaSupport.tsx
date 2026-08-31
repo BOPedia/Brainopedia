@@ -1,12 +1,16 @@
+import React, { useState } from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 interface DyscalculiaSupportProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProps) {
+export function DyscalculiaSupport({ setCurrentArticle, initialTab }: DyscalculiaSupportProps) {
+  const [activeTab, setActiveTab] = useState(initialTab || 'interventions');
+
   return (
-    <article className="max-w-6xl">
+    <article className="max-w-6xl font-spartan">
       <style>
         {`
           sup {
@@ -14,353 +18,335 @@ export function DyscalculiaSupport({ setCurrentArticle }: DyscalculiaSupportProp
           }
         `}
       </style>
-      <div className="mb-6">
-        <a 
-          href="#" 
-          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('dyscalculia'); }}
-          className="text-[#2abcd4] hover:underline cursor-pointer"
+      
+      {/* Header Area */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl text-[#0c264d] font-normal">
+          Dyscalculia Support & Strategies
+        </h1>
+
+        <button 
+          onClick={() => setCurrentArticle?.('dyscalculia')}
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
         >
-          ← Back to Dyscalculia
-        </a>
+          <span className="text-xl">←</span>
+          Back to Dyscalculia
+        </button>
       </div>
 
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
-        Dyscalculia: Support & Management
-      </h1>
+      {/* Mobile button */}
+      <button 
+        onClick={() => setCurrentArticle?.('dyscalculia')}
+        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
+      >
+        <span className="text-xl">←</span>
+        Back to Dyscalculia
+      </button>
 
-      <div className="space-y-8">
-        <div>
-          <p className="mb-4">
-            Effective support for dyscalculia requires evidence-based interventions, appropriate accommodations, and 
-            comprehensive educational planning.<sup>1</sup> While dyscalculia is lifelong, with proper support individuals 
-            can develop functional mathematical skills and strategies to manage daily mathematical demands.<sup>2</sup>
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Evidence-Based Interventions</h2>
-          
-          <ImageWithFallback 
-            src="/images/dyscalculia-support-interventions.webp"
-            alt="Teacher using multi-sensory math instruction with manipulatives and visual aids for dyscalculia support"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Explicit, Systematic Instruction</h3>
-          <p className="mb-4">
-            Research consistently supports explicit, systematic teaching approaches for dyscalculia:<sup>3</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Clear models:</strong> Teacher demonstrates thinking process explicitly<sup>4</sup></li>
-            <li className="mb-2"><strong>Guided practice:</strong> Students practice with immediate feedback</li>
-            <li className="mb-2"><strong>Gradual release:</strong> Move from heavily supported to independent practice<sup>5</sup></li>
-            <li className="mb-2"><strong>Cumulative review:</strong> Regular review of previously taught skills</li>
-            <li className="mb-2"><strong>Verbalization:</strong> Students explain their thinking aloud<sup>6</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Number Sense Instruction</h3>
-          <p className="mb-4">
-            Building foundational number sense is critical for students with dyscalculia:<sup>7</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Quantity recognition:</strong> Practice identifying and comparing quantities<sup>8</sup></li>
-            <li className="mb-2"><strong>Number line activities:</strong> Placing numbers on number lines</li>
-            <li className="mb-2"><strong>Estimation tasks:</strong> Approximating quantities and calculations<sup>9</sup></li>
-            <li className="mb-2"><strong>Part-whole relationships:</strong> Understanding how numbers combine</li>
-            <li className="mb-2"><strong>Number games:</strong> Board games and activities building number sense<sup>1</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Concrete-Representational-Abstract (CRA) Approach</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Concrete:</strong> Use manipulatives (blocks, counters) to represent concepts<sup>1</sup></li>
-            <li className="mb-2"><strong>Representational:</strong> Draw pictures or diagrams of mathematical concepts</li>
-            <li className="mb-2"><strong>Abstract:</strong> Work with numbers and symbols alone<sup>2</sup></li>
-            <li className="mb-2"><strong>Progression:</strong> Move through stages as understanding develops</li>
-            <li className="mb-2"><strong>Research support:</strong> Highly effective for students with math difficulties<sup>3</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Specific Intervention Programs</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Number Worlds:</strong> Curriculum targeting number sense development<sup>4</sup></li>
-            <li className="mb-2"><strong>Math Recovery:</strong> One-on-one intervention for early elementary<sup>5</sup></li>
-            <li className="mb-2"><strong>TouchMath:</strong> Multisensory approach using touch points on numbers<sup>6</sup></li>
-            <li className="mb-2"><strong>Schema-based instruction:</strong> Teaching problem-solving through recognizing problem types<sup>[17]</sup></li>
-            <li className="mb-2"><strong>Peer-Assisted Learning Strategies (PALS):</strong> Structured peer tutoring<sup>[18]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Building Arithmetic Skills</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Fact Fluency Strategies</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Teach strategies, not just memorization:</strong> Counting on, making tens, doubles<sup>[19]</sup></li>
-            <li className="mb-2"><strong>Focus on relationships:</strong> If you know 5+5=10, then 5+6=11</li>
-            <li className="mb-2"><strong>Practice to automaticity:</strong> Frequent, short practice sessions<sup>[20]</sup></li>
-            <li className="mb-2"><strong>Multiplication strategies:</strong> Skip counting, arrays, repeated addition</li>
-            <li className="mb-2"><strong>Fact families:</strong> Understanding relationships among operations<sup>[21]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multi-Digit Calculation</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Place value understanding:</strong> Explicit teaching of ones, tens, hundreds<sup>[22]</sup></li>
-            <li className="mb-2"><strong>Algorithm instruction:</strong> Step-by-step procedures with understanding</li>
-            <li className="mb-2"><strong>Visual supports:</strong> Grid paper to align columns<sup>[23]</sup></li>
-            <li className="mb-2"><strong>Error analysis:</strong> Identifying and correcting common mistakes</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Word Problem Solving</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Schema-based instruction:</strong> Teach problem structures (change, compare, combine)<sup>[24]</sup></li>
-            <li className="mb-2"><strong>Visual representations:</strong> Drawing diagrams to represent problems<sup>[25]</sup></li>
-            <li className="mb-2"><strong>STAR strategy:</strong> Search, Translate, Answer, Review</li>
-            <li className="mb-2"><strong>Key word caution:</strong> Teach conceptual understanding, not just key words<sup>[26]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Educational Accommodations</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Calculation Accommodations</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Calculator use:</strong> For non-computation-focused tasks<sup>[27]</sup></li>
-            <li className="mb-2"><strong>Multiplication charts:</strong> Reference sheets for facts</li>
-            <li className="mb-2"><strong>Formula sheets:</strong> Provided for tests and assignments<sup>[28]</sup></li>
-            <li className="mb-2"><strong>Grid/graph paper:</strong> Helps with number alignment</li>
-            <li className="mb-2"><strong>Reduced quantity:</strong> Fewer problems focusing on mastery<sup>[29]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Time and Pacing Accommodations</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Extended time:</strong> 50-100% extra time on tests<sup>[30]</sup></li>
-            <li className="mb-2"><strong>Breaks during testing:</strong> Prevent mental fatigue</li>
-            <li className="mb-2"><strong>Untimed tests:</strong> No time pressure on math tasks<sup>[31]</sup></li>
-            <li className="mb-2"><strong>Extended deadlines:</strong> Additional time for math assignments</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Presentation Accommodations</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Read-aloud:</strong> Math problems read to student<sup>[32]</sup></li>
-            <li className="mb-2"><strong>Larger print:</strong> Bigger numbers easier to process</li>
-            <li className="mb-2"><strong>Highlighted operations:</strong> Color-coding operation signs<sup>[33]</sup></li>
-            <li className="mb-2"><strong>One problem per page:</strong> Reduce visual overwhelm</li>
-            <li className="mb-2"><strong>Visual aids:</strong> Number lines, hundreds charts available<sup>[34]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Response Accommodations</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Show work on separate paper:</strong> More space for calculations<sup>[35]</sup></li>
-            <li className="mb-2"><strong>Oral responses:</strong> Explain thinking verbally instead of writing</li>
-            <li className="mb-2"><strong>Reduced writing:</strong> Multiple choice instead of constructed response<sup>[36]</sup></li>
-            <li className="mb-2"><strong>Use of scribe:</strong> Someone else records mathematical work</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Assistive Technology</h2>
-          
-          <ImageWithFallback 
-            src="/images/dyscalculia-support-technology.webp"
-            alt="Digital calculator, educational apps, and assistive technology tools for math support"
-            className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-          />
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Calculation Tools</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Graphing calculators:</strong> For advanced mathematics<sup>[37]</sup></li>
-            <li className="mb-2"><strong>Talking calculators:</strong> Auditory feedback for entries</li>
-            <li className="mb-2"><strong>Large-button calculators:</strong> Easier input<sup>[38]</sup></li>
-            <li className="mb-2"><strong>Calculator apps:</strong> Smartphone calculators with photo recognition</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Digital Learning Tools</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Virtual manipulatives:</strong> Online base-ten blocks, fraction bars<sup>[39]</sup></li>
-            <li className="mb-2"><strong>Math apps:</strong> Apps targeting specific skills (e.g., DragonBox, Prodigy)<sup>[40]</sup></li>
-            <li className="mb-2"><strong>Number line apps:</strong> Interactive number lines</li>
-            <li className="mb-2"><strong>Math games:</strong> Engaging practice of mathematical concepts<sup>[41]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Organization and Support Tools</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Graphic organizers:</strong> Templates for problem-solving steps<sup>[42]</sup></li>
-            <li className="mb-2"><strong>Digital equation editors:</strong> MathType, EquatIO for typing math</li>
-            <li className="mb-2"><strong>Voice-to-text:</strong> Dictate mathematical thinking<sup>[43]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">IEPs and 504 Plans</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Individualized Education Program (IEP)</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Eligibility:</strong> Under IDEA for students with significant educational impact<sup>[44]</sup></li>
-            <li className="mb-2"><strong>Special education services:</strong> Specialized math instruction</li>
-            <li className="mb-2"><strong>Measurable goals:</strong> Specific, quantifiable mathematical objectives<sup>[45]</sup></li>
-            <li className="mb-2"><strong>Accommodations:</strong> Listed supports and modifications</li>
-            <li className="mb-2"><strong>Related services:</strong> May include occupational therapy if motor issues<sup>[46]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">504 Plan</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Eligibility:</strong> Under Section 504 for students with disabilities affecting learning<sup>[47]</sup></li>
-            <li className="mb-2"><strong>Accommodations only:</strong> No specialized instruction</li>
-            <li className="mb-2"><strong>Easier to qualify:</strong> Broader eligibility than IEP<sup>[48]</sup></li>
-            <li className="mb-2"><strong>Examples:</strong> Calculator use, extended time, reduced assignments</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Supporting Executive Function</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Organization Strategies</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Math notebooks:</strong> Organized reference of procedures and formulas<sup>[49]</sup></li>
-            <li className="mb-2"><strong>Color-coding:</strong> Different colors for different operations or concepts</li>
-            <li className="mb-2"><strong>Checklists:</strong> Steps for multi-step problems<sup>[50]</sup></li>
-            <li className="mb-2"><strong>Workspace organization:</strong> Clear, uncluttered work area</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Metacognitive Strategies</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Think-alouds:</strong> Model thinking process explicitly<sup>[51]</sup></li>
-            <li className="mb-2"><strong>Self-questioning:</strong> "Does this answer make sense?"</li>
-            <li className="mb-2"><strong>Error monitoring:</strong> Checking own work systematically<sup>[52]</sup></li>
-            <li className="mb-2"><strong>Strategy selection:</strong> Choosing appropriate problem-solving approaches</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Managing Math Anxiety</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reducing Anxiety</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Growth mindset:</strong> Emphasize that math ability can improve with practice<sup>[53]</sup></li>
-            <li className="mb-2"><strong>Low-pressure practice:</strong> Games and activities without grades</li>
-            <li className="mb-2"><strong>Success experiences:</strong> Ensure tasks at appropriate level<sup>[54]</sup></li>
-            <li className="mb-2"><strong>Relaxation techniques:</strong> Deep breathing before math tasks</li>
-            <li className="mb-2"><strong>Reframe negative thoughts:</strong> Challenge "I can't do math" thinking<sup>[55]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Test Anxiety Strategies</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Practice tests:</strong> Familiarize with format in low-stakes setting<sup>[56]</sup></li>
-            <li className="mb-2"><strong>Testing accommodations:</strong> Extended time, separate room</li>
-            <li className="mb-2"><strong>Positive self-talk:</strong> Affirmations before tests<sup>[57]</sup></li>
-            <li className="mb-2"><strong>Test preparation:</strong> Organized study strategies</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Home Support Strategies</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Creating a Math-Friendly Home</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Math in daily life:</strong> Cooking, shopping, games involve math<sup>[58]</sup></li>
-            <li className="mb-2"><strong>Math games:</strong> Board games, card games building number sense</li>
-            <li className="mb-2"><strong>Positive attitude:</strong> Avoid saying "I'm bad at math"<sup>[59]</sup></li>
-            <li className="mb-2"><strong>Patience and support:</strong> Celebrate effort and progress</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Homework Support</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Structured time:</strong> Consistent homework routine<sup>[60]</sup></li>
-            <li className="mb-2"><strong>Break into chunks:</strong> Short sessions with breaks</li>
-            <li className="mb-2"><strong>Manipulatives at home:</strong> Blocks, coins for concrete practice<sup>[61]</sup></li>
-            <li className="mb-2"><strong>Communication with teacher:</strong> Share what works at home</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Tutoring and Specialized Support</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Finding a Math Tutor</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Qualifications:</strong> Experience with learning disabilities<sup>[62]</sup></li>
-            <li className="mb-2"><strong>Approach:</strong> Uses evidence-based, explicit instruction</li>
-            <li className="mb-2"><strong>Individualized:</strong> Tailors instruction to student's needs<sup>[63]</sup></li>
-            <li className="mb-2"><strong>Frequency:</strong> 2-3 times per week most effective</li>
-          </ul>
-        </div>
+      {/* Tab Navigation */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 clear-both">
+        <button
+          onClick={() => setActiveTab('interventions')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal ${
+            activeTab === 'interventions'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Interventions
+        </button>
+        <button
+          onClick={() => setActiveTab('accommodations')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal ${
+            activeTab === 'accommodations'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Accommodations
+        </button>
+        <button
+          onClick={() => setActiveTab('home')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal ${
+            activeTab === 'home'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Home & Emotional
+        </button>
       </div>
 
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <p>[1] Kaufmann, L., & von Aster, M. (2012). "The diagnosis and management of dyscalculia." <em>Deutsches Ärzteblatt International</em>, 109(45), 767-778.</p>
-          <p>[2] Butterworth, B., Varma, S., & Laurillard, D. (2011). "Dyscalculia: From brain to education." <em>Science</em>, 332(6033), 1049-1053.</p>
-          <p>[3] Gersten, R., Chard, D. J., Jayanthi, M., Baker, S. K., Morphy, P., & Flojo, J. (2009). "Mathematics instruction for students with learning disabilities." <em>Review of Educational Research</em>, 79(3), 1202-1242.</p>
-          <p>[4] Archer, A. L., & Hughes, C. A. (2011). <em>Explicit instruction: Effective and efficient teaching</em>. Guilford Press.</p>
-          <p>[5] Fuchs, L. S., Fuchs, D., Powell, S. R., Seethaler, P. M., Cirino, P. T., & Fletcher, J. M. (2008). "Intensive intervention for students with mathematics disabilities." <em>Learning Disability Quarterly</em>, 31(2), 79-92.</p>
-          <p>[6] Montague, M. (2008). "Self-regulation strategies to improve mathematical problem solving for students with learning disabilities." <em>Learning Disability Quarterly</em>, 31(1), 37-44.</p>
-          <p>[7] Gersten, R., & Chard, D. (1999). "Number sense: Rethinking arithmetic instruction for students with mathematical disabilities." <em>The Journal of Special Education</em>, 33(1), 18-28.</p>
-          <p>[8] Griffin, S. (2004). "Building number sense with Number Worlds." <em>Early Childhood Research Quarterly</em>, 19(1), 173-180.</p>
-          <p>[9] Siegler, R. S., & Booth, J. L. (2004). "Development of numerical estimation in young children." <em>Child Development</em>, 75(2), 428-444.</p>
-          <p>[10] Siegler, R. S., & Ramani, G. B. (2009). "Playing linear number board games--but not circular ones--improves low-income preschoolers' numerical understanding." <em>Journal of Educational Psychology</em>, 101(3), 545-560.</p>
-          <p>[11] Witzel, B. S., Mercer, C. D., & Miller, M. D. (2003). "Teaching algebra to students with learning difficulties: An investigation of an explicit instruction model." <em>Learning Disabilities Research & Practice</em>, 18(2), 121-131.</p>
-          <p>[12] Miller, S. P., & Hudson, P. J. (2007). "Using evidence-based practices to build mathematics competence related to conceptual, procedural, and declarative knowledge." <em>Learning Disabilities Research & Practice</em>, 22(1), 47-57.</p>
-          <p>[13] Bouck, E. C., & Park, J. (2018). "A systematic review of the literature on mathematics manipulatives to support students with disabilities." <em>Education and Treatment of Children</em>, 41(1), 65-106.</p>
-          <p>[14] Griffin, S. (2004). "Building number sense with Number Worlds." <em>Early Childhood Research Quarterly</em>, 19(1), 173-180.</p>
-          <p>[15] Wright, R. J., Martland, J., & Stafford, A. K. (2006). <em>Early numeracy: Assessment for teaching and intervention</em> (2nd ed.). SAGE Publications.</p>
-          <p>[16] Bullock, J., Pierce, S., & McClelland, L. (1989). "TouchMath." <em>Innovative Learning Concepts</em>.</p>
-          <p>[17] Jitendra, A. K., & Star, J. R. (2011). "Meeting the needs of students with learning disabilities in inclusive mathematics classrooms." <em>Theory Into Practice</em>, 50(1), 12-19.</p>
-          <p>[18] Fuchs, L. S., Fuchs, D., Yazdian, L., & Powell, S. R. (2002). "Enhancing first-grade children's mathematical development with peer-assisted learning strategies." <em>School Psychology Review</em>, 31(4), 569-583.</p>
-          <p>[19] Baroody, A. J. (2006). "Why children have difficulties mastering the basic number combinations and how to help them." <em>Teaching Children Mathematics</em>, 13(1), 22-31.</p>
-          <p>[20] Burns, M. K., Codding, R. S., Boice, C. H., & Lukito, G. (2010). "Meta-analysis of acquisition and fluency math interventions with instructional and frustration level skills." <em>School Psychology Review</em>, 39(1), 69-83.</p>
-          <p>[21] Gersten, R., Jordan, N. C., & Flojo, J. R. (2005). "Early identification and interventions for students with mathematics difficulties." <em>Journal of Learning Disabilities</em>, 38(4), 293-304.</p>
-          <p>[22] Fuson, K. C., & Briars, D. J. (1990). "Using a base-ten blocks learning/teaching approach for first-and second-grade place-value and multidigit addition and subtraction." <em>Journal for Research in Mathematics Education</em>, 21(3), 180-206.</p>
-          <p>[23] Montague, M., & Dietz, S. (2009). "Evaluating the evidence base for cognitive strategy instruction and mathematical problem solving." <em>Exceptional Children</em>, 75(3), 285-302.</p>
-          <p>[24] Jitendra, A. K., Griffin, C. C., Haria, P., Leh, J., Adams, A., & Kaduvettoor, A. (2007). "A comparison of single and multiple strategy instruction on third-grade students' mathematical problem solving." <em>Journal of Educational Psychology</em>, 99(1), 115-127.</p>
-          <p>[25] Van Garderen, D., & Montague, M. (2003). "Visual-spatial representation, mathematical problem solving, and students of varying abilities." <em>Learning Disabilities Research & Practice</em>, 18(4), 246-254.</p>
-          <p>[26] Kintsch, W., & Greeno, J. G. (1985). "Understanding and solving word arithmetic problems." <em>Psychological Review</em>, 92(1), 109-129.</p>
-          <p>[27] Bouck, E. C., & Flanagan, S. (2009). "Assistive technology and mathematics." <em>Journal of Special Education Technology</em>, 24(2), 55-60.</p>
-          <p>[28] Fuchs, L. S., Fuchs, D., & Capizzi, A. M. (2005). "Identifying appropriate test accommodations for students with learning disabilities." <em>Focus on Exceptional Children</em>, 37(6), 1-8.</p>
-          <p>[29] Calhoon, M. B., & Fuchs, L. S. (2003). "The effects of peer-assisted learning strategies and curriculum-based measurement on the mathematics performance of secondary students with disabilities." <em>Remedial and Special Education</em>, 24(4), 235-245.</p>
-          <p>[30] Lewandowski, L. J., Lovett, B. J., & Rogers, C. L. (2008). "Extended time as a testing accommodation for students with reading disabilities." <em>Journal of Psychoeducational Assessment</em>, 26(4), 315-324.</p>
-          <p>[31] Sireci, S. G., Scarpati, S. E., & Li, S. (2005). "Test accommodations for students with disabilities." <em>Review of Educational Research</em>, 75(4), 457-490.</p>
-          <p>[32] Helwig, R., Rozek-Tedesco, M. A., & Tindal, G. (2002). "An oral versus a standard administration of a large-scale mathematics test." <em>The Journal of Special Education</em>, 36(1), 39-47.</p>
-          <p>[33] Strickland, T. K., & Maccini, P. (2010). "Strategies for teaching algebra to students with learning disabilities." <em>Intervention in School and Clinic</em>, 46(1), 38-45.</p>
-          <p>[34] Witzel, B. S., Riccomini, P. J., & Schneider, E. (2008). "Implementing CRA with secondary students with learning disabilities in mathematics." <em>Intervention in School and Clinic</em>, 43(5), 270-276.</p>
-          <p>[35] Thurlow, M. L., Lazarus, S. S., Thompson, S. J., & Morse, A. B. (2005). <em>State policies on assessment participation and accommodations for students with disabilities</em>. National Center on Educational Outcomes.</p>
-          <p>[36] Ketterlin-Geller, L. R., & Yovanoff, P. (2009). "Diagnostic assessments in mathematics to support instructional decision making." <em>Practical Assessment, Research, and Evaluation</em>, 14(1), 16.</p>
-          <p>[37] Bouck, E. C., Satsangi, R., Doughty, T. T., & Courtney, W. T. (2014). "Virtual and concrete manipulatives: A comparison of approaches for solving mathematics problems for students with autism spectrum disorder." <em>Journal of Autism and Developmental Disorders</em>, 44(1), 180-193.</p>
-          <p>[38] Satsangi, R., & Bouck, E. C. (2015). "Using virtual manipulative instruction to teach the concepts of area and perimeter to secondary students with learning disabilities." <em>Learning Disability Quarterly</em>, 38(3), 174-186.</p>
-          <p>[39] Moyer-Packenham, P. S., & Westenskow, A. (2013). "Effects of virtual manipulatives on student achievement and mathematics learning." <em>International Journal of Virtual and Personal Learning Environments</em>, 4(3), 35-50.</p>
-          <p>[40] Shin, M., Bryant, D. P., Powell, S. R., Jung, P. G., Ok, M. W., & Hou, F. (2021). "A meta-analysis of single-case research on mathematics interventions for students with learning disabilities." <em>Journal of Learning Disabilities</em>, 54(6), 427-443.</p>
-          <p>[41] Ke, F., & Clark, K. M. (2020). "Game-based multimodal representations and mathematical problem solving." <em>International Journal of Science and Mathematics Education</em>, 18(1), 103-122.</p>
-          <p>[42] Ives, B. (2007). "Graphic organizers applied to secondary algebra instruction for students with learning disorders." <em>Learning Disabilities Research & Practice</em>, 22(2), 110-118.</p>
-          <p>[43] Bryant, D. P., Ok, M. W., Kang, E. Y., Kim, M. K., Lang, R., Bryant, B. R., & Pfannestiel, K. (2015). "Performance of fourth-grade students with learning disabilities on multiplication facts comparing teacher-mediated and technology-mediated interventions." <em>Journal of Behavioral Education</em>, 24(2), 255-272.</p>
-          <p>[44] Individuals with Disabilities Education Act, 20 U.S.C. § 1400 (2004).</p>
-          <p>[45] Yell, M. L., Shriner, J. G., & Katsiyannis, A. (2006). "Individuals with Disabilities Education Improvement Act of 2004." <em>Focus on Exceptional Children</em>, 39(1), 1-24.</p>
-          <p>[46] Individuals with Disabilities Education Act, 20 U.S.C. § 1400 (2004).</p>
-          <p>[47] Section 504 of the Rehabilitation Act of 1973, 29 U.S.C. § 794 (1973).</p>
-          <p>[48] Zirkel, P. A. (2009). "What does the law say?" <em>Teaching Exceptional Children</em>, 41(4), 73-74.</p>
-          <p>[49] Montague, M. (2008). "Self-regulation strategies to improve mathematical problem solving for students with learning disabilities." <em>Learning Disability Quarterly</em>, 31(1), 37-44.</p>
-          <p>[50] Case, L. P., Harris, K. R., & Graham, S. (1992). "Improving the mathematical problem-solving skills of students with learning disabilities." <em>The Journal of Special Education</em>, 26(1), 1-19.</p>
-          <p>[51] Lucangeli, D., & Cabrele, S. (2006). "The relationship of metacognitive knowledge, skills and beliefs in children with and without mathematics learning disabilities." In A. Desoete & M. Veenman (Eds.), <em>Metacognition in mathematics education</em> (pp. 103-133).</p>
-          <p>[52] Garrett, A. J., Mazzocco, M. M., & Baker, L. (2006). "Development of the metacognitive skills of prediction and evaluation in children with or without math disability." <em>Learning Disabilities Research & Practice</em>, 21(2), 77-88.</p>
-          <p>[53] Dweck, C. S. (2006). <em>Mindset: The new psychology of success</em>. Random House.</p>
-          <p>[54] Dowker, A., Sarkar, A., & Looi, C. Y. (2016). "Mathematics anxiety: What have we learned in 60 years?" <em>Frontiers in Psychology</em>, 7, 508.</p>
-          <p>[55] Ramirez, G., Gunderson, E. A., Levine, S. C., & Beilock, S. L. (2013). "Math anxiety, working memory, and math achievement in early elementary school." <em>Journal of Cognition and Development</em>, 14(2), 187-202.</p>
-          <p>[56] Ashcraft, M. H., & Ridley, K. S. (2005). "Math anxiety and its cognitive consequences." In J. I. D. Campbell (Ed.), <em>Handbook of mathematical cognition</em> (pp. 315-327). Psychology Press.</p>
-          <p>[57] Rubinsten, O., & Tannock, R. (2010). "Mathematics anxiety in children with developmental dyscalculia." <em>Behavioral and Brain Functions</em>, 6(1), 46.</p>
-          <p>[58] LeFevre, J. A., Skwarchuk, S. L., Smith-Chant, B. L., Fast, L., Kamawar, D., & Bisanz, J. (2009). "Home numeracy experiences and children's math performance in the early school years." <em>Canadian Journal of Behavioural Science</em>, 41(2), 55-66.</p>
-          <p>[59] Maloney, E. A., Ramirez, G., Gunderson, E. A., Levine, S. C., & Beilock, S. L. (2015). "Intergenerational effects of parents' math anxiety on children's math achievement and anxiety." <em>Psychological Science</em>, 26(9), 1480-1488.</p>
-          <p>[60] Cooper, H., Robinson, J. C., & Patall, E. A. (2006). "Does homework improve academic achievement?" <em>Review of Educational Research</em>, 76(1), 1-62.</p>
-          <p>[61] Carbonneau, K. J., Marley, S. C., & Selig, J. P. (2013). "A meta-analysis of the efficacy of teaching mathematics with concrete manipulatives." <em>Journal of Educational Psychology</em>, 105(2), 380-400.</p>
-          <p>[62] Fuchs, L. S., & Fuchs, D. (2001). "Principles for the prevention and intervention of mathematics difficulties." <em>Learning Disabilities Research & Practice</em>, 16(2), 85-95.</p>
-          <p>[63] Gersten, R., Beckmann, S., Clarke, B., Foegen, A., Marsh, L., Star, J. R., & Witzel, B. (2009). <em>Assisting students struggling with mathematics: Response to Intervention (RtI) for elementary and middle schools</em>. National Center for Education Evaluation and Regional Assistance.</p>
-        </div>
-      </section>
+      {/* ==========================================
+          TAB 1: INTERVENTIONS
+      ========================================== */}
+      {activeTab === 'interventions' && (
+        <div className="space-y-6 animate-fadeIn">
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+            Effective intervention for dyscalculia relies on explicit, highly systematic instruction that targets the root deficits in fundamental number sense.<sup>1</sup> Rather than pushing memorization, successful strategies utilize multi-sensory techniques to help the brain build new, reliable neural pathways for mathematical reasoning.<sup>2</sup>
+          </p>
 
-      <div className="mt-8">
-        <a 
-          href="#" 
-          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('dyscalculia'); }}
-          className="text-[#2abcd4] hover:underline cursor-pointer"
+          {/* Educational Interventions Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Educational Interventions</h2>
+            
+            <div className="clearfix mb-6">
+              <ImageWithFallback 
+                src="/images/dyscalculia/dyscalculia-support-interventions.webp"
+                alt="Multi-sensory math instruction using physical blocks"
+                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
+              />
+              <p className="text-sm text-slate-700 leading-relaxed">
+                Direct instruction must focus heavily on bridging the gap between abstract numerical symbols and their physical quantities.<sup>3</sup> This is achieved by anchoring mathematical concepts in tangible, physical space before gradually introducing standard equations.<sup>1</sup>
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-cyan-100 pb-2">Instructional Models</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Concrete-Representational-Abstract (CRA):</strong> A vital sequence progressing from physical blocks to drawn pictures, and finally to numbers.<sup>2</sup></li>
+                  <li><strong>Explicit verbalization:</strong> Requiring students to talk through their mathematical reasoning aloud to engage language processing centers.</li>
+                  <li><strong>Micro-stepping:</strong> Breaking complex mathematical procedures down into the smallest possible discrete steps.<sup>4</sup></li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-cyan-100 pb-2">Physical Tools</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Base-ten blocks:</strong> Essential for visualizing place value and understanding regrouping in addition and subtraction.</li>
+                  <li><strong>Cuisenaire rods:</strong> Colored wooden rods that help students physically manipulate and compare relative magnitudes.<sup>2</sup></li>
+                  <li><strong>Fraction tiles:</strong> Tangible pieces that allow students to physically see how parts constitute a whole.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Arithmetic Strategies Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Targeted Arithmetic Strategies</h2>
+            
+            <div className="clearfix mb-6">
+              <ImageWithFallback 
+                src="/images/dyscalculia/dyscalculia-support-arithmetic.webp"
+                alt="Visual number lines and dot pattern strategies"
+                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
+              />
+              <p className="text-sm text-slate-700 leading-relaxed">
+                Because individuals with dyscalculia frequently struggle to memorize math facts, interventions must provide alternative, logic-based pathways for basic arithmetic.<sup>3</sup> These targeted strategies bypass the need for rote memorization by teaching students how to efficiently derive answers using visual and spatial reasoning.<sup>2</sup>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-yellow-200 pb-2">Spatial Number Sense</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Extensive number lines:</strong> Using physical and visual number lines heavily to map out distances between quantities.<sup>1</sup></li>
+                  <li><strong>Subitizing practice:</strong> Training the brain to instantly recognize small quantities using consistent dot patterns (like on dice).</li>
+                  <li><strong>Ten-frames:</strong> Using visual grids to help students quickly anchor numbers in relation to five and ten.<sup>2</sup></li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-yellow-200 pb-2">Derivation Techniques</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Decomposition:</strong> Teaching how to break numbers apart (e.g., seeing 8 as 5 and 3) to simplify addition.<sup>4</sup></li>
+                  <li><strong>Anchoring to known facts:</strong> Using known doubles (like 4+4=8) to easily solve adjacent problems (like 4+5=9).</li>
+                  <li><strong>Finger math:</strong> Permitting and encouraging the use of fingers as a legitimate tool for maintaining working memory during calculations.<sup>3</sup></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ==========================================
+          TAB 2: ACCOMMODATIONS
+      ========================================== */}
+      {activeTab === 'accommodations' && (
+        <div className="space-y-6 animate-fadeIn">
+          
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+            Classroom accommodations are essential tools that remove arbitrary barriers, allowing students with dyscalculia to demonstrate their true understanding of mathematical concepts.<sup>4</sup> Without these modifications, testing often measures a student's working memory deficits rather than their actual mastery of the subject matter.<sup>3</sup>
+          </p>
+
+          {/* Classroom Accommodations Card (Slate) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Classroom Accommodations</h2>
+            
+            <div className="clearfix mb-6">
+              <ImageWithFallback 
+                src="/images/dyscalculia/dyscalculia-support-accommodations.webp"
+                alt="Student using reference sheets and extended time"
+                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
+              />
+              <p className="text-sm text-slate-700 leading-relaxed">
+                Reasonable modifications must address the immense cognitive fatigue caused by numerical processing delays.<sup>1</sup> Adjusting the format, volume, and pacing of assignments ensures the student can engage with complex logic without being paralyzed by arithmetic fatigue.<sup>4</sup>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-slate-200 pb-2">Testing Adjustments</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Extended time:</strong> Providing 1.5x or 2x time on math-heavy assessments to accommodate slower processing speeds.</li>
+                  <li><strong>Reference sheets:</strong> Allowing unrestricted access to multiplication tables and formula sheets.<sup>2</sup></li>
+                  <li><strong>Reduced workload:</strong> Assigning fewer problems (e.g., only odd numbers) to test mastery without exhausting the student.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-slate-200 pb-2">Formatting Support</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Graph paper:</strong> Supplying grid paper to help the student cleanly align numbers vertically during calculations.<sup>2</sup></li>
+                  <li><strong>Visual cues:</strong> Highlighting operational signs (+, -, x) in different colors to prevent careless errors.</li>
+                  <li><strong>More white space:</strong> Providing worksheets with ample blank space to reduce visual clutter and anxiety.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Technology Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Assistive Technology</h2>
+            
+            <div className="clearfix mb-6">
+              <ImageWithFallback 
+                src="/images/dyscalculia/dyscalculia-support-technology.webp"
+                alt="Calculators and digital math tools"
+                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
+              />
+              <p className="text-sm text-slate-700 leading-relaxed">
+                Assistive technology acts as a vital cognitive bridge, allowing individuals with dyscalculia to bypass severe calculation deficits and engage directly with higher-level problem solving.<sup>3</sup> By offloading basic arithmetic to digital tools, the student's working memory is freed to focus on algebraic logic and real-world applications.<sup>1</sup>
+              </p>
+            </div>
+
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+              <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-cyan-100 pb-2">Essential Digital Tools</h3>
+              <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                <li><strong>Calculators:</strong> Consistent, unrestricted access to basic or talking calculators for all routine arithmetic tasks.<sup>4</sup></li>
+                <li><strong>Text-to-Speech:</strong> Software that reads word problems aloud to help untangle complex linguistic framing from the math equation.</li>
+                <li><strong>Digital graphing:</strong> Programs that cleanly format equations and graphs, removing the fine-motor strain of drawing them perfectly by hand.</li>
+                <li><strong>Audio recording:</strong> Allowing the recording of math lectures so students can review sequential steps without the pressure of live note-taking.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ==========================================
+          TAB 3: HOME & EMOTIONAL
+      ========================================== */}
+      {activeTab === 'home' && (
+        <div className="space-y-6 animate-fadeIn">
+          
+          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+            Supporting an individual with dyscalculia requires addressing the profound emotional toll that chronic mathematical failure takes on self-esteem.<sup>4</sup> A supportive home environment can rebuild confidence by integrating math into low-stress, practical daily routines while actively working to dismantle math anxiety.<sup>2</sup>
+          </p>
+
+          {/* Home Environment Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support in Daily Life</h2>
+            
+            <div className="clearfix mb-6">
+              <ImageWithFallback 
+                src="/images/dyscalculia/dyscalculia-support-home.webp"
+                alt="Engaging in practical math through cooking"
+                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
+              />
+              <p className="text-sm text-slate-700 leading-relaxed">
+                The home should serve as a safe space where individuals can interact with numbers freely, completely separated from the high-stakes pressure of academic grading.<sup>2</sup> Integrating mathematical concepts into tangible, everyday activities helps build practical number sense organically.<sup>1</sup>
+              </p>
+            </div>
+
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+              <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-yellow-200 pb-2">Everyday Math Activities</h3>
+              <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                <li><strong>Cooking and baking:</strong> A highly visual, practical way to practice fractions, measuring volumes, and estimating time.</li>
+                <li><strong>Board games:</strong> Games involving dice, counting spaces, or handling play money build sequential skills in an enjoyable environment.</li>
+                <li><strong>Shopping routines:</strong> Casually estimating total costs, talking about sale percentages, and handling physical cash during small errands.</li>
+                <li><strong>Time management:</strong> Using analog clocks at home and setting visual timers to help develop a physical sense of time passing.<sup>4</sup></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Anxiety Card (Slate) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Managing Math Anxiety</h2>
+            
+            <div className="clearfix mb-6">
+              <ImageWithFallback 
+                src="/images/dyscalculia/dyscalculia-support-anxiety.webp"
+                alt="Creating a supportive emotional environment"
+                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
+              />
+              <p className="text-sm text-slate-700 leading-relaxed">
+                Because dyscalculia often leads to severe math anxiety, emotional regulation is just as critical as academic tutoring.<sup>3</sup> Parents and educators must actively validate the student's neurological struggle while simultaneously modeling confident, shame-free self-advocacy.<sup>4</sup>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-slate-200 pb-2">Building Confidence</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>De-stigmatizing mistakes:</strong> Treating incorrect answers as helpful data points rather than failures.</li>
+                  <li><strong>Validating the struggle:</strong> Acknowledging dyscalculia as a real neurological difference, completely unrelated to intelligence.<sup>1</sup></li>
+                  <li><strong>Highlighting strengths:</strong> Actively fostering the child's talents in reading, art, or sports to build a well-rounded identity.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-slate-200 pb-2">Advocacy & Stress</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Praising process:</strong> Rewarding the effort, logic, and problem-solving attempts over achieving the final correct answer.<sup>2</sup></li>
+                  <li><strong>Advocacy modeling:</strong> Teaching the individual how to comfortably request accommodations, like asking for a calculator without shame.</li>
+                  <li><strong>Homework boundaries:</strong> Enforcing strict time limits on math homework to prevent evening meltdowns and family conflict.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Bottom navigation button */}
+      <div className="mt-12 mb-6 flex flex-col md:flex-row md:justify-end clear-both">
+        <button 
+          onClick={() => setCurrentArticle?.('dyscalculia')}
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
         >
-          ← Back to Dyscalculia
-        </a>
+          <span className="text-xl">←</span>
+          Back to Dyscalculia
+        </button>
+      </div>
+{/* ===== REFERENCES SECTION ===== */}
+      <div className="clear-both mt-16 font-spartan">
+        <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
+        
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Butterworth, B., Varma, S., & Laurillard, D. (2011). "Dyscalculia: From brain to education." <em>Science</em>. https://doi.org/10.1126/science.1201536</p>
+            <p>2. Chinn, S. (2012). <em>The trouble with maths: A practical guide to helping learners with numeracy difficulties</em> (2nd ed.). Routledge.</p>
+            <p>3. Geary, D. C. (2004). "Mathematics and learning disabilities." <em>Journal of Learning Disabilities</em>. https://doi.org/10.1177/00222194040370010201</p>
+            <p>4. Kaufmann, L., & von Aster, M. (2012). "The diagnosis and management of dyscalculia." <em>Deutsches Ärzteblatt International</em>. https://doi.org/10.3238/arztebl.2012.0767</p>
+          </div>
+        </div>
+
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+            <li>American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.). American Psychiatric Association.</li>
+            <li>Dehaene, S. (2011). The number sense: How the mind creates mathematics. Oxford University Press.</li>
+            <li>Mazzocco, M. M. (2007). "Defining and differentiating mathematical learning disabilities and difficulties." Why is math so hard for some children?. Paul H. Brookes Publishing.</li>
+            <li>Wilson, A. J., & Dehaene, S. (2007). "Number sense and developmental dyscalculia." Human behavior, learning, and the developing brain. Guilford Press.</li>
+          </ul>
+        </div>
       </div>
     </article>
   );

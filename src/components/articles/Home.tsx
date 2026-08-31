@@ -203,9 +203,10 @@ export function Home({ setCurrentArticle }: HomeProps) {
                   <span className="text-[12px] uppercase font-bold text-slate-600 mb-3 block tracking-wider">Included Topics</span>
                   <div className="flex flex-wrap gap-2 justify-center">
                     {[
-                      { id: 'ocd', label: 'OCD' },
-                      { id: 'bipolar', label: 'Bipolar' },
-                      { id: 'schizophrenia', label: 'Schizophrenia' }
+                      { id: 'anxiety-stress', label: 'Anxiety & Stress' },
+                      { id: 'mood-emotions', label: 'Mood & Emotions' },
+                      { id: 'trauma-burnout', label: 'Trauma & Burnout' },
+                      { id: 'compulsions-coping', label: 'Compulsions & Coping' }
                     ].map(item => (
                       <button key={item.id} onClick={() => setCurrentArticle?.(item.id)} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs hover:bg-[#2abcd4] hover:border-[#2abcd4] hover:text-white transition-all font-normal text-slate-700">
                         {item.label}

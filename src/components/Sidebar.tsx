@@ -59,9 +59,10 @@ const categories = [
     // Lightened version of Accent Cyan (#2abcd4)
     bgStyle: 'bg-cyan-100 border-cyan-200 text-[#0c264d]', 
     articles: [
-      { id: 'ocd', label: 'Obsessive-Compulsive Disorder or "OCD"', icon: RefreshCw },
-      { id: 'bipolar', label: 'Bipolar Disorder', icon: Activity },
-      { id: 'schizophrenia', label: 'Schizophrenia', icon: Eye },
+      { id: 'anxiety-stress', label: 'Anxiety & Stress', icon: Activity },
+      { id: 'mood-emotions', label: 'Mood & Emotions', icon: Smile },
+      { id: 'trauma-burnout', label: 'Trauma & Burnout', icon: Shield },
+      { id: 'compulsions-coping', label: 'Compulsions & Coping', icon: RefreshCw },
     ]
   },
   {
@@ -93,7 +94,7 @@ const categories = [
       {
         name: 'Brain Inflammation',
         articles: [
-          { id: 'pandas', label: 'PANDAS', icon: Radio },
+          { id: 'pandas', label: 'PANDAS & PANS', icon: Radio },
         ]
       },
     ]

@@ -1,5 +1,5 @@
+import React, { useState } from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
-import { useNavigate } from 'react-router-dom';
 
 interface DyscalculiaOverviewProps {
   setCurrentArticle?: (article: string) => void;
@@ -7,11 +7,11 @@ interface DyscalculiaOverviewProps {
 }
 
 export function DyscalculiaOverview({ setCurrentArticle, initialTab }: DyscalculiaOverviewProps) {
-  const navigate = useNavigate();
-  const activeTab = initialTab || 'what';
+  const [activeTab, setActiveTab] = useState(initialTab || 'what');
 
   return (
     <article className="max-w-6xl font-spartan">
+      {/* Header Area */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl text-[#0c264d] font-normal">
           Dyscalculia: Overview
@@ -35,31 +35,10 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
         All About Dyscalculia
       </button>
 
-      {/* Introduction */}
-      <div className="mb-8 flow-root">
-        <ImageWithFallback 
-          src="https://images.unsplash.com/photo-1509228468518-180dd4864904?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRoJTIwZGlmZmljdWx0eSUyMG51bWJlcnN8ZW58MXx8fHwxNzM4NzU2MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080" 
-          alt="Mathematical concepts and numbers"
-          className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-        />
-        
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          Dyscalculia is a specific learning disorder that affects a person's ability to understand and work with numbers and mathematical concepts. 
-          It is neurobiological in origin and characterized by difficulties with number sense, memorization of arithmetic facts, 
-          accurate or fluent calculation, and mathematical reasoning.
-        </p>
-        
-        <p className="mb-4 text-slate-700 leading-relaxed">
-          Importantly, dyscalculia is not a reflection of low intelligence or lack of effort. Many individuals with dyscalculia 
-          have average or above-average intelligence and can be highly successful when provided with appropriate support 
-          and accommodations.
-        </p>
-      </div>
-
       {/* Tab Navigation */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6 clear-both">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8 clear-both">
         <button
-          onClick={() => navigate('/dyscalculia-overview/what')}
+          onClick={() => setActiveTab('what')}
           className={`px-6 py-3 rounded-md transition-colors font-normal ${
             activeTab === 'what'
               ? 'bg-[#0A9DC4] text-white'
@@ -69,7 +48,7 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
           What is Dyscalculia?
         </button>
         <button
-          onClick={() => navigate('/dyscalculia-overview/types')}
+          onClick={() => setActiveTab('types')}
           className={`px-6 py-3 rounded-md transition-colors font-normal ${
             activeTab === 'types'
               ? 'bg-[#0A9DC4] text-white'
@@ -79,7 +58,7 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
           Types & Presentations
         </button>
         <button
-          onClick={() => navigate('/dyscalculia-overview/facts')}
+          onClick={() => setActiveTab('facts')}
           className={`px-6 py-3 rounded-md transition-colors font-normal ${
             activeTab === 'facts'
               ? 'bg-[#0A9DC4] text-white'
@@ -92,49 +71,57 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
 
       {/* TAB 1: What is Dyscalculia? */}
       {activeTab === 'what' && (
-        <div className="space-y-8">
-          {/* What is Dyscalculia Section */}
-          <div>
+        <div className="space-y-6">
+          
+          {/* Introduction Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm flow-root">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">What is Dyscalculia?</h2>
             
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Core Definition</h3>
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              Dyscalculia is defined as:
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-overview-intro.webp" 
+              alt="Mathematical concepts and numbers"
+              className="w-56 h-auto rounded-md shadow-sm float-right ml-6 mb-4 mt-1"
+            />
+            
+            <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+              Dyscalculia is a specific learning disorder that affects a person's ability to understand and work with numbers and mathematical concepts. 
+              It is neurobiological in origin and characterized by difficulties with number sense, memorization of arithmetic facts, accurate calculation, and mathematical reasoning.
             </p>
-            <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6 mb-4">
-              <p className="italic text-sm text-slate-700 leading-relaxed">
-                "A specific learning disability affecting the normal acquisition of arithmetic skills. Dyscalculia 
-                is characterized by difficulties in understanding number concepts, learning math facts, and performing 
-                accurate and fluent calculations. These difficulties are not primarily explained by intellectual 
-                disability, inadequate instruction, or sensory deficits."
-              </p>
-            </div>
+            
+            <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+              Importantly, dyscalculia is not a reflection of low intelligence or lack of effort. Many individuals with dyscalculia have average or above-average intelligence and can be highly successful when provided with appropriate support and accommodations.
+            </p>
+          </div>
 
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Key Characteristics</h3>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2"><strong>Number sense deficits:</strong> Difficulty understanding what numbers represent</li>
-              <li className="mb-2"><strong>Calculation problems:</strong> Struggles with basic arithmetic operations</li>
-              <li className="mb-2"><strong>Math fact retrieval:</strong> Difficulty memorizing math facts like multiplication tables</li>
-              <li className="mb-2"><strong>Procedural difficulties:</strong> Challenges with multi-step math procedures</li>
-              <li className="mb-2"><strong>Neurobiological basis:</strong> Differences in brain structure and function related to numerical processing</li>
-              <li className="mb-2"><strong>Unexpected difficulty:</strong> Math challenges not explained by overall intellectual ability</li>
+          {/* Characteristics Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h3 className="text-[#0c264d] font-bold mb-3 text-xl">Key Characteristics</h3>
+            <ul className="list-disc ml-6 space-y-2 text-sm text-slate-700 leading-relaxed">
+              <li><strong>Number sense deficits:</strong> Difficulty understanding what numbers represent or judging quantities.</li>
+              <li><strong>Calculation problems:</strong> Struggles with executing basic arithmetic operations.</li>
+              <li><strong>Math fact retrieval:</strong> Difficulty memorizing foundational math facts like multiplication tables.</li>
+              <li><strong>Procedural difficulties:</strong> Challenges tracking and remembering multi-step math procedures.</li>
+              <li><strong>Neurobiological basis:</strong> Brain differences related directly to numerical and spatial processing.</li>
+              <li><strong>Unexpected difficulty:</strong> Math challenges that cannot be explained by overall intellectual ability.</li>
             </ul>
           </div>
 
-          {/* What Dyscalculia is NOT Section */}
-          <div>
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Common Misconceptions</h2>
+          {/* Misconceptions Card (Navy) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm flow-root">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-xl">What Dyscalculia Is NOT</h2>
             
-            <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 mb-4">
-              <h3 className="text-center text-[#0c264d] font-bold mb-4">What Dyscalculia Is NOT:</h3>
-              <div className="text-sm space-y-3 text-slate-700">
-                <p><strong>✗ Math anxiety:</strong> While anxiety can co-occur, dyscalculia is a neurobiological condition, not just fear of math</p>
-                <p><strong>✗ Laziness or lack of effort:</strong> Difficulties are brain-based, not due to insufficient motivation</p>
-                <p><strong>✗ Low intelligence:</strong> Dyscalculia occurs across the IQ range; many individuals have average or above-average intelligence</p>
-                <p><strong>✗ Poor teaching:</strong> While quality instruction matters, dyscalculia persists despite good teaching</p>
-                <p><strong>✗ Something you outgrow:</strong> Dyscalculia is lifelong, though individuals can learn strategies to manage challenges</p>
-                <p><strong>✗ Being "bad at math":</strong> Dyscalculia is a specific neurological difference, not simply being weaker in math</p>
-              </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-overview-misconceptions.webp" 
+              alt="Frustration with math misconceptions"
+              className="w-56 h-auto rounded-md shadow-sm float-left mr-6 mb-4 mt-1"
+            />
+
+            <div className="text-sm space-y-3 text-slate-700 mt-2">
+              <p><strong>✗ Math anxiety:</strong> While anxiety can co-occur, dyscalculia is a neurobiological condition, not just a fear of math.</p>
+              <p><strong>✗ Laziness or lack of effort:</strong> The difficulties are brain-based and physical, not due to insufficient motivation.</p>
+              <p><strong>✗ Low intelligence:</strong> Dyscalculia occurs across the entire IQ spectrum.</p>
+              <p><strong>✗ Poor teaching:</strong> While quality instruction matters, dyscalculia persists despite good teaching.</p>
+              <p><strong>✗ Something you outgrow:</strong> Dyscalculia is lifelong, though individuals learn brilliant strategies to manage it.</p>
             </div>
           </div>
         </div>
@@ -142,61 +129,73 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
 
       {/* TAB 2: Types & Presentations */}
       {activeTab === 'types' && (
-        <div className="space-y-8">
-          {/* Prevalence Section */}
-          <div>
+        <div className="space-y-6">
+          {/* Prevalence Card (Emerald) */}
+          <div className="bg-gray-100 border-2 border-gray rounded-xl p-6 shadow-sm flow-root">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">How Common is Dyscalculia?</h2>
             
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2"><strong>Prevalence:</strong> Dyscalculia affects approximately 3-7% of the population<sup className="text-[#10b981] font-bold ml-0.5">1</sup></li>
-              <li className="mb-2"><strong>Equally affects all genders:</strong> Research suggests similar rates in males and females<sup className="text-[#10b981] font-bold ml-0.5">2</sup></li>
-              <li className="mb-2"><strong>Cross-cultural:</strong> Occurs across all cultures and countries</li>
-              <li className="mb-2"><strong>Socioeconomic distribution:</strong> Affects individuals across all socioeconomic levels</li>
-              <li className="mb-2"><strong>Often undiagnosed:</strong> Many individuals with dyscalculia are not formally identified</li>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-overview-prevalence.webp" 
+              alt="Classroom diversity and learning differences prevalence"
+              className="w-56 h-auto rounded-md shadow-sm float-right ml-6 mb-4 mt-1"
+            />
+
+            <ul className="list-disc ml-6 space-y-2 text-sm text-slate-700 leading-relaxed">
+              <li><strong>Prevalence:</strong> Dyscalculia affects approximately 3-7% of the global population.<sup className="text-[#10b981] font-bold ml-0.5">1</sup></li>
+              <li><strong>Equally affects all genders:</strong> Current research suggests very similar rates across males and females.<sup className="text-[#10b981] font-bold ml-0.5">2</sup></li>
+              <li><strong>Cross-cultural:</strong> It occurs persistently across all cultures, countries, and languages.</li>
+              <li><strong>Socioeconomic distribution:</strong> It affects individuals across all socioeconomic levels equally.</li>
+              <li><strong>Often undiagnosed:</strong> Compared to dyslexia, dyscalculia is vastly under-identified in school systems.</li>
             </ul>
           </div>
 
-          {/* Spectrum and Severity Section */}
-          <div>
+          {/* Spectrum Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Dyscalculia as a Spectrum</h2>
             
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              Dyscalculia exists on a continuum of severity, and its manifestation varies among individuals:
+            <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+              Dyscalculia exists on a wide continuum of severity, and its specific manifestation varies dramatically among individuals:
             </p>
 
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Severity Levels</h3>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2"><strong>Mild:</strong> Difficulties with specific areas of math; responds well to targeted intervention</li>
-              <li className="mb-2"><strong>Moderate:</strong> More significant challenges requiring sustained intervention; math remains effortful</li>
-              <li className="mb-2"><strong>Severe:</strong> Persistent, substantial difficulties despite appropriate intervention; may need extensive accommodations</li>
-            </ul>
-
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Individual Variation</h3>
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              No two individuals with dyscalculia are exactly alike. Variation occurs in:
-            </p>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2">Specific pattern of strengths and weaknesses</li>
-              <li className="mb-2">Response to intervention</li>
-              <li className="mb-2">Compensatory strategies developed</li>
-              <li className="mb-2">Co-occurring conditions</li>
-              <li className="mb-2">Impact on daily functioning</li>
-            </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+              <div>
+                <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Severity Levels</h3>
+                <ul className="list-disc ml-6 space-y-1 text-sm text-slate-700">
+                  <li><strong>Mild:</strong> Difficulties with specific areas; responds well to targeted intervention.</li>
+                  <li><strong>Moderate:</strong> Significant challenges requiring sustained support; math remains effortful.</li>
+                  <li><strong>Severe:</strong> Persistent difficulties despite intervention; requires extensive accommodations.</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-[#0c264d] font-bold mb-2 text-lg">Individual Variation</h3>
+                <ul className="list-disc ml-6 space-y-1 text-sm text-slate-700">
+                  <li>Specific pattern of strengths and weaknesses</li>
+                  <li>Response to therapeutic intervention</li>
+                  <li>Unique compensatory strategies developed</li>
+                  <li>Impact on daily executive functioning</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          {/* Co-occurring Conditions Section */}
-          <div>
+          {/* Co-occurring Conditions Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm flow-root">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Co-occurring Conditions</h2>
             
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              Dyscalculia frequently co-occurs with other conditions:
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-overview-cooccurring.webp" 
+              alt="Overlap of neurodivergent profiles"
+              className="w-56 h-auto rounded-md shadow-sm float-left mr-6 mb-4 mt-1"
+            />
+            
+            <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+              Neurodivergence rarely exists in a vacuum. Dyscalculia frequently co-occurs alongside other learning differences and conditions:
             </p>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2"><strong>Dyslexia:</strong> Up to 60% of individuals with dyslexia also show symptoms of dyscalculia<sup className="text-[#10b981] font-bold ml-0.5">3</sup></li>
-              <li className="mb-2"><strong>ADHD:</strong> Higher rates of math difficulties in individuals with ADHD</li>
-              <li className="mb-2"><strong>Anxiety disorders:</strong> Math anxiety and general anxiety often co-occur</li>
-              <li className="mb-2"><strong>Dysgraphia:</strong> Writing difficulties can compound math challenges</li>
-              <li className="mb-2"><strong>Working memory deficits:</strong> Often present alongside dyscalculia</li>
+            <ul className="list-disc ml-6 space-y-2 text-sm text-slate-700 leading-relaxed">
+              <li><strong>Dyslexia:</strong> Up to 60% of individuals with dyslexia also show symptoms of dyscalculia.<sup className="text-[#10b981] font-bold ml-0.5">3</sup></li>
+              <li><strong>ADHD:</strong> There are significantly higher rates of math difficulties in individuals with ADHD due to working memory impacts.</li>
+              <li><strong>Anxiety disorders:</strong> Math anxiety and generalized anxiety disorders frequently co-occur.</li>
+              <li><strong>Working memory deficits:</strong> Challenges holding and manipulating information in real-time are incredibly common.</li>
             </ul>
           </div>
         </div>
@@ -204,123 +203,58 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
 
       {/* TAB 3: Key Facts & Stats */}
       {activeTab === 'facts' && (
-        <div className="space-y-8">
-          {/* The Mathematical Brain Section */}
-          <div>
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Understanding the Mathematical Brain</h2>
-            
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Typical Math Processing Works</h3>
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              Mathematical thinking requires several brain systems working together:
-            </p>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2"><strong>Number sense:</strong> Intuitive understanding of quantities and their relationships</li>
-              <li className="mb-2"><strong>Visual-spatial processing:</strong> Mental manipulation of numerical information</li>
-              <li className="mb-2"><strong>Working memory:</strong> Holding and manipulating numerical information</li>
-              <li className="mb-2"><strong>Long-term memory:</strong> Storing and retrieving math facts and procedures</li>
-              <li className="mb-2"><strong>Executive functions:</strong> Planning, organizing, and monitoring mathematical problem-solving</li>
-            </ul>
-
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Differences in Dyscalculia</h3>
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              Brain imaging studies show that individuals with dyscalculia show different patterns of brain activation:<sup className="text-[#10b981] font-bold ml-0.5">4</sup>
-            </p>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2"><strong>Parietal lobe differences:</strong> Reduced activity in the intraparietal sulcus, critical for number processing</li>
-              <li className="mb-2"><strong>Reduced number sense:</strong> Weaker intuitive understanding of quantity</li>
-              <li className="mb-2"><strong>Working memory challenges:</strong> Difficulty holding numerical information in mind</li>
-              <li className="mb-2"><strong>Procedural difficulties:</strong> Challenges automating mathematical procedures</li>
-            </ul>
-          </div>
-
-          {/* Number Sense Deficit Section */}
-          <div>
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Number Sense Deficit</h2>
-            
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              The most well-established explanation for dyscalculia involves impaired number sense—the intuitive 
-              understanding of quantities and their relationships.
-            </p>
-
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">What is Number Sense?</h3>
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              Number sense involves several related skills:
-            </p>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2"><strong>Subitizing:</strong> Quickly recognizing small quantities without counting</li>
-              <li className="mb-2"><strong>Magnitude comparison:</strong> Judging which of two numbers is larger</li>
-              <li className="mb-2"><strong>Estimation:</strong> Approximating quantities and calculation results</li>
-              <li className="mb-2"><strong>Number line understanding:</strong> Mental representation of numbers on a continuum</li>
-            </ul>
-
-            <h3 className="text-[#0c264d] font-bold mb-3 text-lg">How Number Sense Deficits Affect Math</h3>
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              When number sense is impaired:
-            </p>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2">Understanding what numbers represent becomes difficult</li>
-              <li className="mb-2">Learning basic arithmetic facts is challenging</li>
-              <li className="mb-2">Mental math and estimation are very difficult</li>
-              <li className="mb-2">Understanding mathematical symbols and their relationships is impaired</li>
-              <li className="mb-2">Math remains effortful rather than becoming automatic</li>
-            </ul>
-          </div>
-
-          {/* Strengths Section */}
-          <div className="flow-root">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Dyscalculia and Strengths</h2>
+        <div className="space-y-6">
+          
+          {/* Mathematical Brain Card (Navy) */}
+          <div className="bg-slate-50 border-2 border-slate rounded-xl p-6 shadow-sm flow-root">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Mathematical Brain</h2>
             
             <ImageWithFallback 
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHRoaW5raW5nJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3Mzg3NTYxMDB8MA&ixlib=rb-4.1.0&q=80&w=1080" 
-              alt="Creative collaboration and thinking"
-              className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
+              src="/images/dyscalculia/dyscalculia-overview-brain.webp" 
+              alt="Brain networks and parietal lobe functioning"
+              className="w-56 h-auto rounded-md shadow-sm float-right ml-6 mb-4 mt-1"
             />
             
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              While dyscalculia presents challenges with numbers, many individuals also demonstrate notable strengths:
+            <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+              Brain imaging studies show that individuals with dyscalculia exhibit different patterns of brain activation and structural connectivity, specifically within the parietal lobe.<sup className="text-[#10b981] font-bold ml-0.5">4</sup>
             </p>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2"><strong>Verbal reasoning:</strong> Strong language and communication skills</li>
-              <li className="mb-2"><strong>Creative problem-solving:</strong> Finding innovative non-mathematical solutions</li>
-              <li className="mb-2"><strong>Intuitive thinking:</strong> Strong gut instincts and holistic understanding</li>
-              <li className="mb-2"><strong>Visual and artistic abilities:</strong> Many excel in visual arts and design</li>
-              <li className="mb-2"><strong>Persistence:</strong> Resilience developed through overcoming challenges</li>
-              <li className="mb-2"><strong>Empathy:</strong> Understanding the struggles of others</li>
-            </ul>
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              Many successful individuals in diverse fields have dyscalculia and have found ways to work with their strengths.
-            </p>
-          </div>
-
-          {/* Importance of Understanding Section */}
-          <div className="clear-both pt-4">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Importance of Understanding Dyscalculia</h2>
             
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              Understanding dyscalculia is crucial because:
-            </p>
-            <ul className="list-disc ml-6 mb-4 text-slate-700 leading-relaxed">
-              <li className="mb-2"><strong>Early identification matters:</strong> Early intervention leads to better outcomes</li>
-              <li className="mb-2"><strong>Appropriate instruction is essential:</strong> Individuals need explicit, systematic math instruction</li>
-              <li className="mb-2"><strong>Accommodations enable success:</strong> Tools like calculators can level the playing field</li>
-              <li className="mb-2"><strong>Self-understanding is empowering:</strong> Understanding dyscalculia helps individuals advocate for themselves</li>
-              <li className="mb-2"><strong>Reduces negative impact:</strong> Proper support prevents secondary issues like math anxiety and avoidance</li>
+            <h3 className="text-[#0c264d] font-bold mb-2 mt-4 text-lg">Key Neurological Differences:</h3>
+            <ul className="list-disc ml-6 space-y-2 text-sm text-slate-700 leading-relaxed">
+              <li><strong>Parietal lobe variations:</strong> Reduced activity in the intraparietal sulcus, which is critical for processing numbers.</li>
+              <li><strong>Number sense deficits:</strong> A weaker intuitive, physical understanding of quantity and scale.</li>
+              <li><strong>Working memory challenges:</strong> Biological difficulty holding multiple numerical figures in the mind simultaneously.</li>
+              <li><strong>Procedural automation:</strong> The brain struggles to move math facts from active problem-solving into automatic long-term storage.</li>
             </ul>
           </div>
 
-          {/* Looking Forward Section */}
-          <div>
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Moving Forward</h2>
+          {/* Strengths Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd6] rounded-xl p-6 shadow-sm flow-root">
+            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Dyscalculia & Strengths</h2>
             
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              Dyscalculia is a well-researched, neurobiological condition that affects mathematical thinking but does not limit potential. 
-              With understanding, appropriate instruction, accommodations, and support, individuals with dyscalculia can develop 
-              functional math skills and succeed academically, professionally, and personally.
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-overview-key-strengths.webp" 
+              alt="Creative collaboration and thinking"
+              className="w-56 h-auto rounded-md shadow-sm float-left mr-6 mb-4 mt-1"
+            />
+            
+            <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+              Because the brain develops differently, individuals with dyscalculia frequently demonstrate remarkable, highly developed compensatory strengths in other cognitive areas:
             </p>
-            
-            <p className="mb-4 text-slate-700 leading-relaxed">
-              The key is recognizing dyscalculia early, providing evidence-based intervention, celebrating strengths, and 
-              fostering an environment where individuals with dyscalculia can thrive.
+            <ul className="list-disc ml-6 space-y-2 text-sm text-slate-700 leading-relaxed">
+              <li><strong>Verbal reasoning:</strong> Exceptionally strong language, storytelling, and communication skills.</li>
+              <li><strong>Creative problem-solving:</strong> A natural ability to find innovative, non-linear solutions to complex problems.</li>
+              <li><strong>Intuitive thinking:</strong> Strong holistic understanding and big-picture systems thinking.</li>
+              <li><strong>Visual and artistic abilities:</strong> Many individuals with dyscalculia excel in visual arts, writing, and design.</li>
+              <li><strong>Deep empathy:</strong> A profound capacity for understanding and supporting others facing challenges.</li>
+            </ul>
+          </div>
+
+          {/* Moving Forward Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-3 text-xl">Moving Forward</h2>
+            <p className="text-sm text-slate-700 leading-relaxed">
+              Dyscalculia is a well-researched, neurobiological condition that affects mathematical processing, but it absolutely does not limit a person's potential. With early identification, evidence-based instruction, and proper accommodations (like calculators and extended time), individuals with dyscalculia build functional numerical skills and thrive academically and professionally. Understanding this neurodivergence is the first step toward self-advocacy and unlocking those incredible creative strengths.
             </p>
           </div>
         </div>
@@ -337,8 +271,6 @@ export function DyscalculiaOverview({ setCurrentArticle, initialTab }: Dyscalcul
         </button>
       </div>
 
-      
-      
       <div className="clear-both mt-16 font-spartan">
         <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
         

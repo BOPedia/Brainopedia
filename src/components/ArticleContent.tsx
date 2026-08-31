@@ -108,17 +108,21 @@ const seoMap: Record<string, { title: string; description: string }> = {
   },
 
   // Volume V: Mental Health Crossovers
-  'ocd': { 
-    title: 'Obsessive-Compulsive Disorder (OCD) | Brainopedia', 
-    description: 'Learn about the characteristics, neural pathways, and affirming support strategies for the Obsessive-Compulsive Disorder (OCD) neurotype.' 
+  'anxiety-stress': { 
+    title: 'Anxiety & Stress Crossovers | Brainopedia', 
+    description: 'Explore the intersection of neurodivergence and anxiety disorders, including Generalized Anxiety, Social Anxiety, and specific phobias.' 
   },
-  'bipolar': { 
-    title: 'Bipolar Disorder | Brainopedia', 
-    description: 'Explore Bipolar Disorder from a neurodivergent perspective, understanding the neurological basis for natural cycles of varying energy and emotional intensity.' 
+  'mood-emotions': { 
+    title: 'Mood & Emotions | Brainopedia', 
+    description: 'Understand how neurodivergent profiles intersect with mood disorders and emotional regulation, including Depression, RSD, and Bipolar Disorder.' 
   },
-  'schizophrenia': { 
-    title: 'Schizophrenia | Brainopedia', 
-    description: 'Learn about Schizophrenia, a complex neurological condition affecting perception and thought processes, along with evidence-based management strategies.' 
+  'trauma-burnout': { 
+    title: 'Trauma & Burnout | Brainopedia', 
+    description: 'Learn about Neurodivergent Burnout, Complex PTSD (C-PTSD), and the systemic trauma often experienced by neurodivergent individuals navigating a neurotypical world.' 
+  },
+  'compulsions-coping': { 
+    title: 'Compulsions & Coping | Brainopedia', 
+    description: 'Discover how OCD, body-focused repetitive behaviors (BFRBs), and restrictive sensory eating patterns (ARFID) commonly co-occur with neurodivergence.' 
   },
 
   // Volume VI: Genetic or Environmental

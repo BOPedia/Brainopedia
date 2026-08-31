@@ -7,7 +7,7 @@ interface ProjectStandardsProps {
 
 export default function ProjectStandards({ setCurrentArticle }: ProjectStandardsProps) {
   return (
-   <article className="font-spartan animate-in fade-in duration-300 w-full min-w-0">
+   <article className="max-w-6xl mx-auto font-spartan animate-in fade-in duration-300 w-full min-w-0">
       
       {/* Header */}
       <div className="pb-6 border-b-4 border-[#0c264d] mb-10">
@@ -40,7 +40,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">1. The Centered Hero</h3>
             <p className="text-xs mb-3 text-gray-600">For large diagrams (DNA, Brains) between text blocks.</p>
-            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded whitespace-pre-wrap break-words">
               className="block mx-auto w-full max-w-3xl mb-8 rounded-lg shadow-sm"
             </code>
           </div>
@@ -48,7 +48,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">2. The Inline Float</h3>
             <p className="text-xs mb-3 text-gray-600">Small icons or supporting graphics inside info-boxes.</p>
-            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded whitespace-pre-wrap break-words">
               className="w-64 h-auto rounded-md float-right ml-6 mb-4"
             </code>
           </div>
@@ -56,7 +56,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">3. The Centered Block</h3>
             <p className="text-xs mb-3 text-gray-600">For centering standard medium-sized graphics without floating text around them.</p>
-            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded whitespace-pre-wrap break-words">
               className="w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6"
             </code>
           </div>
@@ -64,7 +64,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">4. The Clearing Rule</h3>
             <p className="text-xs mb-3 text-gray-600">Always use <code className="bg-white px-1 border border-gray-200 text-[#0c264d]">clear-both</code> on containers or buttons below floated images.</p>
-            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded whitespace-pre-wrap break-words">
               className="clear-both pt-8 pb-4"
             </code>
           </div>
@@ -73,7 +73,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6">
           <h3 className="font-bold text-[#0c264d] text-sm mb-2">5. Centered Image Headings</h3>
           <p className="text-xs mb-3 text-gray-600">When placing an H2 above a centered.WEBP, it must be centered and clear any previous floats.</p>
-          <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
+          <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded whitespace-pre-wrap break-words">
             className="text-[#0c264d] font-bold mb-4 text-2xl clear-both text-center"
           </code>
         </div>
@@ -81,7 +81,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6">
           <h3 className="font-bold text-[#0c264d] text-sm mb-2">6. The Full-Width Span</h3>
           <p className="text-xs mb-3 text-gray-600">For diagrams or graphics that need to stretch to 100% of their container's width (overriding the standard max-width).</p>
-          <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
+          <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded whitespace-pre-wrap break-words">
             className="w-full h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
           </code>
         </div>
@@ -89,7 +89,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 mt-6 border-l-4 border-l-[#ffd166]">
           <h3 className="font-bold text-[#0c264d] text-sm mb-2">7. The Main Page Insert</h3>
           <p className="text-xs mb-3 text-gray-600">For standard ImageWithFallback graphics on the main neurodivergence overview pages (centers on mobile screens, floats right on desktop layouts).</p>
-          <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded overflow-x-auto whitespace-nowrap">
+          <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded whitespace-pre-wrap break-words">
             className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
           </code>
         </div>
@@ -128,10 +128,10 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </div>
         </div>
 
-        <div className="bg-gray-900 text-green-400 p-6 rounded-xl shadow-inner overflow-x-auto mb-6">
+        <div className="bg-gray-900 text-green-400 p-6 rounded-xl shadow-inner mb-6">
           <h3 className="text-white font-bold mb-2 text-sm">The "Naked" Superscript Standard</h3>
           <p className="text-xs text-gray-400 mb-3">All inline citations must be flush with the text, using strictly this class string:</p>
-          <code className="block bg-black p-3 rounded text-xs whitespace-nowrap">
+          <code className="block bg-black p-3 rounded text-xs break-words whitespace-pre-wrap">
             {`Statistics show 10%<sup className="text-[#10b981] font-bold ml-0.5">1</sup>`}
           </code>
         </div>
@@ -160,8 +160,8 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <strong>Mandatory Header Styling:</strong> Reference sub-headers must always include the subtle bottom border line using the exact classes: <code className="bg-white px-1 rounded text-xs break-words">border-b border-green-700 border-opacity-10 pb-1</code> (or cyan for Background Sources).
         </div>
 
-        <div className="bg-red-100 border-4 border-red-600 p-6 rounded-xl">
-          <pre className="bg-white p-4 rounded text-xs overflow-x-auto border border-red-200">
+        <div className="bg-red-100 border-4 border-red-600 p-6 rounded-xl overflow-hidden min-w-0">
+          <pre className="bg-white p-4 rounded text-xs overflow-x-auto border border-red-200 block break-words whitespace-pre-wrap">
 {`{/* ===== REFERENCES SECTION ===== */}
 <div className="clear-both mt-16 font-spartan">
   <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
@@ -171,7 +171,6 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
     <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
       Cited Studies & Statistics
     </h4>
-    {/* NOTE: Zero text indent rule applied to paragraphs */}
     <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
       <p>1. Author. (Year). "Title." <i>Journal</i>. https://doi.org/10.xxxx/xxxxx</p>
     </div>
@@ -182,9 +181,8 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
     <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
       Background Sources
     </h4>
-    {/* NOTE: Zero text indent rule applied to lists */}
     <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-      <li>Source Book/Manual (NO BULLET POINTS, NO NUMBERS, NO INDENTATION)</li>
+      <li>Source Book/Manual (NO BULLET POINTS, NO NUMBERS)</li>
     </ul>
   </div>
 </div>`}
@@ -281,6 +279,28 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         </ul>
       </section>
 
+      {/* CARD STYLING & CONTAINERS */}
+      <section className="mb-12">
+        <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2 border-b pb-2">
+          <Layout className="text-[#2abcd4]" /> CARD STYLING & CONTAINERS
+        </h2>
+        
+        <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
+          <h3 className="font-bold text-[#0c264d] mb-3 uppercase text-xs">Standard Card Color Rules</h3>
+          <p className="text-sm text-gray-700 mb-4">
+            To break up dense text, content sections should be wrapped in colorful, styled cards. Card backgrounds must <strong>always</strong> be a lightened/pastel version of our core colors, paired with a darker, thicker border of the same color family. Use these exact combinations unless otherwise specified:
+          </p>
+          <ul className="list-disc ml-5 text-sm text-gray-700 space-y-3">
+            <li><strong>Cyan Cards:</strong> <code className="bg-gray-100 px-2 py-1 rounded break-words">bg-cyan-50 border-2 border-[#2abcd4]</code></li>
+            <li><strong>Yellow/Gold Cards:</strong> <code className="bg-gray-100 px-2 py-1 rounded break-words">bg-yellow-50 border-2 border-[#ffd166]</code></li>
+            <li><strong>Navy/Gray Cards:</strong> <code className="bg-gray-100 px-2 py-1 rounded break-words">bg-slate-50 border-2 border-[#0c264d]</code> (Navy border) or <code className="bg-gray-100 px-2 py-1 rounded break-words">border-slate-200</code> (Gray border)</li>
+            
+            <li className="text-red-700 font-bold mt-4 pt-2 border-t border-gray-100"><strong>"DO NOT" / Warning Cards:</strong> <code className="bg-red-50 px-2 py-1 rounded border border-red-200 text-red-700 break-words">bg-white border-4 border-red-500</code></li>
+          </ul>
+        
+        </div>
+      </section>
+
       {/* TYPOGRAPHY */}
       <section className="mb-10">
         <h2 className="text-[#0c264d] text-2xl font-bold mb-4 flex items-center gap-2">
@@ -340,7 +360,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">Resting State</h3>
             <p className="text-xs mb-3 text-gray-600">Yellow background with Navy text.</p>
-            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded break-words">
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded break-words whitespace-pre-wrap">
               bg-[#ffd166] text-[#0c264d]
             </code>
           </div>
@@ -348,7 +368,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">Hover State</h3>
             <p className="text-xs mb-3 text-gray-600">Navy background with White text.</p>
-            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded break-words">
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded break-words whitespace-pre-wrap">
               hover:bg-[#0c264d] hover:text-white
             </code>
           </div>
@@ -356,7 +376,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 className="font-bold text-[#0c264d] text-sm mb-2">Active / Highlighted</h3>
             <p className="text-xs mb-3 text-gray-600">Darker Cyan background with White text.</p>
-            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded break-words">
+            <code className="text-sm block bg-gray-900 text-green-400 p-3 rounded break-words whitespace-pre-wrap">
               bg-[#0A9DC4] text-white
             </code>
           </div>
@@ -364,7 +384,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
 
         <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg shadow-sm">
           <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">Standard "Read More" Button Class</h3>
-          <code className="text-sm font-bold bg-white text-blue-600 p-3 rounded border border-blue-200 block w-full break-all">
+          <code className="text-sm font-bold bg-white text-blue-600 p-3 rounded border border-blue-200 block w-full break-all whitespace-pre-wrap">
             className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold"
           </code>
         </div>
