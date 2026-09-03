@@ -11,6 +11,15 @@ export function DyscalculiaCauses({ setCurrentArticle, initialTab }: Dyscalculia
 
   return (
     <article className="max-w-6xl font-spartan">
+      <style>
+        {`
+          sup {
+            color: #10b981;
+            font-weight: bold;
+          }
+        `}
+      </style>
+      
       {/* Header Area */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl text-[#0c264d] font-normal">
@@ -101,17 +110,17 @@ export function DyscalculiaCauses({ setCurrentArticle, initialTab }: Dyscalculia
               <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-cyan-100 pb-2">Heritability Patterns</h3>
                 <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
-                  <li><strong>Family prevalence:</strong> Nearly 50% of siblings of children with dyscalculia also exhibit significant math difficulties.</li>
-                  <li><strong>Parental history:</strong> Children with a parent who struggled with math are at a substantially higher risk.</li>
-                  <li><strong>Twin studies:</strong> Identical twins show a much higher concordance for math abilities than fraternal twins, confirming genetic weight.</li>
+                  <li><strong>Family prevalence:</strong> Nearly 50% of siblings of children with dyscalculia also exhibit significant math difficulties.<sup>1</sup></li>
+                  <li><strong>Parental history:</strong> Children with a parent who struggled with math are at a substantially higher risk.<sup>1</sup></li>
+                  <li><strong>Twin studies:</strong> Identical twins show a much higher concordance for math abilities than fraternal twins, confirming genetic weight.<sup>1</sup></li>
                 </ul>
               </div>
 
               <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-cyan-100 pb-2">Gene Interaction</h3>
                 <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
-                  <li><strong>Shared genetics:</strong> There is significant genetic overlap between reading disabilities (dyslexia) and math disabilities.</li>
-                  <li><strong>ROBO1 gene:</strong> Specific genes like ROBO1 have been implicated in both reading and mathematical processing difficulties.</li>
+                  <li><strong>Shared genetics:</strong> There is significant genetic overlap between reading disabilities (dyslexia) and math disabilities.<sup>2</sup></li>
+                  <li><strong>ROBO1 gene:</strong> Specific genes like ROBO1 have been implicated in both reading and mathematical processing difficulties.<sup>3</sup></li>
                   <li><strong>Environment interactions:</strong> High-quality instruction can positively influence how these genetic predispositions express themselves over time.</li>
                 </ul>
               </div>
@@ -132,7 +141,7 @@ export function DyscalculiaCauses({ setCurrentArticle, initialTab }: Dyscalculia
               </div>
               <div className="flex-1">
                 <p className="text-sm text-slate-700 leading-relaxed">
-                  Neuroimaging studies consistently show that dyscalculia is tied directly to physical differences in the brain's architecture, specifically within the parietal lobe. These structural variations fundamentally alter how the brain's networks communicate during numerical tasks, forcing the individual to rely on slower, compensatory brain regions.
+                  Neuroimaging studies consistently show that dyscalculia is tied directly to physical differences in the brain's architecture, specifically within the parietal lobe.<sup>4</sup> These structural variations fundamentally alter how the brain's networks communicate during numerical tasks, forcing the individual to rely on slower, compensatory brain regions.
                 </p>
               </div>
             </div>
@@ -141,7 +150,7 @@ export function DyscalculiaCauses({ setCurrentArticle, initialTab }: Dyscalculia
               <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-yellow-200 pb-2">Key Brain Regions</h3>
                 <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
-                  <li><strong>Intraparietal sulcus (IPS):</strong> The core region responsible for number sense and magnitude processing.</li>
+                  <li><strong>Intraparietal sulcus (IPS):</strong> The core region responsible for number sense and magnitude processing.<sup>4</sup></li>
                   <li><strong>Angular gyrus:</strong> Critical for arithmetic fact retrieval and verbally-mediated calculation.</li>
                   <li><strong>Prefrontal cortex:</strong> Handles working memory and executive control during complex math tasks.</li>
                 </ul>
@@ -150,7 +159,7 @@ export function DyscalculiaCauses({ setCurrentArticle, initialTab }: Dyscalculia
               <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-yellow-200 pb-2">Neurological Variances</h3>
                 <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
-                  <li><strong>Reduced IPS activation:</strong> Scans show less activity in the intraparietal sulcus during number-based tasks.</li>
+                  <li><strong>Reduced IPS activation:</strong> Scans show less activity in the intraparietal sulcus during number-based tasks.<sup>4</sup></li>
                   <li><strong>White matter differences:</strong> Abnormal white matter tracts result in weaker functional connectivity between math processing regions.</li>
                   <li><strong>Compensatory reliance:</strong> The brain attempts to solve math by leaning heavily on frontal regions and verbal language strategies.</li>
                 </ul>
@@ -179,7 +188,7 @@ export function DyscalculiaCauses({ setCurrentArticle, initialTab }: Dyscalculia
 
             <div className="bg-white p-5 rounded-xl shadow-sm border border-emerald-200">
               <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
-                <li><strong>Prematurity:</strong> Premature birth is strongly associated with an increased risk of specific math difficulties.</li>
+                <li><strong>Prematurity:</strong> Premature birth is strongly associated with an increased risk of specific math difficulties.<sup>1</sup></li>
                 <li><strong>Low birth weight:</strong> Consistently linked to downstream mathematical learning challenges.</li>
                 <li><strong>Hypoxia:</strong> Oxygen deprivation during birth can permanently impact how specific cognitive networks develop.</li>
                 <li><strong>Genetic syndromes:</strong> Conditions like Turner syndrome, Fragile X, and 22q11.2 deletion syndrome frequently present alongside dyscalculia.</li>
@@ -209,7 +218,7 @@ export function DyscalculiaCauses({ setCurrentArticle, initialTab }: Dyscalculia
               </div>
               <div className="flex-1">
                 <p className="text-sm text-slate-700 leading-relaxed">
-                  At the cognitive level, dyscalculia stems from a foundational deficit in innate "number sense"—the brain's natural ability to represent and manipulate approximate quantities. This early impairment creates a devastating ripple effect, disrupting the development of working memory, processing speed, and executive functioning required for all later mathematical tasks.
+                  At the cognitive level, dyscalculia stems from a foundational deficit in innate "number sense"—the brain's natural ability to represent and manipulate approximate quantities.<sup>4</sup> This early impairment creates a devastating ripple effect, disrupting the development of working memory, processing speed, and executive functioning required for all later mathematical tasks.
                 </p>
               </div>
             </div>
@@ -273,14 +282,14 @@ export function DyscalculiaCauses({ setCurrentArticle, initialTab }: Dyscalculia
             </div>
           </div>
 
-{/* Comorbidities Card (Yellow) */}
+          {/* Comorbidities Card (Yellow) */}
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Shared Causes (Comorbidities)</h2>
             
             <div className="flex flex-col md:flex-row gap-6">
               <div className="flex-1">
                 <p className="text-sm text-slate-700 leading-relaxed">
-                  Dyscalculia frequently shares biological etiology with other learning differences. Nearly 60% of individuals with dyslexia also experience dyscalculia, highlighting a massive genetic overlap between how the brain processes abstract reading symbols and abstract math symbols. Similarly, the executive function and working memory deficits found in ADHD heavily disrupt the mental "scratchpad" required to execute complex math.
+                  Dyscalculia frequently shares biological etiology with other learning differences. Nearly 60% of individuals with dyslexia also experience dyscalculia, highlighting a massive genetic overlap between how the brain processes abstract reading symbols and abstract math symbols.<sup>2</sup> Similarly, the executive function and working memory deficits found in ADHD heavily disrupt the mental "scratchpad" required to execute complex math.
                 </p>
               </div>
               <div className="shrink-0 w-full md:w-32">
@@ -406,17 +415,29 @@ export function DyscalculiaCauses({ setCurrentArticle, initialTab }: Dyscalculia
       <div className="clear-both mt-16 font-spartan">
         <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
         
+        {/* CITED STUDIES: GREEN */}
+        <div className="mb-6">
+          <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
+            Cited Studies & Statistics
+          </h4>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+            <p>1. Shalev, R. S., Auerbach, J., Manor, O., & Gross-Tsur, V. (2000). Developmental dyscalculia: prevalence and prognosis. <em>European Child & Adolescent Psychiatry</em>, <em>9</em>, S58-S64. https://doi.org/10.1007/s007870070009<br />Cited by: 566</p>
+            <p>2. Landerl, K., & Moll, K. (2010). Comorbidity of learning disorders: prevalence and familial transmission. <em>Journal of Child Psychology and Psychiatry</em>, <em>51</em>, 287-294. https://doi.org/10.1111/j.1469-7610.2009.02164.x<br />Cited by: 749</p>
+            <p>3. Hannula-Jouppi, K., Kaminen-Ahola, N., Taipale, M., et al. (2005). The Axon Guidance Receptor Gene ROBO1 Is a Candidate Gene for Developmental Dyslexia. <em>PLoS Genetics</em>, <em>1</em>, e50. https://doi.org/10.1371/journal.pgen.0010050<br />Cited by: 508</p>
+            <p>4. McCaskey, U., von Aster, M., O’Gorman Tuura, R., & Kucian, K. (2017). Adolescents with Developmental Dyscalculia Do Not Have a Generalized Magnitude Deficit – Processing of Discrete and Continuous Magnitudes. <em>Frontiers in Human Neuroscience</em>, <em>11</em>. https://doi.org/10.3389/fnhum.2017.00102<br />Cited by: 53</p>
+          </div>
+        </div>
+
         {/* BACKGROUND SOURCES: CYAN */}
         <div>
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
           <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Butterworth, B., Varma, S., & Laurillard, D. (2011). "Dyscalculia: From brain to education." <i>Science</i>. https://doi.org/10.1126/science.1201536</li>
-            <li>Dehaene, S. (2011). <i>The number sense: How the mind creates mathematics</i>. Oxford University Press.</li>
-            <li>Geary, D. C. (2004). "Mathematics and learning disabilities." <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/00222194040370010201</li>
-            <li>Kaufmann, L., & von Aster, M. (2012). "The diagnosis and management of dyscalculia." <i>Deutsches Ärzteblatt International</i>. https://doi.org/10.3238/arztebl.2012.0767</li>
-            <li>Shalev, R. S. (2004). "Developmental dyscalculia." <i>Journal of Child Neurology</i>. https://doi.org/10.1177/08830738040190100601</li>
+            <li>American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.). American Psychiatric Association.</li>
+            <li>Butterworth, B., Varma, S., & Laurillard, D. (2011). "Dyscalculia: From brain to education." Science.</li>
+            <li>Mazzocco, M. M. (2007). "Defining and differentiating mathematical learning disabilities and difficulties." Why is math so hard for some children?. Paul H. Brookes Publishing.</li>
+            <li>Wilson, A. J., & Dehaene, S. (2007). "Number sense and developmental dyscalculia." Human behavior, learning, and the developing brain. Guilford Press.</li>
           </ul>
         </div>
       </div>

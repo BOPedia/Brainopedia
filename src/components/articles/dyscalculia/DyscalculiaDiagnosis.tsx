@@ -89,7 +89,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
                   Parents and educators should trust their instincts when a child's mathematical struggles seem disproportionate to their overall intelligence or effort. If targeted tutoring and high-quality classroom instruction fail to produce meaningful progress over a six-month period, a formal neuropsychological evaluation is strongly warranted.
                 </p>
               </div>
-              <div className="shrink-0 w-full md:w-56">
+              <div className="shrink-0 w-full md:w-40">
                 <ImageWithFallback 
                   src="/images/dyscalculia/dyscalculia-diagnosis-evaluation.webp"
                   alt="Educational psychologist conducting math assessment"
@@ -147,7 +147,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Who Can Diagnose Dyscalculia?</h2>
             
             <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="shrink-0 w-full md:w-56">
+              <div className="shrink-0 w-full md:w-40">
                 <ImageWithFallback 
                   src="/images/dyscalculia/dyscalculia-diagnosis-professionals.webp"
                   alt="A multi-disciplinary team discussing an academic profile"
@@ -200,7 +200,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Assessment Components</h2>
             
             <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="shrink-0 w-full md:w-56">
+              <div className="shrink-0 w-full md:w-40">
                 <ImageWithFallback 
                   src="/images/dyscalculia/dyscalculia-diagnosis-components.webp"
                   alt="Standardized testing materials and cognitive assessment"
@@ -235,22 +235,23 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
             </div>
           </div>
 
-          {/* Specific Skill Testing Card (Cyan) */}
+{/* Specific Skill Testing Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Targeted Skill & Process Testing</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  Beyond general math scores, evaluators must isolate the specific cognitive breakdowns causing the difficulty. They test foundational number sense, working memory capacity, and processing speed to build a complete picture of how the student's brain handles data.
-                </p>
-              </div>
-              <div className="shrink-0 w-full md:w-56">
+            <div className="flex flex-col items-center mb-8">
+              {/* Huge Full-Width Image */}
+              <div className="w-full mb-6">
                 <ImageWithFallback 
                   src="/images/dyscalculia/dyscalculia-diagnosis-skills.webp"
                   alt="Student completing a cognitive magnitude assessment"
                   className="w-full h-auto rounded-lg shadow-sm"
                 />
+              </div>
+              
+              {/* Centered Paragraph */}
+              <div className="text-sm text-slate-700 leading-relaxed text-center max-w-4xl mx-auto px-4">
+                Beyond general math scores, evaluators must isolate the specific cognitive breakdowns causing the difficulty. They test foundational number sense, working memory capacity, and processing speed to build a complete picture of how the student's brain handles data.
               </div>
             </div>
 
@@ -317,7 +318,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Assessment Report & Access</h2>
             
             <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="shrink-0 w-full md:w-56">
+              <div className="shrink-0 w-full md:w-40">
                 <ImageWithFallback 
                   src="/images/dyscalculia/dyscalculia-diagnosis-report.webp"
                   alt="Comprehensive assessment report"
@@ -363,7 +364,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
                   Once the report is finalized, the team must immediately translate the clinical findings into a living educational document (like an IEP or 504 Plan). This ensures the student receives consistent, evidence-based math interventions while being shielded from traditional testing methods that unfairly penalize their processing speed.
                 </p>
               </div>
-              <div className="shrink-0 w-full md:w-56">
+              <div className="shrink-0 w-full md:w-40">
                 <ImageWithFallback 
                   src="/images/dyscalculia/dyscalculia-diagnosis-next-steps.webp"
                   alt="Parents and teacher planning an IEP meeting"

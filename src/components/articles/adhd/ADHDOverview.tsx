@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageWithFallback } from '../../../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../../figma/ImageWithFallback';
 import { Clock, Brain, LayoutGrid, Activity, Users, AlertCircle } from 'lucide-react';
 
 interface ADHDOverviewProps {
@@ -7,17 +7,9 @@ interface ADHDOverviewProps {
 }
 
 export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
-  
-  // Reusable styling variables
-  const responsiveImageClass = "w-full sm:w-96 md:w-[28rem] h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm";
-  const centeredSmallImageClass = "w-64 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm";
-  const centeredMediumImageClass = "w-full sm:w-96 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm";
-  const largeCenteredImageClass = "w-full md:w-[40rem] h-auto rounded-md border border-gray-300 block mx-auto mb-8 shadow-sm";
-  const floatedCardContainer = "float-right ml-6 mb-4 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-64 shrink-0";
-  const floatedImageClass = "w-full h-auto rounded-md block";
-
   return (
-    <article className="max-w-full w-full animate-in fade-in duration-300">
+    <article className="max-w-4xl mx-auto font-spartan animate-in fade-in duration-300 w-full min-w-0 overflow-x-hidden px-2 sm:px-0">
+      
       {/* HEADER */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl font-normal text-[#0c264d]">
@@ -26,12 +18,21 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
 
         <button 
           onClick={() => setCurrentArticle?.('adhd')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap shadow-sm shrink-0"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:block hidden"
         >
           <span className="text-xl">←</span>
           All About ADHD
         </button>
       </div>
+
+      {/* Mobile Back Button */}
+      <button 
+        onClick={() => setCurrentArticle?.('adhd')}
+        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:hidden mb-6"
+      >
+        <span className="text-xl">←</span>
+        All About ADHD
+      </button>
 
       <div className="space-y-8">
         
@@ -42,8 +43,8 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             What is ADHD?
           </h2>
           
-          {/* 1. FIRST LOOPING VIDEO */}
-          <div className={floatedCardContainer}>
+          {/* SQUIRREL VIDEO - Restored to floated right so text wraps underneath naturally */}
+          <div className="float-none sm:float-right mx-auto sm:ml-6 mb-6 sm:mb-4 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-full sm:w-64 shrink-0">
             <video 
               src="/images/adhd/adhd-overview-squirrel.mp4" 
               poster="/images/adhd/adhd-overview-squirrel.webp"
@@ -51,7 +52,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
               loop 
               muted 
               playsInline
-              className={floatedImageClass}
+              className="w-full h-auto rounded-md block"
               aria-label="A squirrel bites bulb and it lights up, representing the hyperactive and impulsive nature of ADHD."
             />
           </div>
@@ -68,8 +69,8 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
 
         {/* THREE PRESENTATIONS */}
         <section className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center justify-center gap-2">
-            <LayoutGrid className="text-[#ffd166]" size={28} />
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center justify-center gap-2 text-center">
+            <LayoutGrid className="text-[#ffd166] shrink-0" size={28} />
             The Three Presentations of ADHD
           </h2>
           
@@ -77,7 +78,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-green-600 font-bold ml-0.5">3</sup>
           </p>
 
-          {/* 2. SECOND LOOPING VIDEO */}
+          {/* VENN DIAGRAM - Restored back to the original medium size (sm:w-96) */}
           <video 
             src="/images/adhd/adhd-overview-venn.mp4" 
             poster="/images/adhd/adhd-overview-venn.webp"
@@ -85,7 +86,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             loop 
             muted 
             playsInline
-            className={centeredMediumImageClass}
+            className="w-full sm:w-96 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             aria-label="ADHD Three Presentations Venn Diagram"
           />
           
@@ -123,8 +124,8 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
 
         {/* EXECUTIVE FUNCTION */}
         <section className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20">
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center justify-center gap-2">
-            <Activity className="text-[#0A9DC4]" size={28} />
+          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center justify-center gap-2 text-center">
+            <Activity className="text-[#0A9DC4] shrink-0" size={28} />
             Executive Function Challenges
           </h2>
           
@@ -134,18 +135,17 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             functions are controlled primarily by the prefrontal cortex of the brain.
           </p>
 
-          {/* 3. THE WEBP IMAGE */}
           <ImageWithFallback
             src="/images/adhd/adhd-overview-executive-function.webp"
             alt="ADHD Executive Function"
-            className={largeCenteredImageClass}
+            className="w-full max-w-3xl h-auto rounded-md border border-gray-300 block mx-auto mb-8 shadow-sm"
           /> 
 
           <p className="mb-6 text-sm text-gray-700 leading-relaxed text-center">
             People with ADHD often struggle with several key executive functions:
           </p>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6">
             <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-sm"><strong className="text-[#0c264d] text-sm block mb-1">Working memory:</strong> <span className="text-xs text-gray-600">Holding information in mind while using it</span></div>
             <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-sm"><strong className="text-[#0c264d] text-sm block mb-1">Inhibition:</strong> <span className="text-xs text-gray-600">Controlling impulses and stopping automatic responses</span></div>
             <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-sm"><strong className="text-[#0c264d] text-sm block mb-1">Emotional regulation:</strong> <span className="text-xs text-gray-600">Managing emotional responses</span></div>
@@ -167,7 +167,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         {/* WHO IS AFFECTED? */}
         <section className="mb-12 clear-both">
           <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center gap-2">
-            <Users className="text-[#0A9DC4]" size={28} />
+            <Users className="text-[#0A9DC4] shrink-0" size={28} />
             Who is Affected?
           </h2>
           
@@ -175,7 +175,6 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             ADHD affects people of all ages, genders, races, and socioeconomic backgrounds. However, there are some demographic patterns worth noting:
           </p>
 
-          {/* 4. CODED CHART 1 (CHILDREN) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white border-2 border-gray-100 rounded-xl p-5 flex flex-col items-center justify-center text-center shadow-sm">
               <h4 className="font-bold text-[#0c264d] mb-2">ADHD in Children</h4>
@@ -206,7 +205,6 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             </div>
           </div>
 
-          {/* 5. TEXT BOXES */}
           <div className="space-y-4 mb-10">
             <div className="border-2 border-gray-100 rounded-xl p-6 bg-[#ffd166]/30">
               <h3 className="font-bold text-[#0c264d] mb-3 uppercase tracking-wider text-sm">Gender Differences</h3>
@@ -230,15 +228,12 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             </div>
           </div>
 
-          {/* 6. CODED CHART 2 (ADULTS) */}
-          <div className="border-2 border-[#0c264d] rounded-xl p-6 bg-white shadow-sm mt-8 w-full max-w-4xl mx-auto clear-both">
+          <div className="border-2 border-[#0c264d] rounded-xl p-6 bg-white shadow-sm mt-8 w-full max-w-4xl mx-auto clear-both overflow-hidden">
             <h3 className="text-center font-bold text-[#0c264d] text-lg mb-6">
               ADHD in Adults<sup className="text-green-600 font-bold ml-0.5">5</sup>
             </h3>
 
-            <div className="flex flex-col lg:flex-row gap-6 items-center justify-between">
-              
-              {/* Column 1: Percentages */}
+            <div className="flex flex-col lg:flex-row gap-6 items-center justify-between w-full">
               <div className="flex gap-6 lg:border-r-2 border-gray-100 lg:pr-6 w-full lg:w-auto justify-center">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#0A9DC4] mb-1">2.6%</div>
@@ -250,25 +245,21 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
                 </div>
               </div>
 
-              {/* Column 2: Dark Blue Stats */}
               <div className="flex flex-col gap-3 lg:border-r-2 border-gray-100 lg:pr-6 w-full lg:w-auto">
                 <div className="bg-[#0c264d] text-white rounded-md p-3 flex items-center gap-3">
-                  <div className="font-bold text-lg whitespace-nowrap">50-70%</div>
+                  <div className="font-bold text-lg">50-70%</div>
                   <div className="text-xs leading-tight border-l border-white/30 pl-3">of childhood cases<br/>persist into adulthood</div>
                 </div>
                 <div className="bg-[#0c264d] text-white rounded-md p-3 flex items-center gap-3">
-                  <div className="font-bold text-lg whitespace-nowrap">~70%</div>
+                  <div className="font-bold text-lg">~70%</div>
                   <div className="text-xs leading-tight border-l border-white/30 pl-3">have ≥1 comorbid<br/>mental health condition</div>
                 </div>
               </div>
 
-              {/* Column 3: Gender Comorbidity */}
-              <div className="w-full lg:w-auto">
+              <div className="w-full lg:w-auto min-w-0">
                 <h4 className="text-sm font-bold text-[#0c264d] text-center mb-3">Gender Differences in Comorbidity</h4>
-                <div className="flex gap-3 justify-center">
-                  
-                  {/* Females */}
-                  <div className="flex flex-col gap-2 w-[140px]">
+                <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                  <div className="flex flex-col gap-2 w-full sm:flex-1 max-w-[200px]">
                     <div className="text-xs font-bold text-[#ffd166] text-center">Females: Higher In</div>
                     <div className="bg-[#fff9e6] border border-[#ffd166] rounded py-1.5 px-2 text-center text-xs text-[#0c264d]">
                       <strong>47-50%</strong> Anxiety
@@ -277,9 +268,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
                       <strong>19-53%</strong> Depression
                     </div>
                   </div>
-
-                  {/* Males */}
-                  <div className="flex flex-col gap-2 w-[140px]">
+                  <div className="flex flex-col gap-2 w-full sm:flex-1 max-w-[200px]">
                     <div className="text-xs font-bold text-[#0A9DC4] text-center">Males: Higher In</div>
                     <div className="bg-[#f0f9ff] border border-[#0A9DC4] rounded py-1.5 px-2 text-center text-xs text-[#0c264d]">
                       <strong>15-40%</strong> Substance Use
@@ -288,10 +277,8 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
                       <strong>2-3%</strong> Schizophrenia
                     </div>
                   </div>
-
                 </div>
               </div>
-
             </div>
           </div>
         </section>
@@ -299,7 +286,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
         {/* IMPACT ON DAILY LIFE */}
         <section className="bg-[#f0f9ff] p-6 rounded-lg shadow-sm border border-[#0A9DC4]/20">
           <h2 className="text-[#0c264d] font-bold mb-6 text-2xl flex items-center gap-2">
-            <AlertCircle className="text-[#ff6b6b]" size={28} />
+            <AlertCircle className="text-[#ff6b6b] shrink-0" size={28} />
             Impact on Daily Life
           </h2>
           
@@ -331,55 +318,58 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
 
         {/* SPECTRUM SECTION */}
         <section className="flow-root pt-2">
-          
-          <div className="bg-white rounded-md border-2 border-[#0c264d] p-6 md:float-right md:ml-6 mb-6 w-full md:w-[420px] shadow-sm">
-            <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">The ADHD Spectrum</h3>
-            <div className="mb-6">
-              <div className="text-sm text-center mb-2 text-[#0c264d] font-bold">Symptom Severity</div>
-              <div className="h-16 rounded-lg overflow-hidden relative" style={{ background: 'linear-gradient(to right, #ffd166 0%, #2abcd4 50%, #0c264d 100%)' }}>
-                <div className="absolute inset-0 flex items-center justify-between px-4 text-white text-xs font-bold">
-                  <span className="text-[#0c264d]">Mild</span>
-                  <span>Moderate</span>
-                  <span>Severe</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="mb-6">
-              <div className="text-sm text-center mb-3 text-[#0c264d] font-bold">Common Co-occurring Conditions<sup className="text-green-600 font-bold ml-0.5">6</sup></div>
-              <div className="grid grid-cols-2 gap-2">
-                <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
-                  <div className="font-bold text-[#0c264d]">59%</div>
-                  <div className="text-gray-700">Autism</div>
-                </div>
-                <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
-                  <div className="font-bold text-[#0c264d]">10-92%</div>
-                  <div className="text-gray-700">Learning Disorders</div>
-                </div>
-              </div>
-              <div className="text-xs text-center mt-3 text-gray-600 italic">60-100% of children with ADHD have ≥1 comorbid condition</div>
-            </div>
-          </div>
-          
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center gap-2">
-            <LayoutGrid className="text-[#0A9DC4]" size={28} />
+          <h2 className="text-[#0c264d] font-bold mb-6 text-2xl flex items-center gap-2">
+            <LayoutGrid className="text-[#0A9DC4] shrink-0" size={28} />
             Understanding ADHD as a Spectrum
           </h2>
 
-          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
-            ADHD exists on a spectrum, and no two people with ADHD are exactly alike. Symptoms vary in type, 
-            severity, and combination. Some individuals are mildly affected and develop effective coping strategies 
-            with minimal support, while others experience significant impairment requiring comprehensive treatment.
-          </p>
-          <p className="mb-4 text-sm text-gray-700 leading-relaxed">
-            Additionally, ADHD commonly co-occurs with other conditions including learning disabilities, anxiety 
-            disorders, depression, autism spectrum disorder, and sleep disorders. These co-occurring conditions 
-            can complicate diagnosis and treatment, making individualized assessment and care essential.
-          </p>
-          <p className="mb-4 text-sm text-gray-700 leading-relaxed font-bold text-[#0c264d]">
-            Understanding ADHD as a complex, multifaceted condition—rather than a simple checklist of behaviors—is 
-            crucial for effective support and treatment.
-          </p>
+          <div className="flex flex-col md:flex-row gap-8 items-start mb-6">
+            <div className="flex-1 space-y-4">
+              <p className="text-sm text-gray-700 leading-relaxed">
+                ADHD exists on a spectrum, and no two people with ADHD are exactly alike. Symptoms vary in type, 
+                severity, and combination. Some individuals are mildly affected and develop effective coping strategies 
+                with minimal support, while others experience significant impairment requiring comprehensive treatment.
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Additionally, ADHD commonly co-occurs with other conditions including learning disabilities, anxiety 
+                disorders, depression, autism spectrum disorder, and sleep disorders. These co-occurring conditions 
+                can complicate diagnosis and treatment, making individualized assessment and care essential.
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed font-bold text-[#0c264d]">
+                Understanding ADHD as a complex, multifaceted condition—rather than a simple checklist of behaviors—is 
+                crucial for effective support and treatment.
+              </p>
+            </div>
+
+            <div className="shrink-0 w-full md:w-1/2 lg:w-5/12 max-w-md bg-white rounded-md border-2 border-[#0c264d] p-6 shadow-sm">
+              <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">The ADHD Spectrum</h3>
+              <div className="mb-6">
+                <div className="text-sm text-center mb-2 text-[#0c264d] font-bold">Symptom Severity</div>
+                <div className="h-16 rounded-lg overflow-hidden relative" style={{ background: 'linear-gradient(to right, #ffd166 0%, #2abcd4 50%, #0c264d 100%)' }}>
+                  <div className="absolute inset-0 flex items-center justify-between px-4 text-white text-xs font-bold">
+                    <span className="text-[#0c264d]">Mild</span>
+                    <span>Moderate</span>
+                    <span>Severe</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div className="text-sm text-center mb-3 text-[#0c264d] font-bold">Common Co-occurring Conditions<sup className="text-green-600 font-bold ml-0.5">6</sup></div>
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="bg-[#0A9DC4]/20 border border-[#0A9DC4] rounded p-2 text-center text-xs">
+                    <div className="font-bold text-[#0c264d]">59%</div>
+                    <div className="text-gray-700">Autism</div>
+                  </div>
+                  <div className="bg-[#ffd166]/20 border border-[#ffd166] rounded p-2 text-center text-xs">
+                    <div className="font-bold text-[#0c264d]">10-92%</div>
+                    <div className="text-gray-700">Learning Disorders</div>
+                  </div>
+                </div>
+                <div className="text-xs text-center mt-3 text-gray-600 italic">60-100% of children with ADHD have ≥1 comorbid condition</div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
 
@@ -405,7 +395,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed break-words" style={{ textIndent: 0 }}>
             <p>1. Reuben, C., & Elgaddal, N. (2024). "ADHD in Children Ages 5–17 Years: US, 2020–2022." <i>NCHS Data Brief</i>. https://doi.org/10.15620/cdc:138214</p>
             <p>2. Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>. https://doi.org/10.1016/j.psychres.2023.115449</p>
             <p>3. American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
@@ -424,7 +414,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+         <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0 break-words" style={{ textIndent: 0 }}>
             <li>Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC. https://www.cdc.gov/ncbddd/adhd/data.html</li>
             <li>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH. https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd</li>
             <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i>. Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</li>

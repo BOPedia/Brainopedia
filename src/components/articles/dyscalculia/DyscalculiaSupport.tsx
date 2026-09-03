@@ -94,7 +94,7 @@ export function DyscalculiaSupport({ setCurrentArticle, initialTab }: Dyscalculi
               <ImageWithFallback 
                 src="/images/dyscalculia/dyscalculia-support-interventions.webp"
                 alt="Multi-sensory math instruction using physical blocks"
-                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
+                className="w-32 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
               />
               <p className="text-sm text-slate-700 leading-relaxed">
                 Direct instruction must focus heavily on bridging the gap between abstract numerical symbols and their physical quantities.<sup>3</sup> This is achieved by anchoring mathematical concepts in tangible, physical space before gradually introducing standard equations.<sup>1</sup>
@@ -130,7 +130,7 @@ export function DyscalculiaSupport({ setCurrentArticle, initialTab }: Dyscalculi
               <ImageWithFallback 
                 src="/images/dyscalculia/dyscalculia-support-arithmetic.webp"
                 alt="Visual number lines and dot pattern strategies"
-                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
+                className="w-32 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
               />
               <p className="text-sm text-slate-700 leading-relaxed">
                 Because individuals with dyscalculia frequently struggle to memorize math facts, interventions must provide alternative, logic-based pathways for basic arithmetic.<sup>3</sup> These targeted strategies bypass the need for rote memorization by teaching students how to efficiently derive answers using visual and spatial reasoning.<sup>2</sup>
