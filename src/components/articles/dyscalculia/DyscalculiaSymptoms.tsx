@@ -10,7 +10,8 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
   const [activeTab, setActiveTab] = useState(initialTab || 'core');
 
   return (
-    <article className="max-w-6xl font-spartan">
+    <article className="max-w-6xl font-spartan animate-in fade-in duration-300">
+      
       {/* Header Area */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-3xl text-[#0c264d] font-normal">
@@ -19,7 +20,7 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
 
         <button 
           onClick={() => setCurrentArticle?.('dyscalculia')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:block hidden"
         >
           <span className="text-xl">←</span>
           Back to Dyscalculia
@@ -29,7 +30,7 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
       {/* Mobile button */}
       <button 
         onClick={() => setCurrentArticle?.('dyscalculia')}
-        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
+        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:hidden mb-6"
       >
         <span className="text-xl">←</span>
         Back to Dyscalculia
@@ -73,29 +74,26 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
           TAB 1: CORE MATHEMATICAL SYMPTOMS & AGE
       ========================================== */}
       {activeTab === 'core' && (
-        <div className="space-y-6">
-          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+        <div className="space-y-8 animate-fadeIn">
+          
+          {/* Centered Intro Paragraph */}
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
             Dyscalculia presents differently across individuals and developmental stages, but certain core symptoms are consistently observed. Recognizing these signs early can lead to timely intervention and support, improving mathematical outcomes and reducing severe math anxiety.
           </p>
 
           {/* Core Math Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Mathematical Symptoms</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Core Mathematical Symptoms</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  At its core, dyscalculia fundamentally alters how the brain intuitively grasps and interacts with numerical information. This neurological difference manifests through profound challenges with innate "number sense"—such as estimating quantities or instantly recognizing small amounts—which directly cascades into persistent difficulties with rote counting, memorizing basic math facts, and executing foundational arithmetic without manual workarounds like finger counting.
-                </p>
-              </div>
-              <div className="shrink-0 w-full md:w-32">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-symptoms-core-math.webp"
-                  alt="Student struggling with mathematical calculations"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-symptoms-core-math.webp"
+              alt="Student struggling with mathematical calculations"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-cyan-100"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              At its core, dyscalculia fundamentally alters how the brain intuitively grasps and interacts with numerical information. This neurological difference manifests through profound challenges with innate "number sense"—such as estimating quantities or instantly recognizing small amounts—which directly cascades into persistent difficulties with rote counting, memorizing basic math facts, and executing foundational arithmetic without manual workarounds like finger counting.
+            </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
@@ -124,22 +122,17 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
 
           {/* Symptoms by Age Group Card (Yellow) */}
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms by Age Group</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Symptoms by Age Group</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="shrink-0 w-full md:w-32">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-symptoms-age.webp"
-                  alt="Developmental progression of math learning"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  Because dyscalculia is a lifelong neurobiological difference, its outward symptoms evolve as a child's environment demands increasingly complex mathematical skills. What begins as foundational difficulties with rote counting and recognizing number symbols in early childhood often compounds into severe struggles with fractions, abstract algebra, and real-world financial applications during the teenage and young adult years.
-                </p>
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-symptoms-age.webp"
+              alt="Developmental progression of math learning"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-yellow-200"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Because dyscalculia is a lifelong neurobiological difference, its outward symptoms evolve as a child's environment demands increasingly complex mathematical skills. What begins as foundational difficulties with rote counting and recognizing number symbols in early childhood often compounds into severe struggles with fractions, abstract algebra, and real-world financial applications during the teenage and young adult years.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
@@ -177,26 +170,21 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
           TAB 2: COGNITIVE & DAILY
       ========================================== */}
       {activeTab === 'cognitive' && (
-        <div className="space-y-6">
+        <div className="space-y-8 animate-fadeIn">
           
-          {/* Associated Cognitive Symptoms Card (Emerald) */}
+          {/* Associated Cognitive Symptoms Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Associated Cognitive Symptoms</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Associated Cognitive Symptoms</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  Beyond fundamental arithmetic, dyscalculia significantly impacts the broader cognitive networks required for complex mathematical problem-solving. Individuals frequently experience working memory limits that make mental math and multi-step equations exceptionally draining, compounded by executive function and visual-spatial differences that slow processing speed and make organizing numbers or interpreting charts highly challenging.
-                </p>
-              </div>
-              <div className="shrink-0 w-full md:w-32">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-symptoms-cognitive.webp"
-                  alt="Cognitive processing and working memory in math"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-symptoms-cognitive.webp"
+              alt="Cognitive processing and working memory in math"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-cyan-100"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Beyond fundamental arithmetic, dyscalculia significantly impacts the broader cognitive networks required for complex mathematical problem-solving. Individuals frequently experience working memory limits that make mental math and multi-step equations exceptionally draining, compounded by executive function and visual-spatial differences that slow processing speed and make organizing numbers or interpreting charts highly challenging.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-200">
@@ -228,24 +216,19 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
             </div>
           </div>
 
-          {/* Daily Life Symptoms Card (Navy) */}
+          {/* Daily Life Symptoms Card (Slate) */}
           <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life Symptoms</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Daily Life Symptoms</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="shrink-0 w-full md:w-32">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-symptoms-daily-life.webp"
-                  alt="Everyday situations showing time and money handling challenges"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  The impacts of dyscalculia extend far beyond the classroom into everyday adult functioning. Foundational struggles with numerical concepts frequently translate into lifelong difficulties managing personal finances, tracking time, estimating measurements, and confidently navigating spatial directions.
-                </p>
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-symptoms-daily-life.webp"
+              alt="Everyday situations showing time and money handling challenges"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-slate-200"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              The impacts of dyscalculia extend far beyond the classroom into everyday adult functioning. Foundational struggles with numerical concepts frequently translate into lifelong difficulties managing personal finances, tracking time, estimating measurements, and confidently navigating spatial directions.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
@@ -276,26 +259,21 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
           TAB 3: EMOTIONAL & COPING
       ========================================== */}
       {activeTab === 'emotional' && (
-        <div className="space-y-6">
+        <div className="space-y-8 animate-fadeIn">
           
           {/* Emotional Symptoms Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Emotional and Behavioral Symptoms</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Emotional and Behavioral Symptoms</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  The chronic stress of navigating a society built on numerical fluency often triggers profound psychological impacts for individuals with dyscalculia. Without proper identification and support, early struggles can quickly spiral into severe math anxiety, deeply ingrained avoidance behaviors, and devastating blows to an individual's overall self-esteem.
-                </p>
-              </div>
-              <div className="shrink-0 w-full md:w-32">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-symptoms-emotional.webp"
-                  alt="Student experiencing severe math anxiety"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-symptoms-emotional.webp"
+              alt="Student experiencing severe math anxiety"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-cyan-100"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              The chronic stress of navigating a society built on numerical fluency often triggers profound psychological impacts for individuals with dyscalculia. Without proper identification and support, early struggles can quickly spiral into severe math anxiety, deeply ingrained avoidance behaviors, and devastating blows to an individual's overall self-esteem.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
@@ -321,22 +299,17 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
 
           {/* Compensatory Strategies Card (Yellow) */}
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Compensatory Strategies</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Compensatory Strategies</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="shrink-0 w-full md:w-32">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-symptoms-compensatory.webp"
-                  alt="Creative coping strategies and tools for math"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  Because their brains are wired differently, individuals with dyscalculia instinctively develop intelligent, creative workarounds to cope with a world built on numbers. These compensatory strategies allow individuals to function in daily life, though they often rely heavily on memorization, physical tools, and approximations rather than genuine mathematical fluency.
-                </p>
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-symptoms-compensatory.webp"
+              alt="Creative coping strategies and tools for math"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-yellow-200"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Because their brains are wired differently, individuals with dyscalculia instinctively develop intelligent, creative workarounds to cope with a world built on numbers. These compensatory strategies allow individuals to function in daily life, though they often rely heavily on memorization, physical tools, and approximations rather than genuine mathematical fluency.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
@@ -360,12 +333,12 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
 
           {/* Red Flags Card (Slate) */}
           <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl flex items-center gap-2">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl flex items-center justify-center gap-2">
               <span className="text-red-600">⚠</span> Red Flags Requiring Evaluation
             </h2>
             
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-              <p className="mb-4 text-sm text-[#0c264d] font-bold">Consider a professional neuropsychological evaluation if the individual:</p>
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200 max-w-4xl mx-auto">
+              <p className="mb-4 text-sm text-[#0c264d] font-bold text-center">Consider a professional neuropsychological evaluation if the individual:</p>
               <ul className="list-disc ml-5 space-y-2 text-sm text-slate-700">
                 <li>Is consistently more than one year behind peers in math despite receiving good instruction.</li>
                 <li>Shows mathematical difficulties that are dramatically worse than their performance in reading or writing.</li>
@@ -383,7 +356,7 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
       <div className="mt-12 mb-6 flex flex-col md:flex-row md:justify-end clear-both">
         <button 
           onClick={() => setCurrentArticle?.('dyscalculia')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md whitespace-nowrap"
         >
           <span className="text-xl">←</span>
           Back to Dyscalculia
@@ -391,6 +364,8 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+
       <div className="clear-both mt-16 font-spartan">
         <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
         
@@ -399,7 +374,7 @@ export function DyscalculiaSymptoms({ setCurrentArticle, initialTab }: Dyscalcul
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0 break-words" style={{ textIndent: 0 }}>
             <li>Butterworth, B., Varma, S., & Laurillard, D. (2011). "Dyscalculia: From brain to education." <i>Science</i>. https://doi.org/10.1126/science.1201536</li>
             <li>Dehaene, S. (2011). <i>The number sense: How the mind creates mathematics</i>. Oxford University Press.</li>
             <li>Kaufmann, L., & von Aster, M. (2012). "The diagnosis and management of dyscalculia." <i>Deutsches Ärzteblatt International</i>. https://doi.org/10.3238/arztebl.2012.0767</li>

@@ -10,7 +10,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
   const [activeTab, setActiveTab] = useState(initialTab || 'daily-life');
 
   return (
-    <article className="max-w-6xl font-spartan">
+    <article className="max-w-6xl font-spartan animate-in fade-in duration-300">
       <style>
         {`
           sup {
@@ -28,7 +28,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
 
         <button 
           onClick={() => setCurrentArticle?.('dyscalculia')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:block hidden"
         >
           <span className="text-xl">←</span>
           Back to Dyscalculia
@@ -38,7 +38,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
       {/* Mobile button */}
       <button 
         onClick={() => setCurrentArticle?.('dyscalculia')}
-        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
+        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:hidden mb-6"
       >
         <span className="text-xl">←</span>
         Back to Dyscalculia
@@ -48,7 +48,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 clear-both">
         <button
           onClick={() => setActiveTab('daily-life')}
-          className={`px-6 py-3 rounded-md transition-colors font-normal ${
+          className={`px-6 py-3 rounded-md transition-colors font-normal shadow-sm ${
             activeTab === 'daily-life'
               ? 'bg-[#0A9DC4] text-white'
               : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
@@ -58,7 +58,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
         </button>
         <button
           onClick={() => setActiveTab('education-career')}
-          className={`px-6 py-3 rounded-md transition-colors font-normal ${
+          className={`px-6 py-3 rounded-md transition-colors font-normal shadow-sm ${
             activeTab === 'education-career'
               ? 'bg-[#0A9DC4] text-white'
               : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
@@ -68,7 +68,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
         </button>
         <button
           onClick={() => setActiveTab('strategies-support')}
-          className={`px-6 py-3 rounded-md transition-colors font-normal ${
+          className={`px-6 py-3 rounded-md transition-colors font-normal shadow-sm ${
             activeTab === 'strategies-support'
               ? 'bg-[#0A9DC4] text-white'
               : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
@@ -85,8 +85,8 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
         <div className="space-y-8 animate-fadeIn">
           
           {/* Centered Intro Paragraph */}
-          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto">
-            Living with dyscalculia presents unique challenges in a world driven by numbers, schedules, and financial transactions.<sup>1</sup> However, with self-awareness, targeted strategies, and a supportive environment, individuals can successfully navigate these daily hurdles and lead fulfilling lives.<sup>2</sup>
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            Living with dyscalculia presents unique challenges in a world driven by numbers, schedules, and financial transactions.<sup className="text-green-600 font-bold ml-0.5">1</sup> However, with self-awareness, targeted strategies, and a supportive environment, individuals can successfully navigate these daily hurdles and lead fulfilling lives.<sup className="text-green-600 font-bold ml-0.5">2</sup>
           </p>
 
           {/* Daily Challenges Card (Cyan) */}
@@ -100,14 +100,14 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
             />
             
             <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
-              Dyscalculia impacts far more than academic testing; it seeps into the foundational logistics of adult independence.<sup>3</sup> Routine tasks that neurotypical individuals process automatically often require intense cognitive effort and careful planning.
+              Dyscalculia impacts far more than academic testing; it seeps into the foundational logistics of adult independence.<sup className="text-green-600 font-bold ml-0.5">3</sup> Routine tasks that neurotypical individuals process automatically often require intense cognitive effort and careful planning.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-cyan-100 pb-2">Time Management</h3>
                 <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
-                  <li><strong>Reading clocks:</strong> Extreme difficulty quickly interpreting analog clocks, making digital displays essential.<sup>4</sup></li>
+                  <li><strong>Reading clocks:</strong> Extreme difficulty quickly interpreting analog clocks, making digital displays essential.<sup className="text-green-600 font-bold ml-0.5">4</sup></li>
                   <li><strong>Estimating time:</strong> A poor internal sense of time passage, leading to chronic lateness or over-scheduling.</li>
                   <li><strong>Scheduling:</strong> Trouble coordinating multiple appointments and mentally calculating travel times between them.</li>
                 </ul>
@@ -116,7 +116,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
               <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-cyan-100 pb-2">Financial Tasks</h3>
                 <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
-                  <li><strong>Counting change:</strong> Difficulty quickly calculating or verifying correct change at physical registers.<sup>5</sup></li>
+                  <li><strong>Counting change:</strong> Difficulty quickly calculating or verifying correct change at physical registers.<sup className="text-green-600 font-bold ml-0.5">5</sup></li>
                   <li><strong>Budgeting:</strong> Tracking daily spending and projecting monthly savings is mentally exhausting.</li>
                   <li><strong>Tipping:</strong> Mentally calculating 15% or 20% tips in social settings causes significant anxiety.</li>
                 </ul>
@@ -129,7 +129,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
             <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Everyday Complexities</h2>
             
             <p className="text-sm text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
-              Beyond time and money, dyscalculia disrupts spatial reasoning and procedural sequences required for household management. Tasks involving ratios, measurements, or spatial navigation often require the use of external tools or compensatory apps.<sup>2</sup>
+              Beyond time and money, dyscalculia disrupts spatial reasoning and procedural sequences required for household management. Tasks involving ratios, measurements, or spatial navigation often require the use of external tools or compensatory apps.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -147,7 +147,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
                 <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
                   <li><strong>Recipe ratios:</strong> Safely doubling or halving a recipe's ingredient measurements is highly error-prone.</li>
                   <li><strong>Procedural timing:</strong> Coordinating a multi-step meal so everything finishes at the same time.</li>
-                  <li><strong>Spatial maps:</strong> Reading physical maps, estimating travel distances, and understanding highway exit numbers.<sup>1</sup></li>
+                  <li><strong>Spatial maps:</strong> Reading physical maps, estimating travel distances, and understanding highway exit numbers.</li>
                 </ul>
               </div>
             </div>
@@ -158,7 +158,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
             <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Emotional & Social Impact</h2>
             
             <p className="text-sm text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
-              The invisible nature of dyscalculia often leads to profound emotional distress, as individuals are frequently misjudged as careless or unintelligent.<sup>4</sup> Building resilience requires dismantling the shame associated with utilizing accommodations in public spaces.
+              The invisible nature of dyscalculia often leads to profound emotional distress, as individuals are frequently misjudged as careless or unintelligent. Building resilience requires dismantling the shame associated with utilizing accommodations in public spaces.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -191,8 +191,8 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
         <div className="space-y-8 animate-fadeIn">
           
           {/* Centered Intro Paragraph */}
-          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto">
-            The traditional education system and modern workplace are highly reliant on numerical fluency, often creating artificial barriers for those with dyscalculia.<sup>2</sup> By focusing on individual strengths and securing legal accommodations, individuals can pursue highly successful academic and professional trajectories.<sup>3</sup>
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            The traditional education system and modern workplace are highly reliant on numerical fluency, often creating artificial barriers for those with dyscalculia. By focusing on individual strengths and securing legal accommodations, individuals can pursue highly successful academic and professional trajectories.
           </p>
 
           {/* Educational Journey Card (Cyan) */}
@@ -200,7 +200,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
             <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">The Educational Journey</h2>
             
             <p className="text-sm text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
-              From early childhood through higher education, dyscalculia requires constant self-advocacy to secure the tools necessary to prove conceptual mastery.<sup>1</sup> Without interventions, the cumulative nature of math education can result in profound learned helplessness.
+              From early childhood through higher education, dyscalculia requires constant self-advocacy to secure the tools necessary to prove conceptual mastery. Without interventions, the cumulative nature of math education can result in profound learned helplessness.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -209,7 +209,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
                 <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
                   <li><strong>Early realization:</strong> Watching peers easily grasp concepts while the student struggles to memorize basic facts.</li>
                   <li><strong>Homework disparity:</strong> Spending hours longer on math assignments compared to classmates.</li>
-                  <li><strong>Testing trauma:</strong> Timed arithmetic tests causing significant, lasting anxiety and mental blocks.<sup>4</sup></li>
+                  <li><strong>Testing trauma:</strong> Timed arithmetic tests causing significant, lasting anxiety and mental blocks.<sup className="text-green-600 font-bold ml-0.5">4</sup></li>
                   <li><strong>Gatekeeping:</strong> Standardized tests (SAT, ACT) presenting massive barriers to college admission without accommodations.</li>
                 </ul>
               </div>
@@ -236,7 +236,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
             />
             
             <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
-              Many adults with dyscalculia excel professionally by leaning into their verbal, creative, and interpersonal strengths.<sup>2</sup> Success in the workplace often involves finding the right organizational culture and utilizing assistive technologies.
+              Many adults with dyscalculia excel professionally by leaning into their verbal, creative, and interpersonal strengths. Success in the workplace often involves finding the right organizational culture and utilizing assistive technologies.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -269,8 +269,8 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
         <div className="space-y-8 animate-fadeIn">
           
           {/* Centered Intro Paragraph */}
-          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto">
-            Living effectively with dyscalculia is fundamentally about working smarter, not harder, through the unapologetic use of technology.<sup>2</sup> By embracing these tools and focusing on inherent strengths, individuals can protect their mental health and achieve significant personal success.<sup>4</sup>
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            Living effectively with dyscalculia is fundamentally about working smarter, not harder, through the unapologetic use of technology. By embracing these tools and focusing on inherent strengths, individuals can protect their mental health and achieve significant personal success.
           </p>
 
           {/* Coping Strategies Card (Slate) */}
@@ -284,7 +284,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
             />
             
             <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
-              The modern smartphone has revolutionized independence for those with dyscalculia. Offloading the burden of calculation and memory to reliable digital systems allows the brain to focus its energy on executing the actual task.<sup>5</sup>
+              The modern smartphone has revolutionized independence for those with dyscalculia. Offloading the burden of calculation and memory to reliable digital systems allows the brain to focus its energy on executing the actual task.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -313,7 +313,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
             <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Strengths & Resilience</h2>
             
             <p className="text-sm text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
-              Dyscalculia is characterized by a specific deficit in number processing, not a global cognitive delay. Because the brain develops uniquely, many individuals with dyscalculia excel in areas requiring holistic, big-picture thinking and deep empathy.<sup>2</sup>
+              Dyscalculia is characterized by a specific deficit in number processing, not a global cognitive delay. Because the brain develops uniquely, many individuals with dyscalculia excel in areas requiring holistic, big-picture thinking and deep empathy.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -329,7 +329,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
               <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
                 <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-cyan-100 pb-2">A Message of Hope</h3>
                 <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
-                  <li><strong>Value beyond math:</strong> Dyscalculia does not define your worth or your potential for a brilliant career.<sup>1</sup></li>
+                  <li><strong>Value beyond math:</strong> Dyscalculia does not define your worth or your potential for a brilliant career.</li>
                   <li><strong>Tool acceptance:</strong> Using a calculator is a smart utilization of resources, not a moral failure.</li>
                   <li><strong>Thriving:</strong> With self-awareness and appropriate accommodations, the limits of dyscalculia can be completely managed.</li>
                 </ul>
@@ -372,7 +372,7 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
       <div className="mt-12 mb-6 flex flex-col md:flex-row md:justify-end clear-both">
         <button 
           onClick={() => setCurrentArticle?.('dyscalculia')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md whitespace-nowrap"
         >
           <span className="text-xl">←</span>
           Back to Dyscalculia
@@ -380,6 +380,8 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      
       <div className="clear-both mt-16 font-spartan">
         <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
         
@@ -388,12 +390,12 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
-            <p>1. Butterworth, B., Varma, S., & Laurillard, D. (2011). "Dyscalculia: From brain to education." <em>Science</em>, 332(6033), 1049-1053.</p>
-            <p>2. Parsons, S., & Bynner, J. (2005). "Does numeracy matter more?" <em>National Research and Development Centre for Adult Literacy and Numeracy</em>.</p>
-            <p>3. Kaufmann, L., Mazzocco, M. M., Dowker, A., von Aster, M., Göbel, S. M., Grabner, R. H., ... & Nuerk, H. C. (2013). "Dyscalculia from a developmental and differential perspective." <em>Frontiers in Psychology</em>, 4, 516.</p>
-            <p>4. Burny, E., Valcke, M., & Desoete, A. (2012). "Clock reading: An underestimated topic in children with mathematics difficulties." <em>Journal of Learning Disabilities</em>, 45(4), 351-360.</p>
-            <p>5. Desoete, A., Ceulemans, A., De Weerdt, F., & Pieters, S. (2012). "Can we predict mathematical learning disabilities from symbolic and non-symbolic comparison tasks in kindergarten?" <em>British Journal of Educational Psychology</em>, 82(1), 64-81.</p>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed break-words" style={{ textIndent: 0 }}>
+            <p>1. Butterworth, B., Varma, S., & Laurillard, D. (2011). Dyscalculia: From brain to education. <i>Science</i>, <i>332</i>(6033), 1049-1053. https://doi.org/10.1126/science.1201536</p>
+            <p>2. Parsons, S., & Bynner, J. (2005). Does numeracy matter more? <i>National Research and Development Centre for Adult Literacy and Numeracy</i>. https://dera.ioe.ac.uk/id/eprint/22464/</p>
+            <p>3. Kaufmann, L., Mazzocco, M. M., Dowker, A., von Aster, M., Göbel, S. M., Grabner, R. H., ... & Nuerk, H. C. (2013). Dyscalculia from a developmental and differential perspective. <i>Frontiers in Psychology</i>, <i>4</i>, 516. https://doi.org/10.3389/fpsyg.2013.00516</p>
+            <p>4. Burny, E., Valcke, M., & Desoete, A. (2012). Clock reading: An underestimated topic in children with mathematics difficulties. <i>Journal of Learning Disabilities</i>, <i>45</i>(4), 351-360. https://doi.org/10.1177/0022219411422262</p>
+            <p>5. Desoete, A., Ceulemans, A., De Weerdt, F., & Pieters, S. (2012). Can we predict mathematical learning disabilities from symbolic and non-symbolic comparison tasks in kindergarten? <i>British Journal of Educational Psychology</i>, <i>82</i>(1), 64-81. https://doi.org/10.1111/j.2044-8279.2011.02059.x</p>
           </div>
         </div>
 
@@ -402,11 +404,11 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
-            <li>Chinn, S. (2012). <em>The trouble with maths: A practical guide to helping learners with numeracy difficulties</em> (2nd ed.). Routledge.</li>
-            <li>Dweck, C. S. (2006). <em>Mindset: The new psychology of success</em>. Random House.</li>
-            <li>Geary, D. C. (2004). "Mathematics and learning disabilities." <em>Journal of Learning Disabilities</em>, 37(1), 4-15.</li>
-            <li>Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). "Identifying alterable patterns in employment success for highly successful adults with learning disabilities." <em>Journal of Learning Disabilities</em>, 25(8), 475-487.</li>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0 break-words" style={{ textIndent: 0 }}>
+            <li>Chinn, S. (2012). <i>The trouble with maths: A practical guide to helping learners with numeracy difficulties</i> (2nd ed.). Routledge. https://doi.org/10.4324/9780203115459</li>
+            <li>Dweck, C. S. (2006). <i>Mindset: The new psychology of success</i>. Random House. https://doi.org/10.1037/10510-000</li>
+            <li>Geary, D. C. (2004). Mathematics and learning disabilities. <i>Journal of Learning Disabilities</i>, <i>37</i>(1), 4-15. https://doi.org/10.1177/00222194040370010201</li>
+            <li>Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). Identifying alterable patterns in employment success for highly successful adults with learning disabilities. <i>Journal of Learning Disabilities</i>, <i>25</i>(8), 475-487. https://doi.org/10.1177/002221949202500803</li>
           </ul>
         </div>
       </div>

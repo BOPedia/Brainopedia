@@ -1,330 +1,424 @@
+import React, { useState } from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 interface DysgraphiaSymptomsProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function DysgraphiaSymptoms({ setCurrentArticle }: DysgraphiaSymptomsProps) {
+export function DysgraphiaSymptoms({ setCurrentArticle, initialTab }: DysgraphiaSymptomsProps) {
+  const [activeTab, setActiveTab] = useState(initialTab || 'physical');
+
   return (
-    <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
-      <div className="mb-6">
-        <a 
-          href="#" 
-          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('dysgraphia'); }}
-          className="text-[#2abcd4] hover:underline cursor-pointer"
+    <article className="max-w-6xl font-spartan animate-in fade-in duration-300 w-full min-w-0">
+      
+      {/* HEADER */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl font-normal text-[#0c264d]">
+          Dysgraphia: Symptoms & Characteristics
+        </h1>
+
+        <button 
+          onClick={() => setCurrentArticle?.('dysgraphia')}
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:block hidden"
         >
-          ← Back to Dysgraphia
-        </a>
+          <span className="text-xl">←</span>
+          Back to Dysgraphia
+        </button>
       </div>
 
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
-        Dysgraphia: Symptoms & Characteristics
-      </h1>
+      {/* Mobile Back Button */}
+      <button 
+        onClick={() => setCurrentArticle?.('dysgraphia')}
+        className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:hidden mb-6"
+      >
+        <span className="text-xl">←</span>
+        Back to Dysgraphia
+      </button>
 
-      <div className="space-y-8">
-        <div>
-          <p className="mb-4">
-            Dysgraphia manifests through a variety of symptoms related to the physical act of writing, spelling, 
-            and written expression.<sup>1</sup> These symptoms can range from mild to severe and often vary depending 
-            on the type of dysgraphia and individual circumstances.<sup>2</sup>
+      {/* Tab Navigation */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 clear-both">
+        <button
+          onClick={() => setActiveTab('physical')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal text-sm shadow-sm ${
+            activeTab === 'physical'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Physical & Motor
+        </button>
+        <button
+          onClick={() => setActiveTab('expression')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal text-sm shadow-sm ${
+            activeTab === 'expression'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Expression & Spelling
+        </button>
+        <button
+          onClick={() => setActiveTab('impact')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal text-sm shadow-sm ${
+            activeTab === 'impact'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Age & Impact
+        </button>
+      </div>
+
+      {/* ==========================================
+          TAB 1: PHYSICAL & MOTOR
+      ========================================== */}
+      {activeTab === 'physical' && (
+        <div className="space-y-8 animate-fadeIn">
+          
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            Dysgraphia manifests through a variety of physical and motor symptoms directly related to the mechanical act of writing. These physical challenges exist entirely independent of a student's intelligence, often appearing in otherwise highly capable learners.
           </p>
-        </div>
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Handwriting Difficulties</h2>
-          
-          <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1455390582262-044cdead277a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cml0aW5nJTIwaGFuZHxlbnwxfHx8fDE3Njc0NTM1MDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Hand writing"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Illegible Writing</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Letter formation:</strong> Inconsistent or poorly formed letters<sup>3</sup></li>
-            <li className="mb-2"><strong>Letter reversals:</strong> Confusion with letters like b/d, p/q</li>
-            <li className="mb-2"><strong>Mixed case:</strong> Inconsistent use of uppercase and lowercase letters</li>
-            <li className="mb-2"><strong>Overall legibility:</strong> Handwriting difficult for others (or self) to read<sup>4</sup></li>
-          </ul>
+          {/* Handwriting Difficulties Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Handwriting Difficulties</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-symptoms-handwriting.webp" 
+              alt="Close up of illegible handwriting on lined paper"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#2abcd4]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Dysgraphia primarily manifests through profound difficulties with the physical act and legibility of writing. These challenges go far beyond typical sloppy handwriting, making the transcription process laborious, slow, and highly inconsistent.
+            </p>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Inconsistent Spacing</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Irregular spaces between letters within words</li>
-            <li className="mb-2">Inconsistent spacing between words<sup>5</sup></li>
-            <li className="mb-2">Words running together or excessively separated</li>
-            <li className="mb-2">Difficulty maintaining consistent margins</li>
-          </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Illegible Writing</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Letter formation:</strong> Inconsistent or poorly formed letters that require great physical effort.</li>
+                  <li><strong>Letter reversals:</strong> Confusion with writing letters like b/d and p/q.</li>
+                  <li><strong>Mixed case:</strong> Inconsistent use of uppercase and lowercase letters within words.</li>
+                  <li><strong>Overall legibility:</strong> Handwriting that is incredibly difficult for others, or even the student themselves, to read.</li>
+                </ul>
+              </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Letter Size and Alignment Issues</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Inconsistent letter sizing within and between words</li>
-            <li className="mb-2">Difficulty staying on the line<sup>6</sup></li>
-            <li className="mb-2">Letters floating above or dropping below the baseline</li>
-            <li className="mb-2">Mixture of large and small letters</li>
-          </ul>
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Spatial Alignment</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Inconsistent spacing:</strong> Irregular spaces between letters and frequently running words together.</li>
+                  <li><strong>Letter sizing:</strong> A mixture of abnormally large and small letters within the same sentence.</li>
+                  <li><strong>Line awareness:</strong> Difficulty staying on the lines, causing words to float above or drop below the baseline.</li>
+                  <li><strong>Writing speed:</strong> A slow, effortful process that makes it nearly impossible to keep up with standard note-taking.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Slow Writing Speed</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Takes significantly longer to write than peers<sup>7</sup></li>
-            <li className="mb-2">Difficulty completing timed writing tasks</li>
-            <li className="mb-2">Labored, effortful writing process</li>
-            <li className="mb-2">Cannot keep up with note-taking demands</li>
-          </ul>
-        </div>
+          {/* Motor and Physical Symptoms Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Motor & Physical Symptoms</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-symptoms-motor.webp" 
+              alt="Student showing an awkward pencil grip"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#ffd166]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              The mechanical act of writing requires complex fine motor coordination that is frequently disrupted by dysgraphia. This disruption leads to awkward physical postures, severe hand cramping, and extreme difficulty rapidly copying information from a board.
+            </p>
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Motor and Physical Symptoms</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Grip and Posture Difficulties</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Unusual pencil grip:</strong> Awkward or inefficient pencil hold<sup>8</sup></li>
-            <li className="mb-2"><strong>Excessive grip pressure:</strong> Gripping pencil too tightly or too loosely</li>
-            <li className="mb-2"><strong>Hand position:</strong> Unusual hand or wrist positioning while writing</li>
-            <li className="mb-2"><strong>Body posture:</strong> Awkward positioning of body, arm, or paper</li>
-          </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Grip and Posture</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Unusual pencil grip:</strong> Holding the writing utensil in an awkward or highly inefficient manner.</li>
+                  <li><strong>Excessive pressure:</strong> Gripping the pencil too tightly and pressing too hard into the paper, causing lead to break.</li>
+                  <li><strong>Body posture:</strong> Awkward positioning of the body, arm, or wrist while attempting to write.</li>
+                  <li><strong>Physical discomfort:</strong> Frequent complaints of hand cramping, muscle fatigue, or pain during writing tasks.</li>
+                </ul>
+              </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Physical Discomfort</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Hand cramping or pain while writing<sup>9</sup></li>
-            <li className="mb-2">Muscle fatigue in hand, arm, or shoulder</li>
-            <li className="mb-2">Complaints of hand hurting during writing tasks</li>
-            <li className="mb-2">Frequent breaks needed to rest hand</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Fine Motor Challenges</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty with other fine motor tasks (buttons, zippers, tying shoes)</li>
-            <li className="mb-2">Poor coordination in finger movements<sup>1</sup></li>
-            <li className="mb-2">Challenges with tasks requiring precision</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Spelling Difficulties</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Inconsistent Spelling</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Same word spelled differently within same document<sup>1</sup></li>
-            <li className="mb-2">Able to spell word correctly orally but not in writing</li>
-            <li className="mb-2">Spelling deteriorates as writing task lengthens</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Types of Spelling Errors</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Phonetic errors (writing words as they sound)<sup>2</sup></li>
-            <li className="mb-2">Omitting letters or syllables</li>
-            <li className="mb-2">Letter reversals and transpositions</li>
-            <li className="mb-2">Confusion with homophones (to/too/two, there/their/they're)</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Written Expression Challenges</h2>
-          
-          <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1625750998663-4b2ae8f8b658?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cml0aW5nJTIwaGFuZCUyMHBlbmNpbHxlbnwxfHx8fDE3Njc0NTM1MTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Writing hand pencil"
-            className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-          />
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Discrepancy Between Oral and Written Abilities</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Articulate verbally but struggle in writing:</strong> Can express ideas clearly when speaking<sup>3</sup></li>
-            <li className="mb-2"><strong>Rich oral vocabulary:</strong> Limited vocabulary in written work</li>
-            <li className="mb-2"><strong>Complex verbal reasoning:</strong> Simple, basic written sentences</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Organization and Structure</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty organizing thoughts on paper<sup>4</sup></li>
-            <li className="mb-2">Poor paragraph structure</li>
-            <li className="mb-2">Lack of clear beginning, middle, and end</li>
-            <li className="mb-2">Disjointed or illogical flow of ideas</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Grammar and Syntax</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Incomplete sentences or run-on sentences</li>
-            <li className="mb-2">Missing or incorrect punctuation<sup>5</sup></li>
-            <li className="mb-2">Grammatical errors inconsistent with oral language</li>
-            <li className="mb-2">Omitting or misusing small words (a, the, is)</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Content and Length</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Written work much shorter than expected<sup>6</sup></li>
-            <li className="mb-2">Lack of detail or elaboration</li>
-            <li className="mb-2">Difficulty expanding on ideas</li>
-            <li className="mb-2">Repetitive language or ideas</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Copying Difficulties</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Near-Point Copying</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty copying from book or paper on desk<sup>[17]</sup></li>
-            <li className="mb-2">Omitting or adding letters or words</li>
-            <li className="mb-2">Slow, laborious copying process</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Far-Point Copying</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Greater difficulty copying from board or screen</li>
-            <li className="mb-2">Losing place when looking back and forth<sup>[18]</sup></li>
-            <li className="mb-2">Cannot complete copying before material is erased</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Symptoms by Age Group</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Preschool and Kindergarten</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Avoidance of drawing and coloring activities</li>
-            <li className="mb-2">Difficulty learning to write name<sup>[19]</sup></li>
-            <li className="mb-2">Awkward pencil grip</li>
-            <li className="mb-2">Slow progress in pre-writing skills</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Elementary School (Grades 1-5)</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Illegible handwriting despite practice<sup>[20]</sup></li>
-            <li className="mb-2">Mixing print and cursive letters</li>
-            <li className="mb-2">Inconsistent spacing and sizing</li>
-            <li className="mb-2">Complaints about hand hurting</li>
-            <li className="mb-2">Significant gap between oral and written work quality</li>
-            <li className="mb-2">Difficulty with timed writing tasks<sup>[21]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Middle School and High School</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Continued illegible or very slow handwriting</li>
-            <li className="mb-2">Difficulty taking notes during lectures<sup>[22]</sup></li>
-            <li className="mb-2">Avoidance of writing-intensive courses</li>
-            <li className="mb-2">Frustration with increased writing demands</li>
-            <li className="mb-2">Poor performance on essay tests despite understanding material</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Adults</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Continued difficulty with handwriting<sup>[23]</sup></li>
-            <li className="mb-2">Avoidance of tasks requiring writing</li>
-            <li className="mb-2">Reliance on typing or voice-to-text</li>
-            <li className="mb-2">Challenges with forms, applications, signatures</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Behavioral and Emotional Symptoms</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Avoidance and Resistance</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Strong resistance to writing tasks</li>
-            <li className="mb-2">Procrastination on written assignments<sup>[24]</sup></li>
-            <li className="mb-2">Making excuses to avoid writing</li>
-            <li className="mb-2">Preferring activities that don't require writing</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Emotional Responses</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Frustration and anger about writing tasks<sup>[25]</sup></li>
-            <li className="mb-2">Anxiety before writing assignments or tests</li>
-            <li className="mb-2">Low self-esteem related to writing abilities</li>
-            <li className="mb-2">Embarrassment about handwriting quality</li>
-            <li className="mb-2">Feelings of being "dumb" despite average or above-average intelligence</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Self-Regulation Challenges</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Difficulty monitoring own writing for errors</li>
-            <li className="mb-2">Problems with self-editing and revision<sup>[26]</sup></li>
-            <li className="mb-2">Lack of awareness of writing quality</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Important Distinctions</h2>
-          
-          <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6">
-            <h3 className="text-[#0c264d] font-bold mb-3">What Dysgraphia Is NOT:</h3>
-            <ul className="list-disc ml-6 space-y-2 text-sm">
-              <li><strong>Laziness:</strong> Individuals with dysgraphia are working hard, often much harder than peers<sup>[27]</sup></li>
-              <li><strong>Lack of effort:</strong> Writing is genuinely difficult, not a choice</li>
-              <li><strong>Low intelligence:</strong> Dysgraphia occurs across all intelligence levels</li>
-              <li><strong>Poor teaching:</strong> While instruction matters, dysgraphia has neurological basis</li>
-              <li><strong>Developmental delay that will be outgrown:</strong> Without intervention, difficulties typically persist</li>
-            </ul>
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Copying Difficulties</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Near-point copying:</strong> Difficulty copying text from a book directly onto a paper sitting on the desk.</li>
+                  <li><strong>Far-point copying:</strong> Losing their place constantly when looking back and forth from the teacher's board to their paper.</li>
+                  <li><strong>Omissions:</strong> Frequently omitting or adding letters and words while trying to hold text in working memory.</li>
+                  <li><strong>Fine motor issues:</strong> Correlated challenges with tasks requiring precision, such as buttoning shirts or tying shoes.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+      )}
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">When to Seek Evaluation</h2>
+      {/* ==========================================
+          TAB 2: EXPRESSION & SPELLING
+      ========================================== */}
+      {activeTab === 'expression' && (
+        <div className="space-y-8 animate-fadeIn">
           
-          <p className="mb-4">
-            Consider seeking professional evaluation if:<sup>[28]</sup>
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            Beyond physical mechanics, dysgraphia deeply impacts how the brain retrieves spelling rules and organizes complex thoughts onto paper. This often creates a frustrating, highly visible disconnect between a student's brilliant oral vocabulary and their simplified written output.
           </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Handwriting is significantly worse than peers despite practice</li>
-            <li className="mb-2">Writing causes physical pain or extreme frustration</li>
-            <li className="mb-2">Large gap between oral abilities and written work</li>
-            <li className="mb-2">Writing difficulties persist beyond grade 2-3</li>
-            <li className="mb-2">Academic performance suffering due to writing challenges</li>
-            <li className="mb-2">Child avoids writing activities or shows high anxiety about writing</li>
-          </ul>
+
+          {/* Spelling Difficulties Card (Slate) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Spelling Difficulties</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-symptoms-spelling.webp" 
+              alt="Paper showing inconsistent spelling errors"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#0c264d]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Because dysgraphia interferes with the brain's ability to automatically recall and sequence letters, spelling becomes a highly conscious and exhausting effort. Students will frequently misspell the exact same word multiple different ways within a single paragraph.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Inconsistent Spelling</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li>Spelling the same word differently across multiple sentences in the same document.</li>
+                  <li>Being able to spell a word correctly out loud, but completely unable to write it down accurately.</li>
+                  <li>Spelling accuracy deteriorating rapidly as the writing task lengthens and cognitive fatigue sets in.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Types of Spelling Errors</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Phonetic errors:</strong> Writing words exactly as they sound rather than following orthographic rules.</li>
+                  <li><strong>Omissions:</strong> Leaving out critical letters or entire syllables while focusing on motor control.</li>
+                  <li><strong>Transpositions:</strong> Reversing the order of letters within a perfectly known word.</li>
+                  <li><strong>Homophones:</strong> Persistent confusion with context words like to/too/two and there/their/they're.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Written Expression Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Written Expression Challenges</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-symptoms-expression.webp" 
+              alt="Student struggling to organize an essay on a laptop"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#2abcd4]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              One of the most profound symptoms is the massive gap between a student's highly articulate verbal abilities and their simplified written output. The intense cognitive strain of forming letters leaves virtually no working memory available for organizing paragraphs, utilizing grammar, or managing complex syntax.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">The Oral-Written Gap</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Verbal intelligence:</strong> Can articulate highly complex ideas clearly when speaking, but produces basic sentences when writing.</li>
+                  <li><strong>Vocabulary limits:</strong> Uses a rich oral vocabulary in conversation but relies on simple, repetitive words in written work.</li>
+                  <li><strong>Output length:</strong> Written work is drastically shorter than expected or required for the assignment.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Organization & Syntax</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li><strong>Paragraph structure:</strong> Extreme difficulty organizing thoughts into a clear beginning, middle, and end.</li>
+                  <li><strong>Flow:</strong> Disjointed or highly illogical flow of ideas on paper due to working memory overload.</li>
+                  <li><strong>Grammar:</strong> Incomplete sentences, run-on sentences, and missing punctuation marks.</li>
+                  <li><strong>Word omission:</strong> Frequently omitting or misusing small connector words (a, the, is).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      )}
+
+      {/* ==========================================
+          TAB 3: AGE & IMPACT
+      ========================================== */}
+      {activeTab === 'impact' && (
+        <div className="space-y-8 animate-fadeIn">
+          
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            As educational demands increase over time, the unaddressed symptoms of dysgraphia can trigger profound emotional and behavioral challenges. Identifying these age-specific red flags early is critical to preventing long-term writing anxiety and deep academic avoidance.
+          </p>
+
+          {/* Symptoms by Age Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Symptoms by Age Group</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-symptoms-age.webp" 
+              alt="Timeline of educational writing demands"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#ffd166]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Because writing demands increase exponentially as a student moves through school, dysgraphia symptoms often evolve and compound year over year. What begins as an awkward pencil grip in kindergarten can quickly become a complete inability to take legible lecture notes in high school.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-md border-b pb-2">Preschool</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li>Actively avoids drawing or coloring.</li>
+                  <li>Difficulty learning to write their own name.</li>
+                  <li>Displays a highly awkward or tight pencil grip.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-md border-b pb-2">Elementary</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li>Illegible handwriting despite rigorous practice.</li>
+                  <li>Mixes print and cursive letters randomly.</li>
+                  <li>Complains frequently of hand pain.</li>
+                  <li>Routinely fails timed writing tests.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-md border-b pb-2">Middle/High</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li>Cannot take notes during fast-paced lectures.</li>
+                  <li>Intentionally avoids writing-intensive courses.</li>
+                  <li>Fails essay tests despite demonstrating mastery of the material verbally.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-2 text-md border-b pb-2">Adults</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li>Strict reliance on typing or voice-to-text tools.</li>
+                  <li>Avoids career paths requiring hand-written logs.</li>
+                  <li>Struggles with physical forms and providing consistent signatures.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Emotional Impact Card (Slate) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Behavioral & Emotional Impact</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-symptoms-emotional.webp" 
+              alt="Student expressing frustration over written work"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#0c264d]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              The chronic stress of struggling with a fundamental academic skill frequently triggers profound psychological impacts. Without proper identification, these daily frustrations often spiral into severe writing anxiety, complete academic avoidance, and damaged self-esteem.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Avoidance & Resistance</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li>Strong resistance and procrastination regarding writing tasks of any length.</li>
+                  <li>Making creative excuses to avoid writing, or acting out to escape the assignment entirely.</li>
+                  <li>Extreme difficulty monitoring their own writing for errors or participating in the revision process.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Emotional Responses</h3>
+                <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
+                  <li>Intense frustration and anger specifically triggered by unexpected writing demands.</li>
+                  <li>Feelings of being "dumb" despite obvious intelligence and success in verbal subjects.</li>
+                  <li>Deep embarrassment about handwriting quality when forced to perform in front of peers or teachers.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Red Flags & Distinctions Card (Warning/Red) */}
+          <div className="bg-white border-4 border-red-500 rounded-xl p-6 shadow-sm">
+            <h2 className="text-red-700 font-bold mb-6 text-2xl text-center">Important Distinctions & Red Flags</h2>
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Dysgraphia is a legitimate neurological learning disability that requires targeted intervention. It is explicitly not a result of laziness, low intelligence, or a developmental phase that a child will simply outgrow.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-red-50 p-5 rounded-xl border border-red-200">
+                <h3 className="text-red-800 font-bold mb-3 text-lg border-b border-red-200 pb-2">What Dysgraphia Is NOT</h3>
+                <ul className="list-disc ml-5 text-sm text-red-900 space-y-2">
+                  <li><strong>Laziness:</strong> Individuals with dysgraphia are generally working much harder than their peers to produce less output.</li>
+                  <li><strong>Lack of effort:</strong> The physical act of writing is genuinely painful and difficult, not a behavioral choice.</li>
+                  <li><strong>Poor teaching:</strong> While excellent instruction matters, dysgraphia has a strict neurological basis.</li>
+                </ul>
+              </div>
+
+              <div className="bg-red-50 p-5 rounded-xl border border-red-200">
+                <h3 className="text-red-800 font-bold mb-3 text-lg border-b border-red-200 pb-2">When to Seek Evaluation</h3>
+                <ul className="list-disc ml-5 text-sm text-red-900 space-y-2">
+                  <li>Handwriting is significantly worse than peers despite ample practice and instruction.</li>
+                  <li>Writing causes physical pain, hand cramping, or extreme, disproportionate frustration.</li>
+                  <li>There is a massive, unexplained gap between oral abilities and written work.</li>
+                  <li>The child begins avoiding school or shows high anxiety specifically surrounding writing activities.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* FOOTER BUTTON */}
+      <div className="flex justify-end my-8 w-full clear-both">
+        <button 
+          onClick={() => setCurrentArticle?.('dysgraphia')}
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md whitespace-nowrap"
+        >
+          <span className="text-xl">←</span>
+          Back to Dysgraphia
+        </button>
       </div>
 
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <p>[1] Berninger, V. W., & Wolf, B. J. (2009). <em>Teaching students with dyslexia and dysgraphia: Lessons from teaching and science</em>. Baltimore: Paul H. Brookes Publishing.</p>
-          <p>[2] Berninger, V. W. (2004). "Understanding the 'graphia' in developmental dysgraphia." In D. Dewey & D. E. Tupper (Eds.), <em>Developmental motor disorders: A neuropsychological perspective</em> (pp. 328-350). New York: Guilford Press.</p>
-          <p>[3] Graham, S., & Weintraub, N. (1996). "A review of handwriting research: Progress and prospects from 1980 to 1994." <em>Educational Psychology Review</em>, 8(1), 7-87.</p>
-          <p>[4] Graham, S., Berninger, V., & Weintraub, N. (2001). "Which manuscript letters do primary grade children write legibly?" <em>Journal of Educational Psychology</em>, 93(3), 488-497.</p>
-          <p>[5] Weintraub, N., & Graham, S. (1998). "Writing legibly and quickly: A study of children's ability to adjust their handwriting to meet common classroom demands." <em>Learning Disabilities Research & Practice</em>, 13(3), 146-152.</p>
-          <p>[6] Hamstra-Bletz, L., & Blote, A. W. (1993). "A longitudinal study on dysgraphic handwriting in primary school." <em>Journal of Learning Disabilities</em>, 26(10), 689-699.</p>
-          <p>[7] Berninger, V. W., Vaughan, K. B., Abbott, R. D., Abbott, S. P., Rogan, L. W., Brooks, A., ... & Graham, S. (1997). "Treatment of handwriting problems in beginning writers: Transfer from handwriting to composition." <em>Journal of Educational Psychology</em>, 89(4), 652-666.</p>
-          <p>[8] Tseng, M. H., & Cermak, S. A. (1993). "The influence of ergonomic factors and perceptual-motor abilities on handwriting performance." <em>American Journal of Occupational Therapy</em>, 47(10), 919-926.</p>
-          <p>[9] Rosenblum, S., Weiss, P. L., & Parush, S. (2003). "Product and process evaluation of handwriting difficulties." <em>Educational Psychology Review</em>, 15(1), 41-81.</p>
-          <p>[10] Feder, K. P., & Majnemer, A. (2007). "Handwriting development, competency, and intervention." <em>Developmental Medicine & Child Neurology</em>, 49(4), 312-317.</p>
-          <p>[11] Berninger, V. W., Nielsen, K. H., Abbott, R. D., Wijsman, E., & Raskind, W. (2008). "Writing problems in developmental dyslexia: Under-recognized and under-treated." <em>Journal of School Psychology</em>, 46(1), 1-21.</p>
-          <p>[12] Moats, L. C. (1995). <em>Spelling: Development, disability, and instruction</em>. Baltimore: York Press.</p>
-          <p>[13] Connelly, V., Campbell, S., MacLean, M., & Barnes, J. (2006). "Contribution of lower order letter writing skills to the written composition of college students with and without dyslexia." <em>Developmental Neuropsychology</em>, 29(1), 175-196.</p>
-          <p>[14] Graham, S., & Harris, K. R. (2000). "The role of self-regulation and transcription skills in writing and writing development." <em>Educational Psychologist</em>, 35(1), 3-12.</p>
-          <p>[15] Graham, S., & Perin, D. (2007). "A meta-analysis of writing instruction for adolescent students." <em>Journal of Educational Psychology</em>, 99(3), 445-476.</p>
-          <p>[16] Graham, S., Berninger, V. W., Abbott, R. D., Abbott, S. P., & Whitaker, D. (1997). "Role of mechanics in composing of elementary school students: A new methodological approach." <em>Journal of Educational Psychology</em>, 89(1), 170-182.</p>
-          <p>[17] Weintraub, N., & Graham, S. (1998). "Writing legibly and quickly." <em>Learning Disabilities Research & Practice</em>, 13(3), 146-152.</p>
-          <p>[18] Rosenblum, S., Parush, S., & Weiss, P. L. (2003). "Computerized temporal handwriting characteristics of proficient and non-proficient handwriters." <em>American Journal of Occupational Therapy</em>, 57(2), 129-138.</p>
-          <p>[19] Marr, D., & Cermak, S. (2002). "Predicting handwriting performance of early elementary students with the Developmental Test of Visual-Motor Integration." <em>Perceptual and Motor Skills</em>, 95(2), 661-669.</p>
-          <p>[20] Graham, S., & Weintraub, N. (1996). "A review of handwriting research." <em>Educational Psychology Review</em>, 8(1), 7-87.</p>
-          <p>[21] Berninger, V. W., & Fuller, F. (1992). "Gender differences in orthographic, verbal, and compositional fluency: Implications for assessing writing disabilities in primary grade children." <em>Journal of School Psychology</em>, 30(4), 363-382.</p>
-          <p>[22] Peverly, S. T. (2006). "The importance of handwriting speed in adult writing." <em>Developmental Neuropsychology</em>, 29(1), 197-216.</p>
-          <p>[23] Gregg, N. (2009). <em>Adolescents and adults with learning disabilities and ADHD: Assessment and accommodation</em>. New York: Guilford Press.</p>
-          <p>[24] Nelson, J. M., & Harwood, H. (2011). "Learning disabilities and anxiety: A meta-analysis." <em>Journal of Learning Disabilities</em>, 44(1), 3-17.</p>
-          <p>[25] Al-Yagon, M., & Mikulincer, M. (2004). "Patterns of close relationships and socioemotional and academic adjustment among school-age children with learning disabilities." <em>Learning Disabilities Research & Practice</em>, 19(1), 12-19.</p>
-          <p>[26] Hayes, J. R., & Flower, L. S. (1980). "Identifying the organization of writing processes." In L. W. Gregg & E. R. Steinberg (Eds.), <em>Cognitive processes in writing</em> (pp. 3-30). Hillsdale, NJ: Lawrence Erlbaum.</p>
-          <p>[27] Berninger, V. W., & Wolf, B. J. (2009). <em>Teaching students with dyslexia and dysgraphia</em>. Baltimore: Paul H. Brookes Publishing.</p>
-          <p>[28] Katusic, S. K., Colligan, R. C., Weaver, A. L., & Barbaresi, W. J. (2009). "The forgotten learning disability: Epidemiology of written language disorder in a population-based birth cohort." <em>Pediatrics</em>, 123(5), 1306-1313.</p>
+      {/* ===== REFERENCES SECTION ===== */}
+      <div className="clear-both mt-16 font-spartan">
+        <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0 break-words" style={{ textIndent: 0 }}>
+            <li>Al-Yagon, M., & Mikulincer, M. (2004). Patterns of close relationships and socioemotional and academic adjustment among school-age children with learning disabilities. <i>Learning Disabilities Research & Practice</i>. https://doi.org/10.1111/j.1540-5826.2004.00088.x</li>
+            <li>Berninger, V. W. (2004). Understanding the graphia in developmental dysgraphia. In D. Dewey & D. E. Tupper (Eds.), <i>Developmental motor disorders: A neuropsychological perspective</i>. Guilford Press.</li>
+            <li>Berninger, V. W., & Fuller, F. (1992). Gender differences in orthographic, verbal, and compositional fluency: Implications for assessing writing disabilities in primary grade children. <i>Journal of School Psychology</i>. https://doi.org/10.1016/0022-4405(92)90004-O</li>
+            <li>Berninger, V. W., & Wolf, B. J. (2009). Teaching students with dyslexia and dysgraphia: Lessons from teaching and science. <i>Paul H. Brookes Publishing</i>.</li>
+            <li>Berninger, V. W., Nielsen, K. H., Abbott, R. D., Wijsman, E., & Raskind, W. (2008). Writing problems in developmental dyslexia: Under-recognized and under-treated. <i>Journal of School Psychology</i>. https://doi.org/10.1016/j.jsp.2007.11.002</li>
+            <li>Berninger, V. W., Vaughan, K. B., Abbott, R. D., Abbott, S. P., Rogan, L. W., Brooks, A., ... & Graham, S. (1997). Treatment of handwriting problems in beginning writers: Transfer from handwriting to composition. <i>Journal of Educational Psychology</i>. https://doi.org/10.1037/0022-0663.89.4.652</li>
+            <li>Connelly, V., Campbell, S., MacLean, M., & Barnes, J. (2006). Contribution of lower order letter writing skills to the written composition of college students with and without dyslexia. <i>Developmental Neuropsychology</i>. https://doi.org/10.1207/s15326942dn2901_9</li>
+            <li>Feder, K. P., & Majnemer, A. (2007). Handwriting development, competency, and intervention. <i>Developmental Medicine & Child Neurology</i>. https://doi.org/10.1111/j.1469-8749.2007.00312.x</li>
+            <li>Graham, S., & Harris, K. R. (2000). The role of self-regulation and transcription skills in writing and writing development. <i>Educational Psychologist</i>. https://doi.org/10.1207/S15326985EP3501_2</li>
+            <li>Graham, S., & Perin, D. (2007). A meta-analysis of writing instruction for adolescent students. <i>Journal of Educational Psychology</i>. https://doi.org/10.1037/0022-0663.99.3.445</li>
+            <li>Graham, S., & Weintraub, N. (1996). A review of handwriting research: Progress and prospects from 1980 to 1994. <i>Educational Psychology Review</i>. https://doi.org/10.1007/BF01464047</li>
+            <li>Graham, S., Berninger, V. W., Abbott, R. D., Abbott, S. P., & Whitaker, D. (1997). Role of mechanics in composing of elementary school students: A new methodological approach. <i>Journal of Educational Psychology</i>. https://doi.org/10.1037/0022-0663.89.1.170</li>
+            <li>Graham, S., Berninger, V., & Weintraub, N. (2001). Which manuscript letters do primary grade children write legibly? <i>Journal of Educational Psychology</i>. https://doi.org/10.1037/0022-0663.93.3.488</li>
+            <li>Gregg, N. (2009). Adolescents and adults with learning disabilities and ADHD: Assessment and accommodation. <i>Guilford Press</i>.</li>
+            <li>Hamstra-Bletz, L., & Blote, A. W. (1993). A longitudinal study on dysgraphic handwriting in primary school. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/002221949302601007</li>
+            <li>Hayes, J. R., & Flower, L. S. (1980). Identifying the organization of writing processes. In L. W. Gregg & E. R. Steinberg (Eds.), <i>Cognitive processes in writing</i>. Lawrence Erlbaum.</li>
+            <li>Katusic, S. K., Colligan, R. C., Weaver, A. L., & Barbaresi, W. J. (2009). The forgotten learning disability: Epidemiology of written language disorder in a population-based birth cohort. <i>Pediatrics</i>. https://doi.org/10.1542/peds.2008-2098</li>
+            <li>Marr, D., & Cermak, S. (2002). Predicting handwriting performance of early elementary students with the Developmental Test of Visual-Motor Integration. <i>Perceptual and Motor Skills</i>. https://doi.org/10.2466/pms.2002.95.2.661</li>
+            <li>Moats, L. C. (1995). Spelling: Development, disability, and instruction. <i>York Press</i>.</li>
+            <li>Nelson, J. M., & Harwood, H. (2011). Learning disabilities and anxiety: A meta-analysis. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219409359939</li>
+            <li>Peverly, S. T. (2006). The importance of handwriting speed in adult writing. <i>Developmental Neuropsychology</i>. https://doi.org/10.1207/s15326942dn2901_10</li>
+            <li>Rosenblum, S., Parush, S., & Weiss, P. L. (2003). Computerized temporal handwriting characteristics of proficient and non-proficient handwriters. <i>American Journal of Occupational Therapy</i>. https://doi.org/10.5014/ajot.57.2.129</li>
+            <li>Rosenblum, S., Weiss, P. L., & Parush, S. (2003). Product and process evaluation of handwriting difficulties. <i>Educational Psychology Review</i>. https://doi.org/10.1023/A:1021371425220</li>
+            <li>Tseng, M. H., & Cermak, S. A. (1993). The influence of ergonomic factors and perceptual-motor abilities on handwriting performance. <i>American Journal of Occupational Therapy</i>. https://doi.org/10.5014/ajot.47.10.919</li>
+            <li>Weintraub, N., & Graham, S. (1998). Writing legibly and quickly: A study of children's ability to adjust their handwriting to meet common classroom demands. <i>Learning Disabilities Research & Practice</i>.</li>
+          </ul>
         </div>
-      </section>
-
-      <div className="mt-8">
-        <a 
-          href="#" 
-          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('dysgraphia'); }}
-          className="text-[#2abcd4] hover:underline cursor-pointer"
-        >
-          ← Back to Dysgraphia
-        </a>
       </div>
     </article>
   );

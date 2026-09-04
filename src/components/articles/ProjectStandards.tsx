@@ -1,5 +1,5 @@
 import React from 'react';
-import { Microscope, ArrowRight, Layout, Palette, FileText, CheckCircle, ImageIcon, Smartphone, AlertTriangle, Type, Move, Heart } from 'lucide-react';
+import { Microscope, ArrowRight, Code, Layout, Palette, FileText, CheckCircle, ImageIcon, Smartphone, AlertTriangle, Type, Move, Heart } from 'lucide-react';
 
 interface ProjectStandardsProps {
   setCurrentArticle?: (article: string) => void;
@@ -19,7 +19,34 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           The definitive technical and editorial manual for the Brainopedia digital encyclopedia.
         </p>
       </div>
+{/* EXPORTS, IMPORTS & ROUTING */}
+      <section className="mb-12">
+        <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
+          <Code className="text-[#2abcd4]" /> EXPORTS, IMPORTS & ROUTING
+        </h2>
+        
+        <div className="bg-red-50 border-l-4 border-red-500 p-5 mb-6 rounded-r-xl shadow-sm">
+          <h3 className="font-bold text-red-800 mb-2 uppercase text-xs">The Router Crash Rule (No Default Exports)</h3>
+          <p className="text-sm text-slate-700">
+            Brainopedia's routing engine strictly requires <strong>Named Exports</strong>. Using <code className="bg-white px-1 text-red-700 rounded border border-red-200">export default function</code> will instantly crash the app and cause a blank beige screen.
+          </p>
+          <ul className="list-disc ml-5 mt-3 text-sm text-slate-700 space-y-2">
+            <li><strong>DO USE:</strong> <code className="bg-white px-1 text-green-700 rounded border border-gray-200">export function ArticleName()</code></li>
+            <li><strong>NEVER USE:</strong> <code className="bg-white px-1 text-red-700 rounded border border-red-200">export default function ArticleName()</code></li>
+          </ul>
+        </div>
 
+        <div className="bg-[#f0f9ff] border-l-4 border-[#2abcd4] p-5 rounded-r-xl shadow-sm">
+          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">Modern React Imports</h3>
+          <p className="text-sm text-slate-700">
+            Because we use modern React (17+), importing React just to write JSX is obsolete and will trigger VS Code warnings (yellow squiggles). Only import specific hooks when needed.
+          </p>
+          <ul className="list-disc ml-5 mt-3 text-sm text-slate-700 space-y-2">
+            <li><strong>DO USE:</strong> <code className="bg-white px-1 text-green-700 rounded border border-gray-200">import &#123; useState &#125; from 'react';</code></li>
+            <li><strong>REMOVE:</strong> <code className="bg-white px-1 text-red-700 rounded border border-red-200">import React from 'react';</code></li>
+          </ul>
+        </div>
+      </section>
       {/* 1. IMAGE PLACEMENT, CLEARING & NAMING STANDARDS */}
       <section className="mb-12">
         <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">

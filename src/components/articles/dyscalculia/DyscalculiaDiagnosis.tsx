@@ -10,7 +10,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
   const [activeTab, setActiveTab] = useState(initialTab || 'who');
 
   return (
-    <article className="max-w-6xl mx-auto font-spartan animate-in fade-in duration-300 w-full min-w-0">
+    <article className="max-w-6xl font-spartan animate-in fade-in duration-300">
       
       {/* Header Area */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
@@ -20,7 +20,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
 
         <button 
           onClick={() => setCurrentArticle?.('dyscalculia')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap md:block hidden shadow-sm shrink-0"
         >
           <span className="text-xl">←</span>
           Back to Dyscalculia
@@ -30,7 +30,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
       {/* Mobile button */}
       <button 
         onClick={() => setCurrentArticle?.('dyscalculia')}
-        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6"
+        className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap md:hidden mb-6 shadow-sm shrink-0"
       >
         <span className="text-xl">←</span>
         Back to Dyscalculia
@@ -40,7 +40,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 clear-both">
         <button
           onClick={() => setActiveTab('who')}
-          className={`px-6 py-3 rounded-md transition-colors font-normal ${
+          className={`px-6 py-3 rounded-md transition-colors font-normal shadow-sm ${
             activeTab === 'who'
               ? 'bg-[#0A9DC4] text-white'
               : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
@@ -50,7 +50,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
         </button>
         <button
           onClick={() => setActiveTab('assessment')}
-          className={`px-6 py-3 rounded-md transition-colors font-normal ${
+          className={`px-6 py-3 rounded-md transition-colors font-normal shadow-sm ${
             activeTab === 'assessment'
               ? 'bg-[#0A9DC4] text-white'
               : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
@@ -60,7 +60,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
         </button>
         <button
           onClick={() => setActiveTab('results')}
-          className={`px-6 py-3 rounded-md transition-colors font-normal ${
+          className={`px-6 py-3 rounded-md transition-colors font-normal shadow-sm ${
             activeTab === 'results'
               ? 'bg-[#0A9DC4] text-white'
               : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
@@ -74,31 +74,28 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
           TAB 1: WHEN & WHO
       ========================================== */}
       {activeTab === 'who' && (
-        <div className="space-y-6">
-          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+        <div className="space-y-8 animate-fadeIn">
+          
+          {/* Centered Intro Paragraph */}
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
             Accurate diagnosis of dyscalculia requires a comprehensive, multi-disciplinary assessment conducted by qualified educational or clinical professionals. Early identification is highly critical, but pursuing an evaluation at any age provides invaluable insights and opens doors to legally protected academic accommodations.
           </p>
 
           {/* When to Seek Evaluation Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">When to Seek Evaluation</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">When to Seek Evaluation</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  Parents and educators should trust their instincts when a child's mathematical struggles seem disproportionate to their overall intelligence or effort. If targeted tutoring and high-quality classroom instruction fail to produce meaningful progress over a six-month period, a formal neuropsychological evaluation is strongly warranted.
-                </p>
-              </div>
-              <div className="shrink-0 w-full md:w-40">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-diagnosis-evaluation.webp"
-                  alt="Educational psychologist conducting math assessment"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-diagnosis-evaluation.webp"
+              alt="Educational psychologist conducting math assessment"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-cyan-100"
+            />
             
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Parents and educators should trust their instincts when a child's mathematical struggles seem disproportionate to their overall intelligence or effort. If targeted tutoring and high-quality classroom instruction fail to produce meaningful progress over a six-month period, a formal neuropsychological evaluation is strongly warranted.
+            </p>
+            
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100 max-w-4xl mx-auto">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-cyan-100 pb-2">Red Flags for Assessment</h3>
               <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
                 <li>Performance consistently more than one year below grade level in mathematics.</li>
@@ -113,8 +110,9 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
 
           {/* Diagnostic Criteria Card (Yellow - Text Only) */}
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnostic Criteria</h2>
-            <p className="mb-4 text-sm text-slate-700 leading-relaxed">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Diagnostic Criteria</h2>
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
               Medical and psychological professionals rely on strictly defined global criteria to formally diagnose dyscalculia. The two primary manuals used worldwide are the DSM-5 (used primarily in the United States) and the ICD-11 (used globally by the World Health Organization).
             </p>
 
@@ -144,22 +142,17 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
 
           {/* Qualified Professionals Card (Slate) */}
           <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Who Can Diagnose Dyscalculia?</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Who Can Diagnose Dyscalculia?</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="shrink-0 w-full md:w-40">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-diagnosis-professionals.webp"
-                  alt="A multi-disciplinary team discussing an academic profile"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  A diagnosis is never rendered by a single individual; it requires a multi-disciplinary team. Evaluators synthesize raw data from standardized tests, insights from classroom teachers, and comprehensive developmental histories from parents to create an accurate neuro-profile.
-                </p>
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-diagnosis-professionals.webp"
+              alt="A multi-disciplinary team discussing an academic profile"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-slate-200"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              A diagnosis is never rendered by a single individual; it requires a multi-disciplinary team. Evaluators synthesize raw data from standardized tests, insights from classroom teachers, and comprehensive developmental histories from parents to create an accurate neuro-profile.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
@@ -190,29 +183,26 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
           TAB 2: THE ASSESSMENT
       ========================================== */}
       {activeTab === 'assessment' && (
-        <div className="space-y-6">
-          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+        <div className="space-y-8 animate-fadeIn">
+          
+          {/* Centered Intro Paragraph */}
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
             A proper dyscalculia evaluation goes far beyond a simple math test, utilizing standardized cognitive batteries to map a student's entire neurological profile. Evaluators systematically measure innate number sense, working memory capacity, and processing speed to pinpoint exact processing breakdowns and rule out competing diagnoses.
           </p>
 
           {/* Core Components Card (Slate) */}
           <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Core Assessment Components</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Core Assessment Components</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="shrink-0 w-full md:w-40">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-diagnosis-components.webp"
-                  alt="Standardized testing materials and cognitive assessment"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  To ensure an accurate diagnosis, psychologists utilize a battery of standardized tests that measure both general intelligence and specific mathematical achievement. This allows the evaluator to confirm that the student's mathematical struggles are an isolated neurological difference rather than a general cognitive delay.
-                </p>
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-diagnosis-components.webp"
+              alt="Standardized testing materials and cognitive assessment"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-slate-200"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              To ensure an accurate diagnosis, psychologists utilize a battery of standardized tests that measure both general intelligence and specific mathematical achievement. This allows the evaluator to confirm that the student's mathematical struggles are an isolated neurological difference rather than a general cognitive delay.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
@@ -235,25 +225,19 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
             </div>
           </div>
 
-{/* Specific Skill Testing Card (Cyan) */}
+          {/* Specific Skill Testing Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Targeted Skill & Process Testing</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Targeted Skill & Process Testing</h2>
             
-            <div className="flex flex-col items-center mb-8">
-              {/* Huge Full-Width Image */}
-              <div className="w-full mb-6">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-diagnosis-skills.webp"
-                  alt="Student completing a cognitive magnitude assessment"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-              
-              {/* Centered Paragraph */}
-              <div className="text-sm text-slate-700 leading-relaxed text-center max-w-4xl mx-auto px-4">
-                Beyond general math scores, evaluators must isolate the specific cognitive breakdowns causing the difficulty. They test foundational number sense, working memory capacity, and processing speed to build a complete picture of how the student's brain handles data.
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-diagnosis-skills.webp"
+              alt="Student completing a cognitive magnitude assessment"
+              className="w-full h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-cyan-100"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Beyond general math scores, evaluators must isolate the specific cognitive breakdowns causing the difficulty. They test foundational number sense, working memory capacity, and processing speed to build a complete picture of how the student's brain handles data.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-white p-4 rounded-xl shadow-sm border border-cyan-100">
@@ -287,11 +271,14 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
 
           {/* Differential Diagnosis Card (Yellow - Text Only) */}
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Differential Diagnosis</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Differential Diagnosis</h2>
             
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Evaluators must ensure the mathematical difficulties are not better explained by other environmental or cognitive factors.
+            </p>
+
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200 max-w-4xl mx-auto">
               <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b border-yellow-200 pb-2">Conditions to Rule Out or Consider</h3>
-              <p className="text-sm text-slate-700 mb-3">Evaluators must ensure the mathematical difficulties are not better explained by other factors:</p>
               <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
                 <li><strong>Intellectual Disability:</strong> Low cognitive ability evenly distributed across all academic and functional domains.</li>
                 <li><strong>Inadequate Instruction:</strong> Math difficulties resulting strictly from poor teaching or excessive school absences.</li>
@@ -308,29 +295,26 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
           TAB 3: RESULTS & NEXT STEPS
       ========================================== */}
       {activeTab === 'results' && (
-        <div className="space-y-6">
-          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+        <div className="space-y-8 animate-fadeIn">
+          
+          {/* Centered Intro Paragraph */}
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
             Receiving a formal dyscalculia diagnosis is not a limitation—it is a powerful tool for unlocking targeted interventions and essential structural supports. The final assessment report serves as a legal roadmap to build effective Individualized Education Programs (IEPs) and secure lifelong academic accommodations.
           </p>
 
           {/* The Report Card (Yellow) */}
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Assessment Report & Access</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">The Assessment Report & Access</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="shrink-0 w-full md:w-40">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-diagnosis-report.webp"
-                  alt="Comprehensive assessment report"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  The culmination of the testing process is a comprehensive psychological report that clearly states the diagnosis, maps out the student's unique cognitive profile, and mandates specific educational interventions. Families can pursue this evaluation either through their public school system for free, or via private clinical practice for a faster, independent perspective.
-                </p>
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-diagnosis-report.webp"
+              alt="Comprehensive assessment report"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-yellow-200"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              The culmination of the testing process is a comprehensive psychological report that clearly states the diagnosis, maps out the student's unique cognitive profile, and mandates specific educational interventions. Families can pursue this evaluation either through their public school system for free, or via private clinical practice for a faster, independent perspective.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
@@ -356,24 +340,19 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
 
           {/* Next Steps Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">After Diagnosis: Next Steps</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">After Diagnosis: Next Steps</h2>
             
-            <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="flex-1">
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  Once the report is finalized, the team must immediately translate the clinical findings into a living educational document (like an IEP or 504 Plan). This ensures the student receives consistent, evidence-based math interventions while being shielded from traditional testing methods that unfairly penalize their processing speed.
-                </p>
-              </div>
-              <div className="shrink-0 w-full md:w-40">
-                <ImageWithFallback 
-                  src="/images/dyscalculia/dyscalculia-diagnosis-next-steps.webp"
-                  alt="Parents and teacher planning an IEP meeting"
-                  className="w-full h-auto rounded-lg shadow-sm"
-                />
-              </div>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-diagnosis-next-steps.webp"
+              alt="Parents and teacher planning an IEP meeting"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-cyan-100"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Once the report is finalized, the team must immediately translate the clinical findings into a living educational document (like an IEP or 504 Plan). This ensures the student receives consistent, evidence-based math interventions while being shielded from traditional testing methods that unfairly penalize their processing speed.
+            </p>
 
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100 max-w-4xl mx-auto">
               <ul className="list-disc ml-5 text-sm text-slate-700 space-y-2">
                 <li><strong>Educational Planning:</strong> Immediately begin development of an IEP (Individualized Education Program) or 504 Plan to legally secure support.</li>
                 <li><strong>Targeted Intervention:</strong> Begin evidence-based, multi-sensory math interventions tailored to the student's specific deficits.</li>
@@ -398,7 +377,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
       <div className="mt-12 mb-6 flex flex-col md:flex-row md:justify-end clear-both">
         <button 
           onClick={() => setCurrentArticle?.('dyscalculia')}
-          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 whitespace-nowrap"
+          className="bg-[#ffd166] hover:bg-[#0c264d] text-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md whitespace-nowrap"
         >
           <span className="text-xl">←</span>
           Back to Dyscalculia
@@ -406,6 +385,8 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
       </div>
 
       {/* ===== REFERENCES SECTION ===== */}
+      <hr className="border-t-2 border-[#0c264d] border-opacity-10 my-8" />
+      
       <div className="clear-both mt-16 font-spartan">
         <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
         
@@ -414,7 +395,7 @@ export function DyscalculiaDiagnosis({ setCurrentArticle, initialTab }: Dyscalcu
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0 break-words" style={{ textIndent: 0 }}>
             <li>American Psychiatric Association. (2013). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed.). American Psychiatric Publishing.</li>
             <li>World Health Organization. (2019). <i>International statistical classification of diseases and related health problems</i> (11th ed.). WHO.</li>
             <li>Kaufmann, L., & von Aster, M. (2012). "The diagnosis and management of dyscalculia." <i>Deutsches Ärzteblatt International</i>. https://doi.org/10.3238/arztebl.2012.0767</li>
