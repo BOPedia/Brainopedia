@@ -90,15 +90,19 @@ export function DyscalculiaSupport({ setCurrentArticle, initialTab }: Dyscalculi
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Educational Interventions</h2>
             
-            <div className="clearfix mb-6">
-              <ImageWithFallback 
-                src="/images/dyscalculia/dyscalculia-support-interventions.webp"
-                alt="Multi-sensory math instruction using physical blocks"
-                className="w-32 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-slate-700 leading-relaxed">
-                Direct instruction must focus heavily on bridging the gap between abstract numerical symbols and their physical quantities.<sup>3</sup> This is achieved by anchoring mathematical concepts in tangible, physical space before gradually introducing standard equations.<sup>1</sup>
-              </p>
+            <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
+              <div className="flex-1">
+                <p className="text-sm text-slate-700 leading-relaxed">
+                  Direct instruction must focus heavily on bridging the gap between abstract numerical symbols and their physical quantities.<sup>3</sup> This is achieved by anchoring mathematical concepts in tangible, physical space before gradually introducing standard equations.<sup>1</sup>
+                </p>
+              </div>
+              <div className="shrink-0 w-full md:w-64">
+                <ImageWithFallback 
+                  src="/images/dyscalculia/dyscalculia-support-interventions.webp"
+                  alt="Multi-sensory math instruction using physical blocks"
+                  className="w-full h-auto rounded-lg shadow-sm border border-cyan-100"
+                />
+              </div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -126,15 +130,19 @@ export function DyscalculiaSupport({ setCurrentArticle, initialTab }: Dyscalculi
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Targeted Arithmetic Strategies</h2>
             
-            <div className="clearfix mb-6">
-              <ImageWithFallback 
-                src="/images/dyscalculia/dyscalculia-support-arithmetic.webp"
-                alt="Visual number lines and dot pattern strategies"
-                className="w-32 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-slate-700 leading-relaxed">
-                Because individuals with dyscalculia frequently struggle to memorize math facts, interventions must provide alternative, logic-based pathways for basic arithmetic.<sup>3</sup> These targeted strategies bypass the need for rote memorization by teaching students how to efficiently derive answers using visual and spatial reasoning.<sup>2</sup>
-              </p>
+            <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
+              <div className="flex-1">
+                <p className="text-sm text-slate-700 leading-relaxed">
+                  Because individuals with dyscalculia frequently struggle to memorize math facts, interventions must provide alternative, logic-based pathways for basic arithmetic.<sup>3</sup> These targeted strategies bypass the need for rote memorization by teaching students how to efficiently derive answers using visual and spatial reasoning.<sup>2</sup>
+                </p>
+              </div>
+              <div className="shrink-0 w-full md:w-64">
+                <ImageWithFallback 
+                  src="/images/dyscalculia/dyscalculia-support-arithmetic.webp"
+                  alt="Visual number lines and dot pattern strategies"
+                  className="w-full h-auto rounded-lg shadow-sm border border-yellow-200"
+                />
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -174,15 +182,19 @@ export function DyscalculiaSupport({ setCurrentArticle, initialTab }: Dyscalculi
           <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Classroom Accommodations</h2>
             
-            <div className="clearfix mb-6">
-              <ImageWithFallback 
-                src="/images/dyscalculia/dyscalculia-support-accommodations.webp"
-                alt="Student using reference sheets and extended time"
-                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-slate-700 leading-relaxed">
-                Reasonable modifications must address the immense cognitive fatigue caused by numerical processing delays.<sup>1</sup> Adjusting the format, volume, and pacing of assignments ensures the student can engage with complex logic without being paralyzed by arithmetic fatigue.<sup>4</sup>
-              </p>
+            <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
+              <div className="flex-1">
+                <p className="text-sm text-slate-700 leading-relaxed">
+                  Reasonable modifications must address the immense cognitive fatigue caused by numerical processing delays.<sup>1</sup> Adjusting the format, volume, and pacing of assignments ensures the student can engage with complex logic without being paralyzed by arithmetic fatigue.<sup>4</sup>
+                </p>
+              </div>
+              <div className="shrink-0 w-full md:w-64">
+                <ImageWithFallback 
+                  src="/images/dyscalculia/dyscalculia-support-accommodations.webp"
+                  alt="Student using reference sheets and extended time"
+                  className="w-full h-auto rounded-lg shadow-sm border border-slate-200"
+                />
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -210,15 +222,19 @@ export function DyscalculiaSupport({ setCurrentArticle, initialTab }: Dyscalculi
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Assistive Technology</h2>
             
-            <div className="clearfix mb-6">
-              <ImageWithFallback 
-                src="/images/dyscalculia/dyscalculia-support-technology.webp"
-                alt="Calculators and digital math tools"
-                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-slate-700 leading-relaxed">
-                Assistive technology acts as a vital cognitive bridge, allowing individuals with dyscalculia to bypass severe calculation deficits and engage directly with higher-level problem solving.<sup>3</sup> By offloading basic arithmetic to digital tools, the student's working memory is freed to focus on algebraic logic and real-world applications.<sup>1</sup>
-              </p>
+            <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
+              <div className="flex-1">
+                <p className="text-sm text-slate-700 leading-relaxed">
+                  Assistive technology acts as a vital cognitive bridge, allowing individuals with dyscalculia to bypass severe calculation deficits and engage directly with higher-level problem solving.<sup>3</sup> By offloading basic arithmetic to digital tools, the student's working memory is freed to focus on algebraic logic and real-world applications.<sup>1</sup>
+                </p>
+              </div>
+              <div className="shrink-0 w-full md:w-64">
+                <ImageWithFallback 
+                  src="/images/dyscalculia/dyscalculia-support-technology.webp"
+                  alt="Calculators and digital math tools"
+                  className="w-full h-auto rounded-lg shadow-sm border border-cyan-100"
+                />
+              </div>
             </div>
 
             <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
@@ -248,15 +264,19 @@ export function DyscalculiaSupport({ setCurrentArticle, initialTab }: Dyscalculi
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Support in Daily Life</h2>
             
-            <div className="clearfix mb-6">
-              <ImageWithFallback 
-                src="/images/dyscalculia/dyscalculia-support-home.webp"
-                alt="Engaging in practical math through cooking"
-                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-slate-700 leading-relaxed">
-                The home should serve as a safe space where individuals can interact with numbers freely, completely separated from the high-stakes pressure of academic grading.<sup>2</sup> Integrating mathematical concepts into tangible, everyday activities helps build practical number sense organically.<sup>1</sup>
-              </p>
+            <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
+              <div className="flex-1">
+                <p className="text-sm text-slate-700 leading-relaxed">
+                  The home should serve as a safe space where individuals can interact with numbers freely, completely separated from the high-stakes pressure of academic grading.<sup>2</sup> Integrating mathematical concepts into tangible, everyday activities helps build practical number sense organically.<sup>1</sup>
+                </p>
+              </div>
+              <div className="shrink-0 w-full md:w-64">
+                <ImageWithFallback 
+                  src="/images/dyscalculia/dyscalculia-support-home.webp"
+                  alt="Engaging in practical math through cooking"
+                  className="w-full h-auto rounded-lg shadow-sm border border-yellow-200"
+                />
+              </div>
             </div>
 
             <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
@@ -274,15 +294,19 @@ export function DyscalculiaSupport({ setCurrentArticle, initialTab }: Dyscalculi
           <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
             <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Managing Math Anxiety</h2>
             
-            <div className="clearfix mb-6">
-              <ImageWithFallback 
-                src="/images/dyscalculia/dyscalculia-support-anxiety.webp"
-                alt="Creating a supportive emotional environment"
-                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-slate-700 leading-relaxed">
-                Because dyscalculia often leads to severe math anxiety, emotional regulation is just as critical as academic tutoring.<sup>3</sup> Parents and educators must actively validate the student's neurological struggle while simultaneously modeling confident, shame-free self-advocacy.<sup>4</sup>
-              </p>
+            <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
+              <div className="flex-1">
+                <p className="text-sm text-slate-700 leading-relaxed">
+                  Because dyscalculia often leads to severe math anxiety, emotional regulation is just as critical as academic tutoring.<sup>3</sup> Parents and educators must actively validate the student's neurological struggle while simultaneously modeling confident, shame-free self-advocacy.<sup>4</sup>
+                </p>
+              </div>
+              <div className="shrink-0 w-full md:w-64">
+                <ImageWithFallback 
+                  src="/images/dyscalculia/dyscalculia-support-anxiety.webp"
+                  alt="Creating a supportive emotional environment"
+                  className="w-full h-auto rounded-lg shadow-sm border border-slate-200"
+                />
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -318,7 +342,8 @@ export function DyscalculiaSupport({ setCurrentArticle, initialTab }: Dyscalculi
           Back to Dyscalculia
         </button>
       </div>
-{/* ===== REFERENCES SECTION ===== */}
+
+      {/* ===== REFERENCES SECTION ===== */}
       <div className="clear-both mt-16 font-spartan">
         <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
         

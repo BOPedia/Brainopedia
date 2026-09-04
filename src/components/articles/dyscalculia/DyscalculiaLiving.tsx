@@ -82,25 +82,26 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
           TAB 1: DAILY LIFE & EMOTIONS
       ========================================== */}
       {activeTab === 'daily-life' && (
-        <div className="space-y-6 animate-fadeIn">
-          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+        <div className="space-y-8 animate-fadeIn">
+          
+          {/* Centered Intro Paragraph */}
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto">
             Living with dyscalculia presents unique challenges in a world driven by numbers, schedules, and financial transactions.<sup>1</sup> However, with self-awareness, targeted strategies, and a supportive environment, individuals can successfully navigate these daily hurdles and lead fulfilling lives.<sup>2</sup>
           </p>
 
           {/* Daily Challenges Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Navigating Daily Logistics</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Navigating Daily Logistics</h2>
             
-            <div className="clearfix mb-6">
-              <ImageWithFallback 
-                src="/images/dyscalculia-living-daily-life.webp"
-                alt="Confident individual managing daily tasks with dyscalculia"
-                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-slate-700 leading-relaxed">
-                Dyscalculia impacts far more than academic testing; it seeps into the foundational logistics of adult independence.<sup>3</sup> Routine tasks that neurotypical individuals process automatically often require intense cognitive effort and careful planning.
-              </p>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-living-daily-life.webp"
+              alt="Confident individual managing daily tasks with dyscalculia"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-cyan-100"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Dyscalculia impacts far more than academic testing; it seeps into the foundational logistics of adult independence.<sup>3</sup> Routine tasks that neurotypical individuals process automatically often require intense cognitive effort and careful planning.
+            </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
@@ -125,9 +126,9 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
 
           {/* Practical Hurdles Card (Yellow) */}
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Everyday Complexities</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Everyday Complexities</h2>
             
-            <p className="text-sm text-slate-700 leading-relaxed mb-6">
+            <p className="text-sm text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
               Beyond time and money, dyscalculia disrupts spatial reasoning and procedural sequences required for household management. Tasks involving ratios, measurements, or spatial navigation often require the use of external tools or compensatory apps.<sup>2</sup>
             </p>
 
@@ -154,9 +155,9 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
 
           {/* Emotional Impact Card (Slate) */}
           <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Emotional & Social Impact</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Emotional & Social Impact</h2>
             
-            <p className="text-sm text-slate-700 leading-relaxed mb-6">
+            <p className="text-sm text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
               The invisible nature of dyscalculia often leads to profound emotional distress, as individuals are frequently misjudged as careless or unintelligent.<sup>4</sup> Building resilience requires dismantling the shame associated with utilizing accommodations in public spaces.
             </p>
 
@@ -187,17 +188,18 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
           TAB 2: EDUCATION & CAREER
       ========================================== */}
       {activeTab === 'education-career' && (
-        <div className="space-y-6 animate-fadeIn">
+        <div className="space-y-8 animate-fadeIn">
           
-          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+          {/* Centered Intro Paragraph */}
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto">
             The traditional education system and modern workplace are highly reliant on numerical fluency, often creating artificial barriers for those with dyscalculia.<sup>2</sup> By focusing on individual strengths and securing legal accommodations, individuals can pursue highly successful academic and professional trajectories.<sup>3</sup>
           </p>
 
           {/* Educational Journey Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Educational Journey</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">The Educational Journey</h2>
             
-            <p className="text-sm text-slate-700 leading-relaxed mb-6">
+            <p className="text-sm text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
               From early childhood through higher education, dyscalculia requires constant self-advocacy to secure the tools necessary to prove conceptual mastery.<sup>1</sup> Without interventions, the cumulative nature of math education can result in profound learned helplessness.
             </p>
 
@@ -225,18 +227,17 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
 
           {/* Career & Workplace Card (Yellow) */}
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Career & Employment</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Career & Employment</h2>
             
-            <div className="clearfix mb-6">
-              <ImageWithFallback 
-                src="/images/dyscalculia-living-career.webp"
-                alt="Professional working in fulfilling career with accommodations"
-                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-slate-700 leading-relaxed">
-                Many adults with dyscalculia excel professionally by leaning into their verbal, creative, and interpersonal strengths.<sup>2</sup> Success in the workplace often involves finding the right organizational culture and utilizing assistive technologies.
-              </p>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-living-career.webp"
+              alt="Professional working in fulfilling career with accommodations"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-yellow-200"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Many adults with dyscalculia excel professionally by leaning into their verbal, creative, and interpersonal strengths.<sup>2</sup> Success in the workplace often involves finding the right organizational culture and utilizing assistive technologies.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
@@ -265,26 +266,26 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
           TAB 3: STRATEGIES & SUPPORT
       ========================================== */}
       {activeTab === 'strategies-support' && (
-        <div className="space-y-6 animate-fadeIn">
+        <div className="space-y-8 animate-fadeIn">
           
-          <p className="mb-4 text-slate-700 leading-relaxed text-sm">
+          {/* Centered Intro Paragraph */}
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto">
             Living effectively with dyscalculia is fundamentally about working smarter, not harder, through the unapologetic use of technology.<sup>2</sup> By embracing these tools and focusing on inherent strengths, individuals can protect their mental health and achieve significant personal success.<sup>4</sup>
           </p>
 
           {/* Coping Strategies Card (Slate) */}
           <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Coping Strategies & Tools</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Coping Strategies & Tools</h2>
             
-            <div className="clearfix mb-6">
-              <ImageWithFallback 
-                src="/images/dyscalculia-living-support.webp"
-                alt="Supportive tools and technology aiding dyscalculia management"
-                className="w-56 h-auto block mx-auto float-none md:float-right md:ml-6 mb-6 md:mb-4 mt-1 rounded-lg shadow-sm"
-              />
-              <p className="text-sm text-slate-700 leading-relaxed">
-                The modern smartphone has revolutionized independence for those with dyscalculia. Offloading the burden of calculation and memory to reliable digital systems allows the brain to focus its energy on executing the actual task.<sup>5</sup>
-              </p>
-            </div>
+            <ImageWithFallback 
+              src="/images/dyscalculia/dyscalculia-living-support.webp"
+              alt="Supportive tools and technology aiding dyscalculia management"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-slate-200"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              The modern smartphone has revolutionized independence for those with dyscalculia. Offloading the burden of calculation and memory to reliable digital systems allows the brain to focus its energy on executing the actual task.<sup>5</sup>
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
@@ -309,9 +310,9 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
 
           {/* Strengths Card (Cyan) */}
           <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Strengths & Resilience</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Strengths & Resilience</h2>
             
-            <p className="text-sm text-slate-700 leading-relaxed mb-6">
+            <p className="text-sm text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
               Dyscalculia is characterized by a specific deficit in number processing, not a global cognitive delay. Because the brain develops uniquely, many individuals with dyscalculia excel in areas requiring holistic, big-picture thinking and deep empathy.<sup>2</sup>
             </p>
 
@@ -338,9 +339,9 @@ export function DyscalculiaLiving({ setCurrentArticle, initialTab }: Dyscalculia
 
           {/* Resources Card (Yellow) */}
           <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
-            <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Resources & Rights</h2>
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Resources & Rights</h2>
             
-            <p className="text-sm text-slate-700 leading-relaxed mb-6">
+            <p className="text-sm text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
               You are not alone in this journey. Numerous organizations exist to provide legal support, educational templates, and community connection for those navigating life with dyscalculia.
             </p>
 

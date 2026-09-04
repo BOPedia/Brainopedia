@@ -8,7 +8,7 @@ interface ADHDOverviewProps {
 
 export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
   return (
-    <article className="max-w-4xl mx-auto font-spartan animate-in fade-in duration-300 w-full min-w-0 overflow-x-hidden px-2 sm:px-0">
+    <article className="max-w-6xl font-spartan animate-in fade-in duration-300">
       
       {/* HEADER */}
       <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
@@ -43,7 +43,6 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             What is ADHD?
           </h2>
           
-          {/* SQUIRREL VIDEO - Restored to floated right so text wraps underneath naturally */}
           <div className="float-none sm:float-right mx-auto sm:ml-6 mb-6 sm:mb-4 bg-white p-2 rounded-lg shadow-sm border border-gray-200 w-full sm:w-64 shrink-0">
             <video 
               src="/images/adhd/adhd-overview-squirrel.mp4" 
@@ -78,7 +77,6 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             According to the DSM-5-TR, ADHD is diagnosed in one of three presentations, based on the predominant symptom pattern over the past six months:<sup className="text-green-600 font-bold ml-0.5">3</sup>
           </p>
 
-          {/* VENN DIAGRAM - Restored back to the original medium size (sm:w-96) */}
           <video 
             src="/images/adhd/adhd-overview-venn.mp4" 
             poster="/images/adhd/adhd-overview-venn.webp"
@@ -86,7 +84,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             loop 
             muted 
             playsInline
-            className="w-full sm:w-96 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
+            className="w-full sm:w-80 h-auto rounded-md border border-gray-300 block mx-auto mb-6 shadow-sm"
             aria-label="ADHD Three Presentations Venn Diagram"
           />
           
@@ -228,12 +226,12 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             </div>
           </div>
 
-          <div className="border-2 border-[#0c264d] rounded-xl p-6 bg-white shadow-sm mt-8 w-full max-w-4xl mx-auto clear-both overflow-hidden">
+          <div className="border-2 border-[#0c264d] rounded-xl p-6 bg-white shadow-sm mt-8 w-full max-w-4xl mx-auto clear-both">
             <h3 className="text-center font-bold text-[#0c264d] text-lg mb-6">
               ADHD in Adults<sup className="text-green-600 font-bold ml-0.5">5</sup>
             </h3>
 
-            <div className="flex flex-col lg:flex-row gap-6 items-center justify-between w-full">
+            <div className="flex flex-col lg:flex-row flex-wrap gap-6 items-center justify-between w-full">
               <div className="flex gap-6 lg:border-r-2 border-gray-100 lg:pr-6 w-full lg:w-auto justify-center">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#0A9DC4] mb-1">2.6%</div>
@@ -323,7 +321,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
             Understanding ADHD as a Spectrum
           </h2>
 
-          <div className="flex flex-col md:flex-row gap-8 items-start mb-6">
+          <div className="flex flex-col lg:flex-row flex-wrap gap-8 items-start mb-6">
             <div className="flex-1 space-y-4">
               <p className="text-sm text-gray-700 leading-relaxed">
                 ADHD exists on a spectrum, and no two people with ADHD are exactly alike. Symptoms vary in type, 
@@ -341,7 +339,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
               </p>
             </div>
 
-            <div className="shrink-0 w-full md:w-1/2 lg:w-5/12 max-w-md bg-white rounded-md border-2 border-[#0c264d] p-6 shadow-sm">
+            <div className="shrink-0 w-full lg:w-5/12 max-w-md bg-white rounded-md border-2 border-[#0c264d] p-6 shadow-sm">
               <h3 className="text-center text-[#0c264d] font-bold mb-6 text-lg">The ADHD Spectrum</h3>
               <div className="mb-6">
                 <div className="text-sm text-center mb-2 text-[#0c264d] font-bold">Symptom Severity</div>
@@ -395,7 +393,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <h4 className="text-sm uppercase tracking-wider text-green-700 font-bold mb-3 border-b border-green-700 border-opacity-10 pb-1">
             Cited Studies & Statistics
           </h4>
-          <div className="text-xs space-y-3 text-slate-600 leading-relaxed break-words" style={{ textIndent: 0 }}>
+          <div className="text-xs space-y-3 text-slate-600 leading-relaxed" style={{ textIndent: 0 }}>
             <p>1. Reuben, C., & Elgaddal, N. (2024). "ADHD in Children Ages 5–17 Years: US, 2020–2022." <i>NCHS Data Brief</i>. https://doi.org/10.15620/cdc:138214</p>
             <p>2. Ayano, G., et al. (2023). "Prevalence of attention deficit hyperactivity disorder in adults: Umbrella review." <i>Psychiatry Research</i>. https://doi.org/10.1016/j.psychres.2023.115449</p>
             <p>3. American Psychiatric Association. (2022). <i>Diagnostic and Statistical Manual of Mental Disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</p>
@@ -414,7 +412,7 @@ export function ADHDOverview({ setCurrentArticle }: ADHDOverviewProps) {
           <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
             Background Sources
           </h4>
-         <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0 break-words" style={{ textIndent: 0 }}>
+         <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0" style={{ textIndent: 0 }}>
             <li>Centers for Disease Control and Prevention. (2024). "Data and Statistics About ADHD." CDC. https://www.cdc.gov/ncbddd/adhd/data.html</li>
             <li>National Institute of Mental Health. (2024). "Attention-Deficit/Hyperactivity Disorder (ADHD)." NIMH. https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd</li>
             <li>Barkley, R. A. (2015). <i>Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment</i>. Guilford Press. https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725</li>
