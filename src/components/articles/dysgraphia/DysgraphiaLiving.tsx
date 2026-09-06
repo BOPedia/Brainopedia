@@ -1,499 +1,381 @@
+import { useState } from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 interface DysgraphiaLivingProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function DysgraphiaLiving({ setCurrentArticle }: DysgraphiaLivingProps) {
+export function DysgraphiaLiving({ setCurrentArticle, initialTab }: DysgraphiaLivingProps) {
+  const [activeTab, setActiveTab] = useState(initialTab || 'daily-life');
+
   return (
-    <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
-      <div className="mb-6">
-        <a 
-          href="#" 
-          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('dysgraphia'); }}
-          className="text-[#2abcd4] hover:underline cursor-pointer"
+    <article className="max-w-6xl font-spartan animate-in fade-in duration-300 w-full min-w-0">
+      
+      {/* HEADER */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl font-normal text-[#0c264d]">
+          Living with Dysgraphia
+        </h1>
+
+        <button 
+          onClick={() => setCurrentArticle?.('dysgraphia')}
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:block hidden"
         >
-          ← Back to Dysgraphia
-        </a>
+          <span className="text-xl">←</span>
+          Back to Dysgraphia
+        </button>
       </div>
 
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
-        Living with Dysgraphia
-      </h1>
+      {/* Mobile Back Button */}
+      <button 
+        onClick={() => setCurrentArticle?.('dysgraphia')}
+        className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:hidden mb-6"
+      >
+        <span className="text-xl">←</span>
+        Back to Dysgraphia
+      </button>
 
-      <div className="space-y-8">
-        <div>
-          <p className="mb-4">
-            Living successfully with dysgraphia involves understanding one's strengths, developing effective strategies, 
-            advocating for needed accommodations, and recognizing that writing challenges don't define overall potential.<sup>1</sup> 
-            With appropriate support and tools, individuals with dysgraphia lead fulfilling lives and achieve success across all domains.<sup>2</sup>
+      {/* Tab Navigation */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 clear-both">
+        <button
+          onClick={() => setActiveTab('daily-life')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal text-sm shadow-sm ${
+            activeTab === 'daily-life'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Daily Life & Emotions
+        </button>
+        <button
+          onClick={() => setActiveTab('education-career')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal text-sm shadow-sm ${
+            activeTab === 'education-career'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Education & Career
+        </button>
+        <button
+          onClick={() => setActiveTab('strategies-strengths')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal text-sm shadow-sm ${
+            activeTab === 'strategies-strengths'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Strategies & Strengths
+        </button>
+      </div>
+
+      {/* ==========================================
+          TAB 1: DAILY LIFE & EMOTIONS
+      ========================================== */}
+      {activeTab === 'daily-life' && (
+        <div className="space-y-8 animate-fadeIn">
+          
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            Living successfully with dysgraphia involves understanding one's strengths, developing effective technological strategies, and advocating for needed accommodations. With appropriate support and tools, individuals with dysgraphia lead deeply fulfilling lives and achieve success across all domains.
           </p>
-        </div>
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Daily Life with Dysgraphia</h2>
-          
-          <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1585995603310-9cc1bff2894d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25maWRlbnQlMjB3cml0ZXIlMjBzdWNjZXNzfGVufDF8fHx8MTc2NzQ1MzUxMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Professional success"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Challenges</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Filling out forms:</strong> Bank forms, medical paperwork, applications<sup>3</sup></li>
-            <li className="mb-2"><strong>Note-taking:</strong> At meetings, appointments, lectures</li>
-            <li className="mb-2"><strong>Lists and reminders:</strong> Shopping lists, to-do lists<sup>4</sup></li>
-            <li className="mb-2"><strong>Signatures:</strong> Signing documents, credit card receipts</li>
-            <li className="mb-2"><strong>Correspondence:</strong> Thank-you notes, birthday cards<sup>5</sup></li>
-          </ul>
+          {/* Daily Logistics Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Navigating Daily Logistics</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-living-daily.webp" 
+              alt="Confident individual managing daily tasks on a digital device"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#2abcd4]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Dysgraphia impacts far more than academic testing, often seeping into the foundational logistics of adult independence and daily communication. Routine tasks that neurotypical individuals process automatically often require intense cognitive effort or digital workarounds.
+            </p>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Practical Solutions</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Digital alternatives:</strong> Electronic forms, digital calendars<sup>6</sup></li>
-            <li className="mb-2"><strong>Voice-to-text:</strong> Dictate notes, messages, and lists</li>
-            <li className="mb-2"><strong>Pre-printed options:</strong> Use checkboxes instead of writing<sup>7</sup></li>
-            <li className="mb-2"><strong>Smartphone apps:</strong> Digital note-taking, task management</li>
-            <li className="mb-2"><strong>Templates:</strong> Reusable formats for common tasks<sup>8</sup></li>
-          </ul>
-        </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Common Challenges</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Paperwork:</strong> Filling out bank forms, medical history clipboards, and physical job applications.</li>
+                  <li><strong>Information capture:</strong> Taking rapid notes during meetings, doctor appointments, or phone calls.</li>
+                  <li><strong>Signatures:</strong> Providing consistent signatures on legal documents or credit card receipts.</li>
+                  <li><strong>Correspondence:</strong> Writing out physical thank-you notes, birthday cards, or postcards.</li>
+                </ul>
+              </div>
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Education and Dysgraphia</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Elementary School</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Early intervention:</strong> Occupational therapy, handwriting instruction<sup>9</sup></li>
-            <li className="mb-2"><strong>IEP or 504 plan:</strong> Formalize accommodations</li>
-            <li className="mb-2"><strong>Technology introduction:</strong> Begin keyboarding early<sup>1</sup></li>
-            <li className="mb-2"><strong>Homework modifications:</strong> Reduce copying, allow typing</li>
-            <li className="mb-2"><strong>Building confidence:</strong> Focus on strengths<sup>1</sup></li>
-          </ul>
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Practical Solutions</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Digital default:</strong> Requesting electronic forms or fillable PDFs prior to arriving at appointments.</li>
+                  <li><strong>Voice capture:</strong> Utilizing voice-to-text to dictate grocery lists, reminders, and daily notes.</li>
+                  <li><strong>Stamps & templates:</strong> Using a custom signature stamp or digital signature tool for physical paperwork.</li>
+                  <li><strong>Smart apps:</strong> Relying completely on smartphone apps for task management and list organization.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Middle School</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Increased demands:</strong> More writing across subjects<sup>2</sup></li>
-            <li className="mb-2"><strong>Note-taking support:</strong> Digital notes, teacher outlines</li>
-            <li className="mb-2"><strong>Organization skills:</strong> Systems for managing assignments<sup>3</sup></li>
-            <li className="mb-2"><strong>Self-advocacy:</strong> Learning to request accommodations</li>
-          </ul>
+          {/* Emotional Impact Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Emotional & Social Impact</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-living-emotions.webp" 
+              alt="Two individuals engaging in a supportive conversation"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#ffd166]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              The invisible nature of dysgraphia often leads to profound emotional distress, as individuals are frequently misjudged as careless or unintelligent. Building lifelong resilience requires dismantling the shame associated with utilizing necessary accommodations in public spaces.
+            </p>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">High School</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>College preparation:</strong> SAT/ACT accommodations<sup>4</sup></li>
-            <li className="mb-2"><strong>Assistive technology proficiency:</strong> Master tools for independence</li>
-            <li className="mb-2"><strong>Time management:</strong> Plan for longer writing times<sup>5</sup></li>
-            <li className="mb-2"><strong>Course selection:</strong> Balance workload appropriately</li>
-            <li className="mb-2"><strong>Transition planning:</strong> Preparing for college or career<sup>6</sup></li>
-          </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Emotional Hurdles</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Frustration:</strong> Managing the massive gap between what the brain is thinking and what the hand can produce.</li>
+                  <li><strong>Anxiety:</strong> Feeling sudden panic when asked to write on a whiteboard or fill out a form in public.</li>
+                  <li><strong>Imposter syndrome:</strong> Feeling intellectually inadequate despite possessing high intelligence in other domains.</li>
+                  <li><strong>Shame:</strong> Deep embarrassment about handwriting quality when viewed by peers or colleagues.</li>
+                </ul>
+              </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">College and University</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Disability services:</strong> Register with office, provide documentation<sup>[17]</sup></li>
-            <li className="mb-2"><strong>Accommodations:</strong> Extended time, note-takers, alternative formats</li>
-            <li className="mb-2"><strong>Course planning:</strong> Avoid overloading on writing-heavy courses<sup>[18]</sup></li>
-            <li className="mb-2"><strong>Writing center:</strong> Support with papers and assignments</li>
-            <li className="mb-2"><strong>Technology:</strong> Laptop use in class, speech-to-text software<sup>[19]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Career and Employment</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Career Considerations</h3>
-          <p className="mb-4">
-            Dysgraphia should not limit career choices. Many professions require minimal handwriting:<sup>[20]</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>STEM fields:</strong> Science, technology, engineering, mathematics<sup>[21]</sup></li>
-            <li className="mb-2"><strong>Creative fields:</strong> Art, design, photography, film</li>
-            <li className="mb-2"><strong>Business:</strong> Marketing, sales, management (with assistive tech)<sup>[22]</sup></li>
-            <li className="mb-2"><strong>Healthcare:</strong> Many roles with digital charting</li>
-            <li className="mb-2"><strong>Trades:</strong> Skilled trades, technical work<sup>[23]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Workplace Accommodations</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Computer use:</strong> Typing instead of handwriting<sup>[24]</sup></li>
-            <li className="mb-2"><strong>Speech recognition software:</strong> Dictation for reports and emails</li>
-            <li className="mb-2"><strong>Digital forms:</strong> Electronic documentation<sup>[25]</sup></li>
-            <li className="mb-2"><strong>Extended time:</strong> For written tasks when needed</li>
-            <li className="mb-2"><strong>Assistive technology:</strong> Specialized software and tools<sup>[26]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Legal Protections</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Americans with Disabilities Act (ADA):</strong> Requires reasonable accommodations<sup>[27]</sup></li>
-            <li className="mb-2"><strong>Disclosure:</strong> Optional, but may be needed for accommodations</li>
-            <li className="mb-2"><strong>Documentation:</strong> Professional evaluation may be required<sup>[28]</sup></li>
-            <li className="mb-2"><strong>Job applications:</strong> Not required to disclose during application</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Communication Strategies</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Email proficiency:</strong> Use spell-check, proofread carefully<sup>[29]</sup></li>
-            <li className="mb-2"><strong>Templates:</strong> Standard formats for common communications</li>
-            <li className="mb-2"><strong>Voice communication:</strong> Phone calls or video instead of writing<sup>[30]</sup></li>
-            <li className="mb-2"><strong>Collaboration tools:</strong> Digital platforms for teamwork</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Self-Advocacy</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Understanding Your Rights</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Educational rights:</strong> IDEA (K-12), Section 504, ADA (college)<sup>[31]</sup></li>
-            <li className="mb-2"><strong>Workplace rights:</strong> ADA employment protections</li>
-            <li className="mb-2"><strong>Testing accommodations:</strong> Standardized tests (SAT, ACT, GRE, etc.)<sup>[32]</sup></li>
-            <li className="mb-2"><strong>Professional licensing exams:</strong> Accommodations available</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Communicating Needs</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Know your accommodations:</strong> Understand what helps you<sup>[33]</sup></li>
-            <li className="mb-2"><strong>Be specific:</strong> Clearly explain needed supports</li>
-            <li className="mb-2"><strong>Provide documentation:</strong> When required<sup>[34]</sup></li>
-            <li className="mb-2"><strong>Follow procedures:</strong> Proper channels for requesting accommodations</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Building Self-Advocacy Skills</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Understanding your learning profile<sup>[35]</sup></li>
-            <li className="mb-2">Recognizing when you need help</li>
-            <li className="mb-2">Speaking up for yourself<sup>[36]</sup></li>
-            <li className="mb-2">Knowing resources and support systems</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Emotional and Social Aspects</h2>
-          
-          <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1625750998663-4b2ae8f8b658?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cml0aW5nJTIwaGFuZCUyMHBlbmNpbHxlbnwxfHx8fDE3Njc0NTM1MTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Writing hand pencil"
-            className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-          />
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Emotional Impact</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Frustration:</strong> Gap between thinking and writing ability<sup>[37]</sup></li>
-            <li className="mb-2"><strong>Anxiety:</strong> About writing tasks and assignments</li>
-            <li className="mb-2"><strong>Low self-esteem:</strong> Comparing to peers<sup>[38]</sup></li>
-            <li className="mb-2"><strong>Shame or embarrassment:</strong> About handwriting quality</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Building Resilience</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Focus on strengths:</strong> Identify and develop areas of talent<sup>[39]</sup></li>
-            <li className="mb-2"><strong>Growth mindset:</strong> Believe skills can improve with effort</li>
-            <li className="mb-2"><strong>Self-compassion:</strong> Be kind to yourself<sup>[40]</sup></li>
-            <li className="mb-2"><strong>Celebrate progress:</strong> Acknowledge improvements, however small</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Social Considerations</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Explaining to others:</strong> When and how to disclose<sup>[41]</sup></li>
-            <li className="mb-2"><strong>Peer understanding:</strong> Educating friends about dysgraphia</li>
-            <li className="mb-2"><strong>Support groups:</strong> Connecting with others who understand<sup>[42]</sup></li>
-            <li className="mb-2"><strong>Mentors:</strong> Successful adults with dysgraphia</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Mental Health Support</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Counseling or therapy if needed<sup>[43]</sup></li>
-            <li className="mb-2">Addressing anxiety or depression</li>
-            <li className="mb-2">Cognitive-behavioral strategies<sup>[44]</sup></li>
-            <li className="mb-2">Family therapy for systemic support</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Relationships and Communication</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Family Dynamics</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Parent support:</strong> Advocacy, encouragement, understanding<sup>[45]</sup></li>
-            <li className="mb-2"><strong>Sibling understanding:</strong> Education about dysgraphia</li>
-            <li className="mb-2"><strong>Family accommodations:</strong> Reduce handwriting demands at home<sup>[46]</sup></li>
-            <li className="mb-2"><strong>Celebrating strengths:</strong> Focus on whole person, not just challenges</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Friendships</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">True friends accept you as you are<sup>[47]</sup></li>
-            <li className="mb-2">Digital communication (texts, social media) may be easier</li>
-            <li className="mb-2">Focus on shared interests, not writing ability<sup>[48]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Romantic Relationships</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Communication about needs and challenges<sup>[49]</sup></li>
-            <li className="mb-2">Partner understanding and support</li>
-            <li className="mb-2">Finding alternative ways to express affection (not requiring handwriting)<sup>[50]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Technology as an Equalizer</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Modern Advantages</h3>
-          <p className="mb-4">
-            Technology has dramatically improved life for people with dysgraphia:<sup>[51]</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Decreased handwriting demands:</strong> Most work done digitally<sup>[52]</sup></li>
-            <li className="mb-2"><strong>Text messaging:</strong> Brief, informal, autocorrect helps</li>
-            <li className="mb-2"><strong>Voice assistants:</strong> Siri, Alexa, Google Assistant for reminders and notes<sup>[53]</sup></li>
-            <li className="mb-2"><strong>Digital signatures:</strong> DocuSign, Adobe Sign</li>
-            <li className="mb-2"><strong>Cloud storage:</strong> Access documents anywhere<sup>[54]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Essential Tools for Independence</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Smartphone or tablet with speech-to-text<sup>[55]</sup></li>
-            <li className="mb-2">Computer with word processing software</li>
-            <li className="mb-2">Calendar and reminder apps<sup>[56]</sup></li>
-            <li className="mb-2">Note-taking apps with voice recording</li>
-            <li className="mb-2">Email with spell-check and templates<sup>[57]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Strengths and Positive Aspects</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Associated Strengths</h3>
-          <p className="mb-4">
-            Many individuals with dysgraphia have notable strengths:<sup>[58]</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Verbal abilities:</strong> Strong oral communication skills<sup>[59]</sup></li>
-            <li className="mb-2"><strong>Creative thinking:</strong> Innovative problem-solving</li>
-            <li className="mb-2"><strong>Visual-spatial skills:</strong> Talent in art, design, engineering<sup>[60]</sup></li>
-            <li className="mb-2"><strong>Determination:</strong> Persistence developed from overcoming challenges</li>
-            <li className="mb-2"><strong>Empathy:</strong> Understanding of others' struggles<sup>[61]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Reframing the Narrative</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Dysgraphia is one aspect of who you are, not your identity<sup>[62]</sup></li>
-            <li className="mb-2">Focus on what you can do, not limitations</li>
-            <li className="mb-2">Accommodations level the playing field<sup>[63]</sup></li>
-            <li className="mb-2">Success is possible and common</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Success Stories</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Notable Individuals</h3>
-          <p className="mb-4">
-            Many successful people have had dysgraphia or writing difficulties:<sup>[64]</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Scientists and inventors</li>
-            <li className="mb-2">Artists and designers<sup>[65]</sup></li>
-            <li className="mb-2">Business leaders and entrepreneurs</li>
-            <li className="mb-2">Educators and advocates<sup>[66]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Common Themes of Success</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Understanding their learning profile:</strong> Know strengths and challenges<sup>[67]</sup></li>
-            <li className="mb-2"><strong>Using appropriate accommodations:</strong> Not avoiding, but adapting</li>
-            <li className="mb-2"><strong>Leveraging technology:</strong> Using available tools<sup>[68]</sup></li>
-            <li className="mb-2"><strong>Building on strengths:</strong> Choosing paths aligned with talents</li>
-            <li className="mb-2"><strong>Persistence:</strong> Not giving up despite challenges<sup>[69]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Looking Forward</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Lifespan Perspective</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Challenges may change:</strong> Different demands at different ages<sup>[70]</sup></li>
-            <li className="mb-2"><strong>Skills can improve:</strong> With intervention and practice</li>
-            <li className="mb-2"><strong>Technology evolving:</strong> New tools constantly emerging<sup>[71]</sup></li>
-            <li className="mb-2"><strong>Acceptance increasing:</strong> Greater awareness and accommodation</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Future Possibilities</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Improved voice recognition technology<sup>[72]</sup></li>
-            <li className="mb-2">Better early identification and intervention</li>
-            <li className="mb-2">Increased understanding of neurodiversity<sup>[73]</sup></li>
-            <li className="mb-2">More inclusive educational and work environments</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Resources and Support</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Organizations</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Learning Disabilities Association of America (LDA)<sup>[74]</sup></li>
-            <li className="mb-2">National Center for Learning Disabilities (NCLD)</li>
-            <li className="mb-2">International Dyslexia Association (IDA)<sup>[75]</sup></li>
-            <li className="mb-2">Understood.org</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Online Communities</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Social media support groups<sup>[76]</sup></li>
-            <li className="mb-2">Forums and discussion boards</li>
-            <li className="mb-2">Parent networks<sup>[77]</sup></li>
-            <li className="mb-2">Advocacy groups</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Professional Support</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Educational therapists<sup>[78]</sup></li>
-            <li className="mb-2">Occupational therapists</li>
-            <li className="mb-2">Psychologists and counselors<sup>[79]</sup></li>
-            <li className="mb-2">Learning disability specialists</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Key Messages</h2>
-          
-          <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6">
-            <h3 className="text-[#0c264d] font-bold mb-3">Remember:</h3>
-            <ul className="list-disc ml-6 space-y-2 text-sm">
-              <li><strong>Dysgraphia is a difference, not a deficiency:</strong> Your brain works differently, not incorrectly<sup>[80]</sup></li>
-              <li><strong>Intelligence is not related to handwriting:</strong> Writing challenges don't reflect cognitive ability<sup>[81]</sup></li>
-              <li><strong>Accommodations are rights, not cheating:</strong> They level the playing field</li>
-              <li><strong>Technology is a tool, not a crutch:</strong> Use what helps you succeed<sup>[82]</sup></li>
-              <li><strong>You are not alone:</strong> Millions of people have dysgraphia</li>
-              <li><strong>Success is achievable:</strong> With support and strategies, you can thrive<sup>[83]</sup></li>
-              <li><strong>Focus on your strengths:</strong> Writing is one skill among many</li>
-              <li><strong>Advocate for yourself:</strong> Know your rights and needs<sup>[84]</sup></li>
-              <li><strong>Be patient with yourself:</strong> Progress takes time</li>
-              <li><strong>Your worth is not determined by your handwriting:</strong> You have value beyond writing ability<sup>[85]</sup></li>
-            </ul>
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Building Resilience</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Strengths focus:</strong> Actively identifying and leaning into natural talents in verbal communication or visual arts.</li>
+                  <li><strong>Self-compassion:</strong> Recognizing that the writing struggle is neurological, not a moral failing.</li>
+                  <li><strong>Disclosure power:</strong> Deciding when and how to comfortably disclose the diagnosis to friends or romantic partners.</li>
+                  <li><strong>Support networks:</strong> Connecting with mentors or online communities of neurodivergent adults.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+      )}
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Moving Forward with Confidence</h2>
+      {/* ==========================================
+          TAB 2: EDUCATION & CAREER
+      ========================================== */}
+      {activeTab === 'education-career' && (
+        <div className="space-y-8 animate-fadeIn">
           
-          <p className="mb-4">
-            Living with dysgraphia presents challenges, but it doesn't have to limit your dreams or potential.<sup>[86]</sup> 
-            With understanding, appropriate support, effective strategies, and determination, individuals with dysgraphia 
-            succeed in school, career, and life. The key is finding what works for you, advocating for your needs, 
-            and remembering that writing difficulties are just one small part of who you are.
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            The traditional education system and modern workplace are highly reliant on written fluency, often creating artificial barriers for those with dysgraphia. By focusing on individual strengths and securing legal accommodations, individuals can pursue highly successful academic and professional trajectories.
           </p>
+
+          {/* Educational Journey Card (Slate) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">The Educational Journey</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-living-education.webp" 
+              alt="Student using a laptop in a modern classroom"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#0c264d]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              From early childhood through higher education, dysgraphia requires constant self-advocacy to secure the digital tools necessary to prove conceptual mastery. Without targeted interventions and accommodations, the cumulative nature of writing demands can result in profound learned helplessness.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">K-12 Progression</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Elementary:</strong> Establishing IEPs early to formalize typing instruction and reduce sheer copying demands.</li>
+                  <li><strong>Middle School:</strong> Navigating increased multi-subject writing demands by transitioning fully to digital note-taking.</li>
+                  <li><strong>High School:</strong> Securing critical extended-time and laptop accommodations for high-stakes standardized testing (SAT/ACT).</li>
+                  <li><strong>Transition planning:</strong> Preparing the student to take over their own advocacy before leaving the public school system.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">College & University</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Disability services:</strong> Proactively registering with the university office and providing recent diagnostic documentation.</li>
+                  <li><strong>Accommodation shifts:</strong> Securing collegiate-level support like peer note-takers and alternative testing formats.</li>
+                  <li><strong>Course planning:</strong> Strategically balancing the semester workload to avoid taking multiple writing-heavy courses simultaneously.</li>
+                  <li><strong>Writing centers:</strong> Utilizing campus support for structural essay organization and proofreading.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Career & Employment Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Career & Employment</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-living-career.webp" 
+              alt="Professional successfully managing a creative project"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#2abcd4]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Many adults with dysgraphia excel professionally by leaning into their verbal, creative, and interpersonal strengths to bypass manual writing demands. Success in the workplace often involves finding the right organizational culture, utilizing assistive technologies, and understanding ADA protections.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Career Considerations</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>STEM fields:</strong> Science, technology, and engineering roles that rely on digital logic and coding rather than prose.</li>
+                  <li><strong>Creative fields:</strong> Art, design, film, and photography that prioritize visual-spatial intelligence.</li>
+                  <li><strong>Interpersonal roles:</strong> Sales, marketing, and management roles that prioritize strong verbal communication skills.</li>
+                  <li><strong>Healthcare & Trades:</strong> Skilled technical work and medical roles that utilize standardized digital charting.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Workplace Accommodations</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Legal protection:</strong> Utilizing the Americans with Disabilities Act (ADA) to mandate reasonable workplace accommodations.</li>
+                  <li><strong>Software integration:</strong> Installing professional speech recognition software (like Dragon) for dictating emails and reports.</li>
+                  <li><strong>Process shifts:</strong> Requesting to provide verbal project updates in meetings rather than submitting written status briefs.</li>
+                  <li><strong>Disclosure strategy:</strong> Understanding that disclosing the disability during an interview is optional, but necessary for securing formal accommodations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      )}
+
+      {/* ==========================================
+          TAB 3: STRATEGIES & STRENGTHS
+      ========================================== */}
+      {activeTab === 'strategies-strengths' && (
+        <div className="space-y-8 animate-fadeIn">
+          
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            Living effectively with dysgraphia is fundamentally about working smarter, not harder, through the unapologetic use of technology and support networks. By embracing these tools and focusing on inherent strengths, individuals can protect their mental health and achieve significant personal success.
+          </p>
+
+          {/* Technology as an Equalizer Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Technology as an Equalizer</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-living-technology.webp" 
+              alt="Person using a smartphone with voice assistant features"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#ffd166]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              The modern smartphone and computer have revolutionized independence for those with dysgraphia. Offloading the physical burden of transcription to reliable digital systems allows the brain to focus its energy entirely on executing high-level ideas.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Modern Advantages</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Decreased demands:</strong> Most modern professional work is already done digitally, naturally aligning with dysgraphia needs.</li>
+                  <li><strong>Text messaging:</strong> Brief, informal communication where autocorrect naturally steps in to fix spelling errors.</li>
+                  <li><strong>Voice assistants:</strong> Utilizing Siri or Google Assistant to effortlessly log reminders, appointments, and quick notes.</li>
+                  <li><strong>Digital signatures:</strong> Services like DocuSign eliminating the anxiety of physical paperwork entirely.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Essential Tools</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Speech-to-text apps:</strong> Mobile dictation tools that turn verbal thoughts directly into formatted text.</li>
+                  <li><strong>Cloud word processors:</strong> Accessing typing software universally across phones, tablets, and computers.</li>
+                  <li><strong>Audio note-taking:</strong> Using apps like Notability or Otter to record live audio synced to minimal typed notes.</li>
+                  <li><strong>Email templates:</strong> Creating and saving standard responses for repetitive, professional communications.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Strengths & Success Card (Slate) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Strengths & Success</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-living-strengths.webp" 
+              alt="Creative individual sketching a big-picture concept"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#0c264d]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Dysgraphia is characterized by a specific deficit in writing mechanics, not a global cognitive delay or lack of intelligence. Because the brain develops uniquely, many individuals with dysgraphia naturally excel in areas requiring holistic, big-picture thinking and deep verbal empathy.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Associated Strengths</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Verbal abilities:</strong> Exceptionally strong oral communication and public speaking skills.</li>
+                  <li><strong>Creative thinking:</strong> Highly innovative, non-linear problem-solving capabilities developed from years of adapting.</li>
+                  <li><strong>Visual-spatial talent:</strong> Often demonstrating advanced aptitude in art, 3D design, architecture, and engineering.</li>
+                  <li><strong>Deep empathy:</strong> A profound understanding and compassion for others who face invisible struggles.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Reframing the Narrative</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Identity:</strong> Dysgraphia is simply one facet of how your brain processes output; it is not your identity.</li>
+                  <li><strong>Notable success:</strong> Thousands of brilliant scientists, artists, and business leaders share this exact learning profile.</li>
+                  <li><strong>Tool validation:</strong> Utilizing a keyboard or dictation software is an intelligent strategy, not a "crutch."</li>
+                  <li><strong>Limitless potential:</strong> Your worth and intelligence are absolutely not determined by your ability to hold a pencil.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* FOOTER BUTTON */}
+      <div className="flex justify-end my-8 w-full clear-both">
+        <button 
+          onClick={() => setCurrentArticle?.('dysgraphia')}
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md whitespace-nowrap"
+        >
+          <span className="text-xl">←</span>
+          Back to Dysgraphia
+        </button>
       </div>
 
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <p>[1] Berninger, V. W., & Wolf, B. J. (2009). <em>Teaching students with dyslexia and dysgraphia</em>. Brookes Publishing.</p>
-          <p>[2] Gerber, P. J. (2012). "The impact of learning disabilities on adulthood." <em>Journal of Learning Disabilities</em>, 45(1), 31-46.</p>
-          <p>[3] Gregg, N., Coleman, C., Davis, M., & Chalk, J. C. (2007). "Timed essay writing: Implications for high-stakes tests." <em>Journal of Learning Disabilities</em>, 40(4), 306-318.</p>
-          <p>[4] Kiewra, K. A. (1989). "A review of note-taking: The encoding-storage paradigm." <em>Educational Psychology Review</em>, 1(2), 147-172.</p>
-          <p>[5] Graham, S., & Perin, D. (2007). "A meta-analysis of writing instruction for adolescent students." <em>Journal of Educational Psychology</em>, 99(3), 445-476.</p>
-          <p>[6] MacArthur, C. A. (2009). "Reflections on research on writing and technology for struggling writers." <em>Learning Disabilities Research & Practice</em>, 24(2), 93-103.</p>
-          <p>[7] Edyburn, D. L. (2000). "Assistive technology and students with mild disabilities." <em>Focus on Exceptional Children</em>, 32(9), 1-24.</p>
-          <p>[8] Anderson-Inman, L., & Horney, M. A. (1998). "Transforming text for at-risk readers." In D. Reinking et al. (Eds.), <em>Handbook of literacy and technology</em> (pp. 15-43). Erlbaum.</p>
-          <p>[9] Case-Smith, J. (2002). "Effectiveness of school-based occupational therapy intervention on handwriting." <em>American Journal of Occupational Therapy</em>, 56(1), 17-25.</p>
-          <p>[10] Berninger, V. W., Abbott, R. D., Augsburger, A., & Garcia, N. (2009). "Comparison of pen and keyboard transcription modes." <em>Learning Disability Quarterly</em>, 32(3), 123-141.</p>
-          <p>[11] Dweck, C. S. (2006). <em>Mindset: The new psychology of success</em>. Random House.</p>
-          <p>[12] Peverly, S. T. (2006). "The importance of handwriting speed in adult writing." <em>Developmental Neuropsychology</em>, 29(1), 197-216.</p>
-          <p>[13] Mayes, S. D., Calhoun, S. L., Bixler, E. O., & Zimmerman, D. N. (2009). "IQ and neuropsychological predictors of academic achievement." <em>Learning and Individual Differences</em>, 19(2), 238-241.</p>
-          <p>[14] Sireci, S. G., Scarpati, S. E., & Li, S. (2005). "Test accommodations for students with disabilities." <em>Review of Educational Research</em>, 75(4), 457-490.</p>
-          <p>[15] Patton, J. R. (1994). "Practical recommendations for using homework with students with learning disabilities." <em>Journal of Learning Disabilities</em>, 27(9), 570-578.</p>
-          <p>[16] Kohler, P. D., & Field, S. (2003). "Transition-focused education." <em>The Journal of Special Education</em>, 37(3), 174-183.</p>
-          <p>[17] Association on Higher Education and Disability. (2012). <em>Supporting accommodation requests</em>.</p>
-          <p>[18] Gregg, N. (2009). <em>Adolescents and adults with learning disabilities and ADHD</em>. Guilford Press.</p>
-          <p>[19] Lindstrom, J. H. (2007). "Determining appropriate accommodations for postsecondary students." <em>Learning Disabilities Research & Practice</em>, 22(4), 229-236.</p>
-          <p>[20] Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). "Identifying alterable patterns in employment success." <em>Journal of Learning Disabilities</em>, 25(8), 475-487.</p>
-          <p>[21] West, T. G. (1997). <em>In the mind's eye: Visual thinkers, gifted people with dyslexia</em>. Prometheus Books.</p>
-          <p>[22] Reiff, H. B., Ginsberg, R., & Gerber, P. J. (1995). "New perspectives on teaching from successful adults with learning disabilities." <em>Remedial and Special Education</em>, 16(2), 96-107.</p>
-          <p>[23] Levine, P., & Nourse, S. W. (1998). <em>What follow-up studies say about postschool life for young men and women with learning disabilities</em>. <em>Journal of Learning Disabilities</em>, 31(3), 212-233.</p>
-          <p>[24] Americans with Disabilities Act of 1990, 42 U.S.C. § 12101 et seq.</p>
-          <p>[25] Edyburn, D. L. (2004). "Rethinking assistive technology." <em>Special Education Technology Practice</em>, 5(4), 16-23.</p>
-          <p>[26] Burgstahler, S. (2003). "The role of technology in preparing youth with disabilities for postsecondary education and employment." <em>Journal of Special Education Technology</em>, 18(4), 7-19.</p>
-          <p>[27] Americans with Disabilities Act of 1990, 42 U.S.C. § 12101 et seq.</p>
-          <p>[28] Gordon, M., & Keiser, S. (2000). <em>Accommodations in higher education under the Americans with Disabilities Act</em>. Guilford Press.</p>
-          <p>[29] Grimes, D., & Warschauer, M. (2010). "Utility in a fallible tool: A multi-site case study of automated writing evaluation." <em>Journal of Technology, Learning, and Assessment</em>, 8(6), 4-43.</p>
-          <p>[30] MacArthur, C. A., & Cavalier, A. R. (2004). "Dictation and speech recognition technology as test accommodations." <em>Exceptional Children</em>, 71(1), 43-58.</p>
-          <p>[31] Individuals with Disabilities Education Act, 20 U.S.C. § 1400 (2004).</p>
-          <p>[32] Sireci, S. G., Scarpati, S. E., & Li, S. (2005). "Test accommodations for students with disabilities." <em>Review of Educational Research</em>, 75(4), 457-490.</p>
-          <p>[33] Palmer, S. B., & Wehmeyer, M. L. (2003). "Promoting self-determination in early elementary school." <em>Remedial and Special Education</em>, 24(2), 115-126.</p>
-          <p>[34] Wright, P. W. D., & Wright, P. D. (2006). <em>Wrightslaw: Special education law</em> (2nd ed.). Harbor House Law Press.</p>
-          <p>[35] Test, D. W., Fowler, C. H., Wood, W. M., Brewer, D. M., & Eddy, S. (2005). "A conceptual framework of self-advocacy for students with disabilities." <em>Remedial and Special Education</em>, 26(1), 43-54.</p>
-          <p>[36] Wehmeyer, M. L., & Schwartz, M. (1997). "Self-determination and positive adult outcomes." <em>Exceptional Children</em>, 63(2), 245-255.</p>
-          <p>[37] Nelson, J. M., & Harwood, H. (2011). "Learning disabilities and anxiety: A meta-analysis." <em>Journal of Learning Disabilities</em>, 44(1), 3-17.</p>
-          <p>[38] Lackaye, T., Margalit, M., Ziv, O., & Ziman, T. (2006). "Comparisons of self-efficacy, mood, effort, and hope between students with learning disabilities and their non-LD-matched peers." <em>Learning Disabilities Research & Practice</em>, 21(2), 111-121.</p>
-          <p>[39] Brooks, R., & Goldstein, S. (2001). <em>Raising resilient children</em>. McGraw-Hill.</p>
-          <p>[40] Neff, K. D. (2011). "Self-compassion, self-esteem, and well-being." <em>Social and Personality Psychology Compass</em>, 5(1), 1-12.</p>
-          <p>[41] Madaus, J. W. (2008). "Employment self-disclosure rates and rationales of university graduates with learning disabilities." <em>Journal of Learning Disabilities</em>, 41(4), 291-299.</p>
-          <p>[42] Connor, D. J. (2012). "Helping students with disabilities transition to college." <em>Teaching Exceptional Children</em>, 44(5), 16-25.</p>
-          <p>[43] Sideridis, G. D. (2007). "Why are students with LD depressed?" <em>Learning Disabilities Research & Practice</em>, 22(3), 143-148.</p>
-          <p>[44] Spence, S. H., Donovan, C. L., March, S., Gamble, A., Anderson, R. E., Prosser, S., & Kenardy, J. (2011). "A randomized controlled trial of online versus clinic-based CBT for adolescent anxiety." <em>Journal of Consulting and Clinical Psychology</em>, 79(5), 629-642.</p>
-          <p>[45] Epstein, J. L. (2001). <em>School, family, and community partnerships</em>. Westview Press.</p>
-          <p>[46] Cooper, H., Robinson, J. C., & Patall, E. A. (2006). "Does homework improve academic achievement?" <em>Review of Educational Research</em>, 76(1), 1-62.</p>
-          <p>[47] Wiener, J., & Schneider, B. H. (2002). "A multisource exploration of the friendship patterns of children with and without learning disabilities." <em>Journal of Abnormal Child Psychology</em>, 30(2), 127-141.</p>
-          <p>[48] Kavale, K. A., & Forness, S. R. (1996). "Social skill deficits and learning disabilities: A meta-analysis." <em>Journal of Learning Disabilities</em>, 29(3), 226-237.</p>
-          <p>[49] Madaus, J. W., & Shaw, S. F. (2006). "The impact of the IDEA 2004 on transition to college for students with learning disabilities." <em>Learning Disabilities Research & Practice</em>, 21(4), 273-281.</p>
-          <p>[50] Baril, D. E., Tourigny, S. C., Julien, D., & Godbout, N. (2009). "Romantic relationships in adults with a learning disability." <em>Journal of Learning Disabilities</em>, 42(3), 193-203.</p>
-          <p>[51] MacArthur, C. A. (2009). "Reflections on research on writing and technology for struggling writers." <em>Learning Disabilities Research & Practice</em>, 24(2), 93-103.</p>
-          <p>[52] Berninger, V. W., Abbott, R. D., Augsburger, A., & Garcia, N. (2009). "Comparison of pen and keyboard transcription modes." <em>Learning Disability Quarterly</em>, 32(3), 123-141.</p>
-          <p>[53] Higgins, E. L., & Raskind, M. H. (2005). "The compensatory effectiveness of the Quicktionary Reading Pen II." <em>Journal of Special Education Technology</em>, 20(1), 29-40.</p>
-          <p>[54] Anderson-Inman, L., & Horney, M. A. (1998). "Transforming text for at-risk readers." In D. Reinking et al. (Eds.), <em>Handbook of literacy and technology</em> (pp. 15-43). Erlbaum.</p>
-          <p>[55] De La Paz, S. (1999). "Self-regulated strategy instruction in regular education settings." <em>Learning Disabilities Research & Practice</em>, 14(2), 92-106.</p>
-          <p>[56] Denton, C. A., Hasbrouck, J. E., Weaver, L. R., & Riccio, C. A. (2000). "What do we know about phonological awareness in Spanish-speaking children?" <em>Reading & Writing Quarterly</em>, 16(4), 335-352.</p>
-          <p>[57] Grimes, D., & Warschauer, M. (2010). "Utility in a fallible tool." <em>Journal of Technology, Learning, and Assessment</em>, 8(6), 4-43.</p>
-          <p>[58] West, T. G. (1997). <em>In the mind's eye: Visual thinkers, gifted people with dyslexia</em>. Prometheus Books.</p>
-          <p>[59] Connelly, V., Campbell, S., MacLean, M., & Barnes, J. (2006). "Contribution of lower order letter writing skills." <em>Developmental Neuropsychology</em>, 29(1), 175-196.</p>
-          <p>[60] von Károlyi, C., Winner, E., Gray, W., & Sherman, G. F. (2003). "Dyslexia linked to talent: Global visual-spatial ability." <em>Brain and Language</em>, 85(3), 427-431.</p>
-          <p>[61] Brooks, R., & Goldstein, S. (2001). <em>Raising resilient children</em>. McGraw-Hill.</p>
-          <p>[62] Berninger, V. W. (2009). "Highlights of programmatic, interdisciplinary research on writing." <em>Learning Disabilities Research & Practice</em>, 24(2), 68-79.</p>
-          <p>[63] Thompson, S. J., Johnstone, C. J., & Thurlow, M. L. (2002). <em>Universal design applied to large scale assessments</em>. University of Minnesota, National Center on Educational Outcomes.</p>
-          <p>[64] Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). "Identifying alterable patterns in employment success." <em>Journal of Learning Disabilities</em>, 25(8), 475-487.</p>
-          <p>[65] West, T. G. (1997). <em>In the mind's eye</em>. Prometheus Books.</p>
-          <p>[66] Reiff, H. B., Ginsberg, R., & Gerber, P. J. (1995). "New perspectives on teaching from successful adults with learning disabilities." <em>Remedial and Special Education</em>, 16(2), 96-107.</p>
-          <p>[67] Test, D. W., Fowler, C. H., Wood, W. M., Brewer, D. M., & Eddy, S. (2005). "A conceptual framework of self-advocacy." <em>Remedial and Special Education</em>, 26(1), 43-54.</p>
-          <p>[68] MacArthur, C. A. (2009). "Reflections on research on writing and technology." <em>Learning Disabilities Research & Practice</em>, 24(2), 93-103.</p>
-          <p>[69] Gerber, P. J. (2012). "The impact of learning disabilities on adulthood." <em>Journal of Learning Disabilities</em>, 45(1), 31-46.</p>
-          <p>[70] Vogel, S. A., & Reder, S. (1998). <em>Learning disabilities, literacy, and adult education</em>. Brookes Publishing.</p>
-          <p>[71] Edyburn, D. L. (2004). "Rethinking assistive technology." <em>Special Education Technology Practice</em>, 5(4), 16-23.</p>
-          <p>[72] Higgins, E. L., & Raskind, M. H. (2005). "The compensatory effectiveness of the Quicktionary Reading Pen II." <em>Journal of Special Education Technology</em>, 20(1), 29-40.</p>
-          <p>[73] Armstrong, T. (2010). <em>Neurodiversity: Discovering the extraordinary gifts of autism, ADHD, dyslexia, and other brain differences</em>. Da Capo Press.</p>
-          <p>[74] Learning Disabilities Association of America. (2020). <em>What are learning disabilities?</em></p>
-          <p>[75] International Dyslexia Association. (2020). <em>Dyslexia basics</em>.</p>
-          <p>[76] Bargh, J. A., & McKenna, K. Y. (2004). "The Internet and social life." <em>Annual Review of Psychology</em>, 55, 573-590.</p>
-          <p>[77] Trainor, A. A. (2010). "Diverse approaches to parent advocacy during special education home-school interactions." <em>Remedial and Special Education</em>, 31(1), 34-47.</p>
-          <p>[78] Keller-Allen, C. (2006). <em>English language learners with learning disabilities</em>. National Center for Learning Disabilities.</p>
-          <p>[79] Sideridis, G. D. (2007). "Why are students with LD depressed?" <em>Learning Disabilities Research & Practice</em>, 22(3), 143-148.</p>
-          <p>[80] Armstrong, T. (2010). <em>Neurodiversity</em>. Da Capo Press.</p>
-          <p>[81] Berninger, V. W., & Wolf, B. J. (2009). <em>Teaching students with dyslexia and dysgraphia</em>. Brookes Publishing.</p>
-          <p>[82] MacArthur, C. A. (2009). "Reflections on research on writing and technology for struggling writers." <em>Learning Disabilities Research & Practice</em>, 24(2), 93-103.</p>
-          <p>[83] Gerber, P. J. (2012). "The impact of learning disabilities on adulthood." <em>Journal of Learning Disabilities</em>, 45(1), 31-46.</p>
-          <p>[84] Test, D. W., Fowler, C. H., Wood, W. M., Brewer, D. M., & Eddy, S. (2005). "A conceptual framework of self-advocacy." <em>Remedial and Special Education</em>, 26(1), 43-54.</p>
-          <p>[85] Brooks, R., & Goldstein, S. (2001). <em>Raising resilient children</em>. McGraw-Hill.</p>
-          <p>[86] Gerber, P. J., Ginsberg, R., & Reiff, H. B. (1992). "Identifying alterable patterns in employment success." <em>Journal of Learning Disabilities</em>, 25(8), 475-487.</p>
+      {/* ===== REFERENCES SECTION ===== */}
+      <div className="clear-both mt-16 font-spartan">
+        <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0 break-words" style={{ textIndent: 0 }}>
+            <li>Americans with Disabilities Act of 1990, 42 U.S.C. § 12101 et seq.</li>
+            <li>Anderson-Inman, L., & Horney, M. A. (1998). Transforming text for at-risk readers. In D. Reinking et al. (Eds.), <i>Handbook of literacy and technology</i>. Erlbaum.</li>
+            <li>Association on Higher Education and Disability. (2012). <i>Supporting accommodation requests</i>.</li>
+            <li>Bargh, J. A., & McKenna, K. Y. (2004). The Internet and social life. <i>Annual Review of Psychology</i>. https://doi.org/10.1146/annurev.psych.55.090902.141922</li>
+            <li>Berninger, V. W. (2009). Highlights of programmatic, interdisciplinary research on writing. <i>Learning Disabilities Research & Practice</i>. https://doi.org/10.1111/j.1540-5826.2009.00281.x</li>
+            <li>Berninger, V. W., & Fuller, F. (1992). Gender differences in orthographic, verbal, and compositional fluency. <i>Journal of School Psychology</i>. https://doi.org/10.1016/0022-4405(92)90004-O</li>
+            <li>Berninger, V. W., & Wolf, B. J. (2009). <i>Teaching students with dyslexia and dysgraphia: Lessons from teaching and science</i>. Brookes Publishing.</li>
+            <li>Brooks, R., & Goldstein, S. (2001). <i>Raising resilient children</i>. McGraw-Hill.</li>
+            <li>Case-Smith, J. (2002). Effectiveness of school-based occupational therapy intervention on handwriting. <i>American Journal of Occupational Therapy</i>. https://doi.org/10.5014/ajot.56.1.17</li>
+            <li>Connelly, V., Campbell, S., MacLean, M., & Barnes, J. (2006). Contribution of lower order letter writing skills. <i>Developmental Neuropsychology</i>. https://doi.org/10.1207/s15326942dn2901_9</li>
+            <li>Dweck, C. S. (2006). <i>Mindset: The new psychology of success</i>. Random House.</li>
+            <li>Edyburn, D. L. (2000). Assistive technology and students with mild disabilities. <i>Focus on Exceptional Children</i>.</li>
+            <li>Epstein, J. L. (2001). <i>School, family, and community partnerships</i>. Westview Press.</li>
+            <li>Gerber, P. J. (2012). The impact of learning disabilities on adulthood. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219411426858</li>
+            <li>Graham, S., & Harris, K. R. (2009). Almost 30 years of writing research. <i>Learning Disabilities Research & Practice</i>. https://doi.org/10.1111/j.1540-5826.2009.00284.x</li>
+            <li>Graham, S., & Weintraub, N. (1996). A review of handwriting research. <i>Educational Psychology Review</i>. https://doi.org/10.1007/BF01464047</li>
+            <li>Gregg, N. (2009). <i>Adolescents and adults with learning disabilities and ADHD</i>. Guilford Press.</li>
+            <li>Individuals with Disabilities Education Act, 20 U.S.C. § 1400. (2004).</li>
+            <li>Katusic, S. K., Colligan, R. C., Weaver, A. L., & Barbaresi, W. J. (2009). The forgotten learning disability. <i>Pediatrics</i>. https://doi.org/10.1542/peds.2008-2098</li>
+            <li>MacArthur, C. A. (2009). Reflections on research on writing and technology for struggling writers. <i>Learning Disabilities Research & Practice</i>. https://doi.org/10.1111/j.1540-5826.2009.00286.x</li>
+            <li>Mayes, S. D., Calhoun, S. L., Bixler, E. O., & Zimmerman, D. N. (2009). IQ and neuropsychological predictors of academic achievement. <i>Learning and Individual Differences</i>. https://doi.org/10.1016/j.lindif.2008.09.001</li>
+            <li>Nelson, J. M., & Harwood, H. (2011). Learning disabilities and anxiety: A meta-analysis. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219409359939</li>
+            <li>Peverly, S. T. (2006). The importance of handwriting speed in adult writing. <i>Developmental Neuropsychology</i>. https://doi.org/10.1207/s15326942dn2901_10</li>
+            <li>Sireci, S. G., Scarpati, S. E., & Li, S. (2005). Test accommodations for students with disabilities. <i>Review of Educational Research</i>. https://doi.org/10.3102/00346543075004457</li>
+            <li>West, T. G. (1997). <i>In the mind's eye: Visual thinkers, gifted people with dyslexia</i>. Prometheus Books.</li>
+          </ul>
         </div>
-      </section>
-
-      <div className="mt-8">
-        <a 
-          href="#" 
-          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('dysgraphia'); }}
-          className="text-[#2abcd4] hover:underline cursor-pointer"
-        >
-          ← Back to Dysgraphia
-        </a>
       </div>
     </article>
   );

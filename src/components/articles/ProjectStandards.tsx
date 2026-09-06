@@ -47,19 +47,13 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           </ul>
         </div>
       </section>
-      {/* 1. IMAGE PLACEMENT, CLEARING & NAMING STANDARDS */}
+      {/* 1. IMAGE PLACEMENT and CLEARING STANDARDS */}
       <section className="mb-12">
         <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
-          <Move className="text-[#2abcd4]" /> IMAGE PLACEMENT, NAMING & POSITIONING
+          <Move className="text-[#2abcd4]" /> IMAGE PLACEMENT & POSITIONING
         </h2>
         
-        <div className="bg-[#f0f9ff] border-l-4 border-[#2abcd4] p-5 mb-6 rounded-r-xl shadow-sm">
-          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">File Naming Convention:</h3>
-          <p className="text-sm text-gray-700 mb-2">All graphics must follow this exact naming structure to maintain consistency across the platform:</p>
-          <code className="text-sm font-bold bg-white text-[#2abcd4] p-3 rounded border border-[#2abcd4] border-opacity-20 block w-full break-all">
-            neurodivergence-section-tab-detail-about-pic.webp
-          </code>
-        </div>
+
 
         <p className="text-sm mb-6 text-gray-600">All graphics must be implemented using the <code className="bg-gray-100 px-1 rounded">ImageWithFallback</code> component. Use these patterns for consistency:</p>
         
@@ -312,7 +306,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
           <Layout className="text-[#2abcd4]" /> CARD STYLING & CONTAINERS
         </h2>
         
-        <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
+        <div className="bg-white border border-gray-200 p-5 rounded-lg shadow-sm mb-6">
           <h3 className="font-bold text-[#0c264d] mb-3 uppercase text-xs">Standard Card Color Rules</h3>
           <p className="text-sm text-gray-700 mb-4">
             To break up dense text, content sections should be wrapped in colorful, styled cards. Card backgrounds must <strong>always</strong> be a lightened/pastel version of our core colors, paired with a darker, thicker border of the same color family. Use these exact combinations unless otherwise specified:
@@ -325,6 +319,24 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
             <li className="text-red-700 font-bold mt-4 pt-2 border-t border-gray-100"><strong>"DO NOT" / Warning Cards:</strong> <code className="bg-red-50 px-2 py-1 rounded border border-red-200 text-red-700 break-words">bg-white border-4 border-red-500</code></li>
           </ul>
         
+        </div>
+{/* TYPOGRAPHY SIZING RULE */}
+        <div className="bg-[#f0f9ff] border-l-4 border-[#2abcd4] p-5 mb-6 rounded-r-xl shadow-sm mb-6">
+          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">Typography Sizing: Paragraphs vs. Mini-Card Lists</h3>
+          <p className="text-sm text-slate-700 mb-6">
+            To maintain a clean, breathable design hierarchy, strict font sizing rules apply to separate standard reading text from dense bulleted information.
+          </p>
+          <ul className="list-disc ml-5 text-sm text-slate-700 space-y-3">
+            <li>
+              <strong>Intro & Hero Paragraphs (<code className="bg-white px-1 text-green-700 rounded border border-gray-200">text-sm</code>):</strong> Any standard paragraph text—whether it is floating next to an image, or centered directly below a hero graphic—must remain at the standard <code className="bg-white px-1 text-green-700 rounded border border-gray-200">text-sm</code> size to ensure maximum readability.
+            </li>
+            <li>
+              <strong>Mini-Card Bulleted Lists (<code className="bg-white px-1 text-green-700 rounded border border-gray-200">text-xs</code>):</strong> To prevent text from feeling cramped, bulleted lists placed inside smaller grid cards (especially in dense 3-column or 4-column layouts) must be scaled down.
+            </li>
+            <li>
+              <strong>Implementation:</strong> <code className="bg-white px-1 text-[#0c264d] rounded border border-gray-200 break-all">&lt;ul className="list-disc ml-5 text-xs text-slate-700 space-y-2"&gt;</code>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -344,7 +356,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         <ul className="list-disc ml-8 space-y-2 mb-4">
           <li><strong>DO NOT</strong> use Tailwind font size classes (text-xl, text-2xl, etc.) unless specifically requested</li>
           <li><strong>DO NOT</strong> use Tailwind font weight classes (font-bold, font-semibold, etc.) unless specifically requested</li>
-          <li><strong>Exception:</strong> <code className="bg-gray-100 px-2 py-1 rounded break-words">text-sm</code> is standardized for ALL tabs across all subpages (14px)</li>
+          <li><strong>Exception:</strong> Except for the cards that have bulleted lists inside them -- as mentioned under mini-card bulleted lists above, where those are text-xs -- <code className="bg-gray-100 px-2 py-1 rounded break-words">text-sm</code> is standardized for ALL tabs across all subpages (14px)</li>
           <li>Default body text relies on globals.css styling</li>
         </ul>
 
@@ -356,17 +368,7 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         </ul>
       </section>
 
-      {/* 6. INFORMATION ARCHITECTURE & TAB ORDERING */}
-      <section className="mb-12">
-        <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
-          <Layout className="text-[#2abcd4]" /> INFORMATION ARCHITECTURE
-        </h2>
 
-        <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-5 rounded-r-lg">
-          <h3 className="font-bold text-[#0c264d] mb-2">Graphic Naming Integrity</h3>
-          <p className="text-sm text-gray-800">If a graphic's file name no longer matches its tab location due to restructuring (e.g., an "overview" graphic is moved into the "genetics" tab), <strong>maintain the original file name</strong>. Do not rename the file, as this prevents broken links across the platform.</p>
-        </div>
-      </section>
 
       {/* 7. TABS & NAVIGATION BUTTONS */}
       <section className="mb-12">
@@ -417,9 +419,27 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
         </div>
       </section>
 
-      {/* CRITICAL ALERTS */}
+        {/*  INFORMATION ARCHITECTURE & TAB ORDERING */}
       <section className="mb-12">
-        <div className="bg-red-200 text-[#0c264d] p-6 rounded-2xl flex items-start gap-4 shadow-xl">
+        <h2 className="text-[#0c264d] text-2xl font-bold mb-6 flex items-center gap-2 border-b pb-2">
+          <Layout className="text-[#2abcd4]" /> INFORMATION ARCHITECTURE
+        </h2>
+        <div className="bg-[#f0f9ff] border-l-4 border-[#2abcd4] p-5 mb-6 rounded-r-xl shadow-sm">
+          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">File Naming Convention:</h3>
+          <p className="text-sm text-gray-700 mb-2">All graphics must follow this exact naming structure to maintain consistency across the platform:</p>
+          <code className="text-sm font-bold bg-white text-[#2abcd4] p-3 rounded border border-[#2abcd4] border-opacity-20 block w-full break-all">
+            neurodivergence-section-tab-detail-about-pic.webp
+          </code>
+        </div>
+        <div className="bg-[#ffd166] bg-opacity-20 border-l-4 border-[#ffd166] p-5 rounded-r-lg">
+          <h3 className="font-bold text-[#0c264d] mb-2">Graphic Naming Integrity</h3>
+          <p className="text-sm text-gray-800">If a graphic's file name no longer matches its tab location due to restructuring (e.g., an "overview" graphic is moved into the "genetics" tab), <strong>maintain the original file name</strong>. Do not rename the file, as this prevents broken links across the platform.</p>
+        </div>
+      </section>
+
+    {/* CRITICAL ALERTS */}
+      <section className="mb-12">
+        <div className="bg-red-200 text-[#0c264d] p-6 rounded-2xl flex items-start gap-4 shadow-xl mb-6">
           <AlertTriangle size={48} className="shrink-0 text-red-600" />
           <div className="min-w-0">
             <h2 className="text-xl font-bold mb-2 uppercase text-[#0c264d]">Graphic Integrity Rule</h2>
@@ -427,6 +447,16 @@ export default function ProjectStandards({ setCurrentArticle }: ProjectStandards
               When updating text or citations, ALWAYS preserve imported graphics. Do NOT remove <code className="bg-white px-1 rounded text-[#0c264d] break-words">ImageWithFallback</code> components or change image placements unless explicitly requested.
             </p>
           </div>
+          
+        </div>
+        <div className="bg-yellow-200 border-l-4 border-[#2abcd4] p-5 mb-6 rounded-r-xl shadow-sm">
+          <h3 className="font-bold text-[#0c264d] mb-2 uppercase text-xs">Image Component Imports</h3>
+          <p className="text-sm text-slate-700">
+            All images must utilize the custom fallback component. Ensure the relative import path is correct based on the file's depth in the directory structure. The following example is the correct one to use in almost all cases. 
+          </p>
+          <code className="bg-white px-2 py-1 text-[#0c264d] rounded border border-gray-200 mt-2 block w-full text-xs">
+            import &#123; ImageWithFallback &#125; from '../../figma/ImageWithFallback';
+          </code>
         </div>
       </section>
 

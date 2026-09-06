@@ -34,86 +34,98 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         <div className="clear-both"></div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 mb-8">
-        {/* Structural Differences */}
-        <div className="bg-pink-50 p-5 rounded-lg shadow-sm border-l-4 border-[#2abcd4]">
-          <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Structural Brain Differences</h3>
-          <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
-            <p>Specific brain parts are observed in individuals with autism.</p>
-            <li><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in the frontal cortex.</li>
-            <li><strong>Altered connectivity:</strong> Differences in how brain regions connect and structurally communicate.</li>
-            <li><strong>Regional differences:</strong> Variations in size and structure of specific brain areas including the amygdala, cerebellum, and corpus callosum.</li>
-            <li><strong>White matter differences:</strong> Atypical development of myelin and white matter tracts.</li>
-          </ul>
-        </div>
-
-        {/* Functional Differences */}
-        <div className="bg-purple-50 p-5 rounded-lg shadow-sm border-l-4 border-[#ffd166]">
-          <h3 className="font-bold mb-3 text-lg font-spartan text-[#0c264d]">Functional Brain Differences</h3>
-          <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
-            <p>Functional differences in the autistic brain involve how different regions work together and process information.</p>
-            <li><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions.</li>
-            <li><strong>Social brain networks:</strong> Differences in activation of brain regions involved in social cognition.</li>
-            <li><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli.</li>
-            <li><strong>Default mode network:</strong> Differences in brain networks active during rest and self-referential thinking.</li>
-          </ul>
-        </div>
-      </div>
- 
-
+{/* Structural Differences - Stack and Center w-96 */}
+      <div className="bg-pink-50 border-2 border-pink-200 rounded-xl p-8 shadow-sm mb-8">
+ <h3 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Structural Differences</h3>
+        
         <ImageWithFallback 
           src="/images/autism/autism-causes-Braintab-brain-structure.webp" 
           alt="Brain connectivity and neural networks in autism"
-          className="w-96 h-auto float-left mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
+          className="w-96 h-auto block mx-auto mb-6 rounded-xl shadow-md border border-gray-300"
         />
 
-      
-       <ImageWithFallback 
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm text-gray-700 leading-relaxed text-center mb-6">
+            Specific physical differences in brain architecture are consistently observed in individuals with autism.
+          </p>
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-pink-100">
+            <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
+              <li><strong>Brain overgrowth:</strong> Many autistic children show accelerated brain growth in early childhood, particularly in the frontal cortex.</li>
+              <li><strong>Altered connectivity:</strong> Differences in how brain regions connect and structurally communicate.</li>
+              <li><strong>Regional differences:</strong> Variations in size and structure of specific brain areas including the amygdala, cerebellum, and corpus callosum.</li>
+              <li><strong>White matter differences:</strong> Atypical development of myelin and white matter tracts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Functional Differences - Stack and Center w-96 */}
+      <div className="bg-purple-50 border-2 border-purple-200 rounded-xl p-8 shadow-sm mb-8">
+        <h3 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Functional Differences</h3>
+        
+        <ImageWithFallback 
           src="/images/autism/autism-causes-Braintab-fxn-structure.webp" 
           alt="Brain connectivity and neural networks in autism"
-          className="w-96 h-auto float-right mr-6 mb-4 rounded-xl shadow-md border border-gray-300"
+          className="w-96 h-auto block mx-auto mb-6 rounded-xl shadow-md border border-gray-300"
         />
 
-        <div className="clear-both"></div>
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm text-gray-700 leading-relaxed text-center mb-6">
+            Functional differences in the autistic brain involve how different physical regions actively work together to process information.
+          </p>
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-purple-100">
+            <ul className="list-disc ml-5 space-y-2 text-sm text-gray-700">
+              <li><strong>Neural connectivity patterns:</strong> Reduced long-range connectivity but increased local connectivity in some regions.</li>
+              <li><strong>Social brain networks:</strong> Differences in activation of brain regions involved in social cognition.</li>
+              <li><strong>Sensory processing:</strong> Atypical neural responses to sensory stimuli.</li>
+              <li><strong>Default mode network:</strong> Differences in brain networks active during rest and self-referential thinking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <div className="clear-both"></div>
+ <h1 className="font-bold mb-8 text-xl text-center font-spartan text-[#0c264d]">CELLULAR and MOLECULAR LEVEL</h1>
       {/* Cellular and Molecular Level Section */}
-      <div className="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#2abcd4] mb-10">
-        <h3 className="font-bold mb-8 text-xl text-center font-spartan text-[#0c264d]">Cellular and Molecular Level</h3>
+
+       
         
         <div className="flex flex-col gap-8 mb-8">
           
           {/* Item 1: Synapses */}
-          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
-            <ImageWithFallback 
-              src="/images/autism/autism-causes-Braintab-synapse.webp" 
-              alt="Synaptic connections"
-              className="w-full rounded-lg shadow-sm object-contain bg-white"
-            />
-            <div className="w-full mx-auto">
+          <div className="w-full flex flex-col items-center gap-5 bg-yellow-100 p-6 rounded-xl border border-yellow-500 shadow-sm">
+                       <div className="w-full  mx-auto">
               <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Synapses</h4>
               <p className="text-sm text-[#0c264d] leading-relaxed bg-[#79e1fd] p-5 rounded-lg border border-gray-200">
                 Synapses are the critical junctions where neurons communicate via chemical signals. In autistic brain development, research frequently shows differences in <strong>synaptic pruning</strong>—the process where the brain eliminates extra or unused connections to streamline function. This can result in an altered number (often an overabundance) of connections, or variations in their physical structure, ultimately changing how information is processed and integrated.
               </p>
-            </div>
+            </div> 
+            <ImageWithFallback 
+              src="/images/autism/autism-causes-Braintab-synapse.webp" 
+              alt="Synaptic connections"
+              className="w-96 rounded-lg shadow-sm object-contain bg-white"
+            />
+
           </div>
 
-          {/* Item 2: Neuronal Migration */}
-          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+          {/* Item: Neuronal Migration */}
+          <div className="w-full flex flex-col items-center gap-5 bg-green-100 p-6 rounded-xl border border-green-500 shadow-sm">
+                     <div className="w-full mx-auto">
+              <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Neuronal Migration</h4>
+<p className="text-sm text-[#0c264d] leading-relaxed bg-[#79e1fd] p-5 rounded-lg border border-gray-200">
+  During fetal development, neurons must travel from their origin point to highly precise locations within the cortex to form functional circuits. Research indicates that in autism, this complex migration process is sometimes disrupted, creating "heterotopic patches" of misplaced neurons that structurally shift the brain toward increased local, short-range connectivity.<sup className="text-[#10b981] font-bold ml-0.5">1, 2</sup>
+</p>
+            </div>   
             <ImageWithFallback 
               src="/images/autism/autism-causes-Braintab-fetus-brain-firings.webp" 
               alt="Neuronal migration during fetal development"
               className="w-full rounded-lg shadow-sm object-contain bg-white"
             />
-            <div className="w-full mx-auto">
-              <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Neuronal Migration</h4>
-              <p className="text-sm text-[#0c264d] leading-relaxed bg-[#79e1fd] p-5 rounded-lg border border-gray-200">
-                During fetal development, neurons must travel from their origin point to highly precise locations within the cortex to form functional circuits. In autism, this complex migration process can be atypical, occasionally leading to patches of disorganized cellular architecture. This foundational difference contributes to the unique structural pathways and the altered balance of local versus long-range neural networking seen in autistic individuals.
-              </p>
-            </div>
+
           </div>
 
           {/* Item 3: E/I Balance */}
-          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+          <div className="w-full flex flex-col items-center gap-5 bg-blue-100 p-6 rounded-xl border border-blue-500 shadow-sm">
             <ImageWithFallback 
               src="/images/autism/autism-cause-Braintab-EI.webp" 
               alt="E/I Balance neurotransmission"
@@ -132,11 +144,11 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           </div>
 
           {/* Item 4: Mitochondrial Function */}
-          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+          <div className="w-full flex flex-col items-center gap-5 bg-purple-50 p-6 rounded-xl border border-purple-300 shadow-sm">
             <ImageWithFallback 
               src="/images/autism/autism-causes-Braintab-mitochondrial.webp" 
               alt="Mitochondrial function and cellular energy"
-              className="w-full rounded-lg shadow-sm object-contain bg-white"
+              className="w-96 rounded-lg shadow-sm object-contain bg-white"
             />
             <div className="w-full mx-auto">
               <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Mitochondrial Function</h4>
@@ -147,11 +159,11 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
           </div>
 
           {/* Item 5: Neuroinflammation */}
-          <div className="w-full flex flex-col items-center gap-5 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+          <div className="w-full flex flex-col items-center gap-5 bg-orange-100 p-6 rounded-xl border border-orange-500 shadow-sm">
             <ImageWithFallback 
               src="/images/autism/autism-causes-Braintab-neuroinflammation.webp" 
               alt="Neuroinflammation in the brain"
-              className="w-full rounded-lg shadow-sm object-contain bg-white"
+              className="w-96 rounded-lg shadow-sm object-contain bg-white"
             />
             <div className="w-full mx-auto">
               <h4 className="font-bold text-[#0c264d] mb-3 text-xl text-center">Neuroinflammation</h4>
@@ -175,7 +187,8 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
             Cited Studies & Statistics
           </h4>
           <div className="text-xs space-y-4 text-slate-700 leading-relaxed italic" style={{ textIndent: 0 }}>
-            <p>No explicit statistical claims or empirical studies directly cited in the text of this section.</p>
+<p>1. Courchesne, E., Mouton, P. R., Calhoun, M. E., Semendeferi, K., Ahrens-Barbeau, C., Hallet, M. J., Barnes, C. C., & Pierce, K. (2011). Brain growth across the life span in autism: Age-specific changes in anatomical pathology. <i>Brain Research</i>. https://doi.org/10.1016/j.brainres.2010.11.043</p>
+    <p>2. Belmonte, M. K., Allen, G., Beckel-Mitchener, A., Boulanger, L. M., Carper, R. A., & Webb, S. J. (2004). Autism and abnormal development of brain connectivity. <i>Journal of Neuroscience</i>. https://doi.org/10.1523/JNEUROSCI.4346-04.2004</p>
           </div>
         </div>
         
@@ -196,6 +209,6 @@ export function BrainDevelopment({ setCurrentArticle }: BrainDevelopmentProps) {
         </div>
       </div>
     </div>
-  </div>
+  
   );
 }

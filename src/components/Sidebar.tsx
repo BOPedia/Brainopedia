@@ -9,6 +9,7 @@ interface SidebarProps {
 }
 
 const categories = [
+  
   {
     name: 'Core Neurodevelopmental',
     // Lightened version of Dark Cyan (#0A9DC4)
@@ -102,15 +103,7 @@ const categories = [
 ];
 
 export function Sidebar({ currentArticle, setCurrentArticle, isOpen, closeSidebar }: SidebarProps) {
-  const [expandedCategories, setExpandedCategories] = React.useState<Record<string, boolean>>({
-    'Core Neurodevelopmental': true,
-    'Learning Differences & Profiles': true,
-    'Processing & Sensory': true,
-    'Movement & Motor': true,
-    'Mental Health Crossovers': true,
-    'Genetic or Environmental': true,
-    'Acquired Neurodivergence': true,
-  });
+const [expandedCategories, setExpandedCategories] = React.useState<Record<string, boolean>>({});
 
   const toggleCategory = (categoryName: string) => {
     setExpandedCategories(prev => ({

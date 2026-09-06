@@ -1,512 +1,482 @@
+import { useState } from 'react';
 import { ImageWithFallback } from '../../figma/ImageWithFallback';
 
 interface DysgraphiaDiagnosisProps {
   setCurrentArticle?: (article: string) => void;
+  initialTab?: string;
 }
 
-export function DysgraphiaDiagnosis({ setCurrentArticle }: DysgraphiaDiagnosisProps) {
+export function DysgraphiaDiagnosis({ setCurrentArticle, initialTab }: DysgraphiaDiagnosisProps) {
+  const [activeTab, setActiveTab] = useState(initialTab || 'who');
+
   return (
-    <article className="max-w-6xl">
-      <style>
-        {`
-          sup {
-            color: #10b981;
-          }
-        `}
-      </style>
-      <div className="mb-6">
-        <a 
-          href="#" 
-          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('dysgraphia'); }}
-          className="text-[#2abcd4] hover:underline cursor-pointer"
+    <article className="max-w-6xl font-spartan animate-in fade-in duration-300 w-full min-w-0">
+      
+      {/* HEADER */}
+      <div className="pb-2 border-b-2 border-[#0c264d] mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <h1 className="text-3xl font-normal text-[#0c264d]">
+          Dysgraphia: Testing & Diagnosing
+        </h1>
+
+        <button 
+          onClick={() => setCurrentArticle?.('dysgraphia')}
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:block hidden"
         >
-          ← Back to Dysgraphia
-        </a>
+          <span className="text-xl">←</span>
+          Back to Dysgraphia
+        </button>
       </div>
 
-      <h1 className="pb-2 border-b-2 border-[#0c264d] mb-6 text-3xl">
-        Dysgraphia: Testing & Diagnosing
-      </h1>
+      {/* Mobile Back Button */}
+      <button 
+        onClick={() => setCurrentArticle?.('dysgraphia')}
+        className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal py-2.5 px-5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-sm shrink-0 md:hidden mb-6"
+      >
+        <span className="text-xl">←</span>
+        Back to Dysgraphia
+      </button>
 
-      <div className="space-y-8">
-        <div>
-          <p className="mb-4">
-            Diagnosing dysgraphia involves comprehensive evaluation by qualified professionals using standardized assessments, 
-            behavioral observations, and analysis of writing samples.<sup>1</sup> Early and accurate diagnosis is crucial for 
-            accessing appropriate interventions and accommodations.<sup>2</sup>
+      {/* Tab Navigation */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 clear-both">
+        <button
+          onClick={() => setActiveTab('who')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal text-sm shadow-sm ${
+            activeTab === 'who'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          When & Who
+        </button>
+        <button
+          onClick={() => setActiveTab('assessment')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal text-sm shadow-sm ${
+            activeTab === 'assessment'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          The Assessment
+        </button>
+        <button
+          onClick={() => setActiveTab('results')}
+          className={`px-6 py-3 rounded-md transition-colors font-normal text-sm shadow-sm ${
+            activeTab === 'results'
+              ? 'bg-[#0A9DC4] text-white'
+              : 'bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white'
+          }`}
+        >
+          Results & Path
+        </button>
+      </div>
+
+      {/* ==========================================
+          TAB 1: WHEN & WHO
+      ========================================== */}
+      {activeTab === 'who' && (
+        <div className="space-y-8 animate-fadeIn">
+          
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            Accurate diagnosis of dysgraphia requires a comprehensive, multi-disciplinary assessment conducted by qualified educational or clinical professionals. Early identification is highly critical, but pursuing an evaluation at any age provides invaluable insights and opens doors to legally protected academic accommodations.
           </p>
-        </div>
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Who Can Diagnose Dysgraphia?</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Qualified Professionals</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Educational psychologists:</strong> Specialists in learning disabilities and academic assessment<sup>3</sup></li>
-            <li className="mb-2"><strong>Neuropsychologists:</strong> Experts in brain-behavior relationships</li>
-            <li className="mb-2"><strong>School psychologists:</strong> Conduct evaluations within educational settings<sup>4</sup></li>
-            <li className="mb-2"><strong>Occupational therapists:</strong> Assess fine motor and graphomotor skills<sup>5</sup></li>
-            <li className="mb-2"><strong>Speech-language pathologists:</strong> When language components are involved</li>
-          </ul>
+          {/* When to Seek Evaluation Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">When to Seek Evaluation</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-diagnosis-evaluation.webp" 
+              alt="Educator observing a student struggling to write"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#2abcd4]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Parents and educators should trust their instincts when a child's writing struggles seem completely disproportionate to their verbal intelligence or effort. If targeted handwriting practice and classroom interventions fail to produce meaningful progress, a formal evaluation is strongly warranted.
+            </p>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Multidisciplinary Approach</h3>
-          <p className="mb-4">
-            Comprehensive evaluation often involves a team of professionals to assess different aspects:<sup>6</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Psychologist or neuropsychologist for cognitive and academic testing</li>
-            <li className="mb-2">Occupational therapist for motor skills assessment<sup>7</sup></li>
-            <li className="mb-2">Educational specialist for writing instruction analysis</li>
-            <li className="mb-2">Medical professional to rule out vision or neurological issues<sup>8</sup></li>
-          </ul>
-        </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Red Flags in Children</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li>Handwriting remains significantly worse than peers despite consistent practice.</li>
+                  <li>The physical act of writing causes visible pain, hand cramping, or fatigue.</li>
+                  <li>There is a massive, unexplained discrepancy between what they can say and what they can write.</li>
+                  <li>Writing difficulties persist forcefully beyond the 2nd or 3rd grade.</li>
+                </ul>
+              </div>
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">When to Seek Evaluation</h2>
-          
-          <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1550592704-6c76defa9985?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwd3JpdGluZyUyMG5vdGVib29rfGVufDF8fHx8MTc2NzM2NzIxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Student writing"
-            className="w-80 h-auto rounded-md border border-gray-300 float-right ml-6 mb-4"
-          />
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Red Flags in Children</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Handwriting significantly worse than peers despite practice<sup>9</sup></li>
-            <li className="mb-2">Writing causes physical pain or fatigue</li>
-            <li className="mb-2">Large discrepancy between oral and written expression<sup>1</sup></li>
-            <li className="mb-2">Extreme frustration or avoidance of writing tasks</li>
-            <li className="mb-2">Writing difficulties persist beyond grade 2-3<sup>1</sup></li>
-            <li className="mb-2">Academic performance suffering due to writing challenges</li>
-          </ul>
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Red Flags in Teens/Adults</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li>Handwriting remains largely illegible even to the writer themselves.</li>
+                  <li>Extreme difficulty completing timed written tests or taking live lecture notes.</li>
+                  <li>Intentional avoidance of any courses, majors, or jobs that require extensive hand-writing.</li>
+                  <li>Heavy, exclusive reliance on others to fill out physical forms or documents.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Red Flags in Adolescents and Adults</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Continued illegible handwriting<sup>2</sup></li>
-            <li className="mb-2">Difficulty completing timed written tests</li>
-            <li className="mb-2">Avoidance of courses or jobs requiring writing<sup>3</sup></li>
-            <li className="mb-2">Reliance on others to write for them</li>
-          </ul>
-        </div>
+          {/* Qualified Professionals Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Who Can Diagnose Dysgraphia?</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-diagnosis-professionals.webp" 
+              alt="A multi-disciplinary team reviewing a student's academic profile"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#ffd166]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              A diagnosis is rarely rendered by a single individual; it requires a multi-disciplinary approach. Evaluators synthesize raw data from standardized tests, fine motor assessments, and comprehensive developmental histories to create an accurate neuro-profile.
+            </p>
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Evaluation Process</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Step 1: Background Information</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Developmental history:</strong> Motor milestones, language development<sup>4</sup></li>
-            <li className="mb-2"><strong>Educational history:</strong> Academic performance, previous interventions</li>
-            <li className="mb-2"><strong>Family history:</strong> Learning disabilities or writing difficulties in family<sup>5</sup></li>
-            <li className="mb-2"><strong>Medical history:</strong> Vision, hearing, neurological conditions<sup>6</sup></li>
-            <li className="mb-2"><strong>Current concerns:</strong> Specific writing challenges observed</li>
-          </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Qualified Evaluators</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Educational Psychologists:</strong> Hold specialized training in identifying specific learning disabilities.</li>
+                  <li><strong>Neuropsychologists:</strong> Specialists who map exact brain-behavior relationships and cognitive processing.</li>
+                  <li><strong>Occupational Therapists:</strong> Specifically assess fine motor coordination, grip, and physical graphomotor skills.</li>
+                  <li><strong>Speech-Language Pathologists:</strong> Often involved if spelling or language formulation deficits are prominent.</li>
+                </ul>
+              </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Step 2: Interviews</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Parent/caregiver interview:</strong> Developmental concerns, home observations<sup>[17]</sup></li>
-            <li className="mb-2"><strong>Teacher interview:</strong> Classroom performance, comparison to peers</li>
-            <li className="mb-2"><strong>Student interview:</strong> Self-perception of difficulties, frustrations<sup>[18]</sup></li>
-          </ul>
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">The Collaborative Team</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Psychologist:</strong> Conducts the formal cognitive, memory, and academic achievement testing.</li>
+                  <li><strong>Special Education Teacher:</strong> Provides direct educational assessment and baseline instructional data.</li>
+                  <li><strong>Classroom Teacher:</strong> Reports on real-world classroom performance and daily avoidance behaviors.</li>
+                  <li><strong>Parents/Caregivers:</strong> Provides vital early developmental history and at-home observations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Step 3: Standardized Testing</h3>
-          <p className="mb-4">
-            Multiple standardized assessments evaluate different aspects of writing:<sup>[19]</sup>
-          </p>
-        </div>
+          {/* Diagnostic Criteria Card (Slate - Text Only) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Diagnostic Criteria</h2>
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Medical and psychological professionals rely on strictly defined global criteria to formally diagnose dysgraphia. The two primary manuals used worldwide are the DSM-5 (used primarily in the United States) and the IDEA framework for public educational classification.
+            </p>
 
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Cognitive and Academic Assessments</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Intelligence Testing</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>WISC-V or WAIS-IV:</strong> Wechsler Intelligence Scales assess cognitive abilities<sup>[20]</sup></li>
-            <li className="mb-2"><strong>Purpose:</strong> Establish that writing difficulties are not due to overall cognitive delays</li>
-            <li className="mb-2"><strong>Processing speed index:</strong> May reveal slow processing affecting writing<sup>[21]</sup></li>
-            <li className="mb-2"><strong>Working memory index:</strong> Assesses capacity for holding information while writing<sup>[22]</sup></li>
-          </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">DSM-5 Classification</h3>
+                <p className="text-xs text-slate-700 mb-2 font-bold italic">"Specific Learning Disorder with Impairment in Written Expression"</p>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li>Difficulties learning academic skills for at least 6 months despite targeted, explicit interventions.</li>
+                  <li>Specific trouble with spelling accuracy, grammar, punctuation, or clarity of written expression.</li>
+                  <li>Skills must be substantially and quantifiably below what is expected for chronological age.</li>
+                  <li>Not better explained by intellectual disabilities, poor instruction, or sensory/visual impairments.</li>
+                </ul>
+              </div>
 
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Written Language Assessments</h3>
-          <p className="mb-4">
-            Standardized tests of writing ability:<sup>[23]</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>WIAT-4:</strong> Wechsler Individual Achievement Test (spelling, sentence composition, essay composition)<sup>[24]</sup></li>
-            <li className="mb-2"><strong>WJ-IV:</strong> Woodcock-Johnson Tests (spelling, writing fluency, writing samples)</li>
-            <li className="mb-2"><strong>TOWL-4:</strong> Test of Written Language (handwriting, spelling, grammar, composition)<sup>[25]</sup></li>
-            <li className="mb-2"><strong>GORT-5:</strong> Gray Oral Reading Test (may include written retelling)</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Spelling Assessments</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>TWS-5:</strong> Test of Written Spelling<sup>[26]</sup></li>
-            <li className="mb-2"><strong>Spelling subtests:</strong> From comprehensive achievement tests</li>
-            <li className="mb-2"><strong>Error analysis:</strong> Examining types of spelling errors made<sup>[27]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Motor Skills Assessments</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Fine Motor Assessments</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>DTVP-3:</strong> Developmental Test of Visual Perception (visual-motor integration)<sup>[28]</sup></li>
-            <li className="mb-2"><strong>VMI:</strong> Beery-Buktenica Developmental Test of Visual-Motor Integration<sup>[29]</sup></li>
-            <li className="mb-2"><strong>MABC-2:</strong> Movement Assessment Battery for Children (fine motor skills)</li>
-            <li className="mb-2"><strong>Purdue Pegboard:</strong> Finger dexterity and manual coordination<sup>[30]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Handwriting-Specific Tests</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>ETCH:</strong> Evaluation Tool of Children's Handwriting (legibility, speed)<sup>[31]</sup></li>
-            <li className="mb-2"><strong>DASH:</strong> Detailed Assessment of Speed of Handwriting</li>
-            <li className="mb-2"><strong>SCRIPT:</strong> Screening for Classroom-Ready Intervention in Penmanship and dexTterity<sup>[32]</sup></li>
-            <li className="mb-2"><strong>Minnesota Handwriting Assessment:</strong> Legibility and form<sup>[33]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Motor Planning Assessments</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Finger tapping speed tests<sup>[34]</sup></li>
-            <li className="mb-2">Sequential motor tasks</li>
-            <li className="mb-2">Praxis assessments (motor planning ability)<sup>[35]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Writing Sample Analysis</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Spontaneous Writing Samples</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Collection:</strong> Gather multiple samples over time<sup>[36]</sup></li>
-            <li className="mb-2"><strong>Various genres:</strong> Narrative, expository, persuasive writing</li>
-            <li className="mb-2"><strong>Different conditions:</strong> Timed vs. untimed, with/without supports<sup>[37]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Copying Tasks</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Near-point copying (from paper on desk)<sup>[38]</sup></li>
-            <li className="mb-2">Far-point copying (from board)</li>
-            <li className="mb-2">Timed alphabet writing<sup>[39]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Analysis Criteria</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Legibility:</strong> Can writing be read?<sup>[40]</sup></li>
-            <li className="mb-2"><strong>Speed:</strong> Words per minute compared to norms</li>
-            <li className="mb-2"><strong>Letter formation:</strong> Correct formation and sizing<sup>[41]</sup></li>
-            <li className="mb-2"><strong>Spacing:</strong> Between letters, words, lines</li>
-            <li className="mb-2"><strong>Spelling:</strong> Patterns of errors<sup>[42]</sup></li>
-            <li className="mb-2"><strong>Grammar and syntax:</strong> Sentence structure, punctuation</li>
-            <li className="mb-2"><strong>Content quality:</strong> Ideas, organization, vocabulary<sup>[43]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Behavioral Observations</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">During Testing</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Pencil grip:</strong> How student holds writing instrument<sup>[44]</sup></li>
-            <li className="mb-2"><strong>Body posture:</strong> Position and alignment</li>
-            <li className="mb-2"><strong>Hand preference:</strong> Consistent use of dominant hand<sup>[45]</sup></li>
-            <li className="mb-2"><strong>Fatigue:</strong> Signs of tiring during writing</li>
-            <li className="mb-2"><strong>Frustration:</strong> Emotional responses to writing tasks<sup>[46]</sup></li>
-            <li className="mb-2"><strong>Strategy use:</strong> Compensatory strategies employed</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">In Classroom</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Note-taking ability<sup>[47]</sup></li>
-            <li className="mb-2">Completion of writing assignments</li>
-            <li className="mb-2">Comparison to peers<sup>[48]</sup></li>
-            <li className="mb-2">Avoidance behaviors</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Differential Diagnosis</h2>
-          
-          <ImageWithFallback 
-            src="https://images.unsplash.com/photo-1646442064656-1f5442f906d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5kd3JpdGluZyUyMHByYWN0aWNlfGVufDF8fHx8MTc2NzQ1MzUxMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-            alt="Handwriting practice"
-            className="w-64 h-auto rounded-md border border-gray-300 float-left mr-6 mb-4"
-          />
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Ruling Out Other Conditions</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Visual impairment:</strong> Vision screening essential<sup>[49]</sup></li>
-            <li className="mb-2"><strong>Hearing loss:</strong> May affect language and writing</li>
-            <li className="mb-2"><strong>Intellectual disability:</strong> Writing commensurate with overall ability?<sup>[50]</sup></li>
-            <li className="mb-2"><strong>Lack of instruction:</strong> Has student received adequate writing instruction?</li>
-            <li className="mb-2"><strong>English language learner status:</strong> Second language acquisition vs. disability<sup>[51]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Distinguishing from Co-occurring Conditions</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Dyslexia:</strong> Reading vs. writing primary difficulty<sup>[52]</sup></li>
-            <li className="mb-2"><strong>ADHD:</strong> Inattention vs. motor/language issues</li>
-            <li className="mb-2"><strong>Developmental coordination disorder:</strong> Isolated writing vs. general motor difficulties<sup>[53]</sup></li>
-            <li className="mb-2"><strong>Autism spectrum disorder:</strong> Broader social-communication challenges<sup>[54]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Diagnostic Criteria</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">DSM-5 Specific Learning Disorder</h3>
-          <p className="mb-4">
-            Dysgraphia falls under the DSM-5 category of Specific Learning Disorder with impairment in written expression:<sup>[55]</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Criterion A:</strong> Difficulties in at least one academic skill (writing) persisting 6+ months despite interventions</li>
-            <li className="mb-2"><strong>Criterion B:</strong> Academic skills substantially below expected for age</li>
-            <li className="mb-2"><strong>Criterion C:</strong> Difficulties begin during school years<sup>[56]</sup></li>
-            <li className="mb-2"><strong>Criterion D:</strong> Not better explained by other conditions</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">IDEA Educational Classification</h3>
-          <p className="mb-4">
-            Under IDEA, dysgraphia qualifies under Specific Learning Disability (SLD):<sup>[57]</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Disorder in basic psychological processes</li>
-            <li className="mb-2">Affects written expression ability</li>
-            <li className="mb-2">Not primarily due to other disabilities<sup>[58]</sup></li>
-            <li className="mb-2">Requires special education services</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Severity Levels</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Mild:</strong> Difficulties manageable with accommodations<sup>[59]</sup></li>
-            <li className="mb-2"><strong>Moderate:</strong> Requires intensive intervention</li>
-            <li className="mb-2"><strong>Severe:</strong> Requires intensive, ongoing support across settings<sup>[60]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">The Evaluation Report</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Components of a Comprehensive Report</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Background information:</strong> Reason for referral, developmental/educational history<sup>[61]</sup></li>
-            <li className="mb-2"><strong>Tests administered:</strong> List of all assessments used</li>
-            <li className="mb-2"><strong>Test results:</strong> Scores and interpretations<sup>[62]</sup></li>
-            <li className="mb-2"><strong>Behavioral observations:</strong> Observations during testing</li>
-            <li className="mb-2"><strong>Summary and diagnosis:</strong> Integrative interpretation<sup>[63]</sup></li>
-            <li className="mb-2"><strong>Recommendations:</strong> Specific interventions and accommodations</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Understanding Test Scores</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Standard scores:</strong> Mean of 100, standard deviation of 15<sup>[64]</sup></li>
-            <li className="mb-2"><strong>Percentile ranks:</strong> Comparison to age peers</li>
-            <li className="mb-2"><strong>Grade equivalents:</strong> Performance compared to grade levels<sup>[65]</sup></li>
-            <li className="mb-2"><strong>Significant discrepancies:</strong> Between ability and writing achievement</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">School-Based Evaluations</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Requesting an Evaluation</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Parent/guardian request:</strong> Written request to school for evaluation<sup>[66]</sup></li>
-            <li className="mb-2"><strong>Teacher referral:</strong> Concerns about academic performance</li>
-            <li className="mb-2"><strong>Response to Intervention (RTI):</strong> Data showing lack of progress with interventions<sup>[67]</sup></li>
-            <li className="mb-2"><strong>Timeline:</strong> Schools have specific timelines to complete evaluation (typically 60 days)</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">IEP or 504 Plan</h3>
-          <p className="mb-4">
-            Based on evaluation results:<sup>[68]</sup>
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>IEP (Individualized Education Program):</strong> For students qualifying under IDEA requiring special education</li>
-            <li className="mb-2"><strong>504 Plan:</strong> For students needing accommodations but not special education<sup>[69]</sup></li>
-            <li className="mb-2"><strong>Team meeting:</strong> Parents, teachers, specialists develop plan</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Private Evaluations</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">When to Consider Private Testing</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">School evaluation incomplete or insufficient<sup>[70]</sup></li>
-            <li className="mb-2">Disagreement with school evaluation results</li>
-            <li className="mb-2">More comprehensive assessment desired<sup>[71]</sup></li>
-            <li className="mb-2">Adult seeking diagnosis</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Costs and Insurance</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Private evaluations can cost $1,500-$5,000+<sup>[72]</sup></li>
-            <li className="mb-2">Some insurance plans may cover portion</li>
-            <li className="mb-2">Sliding scale options may be available<sup>[73]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Evaluating Adults</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Unique Considerations</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Compensatory strategies:</strong> May mask difficulties<sup>[74]</sup></li>
-            <li className="mb-2"><strong>Career impact:</strong> How writing affects work performance</li>
-            <li className="mb-2"><strong>Educational history:</strong> Past struggles may indicate long-standing condition<sup>[75]</sup></li>
-            <li className="mb-2"><strong>Accommodations needed:</strong> For college or workplace</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">College and Workplace Documentation</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Current diagnosis required (typically within 3-5 years)<sup>[76]</sup></li>
-            <li className="mb-2">Specific recommendations for accommodations</li>
-            <li className="mb-2">Evidence of substantial limitation<sup>[77]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">After Diagnosis: Next Steps</h2>
-          
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Understanding the Diagnosis</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Review evaluation report thoroughly<sup>[78]</sup></li>
-            <li className="mb-2">Ask questions about unclear findings</li>
-            <li className="mb-2">Understand strengths as well as weaknesses<sup>[79]</sup></li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Implementing Recommendations</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2"><strong>Interventions:</strong> Begin recommended therapies and instruction<sup>[80]</sup></li>
-            <li className="mb-2"><strong>Accommodations:</strong> Implement at school or work</li>
-            <li className="mb-2"><strong>Assistive technology:</strong> Explore recommended tools<sup>[81]</sup></li>
-            <li className="mb-2"><strong>Progress monitoring:</strong> Track response to interventions</li>
-          </ul>
-
-          <h3 className="text-[#0c264d] font-bold mb-3 text-lg">Re-evaluation</h3>
-          <ul className="list-disc ml-6 mb-4">
-            <li className="mb-2">Schools: Re-evaluation every 3 years (or as needed)<sup>[82]</sup></li>
-            <li className="mb-2">Updates for college/workplace: As required by institution</li>
-            <li className="mb-2">Monitor effectiveness of interventions<sup>[83]</sup></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">Important Considerations</h2>
-          
-          <div className="bg-white rounded-md border-2 border-[#2abcd4] p-6">
-            <h3 className="text-[#0c264d] font-bold mb-3">Remember:</h3>
-            <ul className="list-disc ml-6 space-y-2 text-sm">
-              <li>Diagnosis is a tool for accessing support, not a label<sup>[84]</sup></li>
-              <li>Early identification leads to better outcomes</li>
-              <li>Comprehensive evaluation considers multiple factors<sup>[85]</sup></li>
-              <li>Parents have right to be involved in evaluation process</li>
-              <li>Diagnosis can bring relief and understanding<sup>[86]</sup></li>
-              <li>Focus on strengths and how to support challenges</li>
-            </ul>
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">IDEA Educational Classification</h3>
+                <p className="text-xs text-slate-700 mb-2 font-bold italic">Qualifies under "Specific Learning Disability (SLD)"</p>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li>Must demonstrate a disorder in one or more basic psychological processes.</li>
+                  <li>Must severely affect the student's ability to engage in written expression.</li>
+                  <li>Must not be primarily due to other disabilities (like blindness) or economic disadvantage.</li>
+                  <li>Must definitively require the implementation of special education services to succeed.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+      )}
+
+      {/* ==========================================
+          TAB 2: THE ASSESSMENT
+      ========================================== */}
+      {activeTab === 'assessment' && (
+        <div className="space-y-8 animate-fadeIn">
+          
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            A proper dysgraphia evaluation goes far beyond simply looking at a messy handwriting sample. Evaluators systematically measure innate intelligence, fine motor coordination, and spelling memory to pinpoint the exact cognitive bottlenecks causing the writing failure.
+          </p>
+
+          {/* Core Components Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Core Assessment Components</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-diagnosis-components.webp" 
+              alt="Standardized cognitive testing materials on a desk"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#2abcd4]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              To ensure an accurate diagnosis, psychologists utilize a battery of standardized tests that measure both general intelligence and specific academic achievement. This allows the evaluator to confirm that the student's writing struggles are an isolated neurological difference rather than a general cognitive delay.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Cognitive & Intelligence</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>IQ Testing (WISC/WAIS):</strong> Assesses verbal reasoning, visuospatial processing, and overall cognitive ability to establish a baseline.</li>
+                  <li><strong>Processing Speed:</strong> Pinpoints how quickly the brain can process and react to visual information.</li>
+                  <li><strong>Working Memory:</strong> Assesses the exact capacity for holding orthographic information in the mind while writing.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Academic & Spelling</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Achievement Tests (WIAT/WJ):</strong> Accurately measures exact grade-level skills in spelling, sentence composition, and essay drafting.</li>
+                  <li><strong>Spelling Diagnostics:</strong> Tools like the TWS-5 evaluate whether spelling errors are phonetic, sequential, or orthographic.</li>
+                  <li><strong>Error Analysis:</strong> Deeply examining the specific types of spelling errors made across different writing conditions.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Motor Skills & Samples Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Motor Skills & Writing Samples</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-diagnosis-skills.webp" 
+              alt="Occupational therapist assessing fine motor grip"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#ffd166]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Because dysgraphia frequently involves dyspraxia (motor planning deficits), occupational therapists perform specialized physical assessments. These physical tests are cross-referenced with spontaneous writing samples to see how the student's motor skills hold up under real academic pressure.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Fine Motor & Integration</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Visual-Motor Integration (VMI):</strong> Tests how well the eyes and hands coordinate during drawing tasks.</li>
+                  <li><strong>Pegboard Tests:</strong> Evaluates raw finger dexterity and manual bilateral coordination.</li>
+                  <li><strong>Handwriting Speed (DASH):</strong> Specifically measures the speed and legibility of handwriting under timed conditions.</li>
+                  <li><strong>Motor Planning:</strong> Assessments involving sequential tapping or complex, repetitive motor tasks.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Sample Analysis</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Spontaneous Generation:</strong> Comparing untimed, creative writing samples against high-pressure, timed tests.</li>
+                  <li><strong>Copying Tasks:</strong> Evaluating the speed and accuracy of copying text from a distant board versus a nearby piece of paper.</li>
+                  <li><strong>Legibility & Spacing:</strong> Objectively scoring the formation of letters and the spatial organization of the page.</li>
+                  <li><strong>Grammar vs. Ideas:</strong> Looking for a discrepancy between the quality of the ideas and the mechanical grammar used to express them.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Differential Diagnosis Card (Slate - Text Only) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">Differential Diagnosis</h2>
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Evaluators must ensure the writing difficulties are not better explained by other environmental, sensory, or cognitive factors. This careful elimination process prevents misdiagnosis and ensures the student receives the correct type of support.
+            </p>
+
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200 max-w-4xl mx-auto">
+              <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Conditions to Rule Out or Consider</h3>
+              <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                <li><strong>Visual Impairment:</strong> A standard vision screening is essential to rule out basic sight limitations.</li>
+                <li><strong>Inadequate Instruction:</strong> Ensuring the difficulties aren't strictly resulting from excessive school absences or poor foundational teaching.</li>
+                <li><strong>Dyslexia:</strong> Determining if the core deficit is rooted in reading (dyslexia) rather than primarily in writing and motor output.</li>
+                <li><strong>ADHD:</strong> Verifying if the writing errors are caused by careless impulsivity and inattention rather than true motor/language barriers.</li>
+                <li><strong>DCD/Dyspraxia:</strong> Checking if the motor difficulties are isolated to writing, or if they affect gross motor skills across the board.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ==========================================
+          TAB 3: RESULTS & PATH
+      ========================================== */}
+      {activeTab === 'results' && (
+        <div className="space-y-8 animate-fadeIn">
+          
+          <p className="text-slate-700 leading-relaxed text-sm text-center max-w-4xl mx-auto mb-8">
+            Receiving a formal dysgraphia diagnosis is not a limitation—it is a powerful tool for unlocking targeted interventions and essential structural supports. The final assessment report serves as a legal roadmap to build effective Individualized Education Programs (IEPs) and secure lifelong academic accommodations.
+          </p>
+
+          {/* The Report Card (Yellow) */}
+          <div className="bg-yellow-50 border-2 border-[#ffd166] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">The Assessment Report & Access</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-diagnosis-report.webp" 
+              alt="Parents reviewing a comprehensive assessment report"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#ffd166]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              The culmination of the testing process is a comprehensive psychological report that clearly states the diagnosis, maps out the student's unique cognitive profile, and mandates specific educational interventions. Families can pursue this evaluation either through their public school system for free, or via private clinical practice for a faster, independent perspective.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">School-Based Assessment</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Free to families:</strong> Public schools are legally mandated to evaluate if a specific disability is suspected.</li>
+                  <li><strong>Request process:</strong> Parents must submit a formal evaluation request in writing to trigger the process.</li>
+                  <li><strong>Timeline:</strong> Must legally be completed within specific timelines (typically 60 days in most U.S. states).</li>
+                  <li><strong>Purpose:</strong> Used primarily to determine eligibility for special education services and IEPs.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl shadow-sm border border-yellow-200">
+                <h3 className="text-[#0c264d] font-bold mb-3 text-lg border-b pb-2">Private Assessment</h3>
+                <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                  <li><strong>Cost:</strong> Typically ranges from $1,500 to $5,000+ depending on the region and comprehensiveness.</li>
+                  <li><strong>Advantages:</strong> Often offers a faster timeline, highly detailed cognitive mapping, and an independent clinical opinion.</li>
+                  <li><strong>School compliance:</strong> Public schools are legally required to review and consider results from private independent evaluations.</li>
+                  <li><strong>Adults:</strong> Often the only pathway for adults seeking a diagnosis for workplace or university accommodations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Next Steps Card (Cyan) */}
+          <div className="bg-cyan-50 border-2 border-[#2abcd4] rounded-xl p-6 shadow-sm">
+            <h2 className="text-[#0c264d] font-bold mb-6 text-2xl text-center">After Diagnosis: Next Steps</h2>
+            
+            <ImageWithFallback 
+              src="/images/dysgraphia/dysgraphia-diagnosis-next-steps.webp" 
+              alt="Student using a laptop as a writing accommodation"
+              className="w-64 h-auto block mx-auto mb-6 rounded-lg shadow-sm border border-[#2abcd4]"
+            />
+            
+            <p className="text-sm text-slate-700 leading-relaxed text-center mb-8 max-w-3xl mx-auto">
+              Once the report is finalized, the team must immediately translate the clinical findings into a living educational document (like an IEP or 504 Plan). This ensures the student receives consistent, evidence-based writing interventions while being shielded from traditional testing methods that unfairly penalize their motor output.
+            </p>
+
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-cyan-100 max-w-4xl mx-auto">
+              <ul className="list-disc ml-5 text-xs text-slate-700 space-y-2">
+                <li><strong>Educational Planning:</strong> Immediately begin development of an IEP or 504 Plan to legally secure support.</li>
+                <li><strong>Targeted Intervention:</strong> Begin evidence-based occupational therapy or explicit spelling/handwriting instruction.</li>
+                <li><strong>Implement Accommodations:</strong> Ensure the student has immediate access to recommended tools, particularly laptops for typing and speech-to-text software.</li>
+                <li><strong>Student Education:</strong> Have open, strengths-based conversations to help the student understand their learning profile so they can build self-advocacy skills.</li>
+                <li><strong>Re-evaluation:</strong> Schedule formal re-evaluations every 3 years (or prior to college entry) to ensure accommodations remain relevant.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Remember Card (Slate - Text Only) */}
+          <div className="bg-slate-50 border-2 border-[#0c264d] rounded-xl p-6 shadow-sm text-center">
+            <h2 className="text-[#0c264d] font-bold mb-3 text-xl">A Final Note on Diagnosis</h2>
+            <p className="text-sm text-slate-700 leading-relaxed max-w-3xl mx-auto">
+              A dysgraphia diagnosis is not a label meant to limit potential—it is an empowering tool for understanding, accessing legal support, and developing brilliant technological workarounds. With appropriate intervention and fair accommodations (like typing), individuals with dysgraphia can absolutely succeed in academia and pursue any professional career path they choose.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* FOOTER BUTTON */}
+      <div className="flex justify-end my-8 w-full clear-both">
+        <button 
+          onClick={() => setCurrentArticle?.('dysgraphia')}
+          className="bg-[#ffd166] text-[#0c264d] hover:bg-[#0c264d] hover:text-white font-normal py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-md whitespace-nowrap"
+        >
+          <span className="text-xl">←</span>
+          Back to Dysgraphia
+        </button>
       </div>
 
-      <section className="mt-12 pt-6 border-t-2 border-gray-300">
-        <h2 className="text-[#0c264d] font-bold mb-4 text-2xl">References</h2>
-        <div className="text-sm space-y-2">
-          <p>[1] Berninger, V. W., & Wolf, B. J. (2009). <em>Teaching students with dyslexia and dysgraphia</em>. Brookes Publishing.</p>
-          <p>[2] Hoy, M. M., Egan, M. Y., & Feder, K. P. (2011). "A systematic review of interventions to improve handwriting." <em>Canadian Journal of Occupational Therapy</em>, 78(1), 13-25.</p>
-          <p>[3] Sattler, J. M. (2008). <em>Assessment of children: Cognitive foundations</em> (5th ed.). Jerome M. Sattler Publisher.</p>
-          <p>[4] National Association of School Psychologists. (2020). <em>Model for comprehensive and integrated school psychological services</em>.</p>
-          <p>[5] American Occupational Therapy Association. (2014). "Occupational therapy practice framework." <em>American Journal of Occupational Therapy</em>, 68(Suppl. 1), S1-S48.</p>
-          <p>[6] Berninger, V. W., & May, M. O. (2011). "Evidence-based diagnosis and treatment for specific learning disabilities." <em>Journal of Learning Disabilities</em>, 44(2), 167-183.</p>
-          <p>[7] Feder, K. P., & Majnemer, A. (2007). "Handwriting development, competency, and intervention." <em>Developmental Medicine & Child Neurology</em>, 49(4), 312-317.</p>
-          <p>[8] Handler, S. M., & Fierson, W. M. (2011). "Learning disabilities, dyslexia, and vision." <em>Pediatrics</em>, 127(3), e818-e856.</p>
-          <p>[9] Graham, S., & Weintraub, N. (1996). "A review of handwriting research." <em>Educational Psychology Review</em>, 8(1), 7-87.</p>
-          <p>[10] Connelly, V., Campbell, S., MacLean, M., & Barnes, J. (2006). "Contribution of lower order letter writing skills." <em>Developmental Neuropsychology</em>, 29(1), 175-196.</p>
-          <p>[11] Hamstra-Bletz, L., & Blöte, A. W. (1993). "A longitudinal study on dysgraphic handwriting in primary school." <em>Journal of Learning Disabilities</em>, 26(10), 689-699.</p>
-          <p>[12] Berninger, V. W., & Fuller, F. (1992). "Gender differences in orthographic, verbal, and compositional fluency." <em>Journal of School Psychology</em>, 30(4), 363-382.</p>
-          <p>[13] Gregg, N., Coleman, C., Davis, M., & Chalk, J. C. (2007). "Timed essay writing: Implications for high-stakes tests." <em>Journal of Learning Disabilities</em>, 40(4), 306-318.</p>
-          <p>[14] Glascoe, F. P. (2005). <em>Screening for developmental and behavioral problems</em>. <em>Mental Retardation and Developmental Disabilities Research Reviews</em>, 11(3), 173-179.</p>
-          <p>[15] Schulte-Körne, G., Deimel, W., Müller, K., Gutenbrunner, C., & Remschmidt, H. (1996). "Familial aggregation of spelling disability." <em>Journal of Child Psychology and Psychiatry</em>, 37(7), 817-822.</p>
-          <p>[16] Levine, M. D. (1987). <em>Developmental variation and learning disorders</em>. Educators Publishing Service.</p>
-          <p>[17] Reynolds, C. R., & Kamphaus, R. W. (2015). <em>BASC-3: Behavior assessment system for children</em> (3rd ed.). Pearson.</p>
-          <p>[18] Gureasko-Moore, S., DuPaul, G. J., & White, G. P. (2007). "Self-management of classroom preparedness and homework." <em>School Psychology Review</em>, 36(4), 647-664.</p>
-          <p>[19] Mather, N., & Wendling, B. J. (2014). <em>Essentials of dyslexia assessment and intervention</em>. John Wiley & Sons.</p>
-          <p>[20] Wechsler, D. (2014). <em>Wechsler Intelligence Scale for Children</em> (5th ed.). Pearson.</p>
-          <p>[21] Berninger, V. W., & Richards, T. L. (2010). "Inter-relationships among behavioral markers, genes, brain, and treatment." <em>Future Neurology</em>, 5(4), 597-617.</p>
-          <p>[22] McCutchen, D. (1996). "A capacity theory of writing: Working memory in composition." <em>Educational Psychology Review</em>, 8(3), 299-325.</p>
-          <p>[23] Sattler, J. M., & Hoge, R. D. (2006). <em>Assessment of children: Behavioral, social, and clinical foundations</em> (5th ed.). Jerome M. Sattler Publisher.</p>
-          <p>[24] Wechsler, D. (2020). <em>Wechsler Individual Achievement Test</em> (4th ed.). Pearson.</p>
-          <p>[25] Hammill, D. D., & Larsen, S. C. (2009). <em>Test of Written Language</em> (4th ed.). Pro-Ed.</p>
-          <p>[26] Larsen, S. C., Hammill, D. D., & Moats, L. C. (2013). <em>Test of Written Spelling</em> (5th ed.). Pro-Ed.</p>
-          <p>[27] Moats, L. C. (1995). <em>Spelling: Development, disability, and instruction</em>. York Press.</p>
-          <p>[28] Hammill, D. D., Pearson, N. A., & Voress, J. K. (2014). <em>Developmental Test of Visual Perception</em> (3rd ed.). Pro-Ed.</p>
-          <p>[29] Beery, K. E., & Beery, N. A. (2010). <em>The Beery-Buktenica developmental test of visual-motor integration</em>. Pearson.</p>
-          <p>[30] Tiffin, J., & Asher, E. J. (1948). "The Purdue pegboard." <em>Journal of Applied Psychology</em>, 32(3), 234-247.</p>
-          <p>[31] Amundson, S. J. (1995). <em>Evaluation Tool of Children's Handwriting</em>. O.T. KIDS.</p>
-          <p>[32] Barnett, A. L., Henderson, S. E., Scheib, B., & Schulz, J. (2007). <em>Detailed Assessment of Speed of Handwriting</em>. Pearson.</p>
-          <p>[33] Reisman, J. E. (1999). <em>Minnesota Handwriting Assessment</em>. Harcourt Assessment.</p>
-          <p>[34] Deuel, R. K. (1995). "Developmental dysgraphia and motor skills disorders." <em>Journal of Child Neurology</em>, 10(Suppl 1), S6-S8.</p>
-          <p>[35] Ayres, A. J. (1989). <em>Sensory Integration and Praxis Tests</em>. Western Psychological Services.</p>
-          <p>[36] Rosenblum, S., Weiss, P. L., & Parush, S. (2003). "Product and process evaluation of handwriting difficulties." <em>Educational Psychology Review</em>, 15(1), 41-81.</p>
-          <p>[37] Graham, S., Berninger, V. W., Abbott, R. D., Abbott, S. P., & Whitaker, D. (1997). "Role of mechanics in composing." <em>Journal of Educational Psychology</em>, 89(1), 170-182.</p>
-          <p>[38] Weintraub, N., & Graham, S. (1998). "Writing legibly and quickly." <em>Learning Disabilities Research & Practice</em>, 13(3), 146-152.</p>
-          <p>[39] Berninger, V. W. (2007). <em>Process Assessment of the Learner, Second Edition: Diagnostic for Reading and Writing (PAL-II RW)</em>. Pearson.</p>
-          <p>[40] Graham, S., Berninger, V., & Weintraub, N. (2001). "Which manuscript letters do primary grade children write legibly?" <em>Journal of Educational Psychology</em>, 93(3), 488-497.</p>
-          <p>[41] Karlsdottir, R., & Stefansson, T. (2002). "Problems in developing functional handwriting." <em>Perceptual and Motor Skills</em>, 94(2), 623-662.</p>
-          <p>[42] Treiman, R. (1993). <em>Beginning to spell: A study of first-grade children</em>. Oxford University Press.</p>
-          <p>[43] Hooper, S. R., Swartz, C. W., Wakely, M. B., de Kruif, R. E., & Montgomery, J. W. (2002). "Executive functions in elementary school children." <em>Journal of Learning Disabilities</em>, 35(1), 57-68.</p>
-          <p>[44] Tseng, M. H., & Cermak, S. A. (1993). "The influence of ergonomic factors on handwriting performance." <em>American Journal of Occupational Therapy</em>, 47(10), 919-926.</p>
-          <p>[45] Smits-Engelsman, B. C., Niemeijer, A. S., & van Galen, G. P. (2001). "Fine motor deficiencies in children diagnosed as DCD." <em>Human Movement Science</em>, 20(1-2), 161-182.</p>
-          <p>[46] Nelson, J. M., & Harwood, H. (2011). "Learning disabilities and anxiety: A meta-analysis." <em>Journal of Learning Disabilities</em>, 44(1), 3-17.</p>
-          <p>[47] Peverly, S. T. (2006). "The importance of handwriting speed in adult writing." <em>Developmental Neuropsychology</em>, 29(1), 197-216.</p>
-          <p>[48] Rosenblum, S., Parush, S., & Weiss, P. L. (2003). "Computerized temporal handwriting characteristics." <em>American Journal of Occupational Therapy</em>, 57(2), 129-138.</p>
-          <p>[49] Handler, S. M., & Fierson, W. M. (2011). "Learning disabilities, dyslexia, and vision." <em>Pediatrics</em>, 127(3), e818-e856.</p>
-          <p>[50] American Psychiatric Association. (2013). <em>Diagnostic and statistical manual of mental disorders</em> (5th ed.).</p>
-          <p>[51] Ortiz, S. O., & Dynda, A. M. (2005). "Use of intelligence tests with culturally and linguistically diverse populations." In D. P. Flanagan & P. L. Harrison (Eds.), <em>Contemporary intellectual assessment</em> (2nd ed., pp. 545-556). Guilford Press.</p>
-          <p>[52] Berninger, V. W., Nielsen, K. H., Abbott, R. D., Wijsman, E., & Raskind, W. (2008). "Writing problems in developmental dyslexia." <em>Journal of School Psychology</em>, 46(1), 1-21.</p>
-          <p>[53] Dewey, D., Kaplan, B. J., Crawford, S. G., & Wilson, B. N. (2002). "Developmental coordination disorder." <em>Human Movement Science</em>, 21(5-6), 905-918.</p>
-          <p>[54] Fuentes, C. T., Mostofsky, S. H., & Bastian, A. J. (2009). "Children with autism show specific handwriting impairments." <em>Neurology</em>, 73(19), 1532-1537.</p>
-          <p>[55] American Psychiatric Association. (2013). <em>Diagnostic and statistical manual of mental disorders</em> (5th ed.).</p>
-          <p>[56] Tannock, R. (2013). "Rethinking ADHD and LD in DSM-5." <em>Journal of Learning Disabilities</em>, 46(1), 5-8.</p>
-          <p>[57] Individuals with Disabilities Education Act, 20 U.S.C. § 1400 (2004).</p>
-          <p>[58] U.S. Department of Education. (2006). <em>Identification of specific learning disabilities</em>.</p>
-          <p>[59] Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2018). <em>Learning disabilities: From identification to intervention</em> (2nd ed.). Guilford Press.</p>
-          <p>[60] Mather, N., & Wendling, B. J. (2012). <em>Essentials of evidence-based academic interventions</em>. John Wiley & Sons.</p>
-          <p>[61] Lichtenstein, R., & Karge, B. D. (1997). "Consultation and collaboration in education." In A. Thomas & J. Grimes (Eds.), <em>Best practices in school psychology III</em> (pp. 121-131). NASP.</p>
-          <p>[62] Shapiro, E. S. (2011). <em>Academic skills problems: Direct assessment and intervention</em> (4th ed.). Guilford Press.</p>
-          <p>[63] Wilson, M. S., & Reschly, D. J. (1996). "Assessment in school psychology training and practice." <em>School Psychology Review</em>, 25(1), 9-23.</p>
-          <p>[64] Sattler, J. M. (2008). <em>Assessment of children: Cognitive foundations</em> (5th ed.). Jerome M. Sattler Publisher.</p>
-          <p>[65] Salvia, J., Ysseldyke, J. E., & Witmer, S. (2016). <em>Assessment in special and inclusive education</em> (13th ed.). Cengage Learning.</p>
-          <p>[66] Wright, P. W. D., & Wright, P. D. (2006). <em>Wrightslaw: Special education law</em> (2nd ed.). Harbor House Law Press.</p>
-          <p>[67] Fuchs, D., & Fuchs, L. S. (2006). "Introduction to response to intervention." <em>Reading Research Quarterly</em>, 41(1), 93-99.</p>
-          <p>[68] Yell, M. L. (2016). <em>The law and special education</em> (4th ed.). Pearson.</p>
-          <p>[69] Section 504 of the Rehabilitation Act of 1973, 29 U.S.C. § 794.</p>
-          <p>[70] National Center for Learning Disabilities. (2014). <em>The state of learning disabilities</em> (3rd ed.).</p>
-          <p>[71] Wendling, B. J., & Mather, N. (2009). <em>Essentials of evidence-based academic interventions</em>. John Wiley & Sons.</p>
-          <p>[72] Learning Disabilities Association of America. (2020). <em>Testing and evaluation</em>.</p>
-          <p>[73] National Association of School Psychologists. (2015). <em>Position statement on private school placement and services</em>.</p>
-          <p>[74] Gerber, P. J. (2012). "The impact of learning disabilities on adulthood." <em>Journal of Learning Disabilities</em>, 45(1), 31-46.</p>
-          <p>[75] Gregg, N. (2009). <em>Adolescents and adults with learning disabilities and ADHD</em>. Guilford Press.</p>
-          <p>[76] Association on Higher Education and Disability. (2012). <em>Supporting accommodation requests: Guidance on documentation practices</em>.</p>
-          <p>[77] Americans with Disabilities Act of 1990, 42 U.S.C. § 12101 et seq.</p>
-          <p>[78] Lerner, J., & Johns, B. (2015). <em>Learning disabilities and related disabilities</em> (13th ed.). Cengage Learning.</p>
-          <p>[79] Hallahan, D. P., Pullen, P. C., & Ward, D. (2013). "A brief history of the field of learning disabilities." In H. L. Swanson, K. R. Harris, & S. Graham (Eds.), <em>Handbook of learning disabilities</em> (2nd ed., pp. 15-32). Guilford Press.</p>
-          <p>[80] Graham, S., & Harris, K. R. (2009). "Almost 30 years of writing research." <em>Learning Disabilities Research & Practice</em>, 24(2), 63-77.</p>
-          <p>[81] MacArthur, C. A. (2009). "Reflections on research on writing and technology for struggling writers." <em>Learning Disabilities Research & Practice</em>, 24(2), 93-103.</p>
-          <p>[82] Individuals with Disabilities Education Act, 20 U.S.C. § 1414(a)(2).</p>
-          <p>[83] Fuchs, L. S., & Fuchs, D. (2002). "What is scientifically-based research on progress monitoring?" <em>National Center on Student Progress Monitoring</em>.</p>
-          <p>[84] Berninger, V. W. (2009). "Highlights of programmatic, interdisciplinary research on writing." <em>Learning Disabilities Research & Practice</em>, 24(2), 68-79.</p>
-          <p>[85] Hoy, M. M., Egan, M. Y., & Feder, K. P. (2011). "A systematic review of interventions to improve handwriting." <em>Canadian Journal of Occupational Therapy</em>, 78(1), 13-25.</p>
-          <p>[86] Katusic, S. K., Colligan, R. C., Weaver, A. L., & Barbaresi, W. J. (2009). "The forgotten learning disability." <em>Pediatrics</em>, 123(5), 1306-1313.</p>
+      {/* ===== REFERENCES SECTION ===== */}
+      <div className="clear-both mt-16 font-spartan">
+        <h3 className="font-bold mb-5 text-xl text-[#0c264d]">References</h3>
+        
+        {/* BACKGROUND SOURCES: CYAN */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wider text-cyan-500 font-bold mb-3 border-b border-cyan-500 border-opacity-10 pb-1">
+            Background Sources
+          </h4>
+          <ul className="list-none text-xs space-y-3 text-slate-600 leading-relaxed p-0 m-0 break-words" style={{ textIndent: 0 }}>
+            <li>American Occupational Therapy Association. (2014). Occupational therapy practice framework. <i>American Journal of Occupational Therapy</i>. https://doi.org/10.5014/ajot.2014.682006</li>
+            <li>American Psychiatric Association. (2013). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed.). https://doi.org/10.1176/appi.books.9780890425596</li>
+            <li>Amundson, S. J. (1995). <i>Evaluation Tool of Children's Handwriting</i>. O.T. KIDS.</li>
+            <li>Association on Higher Education and Disability. (2012). <i>Supporting accommodation requests: Guidance on documentation practices</i>.</li>
+            <li>Ayres, A. J. (1989). <i>Sensory Integration and Praxis Tests</i>. Western Psychological Services.</li>
+            <li>Barnett, A. L., Henderson, S. E., Scheib, B., & Schulz, J. (2007). <i>Detailed Assessment of Speed of Handwriting</i>. Pearson.</li>
+            <li>Beery, K. E., & Beery, N. A. (2010). <i>The Beery-Buktenica developmental test of visual-motor integration</i>. Pearson.</li>
+            <li>Berninger, V. W. (2007). <i>Process Assessment of the Learner, Second Edition: Diagnostic for Reading and Writing (PAL-II RW)</i>. Pearson.</li>
+            <li>Berninger, V. W. (2009). Highlights of programmatic, interdisciplinary research on writing. <i>Learning Disabilities Research & Practice</i>. https://doi.org/10.1111/j.1540-5826.2009.00281.x</li>
+            <li>Berninger, V. W., & Fuller, F. (1992). Gender differences in orthographic, verbal, and compositional fluency. <i>Journal of School Psychology</i>. https://doi.org/10.1016/0022-4405(92)90004-O</li>
+            <li>Berninger, V. W., & May, M. O. (2011). Evidence-based diagnosis and treatment for specific learning disabilities. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219410391189</li>
+            <li>Berninger, V. W., & Richards, T. L. (2010). Inter-relationships among behavioral markers, genes, brain, and treatment. <i>Future Neurology</i>. https://doi.org/10.2217/fnl.10.22</li>
+            <li>Berninger, V. W., & Wolf, B. J. (2009). <i>Teaching students with dyslexia and dysgraphia</i>. Brookes Publishing.</li>
+            <li>Berninger, V. W., Nielsen, K. H., Abbott, R. D., Wijsman, E., & Raskind, W. (2008). Writing problems in developmental dyslexia. <i>Journal of School Psychology</i>. https://doi.org/10.1016/j.jsp.2007.11.002</li>
+            <li>Connelly, V., Campbell, S., MacLean, M., & Barnes, J. (2006). Contribution of lower order letter writing skills. <i>Developmental Neuropsychology</i>. https://doi.org/10.1207/s15326942dn2901_9</li>
+            <li>Deuel, R. K. (1995). Developmental dysgraphia and motor skills disorders. <i>Journal of Child Neurology</i>. https://doi.org/10.1177/0883073895010001031</li>
+            <li>Dewey, D., Kaplan, B. J., Crawford, S. G., & Wilson, B. N. (2002). Developmental coordination disorder. <i>Human Movement Science</i>. https://doi.org/10.1016/S0167-9457(02)00153-0</li>
+            <li>Feder, K. P., & Majnemer, A. (2007). Handwriting development, competency, and intervention. <i>Developmental Medicine & Child Neurology</i>. https://doi.org/10.1111/j.1469-8749.2007.00312.x</li>
+            <li>Fletcher, J. M., Lyon, G. R., Fuchs, L. S., & Barnes, M. A. (2018). <i>Learning disabilities: From identification to intervention</i> (2nd ed.). Guilford Press.</li>
+            <li>Fuchs, D., & Fuchs, L. S. (2006). Introduction to response to intervention. <i>Reading Research Quarterly</i>. https://doi.org/10.1598/RRQ.41.1.4</li>
+            <li>Fuchs, L. S., & Fuchs, D. (2002). <i>What is scientifically-based research on progress monitoring?</i> National Center on Student Progress Monitoring.</li>
+            <li>Fuentes, C. T., Mostofsky, S. H., & Bastian, A. J. (2009). Children with autism show specific handwriting impairments. <i>Neurology</i>. https://doi.org/10.1212/WNL.0b013e3181c0d48c</li>
+            <li>Gerber, P. J. (2012). The impact of learning disabilities on adulthood. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219411426858</li>
+            <li>Glascoe, F. P. (2005). Screening for developmental and behavioral problems. <i>Mental Retardation and Developmental Disabilities Research Reviews</i>. https://doi.org/10.1002/mrdd.20068</li>
+            <li>Graham, S., & Harris, K. R. (2009). Almost 30 years of writing research. <i>Learning Disabilities Research & Practice</i>. https://doi.org/10.1111/j.1540-5826.2009.00284.x</li>
+            <li>Graham, S., & Weintraub, N. (1996). A review of handwriting research. <i>Educational Psychology Review</i>. https://doi.org/10.1007/BF01464047</li>
+            <li>Graham, S., Berninger, V. W., Abbott, R. D., Abbott, S. P., & Whitaker, D. (1997). Role of mechanics in composing. <i>Journal of Educational Psychology</i>. https://doi.org/10.1037/0022-0663.89.1.170</li>
+            <li>Graham, S., Berninger, V., & Weintraub, N. (2001). Which manuscript letters do primary grade children write legibly? <i>Journal of Educational Psychology</i>. https://doi.org/10.1037/0022-0663.93.3.488</li>
+            <li>Gregg, N. (2009). <i>Adolescents and adults with learning disabilities and ADHD</i>. Guilford Press.</li>
+            <li>Gregg, N., Coleman, C., Davis, M., & Chalk, J. C. (2007). Timed essay writing: Implications for high-stakes tests. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/00222194070400040301</li>
+            <li>Gureasko-Moore, S., DuPaul, G. J., & White, G. P. (2007). Self-management of classroom preparedness and homework. <i>School Psychology Review</i>. https://doi.org/10.1080/02796015.2007.12087923</li>
+            <li>Hallahan, D. P., Pullen, P. C., & Ward, D. (2013). A brief history of the field of learning disabilities. In H. L. Swanson, K. R. Harris, & S. Graham (Eds.), <i>Handbook of learning disabilities</i> (2nd ed., pp. 15-32). Guilford Press.</li>
+            <li>Hammill, D. D., & Larsen, S. C. (2009). <i>Test of Written Language</i> (4th ed.). Pro-Ed.</li>
+            <li>Hammill, D. D., Pearson, N. A., & Voress, J. K. (2014). <i>Developmental Test of Visual Perception</i> (3rd ed.). Pro-Ed.</li>
+            <li>Hamstra-Bletz, L., & Blöte, A. W. (1993). A longitudinal study on dysgraphic handwriting in primary school. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/002221949302601007</li>
+            <li>Handler, S. M., & Fierson, W. M. (2011). Learning disabilities, dyslexia, and vision. <i>Pediatrics</i>. https://doi.org/10.1542/peds.2010-3670</li>
+            <li>Hooper, S. R., Swartz, C. W., Wakely, M. B., de Kruif, R. E., & Montgomery, J. W. (2002). Executive functions in elementary school children. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/002221940203500105</li>
+            <li>Hoy, M. M., Egan, M. Y., & Feder, K. P. (2011). A systematic review of interventions to improve handwriting. <i>Canadian Journal of Occupational Therapy</i>. https://doi.org/10.2182/cjot.2011.78.1.3</li>
+            <li>Individuals with Disabilities Education Act, 20 U.S.C. § 1400. (2004).</li>
+            <li>Karlsdottir, R., & Stefansson, T. (2002). Problems in developing functional handwriting. <i>Perceptual and Motor Skills</i>. https://doi.org/10.2466/pms.2002.94.2.623</li>
+            <li>Katusic, S. K., Colligan, R. C., Weaver, A. L., & Barbaresi, W. J. (2009). The forgotten learning disability. <i>Pediatrics</i>. https://doi.org/10.1542/peds.2008-2098</li>
+            <li>Larsen, S. C., Hammill, D. D., & Moats, L. C. (2013). <i>Test of Written Spelling</i> (5th ed.). Pro-Ed.</li>
+            <li>Learning Disabilities Association of America. (2020). <i>Testing and evaluation</i>.</li>
+            <li>Lerner, J., & Johns, B. (2015). <i>Learning disabilities and related disabilities</i> (13th ed.). Cengage Learning.</li>
+            <li>Levine, M. D. (1987). <i>Developmental variation and learning disorders</i>. Educators Publishing Service.</li>
+            <li>Lichtenstein, R., & Karge, B. D. (1997). Consultation and collaboration in education. In A. Thomas & J. Grimes (Eds.), <i>Best practices in school psychology III</i>. NASP.</li>
+            <li>MacArthur, C. A. (2009). Reflections on research on writing and technology for struggling writers. <i>Learning Disabilities Research & Practice</i>. https://doi.org/10.1111/j.1540-5826.2009.00286.x</li>
+            <li>Mather, N., & Wendling, B. J. (2012). <i>Essentials of evidence-based academic interventions</i>. John Wiley & Sons.</li>
+            <li>Mather, N., & Wendling, B. J. (2014). <i>Essentials of dyslexia assessment and intervention</i>. John Wiley & Sons.</li>
+            <li>McCutchen, D. (1996). A capacity theory of writing: Working memory in composition. <i>Educational Psychology Review</i>. https://doi.org/10.1007/BF01464076</li>
+            <li>Moats, L. C. (1995). <i>Spelling: Development, disability, and instruction</i>. York Press.</li>
+            <li>National Association of School Psychologists. (2015). <i>Position statement on private school placement and services</i>.</li>
+            <li>National Association of School Psychologists. (2020). <i>Model for comprehensive and integrated school psychological services</i>.</li>
+            <li>National Center for Learning Disabilities. (2014). <i>The state of learning disabilities</i> (3rd ed.).</li>
+            <li>Nelson, J. M., & Harwood, H. (2011). Learning disabilities and anxiety: A meta-analysis. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219409359939</li>
+            <li>Ortiz, S. O., & Dynda, A. M. (2005). Use of intelligence tests with culturally and linguistically diverse populations. In D. P. Flanagan & P. L. Harrison (Eds.), <i>Contemporary intellectual assessment</i>. Guilford Press.</li>
+            <li>Peverly, S. T. (2006). The importance of handwriting speed in adult writing. <i>Developmental Neuropsychology</i>. https://doi.org/10.1207/s15326942dn2901_10</li>
+            <li>Reisman, J. E. (1999). <i>Minnesota Handwriting Assessment</i>. Harcourt Assessment.</li>
+            <li>Reynolds, C. R., & Kamphaus, R. W. (2015). <i>BASC-3: Behavior assessment system for children</i> (3rd ed.). Pearson.</li>
+            <li>Rosenblum, S., Parush, S., & Weiss, P. L. (2003). Computerized temporal handwriting characteristics. <i>American Journal of Occupational Therapy</i>. https://doi.org/10.5014/ajot.57.2.129</li>
+            <li>Rosenblum, S., Weiss, P. L., & Parush, S. (2003). Product and process evaluation of handwriting difficulties. <i>Educational Psychology Review</i>. https://doi.org/10.1023/A:1021371425220</li>
+            <li>Salvia, J., Ysseldyke, J. E., & Witmer, S. (2016). <i>Assessment in special and inclusive education</i> (13th ed.). Cengage Learning.</li>
+            <li>Sattler, J. M. (2008). <i>Assessment of children: Cognitive foundations</i> (5th ed.). Jerome M. Sattler Publisher.</li>
+            <li>Sattler, J. M., & Hoge, R. D. (2006). <i>Assessment of children: Behavioral, social, and clinical foundations</i> (5th ed.). Jerome M. Sattler Publisher.</li>
+            <li>Schulte-Körne, G., Deimel, W., Müller, K., Gutenbrunner, C., & Remschmidt, H. (1996). Familial aggregation of spelling disability. <i>Journal of Child Psychology and Psychiatry</i>. https://doi.org/10.1111/j.1469-7610.1996.tb01483.x</li>
+            <li>Shapiro, E. S. (2011). <i>Academic skills problems: Direct assessment and intervention</i> (4th ed.). Guilford Press.</li>
+            <li>Smits-Engelsman, B. C., Niemeijer, A. S., & van Galen, G. P. (2001). Fine motor deficiencies in children diagnosed as DCD. <i>Human Movement Science</i>. https://doi.org/10.1016/S0167-9457(01)00033-5</li>
+            <li>Tannock, R. (2013). Rethinking ADHD and LD in DSM-5. <i>Journal of Learning Disabilities</i>. https://doi.org/10.1177/0022219412464341</li>
+            <li>Tiffin, J., & Asher, E. J. (1948). The Purdue pegboard. <i>Journal of Applied Psychology</i>. https://doi.org/10.1037/h0061266</li>
+            <li>Treiman, R. (1993). <i>Beginning to spell: A study of first-grade children</i>. Oxford University Press.</li>
+            <li>Tseng, M. H., & Cermak, S. A. (1993). The influence of ergonomic factors on handwriting performance. <i>American Journal of Occupational Therapy</i>. https://doi.org/10.5014/ajot.47.10.919</li>
+            <li>U.S. Department of Education. (2006). <i>Identification of specific learning disabilities</i>.</li>
+            <li>Wechsler, D. (2014). <i>Wechsler Intelligence Scale for Children</i> (5th ed.). Pearson.</li>
+            <li>Wechsler, D. (2020). <i>Wechsler Individual Achievement Test</i> (4th ed.). Pearson.</li>
+            <li>Weintraub, N., & Graham, S. (1998). Writing legibly and quickly. <i>Learning Disabilities Research & Practice</i>.</li>
+            <li>Wendling, B. J., & Mather, N. (2009). <i>Essentials of evidence-based academic interventions</i>. John Wiley & Sons.</li>
+            <li>Wilson, M. S., & Reschly, D. J. (1996). Assessment in school psychology training and practice. <i>School Psychology Review</i>. https://doi.org/10.1080/02796015.1996.12085799</li>
+            <li>Wright, P. W. D., & Wright, P. D. (2006). <i>Wrightslaw: Special education law</i> (2nd ed.). Harbor House Law Press.</li>
+            <li>Yell, M. L. (2016). <i>The law and special education</i> (4th ed.). Pearson.</li>
+          </ul>
         </div>
-      </section>
-
-      <div className="mt-8">
-        <a 
-          href="#" 
-          onClick={(e) => { e.preventDefault(); setCurrentArticle?.('dysgraphia'); }}
-          className="text-[#2abcd4] hover:underline cursor-pointer"
-        >
-          ← Back to Dysgraphia
-        </a>
       </div>
     </article>
   );
