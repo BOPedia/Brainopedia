@@ -39,7 +39,9 @@ export function Home({ setCurrentArticle }: HomeProps) {
 
         {/* Encyclopedia Volumes - 1 COLUMN (Compact Rows) */}
         <section>
-          <h2 className="text-[#0c264d] font-normal mb-6 text-xl sm:text-2xl text-center">Encyclopedia Volumes</h2>
+                 <h2 className="text-xl uppercase tracking-wider text-[#0c264d]/60 mb-3 px-3 font-bold text-center">
+                Encyclopedia Volumes
+              </h2>
 
           <div className="grid grid-cols-1 gap-6 w-full max-w-3xl mx-auto">
             

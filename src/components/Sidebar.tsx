@@ -167,7 +167,7 @@ const [expandedCategories, setExpandedCategories] = React.useState<Record<string
 
             {/* Encyclopedia Volumes */}
             <div className="mb-6 pt-6 border-t border-[#0c264d]/10">
-              <h2 className="text-xs uppercase tracking-wider text-[#0c264d]/60 mb-3 px-3 font-bold">
+              <h2 className="text-lg uppercase tracking-wider text-[#0c264d]/60 mb-3 px-3 font-bold">
                 Encyclopedia Volumes
               </h2>
               
