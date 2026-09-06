@@ -14,7 +14,11 @@ export const learningDifferencesRoutes: RouteMap = {
 // ==========================================
   // DYSLEXIA - symptoms
   // ==========================================
-
+  
+  // Add this general route so the main page button works:
+  'dyslexia-symptoms': lazy(() => import('../dyslexia/dyslexia-symptoms/SymptomsCore').then(m => ({ default: m.DyslexiaSymptomsCore }))),
+  
+  // Keep your existing tab routes:
   'dyslexia-symptoms-core': lazy(() => import('../dyslexia/dyslexia-symptoms/SymptomsCore').then(m => ({ default: m.DyslexiaSymptomsCore }))),
   'dyslexia-symptoms-impact': lazy(() => import('../dyslexia/dyslexia-symptoms/SymptomsImpact').then(m => ({ default: m.DyslexiaSymptomsImpact }))),
   'dyslexia-symptoms-strengths': lazy(() => import('../dyslexia/dyslexia-symptoms/SymptomsStrengths').then(m => ({ default: m.DyslexiaSymptomsStrengths }))),

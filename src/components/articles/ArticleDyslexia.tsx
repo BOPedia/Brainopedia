@@ -134,7 +134,7 @@ export function ArticleDyslexia({ setCurrentArticle }: ArticleDyslexiaProps) {
           <button
             onClick={(e) => {
               e.preventDefault();
-              setCurrentArticle?.('dyslexia-symptoms-tabcore');
+              setCurrentArticle?.('dyslexia-symptoms-core');
             }}
             className="mt-2 px-4 py-2 bg-[#ffd166] text-[#0c264d] rounded hover:bg-[#0c264d] hover:text-white transition-colors font-bold clear-both"
           >
